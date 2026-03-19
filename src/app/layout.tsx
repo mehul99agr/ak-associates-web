@@ -13,7 +13,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const whatsappLink = "https://wa.me/919527533506?text=Hi%20AK%20%26%20Associates,%20I'd%20like%20to%20book%20a%20consultation.";
+  const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation.";
 
   return (
     <html lang="en">

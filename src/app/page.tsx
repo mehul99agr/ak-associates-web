@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Home() {
-  const whatsappLink = "https://wa.me/919527533506?text=Hi%20AK%20%26%20Associates,%20I'd%20like%20to%20book%20a%20consultation.";
+  const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation.";
 
   const services = [
     { 
