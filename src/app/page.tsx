@@ -91,7 +91,7 @@ export default function Home() {
                 Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and enables them to optimize tax strategies while maintaining strict compliance.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left' }}>
-                <strong style={{ fontSize: '0.9rem', color: var(--primary) }}>Specializations:</strong>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--primary)' }}>Specializations:</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.5rem', fontSize: '0.85rem' }}>
                   <li style={{ marginBottom: '5px' }}>✓ International Tax Planning</li>
                   <li style={{ marginBottom: '5px' }}>✓ FEMA & RBI Compliance</li>
@@ -110,7 +110,7 @@ export default function Home() {
                 Rupesh brings valuable insights from leading firms, including Deloitte. His expertise spans Automobiles, IT, and Pharma. He has a strong track record in tax planning, regulatory compliance, and representing clients before tax authorities.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left' }}>
-                <strong style={{ fontSize: '0.9rem', color: var(--primary) }}>Specializations:</strong>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--primary)' }}>Specializations:</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.5rem', fontSize: '0.85rem' }}>
                   <li style={{ marginBottom: '5px' }}>✓ Domestic Tax Planning</li>
                   <li style={{ marginBottom: '5px' }}>✓ Statutory & Internal Audits</li>
@@ -223,6 +223,7 @@ export default function Home() {
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7879464!3d19.1947607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb199f0a712f%3A0x2bb8a26b71bd9b72!2sRam%20Plaza%2C%20Mumbai%20Naka%2C%20Nashik%2C%20Maharashtra%20422011!5e0!3m2!1sen!2sin!4v1717777777777" 
               width="100%" height="450" style={{ border: 0 }} allowFullScreen loading="lazy"
+              title="Google Maps showing our Nashik office location"
             ></iframe>
           </div>
         </div>
