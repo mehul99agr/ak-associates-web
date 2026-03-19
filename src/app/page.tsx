@@ -60,7 +60,7 @@ export default function Home() {
             {['Startups & IT', 'Manufacturing', 'Healthcare', 'Pharma', 'Real Estate', 'E-commerce'].map((industry, idx) => (
               <div key={idx} style={{ background: '#fff', padding: '30px', borderRadius: '12px', textAlign: 'center', border: '1px solid var(--border)', transition: 'var(--transition)' }} className="hover-lift">
                 <div style={{ color: 'var(--accent)', fontSize: '1.5rem', marginBottom: '10px' }}>✦</div>
-                <h4 style={{ fontSize: '1rem', color: var(--primary) }}>{industry}</h4>
+                <h4 style={{ fontSize: '1rem', color: 'var(--primary)' }}>{industry}</h4>
               </div>
             ))}
           </div>
@@ -247,11 +247,54 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" style={{ paddingBottom: '100px' }}>
-        <div className="cta-section">
-          <h2>Ready to Discuss Your Business Needs?</h2>
-          <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', marginBottom: '40px', maxWidth: '600px', margin: '0 auto 40px' }}>Whether you need help with business incorporation, complex tax planning, or virtual CFO services, our team is ready to assist.</p>
-          <a href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-primary" style={{ fontSize: '1.2rem', padding: '18px 40px' }}>Book Your Free Consultation</a>
+      <section id="contact" className="section" style={{ background: '#fff' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '80px' }}>
+            <div>
+              <h4 style={{ color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '10px' }}>Connect With Us</h4>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '25px' }}>Start a Conversation</h2>
+              <p style={{ color: 'var(--text-light)', marginBottom: '30px', fontSize: '1.1rem' }}>
+                Have a specific query about International Taxation, Audit, or Business Scaling? Our partners are ready to provide expert guidance.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{ display: 'flex', gap: '15px' }}>
+                  <span style={{ fontSize: '1.5rem' }}>📞</span>
+                  <div>
+                    <h4 style={{ fontSize: '1rem', marginBottom: '2px' }}>Call Support</h4>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>+91 95275 33506 (Nashik)</p>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '15px' }}>
+                  <span style={{ fontSize: '1.5rem' }}>✉️</span>
+                  <div>
+                    <h4 style={{ fontSize: '1rem', marginBottom: '2px' }}>Email Inquiries</h4>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>mehul@agrawalkhandelwal.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div style={{ background: 'var(--bg-surface)', padding: '40px', borderRadius: '16px', border: '1px solid var(--border)' }}>
+              <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <input type="text" placeholder="Full Name" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
+                  <input type="email" placeholder="Business Email" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
+                </div>
+                <input type="text" placeholder="Subject" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
+                <textarea placeholder="How can we help your business?" rows={5} style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)', fontFamily: 'inherit' }}></textarea>
+                <button type="button" className="btn btn-primary" style={{ width: '100%' }}>Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-section" style={{ margin: '0 auto 100px' }}>
+        <h2>Ready for Financial Excellence?</h2>
+        <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', marginBottom: '40px', maxWidth: '600px', margin: '0 auto 40px' }}>Join the growing list of businesses that trust AK & Associates for strategic growth and compliance.</p>
+        <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+          <Link href="/services" className="btn btn-primary">View All Services</Link>
+          <a href="tel:+919527533506" className="btn btn-outline">Direct Call</a>
         </div>
       </section>
     </>
