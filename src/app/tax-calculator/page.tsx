@@ -59,7 +59,7 @@ export default function TaxCalculator() {
           <h4 style={{ color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '10px', fontFamily: 'Inter' }}>Tax Tools</h4>
           <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>Income Tax Estimator</h1>
           <p style={{ color: 'var(--text-light)', fontSize: '1.1rem' }}>
-            Get a precise estimate of your tax liability for FY 2024-25. Compare Old vs. New tax regimes instantly.
+            Get a precise estimate of your tax liability for FY 2025-26. Compare Old vs. New tax regimes instantly.
           </p>
         </div>
 

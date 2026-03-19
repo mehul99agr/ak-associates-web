@@ -1,10 +1,8 @@
 import Link from 'next/link'
 
 export default async function BlogPost(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-  const slug = params.slug;
+  const { slug } = await props.params;
   
-  // In a real app, you'd fetch the post by slug. Here we'll simulate it.
   const post = {
     title: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
     date: "March 18, 2026",
