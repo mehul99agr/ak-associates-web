@@ -58,7 +58,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h4 style={{ color: '#fff', fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Nashik (H.O.)</h4>
+                <h4 style={{ fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Nashik (H.O.)</h4>
                 <p style={{ color: '#cbd5e1', fontSize: '0.9rem', marginBottom: '15px', lineHeight: '1.7' }}>
                   Shop No. 12 & 13, Ram Plaza,<br/>Bhabha Nagar, Mumbai Naka,<br/>Nashik - 422011
                 </p>
@@ -72,7 +72,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h4 style={{ color: '#fff', fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Sillod Office</h4>
+                <h4 style={{ fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Sillod Office</h4>
                 <p style={{ color: '#cbd5e1', fontSize: '0.9rem', marginBottom: '15px', lineHeight: '1.7' }}>
                   Near Datta Mandir,<br/>Tilak Nagar,<br/>Sillod - 431112
                 </p>
