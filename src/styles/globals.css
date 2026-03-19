@@ -23,12 +23,22 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Open Sans', -apple-system, sans-serif;
   color: var(--text-main);
   background: var(--bg-main);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 h1, h2, h3, h4 {
@@ -268,9 +278,11 @@ a {
 
 /* --- Footer --- */
 .footer {
+  flex-shrink: 0;
   background: #111827;
   color: #d1d5db;
   padding: 5rem 0 2rem;
+  width: 100%;
 }
 
 .footer h3 {

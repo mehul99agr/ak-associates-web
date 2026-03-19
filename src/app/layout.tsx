@@ -67,7 +67,9 @@ export default function RootLayout({
                   Professional Chartered Accountant services specializing in Tax Planning, International Taxation, Audit, and Financial Consulting for businesses across India.
                 </p>
                 <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
-                  <Image src="/ca-logo.png" alt="ICAI" width={40} height={40} style={{ filter: 'grayscale(1) brightness(2)' }} />
+                  <div style={{ background: '#fff', padding: '5px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                    <Image src="/ca-logo.png" alt="ICAI" width={35} height={35} />
+                  </div>
                   <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Member of the Institute of Chartered Accountants of India</span>
                 </div>
               </div>
@@ -102,7 +104,8 @@ export default function RootLayout({
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid #374151', textAlign: 'center', fontSize: '0.85rem', color: '#6b7280' }}>
+            
+            <div style={{ marginTop: '4rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', fontSize: '0.85rem', color: '#64748b' }}>
               <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal & Associates LLP. All rights reserved.</p>
             </div>
           </div>
