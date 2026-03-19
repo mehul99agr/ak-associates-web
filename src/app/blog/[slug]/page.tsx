@@ -1,11 +1,8 @@
 import Link from 'next/link'
 
-interface PostParams {
-  params: Promise<{ slug: string }>;
-}
-
-export default async function BlogPost({ params }: PostParams) {
-  const { slug } = await params;
+export default async function BlogPost(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
+  const slug = params.slug;
   
   // In a real app, you'd fetch the post by slug. Here we'll simulate it.
   const post = {
