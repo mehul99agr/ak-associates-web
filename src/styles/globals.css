@@ -163,17 +163,25 @@ a {
 /* --- Hero --- */
 .hero {
   position: relative;
-  padding: 180px 0 120px;
+  padding: 220px 0 160px;
   background: var(--primary);
   color: #fff;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.15), transparent 40%);
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .nav-links {
+    display: none;
+  }
 }
 
 .hero h1 {

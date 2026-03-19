@@ -18,10 +18,12 @@ export default function RootLayout({
       <body>
         <header className="header">
           <div className="container nav">
-            <Link href="/">
-              <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <div style={{ background: 'var(--primary)', padding: '8px', borderRadius: '4px' }}>
-                  <Image src="/logo.png" alt="AK & Associates" width={180} height={45} priority style={{ objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: 'var(--primary)', padding: '6px 12px', borderRadius: '4px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Image src="/logo.png" alt="AK & Associates" width={40} height={40} priority style={{ objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
+                <div style={{ color: '#fff', display: 'flex', flexDirection: 'column' }}>
+                  <span style={{ fontWeight: 800, fontSize: '1.1rem', lineHeight: '1', letterSpacing: '0.5px' }}>AGRAWAL KHANDELWAL</span>
+                  <span style={{ fontSize: '0.65rem', letterSpacing: '2px', color: 'var(--accent)' }}>& ASSOCIATES LLP</span>
                 </div>
               </div>
             </Link>
@@ -34,47 +36,50 @@ export default function RootLayout({
           </div>
         </header>
         
-        <main style={{ minHeight: '80vh' }}>{children}</main>
+        <main>{children}</main>
 
-        <footer className="footer">
+        <footer className="footer" style={{ borderTop: '4px solid var(--accent)' }}>
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr', gap: '60px' }}>
-              <div>
-                <div className="logo" style={{ marginBottom: '24px', filter: 'brightness(0) invert(1)' }}>
-                  <Image src="/logo.png" alt="A K & Associates" width={180} height={45} style={{ objectFit: 'contain' }} />
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', alignItems: 'start' }}>
+              <div style={{ paddingBottom: '20px' }}>
+                <div className="logo" style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                   <div style={{ color: '#fff', display: 'flex', flexDirection: 'column' }}>
+                    <span style={{ fontWeight: 800, fontSize: '1.2rem', lineHeight: '1' }}>AGRAWAL KHANDELWAL</span>
+                    <span style={{ fontSize: '0.7rem', letterSpacing: '2px', color: 'var(--accent)' }}>& ASSOCIATES LLP</span>
+                  </div>
                 </div>
-                <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '25px', maxWidth: '300px' }}>
+                <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '25px', lineHeight: '1.6' }}>
                   Institutional-grade financial frameworks and strategic tax advisory for the modern global economy.
                 </p>
                 <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                  <Image src="/ca-logo.png" alt="ICAI" width={40} height={40} />
-                  <span style={{ fontSize: '0.8rem', color: '#64748b' }}>Member of the Institute of Chartered Accountants of India</span>
+                  <Image src="/ca-logo.png" alt="ICAI" width={35} height={35} />
+                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Member of ICAI</span>
                 </div>
               </div>
 
               <div>
-                <h4 style={{ color: '#fff', fontSize: '1.1rem', marginBottom: '25px', borderBottom: '2px solid var(--accent)', display: 'inline-block', paddingBottom: '5px' }}>Nashik (H.O.)</h4>
-                <p style={{ marginBottom: '15px', lineHeight: '1.6' }}>Shop No. 12 & 13, Ram Plaza,<br/>Bhabha Nagar, Mumbai Naka,<br/>Nashik - 422011</p>
-                <a href="https://maps.app.goo.gl/YourGoogleMapsLinkHere" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '15px' }}>
-                  📍 View on Google Maps
+                <h4 style={{ color: '#fff', fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Nashik (H.O.)</h4>
+                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', marginBottom: '15px', lineHeight: '1.7' }}>
+                  Shop No. 12 & 13, Ram Plaza,<br/>Bhabha Nagar, Mumbai Naka,<br/>Nashik - 422011
+                </p>
+                <a href="https://maps.app.goo.gl/YourGoogleMapsLinkHere" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '0.85rem', textDecoration: 'underline' }}>
+                  View on Google Maps
                 </a>
-                <p style={{ marginBottom: '8px' }}>
-                  <strong>Phone:</strong> <a href="tel:+919527533506" style={{ color: '#fff' }}>+91 95275 33506</a>
-                </p>
-                <p>
-                  <strong>Email:</strong> <a href="mailto:mehul@agrawalkhandelwal.com" style={{ color: '#fff' }}>mehul@agrawalkhandelwal.com</a>
-                </p>
+                <div style={{ marginTop: '15px' }}>
+                  <p style={{ fontSize: '0.9rem', marginBottom: '5px' }}><strong>Ph:</strong> +91 95275 33506</p>
+                  <p style={{ fontSize: '0.9rem' }}><strong>Email:</strong> mehul@agrawalkhandelwal.com</p>
+                </div>
               </div>
 
               <div>
-                <h4 style={{ color: '#fff', fontSize: '1.1rem', marginBottom: '25px', borderBottom: '2px solid var(--accent)', display: 'inline-block', paddingBottom: '5px' }}>Sillod Office</h4>
-                <p style={{ marginBottom: '15px', lineHeight: '1.6' }}>Near Datta Mandir,<br/>Tilak Nagar,<br/>Sillod - 431112</p>
-                <p style={{ marginBottom: '8px' }}>
-                  <strong>Phone:</strong> <a href="tel:+919595585953" style={{ color: '#fff' }}>+91 95955 85953</a>
+                <h4 style={{ color: '#fff', fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Sillod Office</h4>
+                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', marginBottom: '15px', lineHeight: '1.7' }}>
+                  Near Datta Mandir,<br/>Tilak Nagar,<br/>Sillod - 431112
                 </p>
-                <p>
-                  <strong>Email:</strong> <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ color: '#fff' }}>rupesh@agrawalkhandelwal.com</a>
-                </p>
+                <div style={{ marginTop: '15px' }}>
+                  <p style={{ fontSize: '0.9rem', marginBottom: '5px' }}><strong>Ph:</strong> +91 95955 85953</p>
+                  <p style={{ fontSize: '0.9rem' }}><strong>Email:</strong> rupesh@agrawalkhandelwal.com</p>
+                </div>
               </div>
             </div>
           </div>

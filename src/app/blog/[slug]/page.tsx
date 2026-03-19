@@ -1,9 +1,15 @@
 import Link from 'next/link'
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+interface PostParams {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function BlogPost({ params }: PostParams) {
+  const { slug } = await params;
+  
   // In a real app, you'd fetch the post by slug. Here we'll simulate it.
   const post = {
-    title: params.slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+    title: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
     date: "March 18, 2026",
     author: "CA Mehul Agrawal",
     content: `

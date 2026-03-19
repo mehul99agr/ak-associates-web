@@ -29,14 +29,63 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="container">
-          <div style={{ position: 'relative', zIndex: 2 }}>
-            <h2 style={{ color: 'var(--accent)', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px', fontFamily: 'Inter' }}>Agrawal Khandelwal & Associates LLP</h2>
-            <h1>Simplify your finances,<br />Empower your decisions.</h1>
-            <p>Providing expert accounting, auditing, and strategic financial advisory for startups, SMEs, and large multinational corporations across India.</p>
-            <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-              <Link href="/#contact" className="btn btn-primary">Book Free Consultation</Link>
-              <Link href="/services" className="btn btn-outline-light">Explore Our Services</Link>
+          <div style={{ position: 'relative', zIndex: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '40px', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 600px' }}>
+              <h2 style={{ color: 'var(--accent)', fontSize: '1.1rem', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '16px', fontWeight: 700 }}>Agrawal Khandelwal & Associates LLP</h2>
+              <h1>Precision in Accounting.<br />Strategic in Growth.</h1>
+              <p style={{ fontSize: '1.3rem', lineHeight: '1.6', marginBottom: '40px', color: '#e2e8f0' }}>Institutional-grade financial frameworks for the modern global economy. Specializing in International Tax, Audit, and Virtual CFO services.</p>
+              <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                <Link href="/#contact" className="btn btn-primary">Book Consultation</Link>
+                <Link href="/services" className="btn btn-outline-light">Our Expertise</Link>
+              </div>
             </div>
+            <div style={{ flex: '1 1 400px', background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
+              <div style={{ marginBottom: '30px' }}>
+                <h3 style={{ color: '#fff', fontSize: '1.4rem', marginBottom: '10px' }}>Quick Tax Estimate</h3>
+                <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>Compare FY 2025-26 slabs instantly.</p>
+              </div>
+              <Link href="/tax-calculator" className="btn btn-primary" style={{ width: '100%' }}>Open Calculator</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-surface">
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px' }}>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Industries We Serve</h2>
+            <p style={{ color: 'var(--text-light)' }}>Specialized financial consulting tailored to the unique operational demands of diverse sectors.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '30px' }}>
+            {['Startups & IT', 'Manufacturing', 'Healthcare', 'Pharma', 'Real Estate', 'E-commerce'].map((industry, idx) => (
+              <div key={idx} style={{ background: '#fff', padding: '30px', borderRadius: '12px', textAlign: 'center', border: '1px solid var(--border)', transition: 'var(--transition)' }} className="hover-lift">
+                <div style={{ color: 'var(--accent)', fontSize: '1.5rem', marginBottom: '10px' }}>✦</div>
+                <h4 style={{ fontSize: '1rem', color: var(--primary) }}>{industry}</h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 80px' }}>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Our Strategic Process</h2>
+            <p style={{ color: 'var(--text-light)' }}>A systematic approach to financial excellence and regulatory compliance.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px' }}>
+            {[
+              { step: '01', title: 'Diagnostic Review', desc: 'Thorough analysis of your current financial health and compliance status.' },
+              { step: '02', title: 'Strategic Planning', desc: 'Customized tax and financial frameworks designed for your specific goals.' },
+              { step: '03', title: 'Execution', desc: 'Seamless implementation of optimized accounting and regulatory systems.' },
+              { step: '04', title: 'Continuous Audit', desc: 'Ongoing monitoring to ensure sustained excellence and risk mitigation.' }
+            ].map((item, idx) => (
+              <div key={idx} style={{ position: 'relative' }}>
+                <span style={{ fontSize: '4rem', fontWeight: 800, color: 'var(--bg-surface)', position: 'absolute', top: '-40px', left: '0', zIndex: -1 }}>{item.step}</span>
+                <h3 style={{ fontSize: '1.4rem', marginBottom: '15px' }}>{item.title}</h3>
+                <p style={{ color: 'var(--text-light)', fontSize: '0.95rem' }}>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
