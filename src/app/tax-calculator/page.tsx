@@ -71,6 +71,7 @@ export default function TaxCalculator() {
                 type="number" 
                 value={income}
                 onChange={(e) => setIncome(Number(e.target.value))}
+                aria-label="Gross Annual Income"
                 style={{ width: '100%', padding: '14px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem' }}
                 placeholder="e.g. 1200000"
               />
@@ -80,6 +81,7 @@ export default function TaxCalculator() {
               <select 
                 value={fy}
                 onChange={(e) => setFy(e.target.value as '24-25' | '25-26')}
+                aria-label="Select Assessment Year"
                 style={{ width: '100%', padding: '14px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff' }}
               >
                 <option value="25-26">FY 2025-26 (AY 2026-27)</option>
@@ -91,6 +93,7 @@ export default function TaxCalculator() {
               <select 
                 value={regime}
                 onChange={(e) => setRegime(e.target.value as 'old' | 'new')}
+                aria-label="Select Tax Regime"
                 style={{ width: '100%', padding: '14px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff' }}
               >
                 <option value="new">New Tax Regime (Default)</option>

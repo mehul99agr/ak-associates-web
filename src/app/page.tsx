@@ -139,7 +139,7 @@ export default function Home() {
               <h4 style={{ color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '10px', fontFamily: 'Inter' }}>Why Choose Us</h4>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '25px' }}>Partnering in Your Growth Journey</h2>
               <p style={{ marginBottom: '20px', fontSize: '1.1rem', color: 'var(--text-light)' }}>
-                We don't just crunch numbers; we provide the strategic foresight needed to navigate complex regulatory landscapes.
+                We don&apos;t just crunch numbers; we provide the strategic foresight needed to navigate complex regulatory landscapes.
               </p>
               <ul style={{ listStyle: 'none', marginTop: '30px' }}>
                 <li style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
@@ -224,12 +224,12 @@ export default function Home() {
               <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '30px' }}>Our commitment to proactive guidance and expert solutions has saved our clients significant resources and time.</p>
               
               <div style={{ borderLeft: '4px solid var(--accent)', paddingLeft: '20px', marginBottom: '20px' }}>
-                <p style={{ fontStyle: 'italic', marginBottom: '10px' }}>"Their expertise in international tax planning and execution is unmatched. They provided significant savings through tax optimization."</p>
+                <p style={{ fontStyle: 'italic', marginBottom: '10px' }}>&quot;Their expertise in international tax planning and execution is unmatched. They provided significant savings through tax optimization.&quot;</p>
                 <p style={{ fontWeight: 'bold' }}>- Sunny Stephen, Breakthrough Management Group India</p>
               </div>
               
               <div style={{ borderLeft: '4px solid var(--secondary)', paddingLeft: '20px' }}>
-                <p style={{ fontStyle: 'italic', marginBottom: '10px' }}>"Prompt, expert guidance on complex international compliance. A truly proactive approach to our startup's needs."</p>
+                <p style={{ fontStyle: 'italic', marginBottom: '10px' }}>&quot;Prompt, expert guidance on complex international compliance. A truly proactive approach to our startup&apos;s needs.&quot;</p>
                 <p style={{ fontWeight: 'bold' }}>- Nilay Kulkarni, Founder, Vitt AI</p>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function Home() {
               <h4 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '15px' }}>Stay Updated on Compliance</h4>
               <p style={{ color: '#cbd5e1', marginBottom: '30px' }}>Join our mailing list to receive our latest insights on Indian taxation, GST updates, and regulatory changes directly to your inbox.</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                <input type="email" placeholder="Enter your business email" style={{ padding: '16px', borderRadius: '4px', border: 'none', outline: 'none', width: '100%', fontSize: '1rem' }} />
+                <input type="email" placeholder="Enter your business email" aria-label="Business Email" style={{ padding: '16px', borderRadius: '4px', border: 'none', outline: 'none', width: '100%', fontSize: '1rem' }} />
                 <button className="btn btn-primary" style={{ width: '100%' }}>Subscribe to Insights</button>
               </div>
             </div>
@@ -277,11 +277,11 @@ export default function Home() {
             <div style={{ background: 'var(--bg-surface)', padding: '40px', borderRadius: '16px', border: '1px solid var(--border)' }}>
               <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                  <input type="text" placeholder="Full Name" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
-                  <input type="email" placeholder="Business Email" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
+                  <input type="text" placeholder="Full Name" aria-label="Full Name" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
+                  <input type="email" placeholder="Business Email" aria-label="Business Email" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
                 </div>
-                <input type="text" placeholder="Subject" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
-                <textarea placeholder="How can we help your business?" rows={5} style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)', fontFamily: 'inherit' }}></textarea>
+                <input type="text" placeholder="Subject" aria-label="Subject" style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)' }} />
+                <textarea placeholder="How can we help your business?" aria-label="Message" rows={5} style={{ padding: '15px', borderRadius: '8px', border: '1px solid var(--border)', fontFamily: 'inherit' }}></textarea>
                 <button type="button" className="btn btn-primary" style={{ width: '100%' }}>Send Message</button>
               </form>
             </div>
