@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Home() {
+  const whatsappLink = "https://wa.me/919527533506?text=Hi%20AK%20%26%20Associates,%20I'd%20like%20to%20book%20a%20consultation.";
+
   const services = [
     { 
       title: 'Business Incorporation & Structuring', 
@@ -27,6 +29,18 @@ export default function Home() {
       icon: '📈',
       features: ['Financial Strategy & Planning', 'Budgeting & Forecasting', 'Investment Advisory', 'Performance Analysis']
     },
+    { 
+      title: 'Audit & Assurance', 
+      desc: 'Comprehensive statutory audits, internal audits, tax audits, and thorough due diligence to ensure transparency.',
+      icon: '🛡️',
+      features: ['Statutory & Tax Audits', 'Internal Audit Systems', 'Due Diligence Reports', 'Risk Assessment']
+    },
+    { 
+      title: 'Financial Advisory', 
+      desc: 'Strategic financial consulting, modeling, and advisory services for business growth and optimization.',
+      icon: '📊',
+      features: ['Financial Modeling', 'Valuation Services', 'Business Restructuring', 'Funding Advisory']
+    },
   ]
 
   return (
@@ -41,7 +55,7 @@ export default function Home() {
             With over five years of professional experience, we successfully serve a diverse portfolio of clients—ranging from startups and SMEs to large multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/#contact" className="btn btn-primary">Book Free Consultation</Link>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
             <Link href="/services" className="btn btn-secondary">Explore Services</Link>
           </div>
         </div>
@@ -215,7 +229,7 @@ export default function Home() {
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📅</div>
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#fff' }}>Consultation</h3>
               <p style={{ color: '#d1d5db', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
-              <a href="tel:+919527533506" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>Call Now</a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>Message on WhatsApp</a>
             </div>
           </div>
 

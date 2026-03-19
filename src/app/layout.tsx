@@ -13,23 +13,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const whatsappLink = "https://wa.me/919527533506?text=Hi%20AK%20%26%20Associates,%20I'd%20like%20to%20book%20a%20consultation.";
+
   return (
     <html lang="en">
       <body>
         <header className="header">
           <div className="container nav">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <Image src="/logo.png" alt="AK & Associates" width={50} height={50} priority style={{ objectFit: 'contain' }} />
+              <div style={{ background: '#fff', padding: '5px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
+                <Image src="/logo.png" alt="AK & Associates" width={45} height={45} priority style={{ objectFit: 'contain' }} />
+              </div>
               <div className="logo-text">
-                <span style={{ display: 'block' }}>AGRAWAL KHANDELWAL</span>
-                <span style={{ fontSize: '0.7rem', letterSpacing: '3px', color: 'var(--accent)', fontWeight: 700 }}>& ASSOCIATES LLP</span>
+                <span style={{ display: 'block', color: 'var(--primary)', fontWeight: 900, fontSize: '1.3rem', letterSpacing: '-0.5px' }}>AGRAWAL KHANDELWAL</span>
+                <span style={{ fontSize: '0.65rem', letterSpacing: '3.5px', color: 'var(--accent)', fontWeight: 700, display: 'block', marginTop: '-2px' }}>& ASSOCIATES LLP</span>
               </div>
             </Link>
             <div className="nav-links">
               <Link href="/services" className="link">Services</Link>
               <Link href="/tax-calculator" className="link">Tax Tools</Link>
               <Link href="/blog" className="link">Insights</Link>
-              <Link href="/#contact" className="btn btn-primary" style={{ padding: '0.8rem 1.5rem' }}>Book Consultation</Link>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.7rem 1.4rem', fontSize: '0.9rem', borderRadius: '6px' }}>Book Consultation</a>
             </div>
           </div>
         </header>
@@ -64,7 +68,7 @@ export default function RootLayout({
                 <Link href="/#about">About Us</Link>
                 <Link href="/services">Our Services</Link>
                 <Link href="/blog">Client Insights</Link>
-                <Link href="/#contact">Contact Us</Link>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
                 <Link href="/tax-calculator">Tax Calculator</Link>
               </div>
 
@@ -75,8 +79,8 @@ export default function RootLayout({
                 <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Sillod Office:</strong></p>
                 <p style={{ fontSize: '0.85rem' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
                 <div style={{ marginTop: '1.5rem' }}>
-                  <a href="tel:+919527533506" style={{ fontSize: '0.9rem' }}>+91 95275 33506</a>
-                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.9rem' }}>mehul@agrawalkhandelwal.com</a>
+                  <a href="tel:+919527533506" style={{ fontSize: '0.9rem', display: 'block', marginBottom: '5px' }}>+91 95275 33506</a>
+                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.9rem', display: 'block' }}>mehul@agrawalkhandelwal.com</a>
                 </div>
               </div>
             </div>
