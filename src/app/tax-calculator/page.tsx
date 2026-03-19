@@ -5,96 +5,111 @@ export default function TaxCalculator() {
   const [income, setIncome] = useState<number>(0)
   const [regime, setRegime] = useState<'old' | 'new'>('new')
   const [fy, setFy] = useState<'24-25' | '25-26'>('25-26')
-  const [taxResult, setTaxResult] = useState<{ tax: number; cess: number; total: number; savings?: number } | null>(null)
+  const [taxResult, setTaxResult] = useState<{ tax: number; cess: number; total: number; rebate: number } | null>(null)
 
   const calculateTax = () => {
     let tax = 0
-    const val = Number(income)
+    let rebate = 0
+    const grossIncome = Number(income)
 
     if (regime === 'new') {
-      // New Tax Regime (FY 2025-26 / AY 2026-27)
       const standardDeduction = 75000
-      const taxable = Math.max(0, val - standardDeduction)
+      const taxableIncome = Math.max(0, grossIncome - standardDeduction)
       
       if (fy === '25-26') {
-        if (taxable <= 400000) tax = 0
-        else if (taxable <= 800000) tax = (taxable - 400000) * 0.05
-        else if (taxable <= 1200000) tax = 20000 + (taxable - 800000) * 0.10
-        else if (taxable <= 1600000) tax = 60000 + (taxable - 1200000) * 0.15
-        else if (taxable <= 2000000) tax = 120000 + (taxable - 1600000) * 0.20
-        else if (taxable <= 2400000) tax = 200000 + (taxable - 2000000) * 0.25
-        else tax = 300000 + (taxable - 2400000) * 0.30
-        
-        // Rebate u/s 87A (Nil tax up to 12L for certain conditions, simplified here to 7L-10L range)
-        if (taxable <= 700000) tax = 0
+        // FY 2025-26 New Regime Slabs
+        if (taxableIncome <= 400000) tax = 0
+        else if (taxableIncome <= 800000) tax = (taxableIncome - 400000) * 0.05
+        else if (taxableIncome <= 1200000) tax = 20000 + (taxableIncome - 800000) * 0.10
+        else if (taxableIncome <= 1600000) tax = 60000 + (taxableIncome - 1200000) * 0.15
+        else if (taxableIncome <= 2000000) tax = 120000 + (taxableIncome - 1600000) * 0.20
+        else if (taxableIncome <= 2400000) tax = 200000 + (taxableIncome - 2000000) * 0.25
+        else tax = 300000 + (taxableIncome - 2400000) * 0.30
+
+        // Rebate 87A for FY 25-26: No tax if taxable income <= 12L
+        if (taxableIncome <= 1200000) {
+          rebate = tax
+          tax = 0
+        }
       } else {
-        // FY 2024-25
-        if (taxable <= 300000) tax = 0
-        else if (taxable <= 600000) tax = (taxable - 300000) * 0.05
-        else if (taxable <= 900000) tax = 15000 + (taxable - 600000) * 0.10
-        else if (taxable <= 1200000) tax = 45000 + (taxable - 900000) * 0.15
-        else if (taxable <= 1500000) tax = 90000 + (taxable - 1200000) * 0.20
-        else tax = 150000 + (taxable - 1500000) * 0.30
-        if (taxable <= 700000) tax = 0
+        // FY 2024-25 New Regime Slabs
+        if (taxableIncome <= 300000) tax = 0
+        else if (taxableIncome <= 700000) tax = (taxableIncome - 300000) * 0.05
+        else if (taxableIncome <= 1000000) tax = 20000 + (taxableIncome - 700000) * 0.10
+        else if (taxableIncome <= 1200000) tax = 50000 + (taxableIncome - 1000000) * 0.15
+        else if (taxableIncome <= 1500000) tax = 80000 + (taxableIncome - 1200000) * 0.20
+        else tax = 140000 + (taxableIncome - 1500000) * 0.30
+
+        // Rebate 87A for FY 24-25: No tax if taxable income <= 7L
+        if (taxableIncome <= 700000) {
+          rebate = tax
+          tax = 0
+        }
       }
     } else {
-      // Old Tax Regime
+      // Old Regime (Same for both years)
       const standardDeduction = 50000
-      const taxable = Math.max(0, val - standardDeduction)
-      if (taxable <= 250000) tax = 0
-      else if (taxable <= 500000) tax = (taxable - 250000) * 0.05
-      else if (taxable <= 1000000) tax = 12500 + (taxable - 500000) * 0.20
-      else tax = 112500 + (taxable - 1000000) * 0.30
-      if (taxable <= 500000) tax = 0
+      const taxableIncome = Math.max(0, grossIncome - standardDeduction)
+      
+      if (taxableIncome <= 250000) tax = 0
+      else if (taxableIncome <= 500000) tax = (taxableIncome - 250000) * 0.05
+      else if (taxableIncome <= 1000000) tax = 12500 + (taxableIncome - 500000) * 0.20
+      else tax = 112500 + (taxableIncome - 1000000) * 0.30
+
+      // Rebate 87A for Old Regime: No tax if taxable income <= 5L
+      if (taxableIncome <= 500000) {
+        rebate = tax
+        tax = 0
+      }
     }
 
     const cess = tax * 0.04
-    setTaxResult({ tax, cess, total: tax + cess })
+    setTaxResult({ tax, cess, total: tax + cess, rebate })
   }
 
   return (
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
-          <h4 style={{ color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '10px', fontFamily: 'Inter' }}>Tax Tools</h4>
-          <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>Income Tax Estimator</h1>
+          <h4 className="section-badge">Tax Tools</h4>
+          <h1 className="section-title">Income Tax Estimator</h1>
           <p style={{ color: 'var(--text-light)', fontSize: '1.1rem' }}>
-            Get a precise estimate of your tax liability for FY 2025-26. Compare Old vs. New tax regimes instantly.
+            Calculate your tax liability based on the latest Union Budget {fy === '25-26' ? '2025' : '2024'} updates.
           </p>
         </div>
 
-        <div style={{ background: '#fff', padding: '50px', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', maxWidth: '800px', margin: '0 auto', border: '1px solid var(--border)' }}>
+        <div className="card" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', marginBottom: '40px' }}>
             <div className="input-group">
-              <label style={{ display: 'block', fontWeight: 600, marginBottom: '10px', fontSize: '0.95rem' }}>Gross Annual Income (₹)</label>
+              <label style={{ display: 'block', fontWeight: 700, marginBottom: '10px', fontSize: '0.9rem', color: 'var(--primary)' }}>Gross Annual Income (₹)</label>
               <input 
                 type="number" 
-                value={income}
+                value={income || ''}
                 onChange={(e) => setIncome(Number(e.target.value))}
                 aria-label="Gross Annual Income"
-                style={{ width: '100%', padding: '14px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem' }}
-                placeholder="e.g. 1200000"
+                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1.1rem', fontWeight: 600 }}
+                placeholder="e.g. 1500000"
               />
             </div>
             <div className="input-group">
-              <label style={{ display: 'block', fontWeight: 600, marginBottom: '10px', fontSize: '0.95rem' }}>Select Assessment Year</label>
+              <label style={{ display: 'block', fontWeight: 700, marginBottom: '10px', fontSize: '0.9rem', color: 'var(--primary)' }}>Financial Year</label>
               <select 
                 value={fy}
                 onChange={(e) => setFy(e.target.value as '24-25' | '25-26')}
-                aria-label="Select Assessment Year"
-                style={{ width: '100%', padding: '14px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff' }}
+                aria-label="Select Financial Year"
+                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff', fontWeight: 600 }}
               >
                 <option value="25-26">FY 2025-26 (AY 2026-27)</option>
                 <option value="24-25">FY 2024-25 (AY 2025-26)</option>
               </select>
             </div>
             <div className="input-group">
-              <label style={{ display: 'block', fontWeight: 600, marginBottom: '10px', fontSize: '0.95rem' }}>Select Tax Regime</label>
+              <label style={{ display: 'block', fontWeight: 700, marginBottom: '10px', fontSize: '0.9rem', color: 'var(--primary)' }}>Tax Regime</label>
               <select 
                 value={regime}
                 onChange={(e) => setRegime(e.target.value as 'old' | 'new')}
                 aria-label="Select Tax Regime"
-                style={{ width: '100%', padding: '14px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff' }}
+                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff', fontWeight: 600 }}
               >
                 <option value="new">New Tax Regime (Default)</option>
                 <option value="old">Old Tax Regime</option>
@@ -102,30 +117,36 @@ export default function TaxCalculator() {
             </div>
           </div>
 
-          <button className="btn btn-primary" onClick={calculateTax} style={{ width: '100%', fontSize: '1.1rem', padding: '16px' }}>
-            Calculate Liability
+          <button className="btn btn-primary" onClick={calculateTax} style={{ width: '100%', fontSize: '1.1rem', padding: '1.2rem', fontWeight: 800 }}>
+            CALCULATE TAX
           </button>
 
           {taxResult && (
-            <div style={{ marginTop: '50px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
+            <div style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
-                <span style={{ color: 'var(--text-light)' }}>Basic Tax</span>
+                <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Basic Tax</span>
                 <span style={{ fontWeight: 700, fontSize: '1.2rem' }}>₹{taxResult.tax.toLocaleString('en-IN')}</span>
               </div>
+              {taxResult.rebate > 0 && (
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)', color: '#059669' }}>
+                  <span style={{ fontWeight: 600 }}>Tax Rebate (u/s 87A)</span>
+                  <span style={{ fontWeight: 700 }}>- ₹{taxResult.rebate.toLocaleString('en-IN')}</span>
+                </div>
+              )}
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
-                <span style={{ color: 'var(--text-light)' }}>Health & Education Cess (4%)</span>
-                <span style={{ fontWeight: 700, fontSize: '1.2rem' }}>₹{taxResult.cess.toLocaleString('en-IN')}</span>
+                <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Health & Education Cess (4%)</span>
+                <span style={{ fontWeight: 700 }}>₹{taxResult.cess.toLocaleString('en-IN')}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--primary)' }}>Total Estimated Tax</span>
-                <span style={{ fontWeight: 800, fontSize: '2rem', color: 'var(--accent)' }}>₹{taxResult.total.toLocaleString('en-IN')}</span>
+                <span style={{ fontWeight: 800, fontSize: '1.2rem', color: 'var(--primary)' }}>Total Tax Liability</span>
+                <span style={{ fontWeight: 900, fontSize: '2.2rem', color: 'var(--accent)' }}>₹{Math.round(taxResult.total).toLocaleString('en-IN')}</span>
               </div>
             </div>
           )}
 
-          <div style={{ marginTop: '30px', padding: '20px', background: '#fff9e6', borderRadius: '8px', borderLeft: '4px solid var(--accent)' }}>
-            <p style={{ fontSize: '0.85rem', color: '#856404', lineHeight: 1.5 }}>
-              <strong>Disclaimer:</strong> This calculator provides an approximate estimation based on simplified slabs. Professional tax planning considers various deductions (like 80C, 80D, HRA) not included here. Please consult with our partners for a comprehensive tax audit.
+          <div style={{ marginTop: '30px', padding: '20px', background: '#fffbeb', borderRadius: '8px', borderLeft: '4px solid #f59e0b' }}>
+            <p style={{ fontSize: '0.85rem', color: '#92400e', lineHeight: 1.6 }}>
+              <strong>Note:</strong> This is a simplified estimator. The New Tax Regime includes a <strong>Standard Deduction of ₹75,000</strong>. The Old Regime calculation assumes a standard deduction of ₹50,000 but does not account for specific 80C/80D deductions. For a detailed tax plan, please consult with our experts.
             </p>
           </div>
         </div>
