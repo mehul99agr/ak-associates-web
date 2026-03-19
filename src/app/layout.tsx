@@ -20,43 +20,27 @@ export default function RootLayout({
       <body>
         <header className="header">
           <div className="container nav" style={{ height: '100px' }}>
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
-              <div style={{ position: 'relative', width: '55px', height: '55px' }}>
-                <Image src="/logo.png" alt="AK & Associates" fill style={{ objectFit: 'contain' }} priority />
-              </div>
-              <div style={{ borderLeft: '2px solid var(--border)', paddingLeft: '15px', display: 'flex', flexDirection: 'column' }}>
-                <span style={{ 
-                  fontFamily: 'Montserrat, sans-serif', 
-                  fontWeight: 900, 
-                  fontSize: '1.4rem', 
-                  lineHeight: '1', 
-                  color: 'var(--primary)',
-                  letterSpacing: '-0.5px'
-                }}>
-                  AGRAWAL KHANDELWAL
-                </span>
-                <span style={{ 
-                  fontFamily: 'Montserrat, sans-serif', 
-                  fontWeight: 700, 
-                  fontSize: '0.75rem', 
-                  letterSpacing: '3.5px', 
-                  color: 'var(--accent)',
-                  marginTop: '4px'
-                }}>
-                  & ASSOCIATES LLP
-                </span>
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+              <div style={{ position: 'relative', height: '70px', width: '350px' }}>
+                <Image 
+                  src="/logo.png" 
+                  alt="Agrawal Khandelwal & Associates LLP" 
+                  fill 
+                  style={{ objectFit: 'contain', objectPosition: 'left' }} 
+                  priority 
+                />
               </div>
             </Link>
             
-            <div className="nav-links" style={{ gap: '3rem' }}>
-              <Link href="/services" className="link" style={{ fontSize: '1rem', fontWeight: 700 }}>SERVICES</Link>
-              <Link href="/tax-calculator" className="link" style={{ fontSize: '1rem', fontWeight: 700 }}>TAX TOOLS</Link>
-              <Link href="/blog" className="link" style={{ fontSize: '1rem', fontWeight: 700 }}>INSIGHTS</Link>
+            <div className="nav-links" style={{ gap: '2.5rem' }}>
+              <Link href="/services" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>SERVICES</Link>
+              <Link href="/tax-calculator" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>TAX TOOLS</Link>
+              <Link href="/blog" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>INSIGHTS</Link>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ 
-                padding: '0.8rem 1.8rem', 
-                fontSize: '0.9rem', 
+                padding: '0.7rem 1.5rem', 
+                fontSize: '0.85rem', 
                 borderRadius: '4px',
-                letterSpacing: '1px',
+                letterSpacing: '0.5px',
                 fontWeight: 800
               }}>
                 BOOK CONSULTATION
@@ -71,7 +55,14 @@ export default function RootLayout({
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem' }}>
               <div>
-                <h3 style={{ fontSize: '1.2rem', fontWeight: 800 }}>AGRAWAL KHANDELWAL<br/><span style={{ color: 'var(--accent)', fontSize: '0.8rem' }}>& ASSOCIATES LLP</span></h3>
+                <div style={{ position: 'relative', height: '50px', width: '250px', marginBottom: '1.5rem' }}>
+                  <Image 
+                    src="/logo.png" 
+                    alt="Agrawal Khandelwal & Associates LLP" 
+                    fill 
+                    style={{ objectFit: 'contain', objectPosition: 'left', filter: 'brightness(0) invert(1)' }} 
+                  />
+                </div>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#9ca3af' }}>
                   Professional Chartered Accountant services specializing in Tax Planning, International Taxation, Audit, and Financial Consulting for businesses across India.
                 </p>
