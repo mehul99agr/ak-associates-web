@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Agrawal Khandelwal & Associates LLP | Chartered Accountants',
-  description: 'Simplify your finances, Empower your decisions. Trusted tax and financial advisory for startups, SMEs, and multinationals.',
+  title: 'Agrawal Khandelwal & Associates LLP | Top Chartered Accountants in India',
+  description: 'Leading Chartered Accountants in Nashik & Sillod. Expert CA services: Tax Planning, Audit, International Taxation, Virtual CFO, and Business Incorporation.',
 }
 
 export default function RootLayout({
@@ -18,73 +18,71 @@ export default function RootLayout({
       <body>
         <header className="header">
           <div className="container nav">
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ background: 'var(--primary)', padding: '6px 12px', borderRadius: '4px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <Image src="/logo.png" alt="AK & Associates" width={40} height={40} priority style={{ objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
-                <div style={{ color: '#fff', display: 'flex', flexDirection: 'column' }}>
-                  <span style={{ fontWeight: 800, fontSize: '1.1rem', lineHeight: '1', letterSpacing: '0.5px' }}>AGRAWAL KHANDELWAL</span>
-                  <span style={{ fontSize: '0.65rem', letterSpacing: '2px', color: 'var(--accent)' }}>& ASSOCIATES LLP</span>
-                </div>
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+              <Image src="/logo.png" alt="AK & Associates" width={50} height={50} priority style={{ objectFit: 'contain' }} />
+              <div className="logo-text">
+                <span style={{ display: 'block' }}>AGRAWAL KHANDELWAL</span>
+                <span style={{ fontSize: '0.7rem', letterSpacing: '3px', color: 'var(--accent)', fontWeight: 700 }}>& ASSOCIATES LLP</span>
               </div>
             </Link>
             <div className="nav-links">
               <Link href="/services" className="link">Services</Link>
               <Link href="/tax-calculator" className="link">Tax Tools</Link>
               <Link href="/blog" className="link">Insights</Link>
-              <Link href="/#contact" className="btn btn-primary">Book Consultation</Link>
+              <Link href="/#contact" className="btn btn-primary" style={{ padding: '0.8rem 1.5rem' }}>Book Consultation</Link>
             </div>
           </div>
         </header>
         
         <main>{children}</main>
 
-        <footer className="footer" style={{ borderTop: '4px solid var(--accent)' }}>
+        <footer className="footer">
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', alignItems: 'start' }}>
-              <div style={{ paddingBottom: '20px' }}>
-                <div className="logo" style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                   <div style={{ color: '#fff', display: 'flex', flexDirection: 'column' }}>
-                    <span style={{ fontWeight: 800, fontSize: '1.2rem', lineHeight: '1' }}>AGRAWAL KHANDELWAL</span>
-                    <span style={{ fontSize: '0.7rem', letterSpacing: '2px', color: 'var(--accent)' }}>& ASSOCIATES LLP</span>
-                  </div>
-                </div>
-                <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '25px', lineHeight: '1.6' }}>
-                  Institutional-grade financial frameworks and strategic tax advisory for the modern global economy.
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem' }}>
+              <div>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 800 }}>AGRAWAL KHANDELWAL<br/><span style={{ color: 'var(--accent)', fontSize: '0.8rem' }}>& ASSOCIATES LLP</span></h3>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#9ca3af' }}>
+                  Professional Chartered Accountant services specializing in Tax Planning, International Taxation, Audit, and Financial Consulting for businesses across India.
                 </p>
-                <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                  <Image src="/ca-logo.png" alt="ICAI" width={35} height={35} />
-                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Member of ICAI</span>
+                <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
+                  <Image src="/ca-logo.png" alt="ICAI" width={40} height={40} style={{ filter: 'grayscale(1) brightness(2)' }} />
+                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Member of the Institute of Chartered Accountants of India</span>
                 </div>
               </div>
 
               <div>
-                <h4 style={{ fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Nashik (H.O.)</h4>
-                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', marginBottom: '15px', lineHeight: '1.7' }}>
-                  Shop No. 12 & 13, Ram Plaza,<br/>Bhabha Nagar, Mumbai Naka,<br/>Nashik - 422011
-                </p>
-                <a href="https://maps.app.goo.gl/YourGoogleMapsLinkHere" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '0.85rem', textDecoration: 'underline' }}>
-                  View on Google Maps
-                </a>
-                <div style={{ marginTop: '15px' }}>
-                  <p style={{ fontSize: '0.9rem', marginBottom: '5px' }}><strong>Ph:</strong> +91 95275 33506</p>
-                  <p style={{ fontSize: '0.9rem' }}><strong>Email:</strong> mehul@agrawalkhandelwal.com</p>
-                </div>
+                <h3>Services</h3>
+                <Link href="/services">Tax Planning & Compliance</Link>
+                <Link href="/services">International Taxation</Link>
+                <Link href="/services">Audit & Assurance</Link>
+                <Link href="/services">Virtual CFO Services</Link>
+                <Link href="/services">Business Incorporation</Link>
               </div>
 
               <div>
-                <h4 style={{ fontSize: '1rem', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Sillod Office</h4>
-                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', marginBottom: '15px', lineHeight: '1.7' }}>
-                  Near Datta Mandir,<br/>Tilak Nagar,<br/>Sillod - 431112
-                </p>
-                <div style={{ marginTop: '15px' }}>
-                  <p style={{ fontSize: '0.9rem', marginBottom: '5px' }}><strong>Ph:</strong> +91 95955 85953</p>
-                  <p style={{ fontSize: '0.9rem' }}><strong>Email:</strong> rupesh@agrawalkhandelwal.com</p>
+                <h3>Quick Links</h3>
+                <Link href="/#about">About Us</Link>
+                <Link href="/services">Our Services</Link>
+                <Link href="/blog">Client Insights</Link>
+                <Link href="/#contact">Contact Us</Link>
+                <Link href="/tax-calculator">Tax Calculator</Link>
+              </div>
+
+              <div>
+                <h3>Contact Info</h3>
+                <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Nashik Office:</strong></p>
+                <p style={{ fontSize: '0.85rem', marginBottom: '1rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
+                <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Sillod Office:</strong></p>
+                <p style={{ fontSize: '0.85rem' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
+                <div style={{ marginTop: '1.5rem' }}>
+                  <a href="tel:+919527533506" style={{ fontSize: '0.9rem' }}>+91 95275 33506</a>
+                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.9rem' }}>mehul@agrawalkhandelwal.com</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="container" style={{ marginTop: '60px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '30px', textAlign: 'center', color: '#64748b', fontSize: '0.85rem' }}>
-            <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal & Associates LLP. All rights reserved.</p>
+            <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid #374151', textAlign: 'center', fontSize: '0.85rem', color: '#6b7280' }}>
+              <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal & Associates LLP. All rights reserved.</p>
+            </div>
           </div>
         </footer>
       </body>
