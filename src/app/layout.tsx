@@ -19,21 +19,48 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header className="header">
-          <div className="container nav">
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <div style={{ background: '#fff', padding: '5px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
-                <Image src="/logo.png" alt="AK & Associates" width={45} height={45} priority style={{ objectFit: 'contain' }} />
+          <div className="container nav" style={{ height: '100px' }}>
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
+              <div style={{ position: 'relative', width: '55px', height: '55px' }}>
+                <Image src="/logo.png" alt="AK & Associates" fill style={{ objectFit: 'contain' }} priority />
               </div>
-              <div className="logo-text">
-                <span style={{ display: 'block', color: 'var(--primary)', fontWeight: 900, fontSize: '1.3rem', letterSpacing: '-0.5px' }}>AGRAWAL KHANDELWAL</span>
-                <span style={{ fontSize: '0.65rem', letterSpacing: '3.5px', color: 'var(--accent)', fontWeight: 700, display: 'block', marginTop: '-2px' }}>& ASSOCIATES LLP</span>
+              <div style={{ borderLeft: '2px solid var(--border)', paddingLeft: '15px', display: 'flex', flexDirection: 'column' }}>
+                <span style={{ 
+                  fontFamily: 'Montserrat, sans-serif', 
+                  fontWeight: 900, 
+                  fontSize: '1.4rem', 
+                  lineHeight: '1', 
+                  color: 'var(--primary)',
+                  letterSpacing: '-0.5px'
+                }}>
+                  AGRAWAL KHANDELWAL
+                </span>
+                <span style={{ 
+                  fontFamily: 'Montserrat, sans-serif', 
+                  fontWeight: 700, 
+                  fontSize: '0.75rem', 
+                  letterSpacing: '3.5px', 
+                  color: 'var(--accent)',
+                  marginTop: '4px'
+                }}>
+                  & ASSOCIATES LLP
+                </span>
               </div>
             </Link>
-            <div className="nav-links">
-              <Link href="/services" className="link">Services</Link>
-              <Link href="/tax-calculator" className="link">Tax Tools</Link>
-              <Link href="/blog" className="link">Insights</Link>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.7rem 1.4rem', fontSize: '0.9rem', borderRadius: '6px' }}>Book Consultation</a>
+            
+            <div className="nav-links" style={{ gap: '3rem' }}>
+              <Link href="/services" className="link" style={{ fontSize: '1rem', fontWeight: 700 }}>SERVICES</Link>
+              <Link href="/tax-calculator" className="link" style={{ fontSize: '1rem', fontWeight: 700 }}>TAX TOOLS</Link>
+              <Link href="/blog" className="link" style={{ fontSize: '1rem', fontWeight: 700 }}>INSIGHTS</Link>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ 
+                padding: '0.8rem 1.8rem', 
+                fontSize: '0.9rem', 
+                borderRadius: '4px',
+                letterSpacing: '1px',
+                fontWeight: 800
+              }}>
+                BOOK CONSULTATION
+              </a>
             </div>
           </div>
         </header>
