@@ -104,16 +104,16 @@ export default function RootLayout({
               <div>
                 <h3>Contact Info</h3>
                 <div style={{ marginBottom: '1.5rem' }}>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--white)' }}><strong>Nashik Office:</strong></p>
-                  <p style={{ fontSize: '0.85rem', marginBottom: '5px' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
-                  <a href="tel:+919527533506" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 95275 33506</a>
-                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block' }}>mehul@agrawalkhandelwal.com</a>
+                  <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Nashik Office:</strong></p>
+                  <p style={{ fontSize: '0.85rem', marginBottom: '5px', color: '#9ca3af' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
+                  <a href="tel:+919527533506" style={{ fontSize: '0.85rem', display: 'block', margin: '0', color: '#9ca3af' }}>+91 95275 33506</a>
+                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block', color: '#9ca3af' }}>mehul@agrawalkhandelwal.com</a>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--white)' }}><strong>Sillod Office:</strong></p>
-                  <p style={{ fontSize: '0.85rem', marginBottom: '5px' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
-                  <a href="tel:+919595585953" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 95955 85953</a>
-                  <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block' }}>rupesh@agrawalkhandelwal.com</a>
+                  <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Sillod Office:</strong></p>
+                  <p style={{ fontSize: '0.85rem', marginBottom: '5px', color: '#9ca3af' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
+                  <a href="tel:+919595585953" style={{ fontSize: '0.85rem', display: 'block', margin: '0', color: '#9ca3af' }}>+91 95955 85953</a>
+                  <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block', color: '#9ca3af' }}>rupesh@agrawalkhandelwal.com</a>
                 </div>
               </div>
             </div>
