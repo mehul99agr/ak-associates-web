@@ -210,7 +210,7 @@ export default function Home() {
               {['Nashik', 'Sillod', 'Mumbai', 'Bangalore', 'Delhi', 'UAE'].map((location, idx) => (
                 <span key={idx} style={{ 
                   padding: '10px 25px', 
-                  background: '#fff', 
+                  background: 'var(--bg-card)', 
                   border: '1px solid var(--border)', 
                   borderRadius: '50px', 
                   fontWeight: 700, 
@@ -250,7 +250,7 @@ export default function Home() {
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>rupesh@agrawalkhandelwal.com</a>
             </div>
 
-            <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', color: '#fff' }}>
+            <div className="card" style={{ textAlign: 'center', background: 'var(--primary)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📅</div>
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#fff' }}>Consultation</h3>
               <p style={{ color: '#d1d5db', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
