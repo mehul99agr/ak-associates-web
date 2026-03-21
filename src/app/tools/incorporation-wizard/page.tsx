@@ -74,7 +74,7 @@ export default function IncorporationWizard() {
               <div style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '20px', fontSize: '0.9rem' }}>
                 QUESTION {step + 1} OF {questions.length}
               </div>
-              <h2 style={{ fontSize: '1.4rem', marginBottom: '30px', lineHeight: 1.4 }}>{questions[step].q}</h2>
+              <h2 style={{ fontSize: '1.4rem', marginBottom: '30px', lineHeight: 1.4, color: 'var(--text-main)' }}>{questions[step].q}</h2>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 {questions[step].options.map((opt, i) => (
@@ -83,7 +83,7 @@ export default function IncorporationWizard() {
                     onClick={() => handleAnswer(opt.value)}
                     style={{
                       padding: '15px 20px',
-                      background: '#fff',
+                      background: 'var(--bg-card)',
                       border: '2px solid var(--border)',
                       borderRadius: '8px',
                       fontSize: '1rem',
