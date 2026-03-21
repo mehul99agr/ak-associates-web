@@ -306,3 +306,39 @@ a {
   .section { padding: 4rem 0; }
   .hero { padding: 8rem 0 5rem; }
 }
+
+/* --- Dark Mode --- */
+.dark {
+  --primary: #60a5fa;
+  --secondary: #0f172a;
+  --accent: #ef4444;
+  --accent-hover: #dc2626;
+  --text-main: #f3f4f6;
+  --text-light: #9ca3af;
+  --bg-main: #0f172a;
+  --bg-surface: #1e293b;
+  --border: #334155;
+}
+
+.dark .card {
+  background: #1e293b;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.dark .header {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.dark .nav-links a.link {
+  color: #e2e8f0;
+}
+
+.dark .section-badge {
+  background: rgba(96, 165, 250, 0.1);
+  color: var(--primary);
+}
+
+.dark input, .dark select {
+  background: #0f172a !important;
+  color: #f3f4f6;
+}

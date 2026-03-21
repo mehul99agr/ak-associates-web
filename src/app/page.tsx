@@ -105,11 +105,13 @@ export default function Home() {
                 Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and enables them to optimize tax strategies while maintaining strict compliance.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left' }}>
-                <strong style={{ fontSize: '0.9rem', color: 'var(--primary)' }}>Specializations:</strong>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--primary)' }}>Specializations & Certifications:</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.5rem', fontSize: '0.85rem' }}>
                   <li style={{ marginBottom: '5px' }}>✓ International Tax Planning</li>
                   <li style={{ marginBottom: '5px' }}>✓ FEMA & RBI Compliance</li>
                   <li style={{ marginBottom: '5px' }}>✓ M&A Advisory</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 Concurrent Audit by ICAI</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 UAE Corporate Taxation by ICAI</li>
                 </ul>
               </div>
             </div>
@@ -166,35 +168,58 @@ export default function Home() {
       <section className="section bg-surface" id="testimonials">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <span className="section-badge">Success Stories</span>
-            <h2 className="section-title">What Our Clients Say</h2>
+            <span className="section-badge">Proven Results</span>
+            <h2 className="section-title">Success Stories & Impact</h2>
           </div>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
-            <div className="card">
-              <p style={{ fontStyle: 'italic', marginBottom: '2rem', lineHeight: '1.8' }}>
-                &quot;Mehul&apos;s expertise in international tax planning and cross-border compliance has been invaluable for our global operations. Highly professional and reliable partner.&quot;
+            <div className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Cross-Border Tax Optimization</h3>
+              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+                Structured a tax-efficient route for a UAE-based client incorporating an Indian subsidiary, resulting in 100% regulatory compliance with DTAA benefits and an estimated 15% reduction in cross-border tax leakages.
               </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ background: 'var(--primary)', color: '#fff', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700 }}>SS</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                 <div>
-                  <h4 style={{ fontSize: '1rem' }}>Sunny Stephen</h4>
+                  <h4 style={{ fontSize: '0.9rem' }}>Sunny Stephen</h4>
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Consultant, BMG India</p>
                 </div>
               </div>
             </div>
 
-            <div className="card">
-              <p style={{ fontStyle: 'italic', marginBottom: '2rem', lineHeight: '1.8' }}>
-                &quot;Outstanding service quality and deep expertise. They provided prompt, expert guidance on complex international compliance. Our go-to advisors for all taxation.&quot;
+            <div className="card" style={{ borderLeft: '4px solid var(--primary)' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Startup Financial Strategy</h3>
+              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+                Acted as Virtual CFO for a high-growth AI startup, managing their DPIIT registration, seed-round financial modeling, and ensuring complete ROC/GST compliance, allowing the founders to focus strictly on product development.
               </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ background: 'var(--primary)', color: '#fff', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700 }}>NK</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                 <div>
-                  <h4 style={{ fontSize: '1rem' }}>Nilay Kulkarni</h4>
+                  <h4 style={{ fontSize: '0.9rem' }}>Nilay Kulkarni</h4>
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Founder, Vitt AI</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Global Reach Map UI */}
+          <div style={{ marginTop: '6rem', textAlign: 'center' }}>
+            <h2 className="section-title" style={{ fontSize: '2rem' }}>Our Global Reach</h2>
+            <p style={{ color: 'var(--text-light)', marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>
+              Headquartered in Maharashtra with a footprint that extends across India and key international jurisdictions.
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
+              {['Nashik', 'Sillod', 'Mumbai', 'Bangalore', 'Delhi', 'UAE'].map((location, idx) => (
+                <span key={idx} style={{ 
+                  padding: '10px 25px', 
+                  background: '#fff', 
+                  border: '1px solid var(--border)', 
+                  borderRadius: '50px', 
+                  fontWeight: 700, 
+                  color: 'var(--primary)',
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
+                }}>
+                  📍 {location}
+                </span>
+              ))}
             </div>
           </div>
         </div>

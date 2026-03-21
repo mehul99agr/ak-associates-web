@@ -42,6 +42,33 @@ export default function Blog() {
             Expert analysis on the latest regulatory shifts, tax optimizations, and strategic financial growth.
           </p>
         </div>
+
+        {/* Compliance Calendar */}
+        <div className="card" style={{ marginBottom: '60px', borderLeft: '4px solid var(--accent)' }}>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Upcoming Compliance Deadlines (March 2026)</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
+            <div style={{ background: 'var(--bg-surface)', padding: '20px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.2rem', marginBottom: '5px' }}>7th March</div>
+              <div style={{ fontWeight: 600 }}>TDS/TCS Deposit</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>Due date for deposit of Tax deducted/collected for Feb 2026.</div>
+            </div>
+            <div style={{ background: 'var(--bg-surface)', padding: '20px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.2rem', marginBottom: '5px' }}>11th March</div>
+              <div style={{ fontWeight: 600 }}>GSTR-1 Filing</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>Due date for filing GSTR-1 for Feb 2026.</div>
+            </div>
+            <div style={{ background: 'var(--bg-surface)', padding: '20px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.2rem', marginBottom: '5px' }}>15th March</div>
+              <div style={{ fontWeight: 600 }}>Advance Tax</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>4th instalment of advance tax for FY 2025-26.</div>
+            </div>
+            <div style={{ background: 'var(--bg-surface)', padding: '20px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.2rem', marginBottom: '5px' }}>20th March</div>
+              <div style={{ fontWeight: 600 }}>GSTR-3B Filing</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>Due date for filing GSTR-3B for Feb 2026.</div>
+            </div>
+          </div>
+        </div>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px' }}>
           {posts.map((post, i) => (

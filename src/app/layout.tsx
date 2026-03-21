@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import ThemeToggle from './ThemeToggle'
 
 export const metadata: Metadata = {
   title: 'Agrawal Khandelwal & Associates LLP | Top Chartered Accountants in India',
@@ -32,10 +33,12 @@ export default function RootLayout({
               </div>
             </Link>
             
-            <div className="nav-links" style={{ gap: '2.5rem' }}>
+            <div className="nav-links" style={{ gap: '2.5rem', display: 'flex', alignItems: 'center' }}>
               <Link href="/services" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>SERVICES</Link>
-              <Link href="/tax-calculator" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>TAX TOOLS</Link>
+              <Link href="/startups" className="link" style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--accent)' }}>STARTUPS</Link>
+              <Link href="/tools" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>TOOLS</Link>
               <Link href="/blog" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>INSIGHTS</Link>
+              <ThemeToggle />
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ 
                 padding: '0.7rem 1.5rem', 
                 fontSize: '0.85rem', 
@@ -63,14 +66,20 @@ export default function RootLayout({
                     style={{ objectFit: 'contain', objectPosition: 'left', filter: 'brightness(0) invert(1)' }} 
                   />
                 </div>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#9ca3af' }}>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#9ca3af', marginBottom: '1.5rem' }}>
                   Professional Chartered Accountant services specializing in Tax Planning, International Taxation, Audit, and Financial Consulting for businesses across India.
                 </p>
-                <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
-                  <div style={{ background: '#fff', padding: '5px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
-                    <Image src="/ca-logo.png" alt="ICAI" width={35} height={35} />
+                <div style={{ background: 'rgba(255,255,255,0.05)', padding: '15px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '10px' }}>
+                    <div style={{ background: '#fff', padding: '5px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                      <Image src="/ca-logo.png" alt="ICAI" width={30} height={30} />
+                    </div>
+                    <span style={{ fontSize: '0.85rem', color: '#e2e8f0', fontWeight: 700 }}>Certifications</span>
                   </div>
-                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Member of the Institute of Chartered Accountants of India</span>
+                  <ul style={{ fontSize: '0.8rem', color: '#94a3b8', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <li>✓ Concurrent Audit by ICAI</li>
+                    <li>✓ UAE Corporate Taxation by ICAI</li>
+                  </ul>
                 </div>
               </div>
 
@@ -80,16 +89,16 @@ export default function RootLayout({
                 <Link href="/services">International Taxation</Link>
                 <Link href="/services">Audit & Assurance</Link>
                 <Link href="/services">Virtual CFO Services</Link>
-                <Link href="/services">Business Incorporation</Link>
+                <Link href="/startups">Startup Advisory</Link>
               </div>
 
               <div>
                 <h3>Quick Links</h3>
                 <Link href="/#about">About Us</Link>
                 <Link href="/services">Our Services</Link>
+                <Link href="/tools">Tax & Finance Tools</Link>
                 <Link href="/blog">Client Insights</Link>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
-                <Link href="/tax-calculator">Tax Calculator</Link>
               </div>
 
               <div>
