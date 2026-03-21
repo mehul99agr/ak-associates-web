@@ -16,7 +16,7 @@ export default function UAECorporateTaxBlog() {
         
         <article className="card" style={{ maxWidth: '900px', margin: '0 auto', padding: '4rem' }}>
           <div style={{ marginBottom: '3rem' }}>
-            <span className="section-badge" style={{ background: 'var(--primary)', color: 'var(--white)' }}>International Tax</span>
+            <span className="section-badge" style={{ background: 'var(--primary)', color: 'white' }}>International Tax</span>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
               UAE Corporate Tax: Impact on Indian Businesses
             </h1>
@@ -50,7 +50,7 @@ export default function UAECorporateTaxBlog() {
 
             <div style={{ background: 'var(--bg-surface)', padding: '2rem', borderRadius: 'var(--radius-md)', borderLeft: '5px solid var(--accent)', margin: '3rem 0' }}>
               <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Key Consideration: Free Zone Entities</h3>
-              <p style={{ fontStyle: 'italic' }}>
+              <p style={{ fontStyle: 'italic', color: 'var(--text-main)' }}>
                 While "Qualifying Free Zone Persons" may still enjoy a 0% rate on qualifying income, the definition of "qualifying" is strict. Indian firms operating in JAFZA, DMCC, or DIFC must review their revenue streams to ensure they don't inadvertently trigger the 9% rate on their entire global operations.
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function UAECorporateTaxBlog() {
           </div>
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
-            <h3 style={{ marginBottom: '1.5rem' }}>Discuss your UAE operations with our experts</h3>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-main)' }}>Discuss your UAE operations with our experts</h3>
             <a href="https://wa.me/919527533506" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               Schedule an International Tax Call
             </a>

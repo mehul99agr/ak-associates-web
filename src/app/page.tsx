@@ -99,7 +99,7 @@ export default function Home() {
               <div style={{ width: '150px', height: '150px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
                 <Image src="/mehul.jpg" alt="CA Mehul Agrawal" width={150} height={150} style={{ objectFit: 'cover' }} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>CA Mehul Agrawal</h3>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>CA Mehul Agrawal</h3>
               <p style={{ color: 'var(--text-light)', fontWeight: 600, marginBottom: '1.5rem' }}>Partner & International Tax Expert</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and enables them to optimize tax strategies while maintaining strict compliance.
@@ -107,9 +107,9 @@ export default function Home() {
               <div style={{ marginTop: '1.5rem', textAlign: 'left' }}>
                 <strong style={{ fontSize: '0.9rem', color: 'var(--primary)' }}>Specializations & Certifications:</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.5rem', fontSize: '0.85rem' }}>
-                  <li style={{ marginBottom: '5px' }}>✓ International Tax Planning</li>
-                  <li style={{ marginBottom: '5px' }}>✓ FEMA & RBI Compliance</li>
-                  <li style={{ marginBottom: '5px' }}>✓ M&A Advisory</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--text-light)' }}>✓ International Tax Planning</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--text-light)' }}>✓ FEMA & RBI Compliance</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--text-light)' }}>✓ M&A Advisory</li>
                   <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 Concurrent Audits of Bank</li>
                   <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 UAE Corporate Taxation</li>
                 </ul>
@@ -120,7 +120,7 @@ export default function Home() {
               <div style={{ width: '150px', height: '150px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
                 <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal" width={150} height={150} style={{ objectFit: 'cover' }} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>CA Rupesh Khandelwal</h3>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>CA Rupesh Khandelwal</h3>
               <p style={{ color: 'var(--text-light)', fontWeight: 600, marginBottom: '1.5rem' }}>Partner & Domestic Tax Specialist</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Rupesh brings valuable insights from leading firms, including Deloitte. His expertise spans Automobiles, IT, and Pharma. He has a strong track record in tax planning, regulatory compliance, and representing clients before tax authorities.
@@ -128,9 +128,9 @@ export default function Home() {
               <div style={{ marginTop: '1.5rem', textAlign: 'left' }}>
                 <strong style={{ fontSize: '0.9rem', color: 'var(--primary)' }}>Specializations:</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.5rem', fontSize: '0.85rem' }}>
-                  <li style={{ marginBottom: '5px' }}>✓ Domestic Tax Planning</li>
-                  <li style={{ marginBottom: '5px' }}>✓ Statutory & Internal Audits</li>
-                  <li style={{ marginBottom: '5px' }}>✓ Business Consulting</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--text-light)' }}>✓ Domestic Tax Planning</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--text-light)' }}>✓ Statutory & Internal Audits</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--text-light)' }}>✓ Business Consulting</li>
                 </ul>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
             {services.map((s, i) => (
               <div key={i} className="card" style={{ position: 'relative', overflow: 'hidden' }}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>{s.icon}</div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>{s.title}</h3>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--primary)' }}>{s.title}</h3>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', marginBottom: '1.5rem' }}>{s.desc}</p>
                 <ul style={{ listStyle: 'none', fontSize: '0.9rem' }}>
                   {s.features.map((f, j) => (
@@ -174,26 +174,26 @@ export default function Home() {
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
             <div className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Cross-Border Tax Optimization</h3>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--primary)' }}>Cross-Border Tax Optimization</h3>
               <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
                 Structured a tax-efficient route for a UAE-based client incorporating an Indian subsidiary, resulting in 100% regulatory compliance with DTAA benefits and an estimated 15% reduction in cross-border tax leakages.
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                 <div>
-                  <h4 style={{ fontSize: '0.9rem' }}>Sunny Stephen</h4>
+                  <h4 style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>Sunny Stephen</h4>
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Consultant, BMG India</p>
                 </div>
               </div>
             </div>
 
             <div className="card" style={{ borderLeft: '4px solid var(--primary)' }}>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Startup Financial Strategy</h3>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--primary)' }}>Startup Financial Strategy</h3>
               <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
                 Acted as Virtual CFO for a high-growth AI startup, managing their DPIIT registration, seed-round financial modeling, and ensuring complete ROC/GST compliance, allowing the founders to focus strictly on product development.
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                 <div>
-                  <h4 style={{ fontSize: '0.9rem' }}>Nilay Kulkarni</h4>
+                  <h4 style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>Nilay Kulkarni</h4>
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Founder, Vitt AI</p>
                 </div>
               </div>
@@ -238,7 +238,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📍</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Nashik Office</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--primary)' }}>Nashik Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
               <a href="tel:+919527533506" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95275 33506</a>
               <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.5rem', color: 'var(--primary)', fontWeight: 700 }}>mehul@agrawalkhandelwal.com</a>
@@ -246,7 +246,7 @@ export default function Home() {
 
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>🏢</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Sillod Office</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--primary)' }}>Sillod Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
               <a href="tel:+919595585953" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95955 85953</a>
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.5rem', color: 'var(--primary)', fontWeight: 700 }}>rupesh@agrawalkhandelwal.com</a>
@@ -254,8 +254,8 @@ export default function Home() {
 
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📅</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--white)' }}>Consultation</h3>
-              <p style={{ color: 'var(--footer-text)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'white' }}>Consultation</h3>
+              <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>Message on WhatsApp</a>
             </div>
           </div>

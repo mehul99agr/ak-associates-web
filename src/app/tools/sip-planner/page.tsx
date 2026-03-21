@@ -25,7 +25,7 @@ export default function SIPPlanner() {
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
           <h4 className="section-badge">Financial Tools</h4>
-          <h1 className="section-title">SIP & Wealth Planner</h1>
+          <h1 className="section-title" style={{ color: 'var(--primary)' }}>SIP & Wealth Planner</h1>
           <p style={{ color: 'var(--text-light)', fontSize: '1.1rem' }}>
             Visualize the power of compounding. Plan your mutual fund investments to reach your long-term financial goals.
           </p>

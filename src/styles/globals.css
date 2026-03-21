@@ -104,6 +104,10 @@ a {
   color: #fff !important;
 }
 
+.dark .btn-primary {
+  background: var(--accent);
+}
+
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 15px -3px rgba(10, 46, 91, 0.3);
@@ -207,6 +211,10 @@ a {
   overflow: hidden;
 }
 
+.dark .hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -241,7 +249,7 @@ a {
 
 .hero p {
   font-size: 1.25rem;
-  color: #d1d5db;
+  color: #e2e8f0;
   max-width: 800px;
   margin: 0 auto 3rem;
   line-height: 1.8;
@@ -332,6 +340,7 @@ input, select {
   color: var(--text-main) !important;
   border: 1px solid var(--border) !important;
 }
+
 
 @media (max-width: 768px) {
   .nav-links { display: none; }

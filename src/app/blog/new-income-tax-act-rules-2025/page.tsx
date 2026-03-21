@@ -16,7 +16,7 @@ export default function NewTaxActBlog() {
         
         <article className="card" style={{ maxWidth: '900px', margin: '0 auto', padding: '4rem' }}>
           <div style={{ marginBottom: '3rem' }}>
-            <span className="section-badge" style={{ background: 'var(--primary)', color: 'var(--white)' }}>Tax Reform</span>
+            <span className="section-badge" style={{ background: 'var(--primary)', color: 'white' }}>Tax Reform</span>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
               Deciphering the New Income Tax Act & Rules 2025
             </h1>
@@ -50,7 +50,7 @@ export default function NewTaxActBlog() {
 
             <div style={{ background: 'var(--bg-surface)', padding: '2rem', borderRadius: 'var(--radius-md)', borderLeft: '5px solid var(--accent)', margin: '3rem 0' }}>
               <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Strategic Takeaway for Businesses</h3>
-              <p style={{ fontStyle: 'italic' }}>
+              <p style={{ fontStyle: 'italic', color: 'var(--text-main)' }}>
                 With the simplification of rules comes an increased responsibility for "Data Integrity." Companies must ensure their accounting systems are seamlessly integrated with tax portals, as the margin for manual error in filings has significantly narrowed.
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function NewTaxActBlog() {
           </div>
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
-            <h3 style={{ marginBottom: '1.5rem' }}>Want a personalized impact analysis?</h3>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-main)' }}>Want a personalized impact analysis?</h3>
             <a href="https://wa.me/919527533506" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               Book a Consultation
             </a>
