@@ -240,20 +240,22 @@ export default function Home() {
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📍</div>
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Nashik Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
-              <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>mehul@agrawalkhandelwal.com</a>
+              <a href="tel:+919527533506" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95275 33506</a>
+              <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.5rem', color: 'var(--primary)', fontWeight: 700 }}>mehul@agrawalkhandelwal.com</a>
             </div>
 
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>🏢</div>
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Sillod Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
-              <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>rupesh@agrawalkhandelwal.com</a>
+              <a href="tel:+919595585953" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95955 85953</a>
+              <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.5rem', color: 'var(--primary)', fontWeight: 700 }}>rupesh@agrawalkhandelwal.com</a>
             </div>
 
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📅</div>
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--white)' }}>Consultation</h3>
-              <p style={{ color: '#e5e7eb', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
+              <p style={{ color: 'var(--footer-text)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>Message on WhatsApp</a>
             </div>
           </div>

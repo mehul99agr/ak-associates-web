@@ -25,19 +25,11 @@ export default function GSTSearchPage() {
        * -------------------------
        * To enable real-time data, replace the demo logic below with a call to a service 
        * like Razorpay, Zoop, or the official GST portal API.
-       * 
-       * Example with a generic provider:
-       * const response = await fetch(`https://api.provider.com/v1/gstin/${gstin}`, {
-       *   headers: { 'Authorization': `Bearer ${process.env.NEXT_PUBLIC_GST_API_KEY}` }
-       * });
-       * const data = await response.json();
        */
 
       // DEMO / PLACEHOLDER LOGIC
-      // Simulate network delay
       await new Promise(resolve => setTimeout(resolve, 1500));
 
-      // Mock Data (In production, this 'data' would come from the fetch above)
       const mockData = {
         legalName: 'AGRAWAL KHANDELWAL & ASSOCIATES LLP',
         tradeName: 'AK & ASSOCIATES',
@@ -78,7 +70,7 @@ export default function GSTSearchPage() {
                 onChange={(e) => setGstin(e.target.value.toUpperCase())}
                 placeholder="e.g. 27AAAAA0000A1Z5"
                 maxLength={15}
-                style={{ flex: 1, minWidth: '200px', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1.1rem', textTransform: 'uppercase' }}
+                style={{ flex: 1, minWidth: '200px', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1.1rem', textTransform: 'uppercase', background: 'var(--bg-card)', color: 'var(--text-main)' }}
               />
               <button type="submit" className="btn btn-primary" disabled={loading} style={{ minWidth: '140px' }}>
                 {loading ? 'Searching...' : 'Verify Now'}
@@ -91,7 +83,7 @@ export default function GSTSearchPage() {
             <div style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-card)', borderRadius: '12px', border: '2px solid var(--primary)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', borderBottom: '1px solid var(--border)', paddingBottom: '15px' }}>
                 <h3 style={{ fontSize: '1.4rem', color: 'var(--primary)' }}>Business Entity Found</h3>
-                <span style={{ padding: '5px 15px', background: '#dcfce7', color: '#059669', borderRadius: '50px', fontSize: '0.85rem', fontWeight: 800 }}>
+                <span style={{ padding: '5px 15px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '50px', fontSize: '0.85rem', fontWeight: 800 }}>
                   {result.status.toUpperCase()}
                 </span>
               </div>
@@ -127,7 +119,7 @@ export default function GSTSearchPage() {
           )}
 
           <div style={{ marginTop: '40px', padding: '20px', borderRadius: '12px', border: '1px dashed var(--border)', background: 'var(--bg-surface)' }}>
-            <h4 style={{ fontSize: '0.9rem', marginBottom: '10px' }}>API Configuration (For Admin)</h4>
+            <h4 style={{ fontSize: '0.9rem', marginBottom: '10px', color: 'var(--primary)' }}>API Configuration (For Admin)</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: 1.6 }}>
               This tool is currently in <strong>Demo Mode</strong>. To connect to the live GSTN database, please provide your API endpoint and keys in the <code>handleSearch</code> function within <code>src/app/tools/gst-search/page.tsx</code>.
             </p>

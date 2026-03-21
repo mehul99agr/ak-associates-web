@@ -66,7 +66,7 @@ export default function RootLayout({
                     style={{ objectFit: 'contain', objectPosition: 'left', filter: 'brightness(0) invert(1)' }} 
                   />
                 </div>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#9ca3af', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: 'var(--footer-text)', marginBottom: '1.5rem' }}>
                   Professional Chartered Accountant services specializing in Tax Planning, International Taxation, Audit, and Financial Consulting for businesses across India.
                 </p>
                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '15px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -74,9 +74,9 @@ export default function RootLayout({
                     <div style={{ background: '#fff', padding: '5px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
                       <Image src="/ca-logo.png" alt="ICAI" width={30} height={30} />
                     </div>
-                    <span style={{ fontSize: '0.85rem', color: '#e2e8f0', fontWeight: 700 }}>Certifications</span>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--white)', fontWeight: 700 }}>Certifications</span>
                   </div>
-                  <ul style={{ fontSize: '0.8rem', color: '#94a3b8', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  <ul style={{ fontSize: '0.8rem', color: 'var(--footer-text)', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                     <li>✓ Concurrent Audits of Bank</li>
                     <li>✓ UAE Corporate Taxation</li>
                   </ul>
@@ -104,21 +104,21 @@ export default function RootLayout({
               <div>
                 <h3>Contact Info</h3>
                 <div style={{ marginBottom: '1.5rem' }}>
-                  <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Nashik Office:</strong></p>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--white)' }}><strong>Nashik Office:</strong></p>
                   <p style={{ fontSize: '0.85rem', marginBottom: '5px' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
                   <a href="tel:+919527533506" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 95275 33506</a>
                   <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block' }}>mehul@agrawalkhandelwal.com</a>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Sillod Office:</strong></p>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--white)' }}><strong>Sillod Office:</strong></p>
                   <p style={{ fontSize: '0.85rem', marginBottom: '5px' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
-                  <a href="tel:+919834242686" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 98342 42686</a>
+                  <a href="tel:+919595585953" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 95955 85953</a>
                   <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block' }}>rupesh@agrawalkhandelwal.com</a>
                 </div>
               </div>
             </div>
             
-            <div style={{ marginTop: '4rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', fontSize: '0.85rem', color: '#64748b' }}>
+            <div style={{ marginTop: '4rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-light)' }}>
               <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal & Associates LLP. All rights reserved.</p>
             </div>
           </div>

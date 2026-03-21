@@ -57,7 +57,7 @@ export default function CapitalGainsCalculator() {
               <select 
                 value={assetType}
                 onChange={(e) => setAssetType(e.target.value)}
-                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: '#fff' }}
+                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: 'var(--bg-card)', color: 'var(--text-main)' }}
               >
                 <option value="equity">Equity Shares / Equity Mutual Funds</option>
                 <option value="property">Real Estate / Property</option>
@@ -69,14 +69,14 @@ export default function CapitalGainsCalculator() {
                 <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Purchase Price (₹)</label>
                 <input 
                   type="number" value={purchasePrice || ''} onChange={(e) => setPurchasePrice(Number(e.target.value))}
-                  style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)' }}
+                  style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
                 />
               </div>
               <div>
                 <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Sale Price (₹)</label>
                 <input 
                   type="number" value={salePrice || ''} onChange={(e) => setSalePrice(Number(e.target.value))}
-                  style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)' }}
+                  style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
                 />
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function CapitalGainsCalculator() {
               <input 
                 type="number" value={holdingPeriodMonths || ''} onChange={(e) => setHoldingPeriodMonths(Number(e.target.value))}
                 placeholder="e.g. 15"
-                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)' }}
+                style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
               />
             </div>
           </div>
@@ -104,11 +104,11 @@ export default function CapitalGainsCalculator() {
                 <>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                     <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Total Gain</span>
-                    <span style={{ fontWeight: 700, fontSize: '1.2rem', color: '#10b981' }}>₹{result.gain.toLocaleString('en-IN')}</span>
+                    <span style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--accent)' }}>₹{result.gain.toLocaleString('en-IN')}</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                     <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Nature of Gain</span>
-                    <span style={{ fontWeight: 700, background: '#e0e7ff', color: '#4338ca', padding: '2px 10px', borderRadius: '4px' }}>
+                    <span style={{ fontWeight: 700, background: 'var(--primary)', color: 'var(--white)', padding: '2px 10px', borderRadius: '4px' }}>
                       {result.isLTCG ? 'Long-Term (LTCG)' : 'Short-Term (STCG)'}
                     </span>
                   </div>

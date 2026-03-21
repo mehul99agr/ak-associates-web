@@ -45,22 +45,22 @@ export default function StartupsPage() {
   return (
     <div style={{ paddingTop: '100px' }}>
       {/* Hero Section */}
-      <section className="section" style={{ background: 'var(--primary)', color: '#fff', textAlign: 'center', padding: '6rem 0' }}>
+      <section className="section" style={{ background: 'var(--primary)', color: 'var(--white)', textAlign: 'center', padding: '6rem 0' }}>
         <div className="container">
-          <span className="section-badge" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)' }}>
+          <span className="section-badge" style={{ background: 'rgba(255,255,255,0.1)', color: 'var(--white)', border: '1px solid rgba(255,255,255,0.2)' }}>
             Dedicated Startup Desk
           </span>
-          <h1 style={{ color: '#fff', fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
+          <h1 style={{ color: 'var(--white)', fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
             Fueling Your Growth from Seed to Scale
           </h1>
-          <p style={{ fontSize: '1.2rem', color: '#d1d5db', maxWidth: '700px', margin: '0 auto 2.5rem' }}>
+          <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)', maxWidth: '700px', margin: '0 auto 2.5rem' }}>
             Navigate the complexities of scaling a startup. We handle your compliances, valuations, and financial strategies so you can focus on building your product.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff' }}>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               Book a Strategy Call
             </a>
-            <Link href="/tax-calculator" className="btn btn-secondary">
+            <Link href="/tools" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
               Explore Tools
             </Link>
           </div>
@@ -123,12 +123,12 @@ export default function StartupsPage() {
       {/* Call to Action */}
       <section className="section bg-surface">
         <div className="container">
-          <div className="card" style={{ background: 'var(--primary)', color: '#fff', textAlign: 'center', padding: '4rem 2rem' }}>
-            <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Ready to Scale Your Startup?</h2>
-            <p style={{ color: '#d1d5db', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
+          <div className="card" style={{ background: 'var(--primary)', color: 'var(--white)', textAlign: 'center', padding: '4rem 2rem' }}>
+            <h2 style={{ color: 'var(--white)', fontSize: '2rem', marginBottom: '1rem' }}>Ready to Scale Your Startup?</h2>
+            <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
               Let&apos;s discuss your current stage and how our customized financial strategies can help you secure funding and maintain compliance.
             </p>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontSize: '1.1rem' }}>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontSize: '1.1rem' }}>
               Consult an Expert Today
             </a>
           </div>

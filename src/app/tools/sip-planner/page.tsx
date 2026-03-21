@@ -36,7 +36,7 @@ export default function SIPPlanner() {
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
                 <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Monthly Investment</label>
-                <span style={{ fontWeight: 700 }}>₹{monthlyInvestment.toLocaleString('en-IN')}</span>
+                <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>₹{monthlyInvestment.toLocaleString('en-IN')}</span>
               </div>
               <input 
                 type="range" min="500" max="500000" step="500"
@@ -48,7 +48,7 @@ export default function SIPPlanner() {
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
                 <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Expected Return Rate (p.a)</label>
-                <span style={{ fontWeight: 700 }}>{expectedReturnRate}%</span>
+                <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{expectedReturnRate}%</span>
               </div>
               <input 
                 type="range" min="1" max="30" step="0.5"
@@ -60,7 +60,7 @@ export default function SIPPlanner() {
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
                 <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Time Period</label>
-                <span style={{ fontWeight: 700 }}>{years} Years</span>
+                <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{years} Years</span>
               </div>
               <input 
                 type="range" min="1" max="40" step="1"
@@ -76,7 +76,7 @@ export default function SIPPlanner() {
             <div style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                 <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Total Investment</span>
-                <span style={{ fontWeight: 700, fontSize: '1.2rem' }}>₹{Math.round(result.invested).toLocaleString('en-IN')}</span>
+                <span style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--text-main)' }}>₹{Math.round(result.invested).toLocaleString('en-IN')}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                 <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Estimated Wealth Gain</span>

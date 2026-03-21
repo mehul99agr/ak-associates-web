@@ -86,7 +86,7 @@ export default function Blog() {
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px' }}>
           {posts.map((post, i) => (
-            <div key={i} className="service-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '40px' }}>
+            <div key={i} className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
                   <span style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.8rem', textTransform: 'uppercase' }}>{post.category}</span>
@@ -95,7 +95,7 @@ export default function Blog() {
                 <h2 style={{ fontSize: '1.6rem', marginBottom: '15px', lineHeight: 1.3 }}>{post.title}</h2>
                 <p style={{ color: 'var(--text-light)', marginBottom: '30px' }}>{post.summary}</p>
               </div>
-              <Link href={`/blog/${post.slug}`} className="service-link" style={{ borderTop: '1px solid var(--border)', paddingTop: '20px' }}>
+              <Link href={`/blog/${post.slug}`} style={{ borderTop: '1px solid var(--border)', paddingTop: '20px', color: 'var(--primary)', fontWeight: 700 }}>
                 Read Full Insight <span style={{ marginLeft: '5px' }}>&rarr;</span>
               </Link>
             </div>
@@ -105,9 +105,9 @@ export default function Blog() {
         <div className="cta-section" style={{ background: 'var(--primary)', color: 'var(--white)', textAlign: 'center', marginTop: '100px', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>
           <h2 style={{ color: 'var(--white)' }}>Don't Miss a Single Update.</h2>
           <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '40px' }}>Join 500+ professionals receiving our monthly regulatory digest.</p>
-          <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', maxWidth: '500px', margin: '0 auto' }}>
-            <input type="email" placeholder="Your Email Address" style={{ padding: '14px', borderRadius: '4px', border: 'none', flex: 1, background: 'white', color: 'black' }} />
-            <button className="btn btn-primary" style={{ background: 'var(--accent)', color: 'white' }}>Subscribe</button>
+          <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', maxWidth: '500px', margin: '0 auto', flexWrap: 'wrap' }}>
+            <input type="email" placeholder="Your Email Address" style={{ padding: '14px', borderRadius: '4px', border: 'none', flex: 1, minWidth: '200px' }} />
+            <button className="btn btn-primary" style={{ background: 'var(--accent)', color: 'var(--white)' }}>Subscribe</button>
           </div>
         </div>
       </div>
