@@ -3,6 +3,13 @@ import Link from 'next/link'
 export default function Blog() {
   const posts = [
     { 
+      title: "Deciphering the New Income Tax Act & Rules 2025", 
+      slug: "new-income-tax-act-rules-2025",
+      date: "March 20, 2026", 
+      category: "Tax Reform",
+      summary: "An in-depth look at the proposed structural changes in the Income Tax Act, focusing on simplification and the new computational rules." 
+    },
+    { 
       title: "Understanding the New Tax Regime (FY 2025-26)", 
       slug: "understanding-new-tax-regime-2025-26",
       date: "March 18, 2026", 
@@ -15,6 +22,13 @@ export default function Blog() {
       date: "March 12, 2026", 
       category: "Corporate Law",
       summary: "Navigating the complex landscape of MCA filings, GST returns, and initial FEMA compliance for newly incorporated entities." 
+    },
+    { 
+      title: "UAE Corporate Tax: Impact on Indian Businesses", 
+      slug: "uae-corporate-tax-indian-impact",
+      date: "March 08, 2026", 
+      category: "International Tax",
+      summary: "With the implementation of Corporate Tax in UAE, how should Indian businesses with Gulf operations restructure their holdings?" 
     },
     { 
       title: "Navigating International Taxation & DTAA", 

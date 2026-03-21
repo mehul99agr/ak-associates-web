@@ -252,8 +252,8 @@ export default function Home() {
 
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>📅</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#fff' }}>Consultation</h3>
-              <p style={{ color: '#d1d5db', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--white)' }}>Consultation</h3>
+              <p style={{ color: '#e5e7eb', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help thrive your business.</p>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>Message on WhatsApp</a>
             </div>
           </div>

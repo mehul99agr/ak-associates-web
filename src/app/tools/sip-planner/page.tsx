@@ -39,7 +39,7 @@ export default function SIPPlanner() {
                 <span style={{ fontWeight: 700 }}>₹{monthlyInvestment.toLocaleString('en-IN')}</span>
               </div>
               <input 
-                type="range" min="500" max="100000" step="500"
+                type="range" min="500" max="500000" step="500"
                 value={monthlyInvestment} onChange={(e) => setMonthlyInvestment(Number(e.target.value))}
                 style={{ width: '100%' }}
               />

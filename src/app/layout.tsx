@@ -103,13 +103,17 @@ export default function RootLayout({
 
               <div>
                 <h3>Contact Info</h3>
-                <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Nashik Office:</strong></p>
-                <p style={{ fontSize: '0.85rem', marginBottom: '1rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
-                <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Sillod Office:</strong></p>
-                <p style={{ fontSize: '0.85rem' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
-                <div style={{ marginTop: '1.5rem' }}>
-                  <a href="tel:+919527533506" style={{ fontSize: '0.9rem', display: 'block', marginBottom: '5px' }}>+91 95275 33506</a>
-                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.9rem', display: 'block' }}>mehul@agrawalkhandelwal.com</a>
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Nashik Office:</strong></p>
+                  <p style={{ fontSize: '0.85rem', marginBottom: '5px' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011</p>
+                  <a href="tel:+919527533506" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 95275 33506</a>
+                  <a href="mailto:mehul@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block' }}>mehul@agrawalkhandelwal.com</a>
+                </div>
+                <div>
+                  <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Sillod Office:</strong></p>
+                  <p style={{ fontSize: '0.85rem', marginBottom: '5px' }}>Near Datta Mandir, Tilak Nagar, Sillod - 431112</p>
+                  <a href="tel:+919834242686" style={{ fontSize: '0.85rem', display: 'block', margin: '0' }}>+91 98342 42686</a>
+                  <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ fontSize: '0.85rem', display: 'block' }}>rupesh@agrawalkhandelwal.com</a>
                 </div>
               </div>
             </div>
