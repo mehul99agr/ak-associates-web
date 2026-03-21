@@ -5,7 +5,6 @@ export default function ThemeToggle() {
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
-    // Check local storage or system preference on mount
     const savedTheme = localStorage.getItem('theme')
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     
@@ -30,20 +29,7 @@ export default function ThemeToggle() {
   return (
     <button 
       onClick={toggleTheme}
-      style={{
-        background: 'transparent',
-        border: '1px solid var(--border)',
-        borderRadius: '50%',
-        width: '40px',
-        height: '40px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        cursor: 'pointer',
-        fontSize: '1.2rem',
-        color: 'var(--text-main)',
-        transition: 'var(--transition)'
-      }}
+      className="theme-toggle-btn"
       aria-label="Toggle Dark Mode"
     >
       {theme === 'light' ? '🌙' : '☀️'}

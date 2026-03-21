@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import Image from 'next/image'
-import ThemeToggle from './ThemeToggle'
+import Link from 'next/link'
+import Navbar from './Navbar'
 
 export const metadata: Metadata = {
   title: 'Agrawal Khandelwal & Associates LLP | Top Chartered Accountants in India',
@@ -19,46 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="header">
-          <div className="container nav" style={{ height: '100px' }}>
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
-              <div style={{ position: 'relative', height: '70px', width: '350px' }}>
-                <Image 
-                  src="/logo.png" 
-                  alt="Agrawal Khandelwal & Associates LLP" 
-                  fill 
-                  style={{ objectFit: 'contain', objectPosition: 'left' }} 
-                  priority 
-                />
-              </div>
-            </Link>
-            
-            <div className="nav-links" style={{ gap: '2.5rem', display: 'flex', alignItems: 'center' }}>
-              <Link href="/services" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>SERVICES</Link>
-              <Link href="/startups" className="link" style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--accent)' }}>STARTUPS</Link>
-              <Link href="/tools" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>TOOLS</Link>
-              <Link href="/blog" className="link" style={{ fontSize: '0.9rem', fontWeight: 700 }}>INSIGHTS</Link>
-              <ThemeToggle />
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ 
-                padding: '0.7rem 1.5rem', 
-                fontSize: '0.85rem', 
-                borderRadius: '4px',
-                letterSpacing: '0.5px',
-                fontWeight: 800
-              }}>
-                BOOK CONSULTATION
-              </a>
-            </div>
-          </div>
-        </header>
+        <Navbar />
         
         <main>{children}</main>
 
         <footer className="footer">
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem' }}>
-              <div>
-                <div style={{ position: 'relative', height: '50px', width: '250px', marginBottom: '1.5rem' }}>
+            <div className="footer-grid">
+              <div className="footer-about">
+                <div className="footer-logo">
                   <Image 
                     src="/logo.png" 
                     alt="Agrawal Khandelwal & Associates LLP" 
@@ -83,7 +52,7 @@ export default function RootLayout({
                 </div>
               </div>
 
-              <div>
+              <div className="footer-links">
                 <h3>Services</h3>
                 <Link href="/services">Tax Planning & Compliance</Link>
                 <Link href="/services">International Taxation</Link>
@@ -92,7 +61,7 @@ export default function RootLayout({
                 <Link href="/startups">Startup Advisory</Link>
               </div>
 
-              <div>
+              <div className="footer-links">
                 <h3>Quick Links</h3>
                 <Link href="/#about">About Us</Link>
                 <Link href="/services">Our Services</Link>
@@ -101,7 +70,7 @@ export default function RootLayout({
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
               </div>
 
-              <div>
+              <div className="footer-contact">
                 <h3>Contact Info</h3>
                 <div style={{ marginBottom: '1.5rem' }}>
                   <p style={{ fontSize: '0.9rem', color: '#fff' }}><strong>Nashik Office:</strong></p>
