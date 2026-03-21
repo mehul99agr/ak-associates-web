@@ -110,8 +110,8 @@ export default function Home() {
                   <li style={{ marginBottom: '5px' }}>✓ International Tax Planning</li>
                   <li style={{ marginBottom: '5px' }}>✓ FEMA & RBI Compliance</li>
                   <li style={{ marginBottom: '5px' }}>✓ M&A Advisory</li>
-                  <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 Concurrent Audit by ICAI</li>
-                  <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 UAE Corporate Taxation by ICAI</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 Concurrent Audits of Bank</li>
+                  <li style={{ marginBottom: '5px', color: 'var(--accent)', fontWeight: 600 }}>🏆 UAE Corporate Taxation</li>
                 </ul>
               </div>
             </div>

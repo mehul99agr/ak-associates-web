@@ -77,8 +77,8 @@ export default function RootLayout({
                     <span style={{ fontSize: '0.85rem', color: '#e2e8f0', fontWeight: 700 }}>Certifications</span>
                   </div>
                   <ul style={{ fontSize: '0.8rem', color: '#94a3b8', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    <li>✓ Concurrent Audit by ICAI</li>
-                    <li>✓ UAE Corporate Taxation by ICAI</li>
+                    <li>✓ Concurrent Audits of Bank</li>
+                    <li>✓ UAE Corporate Taxation</li>
                   </ul>
                 </div>
               </div>

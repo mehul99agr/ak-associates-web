@@ -102,12 +102,12 @@ export default function Blog() {
           ))}
         </div>
 
-        <div className="cta-section" style={{ background: 'var(--primary)', color: '#fff', textAlign: 'center', marginTop: '100px' }}>
-          <h2 style={{ color: '#fff' }}>Don't Miss a Single Update.</h2>
-          <p style={{ color: '#cbd5e1', marginBottom: '40px' }}>Join 500+ professionals receiving our monthly regulatory digest.</p>
+        <div className="cta-section" style={{ background: 'var(--primary)', color: 'var(--white)', textAlign: 'center', marginTop: '100px', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>
+          <h2 style={{ color: 'var(--white)' }}>Don't Miss a Single Update.</h2>
+          <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '40px' }}>Join 500+ professionals receiving our monthly regulatory digest.</p>
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', maxWidth: '500px', margin: '0 auto' }}>
-            <input type="email" placeholder="Your Email Address" style={{ padding: '14px', borderRadius: '4px', border: 'none', flex: 1 }} />
-            <button className="btn btn-primary">Subscribe</button>
+            <input type="email" placeholder="Your Email Address" style={{ padding: '14px', borderRadius: '4px', border: 'none', flex: 1, background: 'white', color: 'black' }} />
+            <button className="btn btn-primary" style={{ background: 'var(--accent)', color: 'white' }}>Subscribe</button>
           </div>
         </div>
       </div>
