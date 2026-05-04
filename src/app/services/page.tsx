@@ -81,7 +81,7 @@ export default function Services() {
               Every enterprise has unique requirements. We provide bespoke financial consulting to fit your growth trajectory.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/#contact" className="btn btn-primary">Book Free Consultation</Link>
+              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
               <a href="tel:+919527533506" className="btn btn-outline">Call Our Experts</a>
             </div>
           </div>

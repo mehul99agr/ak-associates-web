@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 }
 
-const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20discuss%20services%20for%20my%20startup."
+const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
 
 const startupServices = [
   {
@@ -75,7 +75,7 @@ export default function StartupsPage() {
             Navigate the complexities of scaling a startup. We handle your compliances, valuations, and financial strategies so you can focus on building your product.
           </p>
           <div className="hero-cta" style={{ justifyContent: 'center' }}>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               Book a Strategy Call
             </a>
             <Link href="/tools" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
@@ -146,7 +146,7 @@ export default function StartupsPage() {
             <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
               Let&apos;s discuss your current stage and how our customized financial strategies can help you secure funding and maintain compliance.
             </p>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontSize: '1rem', fontWeight: 700 }}>
+            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontSize: '1rem', fontWeight: 700 }}>
               Consult an Expert Today
             </a>
           </div>

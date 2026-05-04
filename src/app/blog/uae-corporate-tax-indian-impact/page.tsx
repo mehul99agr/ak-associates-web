@@ -63,7 +63,7 @@ export default function UAECorporateTaxBlog() {
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-main)' }}>Discuss your UAE operations with our experts</h3>
-            <a href="https://wa.me/919527533506" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               Schedule an International Tax Call
             </a>
           </div>

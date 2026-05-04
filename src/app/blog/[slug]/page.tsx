@@ -63,7 +63,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ marginBottom: '0.75rem' }}>Need help with this?</h3>
               <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>Contact our partners today for a personalized consultation via WhatsApp.</p>
-              <a href="https://wa.me/919527533506" className="btn btn-primary">Book Consultation</a>
+              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Consultation</a>
             </div>
           </article>
         </div>

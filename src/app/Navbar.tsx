@@ -6,7 +6,7 @@ import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
+  const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
 
   const toggleMenu = () => setIsOpen(prev => !prev)
   const closeMenu = () => setIsOpen(false)
@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="/blog" className="link">INSIGHTS</Link>
           <ThemeToggle />
           <a
-            href={whatsappLink}
+            href={bookingLink}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
@@ -73,7 +73,7 @@ export default function Navbar() {
             <Link href="/tools" onClick={closeMenu}>TOOLS</Link>
             <Link href="/blog" onClick={closeMenu}>INSIGHTS</Link>
             <a
-              href={whatsappLink}
+              href={bookingLink}
               onClick={closeMenu}
               target="_blank"
               rel="noopener noreferrer"

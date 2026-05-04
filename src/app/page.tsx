@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com' },
 }
 
+const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
 const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
 
 const services = [
@@ -64,7 +65,7 @@ export default function Home() {
             With over five years of professional experience, we serve a diverse portfolio of clients — from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
           </p>
           <div className="hero-cta">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               Book Free Consultation
             </a>
             <Link href="/services" className="btn btn-secondary">
@@ -276,8 +277,8 @@ export default function Home() {
               <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#ffffff' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help your business thrive.</p>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
-                Message on WhatsApp
+              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
+                📅 Schedule on Google Calendar
               </a>
             </div>
           </div>

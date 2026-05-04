@@ -120,6 +120,7 @@ const jsonLd = {
   hasMap: 'https://maps.google.com/?q=Ram+Plaza+Mumbai+Naka+Nashik',
 }
 
+const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
 const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -181,7 +182,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/services">Our Services</Link>
                 <Link href="/tools">Tax & Finance Tools</Link>
                 <Link href="/blog">Client Insights</Link>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
+                <a href={bookingLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
               </div>
 
               <div>
