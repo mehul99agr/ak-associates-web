@@ -2,12 +2,19 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Startup Advisory Services | Incorporation, DPIIT & Virtual CFO',
-  description: 'Specialized financial, taxation, and advisory services for startups. DPIIT registration, company incorporation, pitch deck support, ESOP structuring, and Virtual CFO services across India.',
+  title: 'Startup Advisory Bangalore | DPIIT, Incorporation, ESOP & Virtual CFO',
+  description: 'Leading CA firm for startups in Bangalore. End-to-end services: company incorporation, DPIIT registration, ESOP structuring, Virtual CFO, seed-round financial modeling, FDI/FEMA compliance, and investor-ready reporting.',
+  keywords: [
+    'startup advisory Bangalore', 'CA for startups Bangalore',
+    'company incorporation Bangalore', 'DPIIT registration Bangalore',
+    'virtual CFO startups India', 'ESOP structuring India',
+    'startup compliance India', 'FDI compliance startup India',
+    'startup accountant Bangalore', 'pitch deck financial model India',
+  ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/startups' },
   openGraph: {
-    title: 'Startup Advisory | Agrawal Khandelwal & Associates LLP',
-    description: 'From DPIIT registration to seed-round financial modeling — we handle compliances so you can focus on building your product.',
+    title: 'Startup Advisory Bangalore | DPIIT, Incorporation & Virtual CFO',
+    description: 'Leading CA firm for startups in Bangalore. DPIIT registration, incorporation, ESOP, Virtual CFO, and investor-ready financial reporting.',
     url: 'https://agrawalkhandelwal.com/startups',
   },
 }

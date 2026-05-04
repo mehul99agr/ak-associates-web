@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Agrawal Khandelwal & Associates LLP | Chartered Accountants in Nashik',
-  description: 'Leading Chartered Accountants in Nashik & Sillod. Expert CA services: Tax Planning, International Taxation, GST Compliance, Audit, and Virtual CFO. Book a free consultation today.',
+  title: 'CA for Startups & International Tax | Bangalore, Mumbai | AK & Associates LLP',
+  description: 'Trusted Chartered Accountants for startups in Bangalore, MNCs in Mumbai, and NRI/UAE clients. Experts in International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, Startup Incorporation, and Virtual CFO services.',
   alternates: { canonical: 'https://agrawalkhandelwal.com' },
 }
 

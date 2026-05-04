@@ -2,12 +2,20 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Professional CA Services | Tax, Audit & Advisory',
-  description: 'Comprehensive Chartered Accountant services: International Taxation, Tax Planning, GST Advisory, Statutory Audit, Virtual CFO, Business Incorporation, and FEMA Compliance. Serving businesses across India.',
+  title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
+  description: 'Expert CA services in India: International Taxation, Transfer Pricing documentation, DTAA advisory, FEMA compliance, UAE Corporate Tax, NRI taxation, Statutory Audit, GST, and Business Incorporation. Serving MNCs in Mumbai and startups in Bangalore.',
+  keywords: [
+    'international tax consultant India', 'transfer pricing consultant India',
+    'DTAA advisory India', 'FEMA compliance India',
+    'UAE corporate tax India', 'NRI taxation consultant',
+    'statutory audit India', 'GST advisory India',
+    'CA services Mumbai', 'CA services Bangalore',
+    'offshore accounting India', 'outsourced bookkeeping India',
+  ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/services' },
   openGraph: {
-    title: 'Professional CA Services | Agrawal Khandelwal & Associates LLP',
-    description: 'End-to-end financial solutions: Tax Planning, International Taxation, Audit & Assurance, Virtual CFO, and Business Incorporation.',
+    title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
+    description: 'Expert CA services: International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, NRI Taxation, Audit, and Business Incorporation.',
     url: 'https://agrawalkhandelwal.com/services',
   },
 }

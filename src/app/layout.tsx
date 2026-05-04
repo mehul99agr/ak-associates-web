@@ -27,15 +27,30 @@ const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrawalkhandelwal.com'),
   title: {
-    default: 'Agrawal Khandelwal & Associates LLP | Chartered Accountants in Nashik',
+    default: 'CA for Startups & International Tax | Bangalore, Mumbai | AK & Associates LLP',
     template: '%s | AK & Associates LLP',
   },
-  description: 'Leading Chartered Accountants in Nashik & Sillod. Expert services in Tax Planning, International Taxation, GST Compliance, Audit & Assurance, and Virtual CFO. 100+ satisfied clients across India and UAE.',
+  description: 'Trusted Chartered Accountants in Bangalore, Mumbai & Nashik. Experts in International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, Startup Advisory, Virtual CFO, and Offshore Accounting. 100+ clients across India & UAE.',
   keywords: [
-    'Chartered Accountants Nashik', 'CA firm Nashik', 'tax planning Nashik',
-    'international taxation India', 'GST compliance', 'virtual CFO India',
-    'tax audit Nashik', 'business incorporation', 'transfer pricing India',
-    'CA services Maharashtra', 'FEMA RBI compliance', 'startup advisory India',
+    // Bangalore — primary market
+    'CA for startups Bangalore', 'chartered accountant Bangalore',
+    'startup advisory Bangalore', 'company incorporation Bangalore',
+    'DPIIT registration Bangalore', 'virtual CFO Bangalore',
+    'startup accountant Bangalore', 'CA firm Bangalore',
+    // Mumbai / MNC
+    'international tax consultant Mumbai', 'transfer pricing consultant India',
+    'MNC tax advisory India', 'DTAA consultant India',
+    'FEMA consultant Mumbai', 'chartered accountant Mumbai',
+    // NRI
+    'NRI tax consultant India', 'NRI taxation services India',
+    'NRI income tax filing India', 'DTAA NRI India',
+    // UAE
+    'UAE corporate tax consultant India', 'India UAE DTAA',
+    'UAE CT consultant', 'offshore accounting India',
+    // General
+    'CA firm Nashik', 'chartered accountant Nashik',
+    'virtual CFO India', 'outsourced accounting India',
+    'international taxation India', 'GST compliance India',
   ],
   authors: [{ name: 'Agrawal Khandelwal & Associates LLP' }],
   creator: 'Agrawal Khandelwal & Associates LLP',
@@ -56,36 +71,27 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://agrawalkhandelwal.com',
     siteName: 'Agrawal Khandelwal & Associates LLP',
-    title: 'Agrawal Khandelwal & Associates LLP | Chartered Accountants in Nashik',
-    description: 'Leading CA firm in Nashik specializing in Tax Planning, International Taxation, Audit, and Virtual CFO services. Trusted by 100+ businesses across India & UAE.',
-    images: [
-      {
-        url: '/banner.png',
-        width: 1200,
-        height: 630,
-        alt: 'Agrawal Khandelwal & Associates LLP – Chartered Accountants',
-      },
-    ],
+    title: 'CA for Startups & International Tax | Bangalore, Mumbai | AK & Associates LLP',
+    description: 'Trusted CA firm serving startups in Bangalore, MNCs in Mumbai, and NRI/UAE clients globally. Experts in International Tax, Transfer Pricing, DTAA, FEMA, and UAE Corporate Tax.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Agrawal Khandelwal & Associates LLP | Chartered Accountants',
-    description: 'Leading CA firm in Nashik. Expert Tax Planning, Audit, International Taxation, and Virtual CFO services.',
-    images: ['/banner.png'],
+    title: 'CA for Startups & International Tax | AK & Associates LLP',
+    description: 'Trusted CA firm for startups in Bangalore, MNCs in Mumbai, NRIs & UAE clients. International Tax, Transfer Pricing, DTAA, FEMA, Virtual CFO.',
   },
   alternates: {
     canonical: 'https://agrawalkhandelwal.com',
   },
 }
 
-const jsonLd = {
+const organizationLd = {
   '@context': 'https://schema.org',
   '@type': 'AccountingService',
+  '@id': 'https://agrawalkhandelwal.com/#organization',
   name: 'Agrawal Khandelwal & Associates LLP',
-  description: 'Chartered Accountants offering Tax Planning, International Taxation, Audit & Assurance, and Virtual CFO services.',
+  description: 'Chartered Accountants specializing in International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, Startup Advisory, Virtual CFO, and Offshore Accounting. Serving startups in Bangalore, MNCs in Mumbai, and NRI/UAE clients globally.',
   url: 'https://agrawalkhandelwal.com',
   logo: 'https://agrawalkhandelwal.com/logo.png',
-  image: 'https://agrawalkhandelwal.com/banner.png',
   telephone: '+91-95275-33506',
   email: 'mehul@agrawalkhandelwal.com',
   foundingDate: '2019',
@@ -111,13 +117,73 @@ const jsonLd = {
     },
   ],
   priceRange: '₹₹',
-  areaServed: ['Nashik', 'Sillod', 'Mumbai', 'Bangalore', 'Delhi', 'UAE'],
+  areaServed: [
+    { '@type': 'City', name: 'Bangalore' },
+    { '@type': 'City', name: 'Mumbai' },
+    { '@type': 'City', name: 'Nashik' },
+    { '@type': 'City', name: 'Delhi' },
+    { '@type': 'Country', name: 'United Arab Emirates' },
+    { '@type': 'Country', name: 'India' },
+  ],
   serviceType: [
-    'Tax Planning', 'International Taxation', 'Audit & Assurance',
-    'Virtual CFO Services', 'Business Incorporation', 'GST Compliance',
-    'Transfer Pricing', 'FEMA Compliance',
+    'International Taxation', 'Transfer Pricing', 'DTAA Advisory',
+    'FEMA Compliance', 'UAE Corporate Tax Advisory', 'NRI Taxation',
+    'Startup Advisory', 'Company Incorporation', 'DPIIT Registration',
+    'Virtual CFO Services', 'ESOP Structuring', 'FDI Compliance',
+    'Statutory Audit', 'Tax Audit', 'Internal Audit',
+    'GST Compliance', 'Tax Planning', 'Offshore Accounting',
+  ],
+  sameAs: [
+    'https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/',
   ],
   hasMap: 'https://maps.google.com/?q=Ram+Plaza+Mumbai+Naka+Nashik',
+}
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Do you provide CA services for startups in Bangalore?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We specialize in end-to-end startup advisory in Bangalore — from company incorporation and DPIIT registration to ESOP structuring, Virtual CFO services, and investor-ready financial reporting for fundraising rounds.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you help with Transfer Pricing and International Taxation for MNCs?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Absolutely. We provide Transfer Pricing documentation, DTAA advisory, FEMA compliance, and cross-border structuring for multinational corporations operating in India and abroad.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you advise on UAE Corporate Tax for Indian businesses?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. CA Mehul Agrawal holds a UAE Corporate Taxation certification. We advise Indian businesses with UAE operations on the 9% CT compliance, India-UAE DTAA benefits, Transfer Pricing, and Free Zone entity structuring.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you provide NRI taxation services?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We assist Non-Resident Indians with income tax filing, DTAA benefits, FEMA compliance for property and investments, and repatriation of funds from India.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer offshore accounting and outsourced bookkeeping services?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We provide offshore accounting and outsourced bookkeeping services for businesses in India, UAE, and international clients looking to manage their Indian entity finances remotely.',
+      },
+    },
+  ],
 }
 
 const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
@@ -129,7 +195,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
         />
       </head>
       <body>

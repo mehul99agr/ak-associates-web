@@ -2,12 +2,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Tax Insights & Advisory | CA Knowledge Center',
-  description: 'Expert analysis on Indian tax laws, GST compliance, international taxation, and financial advisory. Stay updated on regulatory changes with insights from our CA team.',
+  title: 'Tax Insights & Advisory | International Tax, Startup & UAE Compliance',
+  description: 'Expert CA insights on International Taxation, Transfer Pricing, DTAA, UAE Corporate Tax, startup compliance, GST, and NRI taxation. In-depth regulatory analysis from Agrawal Khandelwal & Associates LLP.',
+  keywords: [
+    'international tax insights India', 'transfer pricing India blog',
+    'UAE corporate tax news', 'startup compliance India',
+    'DTAA India guide', 'NRI taxation India',
+    'GST compliance updates', 'CA insights India',
+  ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog' },
   openGraph: {
-    title: 'Tax Insights & Advisory | Agrawal Khandelwal & Associates LLP',
-    description: 'Expert analysis on income tax, GST, international taxation, and financial advisory for Indian businesses.',
+    title: 'Tax Insights & Advisory | International Tax, Startup & UAE Compliance',
+    description: 'Expert insights on International Tax, Transfer Pricing, DTAA, UAE Corporate Tax, and startup compliance from our CA team.',
     url: 'https://agrawalkhandelwal.com/blog',
   },
 }

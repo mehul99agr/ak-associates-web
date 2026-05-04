@@ -1,13 +1,48 @@
 import Link from 'next/link'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Deciphering the New Income Tax Act & Rules 2025 | AK & Associates',
-  description: 'An in-depth analysis of the structural changes in the Indian Income Tax Act 2025, focusing on simplification, new computational rules, and taxpayer impact.',
+  title: 'New Income Tax Act 2025: Simplified Guide for Businesses & Individuals',
+  description: 'In-depth analysis of the New Income Tax Act 2025 — convergence of tax regimes, simplified computational rules, AI-driven assessments, and what it means for startups, MNCs, and individual taxpayers in India.',
+  keywords: [
+    'new income tax act 2025 India', 'income tax act 2025 changes',
+    'new tax regime 2025-26', 'income tax simplification India',
+    'AI faceless assessment India', 'new income tax rules India',
+    'income tax act 2025 startups', 'tax regime convergence India',
+  ],
+  alternates: { canonical: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025' },
+  openGraph: {
+    title: 'New Income Tax Act 2025: Complete Guide for Businesses',
+    description: 'How the New Income Tax Act 2025 changes computation rules, introduces AI-driven assessments, and affects startups, MNCs, and individuals.',
+    url: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025',
+    type: 'article',
+  },
+}
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Deciphering the New Income Tax Act & Rules 2025',
+  description: 'Structural changes in the Indian Income Tax Act 2025 — simplified computation, AI assessments, and tax regime convergence.',
+  datePublished: '2026-03-20',
+  dateModified: '2026-03-20',
+  author: {
+    '@type': 'Organization',
+    name: 'Agrawal Khandelwal & Associates LLP',
+    url: 'https://agrawalkhandelwal.com',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Agrawal Khandelwal & Associates LLP',
+    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
+  },
+  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025',
 }
 
 export default function NewTaxActBlog() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
       <div className="container">
         <Link href="/blog" style={{ color: 'var(--accent)', fontWeight: 700, display: 'inline-block', marginBottom: '2rem' }}>
@@ -70,5 +105,6 @@ export default function NewTaxActBlog() {
         </article>
       </div>
     </div>
+    </>
   )
 }
