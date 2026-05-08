@@ -36,6 +36,7 @@ export default function Navbar() {
         <nav className="nav-links desktop-only" aria-label="Main navigation">
           <Link href="/services" className="link">SERVICES</Link>
           <Link href="/startups" className="link" style={{ color: 'var(--accent)' }}>STARTUPS</Link>
+          <Link href="/nri-tax-advisory" className="link">NRI</Link>
           <Link href="/tools" className="link">TOOLS</Link>
           <Link href="/blog" className="link">INSIGHTS</Link>
           <ThemeToggle />
@@ -70,6 +71,7 @@ export default function Navbar() {
           <div className="mobile-menu-links">
             <Link href="/services" onClick={closeMenu}>SERVICES</Link>
             <Link href="/startups" onClick={closeMenu} style={{ color: 'var(--accent)' }}>STARTUPS</Link>
+            <Link href="/nri-tax-advisory" onClick={closeMenu}>NRI</Link>
             <Link href="/tools" onClick={closeMenu}>TOOLS</Link>
             <Link href="/blog" onClick={closeMenu}>INSIGHTS</Link>
             <a
