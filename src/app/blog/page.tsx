@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
+    slug: 'uae-entity-setup-when-it-makes-sense',
+    date: 'May 08, 2026',
+    category: 'International Tax',
+    summary: 'Formation costs ₹3–6L, ongoing compliance, and FEMA exposure — here\'s the honest breakdown of when a Dubai company actually works for Indian businesses, and when it\'s expensive FOMO.',
+  },
+  {
     title: 'Deciphering the New Income Tax Act & Rules 2025',
     slug: 'new-income-tax-act-rules-2025',
     date: 'March 20, 2026',
