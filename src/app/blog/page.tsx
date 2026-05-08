@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
+    slug: 'company-incorporation-india-guide',
+    date: 'May 08, 2026',
+    category: 'Corporate Law',
+    summary: 'Complete guide to company registration in India — which structure to choose, the step-by-step process, what it costs, documents required, and mistakes to avoid.',
+  },
+  {
     title: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
     slug: 'uae-entity-setup-when-it-makes-sense',
     date: 'May 08, 2026',
