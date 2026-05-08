@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
+
+const BASE_URL = 'https://agrawalkhandelwal.com'
 
 const posts = [
   {
@@ -7,6 +10,8 @@ const posts = [
     slug: 'essential-compliance-indian-startups',
     date: 'March 12, 2026',
     category: 'Corporate Law',
+    metaDescription: 'Complete compliance checklist for Indian startups — MCA filings, GST returns, TDS, advance tax, and FEMA reporting. Avoid penalties and stay DPIIT-eligible.',
+    keywords: ['startup compliance India', 'MCA filing startup', 'GST compliance startup India', 'FEMA FC-GPR reporting', 'DPIIT compliance India'],
     content: `Navigating the regulatory landscape in India can be daunting for new founders. From the moment of incorporation, a startup enters a cycle of mandatory filings.
 
 Key compliances include:
@@ -23,6 +28,8 @@ Staying ahead of these timelines is critical to avoid heavy penalties and mainta
     slug: 'navigating-international-taxation-dtaa',
     date: 'March 05, 2026',
     category: 'International Tax',
+    metaDescription: 'How to use India\'s DTAA treaties to reduce withholding tax, avoid permanent establishment risk, and repatriate profits without double taxation. Expert CA advisory.',
+    keywords: ['DTAA India guide', 'double taxation avoidance India', 'withholding tax DTAA', 'tax residency certificate India', 'PE risk India', 'international tax CA India'],
     content: `Double Taxation Avoidance Agreements (DTAA) are the pillars of international trade. For an Indian business expanding abroad, understanding whether to pay tax in India or the source country is vital for cash flow management.
 
 We focus on:
@@ -34,6 +41,24 @@ We focus on:
 Our team ensures that you pay what is due, but never twice.`,
   },
 ]
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const post = posts.find(p => p.slug === slug)
+  if (!post) return {}
+  return {
+    title: `${post.title} | Agrawal Khandelwal & Associates LLP`,
+    description: post.metaDescription,
+    keywords: post.keywords,
+    alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.metaDescription,
+      url: `${BASE_URL}/blog/${post.slug}`,
+      type: 'article',
+    },
+  }
+}
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params

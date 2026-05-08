@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/gst-search`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/tools/sip-planner`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/tools/incorporation-wizard`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/blog/uae-entity-setup-when-it-makes-sense`, lastModified: new Date('2026-05-08'), changeFrequency: 'yearly', priority: 0.8 },
     { url: `${BASE_URL}/blog/new-income-tax-act-rules-2025`, lastModified: new Date('2026-03-20'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/uae-corporate-tax-indian-impact`, lastModified: new Date('2026-03-08'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/essential-compliance-indian-startups`, lastModified: new Date('2026-03-12'), changeFrequency: 'yearly', priority: 0.7 },
