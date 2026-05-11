@@ -79,9 +79,6 @@ export const metadata: Metadata = {
     title: 'CA for Startups & International Tax | AK & Associates LLP',
     description: 'Trusted CA firm for startups in Bangalore, MNCs in Mumbai, NRIs & UAE clients. International Tax, Transfer Pricing, DTAA, FEMA, Virtual CFO.',
   },
-  alternates: {
-    canonical: 'https://agrawalkhandelwal.com',
-  },
 }
 
 const organizationLd = {
