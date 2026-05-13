@@ -1,40 +1,69 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export default function GSTSearchPage() {
   const [gstin, setGstin] = useState('')
+  const [captchaAnswer, setCaptchaAnswer] = useState('')
+  const [captchaUrl, setCaptchaUrl] = useState<string | null>(null)
+  const [captchaLoading, setCaptchaLoading] = useState(false)
   const [result, setResult] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  const loadCaptcha = useCallback(async () => {
+    setCaptchaLoading(true)
+    setCaptchaAnswer('')
+    setError(null)
+    // Bust the cache so a fresh captcha is always fetched
+    setCaptchaUrl(`/api/gst-captcha?t=${Date.now()}`)
+    setCaptchaLoading(false)
+  }, [])
+
+  useEffect(() => { loadCaptcha() }, [loadCaptcha])
+
   const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError(null);
-    setResult(null);
+    e.preventDefault()
+    setError(null)
+    setResult(null)
 
     if (gstin.length !== 15) {
-      setError("Please enter a valid 15-digit GSTIN");
-      return;
+      setError('Please enter a valid 15-digit GSTIN')
+      return
+    }
+    if (!captchaAnswer.trim()) {
+      setError('Please enter the captcha text')
+      return
     }
 
-    setLoading(true);
+    setLoading(true)
 
     try {
-      const res = await fetch(`/api/gst-search?gstin=${gstin}`)
+      const res = await fetch(`/api/gst-search?gstin=${gstin}&captcha=${encodeURIComponent(captchaAnswer.trim())}`)
       const data = await res.json()
 
       if (!res.ok) {
         setError(data.error || 'Failed to fetch GST details. Please try again.')
+        // Refresh captcha on any error
+        loadCaptcha()
         return
       }
 
       setResult(data)
-    } catch (err) {
-      setError("Network error. Please check your connection and try again.");
-      console.error(err);
+    } catch {
+      setError('Network error. Please check your connection and try again.')
+      loadCaptcha()
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
+  }
+
+  const inputStyle: React.CSSProperties = {
+    padding: '1rem',
+    borderRadius: '8px',
+    border: '1px solid var(--border)',
+    fontSize: '1rem',
+    background: 'var(--bg-card)',
+    color: 'var(--text-main)',
   }
 
   return (
@@ -50,21 +79,66 @@ export default function GSTSearchPage() {
 
         <div className="card" style={{ maxWidth: '700px', margin: '0 auto' }}>
           <form onSubmit={handleSearch} style={{ display: 'flex', gap: '15px', flexDirection: 'column' }}>
-            <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Enter 15-Digit GSTIN</label>
-            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              <input 
-                type="text" 
+
+            {/* GSTIN input */}
+            <div>
+              <label style={{ display: 'block', fontWeight: 700, color: 'var(--primary)', marginBottom: '8px' }}>
+                Enter 15-Digit GSTIN
+              </label>
+              <input
+                type="text"
                 value={gstin}
                 onChange={(e) => setGstin(e.target.value.toUpperCase())}
                 placeholder="e.g. 27AAAAA0000A1Z5"
                 maxLength={15}
-                style={{ flex: 1, minWidth: '200px', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1.1rem', textTransform: 'uppercase', background: 'var(--bg-card)', color: 'var(--text-main)' }}
+                style={{ ...inputStyle, width: '100%', fontSize: '1.1rem', textTransform: 'uppercase', boxSizing: 'border-box' }}
               />
-              <button type="submit" className="btn btn-primary" disabled={loading} style={{ minWidth: '140px' }}>
-                {loading ? 'Searching...' : 'Verify Now'}
-              </button>
             </div>
-            {error && <p style={{ color: 'var(--accent)', fontSize: '0.9rem', fontWeight: 600 }}>⚠️ {error}</p>}
+
+            {/* Captcha */}
+            <div>
+              <label style={{ display: 'block', fontWeight: 700, color: 'var(--primary)', marginBottom: '8px' }}>
+                Enter Captcha
+              </label>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
+                {captchaUrl && (
+                  <div style={{ border: '1px solid var(--border)', borderRadius: '8px', overflow: 'hidden', background: '#fff', lineHeight: 0 }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={captchaUrl}
+                      alt="Captcha"
+                      style={{ display: 'block', height: '52px', minWidth: '140px' }}
+                    />
+                  </div>
+                )}
+                <button
+                  type="button"
+                  onClick={loadCaptcha}
+                  disabled={captchaLoading}
+                  style={{ background: 'none', border: '1px solid var(--border)', borderRadius: '8px', padding: '8px 14px', cursor: 'pointer', color: 'var(--text-light)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}
+                >
+                  {captchaLoading ? 'Loading...' : '↻ Refresh'}
+                </button>
+              </div>
+              <input
+                type="text"
+                value={captchaAnswer}
+                onChange={(e) => setCaptchaAnswer(e.target.value)}
+                placeholder="Type the characters shown above"
+                autoComplete="off"
+                style={{ ...inputStyle, width: '100%', boxSizing: 'border-box' }}
+              />
+            </div>
+
+            {error && (
+              <p style={{ color: 'var(--accent)', fontSize: '0.9rem', fontWeight: 600, margin: 0 }}>
+                ⚠️ {error}
+              </p>
+            )}
+
+            <button type="submit" className="btn btn-primary" disabled={loading} style={{ alignSelf: 'flex-start', minWidth: '160px' }}>
+              {loading ? 'Searching...' : 'Verify Now'}
+            </button>
           </form>
 
           {result && (
@@ -75,7 +149,7 @@ export default function GSTSearchPage() {
                   padding: '5px 15px',
                   background: result.status?.toLowerCase() === 'active' ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)',
                   color: result.status?.toLowerCase() === 'active' ? '#10b981' : '#ef4444',
-                  borderRadius: '50px', fontSize: '0.85rem', fontWeight: 800
+                  borderRadius: '50px', fontSize: '0.85rem', fontWeight: 800,
                 }}>
                   {result.status?.toUpperCase()}
                 </span>
@@ -116,7 +190,7 @@ export default function GSTSearchPage() {
                   <p style={{ fontWeight: 600, color: 'var(--text-main)', fontSize: '0.95rem' }}>{result.address}</p>
                 </div>
               )}
-              
+
               <div style={{ marginTop: '25px', padding: '15px', background: 'var(--bg-surface)', borderRadius: '8px', fontSize: '0.85rem', color: 'var(--text-light)', borderLeft: '4px solid var(--primary)' }}>
                 <strong>Pro Tip:</strong> Always verify the GSTIN before onboarding new vendors to ensure you can claim Input Tax Credit (ITC) safely.
               </div>
