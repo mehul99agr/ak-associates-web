@@ -74,9 +74,7 @@ export default function Navbar() {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '5px',
-                padding: 0,
-                font: 'inherit',
-                letterSpacing: 'inherit',
+                padding: '4px 0',
               }}
             >
               SERVICES

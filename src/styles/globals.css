@@ -204,7 +204,8 @@ button:focus-visible {
   align-items: center;
 }
 
-.nav-links a.link {
+.nav-links a.link,
+.nav-links button.link {
   font-family: var(--font-montserrat, 'Montserrat', sans-serif);
   font-weight: 700;
   font-size: 0.8rem;
@@ -214,7 +215,8 @@ button:focus-visible {
   position: relative;
 }
 
-.nav-links a.link::after {
+.nav-links a.link::after,
+.nav-links button.link::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -226,7 +228,8 @@ button:focus-visible {
   border-radius: 2px;
 }
 
-.nav-links a.link:hover::after {
+.nav-links a.link:hover::after,
+.nav-links button.link:hover::after {
   width: 100%;
 }
 
