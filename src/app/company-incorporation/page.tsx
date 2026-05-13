@@ -147,32 +147,25 @@ export default function CompanyIncorporationPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
-      <div style={{ background: 'var(--bg-surface)', minHeight: '100vh' }}>
-
         {/* Hero */}
-        <div style={{ background: 'var(--primary)', paddingTop: '160px', paddingBottom: '80px' }}>
-          <div className="container" style={{ maxWidth: '860px', textAlign: 'center' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', color: '#fff', padding: '4px 16px', borderRadius: '50px', fontSize: '0.82rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-              Company Registration India
-            </span>
-            <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 5vw, 3.2rem)', lineHeight: 1.2, marginBottom: '1.25rem' }}>
-              Register Your Company in India
-            </h1>
-            <p style={{ color: 'rgba(255,255,255,0.82)', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '680px', margin: '0 auto 2.5rem' }}>
+        <section className="hero">
+          <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: '860px' }}>
+            <span className="hero-badge">Company Registration India</span>
+            <h1>Register Your Company in India</h1>
+            <p>
               CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 7–15 day turnaround.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div className="hero-cta">
               <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
-                style={{ background: '#fff', color: 'var(--primary)', padding: '0.9rem 2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem' }}>
+                className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: 800 }}>
                 Book Free Advisory Call
               </a>
-              <Link href="/tools/incorporation-wizard"
-                style={{ background: 'transparent', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem', border: '2px solid rgba(255,255,255,0.5)' }}>
+              <Link href="/tools/incorporation-wizard" className="btn btn-secondary">
                 Find My Structure →
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Trust bar */}
         <div style={{ background: 'var(--bg-card)', borderBottom: '1px solid var(--border)', padding: '1.25rem 0' }}>
@@ -192,10 +185,10 @@ export default function CompanyIncorporationPage() {
         </div>
 
         {/* Structure comparison */}
-        <div className="section">
+        <section className="section bg-surface">
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <h2 className="section-title" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)' }}>Which Structure Is Right for You?</h2>
+              <h2 className="section-title">Which Structure Is Right for You?</h2>
               <p style={{ color: 'var(--text-light)', fontSize: '1rem' }}>We advise you on the best fit, but here&apos;s the quick overview.</p>
             </div>
 
@@ -229,12 +222,12 @@ export default function CompanyIncorporationPage() {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* What's included */}
-        <div style={{ background: 'var(--bg-card)', padding: '5rem 0' }}>
+        <section className="section">
           <div className="container" style={{ maxWidth: '800px' }}>
-            <h2 className="section-title" style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', marginBottom: '2.5rem' }}>What&apos;s Included</h2>
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '2.5rem' }}>What&apos;s Included</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '0.75rem' }}>
               {[
                 'Structure advisory: Pvt Ltd vs LLP vs OPC',
@@ -258,12 +251,12 @@ export default function CompanyIncorporationPage() {
               Optional add-ons: Shareholders&apos; Agreement drafting · Trademark registration · Bank account assistance
             </p>
           </div>
-        </div>
+        </section>
 
         {/* Process */}
-        <div className="section">
+        <section className="section bg-surface">
           <div className="container" style={{ maxWidth: '860px' }}>
-            <h2 className="section-title" style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', marginBottom: '3rem' }}>How It Works</h2>
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>How It Works</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '2rem' }}>
               {steps.map((s) => (
                 <div key={s.n} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
@@ -276,12 +269,12 @@ export default function CompanyIncorporationPage() {
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* FAQ */}
-        <div style={{ background: 'var(--bg-card)', padding: '5rem 0' }}>
+        <section className="section">
           <div className="container" style={{ maxWidth: '780px' }}>
-            <h2 className="section-title" style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', marginBottom: '2.5rem' }}>
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
               Frequently Asked Questions
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
@@ -293,35 +286,34 @@ export default function CompanyIncorporationPage() {
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Read more */}
-        <div className="section" style={{ paddingBottom: '3rem' }}>
+        <section className="section bg-surface" style={{ paddingBottom: '3rem' }}>
           <div className="container" style={{ maxWidth: '780px', textAlign: 'center' }}>
             <p style={{ color: 'var(--text-light)', marginBottom: '0.75rem', fontSize: '0.95rem' }}>Want a deeper dive before you decide?</p>
             <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--accent)', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
               Read: How to Incorporate a Company in India: Complete 2026 Guide →
             </Link>
           </div>
-        </div>
+        </section>
 
         {/* CTA */}
-        <div style={{ background: 'var(--primary)', padding: '5rem 0' }}>
+        <section style={{ background: 'var(--primary)', padding: '5rem 0' }}>
           <div className="container" style={{ textAlign: 'center', maxWidth: '660px' }}>
-            <h2 style={{ color: '#fff', fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', marginBottom: '1rem' }}>
+            <h2 style={{ color: '#fff', marginBottom: '1rem' }}>
               Ready to Incorporate?
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', marginBottom: '2.5rem', lineHeight: 1.7 }}>
               Book a free 20-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote: no surprises.
             </p>
             <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
-              style={{ background: '#fff', color: 'var(--primary)', padding: '1rem 2.5rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1.05rem', display: 'inline-block' }}>
+              className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: 800 }}>
               Book Free Advisory Call
             </a>
           </div>
-        </div>
+        </section>
 
-      </div>
     </>
   )
 }

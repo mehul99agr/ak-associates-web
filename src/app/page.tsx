@@ -227,7 +227,7 @@ export default function Home() {
 
           {/* Global Reach */}
           <div style={{ marginTop: '5rem', textAlign: 'center' }}>
-            <h2 className="section-title" style={{ fontSize: '2rem' }}>Our Global Reach</h2>
+            <h2 className="section-title">Our Global Reach</h2>
             <p style={{ color: 'var(--text-light)', maxWidth: '580px', margin: '0.75rem auto 2.5rem' }}>
               Headquartered in Maharashtra with a footprint that extends across India and key international jurisdictions.
             </p>
@@ -280,7 +280,7 @@ export default function Home() {
             </div>
 
             {/* WhatsApp CTA: uses explicit dark blue to work in both modes */}
-            <div className="card" style={{ textAlign: 'center', background: '#0A2E5B', borderColor: '#0A2E5B' }}>
+            <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', borderColor: 'var(--primary)' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#ffffff' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help your business thrive.</p>

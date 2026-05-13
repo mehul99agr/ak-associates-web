@@ -145,26 +145,22 @@ export default function TransferPricingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
-      <div style={{ paddingTop: '90px' }}>
-
         {/* Hero */}
-        <section style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', padding: '6rem 0', textAlign: 'center' }}>
-          <div className="container">
-            <span style={{ display: 'inline-block', padding: '0.4rem 1rem', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '50px', fontSize: '0.78rem', fontWeight: 700, marginBottom: '1.5rem', color: '#fff', letterSpacing: '0.5px', textTransform: 'uppercase' }}>
-              International Tax · Transfer Pricing
-            </span>
-            <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 5vw, 3.25rem)', maxWidth: '820px', margin: '0 auto 1.5rem', lineHeight: 1.15 }}>
-              Transfer Pricing Consultants in India
-            </h1>
-            <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.82)', maxWidth: '700px', margin: '0 auto 1rem', lineHeight: 1.8 }}>
+        <section className="hero">
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+            <span className="hero-badge">International Tax · Transfer Pricing</span>
+            <h1>Transfer Pricing Consultants in India</h1>
+            <p>
               OECD-aligned TP documentation, benchmarking studies, APA advisory, and audit representation for MNCs and Indian companies with cross-border related-party transactions.
             </p>
             <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', maxWidth: '560px', margin: '0 auto 2.5rem' }}>
               Led by CA Rupesh Khandelwal (ex-Deloitte) and CA Mehul Agrawal - combining Big 4 methodology with CA firm responsiveness.
             </p>
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              Discuss Your TP Requirements
-            </a>
+            <div className="hero-cta">
+              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                Discuss Your TP Requirements
+              </a>
+            </div>
           </div>
         </section>
 
@@ -266,12 +262,12 @@ export default function TransferPricingPage() {
         <section className="section bg-surface">
           <div className="container">
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Need Transfer Pricing Documentation?</h2>
+              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Need Transfer Pricing Documentation?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 Don't wait for a notice. TP documentation must be in place before the due date - and should be updated every year. Contact us to get started.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>
+                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
                   Book a TP Consultation
                 </a>
                 <Link href="/services" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
@@ -282,7 +278,6 @@ export default function TransferPricingPage() {
           </div>
         </section>
 
-      </div>
     </>
   )
 }

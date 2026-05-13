@@ -44,7 +44,7 @@ export default function ToolsHubPage() {
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>
       <div className="section">
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px' }}>
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 4rem' }}>
             <span className="section-badge">Client Resources</span>
             <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>Financial &amp; Tax Tools</h1>
             <p style={{ color: 'var(--text-light)', fontSize: '1.05rem' }}>

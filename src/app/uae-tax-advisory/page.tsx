@@ -122,28 +122,25 @@ export default function UAETaxAdvisory() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
-      <div style={{ paddingTop: '90px' }}>
-
         {/* Hero */}
-        <section style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', padding: '6rem 0', textAlign: 'center' }}>
-          <div className="container">
-            <span style={{ display: 'inline-block', padding: '0.4rem 1rem', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '50px', fontSize: '0.78rem', fontWeight: 700, marginBottom: '1.5rem', color: '#fff', letterSpacing: '0.5px', textTransform: 'uppercase' }}>
-              UAE Corporate Tax · India-UAE DTAA
-            </span>
-            <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 5vw, 3.25rem)', maxWidth: '820px', margin: '0 auto 1.5rem', lineHeight: 1.15 }}>
+        <section className="hero">
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+            <span className="hero-badge">UAE Corporate Tax · India-UAE DTAA</span>
+            <h1>
               UAE Corporate Tax Advisory<br />for Indian Businesses
             </h1>
-            <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.82)', maxWidth: '700px', margin: '0 auto 1rem', lineHeight: 1.8 }}>
+            <p>
               Whether you run a UAE Free Zone company, an Indian subsidiary of a UAE parent, or are structuring a cross-border business - we provide expert UAE CT compliance and India-UAE tax advisory.
             </p>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'rgba(255,215,0,0.15)', border: '1px solid rgba(255,215,0,0.3)', borderRadius: '8px', padding: '10px 18px', marginBottom: '2rem' }}>
               <span style={{ fontSize: '1.2rem' }}>🏆</span>
               <span style={{ color: '#fde68a', fontSize: '0.88rem', fontWeight: 700 }}>CA Mehul Agrawal holds a UAE Corporate Taxation certification - one of very few CAs in India with this credential.</span>
             </div>
-            <br />
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              Book a UAE Tax Consultation
-            </a>
+            <div className="hero-cta">
+              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                Book a UAE Tax Consultation
+              </a>
+            </div>
           </div>
         </section>
 
@@ -260,12 +257,12 @@ export default function UAETaxAdvisory() {
         <section className="section">
           <div className="container">
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>India-UAE Tax - Sorted by a Certified Expert</h2>
+              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>India-UAE Tax - Sorted by a Certified Expert</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 Whether you need UAE CT registration, DTAA planning, or a full India-UAE structure review - we bring the only UAE Corporate Taxation-certified CA practice to the conversation.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>
+                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
                   Book a UAE Tax Call
                 </a>
                 <Link href="/nri-tax-advisory" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
@@ -276,7 +273,6 @@ export default function UAETaxAdvisory() {
           </div>
         </section>
 
-      </div>
     </>
   )
 }

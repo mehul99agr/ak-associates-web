@@ -107,23 +107,19 @@ export default function NRITaxAdvisory() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <div style={{ paddingTop: '90px' }}>
-
         {/* Hero */}
-        <section style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', padding: '6rem 0', textAlign: 'center' }}>
-          <div className="container">
-            <span style={{ display: 'inline-block', padding: '0.4rem 1rem', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '50px', fontSize: '0.78rem', fontWeight: 700, marginBottom: '1.5rem', color: '#fff', letterSpacing: '0.5px', textTransform: 'uppercase' }}>
-              NRI Tax Advisory
-            </span>
-            <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 5vw, 3.25rem)', marginBottom: '1.5rem', maxWidth: '820px', margin: '0 auto 1.5rem', lineHeight: 1.15 }}>
-              India Tax Advisory for Non-Resident Indians
-            </h1>
-            <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.82)', maxWidth: '680px', margin: '0 auto 2.5rem', lineHeight: 1.8 }}>
+        <section className="hero">
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+            <span className="hero-badge">NRI Tax Advisory</span>
+            <h1>India Tax Advisory for Non-Resident Indians</h1>
+            <p>
               We handle ITR filing, TDS refunds, property repatriation, and DTAA claims for NRIs in the UAE, US, UK, Singapore, and Australia.
             </p>
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              Book an NRI Tax Call
-            </a>
+            <div className="hero-cta">
+              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                Book an NRI Tax Call
+              </a>
+            </div>
           </div>
         </section>
 
@@ -277,7 +273,7 @@ export default function NRITaxAdvisory() {
                 We work with NRIs remotely across UAE, US, UK, Singapore, and Australia. One call to understand your situation: no hourly billing surprises.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>
+                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
                   Book an NRI Tax Call
                 </a>
                 <Link href="/blog" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
@@ -288,7 +284,6 @@ export default function NRITaxAdvisory() {
           </div>
         </section>
 
-      </div>
     </>
   )
 }
