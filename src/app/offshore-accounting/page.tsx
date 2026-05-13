@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -29,19 +29,19 @@ const audiences = [
   {
     icon: '🌐',
     title: 'Foreign Companies with Indian Operations',
-    desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack — from Tally/QuickBooks bookkeeping to GST returns, TDS compliance, payroll, and statutory audit — so your Indian team stays compliant without distracting your HQ finance team.',
+    desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack - from Tally/QuickBooks bookkeeping to GST returns, TDS compliance, payroll, and statutory audit - so your Indian team stays compliant without distracting your HQ finance team.',
     tags: ['Indian Subsidiary Accounting', 'GAAP to Ind AS Conversion', 'Consolidated Reporting', 'Statutory Audit Readiness'],
   },
   {
     icon: '🤝',
     title: 'CA Firms & Accounting Practices (White-Label)',
-    desc: 'UK, US, Australian, or UAE accounting practices looking to outsource client bookkeeping to a trusted Indian CA firm. We work as your back-office — maintaining confidentiality, using your preferred software (Xero, QuickBooks, MYOB, Sage), and delivering work under your brand.',
+    desc: 'UK, US, Australian, or UAE accounting practices looking to outsource client bookkeeping to a trusted Indian CA firm. We work as your back-office - maintaining confidentiality, using your preferred software (Xero, QuickBooks, MYOB, Sage), and delivering work under your brand.',
     tags: ['Xero · QuickBooks · MYOB', 'White-Label Delivery', 'Confidential NDA', 'UK/US Accounting Standards'],
   },
   {
     icon: '🏠',
     title: 'NRI-Owned Indian Businesses',
-    desc: 'NRIs managing Indian businesses remotely — from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, GST, TDS, payroll, and monthly MIS so you always have visibility without being in India.',
+    desc: 'NRIs managing Indian businesses remotely - from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, GST, TDS, payroll, and monthly MIS so you always have visibility without being in India.',
     tags: ['Remote Accounting', 'GST & TDS Compliance', 'Monthly MIS Reports', 'NRI FEMA Compliance'],
   },
 ]
@@ -50,12 +50,12 @@ const services = [
   {
     icon: '📚',
     title: 'Full-Cycle Bookkeeping',
-    desc: 'Daily transaction recording, bank reconciliation, accounts payable/receivable management, and monthly trial balance — using Tally, QuickBooks, Xero, or client-preferred software.',
+    desc: 'Daily transaction recording, bank reconciliation, accounts payable/receivable management, and monthly trial balance - using Tally, QuickBooks, Xero, or client-preferred software.',
   },
   {
     icon: '📊',
     title: 'MIS & Management Reporting',
-    desc: 'Monthly management accounts — P&L, balance sheet, cash flow statement, and custom KPI dashboards — delivered to an investor, board, or overseas parent in the format they require.',
+    desc: 'Monthly management accounts - P&L, balance sheet, cash flow statement, and custom KPI dashboards - delivered to an investor, board, or overseas parent in the format they require.',
   },
   {
     icon: '👥',
@@ -94,7 +94,7 @@ const faqs = [
   },
   {
     q: 'Can you manage accounting for a UK company\'s India subsidiary?',
-    a: 'Yes. This is one of our most common engagements. We handle the Indian subsidiary\'s complete accounting and compliance — Tally bookkeeping, GST, TDS, payroll, ROC annual returns — and also prepare a UK GAAP-aligned monthly report and intercompany recharge schedules for the UK parent\'s consolidation. We liaise directly with the UK parent\'s finance team or accountant.',
+    a: 'Yes. This is one of our most common engagements. We handle the Indian subsidiary\'s complete accounting and compliance - Tally bookkeeping, GST, TDS, payroll, ROC annual returns - and also prepare a UK GAAP-aligned monthly report and intercompany recharge schedules for the UK parent\'s consolidation. We liaise directly with the UK parent\'s finance team or accountant.',
   },
   {
     q: 'Do you provide outsourced CFO services as part of offshore accounting?',
@@ -115,7 +115,7 @@ const faqLd = {
 const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Offshore Accounting & Outsourced Bookkeeping — AK & Associates LLP',
+  name: 'Offshore Accounting & Outsourced Bookkeeping - AK & Associates LLP',
   description: 'Offshore accounting services from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, payroll, GST, and statutory compliance.',
   url: 'https://agrawalkhandelwal.com/offshore-accounting',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -161,7 +161,7 @@ export default function OffshoreAccounting() {
               Offshore Accounting &<br />Bookkeeping Services from India
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.82)', maxWidth: '700px', margin: '0 auto 2.5rem', lineHeight: 1.8 }}>
-              ICAI-registered CA firm providing full-cycle outsourced accounting for foreign companies, overseas CA practices, and NRI-owned businesses — from India, at India costs.
+              ICAI-registered CA firm providing full-cycle outsourced accounting for foreign companies, overseas CA practices, and NRI-owned businesses - from India, at India costs.
             </p>
             <div className="hero-cta" style={{ justifyContent: 'center' }}>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -185,7 +185,7 @@ export default function OffshoreAccounting() {
               {[
                 { label: 'Cost Saving', value: '60–70%', note: 'vs. equivalent UK / US / UAE accounting costs', color: '#10b981' },
                 { label: 'Time Zone', value: 'IST +5:30', note: 'Overlap with UK morning + full UAE business day', color: 'var(--accent)' },
-                { label: 'CA Qualified', value: 'ICAI', note: 'India\'s equivalent of ICAEW / AICPA — highest standard', color: 'var(--primary)' },
+                { label: 'CA Qualified', value: 'ICAI', note: 'India\'s equivalent of ICAEW / AICPA - highest standard', color: 'var(--primary)' },
                 { label: 'Languages', value: 'English', note: 'All work delivered in English, documentation included', color: '#f59e0b' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ textAlign: 'center', borderTop: `4px solid ${item.color}` }}>

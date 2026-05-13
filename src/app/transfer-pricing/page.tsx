@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -33,7 +33,7 @@ const services = [
   },
   {
     icon: '📋',
-    title: 'Form 3CEB — Accountant\'s Report',
+    title: 'Form 3CEB - Accountant\'s Report',
     desc: 'Mandatory CA certification of international transactions under Section 92E. We prepare and certify Form 3CEB covering all specified domestic and international transactions.',
   },
   {
@@ -44,7 +44,7 @@ const services = [
   {
     icon: '🤝',
     title: 'Advance Pricing Agreement (APA)',
-    desc: 'Advisory and preparation support for unilateral, bilateral, and multilateral APA applications — including pre-filing meetings, rollback negotiations, and annual compliance reports.',
+    desc: 'Advisory and preparation support for unilateral, bilateral, and multilateral APA applications - including pre-filing meetings, rollback negotiations, and annual compliance reports.',
   },
   {
     icon: '⚖️',
@@ -68,19 +68,19 @@ const thresholds = [
   {
     type: 'Local File required',
     threshold: '₹100 crore+',
-    requirement: 'Form 3CEAB — Local File',
+    requirement: 'Form 3CEAB - Local File',
     color: '#f59e0b',
   },
   {
     type: 'Master File required',
     threshold: '₹1,000 crore+ group revenue',
-    requirement: 'Form 3CEAA — Master File',
+    requirement: 'Form 3CEAA - Master File',
     color: '#ef4444',
   },
   {
     type: 'CbCR (Country-by-Country)',
     threshold: '₹5,500 crore+ group revenue',
-    requirement: 'Form 3CEAD — CbCR filing',
+    requirement: 'Form 3CEAD - CbCR filing',
     color: 'var(--primary)',
   },
 ]
@@ -88,11 +88,11 @@ const thresholds = [
 const faqs = [
   {
     q: 'Who needs to comply with transfer pricing in India?',
-    a: 'Any Indian company that has related-party international transactions must comply with transfer pricing under Section 92 of the Income Tax Act. This includes: MNC subsidiaries in India transacting with their foreign parent or group entities, Indian companies with foreign subsidiaries, and joint ventures with foreign partners. Even a single transaction — a royalty payment, management fee, inter-company loan, or software service — above ₹1 crore triggers the Form 3CEB requirement.',
+    a: 'Any Indian company that has related-party international transactions must comply with transfer pricing under Section 92 of the Income Tax Act. This includes: MNC subsidiaries in India transacting with their foreign parent or group entities, Indian companies with foreign subsidiaries, and joint ventures with foreign partners. Even a single transaction - a royalty payment, management fee, inter-company loan, or software service - above ₹1 crore triggers the Form 3CEB requirement.',
   },
   {
     q: 'What is the penalty for non-compliance with transfer pricing in India?',
-    a: 'The penalties are severe: (1) Failure to maintain TP documentation — penalty of 2% of the value of international transactions; (2) Concealment of income through TP manipulation — penalty of 100–300% of the tax sought to be evaded; (3) Late or incorrect filing of Form 3CEB — ₹1 lakh per default. Beyond penalties, a TP audit can result in a significant upward adjustment to your taxable income, with interest running from the original assessment date.',
+    a: 'The penalties are severe: (1) Failure to maintain TP documentation - penalty of 2% of the value of international transactions; (2) Concealment of income through TP manipulation - penalty of 100–300% of the tax sought to be evaded; (3) Late or incorrect filing of Form 3CEB - ₹1 lakh per default. Beyond penalties, a TP audit can result in a significant upward adjustment to your taxable income, with interest running from the original assessment date.',
   },
   {
     q: 'What transfer pricing method is best for an Indian subsidiary providing IT services to a US parent?',
@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: 'What is the difference between Form 3CEB, Master File, and Local File?',
-    a: 'These are three distinct compliance requirements under India\'s transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions — mandatory for any company with related-party transactions above ₹1 crore. The Local File (Form 3CEAB) provides detailed analysis of the Indian entity\'s transactions with its foreign related parties — triggered when international transactions exceed ₹100 crore. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group\'s business, structure, and TP policies — required when the group\'s consolidated revenue exceeds ₹1,000 crore.',
+    a: 'These are three distinct compliance requirements under India\'s transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions - mandatory for any company with related-party transactions above ₹1 crore. The Local File (Form 3CEAB) provides detailed analysis of the Indian entity\'s transactions with its foreign related parties - triggered when international transactions exceed ₹100 crore. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group\'s business, structure, and TP policies - required when the group\'s consolidated revenue exceeds ₹1,000 crore.',
   },
 ]
 
@@ -121,7 +121,7 @@ const faqLd = {
 const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Transfer Pricing Advisory — AK & Associates LLP',
+  name: 'Transfer Pricing Advisory - AK & Associates LLP',
   description: 'Transfer pricing documentation, benchmarking, APA advisory, and audit representation for MNCs and Indian multinationals.',
   url: 'https://agrawalkhandelwal.com/transfer-pricing',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -160,7 +160,7 @@ export default function TransferPricingPage() {
               OECD-aligned TP documentation, benchmarking studies, APA advisory, and audit representation for MNCs and Indian companies with cross-border related-party transactions.
             </p>
             <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', maxWidth: '560px', margin: '0 auto 2.5rem' }}>
-              Led by CA Rupesh Khandelwal (ex-Deloitte) and CA Mehul Agrawal — combining Big 4 methodology with CA firm responsiveness.
+              Led by CA Rupesh Khandelwal (ex-Deloitte) and CA Mehul Agrawal - combining Big 4 methodology with CA firm responsiveness.
             </p>
             <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               Discuss Your TP Requirements
@@ -216,28 +216,28 @@ export default function TransferPricingPage() {
               <span className="section-badge">Why We're Different</span>
               <h2 className="section-title">Big 4 Methodology. CA Firm Accessibility.</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '680px', margin: '0 auto' }}>
-                Most mid-size companies can't afford Big 4 TP fees. We bring the same OECD-standard methodology — honed by our Deloitte-trained partner — at a fraction of the cost.
+                Most mid-size companies can't afford Big 4 TP fees. We bring the same OECD-standard methodology - honed by our Deloitte-trained partner - at a fraction of the cost.
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '3rem', maxWidth: '900px', margin: '0 auto' }}>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ width: '120px', height: '120px', margin: '0 auto 1.5rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
-                  <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal — Transfer Pricing Expert India" width={120} height={120} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                  <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal - Transfer Pricing Expert India" width={120} height={120} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                 </div>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h3>
-                <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem' }}>Partner — Ex-Deloitte</p>
+                <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem' }}>Partner - Ex-Deloitte</p>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>
                   Rupesh brings deep Big 4 experience in domestic and international taxation. His background at Deloitte includes TP documentation, audit representation, and cross-industry advisory for pharma, IT, and auto clients.
                 </p>
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ width: '120px', height: '120px', margin: '0 auto 1.5rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
-                  <Image src="/mehul.jpg" alt="CA Mehul Agrawal — International Tax Specialist India" width={120} height={120} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                  <Image src="/mehul.jpg" alt="CA Mehul Agrawal - International Tax Specialist India" width={120} height={120} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                 </div>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
-                <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem' }}>Partner — International Tax</p>
+                <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem' }}>Partner - International Tax</p>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>
-                  Mehul specialises in cross-border structuring, DTAA advisory, and FEMA compliance. He coordinates the TP work with broader international tax strategy — ensuring the transfer pricing policy aligns with India-UAE, India-US, and other treaty positions.
+                  Mehul specialises in cross-border structuring, DTAA advisory, and FEMA compliance. He coordinates the TP work with broader international tax strategy - ensuring the transfer pricing policy aligns with India-UAE, India-US, and other treaty positions.
                 </p>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function TransferPricingPage() {
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Need Transfer Pricing Documentation?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-                Don't wait for a notice. TP documentation must be in place before the due date — and should be updated every year. Contact us to get started.
+                Don't wait for a notice. TP documentation must be in place before the due date - and should be updated every year. Contact us to get started.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>

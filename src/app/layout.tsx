@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import GoogleAnalytics from './GoogleAnalytics'
 import { Montserrat, Open_Sans } from 'next/font/google'
 
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
@@ -253,7 +254,7 @@ const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20bo
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${montserrat.variable} ${openSans.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
       <head>
         <script
           type="application/ld+json"

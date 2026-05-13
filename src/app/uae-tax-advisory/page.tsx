@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -30,7 +30,7 @@ const services = [
   {
     icon: '🇦🇪',
     title: 'UAE Corporate Tax (CT) Compliance',
-    desc: 'Registration with the Federal Tax Authority (FTA), determination of taxable vs. exempt income, CT return preparation, and filing for UAE entities — including mainland, Free Zone, and group structures.',
+    desc: 'Registration with the Federal Tax Authority (FTA), determination of taxable vs. exempt income, CT return preparation, and filing for UAE entities - including mainland, Free Zone, and group structures.',
   },
   {
     icon: '⚖️',
@@ -40,7 +40,7 @@ const services = [
   {
     icon: '🏢',
     title: 'Free Zone Entity Structuring',
-    desc: 'UAE Free Zone companies must meet Qualifying Free Zone Person (QFZP) criteria to maintain the 0% CT rate. We assess your structure against QFZP conditions — substance requirements, qualifying income tests, and de minimis thresholds — and advise on any restructuring required.',
+    desc: 'UAE Free Zone companies must meet Qualifying Free Zone Person (QFZP) criteria to maintain the 0% CT rate. We assess your structure against QFZP conditions - substance requirements, qualifying income tests, and de minimis thresholds - and advise on any restructuring required.',
   },
   {
     icon: '💰',
@@ -49,7 +49,7 @@ const services = [
   },
   {
     icon: '📦',
-    title: 'Transfer Pricing — UAE to India',
+    title: 'Transfer Pricing - UAE to India',
     desc: 'Transactions between an Indian subsidiary and its UAE parent (or sister entity) require arm\'s length pricing documentation on both sides. We prepare consistent TP documentation covering both Indian and UAE regulatory requirements.',
   },
   {
@@ -74,11 +74,11 @@ const faqs = [
   },
   {
     q: 'What FEMA obligations arise when an Indian company receives dividends from a UAE subsidiary?',
-    a: 'When an Indian company receives dividends from its overseas subsidiary, the dividends are repatriated under RBI\'s Liberalised Remittance Scheme (LRS) framework for corporates. The Indian company must: (1) report the receipt in its annual FEMA return (APR — Annual Performance Report); (2) include the foreign dividend in its Indian taxable income (Section 115BBD provides a concessional 15% tax rate on certain foreign dividends); and (3) claim the DTAA benefit to avoid double taxation on the same income. We manage this end-to-end.',
+    a: 'When an Indian company receives dividends from its overseas subsidiary, the dividends are repatriated under RBI\'s Liberalised Remittance Scheme (LRS) framework for corporates. The Indian company must: (1) report the receipt in its annual FEMA return (APR - Annual Performance Report); (2) include the foreign dividend in its Indian taxable income (Section 115BBD provides a concessional 15% tax rate on certain foreign dividends); and (3) claim the DTAA benefit to avoid double taxation on the same income. We manage this end-to-end.',
   },
   {
     q: 'Does having a UAE entity create a Permanent Establishment (PE) risk in India?',
-    a: 'Yes, Permanent Establishment risk is a critical concern for UAE businesses operating in India. If the UAE company has employees, agents, or a fixed place of business in India that conclude contracts on its behalf, the Indian tax authorities may treat the UAE entity as having a PE in India — making its profits attributable to India taxable here. We review your operational structure, employee roles, and contract flows to identify and mitigate PE exposure before it becomes a problem.',
+    a: 'Yes, Permanent Establishment risk is a critical concern for UAE businesses operating in India. If the UAE company has employees, agents, or a fixed place of business in India that conclude contracts on its behalf, the Indian tax authorities may treat the UAE entity as having a PE in India - making its profits attributable to India taxable here. We review your operational structure, employee roles, and contract flows to identify and mitigate PE exposure before it becomes a problem.',
   },
 ]
 
@@ -95,7 +95,7 @@ const faqLd = {
 const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'UAE Corporate Tax Advisory — AK & Associates LLP',
+  name: 'UAE Corporate Tax Advisory - AK & Associates LLP',
   description: 'UAE Corporate Tax compliance, India-UAE DTAA advisory, Free Zone structuring, and repatriation planning for Indian businesses and UAE companies with India operations.',
   url: 'https://agrawalkhandelwal.com/uae-tax-advisory',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -134,11 +134,11 @@ export default function UAETaxAdvisory() {
               UAE Corporate Tax Advisory<br />for Indian Businesses
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.82)', maxWidth: '700px', margin: '0 auto 1rem', lineHeight: 1.8 }}>
-              Whether you run a UAE Free Zone company, an Indian subsidiary of a UAE parent, or are structuring a cross-border business — we provide expert UAE CT compliance and India-UAE tax advisory.
+              Whether you run a UAE Free Zone company, an Indian subsidiary of a UAE parent, or are structuring a cross-border business - we provide expert UAE CT compliance and India-UAE tax advisory.
             </p>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'rgba(255,215,0,0.15)', border: '1px solid rgba(255,215,0,0.3)', borderRadius: '8px', padding: '10px 18px', marginBottom: '2rem' }}>
               <span style={{ fontSize: '1.2rem' }}>🏆</span>
-              <span style={{ color: '#fde68a', fontSize: '0.88rem', fontWeight: 700 }}>CA Mehul Agrawal holds a UAE Corporate Taxation certification — one of very few CAs in India with this credential.</span>
+              <span style={{ color: '#fde68a', fontSize: '0.88rem', fontWeight: 700 }}>CA Mehul Agrawal holds a UAE Corporate Taxation certification - one of very few CAs in India with this credential.</span>
             </div>
             <br />
             <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -152,13 +152,13 @@ export default function UAETaxAdvisory() {
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
               <span className="section-badge">The New Landscape</span>
-              <h2 className="section-title">UAE Corporate Tax — What Indian Businesses Must Know</h2>
+              <h2 className="section-title">UAE Corporate Tax - What Indian Businesses Must Know</h2>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
               {[
                 { label: 'Standard CT Rate', value: '9%', note: 'On taxable income above AED 375,000 (~₹85 lakh)', color: 'var(--accent)' },
                 { label: 'Small Business Relief', value: '0%', note: 'Revenue below AED 3 million for qualifying SMEs', color: '#10b981' },
-                { label: 'Free Zone Rate', value: '0%', note: 'Only on Qualifying Income for QFZPs — other income taxed at 9%', color: '#f59e0b' },
+                { label: 'Free Zone Rate', value: '0%', note: 'Only on Qualifying Income for QFZPs - other income taxed at 9%', color: '#f59e0b' },
                 { label: 'Effective Date', value: 'Jun 2023', note: 'For financial years beginning on or after 1 June 2023', color: 'var(--primary)' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ textAlign: 'center', borderTop: `4px solid ${item.color}` }}>
@@ -199,9 +199,9 @@ export default function UAETaxAdvisory() {
             </div>
             <div style={{ maxWidth: '680px', margin: '0 auto' }}>
               <div className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
-                <h3 style={{ fontSize: '1.15rem', marginBottom: '12px' }}>Cross-Border Tax Optimisation — UAE Parent, Indian Subsidiary</h3>
+                <h3 style={{ fontSize: '1.15rem', marginBottom: '12px' }}>Cross-Border Tax Optimisation - UAE Parent, Indian Subsidiary</h3>
                 <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
-                  Structured a tax-efficient route for a UAE-based client incorporating an Indian subsidiary. Optimised the India-UAE DTAA position on management fees and royalties, prepared TP documentation for both jurisdictions, and ensured FEMA compliance — resulting in 100% regulatory compliance and an estimated 15% reduction in cross-border tax leakage.
+                  Structured a tax-efficient route for a UAE-based client incorporating an Indian subsidiary. Optimised the India-UAE DTAA position on management fees and royalties, prepared TP documentation for both jurisdictions, and ensured FEMA compliance - resulting in 100% regulatory compliance and an estimated 15% reduction in cross-border tax leakage.
                 </p>
                 <div style={{ borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                   <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-main)' }}>Sunny Stephen</p>
@@ -222,16 +222,16 @@ export default function UAETaxAdvisory() {
             <div style={{ maxWidth: '500px', margin: '0 auto' }}>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
-                  <Image src="/mehul.jpg" alt="CA Mehul Agrawal — UAE Corporate Tax Consultant India" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                  <Image src="/mehul.jpg" alt="CA Mehul Agrawal - UAE Corporate Tax Consultant India" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                 </div>
                 <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
-                <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner — UAE & International Tax</p>
+                <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - UAE & International Tax</p>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(210,43,43,0.08)', border: '1px solid rgba(210,43,43,0.2)', borderRadius: '6px', padding: '6px 14px', marginBottom: '1.25rem' }}>
                   <span>🏆</span>
-                  <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--accent)' }}>UAE Corporate Taxation — Certified</span>
+                  <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--accent)' }}>UAE Corporate Taxation - Certified</span>
                 </div>
                 <p style={{ fontSize: '0.93rem', color: 'var(--text-light)', lineHeight: 1.8, textAlign: 'justify' }}>
-                  CA Mehul is one of very few Chartered Accountants in India to hold a formal UAE Corporate Taxation certification. He advises Indian businesses operating in UAE, UAE companies setting up in India, and NRI entrepreneurs managing cross-border structures — with a specialisation in India-UAE DTAA, Free Zone compliance, and transfer pricing between both jurisdictions.
+                  CA Mehul is one of very few Chartered Accountants in India to hold a formal UAE Corporate Taxation certification. He advises Indian businesses operating in UAE, UAE companies setting up in India, and NRI entrepreneurs managing cross-border structures - with a specialisation in India-UAE DTAA, Free Zone compliance, and transfer pricing between both jurisdictions.
                 </p>
               </div>
             </div>
@@ -260,9 +260,9 @@ export default function UAETaxAdvisory() {
         <section className="section">
           <div className="container">
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>India-UAE Tax — Sorted by a Certified Expert</h2>
+              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>India-UAE Tax - Sorted by a Certified Expert</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-                Whether you need UAE CT registration, DTAA planning, or a full India-UAE structure review — we bring the only UAE Corporate Taxation-certified CA practice to the conversation.
+                Whether you need UAE CT registration, DTAA planning, or a full India-UAE structure review - we bring the only UAE Corporate Taxation-certified CA practice to the conversation.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>

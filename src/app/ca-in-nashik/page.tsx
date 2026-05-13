@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: 'Can you help with company registration in Nashik?',
-    a: 'Yes. We handle complete company and LLP incorporation in Nashik — from name reservation and DSC/DIN to MOA/AOA drafting, Certificate of Incorporation, GST registration, and bank account opening assistance.',
+    a: 'Yes. We handle complete company and LLP incorporation in Nashik - from name reservation and DSC/DIN to MOA/AOA drafting, Certificate of Incorporation, GST registration, and bank account opening assistance.',
   },
   {
     q: 'Do you file income tax returns for salaried employees in Nashik?',
@@ -162,11 +162,11 @@ export default function CAInNashik() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="hero-badge">
             <span>📍</span>
-            <span>Nashik Office — Mumbai Naka, Nashik 422011</span>
+            <span>Nashik Office - Mumbai Naka, Nashik 422011</span>
           </div>
           <h1>Trusted Chartered Accountant<br />in Nashik</h1>
           <p>
-            AK & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik — open Monday to Saturday.
+            AK & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik - open Monday to Saturday.
           </p>
           <div className="hero-cta">
             <a href="tel:+919527533506" className="btn btn-primary">
@@ -234,11 +234,11 @@ export default function CAInNashik() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
             {[
-              { icon: '🏆', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation — rare expertise available in Nashik.' },
+              { icon: '🏆', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation - rare expertise available in Nashik.' },
               { icon: '🌍', title: 'International Tax Capability', desc: 'One of the very few CA firms in Nashik with hands-on experience in transfer pricing, DTAA, FEMA, and UAE corporate tax.' },
               { icon: '⚡', title: 'Fast Turnaround', desc: 'Dedicated team ensuring timely GST returns, ITR filing, and compliance so you never miss a deadline.' },
-              { icon: '📞', title: 'Responsive Support', desc: 'Direct access to partners — no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
-              { icon: '💼', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO — all under one roof in Nashik.' },
+              { icon: '📞', title: 'Responsive Support', desc: 'Direct access to partners - no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
+              { icon: '💼', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO - all under one roof in Nashik.' },
               { icon: '🔒', title: 'Trusted & Confidential', desc: 'Your financial data is handled with strict confidentiality. We are registered with ICAI and operate with complete professional ethics.' },
             ].map((item, i) => (
               <div key={i} className="card">
@@ -261,10 +261,10 @@ export default function CAInNashik() {
           <div style={{ maxWidth: '500px', margin: '0 auto' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)', flexShrink: 0 }}>
-                <Image src="/mehul.jpg" alt="CA Mehul Agrawal — Chartered Accountant in Nashik" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                <Image src="/mehul.jpg" alt="CA Mehul Agrawal - Chartered Accountant in Nashik" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner — Nashik Office</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - Nashik Office</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Based in Nashik, CA Mehul Agrawal specialises in international taxation, transfer pricing, and corporate structuring. He advises Nashik-based businesses, startups, and NRI clients on tax optimisation and cross-border compliance.
               </p>
@@ -313,7 +313,7 @@ export default function CAInNashik() {
               <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#fff' }}>Book a Free Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation — first session is free.
+                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation - first session is free.
               </p>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
                 📅 Schedule on Google Calendar
@@ -332,7 +332,7 @@ export default function CAInNashik() {
               style={{ border: 0, display: 'block' }}
               allowFullScreen
               loading="lazy"
-              title="AK & Associates LLP — CA office at Mumbai Naka, Nashik"
+              title="AK & Associates LLP - CA office at Mumbai Naka, Nashik"
             />
           </div>
         </div>
@@ -343,7 +343,7 @@ export default function CAInNashik() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
-            <h2 className="section-title">Frequently Asked Questions — CA in Nashik</h2>
+            <h2 className="section-title">Frequently Asked Questions - CA in Nashik</h2>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {faqs.map(({ q, a }, i) => (
@@ -361,7 +361,7 @@ export default function CAInNashik() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Need a CA in Nashik?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            Contact AK & Associates LLP — your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
+            Contact AK & Associates LLP - your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919527533506" className="btn btn-primary">Call Now: +91 95275 33506</a>

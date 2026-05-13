@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: 'How do I register my business in Sillod?',
-    a: 'We handle complete business registration from Sillod — including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Contact us at +91 95955 85953 to get started.',
+    a: 'We handle complete business registration from Sillod - including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Contact us at +91 95955 85953 to get started.',
   },
   {
     q: 'Is AK & Associates available for clients in Aurangabad district from Sillod?',
@@ -85,7 +85,7 @@ const sillodLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': ['AccountingService', 'LocalBusiness', 'ProfessionalService'],
   '@id': 'https://agrawalkhandelwal.com/#location-sillod',
-  name: 'Agrawal Khandelwal & Associates LLP — Sillod',
+  name: 'Agrawal Khandelwal & Associates LLP - Sillod',
   alternateName: ['AK Associates Sillod', 'CA in Sillod', 'AK & Associates CA Sillod'],
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
@@ -162,11 +162,11 @@ export default function CAInSillod() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="hero-badge">
             <span>📍</span>
-            <span>Sillod Office — Tilak Nagar, Sillod 431112</span>
+            <span>Sillod Office - Tilak Nagar, Sillod 431112</span>
           </div>
           <h1>Chartered Accountant<br />in Sillod</h1>
           <p>
-            AK & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory — handled by CA Rupesh Khandelwal from our Sillod office.
+            AK & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory - handled by CA Rupesh Khandelwal from our Sillod office.
           </p>
           <div className="hero-cta">
             <a href="tel:+919595585953" className="btn btn-primary">
@@ -235,10 +235,10 @@ export default function CAInSillod() {
           <div style={{ maxWidth: '500px', margin: '0 auto' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)', flexShrink: 0 }}>
-                <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal — Chartered Accountant in Sillod" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal - Chartered Accountant in Sillod" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h3>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner — Sillod Office</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - Sillod Office</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 CA Rupesh Khandelwal heads our Sillod office. With experience from leading firms including Deloitte, he brings expertise in domestic taxation, audits, and business consulting to Sillod-based businesses across industries including automobiles, IT, and pharma.
               </p>
@@ -303,7 +303,7 @@ export default function CAInSillod() {
               Need advanced services like international taxation or startup advisory?
             </p>
             <p style={{ color: 'var(--text-main)', fontWeight: 600 }}>
-              Our Nashik office handles those — <a href="tel:+919527533506" style={{ color: 'var(--primary)' }}>+91 95275 33506</a>
+              Our Nashik office handles those - <a href="tel:+919527533506" style={{ color: 'var(--primary)' }}>+91 95275 33506</a>
             </p>
           </div>
         </div>
@@ -314,7 +314,7 @@ export default function CAInSillod() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
-            <h2 className="section-title">Frequently Asked Questions — CA in Sillod</h2>
+            <h2 className="section-title">Frequently Asked Questions - CA in Sillod</h2>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {faqs.map(({ q, a }, i) => (
@@ -332,7 +332,7 @@ export default function CAInSillod() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Looking for a CA in Sillod?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            AK & Associates LLP — your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
+            AK & Associates LLP - your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919595585953" className="btn btn-primary">Call Now: +91 95955 85953</a>

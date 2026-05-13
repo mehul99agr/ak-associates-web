@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import ThemeToggle from './ThemeToggle'
 
 const serviceLinks = [
   { href: '/services', label: 'All Services' },
@@ -132,7 +131,6 @@ export default function Navbar() {
 
           <Link href="/tools" className="link">TOOLS</Link>
           <Link href="/blog" className="link">INSIGHTS</Link>
-          <ThemeToggle />
           <a
             href={bookingLink}
             target="_blank"
@@ -146,7 +144,6 @@ export default function Navbar() {
 
         {/* Mobile controls */}
         <div className="mobile-controls">
-          <ThemeToggle />
           <button
             className={`hamburger ${isOpen ? 'is-active' : ''}`}
             onClick={toggleMenu}
