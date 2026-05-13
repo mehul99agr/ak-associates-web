@@ -35,6 +35,7 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="nav-links desktop-only" aria-label="Main navigation">
           <Link href="/services" className="link">SERVICES</Link>
+          <Link href="/company-incorporation" className="link">INCORPORATE</Link>
           <Link href="/startups" className="link" style={{ color: 'var(--accent)' }}>STARTUPS</Link>
           <Link href="/nri-tax-advisory" className="link">NRI</Link>
           <Link href="/tools" className="link">TOOLS</Link>
@@ -70,6 +71,7 @@ export default function Navbar() {
         <div className={`mobile-menu ${isOpen ? 'is-open' : ''}`} role="dialog" aria-modal="true">
           <div className="mobile-menu-links">
             <Link href="/services" onClick={closeMenu}>SERVICES</Link>
+            <Link href="/company-incorporation" onClick={closeMenu}>INCORPORATE</Link>
             <Link href="/startups" onClick={closeMenu} style={{ color: 'var(--accent)' }}>STARTUPS</Link>
             <Link href="/nri-tax-advisory" onClick={closeMenu}>NRI</Link>
             <Link href="/tools" onClick={closeMenu}>TOOLS</Link>

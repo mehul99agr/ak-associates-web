@@ -46,7 +46,7 @@ const categories = [
     icon: '🚀',
     items: [
       { name: 'Virtual CFO Services', detail: 'Strategic leadership for startups and growing SMEs.' },
-      { name: 'Business Incorporation', detail: 'Company & LLP formation with optimal structuring.' },
+      { name: 'Business Incorporation', detail: 'Company & LLP formation with optimal structuring.', link: '/company-incorporation' },
       { name: 'FEMA & RBI Compliance', detail: 'Advising on inbound and outbound foreign investments.' },
       { name: 'Financial Modeling', detail: 'Precision valuation and performance forecasting.' },
     ],
@@ -76,6 +76,7 @@ export default function Services() {
                     <li key={j} style={{ marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: j < cat.items.length - 1 ? '1px solid var(--border)' : 'none' }}>
                       <h3 style={{ fontSize: '1rem', marginBottom: '6px', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)', fontWeight: 700 }}>{item.name}</h3>
                       <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.detail}</p>
+                      {'link' in item && <Link href={(item as any).link} style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--accent)', textDecoration: 'none' }}>View details →</Link>}
                     </li>
                   ))}
                 </ul>

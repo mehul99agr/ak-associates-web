@@ -17,6 +17,7 @@ const services = [
     desc: 'Complete guidance on company and LLP formation, optimal corporate structure selection, and regulatory compliance setup.',
     icon: '🏢',
     features: ['Company & LLP Formation', 'Optimal Structure Advisory', 'Regulatory Compliance Setup', 'Foreign Investment Approvals'],
+    link: '/company-incorporation',
   },
   {
     title: 'Tax Planning & Compliance',
@@ -166,18 +167,24 @@ export default function Home() {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
-            {services.map((s, i) => (
-              <div key={i} className="card">
-                <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
-                <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
-                <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', marginBottom: '1.25rem', lineHeight: 1.7 }}>{s.desc}</p>
-                <ul style={{ listStyle: 'none', fontSize: '0.88rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  {s.features.map((f, j) => (
-                    <li key={j} style={{ color: 'var(--text-light)' }}>✓ {f}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {services.map((s, i) => {
+              const inner = (
+                <>
+                  <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
+                  <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', marginBottom: '1.25rem', lineHeight: 1.7 }}>{s.desc}</p>
+                  <ul style={{ listStyle: 'none', fontSize: '0.88rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {s.features.map((f, j) => (
+                      <li key={j} style={{ color: 'var(--text-light)' }}>✓ {f}</li>
+                    ))}
+                  </ul>
+                  {s.link && <div style={{ marginTop: '1.25rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.88rem' }}>Learn more →</div>}
+                </>
+              )
+              return s.link
+                ? <Link key={i} href={s.link} className="card" style={{ display: 'block', textDecoration: 'none' }}>{inner}</Link>
+                : <div key={i} className="card">{inner}</div>
+            })}
           </div>
         </div>
       </section>
