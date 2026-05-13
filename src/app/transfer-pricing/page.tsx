@@ -178,7 +178,7 @@ export default function TransferPricingPage() {
                 India's TP compliance structure is tiered by transaction value. Most MNC subsidiaries and Indian companies with foreign group entities will trigger at least the basic Form 3CEB requirement.
               </p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '0 auto' }}>
               {thresholds.map((t, i) => (
                 <div key={i} className="card" style={{ borderTop: `4px solid ${t.color}` }}>
                   <div style={{ fontWeight: 800, color: t.color, fontSize: '1.1rem', marginBottom: '0.5rem' }}>{t.threshold}</div>

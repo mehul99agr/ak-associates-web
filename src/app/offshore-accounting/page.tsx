@@ -181,7 +181,7 @@ export default function OffshoreAccounting() {
               <span className="section-badge">Why Outsource to India</span>
               <h2 className="section-title">The Case for Offshore Accounting from India</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
                 { label: 'Cost Saving', value: '60–70%', note: 'vs. equivalent UK / US / UAE accounting costs', color: '#10b981' },
                 { label: 'Time Zone', value: 'IST +5:30', note: 'Overlap with UK morning + full UAE business day', color: 'var(--accent)' },
@@ -250,7 +250,7 @@ export default function OffshoreAccounting() {
               <span className="section-badge">Process</span>
               <h2 className="section-title">How We Onboard New Offshore Clients</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1.5rem', maxWidth: '960px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1.5rem', maxWidth: '960px', margin: '0 auto' }}>
               {[
                 { step: '01', title: 'Discovery Call', desc: 'We understand your requirements, software, volume, and deadlines in a 30-minute call.' },
                 { step: '02', title: 'Scope & Pricing', desc: 'Fixed-fee engagement letter signed. NDA executed. Data access set up.' },

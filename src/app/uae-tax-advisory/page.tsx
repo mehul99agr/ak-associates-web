@@ -154,7 +154,7 @@ export default function UAETaxAdvisory() {
               <span className="section-badge">The New Landscape</span>
               <h2 className="section-title">UAE Corporate Tax - What Indian Businesses Must Know</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 210px), 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
               {[
                 { label: 'Standard CT Rate', value: '9%', note: 'On taxable income above AED 375,000 (~₹85 lakh)', color: 'var(--accent)' },
                 { label: 'Small Business Relief', value: '0%', note: 'Revenue below AED 3 million for qualifying SMEs', color: '#10b981' },

@@ -238,7 +238,7 @@ export default function NRITaxAdvisory() {
               <span className="section-badge">Key Deadlines</span>
               <h2 className="section-title">NRI Compliance Calendar</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1.25rem', maxWidth: '900px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))', gap: '1.25rem', maxWidth: '900px', margin: '0 auto' }}>
               {deadlines.map((d, i) => (
                 <div key={i} className="card">
                   <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{d.date}</div>
