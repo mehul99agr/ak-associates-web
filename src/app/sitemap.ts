@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE_URL, lastModified: new Date(), changeFrequency: 'monthly', priority: 1 },
     { url: `${BASE_URL}/services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/company-incorporation`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE_URL}/startups`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/nri-tax-advisory`, lastModified: new Date('2026-05-08'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/tools`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
@@ -14,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/capital-gains`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
 { url: `${BASE_URL}/tools/sip-planner`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/tools/incorporation-wizard`, lastModified: new Date('2026-05-08'), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/blog/company-incorporation-india-guide`, lastModified: new Date('2026-05-08'), changeFrequency: 'yearly', priority: 0.9 },
+    { url: `${BASE_URL}/blog/company-incorporation-india-guide`, lastModified: new Date('2026-05-13'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/uae-entity-setup-when-it-makes-sense`, lastModified: new Date('2026-05-08'), changeFrequency: 'yearly', priority: 0.8 },
     { url: `${BASE_URL}/blog/new-income-tax-act-rules-2025`, lastModified: new Date('2026-03-20'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/uae-corporate-tax-indian-impact`, lastModified: new Date('2026-03-08'), changeFrequency: 'yearly', priority: 0.7 },

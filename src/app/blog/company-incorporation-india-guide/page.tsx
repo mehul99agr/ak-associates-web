@@ -26,7 +26,7 @@ const articleLd = {
   headline: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
   description: 'Complete guide to company incorporation in India — structure comparison, step-by-step process, costs, timeline, and documents.',
   datePublished: '2026-05-08',
-  dateModified: '2026-05-08',
+  dateModified: '2026-05-13',
   author: {
     '@type': 'Organization',
     name: 'Agrawal Khandelwal & Associates LLP',
@@ -40,10 +40,130 @@ const articleLd = {
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide',
 }
 
+const howToLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Incorporate a Private Limited Company in India',
+  description: 'Step-by-step process to register a Private Limited Company in India through the MCA portal.',
+  totalTime: 'P15D',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: '15000' },
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Obtain Digital Signature Certificate (DSC)',
+      text: 'All proposed directors need a Class-3 DSC from a certified authority. Used to digitally sign all MCA filings. Takes 1–2 days.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Apply for Director Identification Number (DIN)',
+      text: 'Each director needs a unique DIN from the Ministry of Corporate Affairs. Now integrated into the SPICe+ form.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Reserve Company Name (RUN Form)',
+      text: 'Apply for your company name on the MCA portal using the RUN form. Takes 2–5 working days.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'File SPICe+ Form',
+      text: 'The integrated incorporation form covering company registration, DIN, PAN, TAN, GSTIN, EPFO, ESIC, and bank account opening.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Draft MOA & AOA',
+      text: 'Memorandum of Association defines company objectives; Articles of Association define internal rules. Both filed with SPICe+.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Receive Certificate of Incorporation',
+      text: 'MCA issues the Certificate of Incorporation with your CIN number. Timeline: 7–15 working days from form submission.',
+    },
+  ],
+}
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How long does it take to incorporate a company in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Typically 15–20 working days end-to-end: 1–2 days for DSC, 2–5 days for name reservation, and 7–15 days for MCA to process the SPICe+ filing and issue the Certificate of Incorporation.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the minimum capital required to incorporate a company in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'There is no minimum paid-up capital requirement for a Private Limited Company or LLP in India since the Companies (Amendment) Act, 2015. You can incorporate with as little as ₹1 in authorised capital, though government fees are calculated on authorised capital.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between a Private Limited Company and an LLP?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A Private Limited Company can raise VC/angel funding, issue ESOPs, and has higher compliance requirements. An LLP is simpler with lower compliance costs, suited for professional services and consulting firms, but cannot raise equity funding easily. Tax rate for Pvt Ltd is 22%, while LLP profits are taxed at 30%.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does it cost to incorporate a company in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'All-in cost for a Private Limited Company typically ranges from ₹15,000 to ₹40,000 — covering government filing fees (₹8,000–₹15,000 depending on authorised capital), DSC for each director (₹1,000–₹2,000 each), and CA/professional fees (₹5,000–₹25,000).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What documents are required for company incorporation in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Each director/shareholder needs: PAN Card, Aadhaar Card, passport-size photograph, address proof (bank statement or utility bill not older than 2 months), and email/mobile. For the registered office: a utility bill of the premises and an NOC from the property owner if rented.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Which is better for a startup — Private Limited Company or LLP?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For startups planning to raise external funding or issue ESOPs, a Private Limited Company is the only viable option — investors require it. For bootstrapped professional services businesses (consulting, design, law), an LLP is better due to lower compliance burden and flexible profit-sharing.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can an NRI or foreign national incorporate a company in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. An NRI or foreign national can be a director or shareholder in an Indian company. However, at least one director must be a resident Indian (stayed in India for at least 182 days in the previous calendar year). Foreign investment is subject to FDI policy and FEMA regulations.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the SPICe+ form?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is the MCA\'s integrated incorporation form. It combines company registration, DIN allotment, PAN, TAN, GSTIN, EPFO, ESIC registration, and bank account opening into a single application — replacing what used to be 5 separate filings.',
+      },
+    },
+  ],
+}
+
 export default function CompanyIncorporationGuideBlog() {
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
       <div className="container">
         <Link href="/blog" style={{ color: 'var(--accent)', fontWeight: 700, display: 'inline-block', marginBottom: '2rem' }}>
