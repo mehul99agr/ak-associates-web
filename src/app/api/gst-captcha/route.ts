@@ -1,48 +1,78 @@
 import { NextResponse } from 'next/server'
 
-const HEADERS = {
-  'Referer': 'https://services.gst.gov.in/services/searchtp',
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-  'Accept': 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+
+function extractCookies(setCookieHeader: string | null): Record<string, string> {
+  if (!setCookieHeader) return {}
+  const cookies: Record<string, string> = {}
+  // Each Set-Cookie directive is separated by comma, but dates also contain commas.
+  // Split on ", " only when followed by a token= pattern (start of a new cookie).
+  const parts = setCookieHeader.split(/,\s*(?=[A-Za-z0-9_-]+=)/)
+  for (const part of parts) {
+    const nameValue = part.split(';')[0].trim()
+    const eqIdx = nameValue.indexOf('=')
+    if (eqIdx > 0) {
+      const name = nameValue.slice(0, eqIdx).trim()
+      const value = nameValue.slice(eqIdx + 1).trim()
+      cookies[name] = value
+    }
+  }
+  return cookies
+}
+
+function cookieHeader(cookies: Record<string, string>): string {
+  return Object.entries(cookies).map(([k, v]) => `${k}=${v}`).join('; ')
 }
 
 export async function GET() {
   try {
-    const res = await fetch('https://services.gst.gov.in/services/captcha', {
-      headers: HEADERS,
+    // Step 1 — init session by visiting the search page (sets initial cookies)
+    const sessionRes = await fetch('https://services.gst.gov.in/services/searchtp', {
+      headers: { 'User-Agent': UA },
       signal: AbortSignal.timeout(10000),
     })
+    const sessionCookies = extractCookies(sessionRes.headers.get('set-cookie'))
 
-    if (!res.ok) {
-      return NextResponse.json({ error: 'Failed to load captcha from GST portal' }, { status: 502 })
+    // Step 2 — fetch captcha image (sets CaptchaCookie)
+    const captchaRes = await fetch(
+      `https://services.gst.gov.in/services/captcha?rnd=${Math.random()}`,
+      {
+        headers: {
+          'User-Agent': UA,
+          'Referer': 'https://services.gst.gov.in/services/searchtp',
+          'Accept': 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+          ...(Object.keys(sessionCookies).length ? { 'Cookie': cookieHeader(sessionCookies) } : {}),
+        },
+        signal: AbortSignal.timeout(10000),
+      }
+    )
+
+    if (!captchaRes.ok) {
+      return NextResponse.json({ error: 'GST portal failed to return captcha' }, { status: 502 })
     }
 
-    const buffer = await res.arrayBuffer()
-    const contentType = res.headers.get('content-type') ?? 'image/png'
+    const captchaCookies = extractCookies(captchaRes.headers.get('set-cookie'))
+    const allCookies = { ...sessionCookies, ...captchaCookies }
 
-    // Extract the JSESSIONID from GSTN's Set-Cookie to use in subsequent search request
-    const setCookie = res.headers.get('set-cookie') ?? ''
-    const sessionMatch = setCookie.match(/JSESSIONID=([^;,\s]+)/)
-    const jsessionid = sessionMatch?.[1] ?? ''
+    const buffer = await captchaRes.arrayBuffer()
+    const contentType = captchaRes.headers.get('content-type') ?? 'image/png'
 
     const response = new NextResponse(Buffer.from(buffer), {
       headers: { 'Content-Type': contentType },
     })
 
-    // Store session server-side (httpOnly so JS can't read it, sent automatically with /api/gst-search)
-    if (jsessionid) {
-      response.cookies.set('gst_jsessionid', jsessionid, {
-        httpOnly: true,
-        sameSite: 'strict',
-        path: '/api/gst-search',
-        maxAge: 300, // 5 minutes
-      })
-    }
+    // Store all GSTN cookies server-side so /api/gst-search can forward them
+    response.cookies.set('gst_cookies', JSON.stringify(allCookies), {
+      httpOnly: true,
+      sameSite: 'strict',
+      path: '/',
+      maxAge: 300,
+    })
 
     return response
   } catch (err: any) {
     if (err?.name === 'TimeoutError') {
-      return NextResponse.json({ error: 'GST portal timed out loading captcha' }, { status: 504 })
+      return NextResponse.json({ error: 'GST portal timed out' }, { status: 504 })
     }
     return NextResponse.json({ error: 'Failed to load captcha' }, { status: 502 })
   }
