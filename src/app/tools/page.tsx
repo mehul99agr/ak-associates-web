@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Free Tax & Finance Tools | Income Tax, GST, SIP Calculator',
-  description: 'Free interactive financial tools: Income Tax Estimator, GSTIN Search & Verify, Capital Gains Calculator, SIP & Retirement Planner, and Incorporation Wizard. Powered by AK & Associates LLP.',
+  title: 'Free Tax & Finance Tools | Income Tax, SIP Calculator',
+  description: 'Free interactive financial tools: Income Tax Estimator, Capital Gains Calculator, SIP & Retirement Planner, and Incorporation Wizard. Powered by AK & Associates LLP.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/tools' },
   openGraph: {
     title: 'Free Tax & Finance Tools | AK & Associates LLP',
-    description: 'Calculate income tax, capital gains, SIP returns, and verify GSTINs — all free tools from our expert CA team.',
+    description: 'Calculate income tax, capital gains, and SIP returns — all free tools from our expert CA team.',
     url: 'https://agrawalkhandelwal.com/tools',
   },
 }
@@ -18,12 +18,6 @@ const tools = [
     desc: 'Calculate your tax liability under Old or New Regime based on the latest Union Budget updates.',
     icon: '💵',
     link: '/tax-calculator',
-  },
-  {
-    title: 'GSTIN Search & Verify',
-    desc: 'Verify the authenticity and filing status of any GST Identification Number instantly.',
-    icon: '🔍',
-    link: '/tools/gst-search',
   },
   {
     title: 'Capital Gains Calculator',
