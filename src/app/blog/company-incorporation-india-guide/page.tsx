@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
-  description: 'Complete guide to company incorporation in India — Private Limited Company, LLP, or OPC. Covers the step-by-step process, costs, timeline, documents required, and how to choose the right structure for your business.',
+  description: 'Complete guide to company incorporation in India: Private Limited Company, LLP, or OPC. Covers the step-by-step process, costs, timeline, documents required, and how to choose the right structure for your business.',
   keywords: [
     'company incorporation India', 'how to incorporate company India',
     'private limited company registration India', 'LLP registration India',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide' },
   openGraph: {
     title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
-    description: 'Step-by-step guide to company registration in India — which structure to choose, what the process looks like, what it costs, and what mistakes to avoid.',
+    description: 'Step-by-step guide to company registration in India, which structure to choose, what the process looks like, what it costs, and what mistakes to avoid.',
     url: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide',
     type: 'article',
   },
@@ -24,7 +24,7 @@ const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
-  description: 'Complete guide to company incorporation in India — structure comparison, step-by-step process, costs, timeline, and documents.',
+  description: 'Complete guide to company incorporation in India: structure comparison, step-by-step process, costs, timeline, and documents.',
   datePublished: '2026-05-08',
   dateModified: '2026-05-13',
   author: {
@@ -120,7 +120,7 @@ const faqLd = {
       name: 'How much does it cost to incorporate a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'All-in cost for a Private Limited Company typically ranges from ₹15,000 to ₹40,000 — covering government filing fees (₹8,000–₹15,000 depending on authorised capital), DSC for each director (₹1,000–₹2,000 each), and CA/professional fees (₹5,000–₹25,000).',
+        text: 'All-in cost for a Private Limited Company typically ranges from ₹15,000 to ₹40,000: covering government filing fees (₹8,000–₹15,000 depending on authorised capital), DSC for each director (₹1,000–₹2,000 each), and CA/professional fees (₹5,000–₹25,000).',
       },
     },
     {
@@ -133,10 +133,10 @@ const faqLd = {
     },
     {
       '@type': 'Question',
-      name: 'Which is better for a startup — Private Limited Company or LLP?',
+      name: 'Which is better for a startup: Private Limited Company or LLP?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For startups planning to raise external funding or issue ESOPs, a Private Limited Company is the only viable option — investors require it. For bootstrapped professional services businesses (consulting, design, law), an LLP is better due to lower compliance burden and flexible profit-sharing.',
+        text: 'For startups planning to raise external funding or issue ESOPs, a Private Limited Company is the only viable option: investors require it. For bootstrapped professional services businesses (consulting, design, law), an LLP is better due to lower compliance burden and flexible profit-sharing.',
       },
     },
     {
@@ -152,7 +152,7 @@ const faqLd = {
       name: 'What is the SPICe+ form?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is the MCA\'s integrated incorporation form. It combines company registration, DIN allotment, PAN, TAN, GSTIN, EPFO, ESIC registration, and bank account opening into a single application — replacing what used to be 5 separate filings.',
+        text: 'SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is the MCA\'s integrated incorporation form. It combines company registration, DIN allotment, PAN, TAN, GSTIN, EPFO, ESIC registration, and bank account opening into a single application, replacing what used to be 5 separate filings.',
       },
     },
   ],
@@ -184,7 +184,7 @@ export default function CompanyIncorporationGuideBlog() {
               Every week, founders and small business owners ask us the same question: &ldquo;How do I register my company in India, and which structure should I choose?&rdquo; It sounds simple. It isn&apos;t. The structure you pick on day one affects your ability to raise funding, your tax liability, your annual compliance burden, and how easy it is to bring in co-founders or exit years later.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
-              This guide covers everything you need to know — the three main options, how to choose between them, the step-by-step registration process, what it costs, and what mistakes to avoid.
+              This guide covers everything you need to know: the three main options, how to choose between them, the step-by-step registration process, what it costs, and what mistakes to avoid.
             </p>
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>The Three Main Options</h2>
@@ -226,7 +226,7 @@ export default function CompanyIncorporationGuideBlog() {
 
             <h3 style={{ color: 'var(--primary)', marginTop: '1.5rem', marginBottom: '0.75rem', fontSize: '1.3rem' }}>Choose a Private Limited Company if:</h3>
             <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
-              <li style={{ marginBottom: '0.5rem' }}>You plan to raise Angel or VC funding — investors almost exclusively require a Pvt Ltd structure</li>
+              <li style={{ marginBottom: '0.5rem' }}>You plan to raise Angel or VC funding: investors almost exclusively require a Pvt Ltd structure</li>
               <li style={{ marginBottom: '0.5rem' }}>You want to issue ESOPs to attract and retain talent</li>
               <li style={{ marginBottom: '0.5rem' }}>You&apos;re building a scalable product or SaaS business</li>
               <li style={{ marginBottom: '0.5rem' }}>You want a clear exit path via acquisition or IPO</li>
@@ -234,7 +234,7 @@ export default function CompanyIncorporationGuideBlog() {
 
             <h3 style={{ color: 'var(--primary)', marginTop: '1.5rem', marginBottom: '0.75rem', fontSize: '1.3rem' }}>Choose an LLP if:</h3>
             <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
-              <li style={{ marginBottom: '0.5rem' }}>You&apos;re in professional services — consulting, design, law, architecture, accounting</li>
+              <li style={{ marginBottom: '0.5rem' }}>You&apos;re in professional services: consulting, design, law, architecture, accounting</li>
               <li style={{ marginBottom: '0.5rem' }}>You want limited liability without the full compliance burden of a company</li>
               <li style={{ marginBottom: '0.5rem' }}>You are bootstrapping and annual turnover will be below ₹40 lakhs (avoiding mandatory audit)</li>
               <li style={{ marginBottom: '0.5rem' }}>You have two or more partners and prefer a flexible profit-sharing arrangement</li>
@@ -250,7 +250,7 @@ export default function CompanyIncorporationGuideBlog() {
             <div style={{ background: 'var(--bg-surface)', padding: '2rem', borderRadius: 'var(--radius-md)', borderLeft: '5px solid var(--accent)', margin: '3rem 0' }}>
               <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Not sure which one fits you?</h3>
               <p style={{ color: 'var(--text-main)', marginBottom: '1rem' }}>
-                Use our free <strong>Company Type Finder</strong> — answer 4 questions and get a CA-backed recommendation in under 2 minutes.
+                Use our free <strong>Company Type Finder</strong>: answer 4 questions and get a CA-backed recommendation in under 2 minutes.
               </p>
               <Link href="/tools/incorporation-wizard" className="btn btn-primary" style={{ display: 'inline-block' }}>
                 Take the Quiz
@@ -284,7 +284,7 @@ export default function CompanyIncorporationGuideBlog() {
               {
                 step: '5',
                 title: 'Draft MOA & AOA',
-                desc: 'The Memorandum of Association (MOA) defines the company\'s objectives. The Articles of Association (AOA) defines internal rules. Both are filed electronically with SPICe+. Getting these right matters — poorly drafted MOA objects can restrict your business activities later.',
+                desc: 'The Memorandum of Association (MOA) defines the company\'s objectives. The Articles of Association (AOA) defines internal rules. Both are filed electronically with SPICe+. Getting these right matters: poorly drafted MOA objects can restrict your business activities later.',
               },
               {
                 step: '6',
@@ -332,7 +332,7 @@ export default function CompanyIncorporationGuideBlog() {
               ))}
             </div>
             <p style={{ marginBottom: '1.5rem' }}>
-              Be wary of extremely low-cost offers online. The ₹999 incorporation packages typically exclude government fees, DSC costs, and any advisory on MOA objects or shareholder agreements — all of which matter significantly as your business grows.
+              Be wary of extremely low-cost offers online. The ₹999 incorporation packages typically exclude government fees, DSC costs, and any advisory on MOA objects or shareholder agreements, all of which matter significantly as your business grows.
             </p>
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Common Mistakes to Avoid</h2>
@@ -372,7 +372,7 @@ export default function CompanyIncorporationGuideBlog() {
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Ready to incorporate? Let&apos;s do it properly.</h3>
             <p style={{ color: 'var(--text-light)', marginBottom: '2rem', fontSize: '0.95rem' }}>
-              We handle the full incorporation process — structure advice, MOA drafting, MCA filings, and post-incorporation compliance setup.
+              We handle the full incorporation process: structure advice, MOA drafting, MCA filings, and post-incorporation compliance setup.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">

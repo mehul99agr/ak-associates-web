@@ -24,14 +24,14 @@ const posts = [
     slug: 'company-incorporation-india-guide',
     date: 'May 08, 2026',
     category: 'Corporate Law',
-    summary: 'Complete guide to company registration in India — which structure to choose, the step-by-step process, what it costs, documents required, and mistakes to avoid.',
+    summary: 'Complete guide to company registration in India, which structure to choose, the step-by-step process, what it costs, documents required, and mistakes to avoid.',
   },
   {
     title: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
     slug: 'uae-entity-setup-when-it-makes-sense',
     date: 'May 08, 2026',
     category: 'International Tax',
-    summary: 'Formation costs ₹3–6L, ongoing compliance, and FEMA exposure — here\'s the honest breakdown of when a Dubai company actually works for Indian businesses, and when it\'s expensive FOMO.',
+    summary: 'Formation costs ₹3–6L, ongoing compliance, and FEMA exposure: here\'s the honest breakdown of when a Dubai company actually works for Indian businesses, and when it\'s expensive FOMO.',
   },
   {
     title: 'Deciphering the New Income Tax Act & Rules 2025',
@@ -92,7 +92,7 @@ export default function Blog() {
 
           {/* Compliance Calendar */}
           <div className="card" style={{ marginBottom: '3.5rem', borderLeft: '4px solid var(--accent)' }}>
-            <h2 style={{ fontSize: '1.35rem', marginBottom: '1.5rem' }}>Upcoming Compliance Deadlines — May 2026</h2>
+            <h2 style={{ fontSize: '1.35rem', marginBottom: '1.5rem' }}>Upcoming Compliance Deadlines: May 2026</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1rem' }}>
               {[
                 { date: '7 May', title: 'TDS/TCS Deposit', desc: 'Deposit of Tax deducted/collected for April 2026.' },

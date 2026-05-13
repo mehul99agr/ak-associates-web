@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact' },
   openGraph: {
     title: 'UAE Corporate Tax: Impact on Indian Businesses',
-    description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations — DTAA benefits, Transfer Pricing rules, and restructuring strategies.',
+    description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing rules, and restructuring strategies.',
     url: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact',
     type: 'article',
   },
@@ -22,7 +22,7 @@ const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'UAE Corporate Tax: Impact on Indian Businesses',
-  description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations — DTAA benefits, Transfer Pricing, and restructuring.',
+  description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing, and restructuring.',
   datePublished: '2026-03-08',
   dateModified: '2026-03-08',
   author: {
@@ -59,7 +59,7 @@ export default function UAECorporateTaxBlog() {
 
           <div style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
             <p style={{ marginBottom: '1.5rem' }}>
-              For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of **9%** marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change—it’s a global structural challenge.
+              For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of **9%** marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change:it’s a global structural challenge.
             </p>
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>1. The End of the "Tax-Free" Subsidiary</h2>

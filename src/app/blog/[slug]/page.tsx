@@ -10,7 +10,7 @@ const posts = [
     slug: 'essential-compliance-indian-startups',
     date: 'March 12, 2026',
     category: 'Corporate Law',
-    metaDescription: 'Complete compliance checklist for Indian startups — MCA filings, GST returns, TDS, advance tax, and FEMA reporting. Avoid penalties and stay DPIIT-eligible.',
+    metaDescription: 'Complete compliance checklist for Indian startups: MCA filings, GST returns, TDS, advance tax, and FEMA reporting. Avoid penalties and stay DPIIT-eligible.',
     keywords: ['startup compliance India', 'MCA filing startup', 'GST compliance startup India', 'FEMA FC-GPR reporting', 'DPIIT compliance India'],
     content: `Navigating the regulatory landscape in India can be daunting for new founders. From the moment of incorporation, a startup enters a cycle of mandatory filings.
 

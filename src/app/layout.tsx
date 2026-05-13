@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   description: 'Trusted Chartered Accountants in Bangalore, Mumbai & Nashik. Experts in International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, Startup Advisory, Virtual CFO, and Offshore Accounting. 100+ clients across India & UAE.',
   keywords: [
-    // Bangalore — primary market
+    // Bangalore: primary market
     'CA for startups Bangalore', 'chartered accountant Bangalore',
     'startup advisory Bangalore', 'company incorporation Bangalore',
     'DPIIT registration Bangalore', 'virtual CFO Bangalore',
@@ -145,7 +145,7 @@ const faqLd = {
       name: 'Do you provide CA services for startups in Bangalore?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. We specialize in end-to-end startup advisory in Bangalore — from company incorporation and DPIIT registration to ESOP structuring, Virtual CFO services, and investor-ready financial reporting for fundraising rounds.',
+        text: 'Yes. We specialize in end-to-end startup advisory in Bangalore, from company incorporation and DPIIT registration to ESOP structuring, Virtual CFO services, and investor-ready financial reporting for fundraising rounds.',
       },
     },
     {

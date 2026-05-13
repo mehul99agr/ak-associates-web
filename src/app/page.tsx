@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <h1>Simplify your finances,<br />Empower your decisions.</h1>
           <p>
-            With over five years of professional experience, we serve a diverse portfolio of clients — from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
+            With over five years of professional experience, we serve a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
           </p>
           <div className="hero-cta">
             <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -279,7 +279,7 @@ export default function Home() {
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.4rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>rupesh@agrawalkhandelwal.com</a>
             </div>
 
-            {/* WhatsApp CTA — uses explicit dark blue to work in both modes */}
+            {/* WhatsApp CTA: uses explicit dark blue to work in both modes */}
             <div className="card" style={{ textAlign: 'center', background: '#0A2E5B', borderColor: '#0A2E5B' }}>
               <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#ffffff' }}>Book a Consultation</h3>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'NRI Tax Advisory India | ITR Filing, Property Sale, FEMA & DTAA | AK & Associates',
-  description: 'Expert CA advisory for Non-Resident Indians — ITR filing, TDS refunds, property sale & repatriation (Form 15CA/15CB, now Form 145/146), DTAA claims, and FEMA compliance. Serving NRIs in UAE, US, UK, Singapore, and Australia.',
+  description: 'Expert CA advisory for Non-Resident Indians: ITR filing, TDS refunds, property sale & repatriation (Form 15CA/15CB, now Form 145/146), DTAA claims, and FEMA compliance. Serving NRIs in UAE, US, UK, Singapore, and Australia.',
   keywords: [
     'NRI tax consultant India', 'NRI ITR filing India',
     'NRI property sale tax India', 'NRI taxation India 2026',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/nri-tax-advisory' },
   openGraph: {
     title: 'NRI Tax Advisory India | ITR, Property Sale, FEMA & DTAA',
-    description: 'End-to-end tax advisory for Non-Resident Indians — ITR filing, repatriation, DTAA claims, and FEMA compliance under the new Income Tax Act 2025.',
+    description: 'End-to-end tax advisory for Non-Resident Indians: ITR filing, repatriation, DTAA claims, and FEMA compliance under the new Income Tax Act 2025.',
     url: 'https://agrawalkhandelwal.com/nri-tax-advisory',
   },
 }
@@ -29,7 +29,7 @@ const faqLd = {
       name: 'Do NRIs need to file an income tax return in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, if your total income from Indian sources (rent, interest, capital gains, etc.) exceeds ₹2.5 lakh in a financial year, you are required to file an ITR in India — regardless of where you live. If TDS has been deducted and you have no other taxable income, filing is still advisable to claim a refund.',
+        text: 'Yes, if your total income from Indian sources (rent, interest, capital gains, etc.) exceeds ₹2.5 lakh in a financial year, you are required to file an ITR in India, regardless of where you live. If TDS has been deducted and you have no other taxable income, filing is still advisable to claim a refund.',
       },
     },
     {
@@ -37,7 +37,7 @@ const faqLd = {
       name: 'What is the TDS rate on NRI fixed deposits?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Banks deduct TDS at 30% (plus surcharge and cess) on interest earned on NRO fixed deposits. NRE and FCNR deposit interest is fully tax-exempt. If your country of residence has a DTAA with India, the rate may be reduced — typically to 10–15% — subject to submitting a Tax Residency Certificate (TRC).',
+        text: 'Banks deduct TDS at 30% (plus surcharge and cess) on interest earned on NRO fixed deposits. NRE and FCNR deposit interest is fully tax-exempt. If your country of residence has a DTAA with India, the rate may be reduced, typically to 10–15%, subject to submitting a Tax Residency Certificate (TRC).',
       },
     },
     {
@@ -53,7 +53,7 @@ const faqLd = {
       name: 'What is RNOR status and how does it work under the new Income Tax Act 2025?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'RNOR (Resident but Not Ordinarily Resident) is a transitional status for NRIs returning to India. Under the new Income Tax Act 2025 (effective April 1, 2026), you qualify as RNOR if you spend 120 or more days in India in a year AND have spent 365 or more days in India over the previous four years. As RNOR, only your Indian-sourced income is taxable — your global income remains tax-free in India. This status lasts up to 3 years after your return.',
+        text: 'RNOR (Resident but Not Ordinarily Resident) is a transitional status for NRIs returning to India. Under the new Income Tax Act 2025 (effective April 1, 2026), you qualify as RNOR if you spend 120 or more days in India in a year AND have spent 365 or more days in India over the previous four years. As RNOR, only your Indian-sourced income is taxable, your global income remains tax-free in India. This status lasts up to 3 years after your return.',
       },
     },
     {
@@ -92,7 +92,7 @@ const services = [
   },
   {
     title: 'Return to India Planning',
-    desc: 'The RNOR window — up to 3 years — is the most valuable and most wasted tax planning opportunity for returning NRIs. We help you structure your assets and income before you lose the exemption on global income.',
+    desc: 'The RNOR window (up to 3 years) is the most valuable and most wasted tax planning opportunity for returning NRIs. We help you structure your assets and income before you lose the exemption on global income.',
   },
 ]
 
@@ -116,10 +116,10 @@ export default function NRITaxAdvisory() {
               NRI Tax Advisory
             </span>
             <h1 style={{ color: '#fff', fontSize: 'clamp(2.2rem, 5vw, 3.25rem)', marginBottom: '1.5rem', maxWidth: '820px', margin: '0 auto 1.5rem', lineHeight: 1.15 }}>
-              India Tax Compliance for Non-Resident Indians — Done Right
+              India Tax Advisory for Non-Resident Indians
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.82)', maxWidth: '680px', margin: '0 auto 2.5rem', lineHeight: 1.8 }}>
-              From ITR filing and TDS refunds to property repatriation and DTAA claims — we handle India&apos;s most complex tax requirements for NRIs across UAE, US, UK, Singapore, and Australia.
+              We handle ITR filing, TDS refunds, property repatriation, and DTAA claims for NRIs in the UAE, US, UK, Singapore, and Australia.
             </p>
             <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               Book an NRI Tax Call
@@ -134,7 +134,7 @@ export default function NRITaxAdvisory() {
               <span className="section-badge">Know Your Status</span>
               <h2 className="section-title">Are You Actually Taxable in India?</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '650px', margin: '0 auto' }}>
-                Most NRIs assume their India tax obligation is simple. The residency rules say otherwise — especially after the new Income Tax Act 2025.
+                Most NRIs assume their India tax obligation is simple. The residency rules say otherwise, especially after the new Income Tax Act 2025.
               </p>
             </div>
 
@@ -147,9 +147,9 @@ export default function NRITaxAdvisory() {
                   color: 'var(--accent)',
                 },
                 {
-                  label: 'RNOR — New Rules from April 2026',
+                  label: 'RNOR: New Rules from April 2026',
                   rule: '120+ days in India AND 365+ days over previous 4 years',
-                  tax: 'Only Indian income taxable. Global income remains exempt — for up to 3 years after returning.',
+                  tax: 'Only Indian income taxable. Global income remains exempt for up to 3 years after returning.',
                   color: '#f59e0b',
                   highlight: true,
                 },
@@ -185,7 +185,7 @@ export default function NRITaxAdvisory() {
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
               <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '50%', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', flexShrink: 0 }}>⚡</div>
               <div style={{ flex: 1, minWidth: '280px' }}>
-                <div style={{ color: '#fff', fontWeight: 800, fontSize: '1.05rem', marginBottom: '0.5rem' }}>New Income Tax Act 2025 — What Changed for NRIs (Effective April 1, 2026)</div>
+                <div style={{ color: '#fff', fontWeight: 800, fontSize: '1.05rem', marginBottom: '0.5rem' }}>New Income Tax Act 2025: What Changed for NRIs (Effective April 1, 2026)</div>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '1rem', marginTop: '1rem' }}>
                   {[
                     { old: 'Form 15CA', new: 'Form 145', note: 'Filed before taxable foreign remittance' },
@@ -217,7 +217,7 @@ export default function NRITaxAdvisory() {
               <span className="section-badge">What We Handle</span>
               <h2 className="section-title">NRI Tax Services</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
-                End-to-end compliance for Non-Resident Indians — handled remotely, with full documentation.
+                End-to-end compliance for Non-Resident Indians, handled remotely, with full documentation.
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
@@ -274,7 +274,7 @@ export default function NRITaxAdvisory() {
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Get Your NRI Tax Situation Sorted</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '560px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-                We work with NRIs remotely across UAE, US, UK, Singapore, and Australia. One call to understand your situation — no hourly billing surprises.
+                We work with NRIs remotely across UAE, US, UK, Singapore, and Australia. One call to understand your situation: no hourly billing surprises.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>

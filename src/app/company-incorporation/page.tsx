@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Company Incorporation in India — Private Limited, LLP & OPC | AK & Associates',
-  description: 'Register your company in India with expert CA guidance. We handle Private Limited Company, LLP, and OPC incorporation — name reservation, SPICe+ filing, MOA drafting, and post-incorporation compliance. Transparent pricing. 7–15 day turnaround.',
+  title: 'Company Incorporation in India: Private Limited, LLP & OPC | AK & Associates',
+  description: 'Register your company in India with expert CA guidance. We handle Private Limited Company, LLP, and OPC incorporation: name reservation, SPICe+ filing, MOA drafting, and post-incorporation compliance. Transparent pricing. 7–15 day turnaround.',
   keywords: [
     'company incorporation India', 'company registration India',
     'private limited company registration India', 'LLP registration India',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/company-incorporation' },
   openGraph: {
     title: 'Company Incorporation in India | AK & Associates LLP',
-    description: 'Expert CA-led company registration in India. Private Limited, LLP, or OPC — we handle everything from name reservation to Certificate of Incorporation.',
+    description: 'Expert CA-led company registration in India. Private Limited, LLP, or OPC: we handle everything from name reservation to Certificate of Incorporation.',
     url: 'https://agrawalkhandelwal.com/company-incorporation',
     type: 'website',
   },
@@ -25,7 +25,7 @@ const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Company Incorporation in India',
-  description: 'End-to-end company registration service in India — Private Limited Company, LLP, and OPC. Includes name reservation, SPICe+ filing, MOA & AOA drafting, and post-incorporation compliance setup.',
+  description: 'End-to-end company registration service in India: Private Limited Company, LLP, and OPC. Includes name reservation, SPICe+ filing, MOA & AOA drafting, and post-incorporation compliance setup.',
   provider: {
     '@type': 'AccountingService',
     name: 'Agrawal Khandelwal & Associates LLP',
@@ -67,12 +67,12 @@ const faqLd = {
       name: 'What is the cost of incorporating a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'All-in cost ranges from ₹15,000 to ₹40,000 for a Private Limited Company — covering government filing fees (₹8,000–₹15,000), DSC per director (₹1,000–₹2,000), and CA professional fees. LLP and OPC are slightly lower at ₹12,000–₹30,000.',
+        text: 'All-in cost ranges from ₹15,000 to ₹40,000 for a Private Limited Company, covering government filing fees (₹8,000–₹15,000), DSC per director (₹1,000–₹2,000), and CA professional fees. LLP and OPC are slightly lower at ₹12,000–₹30,000.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Which company structure should I choose — Private Limited or LLP?',
+      name: 'Which company structure should I choose: Private Limited or LLP?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Choose a Private Limited Company if you plan to raise funding, issue ESOPs, or build a scalable business. Choose an LLP if you are in professional services (consulting, design, law), are bootstrapping, and want lower annual compliance costs. Our CA team advises you on the right choice during onboarding.',
@@ -83,7 +83,7 @@ const faqLd = {
       name: 'Can I incorporate a company in India from another city?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — the entire process is online. We work with founders across India and NRIs abroad. You only need to courier or upload scanned documents. No physical visit required.',
+        text: 'Yes. The entire process is online. We work with founders across India and NRIs abroad. You only need to courier or upload scanned documents. No physical visit required.',
       },
     },
     {
@@ -107,8 +107,8 @@ const breadcrumbLd = {
 }
 
 const steps = [
-  { n: '01', title: 'Free Advisory Call', desc: 'We understand your business, funding plans, and team — then recommend the right structure with clear reasoning.' },
-  { n: '02', title: 'Document Collection', desc: 'We send you a precise checklist. You share scanned documents digitally — no physical visit needed.' },
+  { n: '01', title: 'Free Advisory Call', desc: 'We understand your business, funding plans, and team, then recommend the right structure with clear reasoning.' },
+  { n: '02', title: 'Document Collection', desc: 'We send you a precise checklist. You share scanned documents digitally: no physical visit needed.' },
   { n: '03', title: 'Filing & Follow-up', desc: 'We handle DSC procurement, name reservation, SPICe+ filing, and MOA/AOA drafting. We track MCA status and keep you updated.' },
   { n: '04', title: 'Certificate & Handover', desc: 'You receive the Certificate of Incorporation, CIN, PAN, TAN, and a post-incorporation compliance calendar.' },
 ]
@@ -156,10 +156,10 @@ export default function CompanyIncorporationPage() {
               Company Registration India
             </span>
             <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 5vw, 3.2rem)', lineHeight: 1.2, marginBottom: '1.25rem' }}>
-              Incorporate Your Company in India — Done Right
+              Register Your Company in India
             </h1>
             <p style={{ color: 'rgba(255,255,255,0.82)', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '680px', margin: '0 auto 2.5rem' }}>
-              CA-led company registration — Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Transparent pricing. 7–15 day turnaround.
+              CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 7–15 day turnaround.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
@@ -196,7 +196,7 @@ export default function CompanyIncorporationPage() {
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
               <h2 className="section-title" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)' }}>Which Structure Is Right for You?</h2>
-              <p style={{ color: 'var(--text-light)', fontSize: '1rem' }}>We advise you on the best fit — but here&apos;s the quick overview.</p>
+              <p style={{ color: 'var(--text-light)', fontSize: '1rem' }}>We advise you on the best fit, but here&apos;s the quick overview.</p>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.5rem' }}>
@@ -237,7 +237,7 @@ export default function CompanyIncorporationPage() {
             <h2 className="section-title" style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', marginBottom: '2.5rem' }}>What&apos;s Included</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '0.75rem' }}>
               {[
-                'Structure advisory — Pvt Ltd vs LLP vs OPC',
+                'Structure advisory: Pvt Ltd vs LLP vs OPC',
                 'DSC (Digital Signature Certificate) for all directors',
                 'Name availability check & RUN filing',
                 'SPICe+ form preparation & filing',
@@ -300,7 +300,7 @@ export default function CompanyIncorporationPage() {
           <div className="container" style={{ maxWidth: '780px', textAlign: 'center' }}>
             <p style={{ color: 'var(--text-light)', marginBottom: '0.75rem', fontSize: '0.95rem' }}>Want a deeper dive before you decide?</p>
             <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--accent)', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
-              Read: How to Incorporate a Company in India — Complete 2026 Guide →
+              Read: How to Incorporate a Company in India: Complete 2026 Guide →
             </Link>
           </div>
         </div>
@@ -312,7 +312,7 @@ export default function CompanyIncorporationPage() {
               Ready to Incorporate?
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', marginBottom: '2.5rem', lineHeight: 1.7 }}>
-              Book a free 20-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote — no surprises.
+              Book a free 20-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote: no surprises.
             </p>
             <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
               style={{ background: '#fff', color: 'var(--primary)', padding: '1rem 2.5rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1.05rem', display: 'inline-block' }}>

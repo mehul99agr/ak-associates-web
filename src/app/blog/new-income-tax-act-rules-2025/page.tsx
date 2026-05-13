@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'New Income Tax Act 2025: Simplified Guide for Businesses & Individuals',
-  description: 'In-depth analysis of the New Income Tax Act 2025 — convergence of tax regimes, simplified computational rules, AI-driven assessments, and what it means for startups, MNCs, and individual taxpayers in India.',
+  description: 'In-depth analysis of the New Income Tax Act 2025: convergence of tax regimes, simplified computational rules, AI-driven assessments, and what it means for startups, MNCs, and individual taxpayers in India.',
   keywords: [
     'new income tax act 2025 India', 'income tax act 2025 changes',
     'new tax regime 2025-26', 'income tax simplification India',
@@ -23,7 +23,7 @@ const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Deciphering the New Income Tax Act & Rules 2025',
-  description: 'Structural changes in the Indian Income Tax Act 2025 — simplified computation, AI assessments, and tax regime convergence.',
+  description: 'Structural changes in the Indian Income Tax Act 2025: simplified computation, AI assessments, and tax regime convergence.',
   datePublished: '2026-03-20',
   dateModified: '2026-03-20',
   author: {

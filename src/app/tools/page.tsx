@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/tools' },
   openGraph: {
     title: 'Free Tax & Finance Tools | AK & Associates LLP',
-    description: 'Calculate income tax, capital gains, and SIP returns — all free tools from our expert CA team.',
+    description: 'Calculate income tax, capital gains, and SIP returns, all free tools from our expert CA team.',
     url: 'https://agrawalkhandelwal.com/tools',
   },
 }

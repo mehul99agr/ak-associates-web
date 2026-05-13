@@ -3,7 +3,7 @@ import IncorporationWizard from './IncorporationWizard'
 
 export const metadata: Metadata = {
   title: 'Company Type Finder: Private Limited vs LLP vs OPC India | AK & Associates',
-  description: 'Not sure which company structure to register in India? Answer 4 questions and get a CA-backed recommendation — Private Limited, LLP, or OPC — tailored to your funding plans, team size, and compliance appetite.',
+  description: 'Not sure which company structure to register in India? Answer 4 questions and get a CA-backed recommendation: Private Limited, LLP, or OPC: tailored to your funding plans, team size, and compliance appetite.',
   keywords: [
     'company incorporation India', 'private limited vs LLP India',
     'which company to register India', 'LLP vs private limited company India',
