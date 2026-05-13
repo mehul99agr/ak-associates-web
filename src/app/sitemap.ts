@@ -5,7 +5,12 @@ const BASE_URL = 'https://agrawalkhandelwal.com'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE_URL, lastModified: new Date(), changeFrequency: 'monthly', priority: 1 },
+    { url: `${BASE_URL}/ca-in-nashik`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.98 },
+    { url: `${BASE_URL}/ca-in-sillod`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE_URL}/services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/transfer-pricing`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.92 },
+    { url: `${BASE_URL}/uae-tax-advisory`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.92 },
+    { url: `${BASE_URL}/offshore-accounting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.88 },
     { url: `${BASE_URL}/company-incorporation`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE_URL}/startups`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/nri-tax-advisory`, lastModified: new Date('2026-05-08'), changeFrequency: 'monthly', priority: 0.9 },

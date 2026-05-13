@@ -27,31 +27,47 @@ const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrawalkhandelwal.com'),
   title: {
-    default: 'CA for Startups & International Tax | Bangalore, Mumbai | AK & Associates LLP',
+    default: 'CA in Nashik | International Tax, GST & Audit | AK & Associates LLP',
     template: '%s | AK & Associates LLP',
   },
-  description: 'Trusted Chartered Accountants in Bangalore, Mumbai & Nashik. Experts in International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, Startup Advisory, Virtual CFO, and Offshore Accounting. 100+ clients across India & UAE.',
+  description: 'Trusted Chartered Accountants in Nashik and Sillod, Maharashtra. AK & Associates LLP offers GST filing, income tax, company incorporation, audit, international taxation, and virtual CFO services. Call +91 95275 33506.',
   keywords: [
-    // Bangalore: primary market
+    // Nashik: primary office location
+    'CA in Nashik', 'chartered accountant in Nashik', 'best CA in Nashik',
+    'CA firm Nashik', 'chartered accountant Nashik', 'top CA Nashik',
+    'GST consultant Nashik', 'income tax consultant Nashik',
+    'tax consultant Nashik', 'audit firm Nashik',
+    'company registration Nashik', 'GST filing Nashik',
+    'ITR filing Nashik', 'tax planning Nashik',
+    'CA near Nashik', 'accountant Nashik',
+    // Sillod
+    'CA in Sillod', 'chartered accountant Sillod', 'CA Sillod',
+    'GST consultant Sillod', 'income tax consultant Sillod',
+    'CA near Sillod', 'accountant Sillod', 'CA Sillod Aurangabad',
+    'tax consultant Sillod', 'GST filing Sillod',
+    // Maharashtra broader
+    'CA in Maharashtra', 'chartered accountant Maharashtra',
+    // Bangalore: startup market
     'CA for startups Bangalore', 'chartered accountant Bangalore',
     'startup advisory Bangalore', 'company incorporation Bangalore',
     'DPIIT registration Bangalore', 'virtual CFO Bangalore',
-    'startup accountant Bangalore', 'CA firm Bangalore',
     // Mumbai / MNC
     'international tax consultant Mumbai', 'transfer pricing consultant India',
-    'MNC tax advisory India', 'DTAA consultant India',
-    'FEMA consultant Mumbai', 'chartered accountant Mumbai',
+    'DTAA consultant India', 'FEMA consultant Mumbai',
     // NRI
     'NRI tax consultant India', 'NRI taxation services India',
-    'NRI income tax filing India', 'DTAA NRI India',
     // UAE
     'UAE corporate tax consultant India', 'India UAE DTAA',
-    'UAE CT consultant', 'offshore accounting India',
     // General
-    'CA firm Nashik', 'chartered accountant Nashik',
     'virtual CFO India', 'outsourced accounting India',
     'international taxation India', 'GST compliance India',
   ],
+  other: {
+    'geo.region': 'IN-MH',
+    'geo.placename': 'Nashik, Maharashtra, India',
+    'geo.position': '19.1947607;73.7879464',
+    'ICBM': '19.1947607, 73.7879464',
+  },
   authors: [{ name: 'Agrawal Khandelwal & Associates LLP' }],
   creator: 'Agrawal Khandelwal & Associates LLP',
   publisher: 'Agrawal Khandelwal & Associates LLP',
@@ -71,13 +87,13 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://agrawalkhandelwal.com',
     siteName: 'Agrawal Khandelwal & Associates LLP',
-    title: 'CA for Startups & International Tax | Bangalore, Mumbai | AK & Associates LLP',
-    description: 'Trusted CA firm serving startups in Bangalore, MNCs in Mumbai, and NRI/UAE clients globally. Experts in International Tax, Transfer Pricing, DTAA, FEMA, and UAE Corporate Tax.',
+    title: 'CA in Nashik | International Tax, GST & Audit | AK & Associates LLP',
+    description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international tax, and virtual CFO services. 100+ clients across India.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CA for Startups & International Tax | AK & Associates LLP',
-    description: 'Trusted CA firm for startups in Bangalore, MNCs in Mumbai, NRIs & UAE clients. International Tax, Transfer Pricing, DTAA, FEMA, Virtual CFO.',
+    title: 'CA in Nashik | AK & Associates LLP',
+    description: 'Chartered Accountants in Nashik & Sillod. GST, income tax, audit, international tax, and startup advisory. Call +91 95275 33506.',
   },
 }
 
@@ -86,7 +102,7 @@ const organizationLd = {
   '@type': 'AccountingService',
   '@id': 'https://agrawalkhandelwal.com/#organization',
   name: 'Agrawal Khandelwal & Associates LLP',
-  description: 'Chartered Accountants specializing in International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, Startup Advisory, Virtual CFO, and Offshore Accounting. Serving startups in Bangalore, MNCs in Mumbai, and NRI/UAE clients globally.',
+  description: 'Chartered Accountants in Nashik and Sillod, Maharashtra. Specializing in GST, income tax, company incorporation, audit, international taxation, transfer pricing, UAE corporate tax, startup advisory, and virtual CFO services.',
   url: 'https://agrawalkhandelwal.com',
   logo: 'https://agrawalkhandelwal.com/logo.png',
   telephone: '+91-95275-33506',
@@ -115,25 +131,58 @@ const organizationLd = {
   ],
   priceRange: '₹₹',
   areaServed: [
+    { '@type': 'City', name: 'Nashik' },
+    { '@type': 'City', name: 'Sillod' },
+    { '@type': 'City', name: 'Chhatrapati Sambhajinagar' },
     { '@type': 'City', name: 'Bangalore' },
     { '@type': 'City', name: 'Mumbai' },
-    { '@type': 'City', name: 'Nashik' },
     { '@type': 'City', name: 'Delhi' },
     { '@type': 'Country', name: 'United Arab Emirates' },
     { '@type': 'Country', name: 'India' },
   ],
   serviceType: [
+    'GST Registration', 'GST Return Filing', 'Income Tax Return Filing',
+    'Tax Planning', 'Statutory Audit', 'Tax Audit', 'Internal Audit',
+    'Company Incorporation', 'LLP Registration', 'DPIIT Registration',
     'International Taxation', 'Transfer Pricing', 'DTAA Advisory',
     'FEMA Compliance', 'UAE Corporate Tax Advisory', 'NRI Taxation',
-    'Startup Advisory', 'Company Incorporation', 'DPIIT Registration',
-    'Virtual CFO Services', 'ESOP Structuring', 'FDI Compliance',
-    'Statutory Audit', 'Tax Audit', 'Internal Audit',
-    'GST Compliance', 'Tax Planning', 'Offshore Accounting',
+    'Startup Advisory', 'Virtual CFO Services', 'ESOP Structuring',
+    'FDI Compliance', 'Offshore Accounting',
   ],
   sameAs: [
     'https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/',
   ],
   hasMap: 'https://maps.google.com/?q=Ram+Plaza+Mumbai+Naka+Nashik',
+  location: [
+    {
+      '@type': 'Place',
+      name: 'Nashik Office',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
+        addressLocality: 'Nashik',
+        addressRegion: 'Maharashtra',
+        postalCode: '422011',
+        addressCountry: 'IN',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: '19.1947607', longitude: '73.7879464' },
+      telephone: '+91-95275-33506',
+    },
+    {
+      '@type': 'Place',
+      name: 'Sillod Office',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Near Datta Mandir, Tilak Nagar',
+        addressLocality: 'Sillod',
+        addressRegion: 'Maharashtra',
+        postalCode: '431112',
+        addressCountry: 'IN',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: '20.1040', longitude: '75.6496' },
+      telephone: '+91-95955-85953',
+    },
+  ],
 }
 
 const faqLd = {
@@ -178,6 +227,22 @@ const faqLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yes. We provide offshore accounting and outsourced bookkeeping services for businesses in India, UAE, and international clients looking to manage their Indian entity finances remotely.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you provide CA services in Nashik?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Our Nashik office at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Contact us at +91 95275 33506.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you have a CA office in Sillod?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112. We serve businesses and individuals in Sillod and the surrounding Chhatrapati Sambhajinagar district with GST filing, income tax returns, audit, and tax planning services. Contact us at +91 95955 85953.',
       },
     },
   ],
