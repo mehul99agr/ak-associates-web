@@ -21,9 +21,7 @@ const openSans = Open_Sans({
   display: 'swap',
 })
 
-// ⚠️ Replace with your GA4 Measurement ID from analytics.google.com
-// Steps: analytics.google.com → Admin → Create Property → Get Measurement ID (G-XXXXXXXXXX)
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
+const GA_MEASUREMENT_ID = 'G-41NNQG654M'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrawalkhandelwal.com'),
