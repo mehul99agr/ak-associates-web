@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './Navbar'
 import GoogleAnalytics from './GoogleAnalytics'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Montserrat, Open_Sans } from 'next/font/google'
 
 
@@ -265,6 +266,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
+        <SpeedInsights />
         <Navbar />
         <main>{children}</main>
 
