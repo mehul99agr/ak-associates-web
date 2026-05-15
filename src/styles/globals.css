@@ -555,3 +555,30 @@ input:focus, select:focus, textarea:focus {
   .hero-cta .btn { width: 100%; }
   .logo-img { height: 48px; }
 }
+
+/* Blog post HTML content */
+.blog-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 2.5rem 0 0.75rem;
+}
+.blog-content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 2rem 0 0.5rem;
+}
+.blog-content p { margin-bottom: 1.25rem; }
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.blog-content ul { list-style: disc; }
+.blog-content ol { list-style: decimal; }
+.blog-content li { line-height: 1.7; }
+.blog-content strong { color: var(--text-heading); font-weight: 700; }

@@ -20,6 +20,38 @@ export const metadata: Metadata = {
   },
 }
 
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'NRI Tax Advisory Services India',
+  description: 'End-to-end tax advisory for Non-Resident Indians: ITR filing, TDS refunds, property sale repatriation, DTAA claims, and FEMA compliance. Serving NRIs in UAE, US, UK, Singapore, and Australia.',
+  provider: {
+    '@type': 'AccountingService',
+    name: 'Agrawal Khandelwal & Associates LLP',
+    url: 'https://agrawalkhandelwal.com',
+    telephone: '+91-95275-33506',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
+      addressLocality: 'Nashik',
+      addressRegion: 'Maharashtra',
+      postalCode: '422011',
+      addressCountry: 'IN',
+    },
+  },
+  areaServed: { '@type': 'Country', name: 'India' },
+  serviceType: 'NRI Tax Advisory',
+}
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'NRI Tax Advisory', item: 'https://agrawalkhandelwal.com/nri-tax-advisory' },
+  ],
+}
+
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -106,6 +138,8 @@ const deadlines = [
 export default function NRITaxAdvisory() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
         {/* Hero */}
         <section className="hero">

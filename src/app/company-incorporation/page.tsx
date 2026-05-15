@@ -30,7 +30,7 @@ const serviceLd = {
     '@type': 'AccountingService',
     name: 'Agrawal Khandelwal & Associates LLP',
     url: 'https://agrawalkhandelwal.com',
-    telephone: '+91-XXXXXXXXXX',
+    telephone: '+91-95275-33506',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
