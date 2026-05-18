@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
+    slug: 'dubai-company-registration-guide',
+    date: 'May 19, 2026',
+    category: 'International Tax',
+    summary: 'Mainland vs Free Zone vs Offshore, real costs in INR, FEMA and ODI compliance, UAE Corporate Tax, and documents required — everything before you register a Dubai company.',
+  },
+  {
     title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
     slug: 'company-incorporation-india-guide',
     date: 'May 08, 2026',
