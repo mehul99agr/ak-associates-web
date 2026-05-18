@@ -1,8 +1,8 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Offshore Accounting Services India | Outsourced Bookkeeping India | AK & Associates LLP',
+  title: 'Offshore Accounting Services India | Outsourced Bookkeeping India | Agrawal Khandelwal & Associates LLP',
   description: 'Offshore accounting and outsourced bookkeeping from India for foreign companies, CA firms, and NRI-owned businesses. Full-cycle accounting, MIS reporting, payroll, GST, and statutory compliance. ICAI-registered CA firm.',
   keywords: [
     'offshore accounting India', 'outsourced accounting India',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/offshore-accounting' },
   openGraph: {
-    title: 'Offshore Accounting Services India | Outsourced Bookkeeping | AK & Associates LLP',
+    title: 'Offshore Accounting Services India | Outsourced Bookkeeping | Agrawal Khandelwal & Associates LLP',
     description: 'ICAI-registered CA firm offering offshore accounting for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, GST, payroll, and MIS from India.',
     url: 'https://agrawalkhandelwal.com/offshore-accounting',
   },
@@ -115,7 +115,7 @@ const faqLd = {
 const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Offshore Accounting & Outsourced Bookkeeping - AK & Associates LLP',
+  name: 'Offshore Accounting & Outsourced Bookkeeping - Agrawal Khandelwal & Associates LLP',
   description: 'Offshore accounting services from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, payroll, GST, and statutory compliance.',
   url: 'https://agrawalkhandelwal.com/offshore-accounting',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },

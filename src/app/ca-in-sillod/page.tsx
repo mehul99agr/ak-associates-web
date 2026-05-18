@@ -1,13 +1,13 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'CA in Sillod | Chartered Accountant Sillod | AK & Associates LLP',
-  description: 'Trusted CA in Sillod, Aurangabad district. AK & Associates LLP provides GST filing, income tax returns, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Call +91 95955 85953.',
+  title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',
+  description: 'Trusted CA in Sillod, Aurangabad district. Agrawal Khandelwal & Associates LLP provides GST filing, income tax returns, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Call +91 95955 85953.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-sillod' },
   openGraph: {
-    title: 'CA in Sillod | Chartered Accountant Sillod | AK & Associates LLP',
+    title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',
     description: 'Chartered Accountants in Sillod. GST, income tax, audit, company incorporation, and tax advisory. Located at Tilak Nagar, Sillod – 431112. Call now.',
     url: 'https://agrawalkhandelwal.com/ca-in-sillod',
   },
@@ -72,7 +72,7 @@ const faqs = [
     a: 'We handle complete business registration from Sillod - including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Contact us at +91 95955 85953 to get started.',
   },
   {
-    q: 'Is AK & Associates available for clients in Aurangabad district from Sillod?',
+    q: 'Is Agrawal Khandelwal & Associates LLP available for clients in Aurangabad district from Sillod?',
     a: 'Yes. Our Sillod office serves clients across the Chhatrapati Sambhajinagar (Aurangabad) district including Sillod tehsil, Kannad, Phulambri, and surrounding areas. For complex matters like international tax, our Nashik partners can assist as well.',
   },
   {
@@ -86,7 +86,7 @@ const sillodLocalBusiness = {
   '@type': ['AccountingService', 'LocalBusiness', 'ProfessionalService'],
   '@id': 'https://agrawalkhandelwal.com/#location-sillod',
   name: 'Agrawal Khandelwal & Associates LLP - Sillod',
-  alternateName: ['AK Associates Sillod', 'CA in Sillod', 'AK & Associates CA Sillod'],
+  alternateName: ['Agrawal Khandelwal & Associates LLP Sillod', 'CA in Sillod', 'Agrawal Khandelwal & Associates LLP CA Sillod'],
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
   telephone: '+91-95955-85953',
@@ -166,7 +166,7 @@ export default function CAInSillod() {
           </div>
           <h1>Chartered Accountant<br />in Sillod</h1>
           <p>
-            AK & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory - handled by CA Rupesh Khandelwal from our Sillod office.
+            Agrawal Khandelwal & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory - handled by CA Rupesh Khandelwal from our Sillod office.
           </p>
           <div className="hero-cta">
             <a href="tel:+919595585953" className="btn btn-primary">
@@ -332,7 +332,7 @@ export default function CAInSillod() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Looking for a CA in Sillod?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            AK & Associates LLP - your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
+            Agrawal Khandelwal & Associates LLP - your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919595585953" className="btn btn-primary">Call Now: +91 95955 85953</a>

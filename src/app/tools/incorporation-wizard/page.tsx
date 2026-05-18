@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import IncorporationWizard from './IncorporationWizard'
 
 export const metadata: Metadata = {
-  title: 'Company Type Finder: Private Limited vs LLP vs OPC India | AK & Associates',
+  title: 'Company Type Finder: Private Limited vs LLP vs OPC India | Agrawal Khandelwal & Associates LLP',
   description: 'Not sure which company structure to register in India? Answer 4 questions and get a CA-backed recommendation: Private Limited, LLP, or OPC: tailored to your funding plans, team size, and compliance appetite.',
   keywords: [
     'company incorporation India', 'private limited vs LLP India',

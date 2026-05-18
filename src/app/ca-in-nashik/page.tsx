@@ -1,13 +1,13 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'CA in Nashik | Best Chartered Accountant in Nashik | AK & Associates LLP',
-  description: 'Looking for a trusted CA in Nashik? AK & Associates LLP offers GST filing, income tax returns, company incorporation, audit, and tax planning at Mumbai Naka, Nashik. Call +91 95275 33506.',
+  title: 'CA in Nashik | Best Chartered Accountant in Nashik | Agrawal Khandelwal & Associates LLP',
+  description: 'Looking for a trusted CA in Nashik? Agrawal Khandelwal & Associates LLP offers GST filing, income tax returns, company incorporation, audit, and tax planning at Mumbai Naka, Nashik. Call +91 95275 33506.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
-    title: 'Best CA in Nashik | Chartered Accountant Nashik | AK & Associates LLP',
+    title: 'Best CA in Nashik | Chartered Accountant Nashik | Agrawal Khandelwal & Associates LLP',
     description: 'Top-rated Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Mumbai Naka, Nashik. Call now.',
     url: 'https://agrawalkhandelwal.com/ca-in-nashik',
   },
@@ -86,7 +86,7 @@ const nashikLocalBusiness = {
   '@type': ['AccountingService', 'LocalBusiness', 'ProfessionalService'],
   '@id': 'https://agrawalkhandelwal.com/#location-nashik',
   name: 'Agrawal Khandelwal & Associates LLP',
-  alternateName: ['AK & Associates Nashik', 'AK Associates CA Nashik'],
+  alternateName: ['Agrawal Khandelwal & Associates LLP Nashik', 'Agrawal Khandelwal & Associates LLP CA Nashik'],
   description: 'Best Chartered Accountant firm in Nashik offering GST filing, income tax returns, company incorporation, audit, tax planning, and international taxation services. Located at Mumbai Naka, Nashik.',
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
   telephone: '+91-95275-33506',
@@ -166,7 +166,7 @@ export default function CAInNashik() {
           </div>
           <h1>Trusted Chartered Accountant<br />in Nashik</h1>
           <p>
-            AK & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik - open Monday to Saturday.
+            Agrawal Khandelwal & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik - open Monday to Saturday.
           </p>
           <div className="hero-cta">
             <a href="tel:+919527533506" className="btn btn-primary">
@@ -230,7 +230,7 @@ export default function CAInNashik() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Why Choose Us</span>
-            <h2 className="section-title">Why AK & Associates is the Best CA Firm in Nashik</h2>
+            <h2 className="section-title">Why Agrawal Khandelwal & Associates LLP is the Best CA Firm in Nashik</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
             {[
@@ -332,7 +332,7 @@ export default function CAInNashik() {
               style={{ border: 0, display: 'block' }}
               allowFullScreen
               loading="lazy"
-              title="AK & Associates LLP - CA office at Mumbai Naka, Nashik"
+              title="Agrawal Khandelwal & Associates LLP - CA office at Mumbai Naka, Nashik"
             />
           </div>
         </div>
@@ -361,7 +361,7 @@ export default function CAInNashik() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Need a CA in Nashik?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            Contact AK & Associates LLP - your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
+            Contact Agrawal Khandelwal & Associates LLP - your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919527533506" className="btn btn-primary">Call Now: +91 95275 33506</a>

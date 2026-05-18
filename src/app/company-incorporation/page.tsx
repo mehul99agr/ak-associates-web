@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Company Incorporation in India: Private Limited, LLP & OPC | AK & Associates',
+  title: 'Company Incorporation in India: Private Limited, LLP & OPC | Agrawal Khandelwal & Associates LLP',
   description: 'Register your company in India with expert CA guidance. We handle Private Limited Company, LLP, and OPC incorporation: name reservation, SPICe+ filing, MOA drafting, and post-incorporation compliance. Transparent pricing. 7–15 day turnaround.',
   keywords: [
     'company incorporation India', 'company registration India',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/company-incorporation' },
   openGraph: {
-    title: 'Company Incorporation in India | AK & Associates LLP',
+    title: 'Company Incorporation in India | Agrawal Khandelwal & Associates LLP',
     description: 'Expert CA-led company registration in India. Private Limited, LLP, or OPC: we handle everything from name reservation to Certificate of Incorporation.',
     url: 'https://agrawalkhandelwal.com/company-incorporation',
     type: 'website',

@@ -1,9 +1,9 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | AK & Associates LLP',
+  title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | Agrawal Khandelwal & Associates LLP',
   description: 'Expert transfer pricing consultants in India. TP documentation (Master File, Local File, Form 3CEB), benchmarking studies, APA assistance, and representation before tax authorities. CA with Deloitte pedigree. Serving MNCs and Indian multinationals.',
   keywords: [
     'transfer pricing consultant India', 'transfer pricing CA India',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/transfer-pricing' },
   openGraph: {
-    title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | AK & Associates LLP',
+    title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | Agrawal Khandelwal & Associates LLP',
     description: 'Transfer pricing documentation, benchmarking, APA advisory, and tax authority representation for MNCs and Indian multinationals. CA with Big 4 (Deloitte) pedigree.',
     url: 'https://agrawalkhandelwal.com/transfer-pricing',
   },
@@ -121,7 +121,7 @@ const faqLd = {
 const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Transfer Pricing Advisory - AK & Associates LLP',
+  name: 'Transfer Pricing Advisory - Agrawal Khandelwal & Associates LLP',
   description: 'Transfer pricing documentation, benchmarking, APA advisory, and audit representation for MNCs and Indian multinationals.',
   url: 'https://agrawalkhandelwal.com/transfer-pricing',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },

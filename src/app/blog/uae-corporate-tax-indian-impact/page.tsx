@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'UAE Corporate Tax: Impact on Indian Businesses | AK & Associates',
+  title: 'UAE Corporate Tax: Impact on Indian Businesses | Agrawal Khandelwal & Associates LLP',
   description: 'Complete guide for Indian businesses on UAE 9% Corporate Tax. Covers India-UAE DTAA benefits, Transfer Pricing compliance, Free Zone entity rules, and restructuring strategies.',
   keywords: [
     'UAE corporate tax Indian businesses', 'India UAE DTAA', 'UAE CT 9 percent',

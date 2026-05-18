@@ -27,10 +27,10 @@ const GA_MEASUREMENT_ID = 'G-41NNQG654M'
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrawalkhandelwal.com'),
   title: {
-    default: 'CA in Nashik | International Tax, GST & Audit | AK & Associates LLP',
-    template: '%s | AK & Associates LLP',
+    default: 'CA in Nashik | International Tax, GST & Audit | Agrawal Khandelwal & Associates LLP',
+    template: '%s | Agrawal Khandelwal & Associates LLP',
   },
-  description: 'Trusted Chartered Accountants in Nashik and Sillod, Maharashtra. AK & Associates LLP offers GST filing, income tax, company incorporation, audit, international taxation, and virtual CFO services. Call +91 95275 33506.',
+  description: 'Trusted Chartered Accountants in Nashik and Sillod, Maharashtra. Agrawal Khandelwal & Associates LLP offers GST filing, income tax, company incorporation, audit, international taxation, and virtual CFO services. Call +91 95275 33506.',
   keywords: [
     // Nashik: primary office location
     'CA in Nashik', 'chartered accountant in Nashik', 'best CA in Nashik',
@@ -87,12 +87,12 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://agrawalkhandelwal.com',
     siteName: 'Agrawal Khandelwal & Associates LLP',
-    title: 'CA in Nashik | International Tax, GST & Audit | AK & Associates LLP',
+    title: 'CA in Nashik | International Tax, GST & Audit | Agrawal Khandelwal & Associates LLP',
     description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international tax, and virtual CFO services. 100+ clients across India.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CA in Nashik | AK & Associates LLP',
+    title: 'CA in Nashik | Agrawal Khandelwal & Associates LLP',
     description: 'Chartered Accountants in Nashik & Sillod. GST, income tax, audit, international tax, and startup advisory. Call +91 95275 33506.',
   },
 }

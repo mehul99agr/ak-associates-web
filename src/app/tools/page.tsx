@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Free Tax & Finance Tools | Income Tax, SIP Calculator',
-  description: 'Free interactive financial tools: Income Tax Estimator, Capital Gains Calculator, SIP & Retirement Planner, and Incorporation Wizard. Powered by AK & Associates LLP.',
+  description: 'Free interactive financial tools: Income Tax Estimator, Capital Gains Calculator, SIP & Retirement Planner, and Incorporation Wizard. Powered by Agrawal Khandelwal & Associates LLP.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/tools' },
   openGraph: {
-    title: 'Free Tax & Finance Tools | AK & Associates LLP',
+    title: 'Free Tax & Finance Tools | Agrawal Khandelwal & Associates LLP',
     description: 'Calculate income tax, capital gains, and SIP returns, all free tools from our expert CA team.',
     url: 'https://agrawalkhandelwal.com/tools',
   },

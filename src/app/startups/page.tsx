@@ -1,9 +1,9 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'CA for Startups in Bangalore, Mumbai & Nashik | Startup Advisory | AK & Associates LLP',
+  title: 'CA for Startups in Bangalore, Mumbai & Nashik | Startup Advisory | Agrawal Khandelwal & Associates LLP',
   description: 'Top CA firm for startups in India. Company incorporation, DPIIT registration, ESOP structuring, Virtual CFO, seed-round financial modeling, and FDI/FEMA compliance. Serving early-stage and funded startups in Bangalore, Mumbai, and Nashik.',
   keywords: [
     'CA for startups India', 'startup CA India', 'CA for startups Bangalore',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/startups' },
   openGraph: {
-    title: 'CA for Startups in Bangalore, Mumbai & Nashik | AK & Associates LLP',
+    title: 'CA for Startups in Bangalore, Mumbai & Nashik | Agrawal Khandelwal & Associates LLP',
     description: 'End-to-end CA services for startups: incorporation, DPIIT, ESOP, Virtual CFO, fundraising compliance. Serving early and growth stage startups across India.',
     url: 'https://agrawalkhandelwal.com/startups',
   },
@@ -118,7 +118,7 @@ const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': 'https://agrawalkhandelwal.com/startups#service',
-  name: 'Startup Advisory & CA Services - AK & Associates LLP',
+  name: 'Startup Advisory & CA Services - Agrawal Khandelwal & Associates LLP',
   description: 'End-to-end CA and financial advisory for startups in Bangalore, Mumbai, and Nashik. Incorporation, DPIIT, ESOP, Virtual CFO, fundraising compliance, and FDI/FEMA.',
   url: 'https://agrawalkhandelwal.com/startups',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -321,7 +321,7 @@ export default function StartupsPage() {
                 <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
                 <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - Startup & International Advisory</p>
                 <p style={{ fontSize: '0.93rem', color: 'var(--text-light)', lineHeight: 1.8, textAlign: 'justify' }}>
-                  CA Mehul leads AK Associates' startup practice. He advises early-stage and funded startups on corporate structuring, fundraising compliance, ESOP design, and cross-border tax strategy. His UAE Corporate Taxation certification makes him uniquely positioned for startups with global operations.
+                  CA Mehul leads Agrawal Khandelwal & Associates LLP's startup practice. He advises early-stage and funded startups on corporate structuring, fundraising compliance, ESOP design, and cross-border tax strategy. His UAE Corporate Taxation certification makes him uniquely positioned for startups with global operations.
                 </p>
                 <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                   <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Credentials</strong>

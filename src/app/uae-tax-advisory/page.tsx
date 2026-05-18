@@ -1,9 +1,9 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'UAE Corporate Tax Consultant India | India-UAE DTAA & UAE CT Advisory | AK & Associates LLP',
+  title: 'UAE Corporate Tax Consultant India | India-UAE DTAA & UAE CT Advisory | Agrawal Khandelwal & Associates LLP',
   description: 'Certified UAE Corporate Tax consultants for Indian businesses. UAE CT compliance (9%), India-UAE DTAA advisory, Free Zone structuring, and repatriation planning. CA Mehul Agrawal holds UAE Corporate Taxation certification.',
   keywords: [
     'UAE corporate tax consultant India', 'UAE CT advisory India',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/uae-tax-advisory' },
   openGraph: {
-    title: 'UAE Corporate Tax Consultant India | India-UAE DTAA | AK & Associates LLP',
+    title: 'UAE Corporate Tax Consultant India | India-UAE DTAA | Agrawal Khandelwal & Associates LLP',
     description: 'Certified UAE CT advisory for Indian businesses. 9% CT compliance, India-UAE DTAA claims, Free Zone structuring, and repatriation planning by a UAE CT-certified CA.',
     url: 'https://agrawalkhandelwal.com/uae-tax-advisory',
   },
@@ -95,7 +95,7 @@ const faqLd = {
 const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'UAE Corporate Tax Advisory - AK & Associates LLP',
+  name: 'UAE Corporate Tax Advisory - Agrawal Khandelwal & Associates LLP',
   description: 'UAE Corporate Tax compliance, India-UAE DTAA advisory, Free Zone structuring, and repatriation planning for Indian businesses and UAE companies with India operations.',
   url: 'https://agrawalkhandelwal.com/uae-tax-advisory',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
