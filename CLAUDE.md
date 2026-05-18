@@ -1,4 +1,4 @@
-# AK Associates Website — Claude Code Context
+# Agrawal Khandelwal & Associates LLP — Website Claude Code Context
 
 ## Project
 Next.js 15 website for **Agrawal Khandelwal & Associates LLP**, a CA firm based in Nashik and Sillod, Maharashtra.
@@ -83,6 +83,14 @@ src/app/
 - www versions were serving as duplicates — fixed with redirect
 - Brand searches ("khandelwal", "ca khandelwal") drive most impressions
 - Zero visibility for non-brand/service keywords yet
+
+## Brand Name Rule
+Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — page titles, meta descriptions, JSON-LD schema, and visible text. Never abbreviate to "AK & Associates" or "AK Associates". Reasons:
+- "AK & Associates" is not unique — dozens of CA firms share those initials
+- Abbreviation splits brand signal across two names in Google's index
+- The full name matches official ICAI, MCA, and directory registrations
+- "Khandelwal" and "Agrawal" are the distinctive keywords already gaining traction in Search Console
+- If a page title is too long, trim the service keyword — never trim the firm name
 
 ## Key Decisions Made
 - No dark/light toggle — removed, dark theme only
