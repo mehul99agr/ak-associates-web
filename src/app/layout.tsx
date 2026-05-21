@@ -313,6 +313,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <h3>Quick Links</h3>
                 <Link href="/#about">About Us</Link>
                 <Link href="/services">Our Services</Link>
+                <Link href="/ca-in-nashik">CA in Nashik</Link>
+                <Link href="/ca-in-sillod">CA in Sillod</Link>
                 <Link href="/tools">Tax & Finance Tools</Link>
                 <Link href="/blog">Client Insights</Link>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>

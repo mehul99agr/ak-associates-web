@@ -11,6 +11,9 @@ const serviceLinks = [
   { href: '/transfer-pricing', label: 'Transfer Pricing' },
   { href: '/uae-tax-advisory', label: 'UAE Tax Advisory' },
   { href: '/offshore-accounting', label: 'Offshore Accounting' },
+  // Local landing pages
+  { href: '/ca-in-nashik', label: 'CA in Nashik' },
+  { href: '/ca-in-sillod', label: 'CA in Sillod' },
 ]
 
 export default function Navbar() {
@@ -116,6 +119,7 @@ export default function Navbar() {
                       textDecoration: 'none',
                       transition: 'background 0.15s',
                       borderBottom: href === '/services' ? '1px solid var(--border)' : 'none',
+                      borderTop: href === '/ca-in-nashik' ? '1px solid var(--border)' : 'none',
                     }}
                     onMouseEnter={e => (e.currentTarget.style.background = 'var(--bg-surface)')}
                     onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
