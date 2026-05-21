@@ -64,10 +64,10 @@ src/app/
 ## SEO Status (as of May 2026)
 **Done:**
 - Sitemap submitted to Google Search Console
-- All pages have explicit canonical tags
+- All pages have explicit canonical tags (all point to non-www)
 - JSON-LD Service + FAQ + Breadcrumb schema on all service pages
 - Organization + FAQ schema in root layout
-- www → non-www 301 redirect in next.config.js
+- www → non-www 308 redirect configured in Vercel domain settings (see Domain Canonicalization below)
 - Listed on: IndiaMart, Justdial, Sulekha, ICAI directory
 - GA4 wired up (G-41NNQG654M)
 - Blog posts expanded to ~900 words with proper HTML structure
@@ -80,9 +80,24 @@ src/app/
 
 **Search Console findings (May 2026):**
 - 1 page indexed (sitemap just submitted — more will be indexed over coming weeks)
-- www versions were serving as duplicates — fixed with redirect
 - Brand searches ("khandelwal", "ca khandelwal") drive most impressions
 - Zero visibility for non-brand/service keywords yet
+- May 21: found the redirect was BACKWARDS — non-www was redirecting to www (307),
+  while all canonicals/sitemap/schema point to non-www. This conflict kept Google
+  from indexing pages and left www duplicate URLs in the report. Fixed in Vercel
+  (see Domain Canonicalization). Expect indexing to recover over 1-4 weeks.
+
+## Domain Canonicalization
+- **Canonical host is non-www: `agrawalkhandelwal.com`** — all canonical tags, sitemap.ts,
+  robots.ts, and JSON-LD use non-www. Never change these to www.
+- Redirect is configured in the **Vercel dashboard → Settings → Domains**, NOT in
+  next.config.js (a redirect in next.config.js on Vercel causes an infinite loop).
+- Correct Vercel setup:
+  - `agrawalkhandelwal.com` → "Connect to an environment" → Production (serves the site)
+  - `www.agrawalkhandelwal.com` → "Redirect to Another Domain" → `agrawalkhandelwal.com`,
+    type **308 Permanent Redirect** (never 307 Temporary — temp redirects don't consolidate ranking)
+- Verify with: `curl -I https://agrawalkhandelwal.com/` (expect 200) and
+  `curl -I https://www.agrawalkhandelwal.com/` (expect 308 → non-www).
 
 ## Brand Name Rule
 Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — page titles, meta descriptions, JSON-LD schema, and visible text. Never abbreviate to "AK & Associates" or "AK Associates". Reasons:
