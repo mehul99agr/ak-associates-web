@@ -51,9 +51,55 @@ const services = [
   },
 ]
 
+const faqs = [
+  {
+    q: 'Do you provide CA services for startups in Bangalore?',
+    a: 'Yes. We specialize in end-to-end startup advisory in Bangalore, from company incorporation and DPIIT registration to ESOP structuring, Virtual CFO services, and investor-ready financial reporting for fundraising rounds.',
+  },
+  {
+    q: 'Can you help with Transfer Pricing and International Taxation for MNCs?',
+    a: 'Absolutely. We provide Transfer Pricing documentation, DTAA advisory, FEMA compliance, and cross-border structuring for multinational corporations operating in India and abroad.',
+  },
+  {
+    q: 'Do you advise on UAE Corporate Tax for Indian businesses?',
+    a: 'Yes. CA Mehul Agrawal holds a UAE Corporate Taxation certification. We advise Indian businesses with UAE operations on the 9% CT compliance, India-UAE DTAA benefits, Transfer Pricing, and Free Zone entity structuring.',
+  },
+  {
+    q: 'Do you provide NRI taxation services?',
+    a: 'Yes. We assist Non-Resident Indians with income tax filing, DTAA benefits, FEMA compliance for property and investments, and repatriation of funds from India.',
+  },
+  {
+    q: 'Do you offer offshore accounting and outsourced bookkeeping services?',
+    a: 'Yes. We provide offshore accounting and outsourced bookkeeping services for businesses in India, UAE, and international clients looking to manage their Indian entity finances remotely.',
+  },
+  {
+    q: 'Do you provide CA services in Nashik?',
+    a: 'Yes. Our Nashik office at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Contact us at +91 95275 33506.',
+  },
+  {
+    q: 'Do you have a CA office in Sillod?',
+    a: 'Yes. Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112. We serve businesses and individuals in Sillod and the surrounding Chhatrapati Sambhajinagar district with GST filing, income tax returns, audit, and tax planning services. Contact us at +91 95955 85953.',
+  },
+]
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
       {/* ===== HERO ===== */}
       <section className="hero">
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -247,6 +293,27 @@ export default function Home() {
                 </span>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FAQ ===== */}
+      <section className="section" id="faq">
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-badge">Common Questions</span>
+            <h2 className="section-title">Frequently Asked Questions</h2>
+            <p style={{ maxWidth: '620px', margin: '0 auto', color: 'var(--text-light)' }}>
+              Quick answers on the services, locations, and specializations clients ask about most.
+            </p>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+            {faqs.map(({ q, a }, i) => (
+              <div key={i} className="card">
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '0.75rem', color: 'var(--primary)' }}>{q}</h3>
+                <p style={{ color: 'var(--text-light)', fontSize: '0.93rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

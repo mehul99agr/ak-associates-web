@@ -185,69 +185,6 @@ const organizationLd = {
   ],
 }
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Do you provide CA services for startups in Bangalore?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. We specialize in end-to-end startup advisory in Bangalore, from company incorporation and DPIIT registration to ESOP structuring, Virtual CFO services, and investor-ready financial reporting for fundraising rounds.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you help with Transfer Pricing and International Taxation for MNCs?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Absolutely. We provide Transfer Pricing documentation, DTAA advisory, FEMA compliance, and cross-border structuring for multinational corporations operating in India and abroad.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you advise on UAE Corporate Tax for Indian businesses?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. CA Mehul Agrawal holds a UAE Corporate Taxation certification. We advise Indian businesses with UAE operations on the 9% CT compliance, India-UAE DTAA benefits, Transfer Pricing, and Free Zone entity structuring.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you provide NRI taxation services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. We assist Non-Resident Indians with income tax filing, DTAA benefits, FEMA compliance for property and investments, and repatriation of funds from India.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you offer offshore accounting and outsourced bookkeeping services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. We provide offshore accounting and outsourced bookkeeping services for businesses in India, UAE, and international clients looking to manage their Indian entity finances remotely.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you provide CA services in Nashik?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Our Nashik office at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Contact us at +91 95275 33506.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you have a CA office in Sillod?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112. We serve businesses and individuals in Sillod and the surrounding Chhatrapati Sambhajinagar district with GST filing, income tax returns, audit, and tax planning services. Contact us at +91 95955 85953.',
-      },
-    },
-  ],
-}
-
 const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
 const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
 
@@ -258,10 +195,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
         />
       </head>
       <body>

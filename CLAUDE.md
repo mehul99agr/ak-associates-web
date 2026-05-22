@@ -66,7 +66,10 @@ src/app/
 - Sitemap submitted to Google Search Console
 - All pages have explicit canonical tags (all point to non-www)
 - JSON-LD Service + FAQ + Breadcrumb schema on all service pages
-- Organization + FAQ schema in root layout
+- Organization schema in root layout
+- FAQ (FAQPage) schema only on pages with a matching visible FAQ section:
+  homepage + each service page. Never add FAQPage to the root layout - it then
+  lands on pages with no visible FAQ content and Search Console flags it Invalid.
 - www → non-www 308 redirect configured in Vercel domain settings (see Domain Canonicalization below)
 - Listed on: IndiaMart, Justdial, Sulekha, ICAI directory
 - GA4 wired up (G-41NNQG654M)
