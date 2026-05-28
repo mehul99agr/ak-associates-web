@@ -56,6 +56,14 @@ const services = [
 
 const faqs = [
   {
+    q: 'What should I look for when choosing a CA firm in Nashik?',
+    a: 'A reliable CA firm in Nashik should be ICAI-registered with verifiable partner credentials, offer direct partner access (not junior-only handling), cover the full compliance spectrum (GST, ITR, audit, ROC), and be transparent about fees. For businesses with cross-border operations, look for a Nashik CA firm with proven international taxation expertise - transfer pricing, DTAA, and FEMA - which is rare locally.',
+  },
+  {
+    q: 'How is your CA firm in Nashik different from other firms?',
+    a: 'Most CA firms in Nashik focus only on domestic compliance. Agrawal Khandelwal & Associates LLP is one of the few Nashik-based CA firms with hands-on expertise in international taxation, UAE corporate tax, transfer pricing, and offshore accounting - alongside complete domestic GST, ITR, audit, and incorporation services. You also work directly with the partner, not a junior team.',
+  },
+  {
     q: 'Where is your CA office in Nashik?',
     a: 'Our Nashik office is at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011, Maharashtra. We are open Monday to Saturday, 10 AM to 6 PM.',
   },
@@ -225,8 +233,37 @@ export default function CAInNashik() {
         </div>
       </section>
 
-      {/* WHY US */}
+      {/* WHAT MAKES A TOP CA FIRM IN NASHIK */}
       <section className="section bg-surface">
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <span className="section-badge">Choosing a CA Firm</span>
+            <h2 className="section-title">What Makes a Top CA Firm in Nashik?</h2>
+            <p style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--text-light)' }}>
+              Not every CA firm in Nashik is equipped to handle the full scope of compliance, audit, and advisory a growing business needs. Here are the six criteria that separate the leading CA firms in Nashik from the rest - and how we meet each one.
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
+            {[
+              { icon: '✅', title: 'ICAI-Registered with Verifiable Credentials', desc: 'Every partner is a qualified Chartered Accountant registered with the Institute of Chartered Accountants of India. CA Mehul Agrawal additionally holds certifications in Concurrent Bank Audit and UAE Corporate Taxation.' },
+              { icon: '👥', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file - not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
+              { icon: '🧩', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
+              { icon: '🌐', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax - capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
+              { icon: '📱', title: 'Responsive Communication', desc: 'WhatsApp for quick questions, phone for urgent matters, email for documentation. We respond within hours, not days.' },
+              { icon: '💰', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges, no surprise invoices, no per-call billing.' },
+            ].map((item, i) => (
+              <div key={i} className="card">
+                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{item.icon}</div>
+                <h3 style={{ fontSize: '1.05rem', marginBottom: '0.75rem' }}>{item.title}</h3>
+                <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY US */}
+      <section className="section">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Why Choose Us</span>
@@ -252,7 +289,7 @@ export default function CAInNashik() {
       </section>
 
       {/* TEAM */}
-      <section className="section">
+      <section className="section bg-surface">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Your Nashik CA</span>
@@ -283,7 +320,7 @@ export default function CAInNashik() {
       </section>
 
       {/* OFFICE & CONTACT */}
-      <section className="section bg-surface" id="contact">
+      <section className="section" id="contact">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Visit Us</span>
@@ -339,7 +376,7 @@ export default function CAInNashik() {
       </section>
 
       {/* FAQ */}
-      <section className="section">
+      <section className="section bg-surface">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
@@ -357,7 +394,7 @@ export default function CAInNashik() {
       </section>
 
       {/* BOTTOM CTA */}
-      <section className="section bg-surface">
+      <section className="section">
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Need a CA in Nashik?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
