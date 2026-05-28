@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | Agrawal Khandelwal & Associates LLP',
+  title: 'Transfer Pricing India',
   description: 'Expert transfer pricing consultants in India. TP documentation (Master File, Local File, Form 3CEB), benchmarking studies, APA assistance, and representation before tax authorities. CA with Deloitte pedigree. Serving MNCs and Indian multinationals.',
   keywords: [
     'transfer pricing consultant India', 'transfer pricing CA India',

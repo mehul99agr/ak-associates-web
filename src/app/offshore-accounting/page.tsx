@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Offshore Accounting Services India | Outsourced Bookkeeping India | Agrawal Khandelwal & Associates LLP',
+  title: 'Offshore Accounting India',
   description: 'Offshore accounting and outsourced bookkeeping from India for foreign companies, CA firms, and NRI-owned businesses. Full-cycle accounting, MIS reporting, payroll, GST, and statutory compliance. ICAI-registered CA firm.',
   keywords: [
     'offshore accounting India', 'outsourced accounting India',

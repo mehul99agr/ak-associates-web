@@ -27,7 +27,7 @@ const GA_MEASUREMENT_ID = 'G-41NNQG654M'
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrawalkhandelwal.com'),
   title: {
-    default: 'CA in Nashik | International Tax, GST & Audit | Agrawal Khandelwal & Associates LLP',
+    default: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP',
     template: '%s | Agrawal Khandelwal & Associates LLP',
   },
   description: 'Trusted Chartered Accountants in Nashik and Sillod, Maharashtra. Agrawal Khandelwal & Associates LLP offers GST filing, income tax, company incorporation, audit, international taxation, and virtual CFO services. Call +91 95275 33506.',

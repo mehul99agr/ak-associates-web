@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'UAE Corporate Tax Consultant India | India-UAE DTAA & UAE CT Advisory | Agrawal Khandelwal & Associates LLP',
+  title: 'UAE Corporate Tax',
   description: 'Certified UAE Corporate Tax consultants for Indian businesses. UAE CT compliance (9%), India-UAE DTAA advisory, Free Zone structuring, and repatriation planning. CA Mehul Agrawal holds UAE Corporate Taxation certification.',
   keywords: [
     'UAE corporate tax consultant India', 'UAE CT advisory India',
