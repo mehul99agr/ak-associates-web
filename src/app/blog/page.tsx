@@ -84,7 +84,60 @@ const posts = [
   },
 ]
 
+// Regenerate at most hourly so the compliance calendar tracks the current month
+export const revalidate = 3600
+
+const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+const MONTH_ABBR = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+type Deadline = { day: number; title: string; desc: string }
+
+function getComplianceDeadlines(m: number, year: number) {
+  const abbr = MONTH_ABBR[m]
+  const prevM = (m + 11) % 12
+  const prevLabel = `${MONTH_NAMES[prevM]} ${m === 0 ? year - 1 : year}`
+
+  // Filings that recur every month (for the previous month's transactions)
+  const recurring: Deadline[] = [
+    { day: 7, title: 'TDS/TCS Deposit', desc: `Deposit of TDS/TCS deducted or collected for ${prevLabel}.` },
+    { day: 11, title: 'GSTR-1 Filing', desc: `Monthly GSTR-1 for ${prevLabel} (taxpayers not under QRMP).` },
+    { day: 15, title: 'PF & ESI Payment', desc: `Provident Fund and ESI contribution for ${prevLabel}.` },
+    { day: 20, title: 'GSTR-3B Filing', desc: `Monthly GSTR-3B for ${prevLabel} (monthly filers).` },
+  ]
+
+  // Deadlines specific to certain months (month index 0 = January)
+  const monthSpecific: Record<number, Deadline[]> = {
+    0: [{ day: 31, title: 'TDS Return (Q3)', desc: 'Quarterly TDS return (Form 24Q/26Q) for Oct to Dec.' }],
+    2: [{ day: 15, title: 'Advance Tax (4th)', desc: 'Final instalment (100%) of advance tax for the financial year.' }],
+    4: [{ day: 31, title: 'TDS Return (Q4)', desc: 'Quarterly TDS return (Form 24Q/26Q) for Jan to Mar.' }],
+    5: [{ day: 15, title: 'Advance Tax (1st)', desc: '1st instalment (15%) of advance tax. Form 16 to employees also due.' }],
+    6: [
+      { day: 15, title: 'TDS Return (Q1)', desc: 'Quarterly TDS return for Apr to Jun.' },
+      { day: 31, title: 'ITR Filing', desc: 'Income tax return due for non-audit taxpayers.' },
+    ],
+    8: [
+      { day: 15, title: 'Advance Tax (2nd)', desc: '2nd instalment (45%) of advance tax.' },
+      { day: 30, title: 'Tax Audit Report', desc: 'Tax audit report (Form 3CD) filing due.' },
+    ],
+    9: [{ day: 31, title: 'TDS Return (Q2)', desc: 'Quarterly TDS return for Jul to Sep.' }],
+    10: [{ day: 30, title: 'Audit ITR & 3CEB', desc: 'ITR for audit cases and transfer pricing Form 3CEB.' }],
+    11: [
+      { day: 15, title: 'Advance Tax (3rd)', desc: '3rd instalment (75%) of advance tax.' },
+      { day: 31, title: 'GSTR-9 Annual', desc: 'Annual GST return (GSTR-9 / 9C) for the previous financial year.' },
+    ],
+  }
+
+  const all = [...recurring, ...(monthSpecific[m] ?? [])].sort((a, b) => a.day - b.day)
+  return {
+    label: `${MONTH_NAMES[m]} ${year}`,
+    items: all.map(d => ({ date: `${d.day} ${abbr}`, title: d.title, desc: d.desc })),
+  }
+}
+
 export default function Blog() {
+  // Shift to IST so the month rolls over at midnight India time, not UTC
+  const ist = new Date(Date.now() + 5.5 * 3600 * 1000)
+  const cal = getComplianceDeadlines(ist.getUTCMonth(), ist.getUTCFullYear())
   return (
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>
       <div className="section">
@@ -99,14 +152,9 @@ export default function Blog() {
 
           {/* Compliance Calendar */}
           <div className="card" style={{ marginBottom: '3.5rem', borderLeft: '4px solid var(--accent)' }}>
-            <h2 style={{ fontSize: '1.35rem', marginBottom: '1.5rem' }}>Upcoming Compliance Deadlines: June 2026</h2>
+            <h2 style={{ fontSize: '1.35rem', marginBottom: '1.5rem' }}>Upcoming Compliance Deadlines: {cal.label}</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1rem' }}>
-              {[
-                { date: '7 Jun', title: 'TDS/TCS Deposit', desc: 'Deposit of TDS/TCS deducted or collected for May 2026.' },
-                { date: '11 Jun', title: 'GSTR-1 Filing', desc: 'Monthly GSTR-1 for May 2026 (taxpayers not under QRMP).' },
-                { date: '15 Jun', title: 'Advance Tax (1st)', desc: '1st instalment (15%) of advance tax for FY 2026-27. Form 16 to employees also due.' },
-                { date: '20 Jun', title: 'GSTR-3B Filing', desc: 'Monthly GSTR-3B for May 2026 (monthly filers).' },
-              ].map((item, idx) => (
+              {cal.items.map((item, idx) => (
                 <div key={idx} style={{ background: 'var(--bg-surface)', padding: '1.25rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
                   <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{item.date}</div>
                   <div style={{ fontWeight: 700, color: 'var(--text-main)', marginBottom: '4px', fontSize: '0.95rem' }}>{item.title}</div>
