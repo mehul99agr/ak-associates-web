@@ -99,13 +99,13 @@ export default function Blog() {
 
           {/* Compliance Calendar */}
           <div className="card" style={{ marginBottom: '3.5rem', borderLeft: '4px solid var(--accent)' }}>
-            <h2 style={{ fontSize: '1.35rem', marginBottom: '1.5rem' }}>Upcoming Compliance Deadlines: May 2026</h2>
+            <h2 style={{ fontSize: '1.35rem', marginBottom: '1.5rem' }}>Upcoming Compliance Deadlines: June 2026</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1rem' }}>
               {[
-                { date: '7 May', title: 'TDS/TCS Deposit', desc: 'Deposit of Tax deducted/collected for April 2026.' },
-                { date: '11 May', title: 'GSTR-1 Filing', desc: 'Due date for filing GSTR-1 for April 2026.' },
-                { date: '15 May', title: 'Advance Tax', desc: '1st instalment of advance tax for FY 2026-27.' },
-                { date: '20 May', title: 'GSTR-3B Filing', desc: 'Due date for filing GSTR-3B for April 2026.' },
+                { date: '7 Jun', title: 'TDS/TCS Deposit', desc: 'Deposit of TDS/TCS deducted or collected for May 2026.' },
+                { date: '11 Jun', title: 'GSTR-1 Filing', desc: 'Monthly GSTR-1 for May 2026 (taxpayers not under QRMP).' },
+                { date: '15 Jun', title: 'Advance Tax (1st)', desc: '1st instalment (15%) of advance tax for FY 2026-27. Form 16 to employees also due.' },
+                { date: '20 Jun', title: 'GSTR-3B Filing', desc: 'Monthly GSTR-3B for May 2026 (monthly filers).' },
               ].map((item, idx) => (
                 <div key={idx} style={{ background: 'var(--bg-surface)', padding: '1.25rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
                   <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{item.date}</div>
