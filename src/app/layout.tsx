@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Navbar from './Navbar'
 import GoogleAnalytics from './GoogleAnalytics'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Montserrat, Open_Sans } from 'next/font/google'
+import { Montserrat, Open_Sans, Cormorant_Garamond } from 'next/font/google'
 
 
 const montserrat = Montserrat({
@@ -19,6 +19,13 @@ const openSans = Open_Sans({
   subsets: ['latin'],
   variable: '--font-open-sans',
   weight: ['400', '600', '700'],
+  display: 'swap',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  variable: '--font-cormorant',
+  weight: ['500', '600', '700'],
   display: 'swap',
 })
 
@@ -203,7 +210,7 @@ const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20bo
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${openSans.variable} ${cormorant.variable}`}>
       <head>
         <script
           type="application/ld+json"

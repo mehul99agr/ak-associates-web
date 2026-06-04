@@ -10,6 +10,11 @@
   --accent: #D22B2B;
   --accent-hover: #b91c1c;
 
+  /* Heritage accent + display serif */
+  --gold: #9A7B3F;
+  --gold-light: #C5A968;
+  --serif: var(--font-cormorant, 'Cormorant Garamond', Georgia, 'Times New Roman', serif);
+
   /* Text */
   --text-main: #1f2937;
   --text-light: #6b7280;
@@ -72,7 +77,15 @@ main {
   width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
+  font-family: var(--serif);
+  color: var(--primary);
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+h3, h4 {
   font-family: var(--font-montserrat, 'Montserrat', sans-serif);
   color: var(--primary);
   line-height: 1.2;
@@ -234,7 +247,7 @@ button:focus-visible {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: var(--gold);
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -341,27 +354,28 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.4rem 1rem;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.4rem 1.1rem;
+  background: rgba(197,169,104,0.10);
+  border: 1px solid rgba(197,169,104,0.45);
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: var(--gold-light);
 }
 
 .hero h1 {
   color: #fff;
-  font-size: clamp(2.2rem, 5vw, 3.75rem);
-  font-weight: 900;
+  font-size: clamp(2.6rem, 5.4vw, 4.25rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
-  max-width: 900px;
+  max-width: 920px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.15;
+  line-height: 1.1;
 }
 
 .hero p {
@@ -390,9 +404,9 @@ button:focus-visible {
 }
 
 .stat-number {
-  font-family: var(--font-montserrat, 'Montserrat', sans-serif);
-  font-size: 2.75rem;
-  font-weight: 900;
+  font-family: var(--serif);
+  font-size: 3.4rem;
+  font-weight: 600;
   color: var(--primary);
   display: block;
   line-height: 1;
@@ -420,7 +434,7 @@ button:focus-visible {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--primary);
+  border-color: var(--gold);
 }
 
 /* ===== SECTION HELPERS ===== */
@@ -452,6 +466,7 @@ button:focus-visible {
   color: var(--footer-text);
   padding: 5rem 0 2rem;
   width: 100%;
+  border-top: 3px solid var(--gold);
 }
 
 .footer h3 {
@@ -471,7 +486,7 @@ button:focus-visible {
 }
 
 .footer a:hover {
-  color: var(--accent);
+  color: var(--gold-light);
   padding-left: 4px;
 }
 
