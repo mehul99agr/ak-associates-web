@@ -276,7 +276,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = posts.find(p => p.slug === slug)
   if (!post) return {}
   return {
-    title: `${post.title} | Agrawal Khandelwal & Associates LLP`,
+    title: post.title,
     description: post.metaDescription,
     keywords: post.keywords,
     alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
