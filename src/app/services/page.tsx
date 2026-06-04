@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
@@ -23,9 +24,9 @@ export const metadata: Metadata = {
 const categories = [
   {
     title: 'Taxation & Regulatory',
-    icon: '⚖️',
+    icon: 'scale',
     items: [
-      { name: 'International Taxation', detail: 'Expertise in Transfer Pricing, DTAA, and NRI taxation.' },
+      { name: 'International Taxation', detail: 'Expertise in Transfer Pricing, DTAA, and NRI taxation.', link: '/transfer-pricing' },
       { name: 'Tax Planning & Compliance', detail: 'ITR, GST return filing, and optimization strategies.' },
       { name: 'GST Advisory', detail: 'Implementation, compliance, and departmental representation.' },
       { name: 'Tax Litigation', detail: 'Expert representation for scrutiny and tax assessments.' },
@@ -33,7 +34,7 @@ const categories = [
   },
   {
     title: 'Audit & Assurance',
-    icon: '📜',
+    icon: 'scroll',
     items: [
       { name: 'Statutory Audit', detail: 'Comprehensive audits under the Companies Act.' },
       { name: 'Internal & Management Audit', detail: 'Strengthening internal controls and operational efficiency.' },
@@ -43,9 +44,9 @@ const categories = [
   },
   {
     title: 'Strategic Advisory',
-    icon: '🚀',
+    icon: 'rocket',
     items: [
-      { name: 'Virtual CFO Services', detail: 'Strategic leadership for startups and growing SMEs.' },
+      { name: 'Virtual CFO Services', detail: 'Strategic leadership for startups and growing SMEs.', link: '/startups' },
       { name: 'Business Incorporation', detail: 'Company & LLP formation with optimal structuring.', link: '/company-incorporation' },
       { name: 'FEMA & RBI Compliance', detail: 'Advising on inbound and outbound foreign investments.' },
       { name: 'Financial Modeling', detail: 'Precision valuation and performance forecasting.' },
@@ -69,7 +70,7 @@ export default function Services() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2.5rem' }}>
             {categories.map((cat, i) => (
               <div key={i} className="card" style={{ padding: '2.5rem' }}>
-                <div style={{ fontSize: '2.5rem', marginBottom: '1.25rem' }}>{cat.icon}</div>
+                <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={cat.icon} size={44} /></div>
                 <h2 style={{ fontSize: '1.6rem', marginBottom: '2rem' }}>{cat.title}</h2>
                 <ul style={{ listStyle: 'none' }}>
                   {cat.items.map((item, j) => (
@@ -82,6 +83,22 @@ export default function Services() {
                 </ul>
               </div>
             ))}
+          </div>
+
+          <div style={{ marginTop: '4.5rem' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--primary)' }}>Specialised Practice Areas</h2>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center' }}>
+              {[
+                { label: 'Transfer Pricing', href: '/transfer-pricing' },
+                { label: 'UAE Tax Advisory', href: '/uae-tax-advisory' },
+                { label: 'NRI Tax Advisory', href: '/nri-tax-advisory' },
+                { label: 'Offshore Accounting', href: '/offshore-accounting' },
+                { label: 'Company Incorporation', href: '/company-incorporation' },
+                { label: 'Startup Advisory', href: '/startups' },
+              ].map(s => (
+                <Link key={s.href} href={s.href} style={{ padding: '10px 22px', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '50px', fontWeight: 700, fontSize: '0.9rem', color: 'var(--primary)' }}>{s.label} →</Link>
+              ))}
+            </div>
           </div>
 
           <div style={{ margin: '80px auto 0', maxWidth: '800px', textAlign: 'center' }}>

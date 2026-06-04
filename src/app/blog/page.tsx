@@ -138,19 +138,15 @@ export default function Blog() {
             ))}
           </div>
 
-          {/* Newsletter CTA */}
+          {/* Closing CTA */}
           <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', marginTop: '5rem', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>
-            <h2 style={{ color: '#fff', marginBottom: '0.75rem' }}>Don&apos;t Miss a Single Update.</h2>
-            <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '2.5rem', maxWidth: '500px', margin: '0.75rem auto 2.5rem' }}>
-              Join 500+ professionals receiving our monthly regulatory digest.
+            <h2 style={{ color: '#fff', marginBottom: '0.75rem' }}>Have a Question on Any of This?</h2>
+            <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '520px', margin: '0.75rem auto 2.5rem' }}>
+              Book a free consultation with our partners, or message us on WhatsApp for a quick answer.
             </p>
-            <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', maxWidth: '480px', margin: '0 auto', flexWrap: 'wrap' }}>
-              <input
-                type="email"
-                placeholder="Your Email Address"
-                style={{ padding: '0.875rem 1rem', borderRadius: 'var(--radius-sm)', flex: 1, minWidth: '200px', fontSize: '0.95rem' }}
-              />
-              <button className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700, flexShrink: 0 }}>Subscribe</button>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700 }}>Book Free Consultation</a>
+              <a href="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20tax%20question." target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Chat on WhatsApp</a>
             </div>
           </div>
         </div>

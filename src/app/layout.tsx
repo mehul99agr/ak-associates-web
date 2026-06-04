@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './Navbar'
+import FloatingContact from './FloatingContact'
 import GoogleAnalytics from './GoogleAnalytics'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Montserrat, Open_Sans, Cormorant_Garamond } from 'next/font/google'
@@ -222,6 +223,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SpeedInsights />
         <Navbar />
         <main>{children}</main>
+        <FloatingContact />
 
         <footer className="footer">
           <div className="container">
@@ -270,6 +272,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/ca-in-sillod">CA in Sillod</Link>
                 <Link href="/tools">Tax & Finance Tools</Link>
                 <Link href="/blog">Client Insights</Link>
+                <Link href="/contact">Contact Us</Link>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
               </div>
 
@@ -293,6 +296,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <div className="footer-bottom">
               <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal &amp; Associates LLP. All rights reserved.</p>
+              <p style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: '#475569' }}>Chartered Accountants · ICAI Firm Reg. No. W101119</p>
             </div>
           </div>
         </footer>

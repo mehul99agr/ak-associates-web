@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import Icon from './Icon'
 
 export const metadata: Metadata = {
   title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
@@ -15,38 +16,38 @@ const services = [
   {
     title: 'Business Incorporation & Structuring',
     desc: 'Complete guidance on company and LLP formation, optimal corporate structure selection, and regulatory compliance setup.',
-    icon: '🏢',
+    icon: 'building',
     features: ['Company & LLP Formation', 'Optimal Structure Advisory', 'Regulatory Compliance Setup', 'Foreign Investment Approvals'],
     link: '/company-incorporation',
   },
   {
     title: 'Tax Planning & Compliance',
     desc: 'Strategic income tax return (ITR) and GST return filing, tax planning, and comprehensive compliance management across India.',
-    icon: '📄',
+    icon: 'document',
     features: ['ITR Filing & Planning', 'GST Return & Compliance', 'Tax Optimization Strategies', 'Tax Audit Representation'],
   },
   {
     title: 'International Tax & Transfer Pricing',
     desc: 'Expert guidance on cross-border taxation, transfer pricing compliance, and international regulatory requirements.',
-    icon: '🌍',
+    icon: 'globe',
     features: ['Transfer Pricing Documentation', 'Treaty Benefits & DTAA', 'International Tax Planning', 'Cross-border Structuring'],
   },
   {
     title: 'Virtual CFO Services',
     desc: 'Strategic financial leadership and advisory services without the overhead of a full-time CFO.',
-    icon: '📈',
+    icon: 'chart',
     features: ['Financial Strategy & Planning', 'Budgeting & Forecasting', 'Investment Advisory', 'Performance Analysis'],
   },
   {
     title: 'Audit & Assurance',
     desc: 'Comprehensive statutory audits, internal audits, tax audits, and thorough due diligence to ensure transparency.',
-    icon: '🛡️',
+    icon: 'shield',
     features: ['Statutory & Tax Audits', 'Internal Audit Systems', 'Due Diligence Reports', 'Risk Assessment'],
   },
   {
     title: 'Financial Advisory',
     desc: 'Strategic financial consulting, modeling, and advisory services for business growth and optimization.',
-    icon: '📊',
+    icon: 'analytics',
     features: ['Financial Modeling', 'Valuation Services', 'Business Restructuring', 'Funding Advisory'],
   },
 ]
@@ -267,7 +268,7 @@ export default function Home() {
             {services.map((s, i) => {
               const inner = (
                 <>
-                  <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
+                  <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={s.icon} size={40} /></div>
                   <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', marginBottom: '1.25rem', lineHeight: 1.7 }}>{s.desc}</p>
                   <ul style={{ listStyle: 'none', fontSize: '0.88rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>

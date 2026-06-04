@@ -131,8 +131,10 @@ export default function Navbar() {
             )}
           </div>
 
+          <Link href="/#about" className="link">ABOUT</Link>
           <Link href="/tools" className="link">TOOLS</Link>
           <Link href="/blog" className="link">INSIGHTS</Link>
+          <Link href="/contact" className="link">CONTACT</Link>
           <a
             href={bookingLink}
             target="_blank"
@@ -211,8 +213,10 @@ export default function Navbar() {
               </div>
             )}
 
+            <Link href="/#about" onClick={closeMenu}>ABOUT</Link>
             <Link href="/tools" onClick={closeMenu}>TOOLS</Link>
             <Link href="/blog" onClick={closeMenu}>INSIGHTS</Link>
+            <Link href="/contact" onClick={closeMenu}>CONTACT</Link>
             <a
               href={bookingLink}
               onClick={closeMenu}

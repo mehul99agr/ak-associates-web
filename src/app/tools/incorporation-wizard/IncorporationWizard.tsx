@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Icon from '../../Icon'
 
 const questions = [
   {
@@ -89,7 +90,7 @@ export default function IncorporationWizard() {
         </div>
       ) : (
         <div>
-          <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🎉</div>
+          <div style={{ marginBottom: '15px', color: '#10b981', display: 'flex', justifyContent: 'center' }}><Icon name="check" size={56} /></div>
           <h3 style={{ color: 'var(--text-light)', marginBottom: '10px' }}>Your Ideal Business Structure is:</h3>
           <h2 style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '30px' }}>{getRecommendation(answers)}</h2>
           <p style={{ color: 'var(--text-light)', marginBottom: '30px', fontSize: '0.95rem' }}>

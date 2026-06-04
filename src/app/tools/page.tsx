@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'Free Tax & Finance Tools | Income Tax, SIP Calculator',
@@ -16,25 +17,25 @@ const tools = [
   {
     title: 'Income Tax Estimator',
     desc: 'Calculate your tax liability under Old or New Regime based on the latest Union Budget updates.',
-    icon: '💵',
+    icon: 'rupee',
     link: '/tax-calculator',
   },
   {
     title: 'Capital Gains Calculator',
     desc: 'Estimate tax on short-term and long-term gains from property and equities.',
-    icon: '📈',
+    icon: 'chart',
     link: '/tools/capital-gains',
   },
   {
     title: 'SIP & Retirement Planner',
     desc: 'Plan your mutual fund investments and visualize long-term compounding growth.',
-    icon: '🌱',
+    icon: 'sprout',
     link: '/tools/sip-planner',
   },
   {
     title: 'Incorporation Wizard',
     desc: 'Not sure whether to register as an LLP or Pvt Ltd? Take our 5-question quiz.',
-    icon: '🏢',
+    icon: 'building',
     link: '/tools/incorporation-wizard',
   },
 ]
@@ -61,7 +62,7 @@ export default function ToolsHubPage() {
                 className="card"
                 style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}
               >
-                <div style={{ fontSize: '2.5rem', marginBottom: '1.25rem' }}>{tool.icon}</div>
+                <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={tool.icon} size={44} /></div>
                 <h2 style={{ fontSize: '1.2rem', marginBottom: '0.75rem' }}>{tool.title}</h2>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.93rem', flex: 1, lineHeight: 1.7 }}>{tool.desc}</p>
                 <div style={{ marginTop: '1.5rem', fontWeight: 700, color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.9rem' }}>
