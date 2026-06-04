@@ -92,12 +92,63 @@ const faqLd = {
   })),
 }
 
+const peopleLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
+      name: 'CA Mehul Agrawal',
+      jobTitle: 'Partner',
+      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
+      worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
+      url: 'https://agrawalkhandelwal.com/#about',
+      image: 'https://agrawalkhandelwal.com/mehul.jpg',
+      email: 'mehul@agrawalkhandelwal.com',
+      telephone: '+91-95275-33506',
+      sameAs: ['https://www.linkedin.com/in/mehulagrawal99/'],
+      knowsAbout: [
+        'International Taxation', 'Transfer Pricing', 'UAE Corporate Tax',
+        'DTAA', 'FEMA Compliance', 'Cross-border Structuring', 'M&A Advisory',
+      ],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'UAE Corporate Taxation Certification' },
+      ],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal',
+      name: 'CA Rupesh Khandelwal',
+      jobTitle: 'Partner',
+      description: 'Chartered Accountant specializing in domestic tax planning, statutory and internal audits, and business consulting, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
+      worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
+      url: 'https://agrawalkhandelwal.com/#about',
+      image: 'https://agrawalkhandelwal.com/rupesh.jpg',
+      email: 'rupesh@agrawalkhandelwal.com',
+      telephone: '+91-95955-85953',
+      alumniOf: { '@type': 'Organization', name: 'Deloitte' },
+      knowsAbout: [
+        'Domestic Tax Planning', 'Statutory Audit', 'Internal Audit',
+        'Tax Compliance', 'Business Consulting',
+      ],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)' },
+      ],
+    },
+  ],
+}
+
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(peopleLd) }}
       />
 
       {/* ===== HERO ===== */}
@@ -109,7 +160,7 @@ export default function Home() {
           </div>
           <h1>Simplify your finances,<br />Empower your decisions.</h1>
           <p>
-            With over five years of professional experience, we serve a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
+            We serve a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
           </p>
           <div className="hero-cta">
             <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -131,7 +182,7 @@ export default function Home() {
               <span className="stat-label">Clients Served</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">5+</span>
+              <span className="stat-number">3+</span>
               <span className="stat-label">Years of Excellence</span>
             </div>
             <div className="stat-item">

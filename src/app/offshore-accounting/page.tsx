@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Offshore Accounting India',
+  title: 'Offshore Accounting Services India',
   description: 'Offshore accounting and outsourced bookkeeping from India for foreign companies, CA firms, and NRI-owned businesses. Full-cycle accounting, MIS reporting, payroll, GST, and statutory compliance. ICAI-registered CA firm.',
   keywords: [
     'offshore accounting India', 'outsourced accounting India',
@@ -99,6 +99,14 @@ const faqs = [
   {
     q: 'Do you provide outsourced CFO services as part of offshore accounting?',
     a: 'Yes. Beyond bookkeeping, we offer a Virtual CFO layer: financial planning and analysis (FP&A), budget vs actual variance analysis, investor MIS, cash flow forecasting, and strategic financial advice. This is particularly valuable for foreign parent companies that need someone in India who can think like a CFO, not just process transactions.',
+  },
+  {
+    q: 'How is offshore accounting priced - hourly or fixed fee?',
+    a: 'We offer three models so you can pick what fits. (1) Fixed monthly retainer - the most popular - a flat fee covering an agreed scope of bookkeeping, compliance, and reporting. (2) Dedicated resource - a full-time offshore bookkeeper or accountant working only on your books, billed per seat per month. (3) Hourly/ad-hoc - for one-off cleanups, backlog work, or audit-readiness projects. Most foreign companies and CA firms save 60-70% versus hiring locally, with no recruitment, payroll, or office overhead on their side.',
+  },
+  {
+    q: 'Can we build a dedicated offshore accounting team in India through your firm?',
+    a: 'Yes. Many of our CA-firm and scale-up clients start with one outsourced bookkeeper and grow into a dedicated 3-5 person offshore accounting team in India under our roof. You get the people without the entity, hiring, or HR burden - we recruit, train, supervise, and back them with partner-level CA review. The team works your hours, on your software, under NDA, and we handle continuity if anyone is on leave so your books never stall.',
   },
 ]
 
@@ -263,8 +271,45 @@ export default function OffshoreAccounting() {
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* Long-form: building an offshore team */}
         <section className="section bg-surface">
+          <div className="container" style={{ maxWidth: '820px' }}>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <span className="section-badge">In Depth</span>
+              <h2 className="section-title">Building an Offshore Accounting Team in India</h2>
+            </div>
+            <div style={{ color: 'var(--text-light)', fontSize: '0.96rem', lineHeight: 1.9 }}>
+              <p style={{ marginBottom: '1.5rem' }}>
+                India has become the default destination for companies looking to build an offshore accounting team, and for good reason. The country produces more qualified Chartered Accountants than almost anywhere else, English is the working language of the profession, and the time zone gives clean overlap with both the UK morning and the full UAE business day. For a US, UK, or UAE business, the result is the same finance work delivered at 30-40% of the local cost, with no recruitment, payroll, or office overhead falling on your side of the relationship.
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)', margin: '2rem 0 0.75rem' }}>
+                Offshore bookkeepers in India, supervised by qualified CAs
+              </h3>
+              <p style={{ marginBottom: '1.5rem' }}>
+                The common worry with offshore bookkeeping is quality control - that work goes out of sight and errors surface only at year end. We solve this the way a proper CA firm should: every offshore bookkeeper on your account works under partner-level review. Day-to-day recording, bank reconciliation, and ledger maintenance are handled by trained accountants, while an ICAI-qualified Chartered Accountant signs off on the monthly close, the GST and TDS positions, and the management accounts before they reach you. You get the cost of an offshore bookkeeper with the assurance of a qualified firm standing behind the numbers.
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)', margin: '2rem 0 0.75rem' }}>
+                Choosing among offshore accounting companies in India
+              </h3>
+              <p style={{ marginBottom: '1.5rem' }}>
+                When businesses compare offshore accounting companies in India, the deciding factors are rarely price alone - they are continuity, data security, and whether a qualified professional is accountable for the output. Large outsourcing factories move your work between junior staff and treat you as one account among thousands. As an owner-managed CA firm, we keep a named point of contact on your engagement, work under a signed NDA inside your own software environment where you prefer it, and provide cover so your books never stall when someone is on leave. For CA firms and accounting practices abroad, we deliver the same work on a white-label basis, under your brand and your standards.
+              </p>
+
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)', margin: '2rem 0 0.75rem' }}>
+                Start with one seat, scale to a full team
+              </h3>
+              <p style={{ marginBottom: 0 }}>
+                Most engagements begin small - a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance - and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a short{' '}
+              <a href={bookingLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>discovery call</a>, a fixed-fee scope, and a clean handover.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="section">
           <div className="container" style={{ maxWidth: '800px' }}>
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
               <span className="section-badge">Questions</span>

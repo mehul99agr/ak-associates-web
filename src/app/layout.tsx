@@ -107,7 +107,7 @@ const organizationLd = {
   logo: 'https://agrawalkhandelwal.com/logo.png',
   telephone: '+91-95275-33506',
   email: 'mehul@agrawalkhandelwal.com',
-  foundingDate: '2019',
+  foundingDate: '2023',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
@@ -149,10 +149,23 @@ const organizationLd = {
     'Startup Advisory', 'Virtual CFO Services', 'ESOP Structuring',
     'FDI Compliance', 'Offshore Accounting',
   ],
+  knowsAbout: [
+    'GST Compliance', 'Income Tax', 'Statutory Audit', 'Company Incorporation',
+    'International Taxation', 'Transfer Pricing', 'DTAA', 'FEMA Compliance',
+    'UAE Corporate Tax', 'NRI Taxation', 'Startup Advisory', 'Virtual CFO Services',
+    'Offshore Accounting',
+  ],
+  founder: [
+    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
+    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
+  ],
   sameAs: [
     'https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/',
+    'https://www.justdial.com/Nashik/Agrawal-Khandelwal-Associates-LLP-Opposite-Radiant-Hospital-Mumbai-Naka-Bhagwant-Nagar-Bhabha-Nagar/0253PX253-X253-240221190351-A8F7_BZDET',
+    'https://www.sulekha.com/agrawal-khandelwal-and-associates-llp-mumbai-naka-nashik-contact-address',
+    'https://maps.google.com/?cid=17018233718758486792',
   ],
-  hasMap: 'https://maps.google.com/?q=Ram+Plaza+Mumbai+Naka+Nashik',
+  hasMap: 'https://maps.google.com/?cid=17018233718758486792',
   location: [
     {
       '@type': 'Place',
