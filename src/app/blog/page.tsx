@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)',
+    slug: 'fema-compliance-foreign-investment-startups',
+    date: 'June 08, 2026',
+    category: 'Startup Compliance',
+    summary: 'FDI routes, the 30-day RBI reporting window, FC-GPR filing, the annual FLA return, and the most common FEMA mistakes that lead to penalties - a practical checklist for funded startups.',
+  },
+  {
     title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
     slug: 'dubai-company-registration-guide',
     date: 'May 19, 2026',

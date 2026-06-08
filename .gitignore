@@ -27,3 +27,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Search Console reports (kept locally, not in repo)
+Console report*/

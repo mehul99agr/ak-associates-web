@@ -4,6 +4,9 @@
 Next.js 15 website for **Agrawal Khandelwal & Associates LLP**, a CA firm based in Nashik and Sillod, Maharashtra.
 
 - **Domain:** agrawalkhandelwal.com
+- **Established:** 2023 (use this everywhere — `foundingDate` in schema + visible copy.
+  Do NOT claim "5+ years" / 2019; the firm is ~3 years old. Conflicting age claims hurt
+  both SEO trust and AI/GEO citation confidence.)
 - **Stack:** Next.js 15.5, React 19, TypeScript, CSS (no Tailwind)
 - **Fonts:** Montserrat + Open Sans via next/font/google
 - **Colors:** Navy `#0A2E5B` + Red `#D22B2B` — use CSS variables only, never hardcoded hex
@@ -74,9 +77,9 @@ src/app/
 - Listed on: IndiaMart, Justdial, Sulekha, ICAI directory
 - GA4 wired up (G-41NNQG654M)
 - Blog posts expanded to ~900 words with proper HTML structure
+- Google Business Profile is set up (dashboard at business.google.com) — do NOT list this as a pending task
 
 **Not done yet:**
-- Google Business Profile (most important remaining task — free, unlocks Maps pack)
 - Google reviews from clients (need 5+ to compete in local search)
 - LinkedIn weekly posts (building authority + backlinks)
 - More blog content targeting low-competition keywords
@@ -89,6 +92,61 @@ src/app/
   while all canonicals/sitemap/schema point to non-www. This conflict kept Google
   from indexing pages and left www duplicate URLs in the report. Fixed in Vercel
   (see Domain Canonicalization). Expect indexing to recover over 1-4 weeks.
+
+**Search Console findings (Jun 2, 2026 — 28-day window):**
+- INDEXING RECOVERED: the May 21 redirect fix is working. 13 non-www pages now
+  generate impressions (vs ~7 on May 28). All service pages, blog, and a blog
+  post are surfacing. Homepage 253 impr, ca-in-nashik 60 impr (up from 23).
+- Real problem now is RANKING DEPTH, not indexing/technical. Impressions are
+  rising but average position is drifting deeper (daily position ~3-6 early May
+  → 12-23 by month end), so clicks flatlined at 0 in the last ~5 days despite
+  25-29 impressions/day.
+- All 14 clicks still come from brand queries + homepage + ca-in-nashik. Money
+  keywords are buried too deep to convert: offshore accounting pos 24, ca firms
+  pos 31, ca firms in nashik pos 66, offshore bookkeepers in india pos 71,
+  tax consultant in nashik pos 95.
+- Stale www duplicates (www/, www/blog, www/services, www/startups, www/tools)
+  still in the report but numbers are FROZEN identical to May 28 = pre-redirect
+  leftovers aging out. 308 redirect verified live and correct. No action needed;
+  they drop off as Google recrawls.
+- Takeaway: technical SEO is healthy. The lever now is content + local authority,
+  i.e. the two pending items below (Google reviews, low-competition blog content).
+
+**Work shipped (Jun 4, 2026 — commit af13387, live + verified):**
+- Jun 4 GSC export confirmed the diagnosis above and showed one regression:
+  `/offshore-accounting` slipped pos 24 → 31 (most-trafficked service page, 35 impr,
+  0 clicks because buried). Acted on it.
+- `/offshore-accounting` strengthened: title changed to "Offshore Accounting Services
+  India" (matches the exact query at pos 59), added a ~400-word long-form section
+  "Building an Offshore Accounting Team in India" with H3s echoing the deep long-tail
+  queries (offshore bookkeepers in india, build offshore accounting team in india,
+  offshore accounting companies in india), plus 2 new FAQs (pricing models, dedicated
+  team) that auto-extend the FAQPage schema. The page was card-heavy / prose-thin;
+  this adds the crawlable depth competitors had.
+- Verified live: titles correct (no brand doubling), founding 2023, schema rendering.
+
+## GEO (Generative Engine Optimization)
+GEO = getting cited/recommended inside AI answers (ChatGPT, Claude, Perplexity, Google
+AI Overviews), distinct from SEO (ranking for clicks). Most SEO work doubles as GEO;
+the GEO-specific levers are entity consistency, machine-readable facts, authority signals.
+
+**Done (Jun 4, 2026 — commit af13387):**
+- `Person` schema for both partners on the homepage (`peopleLd` @graph in page.tsx):
+  jobTitle, `worksFor` → org `@id`, `knowsAbout`, `hasCredential` (ICAI + Mehul's UAE
+  Corporate Taxation cert), Rupesh `alumniOf` Deloitte, Mehul LinkedIn in `sameAs`.
+  Lets AI resolve named-expert queries ("UAE corporate tax CA in Nashik") to the firm.
+- `knowsAbout` + `founder` (linking the two Person `@id`s) added to the org
+  AccountingService schema in layout.tsx.
+- Org `sameAs` expanded to 4 verified profiles: LinkedIn firm page, Justdial, Sulekha,
+  and Google Business Profile (`https://maps.google.com/?cid=17018233718758486792`).
+  Org `hasMap` upgraded from a generic search query to that GBP CID URL.
+- IMPORTANT: only PUBLIC profile URLs work in `sameAs` — the seller/dashboard login
+  URLs (seller.indiamart.com, business.justdial.com, etc.) are NOT usable.
+
+**Pending GEO:**
+- Add IndiaMart PUBLIC seller page to `sameAs` (need the public URL; only have dashboard).
+- `aggregateRating` / review schema — the biggest AI-recommendation signal — BLOCKED on
+  the pending "collect 5+ Google reviews" task. Wire up once reviews exist.
 
 ## Domain Canonicalization
 - **Canonical host is non-www: `agrawalkhandelwal.com`** — all canonical tags, sitemap.ts,
@@ -118,7 +176,10 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - Grid columns: `minmax(min(100%, 340px), 1fr)` pattern throughout
 
 ## What Needs to Happen Next
-1. User sets up Google Business Profile at business.google.com
-2. User asks 5 clients for Google reviews
-3. Add more blog posts targeting low-competition keywords (I can write these)
-4. Monitor Search Console — expect more pages indexed within 2–4 weeks of sitemap submission
+1. User asks 5 clients for Google reviews on the existing GBP listing
+   (unblocks `aggregateRating`/review schema — see GEO section)
+2. Add more blog posts targeting low-competition keywords (I can write these);
+   a supporting post + internal links would also help arrest the offshore-accounting slide
+3. Add IndiaMart PUBLIC seller URL to org `sameAs` (need the public page from the user)
+4. Monitor Search Console — watch whether the Jun 4 offshore-accounting fixes lift its
+   position back out of the page-3 range
