@@ -128,6 +128,7 @@ const peopleLd = {
       image: 'https://agrawalkhandelwal.com/rupesh.jpg',
       email: 'rupesh@agrawalkhandelwal.com',
       telephone: '+91-95955-85953',
+      sameAs: ['https://www.linkedin.com/in/rupeshkhandelwal/'],
       alumniOf: { '@type': 'Organization', name: 'Deloitte' },
       knowsAbout: [
         'Domestic Tax Planning', 'Statutory Audit', 'Internal Audit',

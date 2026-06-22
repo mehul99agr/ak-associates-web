@@ -91,15 +91,22 @@ export default function UAECorporateTaxBlog() {
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>How We Can Help</h2>
             <p style={{ marginBottom: '1.5rem' }}>
-              The introduction of UAE CT necessitates a "Health Check" of your international corporate structure. Our firm specializes in cross-border tax advisory, helping you navigate the intersection of Indian Tax laws and the new UAE regulations to ensure your global footprint remains tax-optimized and compliant.
+              The introduction of UAE CT necessitates a "Health Check" of your international corporate structure. Our firm specializes in <Link href="/uae-tax-advisory" style={{ color: 'var(--accent)', fontWeight: 600 }}>UAE tax advisory</Link> and <Link href="/transfer-pricing" style={{ color: 'var(--accent)', fontWeight: 600 }}>transfer pricing compliance</Link>, helping you navigate the intersection of Indian Tax laws and the new UAE regulations to ensure your global footprint remains tax-optimized and compliant.
             </p>
           </div>
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
-            <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-main)' }}>Discuss your UAE operations with our experts</h3>
-            <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Schedule an International Tax Call
-            </a>
+            <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Discuss your UAE operations with our experts</h3>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', maxWidth: '500px', margin: '0.75rem auto 2rem' }}>
+              CA Mehul Agrawal is UAE Corporate Tax certified. We advise Indian businesses on CT compliance, DTAA structuring, and transfer pricing for India-UAE transactions.
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Schedule an International Tax Call
+              </a>
+              <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
+              <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing</Link>
+            </div>
           </div>
         </article>
       </div>

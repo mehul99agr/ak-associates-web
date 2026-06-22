@@ -138,12 +138,15 @@ export default function UAEEntitySetupBlog() {
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Considering a UAE structure? Get a second opinion first.</h3>
-            <p style={{ color: 'var(--text-light)', marginBottom: '2rem', fontSize: '0.95rem' }}>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', maxWidth: '500px', margin: '0.75rem auto 2rem' }}>
               We&apos;ll give you a straight answer on whether it works for your specific situation: before you spend on formation.
             </p>
-            <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Book a Cross-Border Tax Call
-            </a>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Book a Cross-Border Tax Call
+              </a>
+              <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
+            </div>
           </div>
         </article>
       </div>

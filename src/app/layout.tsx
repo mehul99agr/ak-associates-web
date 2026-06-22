@@ -257,10 +257,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               <div>
                 <h3>Services</h3>
-                <Link href="/services">Tax Planning & Compliance</Link>
-                <Link href="/services">International Taxation</Link>
-                <Link href="/services">Audit & Assurance</Link>
-                <Link href="/services">Virtual CFO Services</Link>
+                <Link href="/ca-in-nashik">Tax Planning & Compliance</Link>
+                <Link href="/transfer-pricing">International Taxation</Link>
+                <Link href="/ca-in-nashik">Audit & Assurance</Link>
+                <Link href="/startups">Virtual CFO Services</Link>
                 <Link href="/startups">Startup Advisory</Link>
               </div>
 

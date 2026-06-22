@@ -371,13 +371,16 @@ export default function CompanyIncorporationGuideBlog() {
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Ready to incorporate? Let&apos;s do it properly.</h3>
-            <p style={{ color: 'var(--text-light)', marginBottom: '2rem', fontSize: '0.95rem' }}>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', maxWidth: '500px', margin: '0.75rem auto 2rem' }}>
               We handle the full incorporation process: structure advice, MOA drafting, MCA filings, and post-incorporation compliance setup.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book an Incorporation Call
               </a>
+              <Link href="/company-incorporation" className="btn btn-outline">
+                Our Incorporation Service
+              </Link>
               <Link href="/tools/incorporation-wizard" className="btn btn-outline">
                 Find My Structure First
               </Link>

@@ -352,12 +352,16 @@ export default function DubaiCompanyRegistrationBlog() {
 
             <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
               <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Planning a Dubai company? Start with the FEMA and tax structure first.</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '2rem', fontSize: '0.95rem', maxWidth: '550px', margin: '0.75rem auto 2rem' }}>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', maxWidth: '550px', margin: '0.75rem auto 2rem' }}>
                 CA Mehul Agrawal is UAE Corporate Tax certified. We advise Indian entrepreneurs on the full India-UAE cross-border structure - from FEMA compliance and ODI filing to UAE CT registration and DTAA planning.
               </p>
-              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                Book a UAE Advisory Call
-              </a>
+              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  Book a UAE Advisory Call
+                </a>
+                <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
+                <Link href="/company-incorporation" className="btn btn-outline">Company Incorporation India</Link>
+              </div>
             </div>
           </article>
         </div>
