@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026) | Agrawal Khandelwal & Associates LLP',
+  title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
   description: 'Step-by-step guide to Dubai company registration for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs in INR, FEMA compliance, UAE Corporate Tax, and documents required.',
   keywords: [
     'Dubai company registration India',

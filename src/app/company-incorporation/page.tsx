@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Company Incorporation in India: Private Limited, LLP & OPC | Agrawal Khandelwal & Associates LLP',
+  title: 'Company Incorporation in India: Private Limited, LLP & OPC',
   description: 'Register your company in India with expert CA guidance. We handle Private Limited Company, LLP, and OPC incorporation: name reservation, SPICe+ filing, MOA drafting, and post-incorporation compliance. Transparent pricing. 7–15 day turnaround.',
   keywords: [
     'company incorporation India', 'company registration India',
