@@ -9,6 +9,7 @@ const posts = [
     title: 'Understanding the New Tax Regime (FY 2025-26)',
     slug: 'understanding-new-tax-regime-2025-26',
     date: 'March 18, 2026',
+    isoDate: '2026-03-18',
     category: 'Tax Planning',
     metaDescription: 'The FY 2025-26 new tax regime explained: zero tax up to Rs 12 lakh under the Section 87A rebate, the revised slabs, the Rs 75,000 standard deduction, and who should still pick the old regime.',
     keywords: ['new tax regime 2025-26', 'income tax slabs FY 2025-26', 'section 87A rebate 12 lakh', 'old vs new tax regime', 'standard deduction 75000', 'income tax India 2025', 'tax planning India'],
@@ -66,6 +67,7 @@ const posts = [
     title: 'The Strategic Value of Virtual CFO Services',
     slug: 'strategic-value-virtual-cfo-services',
     date: 'February 25, 2026',
+    isoDate: '2026-02-25',
     category: 'Advisory',
     metaDescription: 'Why growing SMEs need institutional-grade financial leadership before they can afford a full-time CFO. How Virtual CFO services deliver strategic value at a fraction of the cost.',
     keywords: ['virtual CFO India', 'CFO services for SMEs', 'outsourced CFO India', 'financial leadership SME', 'CA advisory services India', 'Virtual CFO Mumbai', 'startup CFO services'],
@@ -126,6 +128,7 @@ const posts = [
     title: 'Essential Compliance for Indian Startups',
     slug: 'essential-compliance-indian-startups',
     date: 'March 12, 2026',
+    isoDate: '2026-03-12',
     category: 'Corporate Law',
     metaDescription: 'Complete compliance checklist for Indian startups: MCA filings, GST returns, TDS, advance tax, and FEMA reporting. Avoid penalties and stay DPIIT-eligible.',
     keywords: ['startup compliance India', 'MCA filing startup', 'GST compliance startup India', 'FEMA FC-GPR reporting', 'DPIIT compliance India'],
@@ -207,6 +210,7 @@ const posts = [
     title: 'Navigating International Taxation & DTAA',
     slug: 'navigating-international-taxation-dtaa',
     date: 'March 05, 2026',
+    isoDate: '2026-03-05',
     category: 'International Tax',
     metaDescription: 'How to use India\'s DTAA treaties to reduce withholding tax, avoid permanent establishment risk, and repatriate profits without double taxation. Expert CA advisory.',
     keywords: ['DTAA India guide', 'double taxation avoidance India', 'withholding tax DTAA', 'tax residency certificate India', 'PE risk India', 'international tax CA India'],
@@ -295,8 +299,29 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   if (!post) notFound()
 
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.isoDate,
+    dateModified: post.isoDate,
+    author: {
+      '@type': 'Organization',
+      name: 'Agrawal Khandelwal & Associates LLP',
+      url: 'https://agrawalkhandelwal.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Agrawal Khandelwal & Associates LLP',
+      logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
+    },
+    mainEntityOfPage: `${BASE_URL}/blog/${post.slug}`,
+  }
+
   return (
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <div className="section">
         <div className="container">
           <Link href="/blog" style={{ color: 'var(--accent)', marginBottom: '2rem', display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 700 }}>

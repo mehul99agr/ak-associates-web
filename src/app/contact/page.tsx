@@ -13,6 +13,63 @@ export const metadata: Metadata = {
 
 const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
+const localBusinessLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AccountingService',
+      '@id': 'https://agrawalkhandelwal.com/#nashik-office',
+      name: 'Agrawal Khandelwal & Associates LLP',
+      url: 'https://agrawalkhandelwal.com/ca-in-nashik',
+      telephone: '+91-95275-33506',
+      email: 'mehul@agrawalkhandelwal.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
+        addressLocality: 'Nashik',
+        addressRegion: 'Maharashtra',
+        postalCode: '422011',
+        addressCountry: 'IN',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: '19.1947607', longitude: '73.7879464' },
+      openingHoursSpecification: [{
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '10:00',
+        closes: '18:00',
+      }],
+      priceRange: '₹₹',
+      hasMap: 'https://maps.google.com/?cid=17018233718758486792',
+      parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
+    },
+    {
+      '@type': 'AccountingService',
+      '@id': 'https://agrawalkhandelwal.com/#sillod-office',
+      name: 'Agrawal Khandelwal & Associates LLP - Sillod',
+      url: 'https://agrawalkhandelwal.com/ca-in-sillod',
+      telephone: '+91-95955-85953',
+      email: 'rupesh@agrawalkhandelwal.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Near Datta Mandir, Tilak Nagar',
+        addressLocality: 'Sillod',
+        addressRegion: 'Maharashtra',
+        postalCode: '431112',
+        addressCountry: 'IN',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: '20.1040', longitude: '75.6496' },
+      openingHoursSpecification: [{
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '10:00',
+        closes: '18:00',
+      }],
+      priceRange: '₹₹',
+      parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
+    },
+  ],
+}
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -46,6 +103,7 @@ const offices = [
 export default function Contact() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>

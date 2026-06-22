@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'CA Firm in Nashik',
+  title: 'CA in Nashik',
   description: 'Looking for a trusted CA in Nashik? Agrawal Khandelwal & Associates LLP offers GST filing, income tax returns, company incorporation, audit, and tax planning at Mumbai Naka, Nashik. Call +91 95275 33506.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
