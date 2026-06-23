@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
-  description: 'Step-by-step guide to Dubai company registration for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs in INR, FEMA compliance, UAE Corporate Tax, and documents required.',
+  description: 'Dubai company registration guide for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs, FEMA compliance, UAE Corporate Tax, and required documents.',
   keywords: [
     'Dubai company registration India',
     'UAE company formation Indian entrepreneurs',

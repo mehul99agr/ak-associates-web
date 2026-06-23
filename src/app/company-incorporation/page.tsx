@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Company Incorporation in India: Private Limited, LLP & OPC',
-  description: 'Register your company in India with expert CA guidance. We handle Private Limited Company, LLP, and OPC incorporation: name reservation, SPICe+ filing, MOA drafting, and post-incorporation compliance. Transparent pricing. 7–15 day turnaround.',
+  description: 'Register a Private Limited Company, LLP, or OPC in India with expert CA guidance. SPICe+ filing, MOA drafting, and compliance setup. Transparent pricing.',
   keywords: [
     'company incorporation India', 'company registration India',
     'private limited company registration India', 'LLP registration India',

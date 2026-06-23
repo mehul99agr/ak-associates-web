@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing India',
-  description: 'Expert transfer pricing consultants in India. TP documentation (Master File, Local File, Form 3CEB), benchmarking studies, APA assistance, and representation before tax authorities. CA with Deloitte pedigree. Serving MNCs and Indian multinationals.',
+  description: 'Transfer pricing consultants in India. TP documentation (Master File, Local File, Form 3CEB), benchmarking studies, APA assistance, and audit representation.',
   keywords: [
     'transfer pricing consultant India', 'transfer pricing CA India',
     'TP documentation India', 'transfer pricing advisory India',

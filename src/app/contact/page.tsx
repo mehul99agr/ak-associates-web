@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact Us | CA in Nashik & Sillod',
-  description: 'Contact Agrawal Khandelwal & Associates LLP, Chartered Accountants in Nashik and Sillod, Maharashtra. Call +91 95275 33506, WhatsApp, email, or visit our offices. Book a free consultation.',
+  description: 'Contact Agrawal Khandelwal & Associates LLP, CAs in Nashik & Sillod. Call +91 95275 33506, WhatsApp, email, or visit us. Book a free consultation.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/contact' },
   openGraph: {
     title: 'Contact Agrawal Khandelwal & Associates LLP | CA in Nashik & Sillod',

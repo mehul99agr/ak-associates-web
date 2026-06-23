@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'NRI Tax Advisory',
-  description: 'Expert CA advisory for Non-Resident Indians: ITR filing, TDS refunds, property sale & repatriation (Form 15CA/15CB, now Form 145/146), DTAA claims, and FEMA compliance. Serving NRIs in UAE, US, UK, Singapore, and Australia.',
+  description: 'CA advisory for NRIs: ITR filing, TDS refunds, property repatriation, DTAA claims, and FEMA compliance. Serving NRIs in UAE, US, UK, Singapore, and Australia.',
   keywords: [
     'NRI tax consultant India', 'NRI ITR filing India',
     'NRI property sale tax India', 'NRI taxation India 2026',

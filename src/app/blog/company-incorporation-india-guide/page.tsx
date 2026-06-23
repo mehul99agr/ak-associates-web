@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
-  description: 'Complete guide to company incorporation in India: Private Limited Company, LLP, or OPC. Covers the step-by-step process, costs, timeline, documents required, and how to choose the right structure for your business.',
+  description: 'Company incorporation in India: Private Limited, LLP, or OPC. Step-by-step guide covering structure choice, process, costs, timeline, and documents required.',
   keywords: [
     'company incorporation India', 'how to incorporate company India',
     'private limited company registration India', 'LLP registration India',

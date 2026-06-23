@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Tax Insights & Advisory | International Tax, Startup & UAE Compliance',
-  description: 'Expert CA insights on International Taxation, Transfer Pricing, DTAA, UAE Corporate Tax, startup compliance, GST, and NRI taxation. In-depth regulatory analysis from Agrawal Khandelwal & Associates LLP.',
+  description: 'CA insights on International Tax, Transfer Pricing, DTAA, UAE Corporate Tax, startup compliance, and NRI taxation. Agrawal Khandelwal & Associates LLP.',
   keywords: [
     'international tax insights India', 'transfer pricing India blog',
     'UAE corporate tax news', 'startup compliance India',

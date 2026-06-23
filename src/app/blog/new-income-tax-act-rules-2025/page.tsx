@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'New Income Tax Act 2025: Simplified Guide for Businesses & Individuals',
-  description: 'In-depth analysis of the New Income Tax Act 2025: convergence of tax regimes, simplified computational rules, AI-driven assessments, and what it means for startups, MNCs, and individual taxpayers in India.',
+  description: 'New Income Tax Act 2025: tax regime convergence, simplified computational rules, AI-driven assessments, and impact on startups, MNCs, and individual taxpayers.',
   keywords: [
     'new income tax act 2025 India', 'income tax act 2025 changes',
     'new tax regime 2025-26', 'income tax simplification India',

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
-  description: 'With UAE entity formation trending among Indian founders, here\'s the honest cost-benefit analysis: FEMA exposure, substance requirements, DTAA limits, and when a Dubai company is a compliance liability, not a tax benefit.',
+  description: 'UAE entity formation for Indian founders: FEMA exposure, substance requirements, DTAA limits, and when a Dubai company becomes a compliance liability.',
   keywords: [
     'UAE entity setup India', 'Dubai company formation Indian founders',
     'UAE entity FEMA compliance', 'UAE entity tax benefit India',

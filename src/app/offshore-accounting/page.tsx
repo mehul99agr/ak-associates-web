@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Offshore Accounting Services India',
-  description: 'Offshore accounting and outsourced bookkeeping from India for foreign companies, CA firms, and NRI-owned businesses. Full-cycle accounting, MIS reporting, payroll, GST, and statutory compliance. ICAI-registered CA firm.',
+  description: 'Offshore accounting from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS reporting, payroll, GST, and compliance.',
   keywords: [
     'offshore accounting India', 'outsourced accounting India',
     'bookkeeping outsourcing India', 'offshore bookkeeping India',
@@ -304,6 +304,35 @@ export default function OffshoreAccounting() {
                 Most engagements begin small - a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance - and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a short{' '}
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>discovery call</a>, a fixed-fee scope, and a clean handover.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured In */}
+        <section className="section" style={{ paddingTop: '0', paddingBottom: '0' }}>
+          <div className="container" style={{ maxWidth: '820px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '1rem 1.5rem', flexWrap: 'wrap' }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'var(--text-light)', whiteSpace: 'nowrap' }}>Featured In</span>
+              <div style={{ width: '1px', height: '2rem', background: 'var(--border)', flexShrink: 0 }} />
+              <div style={{ flex: 1, minWidth: '200px' }}>
+                <a
+                  href="https://www.caclubindia.com/articles/how-overseas-ca-firms-can-build-a-reliable-india-backoffice-a-practical-due-diligence-guide-55783.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--text-main)', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}
+                >
+                  How Overseas CA Firms Can Build a Reliable India Back-Office: A Practical Due Diligence Guide
+                </a>
+                <div style={{ color: 'var(--text-light)', fontSize: '0.8rem', marginTop: '0.2rem' }}>CA Club India &middot; by CA Mehul Agrawal, Partner</div>
+              </div>
+              <a
+                href="https://www.caclubindia.com/articles/how-overseas-ca-firms-can-build-a-reliable-india-backoffice-a-practical-due-diligence-guide-55783.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.82rem', color: 'var(--primary)', fontWeight: 700, whiteSpace: 'nowrap', textDecoration: 'none' }}
+              >
+                Read Article &rarr;
+              </a>
             </div>
           </div>
         </section>

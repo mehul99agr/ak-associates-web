@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'CA in Sillod',
-  description: 'Trusted CA in Sillod, Aurangabad district. Agrawal Khandelwal & Associates LLP provides GST filing, income tax returns, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Call +91 95955 85953.',
+  description: 'Trusted CA in Sillod, Aurangabad. GST filing, income tax, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Call +91 95955 85953.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-sillod' },
   openGraph: {
     title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',

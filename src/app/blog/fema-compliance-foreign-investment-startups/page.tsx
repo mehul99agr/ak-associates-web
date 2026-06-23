@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)',
-  description: 'A practical guide to FEMA compliance for Indian startups receiving foreign funding: FDI routes, 30-day RBI reporting, FC-GPR filing, FLA annual return, and what your CA should handle.',
+  description: 'FEMA compliance for Indian startups receiving foreign funding: FDI routes, 30-day RBI reporting, FC-GPR filing, FLA annual return, and common mistakes.',
   keywords: [
     'FEMA compliance startups India',
     'foreign investment compliance India startup',

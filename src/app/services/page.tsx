@@ -4,7 +4,7 @@ import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
-  description: 'Expert CA services in India: International Taxation, Transfer Pricing documentation, DTAA advisory, FEMA compliance, UAE Corporate Tax, NRI taxation, Statutory Audit, GST, and Business Incorporation. Serving MNCs in Mumbai and startups in Bangalore.',
+  description: 'CA services across India: International Tax, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, NRI taxation, Statutory Audit, GST, and Company Incorporation.',
   keywords: [
     'international tax consultant India', 'transfer pricing consultant India',
     'DTAA advisory India', 'FEMA compliance India',

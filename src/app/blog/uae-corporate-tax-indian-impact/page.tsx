@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'UAE Corporate Tax: Impact on Indian Businesses',
-  description: 'Complete guide for Indian businesses on UAE 9% Corporate Tax. Covers India-UAE DTAA benefits, Transfer Pricing compliance, Free Zone entity rules, and restructuring strategies.',
+  description: 'Guide for Indian businesses on UAE 9% Corporate Tax: India-UAE DTAA benefits, Transfer Pricing compliance, Free Zone entity rules, and restructuring strategies.',
   keywords: [
     'UAE corporate tax Indian businesses', 'India UAE DTAA', 'UAE CT 9 percent',
     'UAE corporate tax consultant India', 'transfer pricing UAE India',
