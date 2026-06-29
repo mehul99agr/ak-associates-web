@@ -73,8 +73,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'IN-MH',
     'geo.placename': 'Nashik, Maharashtra, India',
-    'geo.position': '19.1947607;73.7879464',
-    'ICBM': '19.1947607, 73.7879464',
+    'geo.position': '20.0059;73.7879',
+    'ICBM': '20.0059, 73.7879',
   },
   authors: [{ name: 'Agrawal Khandelwal & Associates LLP' }],
   creator: 'Agrawal Khandelwal & Associates LLP',
@@ -126,8 +126,8 @@ const organizationLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '19.1947607',
-    longitude: '73.7879464',
+    latitude: '20.0059',
+    longitude: '73.7879',
   },
   openingHoursSpecification: [
     {
@@ -186,7 +186,7 @@ const organizationLd = {
         postalCode: '422011',
         addressCountry: 'IN',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: '19.1947607', longitude: '73.7879464' },
+      geo: { '@type': 'GeoCoordinates', latitude: '20.0059', longitude: '73.7879' },
       telephone: '+91-95275-33506',
     },
     {
@@ -238,7 +238,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     style={{ objectFit: 'contain' }}
                   />
                 </div>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#94a3b8', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: 'var(--footer-text)', marginBottom: '1.5rem' }}>
                   Professional Chartered Accountant services specializing in Tax Planning, International Taxation, Audit, and Financial Consulting for businesses across India and UAE.
                 </p>
                 <div style={{ background: 'rgba(255,255,255,0.04)', padding: '14px 16px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}>
@@ -246,9 +246,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <div style={{ background: '#fff', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
                       <Image src="/ca-logo.png" alt="ICAI" width={24} height={24} />
                     </div>
-                    <span style={{ fontSize: '0.8rem', color: '#f1f5f9', fontWeight: 700, letterSpacing: '0.5px', textTransform: 'uppercase' }}>Certifications</span>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--footer-text-light)', fontWeight: 700, letterSpacing: '0.5px', textTransform: 'uppercase' }}>Certifications</span>
                   </div>
-                  <ul style={{ fontSize: '0.82rem', color: '#94a3b8', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  <ul style={{ fontSize: '0.82rem', color: 'var(--footer-text)', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                     <li>✓ Concurrent Audits of Bank</li>
                     <li>✓ UAE Corporate Taxation</li>
                   </ul>
@@ -257,18 +257,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   href="https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '1rem', fontSize: '0.82rem', color: '#94a3b8', textDecoration: 'none', fontWeight: 600 }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '1rem', fontSize: '0.82rem', color: 'var(--footer-text)', textDecoration: 'none', fontWeight: 600 }}
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="#94a3b8" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--footer-text)" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   LinkedIn
                 </a>
               </div>
 
               <div>
                 <h3>Services</h3>
-                <Link href="/ca-in-nashik">Tax Planning & Compliance</Link>
+                <Link href="/services">Tax Planning & Compliance</Link>
                 <Link href="/transfer-pricing">International Taxation</Link>
-                <Link href="/ca-in-nashik">Audit & Assurance</Link>
+                <Link href="/services">Audit & Assurance</Link>
                 <Link href="/startups">Virtual CFO Services</Link>
                 <Link href="/startups">Startup Advisory</Link>
               </div>
@@ -288,14 +288,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h3>Contact Us</h3>
                 <div style={{ marginBottom: '1.25rem' }}>
-                  <p style={{ fontSize: '0.85rem', color: '#f1f5f9', fontWeight: 600, marginBottom: '6px' }}>Nashik Office</p>
-                  <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '5px', lineHeight: 1.5 }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>Nashik Office</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011</p>
                   <a href="tel:+919527533506" style={{ display: 'inline', marginRight: '8px' }}>+91 95275 33506</a>
                   <a href="mailto:mehul@agrawalkhandelwal.com">mehul@agrawalkhandelwal.com</a>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.85rem', color: '#f1f5f9', fontWeight: 600, marginBottom: '6px' }}>Sillod Office</p>
-                  <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '5px', lineHeight: 1.5 }}>Near Datta Mandir, Tilak Nagar, Sillod – 431112</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>Sillod Office</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>Near Datta Mandir, Tilak Nagar, Sillod – 431112</p>
                   <a href="tel:+919595585953" style={{ display: 'inline', marginRight: '8px' }}>+91 95955 85953</a>
                   <a href="mailto:rupesh@agrawalkhandelwal.com">rupesh@agrawalkhandelwal.com</a>
                 </div>
@@ -305,7 +305,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <div className="footer-bottom">
               <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal &amp; Associates LLP. All rights reserved.</p>
-              <p style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: '#475569' }}>Chartered Accountants · ICAI Firm Reg. No. W101119</p>
+              <p style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--footer-text-dim)' }}>Chartered Accountants · ICAI Firm Reg. No. W101119</p>
             </div>
           </div>
         </footer>

@@ -194,7 +194,7 @@ export default function Blog() {
           </div>
 
           {/* Closing CTA */}
-          <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', marginTop: '5rem', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>
+          <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', color: '#fff', textAlign: 'center', marginTop: '5rem', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>
             <h2 style={{ color: '#fff', marginBottom: '0.75rem' }}>Have a Question on Any of This?</h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '520px', margin: '0.75rem auto 2.5rem' }}>
               Book a free consultation with our partners, or message us on WhatsApp for a quick answer.

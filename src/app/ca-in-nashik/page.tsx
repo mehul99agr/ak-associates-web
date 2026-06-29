@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'IN-MH',
     'geo.placename': 'Nashik, Maharashtra, India',
-    'geo.position': '19.1947607;73.7879464',
-    'ICBM': '19.1947607, 73.7879464',
+    'geo.position': '20.0059;73.7879',
+    'ICBM': '20.0059, 73.7879',
   },
 }
 
