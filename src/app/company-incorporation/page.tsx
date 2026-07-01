@@ -97,6 +97,41 @@ const faqLd = {
   ],
 }
 
+const howToLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Register a Company in India',
+  description: 'Step-by-step process to incorporate a Private Limited Company, LLP, or OPC in India with CA assistance.',
+  totalTime: 'P20D',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', minValue: '15000', maxValue: '40000' },
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Free Advisory Call',
+      text: 'Discuss your business, funding plans, and team with our CA to determine the right structure (Private Limited, LLP, or OPC) with clear reasoning.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Document Collection',
+      text: 'We send a precise checklist. You share scanned documents digitally: no physical visit needed. Required documents include PAN, Aadhaar, address proof, and passport photos.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Filing & Follow-up',
+      text: 'We handle DSC procurement, name reservation via RUN, SPICe+ filing, and MOA/AOA drafting. We track MCA status and keep you updated throughout.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Certificate & Handover',
+      text: 'You receive the Certificate of Incorporation, CIN, PAN, TAN, and a post-incorporation compliance calendar covering all annual filing deadlines.',
+    },
+  ],
+}
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -145,6 +180,7 @@ export default function CompanyIncorporationPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
         {/* Hero */}
@@ -171,7 +207,7 @@ export default function CompanyIncorporationPage() {
         <div style={{ background: 'var(--bg-card)', borderBottom: '1px solid var(--border)', padding: '1.25rem 0' }}>
           <div className="container" style={{ display: 'flex', justifyContent: 'center', gap: 'clamp(2rem, 6vw, 5rem)', flexWrap: 'wrap', textAlign: 'center' }}>
             {[
-              { n: '10+', label: 'Years Experience' },
+              { n: '10+', label: 'Yrs Partner Exp.' },
               { n: '200+', label: 'Companies Incorporated' },
               { n: '15 Days', label: 'Avg. Turnaround' },
               { n: '100%', label: 'Online Process' },

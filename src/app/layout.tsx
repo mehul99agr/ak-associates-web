@@ -174,6 +174,20 @@ const organizationLd = {
     'https://maps.google.com/?cid=17018233718758486792',
   ],
   hasMap: 'https://maps.google.com/?cid=17018233718758486792',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Chartered Accountant Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GST Registration & Filing', url: 'https://agrawalkhandelwal.com/services' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing', url: 'https://agrawalkhandelwal.com/services' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company Incorporation in India', url: 'https://agrawalkhandelwal.com/company-incorporation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation & Transfer Pricing', url: 'https://agrawalkhandelwal.com/transfer-pricing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'UAE Corporate Tax Advisory', url: 'https://agrawalkhandelwal.com/uae-tax-advisory' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Tax Advisory', url: 'https://agrawalkhandelwal.com/nri-tax-advisory' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Offshore Accounting & Outsourced Bookkeeping', url: 'https://agrawalkhandelwal.com/offshore-accounting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Virtual CFO & Startup Advisory', url: 'https://agrawalkhandelwal.com/startups' } },
+    ],
+  },
   location: [
     {
       '@type': 'Place',

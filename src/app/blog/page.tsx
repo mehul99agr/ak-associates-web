@@ -91,6 +91,20 @@ const posts = [
   },
 ]
 
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Tax Insights & Advisory - Blog Posts',
+  description: 'Expert analysis on International Tax, GST, Transfer Pricing, UAE Corporate Tax, startup compliance, and NRI taxation from Agrawal Khandelwal & Associates LLP.',
+  url: 'https://agrawalkhandelwal.com/blog',
+  itemListElement: posts.map((post, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://agrawalkhandelwal.com/blog/${post.slug}`,
+    name: post.title,
+  })),
+}
+
 // Regenerate at most hourly so the compliance calendar tracks the current month
 export const revalidate = 3600
 
@@ -146,6 +160,8 @@ export default function Blog() {
   const ist = new Date(Date.now() + 5.5 * 3600 * 1000)
   const cal = getComplianceDeadlines(ist.getUTCMonth(), ist.getUTCFullYear())
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>
       <div className="section">
         <div className="container">
@@ -207,5 +223,6 @@ export default function Blog() {
         </div>
       </div>
     </div>
+    </>
   )
 }

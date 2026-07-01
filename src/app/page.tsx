@@ -116,6 +116,13 @@ const peopleLd = {
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)' },
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'UAE Corporate Taxation Certification' },
       ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+91-95275-33506',
+        email: 'mehul@agrawalkhandelwal.com',
+        contactType: 'customer service',
+        availableLanguage: ['English', 'Hindi', 'Marathi'],
+      },
     },
     {
       '@type': 'Person',
@@ -137,6 +144,13 @@ const peopleLd = {
       hasCredential: [
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)' },
       ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+91-95955-85953',
+        email: 'rupesh@agrawalkhandelwal.com',
+        contactType: 'customer service',
+        availableLanguage: ['English', 'Hindi', 'Marathi'],
+      },
     },
   ],
 }

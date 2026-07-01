@@ -196,7 +196,7 @@ export default function CAInNashik() {
               <span className="stat-label">Nashik & Maharashtra Clients</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">5+</span>
+              <span className="stat-number">3+</span>
               <span className="stat-label">Years in Nashik</span>
             </div>
             <div className="stat-item">

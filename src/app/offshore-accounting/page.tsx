@@ -102,7 +102,7 @@ const faqs = [
   },
   {
     q: 'How is offshore accounting priced - hourly or fixed fee?',
-    a: 'We offer three models so you can pick what fits. (1) Fixed monthly retainer - the most popular - a flat fee covering an agreed scope of bookkeeping, compliance, and reporting. (2) Dedicated resource - a full-time offshore bookkeeper or accountant working only on your books, billed per seat per month. (3) Hourly/ad-hoc - for one-off cleanups, backlog work, or audit-readiness projects. Most foreign companies and CA firms save 60-70% versus hiring locally, with no recruitment, payroll, or office overhead on their side.',
+    a: 'Offshore accounting is priced on three models: fixed monthly retainer (flat fee for agreed bookkeeping and compliance scope), dedicated resource (per-seat monthly fee for a full-time offshore accountant), or hourly for one-off projects. Most clients save 60-70% versus equivalent UK, US, or UAE accounting costs. Contact us for a quote based on your transaction volume and scope.',
   },
   {
     q: 'Can we build a dedicated offshore accounting team in India through your firm?',

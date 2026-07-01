@@ -26,12 +26,13 @@ const articleLd = {
   datePublished: '2026-03-08',
   dateModified: '2026-03-08',
   author: {
-    '@type': 'Organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    url: 'https://agrawalkhandelwal.com',
+    '@type': 'Person',
+    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
+    name: 'CA Mehul Agrawal',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://agrawalkhandelwal.com/#organization',
     name: 'Agrawal Khandelwal & Associates LLP',
     logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
   },
