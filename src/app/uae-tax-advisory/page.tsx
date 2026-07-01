@@ -144,6 +144,29 @@ export default function UAETaxAdvisory() {
           </div>
         </section>
 
+        {/* What is UAE Corporate Tax */}
+        <section className="section">
+          <div className="container" style={{ maxWidth: '820px' }}>
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>What is UAE Corporate Tax?</h2>
+            <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.9, marginBottom: '1.75rem' }}>
+              UAE Corporate Tax (CT) is a federal tax effective for financial years beginning on or after June 1, 2023, levied at a standard rate of <strong style={{ color: 'var(--text-main)' }}>9% on taxable profits above AED 375,000</strong> (approximately ₹85 lakh). It applies to all UAE-resident entities — mainland companies, Free Zone entities, branches, and subsidiaries — including those owned by Indian nationals or Indian companies. Free Zone businesses can maintain a <strong style={{ color: 'var(--text-main)' }}>0% rate on Qualifying Income</strong> provided they meet substance requirements as a Qualifying Free Zone Person (QFZP); income from mainland UAE transactions or non-qualifying activities is taxed at the standard 9%.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1rem' }}>
+              {[
+                { term: 'Standard CT Rate', def: '9% on taxable income above AED 375,000 (~₹85 lakh). Income below this threshold is taxed at 0%.' },
+                { term: 'Qualifying Free Zone Person (QFZP)', def: 'A Free Zone entity meeting UAE substance and activity tests that earns a 0% CT rate on its Qualifying Income only.' },
+                { term: 'Small Business Relief', def: 'Businesses with revenue below AED 3 million can elect Small Business Relief and pay 0% CT for financial years up to Dec 31, 2026.' },
+                { term: 'India-UAE DTAA', def: 'The India-UAE Double Taxation Avoidance Agreement reduces withholding tax on dividends to 10% and interest to 12.5%, preventing double taxation.' },
+              ].map((item, i) => (
+                <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
+                  <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '0.88rem' }}>{item.term}</div>
+                  <div style={{ color: 'var(--text-light)', fontSize: '0.85rem', lineHeight: 1.6 }}>{item.def}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CT overview */}
         <section className="section bg-surface">
           <div className="container">

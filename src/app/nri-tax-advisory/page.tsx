@@ -157,6 +157,29 @@ export default function NRITaxAdvisory() {
           </div>
         </section>
 
+        {/* Who is an NRI for Tax Purposes */}
+        <section className="section">
+          <div className="container" style={{ maxWidth: '820px' }}>
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Who is an NRI for Tax Purposes in India?</h2>
+            <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.9, marginBottom: '1.75rem' }}>
+              A Non-Resident Indian (NRI) for income tax purposes is an Indian citizen or person of Indian origin who spends <strong style={{ color: 'var(--text-main)' }}>fewer than 182 days in India</strong> during a financial year. NRIs are taxed in India only on income earned or received in India — rent from Indian property, interest on NRO accounts, capital gains on Indian shares or real estate, and income from any Indian business or profession. Global income remains fully exempt from Indian tax. The residency threshold was revised under the new Income Tax Act 2025 (effective April 1, 2026) for certain categories of Indian citizens.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1rem' }}>
+              {[
+                { term: 'NRI (Non-Resident Indian)', def: 'Spends fewer than 182 days in India in a financial year. Taxed only on Indian-sourced income.' },
+                { term: 'RNOR (Resident but Not Ordinarily Resident)', def: 'Transitional status for returning NRIs — global income remains tax-free for up to 3 years after return to India.' },
+                { term: 'Deemed Resident', def: 'An Indian citizen with Indian income above ₹15 lakh who is not taxed in any other country is treated as an Indian resident.' },
+                { term: 'NRO vs NRE Account', def: 'NRO accounts hold Indian-sourced income (taxable); NRE accounts hold foreign earnings repatriated to India (tax-exempt interest).' },
+              ].map((item, i) => (
+                <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
+                  <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '0.88rem' }}>{item.term}</div>
+                  <div style={{ color: 'var(--text-light)', fontSize: '0.85rem', lineHeight: 1.6 }}>{item.def}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Residency Section */}
         <section className="section bg-surface">
           <div className="container">

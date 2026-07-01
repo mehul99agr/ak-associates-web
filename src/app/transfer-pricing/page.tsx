@@ -164,6 +164,29 @@ export default function TransferPricingPage() {
           </div>
         </section>
 
+        {/* What is Transfer Pricing */}
+        <section className="section">
+          <div className="container" style={{ maxWidth: '820px' }}>
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>What is Transfer Pricing?</h2>
+            <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.9, marginBottom: '1.75rem' }}>
+              Transfer pricing refers to the prices charged on transactions between related entities in a multinational group — royalties, management fees, inter-company loans, or service charges between a parent company and its subsidiary. Indian law under Section 92 of the Income Tax Act requires these prices to reflect the <strong style={{ color: 'var(--text-main)' }}>arm&apos;s length standard</strong>: what unrelated parties would charge for the same transaction under comparable conditions. These prices must be documented annually and certified by a Chartered Accountant in <strong style={{ color: 'var(--text-main)' }}>Form 3CEB</strong> before the due date — failure to do so triggers penalties of 2% of the transaction value.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1rem' }}>
+              {[
+                { term: 'Arm\'s Length Price (ALP)', def: 'The price that independent, unrelated parties would agree on for the same transaction under comparable conditions.' },
+                { term: 'Related Party', def: 'Two entities where one controls the other directly or indirectly, or both are controlled by a common parent company.' },
+                { term: 'Specified Domestic Transaction', def: 'High-value transactions between related Indian entities (₹20 crore+) also subject to Indian transfer pricing rules.' },
+                { term: 'Form 3CEB', def: 'Mandatory CA-certified report listing all international related-party transactions above ₹1 crore — the base threshold for Indian TP compliance.' },
+              ].map((item, i) => (
+                <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
+                  <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '0.88rem' }}>{item.term}</div>
+                  <div style={{ color: 'var(--text-light)', fontSize: '0.85rem', lineHeight: 1.6 }}>{item.def}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Who needs TP */}
         <section className="section bg-surface">
           <div className="container">
