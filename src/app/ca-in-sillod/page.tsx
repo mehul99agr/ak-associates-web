@@ -91,6 +91,13 @@ const sillodLocalBusiness = {
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
   telephone: '+91-95955-85953',
   email: 'rupesh@agrawalkhandelwal.com',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '12',
+    bestRating: '5',
+    worstRating: '1',
+  },
   priceRange: '₹₹',
   image: 'https://agrawalkhandelwal.com/logo.png',
   logo: 'https://agrawalkhandelwal.com/logo.png',

@@ -99,6 +99,13 @@ const nashikLocalBusiness = {
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
   telephone: '+91-95275-33506',
   email: 'mehul@agrawalkhandelwal.com',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '12',
+    bestRating: '5',
+    worstRating: '1',
+  },
   priceRange: '₹₹',
   image: 'https://agrawalkhandelwal.com/logo.png',
   logo: 'https://agrawalkhandelwal.com/logo.png',
