@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/capital-gains`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/tools/sip-planner`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/tools/incorporation-wizard`, lastModified: new Date('2026-05-08'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/blog/tds-on-nri-property-sale-india`, lastModified: new Date('2026-07-04'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/fema-compliance-foreign-investment-startups`, lastModified: new Date('2026-06-08'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/dubai-company-registration-guide`, lastModified: new Date('2026-05-19'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/company-incorporation-india-guide`, lastModified: new Date('2026-05-13'), changeFrequency: 'monthly', priority: 0.9 },
