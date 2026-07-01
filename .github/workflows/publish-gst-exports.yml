@@ -1,0 +1,61 @@
+name: Publish GST Exports Blog Post
+
+on:
+  schedule:
+    - cron: '33 3 18 7 *'  # 3:33 AM UTC = 9:03 AM IST, July 18 2026
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+
+      - name: Activate post in blog listing and sitemap
+        run: |
+          python3 - <<'EOF'
+          with open('src/app/blog/page.tsx', 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          new_entry = (
+              "  {\n"
+              "    title: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',\n"
+              "    slug: 'gst-on-exports-zero-rated-vs-exempt-india',\n"
+              "    date: 'July 18, 2026',\n"
+              "    category: 'GST',\n"
+              "    summary: 'The difference between zero-rated and exempt supplies, why it matters for ITC claims, how to file a Letter of Undertaking (LUT), and the five conditions for export of services under GST.',\n"
+              "  },\n"
+          )
+          content = content.replace('const posts = [\n', 'const posts = [\n' + new_entry, 1)
+
+          with open('src/app/blog/page.tsx', 'w', encoding='utf-8') as f:
+              f.write(content)
+          print("Updated blog/page.tsx")
+
+          with open('src/app/sitemap.ts', 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          sitemap_entry = (
+              "    { url: `${BASE_URL}/blog/gst-on-exports-zero-rated-vs-exempt-india`,"
+              " lastModified: new Date('2026-07-18'), changeFrequency: 'monthly', priority: 0.9 },\n"
+          )
+          target = "    { url: `${BASE_URL}/blog/transfer-pricing-documentation-checklist-india`"
+          content = content.replace(target, sitemap_entry + target, 1)
+
+          with open('src/app/sitemap.ts', 'w', encoding='utf-8') as f:
+              f.write(content)
+          print("Updated sitemap.ts")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/app/blog/page.tsx src/app/sitemap.ts
+          git commit -m "blog: publish GST exports zero-rated vs exempt post (Jul 18)"
+          git push origin main

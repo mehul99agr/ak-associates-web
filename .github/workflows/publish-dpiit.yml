@@ -1,0 +1,61 @@
+name: Publish DPIIT Registration Blog Post
+
+on:
+  schedule:
+    - cron: '33 3 25 7 *'  # 3:33 AM UTC = 9:03 AM IST, July 25 2026
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+
+      - name: Activate post in blog listing and sitemap
+        run: |
+          python3 - <<'EOF'
+          with open('src/app/blog/page.tsx', 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          new_entry = (
+              "  {\n"
+              "    title: 'DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)',\n"
+              "    slug: 'dpiit-registration-startups-india-80iac',\n"
+              "    date: 'July 25, 2026',\n"
+              "    category: 'Startup Compliance',\n"
+              "    summary: 'How to get DPIIT recognition, what eligibility criteria apply, the 80-IAC three-year tax holiday and why it requires a separate IMB application, and what changed on angel tax in Finance Act 2025.',\n"
+              "  },\n"
+          )
+          content = content.replace('const posts = [\n', 'const posts = [\n' + new_entry, 1)
+
+          with open('src/app/blog/page.tsx', 'w', encoding='utf-8') as f:
+              f.write(content)
+          print("Updated blog/page.tsx")
+
+          with open('src/app/sitemap.ts', 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          sitemap_entry = (
+              "    { url: `${BASE_URL}/blog/dpiit-registration-startups-india-80iac`,"
+              " lastModified: new Date('2026-07-25'), changeFrequency: 'monthly', priority: 0.9 },\n"
+          )
+          target = "    { url: `${BASE_URL}/blog/gst-on-exports-zero-rated-vs-exempt-india`"
+          content = content.replace(target, sitemap_entry + target, 1)
+
+          with open('src/app/sitemap.ts', 'w', encoding='utf-8') as f:
+              f.write(content)
+          print("Updated sitemap.ts")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/app/blog/page.tsx src/app/sitemap.ts
+          git commit -m "blog: publish DPIIT registration and 80-IAC guide (Jul 25)"
+          git push origin main
