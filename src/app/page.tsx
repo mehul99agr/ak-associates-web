@@ -360,6 +360,12 @@ export default function Home() {
                 </span>
               ))}
             </div>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '2rem' }}>
+              Raising foreign investment into an Indian entity? Read our guide to{' '}
+              <Link href="/blog/fema-compliance-foreign-investment-startups" style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                FEMA compliance for startups raising foreign investment →
+              </Link>
+            </p>
           </div>
         </div>
       </section>

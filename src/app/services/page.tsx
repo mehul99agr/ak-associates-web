@@ -2,6 +2,37 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What CA services does Agrawal Khandelwal & Associates LLP offer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We offer three practice groups: Taxation & Regulatory (international taxation, transfer pricing, DTAA, GST advisory, tax litigation), Audit & Assurance (statutory audit, internal audit, tax audit, due diligence), and Strategic Advisory (virtual CFO services, business incorporation, FEMA/RBI compliance, financial modeling). Clients typically start with one service and expand into others as their compliance and growth needs evolve.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is Agrawal Khandelwal different from a typical local CA firm?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Most local CA firms in Nashik and Sillod focus on compliance filing — ITR, GST returns, statutory audit. We do that too, but our practice is built around cross-border and growth-stage work: transfer pricing documentation, UAE corporate tax structuring, FEMA reporting for funded startups, and NRI taxation. That is a narrower specialization than a general practice firm, which is why founders and NRIs bring us cross-border questions their existing CA cannot answer.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need a separate CA for international tax versus regular compliance?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Not necessarily, but it helps if the same firm handles both, since international tax positions (transfer pricing, DTAA claims, FEMA filings) interact directly with your regular ITR and GST filings. We run both under one engagement so nothing falls through the gap between a generalist CA and a specialist consultant.',
+      },
+    },
+  ],
+}
+
 export const metadata: Metadata = {
   title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
   description: 'CA services across India: International Tax, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, NRI taxation, Statutory Audit, GST, and Company Incorporation.',
@@ -56,6 +87,8 @@ const categories = [
 
 export default function Services() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>
       <div className="section">
         <div className="container">
@@ -65,6 +98,14 @@ export default function Services() {
             <p style={{ color: 'var(--text-light)', fontSize: '1.05rem' }}>
               We provide institutional-grade financial frameworks tailored for the unique challenges of the modern global economy.
             </p>
+          </div>
+
+          <div className="blog-content" style={{ maxWidth: '800px', margin: '0 auto 4rem', fontSize: '1.02rem', lineHeight: 1.8, color: 'var(--text-main)' }}>
+            <h2>What Does a Chartered Accountant Firm for International Tax and Compliance Do?</h2>
+            <p>Agrawal Khandelwal &amp; Associates LLP is a Chartered Accountant firm built around three practice groups: <strong>Taxation &amp; Regulatory</strong> (international taxation, transfer pricing, DTAA, GST), <strong>Audit &amp; Assurance</strong> (statutory, internal, and tax audit, due diligence), and <strong>Strategic Advisory</strong> (virtual CFO services, business incorporation, FEMA and RBI compliance). Founded in 2023 and led by CA Mehul Agrawal (Nashik) and CA Rupesh Khandelwal (Sillod), we serve founders, NRIs, and SMEs with cross-border exposure — clients whose questions a compliance-only local CA typically cannot answer.</p>
+
+            <h2>How to Choose the Right Service for Your Situation</h2>
+            <p>Most engagements start in one of three places. If you are <strong>raising foreign investment or setting up abroad</strong> (UAE, or FDI into an Indian entity), start with <Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing</Link> or <Link href="/uae-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>UAE Tax Advisory</Link>. If you are an <strong>NRI</strong> dealing with property sale, repatriation, or Indian income, start with <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory</Link>. If you are a <strong>founder incorporating or scaling a startup</strong>, start with <Link href="/company-incorporation" style={{ color: 'var(--primary)', fontWeight: 600 }}>Company Incorporation</Link> or <Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Advisory</Link>. Every engagement includes the underlying compliance work — ITR, GST, statutory audit — so nothing sits outside a single point of accountability.</p>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2.5rem' }}>
@@ -101,6 +142,18 @@ export default function Services() {
             </div>
           </div>
 
+          <div style={{ marginTop: '4.5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--primary)' }}>Frequently Asked Questions</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {faqLd.mainEntity.map((faq, i) => (
+                <div key={i} className="card" style={{ padding: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{faq.name}</h3>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>{faq.acceptedAnswer.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div style={{ margin: '80px auto 0', maxWidth: '800px', textAlign: 'center' }}>
             <h2 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Need a Specialized Strategy?</h2>
             <p style={{ marginBottom: '2rem', color: 'var(--text-light)', fontSize: '1rem' }}>
@@ -114,5 +167,6 @@ export default function Services() {
         </div>
       </div>
     </div>
+    </>
   )
 }

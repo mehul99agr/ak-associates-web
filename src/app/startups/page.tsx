@@ -59,6 +59,7 @@ const growthStageServices = [
     icon: '🌐',
     title: 'FDI & FEMA Compliance',
     desc: 'Foreign investment in your startup triggers RBI reporting obligations - FCGPR, FCTRS, and LLP-I filings. One miss can invalidate the funding round. We make sure it doesn\'t.',
+    link: '/blog/fema-compliance-foreign-investment-startups',
   },
   {
     icon: '📈',
@@ -265,6 +266,7 @@ export default function StartupsPage() {
                   <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
                   <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
+                  {'link' in s && <Link href={(s as any).link} style={{ display: 'inline-block', marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.88rem' }}>Read the FEMA compliance guide →</Link>}
                 </div>
               ))}
             </div>

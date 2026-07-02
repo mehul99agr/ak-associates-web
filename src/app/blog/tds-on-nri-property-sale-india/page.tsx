@@ -24,8 +24,8 @@ const articleLd = {
   '@type': 'Article',
   headline: 'TDS on NRI Property Sale India: Buyer\'s Complete Guide (2026)',
   description: 'TDS rates, Form 26QB filing, lower deduction certificate, and repatriation rules under Income Tax Act 2025 when buying Indian property from an NRI.',
-  datePublished: '2026-07-04',
-  dateModified: '2026-07-04',
+  datePublished: '2026-07-01',
+  dateModified: '2026-07-01',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -98,7 +98,7 @@ export default function TDSNRIPropertyBlog() {
                 TDS on NRI Property Sale India: Buyer&apos;s Complete Guide (2026)
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>July 4, 2026</span>
+                <span>July 1, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>

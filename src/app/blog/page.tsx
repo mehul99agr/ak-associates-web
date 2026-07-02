@@ -22,7 +22,7 @@ const posts = [
   {
     title: 'TDS on NRI Property Sale India: Buyer\'s Complete Guide (2026)',
     slug: 'tds-on-nri-property-sale-india',
-    date: 'July 4, 2026',
+    date: 'July 1, 2026',
     category: 'NRI Taxation',
     summary: 'TDS rates and Form 26QB process when buying property from an NRI, how to obtain a lower deduction certificate (Form 13), and repatriation rules under the new Income Tax Act 2025.',
   },
