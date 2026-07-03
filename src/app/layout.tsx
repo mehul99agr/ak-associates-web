@@ -118,6 +118,7 @@ const organizationLd = {
   description: 'Chartered Accountants in Nashik and Sillod, Maharashtra. Specializing in GST, income tax, company incorporation, audit, international taxation, transfer pricing, UAE corporate tax, startup advisory, and virtual CFO services.',
   url: 'https://agrawalkhandelwal.com',
   logo: 'https://agrawalkhandelwal.com/logo.png',
+  image: 'https://agrawalkhandelwal.com/office.jpg',
   telephone: '+91-95275-33506',
   email: 'mehul@agrawalkhandelwal.com',
   foundingDate: '2023',
@@ -204,6 +205,7 @@ const organizationLd = {
     {
       '@type': 'Place',
       name: 'Nashik Office',
+      image: 'https://agrawalkhandelwal.com/office.jpg',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
@@ -218,6 +220,7 @@ const organizationLd = {
     {
       '@type': 'Place',
       name: 'Sillod Office',
+      image: 'https://agrawalkhandelwal.com/office.jpg',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Near Datta Mandir, Tilak Nagar',
