@@ -27,7 +27,7 @@ const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   variable: '--font-cormorant',
   weight: ['500', '600', '700'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const GA_MEASUREMENT_ID = 'G-41NNQG654M'
