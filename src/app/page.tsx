@@ -5,7 +5,7 @@ import Icon from './Icon'
 
 export const metadata: Metadata = {
   title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
-  description: 'Chartered Accountants for startups, MNCs, and NRI/UAE clients. International Tax, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, and Virtual CFO services.',
+  description: 'Chartered Accountants for startups, MNCs, and NRI/UAE clients. International Tax, Transfer Pricing, and Virtual CFO services.',
   alternates: { canonical: 'https://agrawalkhandelwal.com' },
 }
 

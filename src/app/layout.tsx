@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     template: '%s | Agrawal Khandelwal & Associates LLP',
   },
   description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international taxation, virtual CFO. Call +91 95275 33506.',
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   keywords: [
     // Nashik: primary office location
     'CA in Nashik', 'chartered accountant in Nashik', 'best CA in Nashik',
