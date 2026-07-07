@@ -80,9 +80,9 @@ src/app/
 - Google Business Profile is set up (dashboard at business.google.com) — do NOT list this as a pending task
 
 **Not done yet:**
-- Google reviews from clients (need 5+ to compete in local search)
 - LinkedIn weekly posts (building authority + backlinks)
 - More blog content targeting low-competition keywords
+- Backlink building — only 1 external backlink on record as of Jun 22 export (a LinkedIn post)
 
 **Search Console findings (May 2026):**
 - 1 page indexed (sitemap just submitted — more will be indexed over coming weeks)
@@ -143,10 +143,13 @@ the GEO-specific levers are entity consistency, machine-readable facts, authorit
 - IMPORTANT: only PUBLIC profile URLs work in `sameAs` — the seller/dashboard login
   URLs (seller.indiamart.com, business.justdial.com, etc.) are NOT usable.
 
+**Done (aggregateRating):**
+- `aggregateRating` schema live on layout.tsx, ca-in-nashik, and ca-in-sillod:
+  ratingValue 5.0, reviewCount 13 (GBP has 13+ reviews as of Jul 2026 — update this
+  number periodically as more reviews come in, all 3 files must stay in sync).
+
 **Pending GEO:**
 - Add IndiaMart PUBLIC seller page to `sameAs` (need the public URL; only have dashboard).
-- `aggregateRating` / review schema — the biggest AI-recommendation signal — BLOCKED on
-  the pending "collect 5+ Google reviews" task. Wire up once reviews exist.
 
 ## Domain Canonicalization
 - **Canonical host is non-www: `agrawalkhandelwal.com`** — all canonical tags, sitemap.ts,
@@ -176,10 +179,17 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - Grid columns: `minmax(min(100%, 340px), 1fr)` pattern throughout
 
 ## What Needs to Happen Next
-1. User asks 5 clients for Google reviews on the existing GBP listing
-   (unblocks `aggregateRating`/review schema — see GEO section)
-2. Add more blog posts targeting low-competition keywords (I can write these);
-   a supporting post + internal links would also help arrest the offshore-accounting slide
+1. Build backlinks — only 1 external backlink on record (Jun 22 export). Ask ICAI
+   Nashik branch to hyperlink the firm name on job postings, get IndiaMart/Justdial/
+   Sulekha profiles linked, keep posting on LinkedIn.
+2. Add more blog posts targeting low-competition keywords, following the winning
+   pattern proven by tds-on-nri-property-sale-india (narrow + numeric + year-anchored
+   + FAQPage schema): an NRI-cluster follow-up (seller-side capital gains guide, Form 13
+   deep-dive) is the highest-value next post, ahead of the generic queue
+   (dpiit/gst-exports/tp-checklist already scheduled Jul 11/18/25).
 3. Add IndiaMart PUBLIC seller URL to org `sameAs` (need the public page from the user)
-4. Monitor Search Console — watch whether the Jun 4 offshore-accounting fixes lift its
-   position back out of the page-3 range
+4. `/offshore-accounting` has been flat at ~pos 28 since Jun 4 despite the content
+   rewrite — more on-page content isn't moving it; treat as an authority/backlink
+   problem, not a content-depth problem.
+5. Keep `reviewCount` in aggregateRating schema (layout.tsx, ca-in-nashik, ca-in-sillod)
+   in sync with actual GBP review count as new reviews come in.

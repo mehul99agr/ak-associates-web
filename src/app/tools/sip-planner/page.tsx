@@ -1,6 +1,45 @@
 'use client'
 import { useState } from 'react'
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What return rate should I assume when planning a SIP?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Equity mutual fund SIPs in India have historically delivered 10-14% annualized returns over long periods (10+ years), though returns are not guaranteed and vary by fund and market cycle. A conservative planning assumption of 10-12% is common; using a higher rate like 15%+ risks overestimating your future corpus.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is SIP investment tax-free in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No, SIP investments themselves are not tax-free unless made through an ELSS (tax-saving) mutual fund, which qualifies for deduction up to ₹1.5 lakh under Section 80C. Returns from equity mutual fund SIPs are subject to capital gains tax: 12.5% LTCG (over ₹1.25 lakh/year) if held beyond 12 months, or 20% STCG if held 12 months or less.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the power of compounding in SIP investments?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Compounding means your investment returns are reinvested and start earning their own returns. In a SIP, each monthly instalment compounds over the remaining investment period, so contributions made early grow for longer and contribute disproportionately more to the final corpus than later contributions.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I change or stop my SIP amount later?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. SIPs in India are flexible — you can increase the instalment amount (step-up SIP), pause it temporarily, or stop it altogether without any penalty from the mutual fund house, though exit load may apply depending on the fund and holding period.',
+      },
+    },
+  ],
+}
+
 export default function SIPPlanner() {
   const [monthlyInvestment, setMonthlyInvestment] = useState<number>(5000)
   const [expectedReturnRate, setExpectedReturnRate] = useState<number>(12)
@@ -21,7 +60,9 @@ export default function SIPPlanner() {
   }
 
   return (
-    <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
           <h4 className="section-badge">Financial Tools</h4>
@@ -89,7 +130,20 @@ export default function SIPPlanner() {
             </div>
           )}
         </div>
+
+        <div style={{ maxWidth: '700px', margin: '3.5rem auto 0' }}>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--primary)' }}>Frequently Asked Questions</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+            {faqLd.mainEntity.map((q) => (
+              <div key={q.name} style={{ background: 'var(--bg-card)', borderRadius: '10px', padding: '1.5rem', border: '1px solid var(--border)' }}>
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q.name}</h3>
+                <p style={{ color: 'var(--text-main)', fontSize: '0.93rem', lineHeight: 1.7, margin: 0 }}>{q.acceptedAnswer.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

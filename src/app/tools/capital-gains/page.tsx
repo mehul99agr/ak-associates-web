@@ -1,6 +1,45 @@
 'use client'
 import { useState } from 'react'
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the LTCG tax rate on equity shares and mutual funds in India for FY 2025-26?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Long-term capital gains (holding period over 12 months) on listed equity shares and equity mutual funds are taxed at 12.5% without indexation, on gains exceeding ₹1.25 lakh in a financial year, as per Budget 2024. Gains up to ₹1.25 lakh are exempt.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between short-term and long-term capital gains?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For equity shares and equity mutual funds, holding for more than 12 months qualifies as long-term (LTCG), taxed at 12.5%. Holding for 12 months or less is short-term (STCG), taxed at 20%. For real estate, the long-term threshold is more than 24 months, taxed at 12.5% without indexation; short-term gains on property are taxed at the applicable slab rate.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is there a tax exemption limit for equity LTCG?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Long-term capital gains on equity shares and equity mutual funds up to ₹1.25 lakh in a financial year are exempt from tax. Only the amount exceeding ₹1.25 lakh is taxed at 12.5%.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is capital gains tax calculated on property sales in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'If a property is held for more than 24 months, the gain is long-term and taxed at 12.5% without indexation. If held for 24 months or less, the gain is short-term and added to your income, taxed at your applicable slab rate. The gain is calculated as sale price minus purchase price and eligible expenses.',
+      },
+    },
+  ],
+}
+
 export default function CapitalGainsCalculator() {
   const [assetType, setAssetType] = useState('equity')
   const [purchasePrice, setPurchasePrice] = useState<number>(0)
@@ -40,7 +79,9 @@ export default function CapitalGainsCalculator() {
   }
 
   return (
-    <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
           <h4 className="section-badge">Tax Tools</h4>
@@ -124,7 +165,20 @@ export default function CapitalGainsCalculator() {
             </div>
           )}
         </div>
+
+        <div style={{ maxWidth: '700px', margin: '3.5rem auto 0' }}>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--primary)' }}>Frequently Asked Questions</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+            {faqLd.mainEntity.map((q) => (
+              <div key={q.name} style={{ background: 'var(--bg-card)', borderRadius: '10px', padding: '1.5rem', border: '1px solid var(--border)' }}>
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q.name}</h3>
+                <p style={{ color: 'var(--text-main)', fontSize: '0.93rem', lineHeight: 1.7, margin: 0 }}>{q.acceptedAnswer.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
