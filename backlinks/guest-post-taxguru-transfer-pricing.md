@@ -1,4 +1,6 @@
 # GUEST POST — TaxGuru.in
+**Status:** PUBLISHED — Jul 8, 2026
+**Live URL:** https://taxguru.in/income-tax/transfer-pricing-documentation-checklist-fy-2025-26-key-compliance-requirements.html
 **Category:** Income Tax > International Taxation  
 **Submit at:** https://taxguru.in/submit-article/  
 **Author:** CA Mehul Agrawal, Partner, Agrawal Khandelwal & Associates LLP  
@@ -20,7 +22,7 @@ The obligation to maintain TP documentation arises under Section 92D of the Inco
 - **International transactions** include sale/purchase of goods, services, loans, guarantees, cost-sharing arrangements, and intangibles between Indian entities and their overseas AEs.
 - **Specified domestic transactions (SDT)** between related domestic parties are also covered if the aggregate value exceeds INR 20 crore.
 - **Threshold for Form 3CEB:** Any taxpayer with international transactions or SDTs must file Form 3CEB (the Accountant's Report) by October 31, regardless of transaction value.
-- **Threshold for Local File:** Required when the aggregate value of international transactions exceeds INR 1 crore in the relevant year.
+- **Threshold for Local File:** Required when the aggregate value of international transactions exceeds INR 100 crore in the relevant year.
 - **Threshold for Master File:** Required when the Indian entity is part of a multinational group with consolidated global revenue exceeding INR 500 crore and either: (a) the Indian entity's aggregate international transactions exceed INR 50 crore, or (b) aggregate international transactions involving intangibles exceed INR 10 crore.
 - **Country-by-Country Report (CbCR):** Required for the ultimate parent entity in India if consolidated group revenue exceeds INR 5,500 crore (approximately EUR 750 million).
 
@@ -82,16 +84,19 @@ Companies that have specified domestic transactions - for example, sales to a re
 
 ## A Practical FY 2025-26 Timeline
 
+FY 2025-26 closed on March 31, 2026. For most companies, the compliance work now shifts to the post-year-end window:
+
 | Milestone | Deadline |
 |---|---|
-| Finalise list of international transactions and AEs | June 30, 2025 |
-| Complete FAR analysis for each transaction | July 31, 2025 |
-| Run comparables search and prepare benchmarking study | August 31, 2025 |
-| Prepare Local File (draft) | September 15, 2025 |
-| CA review of Form 3CEB and Local File | October 15, 2025 |
-| File Form 3CEB + ITR | October 31, 2025 |
-| File Master File (Form 3CEAA) | November 30, 2025 |
-| File CbCR (if applicable) | November 30, 2025 |
+| Finalise list of international transactions and AEs for FY 2025-26 | April 30, 2026 |
+| Complete FAR analysis for each transaction | May 31, 2026 |
+| Run comparables search and prepare benchmarking study | June 30, 2026 |
+| Prepare Local File (draft) | July 31, 2026 |
+| CA review of Form 3CEB and Local File | September 30, 2026 |
+| File Form 3CEB | October 31, 2026 |
+| File ITR (extended due date for entities with s.92E reporting) | November 30, 2026 |
+| File Master File (Form 3CEAA) | November 30, 2026 |
+| File CbCR (if applicable) | November 30, 2026 |
 
 ## Advance Pricing Agreements: The Long-Term Fix
 

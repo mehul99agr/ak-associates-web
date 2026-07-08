@@ -82,7 +82,11 @@ src/app/
 **Not done yet:**
 - LinkedIn weekly posts (building authority + backlinks)
 - More blog content targeting low-competition keywords
-- Backlink building — only 1 external backlink on record as of Jun 22 export (a LinkedIn post)
+- Backlink building — as of Jun 22 export only 1 external backlink existed (a LinkedIn post).
+  Jul 8, 2026: first high-authority backlink landed — guest post published on TaxGuru.in
+  ("Transfer Pricing Documentation Checklist for FY 2025-26"), byline CA Mehul Agrawal with
+  a link to agrawalkhandelwal.com/transfer-pricing in the author bio. See
+  backlinks/guest-post-taxguru-transfer-pricing.md for the submission record and live URL.
 
 **Search Console findings (May 2026):**
 - 1 page indexed (sitemap just submitted — more will be indexed over coming weeks)
@@ -179,9 +183,10 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - Grid columns: `minmax(min(100%, 340px), 1fr)` pattern throughout
 
 ## What Needs to Happen Next
-1. Build backlinks — only 1 external backlink on record (Jun 22 export). Ask ICAI
-   Nashik branch to hyperlink the firm name on job postings, get IndiaMart/Justdial/
-   Sulekha profiles linked, keep posting on LinkedIn.
+1. Build backlinks — 1 on record as of Jun 22 export, now 2 after the Jul 8 TaxGuru guest
+   post. Keep submitting guest posts to other tax/finance publications, ask ICAI Nashik
+   branch to hyperlink the firm name on job postings, get IndiaMart/Justdial/Sulekha
+   profiles linked, keep posting on LinkedIn.
 2. Add more blog posts targeting low-competition keywords, following the winning
    pattern proven by tds-on-nri-property-sale-india (narrow + numeric + year-anchored
    + FAQPage schema): an NRI-cluster follow-up (seller-side capital gains guide, Form 13

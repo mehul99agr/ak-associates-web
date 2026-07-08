@@ -263,6 +263,35 @@ export default function TransferPricingPage() {
           </div>
         </section>
 
+        {/* Featured In */}
+        <section className="section" style={{ paddingTop: '0', paddingBottom: '0' }}>
+          <div className="container" style={{ maxWidth: '820px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '1rem 1.5rem', flexWrap: 'wrap' }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'var(--text-light)', whiteSpace: 'nowrap' }}>Featured In</span>
+              <div style={{ width: '1px', height: '2rem', background: 'var(--border)', flexShrink: 0 }} />
+              <div style={{ flex: 1, minWidth: '200px' }}>
+                <a
+                  href="https://taxguru.in/income-tax/transfer-pricing-documentation-checklist-fy-2025-26-key-compliance-requirements.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--text-main)', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}
+                >
+                  Transfer Pricing Documentation Checklist for FY 2025-26: Key Compliance Requirements
+                </a>
+                <div style={{ color: 'var(--text-light)', fontSize: '0.8rem', marginTop: '0.2rem' }}>TaxGuru &middot; by CA Mehul Agrawal, Partner</div>
+              </div>
+              <a
+                href="https://taxguru.in/income-tax/transfer-pricing-documentation-checklist-fy-2025-26-key-compliance-requirements.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.82rem', color: 'var(--primary)', fontWeight: 700, whiteSpace: 'nowrap', textDecoration: 'none' }}
+              >
+                Read Article &rarr;
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="section">
           <div className="container" style={{ maxWidth: '800px' }}>
