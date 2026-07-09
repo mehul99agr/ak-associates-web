@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Icon from './Icon'
 import TrackedLink from './TrackedLink'
+import GoogleReviews from './GoogleReviews'
 
 export const metadata: Metadata = {
   title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
@@ -374,6 +375,8 @@ export default function Home() {
         </div>
       </section>
 
+      <GoogleReviews />
+
       {/* ===== FAQ ===== */}
       <section className="section" id="faq">
         <div className="container" style={{ maxWidth: '800px' }}>
@@ -408,7 +411,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
             <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📍</div>
+              <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name="mapPin" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem' }}>Nashik Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011</p>
               <a href="tel:+919527533506" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95275 33506</a>
@@ -416,7 +419,7 @@ export default function Home() {
             </div>
 
             <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>🏢</div>
+              <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name="building" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem' }}>Sillod Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Near Datta Mandir, Tilak Nagar, Sillod – 431112</p>
               <a href="tel:+919595585953" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95955 85953</a>
@@ -425,11 +428,11 @@ export default function Home() {
 
             {/* WhatsApp CTA: uses explicit dark blue to work in both modes */}
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', borderColor: 'var(--primary)' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
+              <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#ffffff' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help your business thrive.</p>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
-                📅 Schedule on Google Calendar
+                Schedule on Google Calendar
               </a>
             </div>
           </div>

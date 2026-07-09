@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'Offshore Accounting Services India',
@@ -27,19 +28,19 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
 const audiences = [
   {
-    icon: '🌐',
+    icon: 'globe',
     title: 'Foreign Companies with Indian Operations',
     desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack - from Tally/QuickBooks bookkeeping to GST returns, TDS compliance, payroll, and statutory audit - so your Indian team stays compliant without distracting your HQ finance team.',
     tags: ['Indian Subsidiary Accounting', 'GAAP to Ind AS Conversion', 'Consolidated Reporting', 'Statutory Audit Readiness'],
   },
   {
-    icon: '🤝',
+    icon: 'handshake',
     title: 'CA Firms & Accounting Practices (White-Label)',
     desc: 'UK, US, Australian, or UAE accounting practices looking to outsource client bookkeeping to a trusted Indian CA firm. We work as your back-office - maintaining confidentiality, using your preferred software (Xero, QuickBooks, MYOB, Sage), and delivering work under your brand.',
     tags: ['Xero · QuickBooks · MYOB', 'White-Label Delivery', 'Confidential NDA', 'UK/US Accounting Standards'],
   },
   {
-    icon: '🏠',
+    icon: 'building',
     title: 'NRI-Owned Indian Businesses',
     desc: 'NRIs managing Indian businesses remotely - from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, GST, TDS, payroll, and monthly MIS so you always have visibility without being in India.',
     tags: ['Remote Accounting', 'GST & TDS Compliance', 'Monthly MIS Reports', 'NRI FEMA Compliance'],
@@ -48,32 +49,32 @@ const audiences = [
 
 const services = [
   {
-    icon: '📚',
+    icon: 'scroll',
     title: 'Full-Cycle Bookkeeping',
     desc: 'Daily transaction recording, bank reconciliation, accounts payable/receivable management, and monthly trial balance - using Tally, QuickBooks, Xero, or client-preferred software.',
   },
   {
-    icon: '📊',
+    icon: 'analytics',
     title: 'MIS & Management Reporting',
     desc: 'Monthly management accounts - P&L, balance sheet, cash flow statement, and custom KPI dashboards - delivered to an investor, board, or overseas parent in the format they require.',
   },
   {
-    icon: '👥',
+    icon: 'users',
     title: 'Payroll Processing',
     desc: 'Monthly payroll computation, salary slips, PF/ESI/PT compliance, Form 16 generation, TDS on salaries (Section 192), and payroll reconciliation for Indian employees.',
   },
   {
-    icon: '📋',
+    icon: 'document',
     title: 'GST & TDS Compliance',
     desc: 'Monthly GSTR-1 and GSTR-3B filing, input tax credit reconciliation, TDS deduction and quarterly TDS returns (26Q, 27Q), and advance tax computations.',
   },
   {
-    icon: '🏛️',
+    icon: 'landmark',
     title: 'Statutory Compliance',
     desc: 'Annual financial statements (Schedule III format), ROC annual returns, Director KYC, MSME compliance, and coordination with statutory auditors for the year-end audit.',
   },
   {
-    icon: '🔄',
+    icon: 'refresh',
     title: 'GAAP Conversion & Reporting',
     desc: 'Conversion of Indian financial statements to US GAAP, IFRS, or UK GAAP for consolidation by foreign parent companies. Preparation of intercompany reconciliation and elimination schedules.',
   },
@@ -212,7 +213,7 @@ export default function OffshoreAccounting() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               {audiences.map((a, i) => (
                 <div key={i} className="card" style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '2rem', alignItems: 'start' }}>
-                  <div style={{ fontSize: '3rem', lineHeight: 1 }}>{a.icon}</div>
+                  <div style={{ lineHeight: 1, color: 'var(--primary)' }}><Icon name={a.icon} size={44} /></div>
                   <div>
                     <h3 style={{ fontSize: '1.2rem', marginBottom: '0.75rem' }}>{a.title}</h3>
                     <p style={{ color: 'var(--text-light)', fontSize: '0.93rem', lineHeight: 1.8, marginBottom: '1rem' }}>{a.desc}</p>
@@ -238,7 +239,7 @@ export default function OffshoreAccounting() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
               {services.map((s, i) => (
                 <div key={i} className="card">
-                  <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{s.icon}</div>
+                  <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={s.icon} size={32} /></div>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
                 </div>

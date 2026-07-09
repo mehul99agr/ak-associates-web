@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'UAE Corporate Tax',
@@ -28,32 +29,32 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
 const services = [
   {
-    icon: '🇦🇪',
+    icon: 'flag',
     title: 'UAE Corporate Tax (CT) Compliance',
     desc: 'Registration with the Federal Tax Authority (FTA), determination of taxable vs. exempt income, CT return preparation, and filing for UAE entities - including mainland, Free Zone, and group structures.',
   },
   {
-    icon: '⚖️',
+    icon: 'scale',
     title: 'India-UAE DTAA Advisory',
     desc: 'The India-UAE Double Taxation Avoidance Agreement (DTAA) significantly reduces withholding taxes on dividends, interest, and royalties. We advise on treaty eligibility, LOB provisions, and the most tax-efficient payment structures between India and UAE entities.',
   },
   {
-    icon: '🏢',
+    icon: 'building',
     title: 'Free Zone Entity Structuring',
     desc: 'UAE Free Zone companies must meet Qualifying Free Zone Person (QFZP) criteria to maintain the 0% CT rate. We assess your structure against QFZP conditions - substance requirements, qualifying income tests, and de minimis thresholds - and advise on any restructuring required.',
   },
   {
-    icon: '💰',
+    icon: 'rupee',
     title: 'Repatriation & Dividend Planning',
     desc: 'Moving profits from UAE to India, or vice versa, involves FTA rules, DTAA withholding rates, FEMA compliance, and Indian tax implications. We structure repatriation to minimise tax leakage at both ends.',
   },
   {
-    icon: '📦',
+    icon: 'package',
     title: 'Transfer Pricing - UAE to India',
     desc: 'Transactions between an Indian subsidiary and its UAE parent (or sister entity) require arm\'s length pricing documentation on both sides. We prepare consistent TP documentation covering both Indian and UAE regulatory requirements.',
   },
   {
-    icon: '🚀',
+    icon: 'rocket',
     title: 'India Entry for UAE Businesses',
     desc: 'UAE companies looking to set up in India face a complex entry decision: branch, subsidiary, or LLP. We advise on optimal structure, FEMA compliance, FDI approvals, and ongoing transfer pricing between the UAE parent and Indian entity.',
   },
@@ -201,7 +202,7 @@ export default function UAETaxAdvisory() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
               {services.map((s, i) => (
                 <div key={i} className="card" style={{ borderLeft: '4px solid var(--primary)' }}>
-                  <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{s.icon}</div>
+                  <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={s.icon} size={32} /></div>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
                 </div>

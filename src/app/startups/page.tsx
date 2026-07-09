@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'CA for Startups in Bangalore, Mumbai & Nashik | Startup Advisory',
@@ -28,17 +29,17 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
 const earlyStageServices = [
   {
-    icon: '🏢',
+    icon: 'building',
     title: 'Company Incorporation & Structuring',
     desc: 'Private Limited vs LLP - we advise on the right structure for your funding goals, then execute registration end-to-end: DIN, DSC, MOA/AOA, and Certificate of Incorporation.',
   },
   {
-    icon: '📜',
+    icon: 'scroll',
     title: 'DPIIT Registration (Startup India)',
     desc: 'DPIIT recognition unlocks an 80-IAC tax holiday for 3 years, angel tax exemption under Section 56(2)(viib), and simplified winding-up. We handle the full application.',
   },
   {
-    icon: '📄',
+    icon: 'document',
     title: 'GST & Compliance Setup',
     desc: 'GST registration, first returns setup, director KYC, ROC compliance calendar - everything you need to stay clean from day one so VCs see zero red flags in due diligence.',
   },
@@ -46,33 +47,33 @@ const earlyStageServices = [
 
 const growthStageServices = [
   {
-    icon: '📊',
+    icon: 'analytics',
     title: 'Virtual CFO for Funded Startups',
     desc: 'Cash flow management, burn rate tracking, MIS reporting for investors, and board-level financial strategy. We become your fractional CFO without the ₹80L/year salary.',
   },
   {
-    icon: '🤝',
+    icon: 'handshake',
     title: 'ESOP Structuring & Compliance',
     desc: 'Design ESOP pools that attract senior talent. We handle the scheme, trust setup, exercise notices, and employee tax advisory - including perquisite valuation for sweat equity.',
   },
   {
-    icon: '🌐',
+    icon: 'globe',
     title: 'FDI & FEMA Compliance',
     desc: 'Foreign investment in your startup triggers RBI reporting obligations - FCGPR, FCTRS, and LLP-I filings. One miss can invalidate the funding round. We make sure it doesn\'t.',
     link: '/blog/fema-compliance-foreign-investment-startups',
   },
   {
-    icon: '📈',
+    icon: 'chart',
     title: 'Valuation & Financial Modeling',
     desc: 'DCF and Net Asset Value reports for angel rounds, Series A term sheets, and ESOP repricing. Investor-grade models built to VC standards.',
   },
   {
-    icon: '🔍',
+    icon: 'search',
     title: 'Pre-Fundraise Due Diligence Clean-up',
     desc: 'Most startups have compliance gaps. Before your VC DD, we audit and fix: missing annual returns, pending director KYC, GST mismatches, and FEMA reporting gaps.',
   },
   {
-    icon: '🏆',
+    icon: 'award',
     title: 'Transfer Pricing for MNC Subsidiaries',
     desc: 'If your Indian entity transacts with a foreign parent or group company, TP documentation is mandatory above ₹1 crore. We prepare master file, local file, and Form 3CEB.',
   },
@@ -242,7 +243,7 @@ export default function StartupsPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
               {earlyStageServices.map((s, i) => (
                 <div key={i} className="card" style={{ borderTop: '4px solid var(--primary)' }}>
-                  <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
+                  <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={s.icon} size={36} /></div>
                   <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
                 </div>
@@ -263,7 +264,7 @@ export default function StartupsPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
               {growthStageServices.map((s, i) => (
                 <div key={i} className="card" style={{ borderTop: '4px solid var(--accent)' }}>
-                  <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
+                  <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={s.icon} size={36} /></div>
                   <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
                   {'link' in s && <Link href={(s as any).link} style={{ display: 'inline-block', marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.88rem' }}>Read the FEMA compliance guide →</Link>}
@@ -299,7 +300,7 @@ export default function StartupsPage() {
                 },
               ].map((item, i) => (
                 <div key={i} className="card">
-                  <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--primary)' }}>📍 {item.city}</h3>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--primary)' }}>{item.city}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '1rem' }}>{item.desc}</p>
                   <a href={`tel:${item.phone.replace(/\s/g, '')}`} style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.9rem' }}>{item.phone}</a>
                 </div>

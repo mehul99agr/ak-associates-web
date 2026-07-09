@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing India',
@@ -27,32 +28,32 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
 const services = [
   {
-    icon: '📁',
+    icon: 'document',
     title: 'Master File & Local File',
     desc: 'Preparation of the OECD-aligned Master File (Form 3CEAA) and Local File (Form 3CEAB) for Indian entities with international related-party transactions exceeding prescribed thresholds.',
   },
   {
-    icon: '📋',
+    icon: 'scroll',
     title: 'Form 3CEB - Accountant\'s Report',
     desc: 'Mandatory CA certification of international transactions under Section 92E. We prepare and certify Form 3CEB covering all specified domestic and international transactions.',
   },
   {
-    icon: '📊',
+    icon: 'analytics',
     title: 'Benchmarking & Arm\'s Length Analysis',
     desc: 'Selection of the most appropriate transfer pricing method (TNMM, CUP, RPM, CPM, PSM), database searches (Prowess, Capitaline, Bureau van Dijk), and preparation of a defensible benchmarking study.',
   },
   {
-    icon: '🤝',
+    icon: 'handshake',
     title: 'Advance Pricing Agreement (APA)',
     desc: 'Advisory and preparation support for unilateral, bilateral, and multilateral APA applications - including pre-filing meetings, rollback negotiations, and annual compliance reports.',
   },
   {
-    icon: '⚖️',
+    icon: 'scale',
     title: 'TP Audit Representation',
     desc: 'Representation before Transfer Pricing Officers (TPO) and Dispute Resolution Panel (DRP) in case of scrutiny assessment under Section 92CA. Drafting of responses to notices and appeal assistance up to ITAT.',
   },
   {
-    icon: '🌐',
+    icon: 'globe',
     title: 'Country-by-Country Reporting (CbCR)',
     desc: 'CbCR preparation and filing for MNCs with consolidated group revenue exceeding ₹5,500 crore (approximately €750 million). Covers Form 3CEAD and master entity notification requirements.',
   },
@@ -219,7 +220,7 @@ export default function TransferPricingPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
               {services.map((s, i) => (
                 <div key={i} className="card" style={{ borderLeft: '4px solid var(--primary)' }}>
-                  <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{s.icon}</div>
+                  <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={s.icon} size={32} /></div>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
                 </div>

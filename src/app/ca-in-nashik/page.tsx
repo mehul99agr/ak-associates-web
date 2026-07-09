@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'CA in Nashik',
@@ -23,32 +24,32 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
 const services = [
   {
-    icon: '📄',
+    icon: 'document',
     title: 'GST Registration & Filing',
     desc: 'Complete GST registration, monthly/quarterly return filing (GSTR-1, GSTR-3B), annual returns, GST audit, and response to notices for Nashik businesses.',
   },
   {
-    icon: '🧾',
+    icon: 'rupee',
     title: 'Income Tax Return (ITR) Filing',
     desc: 'Accurate ITR filing for individuals, HUFs, firms, and companies in Nashik. Tax planning to minimise liability and maximise refunds.',
   },
   {
-    icon: '🏢',
+    icon: 'building',
     title: 'Company & LLP Incorporation',
     desc: 'End-to-end company registration, LLP formation, and startup compliance for new businesses in Nashik, Maharashtra.',
   },
   {
-    icon: '🛡️',
+    icon: 'shield',
     title: 'Statutory & Tax Audit',
     desc: 'Statutory audits, tax audits under Section 44AB, internal audits, and concurrent bank audits for Nashik businesses of all sizes.',
   },
   {
-    icon: '🌍',
+    icon: 'globe',
     title: 'International Taxation',
     desc: 'Transfer pricing, DTAA advisory, FEMA compliance, and UAE corporate tax for businesses in Nashik with cross-border operations.',
   },
   {
-    icon: '📈',
+    icon: 'chart',
     title: 'Virtual CFO & Advisory',
     desc: 'Outsourced CFO services, financial planning, budgeting, and MIS reporting for growing companies based in Nashik.',
   },
@@ -102,7 +103,7 @@ const nashikLocalBusiness = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '13',
+    reviewCount: '14',
     bestRating: '5',
     worstRating: '1',
   },
@@ -231,7 +232,7 @@ export default function CAInNashik() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
             {services.map((s, i) => (
               <div key={i} className="card">
-                <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
+                <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={s.icon} size={36} /></div>
                 <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
               </div>
@@ -252,15 +253,15 @@ export default function CAInNashik() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
             {[
-              { icon: '✅', title: 'ICAI-Registered with Verifiable Credentials', desc: 'Every partner is a qualified Chartered Accountant registered with the Institute of Chartered Accountants of India. CA Mehul Agrawal additionally holds certifications in Concurrent Bank Audit and UAE Corporate Taxation.' },
-              { icon: '👥', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file - not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
-              { icon: '🧩', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
-              { icon: '🌐', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax - capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
-              { icon: '📱', title: 'Responsive Communication', desc: 'WhatsApp for quick questions, phone for urgent matters, email for documentation. We respond within hours, not days.' },
-              { icon: '💰', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges, no surprise invoices, no per-call billing.' },
+              { icon: 'check', title: 'ICAI-Registered with Verifiable Credentials', desc: 'Every partner is a qualified Chartered Accountant registered with the Institute of Chartered Accountants of India. CA Mehul Agrawal additionally holds certifications in Concurrent Bank Audit and UAE Corporate Taxation.' },
+              { icon: 'users', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file - not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
+              { icon: 'scroll', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
+              { icon: 'globe', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax - capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
+              { icon: 'phone', title: 'Responsive Communication', desc: 'WhatsApp for quick questions, phone for urgent matters, email for documentation. We respond within hours, not days.' },
+              { icon: 'rupee', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges, no surprise invoices, no per-call billing.' },
             ].map((item, i) => (
               <div key={i} className="card">
-                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{item.icon}</div>
+                <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={item.icon} size={32} /></div>
                 <h3 style={{ fontSize: '1.05rem', marginBottom: '0.75rem' }}>{item.title}</h3>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{item.desc}</p>
               </div>
@@ -278,15 +279,15 @@ export default function CAInNashik() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
             {[
-              { icon: '🏆', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation - rare expertise available in Nashik.' },
-              { icon: '🌍', title: 'International Tax Capability', desc: 'One of the very few CA firms in Nashik with hands-on experience in transfer pricing, DTAA, FEMA, and UAE corporate tax.' },
-              { icon: '⚡', title: 'Fast Turnaround', desc: 'Dedicated team ensuring timely GST returns, ITR filing, and compliance so you never miss a deadline.' },
-              { icon: '📞', title: 'Responsive Support', desc: 'Direct access to partners - no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
-              { icon: '💼', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO - all under one roof in Nashik.' },
-              { icon: '🔒', title: 'Trusted & Confidential', desc: 'Your financial data is handled with strict confidentiality. We are registered with ICAI and operate with complete professional ethics.' },
+              { icon: 'award', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation - rare expertise available in Nashik.' },
+              { icon: 'globe', title: 'International Tax Capability', desc: 'One of the very few CA firms in Nashik with hands-on experience in transfer pricing, DTAA, FEMA, and UAE corporate tax.' },
+              { icon: 'zap', title: 'Fast Turnaround', desc: 'Dedicated team ensuring timely GST returns, ITR filing, and compliance so you never miss a deadline.' },
+              { icon: 'phone', title: 'Responsive Support', desc: 'Direct access to partners - no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
+              { icon: 'briefcase', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO - all under one roof in Nashik.' },
+              { icon: 'lock', title: 'Trusted & Confidential', desc: 'Your financial data is handled with strict confidentiality. We are registered with ICAI and operate with complete professional ethics.' },
             ].map((item, i) => (
               <div key={i} className="card">
-                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{item.icon}</div>
+                <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={item.icon} size={32} /></div>
                 <h3 style={{ fontSize: '1.05rem', marginBottom: '0.75rem' }}>{item.title}</h3>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{item.desc}</p>
               </div>
@@ -347,23 +348,23 @@ export default function CAInNashik() {
                 Monday – Saturday: 10:00 AM – 6:00 PM
               </p>
               <a href="tel:+919527533506" style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem' }}>
-                📞 +91 95275 33506
+                +91 95275 33506
               </a>
               <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
-                ✉ mehul@agrawalkhandelwal.com
+                mehul@agrawalkhandelwal.com
               </a>
             </div>
             <div className="card" style={{ background: '#0A2E5B', borderColor: '#0A2E5B' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
+              <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#fff' }}>Book a Free Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
                 Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation - first session is free.
               </p>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
-                📅 Schedule on Google Calendar
+                Schedule on Google Calendar
               </a>
               <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20CA%20services%20in%20Nashik." target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
-                💬 WhatsApp Us
+                WhatsApp Us
               </a>
             </div>
           </div>

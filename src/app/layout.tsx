@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Navbar from './Navbar'
 import FloatingContact from './FloatingContact'
 import GoogleAnalytics from './GoogleAnalytics'
+import CookieConsent from './CookieConsent'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Montserrat, Open_Sans, Cormorant_Garamond } from 'next/font/google'
 
@@ -146,7 +147,7 @@ const organizationLd = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '13',
+    reviewCount: '14',
     bestRating: '5',
     worstRating: '1',
   },
@@ -184,9 +185,9 @@ const organizationLd = {
     'https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/',
     'https://www.justdial.com/Nashik/Agrawal-Khandelwal-Associates-LLP-Opposite-Radiant-Hospital-Mumbai-Naka-Bhagwant-Nagar-Bhabha-Nagar/0253PX253-X253-240221190351-A8F7_BZDET',
     'https://www.sulekha.com/agrawal-khandelwal-and-associates-llp-mumbai-naka-nashik-contact-address',
-    'https://maps.google.com/?cid=17018233718758486792',
+    'https://maps.google.com/?cid=15026601649790613456',
   ],
-  hasMap: 'https://maps.google.com/?cid=17018233718758486792',
+  hasMap: 'https://maps.google.com/?cid=15026601649790613456',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Chartered Accountant Services',
@@ -253,6 +254,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <FloatingContact />
+        <CookieConsent />
 
         <footer className="footer">
           <div className="container">
@@ -334,7 +336,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <div className="footer-bottom">
               <p>&copy; {new Date().getFullYear()} Agrawal Khandelwal &amp; Associates LLP. All rights reserved.</p>
-              <p style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--footer-text-dim)' }}>Chartered Accountants · ICAI Firm Reg. No. W101119</p>
+              <p style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--footer-text-dim)' }}>Chartered Accountants · ICAI Firm Reg. No. W101119 · LLPIN ACO-7072</p>
+              <p style={{ marginTop: '0.4rem', fontSize: '0.78rem', color: 'var(--footer-text-dim)' }}>
+                <Link href="/privacy-policy" style={{ color: 'var(--footer-text-dim)' }}>Privacy Policy</Link>
+                <span> · </span>
+                <Link href="/terms-of-use" style={{ color: 'var(--footer-text-dim)' }}>Terms of Use</Link>
+                <span> · </span>
+                <Link href="/disclaimer" style={{ color: 'var(--footer-text-dim)' }}>Disclaimer</Link>
+              </p>
             </div>
           </div>
         </footer>

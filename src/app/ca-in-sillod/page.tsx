@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import Icon from '../Icon'
 
 export const metadata: Metadata = {
   title: 'CA in Sillod',
@@ -23,32 +24,32 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 
 const services = [
   {
-    icon: '📄',
+    icon: 'document',
     title: 'GST Registration & Filing',
     desc: 'GST registration, GSTR-1, GSTR-3B, annual return filing, and GST audit for businesses and traders in Sillod and surrounding areas.',
   },
   {
-    icon: '🧾',
+    icon: 'rupee',
     title: 'Income Tax Return (ITR) Filing',
     desc: 'ITR filing for individuals, salaried employees, business owners, and HUFs in Sillod. Accurate filing with maximum deductions.',
   },
   {
-    icon: '🏢',
+    icon: 'building',
     title: 'Company & LLP Incorporation',
     desc: 'Company registration, LLP formation, and shop act registration for new businesses starting in Sillod, Maharashtra.',
   },
   {
-    icon: '🛡️',
+    icon: 'shield',
     title: 'Audit & Assurance',
     desc: 'Statutory audits, tax audits under Section 44AB, internal audits, and stock audits for businesses in Sillod.',
   },
   {
-    icon: '📊',
+    icon: 'analytics',
     title: 'Tax Planning & Advisory',
     desc: 'Strategic tax planning for individuals and businesses in Sillod to minimise tax liability within the framework of the Income Tax Act.',
   },
   {
-    icon: '📝',
+    icon: 'scroll',
     title: 'Accounting & Bookkeeping',
     desc: 'Monthly accounting, tally bookkeeping, balance sheet preparation, and financial statement preparation for Sillod businesses.',
   },
@@ -94,7 +95,7 @@ const sillodLocalBusiness = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '13',
+    reviewCount: '14',
     bestRating: '5',
     worstRating: '1',
   },
@@ -223,7 +224,7 @@ export default function CAInSillod() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
             {services.map((s, i) => (
               <div key={i} className="card">
-                <div style={{ fontSize: '2.25rem', marginBottom: '1.25rem' }}>{s.icon}</div>
+                <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={s.icon} size={36} /></div>
                 <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
               </div>
@@ -284,23 +285,23 @@ export default function CAInSillod() {
                 Monday – Saturday: 10:00 AM – 6:00 PM
               </p>
               <a href="tel:+919595585953" style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem' }}>
-                📞 +91 95955 85953
+                +91 95955 85953
               </a>
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
-                ✉ rupesh@agrawalkhandelwal.com
+                rupesh@agrawalkhandelwal.com
               </a>
             </div>
             <div className="card" style={{ background: '#0A2E5B', borderColor: '#0A2E5B' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '1.25rem' }}>📅</div>
+              <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#fff' }}>Book a Free Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
                 Speak with CA Rupesh Khandelwal about your GST, tax, or audit needs in Sillod. First consultation is free.
               </p>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
-                📅 Schedule on Google Calendar
+                Schedule on Google Calendar
               </a>
               <a href="https://wa.me/919595585953?text=Hi,%20I%20need%20CA%20services%20in%20Sillod." target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
-                💬 WhatsApp Us
+                WhatsApp Us
               </a>
             </div>
           </div>

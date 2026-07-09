@@ -1,0 +1,5 @@
+Contact: mailto:mehul@agrawalkhandelwal.com
+Contact: mailto:rupesh@agrawalkhandelwal.com
+Expires: 2027-07-09T00:00:00.000Z
+Preferred-Languages: en, hi, mr
+Canonical: https://agrawalkhandelwal.com/.well-known/security.txt
