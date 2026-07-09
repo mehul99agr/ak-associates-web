@@ -115,7 +115,7 @@ const peopleLd = {
         'DTAA', 'FEMA Compliance', 'Cross-border Structuring', 'M&A Advisory',
       ],
       hasCredential: [
-        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)', identifier: '614225' },
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'UAE Corporate Taxation Certification' },
       ],
       contactPoint: {
@@ -144,7 +144,7 @@ const peopleLd = {
         'Tax Compliance', 'Business Consulting',
       ],
       hasCredential: [
-        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)', identifier: '614213' },
       ],
       contactPoint: {
         '@type': 'ContactPoint',

@@ -61,7 +61,8 @@ export default function About() {
                 <Image src="/mehul.jpg" alt="CA Mehul Agrawal" width={160} height={160} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h2 style={{ fontSize: '1.5rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h2>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner, Nashik Office</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.4rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner, Nashik Office</p>
+              <p style={{ color: 'var(--text-muted)', fontWeight: 600, marginBottom: '1.25rem', fontSize: '0.8rem' }}>ICAI Membership No. 614225</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Mehul is a Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate
                 Structuring. He advises multinational companies on cross-border transactions and helps them optimize
@@ -92,7 +93,8 @@ export default function About() {
                 <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal" width={160} height={160} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h2 style={{ fontSize: '1.5rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h2>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner, Sillod Office</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.4rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner, Sillod Office</p>
+              <p style={{ color: 'var(--text-muted)', fontWeight: 600, marginBottom: '1.25rem', fontSize: '0.8rem' }}>ICAI Membership No. 614213</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Rupesh brings valuable insights from leading firms, including Deloitte, across the Automobiles, IT,
                 and Pharma sectors. His expertise spans domestic tax planning, statutory and internal audits, and
