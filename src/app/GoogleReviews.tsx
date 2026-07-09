@@ -47,7 +47,7 @@ export default async function GoogleReviews() {
           )}
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2rem' }}>
-          {data.reviews.slice(0, 5).map((r, i) => (
+          {data.reviews.slice(0, 3).map((r, i) => (
             <div key={i} className="card">
               <p style={{ color: 'var(--accent)', marginBottom: '0.75rem', letterSpacing: '2px' }}>
                 {'★'.repeat(r.rating)}
