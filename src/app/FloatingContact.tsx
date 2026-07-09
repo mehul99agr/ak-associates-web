@@ -1,3 +1,5 @@
+import TrackedLink from './TrackedLink'
+
 const WHATSAPP = 'https://wa.me/919527533506?text=Hi,%20I%27d%20like%20to%20book%20a%20consultation.'
 const TEL = 'tel:+919527533506'
 const BOOKING = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
@@ -31,15 +33,15 @@ export default function FloatingContact() {
   return (
     <>
       {/* Desktop: floating WhatsApp button */}
-      <a className="whatsapp-fab" href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+      <TrackedLink className="whatsapp-fab" href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" method="whatsapp" location="floating_fab">
         <IconWhatsApp />
-      </a>
+      </TrackedLink>
 
       {/* Mobile: sticky bottom action bar */}
       <nav className="mobile-actionbar" aria-label="Quick contact">
-        <a href={TEL} aria-label="Call us"><IconPhone /><span>Call</span></a>
-        <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us"><IconWhatsApp /><span>WhatsApp</span></a>
-        <a href={BOOKING} target="_blank" rel="noopener noreferrer" className="primary" aria-label="Book a consultation"><IconCalendar /><span>Book</span></a>
+        <TrackedLink href={TEL} aria-label="Call us" method="call" location="mobile_actionbar"><IconPhone /><span>Call</span></TrackedLink>
+        <TrackedLink href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us" method="whatsapp" location="mobile_actionbar"><IconWhatsApp /><span>WhatsApp</span></TrackedLink>
+        <TrackedLink href={BOOKING} target="_blank" rel="noopener noreferrer" className="primary" aria-label="Book a consultation" method="booking" location="mobile_actionbar"><IconCalendar /><span>Book</span></TrackedLink>
       </nav>
     </>
   )

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/ca-in-nashik`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.98 },
     { url: `${BASE_URL}/ca-in-sillod`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE_URL}/services`, lastModified: new Date('2026-07-02'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/about`, lastModified: new Date('2026-07-09'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/transfer-pricing`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.92 },
     { url: `${BASE_URL}/uae-tax-advisory`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.92 },
     { url: `${BASE_URL}/offshore-accounting`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.88 },

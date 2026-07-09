@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import TrackedLink from '../TrackedLink'
 
 export const metadata: Metadata = {
   title: 'Contact Us | CA in Nashik & Sillod',
@@ -116,8 +117,8 @@ export default function Contact() {
                 Call, message us on WhatsApp, email, or visit either office. For a structured discussion, book a free 30-minute consultation, we respond within one business day.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <a href="tel:+919527533506" className="btn btn-outline">Call +91 95275 33506</a>
+                <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="contact_page_hero">Book Free Consultation</TrackedLink>
+                <TrackedLink href="tel:+919527533506" className="btn btn-outline" method="call" location="contact_page_hero">Call +91 95275 33506</TrackedLink>
               </div>
             </div>
 
@@ -132,14 +133,14 @@ export default function Contact() {
                     <strong style={{ color: 'var(--text-main)' }}>Hours:</strong> Monday to Saturday, 10:00 AM to 6:00 PM
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.5rem' }}>
-                    <a href={`tel:${o.tel}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }}>Call</a>
-                    <a href={o.wa} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }}>WhatsApp</a>
-                    <a href={`mailto:${o.email}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }}>Email</a>
+                    <TrackedLink href={`tel:${o.tel}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Call</TrackedLink>
+                    <TrackedLink href={o.wa} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>WhatsApp</TrackedLink>
+                    <TrackedLink href={`mailto:${o.email}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Email</TrackedLink>
                   </div>
                   <p style={{ marginTop: '1.25rem', fontSize: '0.85rem' }}>
-                    <a href={`tel:${o.tel}`} style={{ color: 'var(--primary)', fontWeight: 700 }}>{o.phone}</a>
+                    <TrackedLink href={`tel:${o.tel}`} style={{ color: 'var(--primary)', fontWeight: 700 }} method="call" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>{o.phone}</TrackedLink>
                     <span style={{ color: 'var(--text-muted)' }}> · </span>
-                    <a href={`mailto:${o.email}`} style={{ color: 'var(--primary)', fontWeight: 600 }}>{o.email}</a>
+                    <TrackedLink href={`mailto:${o.email}`} style={{ color: 'var(--primary)', fontWeight: 600 }} method="email" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>{o.email}</TrackedLink>
                   </p>
                 </div>
               ))}

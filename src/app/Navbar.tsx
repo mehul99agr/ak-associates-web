@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import TrackedLink from './TrackedLink'
 
 const serviceLinks = [
   { href: '/services', label: 'All Services' },
@@ -131,19 +132,21 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/#about" className="link">ABOUT</Link>
+          <Link href="/about" className="link">ABOUT</Link>
           <Link href="/tools" className="link">TOOLS</Link>
           <Link href="/blog" className="link">INSIGHTS</Link>
           <Link href="/contact" className="link">CONTACT</Link>
-          <a
+          <TrackedLink
             href={bookingLink}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
             style={{ padding: '0.65rem 1.2rem', fontSize: '0.78rem' }}
+            method="booking"
+            location="navbar_desktop"
           >
             BOOK CONSULTATION
-          </a>
+          </TrackedLink>
         </nav>
 
         {/* Mobile controls */}
@@ -213,20 +216,22 @@ export default function Navbar() {
               </div>
             )}
 
-            <Link href="/#about" onClick={closeMenu}>ABOUT</Link>
+            <Link href="/about" onClick={closeMenu}>ABOUT</Link>
             <Link href="/tools" onClick={closeMenu}>TOOLS</Link>
             <Link href="/blog" onClick={closeMenu}>INSIGHTS</Link>
             <Link href="/contact" onClick={closeMenu}>CONTACT</Link>
-            <a
+            <TrackedLink
               href={bookingLink}
               onClick={closeMenu}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
               style={{ marginTop: '1rem' }}
+              method="booking"
+              location="navbar_mobile"
             >
               BOOK CONSULTATION
-            </a>
+            </TrackedLink>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from './Icon'
+import TrackedLink from './TrackedLink'
 
 export const metadata: Metadata = {
   title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
@@ -103,7 +104,7 @@ const peopleLd = {
       jobTitle: 'Partner',
       description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
-      url: 'https://agrawalkhandelwal.com/#about',
+      url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
       email: 'mehul@agrawalkhandelwal.com',
       telephone: '+91-95275-33506',
@@ -131,7 +132,7 @@ const peopleLd = {
       jobTitle: 'Partner',
       description: 'Chartered Accountant specializing in domestic tax planning, statutory and internal audits, and business consulting, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
-      url: 'https://agrawalkhandelwal.com/#about',
+      url: 'https://agrawalkhandelwal.com/about#rupesh-khandelwal',
       image: 'https://agrawalkhandelwal.com/rupesh.jpg',
       email: 'rupesh@agrawalkhandelwal.com',
       telephone: '+91-95955-85953',
@@ -179,9 +180,9 @@ export default function Home() {
             We serve a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
           </p>
           <div className="hero-cta">
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="homepage_hero">
               Book Free Consultation
-            </a>
+            </TrackedLink>
             <Link href="/services" className="btn btn-secondary">
               Explore Services
             </Link>
@@ -222,6 +223,9 @@ export default function Home() {
             <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', fontSize: '1.05rem' }}>
               Our seasoned partners bring deep expertise in taxation, audit, and financial consulting, empowering businesses to achieve their objectives with confidence.
             </p>
+            <Link href="/about" style={{ display: 'inline-block', marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.9rem' }}>
+              Full bios & credentials →
+            </Link>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '3rem' }}>
