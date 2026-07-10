@@ -702,3 +702,24 @@ input:focus, select:focus, textarea:focus {
 .blog-content ol { list-style: decimal; }
 .blog-content li { line-height: 1.7; }
 .blog-content strong { color: var(--text-heading); font-weight: 700; }
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.92rem;
+}
+.blog-content th,
+.blog-content td {
+  border: 1px solid var(--border);
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+}
+.blog-content th {
+  background: var(--bg-surface);
+  color: var(--text-heading);
+  font-weight: 700;
+}
+.blog-content table + p { margin-top: -0.5rem; }
+@media (max-width: 640px) {
+  .blog-content table { display: block; overflow-x: auto; white-space: nowrap; }
+}

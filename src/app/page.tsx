@@ -371,6 +371,12 @@ export default function Home() {
                 FEMA compliance for startups raising foreign investment →
               </Link>
             </p>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+              Selling property in India as an NRI? Read our guide to{' '}
+              <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                TDS on NRI property sale: rates, Form 27Q &amp; refund guide →
+              </Link>
+            </p>
           </div>
         </div>
       </section>

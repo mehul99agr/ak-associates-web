@@ -100,6 +100,7 @@ const faqLd = {
 }
 
 const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'm%20an%20NRI%20and%20need%20help%20with%20my%20India%20tax%20situation."
 
 const services = [
   {
@@ -135,6 +136,16 @@ const deadlines = [
   { date: 'Before remittance', title: 'Form 145 / Form 146', desc: 'Must be filed before any taxable foreign remittance is executed.' },
 ]
 
+const relatedReading = [
+  { title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide', link: '/blog/tds-on-nri-property-sale-india' },
+  { title: 'NRI Property TDS Calculator', link: '/tools/nri-property-tds' },
+  { title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline', link: '/blog/form-13-lower-deduction-certificate-nri' },
+  { title: 'How NRIs Can Claim a TDS Refund on Property Sale in India', link: '/blog/nri-tds-refund-property-sale' },
+  { title: 'TAN Application Guide for Buyers Purchasing Property from an NRI', link: '/blog/tan-application-guide-buyer-nri-property' },
+  { title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme', link: '/blog/nri-repatriation-property-sale-proceeds' },
+  { title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India', link: '/blog/nri-capital-gains-inherited-gifted-property' },
+]
+
 export default function NRITaxAdvisory() {
   return (
     <>
@@ -149,9 +160,15 @@ export default function NRITaxAdvisory() {
             <p>
               We handle ITR filing, TDS refunds, property repatriation, and DTAA claims for NRIs in the UAE, US, UK, Singapore, and Australia.
             </p>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>
+              We offer evening and weekend call slots to match US, UK, and Gulf time zones — most of our NRI clients never need to take time off work to talk to us.
+            </p>
             <div className="hero-cta">
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                 Book an NRI Tax Call
+              </a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                Message Us on WhatsApp
               </a>
             </div>
           </div>
@@ -303,6 +320,29 @@ export default function NRITaxAdvisory() {
           </div>
         </section>
 
+        {/* Related Reading */}
+        <section className="section bg-surface">
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              <span className="section-badge">Property Sale Guides</span>
+              <h2 className="section-title">NRI Property TDS &amp; Repatriation Reading</h2>
+              <p style={{ color: 'var(--text-light)', maxWidth: '650px', margin: '0 auto' }}>
+                Selling property in India as an NRI? Our full guide series covers TDS rates, TAN, Form 13, refunds, and repatriation in detail.
+              </p>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
+              {relatedReading.map((item, i) => (
+                <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                  <p style={{ color: 'var(--text-main)', fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.5, flex: 1, margin: 0 }}>{item.title}</p>
+                  <div style={{ marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem' }}>
+                    Read Guide <span>→</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="section">
           <div className="container" style={{ maxWidth: '800px' }}>
@@ -327,11 +367,14 @@ export default function NRITaxAdvisory() {
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Get Your NRI Tax Situation Sorted</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '560px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-                We work with NRIs remotely across UAE, US, UK, Singapore, and Australia. One call to understand your situation: no hourly billing surprises.
+                We work with NRIs remotely across UAE, US, UK, Singapore, and Australia, with evening and weekend slots to match your time zone. One call to understand your situation: no hourly billing surprises.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
                   Book an NRI Tax Call
+                </a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
+                  Message Us on WhatsApp
                 </a>
                 <Link href="/blog" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
                   Read Our Tax Insights

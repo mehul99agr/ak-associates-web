@@ -20,11 +20,46 @@ export const metadata: Metadata = {
 
 const posts = [
   {
-    title: 'TDS on NRI Property Sale India: Buyer\'s Complete Guide (2026)',
+    title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
     slug: 'tds-on-nri-property-sale-india',
     date: 'July 1, 2026',
     category: 'NRI Taxation',
-    summary: 'TDS rates and Form 26QB process when buying property from an NRI, how to obtain a lower deduction certificate (Form 13), and repatriation rules under the new Income Tax Act 2025.',
+    summary: 'Full TDS rate table with surcharge slabs, the buyer\'s TAN and Form 27Q process, Form 13 lower deduction certificates, how NRIs claim a TDS refund, and repatriation under the new Income Tax Act 2025.',
+  },
+  {
+    title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline',
+    slug: 'form-13-lower-deduction-certificate-nri',
+    date: 'July 11, 2026',
+    category: 'NRI Taxation',
+    summary: 'How NRIs apply for a Form 13 lower or nil TDS certificate under Section 197 before a property sale — documents required, jurisdictional AO, and processing timeline.',
+  },
+  {
+    title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
+    slug: 'nri-tds-refund-property-sale',
+    date: 'July 11, 2026',
+    category: 'NRI Taxation',
+    summary: 'Which ITR to file, documents needed, e-verification options, refund timelines, and Section 244A interest for NRIs recovering excess TDS on a property sale.',
+  },
+  {
+    title: 'TAN Application Guide for Buyers Purchasing Property from an NRI',
+    slug: 'tan-application-guide-buyer-nri-property',
+    date: 'July 11, 2026',
+    category: 'NRI Taxation',
+    summary: 'Form 49B process, documents, fees, and timeline for buyers who need a TAN to purchase property from an NRI seller under Section 195.',
+  },
+  {
+    title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme',
+    slug: 'nri-repatriation-property-sale-proceeds',
+    date: 'July 11, 2026',
+    category: 'NRI Taxation',
+    summary: 'NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB) CA certification, and the USD 1 million scheme for repatriating Indian property sale proceeds.',
+  },
+  {
+    title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India',
+    slug: 'nri-capital-gains-inherited-gifted-property',
+    date: 'July 11, 2026',
+    category: 'NRI Taxation',
+    summary: 'Cost and holding period carryover rules from the original owner, TDS implications, and why Form 13 is especially valuable for inherited or gifted property sales.',
   },
   {
     title: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)',
