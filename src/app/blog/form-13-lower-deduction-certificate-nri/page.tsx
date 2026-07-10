@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline',
+    description: 'Step-by-step Form 13 application process for NRIs seeking a lower or nil TDS certificate on property sale.',
+  },
 }
 
 const articleLd = {
@@ -48,7 +53,7 @@ const faqLd = {
       name: 'What is Form 13 and who can apply for it?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Form 13 is the application under Section 197 of the Income Tax Act for a certificate authorizing a lower or nil rate of TDS deduction. Any taxpayer expecting their actual tax liability to be lower than the statutory TDS rate can apply, but it is especially valuable for NRIs selling property, since Section 195 TDS is deducted on the full sale consideration rather than the actual capital gain.',
+        text: 'Form 13 (now Form 128 under the Income Tax Act 2025) is the application under Section 197 (now Section 395) of the Income Tax Act for a certificate authorizing a lower or nil rate of TDS deduction. Any taxpayer expecting their actual tax liability to be lower than the statutory TDS rate can apply, but it is especially valuable for NRIs selling property, since Section 195 (now Section 393(2)) TDS is deducted on the full sale consideration rather than the actual capital gain.',
       },
     },
     {
@@ -99,8 +104,13 @@ export default function Form13NRIBlog() {
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <p>When an NRI sells property in India, <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS under Section 195</Link> is deducted on the entire sale consideration, not the actual profit. For most NRI sellers, this means the buyer withholds far more than the real tax bill — often 5 to 10 times more. Form 13 is the mechanism that fixes this before the sale closes, instead of forcing the NRI to wait months for a refund.</p>
 
-                <h2>What Form 13 Actually Does</h2>
-                <p>Form 13 is an application under Section 197 of the Income Tax Act, filed with the Assessing Officer, requesting a certificate that authorizes the buyer to deduct TDS at a lower rate — or nil — instead of the full statutory rate. The AO reviews the NRI&apos;s actual computation of capital gains and, if satisfied, issues a certificate specifying the exact rate the buyer should apply. The buyer is legally protected when deducting at the certified rate, since it comes directly from the tax department.</p>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update</p>
+                  <p style={{ margin: 0, fontSize: '0.95rem' }}>Under the Income Tax Act 2025 (effective April 1, 2026), Form 13 is renumbered <strong>Form 128</strong>, and the underlying provision — Section 197 — is renumbered <strong>Section 395</strong>. The application process, documents, and jurisdictional AO described below are unchanged; only the names differ. We use both terms since search volume is still concentrated on the old names.</p>
+                </div>
+
+                <h2>What Form 13 (Now Form 128) Actually Does</h2>
+                <p>Form 13 is an application under Section 197 (now Section 395) of the Income Tax Act, filed with the Assessing Officer, requesting a certificate that authorizes the buyer to deduct TDS at a lower rate — or nil — instead of the full statutory rate. The AO reviews the NRI&apos;s actual computation of capital gains and, if satisfied, issues a certificate specifying the exact rate the buyer should apply. The buyer is legally protected when deducting at the certified rate, since it comes directly from the tax department.</p>
 
                 <h2>Who Should Apply</h2>
                 <p>Any NRI selling property where the actual capital gain is meaningfully smaller than the gross sale consideration should consider Form 13. This is especially relevant for properties held a long time, properties purchased at a low historical cost, or properties where significant improvement costs can be added to the acquisition cost. Without Form 13, the NRI recovers the excess only by filing an Indian ITR after the financial year ends and waiting for the refund cycle to complete. Our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory services</Link> cover this end-to-end, alongside ITR filing and repatriation.</p>

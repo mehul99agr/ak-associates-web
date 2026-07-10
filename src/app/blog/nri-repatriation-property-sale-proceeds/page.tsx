@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: 'https://agrawalkhandelwal.com/blog/nri-repatriation-property-sale-proceeds',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme',
+    description: 'NRO account rules, Form 145/146 CA certification, and the USD 1 million scheme for repatriating Indian property sale proceeds.',
+  },
 }
 
 const articleLd = {
@@ -109,7 +114,7 @@ export default function NRIRepatriationBlog() {
                 <p>Form 145 is filed by the NRI on the Income Tax e-filing portal before the bank remittance is initiated. It declares the nature of the remittance and confirms the tax compliance position. This is a self-declaration step, filed directly by the NRI or their authorized representative.</p>
 
                 <h2>Step 4: Obtain Form 146 (Replaces Form 15CB)</h2>
-                <p>For remittances above ₹5 lakh, a practicing Chartered Accountant must issue Form 146 — a certificate confirming that applicable taxes have been paid or that TDS has been correctly deducted and deposited on the underlying transaction. The CA reviews the sale documentation, Form 16A, and the ITR or Form 13 certificate before issuing this.</p>
+                <p>For remittances above ₹5 lakh, a practicing Chartered Accountant must issue Form 146 — a certificate confirming that applicable taxes have been paid or that TDS has been correctly deducted and deposited on the underlying transaction. The CA reviews the sale documentation, Form 16A (now Form 131), and the ITR or Form 13 (now Form 128) certificate before issuing this.</p>
 
                 <h2>Step 5: Submit to the Authorised Dealer (AD) Bank</h2>
                 <p>The NRI (or their representative) submits the remittance request to the bank holding the NRO account, along with:</p>

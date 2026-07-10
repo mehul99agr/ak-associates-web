@@ -77,7 +77,7 @@ const faqLd = {
       name: 'Can an NRI sell property in India and send money abroad?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. The sale proceeds are subject to capital gains tax in India. The buyer is required to deduct TDS (typically 20–22.88% on long-term gains). After paying tax, the NRI can repatriate up to USD 1 million per financial year from the NRO account. Under the new Income Tax Act 2025, the foreign remittance process now uses Form 145 (replacing Form 15CA) and Form 146 (replacing Form 15CB), effective April 1, 2026.',
+        text: 'Yes. The sale proceeds are subject to capital gains tax in India. The buyer is required to deduct TDS at 12.5% on long-term gains (held over 2 years) or 30% on short-term gains, plus surcharge and 4% cess — effectively 13% to 17.81% for most long-term sales, depending on the sale value. After paying tax, the NRI can repatriate up to USD 1 million per financial year from the NRO account. Under the new Income Tax Act 2025, the foreign remittance process now uses Form 145 (replacing Form 15CA) and Form 146 (replacing Form 15CB), effective April 1, 2026.',
       },
     },
     {

@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     url: 'https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
+    description: 'Rate table, buyer TAN process, Form 27Q filing, Form 13 certificate, TDS refund claims, and repatriation rules for NRI property sales.',
+  },
 }
 
 const articleLd = {
@@ -57,7 +62,15 @@ const faqLd = {
       name: 'Does the buyer need TAN when buying from an NRI?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Unlike buying from a resident seller (Section 194-IA, where the buyer files Form 26QB using just a PAN), buying from an NRI falls under Section 195, which requires the buyer to obtain a Tax Deduction Account Number (TAN) before deducting any tax. Without a TAN, the buyer cannot deposit the TDS correctly or file the mandatory Form 27Q return. TAN is applied for on the Protean (NSDL) portal using Form 49B and is typically issued within 7 to 10 working days.',
+        text: 'Yes. Unlike buying from a resident seller (Section 194-IA, where the buyer files Form 26QB using just a PAN), buying from an NRI falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which requires the buyer to obtain a Tax Deduction Account Number (TAN) before deducting any tax. Without a TAN, the buyer cannot deposit the TDS correctly or file the mandatory Form 27Q (now Form 144) return. TAN is applied for on the Protean (NSDL) portal using Form 49B and is typically issued within 7 to 10 working days.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the TAN requirement being scrapped for NRI property sales in 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No — this is a common misreading of Budget 2026 circulating online. Budget 2026 does introduce a PAN-based mechanism (Form 141) that removes the TAN requirement for buyers purchasing property, but that change is explicitly restricted to resident sellers, effective October 1, 2026. Where the seller is an NRI, Form 141 does not apply. The buyer must still obtain a TAN and comply under Section 195 (now Section 393(2)), filing Form 27Q (now Form 144), with no confirmed end date for that requirement. Don\'t skip TAN registration for an NRI purchase based on "TAN scrapped" headlines.',
       },
     },
     {
@@ -65,7 +78,7 @@ const faqLd = {
       name: 'How can an NRI claim TDS refund on property sale?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'An NRI claims a TDS refund by filing an Indian income tax return (ITR-2 or ITR-3) for the financial year of sale, even if they have no other Indian income. The return reports the actual capital gain, claims credit for the TDS shown in Form 16A, and any excess is refunded to a bank account in India, usually the NRO account. Refunds also carry statutory interest under Section 244A for the period of delay. NRIs who expect a large gap between TDS deducted and actual liability can avoid the wait entirely by applying for a Form 13 lower deduction certificate before the sale closes.',
+        text: 'An NRI claims a TDS refund by filing an Indian income tax return (ITR-2 or ITR-3) for the financial year of sale, even if they have no other Indian income. The return reports the actual capital gain, claims credit for the TDS shown in Form 16A (now Form 131), and any excess is refunded to a bank account in India, usually the NRO account. Refunds also carry statutory interest under Section 244A for the period of delay. NRIs who expect a large gap between TDS deducted and actual liability can avoid the wait entirely by applying for a Form 13 (now Form 128) lower deduction certificate before the sale closes.',
       },
     },
     {
@@ -73,7 +86,7 @@ const faqLd = {
       name: 'Can an NRI get TDS deducted at a lower rate on property sale in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. An NRI seller can apply to the Assessing Officer for a Lower or Nil TDS Certificate under Section 197 using Form 13, before the sale is concluded. If granted, the buyer deducts at the AO-specified rate instead of the full statutory rate. This is valuable when the actual capital gain is much smaller than the gross sale consideration — for example, when the property has a high indexed cost. Form 13 typically takes 4 to 8 weeks to process, so NRIs should initiate it well before signing the sale agreement.',
+        text: 'Yes. An NRI seller can apply to the Assessing Officer for a Lower or Nil TDS Certificate under Section 197 (now Section 395) using Form 13 (now Form 128), before the sale is concluded. If granted, the buyer deducts at the AO-specified rate instead of the full statutory rate. This is valuable when the actual capital gain is much smaller than the gross sale consideration — for example, when the property has a high indexed cost. Form 13 typically takes 4 to 8 weeks to process, so NRIs should initiate it well before signing the sale agreement.',
       },
     },
     {
@@ -81,7 +94,7 @@ const faqLd = {
       name: 'What happens if the buyer fails to deduct TDS when buying property from an NRI?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The buyer becomes an assessee in default under Section 201 and is personally liable to pay the full TDS amount that should have been deducted, plus interest — 1% per month for the period of non-deduction and 1.5% per month for any period where TDS was deducted but not deposited. A penalty equal to the TDS amount can also be levied under Section 271C, and willful non-deposit can attract prosecution under Section 276B. The buyer\'s PAN can be flagged by the Income Tax department, which may affect future property registrations and bank approvals. The NRI seller\'s tax obligation is separate — non-deduction by the buyer does not eliminate the NRI\'s liability.',
+        text: 'The buyer becomes an assessee in default under Section 201 (now Section 398) and is personally liable to pay the full TDS amount that should have been deducted, plus interest — 1% per month for the period of non-deduction and 1.5% per month for any period where TDS was deducted but not deposited. A penalty equal to the TDS amount can also be levied under Section 271C, and willful non-deposit can attract prosecution under Section 276B. The buyer\'s PAN can be flagged by the Income Tax department, which may affect future property registrations and bank approvals. The NRI seller\'s tax obligation is separate — non-deduction by the buyer does not eliminate the NRI\'s liability.',
       },
     },
     {
@@ -126,8 +139,14 @@ export default function TDSNRIPropertyBlog() {
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <p>When an Indian resident buys property from a Non-Resident Indian, the obligation to deduct tax at source falls on the <strong>buyer</strong>, not the seller. Most buyers discover this only after the transaction — at which point they are already personally liable for the TDS that should have been deducted, plus interest and penalty. For the NRI seller, the same transaction usually means paying far more TDS upfront than the actual tax works out to. This guide covers both sides for FY 2026-27: the buyer&apos;s rates, TAN and filing obligations, and the NRI seller&apos;s options for cutting the TDS burden or claiming it back.</p>
 
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update</p>
+                  <p style={{ margin: 0, fontSize: '0.95rem' }}>The Income Tax Act 2025 (effective April 1, 2026) renumbers the provisions in this guide: Section 195 is now <strong>Section 393(2)</strong>, Form 13 is now <strong>Form 128</strong>, Form 27Q is now <strong>Form 144</strong>, Form 16A is now <strong>Form 131</strong>, and Section 197 is now <strong>Section 395</strong>. We use both names below since search volume is still on the old terms.</p>
+                  <p style={{ margin: '0.75rem 0 0' }}><strong>One correction worth flagging:</strong> several sources are reporting that Budget 2026 &quot;scraps the TAN requirement&quot; for NRI property sales from October 1, 2026. Based on our reading of the amendment, this is incorrect as applied to NRI sellers. The new PAN-based mechanism (Form 141) that removes the TAN requirement from October 1, 2026 is explicitly restricted to <strong>resident sellers</strong>. Where the seller is an NRI, Form 141 does not apply — the buyer continues to need a TAN and must file under Section 393(2)/Form 144, with no confirmed end date for that requirement. Don&apos;t skip TAN registration for an NRI purchase based on the &quot;TAN scrapped&quot; headlines circulating online.</p>
+                </div>
+
                 <h2>Why the Buyer Bears the TDS Obligation</h2>
-                <p>Section 195 of the Income Tax Act requires any person making a payment to a non-resident that constitutes income in the non-resident&apos;s hands to deduct tax at source before remitting the amount. Property sale proceeds are capital gains income for the NRI seller. The buyer is the payer — so the TDS obligation is entirely theirs, with no minimum threshold. This contrasts with Section 194-IA (resident seller), which applies only above ₹50 lakh. With an NRI seller, every rupee of consideration is subject to TDS deduction, regardless of the sale value.</p>
+                <p>Section 195 (now Section 393(2) under the Income Tax Act 2025) of the Income Tax Act requires any person making a payment to a non-resident that constitutes income in the non-resident&apos;s hands to deduct tax at source before remitting the amount. Property sale proceeds are capital gains income for the NRI seller. The buyer is the payer — so the TDS obligation is entirely theirs, with no minimum threshold. This contrasts with Section 194-IA (resident seller), which applies only above ₹50 lakh. With an NRI seller, every rupee of consideration is subject to TDS deduction, regardless of the sale value.</p>
 
                 <h2>TDS Rate Table for FY 2026-27</h2>
                 <p>TDS on an NRI&apos;s property sale is computed on the full sale consideration, using the base rate for the holding period plus surcharge (based on the consideration band) plus 4% cess:</p>
@@ -180,12 +199,12 @@ export default function TDSNRIPropertyBlog() {
                   <li><strong>Obtain a TAN:</strong> As above — required before any payment to the NRI seller.</li>
                   <li><strong>Calculate the TDS amount:</strong> Apply the correct rate from the table above to the full sale consideration. If the transaction involves multiple instalments, TDS must be deducted on each instalment at the time of payment.</li>
                   <li><strong>Deposit the TDS:</strong> Pay the deducted amount to the government via Challan ITNS-281 by the 7th of the month following deduction (by April 30 if deducted in March).</li>
-                  <li><strong>File Form 27Q:</strong> This is the quarterly TDS return for payments made to non-residents under Section 195. It is filed on the TRACES/e-filing portal by the standard quarterly due dates: 31 July (Q1: Apr-Jun), 31 October (Q2: Jul-Sep), 31 January (Q3: Oct-Dec), and 31 May (Q4: Jan-Mar). <strong>Form 26QB does not apply here</strong> — that form is exclusively for TDS under Section 194-IA on resident sellers above ₹50 lakh.</li>
-                  <li><strong>Issue Form 16A:</strong> Download Form 16A (the TDS certificate for non-salary deductions) from TRACES within 15 days of the Form 27Q due date, and provide it to the NRI seller. The NRI needs Form 16A, not Form 16B, to claim TDS credit in their Indian ITR.</li>
+                  <li><strong>File Form 27Q (now Form 144):</strong> This is the quarterly TDS return for payments made to non-residents under Section 195. It is filed on the TRACES/e-filing portal by the standard quarterly due dates: 31 July (Q1: Apr-Jun), 31 October (Q2: Jul-Sep), 31 January (Q3: Oct-Dec), and 31 May (Q4: Jan-Mar). <strong>Form 26QB does not apply here</strong> — that form is exclusively for TDS under Section 194-IA on resident sellers above ₹50 lakh.</li>
+                  <li><strong>Issue Form 16A (now Form 131):</strong> Download Form 16A from TRACES within 15 days of the Form 27Q due date, and provide it to the NRI seller. The NRI needs Form 16A, not Form 16B, to claim TDS credit in their Indian ITR.</li>
                 </ol>
 
-                <h2>Lower Deduction Certificate (Form 13): The NRI&apos;s Best Option</h2>
-                <p>Since TDS is computed on the full sale price and not the net gain, NRIs whose actual taxable gain is significantly smaller than the consideration often face substantial over-deduction. The remedy is to apply for a <strong>Lower or Nil TDS Certificate under Section 197</strong> using Form 13, before the sale is finalized.</p>
+                <h2>Lower Deduction Certificate (Form 13, now Form 128): The NRI&apos;s Best Option</h2>
+                <p>Since TDS is computed on the full sale price and not the net gain, NRIs whose actual taxable gain is significantly smaller than the consideration often face substantial over-deduction. The remedy is to apply for a <strong>Lower or Nil TDS Certificate under Section 197 (now Section 395)</strong> using Form 13 (now Form 128), before the sale is finalized.</p>
                 <p>Applications are filed online through the TRACES portal and are typically reviewed by the Assessing Officer in the <strong>International Taxation charge</strong> that holds jurisdiction over the NRI&apos;s PAN — not a local resident ward, which is a common source of confusion and misdirected paperwork. Documents generally required include:</p>
                 <ul>
                   <li>Computation of capital gains — cost of acquisition (indexed, if the pre-July 2024 option applies), cost of improvement, and expected tax payable</li>
@@ -236,7 +255,7 @@ export default function TDSNRIPropertyBlog() {
                 <h2>Penalties for Buyer Non-Compliance</h2>
                 <p>Buyers who get this wrong don&apos;t just risk a notice — the liability is personal and immediate:</p>
                 <ul>
-                  <li><strong>Assessee in default (Section 201):</strong> The buyer becomes personally liable for the full TDS amount that should have been deducted, regardless of whether the NRI seller has since paid tax independently.</li>
+                  <li><strong>Assessee in default (Section 201, now Section 398):</strong> The buyer becomes personally liable for the full TDS amount that should have been deducted, regardless of whether the NRI seller has since paid tax independently.</li>
                   <li><strong>Interest (Section 201(1A)):</strong> 1% per month for the period of non-deduction (from the date TDS was deductible to the date actually deducted), and 1.5% per month for any period where TDS was deducted but not deposited (from the date of deduction to the date of deposit).</li>
                   <li><strong>Penalty (Section 271C):</strong> Equal to the amount of tax not deducted or not deposited.</li>
                   <li><strong>Prosecution (Section 276B):</strong> Willful failure to deposit deducted TDS can attract rigorous imprisonment from 3 months to 7 years, plus a fine — rare in practice, but a real exposure for deliberate defaults.</li>

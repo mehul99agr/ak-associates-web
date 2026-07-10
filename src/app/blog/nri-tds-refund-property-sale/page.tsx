@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: 'https://agrawalkhandelwal.com/blog/nri-tds-refund-property-sale',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
+    description: 'Which ITR to file, documents needed, e-verification, and refund timelines for NRIs recovering excess TDS on a property sale.',
+  },
 }
 
 const articleLd = {
@@ -107,7 +112,7 @@ export default function NRITDSRefundBlog() {
 
                 <h2>Step 2: Gather the Right Documents</h2>
                 <ul>
-                  <li><strong>Form 16A</strong> from the buyer, showing the TDS deducted and deposited under Form 27Q</li>
+                  <li><strong>Form 16A</strong> (now Form 131) from the buyer, showing the TDS deducted and deposited under Form 27Q (now Form 144)</li>
                   <li>Sale deed and purchase deed (or cost of acquisition documentation for inherited/gifted property)</li>
                   <li>Computation of capital gains, including any cost of improvement</li>
                   <li>Bank statements for the NRO account where refunds will be credited</li>

@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: 'https://agrawalkhandelwal.com/blog/nri-capital-gains-inherited-gifted-property',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India',
+    description: 'Cost and holding period carryover rules, TDS implications, and Form 13 relevance for inherited or gifted property.',
+  },
 }
 
 const articleLd = {
@@ -112,7 +117,7 @@ export default function NRIInheritedGiftedPropertyBlog() {
                 <p>Any documented cost of improvement incurred by the original owner or subsequent inheritors — renovations, construction additions, structural improvements — can be added to the cost of acquisition when computing the final gain, provided it is properly documented with receipts or records. This often matters significantly for older ancestral properties that have been renovated over decades.</p>
 
                 <h2>TDS Still Applies in Full</h2>
-                <p>None of this changes the buyer&apos;s obligation. <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS under Section 195</Link> is still deducted on the full current sale consideration, regardless of how low the original cost of acquisition was. In fact, because inherited property often has a very low historical cost relative to today&apos;s sale value, the gap between TDS deducted and the NRI&apos;s actual tax liability tends to be even larger than on a directly purchased property — which is exactly the scenario a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> is designed for.</p>
+                <p>None of this changes the buyer&apos;s obligation. <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS under Section 195 (now Section 393(2) under the Income Tax Act 2025)</Link> is still deducted on the full current sale consideration, regardless of how low the original cost of acquisition was. In fact, because inherited property often has a very low historical cost relative to today&apos;s sale value, the gap between TDS deducted and the NRI&apos;s actual tax liability tends to be even larger than on a directly purchased property — which is exactly the scenario a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> is designed for.</p>
 
                 <h2>Documentation Challenges Are the Real Risk</h2>
                 <p>The practical difficulty with inherited property isn&apos;t the tax rule itself — it&apos;s proving the original cost of acquisition decades later. Common gaps include missing original purchase deeds, undocumented improvement costs, and unclear succession records where the property passed through multiple family members before reaching the NRI. Any Form 13 application or ITR computation is only as strong as this documentation, so it is worth assembling well before a sale is finalized, not during the transaction itself. Our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory team</Link> regularly helps NRIs reconstruct acquisition cost documentation for ancestral property.</p>
