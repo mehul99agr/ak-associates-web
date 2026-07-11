@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)',
+    slug: 'transfer-pricing-documentation-checklist-india',
+    date: 'July 11, 2026',
+    category: 'International Tax',
+    summary: 'Complete TP documentation checklist: Form 3CEB vs Local File vs Master File thresholds, due dates, benchmarking requirements, and the documentation gaps that trigger transfer pricing audits.',
+  },
+  {
     title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
     slug: 'tds-on-nri-property-sale-india',
     date: 'July 1, 2026',
