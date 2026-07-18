@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',
+    slug: 'gst-on-exports-zero-rated-vs-exempt-india',
+    date: 'July 18, 2026',
+    category: 'GST',
+    summary: 'The difference between zero-rated and exempt supplies, why it matters for ITC claims, how to file a Letter of Undertaking (LUT), and the five conditions for export of services under GST.',
+  },
+  {
     title: 'Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)',
     slug: 'transfer-pricing-documentation-checklist-india',
     date: 'July 11, 2026',
