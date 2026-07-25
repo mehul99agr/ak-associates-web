@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/sip-planner`, lastModified: new Date('2026-03-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/tools/incorporation-wizard`, lastModified: new Date('2026-05-08'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/tools/nri-property-tds`, lastModified: new Date('2026-07-11'), changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE_URL}/blog/dpiit-registration-startups-india-80iac`, lastModified: new Date('2026-07-25'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/gst-on-exports-zero-rated-vs-exempt-india`, lastModified: new Date('2026-07-18'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/transfer-pricing-documentation-checklist-india`, lastModified: new Date('2026-07-11'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/tds-on-nri-property-sale-india`, lastModified: new Date('2026-07-11'), changeFrequency: 'monthly', priority: 0.9 },

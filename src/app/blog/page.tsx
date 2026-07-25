@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)',
+    slug: 'dpiit-registration-startups-india-80iac',
+    date: 'July 25, 2026',
+    category: 'Startup Compliance',
+    summary: 'How to get DPIIT recognition, what eligibility criteria apply, the 80-IAC three-year tax holiday and why it requires a separate IMB application, and what changed on angel tax in Finance Act 2025.',
+  },
+  {
     title: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',
     slug: 'gst-on-exports-zero-rated-vs-exempt-india',
     date: 'July 18, 2026',
