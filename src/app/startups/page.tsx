@@ -50,6 +50,8 @@ const growthStageServices = [
     icon: 'analytics',
     title: 'Virtual CFO for Funded Startups',
     desc: 'Cash flow management, burn rate tracking, MIS reporting for investors, and board-level financial strategy. We become your fractional CFO without the ₹80L/year salary.',
+    link: '/blog/strategic-value-virtual-cfo-services',
+    linkText: 'Why SMEs need a Virtual CFO →',
   },
   {
     icon: 'handshake',
@@ -61,6 +63,7 @@ const growthStageServices = [
     title: 'FDI & FEMA Compliance',
     desc: 'Foreign investment in your startup triggers RBI reporting obligations - FCGPR, FCTRS, and LLP-I filings. One miss can invalidate the funding round. We make sure it doesn\'t.',
     link: '/blog/fema-compliance-foreign-investment-startups',
+    linkText: 'Read the FEMA compliance guide →',
   },
   {
     icon: 'chart',
@@ -267,7 +270,7 @@ export default function StartupsPage() {
                   <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={s.icon} size={36} /></div>
                   <h3 style={{ fontSize: '1.15rem', marginBottom: '0.875rem' }}>{s.title}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
-                  {'link' in s && <Link href={(s as any).link} style={{ display: 'inline-block', marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.88rem' }}>Read the FEMA compliance guide →</Link>}
+                  {'link' in s && <Link href={(s as any).link} style={{ display: 'inline-block', marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.88rem' }}>{(s as any).linkText}</Link>}
                 </div>
               ))}
             </div>

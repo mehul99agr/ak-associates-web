@@ -304,6 +304,13 @@ export default function CompanyIncorporationPage() {
                 </div>
               ))}
             </div>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', marginTop: '2rem', textAlign: 'center' }}>
+              Once incorporated, most funded and growth-stage companies also need ongoing financial leadership. See{' '}
+              <Link href="/blog/strategic-value-virtual-cfo-services" style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                why SMEs need a Virtual CFO
+              </Link>{' '}
+              before they can justify a full-time hire.
+            </p>
           </div>
         </section>
 
