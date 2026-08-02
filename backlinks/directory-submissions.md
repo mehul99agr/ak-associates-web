@@ -15,7 +15,7 @@
 - **URL:** https://www.caclubindia.com/profile/register.asp
 - **DA:** 70 | **Type:** Author profile + article byline links
 - **What to do:** Create a free member account, complete your profile, then submit the guest post in `guest-post-caclubindia-offshore-accounting.md`. Each published article gives a dofollow link in the author bio.
-- **Status:** [ ] Done
+- **Status:** [x] Done — article published Aug 2, 2026, but article bio itself has no link (stripped by editor). Backlink instead comes from the member profile page, which links to agrawalkhandelwal.com.
 
 ### 2. TaxGuru Author Profile + Article
 - **URL:** https://taxguru.in/submit-article/

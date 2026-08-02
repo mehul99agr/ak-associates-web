@@ -103,7 +103,7 @@ const nashikLocalBusiness = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '14',
+    reviewCount: '10',
     bestRating: '5',
     worstRating: '1',
   },

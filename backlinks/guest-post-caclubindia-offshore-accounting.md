@@ -1,4 +1,7 @@
 # GUEST POST — CAclubindia.com
+**Status:** PUBLISHED — Aug 2, 2026
+**Live URL:** https://www.caclubindia.com/articles/how-overseas-ca-firms-can-build-a-reliable-india-backoffice-a-practical-due-diligence-guide-55783.asp
+**Backlink note:** The article bio itself was published as plain text with no hyperlink (link stripped by CAclubindia). Instead, added the backlink via the author's CAclubindia member profile (https://www.caclubindia.com/profile.asp?member_id=4323716), which now links to https://agrawalkhandelwal.com. Confirmed live Aug 2, 2026.
 **Category:** Accounts / Others  
 **Submit at:** https://www.caclubindia.com/articles/submit-article.asp  
 **Author:** CA Mehul Agrawal, Partner, Agrawal Khandelwal & Associates LLP  
