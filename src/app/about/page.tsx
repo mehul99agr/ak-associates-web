@@ -24,10 +24,73 @@ const breadcrumbLd = {
   ],
 }
 
+const peopleLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
+      name: 'CA Mehul Agrawal',
+      jobTitle: 'Partner',
+      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
+      worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
+      url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
+      image: 'https://agrawalkhandelwal.com/mehul.jpg',
+      email: 'mehul@agrawalkhandelwal.com',
+      telephone: '+91-95275-33506',
+      sameAs: ['https://www.linkedin.com/in/mehulagrawal99/'],
+      knowsAbout: [
+        'International Taxation', 'Transfer Pricing', 'UAE Corporate Tax',
+        'DTAA', 'FEMA Compliance', 'Cross-border Structuring', 'M&A Advisory',
+      ],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)', identifier: '614225' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'UAE Corporate Taxation Certification' },
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+91-95275-33506',
+        email: 'mehul@agrawalkhandelwal.com',
+        contactType: 'customer service',
+        availableLanguage: ['English', 'Hindi', 'Marathi'],
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal',
+      name: 'CA Rupesh Khandelwal',
+      jobTitle: 'Partner',
+      description: 'Chartered Accountant specializing in domestic tax planning, statutory and internal audits, and business consulting, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
+      worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
+      url: 'https://agrawalkhandelwal.com/about#rupesh-khandelwal',
+      image: 'https://agrawalkhandelwal.com/rupesh.jpg',
+      email: 'rupesh@agrawalkhandelwal.com',
+      telephone: '+91-95955-85953',
+      sameAs: ['https://www.linkedin.com/in/rupeshkhandelwal/'],
+      alumniOf: { '@type': 'Organization', name: 'Deloitte' },
+      knowsAbout: [
+        'Domestic Tax Planning', 'Statutory Audit', 'Internal Audit',
+        'Tax Compliance', 'Business Consulting',
+      ],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)', identifier: '614213' },
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+91-95955-85953',
+        email: 'rupesh@agrawalkhandelwal.com',
+        contactType: 'customer service',
+        availableLanguage: ['English', 'Hindi', 'Marathi'],
+      },
+    },
+  ],
+}
+
 export default function About() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(peopleLd) }} />
 
       {/* HERO */}
       <section className="hero">

@@ -44,6 +44,25 @@ const articleLd = {
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide',
 }
 
+const faqs: [string, string][] = [
+  ['Can an Indian resident own 100% of a Dubai company?', 'Yes. Both mainland (for most activities) and all free zone entities allow 100% foreign ownership. The old requirement for a 51% UAE national sponsor was removed by the 2021 Commercial Companies Law amendment for most sectors.'],
+  ['How long does registration take?', 'Free zone registration typically takes 5-15 business days once all documents are in order. Add 15-20 days for apostilling Indian documents, and 4-8 weeks for bank account opening.'],
+  ['Do I need to be physically present in the UAE to register?', 'Not for most free zone registrations - the process can be handled remotely through a registered agent. However, most banks require an in-person visit for account opening.'],
+  ['Will I pay tax in both India and the UAE?', 'The India-UAE DTAA prevents double taxation on the same income. However, this requires a valid Tax Residency Certificate from the UAE, proper substance in the UAE entity, and arm\'s-length pricing on any India-UAE transactions. Simply forming a UAE company does not automatically eliminate Indian tax liability.'],
+  ['Is a physical office mandatory?', 'Most free zones allow a flexi-desk or virtual office arrangement, which satisfies the licensing requirement at a lower cost than dedicated office space. However, for UAE Corporate Tax purposes, demonstrating genuine substance may require more than a flexi-desk if your entity is in a regulated sector.'],
+  ['What is the minimum share capital required?', 'Most free zones have no minimum share capital requirement, or a nominal minimum (AED 1,000-50,000). Mainland companies have activity-specific requirements but most service and trading companies have no substantial capital requirement.'],
+]
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 const tableStyle: React.CSSProperties = {
   width: '100%',
   borderCollapse: 'collapse',
@@ -72,6 +91,7 @@ export default function DubaiCompanyRegistrationBlog() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '140px' }}>
         <div className="container">
           <Link href="/blog" style={{ color: 'var(--accent)', fontWeight: 700, display: 'inline-block', marginBottom: '2rem' }}>
@@ -335,14 +355,7 @@ export default function DubaiCompanyRegistrationBlog() {
 
               <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.6rem' }}>Frequently Asked Questions</h2>
 
-              {[
-                ['Can an Indian resident own 100% of a Dubai company?', 'Yes. Both mainland (for most activities) and all free zone entities allow 100% foreign ownership. The old requirement for a 51% UAE national sponsor was removed by the 2021 Commercial Companies Law amendment for most sectors.'],
-                ['How long does registration take?', 'Free zone registration typically takes 5-15 business days once all documents are in order. Add 15-20 days for apostilling Indian documents, and 4-8 weeks for bank account opening.'],
-                ['Do I need to be physically present in the UAE to register?', 'Not for most free zone registrations - the process can be handled remotely through a registered agent. However, most banks require an in-person visit for account opening.'],
-                ['Will I pay tax in both India and the UAE?', 'The India-UAE DTAA prevents double taxation on the same income. However, this requires a valid Tax Residency Certificate from the UAE, proper substance in the UAE entity, and arm\'s-length pricing on any India-UAE transactions. Simply forming a UAE company does not automatically eliminate Indian tax liability.'],
-                ['Is a physical office mandatory?', 'Most free zones allow a flexi-desk or virtual office arrangement, which satisfies the licensing requirement at a lower cost than dedicated office space. However, for UAE Corporate Tax purposes, demonstrating genuine substance may require more than a flexi-desk if your entity is in a regulated sector.'],
-                ['What is the minimum share capital required?', 'Most free zones have no minimum share capital requirement, or a nominal minimum (AED 1,000-50,000). Mainland companies have activity-specific requirements but most service and trading companies have no substantial capital requirement.'],
-              ].map(([q, a], i) => (
+              {faqs.map(([q, a], i) => (
                 <div key={i} style={{ marginBottom: '1.5rem', paddingBottom: '1.5rem', borderBottom: '1px solid var(--border)' }}>
                   <h3 style={{ color: 'var(--primary)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>{q}</h3>
                   <p style={{ color: 'var(--text-main)' }}>{a}</p>

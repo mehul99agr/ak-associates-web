@@ -20,6 +20,34 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'RNOR Status for Returning NRIs: How Long Does the Tax Holiday Last?',
+    slug: 'rnor-status-tax-guide-returning-nris',
+    date: 'August 8, 2026',
+    category: 'NRI Taxation',
+    summary: 'The two RNOR tests, how many tax-free years returning NRIs actually get, what foreign income stays exempt, and the planning checklist before RNOR status ends.',
+  },
+  {
+    title: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?',
+    slug: 'poem-place-of-effective-management-india',
+    date: 'August 8, 2026',
+    category: 'International Tax',
+    summary: 'Place of Effective Management explained: the ABOI test, the Rs 50 crore exemption, and how Indian promoters accidentally trigger Indian residency for a UAE entity.',
+  },
+  {
+    title: 'NRE vs NRO Account: FEMA Repatriation Limits Explained',
+    slug: 'nre-vs-nro-account-fema-repatriation-limits',
+    date: 'August 8, 2026',
+    category: 'NRI Taxation',
+    summary: 'Which income goes into which account, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that get NRI remittances frozen.',
+  },
+  {
+    title: 'ESOP Taxation for NRIs: Exercise, Sale & DTAA Relief',
+    slug: 'esop-taxation-for-nris-india',
+    date: 'August 8, 2026',
+    category: 'NRI Taxation',
+    summary: 'Perquisite tax at exercise, capital gains at sale, the startup TDS deferral, and how to avoid double taxation on ESOPs under DTAA.',
+  },
+  {
     title: 'DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)',
     slug: 'dpiit-registration-startups-india-80iac',
     date: 'July 25, 2026',

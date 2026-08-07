@@ -49,6 +49,10 @@ src/app/
   blog/new-income-tax-act-rules-2025/page.tsx
   blog/uae-corporate-tax-indian-impact/page.tsx
   blog/uae-entity-setup-when-it-makes-sense/page.tsx
+  blog/rnor-status-tax-guide-returning-nris/page.tsx
+  blog/poem-place-of-effective-management-india/page.tsx
+  blog/nre-vs-nro-account-fema-repatriation-limits/page.tsx
+  blog/esop-taxation-for-nris-india/page.tsx
   tools/page.tsx                    # Tools hub
   tools/capital-gains/page.tsx
   tools/sip-planner/page.tsx
@@ -152,6 +156,29 @@ the GEO-specific levers are entity consistency, machine-readable facts, authorit
   ratingValue 5.0, reviewCount 13 (GBP has 13+ reviews as of Jul 2026 — update this
   number periodically as more reviews come in, all 3 files must stay in sync).
 
+**Done (Aug 8, 2026 — schema audit + Knowledge Hub):**
+- Ran a full site-wide JSON-LD audit: FAQPage/Person/AccountingService schema was already far
+  more complete than this file's "Done" list suggested (nearly every service page and most
+  blog posts already had Article/FAQPage/Person schema from earlier sessions). Only two real
+  gaps existed and were fixed:
+  - `/about` had zero Person schema despite being the richest bio content on the site
+    (ICAI numbers, specializations, credentials) — only a BreadcrumbList. Added the same
+    `peopleLd` `@graph` used on the homepage, reusing the identical `@id`s
+    (`#mehul-agrawal` / `#rupesh-khandelwal`) so Google merges it into one entity.
+  - `blog/dubai-company-registration-guide` had a visible 6-question FAQ section with no
+    FAQPage schema at all. Extracted the Q&A into a shared `faqs` array so the visible
+    render and the schema can't drift apart, then added the FAQPage script tag.
+- Published 4 new "direct answer" Knowledge Hub guides (Article + FAQPage schema, TL;DR
+  callout box at the top of each, following the tds-on-nri-property-sale-india template):
+  `rnor-status-tax-guide-returning-nris`, `poem-place-of-effective-management-india`,
+  `nre-vs-nro-account-fema-repatriation-limits`, `esop-taxation-for-nris-india`. Wired into
+  `blog/page.tsx` posts array and `sitemap.ts`. Build verified clean (48/48 static pages).
+- Did NOT retrofit TL;DR/FAQ onto the older posts still missing them (uae-corporate-tax-
+  indian-impact, uae-entity-setup-when-it-makes-sense, new-income-tax-act-rules-2025, and
+  the 4 posts inside blog/[slug]) — fabricating FAQ content without real Q&A backing it
+  risks the same "Invalid" Search Console flag noted below. Treat as a real next-content
+  task, not a schema task: write genuine FAQ content for those posts, then add schema.
+
 **Pending GEO:**
 - Add IndiaMart PUBLIC seller page to `sameAs` (need the public URL; only have dashboard).
 
@@ -189,9 +216,10 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
    profiles linked, keep posting on LinkedIn.
 2. Add more blog posts targeting low-competition keywords, following the winning
    pattern proven by tds-on-nri-property-sale-india (narrow + numeric + year-anchored
-   + FAQPage schema): an NRI-cluster follow-up (seller-side capital gains guide, Form 13
-   deep-dive) is the highest-value next post, ahead of the generic queue
-   (dpiit/gst-exports/tp-checklist already scheduled Jul 11/18/25).
+   + FAQPage schema). Aug 8, 2026: shipped 4 such posts (RNOR, POEM, NRE vs NRO, ESOP
+   for NRIs). Next candidates: retrofit TL;DR + real FAQ content onto the older posts
+   that still lack it (see GEO section above), or extend the NRI/FEMA cluster further
+   (e.g. RNOR + foreign retirement account taxability, NRI GAAR exposure).
 3. Add IndiaMart PUBLIC seller URL to org `sameAs` (need the public page from the user)
 4. `/offshore-accounting` has been flat at ~pos 28 since Jun 4 despite the content
    rewrite — more on-page content isn't moving it; treat as an authority/backlink
