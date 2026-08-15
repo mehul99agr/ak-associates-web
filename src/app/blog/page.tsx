@@ -48,6 +48,27 @@ const posts = [
     summary: 'The 4 parts of Form 15CA, when CA certificate (15CB) is needed, step-by-step filing, and what happens if you skip it.',
   },
   {
+    title: 'NRI Returning to India: Complete Financial Checklist (2026)',
+    slug: 'nri-returning-india-financial-checklist',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'Bank account conversion, RNOR planning, investment restructuring, insurance, and FEMA steps for NRIs moving back to India.',
+  },
+  {
+    title: 'NRI Residential Status: How the 182-Day and 120-Day Rules Work',
+    slug: 'nri-residential-status-182-day-rule',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'How to determine if you are NRI, RNOR, or Resident: the 182-day rule, the 120-day deemed resident rule, and what each status means for your taxes.',
+  },
+  {
+    title: 'Foreign Retirement Fund Taxation: 401(k), UK Pension & Superannuation',
+    slug: 'foreign-retirement-fund-taxation-nri',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'How India taxes US 401(k), UK pension, and Australian super withdrawals. RNOR window strategy, DTAA relief, and timing decisions.',
+  },
+  {
     title: 'RNOR Status for Returning NRIs: How Long Does the Tax Holiday Last?',
     slug: 'rnor-status-tax-guide-returning-nris',
     date: 'August 8, 2026',

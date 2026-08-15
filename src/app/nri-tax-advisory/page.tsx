@@ -154,6 +154,9 @@ const relatedReading = [
   { title: '26QB vs 27Q: Which TDS Form for NRI Property?', link: '/blog/26qb-vs-27q-nri-property-tds' },
   { title: 'NRO Account Repatriation: Rules, Limits & Process', link: '/blog/nro-account-repatriation-rules-process' },
   { title: 'Form 15CA & 15CB (145/146): Remittance Compliance', link: '/blog/form-15ca-15cb-nri-remittance-guide' },
+  { title: 'NRI Returning to India: Financial Checklist', link: '/blog/nri-returning-india-financial-checklist' },
+  { title: 'NRI Residential Status: 182-Day Rule Explained', link: '/blog/nri-residential-status-182-day-rule' },
+  { title: 'Foreign Retirement Fund Taxation: 401(k), Pension & Super', link: '/blog/foreign-retirement-fund-taxation-nri' },
 ]
 
 export default function NRITaxAdvisory() {
