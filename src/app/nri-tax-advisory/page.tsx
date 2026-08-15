@@ -150,6 +150,10 @@ const relatedReading = [
   { title: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?', link: '/blog/poem-place-of-effective-management-india' },
   { title: 'FEMA Compliance When Raising Foreign Funding: Startup Checklist', link: '/blog/fema-compliance-foreign-investment-startups' },
   { title: 'Dubai Company Registration Guide for Indian Entrepreneurs', link: '/blog/dubai-company-registration-guide' },
+  { title: 'Section 195 TDS on Payments to NRIs: Complete Guide', link: '/blog/section-195-tds-nri-payments-guide' },
+  { title: '26QB vs 27Q: Which TDS Form for NRI Property?', link: '/blog/26qb-vs-27q-nri-property-tds' },
+  { title: 'NRO Account Repatriation: Rules, Limits & Process', link: '/blog/nro-account-repatriation-rules-process' },
+  { title: 'Form 15CA & 15CB (145/146): Remittance Compliance', link: '/blog/form-15ca-15cb-nri-remittance-guide' },
 ]
 
 export default function NRITaxAdvisory() {

@@ -20,6 +20,34 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Section 195 TDS on Payments to NRIs: Complete Guide (FY 2026-27)',
+    slug: 'section-195-tds-nri-payments-guide',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'When and how to deduct TDS under Section 195 on payments to NRIs: property sale, rent, professional fees, interest. Rate table, TAN requirement, Form 27Q filing, and penalties.',
+  },
+  {
+    title: '26QB vs 27Q: Which TDS Form When Buying Property from an NRI?',
+    slug: '26qb-vs-27q-nri-property-tds',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'Form 26QB is for resident sellers, Form 27Q is for NRI sellers. Side-by-side comparison: rates, TAN, filing process, and the penalty for using the wrong form.',
+  },
+  {
+    title: 'NRO Account Repatriation: Rules, USD 1 Million Limit & Step-by-Step Process',
+    slug: 'nro-account-repatriation-rules-process',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'How to repatriate from an NRO account: USD 1 million annual limit, Form 145/146 process, documents needed, and common bank rejections.',
+  },
+  {
+    title: 'Form 15CA & 15CB (Now 145 & 146): NRI Remittance Compliance Guide',
+    slug: 'form-15ca-15cb-nri-remittance-guide',
+    date: 'August 16, 2026',
+    category: 'NRI Taxation',
+    summary: 'The 4 parts of Form 15CA, when CA certificate (15CB) is needed, step-by-step filing, and what happens if you skip it.',
+  },
+  {
     title: 'RNOR Status for Returning NRIs: How Long Does the Tax Holiday Last?',
     slug: 'rnor-status-tax-guide-returning-nris',
     date: 'August 8, 2026',
