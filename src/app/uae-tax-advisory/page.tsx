@@ -293,6 +293,14 @@ export default function UAETaxAdvisory() {
                   NRI Tax Advisory
                 </Link>
               </div>
+              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+                <Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', textDecoration: 'underline' }}>
+                  POEM: When a UAE company becomes an Indian tax resident
+                </Link>
+                <Link href="/blog/dubai-company-registration-guide" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', textDecoration: 'underline' }}>
+                  Dubai company registration guide
+                </Link>
+              </div>
             </div>
           </div>
         </section>

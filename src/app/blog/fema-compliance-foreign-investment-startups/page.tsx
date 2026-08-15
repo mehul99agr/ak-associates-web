@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)',
-  description: 'FEMA compliance for Indian startups receiving foreign funding: FDI routes, 30-day RBI reporting, FC-GPR filing, FLA annual return, and common mistakes.',
+  title: 'FEMA Compliance When Raising Foreign Funding: Startup Founder Checklist (2026)',
+  description: 'Miss the 30-day RBI reporting window and face 3x penalties. Complete FEMA checklist for Indian startups raising foreign capital: FDI route, FC-GPR filing, FLA return, and the 5 mistakes that trigger RBI notices.',
   keywords: [
     'FEMA compliance startups India',
     'foreign investment compliance India startup',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups' },
   openGraph: {
-    title: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)',
-    description: 'Practical guide covering FDI routes, the 30-day RBI reporting window, FC-GPR filing, annual FLA return, and the most common FEMA penalties startups walk into.',
+    title: 'FEMA Compliance When Raising Foreign Funding: Startup Founder Checklist (2026)',
+    description: 'Complete FEMA checklist for Indian startups raising foreign capital: FDI route, FC-GPR filing, FLA return, and the 5 mistakes that trigger RBI notices.',
     url: 'https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups',
     type: 'article',
   },

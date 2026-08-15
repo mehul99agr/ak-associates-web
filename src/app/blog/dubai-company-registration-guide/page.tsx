@@ -348,7 +348,7 @@ export default function DubaiCompanyRegistrationBlog() {
                 <li style={{ marginBottom: '0.75rem' }}>Remitting money to the UAE before filing Form ODI with their Indian bank - a direct FEMA violation.</li>
                 <li style={{ marginBottom: '0.75rem' }}>Choosing a free zone based on cost alone without checking whether their specific activity qualifies for 0% UAE Corporate Tax treatment.</li>
                 <li style={{ marginBottom: '0.75rem' }}>Not maintaining proper books and audited accounts - critical for both UAE Corporate Tax compliance and for India&apos;s DTAA benefit claims.</li>
-                <li style={{ marginBottom: '0.75rem' }}>Routing Indian-source revenue through the UAE entity without genuine substance - triggers India&apos;s POEM (Place of Effective Management) and GAAR provisions.</li>
+                <li style={{ marginBottom: '0.75rem' }}>Routing Indian-source revenue through the UAE entity without genuine substance - triggers India&apos;s <Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>POEM (Place of Effective Management)</Link> and GAAR provisions.</li>
                 <li style={{ marginBottom: '0.75rem' }}>Missing the UAE Corporate Tax registration deadline - penalties start at AED 10,000.</li>
                 <li style={{ marginBottom: '0.75rem' }}>Opening a UAE bank account in the company name but operating it like a personal account - creates AML red flags and risks account freezing.</li>
               </ul>

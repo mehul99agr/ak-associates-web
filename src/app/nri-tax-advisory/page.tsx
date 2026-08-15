@@ -139,11 +139,17 @@ const deadlines = [
 const relatedReading = [
   { title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide', link: '/blog/tds-on-nri-property-sale-india' },
   { title: 'NRI Property TDS Calculator', link: '/tools/nri-property-tds' },
-  { title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline', link: '/blog/form-13-lower-deduction-certificate-nri' },
+  { title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate', link: '/blog/form-13-lower-deduction-certificate-nri' },
   { title: 'How NRIs Can Claim a TDS Refund on Property Sale in India', link: '/blog/nri-tds-refund-property-sale' },
   { title: 'TAN Application Guide for Buyers Purchasing Property from an NRI', link: '/blog/tan-application-guide-buyer-nri-property' },
   { title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme', link: '/blog/nri-repatriation-property-sale-proceeds' },
   { title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India', link: '/blog/nri-capital-gains-inherited-gifted-property' },
+  { title: 'RNOR Status for Returning NRIs: How Long Is the Tax Holiday?', link: '/blog/rnor-status-tax-guide-returning-nris' },
+  { title: 'NRE vs NRO Account: FEMA Repatriation Limits Explained', link: '/blog/nre-vs-nro-account-fema-repatriation-limits' },
+  { title: 'ESOP Taxation for NRIs: Exercise, Sale & DTAA Relief', link: '/blog/esop-taxation-for-nris-india' },
+  { title: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?', link: '/blog/poem-place-of-effective-management-india' },
+  { title: 'FEMA Compliance When Raising Foreign Funding: Startup Checklist', link: '/blog/fema-compliance-foreign-investment-startups' },
+  { title: 'Dubai Company Registration Guide for Indian Entrepreneurs', link: '/blog/dubai-company-registration-guide' },
 ]
 
 export default function NRITaxAdvisory() {

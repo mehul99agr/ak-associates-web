@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline',
-  description: 'How NRIs apply for a Form 13 lower or nil TDS deduction certificate under Section 197 before a property sale — documents required, jurisdictional AO, and processing timeline for FY 2026-27.',
+  title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate (FY 2026-27)',
+  description: 'Apply for Form 13 (now Form 128) to cut TDS from 30% to your actual tax rate before selling property as an NRI. Step-by-step TRACES process, documents, AO jurisdiction, and 4-8 week timeline.',
   keywords: [
     'form 13 NRI', 'lower deduction certificate NRI property', 'section 197 NRI',
     'form 13 income tax NRI', 'NRI TDS certificate property sale', 'form 13 documents required',
@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri' },
   openGraph: {
-    title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline',
-    description: 'Step-by-step Form 13 application process for NRIs seeking a lower or nil TDS certificate on property sale under Section 197.',
+    title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate (FY 2026-27)',
+    description: 'Apply for Form 13 (now Form 128) to cut TDS from 30% to your actual tax rate before selling property as an NRI. Step-by-step TRACES process, documents, and timeline.',
     url: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline',
-    description: 'Step-by-step Form 13 application process for NRIs seeking a lower or nil TDS certificate on property sale.',
+    title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate (FY 2026-27)',
+    description: 'Cut TDS from 30% to actual tax rate before selling property as an NRI. TRACES process, documents, and timeline.',
   },
 }
 
