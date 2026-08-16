@@ -29,8 +29,8 @@ const articleLd = {
   '@type': 'Article',
   headline: 'Section 195 TDS on Payments to NRIs: Complete Guide (FY 2026-27)',
   description: 'When and how to deduct TDS under Section 195 on payments to NRIs: property sale, rent, professional fees, interest. Rate table, TAN requirement, Form 27Q filing, and penalties.',
-  datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  datePublished: '2026-06-12',
+  dateModified: '2026-06-12',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -106,7 +106,7 @@ export default function Section195Blog() {
                 Section 195 TDS on Payments to NRIs: Everything the Payer Needs to Know
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span>
+                <span>Published June 12, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

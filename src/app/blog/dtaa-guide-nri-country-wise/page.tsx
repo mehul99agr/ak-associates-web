@@ -28,7 +28,7 @@ const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore',
   description: 'DTAA treaty rates for NRIs by country and how to claim benefits.',
-  datePublished: '2026-08-16', dateModified: '2026-08-16',
+  datePublished: '2026-08-11', dateModified: '2026-08-11',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
   publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dtaa-guide-nri-country-wise',
@@ -62,7 +62,7 @@ export default function DTAAGuideBlog() {
               <span className="section-badge">International Tax</span>
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>India DTAA Guide for NRIs: Treaty Rates by Country and How to Claim Them</h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+                <span>Published August 11, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

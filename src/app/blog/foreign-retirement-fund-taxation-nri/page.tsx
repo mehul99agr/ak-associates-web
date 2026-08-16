@@ -29,8 +29,8 @@ const articleLd = {
   '@type': 'Article',
   headline: 'Foreign Retirement Fund Taxation for NRIs: 401(k), UK Pension & Superannuation (2026)',
   description: 'How India taxes US 401(k), UK pension, and Australian superannuation withdrawals for returning NRIs.',
-  datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  datePublished: '2026-08-06',
+  dateModified: '2026-08-06',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -97,7 +97,7 @@ export default function ForeignRetirementFundBlog() {
                 Foreign Retirement Fund Taxation: What Returning NRIs Need to Know About 401(k), Pension, and Superannuation
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span>
+                <span>Published August 6, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

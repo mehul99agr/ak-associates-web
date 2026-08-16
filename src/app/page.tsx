@@ -218,7 +218,7 @@ export default function Home() {
       {/* ===== TEAM ===== */}
       <section className="section bg-surface" id="about">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="section-badge">Meet Our Team</span>
             <h2 className="section-title">Leading Professionals</h2>
             <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', fontSize: '1.05rem' }}>
@@ -261,11 +261,13 @@ export default function Home() {
                 Rupesh brings valuable insights from leading firms, including Deloitte. His expertise spans Automobiles, IT, and Pharma. He has a strong track record in tax planning, regulatory compliance, and representing clients before tax authorities.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
-                <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations</strong>
+                <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations & Experience</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.75rem', fontSize: '0.87rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                   <li style={{ color: 'var(--text-light)' }}>✓ Domestic Tax Planning</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Statutory & Internal Audits</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Business Consulting</li>
+                  <li style={{ color: 'var(--accent)', fontWeight: 700 }}>🏆 Ex-Deloitte</li>
+                  <li style={{ color: 'var(--accent)', fontWeight: 700 }}>🏆 GST & Regulatory Compliance</li>
                 </ul>
               </div>
             </div>
@@ -276,7 +278,7 @@ export default function Home() {
       {/* ===== SERVICES ===== */}
       <section className="section" id="services">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="section-badge">Our Expertise</span>
             <h2 className="section-title">Comprehensive Services</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
@@ -310,7 +312,7 @@ export default function Home() {
       {/* ===== SUCCESS STORIES ===== */}
       <section className="section bg-surface" id="testimonials">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="section-badge">Proven Results</span>
             <h2 className="section-title">Success Stories & Impact</h2>
           </div>
@@ -407,7 +409,7 @@ export default function Home() {
       {/* ===== CONTACT ===== */}
       <section className="section" id="contact">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="section-badge">Get In Touch</span>
             <h2 className="section-title">Ready to Optimize Your Finances?</h2>
             <p style={{ maxWidth: '680px', margin: '0 auto', color: 'var(--text-light)' }}>

@@ -29,8 +29,8 @@ const articleLd = {
   '@type': 'Article',
   headline: 'NRI Residential Status: How the 182-Day and 120-Day Rules Work (FY 2026-27)',
   description: 'How to determine NRI, RNOR, or Resident status under Section 6: the 182-day rule, 120-day deemed resident rule, day counting, and tax implications.',
-  datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  datePublished: '2026-05-15',
+  dateModified: '2026-05-15',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -102,7 +102,7 @@ export default function NRIResidentialStatusBlog() {
                 NRI Residential Status: How the 182-Day and 120-Day Rules Actually Work
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span>
+                <span>Published May 15, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

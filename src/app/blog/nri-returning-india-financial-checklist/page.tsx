@@ -29,8 +29,8 @@ const articleLd = {
   '@type': 'Article',
   headline: 'NRI Returning to India: Complete Financial Checklist (2026)',
   description: 'Bank account conversion, RNOR tax planning, investment restructuring, insurance, and FEMA compliance steps for NRIs moving back to India.',
-  datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  datePublished: '2026-08-01',
+  dateModified: '2026-08-01',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -97,7 +97,7 @@ export default function NRIReturningIndiaChecklist() {
                 NRI Returning to India: The Financial Checklist Nobody Gives You
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span>
+                <span>Published August 1, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

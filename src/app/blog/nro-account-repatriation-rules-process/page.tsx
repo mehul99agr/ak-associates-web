@@ -30,8 +30,8 @@ const articleLd = {
   '@type': 'Article',
   headline: 'NRO Account Repatriation: Rules, USD 1 Million Limit & Step-by-Step Process (2026)',
   description: 'How to repatriate money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents required, TDS clearance, and common bank rejections.',
-  datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  datePublished: '2026-07-04',
+  dateModified: '2026-07-04',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -102,7 +102,7 @@ export default function NRORepatriationBlog() {
                 NRO Account Repatriation: Rules, Limits, and the Step-by-Step Process
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span>
+                <span>Published July 4, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

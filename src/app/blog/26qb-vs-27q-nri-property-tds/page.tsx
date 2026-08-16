@@ -28,8 +28,8 @@ const articleLd = {
   '@type': 'Article',
   headline: '26QB vs 27Q: Which TDS Form When Buying Property from an NRI?',
   description: 'Form 26QB is for resident sellers, Form 27Q is for NRI sellers. Side-by-side comparison: when each applies, TDS rates, TAN requirement, filing process, and the penalty for using the wrong form.',
-  datePublished: '2026-08-16',
-  dateModified: '2026-08-16',
+  datePublished: '2026-06-05',
+  dateModified: '2026-06-05',
   author: {
     '@type': 'Person',
     '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
@@ -97,7 +97,7 @@ export default function Form26QBvs27QBlog() {
                 26QB vs 27Q: Which TDS Form When Buying Property from an NRI?
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 16, 2026</span>
+                <span>Published June 5, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

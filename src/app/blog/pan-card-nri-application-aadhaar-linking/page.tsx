@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: { title: 'PAN Card for NRIs: Application & Aadhaar Linking', description: 'How to apply from abroad, Aadhaar exemption, and when PAN is required.', url: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'PAN Card for NRIs: Application, Aadhaar Linking & Exemptions (2026)', description: 'PAN application, Aadhaar linking, and requirements for NRIs.', datePublished: '2026-08-16', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'PAN Card for NRIs: Application, Aadhaar Linking & Exemptions (2026)', description: 'PAN application, Aadhaar linking, and requirements for NRIs.', datePublished: '2026-04-18', dateModified: '2026-04-18', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' }
 
 const faqs: [string, string][] = [
   ['How can an NRI apply for a PAN card from abroad?', 'NRIs can apply online through the Protean (NSDL) portal using Form 49A (for Indian citizens, including NRIs) or Form 49AA (for foreign citizens). The application requires passport copy, overseas address proof, and a photograph. Documents must be self-attested and, for applications from abroad, attested by the Indian Embassy/Consulate or an apostille. PAN is typically issued within 15-20 working days and can be sent to a foreign address.'],
@@ -33,7 +33,7 @@ export default function PANCardNRIBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>PAN Card for NRIs: How to Apply, Aadhaar Linking, and When You Need It</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published April 18, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
