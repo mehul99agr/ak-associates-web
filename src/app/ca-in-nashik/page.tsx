@@ -410,7 +410,7 @@ export default function CAInNashik() {
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919527533506" className="btn btn-primary">Call Now: +91 95275 33506</a>
-            <Link href="/services" className="btn btn-secondary">View All Services</Link>
+            <Link href="/services" className="btn btn-outline">View All Services</Link>
           </div>
         </div>
       </section>

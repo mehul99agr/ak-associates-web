@@ -344,7 +344,7 @@ export default function CAInSillod() {
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919595585953" className="btn btn-primary">Call Now: +91 95955 85953</a>
-            <Link href="/services" className="btn btn-secondary">View All Services</Link>
+            <Link href="/services" className="btn btn-outline">View All Services</Link>
           </div>
         </div>
       </section>

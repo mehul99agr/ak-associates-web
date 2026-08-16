@@ -190,7 +190,7 @@ export default function NRITaxAdvisory() {
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                 Book an NRI Tax Call
               </a>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                 Message Us on WhatsApp
               </a>
             </div>
