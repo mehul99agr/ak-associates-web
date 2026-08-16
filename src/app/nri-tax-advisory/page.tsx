@@ -161,6 +161,12 @@ const relatedReading = [
   { title: 'NRI Rental Income Tax: TDS, Deductions & Filing', link: '/blog/nri-rental-income-tax-india' },
   { title: 'NRI ITR Filing Guide from Abroad', link: '/blog/nri-itr-filing-guide-from-abroad' },
   { title: 'India DTAA Guide for NRIs by Country', link: '/blog/dtaa-guide-nri-country-wise' },
+  { title: 'TDS on NRO Interest & FD: DTAA Relief', link: '/blog/tds-nro-interest-fd-dtaa-relief' },
+  { title: 'NRI Gift & Inheritance Tax Rules', link: '/blog/nri-gift-inheritance-tax-rules' },
+  { title: 'Schedule FA: Foreign Asset Disclosure', link: '/blog/schedule-fa-foreign-asset-disclosure-nri' },
+  { title: 'PAN Card for NRIs: Application & Aadhaar', link: '/blog/pan-card-nri-application-aadhaar-linking' },
+  { title: 'NRI Tax Compliance Calendar (FY 2026-27)', link: '/blog/nri-tax-compliance-calendar-deadlines' },
+  { title: 'LRS: USD 250K Limit & TCS Guide', link: '/blog/lrs-liberalised-remittance-scheme-guide' },
 ]
 
 export default function NRITaxAdvisory() {
