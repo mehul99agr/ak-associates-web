@@ -57,7 +57,7 @@ export default function TDSNROInterestBlog() {
               <p>This is probably the easiest tax saving available to NRIs, and most people do not claim it. Your bank deducts 30% TDS on every rupee of NRO interest because that is the default domestic rate. But if you live in a country with a DTAA with India (which covers over 90 countries), the treaty rate on interest is typically 10-15%. The difference on a Rs 50 lakh NRO FD earning 7% is roughly Rs 52,500 per year - recovered with one TRC and one Form 10F submission.</p>
 
               <h2>NRO Interest: The Default 30% Problem</h2>
-              <p>Under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195</Link>, banks deduct TDS on NRO interest at 30% (plus surcharge and cess, effective ~31.2%). This applies to:</p>
+              <p>Under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195 under the 1961 Act), banks deduct TDS on NRO interest at 30% (plus surcharge and cess, effective ~31.2%). This applies to:</p>
               <ul>
                 <li>NRO savings account interest</li>
                 <li>NRO fixed deposit interest</li>

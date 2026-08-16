@@ -92,7 +92,7 @@ export default function NRIITRFilingBlog() {
 
                 <h2>Documents You Need</h2>
                 <ul>
-                  <li><strong>Form 16A (now Form 131):</strong> TDS certificates from buyers (property), tenants (rent), AMCs (mutual funds), and banks (NRO interest). Download from TRACES if not received.</li>
+                  <li><strong>Form 131 (earlier Form 16A):</strong> TDS certificates from buyers (property), tenants (rent), AMCs (mutual funds), and banks (NRO interest). Download from TRACES if not received.</li>
                   <li><strong>Form 26AS / Annual Information Statement (AIS):</strong> Cross-check all TDS credits on the Income Tax portal. Every TDS deduction should appear here. If it does not, the credit will not be granted.</li>
                   <li><strong>Capital gains computation:</strong> For property sales, mutual fund redemptions, or stock sales. Include cost of acquisition, holding period, indexed cost (where applicable), and sale consideration.</li>
                   <li><strong>Bank statements:</strong> NRO and NRE account statements showing interest income, rent credits, and property sale proceeds.</li>

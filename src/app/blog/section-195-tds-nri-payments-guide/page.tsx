@@ -117,9 +117,9 @@ export default function Section195Blog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}>Section 195 (now Section 393(2) under the Income Tax Act 2025) requires TDS on any payment to a non-resident that is chargeable to Indian tax.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Section 393(2) (earlier Section 195 under the 1961 Act) requires TDS on any payment to a non-resident that is chargeable to Indian tax.</li>
                     <li style={{ marginBottom: '0.4rem' }}>It covers property sales, rent, professional fees, interest, royalties, and any other income with an Indian source - not just property.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>The payer (not the NRI) is responsible for obtaining a TAN, deducting at the correct rate, depositing via Challan ITNS-281, and filing Form 27Q quarterly.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>The payer (not the NRI) is responsible for obtaining a TAN, deducting at the correct rate, depositing via Challan ITNS-281, and filing Form 144 (earlier Form 27Q) quarterly.</li>
                     <li style={{ marginBottom: 0 }}>Getting it wrong means the payer is personally liable for the TDS amount, interest, penalty, and potential prosecution.</li>
                   </ul>
                 </div>
@@ -215,7 +215,7 @@ export default function Section195Blog() {
                       <tr>
                         <td style={tdAltStyle}><strong>Form to File</strong></td>
                         <td style={tdAltStyle}><Link href="/blog/26qb-vs-27q-nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 26QB</Link></td>
-                        <td style={tdAltStyle}>Form 27Q (now Form 144)</td>
+                        <td style={tdAltStyle}>Form 144 (earlier Form 27Q)</td>
                       </tr>
                       <tr>
                         <td style={tdStyle}><strong>Threshold</strong></td>
@@ -234,12 +234,12 @@ export default function Section195Blog() {
                   <li><strong>Determine the correct TDS rate.</strong> Use the table above, and check whether a DTAA provides a lower rate for the specific income type. For property sales, consider whether the NRI has a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 certificate</Link> for a reduced rate.</li>
                   <li><strong>Deduct TDS at the time of payment or credit</strong>, whichever is earlier. For property transactions with multiple instalments, deduct on each instalment.</li>
                   <li><strong>Deposit via Challan ITNS-281</strong> by the 7th of the following month (30th April for March deductions).</li>
-                  <li><strong>File Form 27Q</strong> (now Form 144) quarterly on the TRACES portal: July 31 (Q1), October 31 (Q2), January 31 (Q3), May 31 (Q4).</li>
-                  <li><strong>Issue Form 16A</strong> (now Form 131) to the NRI within 15 days of the Form 27Q due date. The NRI needs this to claim TDS credit in their Indian ITR.</li>
+                  <li><strong>File Form 144</strong> (earlier Form 27Q) quarterly on the TRACES portal: July 31 (Q1), October 31 (Q2), January 31 (Q3), May 31 (Q4).</li>
+                  <li><strong>Issue Form 131</strong> (earlier Form 16A) to the NRI within 15 days of the Form 144 due date. The NRI needs this to claim TDS credit in their Indian ITR.</li>
                 </ol>
 
                 <h2>The Rental Income Trap</h2>
-                <p>Most people associate Section 195 with property sales because the amounts are large and visible. But the most overlooked application is <strong>rent paid to an NRI landlord</strong>. If your landlord is a non-resident and the rent is sourced from an Indian property, you are required to deduct TDS at 30% (plus surcharge and cess) under Section 195, obtain a TAN, and file Form 27Q quarterly.</p>
+                <p>Most people associate Section 195 with property sales because the amounts are large and visible. But the most overlooked application is <strong>rent paid to an NRI landlord</strong>. If your landlord is a non-resident and the rent is sourced from an Indian property, you are required to deduct TDS at 30% (plus surcharge and cess) under Section 393(2), obtain a TAN, and file Form 144 quarterly.</p>
                 <p>In practice, many tenants do not even know their landlord is an NRI, or they assume the standard 10% TDS under Section 194-I applies. It does not. Section 194-I covers rent to residents only. When the landlord is a non-resident, Section 195 overrides, the rate jumps to 30%, and the compliance requirements change entirely.</p>
                 <p>For the NRI landlord, this 30% TDS on gross rent (before any deductions for repairs, property tax, or the standard 30% deduction) typically far exceeds their actual tax liability. The remedy is the same as for property sales: apply for a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link>, or file an ITR to <Link href="/blog/nri-tds-refund-property-sale" style={{ color: 'var(--primary)', fontWeight: 600 }}>claim a TDS refund</Link>.</p>
 
@@ -253,20 +253,20 @@ export default function Section195Blog() {
                 <p>To apply a DTAA rate, the NRI must provide a valid Tax Residency Certificate (TRC) from their country of residence, and the payer should verify the applicable treaty article. Without a TRC, the domestic rate applies.</p>
 
                 <h2>Section 195 Under the New Income Tax Act 2025</h2>
-                <p>The new Income Tax Act 2025 (effective April 1, 2026) renumbers Section 195 as <strong>Section 393(2)</strong>, but the substance remains the same. The corresponding form changes are:</p>
+                <p>The new Income Tax Act 2025 (effective April 1, 2026) replaces old Section 195 with <strong>Section 393(2)</strong>, but the substance remains the same. The corresponding form changes are:</p>
                 <ul>
-                  <li>Form 27Q becomes <strong>Form 144</strong></li>
-                  <li>Form 16A becomes <strong>Form 131</strong></li>
-                  <li>Form 13 becomes <strong>Form 128</strong></li>
-                  <li>Form 15CA becomes <strong>Form 145</strong></li>
-                  <li>Form 15CB becomes <strong>Form 146</strong></li>
+                  <li><strong>Form 144</strong> replaces Form 27Q</li>
+                  <li><strong>Form 131</strong> replaces Form 16A</li>
+                  <li><strong>Form 128</strong> replaces Form 13</li>
+                  <li><strong>Form 145</strong> replaces Form 15CA</li>
+                  <li><strong>Form 146</strong> replaces Form 15CB</li>
                 </ul>
                 <p>The obligations, rates, and penalties are unchanged. If you were compliant under the old numbering, you are compliant under the new one.</p>
 
                 <h2>Penalties for Non-Compliance</h2>
                 <p>The consequences of failing to deduct or deposit TDS under Section 195 are severe and fall entirely on the payer:</p>
                 <ul>
-                  <li><strong>Personal liability (Section 201/398):</strong> The payer must pay the TDS amount from their own funds, regardless of whether the NRI has since paid their taxes independently.</li>
+                  <li><strong>Personal liability (Section 398, earlier Section 201):</strong> The payer must pay the TDS amount from their own funds, regardless of whether the NRI has since paid their taxes independently.</li>
                   <li><strong>Interest:</strong> 1% per month for non-deduction, 1.5% per month for deduction but non-deposit.</li>
                   <li><strong>Penalty (Section 271C):</strong> Equal to the TDS amount not deducted.</li>
                   <li><strong>Prosecution (Section 276B):</strong> Willful failure to deposit deducted TDS can attract imprisonment from 3 months to 7 years.</li>

@@ -108,8 +108,8 @@ export default function Form26QBvs27QBlog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 26QB</strong> (now Form 141) is for buying property from a <strong>resident</strong> seller above Rs 50 lakh. TDS at 1%. No TAN needed.</li>
-                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 27Q</strong> (now Form 144) is for buying property from an <strong>NRI</strong> seller at any value. TDS at 12.5-30% + surcharge + cess. TAN is mandatory.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 141</strong> (earlier Form 26QB) is for buying property from a <strong>resident</strong> seller above Rs 50 lakh. TDS at 1%. No TAN needed.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 144</strong> (earlier Form 27Q) is for buying property from an <strong>NRI</strong> seller at any value. TDS at 12.5-30% + surcharge + cess. TAN is mandatory.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Filing the wrong form means you have deducted at the wrong rate. The buyer is personally liable for the shortfall plus interest.</li>
                     <li style={{ marginBottom: 0 }}>The seller&apos;s residential status in the year of sale determines which form applies, not their citizenship or where they lived when they bought the property.</li>
                   </ul>
@@ -123,8 +123,8 @@ export default function Form26QBvs27QBlog() {
                     <thead>
                       <tr>
                         <th style={thStyle}></th>
-                        <th style={thStyle}>Form 26QB (now 141)</th>
-                        <th style={thStyle}>Form 27Q (now 144)</th>
+                        <th style={thStyle}>Form 141 (earlier 26QB)</th>
+                        <th style={thStyle}>Form 144 (earlier 27Q)</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -136,7 +136,7 @@ export default function Form26QBvs27QBlog() {
                       <tr>
                         <td style={tdAltStyle}><strong>Section</strong></td>
                         <td style={tdAltStyle}>194-IA</td>
-                        <td style={tdAltStyle}><Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>195</Link> (now 393(2))</td>
+                        <td style={tdAltStyle}>393(2) (earlier <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>195</Link>)</td>
                       </tr>
                       <tr>
                         <td style={tdStyle}><strong>Threshold</strong></td>
@@ -166,7 +166,7 @@ export default function Form26QBvs27QBlog() {
                       <tr>
                         <td style={tdAltStyle}><strong>Certificate issued</strong></td>
                         <td style={tdAltStyle}>Form 16B</td>
-                        <td style={tdAltStyle}>Form 16A (now Form 131)</td>
+                        <td style={tdAltStyle}>Form 131 (earlier Form 16A)</td>
                       </tr>
                       <tr>
                         <td style={tdStyle}><strong>Lower TDS possible?</strong></td>
@@ -186,7 +186,7 @@ export default function Form26QBvs27QBlog() {
                 <p>The only question that matters is: <strong>what is the seller&apos;s residential status under Section 6 of the Income Tax Act for the financial year of the sale?</strong></p>
                 <ul>
                   <li>If the seller is a <strong>resident</strong> (including <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR</Link>) in the year of sale: <strong>Form 26QB</strong></li>
-                  <li>If the seller is a <strong>non-resident</strong> in the year of sale: <strong>Form 27Q</strong></li>
+                  <li>If the seller is a <strong>non-resident</strong> in the year of sale: <strong>Form 144</strong> (earlier Form 27Q)</li>
                 </ul>
                 <p>It does not matter where the seller lived when they bought the property, whether they hold an OCI card, or what their PAN records show as their address. Residential status is recalculated every year based on physical presence in India. An NRI who has returned and qualifies as resident in the sale year follows the 26QB route. A former resident who moved abroad and is non-resident in the sale year follows the 27Q route.</p>
                 <p>When in doubt, ask the seller to provide a declaration of their residential status for the current financial year, backed by their passport stamps or travel history.</p>
@@ -199,10 +199,10 @@ export default function Form26QBvs27QBlog() {
                   <li><strong>Wrong certificate issued:</strong> The NRI receives Form 16B instead of Form 16A. They cannot use Form 16B to claim TDS credit in their ITR for NRI income. The TDS credit reconciliation fails, and the NRI&apos;s refund claim gets stuck.</li>
                   <li><strong>No TAN means no valid 27Q:</strong> Since 26QB does not require a TAN, the buyer typically does not have one, and cannot file a corrective 27Q until they obtain one.</li>
                 </ol>
-                <p>The fix involves obtaining a TAN, paying the differential TDS with interest via Challan ITNS-281, filing a correct Form 27Q for the quarter, and issuing the correct Form 16A. A CA should handle this to minimise interest exposure and ensure the correction is processed cleanly.</p>
+                <p>The fix involves obtaining a TAN, paying the differential TDS with interest via Challan ITNS-281, filing a correct Form 144 (earlier Form 27Q) for the quarter, and issuing the correct Form 131 (earlier Form 16A). A CA should handle this to minimise interest exposure and ensure the correction is processed cleanly.</p>
 
                 <h2>Joint Ownership: When Both Forms Are Needed</h2>
-                <p>If a property is co-owned by a resident and a non-resident, a single sale can require <strong>both</strong> forms. The buyer deducts at 1% on the resident co-owner&apos;s share (Form 26QB) and at the full Section 195 rate on the NRI co-owner&apos;s share (Form 27Q). Each form covers only that co-owner&apos;s proportionate share of the consideration.</p>
+                <p>If a property is co-owned by a resident and a non-resident, a single sale can require <strong>both</strong> forms. The buyer deducts at 1% on the resident co-owner&apos;s share (Form 141) and at the full Section 393(2) rate on the NRI co-owner&apos;s share (Form 144). Each form covers only that co-owner&apos;s proportionate share of the consideration.</p>
 
                 <h2>Budget 2026 Changes: TAN Going Away for Resident Sellers Only</h2>
                 <p>Budget 2026 introduces a PAN-based mechanism (Form 141) that removes the TAN requirement for property purchases from resident sellers, effective October 1, 2026. This change does <strong>not</strong> extend to NRI sellers. Where the seller is an NRI, the buyer still needs a TAN and must comply with <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195</Link> in full. Do not read &quot;TAN scrapped&quot; headlines as applying to NRI property transactions.</p>

@@ -113,28 +113,28 @@ export default function Form15CA15CBBlog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 15CA (now Form 145)</strong> is a declaration filed online by the remitter before any foreign remittance that is chargeable to Indian tax.</li>
-                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 15CB (now Form 146)</strong> is a CA certificate required for remittances above Rs 5 lakh, certifying that taxes have been paid or deducted.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 145 (earlier Form 15CA)</strong> is a declaration filed online by the remitter before any foreign remittance that is chargeable to Indian tax.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Form 146 (earlier Form 15CB)</strong> is a CA certificate required for remittances above Rs 5 lakh, certifying that taxes have been paid or deducted.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Your bank will not process the remittance without these forms. No exceptions.</li>
-                    <li style={{ marginBottom: 0 }}>Penalty for non-filing is Rs 1 lakh under Section 271-I (now Section 359).</li>
+                    <li style={{ marginBottom: 0 }}>Penalty for non-filing is Rs 1 lakh under Section 359 (earlier Section 271-I under the 1961 Act).</li>
                   </ul>
                 </div>
 
-                <p>Every NRI who has tried to repatriate money from India has encountered these two forms, usually at the worst possible moment: when the bank holds up a transfer they expected to go through smoothly. Form 15CA and 15CB (renamed Form 145 and 146 under the new Income Tax Act 2025) are the Income Tax department&apos;s mechanism for tracking foreign remittances and ensuring tax compliance before money leaves the country. Here is how they work, when each is required, and how to file them correctly.</p>
+                <p>Every NRI who has tried to repatriate money from India has encountered these two forms, usually at the worst possible moment: when the bank holds up a transfer they expected to go through smoothly. Form 145 and 146 (earlier Form 15CA and 15CB under the 1961 Act) are the Income Tax department&apos;s mechanism for tracking foreign remittances and ensuring tax compliance before money leaves the country. Here is how they work, when each is required, and how to file them correctly.</p>
 
-                <h2>What Is Form 15CA (Now Form 145)?</h2>
-                <p>Form 15CA is an online declaration filed by the person making the remittance (the remitter) on the Income Tax e-filing portal. It provides the department with details of the remittance: the nature of the payment, the amount, the recipient, and the tax treatment. Think of it as an advance information report that lets the department verify tax compliance before the money leaves India.</p>
+                <h2>What Is Form 145 (Earlier Form 15CA)?</h2>
+                <p>Form 145 (earlier Form 15CA) is an online declaration filed by the person making the remittance (the remitter) on the Income Tax e-filing portal. It provides the department with details of the remittance: the nature of the payment, the amount, the recipient, and the tax treatment. Think of it as an advance information report that lets the department verify tax compliance before the money leaves India.</p>
                 <p>The form must be filed <strong>before</strong> the remittance is made. Once submitted, you receive an acknowledgment number, which you provide to your bank along with the other repatriation documentation.</p>
 
-                <h2>The 4 Parts of Form 15CA</h2>
-                <p>Form 15CA is not a single form but four parts, and you file only the one that matches your situation:</p>
+                <h2>The 4 Parts of Form 145</h2>
+                <p>Form 145 is not a single form but four parts, and you file only the one that matches your situation:</p>
                 <div style={{ overflowX: 'auto' }}>
                   <table style={tableStyle}>
                     <thead>
                       <tr>
                         <th style={thStyle}>Part</th>
                         <th style={thStyle}>When to Use</th>
-                        <th style={thStyle}>CA Certificate (15CB) Needed?</th>
+                        <th style={thStyle}>CA Certificate (Form 146) Needed?</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -145,13 +145,13 @@ export default function Form15CA15CBBlog() {
                       </tr>
                       <tr>
                         <td style={tdAltStyle}><strong>Part B</strong></td>
-                        <td style={tdAltStyle}>Remitter has obtained a certificate from the Assessing Officer (Form 13/128 or Section 197 order) for lower or nil withholding</td>
+                        <td style={tdAltStyle}>Remitter has obtained a certificate from the Assessing Officer (Form 128, earlier Form 13, or Section 395 order) for lower or nil withholding</td>
                         <td style={tdAltStyle}>No (AO certificate substitutes)</td>
                       </tr>
                       <tr>
                         <td style={tdStyle}><strong>Part C</strong></td>
                         <td style={tdStyle}>Remittance exceeds Rs 5 lakh and is chargeable to tax (no AO certificate obtained)</td>
-                        <td style={tdStyle}><strong>Yes</strong></td>
+                        <td style={tdStyle}><strong>Yes (Form 146)</strong></td>
                       </tr>
                       <tr>
                         <td style={tdAltStyle}><strong>Part D</strong></td>
@@ -163,55 +163,55 @@ export default function Form15CA15CBBlog() {
                 </div>
                 <p>Most NRI property sale repatriations fall under <strong>Part B</strong> (if a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> was obtained) or <strong>Part C</strong> (if TDS was deducted at full rates and the repatriation exceeds Rs 5 lakh).</p>
 
-                <h2>What Is Form 15CB (Now Form 146)?</h2>
-                <p>Form 15CB is a certificate issued by a Chartered Accountant. It is required whenever Form 15CA Part C applies (remittance above Rs 5 lakh, chargeable to tax, no AO certificate). The CA reviews the following before signing the certificate:</p>
+                <h2>What Is Form 146 (Earlier Form 15CB)?</h2>
+                <p>Form 146 (earlier Form 15CB) is a certificate issued by a Chartered Accountant. It is required whenever Form 145 Part C applies (remittance above Rs 5 lakh, chargeable to tax, no AO certificate). The CA reviews the following before signing the certificate:</p>
                 <ul>
                   <li>Nature of the remittance and the applicable tax provision</li>
-                  <li>Whether TDS has been correctly deducted and deposited (TDS certificate / Form 16A)</li>
+                  <li>Whether TDS has been correctly deducted and deposited (TDS certificate / Form 131)</li>
                   <li>Whether any DTAA benefit is being claimed, and if so, whether a Tax Residency Certificate has been obtained</li>
                   <li>Whether the remitter has any outstanding tax demands</li>
                   <li>The source of funds and supporting documents</li>
                 </ul>
-                <p>The CA uploads Form 15CB to the Income Tax portal, and the remitter then links it to their Form 15CA Part C filing. The bank verifies both before processing the remittance.</p>
+                <p>The CA uploads Form 146 to the Income Tax portal, and the remitter then links it to their Form 145 Part C filing. The bank verifies both before processing the remittance.</p>
 
-                <h2>Step-by-Step: Filing Form 15CA and 15CB</h2>
+                <h2>Step-by-Step: Filing Form 145 and 146</h2>
                 <ol>
-                  <li><strong>Determine which Part applies.</strong> Check the amount, whether tax is chargeable, and whether you have an AO certificate (Form 13/128).</li>
-                  <li><strong>If Part C: Engage a CA for Form 15CB first.</strong> The CA needs your TDS certificates, sale deed or source documents, PAN, passport copy, and bank details. Allow 2-3 working days for the CA to review and upload Form 15CB.</li>
-                  <li><strong>Log in to the Income Tax e-filing portal</strong> (eportal.incometax.gov.in) and navigate to e-File &rarr; Income Tax Forms &rarr; File Income Tax Forms &rarr; Form 15CA.</li>
+                  <li><strong>Determine which Part applies.</strong> Check the amount, whether tax is chargeable, and whether you have an AO certificate (Form 128, earlier Form 13).</li>
+                  <li><strong>If Part C: Engage a CA for Form 146 first.</strong> The CA needs your TDS certificates, sale deed or source documents, PAN, passport copy, and bank details. Allow 2-3 working days for the CA to review and upload Form 146.</li>
+                  <li><strong>Log in to the Income Tax e-filing portal</strong> (eportal.incometax.gov.in) and navigate to e-File &rarr; Income Tax Forms &rarr; File Income Tax Forms &rarr; Form 145.</li>
                   <li><strong>Select the correct Part</strong> (A, B, C, or D) and fill in the remittance details: amount, recipient details, nature of payment, tax provision, TDS details.</li>
-                  <li><strong>If Part C: Link the Form 15CB</strong> uploaded by your CA. The portal will show the available 15CB certificates filed against your PAN.</li>
+                  <li><strong>If Part C: Link the Form 146</strong> uploaded by your CA. The portal will show the available Form 146 certificates filed against your PAN.</li>
                   <li><strong>Submit and download the acknowledgment.</strong> You will receive a unique acknowledgment number.</li>
                   <li><strong>Submit the acknowledgment to your bank</strong> along with Form 146 (if applicable), source documents, and the rest of the <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriation documentation</Link>.</li>
                 </ol>
 
-                <h2>When Form 15CA/15CB Is NOT Required</h2>
-                <p>Certain remittances are exempt from the Form 15CA/15CB requirement under Rule 37BB. These include:</p>
+                <h2>When Form 145/146 Is NOT Required</h2>
+                <p>Certain remittances are exempt from the Form 145/146 requirement under Rule 37BB. These include:</p>
                 <ul>
                   <li>Remittances by individuals under the Liberalised Remittance Scheme (LRS) that do not involve purchase of assets or investment (e.g., travel, education, medical treatment)</li>
                   <li>Payments covered by a specified list of 33 nature codes in Rule 37BB (listed in the annexure to the rule) that are not chargeable to tax</li>
                   <li>Payments from NRE or FCNR accounts (since these are already freely repatriable and not chargeable to Indian tax)</li>
                 </ul>
-                <p><strong>NRO repatriations are NOT exempt.</strong> Any remittance from an NRO account, whether property proceeds, rent, or interest, requires Form 15CA/15CB compliance.</p>
+                <p><strong>NRO repatriations are NOT exempt.</strong> Any remittance from an NRO account, whether property proceeds, rent, or interest, requires Form 145/146 compliance.</p>
 
                 <h2>Common Mistakes That Delay or Block Remittances</h2>
                 <ul>
                   <li><strong>Filing the wrong Part:</strong> Filing Part D (not chargeable to tax) for a property sale proceeds remittance that is clearly chargeable. Banks and the department catch this.</li>
-                  <li><strong>Amount mismatch:</strong> The amount in Form 15CA must match the actual remittance amount. A mismatch with Form 15CB or with the bank instruction leads to rejection.</li>
-                  <li><strong>Form 15CB not linked:</strong> Filing Part C without first having the CA upload Form 15CB. The portal requires the linkage.</li>
-                  <li><strong>Expired Form 13:</strong> Using Part B with an AO certificate that has expired or does not cover the current remittance amount.</li>
-                  <li><strong>PAN issues:</strong> An inoperative PAN prevents Form 15CA filing altogether.</li>
+                  <li><strong>Amount mismatch:</strong> The amount in Form 145 must match the actual remittance amount. A mismatch with Form 146 or with the bank instruction leads to rejection.</li>
+                  <li><strong>Form 146 not linked:</strong> Filing Part C without first having the CA upload Form 146. The portal requires the linkage.</li>
+                  <li><strong>Expired Form 128:</strong> Using Part B with an AO certificate that has expired or does not cover the current remittance amount.</li>
+                  <li><strong>PAN issues:</strong> An inoperative PAN prevents Form 145 filing altogether.</li>
                 </ul>
 
                 <h2>Penalties for Non-Compliance</h2>
-                <p>Failure to furnish Form 15CA attracts a <strong>penalty of Rs 1 lakh</strong> under Section 271-I (now Section 359 under the new Act). Filing with incorrect information can attract separate penalty proceedings. The bank itself faces regulatory consequences from RBI for processing remittances without Form 15CA, which is why they are strict about requiring it.</p>
+                <p>Failure to furnish Form 145 attracts a <strong>penalty of Rs 1 lakh</strong> under Section 359 (earlier Section 271-I under the 1961 Act). Filing with incorrect information can attract separate penalty proceedings. The bank itself faces regulatory consequences from RBI for processing remittances without Form 145, which is why they are strict about requiring it.</p>
 
-                <h2>Form 15CA/15CB Under the New Income Tax Act 2025</h2>
-                <p>The new Act renames the forms but does not change the substance:</p>
+                <h2>Form 145/146 Under the New Income Tax Act 2025</h2>
+                <p>The new Act replaces the old form numbers but does not change the substance:</p>
                 <ul>
-                  <li><strong>Form 15CA</strong> becomes <strong>Form 145</strong></li>
-                  <li><strong>Form 15CB</strong> becomes <strong>Form 146</strong></li>
-                  <li>The four-part structure of Form 15CA is retained in Form 145</li>
+                  <li><strong>Form 145</strong> replaces Form 15CA</li>
+                  <li><strong>Form 146</strong> replaces Form 15CB</li>
+                  <li>The four-part structure is retained in Form 145</li>
                   <li>All threshold amounts, CA certification requirements, and penalty provisions remain the same</li>
                 </ul>
                 <p>Both old and new form numbers are currently in use during the transition period. Your bank and CA should accept either reference.</p>

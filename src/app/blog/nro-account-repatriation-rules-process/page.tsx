@@ -149,13 +149,13 @@ export default function NRORepatriationBlog() {
                     <strong>File Form 145 (formerly 15CA).</strong> This is an online declaration filed by the NRI (or their authorised representative) on the Income Tax e-filing portal before initiating the bank remittance. It declares the nature of the payment, the amount, the applicable tax provision, and confirms compliance.
                   </li>
                   <li>
-                    <strong>Obtain Form 146 (formerly 15CB).</strong> This is a certificate issued by a Chartered Accountant, required for remittances above Rs 5 lakh. The CA certifies that applicable Indian taxes have been paid or correctly deducted and deposited. The CA reviews TDS certificates (Form 16A/131), ITR acknowledgments, and the nature of the remittance before signing off.
+                    <strong>Obtain Form 146 (formerly 15CB).</strong> This is a certificate issued by a Chartered Accountant, required for remittances above Rs 5 lakh. The CA certifies that applicable Indian taxes have been paid or correctly deducted and deposited. The CA reviews TDS certificates (Form 131, earlier Form 16A), ITR acknowledgments, and the nature of the remittance before signing off.
                   </li>
                   <li>
                     <strong>Submit to your Authorised Dealer (AD) Bank.</strong> Along with Form 145 acknowledgment and Form 146, the bank typically requires:
                     <ul>
                       <li>Source documents: sale deed, rent agreement, FD maturity advice, succession certificate, or gift deed</li>
-                      <li>TDS certificate (Form 16A/131 or Form 16B)</li>
+                      <li>TDS certificate (Form 131/16A or Form 16B)</li>
                       <li>ITR acknowledgment for the relevant year (if applicable)</li>
                       <li>PAN card copy</li>
                       <li>FEMA declaration</li>

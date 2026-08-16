@@ -64,13 +64,13 @@ export default function NRIRentalIncomeBlog() {
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                     <li style={{ marginBottom: '0.4rem' }}>Tenant must deduct TDS at <strong>30% (+ surcharge + cess)</strong> on rent to an NRI landlord under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195</Link>. Not 10% (that is for resident landlords).</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Tenant needs a <strong>TAN</strong>, must file <strong>Form 27Q</strong> quarterly, and issue <strong>Form 16A</strong> to the NRI.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Tenant needs a <strong>TAN</strong>, must file <strong>Form 144</strong> (earlier Form 27Q) quarterly, and issue <strong>Form 131</strong> (earlier Form 16A) to the NRI.</li>
                     <li style={{ marginBottom: '0.4rem' }}>NRI landlord can claim <strong>30% standard deduction + municipal taxes + home loan interest</strong> when filing ITR.</li>
                     <li style={{ marginBottom: 0 }}>Actual tax is almost always lower than TDS deducted. <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13</Link> or ITR refund recovers the excess.</li>
                   </ul>
                 </div>
 
-                <p>Rental income from Indian property is one of the most common income types for NRIs, and one of the most consistently mis-handled. Tenants assume the same 10% TDS that applies to resident landlords works here. It does not. NRI rental income falls under Section 195, not Section 194-I, and the compliance requirements are entirely different. Here is what both sides need to know.</p>
+                <p>Rental income from Indian property is one of the most common income types for NRIs, and one of the most consistently mis-handled. Tenants assume the same 10% TDS that applies to resident landlords works here. It does not. NRI rental income falls under Section 393(2) (earlier Section 195 under the 1961 Act), not Section 194-I, and the compliance requirements are entirely different. Here is what both sides need to know.</p>
 
                 <h2>How Rental Income Is Taxed for NRIs</h2>
                 <p>Rental income from an Indian property is taxable in India regardless of where the NRI resides. It is computed under &quot;Income from House Property&quot; in the same way as for residents:</p>
@@ -90,8 +90,8 @@ export default function NRIRentalIncomeBlog() {
                   <li><strong>Rate:</strong> 30% plus applicable surcharge and 4% cess on the <strong>gross rent</strong> (before any deductions). Effective rate is typically ~31.2%.</li>
                   <li><strong>TAN:</strong> The tenant must obtain a TAN via Form 49B before the first rent payment. See our <Link href="/blog/tan-application-guide-buyer-nri-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>TAN application guide</Link>.</li>
                   <li><strong>Deposit:</strong> TDS must be deposited via Challan ITNS-281 by the 7th of the following month.</li>
-                  <li><strong>Return:</strong> File <Link href="/blog/26qb-vs-27q-nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 27Q</Link> (now Form 144) quarterly.</li>
-                  <li><strong>Certificate:</strong> Issue Form 16A (now Form 131) to the NRI landlord within 15 days of the Form 27Q due date.</li>
+                  <li><strong>Return:</strong> File <Link href="/blog/26qb-vs-27q-nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 144</Link> (earlier Form 27Q) quarterly.</li>
+                  <li><strong>Certificate:</strong> Issue Form 131 (earlier Form 16A) to the NRI landlord within 15 days of the Form 144 due date.</li>
                 </ul>
                 <p>If the tenant does not deduct TDS, they become personally liable for the amount plus interest at 1% per month. Many individual tenants are unaware of this obligation, especially when they do not know their landlord is an NRI.</p>
 
@@ -108,8 +108,8 @@ export default function NRIRentalIncomeBlog() {
                 <p>The NRI has Rs 1,87,200 deducted as TDS but owes only Rs 5,300 in actual tax. The gap of Rs 1,81,900 is recoverable only by filing an ITR or by obtaining a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> in advance.</p>
 
                 <h2>Two Remedies for Over-Deduction</h2>
-                <h3>Option 1: Form 13 (Proactive)</h3>
-                <p>Apply for a Form 13 (now Form 128) lower deduction certificate before the rental year begins or at the start of the tenancy. The Assessing Officer reviews the actual income computation and authorises the tenant to deduct at a specified lower rate (sometimes nil). This avoids the cash flow problem of TDS lock-up entirely.</p>
+                <h3>Option 1: Form 128 (Proactive)</h3>
+                <p>Apply for a Form 128 (earlier Form 13) lower deduction certificate under Section 395 (earlier Section 197) before the rental year begins or at the start of the tenancy. The Assessing Officer reviews the actual income computation and authorises the tenant to deduct at a specified lower rate (sometimes nil). This avoids the cash flow problem of TDS lock-up entirely.</p>
 
                 <h3>Option 2: ITR Refund (Reactive)</h3>
                 <p>File an <Link href="/blog/nri-tds-refund-property-sale" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITR claiming the TDS refund</Link> for the financial year. The ITR reports the actual house property income after all deductions and claims credit for TDS. The excess is refunded, typically in 3-6 months. The NRI also earns statutory interest under Section 244A on the refund for the period of delay.</p>

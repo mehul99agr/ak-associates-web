@@ -74,7 +74,7 @@ export default function PANCardNRIBlog() {
 
               <h2>When NRIs Need PAN</h2>
               <ul>
-                <li><strong>Property transactions:</strong> Both buyer and seller need PAN for registration. TDS compliance under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195</Link> requires the NRI seller&apos;s PAN.</li>
+                <li><strong>Property transactions:</strong> Both buyer and seller need PAN for registration. TDS compliance under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195) requires the NRI seller&apos;s PAN.</li>
                 <li><strong>Bank accounts:</strong> PAN is mandatory for opening NRE/NRO accounts and for KYC.</li>
                 <li><strong>Investments:</strong> Required for mutual fund KYC, demat account opening, and stock trading via PIS.</li>
                 <li><strong><Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITR filing</Link>:</strong> PAN is the login credential for the e-filing portal.</li>

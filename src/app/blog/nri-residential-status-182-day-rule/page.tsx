@@ -199,7 +199,7 @@ export default function NRIResidentialStatusBlog() {
                 <h2>Why Residential Status Matters for Every NRI Decision</h2>
                 <p>Your status for the year determines:</p>
                 <ul>
-                  <li><strong>TDS on property sale:</strong> <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195</Link> applies only if the seller is NRI. A returning NRI who is resident (even RNOR) in the year of sale follows the resident seller process instead - different form, different rate, different compliance.</li>
+                  <li><strong>TDS on property sale:</strong> <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195) applies only if the seller is NRI. A returning NRI who is resident (even RNOR) in the year of sale follows the resident seller process instead - different form, different rate, different compliance.</li>
                   <li><strong>NRE account tax exemption:</strong> <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE interest is tax-exempt</Link> only while you maintain non-resident status under FEMA.</li>
                   <li><strong>Foreign asset disclosure:</strong> Schedule FA is required for residents and RNOR. NRIs are exempt.</li>
                   <li><strong>DTAA treaty benefits:</strong> Your country of residence for treaty purposes may differ from your Indian residential status. Tie-breaker rules in the DTAA resolve the conflict.</li>

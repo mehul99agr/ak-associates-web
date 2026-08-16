@@ -45,20 +45,20 @@ export default function NRIComplianceCalendarBlog() {
                   <tbody>
                     {[
                       ['June 15, 2026', 'Advance tax - 1st instalment (15%)', 'NRIs with tax liability above Rs 10,000 after TDS'],
-                      ['July 15, 2026', 'TDS return Form 27Q - Q1 (Apr-Jun)', 'Buyers/tenants who deducted TDS on NRI payments'],
-                      ['July 31, 2026', 'Form 16A (Q1) issuance deadline', 'Buyers/tenants to NRI sellers/landlords'],
+                      ['July 15, 2026', 'TDS return Form 144 (earlier 27Q) - Q1 (Apr-Jun)', 'Buyers/tenants who deducted TDS on NRI payments'],
+                      ['July 31, 2026', 'Form 131 (earlier 16A) Q1 issuance deadline', 'Buyers/tenants to NRI sellers/landlords'],
                       ['July 31, 2027', 'ITR filing deadline (non-audit)', 'NRIs with Indian income above Rs 3 lakh or claiming refund'],
                       ['September 15, 2026', 'Advance tax - 2nd instalment (45% cumulative)', 'NRIs with advance tax obligation'],
-                      ['October 15, 2026', 'TDS return Form 27Q - Q2 (Jul-Sep)', 'Buyers/tenants'],
+                      ['October 15, 2026', 'TDS return Form 144 - Q2 (Jul-Sep)', 'Buyers/tenants'],
                       ['October 31, 2027', 'ITR filing deadline (audit cases)', 'NRIs with business income requiring audit'],
-                      ['October 31, 2026', 'Form 16A (Q2) issuance deadline', 'Buyers/tenants'],
+                      ['October 31, 2026', 'Form 131 (Q2) issuance deadline', 'Buyers/tenants'],
                       ['December 15, 2026', 'Advance tax - 3rd instalment (75% cumulative)', 'NRIs with advance tax obligation'],
                       ['December 31, 2027', 'Belated ITR filing deadline', 'NRIs who missed July 31 (Rs 5,000 late fee applies)'],
-                      ['January 15, 2027', 'Form 16A (Q3) issuance deadline', 'Buyers/tenants'],
-                      ['January 31, 2027', 'TDS return Form 27Q - Q3 (Oct-Dec)', 'Buyers/tenants'],
+                      ['January 15, 2027', 'Form 131 (Q3) issuance deadline', 'Buyers/tenants'],
+                      ['January 31, 2027', 'TDS return Form 144 - Q3 (Oct-Dec)', 'Buyers/tenants'],
                       ['March 15, 2027', 'Advance tax - final instalment (100%)', 'NRIs with advance tax obligation'],
                       ['March 31, 2027', 'End of financial year', 'Residential status determined for full year'],
-                      ['May 31, 2027', 'TDS return Form 27Q - Q4 (Jan-Mar)', 'Buyers/tenants'],
+                      ['May 31, 2027', 'TDS return Form 144 - Q4 (Jan-Mar)', 'Buyers/tenants'],
                       ['Before remittance', 'Form 145 (ex-15CA) filing', 'NRI initiating any taxable foreign remittance'],
                       ['Before remittance', 'Form 146 (ex-15CB) CA certificate', 'For remittances above Rs 5 lakh (CA issues)'],
                       ['Before ITR due date', 'Form 67 for foreign tax credit', 'Residents/RNOR claiming DTAA credit'],
@@ -76,7 +76,7 @@ export default function NRIComplianceCalendarBlog() {
               <h2>Key Notes</h2>
               <ul>
                 <li><strong>Advance tax:</strong> Most NRIs whose income is covered by TDS (rent, interest, property gains) do not need to pay advance tax since TDS covers the liability. Advance tax is relevant when there is income without TDS (e.g., capital gains on <Link href="/blog/nri-mutual-fund-stock-taxation-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>stocks sold through a broker</Link> where TDS was not deducted on the gain).</li>
-                <li><strong>Form 27Q:</strong> This is the tenant&apos;s or buyer&apos;s responsibility, not the NRI&apos;s. But the NRI should ensure it is filed, because their TDS credit in Form 26AS depends on it. See our <Link href="/blog/26qb-vs-27q-nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>26QB vs 27Q guide</Link>.</li>
+                <li><strong>Form 144 (earlier Form 27Q):</strong> This is the tenant&apos;s or buyer&apos;s responsibility, not the NRI&apos;s. But the NRI should ensure it is filed, because their TDS credit in Form 26AS depends on it. See our <Link href="/blog/26qb-vs-27q-nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>26QB vs 27Q guide</Link>.</li>
                 <li><strong>Form 145/146:</strong> Unlike other deadlines, these are event-driven - they must be filed before the <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>remittance</Link>, not by a fixed date. See our <Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 15CA/15CB guide</Link>.</li>
                 <li><strong><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>Residential status</Link></strong> is determined at year-end (March 31) based on total days in India during the year. Track your days throughout the year, not just at filing time.</li>
               </ul>
