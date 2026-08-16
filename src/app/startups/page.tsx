@@ -379,6 +379,13 @@ export default function StartupsPage() {
                 { title: 'GST on Exports: Zero-Rated vs Exempt', link: '/blog/gst-on-exports-zero-rated-vs-exempt-india' },
                 { title: 'Essential Compliance for Indian Startups', link: '/blog/essential-compliance-indian-startups' },
                 { title: 'The Strategic Value of Virtual CFO Services', link: '/blog/strategic-value-virtual-cfo-services' },
+                { title: 'ESOP Structuring for Indian Startups', link: '/blog/esop-structuring-indian-startups' },
+                { title: 'Angel Tax: Abolished for All Investors', link: '/blog/angel-tax-section-56-share-premium-startups' },
+                { title: 'Startup Valuation Methods in India', link: '/blog/startup-valuation-methods-india' },
+                { title: 'Convertible Notes vs Equity (FEMA)', link: '/blog/convertible-notes-vs-equity-fema-startups' },
+                { title: 'Founder Agreement Essentials', link: '/blog/founder-agreement-essentials-indian-startups' },
+                { title: 'GST Registration for Startups', link: '/blog/gst-registration-startups-first-return' },
+                { title: 'Due Diligence Checklist for Fundraising', link: '/blog/due-diligence-checklist-startup-fundraising' },
               ].map((item, i) => (
                 <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
                   <p style={{ color: 'var(--text-main)', fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.5, flex: 1, margin: 0 }}>{item.title}</p>
