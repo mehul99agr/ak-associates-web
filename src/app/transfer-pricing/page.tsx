@@ -323,6 +323,12 @@ export default function TransferPricingPage() {
                 { title: 'TP Documentation Checklist for Indian Subsidiaries (2026)', link: '/blog/transfer-pricing-documentation-checklist-india' },
                 { title: 'Form 3CEB: Due Date, Filing Process & Penalties', link: '/blog/form-3ceb-transfer-pricing-audit-report' },
                 { title: 'Master File vs Local File vs CbCR', link: '/blog/master-file-local-file-cbcr-india' },
+                { title: 'Transfer Pricing Methods Explained', link: '/blog/transfer-pricing-methods-india-explained' },
+                { title: 'Safe Harbour Rules for Transfer Pricing', link: '/blog/safe-harbour-rules-transfer-pricing-india' },
+                { title: 'Advance Pricing Agreement (APA) India', link: '/blog/advance-pricing-agreement-apa-india' },
+                { title: 'Transfer Pricing for IT Services Companies', link: '/blog/transfer-pricing-it-services-india' },
+                { title: 'TP Audit: How to Handle an Assessment', link: '/blog/transfer-pricing-audit-assessment-india' },
+                { title: 'India-UAE Transfer Pricing Compliance', link: '/blog/india-uae-transfer-pricing-compliance' },
                 { title: 'UAE Corporate Tax: Impact on Indian Businesses', link: '/blog/uae-corporate-tax-indian-impact' },
                 { title: 'POEM: When a Foreign Company Becomes Indian Tax Resident', link: '/blog/poem-place-of-effective-management-india' },
               ].map((item, i) => (

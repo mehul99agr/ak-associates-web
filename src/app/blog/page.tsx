@@ -20,6 +20,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'India-UAE Transfer Pricing: Compliance for Cross-Border Transactions',
+    slug: 'india-uae-transfer-pricing-compliance',
+    date: 'August 16, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Dual compliance since UAE Corporate Tax, DTAA Article 9 relief, Free Zone considerations, and common India-UAE transaction scenarios.',
+  },
+  {
+    title: 'TP Audit: How to Handle a Transfer Pricing Assessment in India',
+    slug: 'transfer-pricing-audit-assessment-india',
+    date: 'August 15, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Selection triggers, the assessment sequence, show-cause notice strategy, DRP vs CIT(Appeals), and MAP for double taxation.',
+  },
+  {
     title: 'NRI Tax Compliance Calendar: Every Deadline (FY 2026-27)',
     slug: 'nri-tax-compliance-calendar-deadlines',
     date: 'August 14, 2026',
@@ -69,11 +83,39 @@ const posts = [
     summary: 'How India taxes US 401(k), UK pension, and Australian super withdrawals. RNOR window strategy, DTAA relief, and timing decisions.',
   },
   {
+    title: 'Transfer Pricing for IT Services Companies in India',
+    slug: 'transfer-pricing-it-services-india',
+    date: 'August 7, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Why TNMM is the default method for captive IT/ITES providers, limited-risk vs entrepreneur profiles, and common TPO disputes.',
+  },
+  {
+    title: 'Advance Pricing Agreement (APA) India: Process, Timeline & Benefits',
+    slug: 'advance-pricing-agreement-apa-india',
+    date: 'August 5, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Unilateral vs bilateral vs multilateral APAs, the application process, realistic timelines, and a cost-benefit framework.',
+  },
+  {
+    title: 'Safe Harbour Rules for Transfer Pricing in India (2026)',
+    slug: 'safe-harbour-rules-transfer-pricing-india',
+    date: 'August 3, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Eligible categories (software development, ITES, KPO, loans, guarantees), how to opt in via Form 3CEFA, and the lock-in trade-off.',
+  },
+  {
     title: 'NRI Returning to India: Complete Financial Checklist (2026)',
     slug: 'nri-returning-india-financial-checklist',
     date: 'August 1, 2026',
     category: 'NRI Taxation',
     summary: 'Bank account conversion, RNOR planning, investment restructuring, insurance, and FEMA steps for NRIs moving back to India.',
+  },
+  {
+    title: 'Transfer Pricing Methods Explained: CUP, TNMM, RPM, CPM & PSM',
+    slug: 'transfer-pricing-methods-india-explained',
+    date: 'July 30, 2026',
+    category: 'Transfer Pricing',
+    summary: 'What each of the 5 prescribed methods tests, when it is the most appropriate method, and a worked TNMM example.',
   },
   {
     title: 'Schedule FA: Foreign Asset Disclosure for Returning Indians',

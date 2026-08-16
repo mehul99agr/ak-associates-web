@@ -300,6 +300,9 @@ export default function UAETaxAdvisory() {
                 <Link href="/blog/dubai-company-registration-guide" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', textDecoration: 'underline' }}>
                   Dubai company registration guide
                 </Link>
+                <Link href="/blog/india-uae-transfer-pricing-compliance" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', textDecoration: 'underline' }}>
+                  India-UAE transfer pricing compliance
+                </Link>
               </div>
             </div>
           </div>
