@@ -157,6 +157,10 @@ const relatedReading = [
   { title: 'NRI Returning to India: Financial Checklist', link: '/blog/nri-returning-india-financial-checklist' },
   { title: 'NRI Residential Status: 182-Day Rule Explained', link: '/blog/nri-residential-status-182-day-rule' },
   { title: 'Foreign Retirement Fund Taxation: 401(k), Pension & Super', link: '/blog/foreign-retirement-fund-taxation-nri' },
+  { title: 'NRI Mutual Fund & Stock Taxation in India', link: '/blog/nri-mutual-fund-stock-taxation-india' },
+  { title: 'NRI Rental Income Tax: TDS, Deductions & Filing', link: '/blog/nri-rental-income-tax-india' },
+  { title: 'NRI ITR Filing Guide from Abroad', link: '/blog/nri-itr-filing-guide-from-abroad' },
+  { title: 'India DTAA Guide for NRIs by Country', link: '/blog/dtaa-guide-nri-country-wise' },
 ]
 
 export default function NRITaxAdvisory() {
