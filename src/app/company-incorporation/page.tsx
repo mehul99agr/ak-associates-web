@@ -331,13 +331,25 @@ export default function CompanyIncorporationPage() {
           </div>
         </section>
 
-        {/* Read more */}
-        <section className="section bg-surface" style={{ paddingBottom: '3rem' }}>
-          <div className="container" style={{ maxWidth: '780px', textAlign: 'center' }}>
-            <p style={{ color: 'var(--text-light)', marginBottom: '0.75rem', fontSize: '0.95rem' }}>Want a deeper dive before you decide?</p>
-            <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--accent)', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
-              Read: How to Incorporate a Company in India: Complete 2026 Guide →
-            </Link>
+        {/* Related Reading */}
+        <section className="section bg-surface">
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <span className="section-badge">Guides</span>
+              <h2 className="section-title">Incorporation &amp; Compliance Guides</h2>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
+              {[
+                { title: 'How to Incorporate a Company in India: Pvt Ltd vs LLP vs OPC (2026)', link: '/blog/company-incorporation-india-guide' },
+                { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
+                { title: 'Company Type Finder: Answer 4 Questions, Get a Recommendation', link: '/tools/incorporation-wizard' },
+              ].map((item, i) => (
+                <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                  <p style={{ color: 'var(--text-main)', fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.5, flex: 1, margin: 0 }}>{item.title}</p>
+                  <div style={{ marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem' }}>Read Guide &rarr;</div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

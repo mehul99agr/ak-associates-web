@@ -311,8 +311,30 @@ export default function TransferPricingPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Related Reading */}
         <section className="section bg-surface">
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <span className="section-badge">Further Reading</span>
+              <h2 className="section-title">Transfer Pricing Guides</h2>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
+              {[
+                { title: 'TP Documentation Checklist for Indian Subsidiaries (2026)', link: '/blog/transfer-pricing-documentation-checklist-india' },
+                { title: 'UAE Corporate Tax: Impact on Indian Businesses', link: '/blog/uae-corporate-tax-indian-impact' },
+                { title: 'POEM: When a Foreign Company Becomes Indian Tax Resident', link: '/blog/poem-place-of-effective-management-india' },
+              ].map((item, i) => (
+                <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                  <p style={{ color: 'var(--text-main)', fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.5, flex: 1, margin: 0 }}>{item.title}</p>
+                  <div style={{ marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem' }}>Read Guide &rarr;</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="section">
           <div className="container">
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Need Transfer Pricing Documentation?</h2>

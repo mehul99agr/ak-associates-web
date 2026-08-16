@@ -362,8 +362,33 @@ export default function StartupsPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Related Reading */}
         <section className="section bg-surface">
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <span className="section-badge">Startup Guides</span>
+              <h2 className="section-title">Guides for Founders</h2>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
+              {[
+                { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
+                { title: 'FEMA Compliance When Raising Foreign Funding', link: '/blog/fema-compliance-foreign-investment-startups' },
+                { title: 'How to Incorporate a Company in India: Pvt Ltd vs LLP vs OPC', link: '/blog/company-incorporation-india-guide' },
+                { title: 'GST on Exports: Zero-Rated vs Exempt', link: '/blog/gst-on-exports-zero-rated-vs-exempt-india' },
+                { title: 'Essential Compliance for Indian Startups', link: '/blog/essential-compliance-indian-startups' },
+                { title: 'The Strategic Value of Virtual CFO Services', link: '/blog/strategic-value-virtual-cfo-services' },
+              ].map((item, i) => (
+                <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                  <p style={{ color: 'var(--text-main)', fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.5, flex: 1, margin: 0 }}>{item.title}</p>
+                  <div style={{ marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem' }}>Read Guide &rarr;</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="section">
           <div className="container">
             <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Need a CA for Your Startup?</h2>
