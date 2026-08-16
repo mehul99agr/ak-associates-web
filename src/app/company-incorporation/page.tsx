@@ -341,7 +341,9 @@ export default function CompanyIncorporationPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
                 { title: 'How to Incorporate a Company in India: Pvt Ltd vs LLP vs OPC (2026)', link: '/blog/company-incorporation-india-guide' },
+                { title: 'Post-Incorporation Checklist: First 30 Days', link: '/blog/post-incorporation-checklist-first-30-days' },
                 { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
+                { title: 'Startup Compliance Calendar: Year 1 to Year 3', link: '/blog/startup-compliance-calendar-year-1-3' },
                 { title: 'Company Type Finder: Answer 4 Questions, Get a Recommendation', link: '/tools/incorporation-wizard' },
               ].map((item, i) => (
                 <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>

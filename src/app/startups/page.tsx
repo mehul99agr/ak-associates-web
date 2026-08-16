@@ -374,6 +374,8 @@ export default function StartupsPage() {
                 { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
                 { title: 'FEMA Compliance When Raising Foreign Funding', link: '/blog/fema-compliance-foreign-investment-startups' },
                 { title: 'How to Incorporate a Company in India: Pvt Ltd vs LLP vs OPC', link: '/blog/company-incorporation-india-guide' },
+                { title: 'Post-Incorporation Checklist: First 30 Days', link: '/blog/post-incorporation-checklist-first-30-days' },
+                { title: 'Startup Compliance Calendar: Year 1 to Year 3', link: '/blog/startup-compliance-calendar-year-1-3' },
                 { title: 'GST on Exports: Zero-Rated vs Exempt', link: '/blog/gst-on-exports-zero-rated-vs-exempt-india' },
                 { title: 'Essential Compliance for Indian Startups', link: '/blog/essential-compliance-indian-startups' },
                 { title: 'The Strategic Value of Virtual CFO Services', link: '/blog/strategic-value-virtual-cfo-services' },

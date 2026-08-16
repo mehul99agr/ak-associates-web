@@ -321,6 +321,8 @@ export default function TransferPricingPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
                 { title: 'TP Documentation Checklist for Indian Subsidiaries (2026)', link: '/blog/transfer-pricing-documentation-checklist-india' },
+                { title: 'Form 3CEB: Due Date, Filing Process & Penalties', link: '/blog/form-3ceb-transfer-pricing-audit-report' },
+                { title: 'Master File vs Local File vs CbCR', link: '/blog/master-file-local-file-cbcr-india' },
                 { title: 'UAE Corporate Tax: Impact on Indian Businesses', link: '/blog/uae-corporate-tax-indian-impact' },
                 { title: 'POEM: When a Foreign Company Becomes Indian Tax Resident', link: '/blog/poem-place-of-effective-management-india' },
               ].map((item, i) => (
