@@ -341,7 +341,13 @@ export default function CompanyIncorporationPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
                 { title: 'How to Incorporate a Company in India: Pvt Ltd vs LLP vs OPC (2026)', link: '/blog/company-incorporation-india-guide' },
+                { title: 'LLP vs Private Limited Company: Which Structure Fits?', link: '/blog/llp-vs-private-limited-comparison-india' },
                 { title: 'Post-Incorporation Checklist: First 30 Days', link: '/blog/post-incorporation-checklist-first-30-days' },
+                { title: 'Annual ROC Filing: AOC-4, MGT-7 & DIR-3 KYC', link: '/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc' },
+                { title: 'Company Name Reservation: SPICe+ Part A & RUN', link: '/blog/company-name-reservation-run-form-india' },
+                { title: 'DSC and DIN Application Guide for Directors', link: '/blog/dsc-din-application-director-guide' },
+                { title: 'OPC to Private Limited Company Conversion', link: '/blog/opc-to-private-limited-conversion-india' },
+                { title: 'Foreign Subsidiary Registration: FDI Route & Compliance', link: '/blog/foreign-subsidiary-registration-india-fdi' },
                 { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
                 { title: 'Startup Compliance Calendar: Year 1 to Year 3', link: '/blog/startup-compliance-calendar-year-1-3' },
                 { title: 'Company Type Finder: Answer 4 Questions, Get a Recommendation', link: '/tools/incorporation-wizard' },

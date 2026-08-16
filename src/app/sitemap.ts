@@ -83,5 +83,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/master-file-local-file-cbcr-india`, lastModified: new Date('2026-08-10'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/post-incorporation-checklist-first-30-days`, lastModified: new Date('2026-08-12'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/startup-compliance-calendar-year-1-3`, lastModified: new Date('2026-08-13'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/blog/llp-vs-private-limited-comparison-india`, lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc`, lastModified: new Date('2026-06-18'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/blog/foreign-subsidiary-registration-india-fdi`, lastModified: new Date('2026-06-23'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/opc-to-private-limited-conversion-india`, lastModified: new Date('2026-06-26'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/dsc-din-application-director-guide`, lastModified: new Date('2026-07-02'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/company-name-reservation-run-form-india`, lastModified: new Date('2026-07-06'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }
