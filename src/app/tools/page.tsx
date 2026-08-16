@@ -48,7 +48,7 @@ const tools = [
 
 export default function ToolsHubPage() {
   return (
-    <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '130px' }}>
+    <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
       <div className="section">
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 4rem' }}>

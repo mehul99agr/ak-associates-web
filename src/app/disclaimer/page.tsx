@@ -19,7 +19,7 @@ export default function Disclaimer() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <div style={{ paddingTop: '130px' }}>
+      <div style={{ paddingTop: '100px' }}>
         <div className="section">
           <div className="container" style={{ maxWidth: '820px' }}>
             <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 2.75rem)', marginBottom: '0.5rem' }}>Disclaimer</h1>

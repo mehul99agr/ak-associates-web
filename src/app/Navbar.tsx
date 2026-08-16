@@ -8,7 +8,7 @@ const serviceLinks = [
   { href: '/services', label: 'All Services' },
   { href: '/company-incorporation', label: 'Company Incorporation' },
   { href: '/startups', label: 'Startups', accent: true },
-  { href: '/nri-tax-advisory', label: 'NRI Tax Advisory' },
+  { href: '/nri-tax-advisory', label: 'NRI Tax Advisory', accent: true },
   { href: '/transfer-pricing', label: 'Transfer Pricing' },
   { href: '/uae-tax-advisory', label: 'UAE Tax Advisory' },
   { href: '/offshore-accounting', label: 'Offshore Accounting' },
