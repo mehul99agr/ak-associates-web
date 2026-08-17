@@ -61,7 +61,7 @@ export default function VirtualCFOBlog() {
 
               <h2>The Cost Argument</h2>
               <p>A full-time CFO in a Tier-1 city costs Rs 25-60 lakh per year in salary alone, plus PF, gratuity, ESOP, and the hidden cost of severance if it does not work out. A senior Virtual CFO engagement typically runs Rs 30,000-1,20,000 per month, depending on the scope and complexity. For a business doing Rs 5-20 crore in revenue, that is 5-10% of a full-time hire&apos;s cost, with no fixed-cost commitment.</p>
-              <p>More importantly, a Virtual CFO brings exposure from working across multiple industries simultaneously. A CFO who has seen 30 businesses navigate working capital stress, 15 businesses raise debt, and 10 businesses prepare for acquisition is more valuable than a single-company hire who has done it once - your once.</p>
+              <p>More importantly, a Virtual CFO brings exposure from working across multiple industries simultaneously. A CFO who has seen businesses navigate working capital stress, raise debt, and prepare for acquisition brings pattern-recognition that a single-company hire, doing it for the first time, simply cannot match.</p>
 
               <h2>When Do You Need One?</h2>
               <p>There is no universal threshold, but the following situations are reliable signals:</p>

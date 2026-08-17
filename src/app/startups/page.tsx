@@ -186,7 +186,7 @@ export default function StartupsPage() {
                 <span className="stat-label">Startups & SMEs Served</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">5+</span>
+                <span className="stat-number">3+</span>
                 <span className="stat-label">Years Startup Advisory</span>
               </div>
               <div className="stat-item">

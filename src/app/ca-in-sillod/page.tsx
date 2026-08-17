@@ -196,7 +196,7 @@ export default function CAInSillod() {
               <span className="stat-label">Clients Across Maharashtra</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">5+</span>
+              <span className="stat-number">3+</span>
               <span className="stat-label">Years of Practice</span>
             </div>
             <div className="stat-item">
