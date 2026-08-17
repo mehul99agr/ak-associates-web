@@ -222,7 +222,8 @@ export default function DTAAGuideBlog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/esop-taxation-for-nris-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>ESOP Taxation for NRIs</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/foreign-retirement-fund-taxation-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Foreign Retirement Fund Taxation</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI ITR Filing from Abroad</Link></li>
-                  <li style={{ marginBottom: 0 }}><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Residential Status: 182-Day Rule</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Residential Status: 182-Day Rule</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/navigating-international-taxation-dtaa" style={{ color: 'var(--primary)', fontWeight: 600 }}>Navigating International Taxation & DTAA</Link></li>
                 </ul>
               </div>
             </article>

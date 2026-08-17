@@ -331,6 +331,7 @@ export default function TransferPricingPage() {
                 { title: 'India-UAE Transfer Pricing Compliance', link: '/blog/india-uae-transfer-pricing-compliance' },
                 { title: 'UAE Corporate Tax: Impact on Indian Businesses', link: '/blog/uae-corporate-tax-indian-impact' },
                 { title: 'POEM: When a Foreign Company Becomes Indian Tax Resident', link: '/blog/poem-place-of-effective-management-india' },
+                { title: 'Navigating International Taxation & DTAA', link: '/blog/navigating-international-taxation-dtaa' },
               ].map((item, i) => (
                 <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
                   <p style={{ color: 'var(--text-main)', fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.5, flex: 1, margin: 0 }}>{item.title}</p>

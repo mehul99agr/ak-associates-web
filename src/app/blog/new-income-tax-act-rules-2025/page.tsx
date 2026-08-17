@@ -97,6 +97,15 @@ export default function NewTaxActBlog() {
             </p>
           </div>
 
+          <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+            <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+            <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+              <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/understanding-new-tax-regime-2025-26" style={{ color: 'var(--primary)', fontWeight: 600 }}>Understanding the New Tax Regime (FY 2025-26)</Link></li>
+              <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing Documentation Checklist (2026)</Link></li>
+              <li style={{ marginBottom: 0 }}><Link href="/tax-calculator" style={{ color: 'var(--primary)', fontWeight: 600 }}>Income Tax Estimator Tool</Link></li>
+            </ul>
+          </div>
+
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-main)' }}>Want a personalized impact analysis?</h3>
             <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">

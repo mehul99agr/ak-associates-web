@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 
 type RegimeResult = { taxable: number; tax: number; rebate: number; cess: number; total: number }
 
@@ -162,6 +163,14 @@ export default function TaxCalculator() {
             <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: 1.6, margin: 0 }}>
               <strong>Note:</strong> A simplified estimator. The New Regime applies a <strong>₹75,000 standard deduction</strong>; the Old Regime applies <strong>₹50,000</strong> plus the deductions you enter (80C, 80D, HRA, home loan interest, etc.). It does not handle surcharge on very high incomes or special-rate capital gains. For a precise plan, consult our team.
             </p>
+          </div>
+
+          <div style={{ marginTop: '30px', padding: '20px', background: 'var(--bg-main)', borderRadius: '8px', border: '1px solid var(--border)' }}>
+            <h3 style={{ fontSize: '0.95rem', marginBottom: '0.75rem' }}>Related Guides</h3>
+            <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+              <li style={{ marginBottom: '0.4rem' }}><Link href="/blog/understanding-new-tax-regime-2025-26" style={{ color: 'var(--primary)', fontWeight: 600 }}>Understanding the New Tax Regime (FY 2025-26)</Link></li>
+              <li style={{ marginBottom: 0 }}><Link href="/blog/new-income-tax-act-rules-2025" style={{ color: 'var(--primary)', fontWeight: 600 }}>New Income Tax Act 2025: Simplified Guide</Link></li>
+            </ul>
           </div>
         </div>
       </div>
