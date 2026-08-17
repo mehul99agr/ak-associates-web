@@ -12,6 +12,22 @@ Next.js 15 website for **Agrawal Khandelwal & Associates LLP**, a CA firm based 
 - **Colors:** Navy `#0A2E5B` + Red `#D22B2B` — use CSS variables only, never hardcoded hex
 - **GA4 ID:** G-41NNQG654M (already wired in layout.tsx)
 
+## Verified Firm Stats — Do Not Invent Numbers
+The user (Aug 17, 2026) flagged fabricated track-record claims that had crept into
+several pages and asked for a full site-wide audit. Ground rules going forward:
+- **"100+ clients/businesses"** — confirmed accurate by the user. OK to use.
+- **"3+ Years"** — correct, matches the 2023 founding date. Never "5+ Years" (was
+  wrong on ca-in-sillod and startups pages, fixed commit b3e97f4).
+- **"20+ Expert Consultants"** — confirmed FALSE by the user, removed from homepage,
+  ca-in-nashik, ca-in-sillod stat grids (commit 1569fee). Do not reintroduce a team
+  headcount number without asking the user for the real figure first.
+- **Never invent specific numbers** for anything client/experience-related — no
+  "X companies incorporated," "seen N businesses do Y," "helped Z founders," etc.
+  — unless the user has explicitly given you that number. If a draft (yours or
+  Codex's) includes a number like this without a cited source, treat it as
+  fabricated and either cut it or ask before publishing. This applies to blog
+  copy, stat blocks, and testimonial-style anecdotes alike.
+
 ## Commands
 ```
 Dev:   node ".\node_modules\next\dist\bin\next" dev
