@@ -211,10 +211,6 @@ export default function CAInNashik() {
               <span className="stat-number">2</span>
               <span className="stat-label">Office Locations</span>
             </div>
-            <div className="stat-item">
-              <span className="stat-number">20+</span>
-              <span className="stat-label">Expert Consultants</span>
-            </div>
           </div>
         </div>
       </section>
