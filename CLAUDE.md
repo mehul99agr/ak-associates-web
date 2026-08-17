@@ -133,6 +133,38 @@ src/app/
   this adds the crawlable depth competitors had.
 - Verified live: titles correct (no brand doubling), founding 2023, schema rendering.
 
+## Topical Content Clusters (Aug 2026)
+Built out three topical authority clusters — Transfer Pricing, Startups (Compliance &
+Advisory), and Company Incorporation — across 5 phases, each following the same
+pattern: Article + FAQPage schema, TL;DR box at the top, cross-links within and across
+clusters, wired into `blog/page.tsx` (chronological order) and `sitemap.ts`, and a
+Related Reading section update on the matching service page. Copy for most phases was
+drafted via OpenAI Codex (through the `codex:codex-rescue` subagent) then fact-checked,
+templated, and shipped by Claude; Phase 5's last 4 posts were written directly by Claude
+after the Codex draft output was lost to a context/task-file issue.
+
+- **Phase 1-2 (Aug 9-13, 2026):** migrated 2 catch-all posts to standalone pages
+  (essential-compliance, virtual-cfo), added Form 3CEB, Master File/Local File/CbCR,
+  Post-Incorporation Checklist, Startup Compliance Calendar.
+- **Phase 3 (commit 2376f0b):** 6 Transfer Pricing posts — TP Methods, Safe Harbour, APA,
+  TP for IT Services, TP Audit/Assessment, India-UAE TP Compliance. Corrected a factual
+  error in the existing TP documentation checklist post (Local File/Master File
+  thresholds and Section 271BA vs 271AA penalties were conflated).
+- **Phase 4 (commit 688e561):** 7 Startup posts — ESOP Structuring, Angel Tax (corrected
+  effective date to April 1, 2024 per Finance (No. 2) Act 2024, abolished for ALL
+  investors not just residents), Startup Valuation, Convertible Notes vs Equity, Founder
+  Agreement Essentials, GST Registration for Startups, Due Diligence Checklist.
+- **Phase 5 (commit 87c6541, Aug 16, 2026):** 6 Company Incorporation posts — LLP vs
+  Private Limited, Annual ROC Filing (AOC-4/MGT-7/DIR-3 KYC), Foreign Subsidiary
+  Registration (FDI route), OPC to Private Limited Conversion, DSC/DIN Application
+  Guide, Company Name Reservation (SPICe+ Part A/RUN). This closed out the full
+  3-cluster/5-phase plan. Where source figures were uncertain (OPC mandatory
+  conversion thresholds, sectoral FDI caps), used qualitative language instead of a
+  specific number rather than risk a wrong figure — same discipline as the [VERIFY]
+  handling in earlier phases.
+- Build verified clean after each phase (`node ".\node_modules\next\dist\bin\next" build`).
+- All phase commits pushed to `origin/main`.
+
 ## GEO (Generative Engine Optimization)
 GEO = getting cited/recommended inside AI answers (ChatGPT, Claude, Perplexity, Google
 AI Overviews), distinct from SEO (ranking for clicks). Most SEO work doubles as GEO;
@@ -217,9 +249,13 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 2. Add more blog posts targeting low-competition keywords, following the winning
    pattern proven by tds-on-nri-property-sale-india (narrow + numeric + year-anchored
    + FAQPage schema). Aug 8, 2026: shipped 4 such posts (RNOR, POEM, NRE vs NRO, ESOP
-   for NRIs). Next candidates: retrofit TL;DR + real FAQ content onto the older posts
-   that still lack it (see GEO section above), or extend the NRI/FEMA cluster further
-   (e.g. RNOR + foreign retirement account taxability, NRI GAAR exposure).
+   for NRIs). Aug 16, 2026: completed the full 3-cluster/5-phase content plan (see
+   Topical Content Clusters section above) — Transfer Pricing, Startups, and Company
+   Incorporation clusters are all now built out. Next candidates: retrofit TL;DR + real
+   FAQ content onto the older posts that still lack it (see GEO section above), or pick
+   a new topical cluster to map and build (e.g. GST for services businesses, individual
+   tax planning/ITR filing, or extend NRI/FEMA further with RNOR + foreign retirement
+   account taxability, NRI GAAR exposure).
 3. Add IndiaMart PUBLIC seller URL to org `sameAs` (need the public page from the user)
 4. `/offshore-accounting` has been flat at ~pos 28 since Jun 4 despite the content
    rewrite — more on-page content isn't moving it; treat as an authority/backlink
