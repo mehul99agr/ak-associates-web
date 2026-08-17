@@ -117,6 +117,7 @@ const peopleLd = {
       hasCredential: [
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)', identifier: '614225' },
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'UAE Corporate Taxation Certification' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Concurrent Bank Audit Certification' },
       ],
       contactPoint: {
         '@type': 'ContactPoint',
