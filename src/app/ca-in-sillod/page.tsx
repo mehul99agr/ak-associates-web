@@ -85,7 +85,7 @@ const faqs = [
 const sillodLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': ['AccountingService', 'LocalBusiness', 'ProfessionalService'],
-  '@id': 'https://agrawalkhandelwal.com/#location-sillod',
+  '@id': 'https://agrawalkhandelwal.com/#sillod-office',
   name: 'Agrawal Khandelwal & Associates LLP - Sillod',
   alternateName: ['Agrawal Khandelwal & Associates LLP Sillod', 'CA in Sillod', 'Agrawal Khandelwal & Associates LLP CA Sillod'],
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',

@@ -41,6 +41,8 @@ const articleLd = {
     name: 'Agrawal Khandelwal & Associates LLP',
     logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
   },
+  inLanguage: 'en-IN',
+  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide',
 }
 

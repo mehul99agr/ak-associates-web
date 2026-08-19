@@ -93,7 +93,7 @@ const faqs = [
 const nashikLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': ['AccountingService', 'LocalBusiness', 'ProfessionalService'],
-  '@id': 'https://agrawalkhandelwal.com/#location-nashik',
+  '@id': 'https://agrawalkhandelwal.com/#nashik-office',
   name: 'Agrawal Khandelwal & Associates LLP',
   alternateName: ['Agrawal Khandelwal & Associates LLP Nashik', 'Agrawal Khandelwal & Associates LLP CA Nashik'],
   description: 'Best Chartered Accountant firm in Nashik offering GST filing, income tax returns, company incorporation, audit, tax planning, and international taxation services. Located at Mumbai Naka, Nashik.',

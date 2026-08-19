@@ -178,6 +178,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       name: 'Agrawal Khandelwal & Associates LLP',
       logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
     },
+    inLanguage: 'en-IN',
+    isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
     mainEntityOfPage: `${BASE_URL}/blog/${post.slug}`,
   }
 

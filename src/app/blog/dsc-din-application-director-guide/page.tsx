@@ -29,6 +29,8 @@ const articleLd = {
   datePublished: '2026-07-02', dateModified: '2026-07-02',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
   publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
+  inLanguage: 'en-IN',
+  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide',
 }
 

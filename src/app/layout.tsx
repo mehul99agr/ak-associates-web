@@ -61,13 +61,11 @@ export const metadata: Metadata = {
     'tax consultant Sillod', 'GST filing Sillod',
     // Maharashtra broader
     'CA in Maharashtra', 'chartered accountant Maharashtra',
-    // Bangalore: startup market
-    'CA for startups Bangalore', 'chartered accountant Bangalore',
-    'startup advisory Bangalore', 'company incorporation Bangalore',
-    'DPIIT registration Bangalore', 'virtual CFO Bangalore',
-    // Mumbai / MNC
-    'international tax consultant Mumbai', 'transfer pricing consultant India',
-    'DTAA consultant India', 'FEMA consultant Mumbai',
+    // Pan-India remote services
+    'CA for startups India', 'startup advisory India',
+    'company incorporation India', 'DPIIT registration India',
+    'transfer pricing consultant India',
+    'DTAA consultant India', 'FEMA consultant India',
     // NRI
     'NRI tax consultant India', 'NRI taxation services India',
     // UAE
@@ -156,9 +154,6 @@ const organizationLd = {
     { '@type': 'City', name: 'Nashik' },
     { '@type': 'City', name: 'Sillod' },
     { '@type': 'City', name: 'Chhatrapati Sambhajinagar' },
-    { '@type': 'City', name: 'Bangalore' },
-    { '@type': 'City', name: 'Mumbai' },
-    { '@type': 'City', name: 'Delhi' },
     { '@type': 'Country', name: 'United Arab Emirates' },
     { '@type': 'Country', name: 'India' },
   ],
@@ -205,6 +200,7 @@ const organizationLd = {
   location: [
     {
       '@type': 'Place',
+      '@id': 'https://agrawalkhandelwal.com/#nashik-office',
       name: 'Nashik Office',
       image: 'https://agrawalkhandelwal.com/office.jpg',
       address: {
@@ -220,6 +216,7 @@ const organizationLd = {
     },
     {
       '@type': 'Place',
+      '@id': 'https://agrawalkhandelwal.com/#sillod-office',
       name: 'Sillod Office',
       image: 'https://agrawalkhandelwal.com/office.jpg',
       address: {
