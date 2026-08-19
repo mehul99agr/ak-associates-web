@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'IN-MH',
     'geo.placename': 'Nashik, Maharashtra, India',
-    'geo.position': '20.0059;73.7879',
-    'ICBM': '20.0059, 73.7879',
+    'geo.position': '19.1947607;73.7879464',
+    'ICBM': '19.1947607, 73.7879464',
   },
 }
 
@@ -103,7 +103,7 @@ const nashikLocalBusiness = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '10',
+    reviewCount: '13',
     bestRating: '5',
     worstRating: '1',
   },
@@ -142,7 +142,7 @@ const nashikLocalBusiness = {
     'Company Incorporation', 'LLP Registration', 'International Taxation',
     'Transfer Pricing', 'DTAA Advisory', 'Virtual CFO Services',
   ],
-  hasMap: 'https://maps.google.com/?q=Ram+Plaza+Mumbai+Naka+Nashik',
+  hasMap: 'https://maps.google.com/?cid=17018233718758486792',
   sameAs: ['https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/'],
   parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
 }

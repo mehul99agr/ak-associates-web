@@ -40,7 +40,7 @@ const localBusinessLd = {
         closes: '18:00',
       }],
       priceRange: '₹₹',
-      hasMap: 'https://maps.google.com/?cid=15026601649790613456',
+      hasMap: 'https://maps.google.com/?cid=17018233718758486792',
       parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
     },
     {

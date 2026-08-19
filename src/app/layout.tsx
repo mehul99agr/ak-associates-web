@@ -79,8 +79,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'IN-MH',
     'geo.placename': 'Nashik, Maharashtra, India',
-    'geo.position': '20.0059;73.7879',
-    'ICBM': '20.0059, 73.7879',
+    'geo.position': '19.1947607;73.7879464',
+    'ICBM': '19.1947607, 73.7879464',
   },
   authors: [{ name: 'Agrawal Khandelwal & Associates LLP' }],
   creator: 'Agrawal Khandelwal & Associates LLP',
@@ -133,8 +133,8 @@ const organizationLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '20.0059',
-    longitude: '73.7879',
+    latitude: '19.1947607',
+    longitude: '73.7879464',
   },
   openingHoursSpecification: [
     {
@@ -147,7 +147,7 @@ const organizationLd = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '10',
+    reviewCount: '13',
     bestRating: '5',
     worstRating: '1',
   },
@@ -185,9 +185,9 @@ const organizationLd = {
     'https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/',
     'https://www.justdial.com/Nashik/Agrawal-Khandelwal-Associates-LLP-Opposite-Radiant-Hospital-Mumbai-Naka-Bhagwant-Nagar-Bhabha-Nagar/0253PX253-X253-240221190351-A8F7_BZDET',
     'https://www.sulekha.com/agrawal-khandelwal-and-associates-llp-mumbai-naka-nashik-contact-address',
-    'https://maps.google.com/?cid=15026601649790613456',
+    'https://maps.google.com/?cid=17018233718758486792',
   ],
-  hasMap: 'https://maps.google.com/?cid=15026601649790613456',
+  hasMap: 'https://maps.google.com/?cid=17018233718758486792',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Chartered Accountant Services',
@@ -215,7 +215,7 @@ const organizationLd = {
         postalCode: '422011',
         addressCountry: 'IN',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: '20.0059', longitude: '73.7879' },
+      geo: { '@type': 'GeoCoordinates', latitude: '19.1947607', longitude: '73.7879464' },
       telephone: '+91-95275-33506',
     },
     {
