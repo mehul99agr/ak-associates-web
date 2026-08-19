@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Founder Agreement Essentials (Startups)', item: 'https://agrawalkhandelwal.com/blog/founder-agreement-essentials-indian-startups' },
+  ],
+}
+
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'Founder Agreement Essentials (Startups)',
@@ -49,6 +59,7 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 export default function FounderAgreementBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

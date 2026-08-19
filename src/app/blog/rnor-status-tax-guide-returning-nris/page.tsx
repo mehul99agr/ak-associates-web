@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'RNOR Status for Returning NRIs (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/rnor-status-tax-guide-returning-nris' },
+  ],
+}
+
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -93,6 +103,7 @@ const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surf
 export default function RNORStatusBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

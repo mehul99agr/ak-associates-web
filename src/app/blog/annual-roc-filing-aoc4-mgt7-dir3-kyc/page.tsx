@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Annual ROC Filing Guide (India)', item: 'https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc' },
+  ],
+}
+
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'Annual ROC Filing Guide (India)',
@@ -53,6 +63,7 @@ const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surf
 export default function AnnualROCFilingBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

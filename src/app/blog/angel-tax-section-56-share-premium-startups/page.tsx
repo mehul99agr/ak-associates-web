@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Angel Tax Abolished for All Investors', item: 'https://agrawalkhandelwal.com/blog/angel-tax-section-56-share-premium-startups' },
+  ],
+}
+
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'Angel Tax Abolished for All Investors',
@@ -49,6 +59,7 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 export default function AngelTaxBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

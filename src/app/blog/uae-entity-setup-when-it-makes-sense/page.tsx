@@ -19,6 +19,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'UAE Entity Setup: When It Makes Sense', item: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense' },
+  ],
+}
+
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -45,6 +55,7 @@ const articleLd = {
 export default function UAEEntitySetupBlog() {
   return (
     <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">

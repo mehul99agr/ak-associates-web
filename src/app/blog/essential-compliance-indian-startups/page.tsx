@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   openGraph: { title: 'Essential Compliance for Indian Startups', description: 'MCA, GST, TDS, advance tax, and FEMA reporting checklist for Indian startups.', url: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups', type: 'article' },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Essential Compliance for Indian Startups', item: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' },
+  ],
+}
+
 const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Essential Compliance for Indian Startups', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' }
 
 const faqs: [string, string][] = [
@@ -24,6 +34,7 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 export default function EssentialComplianceBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

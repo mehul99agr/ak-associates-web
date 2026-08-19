@@ -462,6 +462,15 @@ const posts = [
   },
 ]
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+  ],
+}
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -532,6 +541,7 @@ export default function Blog() {
   const cal = getComplianceDeadlines(ist.getUTCMonth(), ist.getUTCFullYear())
   return (
     <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
       <div className="section">

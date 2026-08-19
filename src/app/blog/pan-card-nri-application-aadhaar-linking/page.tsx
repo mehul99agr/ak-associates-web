@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   openGraph: { title: 'PAN Card for NRIs: Application & Aadhaar Linking', description: 'How to apply from abroad, Aadhaar exemption, and when PAN is required.', url: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking', type: 'article' },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'PAN Card for NRIs (2026)', item: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' },
+  ],
+}
+
 const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'PAN Card for NRIs (2026)', description: 'PAN application, Aadhaar linking, and requirements for NRIs.', datePublished: '2026-04-18', dateModified: '2026-04-18', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' }
 
 const faqs: [string, string][] = [
@@ -24,6 +34,7 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 export default function PANCardNRIBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

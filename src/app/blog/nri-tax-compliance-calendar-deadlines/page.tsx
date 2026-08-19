@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   openGraph: { title: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Every deadline: advance tax, ITR, TDS returns, FLA, Form 15CA/15CB.', url: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines', type: 'article' },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'NRI Tax Compliance Calendar (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' },
+  ],
+}
+
 const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Tax deadlines for NRIs.', datePublished: '2026-08-14', dateModified: '2026-08-14', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' }
 
 const faqs: [string, string][] = [
@@ -24,6 +34,7 @@ const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#ff
 export default function NRIComplianceCalendarBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

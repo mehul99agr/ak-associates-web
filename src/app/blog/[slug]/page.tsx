@@ -160,6 +160,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   if (!post) notFound()
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE_URL}/blog/${post.slug}` },
+    ],
+  }
+
   const articleLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -185,6 +195,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <div className="section">
         <div className="container">

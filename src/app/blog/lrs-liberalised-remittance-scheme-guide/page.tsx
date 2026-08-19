@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article' },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'LRS Guide: USD 250K Limit & TCS (2026)', item: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' },
+  ],
+}
+
 const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'LRS Guide: USD 250K Limit & TCS (2026)', description: 'LRS guide for outward remittances from India.', datePublished: '2026-06-20', dateModified: '2026-06-20', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' }
 
 const faqs: [string, string][] = [
@@ -24,6 +34,7 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 export default function LRSGuideBlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>

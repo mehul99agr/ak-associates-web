@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   openGraph: { title: 'Schedule FA: Foreign Asset Disclosure for Returning NRIs', description: 'When Schedule FA applies, what to disclose, and penalties for non-compliance.', url: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri', type: 'article' },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Schedule FA: Foreign Asset Disclosure (2026)', item: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' },
+  ],
+}
+
 const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Schedule FA: Foreign Asset Disclosure (2026)', description: 'When Schedule FA applies, what to declare, and penalties.', datePublished: '2026-07-28', dateModified: '2026-07-28', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' }
 
 const faqs: [string, string][] = [
@@ -24,6 +34,7 @@ const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
 export default function ScheduleFABlog() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
