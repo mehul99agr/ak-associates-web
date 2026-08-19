@@ -52,11 +52,29 @@ const articleLd = {
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025',
 }
 
+const faqs: [string, string][] = [
+  ['What is the New Income Tax Act 2025?', 'A structural overhaul of India\'s income tax law aimed at simplifying language, reducing litigation, and modernizing compliance for a digital-first economy, while moving the New Tax Regime closer to becoming the primary framework for individual taxpayers.'],
+  ['Does the new Act eliminate the old tax regime?', 'The Act moves toward making the New Tax Regime the sole framework for individual taxpayers, gradually phasing out complex exemptions in favour of lower overall tax rates and higher standard deductions, rather than abolishing the old regime immediately.'],
+  ['What changed in business computation rules?', 'Key changes include a standardized 15% depreciation rate for general plant and machinery, simplified carry-forward rules for startup losses during mergers and acquisitions, and digitally-verified valuation rules for unlisted shares.'],
+  ['How does AI-driven assessment work under the new rules?', 'The Faceless Assessment system is upgraded with AI-driven risk parameters, so tax scrutiny is now highly targeted, focusing on high-value discrepancies identified through automated cross-referencing of GST, banking, and ROC data.'],
+]
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function NewTaxActBlog() {
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">
         <Link href="/blog" style={{ color: 'var(--accent)', fontWeight: 700, display: 'inline-block', marginBottom: '2rem' }}>
@@ -108,6 +126,18 @@ export default function NewTaxActBlog() {
             <p style={{ marginBottom: '1.5rem' }}>
               The 2025 Act represents a "Trust-based" taxation model. While it offers lower rates and fewer hurdles, it demands transparency. At **Agrawal Khandelwal & Associates LLP**, we are already assisting our clients in transitioning their financial planning to align with these new computational standards.
             </p>
+          </div>
+
+          <div style={{ marginTop: '3rem' }}>
+            <h2 style={{ color: 'var(--primary)', marginBottom: '1.5rem', fontSize: '1.8rem' }}>Frequently Asked Questions</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {faqs.map(([q, a], i) => (
+                <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
+                  <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

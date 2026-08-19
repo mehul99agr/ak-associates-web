@@ -52,11 +52,29 @@ const articleLd = {
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense',
 }
 
+const faqs: [string, string][] = [
+  ['When does setting up a UAE entity actually make sense for an Indian business?', 'When you have genuine cross-border revenue and want to invoice international clients directly, your customers or investors are Gulf-based and need a local presence, your industry is genuinely more favourable in the UAE (fintech, crypto, DIFC-regulated services), or you are actually relocating with real tax residency and substance.'],
+  ['What does a UAE entity cost to set up and maintain?', 'Formation costs typically run Rs 3-6 lakhs, plus ongoing annual compliance costs for audit, filings, registered agent fees, and license renewal. If the structure isn\'t clean, unwinding it before a fundraise or acquisition is a significant additional legal and financial exercise.'],
+  ['Can I set up a UAE entity purely to reduce Indian tax?', 'No. India\'s General Anti-Avoidance Rule (GAAR) specifically targets arrangements where the main purpose is obtaining a tax benefit without commercial substance, and FEMA requires prior RBI approval for many outbound investment structures.'],
+  ['What is India\'s POEM rule and how does it affect a UAE entity?', 'India\'s Place of Effective Management (POEM) rules can tax a foreign entity as an Indian entity if it is actually controlled from India. A UAE company without real UAE-based decision-making and operations does not escape Indian tax exposure just by being incorporated there.'],
+]
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function UAEEntitySetupBlog() {
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">
         <Link href="/blog" style={{ color: 'var(--accent)', fontWeight: 700, display: 'inline-block', marginBottom: '2rem' }}>
@@ -148,6 +166,18 @@ export default function UAEEntitySetupBlog() {
             <p style={{ marginBottom: '1.5rem' }}>
               If the answers support the structure, it can be an excellent strategic decision. If they don&apos;t, you&apos;re paying formation costs now and professional fees to unwind it later.
             </p>
+          </div>
+
+          <div style={{ marginTop: '3rem' }}>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--primary)' }}>Frequently Asked Questions</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {faqs.map(([q, a], i) => (
+                <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
+                  <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

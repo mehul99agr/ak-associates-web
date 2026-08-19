@@ -51,11 +51,29 @@ const articleLd = {
   mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact',
 }
 
+const faqs: [string, string][] = [
+  ['What is the UAE Corporate Tax rate and when does it apply?', 'The UAE Federal Corporate Tax applies at a standard rate of 9% on taxable income exceeding AED 375,000. Entities with taxable income below that threshold are not subject to the tax, but must still maintain IFRS-compliant accounting records.'],
+  ['Can Indian companies avoid double taxation on UAE income?', 'Yes. Under the India-UAE DTAA, Indian businesses can potentially claim tax credits in India for corporate tax paid in the UAE. This requires correctly determining Place of Effective Management (POEM), holding a valid Tax Residency Certificate (TRC), and documenting arm\'s-length pricing on cross-border transactions.'],
+  ['Do UAE Free Zone entities still get a 0% tax rate?', 'Qualifying Free Zone Persons may still enjoy a 0% rate on qualifying income, but the definition of "qualifying" is strict. Indian firms operating in JAFZA, DMCC, or DIFC must review their revenue streams to avoid inadvertently triggering the 9% rate on their entire global operations.'],
+  ['Does UAE Corporate Tax affect transactions with an Indian parent company?', 'Yes. Any transaction between an Indian parent and its UAE subsidiary, including management fees, royalties, or goods trade, must be justified at market value under Transfer Pricing rules, or risk penalties from both the UAE Federal Tax Authority and the Indian Income Tax Department.'],
+]
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function UAECorporateTaxBlog() {
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">
         <Link href="/blog" style={{ color: 'var(--accent)', fontWeight: 700, display: 'inline-block', marginBottom: '2rem' }}>
@@ -107,6 +125,18 @@ export default function UAECorporateTaxBlog() {
             <p style={{ marginBottom: '1.5rem' }}>
               The introduction of UAE CT necessitates a "Health Check" of your international corporate structure. Our firm specializes in <Link href="/uae-tax-advisory" style={{ color: 'var(--accent)', fontWeight: 600 }}>UAE tax advisory</Link> and <Link href="/transfer-pricing" style={{ color: 'var(--accent)', fontWeight: 600 }}>transfer pricing compliance</Link>, helping you navigate the intersection of Indian Tax laws and the new UAE regulations to ensure your global footprint remains tax-optimized and compliant.
             </p>
+          </div>
+
+          <div style={{ marginTop: '3rem' }}>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--primary)' }}>Frequently Asked Questions</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {faqs.map(([q, a], i) => (
+                <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
+                  <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

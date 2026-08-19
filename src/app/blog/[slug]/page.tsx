@@ -64,6 +64,12 @@ const posts = [
 <p>For the majority of salaried Indians, the FY 2025-26 new regime is now the simpler and cheaper option, the Rs 12 lakh rebate threshold is a genuine relief for the middle class. The taxpayers who should pause and run the comparison are those with substantial home loan interest and fully utilised 80C, 80D, and HRA, where the old regime may still edge ahead.</p>
 
 <p>If your situation is borderline, or if you have capital gains, multiple income sources, or business income, the regime choice interacts with how you structure your finances. That is exactly the kind of planning where a short conversation with a CA pays for itself, getting the regime choice and the timing right can save more than any single deduction.</p>`,
+    faqs: [
+      ['What are the FY 2025-26 New Tax Regime slabs?', 'Nil up to Rs 4,00,000; 5% from Rs 4,00,001-8,00,000; 10% from Rs 8,00,001-12,00,000; 15% from Rs 12,00,001-16,00,000; 20% from Rs 16,00,001-20,00,000; 25% from Rs 20,00,001-24,00,000; and 30% above Rs 24,00,000, plus 4% Health and Education Cess.'],
+      ['Who pays zero tax under the new regime?', 'Anyone with taxable income up to Rs 12 lakh pays zero tax due to the Section 87A rebate. For salaried individuals, the Rs 75,000 standard deduction effectively pushes this to Rs 12.75 lakh in gross salary before any tax is owed.'],
+      ['Does the Section 87A rebate cover capital gains?', 'No. The rebate applies only to income taxed at slab rates. It does not extend to special-rate income such as long-term capital gains on equity, which is taxed separately at 12.5% regardless of your total taxable income.'],
+      ['When should I still choose the old tax regime?', 'The old regime can still win if your combined deductions (Section 80C, 80D, home loan interest, HRA) exceed roughly Rs 3.75-4 lakh, typically someone with significant home loan interest plus fully utilised 80C, HRA, and health insurance.'],
+    ] as [string, string][],
   },
   {
     title: 'International Taxation & DTAA Guide',
@@ -133,6 +139,12 @@ const posts = [
 <h2>Practical Takeaway</h2>
 
 <p>International tax planning is not about minimising taxes at any cost — post-BEPS, aggressive tax positions face both financial penalties and reputational risk. The goal is to structure transactions correctly from the start: proper agreements, correct withholding, on-time forms, and documented substance. Our team handles the full cycle — from treaty analysis and TRC assistance to Form 3CEB filing, APA applications, and representation before the Authority for Advance Rulings.</p>`,
+    faqs: [
+      ['What is a DTAA and why does it matter for Indian businesses?', 'A Double Taxation Avoidance Agreement is a bilateral tax treaty between two countries that determines which country can tax specific income types, such as dividends, interest, royalties, and capital gains, preventing the same income from being taxed twice.'],
+      ['How do I claim DTAA benefits in India?', 'Obtain a Tax Residency Certificate (TRC) from your home country\'s tax authority, submit Form 10F to Indian tax authorities, apply the correct treaty article for your income type, and maintain substance documentation supporting genuine economic presence.'],
+      ['What creates Permanent Establishment (PE) risk in India?', 'A foreign company creates a PE, and becomes taxable on Indian-source business profits, if it has a fixed place of business in India, a dependent agent who habitually concludes contracts, a long construction or installation project, or key management personnel based in India for sustained periods.'],
+      ['What documentation is needed for related-party cross-border transactions?', 'Transactions between related entities in different countries must be priced at arm\'s length, with Transfer Pricing documentation (Master File, Local File, Form 3CEB) required for transactions exceeding Rs 1 crore under Sections 92-92F of the Income Tax Act.'],
+    ] as [string, string][],
   },
 ]
 
@@ -193,10 +205,21 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     mainEntityOfPage: `${BASE_URL}/blog/${post.slug}`,
   }
 
+  const faqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map(([q, a]) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  }
+
   return (
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div className="section">
         <div className="container">
           <Link href="/blog" style={{ color: 'var(--accent)', marginBottom: '2rem', display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 700 }}>
@@ -217,6 +240,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+
+            <div style={{ marginTop: '3rem' }}>
+              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {post.faqs.map(([q, a], i) => (
+                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
+                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>Reviewed By</h3>
