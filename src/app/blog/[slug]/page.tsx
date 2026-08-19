@@ -197,6 +197,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
               <span>{post.date}</span>
               <span aria-hidden>•</span>
+              <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
+              <span aria-hidden>•</span>
               <span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div
@@ -205,7 +207,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+            <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>Reviewed By</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', margin: 0 }}>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>, Chartered Accountant (ICAI), UAE Corporate Taxation certified. Last reviewed {post.date}.
+              </p>
+              <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
+                <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India — <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+              </ul>
+            </div>
+
+            <div style={{ marginTop: '1.5rem', padding: '2.5rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ marginBottom: '0.75rem' }}>Need help with this?</h3>
               <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>Book a free consultation with our partners, or message us on WhatsApp for a quick answer.</p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
