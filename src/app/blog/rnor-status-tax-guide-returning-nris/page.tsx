@@ -221,6 +221,15 @@ export default function RNORStatusBlog() {
                   ))}
                 </div>
               </div>
+
+              <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Returning to India: Financial Checklist</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Residential Status: 182-Day Rule</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/schedule-fa-foreign-asset-disclosure-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Schedule FA: Foreign Asset Disclosure</Link></li>
+                </ul>
+              </div>
             </article>
           </div>
         </div>

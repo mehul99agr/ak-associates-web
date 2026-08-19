@@ -113,7 +113,8 @@ export default function NRIGiftInheritanceBlog() {
               <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-capital-gains-inherited-gifted-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>Capital Gains on Inherited/Gifted Property</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI Property Sale</Link></li>
-                <li style={{ marginBottom: 0 }}><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Residential Status</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Residential Status</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/blog/lrs-liberalised-remittance-scheme-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>LRS: Liberalised Remittance Scheme Guide</Link></li>
               </ul>
             </div>
           </article>

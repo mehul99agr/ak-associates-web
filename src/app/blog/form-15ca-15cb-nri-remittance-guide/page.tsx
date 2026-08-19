@@ -246,7 +246,9 @@ export default function Form15CA15CBBlog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO Account Repatriation: Rules, Limits & Process</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO Account: FEMA Repatriation Limits</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-repatriation-property-sale-proceeds" style={{ color: 'var(--primary)', fontWeight: 600 }}>Repatriating NRI Property Sale Proceeds</Link></li>
-                  <li style={{ marginBottom: 0 }}><Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI Property Sale: Complete Guide</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI Property Sale: Complete Guide</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/lrs-liberalised-remittance-scheme-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>LRS: Liberalised Remittance Scheme Guide</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/nri-tax-compliance-calendar-deadlines" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Compliance Calendar</Link></li>
                 </ul>
               </div>
             </article>

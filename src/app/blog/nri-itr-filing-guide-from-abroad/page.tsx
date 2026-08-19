@@ -165,7 +165,11 @@ export default function NRIITRFilingBlog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Residential Status: 182-Day Rule</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-tds-refund-property-sale" style={{ color: 'var(--primary)', fontWeight: 600 }}>How NRIs Claim TDS Refund</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-rental-income-tax-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Rental Income Tax</Link></li>
-                  <li style={{ marginBottom: 0 }}><Link href="/blog/nri-mutual-fund-stock-taxation-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Mutual Fund & Stock Taxation</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-mutual-fund-stock-taxation-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Mutual Fund & Stock Taxation</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/pan-card-nri-application-aadhaar-linking" style={{ color: 'var(--primary)', fontWeight: 600 }}>PAN Card for NRIs (2026)</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/schedule-fa-foreign-asset-disclosure-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Schedule FA: Foreign Asset Disclosure</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tds-nro-interest-fd-dtaa-relief" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRO Interest & FD: DTAA Relief</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/nri-tax-compliance-calendar-deadlines" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Compliance Calendar</Link></li>
                 </ul>
               </div>
             </article>

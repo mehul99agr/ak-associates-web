@@ -91,6 +91,15 @@ export default function NRIComplianceCalendarBlog() {
               </div>
             </div>
 
+            <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI ITR Filing from Abroad</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Returning to India: Financial Checklist</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 15CA/15CB NRI Remittance Guide</Link></li>
+              </ul>
+            </div>
+
             <div style={{ marginTop: '3rem' }}>
               <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>

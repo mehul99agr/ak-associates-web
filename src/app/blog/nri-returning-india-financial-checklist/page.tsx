@@ -241,7 +241,9 @@ export default function NRIReturningIndiaChecklist() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR Status: How Long Is the Tax Holiday?</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO Account: FEMA Repatriation Limits</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/esop-taxation-for-nris-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>ESOP Taxation for NRIs</Link></li>
-                  <li style={{ marginBottom: 0 }}><Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>POEM: Foreign Company as Indian Tax Resident</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>POEM: Foreign Company as Indian Tax Resident</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/schedule-fa-foreign-asset-disclosure-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Schedule FA: Foreign Asset Disclosure</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/nri-tax-compliance-calendar-deadlines" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Compliance Calendar</Link></li>
                 </ul>
               </div>
             </article>

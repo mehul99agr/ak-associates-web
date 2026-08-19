@@ -221,7 +221,8 @@ export default function NRORepatriationBlog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO Account: FEMA Repatriation Limits Explained</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-repatriation-property-sale-proceeds" style={{ color: 'var(--primary)', fontWeight: 600 }}>Repatriating NRI Property Sale Proceeds</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI Property Sale: Complete Guide</Link></li>
-                  <li style={{ marginBottom: 0 }}><Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13: How to Get a Lower TDS Certificate</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13: How to Get a Lower TDS Certificate</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/lrs-liberalised-remittance-scheme-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>LRS: Liberalised Remittance Scheme Guide</Link></li>
                 </ul>
               </div>
             </article>

@@ -366,6 +366,14 @@ export default function DubaiCompanyRegistrationBlog() {
 
             </div>
 
+            <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/uae-entity-setup-when-it-makes-sense" style={{ color: 'var(--primary)', fontWeight: 600 }}>UAE Entity Setup: When It Makes Sense</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/blog/uae-corporate-tax-indian-impact" style={{ color: 'var(--primary)', fontWeight: 600 }}>UAE Corporate Tax: Impact on India</Link></li>
+              </ul>
+            </div>
+
             <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
               <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Planning a Dubai company? Start with the FEMA and tax structure first.</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', maxWidth: '550px', margin: '0.75rem auto 2rem' }}>
