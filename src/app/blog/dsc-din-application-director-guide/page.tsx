@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'DSC and DIN Application Guide for Company Directors in India',
+  title: 'DSC & DIN Application Guide (India)',
   description: 'How to apply for a Digital Signature Certificate and Director Identification Number in India: process for new companies via SPICe+, process for existing companies via DIR-3, and common rejection reasons.',
   keywords: [
     'DSC application India', 'DIN application process', 'Director Identification Number India',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide' },
   openGraph: {
-    title: 'DSC and DIN Application Guide for Company Directors in India',
+    title: 'DSC & DIN Application Guide (India)',
     description: 'The process to obtain a Digital Signature Certificate and Director Identification Number, and common rejection reasons to avoid.',
     url: 'https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide',
     type: 'article',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'DSC and DIN Application Guide for Company Directors in India',
+  headline: 'DSC & DIN Application Guide (India)',
   description: 'How to apply for a Digital Signature Certificate and Director Identification Number, for both new and existing companies.',
   datePublished: '2026-07-02', dateModified: '2026-07-02',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

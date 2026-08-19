@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRE vs NRO Account: FEMA Repatriation Limits Explained (2026)',
+  title: 'NRE vs NRO: FEMA Repatriation Limits',
   description: 'NRE vs NRO vs FCNR accounts compared: which income goes where, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
   keywords: [
     'NRE vs NRO account', 'NRI repatriation limit', 'USD 1 million scheme NRI',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits' },
   openGraph: {
-    title: 'NRE vs NRO Account: FEMA Repatriation Limits Explained (2026)',
+    title: 'NRE vs NRO: FEMA Repatriation Limits',
     description: 'Which income goes into which account, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
     url: 'https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NRE vs NRO Account: FEMA Repatriation Limits Explained (2026)',
+  headline: 'NRE vs NRO: FEMA Repatriation Limits',
   description: 'NRE vs NRO vs FCNR accounts compared: which income goes where, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
   datePublished: '2026-08-08',
   dateModified: '2026-08-08',

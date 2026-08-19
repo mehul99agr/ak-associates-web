@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Schedule FA: Foreign Asset Disclosure for NRIs and Returning Indians (2026)',
+  title: 'Schedule FA: Foreign Asset Disclosure (2026)',
   description: 'When Schedule FA kicks in, what to declare, penalties for non-disclosure, and the Foreign Assets Disclosure Scheme 2026. Applies to Residents and RNOR only, not NRIs.',
   keywords: ['Schedule FA NRI', 'foreign asset disclosure India', 'Schedule FA ITR', 'foreign assets NRI India', 'NRI foreign bank account disclosure', 'Schedule FA penalty', 'black money act NRI'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' },
   openGraph: { title: 'Schedule FA: Foreign Asset Disclosure for Returning NRIs', description: 'When Schedule FA applies, what to disclose, and penalties for non-compliance.', url: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Schedule FA: Foreign Asset Disclosure for NRIs and Returning Indians (2026)', description: 'When Schedule FA applies, what to declare, and penalties.', datePublished: '2026-07-28', dateModified: '2026-07-28', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Schedule FA: Foreign Asset Disclosure (2026)', description: 'When Schedule FA applies, what to declare, and penalties.', datePublished: '2026-07-28', dateModified: '2026-07-28', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' }
 
 const faqs: [string, string][] = [
   ['Do NRIs need to fill Schedule FA?', 'No. Schedule FA (Foreign Assets and Income from any source outside India) is required only for individuals who qualify as Resident or RNOR under Indian tax law. Non-Residents (NRIs) are explicitly exempt from Schedule FA disclosure. This is one of the key compliance differences between NRI and RNOR/Resident status.'],

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'LLP vs Private Limited Company: Detailed Comparison for Indian Founders (2026)',
+  title: 'LLP vs Private Limited Company (2026)',
   description: 'Tax treatment, compliance burden, fundraising limitations, and the LLP-to-Pvt-Ltd conversion path. Real scenarios for which structure wins - professional practices vs venture-funded startups.',
   keywords: [
     'LLP vs Private Limited India', 'LLP vs Pvt Ltd comparison', 'LLP tax vs company tax India',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'LLP vs Private Limited Company: Detailed Comparison for Indian Founders (2026)',
+  headline: 'LLP vs Private Limited Company (2026)',
   description: 'Tax treatment, compliance burden, fundraising limitations, and the conversion path between LLP and Private Limited Company.',
   datePublished: '2026-06-15', dateModified: '2026-06-15',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

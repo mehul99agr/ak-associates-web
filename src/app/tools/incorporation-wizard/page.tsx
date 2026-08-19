@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import IncorporationWizard from './IncorporationWizard'
 
 export const metadata: Metadata = {
-  title: 'Company Type Finder: Private Limited vs LLP vs OPC India',
+  title: 'Company Type Finder Tool (India)',
   description: 'Not sure which company structure to register in India? Answer 4 questions and get a CA-backed recommendation: Private Limited, LLP, or OPC.',
   keywords: [
     'company incorporation India', 'private limited vs LLP India',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/tools/incorporation-wizard' },
   openGraph: {
-    title: 'Company Type Finder: Private Limited vs LLP vs OPC India',
+    title: 'Company Type Finder Tool (India)',
     description: 'Answer 4 quick questions and find out whether you should register a Private Limited Company, LLP, or OPC in India.',
     url: 'https://agrawalkhandelwal.com/tools/incorporation-wizard',
   },

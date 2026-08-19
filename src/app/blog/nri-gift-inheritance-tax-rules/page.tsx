@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRI Gift & Inheritance Tax: Receiving Money from India or Abroad (2026)',
+  title: 'NRI Gift & Inheritance Tax Rules (2026)',
   description: 'Gift and inheritance tax rules for NRIs: taxability based on residential status, exempt gifts from relatives, FEMA implications of cross-border gifts, and LRS limits for gifts to NRIs.',
   keywords: ['NRI gift tax India', 'NRI inheritance tax', 'gift to NRI from India', 'inheritance NRI India', 'gift tax exemption NRI', 'NRI gift FEMA', 'cross border gift tax India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules' },
   openGraph: { title: 'NRI Gift & Inheritance Tax Rules (2026)', description: 'Taxability, exemptions, FEMA rules, and LRS limits for NRI gifts and inheritance.', url: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Gift & Inheritance Tax: Receiving Money from India or Abroad (2026)', description: 'Gift and inheritance tax rules for NRIs.', datePublished: '2026-05-29', dateModified: '2026-05-29', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Gift & Inheritance Tax Rules (2026)', description: 'Gift and inheritance tax rules for NRIs.', datePublished: '2026-05-29', dateModified: '2026-05-29', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules' }
 
 const faqs: [string, string][] = [
   ['Is inheritance taxable for NRIs in India?', 'No. India abolished inheritance tax (estate duty) in 1985. Money or property received through inheritance is not taxable as income for the recipient, whether NRI or resident. However, any income earned on inherited assets after receipt (rent, interest, capital gains on sale) is taxable based on the recipient\'s residential status. If an NRI inherits property and later sells it, capital gains tax applies under the normal rules.'],

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'TAN Application Guide for Buyers Purchasing Property from an NRI',
+  title: 'TAN Application Guide (NRI Property)',
   description: 'Step-by-step TAN application process for buyers purchasing property from an NRI seller — Form 49B, documents, fees, processing time, and why Form 26QB does not apply here.',
   keywords: [
     'TAN application for buying property from NRI', 'TAN registration India', 'form 49B TAN',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tan-application-guide-buyer-nri-property' },
   openGraph: {
-    title: 'TAN Application Guide for Buyers Purchasing Property from an NRI',
+    title: 'TAN Application Guide (NRI Property)',
     description: 'Form 49B process, documents, fees, and timeline for buyers who need a TAN to purchase property from an NRI seller.',
     url: 'https://agrawalkhandelwal.com/blog/tan-application-guide-buyer-nri-property',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TAN Application Guide for Buyers Purchasing Property from an NRI',
+    title: 'TAN Application Guide (NRI Property)',
     description: 'Form 49B process, documents, fees, and timeline for buyers who need a TAN to purchase property from an NRI seller.',
   },
 }
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'TAN Application Guide for Buyers Purchasing Property from an NRI',
+  headline: 'TAN Application Guide (NRI Property)',
   description: 'Form 49B TAN application process, documents, fees, and processing time for buyers purchasing property from an NRI seller under Section 195.',
   datePublished: '2026-07-11',
   dateModified: '2026-07-11',

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Icon from '../Icon'
 
 export const metadata: Metadata = {
-  title: 'CA for Startups in Bangalore, Mumbai & Nashik | Startup Advisory',
+  title: 'Startup Advisory & CA Services',
   description: 'CA firm for startups: company incorporation, DPIIT registration, ESOP structuring, Virtual CFO, and FDI/FEMA compliance in Bangalore, Mumbai, and Nashik.',
   keywords: [
     'CA for startups India', 'startup CA India', 'CA for startups Bangalore',

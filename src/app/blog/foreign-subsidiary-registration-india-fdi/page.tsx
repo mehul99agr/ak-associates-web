@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Foreign Subsidiary Registration in India: FDI Route & Compliance Guide',
+  title: 'Foreign Subsidiary Registration (India)',
   description: 'How a foreign parent company registers an Indian subsidiary: Automatic vs Government FDI route, resident director requirement, SPICe+ for foreign shareholders, and FC-GPR/FLA compliance.',
   keywords: [
     'foreign subsidiary registration India', 'FDI automatic route India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi' },
   openGraph: {
-    title: 'Foreign Subsidiary Registration in India: FDI Route & Compliance Guide',
+    title: 'Foreign Subsidiary Registration (India)',
     description: 'The FDI route, director requirements, incorporation steps and post-investment compliance for a foreign parent setting up an Indian subsidiary.',
     url: 'https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Foreign Subsidiary Registration in India: FDI Route & Compliance Guide',
+  headline: 'Foreign Subsidiary Registration (India)',
   description: 'How a foreign parent company registers a wholly owned Indian subsidiary, including FDI route, director requirements, and post-investment reporting.',
   datePublished: '2026-06-23', dateModified: '2026-06-23',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

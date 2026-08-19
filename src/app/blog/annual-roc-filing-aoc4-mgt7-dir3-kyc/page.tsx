@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Annual ROC Filing for Companies: AOC-4, MGT-7 & DIR-3 KYC Guide',
+  title: 'Annual ROC Filing Guide (India)',
   description: 'Every mandatory annual MCA filing for an Indian company: AOC-4 financial statements, MGT-7/7A annual return, DIR-3 KYC, ADT-1, deadlines relative to your AGM, and the penalty for late filing.',
   keywords: [
     'AOC-4 due date', 'MGT-7 due date', 'DIR-3 KYC deadline', 'annual ROC filing India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc' },
   openGraph: {
-    title: 'Annual ROC Filing for Companies: AOC-4, MGT-7 & DIR-3 KYC Guide',
+    title: 'Annual ROC Filing Guide (India)',
     description: 'Deadlines, penalties, and a compliance calendar for every mandatory annual MCA filing.',
     url: 'https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Annual ROC Filing for Companies: AOC-4, MGT-7 & DIR-3 KYC Guide',
+  headline: 'Annual ROC Filing Guide (India)',
   description: 'Every mandatory annual MCA filing for an Indian company, deadlines relative to the AGM, and the penalty structure for late filing.',
   datePublished: '2026-06-18', dateModified: '2026-06-18',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing for IT Services Companies in India',
+  title: 'Transfer Pricing for IT Services (India)',
   description: 'Why TNMM is the default method for Indian IT/ITES captive service providers, limited-risk vs entrepreneur profiles, common TPO disputes over comparables and working capital, and safe harbour fit.',
   keywords: [
     'transfer pricing IT services India', 'transfer pricing software development company',
@@ -12,21 +12,21 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india' },
   openGraph: {
-    title: 'Transfer Pricing for IT Services Companies in India',
+    title: 'Transfer Pricing for IT Services (India)',
     description: 'TNMM as the default method, limited-risk profiles, common TPO disputes, and safe harbour fit for IT/ITES captives.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Transfer Pricing for IT Services Companies in India',
+    title: 'Transfer Pricing for IT Services (India)',
     description: 'TNMM, comparable selection disputes, and safe harbour fit for captive IT/ITES providers.',
   },
 }
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Transfer Pricing for IT Services Companies in India',
+  headline: 'Transfer Pricing for IT Services (India)',
   description: 'Why TNMM is the default method for Indian IT/ITES captive service providers, functional profile considerations, common TPO disputes, and safe harbour fit.',
   datePublished: '2026-08-07', dateModified: '2026-08-07',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

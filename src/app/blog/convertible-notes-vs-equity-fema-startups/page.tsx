@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Convertible Notes vs Equity: FEMA Rules for Indian Startups',
+  title: 'Convertible Notes vs Equity: FEMA Rules',
   description: 'When a convertible note makes sense vs CCPS or straight equity for an Indian startup: FEMA conditions for foreign convertible notes, why optional conversion means debt treatment, and a decision framework.',
   keywords: [
     'convertible notes India startup', 'convertible note FEMA', 'CCPS vs convertible note',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/convertible-notes-vs-equity-fema-startups' },
   openGraph: {
-    title: 'Convertible Notes vs Equity: FEMA Rules for Indian Startups',
+    title: 'Convertible Notes vs Equity: FEMA Rules',
     description: 'FEMA conditions for convertible notes, CCPS vs equity, and a decision framework for founders.',
     url: 'https://agrawalkhandelwal.com/blog/convertible-notes-vs-equity-fema-startups',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Convertible Notes vs Equity: FEMA Rules for Indian Startups',
+  headline: 'Convertible Notes vs Equity: FEMA Rules',
   description: 'When a convertible note makes sense vs CCPS or straight equity for an Indian startup raising foreign or domestic capital, and the FEMA conditions that apply.',
   datePublished: '2026-07-27', dateModified: '2026-07-27',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

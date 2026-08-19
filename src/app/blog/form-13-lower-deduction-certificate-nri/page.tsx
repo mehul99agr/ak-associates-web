@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate (FY 2026-27)',
+  title: 'Form 13 Lower TDS Certificate (FY 2026-27)',
   description: 'Apply for Form 13 (now Form 128) to cut TDS from 30% to your actual tax rate before selling property as an NRI. Step-by-step TRACES process, documents, AO jurisdiction, and 4-8 week timeline.',
   keywords: [
     'form 13 NRI', 'lower deduction certificate NRI property', 'section 197 NRI',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri' },
   openGraph: {
-    title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate (FY 2026-27)',
+    title: 'Form 13 Lower TDS Certificate (FY 2026-27)',
     description: 'Apply for Form 13 (now Form 128) to cut TDS from 30% to your actual tax rate before selling property as an NRI. Step-by-step TRACES process, documents, and timeline.',
     url: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Form 13 for NRI Property Sale: How to Get Lower TDS Certificate (FY 2026-27)',
+    title: 'Form 13 Lower TDS Certificate (FY 2026-27)',
     description: 'Cut TDS from 30% to actual tax rate before selling property as an NRI. TRACES process, documents, and timeline.',
   },
 }

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
+  title: 'Incorporate a Company in India (2026)',
   description: 'Company incorporation in India: Private Limited, LLP, or OPC. Step-by-step guide covering structure choice, process, costs, timeline, and documents required.',
   keywords: [
     'company incorporation India', 'how to incorporate company India',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide' },
   openGraph: {
-    title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
+    title: 'Incorporate a Company in India (2026)',
     description: 'Step-by-step guide to company registration in India, which structure to choose, what the process looks like, what it costs, and what mistakes to avoid.',
     url: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide',
     type: 'article',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
+  headline: 'Incorporate a Company in India (2026)',
   description: 'Complete guide to company incorporation in India: structure comparison, step-by-step process, costs, timeline, and documents.',
   datePublished: '2026-05-08',
   dateModified: '2026-05-13',

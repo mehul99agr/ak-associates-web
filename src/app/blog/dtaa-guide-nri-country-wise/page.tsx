@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore (2026)',
+  title: 'NRI DTAA Guide by Country (2026)',
   description: 'DTAA treaty rates for NRIs by country: dividend, interest, royalty, and capital gains withholding rates for US, UK, UAE, Canada, Australia, and Singapore. How to claim benefits with TRC and Form 10F.',
   keywords: [
     'DTAA India NRI', 'India US DTAA', 'India UK DTAA', 'India UAE DTAA',

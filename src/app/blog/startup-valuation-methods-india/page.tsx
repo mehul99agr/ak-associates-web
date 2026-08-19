@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Startup Valuation in India: Methods, When Required & Who Can Do It',
+  title: 'Startup Valuation Methods in India',
   description: 'DCF vs NAV vs comparables for Indian startups: when a formal valuation is legally required (ESOP, FEMA, buyback), who can issue a valid report, and how to build a DCF without revenue history.',
   keywords: [
     'startup valuation India', 'DCF valuation startup', 'NAV valuation startup India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/startup-valuation-methods-india' },
   openGraph: {
-    title: 'Startup Valuation in India: Methods, When Required & Who Can Do It',
+    title: 'Startup Valuation Methods in India',
     description: 'DCF, NAV, and comparables explained, when valuation is legally required, and who can issue a valid report.',
     url: 'https://agrawalkhandelwal.com/blog/startup-valuation-methods-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Startup Valuation in India: Methods, When Required & Who Can Do It',
+  headline: 'Startup Valuation Methods in India',
   description: 'DCF vs NAV vs comparables for Indian startups, when a formal valuation is legally required, and who can issue a valid report.',
   datePublished: '2026-07-24', dateModified: '2026-07-24',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

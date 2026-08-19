@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRI Mutual Fund & Stock Taxation in India (FY 2026-27)',
+  title: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
   description: 'How mutual funds, stocks, and capital gains are taxed for NRIs in India: LTCG/STCG rates post-Budget 2025, TDS on redemption, PIS account for direct equity, and FATCA restrictions for US/Canada NRIs.',
   keywords: [
     'NRI mutual fund tax India', 'NRI stock trading India', 'NRI capital gains tax India',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-mutual-fund-stock-taxation-india' },
   openGraph: {
-    title: 'NRI Mutual Fund & Stock Taxation in India (FY 2026-27)',
+    title: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
     description: 'LTCG/STCG rates, TDS on redemption, PIS account, and FATCA restrictions for NRI investors.',
     url: 'https://agrawalkhandelwal.com/blog/nri-mutual-fund-stock-taxation-india',
     type: 'article',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NRI Mutual Fund & Stock Taxation in India (FY 2026-27)',
+  headline: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
   description: 'How mutual funds, stocks, and capital gains are taxed for NRIs: rates, TDS, PIS, FATCA.',
   datePublished: '2026-07-16',
   dateModified: '2026-07-16',

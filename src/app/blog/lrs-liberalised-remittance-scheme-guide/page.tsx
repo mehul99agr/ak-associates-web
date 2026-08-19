@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'LRS (Liberalised Remittance Scheme): USD 250K Limit, TCS & Compliance (2026)',
+  title: 'LRS Guide: USD 250K Limit & TCS (2026)',
   description: 'Everything about India\'s Liberalised Remittance Scheme: USD 250,000 annual limit, permitted purposes, TCS rates (5-20%), Form A2, and how LRS interacts with NRI accounts and FEMA.',
   keywords: ['LRS India', 'liberalised remittance scheme', 'USD 250000 limit India', 'LRS TCS rate', 'LRS permitted purposes', 'send money abroad India', 'LRS FEMA', 'outward remittance India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' },
   openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'LRS (Liberalised Remittance Scheme): USD 250K Limit, TCS & Compliance (2026)', description: 'LRS guide for outward remittances from India.', datePublished: '2026-06-20', dateModified: '2026-06-20', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'LRS Guide: USD 250K Limit & TCS (2026)', description: 'LRS guide for outward remittances from India.', datePublished: '2026-06-20', dateModified: '2026-06-20', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' }
 
 const faqs: [string, string][] = [
   ['What is the LRS limit for FY 2026-27?', 'The Liberalised Remittance Scheme allows resident Indians to remit up to USD 250,000 per financial year (April to March) for any permitted purpose. This is a per-person, per-year limit, not per transaction. A family of four can collectively remit up to USD 1 million. The limit covers all LRS remittances in the year, including gifts, investments, education, travel, and maintenance of relatives abroad.'],

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Founder Agreement Essentials for Indian Startups',
+  title: 'Founder Agreement Essentials (Startups)',
   description: 'What a co-founder agreement should cover: equity split rationale, founder reverse vesting, IP assignment, non-compete enforceability under Indian law, and exit/deadlock mechanisms.',
   keywords: [
     'founder agreement India', 'co-founder agreement India', 'founder vesting India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/founder-agreement-essentials-indian-startups' },
   openGraph: {
-    title: 'Founder Agreement Essentials for Indian Startups',
+    title: 'Founder Agreement Essentials (Startups)',
     description: 'Equity split, founder reverse vesting, IP assignment, non-compete enforceability, and exit mechanisms.',
     url: 'https://agrawalkhandelwal.com/blog/founder-agreement-essentials-indian-startups',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Founder Agreement Essentials for Indian Startups',
+  headline: 'Founder Agreement Essentials (Startups)',
   description: 'What a founder agreement should cover before or shortly after incorporating: equity split, reverse vesting, IP assignment, non-compete enforceability, and exit mechanisms.',
   datePublished: '2026-07-31', dateModified: '2026-07-31',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

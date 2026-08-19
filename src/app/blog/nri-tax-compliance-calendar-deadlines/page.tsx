@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRI Tax Compliance Calendar: Key Dates & Deadlines (FY 2026-27)',
+  title: 'NRI Tax Compliance Calendar (FY 2026-27)',
   description: 'Every tax deadline NRIs need to know for FY 2026-27: advance tax dates, ITR deadline, TDS return filing (Form 27Q), FLA return, and Form 15CA/15CB timelines.',
   keywords: ['NRI tax deadline', 'NRI ITR deadline', 'NRI compliance calendar', 'advance tax NRI', 'Form 27Q deadline', 'NRI tax dates India', 'NRI FLA return deadline'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' },
   openGraph: { title: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Every deadline: advance tax, ITR, TDS returns, FLA, Form 15CA/15CB.', url: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Tax Compliance Calendar: Key Dates & Deadlines (FY 2026-27)', description: 'Tax deadlines for NRIs.', datePublished: '2026-08-14', dateModified: '2026-08-14', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Tax deadlines for NRIs.', datePublished: '2026-08-14', dateModified: '2026-08-14', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' }
 
 const faqs: [string, string][] = [
   ['Do NRIs need to pay advance tax?', 'Yes, if the total tax liability for the year exceeds Rs 10,000 after TDS credits. Advance tax is payable in quarterly instalments: 15% by June 15, 45% by September 15, 75% by December 15, and 100% by March 15. Failure to pay attracts interest under Sections 234B and 234C. In practice, most NRIs whose income is limited to TDS-covered sources (rent, interest, property gains) do not need advance tax because TDS covers their liability.'],

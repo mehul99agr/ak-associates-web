@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Foreign Retirement Fund Taxation for NRIs: 401(k), UK Pension & Superannuation (2026)',
+  title: 'Retirement Fund Tax for NRIs (2026)',
   description: 'How India taxes US 401(k), UK pension, and Australian superannuation withdrawals for returning NRIs: RNOR window strategy, DTAA relief, and the timing decisions that save you lakhs.',
   keywords: [
     'NRI 401k taxation India', 'foreign retirement fund tax India', 'UK pension India tax',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Foreign Retirement Fund Taxation for NRIs: 401(k), UK Pension & Superannuation (2026)',
+  headline: 'Retirement Fund Tax for NRIs (2026)',
   description: 'How India taxes US 401(k), UK pension, and Australian superannuation withdrawals for returning NRIs.',
   datePublished: '2026-08-06',
   dateModified: '2026-08-06',

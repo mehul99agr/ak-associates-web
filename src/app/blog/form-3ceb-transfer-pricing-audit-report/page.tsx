@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Form 3CEB: Due Date, Filing Process & Penalties (FY 2026-27)',
+  title: 'Form 3CEB Filing Guide (FY 2026-27)',
   description: 'Who must file Form 3CEB, what the CA certifies, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty under Section 271BA for late or non-filing.',
   keywords: [
     'form 3CEB', 'form 3CEB due date', 'form 3CEB filing process', 'form 3CEB penalty',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report' },
   openGraph: {
-    title: 'Form 3CEB: Due Date, Filing Process & Penalties (FY 2026-27)',
+    title: 'Form 3CEB Filing Guide (FY 2026-27)',
     description: 'Who must file, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty for missing it.',
     url: 'https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Form 3CEB: Due Date, Filing Process & Penalties (FY 2026-27)',
+  headline: 'Form 3CEB Filing Guide (FY 2026-27)',
   description: 'Who must file Form 3CEB, what the CA certifies, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty under Section 271BA.',
   datePublished: '2026-08-09', dateModified: '2026-08-09',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

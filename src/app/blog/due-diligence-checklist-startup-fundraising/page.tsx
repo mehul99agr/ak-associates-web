@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Due Diligence Checklist for Startup Fundraising',
+  title: 'Due Diligence Checklist for Fundraising',
   description: 'What investors check during startup due diligence: corporate records, cap table reconciliation, IP ownership, material contracts, tax and FEMA history, and a data room preparation timeline.',
   keywords: [
     'startup due diligence checklist India', 'fundraising data room checklist',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/due-diligence-checklist-startup-fundraising' },
   openGraph: {
-    title: 'Due Diligence Checklist for Startup Fundraising',
+    title: 'Due Diligence Checklist for Fundraising',
     description: 'Corporate records, cap table reconciliation, IP ownership, and a data room timeline before investors ask.',
     url: 'https://agrawalkhandelwal.com/blog/due-diligence-checklist-startup-fundraising',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Due Diligence Checklist for Startup Fundraising',
+  headline: 'Due Diligence Checklist for Fundraising',
   description: 'What investors check during due diligence before a funding round, and how founders should prepare their data room in advance.',
   datePublished: '2026-08-04', dateModified: '2026-08-04',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

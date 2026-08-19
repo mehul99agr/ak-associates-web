@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
+  title: 'TDS on NRI Property Sale (FY 2026-27)',
   description: 'Complete TDS guide for NRI property sales in FY 2026-27: rate table with surcharge slabs, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation under the new Income Tax Act 2025.',
   keywords: [
     'TDS on NRI property sale India', 'TDS when buying property from NRI', 'section 195 NRI property',
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india' },
   openGraph: {
-    title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
+    title: 'TDS on NRI Property Sale (FY 2026-27)',
     description: 'Rate table, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation rules for NRI property sales in FY 2026-27.',
     url: 'https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
+    title: 'TDS on NRI Property Sale (FY 2026-27)',
     description: 'Rate table, buyer TAN process, Form 27Q filing, Form 13 certificate, TDS refund claims, and repatriation rules for NRI property sales.',
   },
 }
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'TDS on NRI Property Sale in India (FY 2026-27): Rates, Form 27Q & Refund Guide',
+  headline: 'TDS on NRI Property Sale (FY 2026-27)',
   description: 'Rate table with surcharge slabs, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation under the new Income Tax Act 2025 for NRI property sales in FY 2026-27.',
   datePublished: '2026-07-01',
   dateModified: '2026-07-11',

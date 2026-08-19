@@ -6,7 +6,7 @@ const BASE_URL = 'https://agrawalkhandelwal.com'
 
 const posts = [
   {
-    title: 'Understanding the New Tax Regime (FY 2025-26)',
+    title: 'Understanding the New Tax Regime',
     slug: 'understanding-new-tax-regime-2025-26',
     date: 'March 18, 2026',
     isoDate: '2026-03-18',
@@ -66,7 +66,7 @@ const posts = [
 <p>If your situation is borderline, or if you have capital gains, multiple income sources, or business income, the regime choice interacts with how you structure your finances. That is exactly the kind of planning where a short conversation with a CA pays for itself, getting the regime choice and the timing right can save more than any single deduction.</p>`,
   },
   {
-    title: 'Navigating International Taxation & DTAA',
+    title: 'International Taxation & DTAA Guide',
     slug: 'navigating-international-taxation-dtaa',
     date: 'March 05, 2026',
     isoDate: '2026-03-05',

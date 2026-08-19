@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
+  title: 'NRI TDS Refund on Property Sale',
   description: 'Step-by-step guide for NRIs claiming a TDS refund after selling Indian property — which ITR to file, documents needed, e-verification, refund timelines, and Section 244A interest for FY 2026-27.',
   keywords: [
     'NRI TDS refund property sale', 'TDS refund for NRI', 'how to claim TDS refund NRI',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-tds-refund-property-sale' },
   openGraph: {
-    title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
+    title: 'NRI TDS Refund on Property Sale',
     description: 'Which ITR to file, documents needed, e-verification options, and refund timelines for NRIs recovering excess TDS on a property sale.',
     url: 'https://agrawalkhandelwal.com/blog/nri-tds-refund-property-sale',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
+    title: 'NRI TDS Refund on Property Sale',
     description: 'Which ITR to file, documents needed, e-verification, and refund timelines for NRIs recovering excess TDS on a property sale.',
   },
 }
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
+  headline: 'NRI TDS Refund on Property Sale',
   description: 'ITR filing, documents, e-verification, and refund timelines for NRIs claiming back excess TDS deducted on a property sale in FY 2026-27.',
   datePublished: '2026-07-11',
   dateModified: '2026-07-11',

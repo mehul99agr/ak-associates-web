@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Master File vs Local File vs CbCR: What Indian Subsidiaries Must Prepare',
+  title: 'Master File vs Local File vs CbCR (India)',
   description: 'The three-tier transfer pricing documentation structure in India: Master File (Form 3CEAA) thresholds, Local File content, and CbCR (Form 3CEAC/3CEAD) for large MNC groups.',
   keywords: [
     'master file India transfer pricing', 'local file transfer pricing India', 'CbCR India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india' },
   openGraph: {
-    title: 'Master File vs Local File vs CbCR: What Indian Subsidiaries Must Prepare',
+    title: 'Master File vs Local File vs CbCR (India)',
     description: 'Thresholds, content, and deadlines for the three-tier TP documentation structure in India.',
     url: 'https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Master File vs Local File vs CbCR: What Indian Subsidiaries Must Prepare',
+  headline: 'Master File vs Local File vs CbCR (India)',
   description: 'The three-tier OECD-aligned TP documentation structure under Indian law: thresholds, content requirements, and filing deadlines.',
   datePublished: '2026-08-10', dateModified: '2026-08-10',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

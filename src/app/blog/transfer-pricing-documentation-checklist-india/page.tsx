@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)',
+  title: 'TP Documentation Checklist India (2026)',
   description: 'Complete TP documentation checklist for Indian companies: Form 3CEB vs Local File vs Master File thresholds, due dates, benchmarking requirements, and the gaps most audits exploit.',
   keywords: [
     'transfer pricing documentation India', 'transfer pricing checklist India',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india' },
   openGraph: {
-    title: 'Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)',
+    title: 'TP Documentation Checklist India (2026)',
     description: 'Who needs TP documentation in India, what to prepare at each threshold tier, when it is due, and the most common gaps that trigger transfer pricing audits.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)',
+  headline: 'TP Documentation Checklist India (2026)',
   description: 'Complete checklist for Indian TP compliance: Form 3CEB, Local File, Master File, and CbCR thresholds, due dates, and common audit triggers.',
   datePublished: '2026-07-11',
   dateModified: '2026-07-11',

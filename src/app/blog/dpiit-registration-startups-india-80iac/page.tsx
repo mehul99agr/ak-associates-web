@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)',
+  title: 'DPIIT Registration for Startups (2026)',
   description: 'How to get DPIIT recognition for your Indian startup, eligibility criteria, the 80-IAC three-year tax holiday, and what most founders miss about the IMB certification process.',
   keywords: [
     'DPIIT registration India', 'startup India recognition', '80-IAC tax benefit',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/dpiit-registration-startups-india-80iac' },
   openGraph: {
-    title: 'DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)',
+    title: 'DPIIT Registration for Startups (2026)',
     description: 'DPIIT recognition is not the same as 80-IAC certification. Here is what each requires, what each gives you, and what most founders get wrong about startup tax benefits.',
     url: 'https://agrawalkhandelwal.com/blog/dpiit-registration-startups-india-80iac',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)',
+  headline: 'DPIIT Registration for Startups (2026)',
   description: 'DPIIT recognition process, eligibility, 80-IAC tax holiday requirements, and IMB certification — a complete guide for Indian startup founders.',
   datePublished: '2026-07-25',
   dateModified: '2026-07-25',

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'India-UAE Transfer Pricing: Compliance for Cross-Border Transactions',
+  title: 'India-UAE Transfer Pricing Compliance',
   description: 'TP obligations for Indian companies transacting with UAE group entities since UAE Corporate Tax: dual compliance, DTAA Article 9 relief, Free Zone considerations, and common transaction scenarios.',
   keywords: [
     'India UAE transfer pricing', 'UAE corporate tax transfer pricing', 'India UAE DTAA transfer pricing',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/india-uae-transfer-pricing-compliance' },
   openGraph: {
-    title: 'India-UAE Transfer Pricing: Compliance for Cross-Border Transactions',
+    title: 'India-UAE Transfer Pricing Compliance',
     description: 'Dual compliance, DTAA Article 9 relief, Free Zone considerations, and common India-UAE transaction scenarios.',
     url: 'https://agrawalkhandelwal.com/blog/india-uae-transfer-pricing-compliance',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'India-UAE Transfer Pricing: Compliance for Cross-Border Transactions',
+  headline: 'India-UAE Transfer Pricing Compliance',
   description: 'Transfer pricing considerations for Indian companies transacting with UAE group entities since UAE Corporate Tax introduced its own TP rules.',
   datePublished: '2026-08-16', dateModified: '2026-08-16',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'TDS on NRO Account Interest and FD: Rates & DTAA Relief (FY 2026-27)',
+  title: 'TDS on NRO Interest & FD (FY 2026-27)',
   description: 'TDS on NRO savings and FD interest for NRIs: 30% domestic rate, how to claim lower DTAA treaty rates (10-15%), TRC and Form 10F process, and ITR refund for excess TDS.',
   keywords: ['TDS NRO interest', 'NRO FD TDS rate', 'NRO interest tax NRI', 'DTAA NRO interest', 'NRO TDS refund', 'NRO FD tax rate NRI', 'TDS on NRO savings account'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief' },
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'TDS on NRO Account Interest and FD: Rates & DTAA Relief (FY 2026-27)',
+  headline: 'TDS on NRO Interest & FD (FY 2026-27)',
   description: 'TDS on NRO interest, DTAA treaty rates, TRC process, and refund claims.',
   datePublished: '2026-07-08', dateModified: '2026-07-08',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Essential Compliance for Indian Startups: MCA, GST, TDS & FEMA Checklist',
+  title: 'Essential Compliance for Indian Startups',
   description: 'Complete compliance checklist for Indian startups: MCA filings (AOC-4, MGT-7, DIR-3 KYC), GST returns, TDS, advance tax, FEMA reporting, and ESOP compliance. Avoid penalties and stay DPIIT-eligible.',
   keywords: ['startup compliance India', 'MCA filing startup', 'GST compliance startup India', 'FEMA FC-GPR reporting', 'DPIIT compliance India', 'startup regulatory checklist'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' },
   openGraph: { title: 'Essential Compliance for Indian Startups', description: 'MCA, GST, TDS, advance tax, and FEMA reporting checklist for Indian startups.', url: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Essential Compliance for Indian Startups: MCA, GST, TDS & FEMA Checklist', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Essential Compliance for Indian Startups', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' }
 
 const faqs: [string, string][] = [
   ['What happens if a startup misses MCA annual filings?', 'Missing AOC-4 or MGT-7 attracts a penalty of Rs 100 per day per form with no cap. For startups that have not filed for 2-3 years, accumulated penalties can cross Rs 10-15 lakh. Additionally, non-filing can lead to the company being struck off by the ROC and directors being disqualified under Section 164(2).'],

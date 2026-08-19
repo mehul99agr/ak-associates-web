@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Post-Incorporation Checklist: First 30 Days After Company Registration',
+  title: 'Post-Incorporation Checklist: First 30 Days',
   description: 'What to do after getting your Certificate of Incorporation: PAN/TAN, bank account, GST, first Board meeting, auditor appointment, and share certificates - all with statutory deadlines.',
   keywords: [
     'post incorporation compliance India', 'after company registration checklist',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days' },
   openGraph: {
-    title: 'Post-Incorporation Checklist: First 30 Days After Company Registration',
+    title: 'Post-Incorporation Checklist: First 30 Days',
     description: 'PAN/TAN, bank account, GST, first Board meeting, auditor appointment, and share certificates - with statutory deadlines.',
     url: 'https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Post-Incorporation Checklist: First 30 Days After Company Registration',
+  headline: 'Post-Incorporation Checklist: First 30 Days',
   description: 'What a founder must do after receiving the Certificate of Incorporation for a Private Limited Company - PAN/TAN, banking, GST, first Board meeting, auditor appointment, share certificates.',
   datePublished: '2026-08-12', dateModified: '2026-08-12',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

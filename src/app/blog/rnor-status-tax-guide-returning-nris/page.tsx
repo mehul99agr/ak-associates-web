@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'RNOR Status for Returning NRIs: How Long Is the Tax Holiday? (FY 2026-27)',
+  title: 'RNOR Status for Returning NRIs (FY 2026-27)',
   description: 'RNOR status explained for returning NRIs: the two RNOR tests, how many tax-free years you actually get, what foreign income stays exempt, and the planning checklist before it ends.',
   keywords: [
     'RNOR status India', 'resident but not ordinarily resident', 'returning NRI tax India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/rnor-status-tax-guide-returning-nris' },
   openGraph: {
-    title: 'RNOR Status for Returning NRIs: How Long Is the Tax Holiday? (FY 2026-27)',
+    title: 'RNOR Status for Returning NRIs (FY 2026-27)',
     description: 'The two RNOR tests, how many tax-free years returning NRIs actually get, what stays exempt, and what to do before RNOR status ends.',
     url: 'https://agrawalkhandelwal.com/blog/rnor-status-tax-guide-returning-nris',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'RNOR Status for Returning NRIs: How Long Is the Tax Holiday? (FY 2026-27)',
+  headline: 'RNOR Status for Returning NRIs (FY 2026-27)',
   description: 'The two RNOR tests, how many tax-free years returning NRIs actually get, what foreign income stays exempt, and the planning checklist before RNOR status ends.',
   datePublished: '2026-08-08',
   dateModified: '2026-08-08',

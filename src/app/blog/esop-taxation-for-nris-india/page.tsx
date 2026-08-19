@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'ESOP Taxation for NRIs: Exercise, Sale & DTAA Relief (2026 Guide)',
+  title: 'ESOP Taxation for NRIs (2026 Guide)',
   description: 'How ESOPs are taxed for NRIs: perquisite tax at exercise, capital gains at sale, TDS obligations, the startup ESOP deferral, and how to avoid double taxation under DTAA.',
   keywords: [
     'ESOP taxation NRI', 'ESOP tax India NRI', 'NRI ESOP exercise tax',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/esop-taxation-for-nris-india' },
   openGraph: {
-    title: 'ESOP Taxation for NRIs: Exercise, Sale & DTAA Relief (2026 Guide)',
+    title: 'ESOP Taxation for NRIs (2026 Guide)',
     description: 'Perquisite tax at exercise, capital gains at sale, TDS obligations, the startup ESOP deferral, and how to avoid double taxation under DTAA.',
     url: 'https://agrawalkhandelwal.com/blog/esop-taxation-for-nris-india',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'ESOP Taxation for NRIs: Exercise, Sale & DTAA Relief (2026 Guide)',
+  headline: 'ESOP Taxation for NRIs (2026 Guide)',
   description: 'How ESOPs are taxed for NRIs: perquisite tax at exercise, capital gains at sale, TDS obligations, the startup ESOP deferral, and how to avoid double taxation under DTAA.',
   datePublished: '2026-08-08',
   dateModified: '2026-08-08',

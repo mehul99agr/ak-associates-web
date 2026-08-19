@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'PAN Card for NRIs: Application, Aadhaar Linking & Exemptions (2026)',
+  title: 'PAN Card for NRIs (2026)',
   description: 'How NRIs apply for a PAN card from abroad (Form 49A vs 49AA), Aadhaar-PAN linking exemption, when PAN is required for property and investments, and what happens if PAN becomes inoperative.',
   keywords: ['PAN card NRI', 'NRI PAN application', 'PAN card for NRI from abroad', 'Aadhaar PAN linking NRI', 'NRI PAN inoperative', 'Form 49A NRI', 'PAN required NRI property'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' },
   openGraph: { title: 'PAN Card for NRIs: Application & Aadhaar Linking', description: 'How to apply from abroad, Aadhaar exemption, and when PAN is required.', url: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'PAN Card for NRIs: Application, Aadhaar Linking & Exemptions (2026)', description: 'PAN application, Aadhaar linking, and requirements for NRIs.', datePublished: '2026-04-18', dateModified: '2026-04-18', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'PAN Card for NRIs (2026)', description: 'PAN application, Aadhaar linking, and requirements for NRIs.', datePublished: '2026-04-18', dateModified: '2026-04-18', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' }
 
 const faqs: [string, string][] = [
   ['How can an NRI apply for a PAN card from abroad?', 'NRIs can apply online through the Protean (NSDL) portal using Form 49A (for Indian citizens, including NRIs) or Form 49AA (for foreign citizens). The application requires passport copy, overseas address proof, and a photograph. Documents must be self-attested and, for applications from abroad, attested by the Indian Embassy/Consulate or an apostille. PAN is typically issued within 15-20 working days and can be sent to a foreign address.'],

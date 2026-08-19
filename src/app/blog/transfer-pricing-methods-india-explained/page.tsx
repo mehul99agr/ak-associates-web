@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing Methods Explained: CUP, TNMM, RPM, CPM & PSM',
+  title: 'Transfer Pricing Methods in India',
   description: 'The 5 methods prescribed under Rule 10B for testing arm\'s length pricing in India: what each tests, when it is the most appropriate method, and a worked TNMM example for a captive service provider.',
   keywords: [
     'transfer pricing methods India', 'TNMM India', 'CUP method transfer pricing',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/transfer-pricing-methods-india-explained' },
   openGraph: {
-    title: 'Transfer Pricing Methods Explained: CUP, TNMM, RPM, CPM & PSM',
+    title: 'Transfer Pricing Methods in India',
     description: 'What each of the 5 prescribed methods tests, when to use which, and a worked TNMM example.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-methods-india-explained',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Transfer Pricing Methods Explained: CUP, TNMM, RPM, CPM & PSM',
+  headline: 'Transfer Pricing Methods in India',
   description: 'The 5 methods prescribed under Rule 10B for testing arm\'s length pricing in India, when each is the most appropriate method, and a worked TNMM example.',
   datePublished: '2026-07-30', dateModified: '2026-07-30',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

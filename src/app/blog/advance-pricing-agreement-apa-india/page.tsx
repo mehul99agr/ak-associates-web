@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Advance Pricing Agreement (APA) India: Process, Timeline & Benefits',
+  title: 'Advance Pricing Agreement (APA) India',
   description: 'Unilateral, bilateral, and multilateral APAs with the CBDT: which companies should consider one, the application process, realistic timelines, annual compliance, and a cost-benefit framework.',
   keywords: [
     'advance pricing agreement India', 'APA India process', 'bilateral APA India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/advance-pricing-agreement-apa-india' },
   openGraph: {
-    title: 'Advance Pricing Agreement (APA) India: Process, Timeline & Benefits',
+    title: 'Advance Pricing Agreement (APA) India',
     description: 'Which companies should consider an APA, the application process, realistic timelines, and a cost-benefit framework.',
     url: 'https://agrawalkhandelwal.com/blog/advance-pricing-agreement-apa-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Advance Pricing Agreement (APA) India: Process, Timeline & Benefits',
+  headline: 'Advance Pricing Agreement (APA) India',
   description: 'Unilateral, bilateral, and multilateral APAs with the CBDT: process, timeline, annual compliance, and a cost-benefit framework.',
   datePublished: '2026-08-05', dateModified: '2026-08-05',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

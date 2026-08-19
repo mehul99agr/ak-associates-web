@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'ESOP Structuring for Indian Startups: Scheme Design, Vesting & Tax',
+  title: 'ESOP Structuring for Indian Startups',
   description: 'How to design an ESOP for an Indian Private Limited startup: pool sizing, vesting schedules, exercise price, Companies Act mechanics, valuation, and the two-stage employee tax.',
   keywords: [
     'ESOP structuring India', 'ESOP scheme design startup', 'ESOP vesting schedule India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups' },
   openGraph: {
-    title: 'ESOP Structuring for Indian Startups: Scheme Design, Vesting & Tax',
+    title: 'ESOP Structuring for Indian Startups',
     description: 'Pool sizing, vesting, exercise price, Companies Act mechanics, and the two-stage employee tax.',
     url: 'https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'ESOP Structuring for Indian Startups: Scheme Design, Vesting & Tax',
+  headline: 'ESOP Structuring for Indian Startups',
   description: 'How to design an ESOP for an Indian Private Limited startup: pool sizing, vesting, exercise price, Companies Act mechanics, valuation, and employee tax.',
   datePublished: '2026-07-17', dateModified: '2026-07-17',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

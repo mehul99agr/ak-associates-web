@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
+  title: 'Dubai Company Registration Guide (2026)',
   description: 'Dubai company registration guide for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs, FEMA compliance, UAE Corporate Tax, and required documents.',
   keywords: [
     'Dubai company registration India',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide' },
   openGraph: {
-    title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
+    title: 'Dubai Company Registration Guide (2026)',
     description: 'Mainland vs Free Zone vs Offshore, real costs, FEMA obligations, and UAE Corporate Tax — everything an Indian entrepreneur needs before registering a Dubai company.',
     url: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
+  headline: 'Dubai Company Registration Guide (2026)',
   description: 'Step-by-step guide to Dubai company registration for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs, FEMA compliance, and UAE Corporate Tax.',
   datePublished: '2026-05-19',
   dateModified: '2026-05-19',

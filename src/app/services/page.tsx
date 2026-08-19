@@ -34,7 +34,7 @@ const faqLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
+  title: 'Our CA Services | India & UAE',
   description: 'CA services across India: International Tax, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, NRI taxation, Statutory Audit, GST, and Company Incorporation.',
   keywords: [
     'international tax consultant India', 'transfer pricing consultant India',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/services' },
   openGraph: {
-    title: 'International Tax, Transfer Pricing & CA Services | India & UAE',
+    title: 'Our CA Services | India & UAE',
     description: 'Expert CA services: International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, NRI Taxation, Audit, and Business Incorporation.',
     url: 'https://agrawalkhandelwal.com/services',
   },

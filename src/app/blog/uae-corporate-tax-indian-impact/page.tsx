@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'UAE Corporate Tax: Impact on Indian Businesses',
+  title: 'UAE Corporate Tax: Impact on India',
   description: 'Guide for Indian businesses on UAE 9% Corporate Tax: India-UAE DTAA benefits, Transfer Pricing compliance, Free Zone entity rules, and restructuring strategies.',
   keywords: [
     'UAE corporate tax Indian businesses', 'India UAE DTAA', 'UAE CT 9 percent',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact' },
   openGraph: {
-    title: 'UAE Corporate Tax: Impact on Indian Businesses',
+    title: 'UAE Corporate Tax: Impact on India',
     description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing rules, and restructuring strategies.',
     url: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact',
     type: 'article',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'UAE Corporate Tax: Impact on Indian Businesses',
+  headline: 'UAE Corporate Tax: Impact on India',
   description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing, and restructuring.',
   datePublished: '2026-03-08',
   dateModified: '2026-03-08',

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme',
+  title: 'Repatriating NRI Property Sale Proceeds',
   description: 'How NRIs repatriate property sale proceeds from India under the new Income Tax Act 2025 — NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB), and the USD 1 million scheme.',
   keywords: [
     'NRI repatriation property sale proceeds', 'form 145 146 NRI', 'form 15CA 15CB NRI property',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-repatriation-property-sale-proceeds' },
   openGraph: {
-    title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme',
+    title: 'Repatriating NRI Property Sale Proceeds',
     description: 'NRO account rules, Form 145/146 CA certification, and the USD 1 million scheme for NRIs repatriating Indian property sale proceeds.',
     url: 'https://agrawalkhandelwal.com/blog/nri-repatriation-property-sale-proceeds',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme',
+    title: 'Repatriating NRI Property Sale Proceeds',
     description: 'NRO account rules, Form 145/146 CA certification, and the USD 1 million scheme for repatriating Indian property sale proceeds.',
   },
 }
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme',
+  headline: 'Repatriating NRI Property Sale Proceeds',
   description: 'NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB), and the USD 1 million scheme for NRIs repatriating Indian property sale proceeds under the new Income Tax Act 2025.',
   datePublished: '2026-07-11',
   dateModified: '2026-07-11',

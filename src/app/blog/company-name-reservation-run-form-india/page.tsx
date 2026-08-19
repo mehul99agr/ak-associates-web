@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Company Name Reservation in India: SPICe+ Part A & RUN Guide',
+  title: 'Company Name Reservation Guide (India)',
   description: 'How to reserve a company name with the MCA: SPICe+ Part A vs the RUN service, MCA naming guidelines, common rejection reasons, and why a trademark search matters before you file.',
   keywords: [
     'company name reservation India', 'SPICe+ Part A', 'RUN form MCA',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india' },
   openGraph: {
-    title: 'Company Name Reservation in India: SPICe+ Part A & RUN Guide',
+    title: 'Company Name Reservation Guide (India)',
     description: 'SPICe+ Part A vs RUN, MCA naming guidelines, and the most common reasons company names get rejected.',
     url: 'https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Company Name Reservation in India: SPICe+ Part A & RUN Guide',
+  headline: 'Company Name Reservation Guide (India)',
   description: 'How to reserve a company name with the MCA, the difference between SPICe+ Part A and RUN, naming guidelines, and common rejection reasons.',
   datePublished: '2026-07-06', dateModified: '2026-07-06',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

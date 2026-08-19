@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Tax Insights & Advisory | International Tax, Startup & UAE Compliance',
+  title: 'Tax & Business Insights Blog',
   description: 'CA insights on International Tax, Transfer Pricing, DTAA, UAE Corporate Tax, startup compliance, and NRI taxation. Agrawal Khandelwal & Associates LLP.',
   keywords: [
     'international tax insights India', 'transfer pricing India blog',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog' },
   openGraph: {
-    title: 'Tax Insights & Advisory | International Tax, Startup & UAE Compliance',
+    title: 'Tax & Business Insights Blog',
     description: 'Expert insights on International Tax, Transfer Pricing, DTAA, UAE Corporate Tax, and startup compliance from our CA team.',
     url: 'https://agrawalkhandelwal.com/blog',
   },

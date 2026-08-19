@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Safe Harbour Rules for Transfer Pricing in India (2026)',
+  title: 'Safe Harbour Rules India (2026)',
   description: 'Which categories qualify for TP safe harbour (software development, ITES, KPO, contract R&D, loans, guarantees), how to opt in via Form 3CEFA, the lock-in period, and the certainty-versus-cost trade-off.',
   keywords: [
     'safe harbour rules transfer pricing India', 'form 3CEFA', 'safe harbour software development',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/safe-harbour-rules-transfer-pricing-india' },
   openGraph: {
-    title: 'Safe Harbour Rules for Transfer Pricing in India (2026)',
+    title: 'Safe Harbour Rules India (2026)',
     description: 'Eligible categories, how to opt in via Form 3CEFA, the lock-in period, and the certainty-vs-cost trade-off.',
     url: 'https://agrawalkhandelwal.com/blog/safe-harbour-rules-transfer-pricing-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Safe Harbour Rules for Transfer Pricing in India (2026)',
+  headline: 'Safe Harbour Rules India (2026)',
   description: 'Eligible categories under Rules 10TA-10TG, how to opt in via Form 3CEFA, the multi-year lock-in period, and when safe harbour is worth the cost.',
   datePublished: '2026-08-03', dateModified: '2026-08-03',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

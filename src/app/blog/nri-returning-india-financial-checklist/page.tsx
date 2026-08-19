@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRI Returning to India: Complete Financial Checklist (2026)',
+  title: 'NRI Returning to India Checklist (2026)',
   description: 'Everything NRIs must do before and after returning to India: bank account conversion, RNOR tax planning, investment restructuring, insurance, FEMA steps, and the timeline that saves you money.',
   keywords: [
     'NRI returning to India checklist', 'NRI relocation India', 'NRI moving back to India',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-returning-india-financial-checklist' },
   openGraph: {
-    title: 'NRI Returning to India: Complete Financial Checklist (2026)',
+    title: 'NRI Returning to India Checklist (2026)',
     description: 'Bank accounts, RNOR window, investments, insurance, FEMA steps - the financial checklist for NRIs moving back.',
     url: 'https://agrawalkhandelwal.com/blog/nri-returning-india-financial-checklist',
     type: 'article',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NRI Returning to India: Complete Financial Checklist (2026)',
+  headline: 'NRI Returning to India Checklist (2026)',
   description: 'Bank account conversion, RNOR tax planning, investment restructuring, insurance, and FEMA compliance steps for NRIs moving back to India.',
   datePublished: '2026-08-01',
   dateModified: '2026-08-01',

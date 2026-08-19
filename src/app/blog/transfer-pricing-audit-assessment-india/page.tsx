@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'TP Audit: How to Handle a Transfer Pricing Assessment in India',
+  title: 'TP Audit & Assessment in India',
   description: 'What triggers TPO selection, the assessment sequence, how to respond to a show-cause notice, DRP vs CIT(Appeals), MAP for double taxation, and conduct that improves outcomes.',
   keywords: [
     'transfer pricing audit India', 'TPO assessment process', 'DRP transfer pricing',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/transfer-pricing-audit-assessment-india' },
   openGraph: {
-    title: 'TP Audit: How to Handle a Transfer Pricing Assessment in India',
+    title: 'TP Audit & Assessment in India',
     description: 'Selection triggers, the assessment sequence, DRP vs CIT(Appeals), and MAP for double taxation.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-audit-assessment-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'TP Audit: How to Handle a Transfer Pricing Assessment in India',
+  headline: 'TP Audit & Assessment in India',
   description: 'What triggers TPO selection, the assessment sequence, DRP vs CIT(Appeals), MAP for double taxation, and conduct that improves outcomes.',
   datePublished: '2026-08-15', dateModified: '2026-08-15',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

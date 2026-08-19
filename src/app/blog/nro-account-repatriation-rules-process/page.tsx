@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRO Account Repatriation: Rules, USD 1 Million Limit & Step-by-Step Process (2026)',
+  title: 'NRO Account Repatriation Rules (2026)',
   description: 'How to repatriate money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents required, TDS clearance, and common bank rejections. Updated for Income Tax Act 2025.',
   keywords: [
     'NRO repatriation', 'NRO account repatriation', 'repatriation from NRO account',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NRO Account Repatriation: Rules, USD 1 Million Limit & Step-by-Step Process (2026)',
+  headline: 'NRO Account Repatriation Rules (2026)',
   description: 'How to repatriate money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents required, TDS clearance, and common bank rejections.',
   datePublished: '2026-07-04',
   dateModified: '2026-07-04',

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?',
+  title: 'POEM & Indian Tax Residency',
   description: 'Place of Effective Management (POEM) explained: when a UAE or foreign subsidiary is treated as an Indian tax resident, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
   keywords: [
     'POEM India', 'place of effective management', 'POEM foreign company India',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india' },
   openGraph: {
-    title: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?',
+    title: 'POEM & Indian Tax Residency',
     description: 'When a UAE or foreign subsidiary is treated as an Indian tax resident under POEM, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
     url: 'https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?',
+    title: 'POEM & Indian Tax Residency',
     description: 'The ABOI test, the Rs 50 crore exemption, and how to keep a foreign subsidiary from being taxed as Indian.',
   },
 }
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'POEM: When Does a Foreign Company Become an Indian Tax Resident?',
+  headline: 'POEM & Indian Tax Residency',
   description: 'Place of Effective Management explained: when a UAE or foreign subsidiary is treated as an Indian tax resident, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
   datePublished: '2026-08-08',
   dateModified: '2026-08-08',

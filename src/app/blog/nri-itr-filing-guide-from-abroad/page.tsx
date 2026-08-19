@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRI ITR Filing Guide: Which Form, How to File from Abroad (FY 2026-27)',
+  title: 'NRI ITR Filing from Abroad (FY 2026-27)',
   description: 'How NRIs file Indian income tax returns from abroad: which ITR form (ITR-2 vs ITR-3), documents needed, e-verification without Aadhaar, filing deadline, and common mistakes that trigger notices.',
   keywords: [
     'NRI ITR filing India', 'NRI income tax return', 'how to file ITR as NRI',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'NRI ITR Filing Guide: Which Form, How to File from Abroad (FY 2026-27)',
+  headline: 'NRI ITR Filing from Abroad (FY 2026-27)',
   description: 'How NRIs file Indian income tax returns from abroad.',
   datePublished: '2026-07-22', dateModified: '2026-07-22',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

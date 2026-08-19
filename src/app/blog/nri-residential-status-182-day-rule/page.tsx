@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NRI Residential Status: How the 182-Day and 120-Day Rules Work (FY 2026-27)',
+  title: 'NRI Residential Status Rules (FY 2026-27)',
   description: 'How to determine if you are NRI, RNOR, or Resident under Indian tax law: the 182-day rule, the 120-day deemed resident rule (Budget 2020), day counting for split years, and what each status means for your taxes.',
   keywords: [
     'NRI residential status', '182 day rule NRI', 'NRI status India',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NRI Residential Status: How the 182-Day and 120-Day Rules Work (FY 2026-27)',
+  headline: 'NRI Residential Status Rules (FY 2026-27)',
   description: 'How to determine NRI, RNOR, or Resident status under Section 6: the 182-day rule, 120-day deemed resident rule, day counting, and tax implications.',
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',

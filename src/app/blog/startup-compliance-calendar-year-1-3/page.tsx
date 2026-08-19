@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Startup Compliance Calendar: Year 1 to Year 3 Checklist',
+  title: 'Startup Compliance Calendar (Year 1-3)',
   description: 'Month-by-month and year-by-year compliance roadmap for an Indian startup: GST returns, TDS, MCA annual filings, advance tax, FEMA reporting, ESOP, and DPIIT self-certification.',
   keywords: [
     'startup compliance calendar India', 'startup compliance checklist year 1',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3' },
   openGraph: {
-    title: 'Startup Compliance Calendar: Year 1 to Year 3 Checklist',
+    title: 'Startup Compliance Calendar (Year 1-3)',
     description: 'The recurring, quarterly, and annual compliance rhythm for an Indian Private Limited startup.',
     url: 'https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Startup Compliance Calendar: Year 1 to Year 3 Checklist',
+  headline: 'Startup Compliance Calendar (Year 1-3)',
   description: 'A month-by-month and year-by-year compliance roadmap for an Indian startup from incorporation through year 3.',
   datePublished: '2026-08-13', dateModified: '2026-08-13',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

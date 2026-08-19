@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'New Income Tax Act 2025: Simplified Guide for Businesses & Individuals',
+  title: 'New Income Tax Act 2025: Simplified Guide',
   description: 'New Income Tax Act 2025: tax regime convergence, simplified computational rules, AI-driven assessments, and impact on startups, MNCs, and individual taxpayers.',
   keywords: [
     'new income tax act 2025 India', 'income tax act 2025 changes',

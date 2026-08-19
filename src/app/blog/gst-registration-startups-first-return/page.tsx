@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'GST Registration for Startups: When Required & First Return Guide',
+  title: 'GST Registration for Startups',
   description: 'When GST registration becomes mandatory for an Indian startup (turnover thresholds and compulsory triggers), the registration process, and a first-return walkthrough for GSTR-1 and GSTR-3B.',
   keywords: [
     'GST registration startup India', 'GST threshold startup', 'first GST return startup',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/gst-registration-startups-first-return' },
   openGraph: {
-    title: 'GST Registration for Startups: When Required & First Return Guide',
+    title: 'GST Registration for Startups',
     description: 'Turnover thresholds, compulsory registration triggers, the registration process, and your first GSTR-1/GSTR-3B.',
     url: 'https://agrawalkhandelwal.com/blog/gst-registration-startups-first-return',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'GST Registration for Startups: When Required & First Return Guide',
+  headline: 'GST Registration for Startups',
   description: 'When GST registration becomes mandatory for an Indian startup, the registration process, and a first-return walkthrough.',
   datePublished: '2026-08-02', dateModified: '2026-08-02',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

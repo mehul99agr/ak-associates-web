@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Angel Tax (Section 56(2)(viib)): Abolished for All Investors from FY 2024-25',
+  title: 'Angel Tax Abolished for All Investors',
   description: 'Angel tax under Section 56(2)(viib) was abolished for all investors, resident and non-resident, effective FY 2024-25. What this means for new fundraising, and why historic rounds still need review.',
   keywords: [
     'angel tax India abolished', 'section 56(2)(viib)', 'angel tax removed startups',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Angel Tax (Section 56(2)(viib)): Abolished for All Investors from FY 2024-25',
+  headline: 'Angel Tax Abolished for All Investors',
   description: 'Angel tax under Section 56(2)(viib) was abolished for all investors, resident and non-resident, effective FY 2024-25.',
   datePublished: '2026-07-21', dateModified: '2026-07-21',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'OPC to Private Limited Company Conversion in India: Complete Guide',
+  title: 'OPC to Private Limited Conversion (India)',
   description: 'When a One Person Company must convert to a Private Limited Company, when conversion is voluntary, and the step-by-step MCA process founders need to know.',
   keywords: [
     'OPC to private limited conversion', 'One Person Company conversion India',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/opc-to-private-limited-conversion-india' },
   openGraph: {
-    title: 'OPC to Private Limited Company Conversion in India: Complete Guide',
+    title: 'OPC to Private Limited Conversion (India)',
     description: 'When conversion becomes mandatory, when it is a strategic choice, and the process to convert.',
     url: 'https://agrawalkhandelwal.com/blog/opc-to-private-limited-conversion-india',
     type: 'article',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const articleLd = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'OPC to Private Limited Company Conversion in India: Complete Guide',
+  headline: 'OPC to Private Limited Conversion (India)',
   description: 'When a One Person Company must convert to a Private Limited Company, when conversion is voluntary, and the step-by-step MCA process.',
   datePublished: '2026-06-26', dateModified: '2026-06-26',
   author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },

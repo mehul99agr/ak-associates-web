@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
+  title: 'UAE Entity Setup: When It Makes Sense',
   description: 'UAE entity formation for Indian founders: FEMA exposure, substance requirements, DTAA limits, and when a Dubai company becomes a compliance liability.',
   keywords: [
     'UAE entity setup India', 'Dubai company formation Indian founders',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense' },
   openGraph: {
-    title: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
+    title: 'UAE Entity Setup: When It Makes Sense',
     description: 'Honest breakdown of UAE entity formation for Indian businesses, when the structure works, when it\'s expensive FOMO, and what FEMA and DTAA actually say.',
     url: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'UAE Entity Setup: When It Makes Sense (And When It Doesn\'t)',
+  headline: 'UAE Entity Setup: When It Makes Sense',
   description: 'Honest breakdown of UAE entity formation for Indian businesses: FEMA exposure, substance requirements, and when a Dubai company is a liability, not an asset.',
   datePublished: '2026-05-08',
   dateModified: '2026-05-08',

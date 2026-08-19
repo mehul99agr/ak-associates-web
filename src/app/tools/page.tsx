@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Icon from '../Icon'
 
 export const metadata: Metadata = {
-  title: 'Free Tax & Finance Tools | Income Tax, SIP Calculator',
+  title: 'Free Tax & Finance Calculators',
   description: 'Free financial tools: Income Tax Calculator, Capital Gains Calculator, SIP Planner, and Incorporation Wizard. Powered by Agrawal Khandelwal & Associates LLP.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/tools' },
   openGraph: {

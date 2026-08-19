@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',
+  title: 'GST on Exports: Zero-Rated vs Exempt',
   description: 'The difference between zero-rated and exempt supplies under GST, why it matters for ITC claims, how to file a Letter of Undertaking (LUT), and the five conditions for export of services.',
   keywords: [
     'GST on exports India', 'zero rated supply GST India', 'exempt supply GST India',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/gst-on-exports-zero-rated-vs-exempt-india' },
   openGraph: {
-    title: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',
+    title: 'GST on Exports: Zero-Rated vs Exempt',
     description: 'Exports are zero-rated under GST, not exempt — and the distinction has major consequences for input tax credit claims and refunds.',
     url: 'https://agrawalkhandelwal.com/blog/gst-on-exports-zero-rated-vs-exempt-india',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',
+  headline: 'GST on Exports: Zero-Rated vs Exempt',
   description: 'Zero-rated vs exempt distinction under GST, LUT filing, export of services conditions, and ITC refund process for Indian exporters.',
   datePublished: '2026-07-18',
   dateModified: '2026-07-18',

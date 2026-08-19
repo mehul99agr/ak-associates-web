@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India',
+  title: 'NRI Capital Gains on Inherited Property',
   description: 'How NRIs compute capital gains tax when selling inherited or gifted property in India — cost and holding period carryover from the original owner, TDS implications, and Form 13 relevance for FY 2026-27.',
   keywords: [
     'NRI capital gains inherited property', 'NRI sell gifted property India', 'inherited property tax NRI',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-capital-gains-inherited-gifted-property' },
   openGraph: {
-    title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India',
+    title: 'NRI Capital Gains on Inherited Property',
     description: 'Cost and holding period carryover rules, TDS implications, and Form 13 relevance for NRIs selling inherited or gifted property in India.',
     url: 'https://agrawalkhandelwal.com/blog/nri-capital-gains-inherited-gifted-property',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India',
+    title: 'NRI Capital Gains on Inherited Property',
     description: 'Cost and holding period carryover rules, TDS implications, and Form 13 relevance for inherited or gifted property.',
   },
 }
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Capital Gains Tax for NRIs on Inherited or Gifted Property in India',
+  headline: 'NRI Capital Gains on Inherited Property',
   description: 'Cost and holding period carryover from the original owner, TDS implications, and Form 13 relevance for NRIs selling inherited or gifted property in FY 2026-27.',
   datePublished: '2026-07-11',
   dateModified: '2026-07-11',

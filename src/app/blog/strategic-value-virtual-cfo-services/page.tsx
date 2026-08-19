@@ -2,14 +2,14 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Virtual CFO Services for Growing Businesses: When You Need One & What They Do',
+  title: 'When Your Business Needs a Virtual CFO',
   description: 'Why SMEs at Rs 3-15 crore revenue need a Virtual CFO: MIS, budgeting, cash flow, fundraising support, and tax planning at a fraction of a full-time hire. Cost comparison and ROI.',
   keywords: ['virtual CFO India', 'CFO services for SMEs', 'outsourced CFO India', 'fractional CFO India', 'Virtual CFO Mumbai', 'Virtual CFO Nashik', 'startup CFO services', 'virtual CFO cost India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' },
   openGraph: { title: 'Virtual CFO Services: When You Need One & What They Do', description: 'MIS, budgeting, cash flow, fundraising support at a fraction of a full-time CFO.', url: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services', type: 'article' },
 }
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Virtual CFO Services for Growing Businesses: When You Need One & What They Do', description: 'Why SMEs need Virtual CFO services and what they actually deliver.', datePublished: '2026-02-25', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' }
+const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'When Your Business Needs a Virtual CFO', description: 'Why SMEs need Virtual CFO services and what they actually deliver.', datePublished: '2026-02-25', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' }
 
 const faqs: [string, string][] = [
   ['What does a Virtual CFO actually do?', 'A Virtual CFO provides strategic financial leadership on a part-time or retainer basis: monthly MIS and P&L reporting, budgeting and variance analysis, cash flow forecasting, banking and lender relationship management, tax planning, and fundraising support. Unlike a bookkeeper who records transactions, a Virtual CFO interprets the numbers and recommends actions.'],

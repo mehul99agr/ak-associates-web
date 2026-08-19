@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '26QB vs 27Q: Which TDS Form When Buying Property from an NRI? (2026)',
+  title: '26QB vs 27Q: NRI Property TDS Form',
   description: 'Form 26QB is for resident sellers, Form 27Q is for NRI sellers. Side-by-side comparison: when each applies, TDS rates, TAN requirement, filing process, and the penalty for using the wrong form.',
   keywords: [
     '26QB vs 27Q', 'form 26QB NRI', 'form 27Q property', '26QB for NRI seller',

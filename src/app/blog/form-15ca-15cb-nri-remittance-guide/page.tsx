@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Form 15CA & 15CB (Now 145 & 146): NRI Remittance Compliance Guide (2026)',
+  title: 'Form 15CA/15CB NRI Remittance Guide',
   description: 'When Form 15CA/15CB is required, the 4 parts of Form 15CA, when a CA certificate (15CB) is needed, step-by-step filing on the Income Tax portal, and what happens if you skip it.',
   keywords: [
     'form 15CA', 'form 15CB', 'form 145', 'form 146', '15CA 15CB NRI',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Form 15CA & 15CB (Now 145 & 146): NRI Remittance Compliance Guide (2026)',
+  headline: 'Form 15CA/15CB NRI Remittance Guide',
   description: 'When Form 15CA/15CB is required, the 4 parts of Form 15CA, when a CA certificate (15CB) is needed, step-by-step filing, and penalties.',
   datePublished: '2026-06-27',
   dateModified: '2026-06-27',

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Section 195 TDS on Payments to NRIs: Complete Guide (FY 2026-27)',
+  title: 'Section 195 TDS Guide (FY 2026-27)',
   description: 'When and how to deduct TDS under Section 195 on payments to NRIs: property sale, rent, professional fees, interest. Rate table, TAN requirement, Form 27Q filing, and penalties for non-compliance.',
   keywords: [
     'section 195 TDS', 'TDS on payment to NRI', 'section 195 income tax',
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/section-195-tds-nri-payments-guide' },
   openGraph: {
-    title: 'Section 195 TDS on Payments to NRIs: Complete Guide (FY 2026-27)',
+    title: 'Section 195 TDS Guide (FY 2026-27)',
     description: 'Rate table, TAN process, Form 27Q filing, and penalties for TDS on all payment types to NRIs under Section 195.',
     url: 'https://agrawalkhandelwal.com/blog/section-195-tds-nri-payments-guide',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Section 195 TDS on Payments to NRIs: Complete Guide (FY 2026-27)',
+    title: 'Section 195 TDS Guide (FY 2026-27)',
     description: 'When and how to deduct TDS under Section 195 on payments to NRIs: property, rent, fees, interest.',
   },
 }
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Section 195 TDS on Payments to NRIs: Complete Guide (FY 2026-27)',
+  headline: 'Section 195 TDS Guide (FY 2026-27)',
   description: 'When and how to deduct TDS under Section 195 on payments to NRIs: property sale, rent, professional fees, interest. Rate table, TAN requirement, Form 27Q filing, and penalties.',
   datePublished: '2026-06-12',
   dateModified: '2026-06-12',
