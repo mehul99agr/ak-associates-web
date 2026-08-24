@@ -1,0 +1,72 @@
+# Agrawal Khandelwal & Associates LLP
+
+> Chartered Accountant (CA) firm headquartered in Nashik, Maharashtra, India, with a second office in Sillod, Maharashtra. Founded in 2023. Specializes in cross-border and growth-stage work: international taxation, transfer pricing, UAE corporate tax, NRI taxation, FEMA/RBI compliance, and startup/company incorporation advisory, alongside standard statutory audit, tax audit, and GST compliance. Partners: CA Mehul Agrawal (Nashik office; international taxation, transfer pricing, UAE Corporate Taxation certified) and CA Rupesh Khandelwal (Sillod office; domestic taxation, audits, business consulting; prior experience at Deloitte).
+
+## Firm
+
+- [About](https://agrawalkhandelwal.com/about): Partner bios, credentials, and firm background.
+- [Services overview](https://agrawalkhandelwal.com/services): All three practice groups — Taxation & Regulatory, Audit & Assurance, Strategic Advisory.
+- [Contact](https://agrawalkhandelwal.com/contact): Office addresses, phone numbers, and consultation booking.
+- [CA in Nashik](https://agrawalkhandelwal.com/ca-in-nashik): Nashik office details — Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011.
+- [CA in Sillod](https://agrawalkhandelwal.com/ca-in-sillod): Sillod office details — Near Datta Mandir, Tilak Nagar, Sillod – 431112.
+
+## Core Services
+
+- [Transfer Pricing](https://agrawalkhandelwal.com/transfer-pricing): Documentation, methods, safe harbour, APA, audit support.
+- [UAE Tax Advisory](https://agrawalkhandelwal.com/uae-tax-advisory): UAE corporate tax structuring and India-UAE compliance.
+- [NRI Tax Advisory](https://agrawalkhandelwal.com/nri-tax-advisory): Property sale TDS, repatriation, DTAA, residential status.
+- [Company Incorporation](https://agrawalkhandelwal.com/company-incorporation): Company and LLP formation, ROC compliance.
+- [Startup Advisory](https://agrawalkhandelwal.com/startups): Virtual CFO services, DPIIT registration, fundraising compliance.
+- [Offshore Accounting](https://agrawalkhandelwal.com/offshore-accounting): Outsourced bookkeeping and offshore accounting teams for foreign businesses.
+
+## Guides: Transfer Pricing
+
+- [Transfer Pricing Methods Explained](https://agrawalkhandelwal.com/blog/transfer-pricing-methods-india-explained)
+- [Form 3CEB & Transfer Pricing Audit Report](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report)
+- [Master File, Local File & CbCR India](https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india)
+- [Safe Harbour Rules](https://agrawalkhandelwal.com/blog/safe-harbour-rules-transfer-pricing-india)
+- [Advance Pricing Agreement (APA)](https://agrawalkhandelwal.com/blog/advance-pricing-agreement-apa-india)
+- [India-UAE Transfer Pricing Compliance](https://agrawalkhandelwal.com/blog/india-uae-transfer-pricing-compliance)
+
+## Guides: Company Incorporation
+
+- [LLP vs Private Limited](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india)
+- [Annual ROC Filing (AOC-4, MGT-7, DIR-3 KYC)](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc)
+- [DSC & DIN Application Guide](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)
+- [Company Name Reservation (SPICe+ / RUN)](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india)
+- [Foreign Subsidiary Registration (FDI route)](https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi)
+- [Post-Incorporation Checklist](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+
+## Guides: Startups & Compliance
+
+- [Startup Compliance Calendar Year 1-3](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)
+- [DPIIT Registration & Section 80-IAC](https://agrawalkhandelwal.com/blog/dpiit-registration-startups-india-80iac)
+- [ESOP Structuring for Indian Startups](https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups)
+- [Angel Tax (Section 56)](https://agrawalkhandelwal.com/blog/angel-tax-section-56-share-premium-startups)
+- [Startup Valuation Methods](https://agrawalkhandelwal.com/blog/startup-valuation-methods-india)
+- [Due Diligence Checklist for Fundraising](https://agrawalkhandelwal.com/blog/due-diligence-checklist-startup-fundraising)
+
+## Guides: NRI Taxation
+
+- [TDS on NRI Property Sale](https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india)
+- [RNOR Status Tax Guide](https://agrawalkhandelwal.com/blog/rnor-status-tax-guide-returning-nris)
+- [NRE vs NRO Account & Repatriation Limits](https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits)
+- [POEM (Place of Effective Management)](https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india)
+- [ESOP Taxation for NRIs](https://agrawalkhandelwal.com/blog/esop-taxation-for-nris-india)
+- [DTAA Guide by Country](https://agrawalkhandelwal.com/blog/dtaa-guide-nri-country-wise)
+
+## Tools
+
+- [Capital Gains Calculator](https://agrawalkhandelwal.com/tools/capital-gains)
+- [NRI Property TDS Calculator](https://agrawalkhandelwal.com/tools/nri-property-tds)
+- [Incorporation Wizard](https://agrawalkhandelwal.com/tools/incorporation-wizard)
+- [SIP Planner](https://agrawalkhandelwal.com/tools/sip-planner)
+- [Tax Calculator](https://agrawalkhandelwal.com/tax-calculator)
+
+## Optional
+
+- [Full sitemap](https://agrawalkhandelwal.com/sitemap.xml): Complete, current list of all pages including additional NRI, transfer pricing, and startup guides not listed above.
+- [Blog index](https://agrawalkhandelwal.com/blog)
+- [Privacy Policy](https://agrawalkhandelwal.com/privacy-policy)
+- [Terms of Use](https://agrawalkhandelwal.com/terms-of-use)
+- [Disclaimer](https://agrawalkhandelwal.com/disclaimer)
