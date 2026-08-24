@@ -149,6 +149,38 @@ src/app/
   this adds the crawlable depth competitors had.
 - Verified live: titles correct (no brand doubling), founding 2023, schema rendering.
 
+**Search Console findings (Aug 24, 2026 — week-over-week, Aug 16-22 vs Aug 9-15):**
+- Strong response to the Aug 16-20 work (Phase 5 cluster completion + audit fixes:
+  shortened titles, internal links, BreadcrumbList, FAQ content). Impressions +129%
+  (1280 -> 2934), clicks +79% (24 -> 43), weighted avg position improved 12.25 -> 10.48.
+  Growth is concentrated on Aug 19-20 (645 and 541 impr those two days vs ~150-450/day
+  the prior week) — lines up with the 97e1b04/3ba8f3d/a1ca0be/27d30f1 commits landing
+  and getting recrawled.
+- CTR dipped slightly (1.88% -> 1.47%) even as position improved — expected: new/
+  newly-indexed pages are picking up impressions before they've climbed to a clickable
+  position. Not a regression signal on its own; watch that it recovers as position
+  keeps improving.
+- Biggest 5-day page gainers (impressions): the new Phase 5 Company Incorporation
+  posts are the standout — `form-3ceb-transfer-pricing-audit-report` (+249 impr, +5
+  clicks), `dsc-din-application-director-guide` (+231 impr), `company-name-reservation-
+  run-form-india` (+158 impr, first clicks). Existing earners also grew: `tds-on-nri-
+  property-sale-india` (+213 impr), `tan-application-guide-buyer-nri-property` (+112
+  impr, +5 clicks), `ca-in-nashik` (+106 impr), `poem-place-of-effective-management-
+  india` (+129 impr, +2 clicks). Several NRI posts went from near-zero to double-digit
+  impressions for the first time (`nro-account-repatriation-rules-process`, `nri-itr-
+  filing-guide-from-abroad`, `pan-card-nri-application-aadhaar-linking`, `angel-tax-
+  section-56-share-premium-startups`, `nri-gift-inheritance-tax-rules`).
+- Query side: growth is mostly new long-tail impressions with 0 clicks yet (`form
+  3ceb due date`, `3ceb due date`, `tds on property purchase from nri fy 2026-27`,
+  `din and dsc`) — these are freshly-indexed pages surfacing for the first time, not
+  yet ranked high enough to convert. Local/brand queries also ticking up steadily
+  (`ca firms in nashik`, `ca in nashik`, `ca nashik`).
+- Takeaway: the Aug 16-20 push (3-cluster content completion + on-page audit fixes)
+  is showing up in GSC within days, same pattern as past content pushes. No action
+  needed yet — let the new pages continue climbing; revisit in ~2-3 weeks to see if
+  the long-tail 3CEB/NRI queries convert to clicks or stay stuck deep like
+  `/offshore-accounting` did.
+
 ## Topical Content Clusters (Aug 2026)
 Built out three topical authority clusters — Transfer Pricing, Startups (Compliance &
 Advisory), and Company Incorporation — across 5 phases, each following the same

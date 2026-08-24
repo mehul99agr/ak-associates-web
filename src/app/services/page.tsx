@@ -154,6 +154,19 @@ export default function Services() {
             </div>
           </div>
 
+          <div style={{ marginTop: '4.5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}>Related Guides</h2>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center' }}>
+              {[
+                { label: 'Form 3CEB & Transfer Pricing Audit', href: '/blog/form-3ceb-transfer-pricing-audit-report' },
+                { label: 'DSC & DIN Application Guide', href: '/blog/dsc-din-application-director-guide' },
+                { label: 'Company Name Reservation (SPICe+ / RUN)', href: '/blog/company-name-reservation-run-form-india' },
+              ].map(g => (
+                <Link key={g.href} href={g.href} style={{ padding: '10px 22px', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '50px', fontWeight: 700, fontSize: '0.9rem', color: 'var(--accent)' }}>{g.label} →</Link>
+              ))}
+            </div>
+          </div>
+
           <div style={{ margin: '80px auto 0', maxWidth: '800px', textAlign: 'center' }}>
             <h2 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Need a Specialized Strategy?</h2>
             <p style={{ marginBottom: '2rem', color: 'var(--text-light)', fontSize: '1rem' }}>

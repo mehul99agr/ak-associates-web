@@ -323,6 +323,30 @@ export default function CAInNashik() {
         </div>
       </section>
 
+      {/* RELATED READING */}
+      <section className="section">
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <span className="section-badge">Guides</span>
+            <h2 className="section-title" style={{ fontSize: '1.8rem' }}>Related Reading from Our Nashik Team</h2>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '1.5rem' }}>
+            <Link href="/blog/form-3ceb-transfer-pricing-audit-report" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Form 3CEB &amp; Transfer Pricing Audit Report</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>Applicability, due dates, and what the audit covers.</p>
+            </Link>
+            <Link href="/blog/company-name-reservation-run-form-india" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Company Name Reservation (SPICe+ / RUN)</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>How to reserve your company name before incorporation.</p>
+            </Link>
+            <Link href="/blog/dsc-din-application-director-guide" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>DSC &amp; DIN Application Guide for Directors</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>The two prerequisites every director needs before incorporation.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* OFFICE & CONTACT */}
       <section className="section" id="contact">
         <div className="container">

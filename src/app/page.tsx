@@ -376,6 +376,22 @@ export default function Home() {
                 TDS on NRI property sale: rates, Form 27Q &amp; refund guide →
               </Link>
             </p>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+              Incorporating a company in India? Read our guides to{' '}
+              <Link href="/blog/dsc-din-application-director-guide" style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                DSC &amp; DIN application for directors
+              </Link>{' '}
+              and{' '}
+              <Link href="/blog/company-name-reservation-run-form-india" style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                company name reservation via SPICe+ / RUN →
+              </Link>
+            </p>
+            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+              Doing cross-border transactions with a related entity? Read our guide to{' '}
+              <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                Form 3CEB and the transfer pricing audit report →
+              </Link>
+            </p>
           </div>
         </div>
       </section>
