@@ -150,6 +150,15 @@ export default function TDSNRIPropertyBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>The <strong>buyer</strong>, not the NRI seller, is legally responsible for deducting TDS under Section 195, with no minimum threshold, on the full sale consideration.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>TDS is 12.5% (LTCG, held over 2 years) or 30% (STCG) plus surcharge and 4% cess, computed on the entire sale value, not just the gain.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>A DTAA does not reduce this TDS. The only legitimate way to lower it is a <strong>Form 13 lower deduction certificate</strong> obtained before the sale.</li>
+                    <li style={{ marginBottom: 0 }}>Buyers need a TAN and must file Form 27Q; NRI sellers who are over-deducted can claim the excess back through their ITR.</li>
+                  </ul>
+                </div>
                 <p>When an Indian resident buys property from a Non-Resident Indian, the obligation to deduct tax at source falls on the <strong>buyer</strong>, not the seller. Most buyers discover this only after the transaction — at which point they are already personally liable for the TDS that should have been deducted, plus interest and penalty. For the NRI seller, the same transaction usually means paying far more TDS upfront than the actual tax works out to. This guide covers both sides for FY 2026-27: the buyer&apos;s rates, TAN and filing obligations, and the NRI seller&apos;s options for cutting the TDS burden or claiming it back.</p>
 
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

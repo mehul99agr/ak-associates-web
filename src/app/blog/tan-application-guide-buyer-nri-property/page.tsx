@@ -123,6 +123,15 @@ export default function TANApplicationGuideBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>Buying property from an NRI requires the buyer to hold a <strong>TAN</strong>, not just a PAN — the resident-seller Form 26QB / PAN-only process does not apply.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Apply for the TAN as soon as the deal is seriously under negotiation — it cannot be backdated once a payment has already been made without TDS deducted.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Missing this step makes the buyer personally liable for the full TDS, plus 1% monthly interest and a Section 271C penalty.</li>
+                    <li style={{ marginBottom: 0 }}>Once the TAN is issued, the buyer deducts TDS via challan and files the quarterly Form 27Q return.</li>
+                  </ul>
+                </div>
                 <p>If you are buying property from an NRI, one requirement catches most first-time buyers off guard: you need a <strong>TAN (Tax Deduction Account Number)</strong>, not just a PAN. This is different from buying from a resident seller, and skipping it — or discovering it too late — is the single most common mistake that creates personal TDS liability for buyers. Here is exactly how to get one.</p>
 
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
