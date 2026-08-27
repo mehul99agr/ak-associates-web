@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'POEM & Indian Tax Residency',
@@ -23,38 +25,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'POEM & Indian Tax Residency', item: 'https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('POEM & Indian Tax Residency', 'poem-place-of-effective-management-india')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'POEM & Indian Tax Residency',
   description: 'Place of Effective Management explained: when a UAE or foreign subsidiary is treated as an Indian tax resident, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
   datePublished: '2026-08-08',
-  dateModified: '2026-08-08',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india',
-}
+  slug: 'poem-place-of-effective-management-india',
+})
 
 const faqs: [string, string][] = [
   [
@@ -83,17 +61,9 @@ const faqs: [string, string][] = [
   ],
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 export default function POEMBlog() {
   return (

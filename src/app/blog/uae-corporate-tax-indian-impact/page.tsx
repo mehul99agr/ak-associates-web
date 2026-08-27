@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'UAE Corporate Tax: Impact on India',
@@ -18,38 +19,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'UAE Corporate Tax: Impact on India', item: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('UAE Corporate Tax: Impact on India', 'uae-corporate-tax-indian-impact')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'UAE Corporate Tax: Impact on India',
   description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing, and restructuring.',
   datePublished: '2026-03-08',
-  dateModified: '2026-03-08',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact',
-}
+  slug: 'uae-corporate-tax-indian-impact',
+})
 
 const faqs: [string, string][] = [
   ['What is the UAE Corporate Tax rate and when does it apply?', 'The UAE Federal Corporate Tax applies at a standard rate of 9% on taxable income exceeding AED 375,000. Entities with taxable income below that threshold are not subject to the tax, but must still maintain IFRS-compliant accounting records.'],
@@ -58,15 +35,7 @@ const faqs: [string, string][] = [
   ['Does UAE Corporate Tax affect transactions with an Indian parent company?', 'Yes. Any transaction between an Indian parent and its UAE subsidiary, including management fees, royalties, or goods trade, must be justified at market value under Transfer Pricing rules, or risk penalties from both the UAE Federal Tax Authority and the Indian Income Tax Department.'],
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
 export default function UAECorporateTaxBlog() {
   return (
@@ -143,7 +112,8 @@ export default function UAECorporateTaxBlog() {
             <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
             <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
               <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/uae-entity-setup-when-it-makes-sense" style={{ color: 'var(--primary)', fontWeight: 600 }}>UAE Entity Setup: When It Makes Sense</Link></li>
-              <li style={{ marginBottom: 0 }}><Link href="/blog/dubai-company-registration-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Dubai Company Registration Guide (2026)</Link></li>
+              <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/dubai-company-registration-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Dubai Company Registration Guide (2026)</Link></li>
+              <li style={{ marginBottom: 0 }}><Link href="/blog/india-uae-transfer-pricing-compliance" style={{ color: 'var(--primary)', fontWeight: 600 }}>India-UAE Transfer Pricing Compliance</Link></li>
             </ul>
           </div>
 

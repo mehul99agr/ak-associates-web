@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'TDS on NRI Property Sale (FY 2026-27)',
@@ -24,38 +26,15 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'TDS on NRI Property Sale (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('TDS on NRI Property Sale (FY 2026-27)', 'tds-on-nri-property-sale-india')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'TDS on NRI Property Sale (FY 2026-27)',
   description: 'Rate table with surcharge slabs, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation under the new Income Tax Act 2025 for NRI property sales in FY 2026-27.',
   datePublished: '2026-07-01',
   dateModified: '2026-07-11',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india',
-}
+  slug: 'tds-on-nri-property-sale-india',
+})
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -120,7 +99,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 export default function TDSNRIPropertyBlog() {
   return (

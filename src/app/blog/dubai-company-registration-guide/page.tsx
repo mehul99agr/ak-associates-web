@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
   title: 'Dubai Company Registration Guide (2026)',
@@ -23,38 +25,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Dubai Company Registration Guide (2026)', item: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Dubai Company Registration Guide (2026)', 'dubai-company-registration-guide')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Dubai Company Registration Guide (2026)',
   description: 'Step-by-step guide to Dubai company registration for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs, FEMA compliance, and UAE Corporate Tax.',
   datePublished: '2026-05-19',
-  dateModified: '2026-05-19',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide',
-}
+  slug: 'dubai-company-registration-guide',
+})
 
 const faqs: [string, string][] = [
   ['Can an Indian resident own 100% of a Dubai company?', 'Yes. Both mainland (for most activities) and all free zone entities allow 100% foreign ownership. The old requirement for a 51% UAE national sponsor was removed by the 2021 Commercial Companies Law amendment for most sectors.'],
@@ -65,39 +43,7 @@ const faqs: [string, string][] = [
   ['What is the minimum share capital required?', 'Most free zones have no minimum share capital requirement, or a nominal minimum (AED 1,000-50,000). Mainland companies have activity-specific requirements but most service and trading companies have no substantial capital requirement.'],
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
-
-const tableStyle: React.CSSProperties = {
-  width: '100%',
-  borderCollapse: 'collapse',
-  marginBottom: '2rem',
-  fontSize: '0.95rem',
-}
-const thStyle: React.CSSProperties = {
-  background: 'var(--primary)',
-  color: '#fff',
-  padding: '0.75rem 1rem',
-  textAlign: 'left',
-  fontWeight: 700,
-}
-const tdStyle: React.CSSProperties = {
-  padding: '0.75rem 1rem',
-  borderBottom: '1px solid var(--border)',
-  color: 'var(--text-main)',
-  verticalAlign: 'top',
-}
-const tdAltStyle: React.CSSProperties = {
-  ...tdStyle,
-  background: 'var(--bg-surface)',
-}
+const faqLd = buildFaqLd(faqs)
 
 export default function DubaiCompanyRegistrationBlog() {
   return (

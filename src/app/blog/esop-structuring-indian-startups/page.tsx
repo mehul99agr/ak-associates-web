@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'ESOP Structuring for Indian Startups',
@@ -23,27 +26,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'ESOP Structuring for Indian Startups', item: 'https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('ESOP Structuring for Indian Startups', 'esop-structuring-indian-startups')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'ESOP Structuring for Indian Startups',
   description: 'How to design an ESOP for an Indian Private Limited startup: pool sizing, vesting, exercise price, Companies Act mechanics, valuation, and employee tax.',
-  datePublished: '2026-07-17', dateModified: '2026-07-17',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups',
-}
+  datePublished: '2026-07-17',
+  slug: 'esop-structuring-indian-startups',
+})
 
 const faqs: [string, string][] = [
   ['How much ESOP pool should an Indian startup create before raising a seed round?', 'There is no fixed percentage that works for every company. Build the pool from your hiring plan through the next financing round, then model founder dilution and investor expectations on a fully diluted basis before finalising the number.'],
@@ -53,8 +43,8 @@ const faqs: [string, string][] = [
   ['Does an ESOP require shareholder approval in a private limited company?', 'Yes. An Indian private limited company generally needs shareholder approval by special resolution for an ESOP scheme, plus applicable ROC filings including SH-12 and PAS-3 when options are exercised and shares allotted.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function ESOPStructuringBlog() {
   return (
@@ -122,17 +112,7 @@ export default function ESOPStructuringBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

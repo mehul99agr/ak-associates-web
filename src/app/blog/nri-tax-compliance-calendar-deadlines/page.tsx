@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Tax Compliance Calendar (FY 2026-27)',
@@ -9,17 +12,9 @@ export const metadata: Metadata = {
   openGraph: { title: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Every deadline: advance tax, ITR, TDS returns, FLA, Form 15CA/15CB.', url: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines', type: 'article' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'NRI Tax Compliance Calendar (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('NRI Tax Compliance Calendar (FY 2026-27)', 'nri-tax-compliance-calendar-deadlines')
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Tax deadlines for NRIs.', datePublished: '2026-08-14', dateModified: '2026-08-14', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' }
+const articleLd = buildArticleLd({ headline: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Tax deadlines for NRIs.', datePublished: '2026-08-14', slug: 'nri-tax-compliance-calendar-deadlines' })
 
 const faqs: [string, string][] = [
   ['Do NRIs need to pay advance tax?', 'Yes, if the total tax liability for the year exceeds Rs 10,000 after TDS credits. Advance tax is payable in quarterly instalments: 15% by June 15, 45% by September 15, 75% by December 15, and 100% by March 15. Failure to pay attracts interest under Sections 234B and 234C. In practice, most NRIs whose income is limited to TDS-covered sources (rent, interest, property gains) do not need advance tax because TDS covers their liability.'],
@@ -27,8 +22,8 @@ const faqs: [string, string][] = [
   ['When is the FLA return due?', 'The Annual FLA (Foreign Liabilities and Assets) return is due by July 15 of each year and must be filed by Indian entities that have received foreign direct investment (FDI) or made overseas direct investment (ODI). This applies to companies and LLPs, not individual NRIs. Individual NRIs disclose foreign assets through Schedule FA in their ITR, not the FLA return.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }
 
 export default function NRIComplianceCalendarBlog() {
@@ -111,17 +106,7 @@ export default function NRIComplianceCalendarBlog() {
               </ul>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
           </article>
         </div></div>
       </div>

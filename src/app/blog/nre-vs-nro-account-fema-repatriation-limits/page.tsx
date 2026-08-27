@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
   title: 'NRE vs NRO: FEMA Repatriation Limits',
@@ -23,38 +26,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'NRE vs NRO: FEMA Repatriation Limits', item: 'https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('NRE vs NRO: FEMA Repatriation Limits', 'nre-vs-nro-account-fema-repatriation-limits')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'NRE vs NRO: FEMA Repatriation Limits',
   description: 'NRE vs NRO vs FCNR accounts compared: which income goes where, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
   datePublished: '2026-08-08',
-  dateModified: '2026-08-08',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits',
-}
+  slug: 'nre-vs-nro-account-fema-repatriation-limits',
+})
 
 const faqs: [string, string][] = [
   [
@@ -83,22 +62,9 @@ const faqs: [string, string][] = [
   ],
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
-
-const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.95rem' }
-const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }
-const tdStyle: React.CSSProperties = { padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
-const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surface)' }
+const bookingLink = BOOKING_LINK
 
 export default function NREvsNROBlog() {
   return (

@@ -1,5 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
+import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
   title: 'Form 3CEB Filing Guide (FY 2026-27)',
@@ -23,27 +27,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Form 3CEB Filing Guide (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Form 3CEB Filing Guide (FY 2026-27)', 'form-3ceb-transfer-pricing-audit-report')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Form 3CEB Filing Guide (FY 2026-27)',
   description: 'Who must file Form 3CEB, what the CA certifies, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty under Section 271BA.',
-  datePublished: '2026-08-09', dateModified: '2026-08-09',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report',
-}
+  datePublished: '2026-08-09',
+  slug: 'form-3ceb-transfer-pricing-audit-report',
+})
 
 const faqs: [string, string][] = [
   ['Who needs to file Form 3CEB in India?', 'An Indian taxpayer generally needs Form 3CEB where aggregate international transactions with associated enterprises exceed Rs 1 crore in a financial year. It can also apply to specified domestic transactions above the applicable threshold. A loss-making company or one claiming a tax holiday must still comply if it has qualifying transactions - profitability is not the test.'],
@@ -53,12 +44,8 @@ const faqs: [string, string][] = [
   ['Is Form 3CEB enough for transfer pricing compliance?', 'No. Form 3CEB is the CA-certified statutory report, but you must separately maintain transaction-level documentation known as the Local File, which supports the arm\'s length position reported in the form. Depending on group revenue, Master File and Country-by-Country Reporting obligations may also apply.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
-const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.95rem' }
-const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }
-const tdStyle: React.CSSProperties = { padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
-const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surface)' }
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function Form3CEBBlog() {
   return (
@@ -186,24 +173,15 @@ export default function Form3CEBBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
               <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/master-file-local-file-cbcr-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Master File vs Local File vs CbCR</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TP Documentation Checklist for Indian Subsidiaries</Link></li>
-                <li style={{ marginBottom: 0 }}><Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing Services</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing Services</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/blog/india-uae-transfer-pricing-compliance" style={{ color: 'var(--primary)', fontWeight: 600 }}>India-UAE Transfer Pricing Compliance</Link></li>
               </ul>
             </div>
           </article>

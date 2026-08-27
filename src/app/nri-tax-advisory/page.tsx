@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { BOOKING_LINK } from '@/lib/constants'
+import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'NRI Tax Advisory',
@@ -43,14 +45,10 @@ const serviceLd = {
   serviceType: 'NRI Tax Advisory',
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'NRI Tax Advisory', item: 'https://agrawalkhandelwal.com/nri-tax-advisory' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'NRI Tax Advisory', item: 'https://agrawalkhandelwal.com/nri-tax-advisory' },
+])
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -99,7 +97,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'm%20an%20NRI%20and%20need%20help%20with%20my%20India%20tax%20situation."
 
 const services = [

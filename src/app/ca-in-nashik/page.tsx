@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
+import { BOOKING_LINK, OFFICES } from '@/lib/constants'
+import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'CA in Nashik',
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 const services = [
   {
@@ -98,8 +100,8 @@ const nashikLocalBusiness = {
   alternateName: ['Agrawal Khandelwal & Associates LLP Nashik', 'Agrawal Khandelwal & Associates LLP CA Nashik'],
   description: 'Best Chartered Accountant firm in Nashik offering GST filing, income tax returns, company incorporation, audit, tax planning, and international taxation services. Located at Mumbai Naka, Nashik.',
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
-  telephone: '+91-95275-33506',
-  email: 'mehul@agrawalkhandelwal.com',
+  telephone: OFFICES.nashik.phoneE164,
+  email: OFFICES.nashik.email,
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
@@ -112,16 +114,16 @@ const nashikLocalBusiness = {
   logo: 'https://agrawalkhandelwal.com/logo.png',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
-    addressLocality: 'Nashik',
-    addressRegion: 'Maharashtra',
-    postalCode: '422011',
+    streetAddress: OFFICES.nashik.streetAddress,
+    addressLocality: OFFICES.nashik.locality,
+    addressRegion: OFFICES.nashik.region,
+    postalCode: OFFICES.nashik.postalCode,
     addressCountry: 'IN',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '19.1947607',
-    longitude: '73.7879464',
+    latitude: OFFICES.nashik.latitude,
+    longitude: OFFICES.nashik.longitude,
   },
   openingHoursSpecification: [
     {
@@ -147,24 +149,12 @@ const nashikLocalBusiness = {
   parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
 }
 
-const nashikFaqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(({ q, a }) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const nashikFaqLd = buildFaqLd(faqs)
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'CA in Nashik', item: 'https://agrawalkhandelwal.com/ca-in-nashik' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'CA in Nashik', item: 'https://agrawalkhandelwal.com/ca-in-nashik' },
+])
 
 export default function CAInNashik() {
   return (

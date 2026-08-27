@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
+import { BOOKING_LINK } from '@/lib/constants'
+import { buildFaqLd, buildServiceLd, buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing India',
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 const services = [
   {
@@ -109,35 +111,19 @@ const faqs = [
   },
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(({ q, a }) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
-const serviceLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
+const serviceLd = buildServiceLd({
   name: 'Transfer Pricing Advisory - Agrawal Khandelwal & Associates LLP',
   description: 'Transfer pricing documentation, benchmarking, APA advisory, and audit representation for MNCs and Indian multinationals.',
   url: 'https://agrawalkhandelwal.com/transfer-pricing',
-  provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
-  areaServed: { '@type': 'Country', name: 'India' },
   serviceType: ['Transfer Pricing Documentation', 'Benchmarking Study', 'Form 3CEB', 'APA Advisory', 'CbCR Filing', 'TP Audit Representation'],
-}
+})
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Transfer Pricing', item: 'https://agrawalkhandelwal.com/transfer-pricing' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'Transfer Pricing', item: 'https://agrawalkhandelwal.com/transfer-pricing' },
+])
 
 export default function TransferPricingPage() {
   return (

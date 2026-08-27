@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Rental Income Tax in India (FY 2026-27)',
@@ -23,27 +26,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'NRI Rental Income Tax in India (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/nri-rental-income-tax-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('NRI Rental Income Tax in India (FY 2026-27)', 'nri-rental-income-tax-india')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'NRI Rental Income Tax in India (FY 2026-27)',
   description: 'How rental income is taxed for NRIs: TDS, deductions, ITR refund, Form 13.',
-  datePublished: '2026-07-14', dateModified: '2026-07-14',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-rental-income-tax-india',
-}
+  datePublished: '2026-07-14',
+  slug: 'nri-rental-income-tax-india',
+})
 
 const faqs: [string, string][] = [
   ['What is the TDS rate on rent paid to an NRI landlord?', 'TDS on rent paid to an NRI landlord is 30% (plus applicable surcharge and 4% cess) under Section 195. This is significantly higher than the 10% TDS under Section 194-I that applies when the landlord is a resident. The 30% is computed on the gross rent, before any deductions the NRI might be entitled to (like the 30% standard deduction or municipal taxes).'],
@@ -53,8 +43,8 @@ const faqs: [string, string][] = [
   ['How does an NRI file ITR for rental income?', 'NRIs with Indian rental income should file ITR-2 (or ITR-3 if they have business income). The rental income is reported under "Income from House Property" with all applicable deductions. TDS credit is claimed based on Form 16A issued by the tenant. If TDS exceeds actual liability (common due to 30% on gross rent), the excess is refunded. File by July 31 of the assessment year.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function NRIRentalIncomeBlog() {
   return (
@@ -143,17 +133,7 @@ export default function NRIRentalIncomeBlog() {
                 </div>
               </div>
 
-              <div style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {faqs.map(([q, a], i) => (
-                    <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                      <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                      <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <FaqSection faqs={faqs} />
 
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

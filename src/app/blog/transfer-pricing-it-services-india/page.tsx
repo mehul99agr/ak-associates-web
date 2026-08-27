@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing for IT Services (India)',
@@ -24,27 +27,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Transfer Pricing for IT Services (India)', item: 'https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Transfer Pricing for IT Services (India)', 'transfer-pricing-it-services-india')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Transfer Pricing for IT Services (India)',
   description: 'Why TNMM is the default method for Indian IT/ITES captive service providers, functional profile considerations, common TPO disputes, and safe harbour fit.',
-  datePublished: '2026-08-07', dateModified: '2026-08-07',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india',
-}
+  datePublished: '2026-08-07',
+  slug: 'transfer-pricing-it-services-india',
+})
 
 const faqs: [string, string][] = [
   ['Why is TNMM used for transfer pricing of Indian software companies?', 'TNMM is commonly used because independent net-margin data is more readily available than reliable gross-margin data. It is particularly suitable for routine Indian captive software development and ITES service providers operating on a cost-plus basis.'],
@@ -54,8 +44,8 @@ const faqs: [string, string][] = [
   ['Can an ITES company use transfer pricing safe harbour rules?', 'Eligible ITES companies may consider safe harbour if they satisfy the notified conditions. They should compare the prescribed return with an ordinary TNMM result before filing Form 3CEFA.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.9rem' }
 const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
 const tdStyle: React.CSSProperties = { padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
@@ -144,17 +134,7 @@ export default function TPITServicesBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

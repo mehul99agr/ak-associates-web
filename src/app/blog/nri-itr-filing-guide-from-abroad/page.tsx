@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI ITR Filing from Abroad (FY 2026-27)',
@@ -24,27 +27,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'NRI ITR Filing from Abroad (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/nri-itr-filing-guide-from-abroad' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('NRI ITR Filing from Abroad (FY 2026-27)', 'nri-itr-filing-guide-from-abroad')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'NRI ITR Filing from Abroad (FY 2026-27)',
   description: 'How NRIs file Indian income tax returns from abroad.',
-  datePublished: '2026-07-22', dateModified: '2026-07-22',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-itr-filing-guide-from-abroad',
-}
+  datePublished: '2026-07-22',
+  slug: 'nri-itr-filing-guide-from-abroad',
+})
 
 const faqs: [string, string][] = [
   ['When is an NRI required to file an Indian ITR?', 'An NRI must file an ITR if their total Indian income (before deductions) exceeds the basic exemption limit (Rs 3 lakh under the new regime for FY 2026-27), or if they want to claim a TDS refund. Even if total income is below the threshold, filing is mandatory if the NRI wants to carry forward capital losses, or if TDS has been deducted and a refund is due. NRIs are not required to file if their only Indian income is interest/dividends on which TDS has been fully deducted and they have no refund to claim.'],
@@ -54,8 +44,8 @@ const faqs: [string, string][] = [
   ['Can an NRI file ITR from abroad without visiting India?', 'Yes. The entire ITR filing process can be completed online from abroad through the Income Tax e-filing portal (eportal.incometax.gov.in). E-verification can be done via DSC or net banking EVC. No physical presence in India is required. Many NRIs engage a CA in India to prepare and file the return on their behalf using a registered DSC.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function NRIITRFilingBlog() {
   return (
@@ -158,17 +148,7 @@ export default function NRIITRFilingBlog() {
                 </div>
               </div>
 
-              <div style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {faqs.map(([q, a], i) => (
-                    <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                      <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                      <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <FaqSection faqs={faqs} />
 
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

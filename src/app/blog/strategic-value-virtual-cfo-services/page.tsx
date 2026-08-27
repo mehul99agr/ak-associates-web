@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'When Your Business Needs a Virtual CFO',
@@ -9,17 +12,15 @@ export const metadata: Metadata = {
   openGraph: { title: 'Virtual CFO Services: When You Need One & What They Do', description: 'MIS, budgeting, cash flow, fundraising support at a fraction of a full-time CFO.', url: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services', type: 'article' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'When Your Business Needs a Virtual CFO', item: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('When Your Business Needs a Virtual CFO', 'strategic-value-virtual-cfo-services')
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'When Your Business Needs a Virtual CFO', description: 'Why SMEs need Virtual CFO services and what they actually deliver.', datePublished: '2026-02-25', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' }
+const articleLd = buildArticleLd({
+  headline: 'When Your Business Needs a Virtual CFO',
+  description: 'Why SMEs need Virtual CFO services and what they actually deliver.',
+  datePublished: '2026-02-25',
+  dateModified: '2026-08-16',
+  slug: 'strategic-value-virtual-cfo-services',
+})
 
 const faqs: [string, string][] = [
   ['What does a Virtual CFO actually do?', 'A Virtual CFO provides strategic financial leadership on a part-time or retainer basis: monthly MIS and P&L reporting, budgeting and variance analysis, cash flow forecasting, banking and lender relationship management, tax planning, and fundraising support. Unlike a bookkeeper who records transactions, a Virtual CFO interprets the numbers and recommends actions.'],
@@ -28,8 +29,8 @@ const faqs: [string, string][] = [
   ['What is the difference between a Virtual CFO and a statutory auditor?', 'A statutory auditor looks backward - did you comply with accounting standards and tax law? A Virtual CFO looks forward - what should you do next? The auditor signs off on past financial statements; the Virtual CFO builds the MIS, budgets, and cash flow projections that drive future decisions. Both are needed, but they serve different purposes.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function VirtualCFOBlog() {
   return (
@@ -107,17 +108,7 @@ export default function VirtualCFOBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

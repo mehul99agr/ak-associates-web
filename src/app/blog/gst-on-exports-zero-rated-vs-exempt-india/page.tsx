@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'GST on Exports: Zero-Rated vs Exempt',
@@ -19,38 +21,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'GST on Exports: Zero-Rated vs Exempt', item: 'https://agrawalkhandelwal.com/blog/gst-on-exports-zero-rated-vs-exempt-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('GST on Exports: Zero-Rated vs Exempt', 'gst-on-exports-zero-rated-vs-exempt-india')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'GST on Exports: Zero-Rated vs Exempt',
   description: 'Zero-rated vs exempt distinction under GST, LUT filing, export of services conditions, and ITC refund process for Indian exporters.',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/gst-on-exports-zero-rated-vs-exempt-india',
-}
+  slug: 'gst-on-exports-zero-rated-vs-exempt-india',
+})
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -91,7 +69,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 export default function GSTExportsZeroRatedBlog() {
   return (
@@ -197,6 +175,14 @@ export default function GSTExportsZeroRatedBlog() {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Registration for Startups</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/essential-compliance-indian-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Essential Compliance for Indian Startups</Link></li>
+                </ul>
               </div>
             </article>
           </div>

@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Angel Tax Abolished for All Investors',
@@ -23,27 +26,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Angel Tax Abolished for All Investors', item: 'https://agrawalkhandelwal.com/blog/angel-tax-section-56-share-premium-startups' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Angel Tax Abolished for All Investors', 'angel-tax-section-56-share-premium-startups')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Angel Tax Abolished for All Investors',
   description: 'Angel tax under Section 56(2)(viib) was abolished for all investors, resident and non-resident, effective FY 2024-25.',
-  datePublished: '2026-07-21', dateModified: '2026-07-21',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/angel-tax-section-56-share-premium-startups',
-}
+  datePublished: '2026-07-21',
+  slug: 'angel-tax-section-56-share-premium-startups',
+})
 
 const faqs: [string, string][] = [
   ['Does angel tax still apply to resident investors in India?', 'No. Section 56(2)(viib) was abolished for all classes of investors - both resident and non-resident - by the Finance (No. 2) Act, 2024, effective from FY 2024-25 (April 1, 2024). It does not apply to new share issues from that year onward regardless of who the investor is.'],
@@ -53,8 +43,8 @@ const faqs: [string, string][] = [
   ['Is DPIIT Form 2 still required for a new domestic funding round?', 'No, not for angel tax purposes - since Section 56(2)(viib) no longer applies to any investor, the DPIIT exemption declaration route built around it is no longer a live requirement for new rounds. Check current DPIIT procedures separately for any other startup benefit you intend to claim.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function AngelTaxBlog() {
   return (
@@ -117,17 +107,7 @@ export default function AngelTaxBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import TrackedLink from '../TrackedLink'
+import { BOOKING_LINK, OFFICES } from '@/lib/constants'
+import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Contact Us | CA in Nashik & Sillod',
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 const localBusinessLd = {
   '@context': 'https://schema.org',
@@ -22,17 +24,17 @@ const localBusinessLd = {
       '@id': 'https://agrawalkhandelwal.com/#nashik-office',
       name: 'Agrawal Khandelwal & Associates LLP',
       url: 'https://agrawalkhandelwal.com/ca-in-nashik',
-      telephone: '+91-95275-33506',
-      email: 'mehul@agrawalkhandelwal.com',
+      telephone: OFFICES.nashik.phoneE164,
+      email: OFFICES.nashik.email,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
-        addressLocality: 'Nashik',
-        addressRegion: 'Maharashtra',
-        postalCode: '422011',
+        streetAddress: OFFICES.nashik.streetAddress,
+        addressLocality: OFFICES.nashik.locality,
+        addressRegion: OFFICES.nashik.region,
+        postalCode: OFFICES.nashik.postalCode,
         addressCountry: 'IN',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: '19.1947607', longitude: '73.7879464' },
+      geo: { '@type': 'GeoCoordinates', latitude: OFFICES.nashik.latitude, longitude: OFFICES.nashik.longitude },
       openingHoursSpecification: [{
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -48,17 +50,17 @@ const localBusinessLd = {
       '@id': 'https://agrawalkhandelwal.com/#sillod-office',
       name: 'Agrawal Khandelwal & Associates LLP - Sillod',
       url: 'https://agrawalkhandelwal.com/ca-in-sillod',
-      telephone: '+91-95955-85953',
-      email: 'rupesh@agrawalkhandelwal.com',
+      telephone: OFFICES.sillod.phoneE164,
+      email: OFFICES.sillod.email,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Near Datta Mandir, Tilak Nagar',
-        addressLocality: 'Sillod',
-        addressRegion: 'Maharashtra',
-        postalCode: '431112',
+        streetAddress: OFFICES.sillod.streetAddress,
+        addressLocality: OFFICES.sillod.locality,
+        addressRegion: OFFICES.sillod.region,
+        postalCode: OFFICES.sillod.postalCode,
         addressCountry: 'IN',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: '20.1040', longitude: '75.6496' },
+      geo: { '@type': 'GeoCoordinates', latitude: OFFICES.sillod.latitude, longitude: OFFICES.sillod.longitude },
       openingHoursSpecification: [{
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -71,14 +73,10 @@ const localBusinessLd = {
   ],
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://agrawalkhandelwal.com/contact' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'Contact', item: 'https://agrawalkhandelwal.com/contact' },
+])
 
 const offices = [
   {

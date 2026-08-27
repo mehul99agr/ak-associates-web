@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'FEMA Compliance for Foreign Funding (2026)',
@@ -25,38 +26,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)', item: 'https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)', 'fema-compliance-foreign-investment-startups')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)',
   description: 'A practical guide to FEMA compliance for Indian startups receiving foreign funding: FDI routes, 30-day RBI reporting, FC-GPR filing, FLA annual return, and common mistakes.',
   datePublished: '2026-06-08',
-  dateModified: '2026-06-08',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups',
-}
+  slug: 'fema-compliance-foreign-investment-startups',
+})
 
 const faqLd = {
   '@context': 'https://schema.org',

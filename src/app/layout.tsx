@@ -8,6 +8,7 @@ import GoogleAnalytics from './GoogleAnalytics'
 import CookieConsent from './CookieConsent'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Montserrat, Open_Sans, Cormorant_Garamond } from 'next/font/google'
+import { BASE_URL, FIRM_NAME, BOOKING_LINK as SHARED_BOOKING_LINK, OFFICES, MEHUL_PERSON_ID, RUPESH_PERSON_ID, ORGANIZATION_ID } from '@/lib/constants'
 
 
 const montserrat = Montserrat({
@@ -112,27 +113,27 @@ export const metadata: Metadata = {
 const organizationLd = {
   '@context': 'https://schema.org',
   '@type': 'AccountingService',
-  '@id': 'https://agrawalkhandelwal.com/#organization',
-  name: 'Agrawal Khandelwal & Associates LLP',
+  '@id': ORGANIZATION_ID,
+  name: FIRM_NAME,
   description: 'Chartered Accountants in Nashik and Sillod, Maharashtra. Specializing in GST, income tax, company incorporation, audit, international taxation, transfer pricing, UAE corporate tax, startup advisory, and virtual CFO services.',
-  url: 'https://agrawalkhandelwal.com',
-  logo: 'https://agrawalkhandelwal.com/logo.png',
-  image: 'https://agrawalkhandelwal.com/office.jpg',
-  telephone: '+91-95275-33506',
-  email: 'mehul@agrawalkhandelwal.com',
+  url: BASE_URL,
+  logo: `${BASE_URL}/logo.png`,
+  image: `${BASE_URL}/office.jpg`,
+  telephone: OFFICES.nashik.phoneE164,
+  email: OFFICES.nashik.email,
   foundingDate: '2023',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
-    addressLocality: 'Nashik',
-    addressRegion: 'Maharashtra',
-    postalCode: '422011',
+    streetAddress: OFFICES.nashik.streetAddress,
+    addressLocality: OFFICES.nashik.locality,
+    addressRegion: OFFICES.nashik.region,
+    postalCode: OFFICES.nashik.postalCode,
     addressCountry: 'IN',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '19.1947607',
-    longitude: '73.7879464',
+    latitude: OFFICES.nashik.latitude,
+    longitude: OFFICES.nashik.longitude,
   },
   openingHoursSpecification: [
     {
@@ -173,8 +174,8 @@ const organizationLd = {
     'Offshore Accounting',
   ],
   founder: [
-    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
+    { '@type': 'Person', '@id': MEHUL_PERSON_ID, name: 'CA Mehul Agrawal' },
+    { '@type': 'Person', '@id': RUPESH_PERSON_ID, name: 'CA Rupesh Khandelwal' },
   ],
   sameAs: [
     'https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/',
@@ -200,41 +201,40 @@ const organizationLd = {
   location: [
     {
       '@type': 'Place',
-      '@id': 'https://agrawalkhandelwal.com/#nashik-office',
-      name: 'Nashik Office',
-      image: 'https://agrawalkhandelwal.com/office.jpg',
+      '@id': OFFICES.nashik.id,
+      name: OFFICES.nashik.name,
+      image: `${BASE_URL}/office.jpg`,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
-        addressLocality: 'Nashik',
-        addressRegion: 'Maharashtra',
-        postalCode: '422011',
+        streetAddress: OFFICES.nashik.streetAddress,
+        addressLocality: OFFICES.nashik.locality,
+        addressRegion: OFFICES.nashik.region,
+        postalCode: OFFICES.nashik.postalCode,
         addressCountry: 'IN',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: '19.1947607', longitude: '73.7879464' },
-      telephone: '+91-95275-33506',
+      geo: { '@type': 'GeoCoordinates', latitude: OFFICES.nashik.latitude, longitude: OFFICES.nashik.longitude },
+      telephone: OFFICES.nashik.phoneE164,
     },
     {
       '@type': 'Place',
-      '@id': 'https://agrawalkhandelwal.com/#sillod-office',
-      name: 'Sillod Office',
-      image: 'https://agrawalkhandelwal.com/office.jpg',
+      '@id': OFFICES.sillod.id,
+      name: OFFICES.sillod.name,
+      image: `${BASE_URL}/office.jpg`,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Near Datta Mandir, Tilak Nagar',
-        addressLocality: 'Sillod',
-        addressRegion: 'Maharashtra',
-        postalCode: '431112',
+        streetAddress: OFFICES.sillod.streetAddress,
+        addressLocality: OFFICES.sillod.locality,
+        addressRegion: OFFICES.sillod.region,
+        postalCode: OFFICES.sillod.postalCode,
         addressCountry: 'IN',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: '20.1040', longitude: '75.6496' },
-      telephone: '+91-95955-85953',
+      geo: { '@type': 'GeoCoordinates', latitude: OFFICES.sillod.latitude, longitude: OFFICES.sillod.longitude },
+      telephone: OFFICES.sillod.phoneE164,
     },
   ],
 }
 
-const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
-const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
+const bookingLink = SHARED_BOOKING_LINK
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -317,16 +317,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h3>Contact Us</h3>
                 <div style={{ marginBottom: '1.25rem' }}>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>Nashik Office</p>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011</p>
-                  <a href="tel:+919527533506" style={{ display: 'inline', marginRight: '8px' }}>+91 95275 33506</a>
-                  <a href="mailto:mehul@agrawalkhandelwal.com">mehul@agrawalkhandelwal.com</a>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>{OFFICES.nashik.name}</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>{OFFICES.nashik.addressLine}</p>
+                  <a href={OFFICES.nashik.phoneHref} style={{ display: 'inline', marginRight: '8px' }}>{OFFICES.nashik.phoneDisplay}</a>
+                  <a href={`mailto:${OFFICES.nashik.email}`}>{OFFICES.nashik.email}</a>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>Sillod Office</p>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>Near Datta Mandir, Tilak Nagar, Sillod – 431112</p>
-                  <a href="tel:+919595585953" style={{ display: 'inline', marginRight: '8px' }}>+91 95955 85953</a>
-                  <a href="mailto:rupesh@agrawalkhandelwal.com">rupesh@agrawalkhandelwal.com</a>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>{OFFICES.sillod.name}</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>{OFFICES.sillod.addressLine}</p>
+                  <a href={OFFICES.sillod.phoneHref} style={{ display: 'inline', marginRight: '8px' }}>{OFFICES.sillod.phoneDisplay}</a>
+                  <a href={`mailto:${OFFICES.sillod.email}`}>{OFFICES.sillod.email}</a>
                 </div>
               </div>
 

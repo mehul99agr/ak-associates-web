@@ -1,5 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
+import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
   title: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
@@ -24,29 +28,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'NRI Mutual Fund & Stock Tax (FY 2026-27)', item: 'https://agrawalkhandelwal.com/blog/nri-mutual-fund-stock-taxation-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('NRI Mutual Fund & Stock Tax (FY 2026-27)', 'nri-mutual-fund-stock-taxation-india')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
   description: 'How mutual funds, stocks, and capital gains are taxed for NRIs: rates, TDS, PIS, FATCA.',
   datePublished: '2026-07-16',
-  dateModified: '2026-07-16',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-mutual-fund-stock-taxation-india',
-}
+  slug: 'nri-mutual-fund-stock-taxation-india',
+})
 
 const faqs: [string, string][] = [
   ['Can NRIs invest in Indian mutual funds?', 'Yes. NRIs can invest in most Indian mutual funds, though some fund houses restrict investments from NRIs based in the US or Canada due to FATCA and CRS compliance costs. NRIs must invest through their NRE or NRO account and complete KYC with FATCA self-declaration. Investments from NRE accounts are fully repatriable; from NRO accounts, repatriation is subject to the USD 1 million annual limit.'],
@@ -56,12 +45,8 @@ const faqs: [string, string][] = [
   ['How does an NRI claim TDS refund on mutual fund gains?', 'If the TDS deducted exceeds the actual tax liability (common when actual gains are lower than the gross redemption amount on which TDS was computed), the NRI can claim a refund by filing an Indian ITR for the year. The ITR reports the actual capital gains computation and claims credit for TDS. Alternatively, the NRI can apply for a Form 13 lower deduction certificate to reduce TDS at source.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
-const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.95rem' }
-const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }
-const tdStyle: React.CSSProperties = { padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
-const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surface)' }
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function NRIMutualFundStockTaxBlog() {
   return (
@@ -157,17 +142,7 @@ export default function NRIMutualFundStockTaxBlog() {
                 </div>
               </div>
 
-              <div style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {faqs.map(([q, a], i) => (
-                    <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                      <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                      <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <FaqSection faqs={faqs} />
 
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

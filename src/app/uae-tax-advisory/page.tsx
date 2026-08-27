@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
+import { BOOKING_LINK } from '@/lib/constants'
+import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'UAE Corporate Tax',
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 const services = [
   {
@@ -83,38 +85,23 @@ const faqs = [
   },
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(({ q, a }) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
-const serviceLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
+const serviceLd = buildServiceLd({
   name: 'UAE Corporate Tax Advisory - Agrawal Khandelwal & Associates LLP',
   description: 'UAE Corporate Tax compliance, India-UAE DTAA advisory, Free Zone structuring, and repatriation planning for Indian businesses and UAE companies with India operations.',
   url: 'https://agrawalkhandelwal.com/uae-tax-advisory',
-  provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
   areaServed: [
     { '@type': 'Country', name: 'India' },
     { '@type': 'Country', name: 'United Arab Emirates' },
   ],
   serviceType: ['UAE Corporate Tax Filing', 'India-UAE DTAA Advisory', 'Free Zone QFZP Analysis', 'Repatriation Planning', 'PE Risk Assessment', 'Transfer Pricing UAE-India'],
-}
+})
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'UAE Tax Advisory', item: 'https://agrawalkhandelwal.com/uae-tax-advisory' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'UAE Tax Advisory', item: 'https://agrawalkhandelwal.com/uae-tax-advisory' },
+])
 
 export default function UAETaxAdvisory() {
   return (

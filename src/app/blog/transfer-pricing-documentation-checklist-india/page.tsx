@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'TP Documentation Checklist India (2026)',
@@ -19,38 +21,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'TP Documentation Checklist India (2026)', item: 'https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('TP Documentation Checklist India (2026)', 'transfer-pricing-documentation-checklist-india')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'TP Documentation Checklist India (2026)',
   description: 'Complete checklist for Indian TP compliance: Form 3CEB, Local File, Master File, and CbCR thresholds, due dates, and common audit triggers.',
   datePublished: '2026-07-11',
-  dateModified: '2026-07-11',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india',
-}
+  slug: 'transfer-pricing-documentation-checklist-india',
+})
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -91,7 +69,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 export default function TPDocumentationChecklist() {
   return (
@@ -164,7 +142,16 @@ export default function TPDocumentationChecklist() {
                 <p>Our <Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing practice</Link> handles Form 3CEB certification, benchmarking studies, and TP audit representation for Indian subsidiaries of multinationals across sectors.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+              <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB: Due Date, Process &amp; Penalties</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/master-file-local-file-cbcr-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Master File vs Local File vs CbCR</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/blog/new-income-tax-act-rules-2025" style={{ color: 'var(--primary)', fontWeight: 600 }}>New Income Tax Act 2025: Simplified Guide</Link></li>
+                </ul>
+              </div>
+
+              <div style={{ marginTop: '1.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ marginBottom: '0.75rem' }}>Need transfer pricing documentation for your Indian subsidiary?</h3>
                 <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We prepare Form 3CEB, Local File, and Master File documentation for Indian entities with international related-party transactions.</p>
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>

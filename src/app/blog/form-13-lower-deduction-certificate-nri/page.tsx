@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Form 13 Lower TDS Certificate (FY 2026-27)',
@@ -23,38 +25,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline', item: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline', 'form-13-lower-deduction-certificate-nri')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline',
   description: 'Documents, jurisdictional AO, and processing timeline for an NRI Form 13 lower deduction certificate application under Section 197 for FY 2026-27.',
   datePublished: '2026-07-11',
-  dateModified: '2026-07-11',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri',
-}
+  slug: 'form-13-lower-deduction-certificate-nri',
+})
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -87,7 +65,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 export default function Form13NRIBlog() {
   return (

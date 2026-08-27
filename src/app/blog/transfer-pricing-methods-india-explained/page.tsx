@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing Methods in India',
@@ -23,27 +26,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Transfer Pricing Methods in India', item: 'https://agrawalkhandelwal.com/blog/transfer-pricing-methods-india-explained' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Transfer Pricing Methods in India', 'transfer-pricing-methods-india-explained')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Transfer Pricing Methods in India',
   description: 'The 5 methods prescribed under Rule 10B for testing arm\'s length pricing in India, when each is the most appropriate method, and a worked TNMM example.',
-  datePublished: '2026-07-30', dateModified: '2026-07-30',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/transfer-pricing-methods-india-explained',
-}
+  datePublished: '2026-07-30',
+  slug: 'transfer-pricing-methods-india-explained',
+})
 
 const faqs: [string, string][] = [
   ['Which transfer pricing method is most commonly used in India?', 'TNMM is commonly used, especially for captive service providers, software development companies, ITES businesses, and routine distributors. It is popular because reliable net-margin comparable data is more accessible than gross-margin or transaction-price data.'],
@@ -53,8 +43,8 @@ const faqs: [string, string][] = [
   ['Does using TNMM eliminate the need for detailed documentation?', 'No. TNMM still requires a functional analysis, comparable company selection, margin computation, and a reasoned explanation of why the method is appropriate. Weak comparable selection is one of the most common reasons for disputes with the Transfer Pricing Officer.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.9rem' }
 const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
 const tdStyle: React.CSSProperties = { padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
@@ -152,17 +142,7 @@ export default function TPMethodsBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
@@ -170,7 +150,8 @@ export default function TPMethodsBlog() {
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB: Due Date, Process &amp; Penalties</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/transfer-pricing-it-services-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing for IT Services Companies</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TP Documentation Checklist</Link></li>
-                <li style={{ marginBottom: 0 }}><Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing Services</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>Transfer Pricing Services</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/blog/india-uae-transfer-pricing-compliance" style={{ color: 'var(--primary)', fontWeight: 600 }}>India-UAE Transfer Pricing Compliance</Link></li>
               </ul>
             </div>
           </article>

@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Gift & Inheritance Tax Rules (2026)',
@@ -9,17 +12,9 @@ export const metadata: Metadata = {
   openGraph: { title: 'NRI Gift & Inheritance Tax Rules (2026)', description: 'Taxability, exemptions, FEMA rules, and LRS limits for NRI gifts and inheritance.', url: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules', type: 'article' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'NRI Gift & Inheritance Tax Rules (2026)', item: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('NRI Gift & Inheritance Tax Rules (2026)', 'nri-gift-inheritance-tax-rules')
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'NRI Gift & Inheritance Tax Rules (2026)', description: 'Gift and inheritance tax rules for NRIs.', datePublished: '2026-05-29', dateModified: '2026-05-29', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules' }
+const articleLd = buildArticleLd({ headline: 'NRI Gift & Inheritance Tax Rules (2026)', description: 'Gift and inheritance tax rules for NRIs.', datePublished: '2026-05-29', slug: 'nri-gift-inheritance-tax-rules' })
 
 const faqs: [string, string][] = [
   ['Is inheritance taxable for NRIs in India?', 'No. India abolished inheritance tax (estate duty) in 1985. Money or property received through inheritance is not taxable as income for the recipient, whether NRI or resident. However, any income earned on inherited assets after receipt (rent, interest, capital gains on sale) is taxable based on the recipient\'s residential status. If an NRI inherits property and later sells it, capital gains tax applies under the normal rules.'],
@@ -28,8 +23,8 @@ const faqs: [string, string][] = [
   ['What are the FEMA rules for cross-border gifts?', 'A resident Indian can gift up to USD 250,000 per financial year to an NRI under the Liberalised Remittance Scheme (LRS). TCS of 20% applies on amounts exceeding Rs 7 lakh in a financial year (claimable as credit when filing ITR). An NRI gifting money to a resident in India can send funds from abroad or from their NRE/NRO account. Gifts from NRE accounts are freely repatriable; from NRO, they count toward the USD 1 million repatriation limit.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function NRIGiftInheritanceBlog() {
   return (
@@ -107,17 +102,7 @@ export default function NRIGiftInheritanceBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

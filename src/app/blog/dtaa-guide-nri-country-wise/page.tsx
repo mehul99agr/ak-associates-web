@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI DTAA Guide by Country (2026)',
@@ -24,27 +27,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore', item: 'https://agrawalkhandelwal.com/blog/dtaa-guide-nri-country-wise' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore', 'dtaa-guide-nri-country-wise')
 
-const articleLd = {
-  '@context': 'https://schema.org', '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore',
   description: 'DTAA treaty rates for NRIs by country and how to claim benefits.',
-  datePublished: '2026-08-11', dateModified: '2026-08-11',
-  author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
-  publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dtaa-guide-nri-country-wise',
-}
+  datePublished: '2026-08-11',
+  slug: 'dtaa-guide-nri-country-wise',
+})
 
 const faqs: [string, string][] = [
   ['What is a DTAA and how does it help NRIs?', 'A Double Taxation Avoidance Agreement (DTAA) is a bilateral treaty between India and another country that prevents the same income from being taxed twice. For NRIs, DTAAs reduce withholding tax rates on interest, dividends, royalties, and certain other income types. They also provide tie-breaker rules for determining tax residency when an individual qualifies as resident in both countries during a transition year.'],
@@ -54,8 +44,8 @@ const faqs: [string, string][] = [
   ['Can I claim foreign tax credit in India?', 'Yes. If you are a resident of India (including RNOR) and have paid tax on the same income in another country, you can claim a foreign tax credit under Section 90 (for countries with DTAA) or Section 91 (for countries without DTAA). File Form 67 on the Income Tax portal before the ITR due date. The credit is limited to the lower of the foreign tax paid or the Indian tax on that income.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.9rem' }
 const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
 const tdStyle: React.CSSProperties = { padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
@@ -217,17 +207,7 @@ export default function DTAAGuideBlog() {
                 </div>
               </div>
 
-              <div style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {faqs.map(([q, a], i) => (
-                    <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                      <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                      <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <FaqSection faqs={faqs} />
 
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>Reviewed By</h3>

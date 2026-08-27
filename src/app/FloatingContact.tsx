@@ -1,8 +1,9 @@
 import TrackedLink from './TrackedLink'
+import { BOOKING_LINK, WHATSAPP_LINK, OFFICES } from '@/lib/constants'
 
-const WHATSAPP = 'https://wa.me/919527533506?text=Hi,%20I%27d%20like%20to%20book%20a%20consultation.'
-const TEL = 'tel:+919527533506'
-const BOOKING = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const WHATSAPP = WHATSAPP_LINK
+const TEL = OFFICES.nashik.phoneHref
+const BOOKING = BOOKING_LINK
 
 function IconWhatsApp() {
   return (

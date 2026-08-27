@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'New Income Tax Act 2025: Simplified Guide',
@@ -19,38 +20,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Deciphering the New Income Tax Act & Rules 2025', item: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Deciphering the New Income Tax Act & Rules 2025', 'new-income-tax-act-rules-2025')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Deciphering the New Income Tax Act & Rules 2025',
   description: 'Structural changes in the Indian Income Tax Act 2025: simplified computation, AI assessments, and tax regime convergence.',
   datePublished: '2026-03-20',
-  dateModified: '2026-03-20',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025',
-}
+  slug: 'new-income-tax-act-rules-2025',
+})
 
 const faqs: [string, string][] = [
   ['What is the New Income Tax Act 2025?', 'A structural overhaul of India\'s income tax law aimed at simplifying language, reducing litigation, and modernizing compliance for a digital-first economy, while moving the New Tax Regime closer to becoming the primary framework for individual taxpayers.'],
@@ -59,15 +36,7 @@ const faqs: [string, string][] = [
   ['How does AI-driven assessment work under the new rules?', 'The Faceless Assessment system is upgraded with AI-driven risk parameters, so tax scrutiny is now highly targeted, focusing on high-value discrepancies identified through automated cross-referencing of GST, banking, and ROC data.'],
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
 export default function NewTaxActBlog() {
   return (

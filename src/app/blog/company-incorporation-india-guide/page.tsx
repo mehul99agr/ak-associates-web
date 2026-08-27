@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Incorporate a Company in India (2026)',
@@ -20,38 +21,15 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Incorporate a Company in India (2026)', item: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Incorporate a Company in India (2026)', 'company-incorporation-india-guide')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'Incorporate a Company in India (2026)',
   description: 'Complete guide to company incorporation in India: structure comparison, step-by-step process, costs, timeline, and documents.',
   datePublished: '2026-05-08',
   dateModified: '2026-05-13',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide',
-}
+  slug: 'company-incorporation-india-guide',
+})
 
 const howToLd = {
   '@context': 'https://schema.org',
@@ -383,7 +361,16 @@ export default function CompanyIncorporationGuideBlog() {
             </p>
           </div>
 
-          <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
+          <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+            <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+            <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+              <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/llp-vs-private-limited-comparison-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>LLP vs Private Limited Company</Link></li>
+              <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/opc-to-private-limited-conversion-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>OPC to Private Limited Conversion</Link></li>
+              <li style={{ marginBottom: 0 }}><Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>Post-Incorporation Checklist: First 30 Days</Link></li>
+            </ul>
+          </div>
+
+          <div style={{ marginTop: '1.5rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-main)' }}>Ready to incorporate? Let&apos;s do it properly.</h3>
             <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', maxWidth: '500px', margin: '0.75rem auto 2rem' }}>
               We handle the full incorporation process: structure advice, MOA drafting, MCA filings, and post-incorporation compliance setup.

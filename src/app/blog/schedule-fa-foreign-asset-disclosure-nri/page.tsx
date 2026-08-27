@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Schedule FA: Foreign Asset Disclosure (2026)',
@@ -9,17 +12,9 @@ export const metadata: Metadata = {
   openGraph: { title: 'Schedule FA: Foreign Asset Disclosure for Returning NRIs', description: 'When Schedule FA applies, what to disclose, and penalties for non-compliance.', url: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri', type: 'article' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Schedule FA: Foreign Asset Disclosure (2026)', item: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Schedule FA: Foreign Asset Disclosure (2026)', 'schedule-fa-foreign-asset-disclosure-nri')
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Schedule FA: Foreign Asset Disclosure (2026)', description: 'When Schedule FA applies, what to declare, and penalties.', datePublished: '2026-07-28', dateModified: '2026-07-28', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' }
+const articleLd = buildArticleLd({ headline: 'Schedule FA: Foreign Asset Disclosure (2026)', description: 'When Schedule FA applies, what to declare, and penalties.', datePublished: '2026-07-28', slug: 'schedule-fa-foreign-asset-disclosure-nri' })
 
 const faqs: [string, string][] = [
   ['Do NRIs need to fill Schedule FA?', 'No. Schedule FA (Foreign Assets and Income from any source outside India) is required only for individuals who qualify as Resident or RNOR under Indian tax law. Non-Residents (NRIs) are explicitly exempt from Schedule FA disclosure. This is one of the key compliance differences between NRI and RNOR/Resident status.'],
@@ -28,8 +23,8 @@ const faqs: [string, string][] = [
   ['Does RNOR status exempt me from Schedule FA?', 'The position is evolving. Technically, RNOR is a sub-category of Resident, and Schedule FA is required for Residents. However, some practitioners argue that since RNOR\'s foreign income (not received in India) is not taxable, the disclosure requirement is less clear for those specific assets. The safer approach is to disclose foreign assets during RNOR years. Consult your CA for the current position.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function ScheduleFABlog() {
   return (
@@ -107,17 +102,7 @@ export default function ScheduleFABlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

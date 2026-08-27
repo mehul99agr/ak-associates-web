@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Essential Compliance for Indian Startups',
@@ -9,17 +12,9 @@ export const metadata: Metadata = {
   openGraph: { title: 'Essential Compliance for Indian Startups', description: 'MCA, GST, TDS, advance tax, and FEMA reporting checklist for Indian startups.', url: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups', type: 'article' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Essential Compliance for Indian Startups', item: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('Essential Compliance for Indian Startups', 'essential-compliance-indian-startups')
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Essential Compliance for Indian Startups', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-08-16', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' }
+const articleLd = buildArticleLd({ headline: 'Essential Compliance for Indian Startups', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-08-16', slug: 'essential-compliance-indian-startups' })
 
 const faqs: [string, string][] = [
   ['What happens if a startup misses MCA annual filings?', 'Missing AOC-4 or MGT-7 attracts a penalty of Rs 100 per day per form with no cap. For startups that have not filed for 2-3 years, accumulated penalties can cross Rs 10-15 lakh. Additionally, non-filing can lead to the company being struck off by the ROC and directors being disqualified under Section 164(2).'],
@@ -28,8 +23,8 @@ const faqs: [string, string][] = [
   ['How does compliance affect DPIIT recognition?', 'DPIIT recognition requires the startup to be compliant with all applicable regulations. Non-filing of MCA returns, pending tax demands, or FEMA violations can block or revoke DPIIT recognition, which in turn blocks the Section 80-IAC tax holiday and other startup benefits.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function EssentialComplianceBlog() {
   return (
@@ -123,17 +118,7 @@ export default function EssentialComplianceBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

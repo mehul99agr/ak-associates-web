@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
+import { BOOKING_LINK } from '@/lib/constants'
+import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Offshore Accounting Services India',
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 const audiences = [
   {
@@ -111,23 +113,12 @@ const faqs = [
   },
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(({ q, a }) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
-const serviceLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
+const serviceLd = buildServiceLd({
   name: 'Offshore Accounting & Outsourced Bookkeeping - Agrawal Khandelwal & Associates LLP',
   description: 'Offshore accounting services from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, payroll, GST, and statutory compliance.',
   url: 'https://agrawalkhandelwal.com/offshore-accounting',
-  provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
   areaServed: [
     { '@type': 'Country', name: 'India' },
     { '@type': 'Country', name: 'United Kingdom' },
@@ -140,16 +131,12 @@ const serviceLd = {
     'Payroll Processing', 'GST Compliance', 'Statutory Audit Readiness',
     'GAAP Conversion', 'Virtual CFO Services',
   ],
-}
+})
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Offshore Accounting', item: 'https://agrawalkhandelwal.com/offshore-accounting' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'Offshore Accounting', item: 'https://agrawalkhandelwal.com/offshore-accounting' },
+])
 
 export default function OffshoreAccounting() {
   return (

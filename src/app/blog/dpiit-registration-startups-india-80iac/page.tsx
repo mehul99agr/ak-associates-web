@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'DPIIT Registration for Startups (2026)',
@@ -19,38 +21,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'DPIIT Registration for Startups (2026)', item: 'https://agrawalkhandelwal.com/blog/dpiit-registration-startups-india-80iac' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('DPIIT Registration for Startups (2026)', 'dpiit-registration-startups-india-80iac')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'DPIIT Registration for Startups (2026)',
   description: 'DPIIT recognition process, eligibility, 80-IAC tax holiday requirements, and IMB certification — a complete guide for Indian startup founders.',
   datePublished: '2026-07-25',
-  dateModified: '2026-07-25',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/dpiit-registration-startups-india-80iac',
-}
+  slug: 'dpiit-registration-startups-india-80iac',
+})
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -91,7 +69,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 export default function DPIITRegistrationBlog() {
   return (
@@ -187,6 +165,15 @@ export default function DPIITRegistrationBlog() {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/angel-tax-section-56-share-premium-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Angel Tax Abolished for All Investors</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Compliance Calendar (Year 1-3)</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Advisory Services</Link></li>
+                </ul>
               </div>
             </article>
           </div>

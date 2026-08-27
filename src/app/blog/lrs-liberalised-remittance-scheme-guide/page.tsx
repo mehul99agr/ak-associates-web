@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { BOOKING_LINK } from '@/lib/constants'
+import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'LRS Guide: USD 250K Limit & TCS (2026)',
@@ -9,17 +12,14 @@ export const metadata: Metadata = {
   openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'LRS Guide: USD 250K Limit & TCS (2026)', item: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('LRS Guide: USD 250K Limit & TCS (2026)', 'lrs-liberalised-remittance-scheme-guide')
 
-const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: 'LRS Guide: USD 250K Limit & TCS (2026)', description: 'LRS guide for outward remittances from India.', datePublished: '2026-06-20', dateModified: '2026-06-20', author: { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' }, publisher: { '@type': 'Organization', '@id': 'https://agrawalkhandelwal.com/#organization', name: 'Agrawal Khandelwal & Associates LLP', logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' } }, inLanguage: 'en-IN', isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' }, mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' }
+const articleLd = buildArticleLd({
+  headline: 'LRS Guide: USD 250K Limit & TCS (2026)',
+  description: 'LRS guide for outward remittances from India.',
+  datePublished: '2026-06-20',
+  slug: 'lrs-liberalised-remittance-scheme-guide',
+})
 
 const faqs: [string, string][] = [
   ['What is the LRS limit for FY 2026-27?', 'The Liberalised Remittance Scheme allows resident Indians to remit up to USD 250,000 per financial year (April to March) for any permitted purpose. This is a per-person, per-year limit, not per transaction. A family of four can collectively remit up to USD 1 million. The limit covers all LRS remittances in the year, including gifts, investments, education, travel, and maintenance of relatives abroad.'],
@@ -28,8 +28,8 @@ const faqs: [string, string][] = [
   ['What is Form A2 in LRS?', 'Form A2 is the application-cum-declaration form submitted to the Authorised Dealer (AD) bank for processing an LRS remittance. It declares the purpose of remittance, the amount, the beneficiary details, and confirms that the remitter has not exceeded the USD 250,000 annual limit. The bank verifies the declaration and processes the remittance. PAN is mandatory for LRS transactions above Rs 50,000.'],
 ]
 
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const faqLd = buildFaqLd(faqs)
+const bookingLink = BOOKING_LINK
 
 export default function LRSGuideBlog() {
   return (
@@ -134,17 +134,7 @@ export default function LRSGuideBlog() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {faqs.map(([q, a], i) => (
-                  <div key={i} style={{ background: 'var(--bg-main)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1.25rem' }}>
-                    <h3 style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '0.6rem' }}>{q}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.91rem', lineHeight: 1.7, margin: 0 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FaqSection faqs={faqs} />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

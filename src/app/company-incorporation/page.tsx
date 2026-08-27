@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Company Incorporation in India',
@@ -132,14 +133,10 @@ const howToLd = {
   ],
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Company Incorporation', item: 'https://agrawalkhandelwal.com/company-incorporation' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'Company Incorporation', item: 'https://agrawalkhandelwal.com/company-incorporation' },
+])
 
 const steps = [
   { n: '01', title: 'Free Advisory Call', desc: 'We understand your business, funding plans, and team, then recommend the right structure with clear reasoning.' },

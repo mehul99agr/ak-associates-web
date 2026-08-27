@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'UAE Entity Setup: When It Makes Sense',
@@ -19,38 +20,14 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://agrawalkhandelwal.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'UAE Entity Setup: When It Makes Sense', item: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense' },
-  ],
-}
+const breadcrumbLd = buildBlogBreadcrumbLd('UAE Entity Setup: When It Makes Sense', 'uae-entity-setup-when-it-makes-sense')
 
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+const articleLd = buildArticleLd({
   headline: 'UAE Entity Setup: When It Makes Sense',
   description: 'Honest breakdown of UAE entity formation for Indian businesses: FEMA exposure, substance requirements, and when a Dubai company is a liability, not an asset.',
   datePublished: '2026-05-08',
-  dateModified: '2026-05-08',
-  author: {
-    '@type': 'Person',
-    '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
-    name: 'CA Mehul Agrawal',
-  },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://agrawalkhandelwal.com/#organization',
-    name: 'Agrawal Khandelwal & Associates LLP',
-    logo: { '@type': 'ImageObject', url: 'https://agrawalkhandelwal.com/logo.png' },
-  },
-  inLanguage: 'en-IN',
-  isPartOf: { '@type': 'Blog', '@id': 'https://agrawalkhandelwal.com/blog#blog', name: 'Agrawal Khandelwal & Associates LLP Insights' },
-  mainEntityOfPage: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense',
-}
+  slug: 'uae-entity-setup-when-it-makes-sense',
+})
 
 const faqs: [string, string][] = [
   ['When does setting up a UAE entity actually make sense for an Indian business?', 'When you have genuine cross-border revenue and want to invoice international clients directly, your customers or investors are Gulf-based and need a local presence, your industry is genuinely more favourable in the UAE (fintech, crypto, DIFC-regulated services), or you are actually relocating with real tax residency and substance.'],
@@ -59,15 +36,7 @@ const faqs: [string, string][] = [
   ['What is India\'s POEM rule and how does it affect a UAE entity?', 'India\'s Place of Effective Management (POEM) rules can tax a foreign entity as an Indian entity if it is actually controlled from India. A UAE company without real UAE-based decision-making and operations does not escape Indian tax exposure just by being incorporated there.'],
 ]
 
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const faqLd = buildFaqLd(faqs)
 
 export default function UAEEntitySetupBlog() {
   return (

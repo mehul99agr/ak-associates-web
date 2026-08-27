@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
+import { BOOKING_LINK, OFFICES } from '@/lib/constants'
+import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'CA in Sillod',
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = BOOKING_LINK
 
 const services = [
   {
@@ -90,8 +92,8 @@ const sillodLocalBusiness = {
   alternateName: ['Agrawal Khandelwal & Associates LLP Sillod', 'CA in Sillod', 'Agrawal Khandelwal & Associates LLP CA Sillod'],
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
-  telephone: '+91-95955-85953',
-  email: 'rupesh@agrawalkhandelwal.com',
+  telephone: OFFICES.sillod.phoneE164,
+  email: OFFICES.sillod.email,
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
@@ -104,16 +106,16 @@ const sillodLocalBusiness = {
   logo: 'https://agrawalkhandelwal.com/logo.png',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Near Datta Mandir, Tilak Nagar',
-    addressLocality: 'Sillod',
-    addressRegion: 'Maharashtra',
-    postalCode: '431112',
+    streetAddress: OFFICES.sillod.streetAddress,
+    addressLocality: OFFICES.sillod.locality,
+    addressRegion: OFFICES.sillod.region,
+    postalCode: OFFICES.sillod.postalCode,
     addressCountry: 'IN',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '20.1040',
-    longitude: '75.6496',
+    latitude: OFFICES.sillod.latitude,
+    longitude: OFFICES.sillod.longitude,
   },
   openingHoursSpecification: [
     {
@@ -139,24 +141,12 @@ const sillodLocalBusiness = {
   parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
 }
 
-const sillodFaqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(({ q, a }) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-}
+const sillodFaqLd = buildFaqLd(faqs)
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'CA in Sillod', item: 'https://agrawalkhandelwal.com/ca-in-sillod' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'CA in Sillod', item: 'https://agrawalkhandelwal.com/ca-in-sillod' },
+])
 
 export default function CAInSillod() {
   return (

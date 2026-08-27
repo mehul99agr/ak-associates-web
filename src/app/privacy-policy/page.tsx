@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -6,14 +7,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/privacy-policy' },
 }
 
-const breadcrumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agrawalkhandelwal.com' },
-    { '@type': 'ListItem', position: 2, name: 'Privacy Policy', item: 'https://agrawalkhandelwal.com/privacy-policy' },
-  ],
-}
+const breadcrumbLd = buildBreadcrumbLd([
+  { name: 'Home', item: 'https://agrawalkhandelwal.com' },
+  { name: 'Privacy Policy', item: 'https://agrawalkhandelwal.com/privacy-policy' },
+])
 
 export default function PrivacyPolicy() {
   return (
