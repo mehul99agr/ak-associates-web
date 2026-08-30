@@ -116,7 +116,7 @@ export default function LRSGuideBlog() {
 
               <h2>LRS and NRI Families: Common Scenarios</h2>
               <h3>Parents Sending Money to NRI Children</h3>
-              <p>A resident parent can send up to USD 250,000/year to their NRI child for maintenance, gift, or education. TCS of 20% applies above Rs 7 lakh (for gifts/maintenance). The parent claims TCS credit in their ITR. The NRI child receives it tax-free in India (gift from relative exemption under <Link href="/blog/nri-gift-inheritance-tax-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 56(2)(x)</Link>), but should check taxability in their country of residence.</p>
+              <p>A resident parent can send up to USD 250,000/year to their NRI child for maintenance, gift, or education. TCS of 20% applies above Rs 7 lakh (for gifts/maintenance). The parent claims TCS credit in their ITR. The NRI child receives it tax-free in India (gift from relative exemption under <Link href="/blog/nri-gift-inheritance-tax-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 92 of the Income Tax Act 2025, earlier Section 56(2)(x)</Link>), but should check taxability in their country of residence.</p>
 
               <h3>Resident Investing in Foreign Stocks/Funds</h3>
               <p>LRS covers investment in foreign securities. TCS at 20% applies above Rs 7 lakh. When the resident later becomes NRI (e.g., moves abroad for work), the foreign investments made under LRS remain valid. Capital gains on sale are taxable based on residential status at the time of sale.</p>

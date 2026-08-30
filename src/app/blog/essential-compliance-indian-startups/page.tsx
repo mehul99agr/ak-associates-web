@@ -84,7 +84,7 @@ export default function EssentialComplianceBlog() {
               <p><Link href="/blog/dpiit-registration-startups-india-80iac" style={{ color: 'var(--primary)', fontWeight: 600 }}>DPIIT-recognised startups</Link> can claim a 100% tax deduction on profits under Section 80-IAC for any 3 consecutive years within the first 10 years of incorporation - but only if an Inter-Ministerial Board (IMB) certificate is obtained. Missing the ITR deadline disqualifies you from certain deductions.</p>
 
               <h2>4. TDS (Tax Deducted at Source)</h2>
-              <p>If your startup pays salary, rent, contractor fees, or professional charges, you must deduct TDS and deposit it by the 7th of the following month. Quarterly TDS returns (Form 26Q, 24Q) are due within 31 days of quarter end. Errors in TDS - wrong PAN, wrong section, short deduction - result in notices and interest under Section 201.</p>
+              <p>If your startup pays salary, rent, contractor fees, or professional charges, you must deduct TDS and deposit it by the 7th of the following month. Quarterly TDS returns (Form 26Q, 24Q) are due within 31 days of quarter end. Errors in TDS - wrong PAN, wrong section, short deduction - result in notices and interest under Section 398 (earlier Section 201).</p>
 
               <h2>5. FEMA & Foreign Investment Reporting</h2>
               <p>If you have raised angel or VC funding from foreign investors, <Link href="/blog/fema-compliance-foreign-investment-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>FEMA reporting</Link> is non-negotiable:</p>

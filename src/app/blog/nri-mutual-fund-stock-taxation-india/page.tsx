@@ -42,7 +42,7 @@ const faqs: [string, string][] = [
   ['What is the TDS rate on mutual fund redemption for NRIs?', 'TDS on mutual fund capital gains for NRIs is: 12.5% on LTCG from equity funds (above Rs 1.25 lakh exemption), 20% on LTCG from debt funds, and 20% on STCG from equity funds. For STCG on debt funds, TDS is at the applicable slab rate (usually 30% for NRIs). Surcharge and 4% cess are added. TDS is deducted by the AMC at the time of redemption.'],
   ['Can NRIs trade stocks directly on Indian exchanges?', 'Yes, but only through a Portfolio Investment Scheme (PIS) account approved by RBI. The NRI must open a PIS-designated demat and trading account with a SEBI-registered broker linked to their NRE or NRO bank account. PIS has position limits: NRIs cannot hold more than 5% of a company\'s paid-up capital individually, and total NRI/FPI holding cannot exceed the sectoral FDI cap.'],
   ['Are US/Canada NRIs restricted from Indian mutual funds?', 'Many Indian AMCs do not accept investments from US and Canada-based NRIs due to the compliance burden of FATCA (Foreign Account Tax Compliance Act) and CRS reporting. However, some major fund houses like UTI, SBI, and a few others do accept US/Canada NRI investments. Check with the specific AMC before attempting to invest.'],
-  ['How does an NRI claim TDS refund on mutual fund gains?', 'If the TDS deducted exceeds the actual tax liability (common when actual gains are lower than the gross redemption amount on which TDS was computed), the NRI can claim a refund by filing an Indian ITR for the year. The ITR reports the actual capital gains computation and claims credit for TDS. Alternatively, the NRI can apply for a Form 13 lower deduction certificate to reduce TDS at source.'],
+  ['How does an NRI claim TDS refund on mutual fund gains?', 'If the TDS deducted exceeds the actual tax liability (common when actual gains are lower than the gross redemption amount on which TDS was computed), the NRI can claim a refund by filing an Indian ITR for the year. The ITR reports the actual capital gains computation and claims credit for TDS. Alternatively, the NRI can apply for a Form 128 (earlier Form 13) lower deduction certificate to reduce TDS at source.'],
 ]
 
 const faqLd = buildFaqLd(faqs)
@@ -149,7 +149,7 @@ export default function NRIMutualFundStockTaxBlog() {
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-capital-gains-inherited-gifted-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>Capital Gains on Inherited or Gifted Property</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO Account: FEMA Repatriation Limits</Link></li>
-                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13: Lower TDS Certificate</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 128 (earlier Form 13): Lower TDS Certificate</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/blog/esop-taxation-for-nris-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>ESOP Taxation for NRIs</Link></li>
                 </ul>
               </div>

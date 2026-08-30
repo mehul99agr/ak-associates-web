@@ -18,7 +18,7 @@ const articleLd = buildArticleLd({ headline: 'NRI Gift & Inheritance Tax Rules (
 
 const faqs: [string, string][] = [
   ['Is inheritance taxable for NRIs in India?', 'No. India abolished inheritance tax (estate duty) in 1985. Money or property received through inheritance is not taxable as income for the recipient, whether NRI or resident. However, any income earned on inherited assets after receipt (rent, interest, capital gains on sale) is taxable based on the recipient\'s residential status. If an NRI inherits property and later sells it, capital gains tax applies under the normal rules.'],
-  ['Are gifts from relatives taxable for NRIs?', 'Gifts received from specified relatives (spouse, parents, siblings, lineal ascendants/descendants, and their spouses) are fully exempt from income tax regardless of amount, under Section 56(2)(x). This applies whether the NRI is the giver or receiver, and whether the gift is in cash, property, or other assets. Gifts from non-relatives exceeding Rs 50,000 in a financial year are taxable for the recipient.'],
+  ['Are gifts from relatives taxable for NRIs?', 'Gifts received from specified relatives (spouse, parents, siblings, lineal ascendants/descendants, and their spouses) are fully exempt from income tax regardless of amount, under Section 92 of the Income Tax Act 2025 (earlier Section 56(2)(x) under the 1961 Act). This applies whether the NRI is the giver or receiver, and whether the gift is in cash, property, or other assets. Gifts from non-relatives exceeding Rs 50,000 in a financial year are taxable for the recipient.'],
   ['Can parents gift money to NRI children?', 'Yes. Gifts between parents and children (or any specified relatives) are exempt from income tax regardless of amount. However, if the gift involves sending money abroad, the resident parent must comply with LRS (Liberalised Remittance Scheme) limits of USD 250,000 per financial year and TCS provisions. The NRI child receives it tax-free in India but should check the tax treatment in their country of residence.'],
   ['What are the FEMA rules for cross-border gifts?', 'A resident Indian can gift up to USD 250,000 per financial year to an NRI under the Liberalised Remittance Scheme (LRS). TCS of 20% applies on amounts exceeding Rs 7 lakh in a financial year (claimable as credit when filing ITR). An NRI gifting money to a resident in India can send funds from abroad or from their NRE/NRO account. Gifts from NRE accounts are freely repatriable; from NRO, they count toward the USD 1 million repatriation limit.'],
 ]
@@ -64,7 +64,7 @@ export default function NRIGiftInheritanceBlog() {
               </ul>
 
               <h2>Gift Tax: The Rs 50,000 Rule</h2>
-              <p>Under Section 56(2)(x), gifts (money, property, or other assets) received by any person are taxable as &quot;Income from Other Sources&quot; if:</p>
+              <p>Under Section 92 of the Income Tax Act 2025 (earlier Section 56(2)(x)), gifts (money, property, or other assets) received by any person are taxable as &quot;Income from Other Sources&quot; if:</p>
               <ul>
                 <li>The aggregate value of gifts received from <strong>non-relatives</strong> in a financial year exceeds <strong>Rs 50,000</strong></li>
                 <li>The gift is not covered by a specific exemption (marriage, inheritance, certain trusts)</li>

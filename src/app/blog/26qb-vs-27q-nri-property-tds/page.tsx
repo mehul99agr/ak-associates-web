@@ -47,7 +47,7 @@ const faqs: [string, string][] = [
   ],
   [
     'What happens if I filed 26QB instead of 27Q for an NRI seller?',
-    'You have deducted TDS at 1% instead of the correct rate of 12.5% to 30% (plus surcharge and cess), filed the wrong form, and likely did not obtain a TAN. You are an assessee in default under Section 201, personally liable for the full TDS shortfall plus interest at 1% per month from the date TDS should have been deducted. You need to obtain a TAN, pay the differential TDS with interest via Challan ITNS-281, and file a corrected Form 27Q. Consult a CA immediately to limit the damage.',
+    'You have deducted TDS at 1% instead of the correct rate of 12.5% to 30% (plus surcharge and cess), filed the wrong form, and likely did not obtain a TAN. You are an assessee in default under Section 398 (earlier Section 201), personally liable for the full TDS shortfall plus interest at 1% per month from the date TDS should have been deducted. You need to obtain a TAN, pay the differential TDS with interest via Challan ITNS-281, and file a corrected Form 144 (earlier Form 27Q). Consult a CA immediately to limit the damage.',
   ],
   [
     'Is Form 26QB being replaced under the new Income Tax Act 2025?',

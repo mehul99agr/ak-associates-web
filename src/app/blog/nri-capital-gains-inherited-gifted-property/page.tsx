@@ -59,7 +59,7 @@ const faqLd = {
       name: 'Does the buyer still deduct TDS when purchasing inherited property from an NRI?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. TDS under Section 195 applies the same way regardless of how the NRI acquired the property. Because the original cost is often very low relative to the current sale value on inherited property, the gap between TDS deducted and actual tax liability can be especially large, making a Form 13 lower deduction certificate particularly valuable in these cases.',
+        text: 'Yes. TDS under Section 393(2) (earlier Section 195) applies the same way regardless of how the NRI acquired the property. Because the original cost is often very low relative to the current sale value on inherited property, the gap between TDS deducted and actual tax liability can be especially large, making a Form 128 (earlier Form 13) lower deduction certificate particularly valuable in these cases.',
       },
     },
   ],
@@ -93,10 +93,10 @@ export default function NRIInheritedGiftedPropertyBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
-                <p>A large share of the property NRIs sell in India wasn&apos;t purchased by them directly — it was inherited from parents or grandparents, or received as a gift from a relative. The tax treatment on eventual sale follows a specific carryover rule that surprises many NRIs, and it directly affects how much TDS gets deducted and whether a Form 13 certificate is worth pursuing.</p>
+                <p>A large share of the property NRIs sell in India wasn&apos;t purchased by them directly — it was inherited from parents or grandparents, or received as a gift from a relative. The tax treatment on eventual sale follows a specific carryover rule that surprises many NRIs, and it directly affects how much TDS gets deducted and whether a Form 128 (earlier Form 13) certificate is worth pursuing.</p>
 
                 <h2>No Tax at the Point of Inheritance or Gift</h2>
-                <p>Receiving property through inheritance, or as a gift from a specified relative (parent, sibling, spouse, lineal ascendant or descendant, among others defined under Section 56), does not itself trigger any income tax for the NRI. There is no tax event at the point of transfer. Tax only arises later, when the NRI sells the property, and it is computed as a capital gain at that point — not before.</p>
+                <p>Receiving property through inheritance, or as a gift from a specified relative (parent, sibling, spouse, lineal ascendant or descendant, among others defined under Section 92 of the Income Tax Act 2025, earlier Section 56 under the 1961 Act), does not itself trigger any income tax for the NRI. There is no tax event at the point of transfer. Tax only arises later, when the NRI sells the property, and it is computed as a capital gain at that point — not before.</p>
 
                 <h2>Cost of Acquisition Carries Over from the Original Owner</h2>
                 <p>This is the rule that catches most NRIs off guard: for inherited or gifted property, the <strong>cost of acquisition is not the market value at the time of inheritance or gift</strong> — it is the cost to whoever originally purchased the property, going back as far as needed through the chain of inheritance or gifts. If a grandparent bought the property in 1985 for ₹2 lakh, and it eventually passes to an NRI grandchild who sells it today for ₹2 crore, the cost of acquisition used to compute capital gains is still that original 1985 purchase price (adjusted for indexation only if the pre-July 2024 option applies to the holding period in question).</p>
@@ -111,14 +111,14 @@ export default function NRIInheritedGiftedPropertyBlog() {
                 <p>None of this changes the buyer&apos;s obligation. <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS under Section 195 (now Section 393(2) under the Income Tax Act 2025)</Link> is still deducted on the full current sale consideration, regardless of how low the original cost of acquisition was. In fact, because inherited property often has a very low historical cost relative to today&apos;s sale value, the gap between TDS deducted and the NRI&apos;s actual tax liability tends to be even larger than on a directly purchased property — which is exactly the scenario a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> is designed for.</p>
 
                 <h2>Documentation Challenges Are the Real Risk</h2>
-                <p>The practical difficulty with inherited property isn&apos;t the tax rule itself — it&apos;s proving the original cost of acquisition decades later. Common gaps include missing original purchase deeds, undocumented improvement costs, and unclear succession records where the property passed through multiple family members before reaching the NRI. Any Form 13 application or ITR computation is only as strong as this documentation, so it is worth assembling well before a sale is finalized, not during the transaction itself. Our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory team</Link> regularly helps NRIs reconstruct acquisition cost documentation for ancestral property.</p>
+                <p>The practical difficulty with inherited property isn&apos;t the tax rule itself — it&apos;s proving the original cost of acquisition decades later. Common gaps include missing original purchase deeds, undocumented improvement costs, and unclear succession records where the property passed through multiple family members before reaching the NRI. Any Form 128 (earlier Form 13) application or ITR computation is only as strong as this documentation, so it is worth assembling well before a sale is finalized, not during the transaction itself. Our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory team</Link> regularly helps NRIs reconstruct acquisition cost documentation for ancestral property.</p>
 
                 <h2>Practical Steps Before Selling</h2>
                 <ul>
                   <li>Trace and retain the original purchase deed or earliest available ownership document</li>
                   <li>Collect any succession certificates, wills, or gift deeds establishing the chain of ownership</li>
                   <li>Gather receipts or records for any improvement costs incurred over the years</li>
-                  <li>Get the capital gains computation done before the sale, so a Form 13 application can be filed with enough lead time</li>
+                  <li>Get the capital gains computation done before the sale, so a Form 128 (earlier Form 13) application can be filed with enough lead time</li>
                 </ul>
 
                 <p>Once the computation is ready, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to see the statutory TDS at the current sale value, and compare it against the actual expected liability.</p>

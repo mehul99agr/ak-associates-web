@@ -59,7 +59,7 @@ const faqLd = {
       name: 'Can an NRI avoid the TDS refund wait entirely?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Applying for a Form 13 lower deduction certificate before the sale closes lets the buyer deduct TDS at closer to the actual tax liability from the start, instead of over-deducting and forcing the NRI through the refund process afterward.',
+        text: 'Yes. Applying for a Form 128 (earlier Form 13) lower deduction certificate before the sale closes lets the buyer deduct TDS at closer to the actual tax liability from the start, instead of over-deducting and forcing the NRI through the refund process afterward.',
       },
     },
   ],
@@ -93,10 +93,10 @@ export default function NRITDSRefundBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
-                <p>Because <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on an NRI&apos;s property sale</Link> is deducted on the full sale consideration rather than the actual capital gain, most NRI sellers end up with far more tax withheld than they actually owe. If a Form 13 lower deduction certificate wasn&apos;t obtained before the sale, the only way to recover the difference is by filing an Indian income tax return and claiming a refund. Here is exactly how that process works.</p>
+                <p>Because <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on an NRI&apos;s property sale</Link> is deducted on the full sale consideration rather than the actual capital gain, most NRI sellers end up with far more tax withheld than they actually owe. If a Form 128 (earlier Form 13) lower deduction certificate wasn&apos;t obtained before the sale, the only way to recover the difference is by filing an Indian income tax return and claiming a refund. Here is exactly how that process works.</p>
 
                 <h2>Why NRIs End Up Overpaying TDS</h2>
-                <p>Section 195 requires the buyer to deduct TDS on the gross sale value at the applicable rate (12.5% for long-term gains, 30% for short-term, plus surcharge and cess). If an NRI sells a property for ₹1.5 crore with an actual capital gain of ₹15 lakh, the buyer still deducts TDS on the full ₹1.5 crore — often several times the NRI&apos;s real tax liability. Recovering that gap requires either advance planning through Form 13, or a refund claimed after the fact through an ITR.</p>
+                <p>Section 393(2) (earlier Section 195) requires the buyer to deduct TDS on the gross sale value at the applicable rate (12.5% for long-term gains, 30% for short-term, plus surcharge and cess). If an NRI sells a property for ₹1.5 crore with an actual capital gain of ₹15 lakh, the buyer still deducts TDS on the full ₹1.5 crore — often several times the NRI&apos;s real tax liability. Recovering that gap requires either advance planning through Form 128 (earlier Form 13), or a refund claimed after the fact through an ITR.</p>
 
                 <h2>Step 1: Determine the Right ITR Form</h2>
                 <p>Most NRIs use <strong>ITR-2</strong> to report capital gains, since it covers income from capital gains, house property, and other sources without requiring business income schedules. <strong>ITR-3</strong> applies instead if the NRI also has business or professional income in India. Filing is required for the financial year in which the sale occurred — even if the NRI has no other Indian income — because the refund can only be processed against a filed return.</p>
@@ -116,8 +116,8 @@ export default function NRITDSRefundBlog() {
                 <h2>Step 4: Track and Receive the Refund</h2>
                 <p>Once verified and processed, refunds are credited directly to the Indian bank account specified in the return — usually the NRO account the sale proceeds were deposited into. Processing time varies with return complexity, but typically runs from a few weeks up to a few months. Importantly, <strong>Section 244A</strong> entitles the NRI to statutory interest on the refund amount for the period of delay, which is automatically computed and included in the refund.</p>
 
-                <h2>Refund Route vs Form 13: Which Is Better?</h2>
-                <p>The refund route works, but it ties up capital for months and depends on smooth processing. The <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> route, applied for before the sale closes, avoids this entirely by having the buyer deduct closer to the actual liability from day one. As a rule of thumb: if the gap between expected TDS and actual tax liability exceeds a few lakh rupees, and there is enough lead time before the sale, Form 13 is almost always the better option. The refund route remains the fallback when TDS has already been deducted at the full rate — for example, when a sale closes faster than expected or a certificate wasn&apos;t applied for in time.</p>
+                <h2>Refund Route vs Form 128 (Earlier Form 13): Which Is Better?</h2>
+                <p>The refund route works, but it ties up capital for months and depends on smooth processing. The <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 128 (earlier Form 13) lower deduction certificate</Link> route, applied for before the sale closes, avoids this entirely by having the buyer deduct closer to the actual liability from day one. As a rule of thumb: if the gap between expected TDS and actual tax liability exceeds a few lakh rupees, and there is enough lead time before the sale, Form 128 is almost always the better option. The refund route remains the fallback when TDS has already been deducted at the full rate — for example, when a sale closes faster than expected or a certificate wasn&apos;t applied for in time.</p>
 
                 <h2>Common Mistakes That Delay Refunds</h2>
                 <ul>
