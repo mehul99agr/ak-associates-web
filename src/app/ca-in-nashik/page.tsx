@@ -80,7 +80,7 @@ const faqs = [
   },
   {
     q: 'Do you file income tax returns for salaried employees in Nashik?',
-    a: 'Yes. We file ITR for salaried individuals, business owners, professionals, and HUFs in Nashik. We also advise on tax-saving investments under Section 80C, 80D, and other deductions.',
+    a: 'Yes. We file ITR for salaried individuals, business owners, professionals, and HUFs in Nashik. We also advise on tax-saving investments under Section 123 and Section 126 (Section 80C and 80D under the old Income Tax Act, 1961), and other deductions.',
   },
   {
     q: 'Do you handle international taxation for Nashik-based businesses?',

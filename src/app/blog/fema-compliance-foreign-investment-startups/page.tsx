@@ -84,7 +84,7 @@ const faqLd = {
       name: 'Do startup founders need a valuation certificate for foreign investment?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, two separate valuations are required: (1) a FEMA valuation by a SEBI-registered Merchant Banker or CA to determine the minimum price at which shares can be issued to a foreign investor under FDI pricing guidelines; and (2) a Fair Market Value certificate under Section 56(2)(viib) of the Income Tax Act to ensure the company does not pay excess premium tax. Both are typically done together and filed with the FC-GPR.',
+        text: 'Only one valuation is mandatory now: a FEMA valuation by a SEBI-registered Merchant Banker or CA, to determine the minimum price at which shares can be issued to a foreign investor under FDI pricing guidelines, filed with the FC-GPR. The separate angel-tax FMV certificate under the old Section 56(2)(viib) is no longer required for this - that provision was abolished for all investors, resident and non-resident, effective FY 2024-25 (Finance (No. 2) Act, 2024). Founders should still keep a defensible valuation on file for investor negotiations, ESOP pricing, and diligence, but it is not a mandatory Income Tax filing requirement anymore.',
       },
     },
   ],
@@ -160,7 +160,6 @@ export default function FemaComplianceBlog() {
               <p style={{ marginBottom: '1.0rem' }}>The FC-GPR requires:</p>
               <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
                 <li style={{ marginBottom: '0.5rem' }}><strong>Valuation certificate</strong> - issued by a CA or SEBI-registered Merchant Banker, certifying the issue price is not less than fair market value (FEMA pricing guidelines)</li>
-                <li style={{ marginBottom: '0.5rem' }}><strong>Section 56(2) Fair Market Value certificate</strong> - for Income Tax purposes, issued separately by a CA</li>
                 <li style={{ marginBottom: '0.5rem' }}><strong>Board resolution</strong> authorising the allotment</li>
                 <li style={{ marginBottom: '0.5rem' }}><strong>FIRC and KYC</strong> of the investor</li>
                 <li style={{ marginBottom: '0.5rem' }}><strong>Updated shareholding pattern</strong> post-allotment (in the prescribed format)</li>
@@ -217,8 +216,8 @@ export default function FemaComplianceBlog() {
                   desc: 'Confirm FDI route (Automatic vs Government), sectoral cap, and whether the proposed investor structure (direct investor, fund, SPV) is eligible under FEMA.',
                 },
                 {
-                  title: 'Valuation certificate (FEMA + Section 56)',
-                  desc: 'Prepare the DCF or NAV-based valuation under FEMA pricing guidelines and a separate FMV certificate under Section 56(2)(viib) of the Income Tax Act. Both are required for FC-GPR.',
+                  title: 'FEMA valuation certificate',
+                  desc: 'Prepare the DCF or NAV-based valuation under FEMA pricing guidelines, required for FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) is no longer needed - that provision was abolished for all investors effective FY 2024-25.',
                 },
                 {
                   title: 'FC-GPR preparation and filing',
@@ -263,7 +262,7 @@ export default function FemaComplianceBlog() {
                 },
                 {
                   q: 'Do startup founders need a valuation certificate for foreign investment?',
-                  a: 'Yes, two separate valuations are needed: (1) a FEMA valuation certifying the issue price meets FDI pricing guidelines, and (2) a Fair Market Value certificate under Section 56(2)(viib) for Income Tax. Both are typically prepared together by a CA and filed with the FC-GPR.',
+                  a: 'Only a FEMA valuation is mandatory - certifying the issue price meets FDI pricing guidelines, prepared by a CA or SEBI-registered Merchant Banker and filed with the FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) used to be required alongside it, but that provision was abolished for all investors effective FY 2024-25, so it is no longer a mandatory filing.',
                 },
               ].map((item, i) => (
                 <div key={i} style={{ marginBottom: '1.75rem', borderLeft: '3px solid var(--border)', paddingLeft: '1.25rem' }}>

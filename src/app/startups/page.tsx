@@ -38,7 +38,7 @@ const earlyStageServices = [
   {
     icon: 'scroll',
     title: 'DPIIT Registration (Startup India)',
-    desc: 'DPIIT recognition unlocks an 80-IAC tax holiday for 3 years, angel tax exemption under Section 56(2)(viib), and simplified winding-up. We handle the full application.',
+    desc: 'DPIIT recognition unlocks an 80-IAC tax holiday for 3 years, self-certification under labour and environmental laws, and simplified winding-up. We handle the full application.',
   },
   {
     icon: 'document',
@@ -91,15 +91,15 @@ const faqs = [
   },
   {
     q: 'What does DPIIT recognition actually give a startup?',
-    a: 'DPIIT recognition unlocks: (1) Section 80-IAC - 100% tax deduction on profits for 3 consecutive years out of the first 10 years; (2) Angel tax exemption - investors can invest above fair market value without the excess being taxed as income; (3) Self-certification under labour and environmental laws; (4) Fast-track IP applications with up to 80% fee rebate. Most early-stage startups qualify if their total turnover hasn\'t crossed ₹100 crore.',
+    a: 'DPIIT recognition unlocks: (1) Section 80-IAC - 100% tax deduction on profits for 3 consecutive years out of the first 10 years; (2) Self-certification under labour and environmental laws; (3) Fast-track IP applications with up to 80% fee rebate. (Angel tax exemption used to be part of this list, but the underlying provision - Section 56(2)(viib) - was abolished for all investors, resident and non-resident, effective FY 2024-25, so it no longer applies to anyone, DPIIT-recognised or not.) Most early-stage startups qualify if their total turnover hasn\'t crossed ₹100 crore.',
   },
   {
     q: 'When should a startup hire a Virtual CFO?',
     a: 'The moment you close a seed round or are preparing for one. Investors require clean financials, proper MIS, and compliance history before writing a cheque. A Virtual CFO sets up these systems at a fraction of the cost of a full-time CFO. We typically engage with startups from pre-seed through Series B, handing off to a full-time CFO at that stage.',
   },
   {
-    q: 'Is angel tax still applicable after the DPIIT exemption changes?',
-    a: 'Section 56(2)(viib) - "angel tax" - applies when a startup raises funds at a valuation above fair market value. DPIIT-recognised startups are fully exempt from this provision, provided the total paid-up share capital and share premium does not exceed ₹25 crore. Without DPIIT recognition, the excess over FMV is taxed as income in the hands of the startup company.',
+    q: 'Is angel tax still applicable to startups in India?',
+    a: 'No. Section 56(2)(viib) - "angel tax" - was abolished for all classes of investors, resident and non-resident, by the Finance (No. 2) Act, 2024, effective FY 2024-25. It no longer applies to any startup raising funds above fair market value, with or without DPIIT recognition. Valuation is still worth getting right for investor negotiations, ESOP pricing, and diligence, but it is no longer an angel-tax risk.',
   },
   {
     q: 'How does ESOP taxation work for startup employees in India?',

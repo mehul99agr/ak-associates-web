@@ -40,7 +40,7 @@ const tools = [
   },
   {
     title: 'NRI Property TDS Calculator',
-    desc: 'Estimate the TDS, surcharge, and cess a buyer must deduct when purchasing property from an NRI seller under Section 195.',
+    desc: 'Estimate the TDS, surcharge, and cess a buyer must deduct when purchasing property from an NRI seller under Section 393(2) (earlier Section 195).',
     icon: 'globe',
     link: '/tools/nri-property-tds',
   },

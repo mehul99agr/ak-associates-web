@@ -18,7 +18,7 @@ const faqLd = {
       name: 'Is SIP investment tax-free in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No, SIP investments themselves are not tax-free unless made through an ELSS (tax-saving) mutual fund, which qualifies for deduction up to ₹1.5 lakh under Section 80C. Returns from equity mutual fund SIPs are subject to capital gains tax: 12.5% LTCG (over ₹1.25 lakh/year) if held beyond 12 months, or 20% STCG if held 12 months or less.',
+        text: 'No, SIP investments themselves are not tax-free unless made through an ELSS (tax-saving) mutual fund, which qualifies for deduction up to ₹1.5 lakh under Section 123 (earlier Section 80C). Returns from equity mutual fund SIPs are subject to capital gains tax: 12.5% LTCG (over ₹1.25 lakh/year) if held beyond 12 months, or 20% STCG if held 12 months or less.',
       },
     },
     {

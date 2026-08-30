@@ -11,7 +11,7 @@ const faqLd = {
       name: 'Is this TDS calculator accurate for FY 2026-27 rates?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. It uses the current Section 195 base rates (12.5% for long-term gains, 30% for short-term gains), the applicable surcharge slab based on sale value, and 4% health and education cess. It gives a statutory-rate estimate — it does not replace a Form 13 lower deduction certificate computation, which can reduce TDS well below these figures.',
+        text: 'Yes. It uses the current base rates under Section 393(2) of the Income Tax Act 2025 (earlier Section 195 under the 1961 Act) - 12.5% for long-term gains, 30% for short-term gains - plus the applicable surcharge slab based on sale value, and 4% health and education cess. It gives a statutory-rate estimate — it does not replace a Form 128 (earlier Form 13) lower deduction certificate computation, which can reduce TDS well below these figures.',
       },
     },
     {
@@ -19,7 +19,7 @@ const faqLd = {
       name: 'Does this calculator account for Form 13 lower deduction certificates?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. This tool shows the standard statutory TDS the buyer must deduct at the full rate. If the NRI seller\'s actual capital gain is much smaller than the sale value, applying for a Form 13 lower deduction certificate before the sale can reduce TDS closer to the real tax liability instead of waiting for a refund.',
+        text: 'No. This tool shows the standard statutory TDS the buyer must deduct at the full rate. If the NRI seller\'s actual capital gain is much smaller than the sale value, applying for a Form 128 (earlier Form 13) lower deduction certificate before the sale can reduce TDS closer to the real tax liability instead of waiting for a refund.',
       },
     },
     {
@@ -27,7 +27,7 @@ const faqLd = {
       name: 'Is TDS calculated on the sale value or the actual profit?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'TDS under Section 195 is deducted on the entire sale consideration, not on the NRI seller\'s profit. This is why the TDS amount shown here is often much higher than the seller\'s actual tax liability, and why many NRIs either apply for a Form 13 certificate in advance or claim a refund by filing an Indian ITR.',
+        text: 'TDS under Section 393(2) (earlier Section 195) is deducted on the entire sale consideration, not on the NRI seller\'s profit. This is why the TDS amount shown here is often much higher than the seller\'s actual tax liability, and why many NRIs either apply for a Form 128 (earlier Form 13) certificate in advance or claim a refund by filing an Indian ITR.',
       },
     },
   ],
@@ -83,7 +83,7 @@ export default function NRIPropertyTDSCalculator() {
             <h4 className="section-badge">Tax Tools</h4>
             <h1 className="section-title">NRI Property TDS Calculator</h1>
             <p style={{ color: 'var(--text-light)', fontSize: '1.1rem' }}>
-              Estimate the TDS a buyer must deduct under Section 195 when purchasing property from an NRI seller, using FY 2026-27 rates, surcharge slabs, and cess.
+              Estimate the TDS a buyer must deduct under Section 393(2) (earlier Section 195) when purchasing property from an NRI seller, using FY 2026-27 rates, surcharge slabs, and cess.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ export default function NRIPropertyTDSCalculator() {
                   <span style={{ fontWeight: 900, fontSize: '1.6rem' }}>₹{Math.round(result.netProceeds).toLocaleString('en-IN')}</span>
                 </div>
                 <p style={{ marginTop: '20px', fontSize: '0.8rem', color: 'var(--text-light)' }}>
-                  *TDS is deducted on the full sale consideration, not the actual profit. If your actual capital gain is much smaller than this sale value, a <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--accent)', fontWeight: 700 }}>Form 13 lower deduction certificate</Link> can reduce TDS significantly. See our <Link href="/nri-tax-advisory" style={{ color: 'var(--accent)', fontWeight: 700 }}>NRI Tax Advisory</Link> services for help.
+                  *TDS is deducted on the full sale consideration, not the actual profit. If your actual capital gain is much smaller than this sale value, a <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--accent)', fontWeight: 700 }}>Form 128 (earlier Form 13) lower deduction certificate</Link> can reduce TDS significantly. See our <Link href="/nri-tax-advisory" style={{ color: 'var(--accent)', fontWeight: 700 }}>NRI Tax Advisory</Link> services for help.
                 </p>
               </div>
             )}
