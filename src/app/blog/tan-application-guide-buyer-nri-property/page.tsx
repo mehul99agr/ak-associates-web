@@ -4,8 +4,8 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TAN Application Guide (NRI Property)',
-  description: 'Step-by-step TAN application process for buyers purchasing property from an NRI seller — Form 49B, documents, fees, processing time, and why Form 26QB does not apply here.',
+  title: { absolute: 'Do You Need a TAN to Buy Property From an NRI?' },
+  description: 'Yes - buying property from an NRI needs a TAN, not just a PAN, and Form 26QB does not apply. Form 49B process, documents, fees and 7 to 10 day timeline.',
   keywords: [
     'TAN application for buying property from NRI', 'TAN registration India', 'form 49B TAN',
     'buyer TAN NRI property purchase', 'do I need TAN to buy NRI property', 'TAN application process',
@@ -70,6 +70,22 @@ const faqLd = {
         text: 'Yes. If the buyer already holds a TAN from a previous transaction — for example, as an employer deducting salary TDS, or from an earlier purchase from a non-resident — the same TAN can be used again to deduct and report TDS under Section 195 for a new NRI property purchase.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Is TAN required if I buy property from an NRI below Rs 50 lakh?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The Rs 50 lakh threshold applies only to purchases from resident sellers under Section 194-IA. A purchase from an NRI is governed by Section 195 (now Section 393(2)), which has no minimum value, so TAN and TDS obligations apply even on a small consideration.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can two joint buyers use one TAN for an NRI property purchase?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Each buyer who is separately liable to deduct tax needs their own TAN and must deduct their proportionate share, unless all payments are routed through a single deducting buyer named in the sale deed. Fix this structure before the first payment is made.',
+      },
+    },
   ],
 }
 
@@ -111,6 +127,17 @@ export default function TANApplicationGuideBlog() {
                   </ul>
                 </div>
                 <p>If you are buying property from an NRI, one requirement catches most first-time buyers off guard: you need a <strong>TAN (Tax Deduction Account Number)</strong>, not just a PAN. This is different from buying from a resident seller, and skipping it — or discovering it too late — is the single most common mistake that creates personal TDS liability for buyers. Here is exactly how to get one.</p>
+
+                <h2>Is TAN Mandatory for Buying Property from an NRI?</h2>
+                <p><strong>Yes. When the seller is an NRI, the buyer must obtain a TAN before making any payment - a PAN alone is not enough, and the resident-seller Form 26QB route does not apply. The purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which makes TAN-based TDS deduction and quarterly Form 27Q (now Form 144) reporting compulsory, with no minimum transaction value.</strong></p>
+                <p>The practical sequence:</p>
+                <ol>
+                  <li><strong>Apply on Form 49B</strong> through the Protean (NSDL) portal as soon as the deal is firm. The fee is about ₹65 plus GST.</li>
+                  <li><strong>TAN is allotted in roughly 7 to 10 working days.</strong> A 14-digit acknowledgment number lets you track status.</li>
+                  <li><strong>Deduct TDS at the applicable Section 195 rate</strong> on every payment, including advances, and deposit it by the 7th of the following month via Challan ITNS-281.</li>
+                  <li><strong>File Form 27Q each quarter</strong> and issue Form 16A to the NRI seller.</li>
+                </ol>
+                <p>Paying an NRI seller without deducting TDS makes the buyer an <strong>assessee in default under Section 201 (now Section 398)</strong>: personally liable for the full un-deducted tax, plus interest at 1% per month and a Section 271C penalty equal to the tax not deducted.</p>
 
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update: TAN Is Not Being Scrapped Here</p>

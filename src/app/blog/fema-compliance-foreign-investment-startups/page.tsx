@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'FEMA Compliance for Foreign Funding (2026)',
-  description: 'Miss the 30-day RBI reporting window and face 3x penalties. Complete FEMA checklist for Indian startups raising foreign capital: FDI route, FC-GPR filing, FLA return, and the 5 mistakes that trigger RBI notices.',
+  title: { absolute: 'Startup FEMA Compliance: FC-GPR & FLA Filing (2026)' },
+  description: 'Raised foreign equity in an Indian startup? File FC-GPR within 30 days of allotment, FLA return each July. FEMA checklist, RBI deadlines, common mistakes.',
   keywords: [
     'FEMA compliance startups India',
     'foreign investment compliance India startup',

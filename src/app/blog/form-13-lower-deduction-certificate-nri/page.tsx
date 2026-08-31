@@ -4,8 +4,8 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Form 13 Lower TDS Certificate (FY 2026-27)',
-  description: 'Apply for Form 13 (now Form 128) to cut TDS from 30% to your actual tax rate before selling property as an NRI. Step-by-step TRACES process, documents, AO jurisdiction, and 4-8 week timeline.',
+  title: { absolute: 'Form 13 for NRIs: Lower TDS Certificate on Property Sale' },
+  description: 'NRIs: cut TDS on an India property sale from the full rate to actual tax. Form 13 (Section 197) eligibility, TRACES process, documents and timeline.',
   keywords: [
     'form 13 NRI', 'lower deduction certificate NRI property', 'section 197 NRI',
     'form 13 income tax NRI', 'NRI TDS certificate property sale', 'form 13 documents required',
@@ -33,6 +33,62 @@ const articleLd = buildArticleLd({
   datePublished: '2026-07-11',
   slug: 'form-13-lower-deduction-certificate-nri',
 })
+
+const howToLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Apply for a Form 13 Lower Deduction Certificate for NRIs',
+  description:
+    'Step-by-step process for an NRI to obtain a Section 197 lower or nil TDS certificate (Form 13, renumbered Form 128 under the Income Tax Act 2025) before selling property in India.',
+  totalTime: 'P56D',
+  supply: [
+    { '@type': 'HowToSupply', name: 'Capital gains computation with cost of acquisition and improvement' },
+    { '@type': 'HowToSupply', name: 'Sale agreement or agreement to sell' },
+    { '@type': 'HowToSupply', name: 'Purchase deed, allotment letter, or inheritance documents' },
+    { '@type': 'HowToSupply', name: 'PAN card and prior year ITR acknowledgments' },
+    { '@type': 'HowToSupply', name: 'Passport and residency proof establishing NRI status' },
+    { '@type': 'HowToSupply', name: 'NRO bank account details' },
+  ],
+  tool: [{ '@type': 'HowToTool', name: 'TRACES portal (tdscpc.gov.in)' }],
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Prepare the capital gains computation',
+      text: 'Calculate the actual expected tax on the sale: sale consideration less indexed cost of acquisition (where the pre-July 2024 option applies) and cost of improvement, then apply the long-term or short-term rate.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'File Form 13 on the TRACES portal',
+      text: 'Log in to TRACES, open the Form 13 (Form 128) request, enter the transaction and computation details, and upload the supporting documents.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Route to the correct Assessing Officer',
+      text: "The application must reach the Assessing Officer in the International Taxation charge that has jurisdiction over the NRI's PAN, not a local resident ward. Filing with the wrong jurisdiction is the most common cause of delay.",
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Respond to Assessing Officer queries',
+      text: 'The AO may ask for additional evidence on the cost of acquisition or the computation. Reply promptly to keep the 4 to 8 week timeline on track.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Receive the certificate',
+      text: 'Once satisfied, the AO issues a certificate specifying the authorised lower or nil TDS rate for that specific transaction and financial year.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Share the certificate with the buyer',
+      text: 'The buyer deducts TDS at the certified rate instead of the full statutory rate and continues to file Form 27Q (Form 144) each quarter.',
+    },
+  ],
+}
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -72,6 +128,7 @@ export default function Form13NRIBlog() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
         <div className="section">

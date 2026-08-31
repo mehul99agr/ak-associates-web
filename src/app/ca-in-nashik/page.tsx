@@ -6,8 +6,8 @@ import { BOOKING_LINK, OFFICES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'CA in Nashik',
-  description: 'Trusted CA in Nashik at Mumbai Naka. GST filing, income tax, company incorporation, audit, and tax planning. Call +91 95275 33506.',
+  title: 'CA Firm in Nashik',
+  description: 'CA firm in Nashik at Mumbai Naka. GST, ITR, tax audit, company incorporation and international tax for 100+ businesses. Call +91 95275 33506.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
     title: 'Best CA in Nashik | Chartered Accountant Nashik | Agrawal Khandelwal & Associates LLP',
@@ -98,10 +98,15 @@ const nashikLocalBusiness = {
   '@id': 'https://agrawalkhandelwal.com/#nashik-office',
   name: 'Agrawal Khandelwal & Associates LLP',
   alternateName: ['Agrawal Khandelwal & Associates LLP Nashik', 'Agrawal Khandelwal & Associates LLP CA Nashik'],
-  description: 'Best Chartered Accountant firm in Nashik offering GST filing, income tax returns, company incorporation, audit, tax planning, and international taxation services. Located at Mumbai Naka, Nashik.',
+  description: 'Chartered Accountant firm in Nashik at Mumbai Naka offering GST registration and filing, income tax returns, tax audit under Section 44AB, company and LLP incorporation, and international taxation including transfer pricing, DTAA, FEMA, and UAE corporate tax.',
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
   telephone: OFFICES.nashik.phoneE164,
   email: OFFICES.nashik.email,
+  foundingDate: '2023',
+  founder: [
+    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
+    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
@@ -110,6 +115,8 @@ const nashikLocalBusiness = {
     worstRating: '1',
   },
   priceRange: '₹₹',
+  currenciesAccepted: 'INR',
+  paymentAccepted: 'Cash, UPI, Bank Transfer, Cheque',
   image: 'https://agrawalkhandelwal.com/logo.png',
   logo: 'https://agrawalkhandelwal.com/logo.png',
   address: {
@@ -144,6 +151,23 @@ const nashikLocalBusiness = {
     'Company Incorporation', 'LLP Registration', 'International Taxation',
     'Transfer Pricing', 'DTAA Advisory', 'Virtual CFO Services',
   ],
+  knowsAbout: [
+    'Goods and Services Tax', 'Income Tax Return Filing', 'Tax Audit under Section 44AB',
+    'Company Incorporation', 'LLP Registration', 'Transfer Pricing', 'Form 3CEB',
+    'DTAA Advisory', 'FEMA Compliance', 'UAE Corporate Tax', 'NRI Taxation',
+  ],
+  makesOffer: {
+    '@type': 'OfferCatalog',
+    name: 'CA Services in Nashik',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GST Registration and Return Filing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing and Tax Planning' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tax Audit and Statutory Audit' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company and LLP Incorporation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Transfer Pricing and Form 3CEB' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation and FEMA Advisory' } },
+    ],
+  },
   hasMap: 'https://maps.google.com/?cid=17018233718758486792',
   sameAs: ['https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/'],
   parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -223,6 +247,26 @@ export default function CAInNashik() {
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE DEEP-DIVE */}
+      <section className="section bg-surface">
+        <div className="container" style={{ maxWidth: '860px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-badge">Core Services</span>
+            <h2 className="section-title">Our Main Practice Areas in Nashik</h2>
+          </div>
+          <div className="blog-content" style={{ fontSize: '1.02rem', lineHeight: 1.85, color: 'var(--text-main)' }}>
+            <h3>Tax Audit &amp; Advisory Services in Nashik</h3>
+            <p>A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a financial year - or ₹10 crore where at least 95% of receipts and payments are digital - and once professional gross receipts cross ₹50 lakh. Our Nashik team completes the audit and files Form 3CA/3CB with Form 3CD before the 30 September deadline, alongside statutory audits under the Companies Act 2013, internal audits, stock audits, and concurrent bank audits. Beyond compliance we advise on presumptive taxation under Sections 44AD and 44ADA, capital structure, TDS health checks, and year-round tax planning for Nashik businesses, professionals, and HUFs.</p>
+
+            <h3>GST Compliance &amp; Filing in Nashik</h3>
+            <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. We handle registration, monthly and quarterly GSTR-1 and GSTR-3B filing, the annual GSTR-9 return and GSTR-9C reconciliation, input tax credit matching against GSTR-2B, e-way bill and e-invoice setup, LUT filing for exporters, and replies to GST notices, ASMT-10 scrutiny, and departmental audits. Fixed-fee monthly packages keep recurring GST compliance predictable for Nashik traders, manufacturers, and service firms.</p>
+
+            <h3>Company Incorporation Services in Nashik</h3>
+            <p>We register private limited companies, LLPs, one person companies, and Section 8 companies end to end: name reservation through SPICe+ Part A, digital signature certificates and DIN for directors, MOA and AOA drafting, and the SPICe+ Part B filing that issues the Certificate of Incorporation together with PAN, TAN, EPFO, ESIC, and a bank account reference in a single application. Most incorporations complete in about 7 to 15 working days once documents are in order. We also handle post-incorporation compliance - INC-20A commencement filing, the first board meeting, share allotment, and annual ROC filings (AOC-4, MGT-7, DIR-3 KYC).</p>
           </div>
         </div>
       </section>

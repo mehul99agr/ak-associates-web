@@ -37,7 +37,7 @@ const articleLd = buildArticleLd({
 })
 
 const faqs: [string, string][] = [
-  ['Who needs to file Form 3CEB in India?', 'An Indian taxpayer generally needs Form 3CEB where aggregate international transactions with associated enterprises exceed Rs 1 crore in a financial year. It can also apply to specified domestic transactions above the applicable threshold. A loss-making company or one claiming a tax holiday must still comply if it has qualifying transactions - profitability is not the test.'],
+  ['Who needs to file Form 3CEB in India?', 'Any Indian taxpayer with an international transaction with an associated enterprise must file Form 3CEB, with no minimum transaction value. The Rs 1 crore mark is only the threshold for maintaining detailed transfer pricing documentation. It can also apply to specified domestic transactions where the aggregate exceeds Rs 20 crore in the year. A loss-making company or one claiming a tax holiday must still comply if it has qualifying transactions - profitability is not the test.'],
   ['What is the due date for Form 3CEB for FY 2026-27?', 'The due date is October 31, 2027, one month ahead of the income tax return due date for taxpayers with transfer pricing reporting, which generally falls on November 30. Build your internal timeline around the original statutory date rather than assuming a CBDT extension will be issued.'],
   ['Who uploads Form 3CEB on the income tax portal?', 'The appointed Chartered Accountant uploads Form 3CEB using their own login on the e-filing portal. The filing is not complete until the assessee separately logs in and accepts the uploaded report - a step that is frequently missed. Always obtain and retain the acceptance acknowledgment.'],
   ['What is the penalty for not filing Form 3CEB?', 'Section 271BA of the Income Tax Act imposes a flat penalty of Rs 1 lakh for failure to furnish the Section 92E accountant\'s report. This is not tied to the transaction value. Missing Form 3CEB can also trigger scrutiny and weaken your position when defending the transfer pricing during an assessment.'],
@@ -66,17 +66,38 @@ export default function Form3CEBBlog() {
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}>Form 3CEB is required where international transactions with associated enterprises exceed <strong>Rs 1 crore</strong> in a financial year.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Form 3CEB is required for <strong>any</strong> international transaction with an associated enterprise; detailed TP documentation becomes mandatory once the aggregate exceeds <strong>Rs 1 crore</strong> in the year.</li>
                   <li style={{ marginBottom: '0.4rem' }}>The CA uploads the report on the e-filing portal, then the assessee must separately <strong>accept</strong> it - a step commonly missed.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Due date is <strong>October 31</strong> following the financial year, one month before the transfer pricing ITR deadline.</li>
                   <li style={{ marginBottom: 0 }}>Late or non-filing attracts a flat <strong>Rs 1 lakh penalty</strong> under Section 271BA, regardless of transaction value.</li>
                 </ul>
               </div>
 
+              <h2>Form 3CEB at a Glance (FY 2026-27 / AY 2027-28)</h2>
+              <div style={{ overflowX: 'auto' }}>
+                <table style={tableStyle}>
+                  <thead>
+                    <tr><th style={thStyle}>Item</th><th style={thStyle}>Position for FY 2026-27</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style={tdStyle}>Who must file</td><td style={tdStyle}>Any Indian entity with an international transaction with an associated enterprise (no minimum value). Specified domestic transactions only where the aggregate exceeds <strong>Rs 20 crore</strong> in the year.</td></tr>
+                    <tr><td style={tdAltStyle}>TP documentation (Rule 10D)</td><td style={tdAltStyle}>Mandatory once aggregate international transactions exceed <strong>Rs 1 crore</strong> in the year</td></tr>
+                    <tr><td style={tdStyle}>Governing provision</td><td style={tdStyle}>Section 92E - accountant&apos;s report in Form 3CEB</td></tr>
+                    <tr><td style={tdAltStyle}><strong>Form 3CEB due date</strong></td><td style={tdAltStyle}><strong>October 31, 2027</strong></td></tr>
+                    <tr><td style={tdStyle}>Linked ITR due date (TP taxpayers)</td><td style={tdStyle}>November 30, 2027</td></tr>
+                    <tr><td style={tdAltStyle}>Filing mechanism</td><td style={tdAltStyle}>CA uploads on the income tax e-filing portal with DSC; the taxpayer then logs in and <strong>accepts</strong> the form</td></tr>
+                    <tr><td style={tdStyle}>Penalty - failure to furnish Form 3CEB</td><td style={tdStyle}><strong>Section 271BA</strong>: flat <strong>Rs 1,00,000</strong>, regardless of transaction value</td></tr>
+                    <tr><td style={tdAltStyle}>Penalty - no documentation or wrong particulars</td><td style={tdAltStyle}><strong>Section 271AA</strong>: 2% of the value of each international transaction or SDT</td></tr>
+                    <tr><td style={tdStyle}>Penalty - documents not produced to the TPO</td><td style={tdStyle}><strong>Section 271G</strong>: 2% of the transaction value</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Sections 271BA, 271AA and 271G are separate, cumulative penalties - a single default can attract more than one.</p>
+
               <p>Form 3CEB is the accountant&apos;s report for transfer pricing compliance under Section 92E. It confirms that a taxpayer with specified related-party transactions has obtained a report from a Chartered Accountant and has furnished the prescribed particulars of those transactions. It is not an income tax return, and it is not a substitute for <Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing documentation</Link> - it is a separate CA-certified report that lists the transactions and the method used to test whether the pricing is at arm&apos;s length.</p>
 
               <h2>Who Must File Form 3CEB</h2>
-              <p>The core trigger is international transactions with associated enterprises. Form 3CEB is required where the aggregate value of such transactions exceeds <strong>Rs 1 crore</strong> during the financial year. This commonly includes:</p>
+              <p>The core trigger is any international transaction with an associated enterprise, with no minimum monetary threshold in the law. The <strong>Rs 1 crore</strong> figure is the point at which detailed transfer pricing documentation under Rule 10D becomes mandatory, not a floor below which Form 3CEB can be skipped. Reportable international transactions commonly include:</p>
               <ul>
                 <li>Purchase or sale of goods with a foreign group company</li>
                 <li>Management, technical, accounting, marketing, or IT support services</li>
