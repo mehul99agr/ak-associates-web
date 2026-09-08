@@ -443,6 +443,7 @@ export default function Home() {
               <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name="building" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem' }}>Sillod Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Near Datta Mandir, Tilak Nagar, Sillod – 431112</p>
+              <Link href="/ca-in-sillod" style={{ display: 'block', marginTop: '0.6rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem' }}>CA firm in Sillod &rarr;</Link>
               <a href="tel:+919595585953" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95955 85953</a>
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.4rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>rupesh@agrawalkhandelwal.com</a>
             </div>

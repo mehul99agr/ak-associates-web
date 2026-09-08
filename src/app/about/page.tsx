@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import TrackedLink from '../TrackedLink'
 import { BOOKING_LINK } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
@@ -161,6 +162,9 @@ export default function About() {
                 Rupesh brings valuable insights from leading firms, including Deloitte, across the Automobiles, IT,
                 and Pharma sectors. His expertise spans domestic tax planning, statutory and internal audits, and
                 business consulting, with a strong track record representing clients before tax authorities.
+              </p>
+              <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+                <Link href="/ca-in-sillod" style={{ color: 'var(--primary)', fontWeight: 600 }}>Visit our chartered accountant office in Sillod &rarr;</Link>
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations</strong>
