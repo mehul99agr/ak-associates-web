@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <h1>Simplify your finances,<br />Empower your decisions.</h1>
           <p>
-            We serve a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
+            <strong>Agrawal Khandelwal &amp; Associates LLP</strong> serves a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
           </p>
           <div className="hero-cta">
             <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="homepage_hero">

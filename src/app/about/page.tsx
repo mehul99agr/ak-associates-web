@@ -101,7 +101,7 @@ export default function About() {
           </div>
           <h1>Meet the partners behind<br />Agrawal Khandelwal & Associates LLP.</h1>
           <p>
-            Founded in 2023 with offices in <Link href="/ca-in-nashik" style={{ color: 'var(--accent)', fontWeight: 700 }}>Nashik</Link> and Sillod, we advise startups, MNCs, and NRI/UAE clients on
+            Founded in 2023 with offices in <Link href="/ca-in-nashik" style={{ color: 'var(--accent)', fontWeight: 700 }}>Nashik</Link> and Sillod, CA Mehul Agrawal and CA Rupesh Khandelwal advise startups, MNCs, and NRI/UAE clients on
             international tax, transfer pricing, audit, and virtual CFO services. ICAI Firm Registration No. W101119.
           </p>
         </div>

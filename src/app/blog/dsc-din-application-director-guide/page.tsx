@@ -40,6 +40,7 @@ const faqs: [string, string][] = [
   ['How does an existing company add a new director who does not have a DIN?', 'The proposed director applies for a DIN using Form DIR-3, supported by identity and address proof and a photograph, and once approved the DIN is used in the company\'s filing to formally appoint them.'],
   ['Can a foreign national be a director of an Indian company?', 'Yes, a foreign national can be appointed as a director of an Indian company and can obtain a DIN, though document requirements such as notarization or apostille of identity proof typically apply, and the company must still separately satisfy its resident director requirement.'],
   ['What are common reasons a DSC or DIN application gets rejected?', 'Common reasons include mismatched name spelling across PAN and identity documents, blurry or non-compliant photographs, expired proof-of-address documents, and video verification or mobile/email OTP verification failures during the application process.'],
+  ['Do I need both DIN and DSC to become a director?', 'Yes. DIN and DSC serve different purposes and both are required: the DIN is the unique identification number that legally recognizes you as a director, while the DSC is the digital credential used to sign the actual MCA filings. A director cannot complete incorporation or ongoing ROC filings with only one of the two in place.'],
 ]
 
 const faqLd = buildFaqLd(faqs)
@@ -63,6 +64,7 @@ export default function DSCDINBlog() {
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                <p style={{ marginBottom: '0.6rem', fontWeight: 600 }}>DIN and DSC are the two prerequisites every director needs before an MCA filing can be signed.</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.4rem' }}>Every director needs a Class 3 Digital Signature Certificate to sign MCA filings.</li>
                   <li style={{ marginBottom: '0.4rem' }}>First-time directors of a new company get their DIN directly through SPICe+.</li>

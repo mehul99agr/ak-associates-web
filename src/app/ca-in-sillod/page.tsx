@@ -291,6 +291,9 @@ export default function CAInSillod() {
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 CA Rupesh Khandelwal heads our Sillod office. With experience from leading firms including Deloitte, he brings expertise in domestic taxation, audits, and business consulting to Sillod-based businesses across industries including automobiles, IT, and pharma.
               </p>
+              <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+                <Link href="/about#rupesh-khandelwal" style={{ color: 'var(--primary)', fontWeight: 600 }}>Full bio &amp; credentials for CA Rupesh Khandelwal &rarr;</Link>
+              </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specialisations</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.75rem', fontSize: '0.87rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
