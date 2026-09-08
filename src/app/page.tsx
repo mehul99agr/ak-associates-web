@@ -346,7 +346,7 @@ export default function Home() {
           <div style={{ marginTop: '5rem', textAlign: 'center' }}>
             <h2 className="section-title">Our Global Reach</h2>
             <p style={{ color: 'var(--text-light)', maxWidth: '580px', margin: '0.75rem auto 2.5rem' }}>
-              Headquartered in Maharashtra with a footprint that extends across India and key international jurisdictions.
+              Headquartered in Maharashtra as a <Link href="/ca-in-nashik" style={{ color: 'var(--accent)', fontWeight: 700 }}>chartered accountant firm in Nashik</Link>, with a footprint that extends across India and key international jurisdictions.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px' }}>
               {['Nashik', 'Sillod', 'Mumbai', 'Bangalore', 'Delhi', 'UAE'].map((location, idx) => (

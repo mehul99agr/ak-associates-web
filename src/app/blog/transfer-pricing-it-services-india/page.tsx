@@ -101,7 +101,7 @@ export default function TPITServicesBlog() {
               <p>A company cannot claim limited risk merely because it bills a group entity - the contract, board decisions, project-management records, and financial conduct should support the profile.</p>
 
               <h2>Common TPO Focus Areas</h2>
-              <p>Comparable-company selection is the most frequent area of dispute. The taxpayer may choose companies with similar service profiles, while the TPO may include businesses with different products, scale, brand value, intangibles, or risk profiles. Common issues include:</p>
+              <p>Comparable-company selection is the most frequent area of dispute in a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link>. The taxpayer may choose companies with similar service profiles, while the TPO may include businesses with different products, scale, brand value, intangibles, or risk profiles. Common issues include:</p>
               <ul>
                 <li>Inclusion of companies owning significant brands or proprietary products</li>
                 <li>Exclusion of companies with extraordinary events such as mergers or acquisitions</li>
