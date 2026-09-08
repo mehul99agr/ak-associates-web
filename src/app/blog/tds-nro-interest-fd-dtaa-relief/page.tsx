@@ -114,6 +114,7 @@ export default function TDSNROInterestBlog() {
                 <li>Claim credit for TDS shown in Form 26AS</li>
                 <li>The difference is refunded, typically in 3-6 months</li>
               </ul>
+              <p>See our dedicated <Link href="/blog/nro-tds-refund-claim-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO account TDS refund guide</Link> for the full ITR filing walkthrough, documents needed, and how the refunded amount is repatriated.</p>
 
               <h2>NRO Interest and Repatriation</h2>
               <p>After-tax NRO interest can be <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriated abroad</Link> within the USD 1 million annual limit. The interest is classified as &quot;current income&quot; for repatriation purposes, requiring <Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 145/146</Link> compliance but generally straightforward once TDS certificates are in order.</p>
@@ -135,7 +136,8 @@ export default function TDSNROInterestBlog() {
               <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/dtaa-guide-nri-country-wise" style={{ color: 'var(--primary)', fontWeight: 600 }}>India DTAA Guide by Country</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO Account Comparison</Link></li>
-                <li style={{ marginBottom: 0 }}><Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI ITR Filing from Abroad</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI ITR Filing from Abroad</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/blog/nro-tds-refund-claim-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO Account TDS Refund: Claim Process</Link></li>
               </ul>
             </div>
           </article>

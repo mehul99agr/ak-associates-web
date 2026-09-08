@@ -20,6 +20,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Form 27Q: Complete TDS Return Filing Guide for Payments to NRIs',
+    slug: 'form-27q-tds-return-filing-guide',
+    date: 'September 8, 2026',
+    category: 'NRI Taxation',
+    summary: 'Who must file Form 27Q, quarterly due dates, return structure, correction statements, penalties, and how it differs from Form 27QB for property purchases.',
+  },
+  {
+    title: 'NRO Account TDS Refund: How to Claim Back Excess Tax Deducted',
+    slug: 'nro-tds-refund-claim-process',
+    date: 'September 8, 2026',
+    category: 'NRI Taxation',
+    summary: 'Which ITR to file, Form 26AS reconciliation, documents needed, and how the USD 1 million repatriation limit applies once the refund lands in your NRO account.',
+  },
+  {
     title: 'India-UAE Transfer Pricing: Compliance for Cross-Border Transactions',
     slug: 'india-uae-transfer-pricing-compliance',
     date: 'August 16, 2026',

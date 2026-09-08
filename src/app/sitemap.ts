@@ -89,5 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/opc-to-private-limited-conversion-india`, lastModified: new Date('2026-06-26'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/dsc-din-application-director-guide`, lastModified: new Date('2026-07-02'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/company-name-reservation-run-form-india`, lastModified: new Date('2026-07-06'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/form-27q-tds-return-filing-guide`, lastModified: new Date('2026-09-08'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/nro-tds-refund-claim-process`, lastModified: new Date('2026-09-08'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }
