@@ -361,6 +361,7 @@ export default function StartupsPage() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
+                { title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST', link: '/blog/startup-compliance-automation-odi-apr-gst' },
                 { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
                 { title: 'FEMA Compliance When Raising Foreign Funding', link: '/blog/fema-compliance-foreign-investment-startups' },
                 { title: 'Foreign Subsidiary Registration: FDI Route & Compliance', link: '/blog/foreign-subsidiary-registration-india-fdi' },

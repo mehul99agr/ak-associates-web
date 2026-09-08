@@ -79,6 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/navigating-international-taxation-dtaa`, lastModified: new Date('2026-03-05'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/understanding-new-tax-regime-2025-26`, lastModified: new Date('2026-03-18'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/strategic-value-virtual-cfo-services`, lastModified: new Date('2026-08-16'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/startup-compliance-automation-odi-apr-gst`, lastModified: new Date('2026-09-08'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/form-3ceb-transfer-pricing-audit-report`, lastModified: new Date('2026-08-09'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/master-file-local-file-cbcr-india`, lastModified: new Date('2026-08-10'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/post-incorporation-checklist-first-30-days`, lastModified: new Date('2026-08-12'), changeFrequency: 'monthly', priority: 0.9 },

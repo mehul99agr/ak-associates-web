@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST',
+    slug: 'startup-compliance-automation-odi-apr-gst',
+    date: 'September 8, 2026',
+    category: 'Startup Advisory',
+    summary: 'How growing India-linked startups organise RBI ODI reporting, annual APR filing, transfer pricing documentation, and GST workflows - and where a virtual CFO or offshore accounting team fits in.',
+  },
+  {
     title: 'Form 27Q: Complete TDS Return Filing Guide for Payments to NRIs',
     slug: 'form-27q-tds-return-filing-guide',
     date: 'September 8, 2026',
