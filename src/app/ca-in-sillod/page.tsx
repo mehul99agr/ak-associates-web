@@ -82,6 +82,18 @@ const faqs = [
     q: 'What is the phone number of your CA office in Sillod?',
     a: 'You can reach our Sillod office at +91 95955 85953 (CA Rupesh Khandelwal) or email rupesh@agrawalkhandelwal.com. For international tax queries, contact our Nashik office at +91 95275 33506.',
   },
+  {
+    q: 'Is there a CA firm near Sillod for tax filing and GST compliance?',
+    a: 'Yes. Agrawal Khandelwal & Associates LLP operates a full-time office in Sillod (Near Datta Mandir, Tilak Nagar) handling GST registration and filing, income tax return filing, and ongoing compliance for individuals and businesses in and around Sillod - no need to travel to Chhatrapati Sambhajinagar (Aurangabad) for routine tax work.',
+  },
+  {
+    q: 'Do you serve clients in Chhatrapati Sambhajinagar (Aurangabad) from the Sillod office?',
+    a: 'Yes. While our office is based in Sillod, we regularly serve clients across Chhatrapati Sambhajinagar (Aurangabad) district - including Kannad, Phulambri, and Jalna - for GST filing, ITR filing, audits, and company registration. Consultations can be scheduled by phone, WhatsApp, or in person at the Sillod office.',
+  },
+  {
+    q: 'What documents are required for GST registration in Sillod?',
+    a: 'For GST registration in Sillod you need: PAN card, Aadhaar card, a passport-size photo, proof of business address (electricity bill or rent agreement), bank account statement, and business registration documents where applicable. Our Sillod office guides you through the full process from document collection to certificate issuance.',
+  },
 ]
 
 const sillodLocalBusiness = {
@@ -94,6 +106,11 @@ const sillodLocalBusiness = {
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
   telephone: OFFICES.sillod.phoneE164,
   email: OFFICES.sillod.email,
+  foundingDate: '2023',
+  founder: [
+    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
+    { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
@@ -128,7 +145,9 @@ const sillodLocalBusiness = {
   areaServed: [
     { '@type': 'City', name: 'Sillod' },
     { '@type': 'AdministrativeArea', name: 'Sillod Tehsil' },
+    { '@type': 'City', name: 'Chhatrapati Sambhajinagar' },
     { '@type': 'AdministrativeArea', name: 'Chhatrapati Sambhajinagar District' },
+    { '@type': 'City', name: 'Jalna' },
     { '@type': 'State', name: 'Maharashtra' },
   ],
   serviceType: [
@@ -137,6 +156,22 @@ const sillodLocalBusiness = {
     'Company Incorporation', 'LLP Registration', 'Accounting',
     'Bookkeeping', 'Financial Statement Preparation',
   ],
+  knowsAbout: [
+    'Goods and Services Tax', 'Income Tax Return Filing', 'Tax Audit under Section 44AB',
+    'Company Incorporation', 'LLP Registration', 'Shop Act Registration',
+    'MSME (Udyam) Registration', 'Accounting and Bookkeeping',
+  ],
+  makesOffer: {
+    '@type': 'OfferCatalog',
+    name: 'CA Services in Sillod',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GST Registration and Return Filing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing and Tax Planning' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tax Audit and Statutory Audit' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company and LLP Incorporation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Accounting and Bookkeeping' } },
+    ],
+  },
   sameAs: ['https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/'],
   parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
 }
@@ -215,6 +250,26 @@ export default function CAInSillod() {
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE DEEP-DIVE */}
+      <section className="section bg-surface">
+        <div className="container" style={{ maxWidth: '860px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-badge">Core Services</span>
+            <h2 className="section-title">Our Main Practice Areas in Sillod</h2>
+          </div>
+          <div className="blog-content" style={{ fontSize: '1.02rem', lineHeight: 1.85, color: 'var(--text-main)' }}>
+            <h3>GST Registration &amp; Compliance for Sillod Businesses</h3>
+            <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. Sillod is a market town for the surrounding agricultural and trading belt of Chhatrapati Sambhajinagar (Aurangabad) district, so many local traders, transporters, and small manufacturers cross these thresholds without realising it. Our Sillod office handles registration, monthly and quarterly GSTR-1 and GSTR-3B filing, annual GSTR-9 returns, input tax credit reconciliation, e-way bill setup, and replies to GST notices - all from the Tilak Nagar office, without needing to travel to Chhatrapati Sambhajinagar for routine compliance.</p>
+
+            <h3>Income Tax Filing &amp; Audit in Sillod</h3>
+            <p>CA Rupesh Khandelwal files income tax returns for salaried individuals, traders, shop owners, professionals, and HUFs based in Sillod and the wider tehsil. A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a year (or ₹10 crore where at least 95% of receipts and payments are digital), and once professional gross receipts cross ₹50 lakh - our office prepares and files Form 3CA/3CB with Form 3CD ahead of the deadline, alongside statutory and internal audits for local businesses.</p>
+
+            <h3>Business Registration for New Ventures in Sillod</h3>
+            <p>New businesses starting in Sillod - whether a retail shop, a trading firm, or a small manufacturing unit - typically need shop act (Gumasta) registration, GST registration, MSME (Udyam) registration, and in some cases company or LLP incorporation. We handle this end to end from our Sillod office, so first-time business owners in the Sillod-Kannad-Phulambri belt do not need to make repeat trips to Chhatrapati Sambhajinagar for basic registrations.</p>
           </div>
         </div>
       </section>
@@ -314,6 +369,18 @@ export default function CAInSillod() {
                 WhatsApp Us
               </a>
             </div>
+          </div>
+
+          <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--primary)', marginTop: '3rem' }}>
+            <iframe
+              src="https://www.google.com/maps?q=Tilak+Nagar,+Sillod,+Maharashtra+431112&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen
+              loading="lazy"
+              title="Agrawal Khandelwal & Associates LLP - CA office at Tilak Nagar, Sillod"
+            />
           </div>
 
           <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>

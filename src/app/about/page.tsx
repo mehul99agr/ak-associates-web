@@ -163,6 +163,9 @@ export default function About() {
                 and Pharma sectors. His expertise spans domestic tax planning, statutory and internal audits, and
                 business consulting, with a strong track record representing clients before tax authorities.
               </p>
+              <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+                <Link href="/ca-in-sillod" style={{ color: 'var(--primary)', fontWeight: 600 }}>Visit our chartered accountant office in Sillod &rarr;</Link>
+              </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.75rem', fontSize: '0.87rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
