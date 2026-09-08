@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import TrackedLink from '../TrackedLink'
 import { BOOKING_LINK } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
@@ -100,7 +101,7 @@ export default function About() {
           </div>
           <h1>Meet the partners behind<br />Agrawal Khandelwal & Associates LLP.</h1>
           <p>
-            Founded in 2023 with offices in Nashik and Sillod, we advise startups, MNCs, and NRI/UAE clients on
+            Founded in 2023 with offices in <Link href="/ca-in-nashik" style={{ color: 'var(--accent)', fontWeight: 700 }}>Nashik</Link> and Sillod, we advise startups, MNCs, and NRI/UAE clients on
             international tax, transfer pricing, audit, and virtual CFO services. ICAI Firm Registration No. W101119.
           </p>
         </div>
