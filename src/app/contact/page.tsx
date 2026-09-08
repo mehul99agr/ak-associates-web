@@ -82,7 +82,7 @@ const offices = [
   {
     label: 'Nashik Office',
     partner: 'CA Mehul Agrawal',
-    address: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011, Maharashtra',
+    address: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011, Maharashtra',
     phone: '+91 95275 33506',
     tel: '+919527533506',
     email: 'mehul@agrawalkhandelwal.com',
@@ -91,7 +91,7 @@ const offices = [
   {
     label: 'Sillod Office',
     partner: 'CA Rupesh Khandelwal',
-    address: 'Near Datta Mandir, Tilak Nagar, Sillod - 431112, Maharashtra',
+    address: 'Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra',
     phone: '+91 95955 85953',
     tel: '+919595585953',
     email: 'rupesh@agrawalkhandelwal.com',
