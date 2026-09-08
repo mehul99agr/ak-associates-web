@@ -205,6 +205,7 @@ export default function Form26QBvs27QBlog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI Property Sale: Complete Guide (FY 2026-27)</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195 TDS on Payments to NRIs</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tan-application-guide-buyer-nri-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>TAN Application Guide for NRI Property Buyers</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-27q-tds-return-filing-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 27Q: Full TDS Return Filing Guide (Non-Property Payments)</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link></li>
                 </ul>
               </div>

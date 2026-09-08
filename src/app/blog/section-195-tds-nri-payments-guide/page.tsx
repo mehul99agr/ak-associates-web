@@ -272,6 +272,7 @@ export default function Section195Blog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tan-application-guide-buyer-nri-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>TAN Application Guide for NRI Property Buyers</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13: How to Get a Lower TDS Certificate</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/nri-tds-refund-property-sale" style={{ color: 'var(--primary)', fontWeight: 600 }}>How NRIs Can Claim a TDS Refund</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-27q-tds-return-filing-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 27Q: Complete TDS Return Filing Guide</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link></li>
                 </ul>
               </div>
