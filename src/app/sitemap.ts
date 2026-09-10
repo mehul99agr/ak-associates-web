@@ -92,5 +92,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/company-name-reservation-run-form-india`, lastModified: new Date('2026-07-06'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/form-27q-tds-return-filing-guide`, lastModified: new Date('2026-09-08'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/nro-tds-refund-claim-process`, lastModified: new Date('2026-09-08'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/fast-ds-2026-foreign-assets-disclosure-scheme`, lastModified: new Date('2026-09-01'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/odi-overseas-direct-investment-guide-india`, lastModified: new Date('2026-09-04'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/fdi-in-india-routes-compliance-guide`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/nri-agricultural-land-india-fema-rules`, lastModified: new Date('2026-09-10'), changeFrequency: 'monthly', priority: 0.9 },
   ]
 }

@@ -181,6 +181,64 @@ src/app/
   the long-tail 3CEB/NRI queries convert to clicks or stay stuck deep like
   `/offshore-accounting` did.
 
+**Search Console findings (Sep 10, 2026 — 28-day window):**
+- Totals: 247 clicks, 16.1k impressions, 1.5% CTR, avg. position 11.2.
+- Brand query is airtight: "agrawal khandelwal & associates llp" — 6/6 clicks, 100% CTR,
+  position 1.0.
+- The TDS-on-NRI-property-sale cluster is the clear standout non-brand performer, ranking
+  position 1.0-2.5 across variants ("tds rate on sale of property by nri for fy 2026-27",
+  "tds on sale/purchase of property by nri for fy 2026-27", etc.) and actually converting
+  clicks. This is the strongest content asset on the site right now.
+- Local Nashik queries generate real impression volume but rank too deep to convert:
+  "ca in nashik" 125 impr/pos 19.5, "ca firms in nashik" 57 impr/pos 13.8, "chartered
+  accountant in nashik" 34 impr/pos 22.6. "ca nashik" is the exception, converting at
+  pos 10.9. Same pattern as `/offshore-accounting` — authority/backlink problem, not
+  content depth.
+- "Near me" / directory-intent queries ("ca office near me" pos 7.5, "ca near me" pos
+  13.6, "chartered accountant near me" pos 8, "ca firms near me" pos 11) have decent
+  position but 0 clicks — worth a look at title/meta snippet appeal for these, since
+  position alone isn't converting.
+- The Aug 16 Phase 5 cluster posts (3CEB, DSC/DIN, company name reservation, etc.) are
+  still mostly in the "impressions with 0 clicks" phase 3-4 weeks post-publish — consistent
+  with the documented 4-6 week climb pattern, not a regression.
+- Noted "ca in aurangabad" / "ca in chhatrapati sambhaji nagar" impressions with no
+  matching clicks — Sillod office is geographically adjacent to Aurangabad/Sambhaji Nagar;
+  worth checking whether ca-in-sillod targets these terms.
+- A portion of long-tail impressions are AI-assistant-style prompts ("find the business
+  development head...", "what automation tools help with rbi odi reporting...") likely
+  surfaced via AI Overviews rather than real prospect searches — not actionable, just
+  context for why raw impression counts include some noise.
+
+## FEMA Mini-Cluster (Sep 1-10, 2026)
+Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
+dates rather than batch-publish same-day:
+- **Sep 1** - `fast-ds-2026-foreign-assets-disclosure-scheme` (category: Tax Compliance):
+  covers the real FAST-DS 2026 scheme (Finance Act 2026 Ch. IV Sections 130-144 + FAST-DS
+  Rules 2026) - verified via web search before writing (user's initial description of the
+  scheme name was confirmed accurate). Rs 1 crore small-taxpayer ceiling, Aug 16-Dec 31,
+  2026 window, 30%+30% effective 60% tax, Black Money Act protection.
+- **Sep 4** - `odi-overseas-direct-investment-guide-india` (FEMA & Compliance): general ODI
+  guide (Overseas Investment Rules/Regulations/Directions 2022) - explicitly notes ODI is
+  for persons resident in India, NOT the route NRIs use to invest abroad, to avoid the
+  scope confusion the original request implied.
+- **Sep 7** - `fdi-in-india-routes-compliance-guide` (FEMA & Compliance): automatic vs
+  government route, Press Note 3 land-border rule, FC-GPR/FC-TRS reporting, pricing
+  guidelines. Notes agriculture is FDI-restricted, cross-links to the agri-land post.
+- **Sep 10** - `nri-agricultural-land-india-fema-rules` (NRI Taxation): the core requested
+  topic. NRIs/OCIs cannot purchase agricultural land/plantation/farmhouse under FEMA
+  Non-Debt Instruments Rules 2019 - only inheritance, gift from resident relative, or
+  pre-NRI-status ownership are valid holding routes; resale of inherited land is resident-
+  only; breach voids the transaction plus up to 3x penalty. Explicitly states neither FDI
+  nor ODI offers a structuring workaround around the restriction.
+- User's original ask bundled "FAST-DS2026, FDI, ODI and agri-land FEMA compliance" as one
+  post; clarified via AskUserQuestion that FAST-DS (a resident-taxpayer foreign-asset
+  disclosure scheme) doesn't naturally connect to NR-held Indian agri-land (an FEMA
+  property-holding rule) and split into 4 standalone posts per the user's direction, rather
+  than forcing an inaccurate connection between unrelated compliance regimes.
+- All legal claims verified via web search before drafting (agri-land restriction, FDI
+  sectoral/route rules, ODI framework) - no invented figures, per the site's no-fabrication
+  discipline. Wired into `blog/page.tsx` and `sitemap.ts`. Build verified clean.
+
 ## Topical Content Clusters (Aug 2026)
 Built out three topical authority clusters — Transfer Pricing, Startups (Compliance &
 Advisory), and Company Incorporation — across 5 phases, each following the same

@@ -20,6 +20,34 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Can an NRI Buy Agricultural Land in India? FEMA Rules, Exceptions & the FDI/ODI Angle',
+    slug: 'nri-agricultural-land-india-fema-rules',
+    date: 'September 10, 2026',
+    category: 'NRI Taxation',
+    summary: 'The FEMA restriction on NRIs and OCIs purchasing agricultural land, the inheritance and gift exceptions, resale rules, penalties for breach, and why FDI/ODI structures don\'t offer a workaround.',
+  },
+  {
+    title: 'FDI in India: Routes, Sectoral Rules & Compliance Guide',
+    slug: 'fdi-in-india-routes-compliance-guide',
+    date: 'September 7, 2026',
+    category: 'FEMA & Compliance',
+    summary: 'Automatic route vs government route, sectoral caps, the Press Note 3 land-border rule, pricing guidelines, and FC-GPR/FC-TRS reporting for FDI into India.',
+  },
+  {
+    title: 'Overseas Direct Investment (ODI): Rules & Compliance Guide',
+    slug: 'odi-overseas-direct-investment-guide-india',
+    date: 'September 4, 2026',
+    category: 'FEMA & Compliance',
+    summary: 'Who can make an ODI, ODI vs OPI, the automatic and approval routes, FIRMS/APR reporting, and the one-year holding rule under the FEMA Overseas Investment framework.',
+  },
+  {
+    title: 'FAST-DS 2026: Foreign Assets Disclosure Scheme Explained',
+    slug: 'fast-ds-2026-foreign-assets-disclosure-scheme',
+    date: 'September 1, 2026',
+    category: 'Tax Compliance',
+    summary: 'Eligibility, the Rs 1 crore asset limit, the 30%+30% tax structure, the December 31, 2026 declaration window, and the protection it gives under the Black Money Act.',
+  },
+  {
     title: 'Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST',
     slug: 'startup-compliance-automation-odi-apr-gst',
     date: 'September 8, 2026',
