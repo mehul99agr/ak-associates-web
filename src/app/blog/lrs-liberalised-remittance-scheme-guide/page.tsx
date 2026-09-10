@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'LRS Guide: USD 250K Limit & TCS (2026)',
-  description: 'Everything about India\'s Liberalised Remittance Scheme: USD 250,000 annual limit, permitted purposes, TCS rates (5-20%), Form A2, and how LRS interacts with NRI accounts and FEMA.',
+  description: 'Everything about India\'s Liberalised Remittance Scheme: USD 250,000 annual limit, permitted purposes, TCS rates (0-20%, revised Budget 2026), Form A2, and how LRS interacts with NRI accounts and FEMA.',
   keywords: ['LRS India', 'liberalised remittance scheme', 'USD 250000 limit India', 'LRS TCS rate', 'LRS permitted purposes', 'send money abroad India', 'LRS FEMA', 'outward remittance India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' },
   openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article' },
@@ -18,12 +18,13 @@ const articleLd = buildArticleLd({
   headline: 'LRS Guide: USD 250K Limit & TCS (2026)',
   description: 'LRS guide for outward remittances from India.',
   datePublished: '2026-06-20',
+  dateModified: '2026-09-10',
   slug: 'lrs-liberalised-remittance-scheme-guide',
 })
 
 const faqs: [string, string][] = [
   ['What is the LRS limit for FY 2026-27?', 'The Liberalised Remittance Scheme allows resident Indians to remit up to USD 250,000 per financial year (April to March) for any permitted purpose. This is a per-person, per-year limit, not per transaction. A family of four can collectively remit up to USD 1 million. The limit covers all LRS remittances in the year, including gifts, investments, education, travel, and maintenance of relatives abroad.'],
-  ['What are the TCS rates on LRS remittances?', 'TCS (Tax Collected at Source) applies on LRS remittances above Rs 7 lakh in a financial year: 20% for most purposes (investment, gifts, general remittances), 5% for education (if financed by loan) and medical treatment, and 20% for education (if not financed by loan). The Rs 7 lakh threshold is cumulative across all LRS remittances in the year. TCS is not a separate tax - it is claimable as credit when filing your Indian ITR.'],
+  ['What are the TCS rates on LRS remittances?', 'Following the Budget 2026 revision effective April 1, 2026 (now Section 394(1), earlier Section 206C(1G)), TCS applies on LRS remittances above a cumulative Rs 10 lakh in a financial year: 20% for most purposes (investment, gifts, general remittances), 2% for self-funded education and medical treatment, and nil (0%) for education funded by a loan from an Indian bank or NBFC, regardless of amount. Overseas tour packages attract a flat 2% from the first rupee, with no threshold. TCS is not a separate tax - it is claimable as credit when filing your Indian ITR. See our dedicated guide on TCS on LRS remittances for FY 2026-27 for the full breakdown and worked examples.'],
   ['Can NRIs use LRS?', 'No. LRS is available only to resident Indians. NRIs who want to send money from India use the NRO repatriation route (USD 1 million annual limit with Form 145/146) or freely repatriate from NRE/FCNR accounts. However, LRS is relevant to NRIs indirectly: when their resident family members send them money from India, the family member uses LRS and pays TCS.'],
   ['What is Form A2 in LRS?', 'Form A2 is the application-cum-declaration form submitted to the Authorised Dealer (AD) bank for processing an LRS remittance. It declares the purpose of remittance, the amount, the beneficiary details, and confirms that the remitter has not exceeded the USD 250,000 annual limit. The bank verifies the declaration and processes the remittance. PAN is mandatory for LRS transactions above Rs 50,000.'],
 ]
@@ -51,7 +52,7 @@ export default function LRSGuideBlog() {
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.4rem' }}>LRS allows <strong>resident Indians</strong> to remit up to <strong>USD 250,000 per financial year</strong> for permitted purposes. NRIs cannot use LRS.</li>
-                  <li style={{ marginBottom: '0.4rem' }}><strong>TCS of 5-20%</strong> applies on remittances above Rs 7 lakh (claimable as credit in ITR).</li>
+                  <li style={{ marginBottom: '0.4rem' }}><strong>TCS of 0-20%</strong> applies on remittances above Rs 10 lakh, following the Budget 2026 rate revision effective April 1, 2026 (claimable as credit in ITR).</li>
                   <li style={{ marginBottom: '0.4rem' }}>Permitted purposes include gifts to NRI family, overseas investments, education, medical treatment, travel, and maintenance of relatives abroad.</li>
                   <li style={{ marginBottom: 0 }}>This is different from <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO repatriation</Link> (USD 1M limit for NRIs) and <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE repatriation</Link> (unlimited for NRIs).</li>
                 </ul>
@@ -80,20 +81,19 @@ export default function LRSGuideBlog() {
               <p><strong>Not permitted under LRS:</strong> Trading in foreign exchange on margin, lottery/sweepstake remittances, purchase of Foreign Currency Convertible Bonds issued by Indian companies abroad, and remittances to countries identified by FATF as non-cooperative.</p>
 
               <h2>TCS on LRS Remittances</h2>
-              <p>Tax Collected at Source applies on LRS remittances exceeding Rs 7 lakh (cumulative) in a financial year:</p>
+              <p>Budget 2026 revised the TCS structure on LRS remittances, effective <strong>April 1, 2026</strong>, raising the threshold and cutting several rates. Tax Collected at Source now applies on LRS remittances exceeding a cumulative <strong>Rs 10 lakh</strong> in a financial year (for most purposes):</p>
               <div style={{ overflowX: 'auto' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.95rem' }}>
                   <thead><tr>
                     <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Purpose</th>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>TCS Rate (above Rs 7L)</th>
+                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>TCS Rate (FY 2026-27)</th>
                   </tr></thead>
                   <tbody>
                     {[
-                      ['Education (funded by loan)', '5%'],
-                      ['Education (not funded by loan)', '20%'],
-                      ['Medical treatment', '5%'],
-                      ['Overseas tour package', '20%'],
-                      ['Investment, gift, maintenance, all other', '20%'],
+                      ['Education (funded by an Indian bank/NBFC loan)', '0% (no threshold)'],
+                      ['Education (self-funded) or medical treatment', '2% above Rs 10 lakh'],
+                      ['Overseas tour package', '2% from the first rupee'],
+                      ['Investment, gift, maintenance, all other purposes', '20% above Rs 10 lakh'],
                     ].map(([purpose, rate], i) => (
                       <tr key={i}>
                         <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', ...(i % 2 ? { background: 'var(--bg-surface)' } : {}) }}>{purpose}</td>
@@ -103,7 +103,7 @@ export default function LRSGuideBlog() {
                   </tbody>
                 </table>
               </div>
-              <p><strong>TCS is not an additional tax.</strong> It is collected by the bank at the time of remittance and appears as a tax credit in the remitter&apos;s Form 26AS. The remitter claims it as a credit when <Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>filing their ITR</Link>. If total tax liability is lower than TCS collected, the excess is refunded.</p>
+              <p><strong>TCS is not an additional tax.</strong> It is collected by the bank at the time of remittance and appears as a tax credit in the remitter&apos;s Form 26AS. The remitter claims it as a credit when <Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>filing their ITR</Link>. If total tax liability is lower than TCS collected, the excess is refunded. See our <Link href="/blog/tcs-foreign-remittance-lrs-rates-fy2026-27" style={{ color: 'var(--primary)', fontWeight: 600 }}>dedicated TCS on LRS guide for FY 2026-27</Link> for worked examples and how the threshold applies across multiple remittances in the same year.</p>
 
               <h2>LRS Process: Step by Step</h2>
               <ol>
@@ -116,10 +116,10 @@ export default function LRSGuideBlog() {
 
               <h2>LRS and NRI Families: Common Scenarios</h2>
               <h3>Parents Sending Money to NRI Children</h3>
-              <p>A resident parent can send up to USD 250,000/year to their NRI child for maintenance, gift, or education. TCS of 20% applies above Rs 7 lakh (for gifts/maintenance). The parent claims TCS credit in their ITR. The NRI child receives it tax-free in India (gift from relative exemption under <Link href="/blog/nri-gift-inheritance-tax-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 92 of the Income Tax Act 2025, earlier Section 56(2)(x)</Link>), but should check taxability in their country of residence.</p>
+              <p>A resident parent can send up to USD 250,000/year to their NRI child for maintenance, gift, or education. TCS of 20% applies above Rs 10 lakh (for gifts/maintenance). The parent claims TCS credit in their ITR. The NRI child receives it tax-free in India (gift from relative exemption under <Link href="/blog/nri-gift-inheritance-tax-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 92 of the Income Tax Act 2025, earlier Section 56(2)(x)</Link>), but should check taxability in their country of residence.</p>
 
               <h3>Resident Investing in Foreign Stocks/Funds</h3>
-              <p>LRS covers investment in foreign securities. TCS at 20% applies above Rs 7 lakh. When the resident later becomes NRI (e.g., moves abroad for work), the foreign investments made under LRS remain valid. Capital gains on sale are taxable based on residential status at the time of sale.</p>
+              <p>LRS covers investment in foreign securities. TCS at 20% applies above Rs 10 lakh. When the resident later becomes NRI (e.g., moves abroad for work), the foreign investments made under LRS remain valid. Capital gains on sale are taxable based on residential status at the time of sale.</p>
 
               <h3>Returning NRI Who Has Become Resident</h3>
               <p>A <Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>returning NRI</Link> who has become an Indian resident can use LRS to send money abroad from their resident accounts. This is relevant for maintaining overseas investments, sending money to family abroad, or funding foreign property after becoming resident. The NRO repatriation route is no longer available once you are resident; LRS is the correct mechanism.</p>

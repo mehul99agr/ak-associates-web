@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/schedule-fa-foreign-asset-disclosure-nri`, lastModified: new Date('2026-07-28'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/pan-card-nri-application-aadhaar-linking`, lastModified: new Date('2026-04-18'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/blog/nri-tax-compliance-calendar-deadlines`, lastModified: new Date('2026-08-14'), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/blog/lrs-liberalised-remittance-scheme-guide`, lastModified: new Date('2026-06-20'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/lrs-liberalised-remittance-scheme-guide`, lastModified: new Date('2026-09-10'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/rnor-status-tax-guide-returning-nris`, lastModified: new Date('2026-08-08'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/poem-place-of-effective-management-india`, lastModified: new Date('2026-08-08'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/nre-vs-nro-account-fema-repatriation-limits`, lastModified: new Date('2026-08-08'), changeFrequency: 'monthly', priority: 0.9 },
@@ -96,5 +96,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/odi-overseas-direct-investment-guide-india`, lastModified: new Date('2026-09-04'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/fdi-in-india-routes-compliance-guide`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/nri-agricultural-land-india-fema-rules`, lastModified: new Date('2026-09-10'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/blog/tcs-foreign-remittance-lrs-rates-fy2026-27`, lastModified: new Date('2026-04-25'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/aadhaar-pan-linking-nri-without-aadhaar`, lastModified: new Date('2026-05-22'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/blog/nri-property-sale-below-stamp-duty-value-section-50c`, lastModified: new Date('2026-06-10'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/nri-selling-shares-indian-private-company-tax-fema`, lastModified: new Date('2026-07-20'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/nri-gaar-cross-border-structures`, lastModified: new Date('2026-08-22'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }

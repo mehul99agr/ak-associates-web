@@ -69,6 +69,13 @@ const posts = [
     summary: 'Which ITR to file, Form 26AS reconciliation, documents needed, and how the USD 1 million repatriation limit applies once the refund lands in your NRO account.',
   },
   {
+    title: 'NRI GAAR Exposure: When Anti-Avoidance Rules Apply to Cross-Border Structures',
+    slug: 'nri-gaar-cross-border-structures',
+    date: 'August 22, 2026',
+    category: 'International Tax',
+    summary: 'The Impermissible Avoidance Arrangement test, the Rs 3 crore tax benefit threshold under Rule 10U, and common NRI cross-border scenarios that attract GAAR scrutiny.',
+  },
+  {
     title: 'India-UAE Transfer Pricing: Compliance for Cross-Border Transactions',
     slug: 'india-uae-transfer-pricing-compliance',
     date: 'August 16, 2026',
@@ -223,6 +230,13 @@ const posts = [
     summary: 'What the abolition of angel tax means for new fundraising, and why historic rounds still need review.',
   },
   {
+    title: 'NRI Selling Shares in an Indian Private Company: Tax & FEMA Compliance',
+    slug: 'nri-selling-shares-indian-private-company-tax-fema',
+    date: 'July 20, 2026',
+    category: 'NRI Taxation',
+    summary: 'FEMA pricing guidelines and valuation, TDS under Section 393(2), capital gains treatment, and FC-TRS reporting for an NRI exiting a private company.',
+  },
+  {
     title: 'ESOP Structuring for Indian Startups: Scheme Design, Vesting & Tax',
     slug: 'esop-structuring-indian-startups',
     date: 'July 17, 2026',
@@ -321,6 +335,13 @@ const posts = [
     summary: 'When and how to deduct TDS under Section 195 on payments to NRIs: property sale, rent, professional fees, interest. Rate table, TAN requirement, Form 27Q filing, and penalties.',
   },
   {
+    title: 'NRI Selling Property Below Stamp Duty Value: Section 78 (Earlier Section 50C) Explained',
+    slug: 'nri-property-sale-below-stamp-duty-value-section-50c',
+    date: 'June 10, 2026',
+    category: 'NRI Taxation',
+    summary: 'The deemed full value of consideration rule when an NRI sells below circle rate, the safe harbour tolerance, and the buyer\'s separate deemed-gift exposure under Section 92.',
+  },
+  {
     title: '26QB vs 27Q: Which TDS Form When Buying Property from an NRI?',
     slug: '26qb-vs-27q-nri-property-tds',
     date: 'June 5, 2026',
@@ -335,11 +356,25 @@ const posts = [
     summary: 'Inheritance (not taxable), gifts from relatives (exempt), gifts from non-relatives (Rs 50K threshold), and FEMA compliance.',
   },
   {
+    title: 'Aadhaar-PAN Linking for NRIs Who Never Had an Aadhaar Number',
+    slug: 'aadhaar-pan-linking-nri-without-aadhaar',
+    date: 'May 22, 2026',
+    category: 'NRI Taxation',
+    summary: 'Who is statutorily exempt from PAN-Aadhaar linking, what an inoperative PAN means in practice, and what NRIs without Aadhaar should actually do.',
+  },
+  {
     title: 'NRI Residential Status: How the 182-Day and 120-Day Rules Work',
     slug: 'nri-residential-status-182-day-rule',
     date: 'May 15, 2026',
     category: 'NRI Taxation',
     summary: 'How to determine if you are NRI, RNOR, or Resident: the 182-day rule, the 120-day deemed resident rule, and what each status means for your taxes.',
+  },
+  {
+    title: 'TCS on Foreign Remittance Under LRS: Rates & Exemptions FY 2026-27',
+    slug: 'tcs-foreign-remittance-lrs-rates-fy2026-27',
+    date: 'April 25, 2026',
+    category: 'FEMA & Compliance',
+    summary: 'The Rs 10 lakh threshold, 0% for loan-funded education, 2% for self-funded education/medical/tour packages, and 20% for other purposes after the Budget 2026 revision.',
   },
   {
     title: 'PAN Card for NRIs: Application, Aadhaar Linking & Exemptions',

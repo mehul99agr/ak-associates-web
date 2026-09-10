@@ -239,6 +239,47 @@ dates rather than batch-publish same-day:
   sectoral/route rules, ODI framework) - no invented figures, per the site's no-fabrication
   discipline. Wired into `blog/page.tsx` and `sitemap.ts`. Build verified clean.
 
+## NRI/FEMA Niche Topics Batch (dated Apr 25 - Aug 22, 2026)
+5 more posts at the user's request for "niche, value-adding, top-10-spot" NRI/FEMA topics,
+backdated into gaps in the existing publish calendar (Apr 2026 - Sep 10, 2026) rather than
+appended at the end:
+- **Apr 25** - `tcs-foreign-remittance-lrs-rates-fy2026-27` (FEMA & Compliance): deep-dive
+  on the Budget 2026 TCS/LRS rate revision (Section 394(1), earlier 206C(1G)) - Rs 10 lakh
+  threshold (up from Rs 7 lakh), 0% for loan-funded education, 2% for self-funded
+  education/medical/tour packages, 20% for other purposes, effective April 1, 2026.
+- **May 22** - `aadhaar-pan-linking-nri-without-aadhaar` (NRI Taxation): Section 262
+  (earlier Section 139AA) - clarifies most NRIs are outside the mandatory PAN-Aadhaar
+  linking requirement since they're not Aadhaar-eligible, vs NRIs who held Aadhaar as a
+  resident before emigrating (still on the hook).
+- **Jun 10** - `nri-property-sale-below-stamp-duty-value-section-50c` (NRI Taxation):
+  Section 78 (earlier Section 50C) deemed full-value-of-consideration rule, safe harbour
+  tolerance, and the buyer's separate Section 92 (earlier 56(2)(x)) deemed-income exposure.
+- **Jul 20** - `nri-selling-shares-indian-private-company-tax-fema` (NRI Taxation): FEMA
+  pricing guidelines/DCF-NAV valuation, TDS under Section 393(2), capital gains, and
+  FC-TRS reporting for an NRI exiting a private company.
+- **Aug 22** - `nri-gaar-cross-border-structures` (International Tax): GAAR under Part T of
+  the Income Tax Act 2025 (earlier Sections 95-102/Chapter X-A), the Impermissible
+  Avoidance Arrangement test, and the Rs 3 crore Rule 10U threshold.
+- **IMPORTANT correction made in this batch:** `lrs-liberalised-remittance-scheme-guide`
+  (published Jun 20, 2026) had stale pre-Budget-2026 TCS figures (Rs 7 lakh threshold,
+  5%/20% education-medical split) that were simply wrong for a post published after the
+  April 1, 2026 rate change took effect - this was an error in the original post, not a
+  later staleness issue. Fixed the TL;DR, FAQ, table, and both narrative mentions to the
+  current Rs 10 lakh / 0-2-20% structure, and cross-linked to the new deep-dive post.
+  `dateModified` set to 2026-09-10 (the actual correction date) - never backdate a
+  dateModified before a post's own datePublished, it breaks the Article schema's internal
+  logic even when the surrounding narrative is being backdated.
+- Section renumbering convention (Income Tax Act 2025 vs 1961 Act) already established
+  elsewhere on the site was reused and extended: 195->393(2), 197->395, 201->398,
+  56(2)(x)/56->92, 271-I->359, 13->128 (form), 27Q->144 (form), 15CA/15CB->145/146 (form).
+  New mappings added this batch, verified via web search before use: 206C(1G)->394(1),
+  50C->78, 139AA->262. GAAR (95-102) has no single clean new section number - cited as
+  "Part T" per source rather than inventing one.
+- All facts verified via web search before writing (TCS rates/threshold, Section 50C/78
+  safe harbour existence, GAAR Rs 3 crore Rule 10U threshold, FC-TRS requirement) - no
+  invented figures. Wired into `blog/page.tsx` (inserted in date order, not appended) and
+  `sitemap.ts`. Build verified clean.
+
 ## Topical Content Clusters (Aug 2026)
 Built out three topical authority clusters — Transfer Pricing, Startups (Compliance &
 Advisory), and Company Incorporation — across 5 phases, each following the same
