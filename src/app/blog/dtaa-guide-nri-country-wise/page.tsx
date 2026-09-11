@@ -159,7 +159,7 @@ export default function DTAAGuideBlog() {
                     </tbody>
                   </table>
                 </div>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>* Where DTAA rate exceeds domestic rate, domestic rate applies (Section 90(2) - beneficial provisions prevail). FTS = Fees for Technical Services. Rates shown are before surcharge and cess. All rates subject to treaty-specific conditions and LOB provisions.</p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>* Where DTAA rate exceeds domestic rate, domestic rate applies (Section 90(2); beneficial provisions prevail). FTS = Fees for Technical Services. Rates shown are before surcharge and cess. All rates subject to treaty-specific conditions and LOB provisions.</p>
 
                 <h2>Key Takeaway by Country</h2>
 
@@ -216,8 +216,8 @@ export default function DTAAGuideBlog() {
                 </p>
                 <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}>Income Tax Department, Government of India (DTAA texts & rates) - <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
-                  <li style={{ marginBottom: 0 }}>Reserve Bank of India (FEMA / cross-border rules) - <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>rbi.org.in</a></li>
+                  <li style={{ marginBottom: '0.4rem' }}>Income Tax Department, Government of India (DTAA texts & rates); <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+                  <li style={{ marginBottom: 0 }}>Reserve Bank of India (FEMA / cross-border rules); <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>rbi.org.in</a></li>
                 </ul>
               </div>
 

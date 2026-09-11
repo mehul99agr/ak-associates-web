@@ -52,7 +52,7 @@ const posts = [
     slug: 'startup-compliance-automation-odi-apr-gst',
     date: 'September 8, 2026',
     category: 'Startup Advisory',
-    summary: 'How growing India-linked startups organise RBI ODI reporting, annual APR filing, transfer pricing documentation, and GST workflows - and where a virtual CFO or offshore accounting team fits in.',
+    summary: 'How growing India-linked startups organise RBI ODI reporting, annual APR filing, transfer pricing documentation, and GST workflows; and where a virtual CFO or offshore accounting team fits in.',
   },
   {
     title: 'Form 27Q: Complete TDS Return Filing Guide for Payments to NRIs',
@@ -108,7 +108,7 @@ const posts = [
     slug: 'post-incorporation-checklist-first-30-days',
     date: 'August 12, 2026',
     category: 'Company Incorporation',
-    summary: 'PAN/TAN, bank account, GST, first Board meeting, auditor appointment, and share certificates - with statutory deadlines.',
+    summary: 'PAN/TAN, bank account, GST, first Board meeting, auditor appointment, and share certificates; with statutory deadlines.',
   },
   {
     title: 'India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore',
@@ -419,7 +419,7 @@ const posts = [
     summary: 'How to get DPIIT recognition, what eligibility criteria apply, the 80-IAC three-year tax holiday and why it requires a separate IMB application, and what changed on angel tax in Finance Act 2025.',
   },
   {
-    title: 'GST on Exports: Zero-Rated vs Exempt - What Indian Exporters Get Wrong',
+    title: 'GST on Exports: Zero-Rated vs Exempt; What Indian Exporters Get Wrong',
     slug: 'gst-on-exports-zero-rated-vs-exempt-india',
     date: 'July 18, 2026',
     category: 'GST',
@@ -444,7 +444,7 @@ const posts = [
     slug: 'form-13-lower-deduction-certificate-nri',
     date: 'July 11, 2026',
     category: 'NRI Taxation',
-    summary: 'How NRIs apply for a Form 13 lower or nil TDS certificate under Section 197 before a property sale - documents required, jurisdictional AO, and processing timeline.',
+    summary: 'How NRIs apply for a Form 13 lower or nil TDS certificate under Section 197 before a property sale; documents required, jurisdictional AO, and processing timeline.',
   },
   {
     title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
@@ -479,14 +479,14 @@ const posts = [
     slug: 'fema-compliance-foreign-investment-startups',
     date: 'June 08, 2026',
     category: 'Startup Compliance',
-    summary: 'FDI routes, the 30-day RBI reporting window, FC-GPR filing, the annual FLA return, and the most common FEMA mistakes that lead to penalties - a practical checklist for funded startups.',
+    summary: 'FDI routes, the 30-day RBI reporting window, FC-GPR filing, the annual FLA return, and the most common FEMA mistakes that lead to penalties; a practical checklist for funded startups.',
   },
   {
     title: 'Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)',
     slug: 'dubai-company-registration-guide',
     date: 'May 19, 2026',
     category: 'International Tax',
-    summary: 'Mainland vs Free Zone vs Offshore, real costs in INR, FEMA and ODI compliance, UAE Corporate Tax, and documents required - everything before you register a Dubai company.',
+    summary: 'Mainland vs Free Zone vs Offshore, real costs in INR, FEMA and ODI compliance, UAE Corporate Tax, and documents required; everything before you register a Dubai company.',
   },
   {
     title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
@@ -607,7 +607,7 @@ const breadcrumbLd = {
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Tax Insights & Advisory - Blog Posts',
+  name: 'Tax Insights & Advisory; Blog Posts',
   description: 'Expert analysis on International Tax, GST, Transfer Pricing, UAE Corporate Tax, startup compliance, and NRI taxation from Agrawal Khandelwal & Associates LLP.',
   url: 'https://agrawalkhandelwal.com/blog',
   itemListElement: posts.map((post, i) => ({

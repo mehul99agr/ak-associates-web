@@ -5,7 +5,7 @@ import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Repatriating NRI Property Sale Proceeds',
-  description: 'How NRIs repatriate property sale proceeds from India under the new Income Tax Act 2025 - NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB), and the USD 1 million scheme.',
+  description: 'How NRIs repatriate property sale proceeds from India under the new Income Tax Act 2025; NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB), and the USD 1 million scheme.',
   keywords: [
     'NRI repatriation property sale proceeds', 'form 145 146 NRI', 'form 15CA 15CB NRI property',
     'USD 1 million scheme NRI', 'NRO account repatriation limit', 'send money abroad after property sale NRI',
@@ -93,19 +93,19 @@ export default function NRIRepatriationBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
-                <p>Selling the property is only half the process for an NRI. Getting the sale proceeds out of India legally requires clearing tax on the gain - through <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS and, where applicable, an ITR refund</Link> - and then following a specific FEMA-governed remittance process. Under the new Income Tax Act 2025, effective April 1, 2026, the forms involved changed. Here is the full sequence.</p>
+                <p>Selling the property is only half the process for an NRI. Getting the sale proceeds out of India legally requires clearing tax on the gain; through <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS and, where applicable, an ITR refund</Link>; and then following a specific FEMA-governed remittance process. Under the new Income Tax Act 2025, effective April 1, 2026, the forms involved changed. Here is the full sequence.</p>
 
                 <h2>Step 1: Proceeds Land in the NRO Account</h2>
-                <p>Sale consideration from an NRI&apos;s Indian property must first be credited to their <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO (Non-Resident Ordinary) account</Link>. It cannot be remitted directly abroad or credited to an NRE or foreign account at the time of sale. This is a FEMA requirement, not just a banking convenience - all subsequent tax certification and repatriation steps assume the funds are sitting in an NRO account.</p>
+                <p>Sale consideration from an NRI&apos;s Indian property must first be credited to their <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO (Non-Resident Ordinary) account</Link>. It cannot be remitted directly abroad or credited to an NRE or foreign account at the time of sale. This is a FEMA requirement, not just a banking convenience; all subsequent tax certification and repatriation steps assume the funds are sitting in an NRO account.</p>
 
                 <h2>Step 2: Settle the Tax Position First</h2>
-                <p>Before initiating any remittance, the tax position on the capital gain needs to be resolved - either through TDS already deducted at the correct rate (ideally via a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link>), or through an ITR filed and any refund settled. Attempting to repatriate before this is resolved is the most common reason remittances get held up at the bank stage.</p>
+                <p>Before initiating any remittance, the tax position on the capital gain needs to be resolved; either through TDS already deducted at the correct rate (ideally via a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link>), or through an ITR filed and any refund settled. Attempting to repatriate before this is resolved is the most common reason remittances get held up at the bank stage.</p>
 
                 <h2>Step 3: File Form 145 (Replaces Form 15CA)</h2>
                 <p>Form 145 is filed by the NRI on the Income Tax e-filing portal before the bank remittance is initiated. It declares the nature of the remittance and confirms the tax compliance position. This is a self-declaration step, filed directly by the NRI or their authorized representative.</p>
 
                 <h2>Step 4: Obtain Form 146 (Replaces Form 15CB)</h2>
-                <p>For remittances above ₹5 lakh, a practicing Chartered Accountant must issue Form 146 - a certificate confirming that applicable taxes have been paid or that TDS has been correctly deducted and deposited on the underlying transaction. The CA reviews the sale documentation, Form 16A (now Form 131), and the ITR or Form 13 (now Form 128) certificate before issuing this.</p>
+                <p>For remittances above ₹5 lakh, a practicing Chartered Accountant must issue Form 146; a certificate confirming that applicable taxes have been paid or that TDS has been correctly deducted and deposited on the underlying transaction. The CA reviews the sale documentation, Form 16A (now Form 131), and the ITR or Form 13 (now Form 128) certificate before issuing this.</p>
 
                 <h2>Step 5: Submit to the Authorised Dealer (AD) Bank</h2>
                 <p>The NRI (or their representative) submits the remittance request to the bank holding the NRO account, along with:</p>
@@ -115,13 +115,13 @@ export default function NRIRepatriationBlog() {
                   <li>Form 145 acknowledgment</li>
                   <li>Form 146 (CA certificate)</li>
                 </ul>
-                <p>The AD Bank reviews the documentation for compliance before processing the outward remittance - this is a mandatory checkpoint, not a formality, and banks routinely query incomplete submissions. Our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory team</Link> prepares Form 146 certificates and coordinates directly with AD Banks on behalf of NRI clients.</p>
+                <p>The AD Bank reviews the documentation for compliance before processing the outward remittance; this is a mandatory checkpoint, not a formality, and banks routinely query incomplete submissions. Our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory team</Link> prepares Form 146 certificates and coordinates directly with AD Banks on behalf of NRI clients.</p>
 
                 <h2>Step 6: The USD 1 Million Scheme Limit</h2>
-                <p>Under RBI rules, an NRI can repatriate up to <strong>USD 1 million per financial year</strong> from their NRO account. This limit is cumulative - it covers property sale proceeds along with any other NRO balances repatriated in the same financial year, not a separate allowance per transaction. Amounts beyond this require specific RBI approval, which is a longer and less predictable process. For sales well above this threshold, plan the remittance across financial years where possible.</p>
+                <p>Under RBI rules, an NRI can repatriate up to <strong>USD 1 million per financial year</strong> from their NRO account. This limit is cumulative; it covers property sale proceeds along with any other NRO balances repatriated in the same financial year, not a separate allowance per transaction. Amounts beyond this require specific RBI approval, which is a longer and less predictable process. For sales well above this threshold, plan the remittance across financial years where possible.</p>
 
                 <h2>Realistic Timeline</h2>
-                <p>Once Form 145, Form 146, and supporting documents are ready, banks typically take <strong>5 to 10 working days</strong> to process the remittance. The bottleneck is almost never the bank step itself - it&apos;s the tax settlement beforehand, particularly if a TDS refund or Form 13 certificate is still pending. Building this into the overall timeline from the day the sale agreement is signed avoids last-minute delays when the NRI actually wants the funds abroad.</p>
+                <p>Once Form 145, Form 146, and supporting documents are ready, banks typically take <strong>5 to 10 working days</strong> to process the remittance. The bottleneck is almost never the bank step itself; it&apos;s the tax settlement beforehand, particularly if a TDS refund or Form 13 certificate is still pending. Building this into the overall timeline from the day the sale agreement is signed avoids last-minute delays when the NRI actually wants the funds abroad.</p>
 
                 <h2>Common Issues That Delay Repatriation</h2>
                 <ul>

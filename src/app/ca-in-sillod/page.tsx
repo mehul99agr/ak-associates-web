@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: 'How do I register my business in Sillod?',
-    a: 'We handle complete business registration from Sillod - including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Contact us at +91 95955 85953 to get started.',
+    a: 'We handle complete business registration from Sillod; including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Contact us at +91 95955 85953 to get started.',
   },
   {
     q: 'Is Agrawal Khandelwal & Associates LLP available for clients in Aurangabad district from Sillod?',
@@ -84,11 +84,11 @@ const faqs = [
   },
   {
     q: 'Is there a CA firm near Sillod for tax filing and GST compliance?',
-    a: 'Yes. Agrawal Khandelwal & Associates LLP operates a full-time office in Sillod (Near Datta Mandir, Tilak Nagar) handling GST registration and filing, income tax return filing, and ongoing compliance for individuals and businesses in and around Sillod - no need to travel to Chhatrapati Sambhajinagar (Aurangabad) for routine tax work.',
+    a: 'Yes. Agrawal Khandelwal & Associates LLP operates a full-time office in Sillod (Near Datta Mandir, Tilak Nagar) handling GST registration and filing, income tax return filing, and ongoing compliance for individuals and businesses in and around Sillod; no need to travel to Chhatrapati Sambhajinagar (Aurangabad) for routine tax work.',
   },
   {
     q: 'Do you serve clients in Chhatrapati Sambhajinagar (Aurangabad) from the Sillod office?',
-    a: 'Yes. While our office is based in Sillod, we regularly serve clients across Chhatrapati Sambhajinagar (Aurangabad) district - including Kannad, Phulambri, and Jalna - for GST filing, ITR filing, audits, and company registration. Consultations can be scheduled by phone, WhatsApp, or in person at the Sillod office.',
+    a: 'Yes. While our office is based in Sillod, we regularly serve clients across Chhatrapati Sambhajinagar (Aurangabad) district (including Kannad, Phulambri, and Jalna) for GST filing, ITR filing, audits, and company registration. Consultations can be scheduled by phone, WhatsApp, or in person at the Sillod office.',
   },
   {
     q: 'What documents are required for GST registration in Sillod?',
@@ -100,7 +100,7 @@ const sillodLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': ['AccountingService', 'LocalBusiness', 'ProfessionalService'],
   '@id': 'https://agrawalkhandelwal.com/#sillod-office',
-  name: 'Agrawal Khandelwal & Associates LLP - Sillod',
+  name: 'Agrawal Khandelwal & Associates LLP; Sillod',
   alternateName: ['Agrawal Khandelwal & Associates LLP Sillod', 'CA in Sillod', 'Agrawal Khandelwal & Associates LLP CA Sillod'],
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
@@ -195,11 +195,11 @@ export default function CAInSillod() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="hero-badge">
             <span>📍</span>
-            <span>Sillod Office - Tilak Nagar, Sillod 431112</span>
+            <span>Sillod Office; Tilak Nagar, Sillod 431112</span>
           </div>
           <h1>Chartered Accountant<br />in Sillod</h1>
           <p>
-            Agrawal Khandelwal & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory - handled by CA Rupesh Khandelwal from our Sillod office.
+            Agrawal Khandelwal & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory; handled by CA Rupesh Khandelwal from our Sillod office.
           </p>
           <div className="hero-cta">
             <a href="tel:+919595585953" className="btn btn-primary">
@@ -263,13 +263,13 @@ export default function CAInSillod() {
           </div>
           <div className="blog-content" style={{ fontSize: '1.02rem', lineHeight: 1.85, color: 'var(--text-main)' }}>
             <h3>GST Registration &amp; Compliance for Sillod Businesses</h3>
-            <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. Sillod is a market town for the surrounding agricultural and trading belt of Chhatrapati Sambhajinagar (Aurangabad) district, so many local traders, transporters, and small manufacturers cross these thresholds without realising it. Our Sillod office handles registration, monthly and quarterly GSTR-1 and GSTR-3B filing, annual GSTR-9 returns, input tax credit reconciliation, e-way bill setup, and replies to GST notices - all from the Tilak Nagar office, without needing to travel to Chhatrapati Sambhajinagar for routine compliance.</p>
+            <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. Sillod is a market town for the surrounding agricultural and trading belt of Chhatrapati Sambhajinagar (Aurangabad) district, so many local traders, transporters, and small manufacturers cross these thresholds without realising it. Our Sillod office handles registration, monthly and quarterly GSTR-1 and GSTR-3B filing, annual GSTR-9 returns, input tax credit reconciliation, e-way bill setup, and replies to GST notices; all from the Tilak Nagar office, without needing to travel to Chhatrapati Sambhajinagar for routine compliance.</p>
 
             <h3>Income Tax Filing &amp; Audit in Sillod</h3>
-            <p>CA Rupesh Khandelwal files income tax returns for salaried individuals, traders, shop owners, professionals, and HUFs based in Sillod and the wider tehsil. A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a year (or ₹10 crore where at least 95% of receipts and payments are digital), and once professional gross receipts cross ₹50 lakh - our office prepares and files Form 3CA/3CB with Form 3CD ahead of the deadline, alongside statutory and internal audits for local businesses.</p>
+            <p>CA Rupesh Khandelwal files income tax returns for salaried individuals, traders, shop owners, professionals, and HUFs based in Sillod and the wider tehsil. A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a year (or ₹10 crore where at least 95% of receipts and payments are digital), and once professional gross receipts cross ₹50 lakh; our office prepares and files Form 3CA/3CB with Form 3CD ahead of the deadline, alongside statutory and internal audits for local businesses.</p>
 
             <h3>Business Registration for New Ventures in Sillod</h3>
-            <p>New businesses starting in Sillod - whether a retail shop, a trading firm, or a small manufacturing unit - typically need shop act (Gumasta) registration, GST registration, MSME (Udyam) registration, and in some cases company or LLP incorporation. We handle this end to end from our Sillod office, so first-time business owners in the Sillod-Kannad-Phulambri belt do not need to make repeat trips to Chhatrapati Sambhajinagar for basic registrations.</p>
+            <p>New businesses starting in Sillod (whether a retail shop, a trading firm, or a small manufacturing unit) typically need shop act (Gumasta) registration, GST registration, MSME (Udyam) registration, and in some cases company or LLP incorporation. We handle this end to end from our Sillod office, so first-time business owners in the Sillod-Kannad-Phulambri belt do not need to make repeat trips to Chhatrapati Sambhajinagar for basic registrations.</p>
           </div>
         </div>
       </section>
@@ -284,10 +284,10 @@ export default function CAInSillod() {
           <div style={{ maxWidth: '500px', margin: '0 auto' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)', flexShrink: 0 }}>
-                <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal - Chartered Accountant in Sillod" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal; Chartered Accountant in Sillod" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h3>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - Sillod Office</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner; Sillod Office</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 CA Rupesh Khandelwal heads our Sillod office. With experience from leading firms including Deloitte, he brings expertise in domestic taxation, audits, and business consulting to Sillod-based businesses across industries including automobiles, IT, and pharma.
               </p>
@@ -382,7 +382,7 @@ export default function CAInSillod() {
               style={{ border: 0, display: 'block' }}
               allowFullScreen
               loading="lazy"
-              title="Agrawal Khandelwal & Associates LLP - CA office at Tilak Nagar, Sillod"
+              title="Agrawal Khandelwal & Associates LLP; CA office at Tilak Nagar, Sillod"
             />
           </div>
 
@@ -391,7 +391,7 @@ export default function CAInSillod() {
               Need advanced services like international taxation or startup advisory?
             </p>
             <p style={{ color: 'var(--text-main)', fontWeight: 600 }}>
-              Our Nashik office handles those - <a href="tel:+919527533506" style={{ color: 'var(--primary)' }}>+91 95275 33506</a>
+              Our Nashik office handles those; <a href="tel:+919527533506" style={{ color: 'var(--primary)' }}>+91 95275 33506</a>
             </p>
           </div>
         </div>
@@ -402,7 +402,7 @@ export default function CAInSillod() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
-            <h2 className="section-title">Frequently Asked Questions - CA in Sillod</h2>
+            <h2 className="section-title">Frequently Asked Questions; CA in Sillod</h2>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {faqs.map(({ q, a }, i) => (
@@ -420,7 +420,7 @@ export default function CAInSillod() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Looking for a CA in Sillod?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            Agrawal Khandelwal & Associates LLP - your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
+            Agrawal Khandelwal & Associates LLP; your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919595585953" className="btn btn-primary">Call Now: +91 95955 85953</a>

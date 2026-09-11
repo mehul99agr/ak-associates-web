@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-returning-india-financial-checklist' },
   openGraph: {
     title: 'NRI Returning to India Checklist (2026)',
-    description: 'Bank accounts, RNOR window, investments, insurance, FEMA steps - the financial checklist for NRIs moving back.',
+    description: 'Bank accounts, RNOR window, investments, insurance, FEMA steps; the financial checklist for NRIs moving back.',
     url: 'https://agrawalkhandelwal.com/blog/nri-returning-india-financial-checklist',
     type: 'article',
   },
@@ -43,7 +43,7 @@ const faqs: [string, string][] = [
   ],
   [
     'Do I need to convert my NRE account when I return to India?',
-    'Yes. Under FEMA, once you become a resident, your NRE and FCNR accounts must be redesignated as resident accounts (savings or RFC - Resident Foreign Currency). You cannot continue operating them as NRE/FCNR accounts. Interest earned after redesignation becomes taxable. Most banks require you to submit a redesignation request within a reasonable period of becoming resident, and some proactively freeze NRE accounts on detecting a status change.',
+    'Yes. Under FEMA, once you become a resident, your NRE and FCNR accounts must be redesignated as resident accounts (savings or RFC; Resident Foreign Currency). You cannot continue operating them as NRE/FCNR accounts. Interest earned after redesignation becomes taxable. Most banks require you to submit a redesignation request within a reasonable period of becoming resident, and some proactively freeze NRE accounts on detecting a status change.',
   ],
   [
     'How long is the RNOR tax benefit window after returning?',
@@ -94,7 +94,7 @@ export default function NRIReturningIndiaChecklist() {
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                     <li style={{ marginBottom: '0.4rem' }}>Start planning 6-12 months before your return. Tax decisions made during your last NRI year and first RNOR years can save lakhs.</li>
                     <li style={{ marginBottom: '0.4rem' }}>NRE and FCNR accounts must be redesignated to resident accounts. Interest becomes taxable after conversion.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>You likely get 2-3 years of <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR status</Link> where foreign income stays exempt - use this window to restructure.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>You likely get 2-3 years of <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR status</Link> where foreign income stays exempt; use this window to restructure.</li>
                     <li style={{ marginBottom: 0 }}>Foreign retirement accounts (401k, pension, superannuation) need a withdrawal strategy aligned with your RNOR window.</li>
                   </ul>
                 </div>
@@ -105,7 +105,7 @@ export default function NRIReturningIndiaChecklist() {
 
                 <h3>Calculate Your RNOR Window</h3>
                 <p>This is the single most valuable planning step. <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR (Resident but Not Ordinarily Resident)</Link> is a transitional tax status that most returning NRIs get for 2 to 3 financial years. During RNOR years, foreign income not received in or deemed to accrue in India is <strong>not taxable in India</strong>. Once you become a full resident (ROR), your worldwide income is taxed.</p>
-                <p>The RNOR window depends on your specific day-count history, determined by the <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>182-day and 120-day rules</Link>. Timing your return to maximise this window - for example, returning early in a financial year rather than late - can add an extra year of RNOR status and save significant tax on foreign income realisation.</p>
+                <p>The RNOR window depends on your specific day-count history, determined by the <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>182-day and 120-day rules</Link>. Timing your return to maximise this window (for example, returning early in a financial year rather than late) can add an extra year of RNOR status and save significant tax on foreign income realisation.</p>
 
                 <h3>Audit Your Foreign Investment Portfolio</h3>
                 <p>Before you become a full resident, review every foreign investment for RNOR window planning:</p>
@@ -132,7 +132,7 @@ export default function NRIReturningIndiaChecklist() {
                 <p>Interest on NRE accounts was tax-exempt while you were NRI. After redesignation, it becomes taxable. Plan FD maturities accordingly.</p>
 
                 <h3>Repatriate Strategically</h3>
-                <p>If you have funds abroad that you want to bring to India, the <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO repatriation limits</Link> no longer apply once you are a resident. But you may want to bring funds in during your RNOR years rather than after, depending on the source and tax treatment of those funds. Inward remittances by a resident are not taxable in India (only the income on those funds is), so there is no tax cost to bringing money in - the question is timing it to optimise the overall tax position.</p>
+                <p>If you have funds abroad that you want to bring to India, the <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO repatriation limits</Link> no longer apply once you are a resident. But you may want to bring funds in during your RNOR years rather than after, depending on the source and tax treatment of those funds. Inward remittances by a resident are not taxable in India (only the income on those funds is), so there is no tax cost to bringing money in; the question is timing it to optimise the overall tax position.</p>
 
                 <h3>Notify Foreign Banks and Institutions</h3>
                 <p>Your foreign banks, brokerages, and retirement fund administrators need to know you are no longer a resident of that country. Some implications:</p>
@@ -183,7 +183,7 @@ export default function NRIReturningIndiaChecklist() {
                         ['Within 3 months', 'Review foreign brokerage access restrictions'],
                         ['By ITR deadline', 'File Indian ITR as RNOR with correct income classification'],
                         ['By ITR deadline', 'File Form 67 for DTAA foreign tax credits'],
-                        ['Ongoing', 'Track RNOR status year-by-year - it changes each FY'],
+                        ['Ongoing', 'Track RNOR status year-by-year; it changes each FY'],
                         ['When RNOR ends', 'Begin Schedule FA foreign asset disclosure'],
                       ].map(([when, action], i) => (
                         <tr key={i}>

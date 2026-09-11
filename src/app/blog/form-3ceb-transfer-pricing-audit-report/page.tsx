@@ -37,9 +37,9 @@ const articleLd = buildArticleLd({
 })
 
 const faqs: [string, string][] = [
-  ['Who needs to file Form 3CEB in India?', 'Any Indian taxpayer with an international transaction with an associated enterprise must file Form 3CEB, with no minimum transaction value. The Rs 1 crore mark is only the threshold for maintaining detailed transfer pricing documentation. It can also apply to specified domestic transactions where the aggregate exceeds Rs 20 crore in the year. A loss-making company or one claiming a tax holiday must still comply if it has qualifying transactions - profitability is not the test.'],
+  ['Who needs to file Form 3CEB in India?', 'Any Indian taxpayer with an international transaction with an associated enterprise must file Form 3CEB, with no minimum transaction value. The Rs 1 crore mark is only the threshold for maintaining detailed transfer pricing documentation. It can also apply to specified domestic transactions where the aggregate exceeds Rs 20 crore in the year. A loss-making company or one claiming a tax holiday must still comply if it has qualifying transactions; profitability is not the test.'],
   ['What is the due date for Form 3CEB for FY 2026-27?', 'The due date is October 31, 2027, one month ahead of the income tax return due date for taxpayers with transfer pricing reporting, which generally falls on November 30. Build your internal timeline around the original statutory date rather than assuming a CBDT extension will be issued.'],
-  ['Who uploads Form 3CEB on the income tax portal?', 'The appointed Chartered Accountant uploads Form 3CEB using their own login on the e-filing portal. The filing is not complete until the assessee separately logs in and accepts the uploaded report - a step that is frequently missed. Always obtain and retain the acceptance acknowledgment.'],
+  ['Who uploads Form 3CEB on the income tax portal?', 'The appointed Chartered Accountant uploads Form 3CEB using their own login on the e-filing portal. The filing is not complete until the assessee separately logs in and accepts the uploaded report; a step that is frequently missed. Always obtain and retain the acceptance acknowledgment.'],
   ['What is the penalty for not filing Form 3CEB?', 'Section 271BA of the Income Tax Act imposes a flat penalty of Rs 1 lakh for failure to furnish the Section 92E accountant\'s report. This is not tied to the transaction value. Missing Form 3CEB can also trigger scrutiny and weaken your position when defending the transfer pricing during an assessment.'],
   ['Is Form 3CEB enough for transfer pricing compliance?', 'No. Form 3CEB is the CA-certified statutory report, but you must separately maintain transaction-level documentation known as the Local File, which supports the arm\'s length position reported in the form. Depending on group revenue, Master File and Country-by-Country Reporting obligations may also apply.'],
 ]
@@ -67,7 +67,7 @@ export default function Form3CEBBlog() {
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.4rem' }}>Form 3CEB is required for <strong>any</strong> international transaction with an associated enterprise; detailed TP documentation becomes mandatory once the aggregate exceeds <strong>Rs 1 crore</strong> in the year.</li>
-                  <li style={{ marginBottom: '0.4rem' }}>The CA uploads the report on the e-filing portal, then the assessee must separately <strong>accept</strong> it - a step commonly missed.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>The CA uploads the report on the e-filing portal, then the assessee must separately <strong>accept</strong> it; a step commonly missed.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Due date is <strong>October 31</strong> following the financial year, one month before the transfer pricing ITR deadline.</li>
                   <li style={{ marginBottom: 0 }}>Late or non-filing attracts a flat <strong>Rs 1 lakh penalty</strong> under Section 271BA, regardless of transaction value.</li>
                 </ul>
@@ -82,19 +82,19 @@ export default function Form3CEBBlog() {
                   <tbody>
                     <tr><td style={tdStyle}>Who must file</td><td style={tdStyle}>Any Indian entity with an international transaction with an associated enterprise (no minimum value). Specified domestic transactions only where the aggregate exceeds <strong>Rs 20 crore</strong> in the year.</td></tr>
                     <tr><td style={tdAltStyle}>TP documentation (Rule 10D)</td><td style={tdAltStyle}>Mandatory once aggregate international transactions exceed <strong>Rs 1 crore</strong> in the year</td></tr>
-                    <tr><td style={tdStyle}>Governing provision</td><td style={tdStyle}>Section 92E - accountant&apos;s report in Form 3CEB</td></tr>
+                    <tr><td style={tdStyle}>Governing provision</td><td style={tdStyle}>Section 92E; accountant&apos;s report in Form 3CEB</td></tr>
                     <tr><td style={tdAltStyle}><strong>Form 3CEB due date</strong></td><td style={tdAltStyle}><strong>October 31, 2027</strong></td></tr>
                     <tr><td style={tdStyle}>Linked ITR due date (TP taxpayers)</td><td style={tdStyle}>November 30, 2027</td></tr>
                     <tr><td style={tdAltStyle}>Filing mechanism</td><td style={tdAltStyle}>CA uploads on the income tax e-filing portal with DSC; the taxpayer then logs in and <strong>accepts</strong> the form</td></tr>
-                    <tr><td style={tdStyle}>Penalty - failure to furnish Form 3CEB</td><td style={tdStyle}><strong>Section 271BA</strong>: flat <strong>Rs 1,00,000</strong>, regardless of transaction value</td></tr>
-                    <tr><td style={tdAltStyle}>Penalty - no documentation or wrong particulars</td><td style={tdAltStyle}><strong>Section 271AA</strong>: 2% of the value of each international transaction or SDT</td></tr>
-                    <tr><td style={tdStyle}>Penalty - documents not produced to the TPO</td><td style={tdStyle}><strong>Section 271G</strong>: 2% of the transaction value</td></tr>
+                    <tr><td style={tdStyle}>Penalty; failure to furnish Form 3CEB</td><td style={tdStyle}><strong>Section 271BA</strong>: flat <strong>Rs 1,00,000</strong>, regardless of transaction value</td></tr>
+                    <tr><td style={tdAltStyle}>Penalty; no documentation or wrong particulars</td><td style={tdAltStyle}><strong>Section 271AA</strong>: 2% of the value of each international transaction or SDT</td></tr>
+                    <tr><td style={tdStyle}>Penalty; documents not produced to the TPO</td><td style={tdStyle}><strong>Section 271G</strong>: 2% of the transaction value</td></tr>
                   </tbody>
                 </table>
               </div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Sections 271BA, 271AA and 271G are separate, cumulative penalties - a single default can attract more than one.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Sections 271BA, 271AA and 271G are separate, cumulative penalties; a single default can attract more than one.</p>
 
-              <p>Form 3CEB is the accountant&apos;s report for transfer pricing compliance under Section 92E. It confirms that a taxpayer with specified related-party transactions has obtained a report from a Chartered Accountant and has furnished the prescribed particulars of those transactions. It is not an income tax return, and it is not a substitute for <Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing documentation</Link> - it is a separate CA-certified report that lists the transactions and the method used to test whether the pricing is at arm&apos;s length.</p>
+              <p>Form 3CEB is the accountant&apos;s report for transfer pricing compliance under Section 92E. It confirms that a taxpayer with specified related-party transactions has obtained a report from a Chartered Accountant and has furnished the prescribed particulars of those transactions. It is not an income tax return, and it is not a substitute for <Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing documentation</Link>; it is a separate CA-certified report that lists the transactions and the method used to test whether the pricing is at arm&apos;s length.</p>
 
               <h2>Who Must File Form 3CEB</h2>
               <p>The core trigger is any international transaction with an associated enterprise, with no minimum monetary threshold in the law. The <strong>Rs 1 crore</strong> figure is the point at which detailed transfer pricing documentation under Rule 10D becomes mandatory, not a floor below which Form 3CEB can be skipped. Reportable international transactions commonly include:</p>
@@ -107,10 +107,10 @@ export default function Form3CEBBlog() {
                 <li>Transfer of shares, business assets, or intangible property</li>
                 <li>Any other transaction between associated enterprises that affects income, expense, assets, or liabilities</li>
               </ul>
-              <p>The obligation can also arise for specified domestic transactions where statutory conditions are met. A common misconception is that Form 3CEB is necessary only where a company has taxable profit - that is incorrect. A loss-making company, a newly incorporated subsidiary, or a company claiming a tax holiday must still comply if it has qualifying transactions.</p>
+              <p>The obligation can also arise for specified domestic transactions where statutory conditions are met. A common misconception is that Form 3CEB is necessary only where a company has taxable profit; that is incorrect. A loss-making company, a newly incorporated subsidiary, or a company claiming a tax holiday must still comply if it has qualifying transactions.</p>
 
               <h2>What Counts as an Associated Enterprise</h2>
-              <p>The relationship goes beyond identical shareholding. It may arise through direct or indirect participation in management, control, or capital, or through certain financing, dependency, or control situations under the statutory definition. In most MNC structures the relationship is straightforward - an Indian subsidiary transacting with its overseas parent, a fellow subsidiary, or a group service company. But do not stop the analysis at the company chart: a loan, guarantee, exclusive technology arrangement, or dependency on a single supplier may also qualify. Map related entities before the year closes, not when the filing deadline is approaching.</p>
+              <p>The relationship goes beyond identical shareholding. It may arise through direct or indirect participation in management, control, or capital, or through certain financing, dependency, or control situations under the statutory definition. In most MNC structures the relationship is straightforward; an Indian subsidiary transacting with its overseas parent, a fellow subsidiary, or a group service company. But do not stop the analysis at the company chart: a loan, guarantee, exclusive technology arrangement, or dependency on a single supplier may also qualify. Map related entities before the year closes, not when the filing deadline is approaching.</p>
 
               <h2>What the CA Certifies</h2>
               <p>The CA does not certify that every commercial decision was ideal. The report certifies the prescribed particulars of international and specified domestic transactions and confirms the information has been examined in accordance with the law and rules. The exercise generally involves:</p>
@@ -122,14 +122,14 @@ export default function Form3CEBBlog() {
                 <li>Identifying the tested party and transfer pricing method</li>
                 <li>Reviewing the arm&apos;s length analysis and reporting the conclusions</li>
               </ul>
-              <p>The CA relies on management representations and underlying records - which is why finance teams must maintain a clean transaction trail throughout the year. A vague ledger entry like &quot;group expenses&quot; is not enough. Each entry should identify the group entity, nature of service, agreement reference, invoice basis, and evidence of benefit received.</p>
+              <p>The CA relies on management representations and underlying records; which is why finance teams must maintain a clean transaction trail throughout the year. A vague ledger entry like &quot;group expenses&quot; is not enough. Each entry should identify the group entity, nature of service, agreement reference, invoice basis, and evidence of benefit received.</p>
 
               <h2>Form 3CEB Due Date for FY 2026-27</h2>
               <div style={{ overflowX: 'auto' }}>
                 <table style={tableStyle}>
                   <thead><tr><th style={thStyle}>Compliance Item</th><th style={thStyle}>Expected Timing</th></tr></thead>
                   <tbody>
-                    <tr><td style={tdStyle}>Close and reconcile FY 2026-27 related-party data</td><td style={tdStyle}>April - June 2027</td></tr>
+                    <tr><td style={tdStyle}>Close and reconcile FY 2026-27 related-party data</td><td style={tdStyle}>April; June 2027</td></tr>
                     <tr><td style={tdAltStyle}>Finalise transfer pricing documentation</td><td style={tdAltStyle}>Before Form 3CEB filing</td></tr>
                     <tr><td style={tdStyle}><strong>Furnish Form 3CEB</strong></td><td style={tdStyle}><strong>October 31, 2027</strong></td></tr>
                     <tr><td style={tdAltStyle}>File income tax return (transfer pricing taxpayers)</td><td style={tdAltStyle}>November 30, 2027</td></tr>
@@ -154,7 +154,7 @@ export default function Form3CEBBlog() {
               <p>The acceptance step is the one most often missed. A CA may upload the form, but the filing is not operationally complete until the taxpayer accepts it through the portal. Obtain the acknowledgment and preserve a copy of the accepted filing.</p>
 
               <h2>Penalty for Late Filing or Non-Filing</h2>
-              <p>Under <strong>Section 271BA</strong> of the Income Tax Act, failure to furnish the accountant&apos;s report required under Section 92E attracts a penalty of <strong>Rs 1 lakh</strong>. This is a flat penalty, not a percentage of transaction value - but that does not make the risk minor. Missing Form 3CEB can also trigger scrutiny, delay completion of the assessment, and weaken the taxpayer&apos;s position when <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>defending its transfer pricing during a TP audit</Link>. Separate penalties may apply for inaccurate information, failure to maintain documentation, or adjustments made during assessment, so treat Form 3CEB as one layer of a broader compliance framework.</p>
+              <p>Under <strong>Section 271BA</strong> of the Income Tax Act, failure to furnish the accountant&apos;s report required under Section 92E attracts a penalty of <strong>Rs 1 lakh</strong>. This is a flat penalty, not a percentage of transaction value; but that does not make the risk minor. Missing Form 3CEB can also trigger scrutiny, delay completion of the assessment, and weaken the taxpayer&apos;s position when <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>defending its transfer pricing during a TP audit</Link>. Separate penalties may apply for inaccurate information, failure to maintain documentation, or adjustments made during assessment, so treat Form 3CEB as one layer of a broader compliance framework.</p>
 
               <h2>How Form 3CEB Connects to the Local File and Master File</h2>
               <p>Form 3CEB is the outward-facing annual report. The <Link href="/blog/master-file-local-file-cbcr-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Local File is the detailed documentation</Link> supporting the transaction pricing, and the Master File gives the tax department a group-level picture of the multinational enterprise.</p>

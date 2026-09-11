@@ -44,7 +44,7 @@ const faqLd = {
       name: 'Does a startup need RBI approval to receive foreign investment?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'In most cases, no. Most sectors are covered under the Automatic Route, meaning no prior RBI or government approval is needed. The investment simply needs to be reported to the AD (Authorised Dealer) Bank within 30 days of receipt, and equity must be allotted and FC-GPR filed within 30 days of allotment. Government Route approval is required only for sectors like defence, telecom, and certain media - most software and services startups fall under Automatic Route.',
+        text: 'In most cases, no. Most sectors are covered under the Automatic Route, meaning no prior RBI or government approval is needed. The investment simply needs to be reported to the AD (Authorised Dealer) Bank within 30 days of receipt, and equity must be allotted and FC-GPR filed within 30 days of allotment. Government Route approval is required only for sectors like defence, telecom, and certain media; most software and services startups fall under Automatic Route.',
       },
     },
     {
@@ -52,7 +52,7 @@ const faqLd = {
       name: 'What is FC-GPR and when does a startup need to file it?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'FC-GPR (Foreign Currency - Gross Provisional Return) is the RBI filing a company must submit after it issues shares to a foreign investor. It must be filed on the RBI\'s FIRMS portal within 30 days of the date of share allotment. The filing requires a CA-certified valuation certificate, proof of receipt of funds (FIRC), and KYC documents for the foreign investor.',
+        text: 'FC-GPR (Foreign Currency; Gross Provisional Return) is the RBI filing a company must submit after it issues shares to a foreign investor. It must be filed on the RBI\'s FIRMS portal within 30 days of the date of share allotment. The filing requires a CA-certified valuation certificate, proof of receipt of funds (FIRC), and KYC documents for the foreign investor.',
       },
     },
     {
@@ -60,7 +60,7 @@ const faqLd = {
       name: 'What is the penalty for late FC-GPR filing?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Late FC-GPR attracts a compounding penalty under FEMA. The penalty ranges from a minimum of ₹5,000 to up to 300% of the amount involved, depending on the delay period and RBI discretion. Delays are very common - most startups miss the 30-day window - but they can be compounded by applying to RBI. The penalty for short delays (1-3 months) with a clean filing history is typically modest, but the compounding process itself takes time and legal costs.',
+        text: 'Late FC-GPR attracts a compounding penalty under FEMA. The penalty ranges from a minimum of ₹5,000 to up to 300% of the amount involved, depending on the delay period and RBI discretion. Delays are very common; most startups miss the 30-day window; but they can be compounded by applying to RBI. The penalty for short delays (1-3 months) with a clean filing history is typically modest, but the compounding process itself takes time and legal costs.',
       },
     },
     {
@@ -76,7 +76,7 @@ const faqLd = {
       name: 'Can a foreign investor hold convertible notes in an Indian startup?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, under the Startup India framework, DPIIT-recognised startups can issue Convertible Notes to foreign investors. A Convertible Note is a debt instrument that converts into equity within 5 years. The minimum investment is USD 2,00,000 (approx. ₹1.67 crore) per investor per round. A separate CN-specific reporting form must be filed with RBI within 30 days of receipt of funds - different from FC-GPR (which is filed only after conversion to equity).',
+        text: 'Yes, under the Startup India framework, DPIIT-recognised startups can issue Convertible Notes to foreign investors. A Convertible Note is a debt instrument that converts into equity within 5 years. The minimum investment is USD 2,00,000 (approx. ₹1.67 crore) per investor per round. A separate CN-specific reporting form must be filed with RBI within 30 days of receipt of funds; different from FC-GPR (which is filed only after conversion to equity).',
       },
     },
     {
@@ -84,7 +84,7 @@ const faqLd = {
       name: 'Do startup founders need a valuation certificate for foreign investment?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Only one valuation is mandatory now: a FEMA valuation by a SEBI-registered Merchant Banker or CA, to determine the minimum price at which shares can be issued to a foreign investor under FDI pricing guidelines, filed with the FC-GPR. The separate angel-tax FMV certificate under the old Section 56(2)(viib) is no longer required for this - that provision was abolished for all investors, resident and non-resident, effective FY 2024-25 (Finance (No. 2) Act, 2024). Founders should still keep a defensible valuation on file for investor negotiations, ESOP pricing, and diligence, but it is not a mandatory Income Tax filing requirement anymore.',
+        text: 'Only one valuation is mandatory now: a FEMA valuation by a SEBI-registered Merchant Banker or CA, to determine the minimum price at which shares can be issued to a foreign investor under FDI pricing guidelines, filed with the FC-GPR. The separate angel-tax FMV certificate under the old Section 56(2)(viib) is no longer required for this; that provision was abolished for all investors, resident and non-resident, effective FY 2024-25 (Finance (No. 2) Act, 2024). Founders should still keep a defensible valuation on file for investor negotiations, ESOP pricing, and diligence, but it is not a mandatory Income Tax filing requirement anymore.',
       },
     },
   ],
@@ -114,13 +114,13 @@ export default function FemaComplianceBlog() {
             <div className="blog-content" style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
 
               <p style={{ marginBottom: '1.5rem' }}>
-                Foreign investment is the moment most funded startups first encounter FEMA - the Foreign Exchange Management Act. Before the wire, it is an abstract regulatory framework. After the wire, it becomes a hard compliance clock: 30 days to report receipt of funds, 30 days from allotment to file FC-GPR with RBI, and an annual return due every July 15.
+                Foreign investment is the moment most funded startups first encounter FEMA; the Foreign Exchange Management Act. Before the wire, it is an abstract regulatory framework. After the wire, it becomes a hard compliance clock: 30 days to report receipt of funds, 30 days from allotment to file FC-GPR with RBI, and an annual return due every July 15.
               </p>
               <p style={{ marginBottom: '1.5rem' }}>
-                Most startup founders are focused on the term sheet and cap table when the investment closes. FEMA filings are an afterthought - and that is exactly where penalties accumulate. This guide covers every step of the FEMA compliance process so your CA and legal team have a clear checklist, and you know what to expect.
+                Most startup founders are focused on the term sheet and cap table when the investment closes. FEMA filings are an afterthought; and that is exactly where penalties accumulate. This guide covers every step of the FEMA compliance process so your CA and legal team have a clear checklist, and you know what to expect.
               </p>
 
-              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 1: Before the Money Arrives - Check FDI Route and Sectoral Caps</h2>
+              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 1: Before the Money Arrives; Check FDI Route and Sectoral Caps</h2>
               <p style={{ marginBottom: '1.5rem' }}>
                 Foreign investment into Indian companies flows under one of two routes:
               </p>
@@ -138,13 +138,13 @@ export default function FemaComplianceBlog() {
                 Before accepting investment from a foreign entity, verify two things: (1) whether your sector is on the Automatic or Government route, and (2) the applicable sectoral FDI cap. A startup in a sector with a 49% FDI cap, for instance, cannot issue more than 49% of its equity to foreign investors without government approval, regardless of the investor or valuation.
               </p>
 
-              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 2: When the Money Lands - The 30-Day Reporting Window</h2>
+              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 2: When the Money Lands; The 30-Day Reporting Window</h2>
               <p style={{ marginBottom: '1.5rem' }}>
-                The moment the foreign funds hit your Indian bank account, a 30-day clock starts. Within 30 days, your company must report the receipt of funds to your AD (Authorised Dealer) Bank - the Indian bank where the account is held. Your bank will then report it to RBI.
+                The moment the foreign funds hit your Indian bank account, a 30-day clock starts. Within 30 days, your company must report the receipt of funds to your AD (Authorised Dealer) Bank; the Indian bank where the account is held. Your bank will then report it to RBI.
               </p>
               <p style={{ marginBottom: '1.0rem' }}>What you need to provide to your AD Bank:</p>
               <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
-                <li style={{ marginBottom: '0.5rem' }}>FIRC (Foreign Inward Remittance Certificate) - issued by the bank on request</li>
+                <li style={{ marginBottom: '0.5rem' }}>FIRC (Foreign Inward Remittance Certificate); issued by the bank on request</li>
                 <li style={{ marginBottom: '0.5rem' }}>KYC documents of the foreign investor (identity proof, address proof, entity documents if a fund)</li>
                 <li style={{ marginBottom: '0.5rem' }}>Copy of the investment agreement or term sheet</li>
                 <li style={{ marginBottom: '0.5rem' }}>Details of the proposed shareholding pattern post-investment</li>
@@ -153,13 +153,13 @@ export default function FemaComplianceBlog() {
                 Keep the FIRC safe. You will need it again when filing FC-GPR, and it is the primary proof of remittance for all future FEMA correspondence.
               </p>
 
-              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 3: FC-GPR - The Filing Most Startups Miss</h2>
+              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 3: FC-GPR; The Filing Most Startups Miss</h2>
               <p style={{ marginBottom: '1.5rem' }}>
-                FC-GPR (Foreign Currency - Gross Provisional Return) is the single most important FEMA filing for an equity round. It must be filed on the RBI FIRMS portal within <strong>30 days of the date of allotment of shares</strong> to the foreign investor.
+                FC-GPR (Foreign Currency; Gross Provisional Return) is the single most important FEMA filing for an equity round. It must be filed on the RBI FIRMS portal within <strong>30 days of the date of allotment of shares</strong> to the foreign investor.
               </p>
               <p style={{ marginBottom: '1.0rem' }}>The FC-GPR requires:</p>
               <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
-                <li style={{ marginBottom: '0.5rem' }}><strong>Valuation certificate</strong> - issued by a CA or SEBI-registered Merchant Banker, certifying the issue price is not less than fair market value (FEMA pricing guidelines)</li>
+                <li style={{ marginBottom: '0.5rem' }}><strong>Valuation certificate</strong>: issued by a CA or SEBI-registered Merchant Banker, certifying the issue price is not less than fair market value (FEMA pricing guidelines)</li>
                 <li style={{ marginBottom: '0.5rem' }}><strong>Board resolution</strong> authorising the allotment</li>
                 <li style={{ marginBottom: '0.5rem' }}><strong>FIRC and KYC</strong> of the investor</li>
                 <li style={{ marginBottom: '0.5rem' }}><strong>Updated shareholding pattern</strong> post-allotment (in the prescribed format)</li>
@@ -176,7 +176,7 @@ export default function FemaComplianceBlog() {
                 </p>
               </div>
 
-              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 4: Annual FEMA Compliance - The FLA Return</h2>
+              <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Step 4: Annual FEMA Compliance; The FLA Return</h2>
               <p style={{ marginBottom: '1.5rem' }}>
                 Once a startup has foreign investment on its books, it must file the <strong>FLA (Foreign Liabilities and Assets) Annual Return</strong> with RBI every year by <strong>July 15</strong>. This is an RBI survey, not a tax filing, but non-compliance is a FEMA violation.
               </p>
@@ -217,7 +217,7 @@ export default function FemaComplianceBlog() {
                 },
                 {
                   title: 'FEMA valuation certificate',
-                  desc: 'Prepare the DCF or NAV-based valuation under FEMA pricing guidelines, required for FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) is no longer needed - that provision was abolished for all investors effective FY 2024-25.',
+                  desc: 'Prepare the DCF or NAV-based valuation under FEMA pricing guidelines, required for FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) is no longer needed; that provision was abolished for all investors effective FY 2024-25.',
                 },
                 {
                   title: 'FC-GPR preparation and filing',
@@ -250,19 +250,19 @@ export default function FemaComplianceBlog() {
               {[
                 {
                   q: 'Does a startup need RBI approval to receive foreign investment?',
-                  a: 'In most cases, no. Most sectors are covered under the Automatic Route - no prior RBI or government approval is needed. The investment needs to be reported to your AD Bank within 30 days of receipt, and FC-GPR filed within 30 days of allotment. Government Route approval is only required for sectors like defence and print media.',
+                  a: 'In most cases, no. Most sectors are covered under the Automatic Route; no prior RBI or government approval is needed. The investment needs to be reported to your AD Bank within 30 days of receipt, and FC-GPR filed within 30 days of allotment. Government Route approval is only required for sectors like defence and print media.',
                 },
                 {
                   q: 'What is the FLA return and when is it due?',
-                  a: 'The FLA (Foreign Liabilities and Assets) Annual Return is an RBI filing due every July 15. Any company with foreign investment on its books - even if no new investment happened that year - must file it. It captures outstanding foreign liabilities and assets as of March 31.',
+                  a: 'The FLA (Foreign Liabilities and Assets) Annual Return is an RBI filing due every July 15. Any company with foreign investment on its books (even if no new investment happened that year) must file it. It captures outstanding foreign liabilities and assets as of March 31.',
                 },
                 {
                   q: 'Can a foreign investor hold Convertible Notes in an Indian startup?',
-                  a: 'Yes, DPIIT-recognised startups can issue Convertible Notes to foreign investors. The minimum investment is USD 2,00,000 per investor. A separate RBI reporting form must be filed within 30 days of receipt - not FC-GPR (which only applies after conversion to equity).',
+                  a: 'Yes, DPIIT-recognised startups can issue Convertible Notes to foreign investors. The minimum investment is USD 2,00,000 per investor. A separate RBI reporting form must be filed within 30 days of receipt; not FC-GPR (which only applies after conversion to equity).',
                 },
                 {
                   q: 'Do startup founders need a valuation certificate for foreign investment?',
-                  a: 'Only a FEMA valuation is mandatory - certifying the issue price meets FDI pricing guidelines, prepared by a CA or SEBI-registered Merchant Banker and filed with the FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) used to be required alongside it, but that provision was abolished for all investors effective FY 2024-25, so it is no longer a mandatory filing.',
+                  a: 'Only a FEMA valuation is mandatory; certifying the issue price meets FDI pricing guidelines, prepared by a CA or SEBI-registered Merchant Banker and filed with the FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) used to be required alongside it, but that provision was abolished for all investors effective FY 2024-25, so it is no longer a mandatory filing.',
                 },
               ].map((item, i) => (
                 <div key={i} style={{ marginBottom: '1.75rem', borderLeft: '3px solid var(--border)', paddingLeft: '1.25rem' }}>

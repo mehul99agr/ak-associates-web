@@ -26,7 +26,7 @@ const faqs: [string, string][] = [
   ['What does a Virtual CFO actually do?', 'A Virtual CFO provides strategic financial leadership on a part-time or retainer basis: monthly MIS and P&L reporting, budgeting and variance analysis, cash flow forecasting, banking and lender relationship management, tax planning, and fundraising support. Unlike a bookkeeper who records transactions, a Virtual CFO interprets the numbers and recommends actions.'],
   ['How much does a Virtual CFO cost in India?', 'A senior Virtual CFO engagement typically costs Rs 30,000 to Rs 1,20,000 per month depending on scope and complexity. Compare this to a full-time CFO salary of Rs 25-60 lakh per year plus benefits. For businesses at Rs 3-15 crore revenue, a Virtual CFO delivers institutional-grade financial discipline at 5-10% of a full-time hire cost.'],
   ['When does a business need a Virtual CFO?', 'Key signals include: revenue above Rs 2 crore but no clarity on actual net margins, bank credit being used to fund unexplained operating losses, the promoter spending over 30% of their time on financial firefighting, an upcoming fundraise or acquisition, or multiple GST registrations and group companies requiring coordinated planning.'],
-  ['What is the difference between a Virtual CFO and a statutory auditor?', 'A statutory auditor looks backward - did you comply with accounting standards and tax law? A Virtual CFO looks forward - what should you do next? The auditor signs off on past financial statements; the Virtual CFO builds the MIS, budgets, and cash flow projections that drive future decisions. Both are needed, but they serve different purposes.'],
+  ['What is the difference between a Virtual CFO and a statutory auditor?', 'A statutory auditor looks backward (did you comply with accounting standards and tax law? A Virtual CFO looks forward) what should you do next? The auditor signs off on past financial statements; the Virtual CFO builds the MIS, budgets, and cash flow projections that drive future decisions. Both are needed, but they serve different purposes.'],
 ]
 
 const faqLd = buildFaqLd(faqs)
@@ -52,23 +52,23 @@ export default function VirtualCFOBlog() {
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.4rem' }}>A Virtual CFO provides strategic financial leadership (MIS, budgets, cash flow, fundraising) at Rs 30K-1.2L/month vs Rs 25-60L/year for a full-time hire.</li>
-                  <li style={{ marginBottom: '0.4rem' }}>The sweet spot is businesses at Rs 3-15 crore revenue - too large for instinct, too early for a full-time CFO.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>The sweet spot is businesses at Rs 3-15 crore revenue; too large for instinct, too early for a full-time CFO.</li>
                   <li style={{ marginBottom: '0.4rem' }}>ROI typically compounds to 5-15x engagement cost over 3 years through better lending terms, tax planning, and prevented cash crunches.</li>
                   <li style={{ marginBottom: 0 }}>The best engagements combine financial advisory with tax planning so the same team handles both.</li>
                 </ul>
               </div>
 
-              <p>Most growing businesses hit the same wall at a revenue of Rs 3-15 crore: they are too large to operate on instinct and a tally report, but not yet large enough to justify a full-time CFO at Rs 25-50 lakh per year. This is the gap where Virtual CFO services create disproportionate value - and where most SME owners are flying blind on the decisions that matter most.</p>
+              <p>Most growing businesses hit the same wall at a revenue of Rs 3-15 crore: they are too large to operate on instinct and a tally report, but not yet large enough to justify a full-time CFO at Rs 25-50 lakh per year. This is the gap where Virtual CFO services create disproportionate value; and where most SME owners are flying blind on the decisions that matter most.</p>
 
               <h2>What a Virtual CFO Actually Does</h2>
               <p>A Virtual CFO is not a bookkeeper who meets you once a quarter. The role is fundamentally strategic. Where a statutory auditor looks backward (did you comply?), a Virtual CFO looks forward (what should you do next?). Concretely, this means:</p>
               <ul>
-                <li><strong>Management Information Systems (MIS)</strong> - Monthly P&L, cash flow statements, and working capital reports that go beyond statutory accounts. Most SME owners are surprised to discover their accounting software can produce these; the gap is interpretation and action.</li>
-                <li><strong>Budgeting and forecasting</strong> - Annual budgets broken into monthly targets, with variance analysis so you know by the 10th of each month whether you are on track or not.</li>
-                <li><strong>Cash flow planning</strong> - Projecting collections, creditor payments, loan obligations, and tax outflows 90 days ahead. Cash crunches rarely appear overnight; they are visible weeks in advance if you are looking.</li>
-                <li><strong>Banking and lender relationships</strong> - Preparing CMA data, project reports, and loan proposals that banks and NBFCs actually respond to. A well-structured credit proposal can reduce your cost of borrowing by 1-2% - material savings over the life of a term loan.</li>
-                <li><strong>Tax planning and structuring</strong> - Legal minimisation of direct and indirect tax outflows through proper timing of expenses, depreciation strategies, and group structuring where applicable.</li>
-                <li><strong>Investor and fundraising support</strong> - Preparing financial models, investor decks, and due diligence data rooms for PE, VC, or family office funding rounds.</li>
+                <li><strong>Management Information Systems (MIS)</strong>: Monthly P&L, cash flow statements, and working capital reports that go beyond statutory accounts. Most SME owners are surprised to discover their accounting software can produce these; the gap is interpretation and action.</li>
+                <li><strong>Budgeting and forecasting</strong>: Annual budgets broken into monthly targets, with variance analysis so you know by the 10th of each month whether you are on track or not.</li>
+                <li><strong>Cash flow planning</strong>: Projecting collections, creditor payments, loan obligations, and tax outflows 90 days ahead. Cash crunches rarely appear overnight; they are visible weeks in advance if you are looking.</li>
+                <li><strong>Banking and lender relationships</strong>: Preparing CMA data, project reports, and loan proposals that banks and NBFCs actually respond to. A well-structured credit proposal can reduce your cost of borrowing by 1-2%; material savings over the life of a term loan.</li>
+                <li><strong>Tax planning and structuring</strong>: Legal minimisation of direct and indirect tax outflows through proper timing of expenses, depreciation strategies, and group structuring where applicable.</li>
+                <li><strong>Investor and fundraising support</strong>: Preparing financial models, investor decks, and due diligence data rooms for PE, VC, or family office funding rounds.</li>
               </ul>
 
               <h2>The Cost Argument</h2>
@@ -88,10 +88,10 @@ export default function VirtualCFOBlog() {
 
               <h2>What to Look for in a Virtual CFO</h2>
               <ul>
-                <li><strong>Industry familiarity</strong> - A manufacturing business has different working capital dynamics than a service firm. Your advisor should understand your model, not just your financials.</li>
-                <li><strong>Tax integration</strong> - The best Virtual CFO arrangements combine financial advisory with direct tax planning, so the same team that prepares your MIS also plans your advance tax and reviews your group structure.</li>
-                <li><strong>Deliverable clarity</strong> - Ask for a sample MIS report before engaging. Vague engagements (&quot;we will advise you as needed&quot;) rarely deliver value.</li>
-                <li><strong>Access and responsiveness</strong> - A Virtual CFO who responds to a banking query in 48 hours is not useful in a time-sensitive credit situation. Establish expected response times before engagement.</li>
+                <li><strong>Industry familiarity</strong>: A manufacturing business has different working capital dynamics than a service firm. Your advisor should understand your model, not just your financials.</li>
+                <li><strong>Tax integration</strong>: The best Virtual CFO arrangements combine financial advisory with direct tax planning, so the same team that prepares your MIS also plans your advance tax and reviews your group structure.</li>
+                <li><strong>Deliverable clarity</strong>: Ask for a sample MIS report before engaging. Vague engagements (&quot;we will advise you as needed&quot;) rarely deliver value.</li>
+                <li><strong>Access and responsiveness</strong>: A Virtual CFO who responds to a banking query in 48 hours is not useful in a time-sensitive credit situation. Establish expected response times before engagement.</li>
               </ul>
 
               <h2>The Real ROI</h2>
@@ -101,7 +101,7 @@ export default function VirtualCFOBlog() {
 
             <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ marginBottom: '0.75rem' }}>Need a Virtual CFO for your business?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We provide Virtual CFO services for SMEs and startups across Nashik, Mumbai, and Bangalore - with integrated tax planning.</p>
+              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We provide Virtual CFO services for SMEs and startups across Nashik, Mumbai, and Bangalore; with integrated tax planning.</p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
                 <Link href="/startups" className="btn btn-outline">Startup Advisory</Link>

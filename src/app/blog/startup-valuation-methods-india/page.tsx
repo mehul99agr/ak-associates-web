@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Valuation Methods in India',
-    description: 'DCF, NAV, and comparables - when each is required and who can sign the report.',
+    description: 'DCF, NAV, and comparables; when each is required and who can sign the report.',
   },
 }
 
@@ -38,7 +38,7 @@ const articleLd = buildArticleLd({
 const faqs: [string, string][] = [
   ['Which valuation method is best for an Indian startup with no revenue?', 'DCF can still be used if projections are based on documented operating assumptions like customer growth, pricing, and hiring plans. NAV may be less representative for an IP-led startup since it reflects only balance sheet assets, but the legally required method depends on the specific transaction triggering the valuation.'],
   ['Is a funding-round valuation report enough for FEMA compliance?', 'Not automatically. FEMA has its own pricing guidelines and valuer requirements for shares issued to non-resident investors, so confirm that the valuation date, method, and signing professional are appropriate for the specific FEMA requirement before relying on a commercial round valuation.'],
-  ['Who can value shares of a private limited company in India?', 'It depends on the purpose - a Registered Valuer under the Companies Act may be required for company law purposes, while a Category I Merchant Banker or Chartered Accountant may be relevant for specified income tax or FEMA requirements. Confirm valuer eligibility against the specific provision before commissioning the report.'],
+  ['Who can value shares of a private limited company in India?', 'It depends on the purpose; a Registered Valuer under the Companies Act may be required for company law purposes, while a Category I Merchant Banker or Chartered Accountant may be relevant for specified income tax or FEMA requirements. Confirm valuer eligibility against the specific provision before commissioning the report.'],
   ['Do startups need valuation for ESOPs?', 'Yes. Fair Market Value is relevant for determining the employee perquisite tax at exercise and for accounting purposes, so the company should obtain valuation support suitable for the applicable tax and corporate requirements each time options are granted or exercised.'],
   ['Can a startup use comparable-company multiples instead of DCF?', 'Comparables are useful for benchmarking a valuation and testing whether a DCF outcome is commercially plausible. Whether they are sufficient on their own for a specific legal compliance requirement depends on the law governing that particular transaction.'],
 ]
@@ -69,10 +69,10 @@ export default function StartupValuationBlog() {
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}>Valuation is not one document with one purpose - the required method depends entirely on the transaction.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Valuation is not one document with one purpose; the required method depends entirely on the transaction.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>DCF</strong> often suits growth startups; <strong>NAV</strong> can matter for asset-backed or very early-stage businesses.</li>
                   <li style={{ marginBottom: '0.4rem' }}>FEMA, ESOP, tax, and company law can each require different valuation support for the same company.</li>
-                  <li style={{ marginBottom: 0 }}>Use a valuer whose eligibility matches the specific law triggering the report - not whoever did the last one.</li>
+                  <li style={{ marginBottom: 0 }}>Use a valuer whose eligibility matches the specific law triggering the report; not whoever did the last one.</li>
                 </ul>
               </div>
 
@@ -92,34 +92,34 @@ export default function StartupValuationBlog() {
               </div>
 
               <h2>Discounted Cash Flow</h2>
-              <p>DCF estimates the present value of future cash flows. It is commonly used by startups because it can capture projected revenue, margin expansion, and scale before those results appear in historical financial statements. A DCF model should identify the operating assumptions behind the numbers - for example, a software business may model customer additions, average revenue per customer, churn, gross margin, sales hiring, and collection cycles. A DCF is not invalid merely because a startup has no current profit; it becomes weak when projections are unsupported, internally inconsistent, or disconnected from the company&apos;s actual hiring and sales plan.</p>
+              <p>DCF estimates the present value of future cash flows. It is commonly used by startups because it can capture projected revenue, margin expansion, and scale before those results appear in historical financial statements. A DCF model should identify the operating assumptions behind the numbers; for example, a software business may model customer additions, average revenue per customer, churn, gross margin, sales hiring, and collection cycles. A DCF is not invalid merely because a startup has no current profit; it becomes weak when projections are unsupported, internally inconsistent, or disconnected from the company&apos;s actual hiring and sales plan.</p>
 
               <h2>Net Asset Value</h2>
-              <p>NAV generally derives value from assets less liabilities, subject to the applicable legal method. It can be relevant for businesses with material tangible assets, investments, or accumulated balance-sheet value. For a pre-revenue technology company, NAV may show only cash, laptops, and incorporation costs - a poor reflection of commercial potential, but it can still be the legally required method where a specific tax or legal rule mandates it.</p>
+              <p>NAV generally derives value from assets less liabilities, subject to the applicable legal method. It can be relevant for businesses with material tangible assets, investments, or accumulated balance-sheet value. For a pre-revenue technology company, NAV may show only cash, laptops, and incorporation costs; a poor reflection of commercial potential, but it can still be the legally required method where a specific tax or legal rule mandates it.</p>
 
               <h2>Comparables and Precedent Transactions</h2>
               <p>Comparable-company multiples and precedent transactions help founders understand the market and are especially useful for testing whether a DCF outcome is commercially plausible. Use comparables carefully: a listed company with mature revenue, liquidity, and a diversified customer base may not be comparable to a seed-stage private company. A high-profile funding round may also include liquidation preferences or strategic value that ordinary equity does not reflect.</p>
 
               <h2>When Formal Valuation Is Required</h2>
-              <p>Formal valuation is commonly needed for ESOP grant, exercise, or related employee-tax determination; issue of shares or convertible instruments to a non-resident under <Link href="/blog/convertible-notes-vs-equity-fema-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>FEMA pricing guidelines</Link>; buyback of shares or reduction of share capital; certain related-party, merger, or restructuring transactions; and investor documentation where the term sheet or shareholders&apos; agreement requires it. The documentation standard should match the transaction risk - a simple internal estimate may be useful for planning, but it should not replace a legally required report.</p>
+              <p>Formal valuation is commonly needed for ESOP grant, exercise, or related employee-tax determination; issue of shares or convertible instruments to a non-resident under <Link href="/blog/convertible-notes-vs-equity-fema-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>FEMA pricing guidelines</Link>; buyback of shares or reduction of share capital; certain related-party, merger, or restructuring transactions; and investor documentation where the term sheet or shareholders&apos; agreement requires it. The documentation standard should match the transaction risk; a simple internal estimate may be useful for planning, but it should not replace a legally required report.</p>
 
               <h2>Who Can Issue a Valid Report</h2>
-              <p>The professional permitted to issue a valuation report differs by law and transaction. A <strong>Registered Valuer</strong> under the Companies Act may be required for company law purposes. A <strong>Category I Merchant Banker</strong> or <strong>Chartered Accountant</strong> may be relevant for specified income tax or FEMA requirements - the accepted valuer category should be confirmed against the exact provision triggering the requirement, since it is not uniform across all purposes.</p>
+              <p>The professional permitted to issue a valuation report differs by law and transaction. A <strong>Registered Valuer</strong> under the Companies Act may be required for company law purposes. A <strong>Category I Merchant Banker</strong> or <strong>Chartered Accountant</strong> may be relevant for specified income tax or FEMA requirements; the accepted valuer category should be confirmed against the exact provision triggering the requirement, since it is not uniform across all purposes.</p>
               <p>Do not appoint a professional solely because they prepared the last valuation. Before engagement, ask: What exact transaction is being valued? Which statute, rule, or regulation applies? Which valuation date is required? Which class of shares or instrument is being valued? Is the professional eligible to sign for this specific purpose?</p>
 
               <h2>FEMA Pricing Requires Early Planning</h2>
               <p>When a non-resident investor subscribes to shares or an eligible convertible instrument, FEMA pricing rules become a transaction condition, not a post-closing paperwork item. The company should obtain advice before signing final economics, particularly where it has existing preference shares, multiple share classes, secondary transfers, or a proposed conversion formula. The reporting timetable matters too: FC-GPR is filed within 30 days of allotment of capital instruments to a non-resident, so build the valuation, bank remittance documents, allotment approvals, and reporting into the closing checklist.</p>
 
               <h2>Building a DCF Without Revenue History</h2>
-              <p>Early-stage founders often think they cannot prepare a DCF because they have no revenue or profits. In reality, a DCF for such a company starts with operating evidence rather than accounting history. Use a model that connects assumptions: market segment and target customer count, pricing and expected contract value, sales cycle and conversion rate, product/sales/support hiring, gross margin and customer acquisition cost, working capital needs, and funding runway. The model should show downside, base, and upside cases - a valuer can then test assumptions, apply a suitable discount rate, and document the rationale. Investors do not expect certainty; they expect disciplined thinking and transparent assumptions.</p>
+              <p>Early-stage founders often think they cannot prepare a DCF because they have no revenue or profits. In reality, a DCF for such a company starts with operating evidence rather than accounting history. Use a model that connects assumptions: market segment and target customer count, pricing and expected contract value, sales cycle and conversion rate, product/sales/support hiring, gross margin and customer acquisition cost, working capital needs, and funding runway. The model should show downside, base, and upside cases; a valuer can then test assumptions, apply a suitable discount rate, and document the rationale. Investors do not expect certainty; they expect disciplined thinking and transparent assumptions.</p>
 
               <h2>A Practical Valuation File</h2>
-              <p>Maintain a valuation file for each material transaction: the financial model, management assumptions, Board materials, cap table, historical financials, major contracts, customer metrics, valuation report, and final transaction documents. This prevents a recurring startup problem - a new funding round is negotiated at speed, but the company cannot later explain why the earlier round was priced as it was.</p>
+              <p>Maintain a valuation file for each material transaction: the financial model, management assumptions, Board materials, cap table, historical financials, major contracts, customer metrics, valuation report, and final transaction documents. This prevents a recurring startup problem; a new funding round is negotiated at speed, but the company cannot later explain why the earlier round was priced as it was.</p>
             </div>
 
             <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ marginBottom: '0.75rem' }}>Need a valuation for ESOP, FEMA, or a funding round?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We coordinate valuation reports for the specific legal purpose - ESOP, FEMA pricing, company law actions, or investor negotiations.</p>
+              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We coordinate valuation reports for the specific legal purpose; ESOP, FEMA pricing, company law actions, or investor negotiations.</p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
                 <Link href="/startups" className="btn btn-outline">Startup Advisory</Link>

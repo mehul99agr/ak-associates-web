@@ -34,7 +34,7 @@ const faqLd = {
       name: 'Can I change or stop my SIP amount later?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. SIPs in India are flexible - you can increase the instalment amount (step-up SIP), pause it temporarily, or stop it altogether without any penalty from the mutual fund house, though exit load may apply depending on the fund and holding period.',
+        text: 'Yes. SIPs in India are flexible; you can increase the instalment amount (step-up SIP), pause it temporarily, or stop it altogether without any penalty from the mutual fund house, though exit load may apply depending on the fund and holding period.',
       },
     },
   ],

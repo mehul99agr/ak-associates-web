@@ -87,7 +87,7 @@ export default function Form27QBlog() {
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.4rem' }}>Form 27Q is the quarterly TDS return any <strong>payer</strong> files after deducting tax under Section 195 on a payment to a non-resident, other than salary.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Due dates follow the standard quarterly TDS schedule: 31 July, 31 October, 31 January, and 31 May.</li>
-                  <li style={{ marginBottom: '0.4rem' }}>Buying property from an NRI uses <strong>Form 27QB</strong> instead, not Form 27Q - the two are not interchangeable.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Buying property from an NRI uses <strong>Form 27QB</strong> instead, not Form 27Q; the two are not interchangeable.</li>
                   <li style={{ marginBottom: 0 }}>Late or incorrect filing attracts a Section 234E fee and a possible Section 271H penalty, and errors block the NRI&apos;s ability to claim TDS credit until corrected.</li>
                 </ul>
               </div>
@@ -115,10 +115,10 @@ export default function Form27QBlog() {
                   <tr><th>Quarter</th><th>Period</th><th>Due Date</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Q1</td><td>April - June</td><td>31 July</td></tr>
-                  <tr><td>Q2</td><td>July - September</td><td>31 October</td></tr>
-                  <tr><td>Q3</td><td>October - December</td><td>31 January</td></tr>
-                  <tr><td>Q4</td><td>January - March</td><td>31 May</td></tr>
+                  <tr><td>Q1</td><td>April; June</td><td>31 July</td></tr>
+                  <tr><td>Q2</td><td>July; September</td><td>31 October</td></tr>
+                  <tr><td>Q3</td><td>October; December</td><td>31 January</td></tr>
+                  <tr><td>Q4</td><td>January; March</td><td>31 May</td></tr>
                 </tbody>
               </table>
               <p>TDS itself must be deposited monthly, by the 7th of the following month (30 April for amounts deducted in March), independent of the quarterly return deadline. The return reports and reconciles all deductions made across the quarter.</p>

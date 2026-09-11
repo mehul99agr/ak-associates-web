@@ -50,14 +50,14 @@ export default function TDSNROInterestBlog() {
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}>Banks deduct <strong>30% TDS</strong> (+ surcharge + cess) on NRO interest by default. <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE interest is tax-free</Link> - this only affects NRO.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Banks deduct <strong>30% TDS</strong> (+ surcharge + cess) on NRO interest by default. <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE interest is tax-free</Link>; this only affects NRO.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Most NRIs can cut this to <strong>10-15%</strong> using their country&apos;s <Link href="/blog/dtaa-guide-nri-country-wise" style={{ color: 'var(--primary)', fontWeight: 600 }}>DTAA treaty rate</Link>.</li>
                   <li style={{ marginBottom: '0.4rem' }}>You need a <strong>Tax Residency Certificate + Form 10F</strong> submitted to your bank before the interest credit date.</li>
                   <li style={{ marginBottom: 0 }}>If you missed it, file an <Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITR</Link> to claim the excess TDS back as a refund.</li>
                 </ul>
               </div>
 
-              <p>This is probably the easiest tax saving available to NRIs, and most people do not claim it. Your bank deducts 30% TDS on every rupee of NRO interest because that is the default domestic rate. But if you live in a country with a DTAA with India (which covers over 90 countries), the treaty rate on interest is typically 10-15%. The difference on a Rs 50 lakh NRO FD earning 7% is roughly Rs 52,500 per year - recovered with one TRC and one Form 10F submission.</p>
+              <p>This is probably the easiest tax saving available to NRIs, and most people do not claim it. Your bank deducts 30% TDS on every rupee of NRO interest because that is the default domestic rate. But if you live in a country with a DTAA with India (which covers over 90 countries), the treaty rate on interest is typically 10-15%. The difference on a Rs 50 lakh NRO FD earning 7% is roughly Rs 52,500 per year; recovered with one TRC and one Form 10F submission.</p>
 
               <h2>NRO Interest: The Default 30% Problem</h2>
               <p>Under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195 under the 1961 Act), banks deduct TDS on NRO interest at 30% (plus surcharge and cess, effective ~31.2%). This applies to:</p>

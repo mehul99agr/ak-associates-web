@@ -36,13 +36,13 @@ const content = `<p>These slabs sit within the broader structural overhaul broug
 <p>The new regime applies the following slabs to your taxable income (after the standard deduction):</p>
 
 <ul>
-<li>Up to Rs 4,00,000 - Nil</li>
-<li>Rs 4,00,001 to Rs 8,00,000 - 5%</li>
-<li>Rs 8,00,001 to Rs 12,00,000 - 10%</li>
-<li>Rs 12,00,001 to Rs 16,00,000 - 15%</li>
-<li>Rs 16,00,001 to Rs 20,00,000 - 20%</li>
-<li>Rs 20,00,001 to Rs 24,00,000 - 25%</li>
-<li>Above Rs 24,00,000 - 30%</li>
+<li>Up to Rs 4,00,000; Nil</li>
+<li>Rs 4,00,001 to Rs 8,00,000; 5%</li>
+<li>Rs 8,00,001 to Rs 12,00,000; 10%</li>
+<li>Rs 12,00,001 to Rs 16,00,000; 15%</li>
+<li>Rs 16,00,001 to Rs 20,00,000; 20%</li>
+<li>Rs 20,00,001 to Rs 24,00,000; 25%</li>
+<li>Above Rs 24,00,000; 30%</li>
 </ul>
 
 <p>A 4% Health and Education Cess applies on top of the tax computed.</p>
@@ -66,9 +66,9 @@ const content = `<p>These slabs sit within the broader structural overhaul broug
 <h2>How to Decide</h2>
 
 <ol>
-<li><strong>Add up your real deductions</strong> - 80C, 80D, home loan interest, HRA, NPS, and so on. Be honest about what you actually claim, not what you could theoretically claim.</li>
-<li><strong>Compute tax under both regimes</strong> - Run your numbers through both. Our <a href="/tax-calculator">Income Tax Estimator</a> computes the new regime liability instantly.</li>
-<li><strong>Pick the lower outgo</strong> - Salaried taxpayers can switch between regimes each year, so you are not locked in. Business and professional income has more restrictive switching rules.</li>
+<li><strong>Add up your real deductions</strong>: 80C, 80D, home loan interest, HRA, NPS, and so on. Be honest about what you actually claim, not what you could theoretically claim.</li>
+<li><strong>Compute tax under both regimes</strong>: Run your numbers through both. Our <a href="/tax-calculator">Income Tax Estimator</a> computes the new regime liability instantly.</li>
+<li><strong>Pick the lower outgo</strong>: Salaried taxpayers can switch between regimes each year, so you are not locked in. Business and professional income has more restrictive switching rules.</li>
 </ol>
 
 <h2>Practical Takeaway</h2>
@@ -124,7 +124,7 @@ export default function UnderstandingNewTaxRegimeBlog() {
               </p>
               <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
               <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
-                <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India - <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+                <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India; <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
               </ul>
             </div>
 

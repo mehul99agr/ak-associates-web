@@ -60,9 +60,9 @@ export default function ScheduleFABlog() {
               <h2>What Must Be Disclosed</h2>
               <p>Schedule FA has multiple tables covering different asset types:</p>
               <ul>
-                <li><strong>Table A1:</strong> Foreign bank accounts (savings, current, deposit) - account number, bank name, country, peak balance during the year, closing balance</li>
-                <li><strong>Table A2:</strong> Financial interest in any foreign entity - shares, debentures, partnership interest</li>
-                <li><strong>Table A3:</strong> Immovable property outside India - address, country, date of acquisition, total investment</li>
+                <li><strong>Table A1:</strong> Foreign bank accounts (savings, current, deposit); account number, bank name, country, peak balance during the year, closing balance</li>
+                <li><strong>Table A2:</strong> Financial interest in any foreign entity; shares, debentures, partnership interest</li>
+                <li><strong>Table A3:</strong> Immovable property outside India; address, country, date of acquisition, total investment</li>
                 <li><strong>Table A4:</strong> Other capital assets held outside India (jewellery, art, vehicles, etc.)</li>
                 <li><strong>Table B:</strong> Details of foreign custodial accounts</li>
                 <li><strong>Table C:</strong> Foreign equity and debt interest (including stock options)</li>

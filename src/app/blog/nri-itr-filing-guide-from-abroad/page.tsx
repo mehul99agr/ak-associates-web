@@ -69,7 +69,7 @@ export default function NRIITRFilingBlog() {
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                     <li style={{ marginBottom: '0.4rem' }}>NRIs must file ITR if Indian income exceeds Rs 3 lakh, or to claim a TDS refund.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Use <strong>ITR-2</strong> (most NRIs) or <strong>ITR-3</strong> (if business income). Never ITR-1.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>E-verify via <strong>DSC</strong> or <strong>net banking EVC</strong> - no Aadhaar needed.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>E-verify via <strong>DSC</strong> or <strong>net banking EVC</strong>: no Aadhaar needed.</li>
                     <li style={{ marginBottom: 0 }}>Deadline: <strong>July 31</strong> of the assessment year. Late filing costs Rs 5,000.</li>
                   </ul>
                 </div>
@@ -108,7 +108,7 @@ export default function NRIITRFilingBlog() {
                   <li><strong>Register or log in</strong> to the Income Tax e-filing portal (eportal.incometax.gov.in) using your PAN.</li>
                   <li><strong>Download Form 26AS and AIS</strong> to verify all TDS credits. Raise a dispute if any TDS is missing.</li>
                   <li><strong>Select the correct ITR form</strong> (ITR-2 for most NRIs) and the assessment year.</li>
-                  <li><strong>Fill Part A - General Information:</strong> Select residential status as &quot;Non-Resident&quot; and the applicable country of residence.</li>
+                  <li><strong>Fill Part A; General Information:</strong> Select residential status as &quot;Non-Resident&quot; and the applicable country of residence.</li>
                   <li><strong>Report income by source:</strong> House property (rental income with deductions), capital gains (property, shares, mutual funds), other sources (NRO interest, dividends). Do NOT report foreign income (it is not taxable for NRIs).</li>
                   <li><strong>Claim TDS credits:</strong> The portal auto-populates from Form 26AS. Verify each entry matches your Form 16A certificates.</li>
                   <li><strong>Compute tax and refund:</strong> The portal calculates total tax payable, credits TDS, and shows the refund due (or tax payable).</li>

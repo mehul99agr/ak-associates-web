@@ -51,7 +51,7 @@ const faqs: [string, string][] = [
   ],
   [
     'Can I transfer my foreign retirement fund to India?',
-    'India does not have a formal mechanism to "roll over" a foreign retirement fund into an Indian retirement account like EPF or NPS. You would need to withdraw from the foreign fund (triggering the foreign country\'s tax and any early withdrawal penalties), bring the proceeds to India, and then invest separately in Indian instruments. The transfer of funds itself is not taxable in India - only the withdrawal from the foreign fund is a taxable event.',
+    'India does not have a formal mechanism to "roll over" a foreign retirement fund into an Indian retirement account like EPF or NPS. You would need to withdraw from the foreign fund (triggering the foreign country\'s tax and any early withdrawal penalties), bring the proceeds to India, and then invest separately in Indian instruments. The transfer of funds itself is not taxable in India; only the withdrawal from the foreign fund is a taxable event.',
   ],
   [
     'What is the RNOR window strategy for retirement funds?',
@@ -132,7 +132,7 @@ export default function ForeignRetirementFundBlog() {
                 <ul>
                   <li><strong>While NRI:</strong> The Departing Australia Superannuation Payment (DASP) allows withdrawal of most super after leaving Australia. Tax applies at 35-65% depending on the component (taxed vs untaxed, tax-free threshold). India has no additional tax.</li>
                   <li><strong>While resident in India:</strong> The India-Australia DTAA (Article 18) provides that pensions are taxable only in the country of residence. So lump-sum or periodic withdrawals after becoming Indian resident are taxable in India, with credit for Australian tax.</li>
-                  <li><strong>Leaving super in Australia:</strong> Unlike 401(k), leaving super in Australia until preservation age (currently 60) has benefits - tax-free withdrawals after 60 in Australia. But if you are Indian resident at withdrawal, India taxes it. The RNOR window is relevant here for partial withdrawals.</li>
+                  <li><strong>Leaving super in Australia:</strong> Unlike 401(k), leaving super in Australia until preservation age (currently 60) has benefits; tax-free withdrawals after 60 in Australia. But if you are Indian resident at withdrawal, India taxes it. The RNOR window is relevant here for partial withdrawals.</li>
                 </ul>
 
                 <h2>The RNOR Window Strategy</h2>
@@ -183,8 +183,8 @@ export default function ForeignRetirementFundBlog() {
                 </p>
                 <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}>Income Tax Department, Government of India - <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
-                  <li style={{ marginBottom: 0 }}>Reserve Bank of India (FEMA / repatriation rules) - <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>rbi.org.in</a></li>
+                  <li style={{ marginBottom: '0.4rem' }}>Income Tax Department, Government of India; <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+                  <li style={{ marginBottom: 0 }}>Reserve Bank of India (FEMA / repatriation rules); <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>rbi.org.in</a></li>
                 </ul>
               </div>
 

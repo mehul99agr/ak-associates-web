@@ -48,7 +48,7 @@ const localBusinessLd = {
     {
       '@type': 'AccountingService',
       '@id': 'https://agrawalkhandelwal.com/#sillod-office',
-      name: 'Agrawal Khandelwal & Associates LLP - Sillod',
+      name: 'Agrawal Khandelwal & Associates LLP; Sillod',
       url: 'https://agrawalkhandelwal.com/ca-in-sillod',
       telephone: OFFICES.sillod.phoneE164,
       email: OFFICES.sillod.email,
@@ -153,7 +153,7 @@ export default function Contact() {
                 style={{ border: 0, display: 'block' }}
                 allowFullScreen
                 loading="lazy"
-                title="Agrawal Khandelwal & Associates LLP - Nashik office location"
+                title="Agrawal Khandelwal & Associates LLP; Nashik office location"
               />
             </div>
 

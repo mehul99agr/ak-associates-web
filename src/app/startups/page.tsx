@@ -33,7 +33,7 @@ const earlyStageServices = [
   {
     icon: 'building',
     title: 'Company Incorporation & Structuring',
-    desc: 'Private Limited vs LLP - we advise on the right structure for your funding goals, then execute registration end-to-end: DIN, DSC, MOA/AOA, and Certificate of Incorporation.',
+    desc: 'Private Limited vs LLP; we advise on the right structure for your funding goals, then execute registration end-to-end: DIN, DSC, MOA/AOA, and Certificate of Incorporation.',
   },
   {
     icon: 'scroll',
@@ -43,7 +43,7 @@ const earlyStageServices = [
   {
     icon: 'document',
     title: 'GST & Compliance Setup',
-    desc: 'GST registration, first returns setup, director KYC, ROC compliance calendar - everything you need to stay clean from day one so VCs see zero red flags in due diligence.',
+    desc: 'GST registration, first returns setup, director KYC, ROC compliance calendar; everything you need to stay clean from day one so VCs see zero red flags in due diligence.',
   },
 ]
 
@@ -58,12 +58,12 @@ const growthStageServices = [
   {
     icon: 'handshake',
     title: 'ESOP Structuring & Compliance',
-    desc: 'Design ESOP pools that attract senior talent. We handle the scheme, trust setup, exercise notices, and employee tax advisory - including perquisite valuation for sweat equity.',
+    desc: 'Design ESOP pools that attract senior talent. We handle the scheme, trust setup, exercise notices, and employee tax advisory; including perquisite valuation for sweat equity.',
   },
   {
     icon: 'globe',
     title: 'FDI & FEMA Compliance',
-    desc: 'Foreign investment in your startup triggers RBI reporting obligations - FCGPR, FCTRS, and LLP-I filings. One miss can invalidate the funding round. We make sure it doesn\'t.',
+    desc: 'Foreign investment in your startup triggers RBI reporting obligations; FCGPR, FCTRS, and LLP-I filings. One miss can invalidate the funding round. We make sure it doesn\'t.',
     link: '/blog/fema-compliance-foreign-investment-startups',
     linkText: 'Read the FEMA compliance guide →',
   },
@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     q: 'What does DPIIT recognition actually give a startup?',
-    a: 'DPIIT recognition unlocks: (1) Section 80-IAC - 100% tax deduction on profits for 3 consecutive years out of the first 10 years; (2) Self-certification under labour and environmental laws; (3) Fast-track IP applications with up to 80% fee rebate. (Angel tax exemption used to be part of this list, but the underlying provision - Section 56(2)(viib) - was abolished for all investors, resident and non-resident, effective FY 2024-25, so it no longer applies to anyone, DPIIT-recognised or not.) Most early-stage startups qualify if their total turnover hasn\'t crossed ₹100 crore.',
+    a: 'DPIIT recognition unlocks: (1) Section 80-IAC; 100% tax deduction on profits for 3 consecutive years out of the first 10 years; (2) Self-certification under labour and environmental laws; (3) Fast-track IP applications with up to 80% fee rebate. (Angel tax exemption used to be part of this list, but the underlying provision (Section 56(2)(viib)) was abolished for all investors, resident and non-resident, effective FY 2024-25, so it no longer applies to anyone, DPIIT-recognised or not.) Most early-stage startups qualify if their total turnover hasn\'t crossed ₹100 crore.',
   },
   {
     q: 'When should a startup hire a Virtual CFO?',
@@ -99,11 +99,11 @@ const faqs = [
   },
   {
     q: 'Is angel tax still applicable to startups in India?',
-    a: 'No. Section 56(2)(viib) - "angel tax" - was abolished for all classes of investors, resident and non-resident, by the Finance (No. 2) Act, 2024, effective FY 2024-25. It no longer applies to any startup raising funds above fair market value, with or without DPIIT recognition. Valuation is still worth getting right for investor negotiations, ESOP pricing, and diligence, but it is no longer an angel-tax risk.',
+    a: 'No. Section 56(2)(viib) ("angel tax") was abolished for all classes of investors, resident and non-resident, by the Finance (No. 2) Act, 2024, effective FY 2024-25. It no longer applies to any startup raising funds above fair market value, with or without DPIIT recognition. Valuation is still worth getting right for investor negotiations, ESOP pricing, and diligence, but it is no longer an angel-tax risk.',
   },
   {
     q: 'How does ESOP taxation work for startup employees in India?',
-    a: 'ESOP taxation has two trigger points: (1) Exercise - the difference between the FMV on exercise date and the exercise price is taxable as a perquisite (salary income) in the employee\'s hands, and the company must deduct TDS; (2) Sale - any gain above the FMV at exercise is capital gains. DPIIT-recognised startups can defer the perquisite tax to the earlier of 5 years from grant, date of sale, or when the employee leaves the company.',
+    a: 'ESOP taxation has two trigger points: (1) Exercise; the difference between the FMV on exercise date and the exercise price is taxable as a perquisite (salary income) in the employee\'s hands, and the company must deduct TDS; (2) Sale; any gain above the FMV at exercise is capital gains. DPIIT-recognised startups can defer the perquisite tax to the earlier of 5 years from grant, date of sale, or when the employee leaves the company.',
   },
   {
     q: 'Can a foreign startup set up a subsidiary in India and what are the compliance requirements?',
@@ -117,7 +117,7 @@ const serviceLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': 'https://agrawalkhandelwal.com/startups#service',
-  name: 'Startup Advisory & CA Services - Agrawal Khandelwal & Associates LLP',
+  name: 'Startup Advisory & CA Services; Agrawal Khandelwal & Associates LLP',
   description: 'End-to-end CA and financial advisory for startups in Bangalore, Mumbai, and Nashik. Incorporation, DPIIT, ESOP, Virtual CFO, fundraising compliance, and FDI/FEMA.',
   url: 'https://agrawalkhandelwal.com/startups',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -149,12 +149,12 @@ export default function StartupsPage() {
         {/* Hero */}
         <section className="hero">
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <span className="hero-badge">Startup CA Desk - Bangalore · Mumbai · Nashik</span>
+            <span className="hero-badge">Startup CA Desk; Bangalore · Mumbai · Nashik</span>
             <h1>
               CA for Startups in Bangalore,<br />Mumbai & Nashik
             </h1>
             <p>
-              From incorporation and DPIIT registration to ESOP structuring and Series A compliance - we are the CA partner Indian startups trust to stay clean, investor-ready, and compliant at every stage.
+              From incorporation and DPIIT registration to ESOP structuring and Series A compliance; we are the CA partner Indian startups trust to stay clean, investor-ready, and compliant at every stage.
             </p>
             <div className="hero-cta">
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -181,7 +181,7 @@ export default function StartupsPage() {
               </div>
               <div className="stat-item">
                 <span className="stat-number">3</span>
-                <span className="stat-label">Cities - BLR, MUM, NSK</span>
+                <span className="stat-label">Cities; BLR, MUM, NSK</span>
               </div>
               <div className="stat-item">
                 <span className="stat-number">₹0</span>
@@ -202,7 +202,7 @@ export default function StartupsPage() {
               <div className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
                 <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>Seed-Round Readiness for AI Startup</h3>
                 <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
-                  Acted as Virtual CFO for Vitt AI from pre-seed: handled DPIIT registration, seed-round financial modeling, and complete ROC/GST compliance - allowing the founders to focus entirely on product development while staying investor-ready.
+                  Acted as Virtual CFO for Vitt AI from pre-seed: handled DPIIT registration, seed-round financial modeling, and complete ROC/GST compliance; allowing the founders to focus entirely on product development while staying investor-ready.
                 </p>
                 <div style={{ borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                   <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-main)' }}>Nilay Kulkarni</p>
@@ -212,7 +212,7 @@ export default function StartupsPage() {
               <div className="card" style={{ borderLeft: '4px solid var(--primary)' }}>
                 <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>Cross-Border Structure for UAE-India Subsidiary</h3>
                 <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
-                  Structured a tax-efficient India entity for a UAE-based client - including DTAA benefit optimisation, FEMA reporting, and transfer pricing documentation - achieving full regulatory compliance and a 15% reduction in cross-border tax leakage.
+                  Structured a tax-efficient India entity for a UAE-based client (including DTAA benefit optimisation, FEMA reporting, and transfer pricing documentation) achieving full regulatory compliance and a 15% reduction in cross-border tax leakage.
                 </p>
                 <div style={{ borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                   <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-main)' }}>Sunny Stephen</p>
@@ -230,7 +230,7 @@ export default function StartupsPage() {
               <span className="section-badge">Early Stage</span>
               <h2 className="section-title">Getting Your Startup Off the Ground</h2>
               <p style={{ maxWidth: '680px', margin: '0 auto', color: 'var(--text-light)' }}>
-                The first 90 days of a startup's life set its compliance foundation. A single wrong choice here - entity type, cap table structure, ESOP pool timing - can cost you a funding round two years later.
+                The first 90 days of a startup's life set its compliance foundation. A single wrong choice here (entity type, cap table structure, ESOP pool timing) can cost you a funding round two years later.
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
@@ -251,7 +251,7 @@ export default function StartupsPage() {
               <span className="section-badge">Growth Stage</span>
               <h2 className="section-title">Scaling with Institutional Capital</h2>
               <p style={{ maxWidth: '680px', margin: '0 auto', color: 'var(--text-light)' }}>
-                Once you've raised, the compliance burden multiplies. Investor reporting, FDI regulation, ESOP obligations, and transfer pricing - our startup CA team handles all of it.
+                Once you've raised, the compliance burden multiplies. Investor reporting, FDI regulation, ESOP obligations, and transfer pricing; our startup CA team handles all of it.
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
@@ -312,10 +312,10 @@ export default function StartupsPage() {
             <div style={{ maxWidth: '520px', margin: '0 auto' }}>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
-                  <Image src="/mehul.jpg" alt="CA Mehul Agrawal - Startup CA Bangalore Mumbai Nashik" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                  <Image src="/mehul.jpg" alt="CA Mehul Agrawal; Startup CA Bangalore Mumbai Nashik" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                 </div>
                 <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
-                <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - Startup & International Advisory</p>
+                <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner; Startup & International Advisory</p>
                 <p style={{ fontSize: '0.93rem', color: 'var(--text-light)', lineHeight: 1.8, textAlign: 'justify' }}>
                   CA Mehul leads Agrawal Khandelwal & Associates LLP's startup practice. He advises early-stage and funded startups on corporate structuring, fundraising compliance, ESOP design, and cross-border tax strategy. His UAE Corporate Taxation certification makes him uniquely positioned for startups with global operations.
                 </p>

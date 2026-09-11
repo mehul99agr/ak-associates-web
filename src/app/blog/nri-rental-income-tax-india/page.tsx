@@ -106,7 +106,7 @@ export default function NRIRentalIncomeBlog() {
                   <li>Home loan interest: Rs 3,00,000</li>
                 </ul>
                 <p>TDS deducted by tenant: Rs 6,00,000 x 31.2% = <strong>Rs 1,87,200</strong></p>
-                <p>Actual taxable income: Rs 6,00,000 - 20,000 (municipal) - 1,74,000 (30% standard deduction) - 3,00,000 (loan interest) = <strong>Rs 1,06,000</strong></p>
+                <p>Actual taxable income: Rs 6,00,000 (20,000 (municipal)) 1,74,000 (30% standard deduction); 3,00,000 (loan interest) = <strong>Rs 1,06,000</strong></p>
                 <p>Tax on Rs 1,06,000 at the new regime rates: approximately <strong>Rs 5,300</strong> (within the basic exemption limit for most NRIs).</p>
                 <p>The NRI has Rs 1,87,200 deducted as TDS but owes only Rs 5,300 in actual tax. The gap of Rs 1,81,900 is recoverable only by filing an ITR or by obtaining a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> in advance.</p>
 

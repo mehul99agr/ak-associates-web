@@ -71,7 +71,7 @@ export default function NRIMutualFundStockTaxBlog() {
                     <li style={{ marginBottom: '0.4rem' }}>NRIs pay the same capital gains tax rates as residents, but TDS is deducted at source by the AMC/broker (residents get threshold exemptions before TDS).</li>
                     <li style={{ marginBottom: '0.4rem' }}>Equity LTCG: 12.5% (above Rs 1.25 lakh). Equity STCG: 20%. Debt LTCG: 12.5%. Debt STCG: slab rate (typically 30%).</li>
                     <li style={{ marginBottom: '0.4rem' }}>Direct stock trading requires a PIS (Portfolio Investment Scheme) account from RBI. Mutual funds do not need PIS.</li>
-                    <li style={{ marginBottom: 0 }}>US and Canada NRIs face FATCA restrictions - many AMCs refuse their investments. A handful still accept.</li>
+                    <li style={{ marginBottom: 0 }}>US and Canada NRIs face FATCA restrictions; many AMCs refuse their investments. A handful still accept.</li>
                   </ul>
                 </div>
 

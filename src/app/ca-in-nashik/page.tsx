@@ -60,11 +60,11 @@ const services = [
 const faqs = [
   {
     q: 'What should I look for when choosing a CA firm in Nashik?',
-    a: 'A reliable CA firm in Nashik should be ICAI-registered with verifiable partner credentials, offer direct partner access (not junior-only handling), cover the full compliance spectrum (GST, ITR, audit, ROC), and be transparent about fees. For businesses with cross-border operations, look for a Nashik CA firm with proven international taxation expertise - transfer pricing, DTAA, and FEMA - which is rare locally.',
+    a: 'A reliable CA firm in Nashik should be ICAI-registered with verifiable partner credentials, offer direct partner access (not junior-only handling), cover the full compliance spectrum (GST, ITR, audit, ROC), and be transparent about fees. For businesses with cross-border operations, look for a Nashik CA firm with proven international taxation expertise (transfer pricing, DTAA, and FEMA) which is rare locally.',
   },
   {
     q: 'How is your CA firm in Nashik different from other firms?',
-    a: 'Most CA firms in Nashik focus only on domestic compliance. Agrawal Khandelwal & Associates LLP is one of the few Nashik-based CA firms with hands-on expertise in international taxation, UAE corporate tax, transfer pricing, and offshore accounting - alongside complete domestic GST, ITR, audit, and incorporation services. You also work directly with the partner, not a junior team.',
+    a: 'Most CA firms in Nashik focus only on domestic compliance. Agrawal Khandelwal & Associates LLP is one of the few Nashik-based CA firms with hands-on expertise in international taxation, UAE corporate tax, transfer pricing, and offshore accounting; alongside complete domestic GST, ITR, audit, and incorporation services. You also work directly with the partner, not a junior team.',
   },
   {
     q: 'Where is your CA office in Nashik?',
@@ -76,7 +76,7 @@ const faqs = [
   },
   {
     q: 'Can you help with company registration in Nashik?',
-    a: 'Yes. We handle complete company and LLP incorporation in Nashik - from name reservation and DSC/DIN to MOA/AOA drafting, Certificate of Incorporation, GST registration, and bank account opening assistance.',
+    a: 'Yes. We handle complete company and LLP incorporation in Nashik; from name reservation and DSC/DIN to MOA/AOA drafting, Certificate of Incorporation, GST registration, and bank account opening assistance.',
   },
   {
     q: 'Do you file income tax returns for salaried employees in Nashik?',
@@ -192,11 +192,11 @@ export default function CAInNashik() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="hero-badge">
             <span>📍</span>
-            <span>Nashik Office - Mumbai Naka, Nashik 422011</span>
+            <span>Nashik Office; Mumbai Naka, Nashik 422011</span>
           </div>
           <h1>Trusted Chartered Accountant<br />in Nashik</h1>
           <p>
-            Agrawal Khandelwal & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik - open Monday to Saturday.
+            Agrawal Khandelwal & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik; open Monday to Saturday.
           </p>
           <div className="hero-cta">
             <a href="tel:+919527533506" className="btn btn-primary">
@@ -260,13 +260,13 @@ export default function CAInNashik() {
           </div>
           <div className="blog-content" style={{ fontSize: '1.02rem', lineHeight: 1.85, color: 'var(--text-main)' }}>
             <h3>Tax Audit &amp; Advisory Services in Nashik</h3>
-            <p>A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a financial year - or ₹10 crore where at least 95% of receipts and payments are digital - and once professional gross receipts cross ₹50 lakh. Our Nashik team completes the audit and files Form 3CA/3CB with Form 3CD before the 30 September deadline, alongside statutory audits under the Companies Act 2013, internal audits, stock audits, and concurrent bank audits. Beyond compliance we advise on presumptive taxation under Sections 44AD and 44ADA, capital structure, TDS health checks, and year-round tax planning for Nashik businesses, professionals, and HUFs.</p>
+            <p>A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a financial year (or ₹10 crore where at least 95% of receipts and payments are digital) and once professional gross receipts cross ₹50 lakh. Our Nashik team completes the audit and files Form 3CA/3CB with Form 3CD before the 30 September deadline, alongside statutory audits under the Companies Act 2013, internal audits, stock audits, and concurrent bank audits. Beyond compliance we advise on presumptive taxation under Sections 44AD and 44ADA, capital structure, TDS health checks, and year-round tax planning for Nashik businesses, professionals, and HUFs.</p>
 
             <h3>GST Compliance &amp; Filing in Nashik</h3>
             <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. We handle registration, monthly and quarterly GSTR-1 and GSTR-3B filing, the annual GSTR-9 return and GSTR-9C reconciliation, input tax credit matching against GSTR-2B, e-way bill and e-invoice setup, LUT filing for exporters, and replies to GST notices, ASMT-10 scrutiny, and departmental audits. Fixed-fee monthly packages keep recurring GST compliance predictable for Nashik traders, manufacturers, and service firms.</p>
 
             <h3>Company Incorporation Services in Nashik</h3>
-            <p>We register private limited companies, LLPs, one person companies, and Section 8 companies end to end: name reservation through SPICe+ Part A, digital signature certificates and DIN for directors, MOA and AOA drafting, and the SPICe+ Part B filing that issues the Certificate of Incorporation together with PAN, TAN, EPFO, ESIC, and a bank account reference in a single application. Most incorporations complete in about 7 to 15 working days once documents are in order. We also handle post-incorporation compliance - INC-20A commencement filing, the first board meeting, share allotment, and annual ROC filings (AOC-4, MGT-7, DIR-3 KYC).</p>
+            <p>We register private limited companies, LLPs, one person companies, and Section 8 companies end to end: name reservation through SPICe+ Part A, digital signature certificates and DIN for directors, MOA and AOA drafting, and the SPICe+ Part B filing that issues the Certificate of Incorporation together with PAN, TAN, EPFO, ESIC, and a bank account reference in a single application. Most incorporations complete in about 7 to 15 working days once documents are in order. We also handle post-incorporation compliance; INC-20A commencement filing, the first board meeting, share allotment, and annual ROC filings (AOC-4, MGT-7, DIR-3 KYC).</p>
           </div>
         </div>
       </section>
@@ -278,15 +278,15 @@ export default function CAInNashik() {
             <span className="section-badge">Choosing a CA Firm</span>
             <h2 className="section-title">What Makes a Top CA Firm in Nashik?</h2>
             <p style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--text-light)' }}>
-              Not every CA firm in Nashik is equipped to handle the full scope of compliance, audit, and advisory a growing business needs. Here are the six criteria that separate the leading CA firms in Nashik from the rest - and how we meet each one.
+              Not every CA firm in Nashik is equipped to handle the full scope of compliance, audit, and advisory a growing business needs. Here are the six criteria that separate the leading CA firms in Nashik from the rest; and how we meet each one.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
             {[
               { icon: 'check', title: 'ICAI-Registered with Verifiable Credentials', desc: 'Every partner is a qualified Chartered Accountant registered with the Institute of Chartered Accountants of India. CA Mehul Agrawal additionally holds certifications in Concurrent Bank Audit and UAE Corporate Taxation.' },
-              { icon: 'users', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file - not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
+              { icon: 'users', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file; not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
               { icon: 'scroll', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
-              { icon: 'globe', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax - capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
+              { icon: 'globe', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax; capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
               { icon: 'phone', title: 'Responsive Communication', desc: 'WhatsApp for quick questions, phone for urgent matters, email for documentation. We respond within hours, not days.' },
               { icon: 'rupee', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges, no surprise invoices, no per-call billing.' },
             ].map((item, i) => (
@@ -309,11 +309,11 @@ export default function CAInNashik() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
             {[
-              { icon: 'award', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation - rare expertise available in Nashik.' },
+              { icon: 'award', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation; rare expertise available in Nashik.' },
               { icon: 'globe', title: 'International Tax Capability', desc: 'One of the very few CA firms in Nashik with hands-on experience in transfer pricing, DTAA, FEMA, and UAE corporate tax.' },
               { icon: 'zap', title: 'Fast Turnaround', desc: 'Dedicated team ensuring timely GST returns, ITR filing, and compliance so you never miss a deadline.' },
-              { icon: 'phone', title: 'Responsive Support', desc: 'Direct access to partners - no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
-              { icon: 'briefcase', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO - all under one roof in Nashik.' },
+              { icon: 'phone', title: 'Responsive Support', desc: 'Direct access to partners; no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
+              { icon: 'briefcase', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO; all under one roof in Nashik.' },
               { icon: 'lock', title: 'Trusted & Confidential', desc: 'Your financial data is handled with strict confidentiality. We are registered with ICAI and operate with complete professional ethics.' },
             ].map((item, i) => (
               <div key={i} className="card">
@@ -336,10 +336,10 @@ export default function CAInNashik() {
           <div style={{ maxWidth: '500px', margin: '0 auto' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)', flexShrink: 0 }}>
-                <Image src="/mehul.jpg" alt="CA Mehul Agrawal - Chartered Accountant in Nashik" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                <Image src="/mehul.jpg" alt="CA Mehul Agrawal; Chartered Accountant in Nashik" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - Nashik Office</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner; Nashik Office</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Based in Nashik, CA Mehul Agrawal specialises in international taxation, transfer pricing, and corporate structuring. He advises Nashik-based businesses, startups, and NRI clients on tax optimisation and cross-border compliance.
               </p>
@@ -412,7 +412,7 @@ export default function CAInNashik() {
               <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#fff' }}>Book a Free Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation - first session is free.
+                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation; first session is free.
               </p>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
                 Schedule on Google Calendar
@@ -431,7 +431,7 @@ export default function CAInNashik() {
               style={{ border: 0, display: 'block' }}
               allowFullScreen
               loading="lazy"
-              title="Agrawal Khandelwal & Associates LLP - CA office at Mumbai Naka, Nashik"
+              title="Agrawal Khandelwal & Associates LLP; CA office at Mumbai Naka, Nashik"
             />
           </div>
         </div>
@@ -442,7 +442,7 @@ export default function CAInNashik() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
-            <h2 className="section-title">Frequently Asked Questions - CA in Nashik</h2>
+            <h2 className="section-title">Frequently Asked Questions; CA in Nashik</h2>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {faqs.map(({ q, a }, i) => (
@@ -460,7 +460,7 @@ export default function CAInNashik() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Need a CA in Nashik?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            Contact Agrawal Khandelwal & Associates LLP - your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
+            Contact Agrawal Khandelwal & Associates LLP; your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+919527533506" className="btn btn-primary">Call Now: +91 95275 33506</a>

@@ -98,13 +98,13 @@ export default function Section195Blog() {
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                     <li style={{ marginBottom: '0.4rem' }}>Section 393(2) (earlier Section 195 under the 1961 Act) requires TDS on any payment to a non-resident that is chargeable to Indian tax.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>It covers property sales, rent, professional fees, interest, royalties, and any other income with an Indian source - not just property.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>It covers property sales, rent, professional fees, interest, royalties, and any other income with an Indian source; not just property.</li>
                     <li style={{ marginBottom: '0.4rem' }}>The payer (not the NRI) is responsible for obtaining a TAN, deducting at the correct rate, depositing via Challan ITNS-281, and filing Form 144 (earlier Form 27Q) quarterly.</li>
                     <li style={{ marginBottom: 0 }}>Getting it wrong means the payer is personally liable for the TDS amount, interest, penalty, and potential prosecution.</li>
                   </ul>
                 </div>
 
-                <p>Section 195 is the provision most people encounter only when they buy property from an NRI, and it surprises them. But Section 195 is far broader than property. It applies to every payment to a non-resident that carries an Indian tax liability: rent on Indian property, fees for professional services rendered in India, interest on Indian deposits, royalties, and more. Most people know the property angle because the numbers are large enough to attract attention. The smaller payments - a monthly rent to an NRI landlord, a consulting fee to a non-resident professional - slip through, and that is where compliance gaps turn into notices.</p>
+                <p>Section 195 is the provision most people encounter only when they buy property from an NRI, and it surprises them. But Section 195 is far broader than property. It applies to every payment to a non-resident that carries an Indian tax liability: rent on Indian property, fees for professional services rendered in India, interest on Indian deposits, royalties, and more. Most people know the property angle because the numbers are large enough to attract attention. The smaller payments; a monthly rent to an NRI landlord, a consulting fee to a non-resident professional; slip through, and that is where compliance gaps turn into notices.</p>
 
                 <h2>When Does Section 195 Apply?</h2>
                 <p>Two conditions must be met simultaneously:</p>
@@ -112,7 +112,7 @@ export default function Section195Blog() {
                   <li><strong>The recipient is a non-resident</strong> under Section 6 of the Income Tax Act for the financial year in which the payment is made. This is determined by the recipient&apos;s <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>residential status</Link>, not their citizenship or passport.</li>
                   <li><strong>The payment is chargeable to tax in India.</strong> If the income is exempt under the Act (e.g., NRE deposit interest under Section 10(4)(ii)) or not sourced from India, Section 195 does not apply.</li>
                 </ol>
-                <p>The payer can be anyone - an individual, a company, a partnership, or an HUF. There is no threshold below which Section 195 disappears, unlike Section 194-IA which only kicks in above Rs 50 lakh for resident property sellers.</p>
+                <p>The payer can be anyone; an individual, a company, a partnership, or an HUF. There is no threshold below which Section 195 disappears, unlike Section 194-IA which only kicks in above Rs 50 lakh for resident property sellers.</p>
 
                 <h2>TDS Rate Table Under Section 195 (FY 2026-27)</h2>
                 <div style={{ overflowX: 'auto' }}>

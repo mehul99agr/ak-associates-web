@@ -32,19 +32,19 @@ const audiences = [
   {
     icon: 'globe',
     title: 'Foreign Companies with Indian Operations',
-    desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack - from Tally/QuickBooks bookkeeping to GST returns, TDS compliance, payroll, and statutory audit - so your Indian team stays compliant without distracting your HQ finance team.',
+    desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack; from Tally/QuickBooks bookkeeping to GST returns, TDS compliance, payroll, and statutory audit; so your Indian team stays compliant without distracting your HQ finance team.',
     tags: ['Indian Subsidiary Accounting', 'GAAP to Ind AS Conversion', 'Consolidated Reporting', 'Statutory Audit Readiness'],
   },
   {
     icon: 'handshake',
     title: 'CA Firms & Accounting Practices (White-Label)',
-    desc: 'UK, US, Australian, or UAE accounting practices looking to outsource client bookkeeping to a trusted Indian CA firm. We work as your back-office - maintaining confidentiality, using your preferred software (Xero, QuickBooks, MYOB, Sage), and delivering work under your brand.',
+    desc: 'UK, US, Australian, or UAE accounting practices looking to outsource client bookkeeping to a trusted Indian CA firm. We work as your back-office; maintaining confidentiality, using your preferred software (Xero, QuickBooks, MYOB, Sage), and delivering work under your brand.',
     tags: ['Xero · QuickBooks · MYOB', 'White-Label Delivery', 'Confidential NDA', 'UK/US Accounting Standards'],
   },
   {
     icon: 'building',
     title: 'NRI-Owned Indian Businesses',
-    desc: 'NRIs managing Indian businesses remotely - from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, GST, TDS, payroll, and monthly MIS so you always have visibility without being in India.',
+    desc: 'NRIs managing Indian businesses remotely; from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, GST, TDS, payroll, and monthly MIS so you always have visibility without being in India.',
     tags: ['Remote Accounting', 'GST & TDS Compliance', 'Monthly MIS Reports', 'NRI FEMA Compliance'],
   },
 ]
@@ -53,12 +53,12 @@ const services = [
   {
     icon: 'scroll',
     title: 'Full-Cycle Bookkeeping',
-    desc: 'Daily transaction recording, bank reconciliation, accounts payable/receivable management, and monthly trial balance - using Tally, QuickBooks, Xero, or client-preferred software.',
+    desc: 'Daily transaction recording, bank reconciliation, accounts payable/receivable management, and monthly trial balance; using Tally, QuickBooks, Xero, or client-preferred software.',
   },
   {
     icon: 'analytics',
     title: 'MIS & Management Reporting',
-    desc: 'Monthly management accounts - P&L, balance sheet, cash flow statement, and custom KPI dashboards - delivered to an investor, board, or overseas parent in the format they require.',
+    desc: 'Monthly management accounts (P&L, balance sheet, cash flow statement, and custom KPI dashboards) delivered to an investor, board, or overseas parent in the format they require.',
   },
   {
     icon: 'users',
@@ -97,26 +97,26 @@ const faqs = [
   },
   {
     q: 'Can you manage accounting for a UK company\'s India subsidiary?',
-    a: 'Yes. This is one of our most common engagements. We handle the Indian subsidiary\'s complete accounting and compliance - Tally bookkeeping, GST, TDS, payroll, ROC annual returns - and also prepare a UK GAAP-aligned monthly report and intercompany recharge schedules for the UK parent\'s consolidation. We liaise directly with the UK parent\'s finance team or accountant.',
+    a: 'Yes. This is one of our most common engagements. We handle the Indian subsidiary\'s complete accounting and compliance (Tally bookkeeping, GST, TDS, payroll, ROC annual returns) and also prepare a UK GAAP-aligned monthly report and intercompany recharge schedules for the UK parent\'s consolidation. We liaise directly with the UK parent\'s finance team or accountant.',
   },
   {
     q: 'Do you provide outsourced CFO services as part of offshore accounting?',
     a: 'Yes. Beyond bookkeeping, we offer a Virtual CFO layer: financial planning and analysis (FP&A), budget vs actual variance analysis, investor MIS, cash flow forecasting, and strategic financial advice. This is particularly valuable for foreign parent companies that need someone in India who can think like a CFO, not just process transactions.',
   },
   {
-    q: 'How is offshore accounting priced - hourly or fixed fee?',
+    q: 'How is offshore accounting priced; hourly or fixed fee?',
     a: 'Offshore accounting is priced on three models: fixed monthly retainer (flat fee for agreed bookkeeping and compliance scope), dedicated resource (per-seat monthly fee for a full-time offshore accountant), or hourly for one-off projects. Most clients save 60-70% versus equivalent UK, US, or UAE accounting costs. Contact us for a quote based on your transaction volume and scope.',
   },
   {
     q: 'Can we build a dedicated offshore accounting team in India through your firm?',
-    a: 'Yes. Many of our CA-firm and scale-up clients start with one outsourced bookkeeper and grow into a dedicated 3-5 person offshore accounting team in India under our roof. You get the people without the entity, hiring, or HR burden - we recruit, train, supervise, and back them with partner-level CA review. The team works your hours, on your software, under NDA, and we handle continuity if anyone is on leave so your books never stall.',
+    a: 'Yes. Many of our CA-firm and scale-up clients start with one outsourced bookkeeper and grow into a dedicated 3-5 person offshore accounting team in India under our roof. You get the people without the entity, hiring, or HR burden; we recruit, train, supervise, and back them with partner-level CA review. The team works your hours, on your software, under NDA, and we handle continuity if anyone is on leave so your books never stall.',
   },
 ]
 
 const faqLd = buildFaqLd(faqs)
 
 const serviceLd = buildServiceLd({
-  name: 'Offshore Accounting & Outsourced Bookkeeping - Agrawal Khandelwal & Associates LLP',
+  name: 'Offshore Accounting & Outsourced Bookkeeping; Agrawal Khandelwal & Associates LLP',
   description: 'Offshore accounting services from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, payroll, GST, and statutory compliance.',
   url: 'https://agrawalkhandelwal.com/offshore-accounting',
   areaServed: [
@@ -153,7 +153,7 @@ export default function OffshoreAccounting() {
               Offshore Accounting &<br />Bookkeeping Services from India
             </h1>
             <p>
-              ICAI-registered CA firm providing full-cycle outsourced accounting for foreign companies, overseas CA practices, and NRI-owned businesses - from India, at India costs.
+              ICAI-registered CA firm providing full-cycle outsourced accounting for foreign companies, overseas CA practices, and NRI-owned businesses; from India, at India costs.
             </p>
             <div className="hero-cta">
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -177,7 +177,7 @@ export default function OffshoreAccounting() {
               {[
                 { label: 'Cost Saving', value: '60–70%', note: 'vs. equivalent UK / US / UAE accounting costs', color: '#10b981' },
                 { label: 'Time Zone', value: 'IST +5:30', note: 'Overlap with UK morning + full UAE business day', color: 'var(--accent)' },
-                { label: 'CA Qualified', value: 'ICAI', note: 'India\'s equivalent of ICAEW / AICPA - highest standard', color: 'var(--primary)' },
+                { label: 'CA Qualified', value: 'ICAI', note: 'India\'s equivalent of ICAEW / AICPA; highest standard', color: 'var(--primary)' },
                 { label: 'Languages', value: 'English', note: 'All work delivered in English, documentation included', color: '#f59e0b' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ textAlign: 'center', borderTop: `4px solid ${item.color}` }}>
@@ -275,21 +275,21 @@ export default function OffshoreAccounting() {
                 Offshore bookkeepers in India, supervised by qualified CAs
               </h3>
               <p style={{ marginBottom: '1.5rem' }}>
-                The common worry with offshore bookkeeping is quality control - that work goes out of sight and errors surface only at year end. We solve this the way a proper CA firm should: every offshore bookkeeper on your account works under partner-level review. Day-to-day recording, bank reconciliation, and ledger maintenance are handled by trained accountants, while an ICAI-qualified Chartered Accountant signs off on the monthly close, the GST and TDS positions, and the management accounts before they reach you. You get the cost of an offshore bookkeeper with the assurance of a qualified firm standing behind the numbers.
+                The common worry with offshore bookkeeping is quality control; that work goes out of sight and errors surface only at year end. We solve this the way a proper CA firm should: every offshore bookkeeper on your account works under partner-level review. Day-to-day recording, bank reconciliation, and ledger maintenance are handled by trained accountants, while an ICAI-qualified Chartered Accountant signs off on the monthly close, the GST and TDS positions, and the management accounts before they reach you. You get the cost of an offshore bookkeeper with the assurance of a qualified firm standing behind the numbers.
               </p>
 
               <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)', margin: '2rem 0 0.75rem' }}>
                 Choosing among offshore accounting companies in India
               </h3>
               <p style={{ marginBottom: '1.5rem' }}>
-                When businesses compare offshore accounting companies in India, the deciding factors are rarely price alone - they are continuity, data security, and whether a qualified professional is accountable for the output. Large outsourcing factories move your work between junior staff and treat you as one account among thousands. As an owner-managed CA firm, we keep a named point of contact on your engagement, work under a signed NDA inside your own software environment where you prefer it, and provide cover so your books never stall when someone is on leave. For CA firms and accounting practices abroad, we deliver the same work on a white-label basis, under your brand and your standards.
+                When businesses compare offshore accounting companies in India, the deciding factors are rarely price alone; they are continuity, data security, and whether a qualified professional is accountable for the output. Large outsourcing factories move your work between junior staff and treat you as one account among thousands. As an owner-managed CA firm, we keep a named point of contact on your engagement, work under a signed NDA inside your own software environment where you prefer it, and provide cover so your books never stall when someone is on leave. For CA firms and accounting practices abroad, we deliver the same work on a white-label basis, under your brand and your standards.
               </p>
 
               <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)', margin: '2rem 0 0.75rem' }}>
                 Start with one seat, scale to a full team
               </h3>
               <p style={{ marginBottom: 0 }}>
-                Most engagements begin small - a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance - and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a short{' '}
+                Most engagements begin small; a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance; and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a short{' '}
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>discovery call</a>, a fixed-fee scope, and a clean handover.
               </p>
             </div>

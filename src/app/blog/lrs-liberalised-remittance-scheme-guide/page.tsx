@@ -24,7 +24,7 @@ const articleLd = buildArticleLd({
 
 const faqs: [string, string][] = [
   ['What is the LRS limit for FY 2026-27?', 'The Liberalised Remittance Scheme allows resident Indians to remit up to USD 250,000 per financial year (April to March) for any permitted purpose. This is a per-person, per-year limit, not per transaction. A family of four can collectively remit up to USD 1 million. The limit covers all LRS remittances in the year, including gifts, investments, education, travel, and maintenance of relatives abroad.'],
-  ['What are the TCS rates on LRS remittances?', 'Following the Budget 2026 revision effective April 1, 2026 (now Section 394(1), earlier Section 206C(1G)), TCS applies on LRS remittances above a cumulative Rs 10 lakh in a financial year: 20% for most purposes (investment, gifts, general remittances), 2% for self-funded education and medical treatment, and nil (0%) for education funded by a loan from an Indian bank or NBFC, regardless of amount. Overseas tour packages attract a flat 2% from the first rupee, with no threshold. TCS is not a separate tax - it is claimable as credit when filing your Indian ITR. See our dedicated guide on TCS on LRS remittances for FY 2026-27 for the full breakdown and worked examples.'],
+  ['What are the TCS rates on LRS remittances?', 'Following the Budget 2026 revision effective April 1, 2026 (now Section 394(1), earlier Section 206C(1G)), TCS applies on LRS remittances above a cumulative Rs 10 lakh in a financial year: 20% for most purposes (investment, gifts, general remittances), 2% for self-funded education and medical treatment, and nil (0%) for education funded by a loan from an Indian bank or NBFC, regardless of amount. Overseas tour packages attract a flat 2% from the first rupee, with no threshold. TCS is not a separate tax; it is claimable as credit when filing your Indian ITR. See our dedicated guide on TCS on LRS remittances for FY 2026-27 for the full breakdown and worked examples.'],
   ['Can NRIs use LRS?', 'No. LRS is available only to resident Indians. NRIs who want to send money from India use the NRO repatriation route (USD 1 million annual limit with Form 145/146) or freely repatriate from NRE/FCNR accounts. However, LRS is relevant to NRIs indirectly: when their resident family members send them money from India, the family member uses LRS and pays TCS.'],
   ['What is Form A2 in LRS?', 'Form A2 is the application-cum-declaration form submitted to the Authorised Dealer (AD) bank for processing an LRS remittance. It declares the purpose of remittance, the amount, the beneficiary details, and confirms that the remitter has not exceeded the USD 250,000 annual limit. The bank verifies the declaration and processes the remittance. PAN is mandatory for LRS transactions above Rs 50,000.'],
 ]
@@ -107,7 +107,7 @@ export default function LRSGuideBlog() {
 
               <h2>LRS Process: Step by Step</h2>
               <ol>
-                <li><strong>Visit your AD Bank</strong> (Authorised Dealer - any scheduled commercial bank).</li>
+                <li><strong>Visit your AD Bank</strong> (Authorised Dealer; any scheduled commercial bank).</li>
                 <li><strong>Fill Form A2:</strong> Declare the purpose, amount, beneficiary details, and confirm you have not exceeded USD 250,000 in the year.</li>
                 <li><strong>Provide PAN:</strong> Mandatory for remittances above Rs 50,000.</li>
                 <li><strong>Bank deducts TCS</strong> (if applicable) and processes the remittance.</li>

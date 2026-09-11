@@ -69,15 +69,15 @@ const faqs = [
   },
   {
     q: 'Should I set up an LLC or a Delaware C-Corp?',
-    a: 'If you plan to raise institutional venture capital, a Delaware C-Corp is almost always the right call - VC funds are structured to invest in stock, not LLC membership interests. If you are bootstrapping on your own revenue with no near-term fundraising plan, an LLC is usually simpler and cheaper to run, provided you plan for its pass-through "phantom income" tax treatment.',
+    a: 'If you plan to raise institutional venture capital, a Delaware C-Corp is almost always the right call; VC funds are structured to invest in stock, not LLC membership interests. If you are bootstrapping on your own revenue with no near-term fundraising plan, an LLC is usually simpler and cheaper to run, provided you plan for its pass-through "phantom income" tax treatment.',
   },
   {
     q: 'Do I need to file Form 5471 or Form 5472?',
-    a: 'It depends on the direction of ownership. Form 5472 applies when a foreign person (you) owns at least 25% of a US entity - this is the form almost every Indian-owned single-member US LLC needs. Form 5471 runs the other way, for a US person owning a foreign corporation, which is not the typical scenario for an Indian founder with a US LLC.',
+    a: 'It depends on the direction of ownership. Form 5472 applies when a foreign person (you) owns at least 25% of a US entity; this is the form almost every Indian-owned single-member US LLC needs. Form 5471 runs the other way, for a US person owning a foreign corporation, which is not the typical scenario for an Indian founder with a US LLC.',
   },
   {
     q: 'Is a US LLC I own from India exempt from BOI reporting?',
-    a: 'Yes, since FinCEN\'s March 2025 interim final rule. A domestic US LLC - including one wholly owned by a foreign person - is no longer required to file beneficial ownership information, because "reporting company" now only covers entities formed under a foreign country\'s law that register to do business in the US.',
+    a: 'Yes, since FinCEN\'s March 2025 interim final rule. A domestic US LLC (including one wholly owned by a foreign person) is no longer required to file beneficial ownership information, because "reporting company" now only covers entities formed under a foreign country\'s law that register to do business in the US.',
   },
   {
     q: 'Can you handle both my US entity compliance and my Indian tax filings?',
@@ -88,7 +88,7 @@ const faqs = [
 const faqLd = buildFaqLd(faqs)
 
 const serviceLd = buildServiceLd({
-  name: 'US Incorporation & Compliance Advisory - Agrawal Khandelwal & Associates LLP',
+  name: 'US Incorporation & Compliance Advisory; Agrawal Khandelwal & Associates LLP',
   description: 'US entity structuring, EIN/ITIN, FBAR/FATCA, IRS foreign-ownership filings, US sales tax nexus, and India-US DTAA advisory for Indian founders.',
   url: 'https://agrawalkhandelwal.com/us-cross-border',
   areaServed: [
@@ -118,7 +118,7 @@ export default function UsCrossBorder() {
             US Incorporation & Compliance<br />for Indian Founders
           </h1>
           <p>
-            Running a US LLC or C-Corp from India comes with its own compliance calendar - separate from, but connected to, your Indian filings. We handle both under one engagement.
+            Running a US LLC or C-Corp from India comes with its own compliance calendar; separate from, but connected to, your Indian filings. We handle both under one engagement.
           </p>
           <div className="hero-cta">
             <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -133,14 +133,14 @@ export default function UsCrossBorder() {
         <div className="container" style={{ maxWidth: '820px' }}>
           <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Why This Needs a Specialist, Not Just a Generalist CA</h2>
           <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.9, marginBottom: '1.75rem' }}>
-            An Indian founder with a US LLC or C-Corp is sitting on two overlapping compliance calendars: US state and federal filings, and Indian income tax and FEMA obligations. Missing either side is expensive - <strong style={{ color: 'var(--text-main)' }}>Form 5472 penalties alone start at $25,000</strong> per year for a foreign-owned US entity that fails to file. We run both sides under a single engagement so nothing falls into the gap between a US-side accountant who doesn&apos;t know your Indian position, and an Indian CA who doesn&apos;t track US filings.
+            An Indian founder with a US LLC or C-Corp is sitting on two overlapping compliance calendars: US state and federal filings, and Indian income tax and FEMA obligations. Missing either side is expensive; <strong style={{ color: 'var(--text-main)' }}>Form 5472 penalties alone start at $25,000</strong> per year for a foreign-owned US entity that fails to file. We run both sides under a single engagement so nothing falls into the gap between a US-side accountant who doesn&apos;t know your Indian position, and an Indian CA who doesn&apos;t track US filings.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1rem' }}>
             {[
               { term: 'FBAR Threshold', def: '$10,000 aggregate across foreign financial accounts at any point in the year triggers a FinCEN Form 114 filing.' },
               { term: 'Form 5472 Penalty', def: 'Starts at $25,000 per year for a foreign-owned US LLC or corporation that misses this federal information return.' },
               { term: 'BOI Reporting', def: 'A domestic US LLC, even if wholly foreign-owned, has been exempt from beneficial ownership reporting since March 2025.' },
-              { term: 'Economic Nexus', def: 'US states can require sales tax registration from sales volume alone - commonly around $100,000 - with no physical presence required.' },
+              { term: 'Economic Nexus', def: 'US states can require sales tax registration from sales volume alone (commonly around $100,000) with no physical presence required.' },
             ].map((item, i) => (
               <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
                 <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '0.88rem' }}>{item.term}</div>
@@ -181,12 +181,12 @@ export default function UsCrossBorder() {
           <div style={{ maxWidth: '500px', margin: '0 auto' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ width: '140px', height: '140px', margin: '0 auto 2rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
-                <Image src="/mehul.jpg" alt="CA Mehul Agrawal - US Cross-Border Compliance Consultant" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                <Image src="/mehul.jpg" alt="CA Mehul Agrawal; US Cross-Border Compliance Consultant" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner - International & Cross-Border Tax</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner; International & Cross-Border Tax</p>
               <p style={{ fontSize: '0.93rem', color: 'var(--text-light)', lineHeight: 1.8, textAlign: 'justify' }}>
-                Mehul advises Indian founders running US LLCs and C-Corps on entity structuring, IRS foreign-ownership filings, FBAR/FATCA disclosure, and how their US position interacts with Indian tax and FEMA compliance - the same cross-border discipline he applies to UAE Corporate Tax and transfer pricing engagements.
+                Mehul advises Indian founders running US LLCs and C-Corps on entity structuring, IRS foreign-ownership filings, FBAR/FATCA disclosure, and how their US position interacts with Indian tax and FEMA compliance; the same cross-border discipline he applies to UAE Corporate Tax and transfer pricing engagements.
               </p>
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function UsCrossBorder() {
           <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
             <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Two Compliance Calendars, One Point of Accountability</h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-              Whether you need entity structuring advice, an overdue Form 5472, or a full US-India compliance review - we bring both sides of the border into one engagement.
+              Whether you need entity structuring advice, an overdue Form 5472, or a full US-India compliance review; we bring both sides of the border into one engagement.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">

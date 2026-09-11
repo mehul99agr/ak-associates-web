@@ -100,7 +100,7 @@ export default function NRIResidentialStatusBlog() {
                   </ul>
                 </div>
 
-                <p>Every NRI tax question starts here: what is your residential status? It determines which income India can tax, which forms you file, whether you need to disclose foreign assets, and whether your NRE account interest stays tax-free. Yet the rules are frequently misunderstood - the 182-day number gets quoted without the exceptions that can change it, and the newer 120-day rule catches people who thought they were safe. Here is how it actually works.</p>
+                <p>Every NRI tax question starts here: what is your residential status? It determines which income India can tax, which forms you file, whether you need to disclose foreign assets, and whether your NRE account interest stays tax-free. Yet the rules are frequently misunderstood; the 182-day number gets quoted without the exceptions that can change it, and the newer 120-day rule catches people who thought they were safe. Here is how it actually works.</p>
 
                 <h2>The Three Residential Statuses</h2>
                 <p>Indian income tax law classifies every individual into one of three categories every financial year:</p>
@@ -126,7 +126,7 @@ export default function NRIResidentialStatusBlog() {
                       </tr>
                       <tr>
                         <td style={tdStyle}><strong>ROR (Resident and Ordinarily Resident)</strong></td>
-                        <td style={tdStyle}>Worldwide income - all Indian and foreign income regardless of where earned or received</td>
+                        <td style={tdStyle}>Worldwide income; all Indian and foreign income regardless of where earned or received</td>
                         <td style={tdStyle}>Yes</td>
                       </tr>
                     </tbody>
@@ -144,7 +144,7 @@ export default function NRIResidentialStatusBlog() {
                 <h3>The 60-Day Exception for Indian Citizens Abroad</h3>
                 <p>The 60-day combined condition is relaxed in two important cases:</p>
                 <ul>
-                  <li><strong>Indian citizens who left India for employment abroad</strong> or as crew on Indian ships: the 60-day threshold in condition (2) is raised to 182 days. In effect, only condition (1) applies - they become resident only if they spend 182+ days in India.</li>
+                  <li><strong>Indian citizens who left India for employment abroad</strong> or as crew on Indian ships: the 60-day threshold in condition (2) is raised to 182 days. In effect, only condition (1) applies; they become resident only if they spend 182+ days in India.</li>
                   <li><strong>Indian citizens or PIOs visiting India:</strong> The same 182-day threshold applies under condition (2). They are not caught by the 60+365 combined condition.</li>
                 </ul>
                 <p>This means a typical NRI working abroad only has to worry about the single 182-day count, not the combined condition.</p>
@@ -155,7 +155,7 @@ export default function NRIResidentialStatusBlog() {
                   <li>They are in India for <strong>120 days or more</strong> during the financial year, AND</li>
                   <li>Their <strong>Indian income</strong> (income other than foreign income) exceeds <strong>Rs 15 lakh</strong> during the year.</li>
                 </ol>
-                <p>If both conditions are met, the individual is deemed resident. However, they are specifically classified as <strong>RNOR</strong> (not ROR), meaning their foreign income not received in India remains exempt. This was a deliberate design choice - the rule was meant to bring high-earning visiting NRIs into the resident net for Indian income purposes, without subjecting them to worldwide taxation.</p>
+                <p>If both conditions are met, the individual is deemed resident. However, they are specifically classified as <strong>RNOR</strong> (not ROR), meaning their foreign income not received in India remains exempt. This was a deliberate design choice; the rule was meant to bring high-earning visiting NRIs into the resident net for Indian income purposes, without subjecting them to worldwide taxation.</p>
                 <p>If your Indian income (rent, capital gains, NRO interest, etc.) is below Rs 15 lakh, the 120-day rule does not apply to you and the standard 182-day threshold governs.</p>
 
                 <h2>Step 2: If Resident, Are You RNOR or ROR?</h2>
@@ -179,7 +179,7 @@ export default function NRIResidentialStatusBlog() {
                 <h2>Why Residential Status Matters for Every NRI Decision</h2>
                 <p>Your status for the year determines:</p>
                 <ul>
-                  <li><strong>TDS on property sale:</strong> <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195) applies only if the seller is NRI. A returning NRI who is resident (even RNOR) in the year of sale follows the resident seller process instead - different form, different rate, different compliance.</li>
+                  <li><strong>TDS on property sale:</strong> <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195) applies only if the seller is NRI. A returning NRI who is resident (even RNOR) in the year of sale follows the resident seller process instead; different form, different rate, different compliance.</li>
                   <li><strong>NRE account tax exemption:</strong> <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE interest is tax-exempt</Link> only while you maintain non-resident status under FEMA.</li>
                   <li><strong>Foreign asset disclosure:</strong> Schedule FA is required for residents and RNOR. NRIs are exempt.</li>
                   <li><strong>DTAA treaty benefits:</strong> Your country of residence for treaty purposes may differ from your Indian residential status. Tie-breaker rules in the DTAA resolve the conflict.</li>
@@ -205,7 +205,7 @@ export default function NRIResidentialStatusBlog() {
                 </p>
                 <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India - Section 6, Income Tax Act - <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+                  <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India (Section 6, Income Tax Act) <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
                 </ul>
               </div>
 
