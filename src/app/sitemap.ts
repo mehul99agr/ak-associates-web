@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/uae-tax-advisory`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.92 },
     { url: `${BASE_URL}/offshore-accounting`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.88 },
     { url: `${BASE_URL}/company-incorporation`, lastModified: new Date('2026-07-01'), changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${BASE_URL}/us-cross-border`, lastModified: new Date('2026-09-12'), changeFrequency: 'monthly', priority: 0.92 },
     { url: `${BASE_URL}/startups`, lastModified: new Date('2026-07-02'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/nri-tax-advisory`, lastModified: new Date('2026-05-08'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/tools`, lastModified: new Date('2026-06-23'), changeFrequency: 'weekly', priority: 0.7 },

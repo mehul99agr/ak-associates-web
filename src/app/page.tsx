@@ -35,6 +35,13 @@ const services = [
     features: ['Transfer Pricing Documentation', 'Treaty Benefits & DTAA', 'International Tax Planning', 'Cross-border Structuring'],
   },
   {
+    title: 'US Incorporation & Compliance',
+    desc: 'LLC vs C-Corp structuring, EIN/ITIN, FBAR/FATCA disclosure, and IRS foreign-ownership filings for founders running a US entity from India.',
+    icon: 'landmark',
+    features: ['LLC vs C-Corp Structuring', 'FBAR & FATCA Filing', 'Form 5471/5472/8858', 'US Sales Tax Nexus'],
+    link: '/us-cross-border',
+  },
+  {
     title: 'Virtual CFO Services',
     desc: 'Strategic financial leadership and advisory services without the overhead of a full-time CFO.',
     icon: 'chart',
@@ -364,34 +371,62 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '2rem' }}>
-              Raising foreign investment into an Indian entity? Read our guide to{' '}
-              <Link href="/blog/fema-compliance-foreign-investment-startups" style={{ color: 'var(--accent)', fontWeight: 700 }}>
-                FEMA compliance for startups raising foreign investment →
-              </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FEATURED GUIDES ===== */}
+      <section className="section" id="featured-guides">
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <span className="section-badge">From the Knowledge Center</span>
+            <h2 className="section-title">Featured Guides</h2>
+            <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
+              Practical guides on the questions we get asked most, across NRI taxation, US entity compliance, incorporation, and cross-border structuring.
             </p>
-            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
-              Selling property in India as an NRI? Read our guide to{' '}
-              <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--accent)', fontWeight: 700 }}>
-                TDS on NRI property sale: rates, Form 27Q &amp; refund guide →
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.5rem' }}>
+            {[
+              {
+                tag: 'FEMA & Compliance',
+                title: 'FEMA Compliance for Startups Raising Foreign Investment',
+                href: '/blog/fema-compliance-foreign-investment-startups',
+              },
+              {
+                tag: 'US Cross-Border',
+                title: 'US LLC vs C-Corp: Which Structure Fits Your Startup',
+                href: '/blog/us-llc-vs-c-corp-indian-founders',
+              },
+              {
+                tag: 'NRI Taxation',
+                title: 'TDS on NRI Property Sale: Rates, Form 27Q & Refund Guide',
+                href: '/blog/tds-on-nri-property-sale-india',
+              },
+              {
+                tag: 'Company Incorporation',
+                title: 'DSC & DIN Application Guide for Directors',
+                href: '/blog/dsc-din-application-director-guide',
+              },
+              {
+                tag: 'Transfer Pricing',
+                title: 'Form 3CEB and the Transfer Pricing Audit Report',
+                href: '/blog/form-3ceb-transfer-pricing-audit-report',
+              },
+              {
+                tag: 'Company Incorporation',
+                title: 'Company Name Reservation via SPICe+ / RUN',
+                href: '/blog/company-name-reservation-run-form-india',
+              },
+            ].map((g, i) => (
+              <Link key={i} href={g.href} className="card" style={{ display: 'block', textDecoration: 'none' }}>
+                <span style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{g.tag}</span>
+                <h3 style={{ fontSize: '1.05rem', margin: '0.75rem 0 1rem', lineHeight: 1.4 }}>{g.title}</h3>
+                <span style={{ fontWeight: 700, color: 'var(--primary)', fontSize: '0.88rem' }}>Read guide →</span>
               </Link>
-            </p>
-            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
-              Incorporating a company in India? Read our guides to{' '}
-              <Link href="/blog/dsc-din-application-director-guide" style={{ color: 'var(--accent)', fontWeight: 700 }}>
-                DSC &amp; DIN application for directors
-              </Link>{' '}
-              and{' '}
-              <Link href="/blog/company-name-reservation-run-form-india" style={{ color: 'var(--accent)', fontWeight: 700 }}>
-                company name reservation via SPICe+ / RUN →
-              </Link>
-            </p>
-            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
-              Doing cross-border transactions with a related entity? Read our guide to{' '}
-              <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--accent)', fontWeight: 700 }}>
-                Form 3CEB and the transfer pricing audit report →
-              </Link>
-            </p>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link href="/blog" className="btn btn-outline">Browse All Insights</Link>
           </div>
         </div>
       </section>

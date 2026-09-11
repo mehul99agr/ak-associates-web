@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import BlogGrid from './BlogGrid'
 
 export const metadata: Metadata = {
   title: 'Tax & Business Insights Blog',
@@ -702,26 +702,7 @@ export default function Blog() {
           </div>
 
           {/* Blog Posts */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2rem' }}>
-            {posts.map((post, i) => (
-              <div key={i} className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                <div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '8px' }}>
-                    <span style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{post.category}</span>
-                    <span style={{ color: 'var(--text-light)', fontSize: '0.82rem' }}>{post.date}</span>
-                  </div>
-                  <h2 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', lineHeight: 1.4 }}>{post.title}</h2>
-                  <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{post.summary}</p>
-                </div>
-                <Link
-                  href={`/blog/${post.slug}`}
-                  style={{ borderTop: '1px solid var(--border)', paddingTop: '1.25rem', marginTop: '1.5rem', color: 'var(--accent)', fontWeight: 700, fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '6px' }}
-                >
-                  Read Full Insight <span>→</span>
-                </Link>
-              </div>
-            ))}
-          </div>
+          <BlogGrid posts={posts} />
 
           {/* Closing CTA */}
           <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', color: '#fff', textAlign: 'center', marginTop: '5rem', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>

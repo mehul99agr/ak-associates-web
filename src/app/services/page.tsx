@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
+import { BOOKING_LINK } from '@/lib/constants'
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -55,32 +56,35 @@ export const metadata: Metadata = {
 const categories = [
   {
     title: 'Taxation & Regulatory',
+    id: 'taxation',
     icon: 'scale',
     items: [
-      { name: 'International Taxation', detail: 'Expertise in Transfer Pricing, DTAA, and NRI taxation.', link: '/transfer-pricing' },
-      { name: 'Tax Planning & Compliance', detail: 'ITR, GST return filing, and optimization strategies.' },
-      { name: 'GST Advisory', detail: 'Implementation, compliance, and departmental representation.' },
-      { name: 'Tax Litigation', detail: 'Expert representation for scrutiny and tax assessments.' },
+      { name: 'International Taxation', detail: 'Expertise in Transfer Pricing, DTAA, and NRI taxation.', link: '/transfer-pricing', linkLabel: 'View details' },
+      { name: 'Tax Planning & Compliance', detail: 'ITR, GST return filing, and optimization strategies.', link: '/blog/understanding-new-tax-regime-2025-26', linkLabel: 'Read the guide' },
+      { name: 'GST Advisory', detail: 'Implementation, compliance, and departmental representation.', link: '/blog/gst-registration-startups-first-return', linkLabel: 'Read the guide' },
+      { name: 'Tax Litigation', detail: 'Expert representation for scrutiny and tax assessments.', link: BOOKING_LINK, linkLabel: 'Discuss your case', external: true },
     ],
   },
   {
     title: 'Audit & Assurance',
+    id: 'audit',
     icon: 'scroll',
     items: [
-      { name: 'Statutory Audit', detail: 'Comprehensive audits under the Companies Act.' },
-      { name: 'Internal & Management Audit', detail: 'Strengthening internal controls and operational efficiency.' },
-      { name: 'Tax Audit', detail: 'Mandatory audits under the Income Tax Act.' },
-      { name: 'Due Diligence', detail: 'Detailed financial vetting for M&A and investments.' },
+      { name: 'Statutory Audit', detail: 'Comprehensive audits under the Companies Act.', link: BOOKING_LINK, linkLabel: 'Discuss your audit', external: true },
+      { name: 'Internal & Management Audit', detail: 'Strengthening internal controls and operational efficiency.', link: BOOKING_LINK, linkLabel: 'Discuss your audit', external: true },
+      { name: 'Tax Audit', detail: 'Mandatory audits under the Income Tax Act.', link: BOOKING_LINK, linkLabel: 'Discuss your audit', external: true },
+      { name: 'Due Diligence', detail: 'Detailed financial vetting for M&A and investments.', link: '/blog/due-diligence-checklist-startup-fundraising', linkLabel: 'Read the guide' },
     ],
   },
   {
     title: 'Strategic Advisory',
+    id: 'advisory',
     icon: 'rocket',
     items: [
-      { name: 'Virtual CFO Services', detail: 'Strategic leadership for startups and growing SMEs.', link: '/startups' },
-      { name: 'Business Incorporation', detail: 'Company & LLP formation with optimal structuring.', link: '/company-incorporation' },
-      { name: 'FEMA & RBI Compliance', detail: 'Advising on inbound and outbound foreign investments.' },
-      { name: 'Financial Modeling', detail: 'Precision valuation and performance forecasting.' },
+      { name: 'Virtual CFO Services', detail: 'Strategic leadership for startups and growing SMEs.', link: '/startups', linkLabel: 'View details' },
+      { name: 'Business Incorporation', detail: 'Company & LLP formation with optimal structuring.', link: '/company-incorporation', linkLabel: 'View details' },
+      { name: 'FEMA & RBI Compliance', detail: 'Advising on inbound and outbound foreign investments.', link: '/blog/fema-compliance-foreign-investment-startups', linkLabel: 'Read the guide' },
+      { name: 'Financial Modeling', detail: 'Precision valuation and performance forecasting.', link: '/blog/startup-valuation-methods-india', linkLabel: 'Read the guide' },
     ],
   },
 ]
@@ -110,15 +114,17 @@ export default function Services() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2.5rem' }}>
             {categories.map((cat, i) => (
-              <div key={i} className="card" style={{ padding: '2.5rem' }}>
+              <div key={i} id={cat.id} className="card" style={{ padding: '2.5rem', scrollMarginTop: '110px' }}>
                 <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name={cat.icon} size={44} /></div>
                 <h2 style={{ fontSize: '1.6rem', marginBottom: '2rem' }}>{cat.title}</h2>
                 <ul style={{ listStyle: 'none' }}>
                   {cat.items.map((item, j) => (
                     <li key={j} style={{ marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: j < cat.items.length - 1 ? '1px solid var(--border)' : 'none' }}>
                       <h3 style={{ fontSize: '1rem', marginBottom: '6px', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)', fontWeight: 700 }}>{item.name}</h3>
-                      <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.detail}</p>
-                      {'link' in item && <Link href={(item as any).link} style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--accent)', textDecoration: 'none' }}>View details →</Link>}
+                      <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '0.6rem' }}>{item.detail}</p>
+                      {item.external
+                        ? <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--accent)', textDecoration: 'none' }}>{item.linkLabel} →</a>
+                        : <Link href={item.link} style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--accent)', textDecoration: 'none' }}>{item.linkLabel} →</Link>}
                     </li>
                   ))}
                 </ul>
@@ -130,6 +136,7 @@ export default function Services() {
             <h2 style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--primary)' }}>Specialised Practice Areas</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center' }}>
               {[
+                { label: 'US Cross-Border Compliance', href: '/us-cross-border' },
                 { label: 'Transfer Pricing', href: '/transfer-pricing' },
                 { label: 'UAE Tax Advisory', href: '/uae-tax-advisory' },
                 { label: 'NRI Tax Advisory', href: '/nri-tax-advisory' },

@@ -4,17 +4,39 @@ import Link from 'next/link'
 import Image from 'next/image'
 import TrackedLink from './TrackedLink'
 
-const serviceLinks = [
-  { href: '/services', label: 'All Services' },
-  { href: '/company-incorporation', label: 'Company Incorporation' },
-  { href: '/startups', label: 'Startups', accent: true },
-  { href: '/nri-tax-advisory', label: 'NRI Tax Advisory', accent: true },
-  { href: '/transfer-pricing', label: 'Transfer Pricing' },
-  { href: '/uae-tax-advisory', label: 'UAE Tax Advisory' },
-  { href: '/offshore-accounting', label: 'Offshore Accounting' },
-  // Local landing pages
-  { href: '/ca-in-nashik', label: 'CA in Nashik' },
-  { href: '/ca-in-sillod', label: 'CA in Sillod' },
+const serviceGroups = [
+  {
+    heading: 'Taxation & Regulatory',
+    items: [
+      { href: '/transfer-pricing', label: 'International Tax & Transfer Pricing' },
+      { href: '/services#taxation', label: 'Tax Planning, GST & Litigation' },
+      { href: '/nri-tax-advisory', label: 'NRI Tax Advisory', accent: true },
+    ],
+  },
+  {
+    heading: 'Cross-Border',
+    items: [
+      { href: '/us-cross-border', label: 'US Incorporation & Compliance', accent: true },
+      { href: '/uae-tax-advisory', label: 'UAE Tax Advisory' },
+      { href: '/offshore-accounting', label: 'Offshore Accounting' },
+    ],
+  },
+  {
+    heading: 'Strategic Advisory',
+    items: [
+      { href: '/company-incorporation', label: 'Company Incorporation' },
+      { href: '/startups', label: 'Startups & Virtual CFO', accent: true },
+      { href: '/services#audit', label: 'Audit & Assurance' },
+    ],
+  },
+  {
+    heading: 'Local Offices',
+    items: [
+      { href: '/ca-in-nashik', label: 'CA in Nashik' },
+      { href: '/ca-in-sillod', label: 'CA in Sillod' },
+      { href: '/services', label: 'All Services →' },
+    ],
+  },
 ]
 
 export default function Navbar() {
@@ -44,6 +66,18 @@ export default function Navbar() {
     document.addEventListener('mousedown', handler)
     return () => document.removeEventListener('mousedown', handler)
   }, [])
+
+  useEffect(() => {
+    if (!dropdownOpen) return
+    const closeOnScroll = () => setDropdownOpen(false)
+    const closeOnEscape = (e: KeyboardEvent) => { if (e.key === 'Escape') setDropdownOpen(false) }
+    window.addEventListener('scroll', closeOnScroll, { passive: true })
+    document.addEventListener('keydown', closeOnEscape)
+    return () => {
+      window.removeEventListener('scroll', closeOnScroll)
+      document.removeEventListener('keydown', closeOnEscape)
+    }
+  }, [dropdownOpen])
 
   return (
     <header className="header">
@@ -100,33 +134,50 @@ export default function Navbar() {
                 border: '1px solid var(--border)',
                 borderRadius: '12px',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
-                minWidth: '220px',
+                minWidth: '680px',
                 zIndex: 1000,
                 overflow: 'hidden',
-                padding: '6px 0',
+                padding: '20px 8px',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(4, 1fr)',
+                gap: '4px',
               }}>
-                {serviceLinks.map(({ href, label, accent }) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={() => setDropdownOpen(false)}
-                    style={{
-                      display: 'block',
-                      padding: '10px 20px',
-                      fontSize: '0.82rem',
+                {serviceGroups.map(group => (
+                  <div key={group.heading} style={{ padding: '0 12px' }}>
+                    <div style={{
+                      fontSize: '0.7rem',
                       fontWeight: 700,
-                      letterSpacing: '0.4px',
-                      color: accent ? 'var(--accent)' : 'var(--text-main)',
-                      textDecoration: 'none',
-                      transition: 'background 0.15s',
-                      borderBottom: href === '/services' ? '1px solid var(--border)' : 'none',
-                      borderTop: href === '/ca-in-nashik' ? '1px solid var(--border)' : 'none',
-                    }}
-                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--bg-surface)')}
-                    onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
-                  >
-                    {label}
-                  </Link>
+                      letterSpacing: '0.5px',
+                      textTransform: 'uppercase',
+                      color: 'var(--text-light)',
+                      marginBottom: '10px',
+                    }}>
+                      {group.heading}
+                    </div>
+                    {group.items.map(({ href, label, accent }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        onClick={() => setDropdownOpen(false)}
+                        style={{
+                          display: 'block',
+                          padding: '7px 8px',
+                          marginLeft: '-8px',
+                          borderRadius: '6px',
+                          fontSize: '0.82rem',
+                          fontWeight: 700,
+                          lineHeight: 1.35,
+                          color: accent ? 'var(--accent)' : 'var(--text-main)',
+                          textDecoration: 'none',
+                          transition: 'background 0.15s',
+                        }}
+                        onMouseEnter={e => (e.currentTarget.style.background = 'var(--bg-surface)')}
+                        onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             )}
@@ -197,21 +248,32 @@ export default function Navbar() {
 
             {mobileServicesOpen && (
               <div style={{ paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '4px' }}>
-                {serviceLinks.map(({ href, label, accent }) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={closeMenu}
-                    style={{
-                      color: accent ? 'var(--accent)' : 'var(--text-light)',
-                      fontWeight: 600,
-                      fontSize: '0.95rem',
-                      textDecoration: 'none',
-                      padding: '6px 0',
-                    }}
-                  >
-                    {label}
-                  </Link>
+                {serviceGroups.map(group => (
+                  <div key={group.heading} style={{ marginBottom: '10px' }}>
+                    <div style={{
+                      fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.5px', textTransform: 'uppercase',
+                      color: 'var(--text-light)', marginBottom: '4px', marginTop: '8px',
+                    }}>
+                      {group.heading}
+                    </div>
+                    {group.items.map(({ href, label, accent }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        onClick={closeMenu}
+                        style={{
+                          display: 'block',
+                          color: accent ? 'var(--accent)' : 'var(--text-light)',
+                          fontWeight: 600,
+                          fontSize: '0.95rem',
+                          textDecoration: 'none',
+                          padding: '6px 0',
+                        }}
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             )}

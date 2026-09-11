@@ -401,6 +401,11 @@ export default function NRITaxAdvisory() {
                   Read Our Tax Insights
                 </Link>
               </div>
+              <p style={{ marginTop: '1.75rem' }}>
+                <Link href="/tools/nri-property-tds" style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.85rem', textDecoration: 'underline' }}>
+                  Selling property? Estimate your TDS with our free NRI Property TDS Calculator →
+                </Link>
+              </p>
             </div>
           </div>
         </section>

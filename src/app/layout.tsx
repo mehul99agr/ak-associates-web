@@ -165,13 +165,14 @@ const organizationLd = {
     'International Taxation', 'Transfer Pricing', 'DTAA Advisory',
     'FEMA Compliance', 'UAE Corporate Tax Advisory', 'NRI Taxation',
     'Startup Advisory', 'Virtual CFO Services', 'ESOP Structuring',
-    'FDI Compliance', 'Offshore Accounting',
+    'FDI Compliance', 'Offshore Accounting', 'US Incorporation & Compliance',
+    'FBAR & FATCA Filing', 'US Sales Tax Nexus Advisory',
   ],
   knowsAbout: [
     'GST Compliance', 'Income Tax', 'Statutory Audit', 'Company Incorporation',
     'International Taxation', 'Transfer Pricing', 'DTAA', 'FEMA Compliance',
     'UAE Corporate Tax', 'NRI Taxation', 'Startup Advisory', 'Virtual CFO Services',
-    'Offshore Accounting',
+    'Offshore Accounting', 'US Incorporation & Compliance', 'FBAR & FATCA Filing',
   ],
   founder: [
     { '@type': 'Person', '@id': MEHUL_PERSON_ID, name: 'CA Mehul Agrawal' },
@@ -192,6 +193,7 @@ const organizationLd = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing', url: 'https://agrawalkhandelwal.com/services' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company Incorporation in India', url: 'https://agrawalkhandelwal.com/company-incorporation' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation & Transfer Pricing', url: 'https://agrawalkhandelwal.com/transfer-pricing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'US Incorporation & Compliance', url: 'https://agrawalkhandelwal.com/us-cross-border' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'UAE Corporate Tax Advisory', url: 'https://agrawalkhandelwal.com/uae-tax-advisory' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Tax Advisory', url: 'https://agrawalkhandelwal.com/nri-tax-advisory' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Offshore Accounting & Outsourced Bookkeeping', url: 'https://agrawalkhandelwal.com/offshore-accounting' } },
@@ -296,6 +298,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <h3>Services</h3>
                 <Link href="/company-incorporation">Company Incorporation</Link>
                 <Link href="/transfer-pricing">Transfer Pricing</Link>
+                <Link href="/us-cross-border">US Cross-Border</Link>
                 <Link href="/uae-tax-advisory">UAE Tax Advisory</Link>
                 <Link href="/offshore-accounting">Offshore Accounting</Link>
                 <Link href="/nri-tax-advisory">NRI Tax Advisory</Link>
