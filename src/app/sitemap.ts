@@ -101,5 +101,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/nri-property-sale-below-stamp-duty-value-section-50c`, lastModified: new Date('2026-06-10'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/nri-selling-shares-indian-private-company-tax-fema`, lastModified: new Date('2026-07-20'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/nri-gaar-cross-border-structures`, lastModified: new Date('2026-08-22'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/us-llc-vs-c-corp-indian-founders`, lastModified: new Date('2025-05-14'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/delaware-wyoming-incorporation-ein-itin-guide`, lastModified: new Date('2025-06-27'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/fbar-fatca-us-llc-indian-founders`, lastModified: new Date('2025-08-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/form-5471-5472-8858-foreign-owned-us-entity`, lastModified: new Date('2025-10-15'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/us-sales-tax-nexus-indian-saas-companies`, lastModified: new Date('2025-11-22'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/us-llc-annual-compliance-calendar-non-resident`, lastModified: new Date('2026-01-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/india-us-dtaa-guide`, lastModified: new Date('2026-02-03'), changeFrequency: 'monthly', priority: 0.9 },
   ]
 }

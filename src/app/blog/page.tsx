@@ -544,6 +544,55 @@ const posts = [
     category: 'Advisory',
     summary: 'Why scaling SMEs need institutional-grade financial leadership long before they can afford a full-time CFO.',
   },
+  {
+    title: 'India-US DTAA Guide: Permanent Establishment, Business Profits, and Double Tax Relief',
+    slug: 'india-us-dtaa-guide',
+    date: 'February 3, 2026',
+    category: 'US Cross-Border',
+    summary: 'How Article 5 defines a permanent establishment, the 120-day construction and services PE thresholds, and how Article 7 attributes business profits under the India-US tax treaty.',
+  },
+  {
+    title: 'US LLC Annual Compliance Calendar for Non-Resident Founders',
+    slug: 'us-llc-annual-compliance-calendar-non-resident',
+    date: 'January 9, 2026',
+    category: 'US Cross-Border',
+    summary: 'Annual reports, franchise tax, registered agent renewal, estimated tax dates, and why a domestic US LLC is now exempt from BOI reporting.',
+  },
+  {
+    title: 'US Sales Tax Economic Nexus for Indian SaaS and Services Companies',
+    slug: 'us-sales-tax-nexus-indian-saas-companies',
+    date: 'November 22, 2025',
+    category: 'US Cross-Border',
+    summary: 'How economic nexus lets a US state require sales tax registration based on sales volume alone, no physical presence needed, and why SaaS taxability varies state by state.',
+  },
+  {
+    title: 'Form 5471 vs 5472 vs 8858: Which One Applies to Your Foreign-Owned US Entity',
+    slug: 'form-5471-5472-8858-foreign-owned-us-entity',
+    date: 'October 15, 2025',
+    category: 'US Cross-Border',
+    summary: 'The direction test for these three IRS information returns, why a foreign-owned single-member US LLC almost always files Form 5472, and the penalties for missing it.',
+  },
+  {
+    title: 'FBAR and FATCA for Indian Founders with a US LLC: What Must Be Disclosed',
+    slug: 'fbar-fatca-us-llc-indian-founders',
+    date: 'August 9, 2025',
+    category: 'US Cross-Border',
+    summary: 'The 10,000 dollar FBAR threshold, the separate FATCA Form 8938 thresholds, and how signature authority over a foreign account can trigger a filing on its own.',
+  },
+  {
+    title: 'Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained',
+    slug: 'delaware-wyoming-incorporation-ein-itin-guide',
+    date: 'June 27, 2025',
+    category: 'US Cross-Border',
+    summary: 'How to incorporate remotely, get an EIN without an SSN through Form SS-4, and the correct timing for an ITIN application.',
+  },
+  {
+    title: 'US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup',
+    slug: 'us-llc-vs-c-corp-indian-founders',
+    date: 'May 14, 2025',
+    category: 'US Cross-Border',
+    summary: 'LLC pass-through taxation and phantom income vs C-Corp taxation, why VC investors prefer a Delaware C-Corp, and the common two-entity structure for Indian founders.',
+  },
 ]
 
 const breadcrumbLd = {
