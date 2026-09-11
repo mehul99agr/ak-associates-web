@@ -548,7 +548,7 @@ button:focus-visible {
   border-top: 1px solid rgba(255,255,255,0.08);
   text-align: center;
   font-size: 0.85rem;
-  color: #4b5563;
+  color: var(--footer-text);
 }
 
 .footer-logo {

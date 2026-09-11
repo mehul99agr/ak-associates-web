@@ -60,7 +60,7 @@ export default async function GoogleReviews() {
             </div>
           ))}
         </div>
-        <p style={{ textAlign: 'center', marginTop: '2rem', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+        <p style={{ textAlign: 'center', marginTop: '2rem', fontSize: '0.78rem', color: 'var(--text-light)' }}>
           Reviews powered by Google
         </p>
       </div>
