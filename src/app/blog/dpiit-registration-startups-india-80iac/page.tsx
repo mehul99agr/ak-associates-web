@@ -25,7 +25,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('DPIIT Registration for Startups (202
 
 const articleLd = buildArticleLd({
   headline: 'DPIIT Registration for Startups (2026)',
-  description: 'DPIIT recognition process, eligibility, 80-IAC tax holiday requirements, and IMB certification — a complete guide for Indian startup founders.',
+  description: 'DPIIT recognition process, eligibility, 80-IAC tax holiday requirements, and IMB certification - a complete guide for Indian startup founders.',
   datePublished: '2026-07-25',
   slug: 'dpiit-registration-startups-india-80iac',
 })
@@ -39,7 +39,7 @@ const faqLd = {
       name: 'What is the difference between DPIIT recognition and 80-IAC certification?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'DPIIT recognition is issued by the Department for Promotion of Industry and Internal Trade via the Startup India portal. It unlocks a package of regulatory benefits including labor law self-certification, patent fee rebates, and public procurement preferences, and it is the gateway for applying for other benefits. The 80-IAC tax deduction requires a separate, more rigorous application to the Inter-Ministerial Board (IMB), which independently evaluates whether the startup has a genuine innovation-based business model. Being DPIIT-recognized does not automatically grant 80-IAC status. Founders must apply to IMB after obtaining DPIIT recognition and meet stricter criteria — many DPIIT-recognized startups do not qualify for 80-IAC.',
+        text: 'DPIIT recognition is issued by the Department for Promotion of Industry and Internal Trade via the Startup India portal. It unlocks a package of regulatory benefits including labor law self-certification, patent fee rebates, and public procurement preferences, and it is the gateway for applying for other benefits. The 80-IAC tax deduction requires a separate, more rigorous application to the Inter-Ministerial Board (IMB), which independently evaluates whether the startup has a genuine innovation-based business model. Being DPIIT-recognized does not automatically grant 80-IAC status. Founders must apply to IMB after obtaining DPIIT recognition and meet stricter criteria - many DPIIT-recognized startups do not qualify for 80-IAC.',
       },
     },
     {
@@ -47,7 +47,7 @@ const faqLd = {
       name: 'What are the eligibility criteria for DPIIT recognition in India in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'To qualify for DPIIT recognition, the entity must be incorporated as a Private Limited Company, Limited Liability Partnership, or Registered Partnership Firm in India; incorporated not more than 10 years ago from the date of incorporation; have an annual turnover not exceeding ₹100 crore in any preceding financial year; and be working towards innovation, improvement, or development of a product, process, or service, or have a scalable business model with high potential for employment generation or wealth creation. Service companies, technology platforms, manufacturing startups, and D2C brands can all qualify — the definition is broad.',
+        text: 'To qualify for DPIIT recognition, the entity must be incorporated as a Private Limited Company, Limited Liability Partnership, or Registered Partnership Firm in India; incorporated not more than 10 years ago from the date of incorporation; have an annual turnover not exceeding ₹100 crore in any preceding financial year; and be working towards innovation, improvement, or development of a product, process, or service, or have a scalable business model with high potential for employment generation or wealth creation. Service companies, technology platforms, manufacturing startups, and D2C brands can all qualify - the definition is broad.',
       },
     },
     {
@@ -55,7 +55,7 @@ const faqLd = {
       name: 'How does the Section 80-IAC tax holiday work for startups?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Section 80-IAC provides a 100% deduction on profits and gains from an eligible business for 3 consecutive assessment years out of the first 10 years from the year of incorporation. To claim it, the startup must have obtained a certificate from the Inter-Ministerial Board (not just DPIIT recognition), be incorporated on or after April 1, 2016, be incorporated as a Private Limited Company or LLP, and not have been formed by splitting or reconstruction of an existing business. The benefit must be claimed by filing the ITR with the 80-IAC deduction; it does not apply automatically. The startup must remain profitable in the three years it selects — a loss year generates no benefit and that year is still counted toward the 10-year window.',
+        text: 'Section 80-IAC provides a 100% deduction on profits and gains from an eligible business for 3 consecutive assessment years out of the first 10 years from the year of incorporation. To claim it, the startup must have obtained a certificate from the Inter-Ministerial Board (not just DPIIT recognition), be incorporated on or after April 1, 2016, be incorporated as a Private Limited Company or LLP, and not have been formed by splitting or reconstruction of an existing business. The benefit must be claimed by filing the ITR with the 80-IAC deduction; it does not apply automatically. The startup must remain profitable in the three years it selects - a loss year generates no benefit and that year is still counted toward the 10-year window.',
       },
     },
     {
@@ -97,18 +97,18 @@ export default function DPIITRegistrationBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
-                <p>DPIIT recognition is one of the most misunderstood government registrations for Indian startups. Founders pursue it believing it automatically delivers a three-year tax holiday. It does not. The tax holiday — Section 80-IAC — is a separate application to a different body with stricter criteria, and most DPIIT-recognized startups never file for it. This article clarifies what DPIIT recognition actually gives you, what 80-IAC requires, and how to structure the applications in the right order.</p>
+                <p>DPIIT recognition is one of the most misunderstood government registrations for Indian startups. Founders pursue it believing it automatically delivers a three-year tax holiday. It does not. The tax holiday - Section 80-IAC - is a separate application to a different body with stricter criteria, and most DPIIT-recognized startups never file for it. This article clarifies what DPIIT recognition actually gives you, what 80-IAC requires, and how to structure the applications in the right order.</p>
 
                 <h2>What is DPIIT Recognition?</h2>
-                <p>DPIIT recognition is a certification from the Department for Promotion of Industry and Internal Trade, applied for online at startupindia.gov.in. It is the government&apos;s formal acknowledgment that a company meets the definition of a startup under the Startup India initiative. Recognition unlocks a package of benefits and is the prerequisite for all other startup-specific schemes including 80-IAC and — until its recent abolition — the angel tax exemption.</p>
+                <p>DPIIT recognition is a certification from the Department for Promotion of Industry and Internal Trade, applied for online at startupindia.gov.in. It is the government&apos;s formal acknowledgment that a company meets the definition of a startup under the Startup India initiative. Recognition unlocks a package of benefits and is the prerequisite for all other startup-specific schemes including 80-IAC and - until its recent abolition - the angel tax exemption.</p>
 
                 <h2>Eligibility Criteria for DPIIT Recognition</h2>
                 <p>All four conditions must be met at the time of application:</p>
                 <ul>
                   <li><strong>Entity type:</strong> Incorporated as a Private Limited Company (under the Companies Act 2013), Limited Liability Partnership, or Registered Partnership Firm in India. One-Person Companies are not eligible.</li>
-                  <li><strong>Age limit:</strong> Not more than <strong>10 years</strong> from the date of incorporation or registration. This is the most commonly missed disqualifier — founders who have been running a business for 10+ years before formalizing it under a new entity often miscount from the wrong date.</li>
+                  <li><strong>Age limit:</strong> Not more than <strong>10 years</strong> from the date of incorporation or registration. This is the most commonly missed disqualifier - founders who have been running a business for 10+ years before formalizing it under a new entity often miscount from the wrong date.</li>
                   <li><strong>Revenue cap:</strong> Annual turnover must not have exceeded ₹100 crore in any previous financial year. Once crossed, the company ceases to be a startup and loses recognition benefits going forward.</li>
-                  <li><strong>Innovation criterion:</strong> The business must be working towards innovation, improvement, or development of a product, process, or service — or have a scalable business model with high potential for employment generation or wealth creation. This is self-declared in the application; DPIIT does not independently verify it at recognition stage.</li>
+                  <li><strong>Innovation criterion:</strong> The business must be working towards innovation, improvement, or development of a product, process, or service - or have a scalable business model with high potential for employment generation or wealth creation. This is self-declared in the application; DPIIT does not independently verify it at recognition stage.</li>
                 </ul>
 
                 <h2>The Application Process</h2>
@@ -119,18 +119,18 @@ export default function DPIITRegistrationBlog() {
                   <li>DPIIT reviews and issues the recognition certificate, typically within 2 to 5 working days for complete applications</li>
                   <li>Apply for specific benefits separately as needed: 80-IAC via IMB, labor law compliance self-certification, patent fee rebate, etc.</li>
                 </ol>
-                <p>The innovation description deserves careful drafting. While DPIIT does not rigorously evaluate it at the recognition stage, this same description influences the Inter-Ministerial Board&apos;s 80-IAC decision — and a vague description submitted in the DPIIT application often causes IMB rejection later.</p>
+                <p>The innovation description deserves careful drafting. While DPIIT does not rigorously evaluate it at the recognition stage, this same description influences the Inter-Ministerial Board&apos;s 80-IAC decision - and a vague description submitted in the DPIIT application often causes IMB rejection later.</p>
 
                 <h2>The 80-IAC Tax Holiday: What It Actually Requires</h2>
                 <p>Section 80-IAC of the Income Tax Act provides a <strong>100% deduction on profits</strong> from an eligible startup business for 3 consecutive assessment years, chosen out of the first 10 years from the year of incorporation. On a profitable startup earning ₹2 crore a year, this deduction saves approximately ₹52 lakh in corporate tax over three years at the 26% effective rate.</p>
-                <p>To claim 80-IAC, the startup must obtain a certificate from the <strong>Inter-Ministerial Board (IMB)</strong> — a separate application from DPIIT recognition. The IMB evaluates:</p>
+                <p>To claim 80-IAC, the startup must obtain a certificate from the <strong>Inter-Ministerial Board (IMB)</strong> - a separate application from DPIIT recognition. The IMB evaluates:</p>
                 <ul>
                   <li><strong>Genuine innovation:</strong> The business model must involve original product or process development, not a replication of an existing business. Me-too apps, franchises, and trading companies rarely qualify.</li>
                   <li><strong>Date of incorporation:</strong> Must be on or after April 1, 2016. Companies incorporated before this date are permanently ineligible regardless of DPIIT recognition status.</li>
                   <li><strong>Entity structure:</strong> Only Private Limited Companies and LLPs are eligible. Registered Partnership Firms, despite qualifying for DPIIT recognition, are excluded from 80-IAC.</li>
                   <li><strong>Not formed by splitting or reconstruction:</strong> A company formed by spinning off or restructuring an existing profitable business does not qualify.</li>
                 </ul>
-                <p>The IMB application requires detailed documentation of the innovation — pitch decks, product demos, technology architecture descriptions, or proof of unique process. Applications are reviewed by representatives from DPIIT, DSIR (Department of Scientific and Industrial Research), and relevant sectoral ministries. Processing can take 3 to 6 months.</p>
+                <p>The IMB application requires detailed documentation of the innovation - pitch decks, product demos, technology architecture descriptions, or proof of unique process. Applications are reviewed by representatives from DPIIT, DSIR (Department of Scientific and Industrial Research), and relevant sectoral ministries. Processing can take 3 to 6 months.</p>
 
                 <h2>Other Benefits of DPIIT Recognition</h2>
                 <ul>
@@ -138,11 +138,11 @@ export default function DPIITRegistrationBlog() {
                   <li><strong>Patent fee rebate:</strong> 80% rebate on patent filing fees. For technology startups filing multiple patents, this saves lakhs.</li>
                   <li><strong>Public procurement preference:</strong> Exemption from the prior experience and turnover requirements that typically disqualify startups from government tenders. Startups can bid on central government contracts on equal footing with established vendors.</li>
                   <li><strong>Faster insolvency resolution:</strong> 90-day winding-up process under the Insolvency and Bankruptcy Code, compared to 180+ days for regular companies. Provides a faster exit for startups that do not work out.</li>
-                  <li><strong>Angel tax abolished (Finance Act 2025):</strong> Section 56(2)(viib) — which previously taxed investments received at a premium over fair market value as income — was entirely removed by Finance Act 2025. DPIIT-recognized startups previously needed a specific exemption under this provision; that provision and its exemptions no longer exist.</li>
+                  <li><strong>Angel tax abolished (Finance Act 2025):</strong> Section 56(2)(viib) - which previously taxed investments received at a premium over fair market value as income - was entirely removed by Finance Act 2025. DPIIT-recognized startups previously needed a specific exemption under this provision; that provision and its exemptions no longer exist.</li>
                 </ul>
 
                 <h2>The Right Sequencing</h2>
-                <p>File DPIIT recognition first — it is fast, free, and the prerequisite for everything else. Once recognition is in hand, evaluate whether 80-IAC is worth pursuing: only relevant if the company expects to be profitable within the first 10 years and has a clearly demonstrable innovation element. File the IMB application as early as possible since processing is slow and you want the certificate in hand before the profitability years begin. Retroactive 80-IAC claims for years already filed are complex and less reliable than prospective ones.</p>
+                <p>File DPIIT recognition first - it is fast, free, and the prerequisite for everything else. Once recognition is in hand, evaluate whether 80-IAC is worth pursuing: only relevant if the company expects to be profitable within the first 10 years and has a clearly demonstrable innovation element. File the IMB application as early as possible since processing is slow and you want the certificate in hand before the profitability years begin. Retroactive 80-IAC claims for years already filed are complex and less reliable than prospective ones.</p>
                 <p>Our <Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Advisory team</Link> handles DPIIT recognition applications, IMB documentation, and the complete tax compliance calendar for DPIIT-recognized startups.</p>
               </div>
 

@@ -69,15 +69,15 @@ const faqs = [
   },
   {
     q: 'Should I set up an LLC or a Delaware C-Corp?',
-    a: 'If you plan to raise institutional venture capital, a Delaware C-Corp is almost always the right call — VC funds are structured to invest in stock, not LLC membership interests. If you are bootstrapping on your own revenue with no near-term fundraising plan, an LLC is usually simpler and cheaper to run, provided you plan for its pass-through "phantom income" tax treatment.',
+    a: 'If you plan to raise institutional venture capital, a Delaware C-Corp is almost always the right call - VC funds are structured to invest in stock, not LLC membership interests. If you are bootstrapping on your own revenue with no near-term fundraising plan, an LLC is usually simpler and cheaper to run, provided you plan for its pass-through "phantom income" tax treatment.',
   },
   {
     q: 'Do I need to file Form 5471 or Form 5472?',
-    a: 'It depends on the direction of ownership. Form 5472 applies when a foreign person (you) owns at least 25% of a US entity — this is the form almost every Indian-owned single-member US LLC needs. Form 5471 runs the other way, for a US person owning a foreign corporation, which is not the typical scenario for an Indian founder with a US LLC.',
+    a: 'It depends on the direction of ownership. Form 5472 applies when a foreign person (you) owns at least 25% of a US entity - this is the form almost every Indian-owned single-member US LLC needs. Form 5471 runs the other way, for a US person owning a foreign corporation, which is not the typical scenario for an Indian founder with a US LLC.',
   },
   {
     q: 'Is a US LLC I own from India exempt from BOI reporting?',
-    a: 'Yes, since FinCEN\'s March 2025 interim final rule. A domestic US LLC — including one wholly owned by a foreign person — is no longer required to file beneficial ownership information, because "reporting company" now only covers entities formed under a foreign country\'s law that register to do business in the US.',
+    a: 'Yes, since FinCEN\'s March 2025 interim final rule. A domestic US LLC - including one wholly owned by a foreign person - is no longer required to file beneficial ownership information, because "reporting company" now only covers entities formed under a foreign country\'s law that register to do business in the US.',
   },
   {
     q: 'Can you handle both my US entity compliance and my Indian tax filings?',

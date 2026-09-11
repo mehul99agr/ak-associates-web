@@ -11,7 +11,7 @@ const faqLd = {
       name: 'Is this TDS calculator accurate for FY 2026-27 rates?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. It uses the current base rates under Section 393(2) of the Income Tax Act 2025 (earlier Section 195 under the 1961 Act) - 12.5% for long-term gains, 30% for short-term gains - plus the applicable surcharge slab based on sale value, and 4% health and education cess. It gives a statutory-rate estimate — it does not replace a Form 128 (earlier Form 13) lower deduction certificate computation, which can reduce TDS well below these figures.',
+        text: 'Yes. It uses the current base rates under Section 393(2) of the Income Tax Act 2025 (earlier Section 195 under the 1961 Act) - 12.5% for long-term gains, 30% for short-term gains - plus the applicable surcharge slab based on sale value, and 4% health and education cess. It gives a statutory-rate estimate - it does not replace a Form 128 (earlier Form 13) lower deduction certificate computation, which can reduce TDS well below these figures.',
       },
     },
     {

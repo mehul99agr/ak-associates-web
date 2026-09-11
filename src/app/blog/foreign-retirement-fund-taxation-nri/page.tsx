@@ -183,8 +183,8 @@ export default function ForeignRetirementFundBlog() {
                 </p>
                 <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}>Income Tax Department, Government of India — <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
-                  <li style={{ marginBottom: 0 }}>Reserve Bank of India (FEMA / repatriation rules) — <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>rbi.org.in</a></li>
+                  <li style={{ marginBottom: '0.4rem' }}>Income Tax Department, Government of India - <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+                  <li style={{ marginBottom: 0 }}>Reserve Bank of India (FEMA / repatriation rules) - <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>rbi.org.in</a></li>
                 </ul>
               </div>
 

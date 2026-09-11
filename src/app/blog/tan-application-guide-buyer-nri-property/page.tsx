@@ -67,7 +67,7 @@ const faqLd = {
       name: 'Can a buyer reuse an existing TAN for an NRI property purchase?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. If the buyer already holds a TAN from a previous transaction — for example, as an employer deducting salary TDS, or from an earlier purchase from a non-resident — the same TAN can be used again to deduct and report TDS under Section 195 for a new NRI property purchase.',
+        text: 'Yes. If the buyer already holds a TAN from a previous transaction - for example, as an employer deducting salary TDS, or from an earlier purchase from a non-resident - the same TAN can be used again to deduct and report TDS under Section 195 for a new NRI property purchase.',
       },
     },
     {
@@ -120,13 +120,13 @@ export default function TANApplicationGuideBlog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}>Buying property from an NRI requires the buyer to hold a <strong>TAN</strong>, not just a PAN — the resident-seller Form 26QB / PAN-only process does not apply.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Apply for the TAN as soon as the deal is seriously under negotiation — it cannot be backdated once a payment has already been made without TDS deducted.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Buying property from an NRI requires the buyer to hold a <strong>TAN</strong>, not just a PAN - the resident-seller Form 26QB / PAN-only process does not apply.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Apply for the TAN as soon as the deal is seriously under negotiation - it cannot be backdated once a payment has already been made without TDS deducted.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Missing this step makes the buyer personally liable for the full TDS, plus 1% monthly interest and a Section 271C penalty.</li>
                     <li style={{ marginBottom: 0 }}>Once the TAN is issued, the buyer deducts TDS via challan and files the quarterly Form 27Q return.</li>
                   </ul>
                 </div>
-                <p>If you are buying property from an NRI, one requirement catches most first-time buyers off guard: you need a <strong>TAN (Tax Deduction Account Number)</strong>, not just a PAN. This is different from buying from a resident seller, and skipping it — or discovering it too late — is the single most common mistake that creates personal TDS liability for buyers. Here is exactly how to get one.</p>
+                <p>If you are buying property from an NRI, one requirement catches most first-time buyers off guard: you need a <strong>TAN (Tax Deduction Account Number)</strong>, not just a PAN. This is different from buying from a resident seller, and skipping it - or discovering it too late - is the single most common mistake that creates personal TDS liability for buyers. Here is exactly how to get one.</p>
 
                 <h2>Is TAN Mandatory for Buying Property from an NRI?</h2>
                 <p><strong>Yes. When the seller is an NRI, the buyer must obtain a TAN before making any payment - a PAN alone is not enough, and the resident-seller Form 26QB route does not apply. The purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which makes TAN-based TDS deduction and quarterly Form 27Q (now Form 144) reporting compulsory, with no minimum transaction value.</strong></p>
@@ -141,11 +141,11 @@ export default function TANApplicationGuideBlog() {
 
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update: TAN Is Not Being Scrapped Here</p>
-                  <p style={{ margin: 0, fontSize: '0.95rem' }}>You may have seen reports that Budget 2026 removes the TAN requirement for property purchases from October 1, 2026. That change is real, but it applies only to <strong>resident sellers</strong> — a new PAN-based challan (Form 141) replaces TAN-based compliance for those transactions. Where the seller is an NRI, Form 141 explicitly does not apply. The TAN requirement covered in this guide continues unchanged, under Section 195 (now Section 393(2) under the Income Tax Act 2025), with Form 27Q now called Form 144. Don&apos;t skip TAN registration for an NRI purchase based on the &quot;TAN scrapped&quot; headlines.</p>
+                  <p style={{ margin: 0, fontSize: '0.95rem' }}>You may have seen reports that Budget 2026 removes the TAN requirement for property purchases from October 1, 2026. That change is real, but it applies only to <strong>resident sellers</strong> - a new PAN-based challan (Form 141) replaces TAN-based compliance for those transactions. Where the seller is an NRI, Form 141 explicitly does not apply. The TAN requirement covered in this guide continues unchanged, under Section 195 (now Section 393(2) under the Income Tax Act 2025), with Form 27Q now called Form 144. Don&apos;t skip TAN registration for an NRI purchase based on the &quot;TAN scrapped&quot; headlines.</p>
                 </div>
 
                 <h2>Why a TAN Is Required Here (and Not for Resident Sellers)</h2>
-                <p>When buying from a resident seller above ₹50 lakh, Section 194-IA applies, and the buyer simply files Form 26QB using their PAN — no TAN needed. When the seller is an NRI, the transaction falls under <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195 (now Section 393(2))</Link> instead, which is a full TDS obligation with no minimum threshold. Section 195 compliance requires the payer to hold a TAN, deposit TDS via challan, and file the quarterly Form 27Q (now Form 144) return — the PAN-only Form 26QB process simply does not apply.</p>
+                <p>When buying from a resident seller above ₹50 lakh, Section 194-IA applies, and the buyer simply files Form 26QB using their PAN - no TAN needed. When the seller is an NRI, the transaction falls under <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195 (now Section 393(2))</Link> instead, which is a full TDS obligation with no minimum threshold. Section 195 compliance requires the payer to hold a TAN, deposit TDS via challan, and file the quarterly Form 27Q (now Form 144) return - the PAN-only Form 26QB process simply does not apply.</p>
 
                 <h2>Step-by-Step TAN Application Process</h2>
                 <ol>
@@ -154,7 +154,7 @@ export default function TANApplicationGuideBlog() {
                   <li><strong>Submit online and pay the fee:</strong> The application fee is nominal, around ₹65, payable online at the time of submission.</li>
                   <li><strong>Acknowledgment generated:</strong> A 14-digit acknowledgment number is issued immediately, which can be used to track the application status.</li>
                   <li><strong>TAN allotted:</strong> The TAN is typically issued within 7 to 10 working days and communicated electronically. A physical TAN allotment letter can also be requested.</li>
-                  <li><strong>Use the TAN going forward:</strong> Once allotted, the TAN is used to deposit TDS via Challan ITNS-281 and to file Form 27Q every quarter for this transaction — and can be reused for any future Section 195 deductions.</li>
+                  <li><strong>Use the TAN going forward:</strong> Once allotted, the TAN is used to deposit TDS via Challan ITNS-281 and to file Form 27Q every quarter for this transaction - and can be reused for any future Section 195 deductions.</li>
                 </ol>
 
                 <h2>Documents Needed</h2>
@@ -163,7 +163,7 @@ export default function TANApplicationGuideBlog() {
                   <li>Address proof matching the application</li>
                   <li>Details of the category of deductor (individual, firm, company, HUF)</li>
                 </ul>
-                <p>The process is straightforward and does not require the NRI seller&apos;s involvement — it is entirely the buyer&apos;s responsibility and can be completed independently, ideally before the sale agreement is finalized.</p>
+                <p>The process is straightforward and does not require the NRI seller&apos;s involvement - it is entirely the buyer&apos;s responsibility and can be completed independently, ideally before the sale agreement is finalized.</p>
 
                 <h2>Timing: Apply Before, Not After</h2>
                 <p>A TAN cannot be backdated once a payment has already been made to the NRI seller without TDS deduction. Apply for the TAN as soon as the transaction is seriously under negotiation, well before any advance or full payment is made. Buyers who make payments first and try to sort out TAN and TDS afterward risk becoming an <strong>assessee in default under Section 201 (now Section 398)</strong>, with interest and penalty exposure on top of the TDS itself.</p>
@@ -171,7 +171,7 @@ export default function TANApplicationGuideBlog() {
                 <h2>What Happens Without a TAN</h2>
                 <p>If a buyer pays an NRI seller without deducting TDS because they didn&apos;t realize a TAN was required, the buyer becomes personally liable for the full TDS amount, plus interest at 1% per month for non-deduction and a penalty equal to the tax not deducted under Section 271C. Getting the TAN in place first is a small administrative step that avoids a significant personal liability later. Sellers navigating the other side of this transaction can find guidance in our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Tax Advisory</Link> services.</p>
 
-                <p>Once the TAN is in hand, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to work out exactly how much to deduct and deposit. If the NRI seller expects their actual tax liability to be much lower than the statutory TDS, point them to our guide on the <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> — it&apos;s the seller&apos;s responsibility to apply, but buyers benefit from a smoother transaction when it&apos;s in place before closing.</p>
+                <p>Once the TAN is in hand, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to work out exactly how much to deduct and deposit. If the NRI seller expects their actual tax liability to be much lower than the statutory TDS, point them to our guide on the <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> - it&apos;s the seller&apos;s responsibility to apply, but buyers benefit from a smoother transaction when it&apos;s in place before closing.</p>
               </div>
 
               <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

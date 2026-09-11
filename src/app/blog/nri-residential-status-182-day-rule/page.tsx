@@ -205,7 +205,7 @@ export default function NRIResidentialStatusBlog() {
                 </p>
                 <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India — Section 6, Income Tax Act — <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
+                  <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India - Section 6, Income Tax Act - <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
                 </ul>
               </div>
 

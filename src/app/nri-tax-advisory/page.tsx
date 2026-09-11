@@ -75,7 +75,7 @@ const faqLd = {
       name: 'Can an NRI sell property in India and send money abroad?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. The sale proceeds are subject to capital gains tax in India. The buyer is required to deduct TDS at 12.5% on long-term gains (held over 2 years) or 30% on short-term gains, plus surcharge and 4% cess — effectively 13% to 17.81% for most long-term sales, depending on the sale value. After paying tax, the NRI can repatriate up to USD 1 million per financial year from the NRO account. Under the new Income Tax Act 2025, the foreign remittance process now uses Form 145 (replacing Form 15CA) and Form 146 (replacing Form 15CB), effective April 1, 2026.',
+        text: 'Yes. The sale proceeds are subject to capital gains tax in India. The buyer is required to deduct TDS at 12.5% on long-term gains (held over 2 years) or 30% on short-term gains, plus surcharge and 4% cess - effectively 13% to 17.81% for most long-term sales, depending on the sale value. After paying tax, the NRI can repatriate up to USD 1 million per financial year from the NRO account. Under the new Income Tax Act 2025, the foreign remittance process now uses Form 145 (replacing Form 15CA) and Form 146 (replacing Form 15CB), effective April 1, 2026.',
       },
     },
     {
@@ -182,7 +182,7 @@ export default function NRITaxAdvisory() {
               We handle ITR filing, TDS refunds, property repatriation, and DTAA claims for NRIs in the UAE, US, UK, Singapore, and Australia.
             </p>
             <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>
-              We offer evening and weekend call slots to match US, UK, and Gulf time zones — most of our NRI clients never need to take time off work to talk to us.
+              We offer evening and weekend call slots to match US, UK, and Gulf time zones - most of our NRI clients never need to take time off work to talk to us.
             </p>
             <div className="hero-cta">
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -200,12 +200,12 @@ export default function NRITaxAdvisory() {
           <div className="container" style={{ maxWidth: '820px' }}>
             <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Who is an NRI for Tax Purposes in India?</h2>
             <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.9, marginBottom: '1.75rem' }}>
-              A Non-Resident Indian (NRI) for income tax purposes is an Indian citizen or person of Indian origin who spends <strong style={{ color: 'var(--text-main)' }}>fewer than 182 days in India</strong> during a financial year. NRIs are taxed in India only on income earned or received in India — rent from Indian property, interest on NRO accounts, capital gains on Indian shares or real estate, and income from any Indian business or profession. Global income remains fully exempt from Indian tax. The residency threshold was revised under the new Income Tax Act 2025 (effective April 1, 2026) for certain categories of Indian citizens.
+              A Non-Resident Indian (NRI) for income tax purposes is an Indian citizen or person of Indian origin who spends <strong style={{ color: 'var(--text-main)' }}>fewer than 182 days in India</strong> during a financial year. NRIs are taxed in India only on income earned or received in India - rent from Indian property, interest on NRO accounts, capital gains on Indian shares or real estate, and income from any Indian business or profession. Global income remains fully exempt from Indian tax. The residency threshold was revised under the new Income Tax Act 2025 (effective April 1, 2026) for certain categories of Indian citizens.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1rem' }}>
               {[
                 { term: 'NRI (Non-Resident Indian)', def: 'Spends fewer than 182 days in India in a financial year. Taxed only on Indian-sourced income.' },
-                { term: 'RNOR (Resident but Not Ordinarily Resident)', def: 'Transitional status for returning NRIs — global income remains tax-free for up to 3 years after return to India.' },
+                { term: 'RNOR (Resident but Not Ordinarily Resident)', def: 'Transitional status for returning NRIs - global income remains tax-free for up to 3 years after return to India.' },
                 { term: 'Deemed Resident', def: 'An Indian citizen with Indian income above ₹15 lakh who is not taxed in any other country is treated as an Indian resident.' },
                 { term: 'NRO vs NRE Account', def: 'NRO accounts hold Indian-sourced income (taxable); NRE accounts hold foreign earnings repatriated to India (tax-exempt interest).' },
               ].map((item, i) => (

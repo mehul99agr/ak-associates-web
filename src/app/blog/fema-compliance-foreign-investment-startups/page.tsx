@@ -44,7 +44,7 @@ const faqLd = {
       name: 'Does a startup need RBI approval to receive foreign investment?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'In most cases, no. Most sectors are covered under the Automatic Route, meaning no prior RBI or government approval is needed. The investment simply needs to be reported to the AD (Authorised Dealer) Bank within 30 days of receipt, and equity must be allotted and FC-GPR filed within 30 days of allotment. Government Route approval is required only for sectors like defence, telecom, and certain media — most software and services startups fall under Automatic Route.',
+        text: 'In most cases, no. Most sectors are covered under the Automatic Route, meaning no prior RBI or government approval is needed. The investment simply needs to be reported to the AD (Authorised Dealer) Bank within 30 days of receipt, and equity must be allotted and FC-GPR filed within 30 days of allotment. Government Route approval is required only for sectors like defence, telecom, and certain media - most software and services startups fall under Automatic Route.',
       },
     },
     {
@@ -60,7 +60,7 @@ const faqLd = {
       name: 'What is the penalty for late FC-GPR filing?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Late FC-GPR attracts a compounding penalty under FEMA. The penalty ranges from a minimum of ₹5,000 to up to 300% of the amount involved, depending on the delay period and RBI discretion. Delays are very common — most startups miss the 30-day window — but they can be compounded by applying to RBI. The penalty for short delays (1-3 months) with a clean filing history is typically modest, but the compounding process itself takes time and legal costs.',
+        text: 'Late FC-GPR attracts a compounding penalty under FEMA. The penalty ranges from a minimum of ₹5,000 to up to 300% of the amount involved, depending on the delay period and RBI discretion. Delays are very common - most startups miss the 30-day window - but they can be compounded by applying to RBI. The penalty for short delays (1-3 months) with a clean filing history is typically modest, but the compounding process itself takes time and legal costs.',
       },
     },
     {
@@ -76,7 +76,7 @@ const faqLd = {
       name: 'Can a foreign investor hold convertible notes in an Indian startup?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, under the Startup India framework, DPIIT-recognised startups can issue Convertible Notes to foreign investors. A Convertible Note is a debt instrument that converts into equity within 5 years. The minimum investment is USD 2,00,000 (approx. ₹1.67 crore) per investor per round. A separate CN-specific reporting form must be filed with RBI within 30 days of receipt of funds — different from FC-GPR (which is filed only after conversion to equity).',
+        text: 'Yes, under the Startup India framework, DPIIT-recognised startups can issue Convertible Notes to foreign investors. A Convertible Note is a debt instrument that converts into equity within 5 years. The minimum investment is USD 2,00,000 (approx. ₹1.67 crore) per investor per round. A separate CN-specific reporting form must be filed with RBI within 30 days of receipt of funds - different from FC-GPR (which is filed only after conversion to equity).',
       },
     },
     {

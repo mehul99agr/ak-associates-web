@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide' },
   openGraph: {
     title: 'Dubai Company Registration Guide (2026)',
-    description: 'Mainland vs Free Zone vs Offshore, real costs, FEMA obligations, and UAE Corporate Tax — everything an Indian entrepreneur needs before registering a Dubai company.',
+    description: 'Mainland vs Free Zone vs Offshore, real costs, FEMA obligations, and UAE Corporate Tax - everything an Indian entrepreneur needs before registering a Dubai company.',
     url: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide',
     type: 'article',
   },
@@ -72,7 +72,7 @@ export default function DubaiCompanyRegistrationBlog() {
                 Dubai consistently ranks among the top five destinations where Indian entrepreneurs register companies. The reasons are real: a 9% corporate tax rate (compared to 25-30% in India), no personal income tax, a central time zone that spans both India and Europe, and one of the world&apos;s most efficient company registration systems.
               </p>
               <p style={{ marginBottom: '1.5rem' }}>
-                But the process has several moving parts — choosing between Mainland, Free Zone, and Offshore structures; satisfying India&apos;s FEMA requirements; understanding the new UAE Corporate Tax; and setting up banking. This guide covers the full picture, with real costs in both AED and INR.
+                But the process has several moving parts - choosing between Mainland, Free Zone, and Offshore structures; satisfying India&apos;s FEMA requirements; understanding the new UAE Corporate Tax; and setting up banking. This guide covers the full picture, with real costs in both AED and INR.
               </p>
 
               <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.6rem' }}>Types of Dubai Company Structures</h2>
@@ -259,7 +259,7 @@ export default function DubaiCompanyRegistrationBlog() {
               </div>
 
               <p style={{ marginBottom: '1.5rem' }}>
-                Indian documents submitted to UAE authorities must be notarised by a registered notary in India and apostilled by the Ministry of External Affairs (MEA). This process takes 7-15 business days — factor it into your timeline.
+                Indian documents submitted to UAE authorities must be notarised by a registered notary in India and apostilled by the Ministry of External Affairs (MEA). This process takes 7-15 business days - factor it into your timeline.
               </p>
 
               <div style={{ background: 'var(--bg-surface)', padding: '2rem', borderRadius: 'var(--radius-md)', borderLeft: '5px solid var(--accent)', margin: '2.5rem 0' }}>

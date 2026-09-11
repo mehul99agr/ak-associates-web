@@ -419,7 +419,7 @@ const posts = [
     summary: 'How to get DPIIT recognition, what eligibility criteria apply, the 80-IAC three-year tax holiday and why it requires a separate IMB application, and what changed on angel tax in Finance Act 2025.',
   },
   {
-    title: 'GST on Exports: Zero-Rated vs Exempt — What Indian Exporters Get Wrong',
+    title: 'GST on Exports: Zero-Rated vs Exempt - What Indian Exporters Get Wrong',
     slug: 'gst-on-exports-zero-rated-vs-exempt-india',
     date: 'July 18, 2026',
     category: 'GST',
@@ -444,7 +444,7 @@ const posts = [
     slug: 'form-13-lower-deduction-certificate-nri',
     date: 'July 11, 2026',
     category: 'NRI Taxation',
-    summary: 'How NRIs apply for a Form 13 lower or nil TDS certificate under Section 197 before a property sale — documents required, jurisdictional AO, and processing timeline.',
+    summary: 'How NRIs apply for a Form 13 lower or nil TDS certificate under Section 197 before a property sale - documents required, jurisdictional AO, and processing timeline.',
   },
   {
     title: 'How NRIs Can Claim a TDS Refund on Property Sale in India',
@@ -486,7 +486,7 @@ const posts = [
     slug: 'dubai-company-registration-guide',
     date: 'May 19, 2026',
     category: 'International Tax',
-    summary: 'Mainland vs Free Zone vs Offshore, real costs in INR, FEMA and ODI compliance, UAE Corporate Tax, and documents required — everything before you register a Dubai company.',
+    summary: 'Mainland vs Free Zone vs Offshore, real costs in INR, FEMA and ODI compliance, UAE Corporate Tax, and documents required - everything before you register a Dubai company.',
   },
   {
     title: 'How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)',
