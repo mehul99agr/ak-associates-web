@@ -107,6 +107,39 @@ src/app/
   ("Transfer Pricing Documentation Checklist for FY 2025-26"), byline CA Mehul Agrawal with
   a link to agrawalkhandelwal.com/transfer-pricing in the author bio. See
   backlinks/guest-post-taxguru-transfer-pricing.md for the submission record and live URL.
+  Sep 14, 2026: audited 5 directory/aggregator listings the user surfaced — only 2 are real
+  backlinks (verified live via browser, checked `<a href>` + `rel` attribute on each):
+  - **Crunchbase** (crunchbase.com/organization/agrawal-khandelwal-associates) — links to
+    agrawalkhandelwal.com, but `rel="nofollow noopener noreferrer"`. Nofollow backlink —
+    still useful for GEO/entity signals, no direct ranking-authority pass-through.
+  - **TheOrg** (theorg.com/org/agrawal-khandelwal-associates-llp) — links to
+    agrawalkhandelwal.com, `rel="noopener noreferrer"` only (no nofollow). **Dofollow
+    backlink** — the one real authority-passing link of the five.
+  - **Sulekha** listing — text-only mention of "agrawalkhandelwal.com" inside JSON-LD
+    schema, no clickable `<a>` link on the page. NAP citation, not a backlink.
+  - **Filesure** (filesure.in/company/...) — no mention of the domain anywhere on the
+    page at all (no website field populated for this listing).
+  - **Jobstore** (jobstore.com/in/company/...) — same as Filesure, no mention/link found.
+  Net effect: 2 new backlinks to log (1 dofollow via TheOrg, 1 nofollow via Crunchbase),
+  not 5. Filesure/Jobstore listings could be claimed and updated with the website URL if
+  the user wants to pursue that later, but as-is they contribute nothing.
+  Same day, checked 4 more listings the user surfaced:
+  - **Nashik100** (nashik100.com/business/Agrawal-Khandelwal---Associates-LLP/47207) —
+    links to agrawalkhandelwal.com/ca-in-nashik, no `rel` attribute at all (default
+    dofollow). **Dofollow backlink.**
+  - **Magicpin** (magicpin.in/.../Agrawal-Khandelwal-and-Associates-Llp/store/32b171c) —
+    links to agrawalkhandelwal.com, `rel="noopener noreferrer"` only (no nofollow).
+    **Dofollow backlink.**
+  - **Filesure director page** (filesure.in/director/mehul-rajendra-agrawal/11130056) —
+    no mention of the domain, same gap as Filesure's company page.
+  - **Falconebiz** (falconebiz.com/LLP/AGRAWAL-KHANDELWAL-ASSOCIATES-LLP-ACO-7072) — no
+    mention of the domain either.
+  Running tally after both audits: **4 confirmed real backlinks** — TheOrg, Nashik100,
+  Magicpin (all dofollow) + Crunchbase (nofollow) — on top of the existing LinkedIn post
+  and TaxGuru guest post. Sulekha is a citation only (no link). Filesure (both pages) and
+  Jobstore/Falconebiz have no mention of the domain at all — these MCA-data aggregators
+  don't expose a website field for this listing, so there's nothing to "fix" without an
+  editable claim/profile process on their end.
 
 **Search Console findings (May 2026):**
 - 1 page indexed (sitemap just submitted — more will be indexed over coming weeks)
