@@ -20,6 +20,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Startup Advisory for Foreign Investors Investing in India',
+    slug: 'startup-advisory-foreign-investors-india',
+    date: 'September 16, 2026',
+    category: 'Startup Advisory',
+    summary: 'Entry route and FDI pricing checks, due diligence on cap table and compliance history, valuation certification, and FC-GPR/FLA reporting oversight for foreign investors backing an Indian startup.',
+  },
+  {
     title: 'Comparable Uncontrolled Price (CUP) Method: India Transfer Pricing Guide',
     slug: 'comparable-uncontrolled-price-method-cup-india',
     date: 'September 16, 2026',

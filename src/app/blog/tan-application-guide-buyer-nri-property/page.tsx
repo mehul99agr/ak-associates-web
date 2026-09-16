@@ -40,6 +40,14 @@ const faqLd = {
   mainEntity: [
     {
       '@type': 'Question',
+      name: 'Is TAN required for purchase of property from an NRI?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, TAN is required for every purchase of property from an NRI seller, regardless of the transaction value. Because the purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025) rather than the resident-seller Section 194-IA route, the buyer must hold a TAN before deducting TDS; a PAN alone, which is sufficient for resident-seller purchases, is not accepted here.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Does a buyer need TAN when buying property from an NRI?',
       acceptedAnswer: {
         '@type': 'Answer',

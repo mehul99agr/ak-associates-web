@@ -40,6 +40,14 @@ const faqLd = {
   mainEntity: [
     {
       '@type': 'Question',
+      name: 'How does an NRI get a TDS refund after a property sale in India?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'File an Indian ITR (ITR-2, or ITR-3 if there is business income) reporting the capital gain from the sale and the TDS deducted by the buyer, as shown in Form 26AS. If the TDS deducted exceeds the actual tax liability, the excess is refunded directly to the NRI\'s bank account after processing, along with statutory interest under Section 244A for the delay.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Which ITR form does an NRI file to claim a TDS refund on property sale?',
       acceptedAnswer: {
         '@type': 'Answer',

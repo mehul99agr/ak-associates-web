@@ -37,6 +37,10 @@ const articleLd = buildArticleLd({
 
 const faqs: [string, string][] = [
   [
+    'Is an NRE account fully repatriable?',
+    'Yes. Unlike NRO, an NRE account holds only foreign income remitted from abroad, and the entire balance, principal and interest, is freely and fully repatriable at any time with no annual cap and no CA certification required. This is the key practical difference from NRO account repatriation, which is limited to USD 1 million per financial year and requires Form 145/146 documentation before every remittance.',
+  ],
+  [
     'What is the main difference between NRE and NRO accounts?',
     'An NRE account holds foreign income remitted from abroad, is fully and freely repatriable, and its interest is tax-exempt in India. An NRO account holds India-sourced income such as rent, dividends, or pension, its interest is taxable in India with TDS deducted, and repatriation out of it is capped at USD 1 million per financial year after CA certification.',
   ],

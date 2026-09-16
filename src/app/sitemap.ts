@@ -112,5 +112,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/tnmm-transactional-net-margin-method-india`, lastModified: new Date('2026-09-14'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/resale-price-method-transfer-pricing-india`, lastModified: new Date('2026-09-15'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/comparable-uncontrolled-price-method-cup-india`, lastModified: new Date('2026-09-16'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/startup-advisory-foreign-investors-india`, lastModified: new Date('2026-09-16'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }

@@ -39,6 +39,10 @@ const articleLd = buildArticleLd({
 
 const faqs: [string, string][] = [
   [
+    'How do I repatriate money from an NRO account?',
+    'File Form 145 (formerly 15CA) online on the Income Tax portal, obtain a Form 146 (formerly 15CB) CA certificate for remittances above Rs 5 lakh, and submit both along with source documents and TDS certificates to your bank. The bank typically processes the remittance within 5 to 10 working days once documentation is complete, subject to the USD 1 million annual repatriation limit.',
+  ],
+  [
     'Is an NRO account repatriable?',
     'Yes, but with limits. An NRO account allows repatriation of up to USD 1 million per financial year (April to March), cumulative across all NRO accounts and all types of NRO income or balances. This covers current income (rent, interest, dividends) as well as capital receipts (property sale proceeds, inheritance, matured deposits). Amounts beyond USD 1 million in a single year require specific RBI approval. This is different from an NRE account, where the entire balance is freely repatriable without any limit.',
   ],
