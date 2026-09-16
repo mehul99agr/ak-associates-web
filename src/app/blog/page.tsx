@@ -20,6 +20,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'Comparable Uncontrolled Price (CUP) Method: India Transfer Pricing Guide',
+    slug: 'comparable-uncontrolled-price-method-cup-india',
+    date: 'September 16, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Internal vs external CUP, when it fits intra-group loans, royalties, and commodity transactions, comparability adjustments, and a worked loan-pricing example.',
+  },
+  {
+    title: 'Resale Price Method (RPM) in Transfer Pricing: India Guide',
+    slug: 'resale-price-method-transfer-pricing-india',
+    date: 'September 15, 2026',
+    category: 'Transfer Pricing',
+    summary: 'When RPM fits a routine distributor, the gross margin calculation, why accounting-classification differences undermine it, and a worked example.',
+  },
+  {
+    title: 'TNMM: Transactional Net Margin Method Explained (India)',
+    slug: 'tnmm-transactional-net-margin-method-india',
+    date: 'September 14, 2026',
+    category: 'Transfer Pricing',
+    summary: 'Why TNMM is the default method for Indian captive service providers, profit level indicators, comparable selection, and a worked margin example.',
+  },
+  {
     title: 'Can an NRI Buy Agricultural Land in India? FEMA Rules, Exceptions & the FDI/ODI Angle',
     slug: 'nri-agricultural-land-india-fema-rules',
     date: 'September 10, 2026',

@@ -242,6 +242,75 @@ src/app/
   surfaced via AI Overviews rather than real prospect searches — not actionable, just
   context for why raw impression counts include some noise.
 
+**Search Console findings (Sep 14, 2026 - 28-day window, Aug 16-Sep 12, pulled live via
+Claude in Chrome logged into search.google.com):**
+- Totals: 142 clicks, 10.7k impressions, 1.3% CTR, avg. position 10.9.
+- **Clicks and impressions down vs the Sep 10 entry above** (247 clicks / 16.1k impr /
+  1.5% CTR for a near-identical Aug 13-Sep 9 window) despite avg. position improving
+  slightly (10.9 vs 11.2). A ~40% click drop on an overlapping window is a real signal,
+  not just a date-range artifact - worth re-checking in a few days to see if it's a
+  transient dip or the start of a regression. No content/technical cause identified yet.
+- Top pages by clicks: tan-application-guide-buyer-nri-property (26 clicks/1,145
+  impr) and tds-on-nri-property-sale-india (16/1,189) are now the two biggest earners
+  on the site, ahead of the homepage (14/385). Then ca-in-nashik (8/853),
+  company-name-reservation-run-form-india (8/630), form-3ceb-transfer-pricing-audit-
+  report (8/510), dsc-din-application-director-guide (7/342),
+  poem-place-of-effective-management-india (4/196), tds-nro-interest-fd-dtaa-relief
+  (4/196), transfer-pricing-methods-india-explained (3/381). 97 pages total generated
+  impressions this window.
+- Top query is now non-brand: "tds rate on sale of property by nri for fy 2026-27"
+  (4 clicks/256 impr), ahead of "ca nashik" (2/26), "tp audit means" (1/63), "tds on
+  property purchase from nri fy 2026-27" (1/61), "chartered accountant in nashik"
+  (1/29). The brand query "agrawal khandelwal & associates llp" shows only 1 click/1
+  impression in this specific 28-day slice (vs 6/6 clicks over the trailing 3 months
+  per the Sep 10 data) - brand search volume is front-loaded earlier in the quarter,
+  not evenly spread, so a single 28-day slice can understate brand strength.
+
+**Search Console findings (Sep 16, 2026 - 28-day window, Aug 19-Sep 15, pulled live via
+Claude in Chrome logged into search.google.com):**
+- Totals: 138 clicks, 10.8k impressions, 1.3% CTR, avg. position 10.8. Essentially flat
+  vs the Sep 14 pull (142 clicks / 10.7k impr / 1.3% CTR / 10.9 pos on an overlapping
+  Aug 16-Sep 12 window) - the ~40% click drop flagged in the Sep 14 entry has not
+  worsened and position ticked slightly better. Reads as a stable plateau, not an
+  ongoing regression; still worth another check in 1-2 weeks to confirm the trend line.
+- Top pages by clicks (98 total pages generating impressions this window):
+  tan-application-guide-buyer-nri-property (25 clicks/1,168 impr) and
+  tds-on-nri-property-sale-india (15/1,186) remain the two biggest earners, well ahead
+  of the homepage (13/385). Then company-name-reservation-run-form-india (8/643),
+  form-3ceb-transfer-pricing-audit-report (8/510), ca-in-nashik (7/853),
+  dsc-din-application-director-guide (7/343), tds-nro-interest-fd-dtaa-relief (4/202),
+  transfer-pricing-methods-india-explained (3/403), poem-place-of-effective-management-
+  india (3/178). Same core set of top performers as the Sep 14 pull, in a similar order
+  - no new page has broken into the top ranks yet.
+- Did not re-pull the full query list breakdown this session (only totals + pages) -
+  next full audit should include queries/countries/devices for a complete comparison.
+
+**Root-cause dig on the "click/impression drop" (Sep 16, 2026):** User flagged the
+apparent decline; investigated via Manual Actions, Page Indexing, and a full day-by-day
+breakdown (Aug 15-Sep 13) rather than just re-reading rolling 28-day totals.
+- **No technical cause.** Manual Actions: clean, no issues. Page Indexing: 83 indexed /
+  7 not indexed (3 redirect, 2 crawled-not-indexed, 2 discovered-not-indexed) - normal
+  background noise, nothing new.
+- **Real daily pattern:** Aug 15-18 baseline was low (103-457 impr/day). Aug 19-20 spiked
+  hard (645 and 541 impr; 16 and 11 clicks) - the recrawl bump from the Phase 5 content +
+  audit-fix commits landing, same event already documented in the Aug 24 entry above.
+  Since then (Aug 21-Sep 13) it settled into a plateau of ~250-520 impr/day and 1-9
+  clicks/day - noisy but not trending further down, and still above the pre-spike Aug
+  15-18 baseline. There is no ongoing collapse in the underlying daily data.
+- **The "16.1k impressions" figure in the Sep 10, 2026 entry above is almost certainly a
+  data-recording error from that session, not a real prior traffic level.** It matches
+  this session's 3-month total (263 clicks / 17.9k impressions / 1.5% CTR / 10.9 avg
+  position) almost exactly, while manually summing this session's actual daily
+  impressions never produces anywhere near 16.1k for any 28-day window - real 28-day
+  totals have consistently landed in the 10-11k range. Most likely that earlier session
+  read the "3 months" view totals while believing it was on "28 days". Treat the
+  Sep 10 entry's totals as unreliable; the Sep 14/Sep 16 entries (both ~138-142 clicks /
+  10.7-10.8k impressions) are the trustworthy baseline going forward.
+- **Takeaway for future GSC pulls:** always sanity-check a fetched total against the
+  visible date-range chips (24 hours / 7 days / 28 days / 3 months) in a screenshot
+  before recording it - don't trust total-clicks/impressions numbers pulled via
+  get_page_text alone without confirming which range toggle was actually active.
+
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
 dates rather than batch-publish same-day:

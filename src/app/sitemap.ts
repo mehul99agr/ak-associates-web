@@ -109,5 +109,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/us-sales-tax-nexus-indian-saas-companies`, lastModified: new Date('2025-11-22'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/us-llc-annual-compliance-calendar-non-resident`, lastModified: new Date('2026-01-09'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/india-us-dtaa-guide`, lastModified: new Date('2026-02-03'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/blog/tnmm-transactional-net-margin-method-india`, lastModified: new Date('2026-09-14'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/resale-price-method-transfer-pricing-india`, lastModified: new Date('2026-09-15'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/comparable-uncontrolled-price-method-cup-india`, lastModified: new Date('2026-09-16'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }
