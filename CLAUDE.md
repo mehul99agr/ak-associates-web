@@ -414,6 +414,105 @@ after the Codex draft output was lost to a context/task-file issue.
 - Build verified clean after each phase (`node ".\node_modules\next\dist\bin\next" build`).
 - All phase commits pushed to `origin/main`.
 
+## 250-Topic Content Expansion Plan (Sep 2026 — IN PROGRESS)
+User asked (Sep 16-17, 2026) to expand into GST, Income Tax, Tax Audit, and other
+overlapping categories, targeting a total of 250 blog topics (86 existing + 164 new).
+Full approved list with categories, notes, and section-mapping status lives in
+**`blog-topics-250-for-approval.csv`** at the project root — user marked every row "Yes"
+after one correction round (see Income Tax Act 2025 discipline below). Treat that CSV
+as the source of truth for what's approved and roughly what order to build in; do not
+regenerate the topic list from scratch in a future session, just keep working through it.
+
+**Process being used (repeat this for every remaining batch):**
+1. Take the next ~15 unbuilt topics from the CSV, grouped by category.
+2. Split into 5 parallel subagents (Agent tool, `general-purpose`), 3 posts each.
+3. Each agent prompt includes: the house-style template (point to 2-3 recent example
+   posts, e.g. `input-tax-credit-itc-gst-guide` or `income-tax-notices-explained-143-1-143-2-148`
+   for how unconfirmed section numbers are handled), the Income Tax Act 2025 verified
+   mapping table (below), instructions to web-search current thresholds/rates rather
+   than assume, the no-fabricated-stats rule, and explicit instructions NOT to touch
+   `blog/page.tsx`, `sitemap.ts`, or run the build (avoids merge conflicts between
+   parallel agents).
+4. After all 5 agents in a batch report back: run the build once, fix any syntax errors
+   (apostrophe/quote-escaping bugs in FAQ strings have been the most common issue),
+   spot-check 1-2 posts in full for house-style/fact discipline, then wire all posts
+   into `blog/page.tsx` and `sitemap.ts` centrally in one pass (a Python script run via
+   Bash is faster and more reliable than manual Edit calls for 15 rows at once).
+5. Commit and push per batch, not per post.
+
+**Batches shipped so far:**
+- **Batch 1 (commit 7f22f47, Sep 17-22 dates):** 15 GST posts — registration, composition
+  scheme, GSTR-1/3B/9/9C, ITC, RCM, e-way bill, e-invoicing, real estate GST, works
+  contract, e-commerce TCS, late fees, cancellation/revocation, LUT for exports, GST audit.
+- **Batch 2-3 (commit dbb3552, Sep 22-Oct 2 dates):** 30 Income Tax fundamentals — slabs/
+  regime comparison, ITR filing/forms, Form 16, HRA, 80C/80D, house property income,
+  capital gains (property + shares/MF, explicitly resident-focused to avoid cannibalizing
+  existing NRI posts), clubbing of income, HUF, crypto/VDA, gaming/lottery, gift tax,
+  advance tax, refunds, rectification, notices (143/148), faceless assessment,
+  condonation of delay, ITR-U, presumptive taxation (44AD/44ADA/44AE), TDS (192/194-IB/
+  194J/194C/194Q).
+- **Batch 4 (commit 2e4aff8, Oct 3-8 dates):** 15 more — remaining Income Tax (206C(1H)
+  repeal explainer, standard deduction, tax-saving beyond 80C, freelancer/gig taxation,
+  87A rebate, set-off/carry-forward, 43B(h)) + first 8 Tax Audit posts (44AB thresholds,
+  Form 3CA/3CB/3CD, tax audit vs statutory vs GST audit, due date/271B penalty,
+  who-needs-audit checklist, 44AA books of accounts, scrutiny response strategy, 144
+  best judgment assessment).
+- **Total: 146 posts live, 60 of 164 new topics done, no duplicate slugs, build clean
+  after every batch.**
+
+**Important correction found during Batch 4:** Section 206C(1H) (TCS on sale of goods)
+was verified via web search to have been **repealed effective April 1, 2025**, made
+redundant by Section 194Q (buyer-side TDS on the same transaction class). The CSV's
+planned "TCS on Sale of Goods: Section 206C(1H) Explained" topic was rewritten as
+`tcs-sale-of-goods-section-206c1h-repealed`, a "what changed and why" explainer rather
+than a live-provision guide. If any future topic references 206C(1H) as active, verify
+first — it is not.
+
+**Income Tax Act 2025 renumbering discipline (mandatory for every Income Tax / Tax
+Audit / Corporate Tax post going forward):** Old, commonly-searched section numbers go
+in the **title and slug** (that's the actual search term). New-Act numbers are cited in
+body copy ONLY where independently verified — never guess, matching the existing GAAR
+("Part T") precedent. Verified mappings confirmed so far (safe to reuse without
+re-verifying):
+- 44AB (tax audit) → Section 63
+- 44AA (books of accounts) → Section 62
+- 44AD / 44ADA / 44AE (presumptive taxation) → Section 58
+- 43B(h) (MSME payment) → Section 37
+- 56(2)(x) (gifts) → Section 92
+- 80G → Section 133
+- 80GGC → Section 137
+- 87A (rebate) → Section 156
+- 192 (TDS salary) → Section 392 (read with Section 402)
+- 194C, 194J (TDS) → Section 393 (consolidated TDS section; no sub-item/table number
+  has been confirmed, don't invent one)
+- 206C → Section 394 (but 206C(1H) specifically is repealed, see above)
+- 12A (trust registration) → spread across Chapter XVII-B (~Sections 332-355), not one
+  clean section
+- Form 24Q → Form 138, Form 26Q → Form 140, Form 27Q → Form 144 (TDS return forms,
+  independently corroborated via a second source in this project)
+Confirmed UNRELIABLE / not confidently mappable as of Oct 2026 (use qualitative framing,
+e.g. "renumbered under the Income Tax Act 2025; confirm the exact section reference at
+filing time" — do not guess): Sections 143(1), 143(2), 144, 147, 148, 154, 133A,
+139(8A), 194-IB, 194Q, 271B, and 12A's exact sub-references. A low-authority source
+claimed 80C → "Section 123" during Batch 2 — this was correctly rejected as unverified
+(near-identical wording across unrelated SEO domains, no official notification) and
+should stay rejected unless corroborated by a stronger source later.
+
+**Remaining work (~104 posts across ~7 more batches of 15), per the CSV:**
+- Tax Audit: 12 more topics left (of 20 total; 8 done in Batch 4)
+- Corporate Tax & Compliance: 15
+- MSME & Registrations: 10
+- Payroll & Labour Compliance: 10
+- NRI Taxation (additions): 10
+- Trusts & NGOs: 8
+- Startup Advisory (additions): 8
+- Transfer Pricing (additions): 5
+- Company Incorporation (addition): 1
+
+To resume: open `blog-topics-250-for-approval.csv`, find the next ~15 unbuilt rows
+(cross-check against `blog/page.tsx`'s posts array to see what's already live), and
+repeat the batch process above.
+
 ## GEO (Generative Engine Optimization)
 GEO = getting cited/recommended inside AI answers (ChatGPT, Claude, Perplexity, Google
 AI Overviews), distinct from SEO (ranking for clicks). Most SEO work doubles as GEO;
