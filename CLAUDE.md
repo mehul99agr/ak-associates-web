@@ -539,8 +539,31 @@ regenerate the topic list from scratch in a future session, just keep working th
   Second Amendment Rules, 2021, effective April 1, 2021. The existing
   `opc-to-private-limited-conversion-india` post still describes the old mandatory
   thresholds as current and is now stale — needs a correction pass (not done yet).
-- **Total: 204 posts live, 116 of 164 new topics done, no duplicate slugs, build clean
-  after every batch.**
+- **Batch 9 (final batch), completed (commit 5d549f7, Sep 17, 2026 — dates staggered
+  Sep 17-Nov 7 in the posts themselves):** the last 18 topics (all of NRI Taxation and
+  Startup Advisory additions) drafted via 6 parallel Claude subagents (3 posts each).
+  NRI Taxation (10): FD comparison (NRE/NRO/FCNR), Section 91 double-taxation relief,
+  inherited-agricultural-land sale, real estate investing, remote work for foreign
+  employers, life insurance/ULIP taxation, power of attorney, demat PIS vs non-PIS,
+  seafarer/merchant navy taxation, OCI vs NRI vs PIO. Startup Advisory (8): ESOP pool
+  sizing, term sheet negotiation, SAFE notes legal status, exit strategies, co-founder
+  equity disputes, cap table mistakes, Fast Track Exit/winding up, bank account opening.
+  Several topics deliberately overlapped with existing posts (NRE/NRO account post, NRI
+  agricultural land post, ESOP structuring post, convertible notes post, general winding-
+  up post) — each subagent read the existing post first and scoped the new one to a
+  distinct angle, with cross-links added both directions; confirmed no duplicate coverage.
+  **Two notable findings:** (1) a US-style SAFE note is NOT a recognised capital
+  instrument under the Companies Act or FEMA's Non-Debt Instruments Rules — the Indian
+  market workaround is the "iSAFE," legally structured as CCPS, not a bare SAFE contract
+  (verified across multiple independent legal-advisory sources); (2) "Fast Track Exit
+  (FTE)" is defunct MCA terminology — the scheme was superseded by Section 248/Form
+  STK-2 in December 2016 — the new post states this honestly (targets the still-common
+  search term but explains the current process) rather than presenting FTE as live.
+  Centralized wiring staggered publish dates to avoid collisions and verified a clean
+  build (252 static pages, no duplicate slugs).
+- **Total: 222 posts live, 134 of 134 planned new topics done, no duplicate slugs,
+  build clean after every batch. The 250-topic content expansion plan (see below) is
+  now complete — all approved rows in `blog-topics-250-for-approval.csv` are live.**
 
 **Important correction found during Batch 4:** Section 206C(1H) (TCS on sale of goods)
 was verified via web search to have been **repealed effective April 1, 2025**, made
@@ -580,21 +603,19 @@ claimed 80C → "Section 123" during Batch 2 — this was correctly rejected as 
 (near-identical wording across unrelated SEO domains, no official notification) and
 should stay rejected unless corroborated by a stronger source later.
 
-**Remaining work (~46 posts), per the CSV:**
-- MSME & Registrations: 0 left
-- Payroll & Labour Compliance: 0 left (all 10 topics done as of Batch 8)
-- NRI Taxation (additions): 10
-- Trusts & NGOs: 0 left (all 8 topics done as of Batch 8)
-- Startup Advisory (additions): 8
-- Transfer Pricing (additions): 0 left (all 5 topics done as of Batch 8)
-- Company Incorporation (addition): 0 left (done as of Batch 8)
+**Remaining work: none.** All categories in `blog-topics-250-for-approval.csv` are
+complete as of Batch 9 (Sep 17, 2026). If the user wants further content expansion,
+a fresh topic list would need to be scoped and approved first — do not assume the
+old CSV has unbuilt rows without checking it again, and do not silently generate new
+topics without approval (see the CSV-approval precedent at the top of this section).
 
-To resume: open `blog-topics-250-for-approval.csv`, find the next ~15 unbuilt rows
-(cross-check against `blog/page.tsx`'s posts array to see what's already live), and
-repeat the batch process above (parallel Claude subagents, 3 posts each, is the
-proven-reliable method; Gemini CLI's free-tier quota does not support running more
-than 1 call at a time, see Batch 8 notes above). NRI Taxation and Startup Advisory
-additions (18 posts total) are the only categories left.
+The proven process for any future batch (reuse if a new list is approved): parallel
+Claude subagents, 3 posts each, run all at once, then a single centralized wiring
+pass (check for raw `style="..."` strings, run the build, fix syntax errors, stagger
+any same-day publish-date collisions, wire into `blog/page.tsx` and `sitemap.ts`,
+spot-check 1-2 posts in full, then build once more before committing). Gemini CLI's
+free-tier quota does not support running more than 1 call at a time (see Batch 8
+notes above) — Claude subagents are the reliable method going forward.
 
 **Known stale content needing a correction pass (not yet done):** the existing
 `opc-to-private-limited-conversion-india` post describes OPC mandatory-conversion
