@@ -617,12 +617,12 @@ spot-check 1-2 posts in full, then build once more before committing). Gemini CL
 free-tier quota does not support running more than 1 call at a time (see Batch 8
 notes above) — Claude subagents are the reliable method going forward.
 
-**Known stale content needing a correction pass (not yet done):** the existing
-`opc-to-private-limited-conversion-india` post describes OPC mandatory-conversion
-thresholds (Rs 50 lakh capital / Rs 2 crore turnover) as current; they were removed
-in 2021 (see Batch 8 finding above). Update that post to match the new
-`one-person-company-opc-registration-eligibility-and-compliance` post's corrected
-facts.
+**Stale content fixed (commit f28508f, Sep 17, 2026):** the `opc-to-private-limited-
+conversion-india` post previously described OPC mandatory-conversion thresholds (Rs 50
+lakh capital / Rs 2 crore turnover) and a 2-year minimum holding period as current;
+both were removed by the 2021 amendment (see Batch 8 finding above). Corrected the
+TL;DR, two body sections, and two FAQ entries; added `dateModified: '2026-09-17'` and
+a cross-link to `one-person-company-opc-registration-eligibility-and-compliance`.
 
 ## GEO (Generative Engine Optimization)
 GEO = getting cited/recommended inside AI answers (ChatGPT, Claude, Perplexity, Google
