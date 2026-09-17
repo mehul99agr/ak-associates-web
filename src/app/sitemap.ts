@@ -219,5 +219,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/payroll-compliance-checklist-for-growing-startups-in-india`, lastModified: new Date('2026-11-09'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/gratuity-payment-rules-eligibility-and-tax-exemption-limits`, lastModified: new Date('2026-11-12'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/labour-law-compliance-for-startups-a-practical-overview`, lastModified: new Date('2026-11-15'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/epf-registration-and-compliance-for-startups-and-smes`, lastModified: new Date('2026-09-25'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/esi-registration-applicability-and-employer-compliance`, lastModified: new Date('2026-09-29'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/contract-labour-vs-employment-compliance-risks-for-startups`, lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/cost-plus-method-cpm-in-transfer-pricing-when-it-applies`, lastModified: new Date('2026-10-06'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/profit-split-method-psm-in-transfer-pricing-a-practical-guide`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/secondary-adjustment-under-transfer-pricing-section-92ce-explained`, lastModified: new Date('2026-10-13'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/minimum-wages-act-compliance-for-employers`, lastModified: new Date('2026-11-16'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/posh-act-compliance-internal-committee-requirements-for-companies`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/form-24q-vs-form-26q-tds-return-filing-for-employers`, lastModified: new Date('2026-11-22'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/perquisites-and-fringe-benefits-taxation-for-employees`, lastModified: new Date('2026-11-25'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/form-10b-10bb-audit-report-for-trusts-applicability-and-due-date`, lastModified: new Date('2026-11-28'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/one-person-company-opc-registration-eligibility-and-compliance`, lastModified: new Date('2026-12-01'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }
