@@ -520,13 +520,27 @@ regenerate the topic list from scratch in a future session, just keep working th
   before commit. Lesson: when templating AI-drafted HTML directly into `.tsx` source
   (not via `dangerouslySetInnerHTML`), always grep the draft for `style="` and other
   raw-HTML-only syntax before running the build, regardless of which model wrote it.
-- **Total: 192 posts live, 104 of 164 new topics done, no duplicate slugs, build clean
-  after every batch. Batch 8 has 12 topics still pending** (remaining Payroll: EPF, ESI,
-  Payroll Compliance Checklist done/Gratuity done/Labour Law overview done, contract
-  labour, minimum wages, POSH, Form 24Q vs 26Q, perquisites; plus Form 10B/10BB [last
-  Trusts & NGOs topic], OPC registration [last Company Incorporation topic], and 3
-  Transfer Pricing topics: CPM, PSM, Section 92CE secondary adjustment) — resume with
-  those 12 topics, either via Gemini (one group/call at a time) or Claude subagents.
+- **Batch 8, completed (commit 45a3a2c, Sep 17, 2026 — dates staggered Sep 25-Dec 1
+  in the posts themselves):** the remaining 12 topics were drafted via 4 parallel
+  Claude subagents (3 posts each, general-purpose) after the Gemini quota failure —
+  EPF, ESI, Contract Labour vs Employment, Minimum Wages Act, POSH Act, Form 24Q vs
+  26Q, Perquisites & Fringe Benefits (Payroll & Labour Compliance, closing out all 10
+  planned topics in that category); Form 10B/10BB (closing out Trusts & NGOs); OPC
+  Registration (closing out Company Incorporation); Cost Plus Method, Profit Split
+  Method, Section 92CE secondary adjustment (closing out Transfer Pricing additions).
+  Centralized wiring caught and fixed: an unescaped-apostrophe syntax error in the
+  minimum-wages post, a hardcoded "18%" in the 92CE post's metadata that contradicted
+  its own correctly-qualitative body/FAQ treatment of that rate, and several same-day
+  publish-date collisions (staggered across Sep-Dec 2026 per site convention). Build
+  verified clean (234 static pages). **Important finding from this batch:** the OPC
+  post confirmed via web search that the OPC mandatory-conversion thresholds (Rs 50
+  lakh paid-up capital / Rs 2 crore turnover) and the 2-year minimum holding period
+  before voluntary conversion were BOTH removed by the Companies (Incorporation)
+  Second Amendment Rules, 2021, effective April 1, 2021. The existing
+  `opc-to-private-limited-conversion-india` post still describes the old mandatory
+  thresholds as current and is now stale — needs a correction pass (not done yet).
+- **Total: 204 posts live, 116 of 164 new topics done, no duplicate slugs, build clean
+  after every batch.**
 
 **Important correction found during Batch 4:** Section 206C(1H) (TCS on sale of goods)
 was verified via web search to have been **repealed effective April 1, 2025**, made
@@ -566,23 +580,28 @@ claimed 80C → "Section 123" during Batch 2 — this was correctly rejected as 
 (near-identical wording across unrelated SEO domains, no official notification) and
 should stay rejected unless corroborated by a stronger source later.
 
-**Remaining work (~58 posts), per the CSV:**
-- MSME & Registrations: 0 left (all 10 topics covered; the one "duplicate" was already
-  live under a different slug from Batch 4)
-- Payroll & Labour Compliance: 7 left (of 10; 3 done in Batch 8 - EPF, ESI, contract
-  labour vs employment, minimum wages, POSH, Form 24Q vs 26Q, perquisites)
+**Remaining work (~46 posts), per the CSV:**
+- MSME & Registrations: 0 left
+- Payroll & Labour Compliance: 0 left (all 10 topics done as of Batch 8)
 - NRI Taxation (additions): 10
-- Trusts & NGOs: 1 left (of 8; Form 10B/10BB audit report for trusts)
+- Trusts & NGOs: 0 left (all 8 topics done as of Batch 8)
 - Startup Advisory (additions): 8
-- Transfer Pricing (additions): 3 left (of 5; CPM, PSM, Section 92CE secondary
-  adjustment - Batch 8 attempted these but Gemini quota ran out before drafting)
-- Company Incorporation (addition): 1 (OPC registration - distinct from the existing
-  OPC-to-Private-Limited conversion post)
+- Transfer Pricing (additions): 0 left (all 5 topics done as of Batch 8)
+- Company Incorporation (addition): 0 left (done as of Batch 8)
 
 To resume: open `blog-topics-250-for-approval.csv`, find the next ~15 unbuilt rows
 (cross-check against `blog/page.tsx`'s posts array to see what's already live), and
-repeat the batch process above. The 12 topics Batch 8 didn't finish (see above) are
-the most immediate next targets.
+repeat the batch process above (parallel Claude subagents, 3 posts each, is the
+proven-reliable method; Gemini CLI's free-tier quota does not support running more
+than 1 call at a time, see Batch 8 notes above). NRI Taxation and Startup Advisory
+additions (18 posts total) are the only categories left.
+
+**Known stale content needing a correction pass (not yet done):** the existing
+`opc-to-private-limited-conversion-india` post describes OPC mandatory-conversion
+thresholds (Rs 50 lakh capital / Rs 2 crore turnover) as current; they were removed
+in 2021 (see Batch 8 finding above). Update that post to match the new
+`one-person-company-opc-registration-eligibility-and-compliance` post's corrected
+facts.
 
 ## GEO (Generative Engine Optimization)
 GEO = getting cited/recommended inside AI answers (ChatGPT, Claude, Perplexity, Google
