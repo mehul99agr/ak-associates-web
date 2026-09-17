@@ -205,7 +205,7 @@ export default function CompanyIncorporationPage() {
           <div className="container" style={{ display: 'flex', justifyContent: 'center', gap: 'clamp(2rem, 6vw, 5rem)', flexWrap: 'wrap', textAlign: 'center' }}>
             {[
               { n: '10+', label: 'Yrs Partner Exp.' },
-              { n: '200+', label: 'Companies Incorporated' },
+              { n: '50+', label: 'Companies Incorporated' },
               { n: '15 Days', label: 'Avg. Turnaround' },
               { n: '100%', label: 'Online Process' },
             ].map((t) => (

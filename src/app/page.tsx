@@ -323,9 +323,9 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '2rem' }}>
             <div className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
-              <h3 style={{ fontSize: '1.15rem', marginBottom: '12px' }}>Cross-Border Tax Optimization</h3>
+              <h3 style={{ fontSize: '1.15rem', marginBottom: '12px' }}>Client Testimonial</h3>
               <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
-                Structured a tax-efficient route for a UAE-based client incorporating an Indian subsidiary, resulting in 100% regulatory compliance with DTAA benefits and an estimated 15% reduction in cross-border tax leakages.
+                &ldquo;His proficiency as Chartered Accountant in financial management, analysis, and tax compliance is truly commendable, reflecting a high level of professionalism. His strong work ethic, collaborative approach, adept stakeholder management, and commitment to staying abreast of evolving laws and industry trends make him an asset to any team.&rdquo;
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                 <div>

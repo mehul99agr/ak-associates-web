@@ -595,13 +595,20 @@ re-verifying):
   clean section
 - Form 24Q → Form 138, Form 26Q → Form 140, Form 27Q → Form 144 (TDS return forms,
   independently corroborated via a second source in this project)
+- 80C → Section 123 (deduction cap unchanged at ₹1.5 lakh, eligible-investment list
+  moved to Schedule XV) — reversed from "rejected" during the Sep 17, 2026 fact-check
+  audit: a Batch 2 session had rejected this on a single low-authority source, but this
+  session independently corroborated it across 8+ higher-authority sources (BusinessToday,
+  Outlook Money, Upstox, ClearTax, caclubindia, referencing CBDT statements) with no
+  conflicting figures found. Lesson: a "rejected as unverified" note isn't permanent —
+  re-check it if a later session finds stronger corroboration, as happened here.
+- 80D → Section 126 (deduction limits unchanged: ₹25,000 general / ₹50,000 senior
+  citizen) — confirmed via ClearTax, Axis Max Life, mStock, independently in the same
+  Sep 17, 2026 audit.
 Confirmed UNRELIABLE / not confidently mappable as of Oct 2026 (use qualitative framing,
 e.g. "renumbered under the Income Tax Act 2025; confirm the exact section reference at
 filing time" — do not guess): Sections 143(1), 143(2), 144, 147, 148, 154, 133A,
-139(8A), 194-IB, 194Q, 271B, and 12A's exact sub-references. A low-authority source
-claimed 80C → "Section 123" during Batch 2 — this was correctly rejected as unverified
-(near-identical wording across unrelated SEO domains, no official notification) and
-should stay rejected unless corroborated by a stronger source later.
+139(8A), 194-IB, 194Q, 271B, and 12A's exact sub-references.
 
 **Remaining work: none.** All categories in `blog-topics-250-for-approval.csv` are
 complete as of Batch 9 (Sep 17, 2026). If the user wants further content expansion,
