@@ -216,5 +216,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/annual-compliance-calendar-for-ngos-and-trusts-in-india`, lastModified: new Date('2026-11-05'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/csr-fund-utilisation-compliance-for-receiving-trusts`, lastModified: new Date('2026-11-05'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/political-party-donations-and-section-80ggc-deduction`, lastModified: new Date('2026-11-06'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/payroll-compliance-checklist-for-growing-startups-in-india`, lastModified: new Date('2026-11-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/gratuity-payment-rules-eligibility-and-tax-exemption-limits`, lastModified: new Date('2026-11-12'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/labour-law-compliance-for-startups-a-practical-overview`, lastModified: new Date('2026-11-15'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }

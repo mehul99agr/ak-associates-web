@@ -1341,7 +1341,29 @@ const posts = [
     date: 'November 6, 2026',
     category: 'Trusts & NGOs',
     summary: 'How the Section 80GGC deduction for donations to political parties works, the cash-donation restriction, and why the Income Tax Department is scrutinising these claims closely.',
-  },]
+  },
+  {
+    title: 'Payroll Compliance Checklist for Growing Startups in India',
+    slug: 'payroll-compliance-checklist-for-growing-startups-in-india',
+    date: 'November 9, 2026',
+    category: 'Payroll & Labour Compliance',
+    summary: 'A practical payroll compliance checklist for growing Indian startups: EPF and ESI triggers, TDS on salary, professional tax, and labour law registers at each headcount milestone.',
+  },
+  {
+    title: 'Gratuity Payment Rules: Eligibility & Tax Exemption Limits',
+    slug: 'gratuity-payment-rules-eligibility-and-tax-exemption-limits',
+    date: 'November 12, 2026',
+    category: 'Payroll & Labour Compliance',
+    summary: 'The Payment of Gratuity Act 1972 five-year eligibility rule, the calculation formula, the Rs 20 lakh tax exemption ceiling, and employer funding options.',
+  },
+  {
+    title: 'Labour Law Compliance for Startups: A Practical Overview',
+    slug: 'labour-law-compliance-for-startups-a-practical-overview',
+    date: 'November 15, 2026',
+    category: 'Payroll & Labour Compliance',
+    summary: 'Which labour laws typically apply to a small or growing Indian company, from Shops & Establishments to EPF, ESI, POSH, and the Maternity Benefit Act, explained for a first-time founder.',
+  },
+]
 
 const breadcrumbLd = {
   '@context': 'https://schema.org',
