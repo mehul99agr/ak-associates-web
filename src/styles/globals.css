@@ -551,6 +551,11 @@ button:focus-visible {
   color: var(--footer-text);
 }
 
+.footer-bottom a {
+  display: inline;
+  margin-bottom: 0;
+}
+
 .footer-logo {
   position: relative;
   height: 52px;
