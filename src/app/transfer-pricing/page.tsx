@@ -31,8 +31,8 @@ const bookingLink = BOOKING_LINK
 const services = [
   {
     icon: 'document',
-    title: 'Master File & Local File',
-    desc: 'Preparation of the OECD-aligned Master File (Form 3CEAA) and Local File (Form 3CEAB) for Indian entities with international related-party transactions exceeding prescribed thresholds.',
+    title: 'Master File & TP Documentation',
+    desc: 'Preparation of the OECD-aligned Master File (Form 3CEAA, including Form 3CEAB group-entity designation where applicable) and Rule 10D contemporaneous TP documentation for Indian entities with international related-party transactions exceeding prescribed thresholds.',
   },
   {
     icon: 'scroll',
@@ -57,7 +57,7 @@ const services = [
   {
     icon: 'globe',
     title: 'Country-by-Country Reporting (CbCR)',
-    desc: 'CbCR preparation and filing for MNCs with consolidated group revenue exceeding ₹5,500 crore (approximately €750 million). Covers Form 3CEAD and master entity notification requirements.',
+    desc: 'CbCR preparation and filing for MNCs with consolidated group revenue exceeding ₹6,400 crore (approximately €750 million). Covers Form 3CEAD and master entity notification requirements.',
   },
 ]
 
@@ -69,20 +69,20 @@ const thresholds = [
     color: 'var(--accent)',
   },
   {
-    type: 'Local File required',
-    threshold: '₹100 crore+',
-    requirement: 'Form 3CEAB; Local File',
+    type: 'Detailed TP Documentation',
+    threshold: '₹1 crore+ (same as Form 3CEB)',
+    requirement: 'Rule 10D contemporaneous documentation',
     color: '#f59e0b',
   },
   {
     type: 'Master File required',
-    threshold: '₹1,000 crore+ group revenue',
+    threshold: '₹500 crore+ group revenue',
     requirement: 'Form 3CEAA; Master File',
     color: '#ef4444',
   },
   {
     type: 'CbCR (Country-by-Country)',
-    threshold: '₹5,500 crore+ group revenue',
+    threshold: '₹6,400 crore+ group revenue',
     requirement: 'Form 3CEAD; CbCR filing',
     color: 'var(--primary)',
   },
@@ -106,8 +106,8 @@ const faqs = [
     a: 'Yes. An APA (Advance Pricing Agreement) with the CBDT provides certainty on the arm\'s length price for a specified period (typically 5 years), with the option to roll back up to 4 previous years. Once an APA is in place, the covered transactions cannot be subjected to TP audit for that period. APA is ideal for companies with recurring high-value related-party transactions and provides the strongest protection against arbitrary adjustments.',
   },
   {
-    q: 'What is the difference between Form 3CEB, Master File, and Local File?',
-    a: 'These are three distinct compliance requirements under India\'s transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions; mandatory for any company with related-party transactions above ₹1 crore. The Local File (Form 3CEAB) provides detailed analysis of the Indian entity\'s transactions with its foreign related parties; triggered when international transactions exceed ₹100 crore. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group\'s business, structure, and TP policies; required when the group\'s consolidated revenue exceeds ₹1,000 crore.',
+    q: 'What is the difference between Form 3CEB, Rule 10D documentation, and the Master File?',
+    a: 'These are distinct compliance requirements under India\'s transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions; mandatory for any company with related-party transactions above ₹1 crore. Rule 10D requires detailed contemporaneous documentation of the Indian entity\'s transactions with its foreign related parties, triggered at the same ₹1 crore threshold as Form 3CEB. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group\'s business, structure, and TP policies; required when the group\'s consolidated revenue exceeds ₹500 crore (with additional international-transaction-value tests). Where multiple Indian group entities must file a Master File, Form 3CEAB is used to designate a single entity to file on the group\'s behalf; it is not a separate "Local File" requirement.',
   },
 ]
 

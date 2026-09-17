@@ -11,7 +11,7 @@ const faqLd = {
       name: 'Is this TDS calculator accurate for FY 2026-27 rates?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. It uses the current base rates under Section 393(2) of the Income Tax Act 2025 (earlier Section 195 under the 1961 Act); 12.5% for long-term gains, 30% for short-term gains; plus the applicable surcharge slab based on sale value, and 4% health and education cess. It gives a statutory-rate estimate; it does not replace a Form 128 (earlier Form 13) lower deduction certificate computation, which can reduce TDS well below these figures.',
+        text: 'Yes. It uses the current base rates under Section 393(2) of the Income Tax Act 2025 (earlier Section 195 under the 1961 Act); 12.5% for long-term gains, and a flat 30% assumption for short-term gains (actual short-term gains are taxed at the seller\'s slab rate, so this is a conservative simplification, not the precise figure for every seller); plus the applicable surcharge (capped at 15% for long-term gains, escalating up to 37% for short-term gains taxed at slab rates), and 4% health and education cess. It gives a statutory-rate estimate; it does not replace a Form 128 (earlier Form 13) lower deduction certificate computation, which can reduce TDS well below these figures.',
       },
     },
     {
@@ -44,9 +44,13 @@ type Result = {
   effectiveRate: number
 }
 
-function getSurchargeRate(saleValue: number): number {
+function getSurchargeRate(saleValue: number, holdingPeriod: 'ltcg' | 'stcg'): number {
   if (saleValue <= 5000000) return 0
   if (saleValue <= 10000000) return 0.10
+  // Surcharge on long-term capital gains (Section 112) is capped at 15% regardless of
+  // sale value, unlike the general income-tax surcharge slabs (up to 37%) that apply
+  // to short-term gains taxed at slab rates.
+  if (holdingPeriod === 'ltcg') return 0.15
   if (saleValue <= 20000000) return 0.15
   if (saleValue <= 50000000) return 0.25
   return 0.37
@@ -63,7 +67,7 @@ export default function NRIPropertyTDSCalculator() {
       return
     }
     const baseRate = holdingPeriod === 'ltcg' ? 0.125 : 0.30
-    const surchargeRate = getSurchargeRate(saleValue)
+    const surchargeRate = getSurchargeRate(saleValue, holdingPeriod)
     const tdsBase = saleValue * baseRate
     const surcharge = tdsBase * surchargeRate
     const cess = (tdsBase + surcharge) * 0.04

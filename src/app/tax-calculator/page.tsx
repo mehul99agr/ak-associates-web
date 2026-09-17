@@ -161,7 +161,7 @@ export default function TaxCalculator() {
 
           <div style={{ marginTop: '30px', padding: '20px', background: 'var(--bg-surface)', borderRadius: '8px', borderLeft: '4px solid var(--gold)' }}>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: 1.6, margin: 0 }}>
-              <strong>Note:</strong> A simplified estimator. The New Regime applies a <strong>₹75,000 standard deduction</strong>; the Old Regime applies <strong>₹50,000</strong> plus the deductions you enter (80C, 80D, HRA, home loan interest, etc.). It does not handle surcharge on very high incomes or special-rate capital gains. For a precise plan, consult our team.
+              <strong>Note:</strong> A simplified estimator. The New Regime applies a <strong>₹75,000 standard deduction</strong>; the Old Regime applies <strong>₹50,000</strong> plus the deductions you enter (80C, 80D, HRA, home loan interest, etc.). It does not apply New Regime marginal relief for income just above ₹12,00,000 (up to roughly ₹12.77L), and does not handle surcharge on very high incomes or special-rate capital gains. For a precise plan, consult our team.
             </p>
           </div>
 

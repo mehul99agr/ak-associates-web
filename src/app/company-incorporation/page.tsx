@@ -157,7 +157,7 @@ const structures = [
   {
     name: 'LLP',
     best: 'Professional services & agencies',
-    pros: ['Lower compliance burden', 'No mandatory audit under ₹40L', 'Flexible profit-sharing', 'Lower registration cost'],
+    pros: ['Lower compliance burden', 'No mandatory audit under ₹40L turnover and ₹25L capital contribution', 'Flexible profit-sharing', 'Lower registration cost'],
     cons: ['Cannot raise equity funding', 'No ESOPs'],
     cost: '₹12,000–₹30,000',
     time: '15–20 working days',
@@ -186,7 +186,7 @@ export default function CompanyIncorporationPage() {
             <span className="hero-badge">Company Registration India</span>
             <h1>Register Your Company in India</h1>
             <p>
-              CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 7–15 day turnaround.
+              CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 15–20 working days end-to-end.
             </p>
             <div className="hero-cta">
               <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"

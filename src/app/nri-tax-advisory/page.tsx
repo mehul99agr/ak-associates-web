@@ -103,7 +103,7 @@ const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'm%20an%20NRI%20and
 const services = [
   {
     title: 'ITR Filing for NRIs',
-    desc: 'Correct form selection (ITR-2/ITR-3), Schedule FA (foreign assets) reporting, foreign tax credit claims, and timely filing before the October 31 deadline for NRIs with foreign assets.',
+    desc: 'Correct form selection (ITR-2/ITR-3), foreign tax credit claims, and timely filing before the applicable deadline. If you have transitioned to RNOR or Resident status, we also handle the Schedule FA foreign-asset disclosure that applies from that point (NRIs themselves are exempt from Schedule FA).',
   },
   {
     title: 'TDS Refund Claims',
@@ -128,8 +128,8 @@ const services = [
 ]
 
 const deadlines = [
-  { date: '31 Jul', title: 'ITR Deadline (Basic)', desc: 'For NRIs without foreign assets or audit requirement.' },
-  { date: '31 Oct', title: 'ITR Deadline (Foreign Assets)', desc: 'Extended deadline for NRIs reporting foreign assets in Schedule FA.' },
+  { date: '31 Jul', title: 'ITR Deadline (Basic)', desc: 'For NRIs without an Indian tax audit requirement.' },
+  { date: '31 Oct', title: 'ITR Deadline (Audit Cases)', desc: 'Extended deadline that applies where an Indian tax audit is required, for example on Indian business/professional income.' },
   { date: '15 Mar', title: 'Advance Tax (4th instalment)', desc: 'If Indian income tax liability exceeds ₹10,000 for the year.' },
   { date: 'Before remittance', title: 'Form 145 / Form 146', desc: 'Must be filed before any taxable foreign remittance is executed.' },
 ]
@@ -281,7 +281,7 @@ export default function NRITaxAdvisory() {
                   {[
                     { old: 'Form 15CA', new: 'Form 145', note: 'Filed before taxable foreign remittance' },
                     { old: 'Form 15CB', new: 'Form 146', note: 'CA certificate for remittances above ₹5L' },
-                    { old: '60-day RNOR threshold', new: '120-day threshold', note: 'For Indian citizens visiting India frequently' },
+                    { old: 'Deemed Resident test', new: '120-day threshold', note: 'For Indian citizens/PIOs with Indian income above ₹15L visiting India frequently; confirm the exact day-count change with your advisor at filing time' },
                   ].map((change, i) => (
                     <div key={i} style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '1rem' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>

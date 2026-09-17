@@ -103,7 +103,7 @@ const faqs = [
   },
   {
     q: 'How does ESOP taxation work for startup employees in India?',
-    a: 'ESOP taxation has two trigger points: (1) Exercise; the difference between the FMV on exercise date and the exercise price is taxable as a perquisite (salary income) in the employee\'s hands, and the company must deduct TDS; (2) Sale; any gain above the FMV at exercise is capital gains. DPIIT-recognised startups can defer the perquisite tax to the earlier of 5 years from grant, date of sale, or when the employee leaves the company.',
+    a: 'ESOP taxation has two trigger points: (1) Exercise; the difference between the FMV on exercise date and the exercise price is taxable as a perquisite (salary income) in the employee\'s hands, and the company must deduct TDS; (2) Sale; any gain above the FMV at exercise is capital gains. Eligible startups, DPIIT-recognised AND holding the Section 80-IAC eligibility certificate, can defer the TDS on this perquisite to the earliest of 48 months from the end of the assessment year in which the shares were allotted, the date of sale of the shares, or the date the employee leaves the company.',
   },
   {
     q: 'Can a foreign startup set up a subsidiary in India and what are the compliance requirements?',

@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: 'How does the India-UAE DTAA reduce double taxation?',
-    a: 'The India-UAE DTAA (signed 1993, amended 2007) provides reduced withholding tax rates: dividends are taxed at 10% (vs the standard 20% under Indian domestic law), interest at 12.5%, and royalties at 10%. To claim these rates, the UAE entity must provide a valid Tax Residency Certificate (TRC) issued by the UAE MoF and file Form 10F with the Indian tax authorities. Without a TRC, the Indian payer must deduct at the higher domestic rate.',
+    a: 'The India-UAE DTAA (signed 1993, amended 2007) provides reduced withholding tax rates: dividends are taxed at 10% (vs the standard 20% under Indian domestic law), interest at 5% where paid to or by a bank or similar financial institution and 12.5% in other cases, and royalties at 10%. To claim these rates, the UAE entity must provide a valid Tax Residency Certificate (TRC) issued by the UAE MoF and file Form 10F with the Indian tax authorities. Without a TRC, the Indian payer must deduct at the higher domestic rate.',
   },
   {
     q: 'What is a Qualifying Free Zone Person (QFZP) and how does it affect CT?',
@@ -77,7 +77,7 @@ const faqs = [
   },
   {
     q: 'What FEMA obligations arise when an Indian company receives dividends from a UAE subsidiary?',
-    a: 'When an Indian company receives dividends from its overseas subsidiary, the dividends are repatriated under RBI\'s Liberalised Remittance Scheme (LRS) framework for corporates. The Indian company must: (1) report the receipt in its annual FEMA return (APR; Annual Performance Report); (2) include the foreign dividend in its Indian taxable income (Section 115BBD provides a concessional 15% tax rate on certain foreign dividends); and (3) claim the DTAA benefit to avoid double taxation on the same income. We manage this end-to-end.',
+    a: 'When an Indian company receives dividends from its overseas subsidiary, the dividends are repatriated under RBI\'s Liberalised Remittance Scheme (LRS) framework for corporates. The Indian company must: (1) report the receipt in its annual FEMA return (APR; Annual Performance Report); (2) include the foreign dividend in its Indian taxable income at the applicable corporate tax rate (the earlier Section 115BBD concessional 15% rate on foreign dividends was withdrawn effective AY 2023-24, so no special reduced rate currently applies); and (3) claim the DTAA benefit to avoid double taxation on the same income. We manage this end-to-end.',
   },
   {
     q: 'Does having a UAE entity create a Permanent Establishment (PE) risk in India?',
@@ -143,7 +143,7 @@ export default function UAETaxAdvisory() {
               {[
                 { term: 'Standard CT Rate', def: '9% on taxable income above AED 375,000 (~₹85 lakh). Income below this threshold is taxed at 0%.' },
                 { term: 'Qualifying Free Zone Person (QFZP)', def: 'A Free Zone entity meeting UAE substance and activity tests that earns a 0% CT rate on its Qualifying Income only.' },
-                { term: 'Small Business Relief', def: 'Businesses with revenue below AED 3 million can elect Small Business Relief and pay 0% CT for financial years up to Dec 31, 2026.' },
+                { term: 'Small Business Relief', def: 'Businesses with revenue below AED 3 million can elect Small Business Relief and pay 0% CT. The UAE Ministry of Finance extended this relief in August 2026 to cover tax periods ending on or before Dec 31, 2029.' },
                 { term: 'India-UAE DTAA', def: 'The India-UAE Double Taxation Avoidance Agreement reduces withholding tax on dividends to 10% and interest to 12.5%, preventing double taxation.' },
               ].map((item, i) => (
                 <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
