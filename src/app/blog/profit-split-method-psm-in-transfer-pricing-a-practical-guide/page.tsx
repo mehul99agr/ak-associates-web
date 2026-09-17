@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Profit Split Method (PSM) in Transfe
 const articleLd = buildArticleLd({
   headline: 'Profit Split Method (PSM) in Transfer Pricing: A Practical Guide',
   description: 'How the Profit Split Method under Rule 10B(1)(d) allocates combined profit between associated enterprises, when it is the most appropriate method, and how contribution and residual profit split analyses differ.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-08-17',
   slug: 'profit-split-method-psm-in-transfer-pricing-a-practical-guide',
 })
 
@@ -65,7 +65,7 @@ export default function PSMBlog() {
                 Profit Split Method (PSM) in Transfer Pricing: A Practical Guide
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 9, 2026</span>
+                <span>Published August 17, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

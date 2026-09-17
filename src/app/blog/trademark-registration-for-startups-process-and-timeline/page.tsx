@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Trademark Registration for Startups:
 const articleLd = buildArticleLd({
   headline: 'Trademark Registration for Startups: Process & Timeline',
   description: 'Class selection, the Form TM-A filing process, realistic timelines, and the reduced fee for DPIIT-recognised startups and Udyam-registered MSMEs.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-09-06',
   slug: 'trademark-registration-for-startups-process-and-timeline',
 })
 

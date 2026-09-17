@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Section 12A & 80G Registration for N
 const articleLd = buildArticleLd({
   headline: 'Section 12A & 80G Registration for NGOs & Charitable Trusts',
   description: 'Section 12A/12AB registration and Section 80G approval for NGOs and charitable trusts: provisional vs regular registration, Form 10AB renewal, and validity periods.',
-  datePublished: '2026-09-17',
+  datePublished: '2026-09-09',
   slug: 'section-12a-and-80g-registration-for-ngos-and-charitable-trusts',
 })
 

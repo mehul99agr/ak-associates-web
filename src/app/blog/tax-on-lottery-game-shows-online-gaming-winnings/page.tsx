@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Tax on Lottery, Game Shows & Online 
 const articleLd = buildArticleLd({
   headline: 'Tax on Lottery, Game Shows & Online Gaming Winnings',
   description: 'A complete guide to how India taxes lottery prizes, game show winnings, and online gaming income: the flat 30% rate, Section 194BA TDS on net online gaming winnings, and why no basic exemption applies.',
-  datePublished: '2026-09-26',
+  datePublished: '2026-07-28',
   slug: 'tax-on-lottery-game-shows-online-gaming-winnings',
 })
 
@@ -85,7 +85,7 @@ export default function LotteryGamingTaxBlog() {
                 Tax on Lottery, Game Shows & Online Gaming Winnings (Section 194BA)
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 26, 2026</span>
+                <span>Published July 28, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

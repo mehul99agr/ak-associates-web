@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Term Sheet Negotiation: Key Clauses 
 const articleLd = buildArticleLd({
   headline: 'Term Sheet Negotiation: Key Clauses Indian Founders Should Understand',
   description: 'The major economic and control clauses in an Indian VC term sheet: valuation, liquidation preference, anti-dilution, board composition, founder vesting, ROFR/tag-along/drag-along, and information rights, with market-standard vs founder-unfriendly framing.',
-  datePublished: '2026-10-20',
+  datePublished: '2026-08-24',
   slug: 'term-sheet-negotiation-key-clauses-indian-founders-should-understand',
 })
 
@@ -83,7 +83,7 @@ export default function TermSheetNegotiationBlog() {
                 Term Sheet Negotiation: Key Clauses Indian Founders Should Understand
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 20, 2026</span>
+                <span>Published August 24, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

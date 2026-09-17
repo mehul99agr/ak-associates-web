@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('FSSAI Registration for Food Business
 const articleLd = buildArticleLd({
   headline: 'FSSAI Registration for Food Businesses: When Required',
   description: 'FSSAI Basic Registration, State License, and Central License thresholds, which food businesses need which tier, and how to apply.',
-  datePublished: '2026-09-17',
+  datePublished: '2026-09-08',
   slug: 'fssai-registration-for-food-businesses-when-required',
 })
 

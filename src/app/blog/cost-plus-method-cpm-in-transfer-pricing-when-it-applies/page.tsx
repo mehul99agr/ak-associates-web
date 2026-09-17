@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Cost Plus Method (CPM) in Transfer P
 const articleLd = buildArticleLd({
   headline: 'Cost Plus Method (CPM) in Transfer Pricing: When It Applies',
   description: 'How the Cost Plus Method under Rule 10B(1)(c) works, the cost base it uses, when it is the most appropriate method, and why TNMM often replaces it in practice.',
-  datePublished: '2026-10-06',
+  datePublished: '2026-08-14',
   slug: 'cost-plus-method-cpm-in-transfer-pricing-when-it-applies',
 })
 
@@ -65,7 +65,7 @@ export default function CPMBlog() {
                 Cost Plus Method (CPM) in Transfer Pricing: When It Applies
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 6, 2026</span>
+                <span>Published August 14, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

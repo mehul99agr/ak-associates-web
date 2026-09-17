@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Input Tax Credit (ITC) Under GST: El
 const articleLd = buildArticleLd({
   headline: 'Input Tax Credit (ITC) Under GST: Eligibility, Reversal & Blocked Credits',
   description: 'ITC eligibility conditions, the Section 16(4) time limit, the 180-day payment reversal rule, and blocked credits under Section 17(5) of the CGST Act.',
-  datePublished: '2026-09-18',
+  datePublished: '2026-07-14',
   slug: 'input-tax-credit-itc-gst-guide',
 })
 
@@ -83,7 +83,7 @@ export default function InputTaxCreditITCBlog() {
                 Input Tax Credit Under GST: Eligibility, Reversal &amp; Blocked Credits
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 18, 2026</span>
+                <span>Published July 14, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

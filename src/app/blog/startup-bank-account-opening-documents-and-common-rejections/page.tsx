@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Startup Bank Account Opening: Docume
 const articleLd = buildArticleLd({
   headline: 'Startup Bank Account Opening: Documents & Common Rejections',
   description: 'Standard KYC and incorporation documents needed to open a current account for a newly incorporated Indian startup, common reasons banks reject or delay applications, and tips to speed up the process.',
-  datePublished: '2026-11-07',
+  datePublished: '2026-09-13',
   slug: 'startup-bank-account-opening-documents-and-common-rejections',
 })
 
@@ -84,7 +84,7 @@ export default function StartupBankAccountBlog() {
                 Startup Bank Account Opening: Documents &amp; Common Rejections
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 7, 2026</span>
+                <span>Published September 13, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

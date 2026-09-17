@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Penalty for Under-Reporting & Misrep
 const articleLd = buildArticleLd({
   headline: 'Penalty for Under-Reporting & Misreporting of Income',
   description: 'The Section 270A penalty framework: what counts as under-reporting versus misreporting of income, the applicable penalty percentages, and the situations that are excluded.',
-  datePublished: '2026-10-15',
+  datePublished: '2026-08-21',
   slug: 'penalty-for-under-reporting-and-misreporting-of-income',
 })
 
@@ -83,7 +83,7 @@ export default function PenaltyUnderReportingMisreportingBlog() {
                 Penalty for Under-Reporting &amp; Misreporting of Income
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 15, 2026</span>
+                <span>Published August 21, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

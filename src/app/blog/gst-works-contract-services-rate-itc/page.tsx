@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GST on Works Contract Services: Rate
 const articleLd = buildArticleLd({
   headline: 'GST on Works Contract Services: Rate & ITC Rules',
   description: 'The current GST rate on works contract services and the Section 17(5)(c)/(d) rules that block input tax credit for the recipient in most construction scenarios.',
-  datePublished: '2026-09-20',
+  datePublished: '2026-07-17',
   slug: 'gst-works-contract-services-rate-itc',
 })
 
@@ -61,7 +61,7 @@ export default function GSTWorksContractBlog() {
             <span className="section-badge">GST</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>GST on Works Contract Services: Rate and ITC Rules Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 20, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 17, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

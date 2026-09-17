@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Annual Compliance Calendar for NGOs 
 const articleLd = buildArticleLd({
   headline: 'Annual Compliance Calendar for NGOs and Trusts in India',
   description: 'A deadline-by-deadline compliance calendar for Indian NGOs and trusts covering the audit report, ITR-7, FCRA FC-4 return, and 12A/80G renewal cycle.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-09-11',
   slug: 'annual-compliance-calendar-for-ngos-and-trusts-in-india',
 })
 
@@ -83,7 +83,7 @@ export default function NgoTrustComplianceCalendarBlog() {
                 Annual Compliance Calendar for NGOs and Trusts in India
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published September 11, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

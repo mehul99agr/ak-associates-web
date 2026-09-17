@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Startup India Registration vs DPIIT 
 const articleLd = buildArticleLd({
   headline: 'Startup India Registration vs DPIIT Recognition: What Is the Difference',
   description: 'Startup India registration and DPIIT recognition refer to the same underlying process. What the terms actually mean, where the confusion comes from, and what to check before assuming you already have one or the other.',
-  datePublished: '2026-10-12',
+  datePublished: '2026-09-06',
   slug: 'startup-india-registration-vs-dpiit-recognition-what-is-the-difference',
 })
 

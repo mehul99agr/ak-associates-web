@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Section 194Q: TDS on Purchase of Goo
 const articleLd = buildArticleLd({
   headline: 'Section 194Q: TDS on Purchase of Goods Above Rs 50 Lakh',
   description: 'Section 194Q TDS rate and threshold, the Rs 10 crore buyer turnover condition, seller-wise threshold testing, and how the overlap with Section 206C(1H) TCS was resolved.',
-  datePublished: '2026-10-02',
+  datePublished: '2026-08-07',
   slug: 'section-194q-tds-purchase-of-goods',
 })
 

@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Professional Tax Registration & Comp
 const articleLd = buildArticleLd({
   headline: 'Professional Tax Registration & Compliance in Maharashtra',
   description: 'PTEC vs PTRC registration in Maharashtra, current Professional Tax slabs for salaried employees, and the due dates employers and self-employed professionals must track.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-09-05',
   slug: 'professional-tax-registration-and-compliance-in-maharashtra',
 })
 
@@ -84,7 +84,7 @@ export default function ProfessionalTaxMaharashtraBlog() {
                 Professional Tax Registration &amp; Compliance in Maharashtra
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 5, 2026</span>
+                <span>Published September 5, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

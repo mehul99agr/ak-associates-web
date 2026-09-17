@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Section 87A Rebate: Zero Tax Up to T
 const articleLd = buildArticleLd({
   headline: 'Section 87A Rebate: Zero Tax Up to This Income Limit',
   description: 'How the Section 87A tax rebate works under the old and new regimes, marginal relief near the threshold, and which income is excluded from the rebate.',
-  datePublished: '2026-10-04',
+  datePublished: '2026-08-10',
   slug: 'section-87a-rebate-zero-tax-limit',
 })
 

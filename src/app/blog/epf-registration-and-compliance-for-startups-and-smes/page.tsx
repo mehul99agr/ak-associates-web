@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('EPF Registration & Compliance for St
 const articleLd = buildArticleLd({
   headline: 'EPF Registration & Compliance for Startups and SMEs',
   description: 'The 20-employee EPF applicability threshold, the 12% employer/employee contribution split across EPF, EPS and EDLI, and ongoing compliance obligations for a growing business.',
-  datePublished: '2026-09-25',
+  datePublished: '2026-07-28',
   slug: 'epf-registration-and-compliance-for-startups-and-smes',
 })
 
@@ -66,7 +66,7 @@ export default function EpfRegistrationBlog() {
                 EPF Registration &amp; Compliance for Startups and SMEs
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 25, 2026</span>
+                <span>Published July 28, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

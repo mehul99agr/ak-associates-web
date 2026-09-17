@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Tax Audit Report Forms: 3CA vs 3CB v
 const articleLd = buildArticleLd({
   headline: 'Tax Audit Report Forms: 3CA vs 3CB vs 3CD Explained',
   description: 'When Form 3CA applies vs Form 3CB, what the Form 3CD statement of particulars covers, and how the Income Tax Act 2025 is set to consolidate these tax audit report forms.',
-  datePublished: '2026-10-06',
+  datePublished: '2026-08-13',
   slug: 'tax-audit-report-forms-3ca-3cb-3cd-explained',
 })
 
@@ -66,7 +66,7 @@ export default function FormsExplainedBlog() {
                 Tax Audit Report Forms: 3CA vs 3CB vs 3CD Explained
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 6, 2026</span>
+                <span>Published August 13, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

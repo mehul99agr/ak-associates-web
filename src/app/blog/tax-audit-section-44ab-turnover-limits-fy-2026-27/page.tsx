@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Tax Audit Under Section 44AB: Turnov
 const articleLd = buildArticleLd({
   headline: 'Tax Audit Under Section 44AB: Turnover Limits & Applicability FY 2026-27',
   description: 'Current Section 44AB (now Section 63 under the Income Tax Act 2025) turnover thresholds for businesses and professionals in FY 2026-27, the digital-transaction relaxation, and how presumptive taxation opt-outs trigger a mandatory audit.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-08-12',
   slug: 'tax-audit-section-44ab-turnover-limits-fy-2026-27',
 })
 
@@ -66,7 +66,7 @@ export default function Section44ABBlog() {
                 Tax Audit Under Section 44AB: Turnover Limits &amp; Applicability FY 2026-27
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 5, 2026</span>
+                <span>Published August 12, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

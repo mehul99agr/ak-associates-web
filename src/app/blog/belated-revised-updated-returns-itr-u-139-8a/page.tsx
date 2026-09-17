@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Belated, Revised & Updated Returns: 
 const articleLd = buildArticleLd({
   headline: 'Belated, Revised & Updated Returns: ITR-U Under Section 139(8A)',
   description: 'How belated returns, revised returns, and the updated return (ITR-U) under Section 139(8A) differ, including deadlines, additional tax slabs, and who is eligible to file each.',
-  datePublished: '2026-09-28',
+  datePublished: '2026-08-02',
   slug: 'belated-revised-updated-returns-itr-u-139-8a',
 })
 
@@ -85,7 +85,7 @@ export default function ItrUBlog() {
                 Belated, Revised &amp; Updated Returns: ITR-U Under Section 139(8A)
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 28, 2026</span>
+                <span>Published August 2, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

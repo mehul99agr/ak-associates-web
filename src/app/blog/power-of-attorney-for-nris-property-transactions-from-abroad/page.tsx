@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Power of Attorney for NRIs: Property
 const articleLd = buildArticleLd({
   headline: 'Power of Attorney for NRIs: Property Transactions from Abroad',
   description: 'Types of POA for Indian property, execution from abroad via apostille or consular attestation, the 3-month stamping and registration deadline, and precautions NRIs should take.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-08-12',
   slug: 'power-of-attorney-for-nris-property-transactions-from-abroad',
 })
 
@@ -84,7 +84,7 @@ export default function PowerOfAttorneyNRIBlog() {
                 Power of Attorney for NRIs: Property Transactions from Abroad
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 5, 2026</span>
+                <span>Published August 12, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

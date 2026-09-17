@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Double Taxation Relief for NRIs: For
 const articleLd = buildArticleLd({
   headline: 'Double Taxation Relief for NRIs: Foreign Tax Credit Under Section 91',
   description: 'Section 91 unilateral relief mechanics for income taxed abroad where India has no DTAA with the source country, how it differs from Section 90 treaty relief, and how to claim the credit.',
-  datePublished: '2026-09-20',
+  datePublished: '2026-07-18',
   slug: 'double-taxation-relief-for-nris-foreign-tax-credit-under-section-91',
 })
 
@@ -65,7 +65,7 @@ export default function Section91DoubleTaxationBlog() {
                 Double Taxation Relief for NRIs: Foreign Tax Credit Under Section 91
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 20, 2026</span>
+                <span>Published July 18, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

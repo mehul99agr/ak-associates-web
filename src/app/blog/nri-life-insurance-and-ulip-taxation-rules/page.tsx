@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('NRI Life Insurance & ULIP Taxation R
 const articleLd = buildArticleLd({
   headline: 'NRI Life Insurance & ULIP Taxation Rules',
   description: 'Whether NRIs can buy Indian life insurance and ULIPs, premium payment channels, Section 10(10D) exemption thresholds for ULIPs and other policies, and TDS on maturity payouts to NRIs.',
-  datePublished: '2026-10-02',
+  datePublished: '2026-08-08',
   slug: 'nri-life-insurance-and-ulip-taxation-rules',
 })
 
@@ -83,7 +83,7 @@ export default function NriLifeInsuranceUlipBlog() {
                 NRI Life Insurance &amp; ULIP Taxation Rules
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 2, 2026</span>
+                <span>Published August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

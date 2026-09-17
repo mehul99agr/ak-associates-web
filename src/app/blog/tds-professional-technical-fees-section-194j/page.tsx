@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('TDS on Professional & Technical Fees
 const articleLd = buildArticleLd({
   headline: 'TDS on Professional & Technical Fees: Section 194J Explained',
   description: 'Section 194J TDS rates, the Rs 50,000 per-category threshold, deductee categories, and compliance steps, now consolidated under Section 393 of the Income Tax Act 2025.',
-  datePublished: '2026-10-01',
+  datePublished: '2026-08-06',
   slug: 'tds-professional-technical-fees-section-194j',
 })
 

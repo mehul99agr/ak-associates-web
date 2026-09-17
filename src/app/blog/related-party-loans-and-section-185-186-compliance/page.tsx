@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Related Party Loans & Section 185/18
 const articleLd = buildArticleLd({
   headline: 'Related Party Loans & Section 185/186 Compliance',
   description: 'Section 185 restrictions on loans to directors and Section 186 limits on inter-corporate loans, guarantees, and investments under the Companies Act 2013.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-09-01',
   slug: 'related-party-loans-and-section-185-186-compliance',
 })
 
@@ -84,7 +84,7 @@ export default function RelatedPartyLoansSection185186Blog() {
                 Related Party Loans &amp; Section 185/186 Compliance
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 9, 2026</span>
+                <span>Published September 1, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

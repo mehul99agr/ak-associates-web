@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('TDS on Salary: Section 192 & Form 24
 const articleLd = buildArticleLd({
   headline: 'TDS on Salary: Section 192 & Form 24Q Explained',
   description: 'How employers deduct TDS on salary under Section 192 using the average-rate method, old vs new tax regime declarations, quarterly Form 24Q filing, and the Income Tax Act 2025 renumbering.',
-  datePublished: '2026-09-30',
+  datePublished: '2026-08-05',
   slug: 'tds-on-salary-section-192-form-24q',
 })
 
@@ -65,7 +65,7 @@ export default function TDSSalarySection192Blog() {
                 TDS on Salary: Section 192 and Form 24Q Explained
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 30, 2026</span>
+                <span>Published August 5, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

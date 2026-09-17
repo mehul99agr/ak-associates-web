@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GST Audit: Applicability & What Audi
 const articleLd = buildArticleLd({
   headline: 'GST Audit: Applicability & What Auditors Check',
   description: 'GSTR-9C reconciliation statement applicability and self-certification status, plus departmental audit under Section 65 and special audit under Section 66 of the CGST Act.',
-  datePublished: '2026-09-22',
+  datePublished: '2026-07-21',
   slug: 'gst-audit-applicability-guide',
 })
 

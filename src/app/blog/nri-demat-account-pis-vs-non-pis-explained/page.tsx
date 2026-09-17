@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('NRI Demat Account: PIS vs Non-PIS Ex
 const articleLd = buildArticleLd({
   headline: 'NRI Demat Account: PIS vs Non-PIS Explained',
   description: 'What the Portfolio Investment Scheme (PIS) covers for NRIs, when a non-PIS account applies, the RBI reporting framework, and the 2025 change merging NRE and NRO PIS accounts.',
-  datePublished: '2026-10-08',
+  datePublished: '2026-08-16',
   slug: 'nri-demat-account-pis-vs-non-pis-explained',
 })
 
@@ -84,7 +84,7 @@ export default function NRIDematPISBlog() {
                 NRI Demat Account: PIS vs Non-PIS Explained
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 8, 2026</span>
+                <span>Published August 16, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

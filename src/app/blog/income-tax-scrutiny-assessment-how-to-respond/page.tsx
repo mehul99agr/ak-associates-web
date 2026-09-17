@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax Scrutiny Assessment: What
 const articleLd = buildArticleLd({
   headline: 'Income Tax Scrutiny Assessment: What Triggers It & How to Respond',
   description: 'What triggers CASS selection for income tax scrutiny, how to prepare documents for a strong response, and the common mistakes that make scrutiny assessments go badly.',
-  datePublished: '2026-10-08',
+  datePublished: '2026-08-16',
   slug: 'income-tax-scrutiny-assessment-how-to-respond',
 })
 

@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('OCI vs NRI vs PIO: Tax & Compliance 
 const articleLd = buildArticleLd({
   headline: 'OCI vs NRI vs PIO: Tax & Compliance Differences Explained',
   description: 'What OCI, NRI, and PIO actually mean, why OCI is an immigration status while NRI is a tax-residency status, and how each affects property rights, FEMA investment eligibility, and Indian tax filing obligations.',
-  datePublished: '2026-10-14',
+  datePublished: '2026-08-18',
   slug: 'oci-vs-nri-vs-pio-tax-and-compliance-differences-explained',
 })
 
@@ -82,7 +82,7 @@ export default function OciNriPioBlog() {
                 OCI vs NRI vs PIO: Tax &amp; Compliance Differences Explained
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 14, 2026</span>
+                <span>Published August 18, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

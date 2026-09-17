@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GST Registration Cancellation & Revo
 const articleLd = buildArticleLd({
   headline: 'GST Registration Cancellation & Revocation: Process & Grounds',
   description: 'Grounds for GST registration cancellation under Rule 21, voluntary vs officer-initiated cancellation, and the revocation process and timeline under Rule 23.',
-  datePublished: '2026-09-21',
+  datePublished: '2026-07-19',
   slug: 'gst-registration-cancellation-revocation',
 })
 

@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Faceless Appeal Scheme: How Income T
 const articleLd = buildArticleLd({
   headline: 'Faceless Appeal Scheme: How Income Tax Appeals Work Now',
   description: 'How the Faceless Appeal Scheme routes CIT(Appeals) proceedings through the National Faceless Appeal Centre and Appeal Units, which categories of cases are excluded, and how to respond.',
-  datePublished: '2026-10-12',
+  datePublished: '2026-08-21',
   slug: 'faceless-appeal-scheme-how-income-tax-appeals-work-now',
 })
 
@@ -83,7 +83,7 @@ export default function FacelessAppealSchemeBlog() {
                 Faceless Appeal Scheme: How Income Tax Appeals Work Now
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 12, 2026</span>
+                <span>Published August 21, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

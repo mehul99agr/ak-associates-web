@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Section 56(2)(x): Tax on Gifts Recei
 const articleLd = buildArticleLd({
   headline: 'Section 56(2)(x): Tax on Gifts Received Above Rs 50,000',
   description: 'A complete guide to Section 56(2)(x) (now Section 92 under the Income Tax Act 2025) for resident taxpayers: the Rs 50,000 threshold, the full relative-exemption list, occasion-based exemptions, and property valuation rules.',
-  datePublished: '2026-09-26',
+  datePublished: '2026-07-29',
   slug: 'section-56-2-x-tax-on-gifts-received-rs-50000',
 })
 
@@ -85,7 +85,7 @@ export default function GiftTaxSection56Blog() {
                 Section 56(2)(x): Tax on Gifts Received Above Rs 50,000
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 26, 2026</span>
+                <span>Published July 29, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

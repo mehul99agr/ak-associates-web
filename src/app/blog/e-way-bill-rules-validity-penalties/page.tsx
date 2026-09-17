@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('E-Way Bill Rules: When Required, Val
 const articleLd = buildArticleLd({
   headline: 'E-Way Bill Rules: When Required, Validity & Penalties',
   description: 'When an e-way bill is mandatory, the Rs 50,000 consignment value threshold, validity period by distance, extension rules, and penalties for non-compliance under GST.',
-  datePublished: '2026-09-19',
+  datePublished: '2026-07-16',
   slug: 'e-way-bill-rules-validity-penalties',
 })
 
@@ -84,7 +84,7 @@ export default function EWayBillRulesBlog() {
                 E-Way Bill Rules: When Required, Validity & Penalties
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 19, 2026</span>
+                <span>Published July 16, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Form 24Q vs Form 26Q: TDS Return Fil
 const articleLd = buildArticleLd({
   headline: 'Form 24Q vs Form 26Q: TDS Return Filing for Employers',
   description: 'The difference between Form 24Q (salary TDS) and Form 26Q (non-salary TDS), quarterly due dates, and their renumbering as Form 138 and Form 140 under the Income Tax Act 2025 for FY 2026-27.',
-  datePublished: '2026-11-22',
+  datePublished: '2026-09-16',
   slug: 'form-24q-vs-form-26q-tds-return-filing-for-employers',
 })
 
@@ -84,7 +84,7 @@ export default function Form24Q26QBlog() {
                 Form 24Q vs Form 26Q: TDS Return Filing for Employers
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 22, 2026</span>
+                <span>Published September 16, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

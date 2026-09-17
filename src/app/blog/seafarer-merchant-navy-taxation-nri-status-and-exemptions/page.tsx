@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Seafarer (Merchant Navy) Taxation: N
 const articleLd = buildArticleLd({
   headline: 'Seafarer (Merchant Navy) Taxation: NRI Status & Exemptions',
   description: 'How the CDC (Continuous Discharge Certificate) day-counting rule determines residential status for seafarers, taxability of NRE salary for foreign-going voyages, and common compliance mistakes.',
-  datePublished: '2026-10-11',
+  datePublished: '2026-08-17',
   slug: 'seafarer-merchant-navy-taxation-nri-status-and-exemptions',
 })
 
@@ -83,7 +83,7 @@ export default function SeafarerTaxationBlog() {
                 Seafarer (Merchant Navy) Taxation: NRI Status &amp; Exemptions
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 11, 2026</span>
+                <span>Published August 17, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

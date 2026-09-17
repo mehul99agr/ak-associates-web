@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Statement of Financial Transactions 
 const articleLd = buildArticleLd({
   headline: 'Statement of Financial Transactions (SFT): High-Value Transaction Reporting',
   description: 'What the Statement of Financial Transaction (Form 61A) reports, who must file it, the high-value transaction thresholds, and how it surfaces in AIS.',
-  datePublished: '2026-09-30',
+  datePublished: '2026-08-23',
   slug: 'statement-of-financial-transactions-sft-high-value-transaction-reporti',
 })
 
@@ -83,7 +83,7 @@ export default function SftHighValueTransactionBlog() {
                 Statement of Financial Transactions (SFT): High-Value Transaction Reporting
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 30, 2026</span>
+                <span>Published August 23, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

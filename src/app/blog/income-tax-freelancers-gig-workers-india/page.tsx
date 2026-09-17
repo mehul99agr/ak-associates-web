@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax on Freelancers & Gig Work
 const articleLd = buildArticleLd({
   headline: 'Income Tax on Freelancers & Gig Workers in India',
   description: 'How freelance and gig income is classified for tax purposes, presumptive taxation eligibility, advance tax, TDS deducted by clients, GST registration thresholds, and deductible expenses.',
-  datePublished: '2026-10-04',
+  datePublished: '2026-08-10',
   slug: 'income-tax-freelancers-gig-workers-india',
 })
 

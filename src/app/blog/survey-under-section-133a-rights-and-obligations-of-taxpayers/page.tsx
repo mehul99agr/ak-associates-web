@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Survey Under Section 133A: Rights & 
 const articleLd = buildArticleLd({
   headline: 'Survey Under Section 133A: Rights & Obligations of Taxpayers',
   description: 'What a Section 133A income tax survey can and cannot do, the business-hours entry rule, impounding limits on books of account, and taxpayer rights and obligations during one.',
-  datePublished: '2026-10-15',
+  datePublished: '2026-08-19',
   slug: 'survey-under-section-133a-rights-and-obligations-of-taxpayers',
 })
 
@@ -84,7 +84,7 @@ export default function SurveySection133ABlog() {
                 Survey Under Section 133A: Rights &amp; Obligations of Taxpayers
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 15, 2026</span>
+                <span>Published August 19, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

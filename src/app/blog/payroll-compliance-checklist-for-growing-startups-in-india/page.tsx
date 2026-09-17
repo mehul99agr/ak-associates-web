@@ -34,7 +34,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Payroll Compliance Checklist for Gro
 const articleLd = buildArticleLd({
   headline: 'Payroll Compliance Checklist for Growing Startups in India',
   description: 'A practical payroll compliance checklist for growing Indian startups. Learn about EPF and ESI triggers, TDS on salary, professional tax, and labour laws.',
-  datePublished: '2026-11-09',
+  datePublished: '2026-09-13',
   slug: 'payroll-compliance-checklist-for-growing-startups-in-india',
 })
 
@@ -87,7 +87,7 @@ export default function PayrollComplianceChecklistForGrowingStartupsInIndiaBlog(
                 Payroll Compliance Checklist for Growing Startups in India
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 9, 2026</span>
+                <span>Published September 13, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

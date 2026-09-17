@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('TCS on Sale of Goods: What Happened 
 const articleLd = buildArticleLd({
   headline: 'TCS on Sale of Goods: What Happened to Section 206C(1H)',
   description: 'Section 206C(1H), the seller-side TCS on sale of goods above Rs 50 lakh, was omitted with effect from April 1, 2025. What it used to require, why it was removed, and why Section 194Q is now the operative provision for these transactions.',
-  datePublished: '2026-10-03',
+  datePublished: '2026-08-08',
   slug: 'tcs-sale-of-goods-section-206c1h-repealed',
 })
 

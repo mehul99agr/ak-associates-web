@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Related Party Transactions Under Com
 const articleLd = buildArticleLd({
   headline: 'Related Party Transactions Under Companies Act: Disclosure & Approval',
   description: 'Section 188 board and shareholder approval thresholds for related party transactions, and Form AOC-2 disclosure requirements.',
-  datePublished: '2026-10-01',
+  datePublished: '2026-08-29',
   slug: 'related-party-transactions-under-companies-act-disclosure-and-approval',
 })
 

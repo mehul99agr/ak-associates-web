@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax Refund Status: How to Che
 const articleLd = buildArticleLd({
   headline: 'Income Tax Refund Status: How to Check & Common Delays',
   description: 'How to check income tax refund status online, typical processing timelines after e-verification, and the most common reasons refunds get delayed or fail.',
-  datePublished: '2026-09-27',
+  datePublished: '2026-07-30',
   slug: 'income-tax-refund-status-check-common-delays',
 })
 
@@ -84,7 +84,7 @@ export default function IncomeTaxRefundStatusBlog() {
                 Income Tax Refund Status: How to Check &amp; Common Delays
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 27, 2026</span>
+                <span>Published July 30, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

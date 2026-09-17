@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Letter of Undertaking (LUT) for GST-
 const articleLd = buildArticleLd({
   headline: 'Letter of Undertaking (LUT) for GST-Free Exports: How to File',
   description: 'Form GST RFD-11 eligibility, step-by-step LUT filing process, one-year validity period, and consequences of exporting without a valid LUT.',
-  datePublished: '2026-09-21',
+  datePublished: '2026-07-19',
   slug: 'lut-letter-undertaking-gst-exports',
 })
 

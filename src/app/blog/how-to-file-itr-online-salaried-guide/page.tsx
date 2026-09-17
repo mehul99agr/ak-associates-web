@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('How to File ITR Online: Step-by-Step
 const articleLd = buildArticleLd({
   headline: 'How to File ITR Online: Step-by-Step Guide for Salaried Individuals',
   description: 'A practical walkthrough for salaried individuals filing their income tax return online: documents needed, Form 16/AIS/26AS reconciliation, regime selection, the e-filing steps, and e-verification.',
-  datePublished: '2026-09-22',
+  datePublished: '2026-07-20',
   slug: 'how-to-file-itr-online-salaried-guide',
 })
 
@@ -84,7 +84,7 @@ export default function HowToFileITROnlineBlog() {
                 How to File ITR Online: Step-by-Step Guide for Salaried Individuals
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 22, 2026</span>
+                <span>Published July 20, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Trust vs Society vs Section 8 Compan
 const articleLd = buildArticleLd({
   headline: 'Trust vs Society vs Section 8 Company: Choosing the Right Structure for an NGO',
   description: 'Comparing governing laws, governance requirements, and cost for Trusts, Societies, and Section 8 Companies, and which structure suits which use case.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-09-09',
   slug: 'trust-vs-society-vs-section-8-company-choosing-the-right-structure-for',
 })
 

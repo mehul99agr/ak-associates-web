@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('NRI Selling Agricultural Land Inheri
 const articleLd = buildArticleLd({
   headline: 'NRI Selling Agricultural Land Inherited in India: Tax & FEMA Rules',
   description: 'The sale-side mechanics for an NRI selling inherited agricultural land: eligible buyers, rural vs urban land capital gains computation, TDS obligations on the buyer, and repatriation of sale proceeds.',
-  datePublished: '2026-09-23',
+  datePublished: '2026-07-24',
   slug: 'nri-selling-agricultural-land-inherited-in-india-tax-and-fema-rules',
 })
 
@@ -65,7 +65,7 @@ export default function NriSellingInheritedAgriLandBlog() {
                 NRI Selling Agricultural Land Inherited in India: Tax &amp; FEMA Rules
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 23, 2026</span>
+                <span>Published July 24, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Charge Creation & Satisfaction (CHG 
 const articleLd = buildArticleLd({
   headline: 'Charge Creation & Satisfaction (CHG Forms): ROC Compliance Guide',
   description: 'CHG-1, CHG-4, and CHG-9 filing requirements for registering and satisfying charges on company assets, with timelines and condonation windows.',
-  datePublished: '2026-10-13',
+  datePublished: '2026-09-01',
   slug: 'charge-creation-and-satisfaction-chg-forms-roc-compliance-guide',
 })
 
@@ -83,7 +83,7 @@ export default function ChargeCreationSatisfactionBlog() {
                 Charge Creation &amp; Satisfaction (CHG Forms): ROC Compliance Guide
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 13, 2026</span>
+                <span>Published September 1, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

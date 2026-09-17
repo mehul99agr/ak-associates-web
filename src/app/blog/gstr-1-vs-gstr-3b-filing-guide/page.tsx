@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GSTR-1 vs GSTR-3B: Filing Guide & Co
 const articleLd = buildArticleLd({
   headline: 'GSTR-1 vs GSTR-3B: Filing Guide & Common Mistakes',
   description: 'A practical comparison of GSTR-1 and GSTR-3B: what each return reports, due dates, the QRMP quarterly option, late fees, and the mismatch errors that trigger GST department notices.',
-  datePublished: '2026-09-18',
+  datePublished: '2026-07-15',
   slug: 'gstr-1-vs-gstr-3b-filing-guide',
 })
 

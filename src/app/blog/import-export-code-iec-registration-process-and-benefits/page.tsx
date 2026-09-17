@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Import Export Code (IEC): Registrati
 const articleLd = buildArticleLd({
   headline: 'Import Export Code (IEC): Registration Process & Benefits',
   description: 'The DGFT IEC registration process, who needs one, IEC validity, and the annual update requirement between April and June.',
-  datePublished: '2026-10-01',
+  datePublished: '2026-09-05',
   slug: 'import-export-code-iec-registration-process-and-benefits',
 })
 
@@ -83,7 +83,7 @@ export default function ImportExportCodeIECBlog() {
                 Import Export Code (IEC): Registration Process &amp; Benefits
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 1, 2026</span>
+                <span>Published September 5, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

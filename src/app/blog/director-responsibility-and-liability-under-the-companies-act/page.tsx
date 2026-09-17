@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Director Responsibility & Liability 
 const articleLd = buildArticleLd({
   headline: 'Director Responsibility & Liability Under the Companies Act',
   description: 'Director fiduciary duties under Section 166, personal liability scenarios, and Section 164 director disqualification grounds.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-08-30',
   slug: 'director-responsibility-and-liability-under-the-companies-act',
 })
 

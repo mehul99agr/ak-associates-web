@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('CSR Fund Utilisation: Compliance for
 const articleLd = buildArticleLd({
   headline: 'CSR Fund Utilisation: Compliance for Receiving Trusts',
   description: 'CSR-1 registration, utilisation certificates, and reporting obligations for a trust or NGO receiving corporate CSR funding under Section 135 of the Companies Act.',
-  datePublished: '2026-10-01',
+  datePublished: '2026-09-12',
   slug: 'csr-fund-utilisation-compliance-for-receiving-trusts',
 })
 
@@ -83,7 +83,7 @@ export default function CsrFundUtilisationComplianceBlog() {
                 CSR Fund Utilisation: Compliance for Receiving Trusts
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 1, 2026</span>
+                <span>Published September 12, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

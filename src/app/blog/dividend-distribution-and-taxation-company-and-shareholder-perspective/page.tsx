@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Dividend Distribution & Taxation: Co
 const articleLd = buildArticleLd({
   headline: 'Dividend Distribution & Taxation: Company and Shareholder Perspective',
   description: 'Dividend taxation since the abolition of DDT, taxability in the shareholder\'s hands, TDS under Section 194, and the company\'s compliance obligations at payout.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-08-27',
   slug: 'dividend-distribution-and-taxation-company-and-shareholder-perspective',
 })
 
@@ -84,7 +84,7 @@ export default function DividendDistributionTaxationBlog() {
                 Dividend Distribution &amp; Taxation: Company and Shareholder Perspective
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 9, 2026</span>
+                <span>Published August 27, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

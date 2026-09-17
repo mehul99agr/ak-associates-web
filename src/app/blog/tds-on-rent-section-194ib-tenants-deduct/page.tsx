@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('TDS on Rent Under Section 194-IB: Wh
 const articleLd = buildArticleLd({
   headline: 'TDS on Rent Under Section 194-IB: When Tenants Must Deduct',
   description: 'When individual and HUF tenants must deduct TDS on rent under Section 194-IB, the current threshold and rate, the one-time Form 26QC filing process, and penalties for missing it.',
-  datePublished: '2026-09-30',
+  datePublished: '2026-08-05',
   slug: 'tds-on-rent-section-194ib-tenants-deduct',
 })
 
@@ -64,7 +64,7 @@ export default function TDSRentSection194IBBlog() {
                 TDS on Rent Under Section 194-IB: When Tenants Must Deduct
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 30, 2026</span>
+                <span>Published August 5, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

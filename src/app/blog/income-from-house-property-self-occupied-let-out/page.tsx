@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income From House Property: Self-Occ
 const articleLd = buildArticleLd({
   headline: 'Income From House Property: Self-Occupied vs Let-Out Taxation',
   description: 'How self-occupied and let-out property are computed differently under the head Income from House Property, the 30% standard deduction, home loan interest limits, and the Rs 2 lakh loss set-off cap for FY 2026-27.',
-  datePublished: '2026-09-24',
+  datePublished: '2026-07-25',
   slug: 'income-from-house-property-self-occupied-let-out',
 })
 
@@ -61,7 +61,7 @@ export default function HousePropertyBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Income From House Property: Self-Occupied vs Let-Out Taxation</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 24, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 25, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

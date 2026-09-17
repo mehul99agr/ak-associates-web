@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('HUF Taxation in India: Formation, Be
 const articleLd = buildArticleLd({
   headline: 'HUF Taxation in India: Formation, Benefits & Filing',
   description: 'How a Hindu Undivided Family is formed, the separate basic exemption and deductions it gets as its own taxable entity, and what HUF income tax filing involves.',
-  datePublished: '2026-09-25',
+  datePublished: '2026-07-26',
   slug: 'huf-taxation-india-formation-benefits-filing',
 })
 

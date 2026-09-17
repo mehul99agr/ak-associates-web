@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('POSH Act Compliance: Internal Commit
 const articleLd = buildArticleLd({
   headline: 'POSH Act Compliance: Internal Committee Requirements for Companies',
   description: 'When a company must form an Internal Committee under the POSH Act, 2013, who must sit on it, the annual report requirement, and penalties for non-compliance including licence cancellation under Section 26.',
-  datePublished: '2026-11-18',
+  datePublished: '2026-09-15',
   slug: 'posh-act-compliance-internal-committee-requirements-for-companies',
 })
 
@@ -83,7 +83,7 @@ export default function PoshActBlog() {
                 POSH Act Compliance: Internal Committee Requirements for Companies
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 18, 2026</span>
+                <span>Published September 15, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

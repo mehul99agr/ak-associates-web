@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Presumptive Taxation Scheme Section 
 const articleLd = buildArticleLd({
   headline: 'Presumptive Taxation Scheme Section 44AD: Eligibility & Benefits',
   description: 'Section 44AD presumptive taxation for small businesses and traders: turnover limits, deemed profit rates of 6% and 8%, eligibility conditions, and the five-year lock-in rule.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-08-02',
   slug: 'presumptive-taxation-scheme-section-44ad',
 })
 
@@ -85,7 +85,7 @@ export default function Section44ADBlog() {
                 Presumptive Taxation Scheme Section 44AD: Eligibility &amp; Benefits
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published August 2, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

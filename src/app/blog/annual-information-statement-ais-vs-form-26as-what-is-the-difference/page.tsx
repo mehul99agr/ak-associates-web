@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Annual Information Statement (AIS) v
 const articleLd = buildArticleLd({
   headline: 'Annual Information Statement (AIS) vs Form 26AS: What Is the Difference',
   description: 'What AIS, TIS, and Form 26AS each show, how they differ, which one prevails in a conflict, and how to reconcile all three before filing your ITR.',
-  datePublished: '2026-10-03',
+  datePublished: '2026-08-24',
   slug: 'annual-information-statement-ais-vs-form-26as-what-is-the-difference',
 })
 
@@ -83,7 +83,7 @@ export default function AisVsForm26asBlog() {
                 Annual Information Statement (AIS) vs Form 26AS: What Is the Difference
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 3, 2026</span>
+                <span>Published August 24, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

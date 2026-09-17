@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Reassessment Notice Under Section 14
 const articleLd = buildArticleLd({
   headline: 'Reassessment Notice Under Section 148: Time Limits & Response',
   description: 'The Section 148A show-cause step, current time limits for reopening a closed assessment, and how to draft a response to a Section 148 reassessment notice.',
-  datePublished: '2026-10-12',
+  datePublished: '2026-08-19',
   slug: 'reassessment-notice-under-section-148-time-limits-and-response',
 })
 
@@ -84,7 +84,7 @@ export default function ReassessmentNoticeSection148Blog() {
                 Reassessment Notice Under Section 148: Time Limits &amp; Response
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 12, 2026</span>
+                <span>Published August 19, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

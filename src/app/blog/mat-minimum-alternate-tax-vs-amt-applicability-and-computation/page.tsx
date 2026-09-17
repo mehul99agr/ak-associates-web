@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('MAT (Minimum Alternate Tax) vs AMT: 
 const articleLd = buildArticleLd({
   headline: 'MAT (Minimum Alternate Tax) vs AMT: Applicability & Computation',
   description: 'Minimum Alternate Tax under Section 115JB for companies versus Alternate Minimum Tax under Section 115JC for non-corporate taxpayers: applicability, rates, book-profit computation, and credit carry-forward.',
-  datePublished: '2026-10-15',
+  datePublished: '2026-08-26',
   slug: 'mat-minimum-alternate-tax-vs-amt-applicability-and-computation',
 })
 
@@ -83,7 +83,7 @@ export default function MatVsAmtBlog() {
                 MAT (Minimum Alternate Tax) vs AMT: Applicability &amp; Computation
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 15, 2026</span>
+                <span>Published August 26, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

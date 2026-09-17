@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('SAFE Notes in India: Are They Legall
 const articleLd = buildArticleLd({
   headline: 'SAFE Notes in India: Are They Legally Recognised?',
   description: 'Whether a US-originated SAFE (Simple Agreement for Future Equity) has legal standing under the Companies Act, 2013 and FEMA, and how founders structure a compliant equivalent using convertible notes or CCPS.',
-  datePublished: '2026-10-23',
+  datePublished: '2026-08-27',
   slug: 'safe-notes-in-india-are-they-legally-recognised',
 })
 
@@ -78,7 +78,7 @@ export default function SafeNotesIndiaBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>SAFE Notes in India: Are They Legally Recognised?</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published October 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 27, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
 
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>

@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('MSME Udyam vs Startup India Recognit
 const articleLd = buildArticleLd({
   headline: 'MSME Udyam vs Startup India Recognition: Which Benefits Apply',
   description: 'How Udyam MSME registration and DPIIT Startup India recognition differ in eligibility and benefits, including which one unlocks the 80-IAC tax holiday, CGTMSE loans, and 45-day payment protection.',
-  datePublished: '2026-10-15',
+  datePublished: '2026-09-07',
   slug: 'msme-udyam-vs-startup-india-recognition-which-benefits-apply',
 })
 

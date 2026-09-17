@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('E-Invoicing Under GST: Applicability
 const articleLd = buildArticleLd({
   headline: 'E-Invoicing Under GST: Applicability Threshold & Process',
   description: 'Who must generate e-invoices under GST, the Rs 5 crore turnover threshold, the IRN/QR code process, the 30-day reporting rule for larger taxpayers, and penalties for non-compliance.',
-  datePublished: '2026-09-19',
+  datePublished: '2026-07-15',
   slug: 'e-invoicing-gst-applicability-threshold',
 })
 
@@ -84,7 +84,7 @@ export default function EInvoicingApplicabilityBlog() {
                 E-Invoicing Under GST: Applicability Threshold & Process
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 19, 2026</span>
+                <span>Published July 15, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Advance Tax: Who Must Pay, Due Dates
 const articleLd = buildArticleLd({
   headline: 'Advance Tax: Who Must Pay, Due Dates & Interest for Default',
   description: 'Who is liable to pay advance tax, the four quarterly due dates and cumulative percentages, and how interest under Section 234B and 234C is computed on a shortfall.',
-  datePublished: '2026-09-26',
+  datePublished: '2026-07-29',
   slug: 'advance-tax-who-must-pay-due-dates-interest',
 })
 
@@ -85,7 +85,7 @@ export default function AdvanceTaxBlog() {
                 Advance Tax: Who Must Pay, Due Dates & Interest for Default
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 26, 2026</span>
+                <span>Published July 29, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

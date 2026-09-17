@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Minimum Wages Act Compliance for Emp
 const articleLd = buildArticleLd({
   headline: 'Minimum Wages Act Compliance for Employers',
   description: 'Minimum wage compliance in India after the Code on Wages 2019 replaced the Minimum Wages Act 1948: the floor wage concept, state-wise rates, records, and penalties for employers.',
-  datePublished: '2026-11-16',
+  datePublished: '2026-09-15',
   slug: 'minimum-wages-act-compliance-for-employers',
 })
 
@@ -83,7 +83,7 @@ export default function MinimumWagesActBlog() {
                 Minimum Wages Act Compliance for Employers
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 16, 2026</span>
+                <span>Published September 15, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

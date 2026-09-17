@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GST on Real Estate: Under-Constructi
 const articleLd = buildArticleLd({
   headline: 'GST on Real Estate: Under-Construction vs Ready-to-Move Properties',
   description: 'Why ready-to-move properties are GST-free but under-construction flats attract 1% or 5% GST without ITC, how affordable housing is defined, and what buyers and builders should check before signing.',
-  datePublished: '2026-09-20',
+  datePublished: '2026-07-18',
   slug: 'gst-on-real-estate-under-construction-ready',
 })
 
@@ -85,7 +85,7 @@ export default function GstRealEstateBlog() {
                 GST on Real Estate: Under-Construction vs Ready-to-Move Properties
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 20, 2026</span>
+                <span>Published July 18, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

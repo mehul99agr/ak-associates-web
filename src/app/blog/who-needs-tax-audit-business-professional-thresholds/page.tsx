@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Who Needs a Tax Audit: Business vs P
 const articleLd = buildArticleLd({
   headline: 'Who Needs a Tax Audit: Business vs Professional Thresholds',
   description: 'A practical decision-tree guide to whether a business or profession needs a tax audit this year, covering business vs professional thresholds and the presumptive taxation escape valve.',
-  datePublished: '2026-10-07',
+  datePublished: '2026-08-15',
   slug: 'who-needs-tax-audit-business-professional-thresholds',
 })
 
@@ -59,7 +59,7 @@ export default function WhoNeedsTaxAuditBlog() {
             <span className="section-badge">Tax Audit</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Who Needs a Tax Audit: Business vs Professional Turnover Thresholds</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published October 7, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 15, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

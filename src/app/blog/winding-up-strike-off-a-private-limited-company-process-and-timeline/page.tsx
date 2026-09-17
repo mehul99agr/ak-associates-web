@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Winding Up / Strike Off a Private Li
 const articleLd = buildArticleLd({
   headline: 'Winding Up / Strike Off a Private Limited Company: Process & Timeline',
   description: 'Eligibility conditions, documents, filing steps under Form STK-2, and realistic timelines for closing a private limited company through Fast Track Exit.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-08-30',
   slug: 'winding-up-strike-off-a-private-limited-company-process-and-timeline',
 })
 
@@ -84,7 +84,7 @@ export default function WindingUpStrikeOffBlog() {
                 Winding Up / Strike Off a Private Limited Company: Process &amp; Timeline
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 9, 2026</span>
+                <span>Published August 30, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

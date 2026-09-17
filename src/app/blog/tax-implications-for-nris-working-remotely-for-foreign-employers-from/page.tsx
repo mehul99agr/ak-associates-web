@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Tax Implications for NRIs Working Re
 const articleLd = buildArticleLd({
   headline: 'Tax Implications for NRIs Working Remotely for Foreign Employers From India',
   description: 'Residential status impact, taxability of foreign employer salary once an NRI becomes resident in India, DTAA relief, and employer withholding obligations.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-08-04',
   slug: 'tax-implications-for-nris-working-remotely-for-foreign-employers-from',
 })
 
@@ -82,7 +82,7 @@ export default function NriRemoteWorkTaxBlog() {
                 Tax Implications for NRIs Working Remotely for Foreign Employers From India
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published August 4, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

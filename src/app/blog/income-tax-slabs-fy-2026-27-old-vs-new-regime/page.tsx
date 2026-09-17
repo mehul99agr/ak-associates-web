@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax Slabs FY 2026-27: Old vs 
 const articleLd = buildArticleLd({
   headline: 'Income Tax Slabs FY 2026-27: Old vs New Regime',
   description: 'Income tax slab rates for FY 2026-27 under the old and new tax regimes, the Section 87A rebate and standard deduction, and a decision framework for choosing between the two.',
-  datePublished: '2026-09-22',
+  datePublished: '2026-07-21',
   slug: 'income-tax-slabs-fy-2026-27-old-vs-new-regime',
 })
 
@@ -85,7 +85,7 @@ export default function IncomeTaxSlabsFY202627Blog() {
                 Income Tax Slabs FY 2026-27: Old Regime vs New Regime Comparison
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 22, 2026</span>
+                <span>Published July 21, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

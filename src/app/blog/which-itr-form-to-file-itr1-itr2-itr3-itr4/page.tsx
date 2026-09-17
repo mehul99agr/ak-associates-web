@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Which ITR Form Should You File? ITR-
 const articleLd = buildArticleLd({
   headline: 'Which ITR Form Should You File? ITR-1 vs ITR-2 vs ITR-3 vs ITR-4',
   description: 'Eligibility limits and covered income types for ITR-1, ITR-2, ITR-3, and ITR-4, and the common mistakes in form selection that lead to a defective return notice.',
-  datePublished: '2026-09-23',
+  datePublished: '2026-07-22',
   slug: 'which-itr-form-to-file-itr1-itr2-itr3-itr4',
 })
 
@@ -84,7 +84,7 @@ export default function WhichITRFormBlog() {
                 Which ITR Form Should You File? ITR-1 vs ITR-2 vs ITR-3 vs ITR-4
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 23, 2026</span>
+                <span>Published July 22, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

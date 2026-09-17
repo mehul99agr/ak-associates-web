@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Best Judgment Assessment Under Secti
 const articleLd = buildArticleLd({
   headline: 'Best Judgment Assessment Under Section 144: What It Means',
   description: 'When the assessing officer can proceed to a best judgment assessment under Section 144, how it differs from a normal assessment, and the appeal remedies available against it.',
-  datePublished: '2026-10-08',
+  datePublished: '2026-08-16',
   slug: 'best-judgment-assessment-section-144',
 })
 

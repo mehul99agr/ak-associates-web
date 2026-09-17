@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Board Meeting & AGM Compliance Calen
 const articleLd = buildArticleLd({
   headline: 'Board Meeting & AGM Compliance Calendar for Private Limited Companies',
   description: 'Minimum board meeting frequency under Section 173, AGM deadlines under Section 96, and quorum rules for private limited companies.',
-  datePublished: '2026-09-24',
+  datePublished: '2026-08-29',
   slug: 'board-meeting-and-agm-compliance-calendar-for-private-limited-companie',
 })
 

@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Section 43B(h): MSME Payment Disallo
 const articleLd = buildArticleLd({
   headline: 'Section 43B(h): MSME Payment Disallowance Rules for Buyers',
   description: 'The 45-day and 15-day MSME payment rules under Section 43B(h) (now Section 37 under the Income Tax Act 2025), which suppliers count as micro or small, and how unpaid year-end dues get disallowed for the buyer.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-08-11',
   slug: 'section-43bh-msme-payment-disallowance-buyers',
 })
 
@@ -66,7 +66,7 @@ export default function Section43BhBlog() {
                 Section 43B(h): MSME Payment Disallowance Rules for Buyers
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 5, 2026</span>
+                <span>Published August 11, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

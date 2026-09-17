@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Startup Exit Strategies: Acquisition
 const articleLd = buildArticleLd({
   headline: 'Startup Exit Strategies: Acquisition vs IPO vs Buyback',
   description: 'A comparative overview of acquisition, IPO, and buyback as exit routes for Indian startup founders and investors, including process basics and Companies Act buyback limits.',
-  datePublished: '2026-10-26',
+  datePublished: '2026-08-31',
   slug: 'startup-exit-strategies-acquisition-vs-ipo-vs-buyback',
 })
 
@@ -74,7 +74,7 @@ export default function StartupExitStrategiesBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Startup Exit Strategies: Acquisition vs IPO vs Buyback</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published October 26, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 31, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
 
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>

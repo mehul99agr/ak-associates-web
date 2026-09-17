@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Condonation of Delay in Filing ITR: 
 const articleLd = buildArticleLd({
   headline: 'Condonation of Delay in Filing ITR: When & How to Apply',
   description: 'How to apply for condonation of delay under Section 119(2)(b) to file a belated return or claim a refund, loss carry-forward, or deduction after missing the deadline, including the CBDT monetary limits by authority and the application process.',
-  datePublished: '2026-09-28',
+  datePublished: '2026-08-01',
   slug: 'condonation-of-delay-filing-itr-how-to-apply',
 })
 

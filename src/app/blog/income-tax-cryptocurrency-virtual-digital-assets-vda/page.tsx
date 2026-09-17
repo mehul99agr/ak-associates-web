@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax on Cryptocurrency & Virtu
 const articleLd = buildArticleLd({
   headline: 'Income Tax on Cryptocurrency & Virtual Digital Assets (VDA)',
   description: 'A complete guide to how India taxes cryptocurrency and other Virtual Digital Assets: the flat 30% rate under Section 115BBH, 1% TDS under Section 194S, and the strict no-loss-set-off rule.',
-  datePublished: '2026-09-25',
+  datePublished: '2026-07-27',
   slug: 'income-tax-cryptocurrency-virtual-digital-assets-vda',
 })
 
@@ -85,7 +85,7 @@ export default function CryptoVDATaxBlog() {
                 Income Tax on Cryptocurrency & Virtual Digital Assets (VDA)
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 25, 2026</span>
+                <span>Published July 27, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

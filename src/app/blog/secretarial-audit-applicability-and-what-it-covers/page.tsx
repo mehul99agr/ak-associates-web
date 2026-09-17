@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Secretarial Audit: Applicability & W
 const articleLd = buildArticleLd({
   headline: 'Secretarial Audit: Applicability & What It Covers',
   description: 'Section 204 Companies Act applicability thresholds for secretarial audit, the Rule 9 turnover and paid-up capital limits, and what a Form MR-3 report examines.',
-  datePublished: '2026-10-11',
+  datePublished: '2026-08-31',
   slug: 'secretarial-audit-applicability-and-what-it-covers',
 })
 
@@ -84,7 +84,7 @@ export default function SecretarialAuditBlog() {
                 Secretarial Audit: Applicability &amp; What It Covers
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 11, 2026</span>
+                <span>Published August 31, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

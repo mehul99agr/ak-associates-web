@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Buyback of Shares: Tax Implications 
 const articleLd = buildArticleLd({
   headline: 'Buyback of Shares: Tax Implications for Companies & Shareholders',
   description: 'Buyback taxation since the October 1, 2024 rule change: deemed dividend treatment in the shareholder\'s hands, Section 194/195 TDS, and the capital loss on cost of acquisition under Section 46A.',
-  datePublished: '2026-10-13',
+  datePublished: '2026-08-28',
   slug: 'buyback-of-shares-tax-implications-for-companies-and-shareholders',
 })
 
@@ -84,7 +84,7 @@ export default function BuybackOfSharesTaxBlog() {
                 Buyback of Shares: Tax Implications for Companies &amp; Shareholders
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 13, 2026</span>
+                <span>Published August 28, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

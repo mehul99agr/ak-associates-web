@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Cap Table Management: Common Mistake
 const articleLd = buildArticleLd({
   headline: 'Cap Table Management: Common Mistakes Founders Make',
   description: 'Common cap table errors: stale updates, fully-diluted vs issued-basis confusion, poor dilution modeling, spreadsheet tooling failures, and mismatches against ROC filings.',
-  datePublished: '2026-11-01',
+  datePublished: '2026-09-07',
   slug: 'cap-table-management-common-mistakes-founders-make',
 })
 
@@ -83,7 +83,7 @@ export default function CapTableManagementBlog() {
                 Cap Table Management: Common Mistakes Founders Make
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 1, 2026</span>
+                <span>Published September 7, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

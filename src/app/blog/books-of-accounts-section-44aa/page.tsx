@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Books of Accounts Required Under Sec
 const articleLd = buildArticleLd({
   headline: 'Books of Accounts Required Under Section 44AA',
   description: 'Which businesses and professionals must maintain books of accounts under Section 44AA (now Section 62 of the Income Tax Act 2025), the applicable thresholds, and the penalty for failure to maintain them.',
-  datePublished: '2026-10-07',
+  datePublished: '2026-08-15',
   slug: 'books-of-accounts-section-44aa',
 })
 

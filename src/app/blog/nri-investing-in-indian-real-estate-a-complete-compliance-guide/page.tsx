@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('NRI Investing in Indian Real Estate:
 const articleLd = buildArticleLd({
   headline: 'NRI Investing in Indian Real Estate: A Complete Compliance Guide',
   description: 'FEMA rules for NRIs buying residential and commercial property in India: permitted vs restricted property types, funding channels, and repatriation of rental income.',
-  datePublished: '2026-09-26',
+  datePublished: '2026-07-30',
   slug: 'nri-investing-in-indian-real-estate-a-complete-compliance-guide',
 })
 
@@ -83,7 +83,7 @@ export default function NriRealEstateComplianceBlog() {
                 NRI Investing in Indian Real Estate: A Complete Compliance Guide
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 26, 2026</span>
+                <span>Published July 30, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

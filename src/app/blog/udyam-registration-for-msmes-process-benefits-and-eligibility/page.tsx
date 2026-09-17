@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Udyam Registration for MSMEs: Proces
 const articleLd = buildArticleLd({
   headline: 'Udyam Registration for MSMEs: Process, Benefits & Eligibility',
   description: 'Current MSME investment and turnover limits for micro, small and medium enterprises, the Udyam registration process, and the benefits it unlocks.',
-  datePublished: '2026-10-12',
+  datePublished: '2026-09-04',
   slug: 'udyam-registration-for-msmes-process-benefits-and-eligibility',
 })
 

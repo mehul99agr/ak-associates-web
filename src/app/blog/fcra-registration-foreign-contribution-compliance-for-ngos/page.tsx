@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('FCRA Registration: Foreign Contribut
 const articleLd = buildArticleLd({
   headline: 'FCRA Registration: Foreign Contribution Compliance for NGOs',
   description: 'FCRA registration eligibility, the prior permission route, the FC-4 annual return, and the current high-scrutiny compliance climate for NGOs receiving foreign contributions.',
-  datePublished: '2026-10-12',
+  datePublished: '2026-09-10',
   slug: 'fcra-registration-foreign-contribution-compliance-for-ngos',
 })
 

@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Form 16 Explained: How to Read It an
 const articleLd = buildArticleLd({
   headline: 'Form 16 Explained: How to Read It and File Your ITR',
   description: 'A practical walkthrough of Form 16 Part A and Part B, cross-checking it against Form 26AS and AIS, and using it to file an accurate ITR.',
-  datePublished: '2026-09-23',
+  datePublished: '2026-07-23',
   slug: 'form-16-explained-how-to-read-file-itr',
 })
 
@@ -60,7 +60,7 @@ export default function Form16ExplainedBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Form 16 Explained: How to Read It and File Your ITR</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

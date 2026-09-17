@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Trade License Requirements for Busin
 const articleLd = buildArticleLd({
   headline: 'Trade License Requirements for Businesses in India',
   description: 'What a municipal trade license is, which businesses need one, how it differs from a Shop and Establishment license, and the general application process.',
-  datePublished: '2026-09-17',
+  datePublished: '2026-09-08',
   slug: 'trade-license-requirements-for-businesses-in-india',
 })
 

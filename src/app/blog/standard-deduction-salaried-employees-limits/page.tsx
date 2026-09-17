@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Standard Deduction for Salaried Empl
 const articleLd = buildArticleLd({
   headline: 'Standard Deduction for Salaried Employees: Current Limits',
   description: 'The standard deduction for salaried employees and pensioners is Rs 75,000 under the new tax regime and Rs 50,000 under the old regime for FY 2026-27. How it works and who is eligible.',
-  datePublished: '2026-10-03',
+  datePublished: '2026-08-09',
   slug: 'standard-deduction-salaried-employees-limits',
 })
 

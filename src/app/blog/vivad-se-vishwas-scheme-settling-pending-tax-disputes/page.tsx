@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Vivad Se Vishwas Scheme: Settling Pe
 const articleLd = buildArticleLd({
   headline: 'Vivad Se Vishwas Scheme: Settling Pending Tax Disputes',
   description: 'How the Direct Tax Vivad Se Vishwas (VSV 2.0) scheme worked, why it is closed to new declarations since April 30, 2025, and what a taxpayer with a pending dispute can do now.',
-  datePublished: '2026-10-08',
+  datePublished: '2026-08-23',
   slug: 'vivad-se-vishwas-scheme-settling-pending-tax-disputes',
 })
 
@@ -80,7 +80,7 @@ export default function VivadSeVishwasBlog() {
                 Vivad Se Vishwas Scheme: Settling Pending Tax Disputes
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 8, 2026</span>
+                <span>Published August 23, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

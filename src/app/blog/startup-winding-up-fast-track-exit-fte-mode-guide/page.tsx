@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Startup Winding Up: Fast Track Exit 
 const articleLd = buildArticleLd({
   headline: 'Startup Winding Up: Fast Track Exit (FTE) Mode Guide',
   description: 'Why "Fast Track Exit" (FTE) is the older, now-superseded MCA scheme name, how the current Section 248 / Form STK-2 process applies to a DPIIT-recognised startup with minimal operations, and a realistic closure timeline.',
-  datePublished: '2026-11-04',
+  datePublished: '2026-09-10',
   slug: 'startup-winding-up-fast-track-exit-fte-mode-guide',
 })
 
@@ -83,7 +83,7 @@ export default function StartupWindingUpFTEBlog() {
                 Startup Winding Up: Fast Track Exit (FTE) Mode Guide
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 4, 2026</span>
+                <span>Published September 10, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

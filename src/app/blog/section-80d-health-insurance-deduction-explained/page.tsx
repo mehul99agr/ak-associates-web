@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Section 80D: Health Insurance Premiu
 const articleLd = buildArticleLd({
   headline: 'Section 80D: Health Insurance Premium Deduction Explained',
   description: 'Section 80D deduction limits for FY 2026-27 covering self, family, and parents, the senior citizen enhancement, the preventive check-up sub-limit, and applicability only under the old tax regime.',
-  datePublished: '2026-09-23',
+  datePublished: '2026-07-23',
   slug: 'section-80d-health-insurance-deduction-explained',
 })
 
@@ -61,7 +61,7 @@ export default function Section80DBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Section 80D: Health Insurance Premium Deduction Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

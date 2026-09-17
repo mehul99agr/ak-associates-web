@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('TDS on Contractor Payments: Section 
 const articleLd = buildArticleLd({
   headline: 'TDS on Contractor Payments: Section 194C Compliance Guide',
   description: 'Section 194C TDS rates, the Rs 30,000 single-payment and Rs 1 lakh aggregate thresholds, transporter exemption, and compliance steps, now under Section 393 of the Income Tax Act 2025.',
-  datePublished: '2026-10-01',
+  datePublished: '2026-08-06',
   slug: 'tds-contractor-payments-section-194c-guide',
 })
 

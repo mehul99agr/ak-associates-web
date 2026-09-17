@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('ESI Registration: Applicability & Em
 const articleLd = buildArticleLd({
   headline: 'ESI Registration: Applicability & Employer Compliance',
   description: 'The employee-count threshold for ESI applicability, the Rs 21,000 wage ceiling, the 4% employer/employee contribution split, and ongoing filing obligations for employers.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-08-04',
   slug: 'esi-registration-applicability-and-employer-compliance',
 })
 
@@ -66,7 +66,7 @@ export default function EsiRegistrationBlog() {
                 ESI Registration: Applicability &amp; Employer Compliance
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published August 4, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

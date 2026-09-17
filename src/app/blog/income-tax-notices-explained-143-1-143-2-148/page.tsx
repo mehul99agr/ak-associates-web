@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax Notices Explained: Sectio
 const articleLd = buildArticleLd({
   headline: 'Income Tax Notices Explained: Section 143(1), 143(2) & 148',
   description: 'What a Section 143(1) intimation, a Section 143(2) scrutiny notice, and a Section 148 reassessment notice mean, what triggers each, and how to respond.',
-  datePublished: '2026-09-27',
+  datePublished: '2026-07-31',
   slug: 'income-tax-notices-explained-143-1-143-2-148',
 })
 

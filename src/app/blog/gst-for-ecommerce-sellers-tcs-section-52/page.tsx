@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GST for E-Commerce Sellers: TCS Unde
 const articleLd = buildArticleLd({
   headline: 'GST for E-Commerce Sellers: TCS Under Section 52',
   description: 'GST registration requirements and the Section 52 TCS mechanism for sellers operating through e-commerce marketplaces, including how to reconcile TCS credit against GSTR-8.',
-  datePublished: '2026-09-20',
+  datePublished: '2026-07-17',
   slug: 'gst-for-ecommerce-sellers-tcs-section-52',
 })
 
@@ -61,7 +61,7 @@ export default function GSTEcommerceBlog() {
             <span className="section-badge">GST</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>GST for E-Commerce Sellers: TCS Under Section 52 and Registration Rules</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 20, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 17, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>

@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Statutory Audit Requirements for Pri
 const articleLd = buildArticleLd({
   headline: 'Statutory Audit Requirements for Private Limited Companies',
   description: 'Statutory audit under Sections 139 and 143 of the Companies Act 2013 is mandatory for every company regardless of turnover, distinct from the tax audit. Auditor appointment, rotation, and CARO 2020 applicability explained.',
-  datePublished: '2026-10-16',
+  datePublished: '2026-08-28',
   slug: 'statutory-audit-requirements-for-private-limited-companies',
 })
 
@@ -84,7 +84,7 @@ export default function StatutoryAuditPrivateLimitedBlog() {
                 Statutory Audit Requirements for Private Limited Companies
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 16, 2026</span>
+                <span>Published August 28, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

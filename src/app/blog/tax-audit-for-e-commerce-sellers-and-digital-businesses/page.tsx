@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Tax Audit for E-Commerce Sellers & D
 const articleLd = buildArticleLd({
   headline: 'Tax Audit for E-Commerce Sellers & Digital Businesses',
   description: 'Section 44AB turnover thresholds for online sellers, the presumptive taxation interplay under Section 44AD, and how Section 194-O TDS and GST TCS apply on marketplace sales.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-08-25',
   slug: 'tax-audit-for-e-commerce-sellers-and-digital-businesses',
 })
 
@@ -84,7 +84,7 @@ export default function TaxAuditEcommerceBlog() {
                 Tax Audit for E-Commerce Sellers &amp; Digital Businesses
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 9, 2026</span>
+                <span>Published August 25, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

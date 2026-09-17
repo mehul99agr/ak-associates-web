@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Presumptive Taxation for Transporter
 const articleLd = buildArticleLd({
   headline: 'Presumptive Taxation for Transporters: Section 44AE',
   description: 'How Section 44AE deemed income works for owners of up to 10 goods vehicles, per-vehicle monthly rates for heavy and other goods vehicles, and the Income Tax Act 2025 renumbering to Section 58.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-08-03',
   slug: 'presumptive-taxation-transporters-section-44ae',
 })
 
@@ -66,7 +66,7 @@ export default function PresumptiveTransportersBlog() {
                 Presumptive Taxation for Transporters: Section 44AE Explained
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published August 3, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

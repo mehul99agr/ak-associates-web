@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Prosecution Under Income Tax Act: Wh
 const articleLd = buildArticleLd({
   headline: 'Prosecution Under Income Tax Act: When Non-Compliance Becomes Criminal',
   description: 'When income tax non-compliance escalates from a civil penalty to criminal prosecution, the sections involved, imprisonment ranges, and compounding.',
-  datePublished: '2026-10-06',
+  datePublished: '2026-08-25',
   slug: 'prosecution-under-income-tax-act-when-non-compliance-becomes-criminal',
 })
 
@@ -83,7 +83,7 @@ export default function ProsecutionIncomeTaxActBlog() {
                 Prosecution Under Income Tax Act: When Non-Compliance Becomes Criminal
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 6, 2026</span>
+                <span>Published August 25, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

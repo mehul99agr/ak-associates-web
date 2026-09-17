@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Taxation of Charitable Trusts: Exemp
 const articleLd = buildArticleLd({
   headline: 'Taxation of Charitable Trusts: Exemptions & Compliance',
   description: 'The Section 11/12 exemption framework for charitable trusts, the 85% application requirement, accumulation rules under Section 11(2), and anonymous donation taxation under Section 115BBC.',
-  datePublished: '2026-10-15',
+  datePublished: '2026-09-11',
   slug: 'taxation-of-charitable-trusts-exemptions-and-compliance',
 })
 

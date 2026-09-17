@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Capital Gains Tax on Shares & Mutual
 const articleLd = buildArticleLd({
   headline: 'Capital Gains Tax on Shares & Mutual Funds: Equity vs Debt Taxation',
   description: 'A resident-focused guide to how listed shares, equity mutual funds, and debt mutual funds are taxed in India, including the Rs 1.25 lakh LTCG exemption and the April 2023 debt fund rule change.',
-  datePublished: '2026-09-24',
+  datePublished: '2026-07-26',
   slug: 'capital-gains-tax-shares-mutual-funds-equity-debt',
 })
 

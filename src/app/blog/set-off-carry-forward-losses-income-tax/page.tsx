@@ -33,7 +33,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Set-Off and Carry Forward of Losses 
 const articleLd = buildArticleLd({
   headline: 'Set-Off and Carry Forward of Losses Under Income Tax',
   description: 'Intra-head and inter-head set-off rules, the house property loss cap, carry-forward periods for different loss types, and the requirement to file on time to carry forward most losses.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-08-11',
   slug: 'set-off-carry-forward-losses-income-tax',
 })
 

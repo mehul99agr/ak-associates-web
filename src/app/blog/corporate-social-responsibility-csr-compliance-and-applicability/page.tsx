@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Corporate Social Responsibility (CSR
 const articleLd = buildArticleLd({
   headline: 'Corporate Social Responsibility (CSR) Compliance & Applicability',
   description: 'Section 135 Companies Act CSR applicability thresholds, the 2% average net profit spend rule, CSR committee requirements, and penalties for shortfall.',
-  datePublished: '2026-10-11',
+  datePublished: '2026-09-02',
   slug: 'corporate-social-responsibility-csr-compliance-and-applicability',
 })
 
@@ -84,7 +84,7 @@ export default function CsrComplianceApplicabilityBlog() {
                 Corporate Social Responsibility (CSR) Compliance &amp; Applicability
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 11, 2026</span>
+                <span>Published September 2, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

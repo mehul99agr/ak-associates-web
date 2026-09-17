@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Income Tax Appeal Process: CIT(Appea
 const articleLd = buildArticleLd({
   headline: 'Income Tax Appeal Process: CIT(Appeals) to ITAT',
   description: 'The appellate hierarchy for an income tax dispute in India, from the first appeal against an assessment order through to the Supreme Court, with timelines and forms at each stage.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-08-20',
   slug: 'income-tax-appeal-process-cit-appeals-to-itat',
 })
 
@@ -84,7 +84,7 @@ export default function IncomeTaxAppealProcessBlog() {
                 Income Tax Appeal Process: CIT(Appeals) to ITAT
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 9, 2026</span>
+                <span>Published August 20, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -34,7 +34,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Labour Law Compliance for Startups: 
 const articleLd = buildArticleLd({
   headline: 'Labour Law Compliance for Startups: A Practical Overview',
   description: 'A practical overview of labour law compliance for Indian startups. Learn about Shops & Establishments, EPF, ESI, POSH, maternity benefits, and self-certification.',
-  datePublished: '2026-11-15',
+  datePublished: '2026-09-14',
   slug: 'labour-law-compliance-for-startups-a-practical-overview',
 })
 
@@ -83,7 +83,7 @@ export default function LabourLawComplianceForStartupsAPracticalOverviewBlog() {
                 Labour Law Compliance for Startups: A Practical Overview
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 15, 2026</span>
+                <span>Published September 14, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Clubbing of Income: Spouse & Minor T
 const articleLd = buildArticleLd({
   headline: 'Clubbing of Income: When Spouse or Minor Income Is Taxed to You',
   description: 'How Section 64 clubbing provisions work for income transferred to a spouse or minor child, the common exceptions, and how to structure gifts and investments to avoid unintended clubbing.',
-  datePublished: '2026-09-25',
+  datePublished: '2026-07-27',
   slug: 'clubbing-of-income-spouse-minor-tax-rules',
 })
 

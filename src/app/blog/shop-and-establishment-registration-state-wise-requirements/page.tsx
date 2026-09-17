@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Shop and Establishment Registration:
 const articleLd = buildArticleLd({
   headline: 'Shop and Establishment Registration: State-Wise Requirements',
   description: 'Who needs Shop and Establishment registration, the Maharashtra Shops and Establishments Act (Gumasta) process, and how the rules differ by state.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-09-04',
   slug: 'shop-and-establishment-registration-state-wise-requirements',
 })
 
@@ -84,7 +84,7 @@ export default function ShopAndEstablishmentRegistrationBlog() {
                 Shop and Establishment Registration: State-Wise Requirements
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published September 4, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

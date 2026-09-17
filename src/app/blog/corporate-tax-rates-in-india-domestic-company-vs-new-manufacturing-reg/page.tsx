@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Corporate Tax Rates in India: Domest
 const articleLd = buildArticleLd({
   headline: 'Corporate Tax Rates in India: Domestic Company vs New Manufacturing Regime',
   description: 'How the Section 115BAA 22% concessional rate for domestic companies compares with the Section 115BAB 15% rate for new manufacturing companies, including conditions, exemption trade-offs, and effective rates.',
-  datePublished: '2026-10-12',
+  datePublished: '2026-08-26',
   slug: 'corporate-tax-rates-in-india-domestic-company-vs-new-manufacturing-reg',
 })
 
@@ -84,7 +84,7 @@ export default function CorporateTaxRatesBlog() {
                 Corporate Tax Rates in India: Domestic Company vs New Manufacturing Regime
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 12, 2026</span>
+                <span>Published August 26, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

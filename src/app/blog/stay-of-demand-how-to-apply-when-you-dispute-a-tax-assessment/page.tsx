@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Stay of Demand: How to Apply When Yo
 const articleLd = buildArticleLd({
   headline: 'Stay of Demand: How to Apply When You Dispute a Tax Assessment',
   description: 'How to apply for stay of demand under Section 220(6) pending an income tax appeal, the 20% deposit benchmark, and the Budget 2026 proposal to reduce it to 10%.',
-  datePublished: '2026-10-04',
+  datePublished: '2026-08-22',
   slug: 'stay-of-demand-how-to-apply-when-you-dispute-a-tax-assessment',
 })
 
@@ -84,7 +84,7 @@ export default function StayOfDemandBlog() {
                 Stay of Demand: How to Apply When You Dispute a Tax Assessment
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 4, 2026</span>
+                <span>Published August 22, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

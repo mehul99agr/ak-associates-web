@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Political Party Donations & Section 
 const articleLd = buildArticleLd({
   headline: 'Political Party Donations & Section 80GGC Deduction',
   description: 'How the Section 80GGC deduction for political party donations works, its cash-donation restriction, and the Income Tax Department scrutiny wave on inflated or bogus claims.',
-  datePublished: '2026-10-05',
+  datePublished: '2026-09-12',
   slug: 'political-party-donations-and-section-80ggc-deduction',
 })
 
@@ -84,7 +84,7 @@ export default function PoliticalDonations80GGCBlog() {
                 Political Party Donations &amp; Section 80GGC Deduction
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 5, 2026</span>
+                <span>Published September 12, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Tax Saving Investment Options Beyond
 const articleLd = buildArticleLd({
   headline: 'Tax Saving Investment Options Beyond Section 80C',
   description: 'Five deductions available under the old tax regime after the Rs 1.5 lakh Section 80C limit is exhausted: NPS under 80CCD(1B), health insurance under 80D, home loan interest under Section 24, education loan interest under 80E, and donations under 80G.',
-  datePublished: '2026-10-04',
+  datePublished: '2026-08-09',
   slug: 'tax-saving-investments-beyond-section-80c',
 })
 

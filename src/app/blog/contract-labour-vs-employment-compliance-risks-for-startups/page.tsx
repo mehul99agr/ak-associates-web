@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Contract Labour vs Employment: Compl
 const articleLd = buildArticleLd({
   headline: 'Contract Labour vs Employment: Compliance Risks for Startups',
   description: 'The Contract Labour (Regulation & Abolition) Act 1970 registration and licensing thresholds, principal employer obligations, and misclassification risks for startups using contract or gig workers.',
-  datePublished: '2026-10-02',
+  datePublished: '2026-08-07',
   slug: 'contract-labour-vs-employment-compliance-risks-for-startups',
 })
 
@@ -66,7 +66,7 @@ export default function ContractLabourVsEmploymentBlog() {
                 Contract Labour vs Employment: Compliance Risks for Startups
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 2, 2026</span>
+                <span>Published August 7, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

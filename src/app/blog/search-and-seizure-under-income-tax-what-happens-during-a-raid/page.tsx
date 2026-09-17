@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Search & Seizure Under Income Tax: W
 const articleLd = buildArticleLd({
   headline: 'Search & Seizure Under Income Tax: What Happens During a Raid',
   description: 'How an income tax search under Section 132 is authorised, what happens during the raid, taxpayer rights, statement recording, and seized asset handling.',
-  datePublished: '2026-10-01',
+  datePublished: '2026-08-22',
   slug: 'search-and-seizure-under-income-tax-what-happens-during-a-raid',
 })
 
@@ -84,7 +84,7 @@ export default function SearchAndSeizureBlog() {
                 Search &amp; Seizure Under Income Tax: What Happens During a Raid
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 1, 2026</span>
+                <span>Published August 22, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

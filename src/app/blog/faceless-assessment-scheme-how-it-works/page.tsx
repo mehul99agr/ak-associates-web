@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Faceless Assessment Scheme: How It W
 const articleLd = buildArticleLd({
   headline: 'Faceless Assessment Scheme: How It Works & What to Expect',
   description: 'How the Faceless Assessment Scheme randomly assigns cases through NFAC, the stages of a faceless assessment, and how to respond to a notice under it.',
-  datePublished: '2026-09-28',
+  datePublished: '2026-08-01',
   slug: 'faceless-assessment-scheme-how-it-works',
 })
 

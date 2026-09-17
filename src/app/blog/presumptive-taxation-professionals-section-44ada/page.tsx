@@ -32,7 +32,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Presumptive Taxation for Professiona
 const articleLd = buildArticleLd({
   headline: 'Presumptive Taxation for Professionals: Section 44ADA Explained',
   description: 'Section 44ADA presumptive taxation for specified professionals: gross receipts limits, the 50% deemed profit rate, eligible professions, and how it differs from the 44AD scheme for traders.',
-  datePublished: '2026-09-29',
+  datePublished: '2026-08-03',
   slug: 'presumptive-taxation-professionals-section-44ada',
 })
 
@@ -85,7 +85,7 @@ export default function Section44ADABlog() {
                 Presumptive Taxation for Professionals: Section 44ADA Explained
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 29, 2026</span>
+                <span>Published August 3, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

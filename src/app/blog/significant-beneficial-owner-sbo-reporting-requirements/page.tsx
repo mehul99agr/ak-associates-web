@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Significant Beneficial Owner (SBO) R
 const articleLd = buildArticleLd({
   headline: 'Significant Beneficial Owner (SBO) Reporting Requirements',
   description: 'Who qualifies as a Significant Beneficial Owner under Section 90 of the Companies Act, the 10% threshold, and the Form BEN-1/BEN-2 filing process.',
-  datePublished: '2026-10-09',
+  datePublished: '2026-09-03',
   slug: 'significant-beneficial-owner-sbo-reporting-requirements',
 })
 

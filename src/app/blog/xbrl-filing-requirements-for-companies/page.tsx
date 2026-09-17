@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('XBRL Filing Requirements for Compani
 const articleLd = buildArticleLd({
   headline: 'XBRL Filing Requirements for Companies',
   description: 'Applicability thresholds for filing financial statements in XBRL format with the MCA, the AOC-4 XBRL deadline, and the consequences of non-compliance.',
-  datePublished: '2026-10-10',
+  datePublished: '2026-09-02',
   slug: 'xbrl-filing-requirements-for-companies',
 })
 
@@ -83,7 +83,7 @@ export default function XbrlFilingRequirementsBlog() {
                 XBRL Filing Requirements for Companies
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 10, 2026</span>
+                <span>Published September 2, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

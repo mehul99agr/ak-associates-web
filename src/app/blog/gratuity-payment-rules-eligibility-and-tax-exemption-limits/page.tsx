@@ -34,7 +34,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Gratuity Payment Rules: Eligibility 
 const articleLd = buildArticleLd({
   headline: 'Gratuity Payment Rules: Eligibility & Tax Exemption Limits',
   description: 'Learn about the Payment of Gratuity Act 1972 in India. Understand the 5-year eligibility rule, the calculation formula, and the Rs 20 lakh tax ceiling.',
-  datePublished: '2026-11-12',
+  datePublished: '2026-09-14',
   slug: 'gratuity-payment-rules-eligibility-and-tax-exemption-limits',
 })
 
@@ -83,7 +83,7 @@ export default function GratuityPaymentRulesEligibilityAndTaxExemptionLimitsBlog
                 Gratuity Payment Rules: Eligibility & Tax Exemption Limits
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published November 12, 2026</span>
+                <span>Published September 14, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

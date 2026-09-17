@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Reverse Charge Mechanism (RCM) Under
 const articleLd = buildArticleLd({
   headline: 'Reverse Charge Mechanism (RCM) Under GST: When It Applies',
   description: 'How reverse charge under GST works, the notified categories of goods and services, self-invoicing requirements, and claiming ITC on RCM tax paid.',
-  datePublished: '2026-09-19',
+  datePublished: '2026-07-16',
   slug: 'reverse-charge-mechanism-rcm-gst',
 })
 
@@ -83,7 +83,7 @@ export default function RCMBlog() {
                 Reverse Charge Mechanism (RCM) Under GST: When It Applies
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 19, 2026</span>
+                <span>Published July 16, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

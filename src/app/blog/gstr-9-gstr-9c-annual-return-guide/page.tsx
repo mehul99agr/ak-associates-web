@@ -30,7 +30,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('GSTR-9 & GSTR-9C: Annual Return and 
 const articleLd = buildArticleLd({
   headline: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide',
   description: 'GSTR-9 annual return and GSTR-9C reconciliation statement: applicability, turnover thresholds, due date, and penalties for late filing.',
-  datePublished: '2026-09-18',
+  datePublished: '2026-07-14',
   slug: 'gstr-9-gstr-9c-annual-return-guide',
 })
 
@@ -83,7 +83,7 @@ export default function GSTR9GSTR9CBlog() {
                 GSTR-9 &amp; GSTR-9C: Annual Return and Reconciliation Guide
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 18, 2026</span>
+                <span>Published July 14, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Rectification Under Section 154: Fix
 const articleLd = buildArticleLd({
   headline: 'Rectification Under Section 154: Fixing Errors in Your ITR',
   description: 'How rectification of a mistake apparent from the record works for a processed income tax return: what qualifies, the online process, timelines, and how it differs from filing a revised return.',
-  datePublished: '2026-09-27',
+  datePublished: '2026-07-31',
   slug: 'rectification-under-section-154-itr-errors',
 })
 
@@ -84,7 +84,7 @@ export default function RectificationSection154Blog() {
                 Rectification Under Section 154: Fixing Errors in Your ITR
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published September 27, 2026</span>
+                <span>Published July 31, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>

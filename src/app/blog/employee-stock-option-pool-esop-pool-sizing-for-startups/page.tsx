@@ -31,7 +31,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Employee Stock Option Pool (ESOP Poo
 const articleLd = buildArticleLd({
   headline: 'Employee Stock Option Pool (ESOP Pool) Sizing for Startups',
   description: 'Typical ESOP pool size ranges at seed, Series A, and Series B, pre-money vs post-money pool creation and its dilution impact on founders, pool refresh considerations, and approval mechanics for pool expansion.',
-  datePublished: '2026-10-17',
+  datePublished: '2026-08-20',
   slug: 'employee-stock-option-pool-esop-pool-sizing-for-startups',
 })
 
@@ -83,7 +83,7 @@ export default function EsopPoolSizingBlog() {
                 Employee Stock Option Pool (ESOP Pool) Sizing for Startups
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published October 17, 2026</span>
+                <span>Published August 20, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
