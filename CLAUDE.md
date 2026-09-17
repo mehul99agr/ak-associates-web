@@ -457,7 +457,33 @@ regenerate the topic list from scratch in a future session, just keep working th
   Form 3CA/3CB/3CD, tax audit vs statutory vs GST audit, due date/271B penalty,
   who-needs-audit checklist, 44AA books of accounts, scrutiny response strategy, 144
   best judgment assessment).
-- **Total: 146 posts live, 60 of 164 new topics done, no duplicate slugs, build clean
+- **Batches 5-7 (commit ae7f430, Oct 16-Nov 6 dates):** 43 more — drafted via 15 parallel
+  subagents (3 posts each, run all at once) then wired centrally in one pass. Remaining
+  13 Tax Audit topics (appeals CIT(Appeals)->ITAT, faceless appeal scheme, Section 270A
+  under/misreporting penalty, Section 132 search & seizure, Section 220(6) stay of
+  demand, Vivad Se Vishwas VSV 2.0, Form 61A/SFT, AIS vs Form 26AS, e-commerce tax audit,
+  Section 276C/276CC prosecution). All 15 Corporate Tax & Compliance topics (dividend/
+  DDT-abolition taxation, Oct-2024 buyback tax regime change, statutory audit, board/AGM
+  calendar, Section 188 RPT, Section 166/164 director liability, STK-2 strike off,
+  secretarial audit, CHG charge forms, Section 185/186 related-party loans, XBRL, Section
+  135 CSR, Section 90 SBO). 9 of 10 MSME & Registrations topics (Udyam, Shop &
+  Establishment/Gumasta, IEC, Maharashtra Professional Tax, trademark registration,
+  Startup India vs DPIIT clarification, Udyam vs DPIIT comparison, FSSAI, trade license).
+  6 of 8 Trusts & NGOs topics (12A/80G registration, Trust vs Society vs Section 8,
+  FCRA, charitable trust taxation, NGO compliance calendar, CSR fund utilisation for
+  receiving trusts, 80GGC political donations).
+  One planned topic (`msme-payment-delay-rules-the-45-day-rule-under-section-43b-h`) was
+  skipped as a confirmed duplicate of the already-live `section-43bh-msme-payment-
+  disallowance-buyers` from Batch 4 — caught by the drafting subagent itself. One
+  drafted post (`best-judgment-assessment-under-section-144-what-it-means`) was cut
+  during the centralized wiring pass as a duplicate of the already-live
+  `best-judgment-assessment-section-144` from Batch 4 — both subagents worked from the
+  same CSV row without knowing the topic was already covered; the file was deleted and
+  the entry removed before commit. Lesson for future parallel batches: cross-check new
+  topics against `blog/page.tsx`'s existing slugs by keyword (not just exact slug match)
+  before assigning them to agents, since a topic can already be live under a
+  differently-worded slug.
+- **Total: 189 posts live, 103 of 164 new topics done, no duplicate slugs, build clean
   after every batch.**
 
 **Important correction found during Batch 4:** Section 206C(1H) (TCS on sale of goods)
@@ -498,13 +524,11 @@ claimed 80C → "Section 123" during Batch 2 — this was correctly rejected as 
 (near-identical wording across unrelated SEO domains, no official notification) and
 should stay rejected unless corroborated by a stronger source later.
 
-**Remaining work (~104 posts across ~7 more batches of 15), per the CSV:**
-- Tax Audit: 12 more topics left (of 20 total; 8 done in Batch 4)
-- Corporate Tax & Compliance: 15
-- MSME & Registrations: 10
+**Remaining work (~61 posts across ~4 more batches of 15), per the CSV:**
+- MSME & Registrations: 1 more topic left (of 10 total; 9 done in Batches 5-7)
 - Payroll & Labour Compliance: 10
 - NRI Taxation (additions): 10
-- Trusts & NGOs: 8
+- Trusts & NGOs: 2 more topics left (of 8 total; 6 done in Batches 5-7)
 - Startup Advisory (additions): 8
 - Transfer Pricing (additions): 5
 - Company Incorporation (addition): 1
