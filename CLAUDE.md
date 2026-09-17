@@ -483,8 +483,50 @@ regenerate the topic list from scratch in a future session, just keep working th
   topics against `blog/page.tsx`'s existing slugs by keyword (not just exact slug match)
   before assigning them to agents, since a topic can already be live under a
   differently-worded slug.
-- **Total: 189 posts live, 103 of 164 new topics done, no duplicate slugs, build clean
-  after every batch.**
+- **Batch 8, partial (commit d950ae0, Nov 9-15 dates):** 3 of 15 planned topics —
+  Payroll Compliance Checklist, Gratuity Payment Rules, Labour Law Compliance overview
+  (all Payroll & Labour Compliance category). **First batch drafted via Gemini CLI
+  instead of Claude subagents** (`gemini -p "<prompt>"` headless, invoked via Bash since
+  the `gemini-cli` MCP server (`gemini-mcp-tool` npm package) is broken on this Windows
+  machine — its `ask-gemini` tool fails immediately with `'agy.exe' is not recognized`,
+  a path-quoting bug unrelated to the underlying `gemini` CLI, which works fine directly.
+  If revisiting the MCP route later, that's the first thing to debug; the direct CLI
+  route works and is the documented fallback).
+  Process used: wrote 5 grouped prompts (3 topics each) to scratch files, ran all 5
+  `gemini -p` calls in parallel via Bash background jobs, asked Gemini to output
+  structured fields (SLUG/TITLE/META_DESCRIPTION/KEYWORDS/TLDR/BODY_HTML/FAQS) per post,
+  then a Python script parsed that output and templated it into the site's exact
+  page.tsx house style (same template as the Claude-subagent batches).
+  **Result: only 1 of 5 groups succeeded.** Running 5 parallel `gemini -p` calls at once
+  exhausted the Gemini free-tier daily quota (`generativelanguage.googleapis.com` 429
+  RESOURCE_EXHAUSTED, "You have exhausted your daily quota") after the first group
+  finished — the other 4 groups (12 posts: remaining Payroll topics, EPF, ESI, Form
+  10B/10BB, OPC registration, 3 Transfer Pricing topics) all failed outright and
+  produced no content, not even partial/truncated output. This is a materially worse
+  parallelization failure mode than the Claude-subagent batches (5-7) had: a duplicate
+  topic there still produced usable content that just needed dropping, whereas a
+  Gemini quota failure produces nothing to recover — same input topic just needs a full
+  rerun once quota resets. **Do not run more than 1 `gemini -p` call at a time on the
+  free tier** (or check the current tier/quota first) — sequential-with-delay is the
+  safe pattern, not parallel, unlike the Claude subagent approach which parallelizes
+  fine.
+  Additionally, the Gemini-drafted content needed two mechanical fixes the Claude
+  subagent pipeline never produced: (1) a factual math error (Rs 20 lakh gratuity
+  exemption ceiling written out as "Rs 20,000,000" = 2 crore, a 10x error — caught by
+  manual review, not by web-search verification since it's arithmetic, not a sourced
+  fact), and (2) raw HTML `style="..."` string attributes inside `<table>` markup,
+  which is valid HTML but invalid JSX (React requires `style={{...}}` objects) and
+  would have failed the build silently if not caught before running it. Both fixed
+  before commit. Lesson: when templating AI-drafted HTML directly into `.tsx` source
+  (not via `dangerouslySetInnerHTML`), always grep the draft for `style="` and other
+  raw-HTML-only syntax before running the build, regardless of which model wrote it.
+- **Total: 192 posts live, 104 of 164 new topics done, no duplicate slugs, build clean
+  after every batch. Batch 8 has 12 topics still pending** (remaining Payroll: EPF, ESI,
+  Payroll Compliance Checklist done/Gratuity done/Labour Law overview done, contract
+  labour, minimum wages, POSH, Form 24Q vs 26Q, perquisites; plus Form 10B/10BB [last
+  Trusts & NGOs topic], OPC registration [last Company Incorporation topic], and 3
+  Transfer Pricing topics: CPM, PSM, Section 92CE secondary adjustment) — resume with
+  those 12 topics, either via Gemini (one group/call at a time) or Claude subagents.
 
 **Important correction found during Batch 4:** Section 206C(1H) (TCS on sale of goods)
 was verified via web search to have been **repealed effective April 1, 2025**, made
@@ -524,18 +566,23 @@ claimed 80C → "Section 123" during Batch 2 — this was correctly rejected as 
 (near-identical wording across unrelated SEO domains, no official notification) and
 should stay rejected unless corroborated by a stronger source later.
 
-**Remaining work (~61 posts across ~4 more batches of 15), per the CSV:**
-- MSME & Registrations: 1 more topic left (of 10 total; 9 done in Batches 5-7)
-- Payroll & Labour Compliance: 10
+**Remaining work (~58 posts), per the CSV:**
+- MSME & Registrations: 0 left (all 10 topics covered; the one "duplicate" was already
+  live under a different slug from Batch 4)
+- Payroll & Labour Compliance: 7 left (of 10; 3 done in Batch 8 - EPF, ESI, contract
+  labour vs employment, minimum wages, POSH, Form 24Q vs 26Q, perquisites)
 - NRI Taxation (additions): 10
-- Trusts & NGOs: 2 more topics left (of 8 total; 6 done in Batches 5-7)
+- Trusts & NGOs: 1 left (of 8; Form 10B/10BB audit report for trusts)
 - Startup Advisory (additions): 8
-- Transfer Pricing (additions): 5
-- Company Incorporation (addition): 1
+- Transfer Pricing (additions): 3 left (of 5; CPM, PSM, Section 92CE secondary
+  adjustment - Batch 8 attempted these but Gemini quota ran out before drafting)
+- Company Incorporation (addition): 1 (OPC registration - distinct from the existing
+  OPC-to-Private-Limited conversion post)
 
 To resume: open `blog-topics-250-for-approval.csv`, find the next ~15 unbuilt rows
 (cross-check against `blog/page.tsx`'s posts array to see what's already live), and
-repeat the batch process above.
+repeat the batch process above. The 12 topics Batch 8 didn't finish (see above) are
+the most immediate next targets.
 
 ## GEO (Generative Engine Optimization)
 GEO = getting cited/recommended inside AI answers (ChatGPT, Claude, Perplexity, Google
