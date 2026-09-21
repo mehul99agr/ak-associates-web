@@ -31,8 +31,9 @@ const breadcrumbLd = buildBlogBreadcrumbLd('NRI Demat Account: PIS vs Non-PIS Ex
 
 const articleLd = buildArticleLd({
   headline: 'NRI Demat Account: PIS vs Non-PIS Explained',
-  description: 'What the Portfolio Investment Scheme (PIS) covers for NRIs, when a non-PIS account applies, the RBI reporting framework, and the 2025 change merging NRE and NRO PIS accounts.',
+  description: 'What the Portfolio Investment Scheme (PIS) covers for NRIs, when a non-PIS account applies, the RBI reporting framework, the 2025 change merging NRE and NRO PIS accounts, and the practical steps to open an NRE PIS account.',
   datePublished: '2026-08-16',
+  dateModified: '2026-09-21',
   slug: 'nri-demat-account-pis-vs-non-pis-explained',
 })
 
@@ -60,6 +61,10 @@ const faqs: [string, string][] = [
   [
     'Does an NRI need RBI permission separately for each PIS transaction?',
     'Not for each transaction individually, but the framework is designed around ongoing RBI oversight rather than a one-time approval. Once the PIS account is opened with a bank authorised to offer the scheme, that bank monitors and reports each purchase and sale to the RBI as part of the account\'s designated-account status, and the NRI operates within the overall investment limits and reporting structure the bank enforces on the RBI\'s behalf.',
+  ],
+  [
+    'How long does it take to open an NRE PIS account?',
+    'Typically a few weeks from application to a usable PIS-linked demat account, driven mainly by document verification and PIS permission-letter approval rather than the demat account opening itself. Delays are usually caused by an NRE account opened without a simultaneous PIS application, mismatched address proof between the bank and depository participant, or applying through a branch or broker that does not offer PIS-linked accounts.',
   ],
 ]
 
@@ -135,6 +140,18 @@ export default function NRIDematPISBlog() {
                 <h2>Practical Account-Opening Differences</h2>
                 <p>From the investor&apos;s side, the practical distinction shows up mainly at account-opening stage. A PIS account requires a specific PIS permission letter from the designated bank, linked explicitly to the demat and trading accounts used for secondary-market equity, and the bank continues to monitor and report each trade under the scheme for as long as the account is active. A non-PIS account, by contrast, is opened more like a standard NRO-linked demat and trading account, without that ongoing designated-account reporting layer, though standard FEMA and KYC norms still apply to every NRI investment account regardless of PIS status.</p>
                 <p>Many NRIs end up holding both: a PIS account for direct, repatriable equity trading, and a separate non-PIS account for mutual funds, IPO applications, or NRO-linked holdings that do not need PIS routing. Which combination makes sense depends on how the NRI actually intends to invest, and getting the account type wrong at the outset (for example, trying to trade secondary-market shares through a non-PIS account) typically results in the transaction being blocked or flagged by the depository participant.</p>
+
+                <h2>Opening an NRE PIS Account: The Practical Steps</h2>
+                <p>Since the 2025 simplification, most NRIs setting up for repatriable secondary-market trading only need to go through this process once, for a single NRE PIS-enabled account, rather than opening separate NRE and NRO PIS accounts as under the older structure.</p>
+                <ol>
+                  <li><strong>Open (or designate) an NRE savings account</strong> with a bank authorised by RBI to offer PIS. Not every bank branch offers PIS designation, so confirm this before starting the paperwork.</li>
+                  <li><strong>Apply for PIS designation on that account.</strong> This is a separate application from simply opening an NRE account; the bank reviews it and issues a PIS permission letter once approved, formally designating the account for RBI-reported secondary-market equity transactions.</li>
+                  <li><strong>Open a linked demat and trading account</strong> with the same bank (or a broker tied to it), quoting the PIS permission letter. The demat, trading, and PIS bank account all need to reference each other for trades to clear.</li>
+                  <li><strong>Complete KYC and FEMA-compliance documentation</strong>: passport and visa/OCI/PIO proof, overseas address proof, PAN, a recent passport-size photograph, and the standard account-opening forms. NRI KYC is typically stricter on address verification than resident KYC, so incomplete overseas address proof is a common cause of delay.</li>
+                  <li><strong>Wait for RBI-linked activation.</strong> Once the bank issues the PIS permission letter and the demat/trading accounts are linked, the account is ready for use; the bank reports each subsequent trade to the RBI as part of its ongoing PIS monitoring obligation.</li>
+                </ol>
+                <p>Typical turnaround for the full process, from application to a usable PIS-linked demat account, runs a few weeks, largely driven by document verification and the PIS permission-letter approval rather than the demat account opening itself. Common causes of delay or rejection include an NRE account that was opened without simultaneously applying for PIS designation (requiring a second round of paperwork later), address proof that does not match across the bank and depository participant&apos;s records, and applying through a bank branch or broker that does not actually offer PIS-linked accounts.</p>
+
                 <p>Investment income and repatriation planning for NRIs also intersects closely with residential status and account structuring more broadly; see our guides on <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO accounts and repatriation limits</Link> and <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI residential status</Link> for the related compliance picture.</p>
               </div>
 

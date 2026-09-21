@@ -140,6 +140,14 @@ src/app/
   Jobstore/Falconebiz have no mention of the domain at all — these MCA-data aggregators
   don't expose a website field for this listing, so there's nothing to "fix" without an
   editable claim/profile process on their end.
+  Sep 18, 2026: a second CAclubindia guest post went live — "Tax Audit Deadline AY 2026-27:
+  A Practical Compliance Checklist for CAs and Taxpayers"
+  (caclubindia.com/articles/.../56242.asp). Verified live via browser: same pattern as the
+  first CAclubindia post (Aug 2) — article body link stripped to plain text, real backlink
+  lives on the author's CAclubindia member profile (member_id=4323716), which was already
+  linking to agrawalkhandelwal.com from the first submission. **Not a new referring
+  domain** — same profile link counted already. See
+  `backlinks/guest-post-caclubindia-tax-audit-deadline.md` for the record.
 
 **Search Console findings (May 2026):**
 - 1 page indexed (sitemap just submitted — more will be indexed over coming weeks)
@@ -310,6 +318,30 @@ breakdown (Aug 15-Sep 13) rather than just re-reading rolling 28-day totals.
   visible date-range chips (24 hours / 7 days / 28 days / 3 months) in a screenshot
   before recording it - don't trust total-clicks/impressions numbers pulled via
   get_page_text alone without confirming which range toggle was actually active.
+
+**Search Console findings (Sep 21, 2026 - 28-day window, pulled live via Claude in
+Chrome logged into search.google.com):**
+- Totals: 171 clicks, 12.8k impressions, 1.3% CTR, avg. position 10.2. Verified against
+  the visible "28 days" chip in a screenshot per the Sep 16 lesson above (the
+  get_page_text extraction returned stale/cached 3-month totals - 329 clicks/22.4k
+  impressions - despite the UI correctly showing 28-day data; screenshots were the
+  reliable source this session, not get_page_text).
+- Continues the stable plateau documented Sep 14-16: clicks/impressions/CTR all close
+  to the Sep 16 pull (138 clicks/10.8k impr/1.3%/10.8 pos), position ticked slightly
+  better (10.2 vs 10.8). No regression, no new spike.
+- Top pages by clicks: tan-application-guide-buyer-nri-property (22 clicks/1,440 impr)
+  and tds-on-nri-property-sale-india (19/1,270) remain the two biggest earners, well
+  ahead of the homepage (12/416). Then company-name-reservation-run-form-india (9/691),
+  ca-in-nashik (8/953), nri-agricultural-land-india-fema-rules (8/347, a new entrant to
+  the top ranks - part of the Sep FEMA mini-cluster), dsc-din-application-director-guide
+  (7/233), nri-capital-gains-inherited-gifted-property (7/105, also new - part of the
+  Sep 17 NRI/FEMA niche batch), tax-audit-due-date-penalty-for-delay (5/250). Same core
+  leaderboard as recent pulls, with two Sep-published posts now breaking into the top 8.
+- Top query: "tds rate on sale of property by nri for fy 2026-27" (5 clicks/269 impr),
+  same top performer as every recent pull - this remains the site's single strongest
+  ranking asset.
+- Did not pull the full query-list breakdown beyond the top rows, or countries/devices,
+  this session - just totals + top pages/queries for a plateau check.
 
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
