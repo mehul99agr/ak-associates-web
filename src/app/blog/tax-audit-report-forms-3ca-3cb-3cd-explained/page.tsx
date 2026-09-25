@@ -6,12 +6,12 @@ import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
-  title: 'Tax Audit Report Forms: 3CA vs 3CB vs 3CD Explained',
-  description: 'When Form 3CA applies vs Form 3CB, what Form 3CD covers, and how the Income Tax Act 2025 is set to consolidate these tax audit report forms.',
+  title: 'Tax Audit Report Forms: 3CA/3CB/3CD Explained (Now Form 26)',
+  description: 'What Forms 3CA, 3CB and 3CD covered, and how they have been consolidated into a single Form 26 under the Income Tax Act 2025, effective for tax years from April 1, 2026.',
   keywords: [
     'form 3CA vs 3CB', 'form 3CD explained', 'tax audit report forms',
     'form 3CA 3CB 3CD difference', 'income tax audit report format',
-    'form 3CD clauses', 'tax audit report income tax act 2025',
+    'form 3CD clauses', 'tax audit report income tax act 2025', 'Form 26 tax audit report',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tax-audit-report-forms-3ca-3cb-3cd-explained' },
   openGraph: {
@@ -33,6 +33,7 @@ const articleLd = buildArticleLd({
   headline: 'Tax Audit Report Forms: 3CA vs 3CB vs 3CD Explained',
   description: 'When Form 3CA applies vs Form 3CB, what the Form 3CD statement of particulars covers, and how the Income Tax Act 2025 is set to consolidate these tax audit report forms.',
   datePublished: '2026-08-13',
+  dateModified: '2026-09-25',
   slug: 'tax-audit-report-forms-3ca-3cb-3cd-explained',
 })
 
@@ -41,7 +42,7 @@ const faqs: [string, string][] = [
   ['Do both Form 3CA and Form 3CB come with Form 3CD attached?', 'Yes. Form 3CD, the statement of particulars, is always annexed to either Form 3CA or Form 3CB. Form 3CA/3CB is the auditor\'s report and opinion; Form 3CD is the detailed factual annexure covering the numbered clauses about the business, its accounting policies, and specific transactions relevant to income tax.'],
   ['What kind of information does Form 3CD ask for?', 'Form 3CD covers a wide range of particulars organised into numbered clauses: basic details of the assessee and the nature of business, method of accounting followed, depreciation as per the Income Tax Act, disallowances under sections such as 40, 40A, and 43B (including the MSME payment rule), particulars of loans and deposits under Sections 269SS/269T, TDS/TCS compliance, GST reconciliation items, and several other statutory disclosures relevant to computing total income correctly.'],
   ['Does a private limited company file Form 3CA or Form 3CB?', 'A private limited company almost always files Form 3CA, because the Companies Act, 2013 independently requires every company to get its accounts audited, regardless of turnover. The tax auditor under Section 44AB relies on that statutory audit and reports through Form 3CA plus Form 3CD, rather than conducting a wholly separate audit exercise under Form 3CB.'],
-  ['Will Form 3CA, 3CB, and 3CD be replaced under the Income Tax Act 2025?', 'The tax administration has proposed consolidating these into a single new audit report form under the rules framed for the Income Tax Act 2025, intended to apply once the new Act\'s tax audit provisions (Section 63) take effect for audits of relevant later years. At the time of writing, the transition details and effective timeline were still being finalised, so businesses currently due for a tax audit should confirm with their CA which form set applies to their specific assessment year before filing.'],
+  ['Have Form 3CA, 3CB, and 3CD been replaced under the Income Tax Act 2025?', 'Yes. Forms 3CA, 3CB, and 3CD have been consolidated into a single new audit report, Form 26, under Rule 47 of the Income-tax Rules 2026, governed by Section 63 (the renumbered Section 44AB). Form 26 applies for tax years commencing on or after April 1, 2026, so it is the current form for audits of FY 2026-27 income. Form 26 is structured as Parts A and B, the statement of particulars equivalent to the old Form 3CD, and Part C, the audit report equivalent to the old Form 3CA/3CB. The underlying audit thresholds and most of the disclosure requirements carried over; only the format and numbering changed.'],
   ['Who signs Form 3CD, the auditor or the taxpayer?', 'Form 3CD is prepared and signed by the chartered accountant conducting the tax audit, based on information, records, and representations provided by the taxpayer. The taxpayer separately verifies certain particulars and is responsible for the underlying accuracy of the data supplied, but the professional certification on Form 3CD itself is the auditor\'s.'],
 ]
 
@@ -80,7 +81,7 @@ export default function FormsExplainedBlog() {
                     <li style={{ marginBottom: '0.4rem' }}><strong>Form 3CA</strong> applies if your accounts are already required to be audited under another law (typically companies, under the Companies Act).</li>
                     <li style={{ marginBottom: '0.4rem' }}><strong>Form 3CB</strong> applies if there is no such other audit requirement (typically proprietorships, firms, and most LLPs).</li>
                     <li style={{ marginBottom: '0.4rem' }}><strong>Form 3CD</strong> is the detailed statement of particulars attached to either 3CA or 3CB, and is where the substantive disclosures actually live.</li>
-                    <li style={{ marginBottom: 0 }}>A consolidated new form is proposed under the Income Tax Act 2025 rules; the transition timeline was not fully settled at the time of writing.</li>
+                    <li style={{ marginBottom: 0 }}><strong>Update, September 25, 2026:</strong> Forms 3CA/3CB/3CD have now been consolidated into a single <strong>Form 26</strong> under Rule 47 of the Income-tax Rules 2026, effective for tax years from April 1, 2026 (FY 2026-27 audits). The concepts below still explain the underlying logic Form 26 uses, just under a new format; see the update section further down.</li>
                   </ul>
                 </div>
 
@@ -116,9 +117,10 @@ export default function FormsExplainedBlog() {
                 </ul>
                 <p>Because Form 3CD asks for granular, transaction-level detail rather than summary figures, most of the actual audit effort, and most of the back-and-forth between the auditor and the client, happens in assembling the information this form requires, well before the short-form 3CA or 3CB report is finalised.</p>
 
-                <h2>Are These Forms Changing Under the Income Tax Act 2025?</h2>
-                <p>The tax audit obligation itself continues under the Income Tax Act 2025, where Section 44AB is renumbered as <Link href="/blog/tax-audit-section-44ab-turnover-limits-fy-2026-27" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 63</Link>. Alongside this renumbering, a consolidated new audit report form has been proposed to eventually replace the current Form 3CA, Form 3CB, and Form 3CD structure with a single unified format. As of the time of writing, the exact effective assessment year and the final shape of the transition were still being settled through draft rules and CBDT notifications, so the safest approach for any business or professional currently due for a tax audit is to confirm with their CA which form set applies for their specific filing year, rather than assuming the current 3CA/3CB/3CD framework or a new consolidated form applies by default.</p>
-                <p>Whichever form set ultimately applies, the underlying discipline does not change: accurate books, correctly computed depreciation, timely MSME and TDS compliance, and clean reconciliation with GST filings are what make the audit process fast rather than a last-minute scramble.</p>
+                <h2>Update: Forms 3CA/3CB/3CD Are Now Form 26</h2>
+                <p>The tax audit obligation continues under the Income Tax Act 2025, where Section 44AB is renumbered as <Link href="/blog/tax-audit-section-44ab-turnover-limits-fy-2026-27" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 63</Link>. Alongside this renumbering, Forms 3CA, 3CB, and 3CD have been formally consolidated into a single new audit report, <strong>Form 26</strong>, under Rule 47 of the Income-tax Rules 2026. Form 26 is confirmed and live on the income tax department&apos;s own portal, not a draft proposal, and applies for tax years commencing on or after April 1, 2026, making it the applicable form for tax audits of FY 2026-27 income being conducted now.</p>
+                <p>Form 26 does not throw out the old structure so much as merge it: <strong>Parts A and B</strong> of Form 26 carry the statement-of-particulars content that used to be Form 3CD (the numbered clauses on accounting method, depreciation, Section 43B disallowances, loans/deposits, TDS/TCS, and GST reconciliation described above), while <strong>Part C</strong> carries the audit report and opinion that used to be Form 3CA or Form 3CB, with the same underlying distinction (whether the accounts are already audited under another law, like the Companies Act, or not) still determining what that part states. The ₹1 crore business / ₹10 crore with ≤5% cash transactions / ₹50 lakh profession audit-applicability thresholds are unchanged; only the form and its internal numbering changed. Where this article still refers to &quot;Form 3CA,&quot; &quot;Form 3CB,&quot; or &quot;Form 3CD&quot; individually, treat that as shorthand for the corresponding part of Form 26.</p>
+                <p>The underlying discipline does not change either way: accurate books, correctly computed depreciation, timely MSME and TDS compliance, and clean reconciliation with GST filings are what make the audit process fast rather than a last-minute scramble.</p>
               </div>
 
               <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

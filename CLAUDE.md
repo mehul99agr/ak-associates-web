@@ -660,10 +660,25 @@ re-verifying):
 - 80D → Section 126 (deduction limits unchanged: ₹25,000 general / ₹50,000 senior
   citizen) — confirmed via ClearTax, Axis Max Life, mStock, independently in the same
   Sep 17, 2026 audit.
+- 147 (income escaping assessment) → Section 279; 148 (notice for reassessment) →
+  Section 280 — both confirmed via ClearTax, TaxTMI, and TaxBuddy independently in the
+  Sep 25, 2026 site-wide fact-check pass.
+- **Forms 3CA, 3CB, and 3CD (tax audit report) → consolidated into a single Form 26**
+  under Rule 47 of the Income-tax Rules 2026, governed by Section 63 (renumbered
+  44AB), applicable for tax years commencing April 1, 2026 (i.e. current for FY
+  2026-27 audits now). Confirmed live on incometax.gov.in/incometaxindia.gov.in
+  directly (not a draft), plus TaxScan, TaxGuru, Verotus, Toolisky. Structure: Parts
+  A/B = old Form 3CD statement of particulars; Part C = old Form 3CA/3CB audit
+  report/opinion. Underlying audit-applicability thresholds unchanged. All posts
+  referencing 3CA/3CB/3CD individually were updated Sep 25, 2026 to note this; the
+  dedicated `tax-audit-report-forms-3ca-3cb-3cd-explained` post was rewritten to lead
+  with Form 26 as current rather than "proposed."
 Confirmed UNRELIABLE / not confidently mappable as of Oct 2026 (use qualitative framing,
 e.g. "renumbered under the Income Tax Act 2025; confirm the exact section reference at
-filing time" — do not guess): Sections 143(1), 143(2), 144, 147, 148, 154, 133A,
-139(8A), 194-IB, 194Q, 271B, and 12A's exact sub-references.
+filing time" — do not guess): Sections 144, 154, 133A, 139(8A), 194-IB, 194Q, 271B, and
+12A's exact sub-references. One lead found Sep 25, 2026 (143(1)→270, 143(2)→270(8) per
+TaxGuru) but only on a single source — do not treat as verified until a second
+independent source corroborates it.
 
 **Remaining work: none.** All categories in `blog-topics-250-for-approval.csv` are
 complete as of Batch 9 (Sep 17, 2026). If the user wants further content expansion,
@@ -779,6 +794,45 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   trusting the in-post "Budget 2026 Update" framing.** If reviewing again after Oct 1, 2026,
   confirm Schedule E is live and working on the e-filing portal as described, not just
   notified.
+
+- **Sep 25, 2026 — Site-wide fact-check pass (recent/high-risk changes only, scoped at
+  user's request via AskUserQuestion, not a full 250-post sweep):** ran 5 parallel
+  research forks covering TDS/TCS rates, Income Tax Act 2025 renumbering, GST rules
+  (incl. GST 2.0 rate rationalization), company law/MSME/startup rules, and NRI/FEMA
+  rules. Most clusters came back clean (TDS/TCS, GST, NRI/FEMA, most company-law facts
+  all still accurate). Two real, material findings, both fixed same day:
+  1. **Buyback of shares taxation reversed again, effective April 1, 2026.** The
+     `buyback-of-shares-tax-implications-for-companies-and-shareholders` post described
+     the Oct 1, 2024 "deemed dividend" regime (full proceeds taxed as dividend at
+     shareholder's slab rate) as current. Budget 2026-27 reverted this to a capital-gains
+     framework under **Section 69** of the Income Tax Act 2025: only the gain (buyback
+     price minus cost of acquisition) is taxed, 12.5% LTCG (with the usual ₹1.25 lakh
+     exemption) / 20% STCG for listed shares, plus a new **Special Additional Tax on
+     promoters** (~22% corporate / ~30% non-corporate — exact triggering
+     threshold/condition NOT independently confirmed, flagged qualitatively in the post
+     rather than guessed). Section 115QA stays repealed, not reinstated. TDS mechanism
+     for the new regime also NOT confirmed — post flags this rather than assuming
+     Section 194 still applies. This is the **third** buyback-tax regime change in ~18
+     months (pre-Oct 2024 → Oct 2024 → Apr 2026) — treat as a fast-moving area, re-verify
+     before reusing any figure from this post in new content.
+  2. **Forms 3CA/3CB/3CD consolidated into a single Form 26** — added to the Income Tax
+     Act 2025 mapping table above; 6 posts referencing the old three-form structure were
+     updated (`tax-audit-report-forms-3ca-3cb-3cd-explained` rewritten most
+     substantially, since it was the dedicated post and had called this "proposed" when
+     it's now confirmed live).
+  Two lower-priority completeness gaps noted but NOT acted on (informational only, not
+  errors): (a) the Section 194-IA ₹50 lakh threshold now aggregates across joint
+  buyers/sellers since Finance (No.2) Act 2024 — not mentioned in
+  `26qb-vs-27q-nri-property-tds`; (b) DPIIT startup turnover cap doubled to ₹200 crore
+  (Notification G.S.R. 108(E), Feb 4, 2026) plus a new Deep Tech category — the
+  `startup-india-registration-vs-dpiit-recognition...` post speaks generically without
+  a number, so isn't wrong, just could cite the current figure.
+  **Process note for future fact-check passes:** parallel research forks (not fresh
+  subagents) worked well here since they inherit full site context and can both
+  websearch and grep the codebase directly, avoiding a re-briefing step. Scoping to
+  "recent/high-risk changes" via AskUserQuestion rather than attempting a full sweep in
+  one pass kept this tractable — a full 250+ post sweep would need to be its own
+  multi-session effort if ever requested.
 
 ## Key Decisions Made
 - No dark/light toggle — removed, dark theme only

@@ -33,6 +33,7 @@ const articleLd = buildArticleLd({
   headline: 'Tax Audit Under Section 44AB: Turnover Limits & Applicability FY 2026-27',
   description: 'Current Section 44AB (now Section 63 under the Income Tax Act 2025) turnover thresholds for businesses and professionals in FY 2026-27, the digital-transaction relaxation, and how presumptive taxation opt-outs trigger a mandatory audit.',
   datePublished: '2026-08-12',
+  dateModified: '2026-09-25',
   slug: 'tax-audit-section-44ab-turnover-limits-fy-2026-27',
 })
 
@@ -42,7 +43,7 @@ const faqs: [string, string][] = [
   ['Does opting out of Section 44AD trigger a mandatory tax audit?', 'It can. If you were eligible for and used the Section 44AD presumptive scheme in an earlier year, then declare profit below the presumptive rate (or opt out) in a later year while your income still exceeds the basic exemption limit, a tax audit becomes mandatory for that year even if your turnover is well below the general Rs 1 crore/Rs 10 crore thresholds, and you may also be restricted from returning to presumptive taxation for a following block of years.'],
   ['Is tax audit compulsory if I declare profit below the 44ADA presumptive rate?', 'Similarly, yes for professionals. If gross receipts are within the Section 44ADA limit but the professional declares profit lower than the prescribed presumptive percentage and total income exceeds the basic exemption limit, a Section 44AB audit is required for that year, regardless of the professional not otherwise crossing the general Rs 50 lakh threshold.'],
   ['What happens if a business or professional required to get a tax audit fails to do so?', 'Failure to get accounts audited and furnish the report by the due date attracts a penalty under Section 271B, generally the lower of 0.5% of turnover/gross receipts or a fixed monetary cap, unless reasonable cause is shown. Beyond the penalty, an unaudited return where an audit was mandatory can also affect the validity and processing of the return itself.'],
-  ['Is Section 44AB the same provision under the new Income Tax Act 2025?', 'The tax audit requirement continues under the Income Tax Act 2025, renumbered as Section 63; the reporting forms themselves (Form 3CA/3CB/3CD) are also being consolidated into a new format as part of the same transition. See our companion guide on the audit report forms for how that transition affects filings.'],
+  ['Is Section 44AB the same provision under the new Income Tax Act 2025?', 'The tax audit requirement continues under the Income Tax Act 2025, renumbered as Section 63. The reporting forms have also changed as part of the same transition: Forms 3CA, 3CB, and 3CD have been consolidated into a single Form 26 under Rule 47, applicable for tax years from April 1, 2026 (FY 2026-27 audits). See our companion guide on the audit report forms for the full breakdown.'],
 ]
 
 const faqLd = buildFaqLd(faqs)
@@ -123,7 +124,7 @@ export default function Section44ABBlog() {
                 <p>A Section 44AB audit is not a separate financial statement audit; it is carried out by a chartered accountant and results in a signed audit report along with a detailed statement of particulars, filed electronically before the applicable due date. The choice of the correct report form, and what each one covers, is explained in our companion guide on <Link href="/blog/tax-audit-report-forms-3ca-3cb-3cd-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CA, Form 3CB, and Form 3CD</Link>. The Section 43B(h) MSME payment disallowance is one of many items reported through that statement of particulars, which is why vendor-level payment tracking, discussed in our <Link href="/blog/section-43bh-msme-payment-disallowance-buyers" style={{ color: 'var(--primary)', fontWeight: 600 }}>guide to Section 43B(h)</Link>, becomes relevant to any business already crossing the audit threshold.</p>
 
                 <h2>Section 44AB Under the Income Tax Act 2025</h2>
-                <p>The tax audit requirement itself continues unchanged in substance under the Income Tax Act 2025, where it is renumbered as <strong>Section 63</strong>. The reporting mechanics are also evolving alongside the renumbering, with a consolidated audit report format proposed to eventually replace the current Form 3CA/3CB/3CD structure; this transition is covered in more detail in the linked forms guide above.</p>
+                <p>The tax audit requirement itself continues unchanged in substance under the Income Tax Act 2025, where it is renumbered as <strong>Section 63</strong>. The reporting mechanics have also changed alongside the renumbering: Forms 3CA, 3CB, and 3CD are now consolidated into a single Form 26 under Rule 47 of the Income-tax Rules 2026, applicable for tax years from April 1, 2026 (FY 2026-27 audits) and confirmed live on the income tax department&apos;s own portal; this is covered in more detail in the linked forms guide above.</p>
               </div>
 
               <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
