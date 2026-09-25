@@ -4,12 +4,12 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Do You Need a TAN to Buy Property From an NRI?' },
-  description: 'Yes; buying property from an NRI needs a TAN, not just a PAN, and Form 26QB does not apply. Form 49B process, documents, fees and 7 to 10 day timeline.',
+  title: { absolute: 'Do You Need a TAN to Buy Property From an NRI? (Updated for Oct 2026)' },
+  description: 'From Oct 1, 2026, resident individual/HUF buyers no longer need a TAN to buy property from an NRI; PAN-based Form 141 Schedule E applies instead. Rules for purchases before that date, and for company/firm buyers.',
   keywords: [
     'TAN application for buying property from NRI', 'TAN registration India', 'form 49B TAN',
     'buyer TAN NRI property purchase', 'do I need TAN to buy NRI property', 'TAN application process',
-    'TAN vs PAN property purchase',
+    'TAN vs PAN property purchase', 'Form 141 Schedule E NRI property',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tan-application-guide-buyer-nri-property' },
   openGraph: {
@@ -31,6 +31,7 @@ const articleLd = buildArticleLd({
   headline: 'TAN Application Guide (NRI Property)',
   description: 'Form 49B TAN application process, documents, fees, and processing time for buyers purchasing property from an NRI seller under Section 195.',
   datePublished: '2026-07-11',
+  dateModified: '2026-09-25',
   slug: 'tan-application-guide-buyer-nri-property',
 })
 
@@ -43,7 +44,7 @@ const faqLd = {
       name: 'Is TAN required for purchase of property from an NRI?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, TAN is required for every purchase of property from an NRI seller, regardless of the transaction value. Because the purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025) rather than the resident-seller Section 194-IA route, the buyer must hold a TAN before deducting TDS; a PAN alone, which is sufficient for resident-seller purchases, is not accepted here.',
+        text: 'It depends on the buyer and the date. For payments made before October 1, 2026, every buyer purchasing from an NRI seller needs a TAN, regardless of transaction value, since the purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025). From October 1, 2026, CBDT Notification No. 121/2026 (dated September 22, 2026) removes the TAN requirement specifically for resident individual and HUF buyers, who can instead report and deposit TDS using their PAN through a new Schedule E in Form 141. Buyers who are companies, firms, LLPs, or other non-individual/HUF entities still need a TAN.',
       },
     },
     {
@@ -51,7 +52,7 @@ const faqLd = {
       name: 'Does a buyer need TAN when buying property from an NRI?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, always. Unlike buying from a resident seller, where the buyer files Form 26QB using only a PAN, purchasing from an NRI falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which requires the buyer to hold a TAN before deducting any tax. Without a TAN, TDS cannot be deposited correctly or reported through the mandatory Form 27Q (now Form 144) return.',
+        text: 'Not anymore, if you are a resident individual or HUF buying on or after October 1, 2026. Until that date, and for company/firm/LLP buyers at any time, purchasing from an NRI falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which requires a TAN before deducting any tax and quarterly Form 27Q (now Form 144) reporting. From October 1, 2026, eligible resident individual/HUF buyers instead use the PAN-based Schedule E in Form 141, with no TAN or Form 27Q needed for that transaction.',
       },
     },
     {
@@ -59,7 +60,7 @@ const faqLd = {
       name: 'Is TAN being scrapped for buyers purchasing from an NRI in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. Budget 2026 does introduce a PAN-based mechanism (Form 141) that removes the TAN requirement for property purchases from October 1, 2026, but it is explicitly restricted to resident sellers. When the seller is an NRI, Form 141 does not apply, and the buyer must continue to obtain a TAN and comply under Section 195 (now Section 393(2)), with no confirmed end date for that requirement. This is a common misreading of the Budget circulating online.',
+        text: 'Yes, but only partially. CBDT Notification No. 121/2026 (G.S.R. 830(E), dated September 22, 2026) inserted a new Schedule E into Form 141 titled "TDS on any consideration on transfer of any immovable property covered under section 393(2)," giving resident individual and HUF buyers a PAN-based route effective October 1, 2026, so they no longer need a TAN to buy from a non-resident seller. This is narrower than the earlier reporting that TAN was scrapped for NRI-seller purchases across the board: it does not extend to buyers who are companies, firms, LLPs, or other non-individual/HUF entities, and it does not apply retroactively to payments made before October 1, 2026.',
       },
     },
     {
@@ -128,17 +129,19 @@ export default function TANApplicationGuideBlog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}>Buying property from an NRI requires the buyer to hold a <strong>TAN</strong>, not just a PAN; the resident-seller Form 26QB / PAN-only process does not apply.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Apply for the TAN as soon as the deal is seriously under negotiation; it cannot be backdated once a payment has already been made without TDS deducted.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Missing this step makes the buyer personally liable for the full TDS, plus 1% monthly interest and a Section 271C penalty.</li>
-                    <li style={{ marginBottom: 0 }}>Once the TAN is issued, the buyer deducts TDS via challan and files the quarterly Form 27Q return.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Update:</strong> from October 1, 2026, resident individual/HUF buyers no longer need a TAN to buy from an NRI seller; they use the new PAN-based Schedule E in Form 141 instead (CBDT Notification No. 121/2026, dated September 22, 2026).</li>
+                    <li style={{ marginBottom: '0.4rem' }}>For payments made before October 1, 2026, and for any buyer that is a company, firm, or LLP, the old rule still applies: buying from an NRI requires a <strong>TAN</strong>, not just a PAN; the resident-seller Form 26QB / PAN-only process does not apply.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Where a TAN is still needed, apply as soon as the deal is seriously under negotiation; it cannot be backdated once a payment has already been made without TDS deducted.</li>
+                    <li style={{ marginBottom: 0 }}>Missing a required TAN, or filing under the wrong mechanism, makes the buyer personally liable for the full TDS, plus 1% monthly interest and a Section 271C penalty.</li>
                   </ul>
                 </div>
                 <p>If you are buying property from an NRI, one requirement catches most first-time buyers off guard: you need a <strong>TAN (Tax Deduction Account Number)</strong>, not just a PAN. This is different from buying from a resident seller, and skipping it (or discovering it too late) is the single most common mistake that creates personal TDS liability for buyers. Here is exactly how to get one.</p>
 
                 <h2>Is TAN Mandatory for Buying Property from an NRI?</h2>
-                <p><strong>Yes. When the seller is an NRI, the buyer must obtain a TAN before making any payment; a PAN alone is not enough, and the resident-seller Form 26QB route does not apply. The purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which makes TAN-based TDS deduction and quarterly Form 27Q (now Form 144) reporting compulsory, with no minimum transaction value.</strong></p>
-                <p>The practical sequence:</p>
+                <p><strong>It depends on when you pay and who the buyer is. For payments made before October 1, 2026, and for any buyer that is a company, firm, or LLP at any time, yes: the buyer must obtain a TAN before making any payment, a PAN alone is not enough, and the resident-seller Form 26QB route does not apply. The purchase falls under Section 195 (now Section 393(2) under the Income Tax Act 2025), which makes TAN-based TDS deduction and quarterly Form 27Q (now Form 144) reporting compulsory, with no minimum transaction value.</strong></p>
+                <p><strong>From October 1, 2026, resident individual and HUF buyers are exempt from this requirement.</strong> CBDT Notification No. 121/2026 (G.S.R. 830(E), dated September 22, 2026) inserted a new Schedule E into Form 141, specifically for &quot;TDS on any consideration on transfer of any immovable property covered under section 393(2).&quot; An eligible resident individual or HUF buyer can now report property details, PAN, and the TDS amount directly through this schedule using only their own PAN; no TAN application, and no Form 27Q, for that transaction.</p>
+                <p>The rest of this guide covers the TAN route below, which still applies if you are paying before October 1, 2026, or if the buyer is not a resident individual or HUF (for example, a company, LLP, or partnership firm).</p>
+                <p>The practical sequence where a TAN is still required:</p>
                 <ol>
                   <li><strong>Apply on Form 49B</strong> through the Protean (NSDL) portal as soon as the deal is firm. The fee is about ₹65 plus GST.</li>
                   <li><strong>TAN is allotted in roughly 7 to 10 working days.</strong> A 14-digit acknowledgment number lets you track status.</li>
@@ -148,12 +151,13 @@ export default function TANApplicationGuideBlog() {
                 <p>Paying an NRI seller without deducting TDS makes the buyer an <strong>assessee in default under Section 201 (now Section 398)</strong>: personally liable for the full un-deducted tax, plus interest at 1% per month and a Section 271C penalty equal to the tax not deducted.</p>
 
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
-                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update: TAN Is Not Being Scrapped Here</p>
-                  <p style={{ margin: 0, fontSize: '0.95rem' }}>You may have seen reports that Budget 2026 removes the TAN requirement for property purchases from October 1, 2026. That change is real, but it applies only to <strong>resident sellers</strong>: a new PAN-based challan (Form 141) replaces TAN-based compliance for those transactions. Where the seller is an NRI, Form 141 explicitly does not apply. The TAN requirement covered in this guide continues unchanged, under Section 195 (now Section 393(2) under the Income Tax Act 2025), with Form 27Q now called Form 144. Don&apos;t skip TAN registration for an NRI purchase based on the &quot;TAN scrapped&quot; headlines.</p>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Update, September 25, 2026: TAN Is Being Removed for NRI-Seller Purchases Too, From Oct 1, 2026</p>
+                  <p style={{ margin: 0, fontSize: '0.95rem' }}>An earlier version of this guide said the October 1, 2026 PAN-based Form 141 change applied only to resident-seller purchases. That is now out of date. CBDT Notification No. 121/2026 (G.S.R. 830(E), dated September 22, 2026) added a new <strong>Schedule E to Form 141</strong>, specifically for &quot;TDS on any consideration on transfer of any immovable property covered under section 393(2)&quot; (the NRI-seller provision). From October 1, 2026, a <strong>resident individual or HUF</strong> buying from an NRI can use this PAN-based schedule instead of applying for a TAN. This does not extend to buyers who are companies, firms, or LLPs, and it does not apply retroactively to payments made before October 1, 2026; both of those cases still follow the TAN process described in this guide.</p>
                 </div>
 
-                <h2>Why a TAN Is Required Here (and Not for Resident Sellers)</h2>
-                <p>When buying from a resident seller above ₹50 lakh, Section 194-IA applies, and the buyer simply files Form 26QB using their PAN; no TAN needed. When the seller is an NRI, the transaction falls under <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195 (now Section 393(2))</Link> instead, which is a full TDS obligation with no minimum threshold. Section 195 compliance requires the payer to hold a TAN, deposit TDS via challan, and file the quarterly Form 27Q (now Form 144) return; the PAN-only Form 26QB process simply does not apply.</p>
+                <h2>Why a TAN Was Required Here, and Who Still Needs One</h2>
+                <p>When buying from a resident seller above ₹50 lakh, Section 194-IA applies, and the buyer simply files Form 26QB using their PAN; no TAN needed. When the seller is an NRI, the transaction falls under <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195 (now Section 393(2))</Link> instead, which is a full TDS obligation with no minimum threshold. Historically, Section 195 compliance required the payer to hold a TAN, deposit TDS via challan, and file the quarterly Form 27Q (now Form 144) return, with the PAN-only Form 26QB process not applying at all.</p>
+                <p>From October 1, 2026, that changes for one category of buyer: a resident individual or HUF can instead use the new Schedule E in Form 141, reporting directly against their PAN. Everyone else (companies, firms, LLPs) and anyone paying before October 1, 2026 still needs a TAN, and the rest of this section walks through that process.</p>
 
                 <h2>Step-by-Step TAN Application Process</h2>
                 <ol>

@@ -148,6 +148,29 @@ src/app/
   linking to agrawalkhandelwal.com from the first submission. **Not a new referring
   domain** — same profile link counted already. See
   `backlinks/guest-post-caclubindia-tax-audit-deadline.md` for the record.
+  **Sep 21, 2026 correction — CAclubindia/TaxGuru backlinks re-verified live via Claude in
+  Chrome and found to be dead, not just nofollow.** Checked all 3 known CAclubindia
+  articles (offshore-accounting, tax-audit-deadline, and 2 more previously-undocumented
+  ones by the same author found on the profile page — `llp-vs-private-limited-choosing-
+  the-right-structure...-56245`, `fema-compliance-checklist-for-startups...-56244`,
+  `transfer-pricing-documentation-for-smes...-56243`), the TaxGuru transfer-pricing post,
+  and the CAclubindia profile page (member_id=4323716) itself, via `read_page`/`find` (not
+  just get_page_text, which can't distinguish plain text from a real `<a href>`). **None
+  of them have a live clickable link to agrawalkhandelwal.com anywhere** — not in the
+  article body, not in the author bio box, not on the CAclubindia profile page (the
+  "Firm website: https://agrawalkhandelwal.com" line on the profile is plain text, no
+  `<a>` tag), not on the TaxGuru author page. Only bare-text domain/email mentions exist.
+  This contradicts the note above that "the real backlink lives on the author's
+  CAclubindia member profile" — that was apparently wrong or the link has since been
+  stripped. **Correction to the running backlink tally:** neither CAclubindia nor TaxGuru
+  currently contribute a real backlink (dofollow or nofollow) — they contribute brand/
+  citation value only. The TaxGuru guest post should no longer be described as "the first
+  high-authority backlink" in outreach claims — it is a high-authority citation, not a
+  backlink, unless re-verified with a live `<a href>` in the future. The Sep 14 directory
+  audit's "4 confirmed real backlinks" tally (TheOrg, Nashik100, Magicpin, Crunchbase) is
+  unaffected. Also found: 2 more CAclubindia guest-post articles by the same author were
+  live but never logged in `backlinks/` — worth writing up and adding to tracking if the
+  user wants full credit for that outreach work.
 
 **Search Console findings (May 2026):**
 - 1 page indexed (sitemap just submitted — more will be indexed over coming weeks)
@@ -731,6 +754,31 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - The full name matches official ICAI, MCA, and directory registrations
 - "Khandelwal" and "Agrawal" are the distinctive keywords already gaining traction in Search Console
 - If a page title is too long, trim the service keyword — never trim the firm name
+
+## Legal/Regulatory Corrections Log
+- **Sep 25, 2026 — TAN requirement for buying property from an NRI (partially removed, Oct 1,
+  2026):** CBDT Notification No. 121/2026 (G.S.R. 830(E), dated Sep 22, 2026) inserted a new
+  Schedule E into Form 141, titled "TDS on any consideration on transfer of any immovable
+  property covered under section 393(2)" (the NRI-seller provision, old Section 195). From
+  **October 1, 2026**, a **resident individual or HUF** buyer purchasing property from a
+  non-resident can report and deposit TDS via this PAN-based schedule instead of obtaining a
+  TAN. This does **not** extend to buyers that are companies, firms, or LLPs, and does not
+  apply retroactively to payments made before Oct 1, 2026 — those cases still need a TAN and
+  Form 27Q (now Form 144) under Section 195/393(2).
+  Two of the site's top-earning blog posts (`tan-application-guide-buyer-nri-property` and
+  `tds-on-nri-property-sale-india`) previously stated the *opposite* — that the Budget 2026
+  PAN-based Form 141 change applied only to resident-seller purchases and explicitly did NOT
+  cover NRI sellers. That was accurate as of when it was written (before the Sep 22
+  notification existed) but became wrong once the amendment landed. Both posts corrected
+  Sep 25, 2026 — TL;DR, FAQ schema, and body callout boxes updated with the individual/HUF
+  vs. company/firm distinction and the Oct 1, 2026 effective date; `dateModified` bumped on
+  both. **Lesson: a "no, that's a misreading" correction written into a post is not
+  permanent — a live regulation can change after the correction was published. Before
+  reusing or citing either post's TAN guidance, or writing new content that touches
+  NRI-property TDS/TAN mechanics, re-verify against current CBDT notifications rather than
+  trusting the in-post "Budget 2026 Update" framing.** If reviewing again after Oct 1, 2026,
+  confirm Schedule E is live and working on the e-filing portal as described, not just
+  notified.
 
 ## Key Decisions Made
 - No dark/light toggle — removed, dark theme only
