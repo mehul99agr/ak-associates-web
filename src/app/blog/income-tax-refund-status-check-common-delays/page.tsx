@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function IncomeTaxRefundStatusBlog() {
   return (
@@ -133,14 +132,13 @@ export default function IncomeTaxRefundStatusBlog() {
                 <p>If your refund has been stuck well past the typical window, or you are dealing with a Section 245 adjustment you don't agree with, we help clients track down the specific hold-up on the portal and respond to notices correctly rather than letting a refund sit indefinitely.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Refund stuck or delayed longer than expected?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help clients diagnose refund delays, respond to Section 245 notices, and get bank account issues sorted so refunds actually get credited.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20my%20income%20tax%20refund%20is%20delayed%20and%20I%20need%20help." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Refund stuck or delayed longer than expected?"
+            description="We help clients diagnose refund delays, respond to Section 245 notices, and get bank account issues sorted so refunds actually get credited."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20my%20income%20tax%20refund%20is%20delayed%20and%20I%20need%20help."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -46,7 +46,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function Section92CEBlog() {
   return (
@@ -121,14 +120,12 @@ export default function Section92CEBlog() {
                 <p>A common planning mistake is treating a primary transfer pricing adjustment, whether accepted in assessment, resolved via APA, or self-reported, as the end of the exposure. Section 92CE means the real financial cost can continue accruing well after the primary adjustment is finalised, if the underlying cash does not actually move. This makes it important to track repatriation status as a distinct compliance item, separate from and after the primary transfer pricing analysis covered under the <Link href="/blog/transfer-pricing-methods-india-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>five prescribed transfer pricing methods</Link>, and to build the 90-day repatriation deadline into the compliance calendar as soon as a primary adjustment of this scale is on the horizon, rather than after the return due date has already passed. Where the underlying transaction also required <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB</Link> reporting, the secondary adjustment position should be reviewed alongside it, and any resulting deemed-advance or one-time tax exposure factored into the same year&apos;s tax provisioning.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Facing a primary adjustment and need to work out the repatriation position?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help groups track the 90-day repatriation window, model the deemed-advance interest against the one-time tax alternative, and stay compliant under Section 92CE.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Facing a primary adjustment and need to work out the repatriation position?"
+            description="We help groups track the 90-day repatriation window, model the deemed-advance interest against the one-time tax alternative, and stay compliant under Section 92CE."
+            secondaryLabel="Transfer Pricing Services"
+            secondaryHref="/transfer-pricing"
+          />
 
               <FaqSection faqs={faqs} />
 

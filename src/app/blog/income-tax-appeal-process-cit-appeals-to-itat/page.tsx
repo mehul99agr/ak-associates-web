@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function IncomeTaxAppealProcessBlog() {
   return (
@@ -136,14 +135,13 @@ export default function IncomeTaxAppealProcessBlog() {
                 <p>Every stage of this ladder runs on a hard deadline with no automatic extension, so the moment an adverse order arrives is the moment to start preparing the next appeal, not weeks later. If you are weighing whether an order is worth appealing, or need help drafting grounds of appeal that actually address the assessing officer's or CIT(Appeals)' specific findings, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include representation at every stage from the first appeal through the ITAT.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Considering an appeal against an income tax order?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We assess whether an appeal is worth pursuing, draft grounds of appeal, and represent you before CIT(Appeals) and the ITAT.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20appeal%20an%20income%20tax%20order." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Considering an appeal against an income tax order?"
+            description="We assess whether an appeal is worth pursuing, draft grounds of appeal, and represent you before CIT(Appeals) and the ITAT."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20appeal%20an%20income%20tax%20order."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function NriRealEstateComplianceBlog() {
   return (
@@ -141,14 +140,12 @@ export default function NriRealEstateComplianceBlog() {
                 <p>The purchase-side compliance for NRI real estate is largely front-loaded: get the funding channel and documentation right at the time of purchase, and the ongoing rental-income and eventual-sale compliance flows naturally from clean records. The two most common issues we see are payments routed outside proper banking channels (often at the seller's insistence) and rental income never being formally reported because it was assumed to be "small" or informal, both of which create real exposure when the property is eventually sold or the funds need to be repatriated in bulk.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Planning to buy or already own property in India as an NRI?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help NRIs structure FEMA-compliant property purchases, handle rental income tax filings, and manage NRO repatriation with Form 15CA/15CB.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Planning to buy or already own property in India as an NRI?"
+            description="We help NRIs structure FEMA-compliant property purchases, handle rental income tax filings, and manage NRO repatriation with Form 15CA/15CB."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
               <FaqSection faqs={faqs} />
 

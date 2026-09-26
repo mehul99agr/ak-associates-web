@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -47,7 +47,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function FormsExplainedBlog() {
   return (
@@ -123,14 +122,12 @@ export default function FormsExplainedBlog() {
                 <p>The underlying discipline does not change either way: accurate books, correctly computed depreciation, timely MSME and TDS compliance, and clean reconciliation with GST filings are what make the audit process fast rather than a last-minute scramble.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with your tax audit filing?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle Section 44AB tax audits end to end, including Form 3CA/3CB/3CD preparation, MSME and TDS reconciliation, and GST cross-checks.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with your tax audit filing?"
+            description="We handle Section 44AB tax audits end to end, including Form 3CA/3CB/3CD preparation, MSME and TDS reconciliation, and GST cross-checks."
+            secondaryLabel="Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

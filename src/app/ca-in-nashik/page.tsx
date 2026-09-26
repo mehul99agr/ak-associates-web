@@ -107,13 +107,6 @@ const nashikLocalBusiness = {
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '13',
-    bestRating: '5',
-    worstRating: '1',
-  },
   priceRange: '₹₹',
   currenciesAccepted: 'INR',
   paymentAccepted: 'Cash, UPI, Bank Transfer, Cheque',
@@ -408,9 +401,9 @@ export default function CAInNashik() {
                 mehul@agrawalkhandelwal.com
               </a>
             </div>
-            <div className="card" style={{ background: '#0A2E5B', borderColor: '#0A2E5B' }}>
-              <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#fff' }}>Book a Free Consultation</h3>
+            <div className="card" style={{ background: 'var(--primary)', borderColor: 'var(--primary)' }}>
+              <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Free Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
                 Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation; first session is free.
               </p>

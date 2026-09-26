@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function WindingUpStrikeOffBlog() {
   return (
@@ -150,14 +149,13 @@ export default function WindingUpStrikeOffBlog() {
                 <p>Strike off is the right exit for a company that is genuinely inactive with nothing left to wind down; a company with assets to distribute, ongoing disputes, or creditors to settle needs a formal winding-up or liquidation process instead, which is a materially different (and longer) procedure under the Companies Act and the Insolvency and Bankruptcy Code. Before filing STK-2, it is worth confirming which route actually fits the company&apos;s situation rather than assuming the faster route applies.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Ready to close a dormant company?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We check eligibility, clear pending ROC filings if needed, and handle the full STK-2 filing end to end.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20close%20down%20my%20private%20limited%20company." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Ready to close a dormant company?"
+            description="We check eligibility, clear pending ROC filings if needed, and handle the full STK-2 filing end to end."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20close%20down%20my%20private%20limited%20company."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

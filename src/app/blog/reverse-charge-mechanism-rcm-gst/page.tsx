@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function RCMBlog() {
   return (
@@ -134,14 +133,12 @@ export default function RCMBlog() {
                 <p>Because ITC on RCM tax paid is generally available once correctly reported, the real cost of missing RCM is rarely the tax itself; it is the interest and penalty exposure from having failed to self-invoice and pay tax in cash in the correct period, discovered later during a GSTR-9/9C reconciliation or a departmental audit. If you are preparing your <Link href="/blog/gstr-9-gstr-9c-annual-return-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual GST return</Link>, reviewing the year&apos;s RCM-eligible expense categories is a good checkpoint before filing.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure which of your vendor payments fall under RCM?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review vendor categories for RCM applicability, set up self-invoicing workflows, and handle GST notices arising from missed reverse charge liability.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure which of your vendor payments fall under RCM?"
+            description="We review vendor categories for RCM applicability, set up self-invoicing workflows, and handle GST notices arising from missed reverse charge liability."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

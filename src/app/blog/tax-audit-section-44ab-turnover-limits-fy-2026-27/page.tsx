@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -47,7 +47,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function Section44ABBlog() {
   return (
@@ -127,14 +126,12 @@ export default function Section44ABBlog() {
                 <p>The tax audit requirement itself continues unchanged in substance under the Income Tax Act 2025, where it is renumbered as <strong>Section 63</strong>. The reporting mechanics have also changed alongside the renumbering: Forms 3CA, 3CB, and 3CD are now consolidated into a single Form 26 under Rule 47 of the Income-tax Rules 2026, applicable for tax years from April 1, 2026 (FY 2026-27 audits) and confirmed live on the income tax department&apos;s own portal; this is covered in more detail in the linked forms guide above.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if your business needs a tax audit this year?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We assess turnover, presumptive-scheme history, and the cash-transaction test to confirm applicability, and handle the audit end to end where required.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if your business needs a tax audit this year?"
+            description="We assess turnover, presumptive-scheme history, and the cash-transaction test to confirm applicability, and handle the audit end to end where required."
+            secondaryLabel="Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

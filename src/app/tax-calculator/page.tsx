@@ -126,33 +126,33 @@ export default function TaxCalculator() {
                   { key: 'new', label: 'New Regime', r: result.newR },
                   { key: 'old', label: 'Old Regime', r: result.oldR },
                 ] as const).map(({ key, label, r }) => (
-                  <div key={key} style={{ padding: '24px', borderRadius: '12px', background: 'var(--bg-surface)', border: better === key ? '2px solid #10b981' : '1px solid var(--border)', position: 'relative' }}>
+                  <div key={key} style={{ padding: '24px', borderRadius: '12px', background: 'var(--bg-surface)', border: better === key ? '2px solid var(--success)' : '1px solid var(--border)', position: 'relative' }}>
                     {better === key && (
-                      <span style={{ position: 'absolute', top: '-12px', left: '20px', background: '#10b981', color: '#fff', fontSize: '0.72rem', fontWeight: 800, padding: '3px 12px', borderRadius: '20px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Lower Tax</span>
+                      <span style={{ position: 'absolute', top: '-12px', left: '20px', background: 'var(--success)', color: 'var(--white)', fontSize: '0.72rem', fontWeight: 800, padding: '3px 12px', borderRadius: '20px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Lower Tax</span>
                     )}
                     <div style={{ fontWeight: 800, color: 'var(--primary)', fontSize: '1.05rem', marginBottom: '14px' }}>{label}</div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.86rem', color: 'var(--text-light)', marginBottom: '6px' }}><span>Taxable income</span><span>₹{formatINR(r.taxable)}</span></div>
                     {r.rebate > 0 && (
-                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.86rem', color: '#10b981', marginBottom: '6px' }}><span>Rebate u/s 87A</span><span>- ₹{formatINR(Math.round(r.rebate))}</span></div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.86rem', color: 'var(--success)', marginBottom: '6px' }}><span>Rebate u/s 87A</span><span>- ₹{formatINR(Math.round(r.rebate))}</span></div>
                     )}
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.86rem', color: 'var(--text-light)', marginBottom: '12px' }}><span>Cess (4%)</span><span>₹{formatINR(Math.round(r.cess))}</span></div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid var(--border)', paddingTop: '12px' }}>
                       <span style={{ fontWeight: 800, color: 'var(--primary)' }}>Total tax</span>
-                      <span style={{ fontWeight: 900, fontSize: '1.6rem', color: better === key ? '#10b981' : 'var(--text-main)' }}>₹{formatINR(r.total)}</span>
+                      <span style={{ fontWeight: 900, fontSize: '1.6rem', color: better === key ? 'var(--success)' : 'var(--text-main)' }}>₹{formatINR(r.total)}</span>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div style={{ marginTop: '24px', padding: '20px 24px', background: 'var(--primary)', borderRadius: '12px', textAlign: 'center', color: '#fff' }}>
+              <div style={{ marginTop: '24px', padding: '20px 24px', background: 'var(--primary)', borderRadius: '12px', textAlign: 'center', color: 'var(--white)' }}>
                 {saving === 0 ? (
-                  <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>Both regimes give the same tax for these numbers.</p>
+                  <p style={{ margin: 0, color: 'var(--white)', fontWeight: 600 }}>Both regimes give the same tax for these numbers.</p>
                 ) : (
-                  <p style={{ margin: 0, color: '#fff', fontWeight: 700, fontSize: '1.05rem' }}>
+                  <p style={{ margin: 0, color: 'var(--white)', fontWeight: 700, fontSize: '1.05rem' }}>
                     The {better === 'new' ? 'New' : 'Old'} Regime saves you about <span style={{ color: 'var(--gold-light)' }}>₹{formatINR(saving)}</span> this year.
                   </p>
                 )}
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: '#fff', fontWeight: 700, marginTop: '16px' }}>
+                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700, marginTop: '16px' }}>
                   Get a personalised tax plan
                 </a>
               </div>

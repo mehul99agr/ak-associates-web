@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function SecretarialAuditBlog() {
   return (
@@ -137,14 +136,13 @@ export default function SecretarialAuditBlog() {
                 <p>Companies approaching Rs 100 crore in borrowings, or a public company nearing the Rs 50 crore capital or Rs 250 crore turnover marks, are often better served getting their governance processes in order before the audit becomes mandatory, rather than scrambling in the year it first applies. Lenders and investors evaluating a company for the next round of debt or equity frequently ask for a secretarial audit report even when it is not yet legally required, simply as a governance signal, so building the underlying discipline early tends to pay off beyond the compliance trigger itself.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if secretarial audit applies to you?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We check your thresholds against the last audited financials and coordinate with a practising Company Secretary where the requirement applies.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20checking%20secretarial%20audit%20applicability." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if secretarial audit applies to you?"
+            description="We check your thresholds against the last audited financials and coordinate with a practising Company Secretary where the requirement applies."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20checking%20secretarial%20audit%20applicability."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

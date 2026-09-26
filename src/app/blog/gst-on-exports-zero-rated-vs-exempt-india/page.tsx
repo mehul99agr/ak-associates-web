@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'GST on Exports: Zero-Rated vs Exempt',
@@ -69,7 +69,6 @@ const faqLd = {
   ],
 }
 
-const bookingLink = BOOKING_LINK
 
 export default function GSTExportsZeroRatedBlog() {
   return (
@@ -156,14 +155,13 @@ export default function GSTExportsZeroRatedBlog() {
                 <p>If your business exports goods or services and has not claimed a GST refund in the past year, you likely have accumulated ITC sitting unclaimed. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> can review your returns and file a retroactive refund claim for up to 2 years.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Unclaimed GST refunds on exports? We can file retroactively.</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review export transactions, check LUT compliance, and file RFD-01 refund claims for Indian exporters with accumulated ITC.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20export%20refund." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Unclaimed GST refunds on exports? We can file retroactively."
+            description="We review export transactions, check LUT compliance, and file RFD-01 refund claims for Indian exporters with accumulated ITC."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20export%20refund."
+            secondaryExternal
+          />
 
               <div style={{ marginTop: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>

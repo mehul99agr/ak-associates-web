@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function PoshActBlog() {
   return (
@@ -134,14 +133,12 @@ export default function PoshActBlog() {
                 <p>For a company crossing or already past the 10-employee mark: formally constitute the IC with the required composition (including the external member), adopt and circulate a written POSH policy, display the policy and IC details at each workplace location, run at least an annual awareness session, and build the annual reporting requirement (both the IC's own annual report and the Board's Report disclosure) into the same compliance calendar used for other statutory obligations like <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual ROC filings</Link>, so it doesn't get missed as a one-off item nobody owns.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Setting up or reviewing your POSH compliance?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help companies constitute a compliant Internal Committee, build the required policy and disclosures, and keep POSH reporting current alongside your other statutory filings.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Setting up or reviewing your POSH compliance?"
+            description="We help companies constitute a compliant Internal Committee, build the required policy and disclosures, and keep POSH reporting current alongside your other statutory filings."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

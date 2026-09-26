@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -45,7 +45,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function OPCConversionBlog() {
   return (
@@ -107,14 +106,12 @@ export default function OPCConversionBlog() {
               <p>The costliest version of this process is the one done in a rush, for example when an investor term sheet has a tight closing date and the company is still structured as an OPC. Even though there is no longer a forced deadline, founders who expect to raise outside capital, add a co-founder, or set up an ESOP pool are better served by planning the conversion a quarter or two ahead of the event that needs it, so due diligence, share issuance, and ROC filings do not become the bottleneck on a live deal.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Planning to convert your OPC?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle the full conversion process, from Board resolutions to the fresh Certificate of Incorporation and updated registrations.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/company-incorporation" className="btn btn-outline">Incorporation Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Planning to convert your OPC?"
+            description="We handle the full conversion process, from Board resolutions to the fresh Certificate of Incorporation and updated registrations."
+            secondaryLabel="Incorporation Services"
+            secondaryHref="/company-incorporation"
+          />
 
             <FaqSection faqs={faqs} />
 

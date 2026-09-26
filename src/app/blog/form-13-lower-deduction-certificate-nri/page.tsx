@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Form 13 for NRIs: Lower TDS Certificate on Property Sale' },
@@ -121,7 +121,6 @@ const faqLd = {
   ],
 }
 
-const bookingLink = BOOKING_LINK
 
 export default function Form13NRIBlog() {
   return (
@@ -197,14 +196,13 @@ export default function Form13NRIBlog() {
                 <p>If the certificate isn&apos;t obtained in time and TDS is deducted at the full statutory rate, the NRI can still recover the excess; see our guide on <Link href="/blog/nri-tds-refund-property-sale" style={{ color: 'var(--primary)', fontWeight: 600 }}>claiming a TDS refund on property sale</Link>.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help applying for a Form 13 certificate?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle Form 13 applications end-to-end for NRI clients, from computation to certificate, well before the sale closes.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20Form%2013%20application." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help applying for a Form 13 certificate?"
+            description="We handle Form 13 applications end-to-end for NRI clients, from computation to certificate, well before the sale closes."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20Form%2013%20application."
+            secondaryExternal
+          />
 
               <div style={{ marginTop: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: FaqPair[] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function CapitalGainsSharesEquityDebtBlog() {
   return (
@@ -85,7 +84,7 @@ export default function CapitalGainsSharesEquityDebtBlog() {
                 Capital Gains Tax on Shares &amp; Mutual Funds: Equity vs Debt Taxation
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 24, 2026</span>
+                <span>July 26, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -139,14 +138,13 @@ export default function CapitalGainsSharesEquityDebtBlog() {
                 <p>Use our <Link href="/tools/capital-gains" style={{ color: 'var(--primary)', fontWeight: 600 }}>Capital Gains Calculator</Link> to work out the exact tax on a specific sale, and if you are planning a larger portfolio rebalancing or exit, talk to us before you sell; the Rs 1.25 lakh exemption resets every financial year, and timing a sale across two financial years instead of one can materially change the tax outcome.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Planning a share or mutual fund sale?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help investors work out the exact capital gains impact before a sale, not after, so the exemption and timing decisions are made with full information.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20capital%20gains%20tax%20on%20shares%20or%20mutual%20funds." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Planning a share or mutual fund sale?"
+            description="We help investors work out the exact capital gains impact before a sale, not after, so the exemption and timing decisions are made with full information."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20capital%20gains%20tax%20on%20shares%20or%20mutual%20funds."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -46,7 +46,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function EsiRegistrationBlog() {
   return (
@@ -124,14 +123,12 @@ export default function EsiRegistrationBlog() {
                 <p>Businesses that cross the ESI threshold are frequently close to, or already past, the <Link href="/blog/epf-registration-and-compliance-for-startups-and-smes" style={{ color: 'var(--primary)', fontWeight: 600 }}>EPF registration threshold</Link> as well, since both are driven by growing headcount. It is worth reviewing both obligations together rather than addressing them in isolation, since the underlying employee and wage data largely overlaps. Businesses that rely heavily on contract or agency staff should also examine that workforce&apos;s classification carefully, since misclassified staff can retroactively affect both ESI and EPF applicability; see our related guide on <Link href="/blog/contract-labour-vs-employment-compliance-risks-for-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>contract labour versus employment compliance risk</Link>.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if your establishment is covered under ESI?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help businesses check state-specific applicability, complete ESI registration, and manage monthly contributions and half-yearly returns.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if your establishment is covered under ESI?"
+            description="We help businesses check state-specific applicability, complete ESI registration, and manage monthly contributions and half-yearly returns."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -45,7 +45,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function NRIITRFilingBlog() {
   return (
@@ -139,14 +138,12 @@ export default function NRIITRFilingBlog() {
                 <p>NRIs can choose between the old and new tax regimes. The new regime (default from FY 2024-25 onwards) has lower slab rates but fewer deductions. For NRIs whose primary Indian income is capital gains (which are taxed at special rates regardless of regime) or rental income (where the 30% standard deduction is available under both regimes), the choice often makes little difference. However, if you have significant Indian salary income or claim deductions under Section 80C, 80D, etc., compare both before filing.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help filing your Indian ITR from abroad?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We prepare and file ITRs for NRIs worldwide, handle TDS refund claims, and manage e-verification via DSC.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help filing your Indian ITR from abroad?"
+            description="We prepare and file ITRs for NRIs worldwide, handle TDS refund claims, and manage e-verification via DSC."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
               <FaqSection faqs={faqs} />
 

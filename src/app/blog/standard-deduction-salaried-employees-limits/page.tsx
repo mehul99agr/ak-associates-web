@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -46,7 +46,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function StandardDeductionBlog() {
   return (
@@ -66,7 +65,7 @@ export default function StandardDeductionBlog() {
                 Standard Deduction for Salaried Employees: Current Limits
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 3, 2026</span>
+                <span>August 9, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -118,14 +117,12 @@ export default function StandardDeductionBlog() {
                 </div>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure which regime saves you more tax?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help salaried individuals compare their actual old-regime deductions against the new regime's flat structure and file under whichever genuinely lowers their tax.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/tax-calculator" className="btn btn-outline">Try Our Tax Calculator</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure which regime saves you more tax?"
+            description="We help salaried individuals compare their actual old-regime deductions against the new regime's flat structure and file under whichever genuinely lowers their tax."
+            secondaryLabel="Try Our Tax Calculator"
+            secondaryHref="/tax-calculator"
+          />
 
               <FaqSection faqs={faqs} />
 

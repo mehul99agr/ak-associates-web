@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -59,7 +59,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function MsmeUdyamVsStartupIndiaBlog() {
   return (
@@ -79,7 +78,7 @@ export default function MsmeUdyamVsStartupIndiaBlog() {
                 MSME Udyam vs Startup India Recognition: Which Benefits Apply
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 15, 2026</span>
+                <span>September 7, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -131,14 +130,12 @@ export default function MsmeUdyamVsStartupIndiaBlog() {
                 <p>Sequencing these registrations correctly, alongside incorporation and GST registration, is a common source of avoidable delay for new businesses. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup advisory services</Link> help map out which registrations actually apply to a given business before filing anything.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure whether you need Udyam, DPIIT, or both?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders map eligibility across both schemes and file the registrations that actually apply to their business.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure whether you need Udyam, DPIIT, or both?"
+            description="We help founders map eligibility across both schemes and file the registrations that actually apply to their business."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

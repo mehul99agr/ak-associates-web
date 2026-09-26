@@ -187,7 +187,7 @@ export default function CompanyIncorporationGuideBlog() {
             <div style={{ overflowX: 'auto', marginBottom: '2rem' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
                 <thead>
-                  <tr style={{ background: 'var(--primary)', color: '#fff' }}>
+                  <tr style={{ background: 'var(--primary)', color: 'var(--white)' }}>
                     <th style={{ padding: '12px 16px', textAlign: 'left' }}>Factor</th>
                     <th style={{ padding: '12px 16px', textAlign: 'left' }}>Private Limited (Pvt Ltd)</th>
                     <th style={{ padding: '12px 16px', textAlign: 'left' }}>LLP</th>
@@ -287,7 +287,7 @@ export default function CompanyIncorporationGuideBlog() {
               },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', gap: '1.5rem', marginBottom: '2rem', alignItems: 'flex-start' }}>
-                <div style={{ background: 'var(--primary)', color: '#fff', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '1rem', flexShrink: 0, marginTop: '2px' }}>{item.step}</div>
+                <div style={{ background: 'var(--primary)', color: 'var(--white)', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '1rem', flexShrink: 0, marginTop: '2px' }}>{item.step}</div>
                 <div>
                   <h3 style={{ color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '1.1rem' }}>{item.title}</h3>
                   <p style={{ color: 'var(--text-main)', margin: 0 }}>{item.desc}</p>

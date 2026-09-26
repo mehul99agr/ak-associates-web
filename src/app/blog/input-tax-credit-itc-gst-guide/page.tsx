@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function InputTaxCreditITCBlog() {
   return (
@@ -139,14 +138,12 @@ export default function InputTaxCreditITCBlog() {
                 <p>The practical workflow that avoids most disputes: reconcile GSTR-2B against your purchase register every month rather than at year-end, track supplier payment dates against the 180-day clock, and flag any expense category against the Section 17(5) list before claiming credit on it, not after. Businesses managing GST alongside a broader compliance calendar may also find our <Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup compliance calendar</Link> useful for keeping these deadlines in view alongside ROC and income tax obligations.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if an expense qualifies for ITC?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review ITC claims, set up GSTR-2B reconciliation processes, and handle GST notices arising from blocked or ineligible credit.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if an expense qualifies for ITC?"
+            description="We review ITC claims, set up GSTR-2B reconciliation processes, and handle GST notices arising from blocked or ineligible credit."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

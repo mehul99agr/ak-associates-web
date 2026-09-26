@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function GSTAuditApplicabilityBlog() {
   return (
@@ -84,7 +83,7 @@ export default function GSTAuditApplicabilityBlog() {
                 GST Audit: Applicability &amp; What Auditors Check
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 22, 2026</span>
+                <span>July 21, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -146,14 +145,13 @@ export default function GSTAuditApplicabilityBlog() {
                 <p>If you are approaching the Rs 5 crore threshold, have received an ADT-01 notice, or simply want your monthly filings reconciled before year-end so GSTR-9C is a formality rather than a scramble, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> can take this off your plate.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Received a GST audit notice, or approaching the Rs 5 crore threshold?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle GSTR-9C reconciliation, respond to Section 65 audit notices, and reconcile ITC and turnover ahead of year-end.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20GST%20audit%20or%20GSTR-9C." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Received a GST audit notice, or approaching the Rs 5 crore threshold?"
+            description="We handle GSTR-9C reconciliation, respond to Section 65 audit notices, and reconcile ITC and turnover ahead of year-end."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20GST%20audit%20or%20GSTR-9C."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

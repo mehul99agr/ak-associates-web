@@ -190,7 +190,7 @@ export default function CompanyIncorporationPage() {
             </p>
             <div className="hero-cta">
               <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
-                className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: 800 }}>
+                className="btn" style={{ background: 'var(--white)', color: 'var(--primary)', fontWeight: 800 }}>
                 Book Free Advisory Call
               </a>
               <Link href="/tools/incorporation-wizard" className="btn btn-secondary">
@@ -275,7 +275,7 @@ export default function CompanyIncorporationPage() {
                 'INC-20A (commencement declaration) guidance',
               ].map((item) => (
                 <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '0.75rem 0', borderBottom: '1px solid var(--border)' }}>
-                  <span style={{ color: '#10b981', fontWeight: 800, flexShrink: 0, marginTop: '1px' }}>✓</span>
+                  <span style={{ color: 'var(--success)', fontWeight: 800, flexShrink: 0, marginTop: '1px' }}>✓</span>
                   <span style={{ color: 'var(--text-main)', fontSize: '0.95rem' }}>{item}</span>
                 </div>
               ))}
@@ -293,7 +293,7 @@ export default function CompanyIncorporationPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '2rem' }}>
               {steps.map((s) => (
                 <div key={s.n} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
-                  <div style={{ background: 'var(--primary)', color: '#fff', borderRadius: '8px', padding: '0.5rem 0.75rem', fontWeight: 800, fontSize: '1rem', flexShrink: 0 }}>{s.n}</div>
+                  <div style={{ background: 'var(--primary)', color: 'var(--white)', borderRadius: '8px', padding: '0.5rem 0.75rem', fontWeight: 800, fontSize: '1rem', flexShrink: 0 }}>{s.n}</div>
                   <div>
                     <h3 style={{ fontSize: '1.05rem', color: 'var(--primary)', marginBottom: '0.4rem' }}>{s.title}</h3>
                     <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.6 }}>{s.desc}</p>
@@ -361,14 +361,14 @@ export default function CompanyIncorporationPage() {
         {/* CTA */}
         <section style={{ background: 'var(--primary)', padding: '5rem 0' }}>
           <div className="container" style={{ textAlign: 'center', maxWidth: '660px' }}>
-            <h2 style={{ color: '#fff', marginBottom: '1rem' }}>
+            <h2 style={{ color: 'var(--white)', marginBottom: '1rem' }}>
               Ready to Incorporate?
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', marginBottom: '2.5rem', lineHeight: 1.7 }}>
               Book a free 20-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote: no surprises.
             </p>
             <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
-              className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: 800 }}>
+              className="btn" style={{ background: 'var(--white)', color: 'var(--primary)', fontWeight: 800 }}>
               Book Free Advisory Call
             </a>
           </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function IncomeTaxSlabsFY202627Blog() {
   return (
@@ -158,14 +157,12 @@ export default function IncomeTaxSlabsFY202627Blog() {
                 <p>It is worth being explicit that Budget 2026 left both slab structures untouched from the prior year. If you were filing under a particular regime for FY 2025-26 and your income situation is largely similar this year, the same regime is likely to remain optimal, though it is still worth re-checking if your deduction profile has changed; for example, a new home loan, a marriage, or a jump in salary that changes which slab you land in.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure which regime saves you more?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We run both calculations against your actual income, deductions, and investments before you file, so the choice is based on numbers, not guesswork.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure which regime saves you more?"
+            description="We run both calculations against your actual income, deductions, and investments before you file, so the choice is based on numbers, not guesswork."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

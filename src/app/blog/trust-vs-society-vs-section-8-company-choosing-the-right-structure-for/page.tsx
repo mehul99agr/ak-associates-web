@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function TrustVsSocietyVsSection8Blog() {
   return (
@@ -84,7 +83,7 @@ export default function TrustVsSocietyVsSection8Blog() {
                 Trust vs Society vs Section 8 Company: Choosing the Right Structure for an NGO
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 9, 2026</span>
+                <span>September 9, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -133,14 +132,12 @@ export default function TrustVsSocietyVsSection8Blog() {
                 <p>There is no structure that is objectively superior; the right call depends on scale ambitions, funder expectations, and how much administrative overhead the founding team can realistically sustain year after year. Getting this decision right at the outset avoids the more complicated path of converting structures later, once assets, registrations, and donor relationships are already in place.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Setting up a nonprofit and unsure which structure fits?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders choose between a Trust, Society, or Section 8 Company and handle the registration, 12A/80G, and FCRA process end to end.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Setting up a nonprofit and unsure which structure fits?"
+            description="We help founders choose between a Trust, Society, or Section 8 Company and handle the registration, 12A/80G, and FCRA process end to end."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

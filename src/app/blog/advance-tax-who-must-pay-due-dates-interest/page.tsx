@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function AdvanceTaxBlog() {
   return (
@@ -147,14 +146,13 @@ export default function AdvanceTaxBlog() {
                 <p>Estimating the right amount at each instalment is where most errors creep in, particularly for anyone with variable or lumpy income through the year. Our <Link href="/tax-calculator" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax calculator</Link> can help build a working estimate, and we regularly help clients set up a quarterly advance tax review so instalments are calculated against actual year-to-date income rather than a guess made once in June.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help estimating your advance tax instalments?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help individuals, freelancers, and businesses calculate quarterly advance tax accurately and avoid unnecessary 234B/234C interest.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20calculating%20my%20advance%20tax." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help estimating your advance tax instalments?"
+            description="We help individuals, freelancers, and businesses calculate quarterly advance tax accurately and avoid unnecessary 234B/234C interest."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20calculating%20my%20advance%20tax."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

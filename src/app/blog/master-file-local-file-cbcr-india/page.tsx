@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,9 +44,8 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.9rem' }
-const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
+const thStyle: React.CSSProperties = { background: 'var(--primary)', color: 'var(--white)', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
 const tdStyle: React.CSSProperties = { padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
 const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surface)' }
 
@@ -141,14 +140,12 @@ export default function MasterFileLocalFileCbCRBlog() {
               <p>Build a group compliance calendar. In the first quarter after year-end, obtain the final intercompany trial balance, agreements, and foreign-entity confirmations. By mid-year, complete benchmarking and Local File work. Get the Master File and CbCR status from group headquarters early enough to identify Indian filing requirements, then finalise Form 3CEB, Form 3CEAA, and any Form 3CEAC/3CEAD filings before their deadlines. Maintain one transaction register showing each associated enterprise, transaction type, amount, agreement, withholding tax position, GST treatment, TP method, and supporting document location; this reduces both filing risk and assessment risk.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Not sure which documentation tier applies to you?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We assess your group structure and transaction values to determine your exact Form 3CEB, Master File, and CbCR obligations; then prepare the documentation.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Not sure which documentation tier applies to you?"
+            description="We assess your group structure and transaction values to determine your exact Form 3CEB, Master File, and CbCR obligations; then prepare the documentation."
+            secondaryLabel="Transfer Pricing Services"
+            secondaryHref="/transfer-pricing"
+          />
 
             <FaqSection faqs={faqs} />
 

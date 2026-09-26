@@ -95,8 +95,8 @@ export default function NRIPropertyTDSCalculator() {
           <div className="card" style={{ maxWidth: '700px', margin: '0 auto' }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '30px' }}>
               <div>
-                <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Sale Value (₹)</label>
-                <input
+                <label htmlFor="tds-1" style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Sale Value (₹)</label>
+                <input id="tds-1"
                   type="number" value={saleValue || ''} onChange={(e) => setSaleValue(Number(e.target.value))}
                   placeholder="e.g. 15000000"
                   style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
@@ -104,8 +104,8 @@ export default function NRIPropertyTDSCalculator() {
               </div>
 
               <div>
-                <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Holding Period</label>
-                <select
+                <label htmlFor="tds-2" style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Holding Period</label>
+                <select id="tds-2"
                   value={holdingPeriod}
                   onChange={(e) => setHoldingPeriod(e.target.value as 'ltcg' | 'stcg')}
                   style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: 'var(--bg-card)', color: 'var(--text-main)' }}
@@ -119,7 +119,7 @@ export default function NRIPropertyTDSCalculator() {
             <button className="btn btn-primary" onClick={calculate} style={{ width: '100%' }}>Calculate TDS</button>
 
             {result && (
-              <div style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
+              <div role="status" style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                   <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Base TDS ({(result.baseRate * 100).toFixed(1)}%)</span>
                   <span style={{ fontWeight: 700 }}>₹{Math.round(result.tdsBase).toLocaleString('en-IN')}</span>

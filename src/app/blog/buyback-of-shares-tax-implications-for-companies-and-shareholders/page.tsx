@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -69,7 +69,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function BuybackOfSharesTaxBlog() {
   return (
@@ -136,14 +135,12 @@ export default function BuybackOfSharesTaxBlog() {
                 <p>With the shift back to capital-gains treatment from April 1, 2026, a buyback is closer to being a genuinely tax-efficient route for ordinary shareholders again, since only the gain is taxed rather than the full proceeds. But this no longer applies uniformly: promoters face the new Special Additional Tax on top of the capital-gains number, and the exact trigger for that tax needs confirming case by case. Companies should model the after-tax outcome separately for promoter and non-promoter shareholders, factoring in each shareholder&apos;s holding period and whether the promoter-specific tax applies to their participation, rather than assuming either the old deemed-dividend numbers or a blanket capital-gains rate for everyone. For closely held companies weighing a buyback as part of a broader promoter exit or capital restructuring, this is worth modelling alongside our guidance on <Link href="/blog/startup-valuation-methods-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup valuation</Link> and cap table planning.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Planning a share buyback or a shareholder exit?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We model the after-tax outcome for the company and each class of shareholder before a buyback is finalised.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Planning a share buyback or a shareholder exit?"
+            description="We model the after-tax outcome for the company and each class of shareholder before a buyback is finalised."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

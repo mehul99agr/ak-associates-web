@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -43,7 +43,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function UsLlcComplianceCalendarBlog() {
   return (
@@ -92,14 +91,12 @@ export default function UsLlcComplianceCalendarBlog() {
               <p>The practical approach is to build a single calendar at formation covering the LLC's specific annual report/franchise tax deadline, registered agent renewal date, and quarterly estimated tax dates, and to revisit it whenever the entity's structure or ownership changes, since some triggers, such as an ownership change, can create new filing obligations outside the standard annual cycle.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need help staying on top of your US LLC's compliance calendar?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We track annual filings, registered agent renewals, and tax deadlines for founders running US entities from India.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/offshore-accounting" className="btn btn-outline">Offshore Accounting Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need help staying on top of your US LLC's compliance calendar?"
+            description="We track annual filings, registered agent renewals, and tax deadlines for founders running US entities from India."
+            secondaryLabel="Offshore Accounting Services"
+            secondaryHref="/offshore-accounting"
+          />
 
             <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function RelatedPartyTransactionsBlog() {
   return (
@@ -83,7 +82,7 @@ export default function RelatedPartyTransactionsBlog() {
                 Related Party Transactions Under Companies Act: Disclosure &amp; Approval
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 1, 2026</span>
+                <span>August 29, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -130,14 +129,12 @@ export default function RelatedPartyTransactionsBlog() {
                 <p>The practical discipline that avoids most disputes: flag any transaction with a director, KMP, their relatives, or a related entity before it is signed, not after, route it through a board resolution with the interested director recused, check it against the Rule 15(3) thresholds for shareholder approval, and make sure it lands correctly in that year's AOC-2. Getting related party approvals right is also one of the first things reviewed in <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>fundraising due diligence</Link>.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Structuring a related party transaction?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review related party arrangements against Section 188, prepare board and shareholder resolutions, and file Form AOC-2 as part of your annual compliance.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Structuring a related party transaction?"
+            description="We review related party arrangements against Section 188, prepare board and shareholder resolutions, and file Form AOC-2 as part of your annual compliance."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

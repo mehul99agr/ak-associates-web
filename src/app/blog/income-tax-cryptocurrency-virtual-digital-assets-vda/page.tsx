@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function CryptoVDATaxBlog() {
   return (
@@ -157,14 +156,13 @@ export default function CryptoVDATaxBlog() {
                 <p>If you have crypto or NFT transactions to report this year, or are unsure how staking, mining, or an international exchange account fits into this framework, our team can review your transaction history and prepare an accurate Schedule VDA computation before you file. For broader NRI-specific questions on foreign asset disclosure alongside crypto holdings, see our <Link href="/blog/schedule-fa-foreign-asset-disclosure-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Schedule FA guide</Link>.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help reporting crypto or VDA income correctly?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We reconcile exchange statements, compute Schedule VDA figures, and make sure your TDS credits are correctly claimed.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20crypto%20%2F%20VDA%20income%20tax%20filing." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help reporting crypto or VDA income correctly?"
+            description="We reconcile exchange statements, compute Schedule VDA figures, and make sure your TDS credits are correctly claimed."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20crypto%20%2F%20VDA%20income%20tax%20filing."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

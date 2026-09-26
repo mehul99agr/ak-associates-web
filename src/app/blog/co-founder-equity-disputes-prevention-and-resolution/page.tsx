@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -58,7 +58,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function CoFounderEquityDisputesBlog() {
   return (
@@ -121,14 +120,12 @@ export default function CoFounderEquityDisputesBlog() {
               <p>The practical takeaway is that the cost and speed of resolving a co-founder dispute is set almost entirely by decisions made before the dispute existed, not during it. A company with proper vesting and a well-drafted shareholders&apos; agreement can usually resolve a founder exit in weeks through a defined buyout mechanism; a company without either is often looking at months of negotiation with no agreed starting point for price or process.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Setting up founder equity, or already in a dispute?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders structure vesting schedules and shareholders&apos; agreements upfront, and advise on resolution mechanisms if a dispute has already started.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/startups" className="btn btn-outline">Startup Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Setting up founder equity, or already in a dispute?"
+            description="We help founders structure vesting schedules and shareholders&apos; agreements upfront, and advise on resolution mechanisms if a dispute has already started."
+            secondaryLabel="Startup Advisory"
+            secondaryHref="/startups"
+          />
 
             <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function UdyamRegistrationMSMEBlog() {
   return (
@@ -84,7 +83,7 @@ export default function UdyamRegistrationMSMEBlog() {
                 Udyam Registration for MSMEs: Process, Benefits &amp; Eligibility
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 12, 2026</span>
+                <span>September 4, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -141,14 +140,13 @@ export default function UdyamRegistrationMSMEBlog() {
                 <p>Udyam registration is not a one-time filing. Turnover and investment figures on the portal are expected to be updated periodically (linked to ITR and GST filings), and a business that crosses a classification threshold should reflect the change rather than continue operating under an outdated category. An inactive or outdated registration can jeopardise eligibility for schemes at the exact point a business needs them, such as when applying for a credit facility or bidding on a government tender.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with Udyam registration or MSME compliance?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle Udyam registration, classification checks, and ongoing MSME/statutory compliance for growing businesses.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Udyam%20MSME%20registration." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with Udyam registration or MSME compliance?"
+            description="We handle Udyam registration, classification checks, and ongoing MSME/statutory compliance for growing businesses."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Udyam%20MSME%20registration."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

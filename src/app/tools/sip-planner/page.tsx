@@ -77,10 +77,10 @@ export default function SIPPlanner() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '25px', marginBottom: '30px' }}>
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-                <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Monthly Investment</label>
+                <label htmlFor="sip-1" style={{ fontWeight: 700, color: 'var(--primary)' }}>Monthly Investment</label>
                 <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>₹{monthlyInvestment.toLocaleString('en-IN')}</span>
               </div>
-              <input 
+              <input id="sip-1" 
                 type="range" min="500" max="500000" step="500"
                 value={monthlyInvestment} onChange={(e) => setMonthlyInvestment(Number(e.target.value))}
                 style={{ width: '100%' }}
@@ -89,10 +89,10 @@ export default function SIPPlanner() {
             
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-                <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Expected Return Rate (p.a)</label>
+                <label htmlFor="sip-2" style={{ fontWeight: 700, color: 'var(--primary)' }}>Expected Return Rate (p.a)</label>
                 <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{expectedReturnRate}%</span>
               </div>
-              <input 
+              <input id="sip-2" 
                 type="range" min="1" max="30" step="0.5"
                 value={expectedReturnRate} onChange={(e) => setExpectedReturnRate(Number(e.target.value))}
                 style={{ width: '100%' }}
@@ -101,10 +101,10 @@ export default function SIPPlanner() {
 
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-                <label style={{ fontWeight: 700, color: 'var(--primary)' }}>Time Period</label>
+                <label htmlFor="sip-3" style={{ fontWeight: 700, color: 'var(--primary)' }}>Time Period</label>
                 <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{years} Years</span>
               </div>
-              <input 
+              <input id="sip-3" 
                 type="range" min="1" max="40" step="1"
                 value={years} onChange={(e) => setYears(Number(e.target.value))}
                 style={{ width: '100%' }}
@@ -115,14 +115,14 @@ export default function SIPPlanner() {
           <button className="btn btn-primary" onClick={calculateSIP} style={{ width: '100%' }}>Calculate Future Value</button>
 
           {result && (
-            <div style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
+            <div role="status" style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                 <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Total Investment</span>
                 <span style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--text-main)' }}>₹{Math.round(result.invested).toLocaleString('en-IN')}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid var(--border)' }}>
                 <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>Estimated Wealth Gain</span>
-                <span style={{ fontWeight: 700, fontSize: '1.2rem', color: '#10b981' }}>+ ₹{Math.round(result.wealth).toLocaleString('en-IN')}</span>
+                <span style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--success)' }}>+ ₹{Math.round(result.wealth).toLocaleString('en-IN')}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontWeight: 800, fontSize: '1.2rem', color: 'var(--primary)' }}>Total Future Value</span>

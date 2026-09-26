@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function SurveySection133ABlog() {
   return (
@@ -148,14 +147,13 @@ export default function SurveySection133ABlog() {
                 <p>A survey itself does not conclude a case; it generates material that the department can use in subsequent assessment or reassessment proceedings. Reviewing what was impounded, reconstructing any records that were taken, and preparing a considered response to whatever discrepancies were flagged are the priorities in the days that follow, rather than treating the survey as a closed chapter. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> cover both survey support and the assessment proceedings that can follow one.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Facing or anticipating an income tax survey?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help businesses understand what a survey can and cannot involve, and manage the assessment proceedings that follow.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20question%20about%20an%20income%20tax%20survey." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Facing or anticipating an income tax survey?"
+            description="We help businesses understand what a survey can and cannot involve, and manage the assessment proceedings that follow."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20question%20about%20an%20income%20tax%20survey."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

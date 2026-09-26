@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function SearchAndSeizureBlog() {
   return (
@@ -143,14 +142,13 @@ export default function SearchAndSeizureBlog() {
                 <p>A search is a legal process with defined steps, not an open-ended event, and the taxpayer's position at every later stage is shaped heavily by how carefully those steps were documented and objected to in real time. If you are facing a search, or have already been through one and are now dealing with the assessment that follows, involve a CA immediately rather than after the fact; the panchnama, the statements recorded, and the seized documents are the foundation the entire case is built on. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> cover search assessment support end to end.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Facing an income tax search or a post-search assessment?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help individuals and businesses navigate search proceedings, statement review, and the assessment that follows.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20an%20income%20tax%20search%2Fseizure%20matter." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Facing an income tax search or a post-search assessment?"
+            description="We help individuals and businesses navigate search proceedings, statement review, and the assessment that follows."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20an%20income%20tax%20search%2Fseizure%20matter."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -8,8 +8,8 @@ Next.js 15 website for **Agrawal Khandelwal & Associates LLP**, a CA firm based 
   Do NOT claim "5+ years" / 2019; the firm is ~3 years old. Conflicting age claims hurt
   both SEO trust and AI/GEO citation confidence.)
 - **Stack:** Next.js 15.5, React 19, TypeScript, CSS (no Tailwind)
-- **Fonts:** Montserrat + Open Sans via next/font/google
-- **Colors:** Navy `#0A2E5B` + Red `#D22B2B` — use CSS variables only, never hardcoded hex
+- **Fonts:** Montserrat (headings/UI) + Open Sans (body) + Cormorant Garamond (serif display: hero H1, section titles) via next/font/google
+- **Colors:** Navy `#0A2E5B` + Red `#D22B2B` — use CSS variables only, never hardcoded hex. Tokens in `globals.css` include `--white`, `--success`, `--warning`, `--danger` (+ `-light` variants); use them instead of `#fff`/`#10b981` etc. (`opengraph-image.tsx` is the only exception, it can't use CSS vars)
 - **GA4 ID:** G-41NNQG654M (already wired in layout.tsx)
 
 ## Verified Firm Stats — Do Not Invent Numbers
@@ -198,7 +198,7 @@ src/app/
   leftovers aging out. 308 redirect verified live and correct. No action needed;
   they drop off as Google recrawls.
 - Takeaway: technical SEO is healthy. The lever now is content + local authority,
-  i.e. the two pending items below (Google reviews, low-competition blog content).
+  i.e. the pending items below (backlinks, low-competition blog content).
 
 **Work shipped (Jun 4, 2026 — commit af13387, live + verified):**
 - Jun 4 GSC export confirmed the diagnosis above and showed one regression:
@@ -719,10 +719,7 @@ the GEO-specific levers are entity consistency, machine-readable facts, authorit
 - IMPORTANT: only PUBLIC profile URLs work in `sameAs` — the seller/dashboard login
   URLs (seller.indiamart.com, business.justdial.com, etc.) are NOT usable.
 
-**Done (aggregateRating):**
-- `aggregateRating` schema live on layout.tsx, ca-in-nashik, and ca-in-sillod:
-  ratingValue 5.0, reviewCount 13 (GBP has 13+ reviews as of Jul 2026 — update this
-  number periodically as more reviews come in, all 3 files must stay in sync).
+**Removed (Sep 26, 2026):** `aggregateRating` schema and the Google reviews block were removed site-wide at the user's request (see Front-End Audit).
 
 **Done (Aug 8, 2026 — schema audit + Knowledge Hub):**
 - Ran a full site-wide JSON-LD audit: FAQPage/Person/AccountingService schema was already far
@@ -835,11 +832,47 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   multi-session effort if ever requested.
 
 ## Key Decisions Made
-- No dark/light toggle — removed, dark theme only
+- No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
+- Consultations stay FREE. Do not add paid booking or payment flows (user decision, Sep 26, 2026)
+- Homepage "Global Reach" pins (Mumbai/Bangalore/Delhi) and the Bangalore/Mumbai startup copy are KEPT on purpose: the user confirmed most clients are in those cities (Sep 26, 2026). Do not remove them as unverified
 - No em dashes anywhere on the site — use hyphens
 - Services dropdown in navbar links to individual service pages
 - Blog [slug] page uses `dangerouslySetInnerHTML` for HTML content (for proper h2/ul rendering)
 - Grid columns: `minmax(min(100%, 340px), 1fr)` pattern throughout
+
+## Front-End Audit (Sep 26, 2026 - actioned)
+Full audit done in a real browser (375px checks via same-origin iframe, production build) plus
+code review. The Sep 25 Opus review's leads were verified and fixed. What changed:
+- **Lead capture:** `ContactClickTracker.tsx` (site-wide `contact_click` GA4 event for call /
+  WhatsApp / email / booking links, `TrackedLink` marks its own with `data-tracked` to avoid
+  double counting); `tools/ResultCTA.tsx` under the NRI TDS, capital gains and SIP results;
+  `PostCTA` now used by all blog posts (213 hand-copied CTA blocks converted, 6 posts that had
+  none got one). Homepage hero rewritten with NRI / Founder / Business path cards.
+  Contact FORM intentionally not built (user skipped it). Mark `contact_click` as a GA4 key event.
+- **Cookie banner** no longer covers the mobile action bar (`.cookie-banner` sits above it).
+  GA only loads after consent, so declined visitors are not tracked.
+- **Google reviews removed completely** (user decision): deleted `GoogleReviews.tsx`, the
+  homepage block, and the `aggregateRating` schema in layout.tsx / ca-in-nashik / ca-in-sillod
+  (schema reviews with no visible reviews on the page is a Google policy risk). Do not re-add
+  the `reviewCount` sync task; it no longer exists.
+- **Accessibility:** tool labels linked (`htmlFor`/`id`), `role="status"` on tool results,
+  skip-to-content link, mobile menu (Escape, focus trap, focus-in, aria-expanded/controls,
+  scrolls when Services accordion is open), visible `:focus-visible` on inputs, contrast fixes
+  (`--text-muted` #5b6472, `--footer-text-dim` #7c8ba1, both >= 4.5:1), footer tap targets.
+- **Blog index (`BlogGrid.tsx`):** search box, topic filter as `aria-pressed` buttons (was a
+  tablist with no panels), state mirrored to `?topic=&q=`, cards use `content-visibility`, link
+  text is "Read guide: <title>" for screen readers. All 222 cards are still in the server HTML
+  on purpose (internal links stay crawlable), so there is no pagination.
+- **Blog dates:** `scripts/sync-blog-dates.py` rewrites each post's visible Published/Updated
+  text from its `datePublished`/`dateModified`. It found 36 posts whose visible date had drifted
+  from the schema. Run it (or `--check`) after adding or editing posts.
+- **Cleanup:** broken internal links, em dashes, `--text-heading` and `--white` (was used but
+  undefined), hardcoded hex replaced by tokens, `BOOKING_LINK` constant used in Navbar/page,
+  footer "About Us" -> /about, team photos recompressed (360KB -> 115KB), footer logo `sizes`.
+- **Known/deferred:** ~225 blog `page.tsx` files are still individual files with inline styles
+  (CTA and FAQ are shared components now, the article body markup is not); `TLDRBox.tsx` still
+  unused. CSP (`next.config.js`) blocks external form endpoints and payment scripts, so update
+  it before adding any form/embed. Real-phone rendering has not been tested.
 
 ## What Needs to Happen Next
 1. Build backlinks — 1 on record as of Jun 22 export, now 2 after the Jul 8 TaxGuru guest
@@ -860,5 +893,4 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 4. `/offshore-accounting` has been flat at ~pos 28 since Jun 4 despite the content
    rewrite — more on-page content isn't moving it; treat as an authority/backlink
    problem, not a content-depth problem.
-5. Keep `reviewCount` in aggregateRating schema (layout.tsx, ca-in-nashik, ca-in-sillod)
-   in sync with actual GBP review count as new reviews come in.
+5. (Removed) aggregateRating/reviewCount schema no longer exists; nothing to keep in sync.

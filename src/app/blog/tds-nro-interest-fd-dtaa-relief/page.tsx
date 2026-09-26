@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -30,7 +30,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function TDSNROInterestBlog() {
   return (
@@ -74,10 +73,10 @@ export default function TDSNROInterestBlog() {
               <div style={{ overflowX: 'auto' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.95rem' }}>
                   <thead><tr>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Country</th>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Domestic Rate</th>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>DTAA Rate</th>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Annual Saving on Rs 50L FD @ 7%</th>
+                    <th style={{ background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Country</th>
+                    <th style={{ background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Domestic Rate</th>
+                    <th style={{ background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>DTAA Rate</th>
+                    <th style={{ background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Annual Saving on Rs 50L FD @ 7%</th>
                   </tr></thead>
                   <tbody>
                     {[
@@ -121,14 +120,12 @@ export default function TDSNROInterestBlog() {
               <p>After-tax NRO interest can be <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriated abroad</Link> within the USD 1 million annual limit. The interest is classified as &quot;current income&quot; for repatriation purposes, requiring <Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 145/146</Link> compliance but generally straightforward once TDS certificates are in order.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Want to reduce TDS on your NRO deposits?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle TRC coordination, Form 10F filing, bank submissions, and ITR refund claims for NRO interest overpayment.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Want to reduce TDS on your NRO deposits?"
+            description="We handle TRC coordination, Form 10F filing, bank submissions, and ITR refund claims for NRO interest overpayment."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
             <FaqSection faqs={faqs} />
 

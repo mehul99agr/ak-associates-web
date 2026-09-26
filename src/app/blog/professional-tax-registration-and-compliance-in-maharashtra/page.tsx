@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function ProfessionalTaxMaharashtraBlog() {
   return (
@@ -131,14 +130,13 @@ export default function ProfessionalTaxMaharashtraBlog() {
                 <p>Professional tax registration typically sits alongside <Link href="/blog/shop-and-establishment-registration-state-wise-requirements" style={{ color: 'var(--primary)', fontWeight: 600 }}>Shop and Establishment registration</Link> and GST registration as one of the foundational compliance items for a Maharashtra business with employees. It is also worth tracking alongside payroll-related TDS obligations; see our guide on <Link href="/blog/tds-on-salary-section-192-form-24q" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on salary under Section 192</Link> for how professional tax deduction interacts with salary TDS computation, since professional tax paid is a deduction from salary income for the employee.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need PTEC or PTRC registration in Maharashtra?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle Professional Tax registration, payroll deductions, and deposit compliance for businesses in Nashik, Sillod, and across Maharashtra.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Professional%20Tax%20registration." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need PTEC or PTRC registration in Maharashtra?"
+            description="We handle Professional Tax registration, payroll deductions, and deposit compliance for businesses in Nashik, Sillod, and across Maharashtra."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Professional%20Tax%20registration."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

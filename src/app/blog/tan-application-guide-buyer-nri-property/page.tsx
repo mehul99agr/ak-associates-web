@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Do You Need a TAN to Buy Property From an NRI? (Updated for Oct 2026)' },
@@ -98,7 +98,6 @@ const faqLd = {
   ],
 }
 
-const bookingLink = BOOKING_LINK
 
 export default function TANApplicationGuideBlog() {
   return (
@@ -186,14 +185,13 @@ export default function TANApplicationGuideBlog() {
                 <p>Once the TAN is in hand, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to work out exactly how much to deduct and deposit. If the NRI seller expects their actual tax liability to be much lower than the statutory TDS, point them to our guide on the <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link>; it&apos;s the seller&apos;s responsibility to apply, but buyers benefit from a smoother transaction when it&apos;s in place before closing.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Buying property from an NRI seller?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help buyers with TAN registration, TDS calculation, and Form 27Q filing so the transaction stays compliant from day one.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20TAN%20and%20TDS%20for%20buying%20property%20from%20an%20NRI." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Buying property from an NRI seller?"
+            description="We help buyers with TAN registration, TDS calculation, and Form 27Q filing so the transaction stays compliant from day one."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20TAN%20and%20TDS%20for%20buying%20property%20from%20an%20NRI."
+            secondaryExternal
+          />
 
               <div style={{ marginTop: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>

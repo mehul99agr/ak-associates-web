@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function ProsecutionIncomeTaxActBlog() {
   return (
@@ -142,14 +141,13 @@ export default function ProsecutionIncomeTaxActBlog() {
                 <p>Prosecution under the Income Tax Act is real, but it is also narrower and more deliberate a remedy than most taxpayers assume, reserved for willful, deliberate conduct rather than honest mistakes or cash-flow-driven delays. The practical protection is straightforward: file on time, keep clean records, respond to notices, and correct errors voluntarily the moment they are found. Where a genuine prosecution risk exists, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> include evaluating compounding options and coordinating with legal counsel.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Facing a prosecution notice or a serious scrutiny escalation?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help evaluate exposure, prepare responses, and coordinate compounding applications where prosecution risk is live.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20an%20income%20tax%20prosecution%20or%20scrutiny%20matter." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Facing a prosecution notice or a serious scrutiny escalation?"
+            description="We help evaluate exposure, prepare responses, and coordinate compounding applications where prosecution risk is live."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20an%20income%20tax%20prosecution%20or%20scrutiny%20matter."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

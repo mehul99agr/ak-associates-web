@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function ImportExportCodeIECBlog() {
   return (
@@ -127,14 +126,13 @@ export default function ImportExportCodeIECBlog() {
                 <p>Apply for the IEC once, correctly, against the right PAN; it will then last the life of the business. The recurring task to actually track is the annual April-June update, since that is the step most businesses forget, precisely because the code itself no longer needs periodic renewal. Set a calendar reminder each year rather than waiting to discover a deactivated code when a shipment or payment is already pending.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Setting up import or export operations?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle IEC registration, the annual DGFT update, and the surrounding compliance for businesses trading across borders.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20IEC%20registration." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Setting up import or export operations?"
+            description="We handle IEC registration, the annual DGFT update, and the surrounding compliance for businesses trading across borders."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20IEC%20registration."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

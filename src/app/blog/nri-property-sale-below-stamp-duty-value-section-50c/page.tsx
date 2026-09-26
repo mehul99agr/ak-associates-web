@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: FaqPair[] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function Section50CNriBlog() {
   return (
@@ -92,14 +91,12 @@ export default function Section50CNriBlog() {
               <p>A subtlety that catches people out: TDS under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2) (earlier Section 195)</Link> on an NRI property sale is generally computed on the <strong>actual sale consideration</strong> stated in the agreement; not the higher stamp duty value used for the Section 78 capital gains computation. This means the TDS deducted at the point of sale can understate the eventual tax liability once the stamp duty value substitution is applied at return-filing time, leaving a balance payable rather than a refund position; the opposite of the usual NRI property sale pattern, where TDS on gross consideration typically over-deducts relative to the actual gain. Getting an accurate estimate of both numbers before the sale closes, rather than after, is what lets an NRI plan for this rather than be surprised by it when filing the ITR.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Selling property below the stamp duty value?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We estimate the Section 78 impact before you sign the sale deed, and help with a Valuation Officer reference where the circle rate looks overstated.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Selling property below the stamp duty value?"
+            description="We estimate the Section 78 impact before you sign the sale deed, and help with a Valuation Officer reference where the circle rate looks overstated."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
             <FaqSection faqs={faqs} />
 

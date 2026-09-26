@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function BooksOfAccountsSection44AABlog() {
   return (
@@ -85,7 +84,7 @@ export default function BooksOfAccountsSection44AABlog() {
                 Books of Accounts Required Under Section 44AA
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 7, 2026</span>
+                <span>August 15, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -160,14 +159,13 @@ export default function BooksOfAccountsSection44AABlog() {
                 <p>Getting the Section 44AA classification right at the start of a financial year avoids both the penalty exposure and the far more disruptive experience of trying to reconstruct a full year of books under time pressure once a notice or audit requirement lands. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>accounting and compliance services</Link> include setting up and maintaining compliant books for businesses and professionals across both thresholds.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if you need to maintain formal books?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We assess your Section 44AA classification, set up compliant books, and keep them audit-ready year-round.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20I%20need%20to%20maintain%20books%20of%20accounts." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if you need to maintain formal books?"
+            description="We assess your Section 44AA classification, set up compliant books, and keep them audit-ready year-round."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20I%20need%20to%20maintain%20books%20of%20accounts."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

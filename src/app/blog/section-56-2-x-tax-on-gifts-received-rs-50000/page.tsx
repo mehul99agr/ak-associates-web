@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function GiftTaxSection56Blog() {
   return (
@@ -178,14 +177,13 @@ export default function GiftTaxSection56Blog() {
                 <p>If you have received a significant gift this year, are planning to gift property or shares to a family member, or are unsure whether a specific transaction falls within an exemption, our team can review the facts and confirm the tax position before you file. For broader estate and succession planning questions, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>advisory services</Link> page has more on how we can help.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Received or planning to give a large gift?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help you confirm whether a gift is exempt, correctly value gifted property, and report it accurately in your ITR.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20understanding%20gift%20tax%20under%20Section%2056(2)(x)." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Received or planning to give a large gift?"
+            description="We help you confirm whether a gift is exempt, correctly value gifted property, and report it accurately in your ITR."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20understanding%20gift%20tax%20under%20Section%2056(2)(x)."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

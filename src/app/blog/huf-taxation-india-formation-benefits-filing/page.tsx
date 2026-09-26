@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: FaqPair[] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function HUFTaxationBlog() {
   return (
@@ -84,7 +83,7 @@ export default function HUFTaxationBlog() {
                 HUF Taxation in India: Formation, Benefits &amp; Filing
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 25, 2026</span>
+                <span>July 26, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -141,14 +140,13 @@ export default function HUFTaxationBlog() {
                 <p>Whether an HUF makes sense for your family depends on the size and nature of the income involved, and it is worth modelling the actual tax saving before incurring the cost of forming one. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> cover HUF formation, corpus structuring, and ongoing HUF return filing.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Considering an HUF for your family?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help families evaluate whether an HUF actually saves tax in their specific situation, then handle deed drafting, PAN application, and annual filing if it does.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20more%20about%20forming%20an%20HUF." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Considering an HUF for your family?"
+            description="We help families evaluate whether an HUF actually saves tax in their specific situation, then handle deed drafting, PAN application, and annual filing if it does."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20more%20about%20forming%20an%20HUF."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

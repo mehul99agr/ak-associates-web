@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function WhoNeedsTaxAuditBlog() {
   return (
@@ -105,14 +104,12 @@ export default function WhoNeedsTaxAuditBlog() {
               <p>For the detailed technical breakdown of the current turnover figures behind Step 2, and how the cash-transaction-linked higher threshold is calculated, see our <Link href="/blog/tax-audit-section-44ab-turnover-limits-fy-2026-27" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 44AB turnover limits guide</Link>. Once you know an audit applies, our <Link href="/blog/tax-audit-due-date-penalty-for-delay" style={{ color: 'var(--primary)', fontWeight: 600 }}>due date and penalty guide</Link> covers the filing deadline and what happens if it is missed, and our <Link href="/blog/tax-audit-vs-statutory-audit-vs-gst-audit" style={{ color: 'var(--primary)', fontWeight: 600 }}>audit types comparison</Link> explains how a tax audit differs from a statutory or GST audit your business might separately need.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Not sure if your business needs a tax audit this year?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We check your turnover, presumptive taxation eligibility, and prior-year filing history together before you commit to a return-filing position.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/services" className="btn btn-outline">Our Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Not sure if your business needs a tax audit this year?"
+            description="We check your turnover, presumptive taxation eligibility, and prior-year filing history together before you commit to a return-filing position."
+            secondaryLabel="Our Services"
+            secondaryHref="/services"
+          />
 
             <FaqSection faqs={faqs} />
 

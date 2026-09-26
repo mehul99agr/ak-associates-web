@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,9 +44,8 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.9rem' }
-const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
+const thStyle: React.CSSProperties = { background: 'var(--primary)', color: 'var(--white)', padding: '0.6rem 0.75rem', textAlign: 'left', fontWeight: 700 }
 const tdStyle: React.CSSProperties = { padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-main)', verticalAlign: 'top' }
 const tdAltStyle: React.CSSProperties = { ...tdStyle, background: 'var(--bg-surface)' }
 
@@ -133,14 +132,12 @@ export default function TPMethodsBlog() {
               <p>For each material transaction, maintain a concise method-selection memorandum covering the transaction and contractual terms, functions/assets/risks of each party, why the selected method is the most appropriate, why alternatives are less reliable, the search strategy and accept/reject rationale for comparables, and the final arm&apos;s length conclusion; this memorandum is often the first document requested if a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link> is opened. Where international transactions exceed <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Rs 1 crore, Form 3CEB is required</Link> and due October 31; the underlying analysis should not be prepared only after a notice arrives.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need help selecting and defending your TP method?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We prepare method-selection memoranda, benchmarking studies, and Form 3CEB documentation for Indian companies with cross-border related-party transactions.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need help selecting and defending your TP method?"
+            description="We prepare method-selection memoranda, benchmarking studies, and Form 3CEB documentation for Indian companies with cross-border related-party transactions."
+            secondaryLabel="Transfer Pricing Services"
+            secondaryHref="/transfer-pricing"
+          />
 
             <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function EsopPoolSizingBlog() {
   return (
@@ -139,14 +138,12 @@ export default function EsopPoolSizingBlog() {
                 <p>Size the pool against an actual hiring plan rather than accepting a round number an investor proposes without scrutiny. Always check whether a proposed pool is structured pre-money or post-money, since that single mechanical choice determines who pays for it. Expect and plan for refreshes at future rounds rather than being caught off guard. And treat pool expansion as a governed corporate action requiring Board and shareholder approval, sequenced with the rest of a financing round&apos;s closing documents, not an afterthought.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Structuring or negotiating your ESOP pool for an upcoming round?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders model pool dilution, review term sheet pool-creation mechanics, and handle the Board and shareholder approvals for pool expansion.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/startups" className="btn btn-outline">Startup Advisory</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Structuring or negotiating your ESOP pool for an upcoming round?"
+            description="We help founders model pool dilution, review term sheet pool-creation mechanics, and handle the Board and shareholder approvals for pool expansion."
+            secondaryLabel="Startup Advisory"
+            secondaryHref="/startups"
+          />
 
               <FaqSection faqs={faqs} />
 

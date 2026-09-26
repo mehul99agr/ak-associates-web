@@ -72,13 +72,13 @@ const thresholds = [
     type: 'Detailed TP Documentation',
     threshold: '₹1 crore+ (same as Form 3CEB)',
     requirement: 'Rule 10D contemporaneous documentation',
-    color: '#f59e0b',
+    color: 'var(--warning)',
   },
   {
     type: 'Master File required',
     threshold: '₹500 crore+ group revenue',
     requirement: 'Form 3CEAA; Master File',
-    color: '#ef4444',
+    color: 'var(--danger)',
   },
   {
     type: 'CbCR (Country-by-Country)',
@@ -331,8 +331,8 @@ export default function TransferPricingPage() {
         {/* CTA */}
         <section className="section">
           <div className="container">
-            <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Need Transfer Pricing Documentation?</h2>
+            <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
+              <h2 style={{ color: 'var(--white)', marginBottom: '1rem' }}>Need Transfer Pricing Documentation?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 Don't wait for a notice. TP documentation must be in place before the due date; and should be updated every year. Contact us to get started.
               </p>

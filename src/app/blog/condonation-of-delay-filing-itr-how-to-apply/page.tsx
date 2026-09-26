@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function CondonationOfDelayBlog() {
   return (
@@ -85,7 +84,7 @@ export default function CondonationOfDelayBlog() {
                 Condonation of Delay in Filing ITR: When & How to Apply
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 28, 2026</span>
+                <span>August 1, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -163,14 +162,13 @@ export default function CondonationOfDelayBlog() {
                 <p>Because the outcome hinges on how well the hardship is documented and framed, it is worth having a CA review the application before submission, especially for claims above the Rs 10 lakh threshold where the file goes to a more senior authority. If your situation instead involves a scrutiny or reassessment notice rather than a missed deadline, see our guide on <Link href="/blog/income-tax-notices-explained-143-1-143-2-148" style={{ color: 'var(--primary)', fontWeight: 600 }}>income tax notices under Sections 143(1), 143(2), and 148</Link>.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Missed your ITR deadline and need to claim a refund or loss?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help prepare and file condonation of delay applications with the right documentation for the relevant authority.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20missed%20my%20ITR%20deadline%20and%20need%20help%20with%20condonation%20of%20delay." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Missed your ITR deadline and need to claim a refund or loss?"
+            description="We help prepare and file condonation of delay applications with the right documentation for the relevant authority."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20missed%20my%20ITR%20deadline%20and%20need%20help%20with%20condonation%20of%20delay."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

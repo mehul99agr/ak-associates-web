@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -43,7 +43,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function Form5471Form5472Form8858Blog() {
   return (
@@ -89,14 +88,12 @@ export default function Form5471Form5472Form8858Blog() {
               <p>Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Given the increasing data-sharing between the IRS and FinCEN on beneficial ownership information, a founder should confirm which of these filings applies at the time the entity is set up, not discover it during an eventual audit.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Not sure which IRS information return applies to your entity?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders identify and file the correct foreign-ownership disclosures on time.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/offshore-accounting" className="btn btn-outline">Offshore Accounting Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Not sure which IRS information return applies to your entity?"
+            description="We help founders identify and file the correct foreign-ownership disclosures on time."
+            secondaryLabel="Offshore Accounting Services"
+            secondaryHref="/offshore-accounting"
+          />
 
             <FaqSection faqs={faqs} />
 

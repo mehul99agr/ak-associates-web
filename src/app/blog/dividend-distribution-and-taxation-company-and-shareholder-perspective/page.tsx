@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function DividendDistributionTaxationBlog() {
   return (
@@ -131,14 +130,12 @@ export default function DividendDistributionTaxationBlog() {
                 <p>For promoters and closely held companies, the shift to shareholder-level taxation changes the calculus around dividend versus other forms of extraction such as remuneration, rent, or buyback (which carries its own distinct tax treatment; see our related guide on <Link href="/blog/buyback-of-shares-tax-implications-for-companies-and-shareholders" style={{ color: 'var(--primary)', fontWeight: 600 }}>buyback of shares taxation</Link>). A shareholder already in the highest slab bracket bears a materially different effective tax cost on dividend income today than they would have under the old DDT-plus-exempt-dividend regime, and this is worth modelling before finalising a payout policy, particularly for family-owned companies with multiple shareholder tax profiles across generations.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Planning a dividend payout or reviewing shareholder tax exposure?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help companies structure payouts correctly and help shareholders, including NRIs, plan for dividend tax and TDS credit.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Planning a dividend payout or reviewing shareholder tax exposure?"
+            description="We help companies structure payouts correctly and help shareholders, including NRIs, plan for dividend tax and TDS credit."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

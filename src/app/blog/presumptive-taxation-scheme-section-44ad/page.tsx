@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function Section44ADBlog() {
   return (
@@ -164,14 +163,13 @@ export default function Section44ADBlog() {
                 <p>Presumptive taxation under 44AD works well when your actual profit margin is close to or above 6-8% of turnover, since you pay tax on the deemed amount regardless of your real profit, and it saves significant compliance effort. If your genuine margins are thin, well below these rates, opting for actual computation with proper books (and the tax audit it entails) may result in a lower tax outgo, though at a higher compliance cost. This is a judgment call best made with your CA reviewing your specific numbers, especially given the five-year lock-in consequence of getting it wrong.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if presumptive taxation suits your business?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help small businesses and traders compare 44AD against regular computation and file whichever route is genuinely more tax-efficient.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20Section%2044AD%20presumptive%20taxation%20suits%20my%20business." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if presumptive taxation suits your business?"
+            description="We help small businesses and traders compare 44AD against regular computation and file whichever route is genuinely more tax-efficient."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20Section%2044AD%20presumptive%20taxation%20suits%20my%20business."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

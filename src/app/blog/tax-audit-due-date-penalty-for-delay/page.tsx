@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -46,7 +46,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function TaxAuditDueDatePenaltyBlog() {
   return (
@@ -126,14 +125,13 @@ export default function TaxAuditDueDatePenaltyBlog() {
               <p>Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>audit and tax advisory services</Link> track the Section 44AB threshold, the statutory-audit-to-tax-audit handoff, and the portal acceptance step together, so the due date is never a surprise.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Running close to the tax audit deadline?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We prepare and file Form 3CA/3CB and Form 3CD, and track the portal acceptance step so nothing slips past the due date.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20my%20tax%20audit%20filing." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-              </div>
-            </div>
+            <PostCTA
+            heading="Running close to the tax audit deadline?"
+            description="We prepare and file Form 3CA/3CB and Form 3CD, and track the portal acceptance step so nothing slips past the due date."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20my%20tax%20audit%20filing."
+            secondaryExternal
+          />
 
             <FaqSection faqs={faqs} />
 

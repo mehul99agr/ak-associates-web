@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function XbrlFilingRequirementsBlog() {
   return (
@@ -133,14 +132,12 @@ export default function XbrlFilingRequirementsBlog() {
                 <p>The most common way a company gets caught out is a funding round or a strong revenue year that pushes it past the paid-up capital or turnover threshold for the first time, without anyone flagging that the XBRL requirement now applies alongside the standard filings. Because XBRL tagging takes materially longer to prepare correctly than a plain PDF filing, especially the first time a company does it, leaving it to the last few days before the 30-day AOC-4 deadline is a common and avoidable source of late-filing penalties.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure if your company needs to file in XBRL this year?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We check your applicability against the current thresholds, prepare the XBRL tagging, and manage the AOC-4 deadline end to end.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure if your company needs to file in XBRL this year?"
+            description="We check your applicability against the current thresholds, prepare the XBRL tagging, and manage the AOC-4 deadline end to end."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

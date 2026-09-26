@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function IndiaUAETPBlog() {
   return (
@@ -116,14 +115,12 @@ export default function IndiaUAETPBlog() {
               <p>The objective is not simply to meet two filing requirements; it is to ensure the group can explain, consistently in India and the UAE, where value is created and why each entity earns its return.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Have India-UAE related-party transactions to price?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We coordinate Indian transfer pricing documentation with UAE Corporate Tax compliance, drawing on our UAE Corporate Taxation-certified expertise.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Have India-UAE related-party transactions to price?"
+            description="We coordinate Indian transfer pricing documentation with UAE Corporate Tax compliance, drawing on our UAE Corporate Taxation-certified expertise."
+            secondaryLabel="UAE Tax Advisory"
+            secondaryHref="/uae-tax-advisory"
+          />
 
             <FaqSection faqs={faqs} />
 

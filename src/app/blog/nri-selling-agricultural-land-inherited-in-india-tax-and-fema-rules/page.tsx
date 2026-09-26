@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -45,7 +45,6 @@ const faqs: FaqPair[] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function NriSellingInheritedAgriLandBlog() {
   return (
@@ -137,14 +136,12 @@ export default function NriSellingInheritedAgriLandBlog() {
                 <p>Selling inherited agricultural land as an NRI is, in effect, three separate compliance questions stacked on top of each other: confirming the buyer is a resident Indian citizen (a FEMA question), determining whether the land is rural or urban and computing the capital gain accordingly if urban (an Income Tax Act question), and then routing TDS, tax settlement, and repatriation through the standard NRI property-sale machinery (a compliance-process question). Getting any one of the three wrong, selling to an ineligible buyer, misclassifying rural land as urban or vice versa, or skipping TDS documentation, creates problems that are considerably harder to unwind after the sale deed is registered than to resolve before it.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Selling agricultural land you inherited as an NRI?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We confirm rural/urban classification, compute capital gains on inherited property, handle Form 13 and TDS compliance, and manage NRO repatriation end to end.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Selling agricultural land you inherited as an NRI?"
+            description="We confirm rural/urban classification, compute capital gains on inherited property, handle Form 13 and TDS compliance, and manage NRO repatriation end to end."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
               <FaqSection faqs={faqs} />
 

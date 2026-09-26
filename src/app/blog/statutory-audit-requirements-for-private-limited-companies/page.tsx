@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function StatutoryAuditPrivateLimitedBlog() {
   return (
@@ -134,14 +133,12 @@ export default function StatutoryAuditPrivateLimitedBlog() {
                 <p>The most common mistake is treating statutory audit as something to think about only once the company is generating meaningful revenue. Because the requirement attaches from incorporation, the practical discipline is to appoint the first auditor within the 30-day window, maintain proper books from day one so the first audit isn&apos;t a scramble, and build the audit timeline into the same annual compliance calendar as ROC filings like AOC-4 and MGT-7. Our guide to <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual ROC filing</Link> covers how the audited financial statements feed directly into those filings.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need a statutory auditor or unsure if CARO applies to you?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle statutory audits for private limited companies of all sizes and help you get auditor appointment timelines right from incorporation.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need a statutory auditor or unsure if CARO applies to you?"
+            description="We handle statutory audits for private limited companies of all sizes and help you get auditor appointment timelines right from incorporation."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

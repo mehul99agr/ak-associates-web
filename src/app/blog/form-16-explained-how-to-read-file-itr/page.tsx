@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -45,7 +45,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function Form16ExplainedBlog() {
   return (
@@ -118,14 +117,12 @@ export default function Form16ExplainedBlog() {
               <p>Once you have your Form 16 reconciled against Form 26AS/AIS, the actual ITR filing is largely a matter of transposing verified figures correctly into the right schedule for your income type.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need help reconciling Form 16 and filing your ITR correctly?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review Form 16 against Form 26AS/AIS, sort out mismatches with employers, and file accurate returns for salaried clients every year.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/services" className="btn btn-outline">Explore Our Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need help reconciling Form 16 and filing your ITR correctly?"
+            description="We review Form 16 against Form 26AS/AIS, sort out mismatches with employers, and file accurate returns for salaried clients every year."
+            secondaryLabel="Explore Our Services"
+            secondaryHref="/services"
+          />
 
             <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function MinimumWagesActBlog() {
   return (
@@ -131,14 +130,12 @@ export default function MinimumWagesActBlog() {
                 <p>For most employers, the shift to the Code on Wages is an occasion to formalise what may have been an informal or state-specific process: map every work location and job category to its current applicable minimum wage notification, build a calendar for DA revision cycles, standardise wage registers and payslip formats to match the Rules, and assign clear ownership (HR or payroll, working with a compliance advisor) for tracking new state and central notifications as they are issued. This sits alongside the other components of a broader <Link href="/blog/payroll-compliance-checklist-for-growing-startups-in-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>payroll compliance checklist</Link>, and alongside statutory obligations like <Link href="/blog/gratuity-payment-rules-eligibility-and-tax-exemption-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>gratuity</Link> that also depend on accurate, well-documented wage records.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure your payroll is current on wage compliance?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help businesses map state-wise minimum wage rates, set up compliant wage registers, and stay current as the Code on Wages rules roll out.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure your payroll is current on wage compliance?"
+            description="We help businesses map state-wise minimum wage rates, set up compliant wage registers, and stay current as the Code on Wages rules roll out."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

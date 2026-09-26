@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -46,7 +46,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function PresumptiveTransportersBlog() {
   return (
@@ -121,14 +120,12 @@ export default function PresumptiveTransportersBlog() {
                 <p>A firm owns 6 goods vehicles through the full financial year: 2 heavy goods vehicles at 14 tonnes gross weight each, and 4 other goods vehicles. The heavy vehicles generate 2 x (14 x Rs 1,000 x 12) = Rs 3,36,000. The other vehicles generate 4 x (Rs 7,500 x 12) = Rs 3,60,000. Total presumptive income for the year is Rs 6,96,000, declared without maintaining detailed transport-wise books, subject to the firm separately claiming partner remuneration and interest within the limits the Act allows on a firm&apos;s presumptive income.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Running a transport or logistics fleet?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help transport operators evaluate Section 44AE eligibility, compute presumptive income correctly, and decide when regular books and audit make more sense.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Running a transport or logistics fleet?"
+            description="We help transport operators evaluate Section 44AE eligibility, compute presumptive income correctly, and decide when regular books and audit make more sense."
+            secondaryLabel="Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

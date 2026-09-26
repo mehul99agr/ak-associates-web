@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -62,7 +62,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function OciNriPioBlog() {
   return (
@@ -124,14 +123,12 @@ export default function OciNriPioBlog() {
                 <p>Because OCI, NRI, and the retired PIO label sit on different legal frameworks, the practical approach is to assess each relevant question separately rather than assuming one label answers all three: check FEMA residential status for account and property questions, check Income Tax Act residency for filing and tax rate questions, and treat OCI purely as the immigration/entry status it is. Anyone still holding an unconverted PIO card should prioritise converting to OCI, since PIO cards no longer function at the border. For NRIs and OCI holders navigating year-to-year residency changes, our <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR status guide for returning NRIs</Link> covers the transition period in detail.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure whether you are a resident or non-resident this year?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We assess FEMA and Income Tax Act residential status separately, advise on property and investment eligibility, and handle NRI/OCI tax filings.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure whether you are a resident or non-resident this year?"
+            description="We assess FEMA and Income Tax Act residential status separately, advise on property and investment eligibility, and handle NRI/OCI tax filings."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
               <FaqSection faqs={faqs} />
 

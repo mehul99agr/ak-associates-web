@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function FssaiRegistrationBlog() {
   return (
@@ -84,7 +83,7 @@ export default function FssaiRegistrationBlog() {
                 FSSAI Registration for Food Businesses: When Required
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 17, 2026</span>
+                <span>September 8, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -132,14 +131,13 @@ export default function FssaiRegistrationBlog() {
                 <p>FSSAI registration and licensing are not one-time events tied to when the business started; they track current turnover. A food business that begins on Basic Registration and later crosses the applicable ceiling must apply for a State License before continuing to operate at the higher turnover level, not retroactively after the fact. Businesses scaling fast, particularly cloud kitchens and packaged-food brands going from a single outlet to multi-city distribution, should build an FSSAI tier review into their annual compliance check rather than treating it as a set-and-forget registration, alongside other annual filings covered in our <Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration guide for startups</Link>.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Setting up or scaling a food business?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help food businesses identify the right FSSAI tier, prepare the application, and keep registrations current as turnover grows.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20FSSAI%20registration%20for%20my%20food%20business." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Setting up or scaling a food business?"
+            description="We help food businesses identify the right FSSAI tier, prepare the application, and keep registrations current as turnover grows."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20FSSAI%20registration%20for%20my%20food%20business."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

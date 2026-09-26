@@ -241,19 +241,19 @@ export default function NRITaxAdvisory() {
                   label: 'RNOR: New Rules from April 2026',
                   rule: '120+ days in India AND 365+ days over previous 4 years',
                   tax: 'Only Indian income taxable. Global income remains exempt for up to 3 years after returning.',
-                  color: '#f59e0b',
+                  color: 'var(--warning)',
                   highlight: true,
                 },
                 {
                   label: 'Deemed Resident',
                   rule: 'Indian income ₹15L+ and zero taxes paid in any foreign country',
                   tax: 'Treated as a full Indian resident even with 0 days spent in India.',
-                  color: '#ef4444',
+                  color: 'var(--danger)',
                 },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ borderTop: `4px solid ${item.color}`, position: 'relative' }}>
                   {item.highlight && (
-                    <div style={{ position: 'absolute', top: '-1px', right: '1.5rem', background: '#f59e0b', color: '#fff', fontSize: '0.7rem', fontWeight: 800, padding: '2px 10px', borderRadius: '0 0 6px 6px', letterSpacing: '0.5px' }}>NEW RULE</div>
+                    <div style={{ position: 'absolute', top: '-1px', right: '1.5rem', background: 'var(--warning)', color: 'var(--white)', fontSize: '0.7rem', fontWeight: 800, padding: '2px 10px', borderRadius: '0 0 6px 6px', letterSpacing: '0.5px' }}>NEW RULE</div>
                   )}
                   <div style={{ fontWeight: 800, color: item.color, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '0.75rem' }}>{item.label}</div>
                   <p style={{ fontWeight: 600, color: 'var(--text-main)', marginBottom: '0.75rem', fontSize: '0.95rem' }}>{item.rule}</p>
@@ -276,7 +276,7 @@ export default function NRITaxAdvisory() {
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
               <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '50%', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', flexShrink: 0 }}>⚡</div>
               <div style={{ flex: 1, minWidth: '280px' }}>
-                <div style={{ color: '#fff', fontWeight: 800, fontSize: '1.05rem', marginBottom: '0.5rem' }}>New Income Tax Act 2025: What Changed for NRIs (Effective April 1, 2026)</div>
+                <div style={{ color: 'var(--white)', fontWeight: 800, fontSize: '1.05rem', marginBottom: '0.5rem' }}>New Income Tax Act 2025: What Changed for NRIs (Effective April 1, 2026)</div>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '1rem', marginTop: '1rem' }}>
                   {[
                     { old: 'Form 15CA', new: 'Form 145', note: 'Filed before taxable foreign remittance' },
@@ -287,7 +287,7 @@ export default function NRITaxAdvisory() {
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
                         <span style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'line-through', fontSize: '0.9rem' }}>{change.old}</span>
                         <span style={{ color: 'rgba(255,255,255,0.6)' }}>→</span>
-                        <span style={{ color: '#86efac', fontWeight: 800, fontSize: '0.95rem' }}>{change.new}</span>
+                        <span style={{ color: 'var(--success-light)', fontWeight: 800, fontSize: '0.95rem' }}>{change.new}</span>
                       </div>
                       <div style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.82rem' }}>{change.note}</div>
                     </div>
@@ -385,8 +385,8 @@ export default function NRITaxAdvisory() {
         {/* CTA */}
         <section className="section bg-surface">
           <div className="container">
-            <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Get Your NRI Tax Situation Sorted</h2>
+            <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', color: 'var(--white)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
+              <h2 style={{ color: 'var(--white)', fontSize: '2rem', marginBottom: '1rem' }}>Get Your NRI Tax Situation Sorted</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '2rem', maxWidth: '560px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 We work with NRIs remotely across UAE, US, UK, Singapore, and Australia, with evening and weekend slots to match your time zone. One call to understand your situation: no hourly billing surprises.
               </p>

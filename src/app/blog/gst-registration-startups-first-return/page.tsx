@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function GSTRegistrationStartupsBlog() {
   return (
@@ -107,14 +106,12 @@ export default function GSTRegistrationStartupsBlog() {
               <p>GST is easier when treated as a monthly financial control rather than a filing deadline. Maintain a tax calendar, invoice checklist, vendor onboarding process, reconciliation tracker, and issue log. This matters for more than compliance; see our <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>fundraising due diligence checklist</Link>, since investors often compare GST returns against revenue in management accounts, bank collections, and audited financial statements. Also see our related guide on <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST for exporters</Link> if the startup sells internationally.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need help registering for GST or filing your first return?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle GST registration, GSTR-1/GSTR-3B filing, and monthly compliance for Indian startups from day one.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/startups" className="btn btn-outline">Startup Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need help registering for GST or filing your first return?"
+            description="We handle GST registration, GSTR-1/GSTR-3B filing, and monthly compliance for Indian startups from day one."
+            secondaryLabel="Startup Advisory"
+            secondaryHref="/startups"
+          />
 
             <FaqSection faqs={faqs} />
 

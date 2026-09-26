@@ -5,6 +5,12 @@
 
 :root {
   /* Brand Colors */
+  --white: #ffffff;
+  --success: #10b981;
+  --success-light: #86efac;
+  --warning: #f59e0b;
+  --warning-light: #fde68a;
+  --danger: #ef4444;
   --primary: #0A2E5B;
   --primary-light: #1e40af;
   --accent: #D22B2B;
@@ -19,7 +25,7 @@
   --text-heading: var(--primary);
   --text-main: #1f2937;
   --text-light: #6b7280;
-  --text-muted: #9ca3af;
+  --text-muted: #5b6472;
 
   /* Backgrounds */
   --bg-main: #ffffff;
@@ -46,7 +52,7 @@
   --footer-bg: #0f172a;
   --footer-text: #94a3b8;
   --footer-text-light: #f1f5f9;
-  --footer-text-dim: #475569;
+  --footer-text-dim: #7c8ba1;
 }
 
 
@@ -312,6 +318,10 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  /* long content (Services accordion open) scrolls instead of clipping */
+  align-items: safe center;
+  overflow-y: auto;
+  padding: 96px 0 90px;
 }
 
 .mobile-menu.is-open {
@@ -517,7 +527,7 @@ button:focus-visible {
 }
 
 .footer h3 {
-  color: #f1f5f9;
+  color: var(--footer-text-light);
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -525,11 +535,15 @@ button:focus-visible {
 }
 
 .footer a {
-  color: #94a3b8;
+  color: var(--footer-text);
   display: block;
-  margin-bottom: 0.75rem;
+  padding: 0.4rem 0;
+  margin-bottom: 0.1rem;
   font-size: 0.9rem;
   transition: var(--transition);
+}
+@media (max-width: 768px) {
+  .footer a { padding: 0.65rem 0; }
 }
 
 .footer a:hover {
@@ -576,10 +590,10 @@ input, select, textarea {
   transition: border-color 0.2s ease;
 }
 
-input:focus, select:focus, textarea:focus {
-  outline: none !important;
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
   border-color: var(--primary) !important;
-  box-shadow: 0 0 0 3px rgba(10,46,91,0.1) !important;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -753,3 +767,65 @@ input:focus, select:focus, textarea:focus {
 .hero-path:hover { background: rgba(255, 255, 255, 0.16); transform: translateY(-2px); }
 .hero-path strong { font-size: 1.05rem; }
 .hero-path span { font-size: 0.85rem; opacity: 0.85; line-height: 1.5; }
+
+/* Cookie consent banner. On mobile it sits above the sticky action bar so the
+   Call / WhatsApp / Book buttons stay reachable before the visitor chooses. */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.16);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.cookie-banner-text { margin: 0; font-size: 0.85rem; color: var(--text-light); max-width: 640px; line-height: 1.6; }
+.cookie-banner-actions { display: flex; gap: 0.75rem; flex-shrink: 0; }
+@media (max-width: 768px) {
+  .cookie-banner {
+    bottom: 62px;
+    z-index: 950;
+    padding: 0.6rem 0.9rem;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+  .cookie-banner-text { font-size: 0.72rem; line-height: 1.4; }
+  .cookie-banner-actions { flex-direction: column; gap: 0.35rem; }
+}
+
+/* Skip link: first tab stop, visible only on focus */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 3000;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.skip-link:focus { top: 1rem; }
+main:focus { outline: none; }
+
+/* Visually hidden, still read by screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* Long blog index: skip painting off-screen cards */
+.blog-card { content-visibility: auto; contain-intrinsic-size: auto 320px; }

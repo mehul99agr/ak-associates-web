@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function TradeLicenseBlog() {
   return (
@@ -84,7 +83,7 @@ export default function TradeLicenseBlog() {
                 Trade License Requirements for Businesses in India
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 17, 2026</span>
+                <span>September 8, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -142,14 +141,13 @@ export default function TradeLicenseBlog() {
                 <p>For food businesses specifically, a trade license typically runs alongside, not instead of, FSSAI registration; see our guide on <Link href="/blog/fssai-registration-for-food-businesses-when-required" style={{ color: 'var(--primary)', fontWeight: 600 }}>FSSAI registration for food businesses</Link> for that separate central requirement. New companies and LLPs setting up their full compliance stack, GST, shop establishment, trade license, and statutory registrations together, may also find our <Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>post-incorporation checklist</Link> useful for sequencing these in the right order.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with municipal or state registrations?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help businesses in Nashik, Sillod, and beyond identify which local registrations apply and get them filed correctly the first time.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20trade%20license%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with municipal or state registrations?"
+            description="We help businesses in Nashik, Sillod, and beyond identify which local registrations apply and get them filed correctly the first time."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20trade%20license%20for%20my%20business."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -43,7 +43,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function IndiaUsDtaaGuideBlog() {
   return (
@@ -89,14 +88,12 @@ export default function IndiaUsDtaaGuideBlog() {
               <p>A founder who incorporates a US entity but continues to run day-to-day operations, close deals, or exercise real decision-making authority from India needs to consider whether that pattern of activity itself risks creating an unintended permanent establishment, or otherwise creating Indian tax exposure for the US entity's profits, independent of how the corporate structure is set up on paper. This is a genuinely fact-specific question, since it depends on what the founder actually does day to day, not just on where the company is incorporated, and it should be assessed as part of the overall US entity plan rather than left until profits are already flowing and the pattern of activity is already established.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Running a US entity while based in India?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders assess permanent establishment risk alongside their US and Indian structuring.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Running a US entity while based in India?"
+            description="We help founders assess permanent establishment risk alongside their US and Indian structuring."
+            secondaryLabel="Transfer Pricing Services"
+            secondaryHref="/transfer-pricing"
+          />
 
             <FaqSection faqs={faqs} />
 

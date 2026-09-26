@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function Section194QBlog() {
   return (
@@ -83,7 +82,7 @@ export default function Section194QBlog() {
                 Section 194Q: TDS on Purchase of Goods Above Rs 50 Lakh
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 2, 2026</span>
+                <span>August 7, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -130,14 +129,13 @@ export default function Section194QBlog() {
                 <p>Need help setting up Section 194Q tracking across your vendor base, or reviewing whether past purchases were correctly captured? Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax compliance services</Link> cover TDS system setup and periodic health checks.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Crossing the Rs 10 crore turnover mark, or buying goods at scale?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help buyers set up seller-wise TDS tracking under Section 194Q and stay compliant on quarterly filings.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Section%20194Q%20TDS%20on%20purchase%20of%20goods." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Crossing the Rs 10 crore turnover mark, or buying goods at scale?"
+            description="We help buyers set up seller-wise TDS tracking under Section 194Q and stay compliant on quarterly filings."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Section%20194Q%20TDS%20on%20purchase%20of%20goods."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

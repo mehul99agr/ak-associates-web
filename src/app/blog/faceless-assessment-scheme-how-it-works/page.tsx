@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function FacelessAssessmentSchemeBlog() {
   return (
@@ -84,7 +83,7 @@ export default function FacelessAssessmentSchemeBlog() {
                 Faceless Assessment Scheme: How It Works & What to Expect
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 28, 2026</span>
+                <span>August 1, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -141,14 +140,13 @@ export default function FacelessAssessmentSchemeBlog() {
                 <p>Faceless assessment has made the process more standardised, but it has also raised the bar on how a response needs to be prepared: complete, evidence-backed, and submitted on time, since there is no local officer relationship to fall back on. If you have an ongoing faceless assessment or have just received a notice, our team can help draft the response and represent your case through the portal and any video-conference hearing. See our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> for details.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Facing a faceless assessment notice?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help draft complete, evidence-backed responses and represent your case through the portal, right up to a video-conference hearing if needed.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20faceless%20assessment%20notice%20and%20need%20help." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Facing a faceless assessment notice?"
+            description="We help draft complete, evidence-backed responses and represent your case through the portal, right up to a video-conference hearing if needed."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20faceless%20assessment%20notice%20and%20need%20help."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -59,7 +59,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function StartupIndiaVsDpiitBlog() {
   return (
@@ -79,7 +78,7 @@ export default function StartupIndiaVsDpiitBlog() {
                 Startup India Registration vs DPIIT Recognition: What Is the Difference
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 12, 2026</span>
+                <span>September 6, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -120,14 +119,12 @@ export default function StartupIndiaVsDpiitBlog() {
                 <p>For most founders, the practical takeaway is simple: stop treating "Startup India registration" and "DPIIT recognition" as two separate to-do items on a checklist. There is one process to complete, and the only outcome that matters is whether you hold an approved recognition certificate. If you are unsure where your application stands or want help preparing one correctly the first time, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup advisory services</Link> handle DPIIT applications end to end.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Not sure where your DPIIT application stands?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We prepare and file DPIIT recognition applications, and can check your existing Startup India profile for what is actually complete.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Not sure where your DPIIT application stands?"
+            description="We prepare and file DPIIT recognition applications, and can check your existing Startup India profile for what is actually complete."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

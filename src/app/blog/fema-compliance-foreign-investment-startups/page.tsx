@@ -239,7 +239,7 @@ export default function FemaComplianceBlog() {
                 },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: '1.5rem', marginBottom: '1.75rem', alignItems: 'flex-start' }}>
-                  <div style={{ background: 'var(--primary)', color: '#fff', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.9rem', flexShrink: 0, marginTop: '2px' }}>{i + 1}</div>
+                  <div style={{ background: 'var(--primary)', color: 'var(--white)', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.9rem', flexShrink: 0, marginTop: '2px' }}>{i + 1}</div>
                   <div>
                     <h3 style={{ color: 'var(--primary)', marginBottom: '0.3rem', fontSize: '1.05rem' }}>{item.title}</h3>
                     <p style={{ color: 'var(--text-main)', margin: 0, fontSize: '0.97rem' }}>{item.desc}</p>

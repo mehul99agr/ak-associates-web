@@ -111,13 +111,6 @@ const sillodLocalBusiness = {
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '13',
-    bestRating: '5',
-    worstRating: '1',
-  },
   priceRange: '₹₹',
   image: 'https://agrawalkhandelwal.com/logo.png',
   logo: 'https://agrawalkhandelwal.com/logo.png',
@@ -359,9 +352,9 @@ export default function CAInSillod() {
                 rupesh@agrawalkhandelwal.com
               </a>
             </div>
-            <div className="card" style={{ background: '#0A2E5B', borderColor: '#0A2E5B' }}>
-              <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#fff' }}>Book a Free Consultation</h3>
+            <div className="card" style={{ background: 'var(--primary)', borderColor: 'var(--primary)' }}>
+              <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Free Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
                 Speak with CA Rupesh Khandelwal about your GST, tax, or audit needs in Sillod. First consultation is free.
               </p>

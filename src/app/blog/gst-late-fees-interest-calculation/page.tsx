@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -46,7 +46,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function GSTLateFeesBlog() {
   return (
@@ -109,14 +108,12 @@ export default function GSTLateFeesBlog() {
               <p>Because both late fee and interest must be paid in cash and cannot be offset against ITC, a delay in filing does not just cost the nominal fee; it consumes cash that could otherwise fund operations. For a business managing tight working capital, building GST return deadlines into the same calendar discipline used for payroll and vendor payments avoids compounding cash-flow pressure with avoidable statutory charges.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Behind on GST filings or want to avoid it going forward?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle monthly GST return filing, reconciliation, and compliance calendars so due dates never get missed.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/services" className="btn btn-outline">Our Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Behind on GST filings or want to avoid it going forward?"
+            description="We handle monthly GST return filing, reconciliation, and compliance calendars so due dates never get missed."
+            secondaryLabel="Our Services"
+            secondaryHref="/services"
+          />
 
             <FaqSection faqs={faqs} />
 

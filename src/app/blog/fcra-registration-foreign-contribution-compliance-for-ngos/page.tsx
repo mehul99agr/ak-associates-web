@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function FcraRegistrationBlog() {
   return (
@@ -83,7 +82,7 @@ export default function FcraRegistrationBlog() {
                 FCRA Registration: Foreign Contribution Compliance for NGOs
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 12, 2026</span>
+                <span>September 10, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -126,14 +125,13 @@ export default function FcraRegistrationBlog() {
                 <p>FCRA registration is not a box to check once and forget; it is an ongoing compliance relationship with the government that needs the same annual discipline as tax filing. For NGOs planning to solicit or already receiving foreign contributions, getting the eligibility route right at the outset, the designated account set up correctly, and FC-4 filed on time every year is the difference between a stable foreign funding channel and a registration that quietly lapses.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with FCRA registration or an overdue FC-4?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We assist NGOs with FCRA registration, prior permission applications, and annual FC-4 compliance.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20FCRA%20registration%20or%20compliance." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with FCRA registration or an overdue FC-4?"
+            description="We assist NGOs with FCRA registration, prior permission applications, and annual FC-4 compliance."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20FCRA%20registration%20or%20compliance."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

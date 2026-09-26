@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -30,7 +30,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function LRSGuideBlog() {
   return (
@@ -85,8 +84,8 @@ export default function LRSGuideBlog() {
               <div style={{ overflowX: 'auto' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '2rem', fontSize: '0.95rem' }}>
                   <thead><tr>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Purpose</th>
-                    <th style={{ background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>TCS Rate (FY 2026-27)</th>
+                    <th style={{ background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>Purpose</th>
+                    <th style={{ background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }}>TCS Rate (FY 2026-27)</th>
                   </tr></thead>
                   <tbody>
                     {[
@@ -125,14 +124,12 @@ export default function LRSGuideBlog() {
               <p>A <Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>returning NRI</Link> who has become an Indian resident can use LRS to send money abroad from their resident accounts. This is relevant for maintaining overseas investments, sending money to family abroad, or funding foreign property after becoming resident. The NRO repatriation route is no longer available once you are resident; LRS is the correct mechanism.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need help with outward remittances or FEMA compliance?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We advise on LRS compliance, TCS optimisation, and cross-border remittance structuring for NRI families.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need help with outward remittances or FEMA compliance?"
+            description="We advise on LRS compliance, TCS optimisation, and cross-border remittance structuring for NRI families."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
             <FaqSection faqs={faqs} />
 

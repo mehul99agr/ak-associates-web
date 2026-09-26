@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
@@ -68,7 +68,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function NREvsNROBlog() {
   return (
@@ -179,14 +178,12 @@ export default function NREvsNROBlog() {
                 <p>The account structure question is simple once the rule is clear: foreign income into NRE or FCNR, India-sourced income into NRO. The complexity is entirely in the repatriation paperwork, and that paperwork is not optional. If you're planning a large NRO repatriation this year, whether from accumulated rental income, a maturing deposit, or an asset sale, start the Form 145/146 process well before you need the funds abroad, banks typically need 5 to 10 working days once documentation is complete.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help repatriating funds or structuring your NRI accounts correctly?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle Form 145/146 certification, DTAA relief on NRO interest, and full FEMA compliance reviews for NRI account structures.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help repatriating funds or structuring your NRI accounts correctly?"
+            description="We handle Form 145/146 certification, DTAA relief on NRO interest, and full FEMA compliance reviews for NRI account structures."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
               <div style={{ marginTop: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>

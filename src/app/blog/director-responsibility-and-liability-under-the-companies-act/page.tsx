@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function DirectorResponsibilityLiabilityBlog() {
   return (
@@ -83,7 +82,7 @@ export default function DirectorResponsibilityLiabilityBlog() {
                 Director Responsibility &amp; Liability Under the Companies Act
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 5, 2026</span>
+                <span>August 30, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -138,14 +137,12 @@ export default function DirectorResponsibilityLiabilityBlog() {
                 <p>None of this is a reason to avoid directorships; it is a reason to treat the role with the seriousness the statute assigns it. Understand what the company you are a director of is actually filing, question transactions that look self-dealing before they happen, and make sure every entity you sit on the board of, however small or dormant, stays current on its statutory filings.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Concerned about a director liability or disqualification issue?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review board compliance across group entities, help remove director disqualification flags, and advise on personal liability exposure before it becomes a dispute.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Concerned about a director liability or disqualification issue?"
+            description="We review board compliance across group entities, help remove director disqualification flags, and advise on personal liability exposure before it becomes a dispute."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

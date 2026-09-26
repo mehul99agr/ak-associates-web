@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -45,7 +45,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function StartupAdvisoryForeignInvestorsBlog() {
   return (
@@ -101,14 +100,12 @@ export default function StartupAdvisoryForeignInvestorsBlog() {
               <p>Investors negotiating alongside Indian founders benefit from understanding what the founder-side compliance calendar looks like once the round closes; see our full <Link href="/blog/fema-compliance-foreign-investment-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>FEMA compliance guide for startups raising foreign investment</Link> and the <Link href="/blog/foreign-subsidiary-registration-india-fdi" style={{ color: 'var(--primary)', fontWeight: 600 }}>foreign subsidiary registration and FDI route guide</Link> for the entity-formation side of the same transaction.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Structuring or diligencing an investment into an Indian startup?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We support foreign investors and Indian founders with FEMA pricing certification, due diligence reviews, FC-GPR filing, and ongoing compliance oversight for cross-border startup investments.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/startups" className="btn btn-outline">Startup Advisory Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Structuring or diligencing an investment into an Indian startup?"
+            description="We support foreign investors and Indian founders with FEMA pricing certification, due diligence reviews, FC-GPR filing, and ongoing compliance oversight for cross-border startup investments."
+            secondaryLabel="Startup Advisory Services"
+            secondaryHref="/startups"
+          />
 
             <FaqSection faqs={faqs} />
 

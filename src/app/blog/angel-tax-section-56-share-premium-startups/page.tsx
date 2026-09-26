@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function AngelTaxBlog() {
   return (
@@ -98,14 +97,12 @@ export default function AngelTaxBlog() {
               <p>For each funding round, keep a file containing the term sheet, Board and shareholder approvals, valuation report, financial model, key assumptions, investor subscription documents, bank receipts, share allotment records, and ROC filings. If the company uses DCF, document the business drivers behind revenue growth, gross margin, hiring, customer acquisition, working capital, and terminal value. A spreadsheet without a written assumptions note is difficult to defend after the founding team has changed; or after a tax officer asks about a round raised years ago under the old provision.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need to review a historic funding round or plan a new one?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review historic angel tax exposure, coordinate valuation reports, and structure new funding rounds for Indian startups.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/startups" className="btn btn-outline">Startup Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need to review a historic funding round or plan a new one?"
+            description="We review historic angel tax exposure, coordinate valuation reports, and structure new funding rounds for Indian startups."
+            secondaryLabel="Startup Advisory"
+            secondaryHref="/startups"
+          />
 
             <FaqSection faqs={faqs} />
 

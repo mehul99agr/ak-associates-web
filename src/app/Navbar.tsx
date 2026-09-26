@@ -45,6 +45,8 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+  const hamburgerRef = useRef<HTMLButtonElement>(null)
   const bookingLink = BOOKING_LINK
 
   const toggleMenu = () => setIsOpen(prev => !prev)
@@ -56,6 +58,31 @@ export default function Navbar() {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
+  }, [isOpen])
+
+  // Mobile menu: move focus in, close on Escape, keep Tab inside the menu + toggle button.
+  useEffect(() => {
+    if (!isOpen) return
+    const menu = menuRef.current
+    const toggle = hamburgerRef.current
+    if (!menu || !toggle) return
+    const focusables = () => [toggle, ...Array.from(menu.querySelectorAll<HTMLElement>('a[href], button'))]
+    const focusTimer = setTimeout(() => menu.querySelector<HTMLElement>('button, a[href]')?.focus(), 50)
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        closeMenu()
+        toggle.focus()
+        return
+      }
+      if (e.key !== 'Tab') return
+      const items = focusables()
+      const first = items[0]
+      const last = items[items.length - 1]
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+    }
+    document.addEventListener('keydown', onKey)
+    return () => { clearTimeout(focusTimer); document.removeEventListener('keydown', onKey) }
   }, [isOpen])
 
   useEffect(() => {
@@ -205,9 +232,11 @@ export default function Navbar() {
         <div className="mobile-controls">
           <button
             className={`hamburger ${isOpen ? 'is-active' : ''}`}
+            ref={hamburgerRef}
             onClick={toggleMenu}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             <span></span>
             <span></span>
@@ -216,12 +245,13 @@ export default function Navbar() {
         </div>
 
         {/* Mobile overlay */}
-        <div className={`mobile-menu ${isOpen ? 'is-open' : ''}`} role="dialog" aria-modal="true">
+        <div id="mobile-menu" ref={menuRef} className={`mobile-menu ${isOpen ? 'is-open' : ''}`} role="dialog" aria-modal="true" aria-label="Site menu">
           <div className="mobile-menu-links">
 
             {/* Mobile services accordion */}
             <button
               onClick={() => setMobileServicesOpen(prev => !prev)}
+              aria-expanded={mobileServicesOpen}
               style={{
                 background: 'none',
                 border: 'none',
@@ -240,7 +270,7 @@ export default function Navbar() {
             >
               SERVICES
               <svg
-                width="12" height="7" viewBox="0 0 10 6" fill="none"
+                width="12" height="7" viewBox="0 0 10 6" fill="none" aria-hidden="true"
                 style={{ transition: 'transform 0.2s', transform: mobileServicesOpen ? 'rotate(180deg)' : 'rotate(0deg)', flexShrink: 0 }}
               >
                 <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

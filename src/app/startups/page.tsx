@@ -391,8 +391,8 @@ export default function StartupsPage() {
         {/* CTA */}
         <section className="section">
           <div className="container">
-            <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', color: '#fff', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Need a CA for Your Startup?</h2>
+            <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', color: 'var(--white)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
+              <h2 style={{ color: 'var(--white)', fontSize: '2rem', marginBottom: '1rem' }}>Need a CA for Your Startup?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 Tell us your stage and goal. We'll map out exactly what compliance you need, what you can defer, and what will matter most to your next investor.
               </p>

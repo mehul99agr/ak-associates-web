@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function DSCDINBlog() {
   return (
@@ -105,14 +104,12 @@ export default function DSCDINBlog() {
               <p>Holding a DIN comes with an ongoing obligation: every DIN holder must complete <strong>annual DIR-3 KYC</strong>, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual ROC Filing guide</Link> for the full annual compliance picture.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Need a DSC or DIN sorted before an incorporation or appointment deadline?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle DSC issuance and DIN applications for founders, new directors, and foreign nationals joining Indian companies.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/company-incorporation" className="btn btn-outline">Incorporation Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Need a DSC or DIN sorted before an incorporation or appointment deadline?"
+            description="We handle DSC issuance and DIN applications for founders, new directors, and foreign nationals joining Indian companies."
+            secondaryLabel="Incorporation Services"
+            secondaryHref="/company-incorporation"
+          />
 
             <FaqSection faqs={faqs} />
 

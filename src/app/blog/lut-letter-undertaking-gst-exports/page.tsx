@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function LUTGSTExportsBlog() {
   return (
@@ -84,7 +83,7 @@ export default function LUTGSTExportsBlog() {
                 Letter of Undertaking (LUT) for GST-Free Exports: How to File
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 21, 2026</span>
+                <span>July 19, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -137,14 +136,13 @@ export default function LUTGSTExportsBlog() {
                 <p>Once your LUT is filed and the export is invoiced correctly, the next step is claiming the refund of accumulated input tax credit; our guide on <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>zero-rated exports and the RFD-01 refund process</Link> walks through that in detail. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> also handles LUT filing and renewal as part of ongoing export compliance, so it never lapses unnoticed.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need your LUT filed or renewed before the deadline?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We file Form RFD-11 for exporters each financial year and track renewal dates so your export invoices are never left uncovered.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20filing%20my%20GST%20LUT%20for%20exports." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need your LUT filed or renewed before the deadline?"
+            description="We file Form RFD-11 for exporters each financial year and track renewal dates so your export invoices are never left uncovered."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20filing%20my%20GST%20LUT%20for%20exports."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

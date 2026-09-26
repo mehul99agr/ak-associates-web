@@ -175,10 +175,10 @@ export default function OffshoreAccounting() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
-                { label: 'Cost Saving', value: '60–70%', note: 'vs. equivalent UK / US / UAE accounting costs', color: '#10b981' },
+                { label: 'Cost Saving', value: '60–70%', note: 'vs. equivalent UK / US / UAE accounting costs', color: 'var(--success)' },
                 { label: 'Time Zone', value: 'IST +5:30', note: 'Overlap with UK morning + full UAE business day', color: 'var(--accent)' },
                 { label: 'CA Qualified', value: 'ICAI', note: 'India\'s equivalent of ICAEW / AICPA; highest standard', color: 'var(--primary)' },
-                { label: 'Languages', value: 'English', note: 'All work delivered in English, documentation included', color: '#f59e0b' },
+                { label: 'Languages', value: 'English', note: 'All work delivered in English, documentation included', color: 'var(--warning)' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ textAlign: 'center', borderTop: `4px solid ${item.color}` }}>
                   <div style={{ fontWeight: 800, color: item.color, fontSize: '1.6rem', marginBottom: '0.25rem' }}>{item.value}</div>
@@ -346,8 +346,8 @@ export default function OffshoreAccounting() {
         {/* CTA */}
         <section className="section">
           <div className="container">
-            <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Ready to Outsource Your Accounting to India?</h2>
+            <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
+              <h2 style={{ color: 'var(--white)', marginBottom: '1rem' }}>Ready to Outsource Your Accounting to India?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 Send us your current accounting setup and transaction volume. We'll propose a scope, timeline, and fixed fee within 24 hours.
               </p>

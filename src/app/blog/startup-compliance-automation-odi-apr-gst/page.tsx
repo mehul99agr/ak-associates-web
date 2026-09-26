@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: FaqPair[] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function StartupComplianceAutomationBlog() {
   return (
@@ -138,14 +137,13 @@ export default function StartupComplianceAutomationBlog() {
                 <p>ODI/APR non-compliance under FEMA is handled through RBI&apos;s compounding process rather than a fixed late fee; the delay exposes the entity to a compounding application, with the eventual amount assessed case by case based on the delay period and transaction value. In practice, the more immediate consequence is operational: AD banks routinely check FEMA reporting status before processing further remittances to or from an overseas subsidiary, so a pending APR can hold up an otherwise unrelated transaction until it is filed. Transfer pricing non-compliance carries its own defined penalties under Section 271BA (Form 3CEB) and related provisions, and GST late filing carries fixed late fees and interest on unpaid tax. None of these consequences are catastrophic in isolation, but they compound in exactly the way a scattered, memory-dependent compliance process makes likely; which is the core argument for building the tracking discipline described above before it becomes necessary.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help organising ODI/APR, transfer pricing, or GST compliance?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We support growing startups with cross-border structures through Virtual CFO oversight and dedicated offshore accounting teams, alongside direct RBI, transfer pricing, and GST filings.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20startup%20compliance." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help organising ODI/APR, transfer pricing, or GST compliance?"
+            description="We support growing startups with cross-border structures through Virtual CFO oversight and dedicated offshore accounting teams, alongside direct RBI, transfer pricing, and GST filings."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20startup%20compliance."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

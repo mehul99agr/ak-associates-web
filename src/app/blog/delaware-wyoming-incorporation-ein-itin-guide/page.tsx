@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -43,7 +43,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function DelawareWyomingEinItinBlog() {
   return (
@@ -89,14 +88,12 @@ export default function DelawareWyomingEinItinBlog() {
               <p>Because ITIN processing during peak filing months can run considerably longer than at other times of year, and because international mailing adds further delay, a founder who knows they will need to file a US return should build in extra lead time rather than assuming the process moves quickly close to a deadline.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Setting up a US entity from India?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help founders sequence incorporation, EIN, banking, and ITIN correctly the first time.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/company-incorporation" className="btn btn-outline">Incorporation Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Setting up a US entity from India?"
+            description="We help founders sequence incorporation, EIN, banking, and ITIN correctly the first time."
+            secondaryLabel="Incorporation Services"
+            secondaryHref="/company-incorporation"
+          />
 
             <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -23,8 +23,7 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
-const thStyle: React.CSSProperties = { background: 'var(--primary)', color: '#fff', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }
+const thStyle: React.CSSProperties = { background: 'var(--primary)', color: 'var(--white)', padding: '0.75rem 1rem', textAlign: 'left', fontWeight: 700 }
 
 export default function NRIComplianceCalendarBlog() {
   return (
@@ -88,14 +87,12 @@ export default function NRIComplianceCalendarBlog() {
               </ul>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Want us to manage your NRI tax compliance?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle ITR filing, advance tax computation, Form 27Q verification, and Form 145/146 certification for NRI clients year-round.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/nri-tax-advisory" className="btn btn-outline">NRI Tax Advisory</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Want us to manage your NRI tax compliance?"
+            description="We handle ITR filing, advance tax computation, Form 27Q verification, and Form 145/146 certification for NRI clients year-round."
+            secondaryLabel="NRI Tax Advisory"
+            secondaryHref="/nri-tax-advisory"
+          />
 
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>

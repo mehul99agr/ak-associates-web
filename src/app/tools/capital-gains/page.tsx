@@ -95,8 +95,8 @@ export default function CapitalGainsCalculator() {
         <div className="card" style={{ maxWidth: '700px', margin: '0 auto' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '30px' }}>
             <div>
-              <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Asset Type</label>
-              <select 
+              <label htmlFor="cg-1" style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Asset Type</label>
+              <select id="cg-1" 
                 value={assetType}
                 onChange={(e) => setAssetType(e.target.value)}
                 style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: 'var(--bg-card)', color: 'var(--text-main)' }}
@@ -108,15 +108,15 @@ export default function CapitalGainsCalculator() {
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
               <div>
-                <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Purchase Price (₹)</label>
-                <input 
+                <label htmlFor="cg-2" style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Purchase Price (₹)</label>
+                <input id="cg-2" 
                   type="number" value={purchasePrice || ''} onChange={(e) => setPurchasePrice(Number(e.target.value))}
                   style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
                 />
               </div>
               <div>
-                <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Sale Price (₹)</label>
-                <input 
+                <label htmlFor="cg-3" style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Sale Price (₹)</label>
+                <input id="cg-3" 
                   type="number" value={salePrice || ''} onChange={(e) => setSalePrice(Number(e.target.value))}
                   style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
                 />
@@ -124,8 +124,8 @@ export default function CapitalGainsCalculator() {
             </div>
 
             <div>
-              <label style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Holding Period (in Months)</label>
-              <input 
+              <label htmlFor="cg-4" style={{ display: 'block', fontWeight: 700, marginBottom: '8px', color: 'var(--primary)' }}>Holding Period (in Months)</label>
+              <input id="cg-4" 
                 type="number" value={holdingPeriodMonths || ''} onChange={(e) => setHoldingPeriodMonths(Number(e.target.value))}
                 placeholder="e.g. 15"
                 style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text-main)' }}
@@ -136,7 +136,7 @@ export default function CapitalGainsCalculator() {
           <button className="btn btn-primary" onClick={calculate} style={{ width: '100%' }}>Calculate Gains</button>
 
           {result && (
-            <div style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
+            <div role="status" style={{ marginTop: '40px', padding: '30px', background: 'var(--bg-surface)', borderRadius: '12px', border: '1px solid var(--border)' }}>
               {result.gain <= 0 ? (
                 <div style={{ color: 'var(--accent)', fontWeight: 700, textAlign: 'center', fontSize: '1.2rem' }}>
                   Capital Loss: ₹{Math.abs(result.gain).toLocaleString('en-IN')}<br/>

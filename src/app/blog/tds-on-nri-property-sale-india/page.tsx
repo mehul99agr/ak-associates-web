@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'TDS on NRI Property Sale (FY 2026-27)',
@@ -99,7 +99,6 @@ const faqLd = {
   ],
 }
 
-const bookingLink = BOOKING_LINK
 
 export default function TDSNRIPropertyBlog() {
   return (
@@ -275,14 +274,13 @@ export default function TDSNRIPropertyBlog() {
                 </ul>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with NRI property TDS or sale proceeds repatriation?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle Form 13 applications, Form 27Q filing, and Form 145/146 compliance for NRI property transactions across India.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20NRI%20property%20TDS." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with NRI property TDS or sale proceeds repatriation?"
+            description="We handle Form 13 applications, Form 27Q filing, and Form 145/146 compliance for NRI property transactions across India."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20NRI%20property%20TDS."
+            secondaryExternal
+          />
 
               <div style={{ marginTop: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>

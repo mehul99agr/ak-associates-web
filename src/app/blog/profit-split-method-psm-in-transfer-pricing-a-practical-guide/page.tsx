@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -45,7 +45,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function PSMBlog() {
   return (
@@ -127,14 +126,12 @@ export default function PSMBlog() {
                 <p>A PSM study should document the transactions and parties covered, how the combined profit pool was computed and reconciled to financial statements, the functional analysis supporting each party&apos;s relative contribution, why a contribution or residual approach was chosen, the allocation key and the reasoning for it, and why PSM was selected over a one-sided method. This reasoning is typically the first thing examined in a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link>, and where applicable the transaction still needs to be reported in <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB</Link> alongside the supporting documentation.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Working with unique intangibles or integrated operations across borders?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help groups build defensible profit-split analyses, choose the right allocation key, and prepare the supporting Form 3CEB documentation.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Working with unique intangibles or integrated operations across borders?"
+            description="We help groups build defensible profit-split analyses, choose the right allocation key, and prepare the supporting Form 3CEB documentation."
+            secondaryLabel="Transfer Pricing Services"
+            secondaryHref="/transfer-pricing"
+          />
 
               <FaqSection faqs={faqs} />
 

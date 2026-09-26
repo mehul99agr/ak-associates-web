@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -45,7 +45,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function TDSSalarySection192Blog() {
   return (
@@ -106,14 +105,12 @@ export default function TDSSalarySection192Blog() {
                 <p>The obligation to deduct tax on salary, previously Section 192, is now housed in <strong>Section 392</strong> of the Income Tax Act 2025, with the detailed computation mechanics (including the average rate method and regime-based adjustments) set out under <strong>Section 402</strong>. The substance of the provision, deduct at the average rate on estimated annual salary income, recompute as estimates change, has not been altered; only the section numbering and the corresponding return form (24Q to Form 138) have changed for filings from FY 2026-27 onward.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with payroll TDS compliance?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help employers set up accurate Section 192 TDS computation, regime handling, and quarterly Form 24Q (now Form 138) filing.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with payroll TDS compliance?"
+            description="We help employers set up accurate Section 192 TDS computation, regime handling, and quarterly Form 24Q (now Form 138) filing."
+            secondaryLabel="Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

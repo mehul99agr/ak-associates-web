@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -63,7 +63,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function GstrFilingGuideBlog() {
   return (
@@ -83,7 +82,7 @@ export default function GstrFilingGuideBlog() {
                 GSTR-1 vs GSTR-3B: Filing Guide &amp; Common Mistakes
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>September 18, 2026</span>
+                <span>July 15, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>
@@ -156,14 +155,13 @@ export default function GstrFilingGuideBlog() {
                 <p>If your business is newly registered, see our guide on the <Link href="/blog/gst-registration-process-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration process</Link> for what happens before your first return is due, or the <Link href="/blog/gst-composition-scheme-eligibility-rates" style={{ color: 'var(--primary)', fontWeight: 600 }}>composition scheme guide</Link> if you are evaluating whether the lighter CMP-08/GSTR-4 filing cycle suits your business better than the regular GSTR-1/3B route.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Behind on GST filings or getting mismatch notices?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle monthly and QRMP GST return filing, GSTR-1/3B reconciliation, and notice responses.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20return%20filing." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Behind on GST filings or getting mismatch notices?"
+            description="We handle monthly and QRMP GST return filing, GSTR-1/3B reconciliation, and notice responses."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20return%20filing."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

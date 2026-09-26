@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function TaxationOfCharitableTrustsBlog() {
   return (
@@ -84,7 +83,7 @@ export default function TaxationOfCharitableTrustsBlog() {
                 Taxation of Charitable Trusts: Exemptions &amp; Compliance
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>October 15, 2026</span>
+                <span>September 11, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>&bull;</span>
@@ -132,14 +131,12 @@ export default function TaxationOfCharitableTrustsBlog() {
                 <p>The exemption framework for charitable trusts rewards discipline more than intent: applying 85% (or properly accumulating the rest with Form 10 filed on time), keeping donor records so genuine donations don't get swept into the anonymous-donation tax, and renewing 12AB registration before it lapses are the three areas where otherwise well-run trusts most often trip up. None of them require complex tax planning, just a compliance calendar that treats these deadlines as seriously as any other statutory filing.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Need help with trust taxation or 12AB renewal?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We handle 85% application computation, Form 10 accumulation filings, 12AB renewal, and anonymous donation review for charitable trusts.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Need help with trust taxation or 12AB renewal?"
+            description="We handle 85% application computation, Form 10 accumulation filings, 12AB renewal, and anonymous donation review for charitable trusts."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

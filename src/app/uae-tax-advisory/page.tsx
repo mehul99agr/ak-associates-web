@@ -122,7 +122,7 @@ export default function UAETaxAdvisory() {
             </p>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'rgba(255,215,0,0.15)', border: '1px solid rgba(255,215,0,0.3)', borderRadius: '8px', padding: '10px 18px', marginBottom: '2rem' }}>
               <span style={{ fontSize: '1.2rem' }}>🏆</span>
-              <span style={{ color: '#fde68a', fontSize: '0.88rem', fontWeight: 700 }}>CA Mehul Agrawal holds a UAE Corporate Taxation certification; one of very few CAs in India with this credential.</span>
+              <span style={{ color: 'var(--warning-light)', fontSize: '0.88rem', fontWeight: 700 }}>CA Mehul Agrawal holds a UAE Corporate Taxation certification; one of very few CAs in India with this credential.</span>
             </div>
             <div className="hero-cta">
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -165,8 +165,8 @@ export default function UAETaxAdvisory() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 210px), 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
               {[
                 { label: 'Standard CT Rate', value: '9%', note: 'On taxable income above AED 375,000 (~₹85 lakh)', color: 'var(--accent)' },
-                { label: 'Small Business Relief', value: '0%', note: 'Revenue below AED 3 million for qualifying SMEs', color: '#10b981' },
-                { label: 'Free Zone Rate', value: '0%', note: 'Only on Qualifying Income for QFZPs; other income taxed at 9%', color: '#f59e0b' },
+                { label: 'Small Business Relief', value: '0%', note: 'Revenue below AED 3 million for qualifying SMEs', color: 'var(--success)' },
+                { label: 'Free Zone Rate', value: '0%', note: 'Only on Qualifying Income for QFZPs; other income taxed at 9%', color: 'var(--warning)' },
                 { label: 'Effective Date', value: 'Jun 2023', note: 'For financial years beginning on or after 1 June 2023', color: 'var(--primary)' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ textAlign: 'center', borderTop: `4px solid ${item.color}` }}>
@@ -267,8 +267,8 @@ export default function UAETaxAdvisory() {
         {/* CTA */}
         <section className="section">
           <div className="container">
-            <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>India-UAE Tax; Sorted by a Certified Expert</h2>
+            <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
+              <h2 style={{ color: 'var(--white)', marginBottom: '1rem' }}>India-UAE Tax; Sorted by a Certified Expert</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
                 Whether you need UAE CT registration, DTAA planning, or a full India-UAE structure review; we bring the only UAE Corporate Taxation-certified CA practice to the conversation.
               </p>

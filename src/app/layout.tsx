@@ -144,13 +144,6 @@ const organizationLd = {
       closes: '18:00',
     },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '13',
-    bestRating: '5',
-    worstRating: '1',
-  },
   priceRange: '₹₹',
   areaServed: [
     { '@type': 'City', name: 'Nashik' },
@@ -252,8 +245,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
         <ContactClickTracker />
         <SpeedInsights />
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <Navbar />
-        <main>{children}</main>
+        <main id="main-content" tabIndex={-1}>{children}</main>
         <FloatingContact />
         <CookieConsent />
 
@@ -267,6 +261,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     src="/logo.png"
                     alt="Agrawal Khandelwal & Associates LLP"
                     fill
+                    sizes="52px"
                     style={{ objectFit: 'contain' }}
                   />
                 </div>
@@ -275,7 +270,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </p>
                 <div style={{ background: 'rgba(255,255,255,0.04)', padding: '14px 16px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}>
                   <div style={{ display: 'flex', gap: '10px', alignItems: 'center', marginBottom: '10px' }}>
-                    <div style={{ background: '#fff', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+                    <div style={{ background: 'var(--white)', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
                       <Image src="/ca-logo.png" alt="ICAI" width={24} height={24} />
                     </div>
                     <span style={{ fontSize: '0.8rem', color: 'var(--footer-text-light)', fontWeight: 700, letterSpacing: '0.5px', textTransform: 'uppercase' }}>Certifications</span>

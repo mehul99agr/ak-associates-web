@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Icon from './Icon'
 import TrackedLink from './TrackedLink'
 import { BOOKING_LINK, WHATSAPP_LINK } from '@/lib/constants'
-import GoogleReviews from './GoogleReviews'
 
 export const metadata: Metadata = {
   title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
@@ -446,8 +445,6 @@ export default function Home() {
         </div>
       </section>
 
-      <GoogleReviews />
-
       {/* ===== FAQ ===== */}
       <section className="section" id="faq">
         <div className="container" style={{ maxWidth: '800px' }}>
@@ -500,8 +497,8 @@ export default function Home() {
 
             {/* WhatsApp CTA: uses explicit dark blue to work in both modes */}
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', borderColor: 'var(--primary)' }}>
-              <div style={{ marginBottom: '1.25rem', color: '#fff' }}><Icon name="calendar" size={32} /></div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: '#ffffff' }}>Book a Consultation</h3>
+              <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help your business thrive.</p>
               <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
                 Schedule on Google Calendar

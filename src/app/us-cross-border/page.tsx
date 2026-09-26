@@ -214,8 +214,8 @@ export default function UsCrossBorder() {
       {/* CTA */}
       <section className="section">
         <div className="container">
-          <div style={{ background: 'linear-gradient(135deg, #0A2E5B 0%, #1e40af 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
-            <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Two Compliance Calendars, One Point of Accountability</h2>
+          <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
+            <h2 style={{ color: 'var(--white)', marginBottom: '1rem' }}>Two Compliance Calendars, One Point of Accountability</h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
               Whether you need entity structuring advice, an overdue Form 5472, or a full US-India compliance review; we bring both sides of the border into one engagement.
             </p>

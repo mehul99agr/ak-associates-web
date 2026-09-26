@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -60,7 +60,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function VivadSeVishwasBlog() {
   return (
@@ -122,14 +121,13 @@ export default function VivadSeVishwasBlog() {
                 <p>Disputes involving disputed tax, interest, and penalty computations are easy to get wrong on your own, both in deciding whether a route like rectification genuinely applies and in calculating what a stay of demand deposit or an eventual settlement would actually cost. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include dispute strategy, appeal drafting, and representation before the relevant authority.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Have a pending tax dispute?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help you evaluate the right route, appeal, rectification, stay of demand, or settlement mechanism, based on your specific facts.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20pending%20income%20tax%20dispute%20and%20need%20advice." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Have a pending tax dispute?"
+            description="We help you evaluate the right route, appeal, rectification, stay of demand, or settlement mechanism, based on your specific facts."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20pending%20income%20tax%20dispute%20and%20need%20advice."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -45,7 +45,6 @@ const faqs: FaqPair[] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function FdiGuideBlog() {
   return (
@@ -108,14 +107,12 @@ export default function FdiGuideBlog() {
               <p>For a foreign investor setting up an Indian subsidiary rather than investing into an existing company, the FDI route decision happens at incorporation itself. See our guide on <Link href="/blog/foreign-subsidiary-registration-india-fdi" style={{ color: 'var(--primary)', fontWeight: 600 }}>foreign subsidiary registration in India via the FDI route</Link> for how that process works end to end, and our <Link href="/blog/odi-overseas-direct-investment-guide-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>ODI guide</Link> for the reverse direction; Indian residents investing abroad.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Bringing FDI into an Indian entity?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We confirm the correct route, handle FC-GPR/FC-TRS reporting, and structure the valuation and documentation correctly the first time.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/company-incorporation" className="btn btn-outline">Company Incorporation Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Bringing FDI into an Indian entity?"
+            description="We confirm the correct route, handle FC-GPR/FC-TRS reporting, and structure the valuation and documentation correctly the first time."
+            secondaryLabel="Company Incorporation Services"
+            secondaryHref="/company-incorporation"
+          />
 
             <FaqSection faqs={faqs} />
 

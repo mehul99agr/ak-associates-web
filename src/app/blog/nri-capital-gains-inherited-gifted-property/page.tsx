@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'NRI Capital Gains on Inherited Property',
@@ -65,7 +65,6 @@ const faqLd = {
   ],
 }
 
-const bookingLink = BOOKING_LINK
 
 export default function NRIInheritedGiftedPropertyBlog() {
   return (
@@ -124,14 +123,13 @@ export default function NRIInheritedGiftedPropertyBlog() {
                 <p>Once the computation is ready, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to see the statutory TDS at the current sale value, and compare it against the actual expected liability.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Selling inherited or gifted property in India?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help NRIs trace acquisition cost documentation, compute capital gains, and apply for Form 13 certificates on ancestral property sales.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20capital%20gains%20on%20inherited%20property." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Selling inherited or gifted property in India?"
+            description="We help NRIs trace acquisition cost documentation, compute capital gains, and apply for Form 13 certificates on ancestral property sales."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20capital%20gains%20on%20inherited%20property."
+            secondaryExternal
+          />
 
               <div style={{ marginTop: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Frequently Asked Questions</h2>

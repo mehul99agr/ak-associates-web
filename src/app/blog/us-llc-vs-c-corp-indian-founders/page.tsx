@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -44,7 +44,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function UsLlcVsCCorpBlog() {
   return (
@@ -93,14 +92,12 @@ export default function UsLlcVsCCorpBlog() {
               <p>There is no universally right answer, only a right answer for a given founder's plan. If institutional fundraising is realistically on the table in the next year or two, incorporate as a C-Corp. If the business is being built on its own revenue with no near-term fundraising plan, an LLC is usually the simpler and cheaper structure to run, provided the phantom income tax exposure is planned for from the start.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Planning a US entity for your startup?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We help Indian founders choose and structure the right US entity alongside their Indian compliance and accounting.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <Link href="/offshore-accounting" className="btn btn-outline">Offshore Accounting Services</Link>
-              </div>
-            </div>
+            <PostCTA
+            heading="Planning a US entity for your startup?"
+            description="We help Indian founders choose and structure the right US entity alongside their Indian compliance and accounting."
+            secondaryLabel="Offshore Accounting Services"
+            secondaryHref="/offshore-accounting"
+          />
 
             <FaqSection faqs={faqs} />
 

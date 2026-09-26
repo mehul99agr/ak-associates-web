@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function ReassessmentNoticeSection148Blog() {
   return (
@@ -135,14 +134,13 @@ export default function ReassessmentNoticeSection148Blog() {
                 <p>The single biggest determinant of how a reassessment case plays out is usually how early and how completely the taxpayer engages, ideally at the 148A show-cause stage rather than waiting for the formal notice. The information the department is acting on is disclosed upfront specifically so the taxpayer can address it; a response that engages with that material directly, backed by reconciled records, carries far more weight than a general denial. If you receive either a 148A show-cause notice or a Section 148 notice, involve a CA promptly to review the time limit, the disclosed material, and the strongest response strategy before the deadline runs out. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include reassessment response and representation before the assessing authority.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Received a Section 148 or 148A notice?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We review the time limit, the disclosed material, and prepare a complete response within the deadline.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <a href="https://wa.me/919527533506?text=Hi,%20I%20received%20a%20Section%20148%20reassessment%20notice." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-                </div>
-              </div>
+              <PostCTA
+            heading="Received a Section 148 or 148A notice?"
+            description="We review the time limit, the disclosed material, and prepare a complete response within the deadline."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20received%20a%20Section%20148%20reassessment%20notice."
+            secondaryExternal
+          />
 
               <FaqSection faqs={faqs} />
 

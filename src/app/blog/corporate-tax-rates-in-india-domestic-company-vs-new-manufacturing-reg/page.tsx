@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ const faqs: [string, string][] = [
 
 const faqLd = buildFaqLd(faqs)
 
-const bookingLink = BOOKING_LINK
 
 export default function CorporateTaxRatesBlog() {
   return (
@@ -126,14 +125,12 @@ export default function CorporateTaxRatesBlog() {
                 <p>Because the election is irrevocable, this isn&apos;t a decision to make purely off the current year&apos;s numbers. A multi-year projection, factoring in planned capex, expected profitability, and any deductions currently in the pipeline, should sit behind the choice of Form 10-IC, Form 10-ID, or staying on the regular regime. Companies planning a foreign subsidiary or FDI-route manufacturing entity in India should factor the 115BAB rate into their entity structuring from day one; see our <Link href="/blog/foreign-subsidiary-registration-india-fdi" style={{ color: 'var(--primary)', fontWeight: 600 }}>foreign subsidiary registration guide</Link> for the incorporation side of that decision.</p>
               </div>
 
-              <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Deciding between the regular regime, 115BAA, or 115BAB?</h3>
-                <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We run the side-by-side computation for your company&apos;s actual numbers before you file Form 10-IC or Form 10-ID.</p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                  <Link href="/services" className="btn btn-outline">View Our Services</Link>
-                </div>
-              </div>
+              <PostCTA
+            heading="Deciding between the regular regime, 115BAA, or 115BAB?"
+            description="We run the side-by-side computation for your company&apos;s actual numbers before you file Form 10-IC or Form 10-ID."
+            secondaryLabel="View Our Services"
+            secondaryHref="/services"
+          />
 
               <FaqSection faqs={faqs} />
 

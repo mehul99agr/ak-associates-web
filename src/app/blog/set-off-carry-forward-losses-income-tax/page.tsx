@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -65,7 +65,6 @@ const faqs: [string, string][] = [
 ]
 
 const faqLd = buildFaqLd(faqs)
-const bookingLink = BOOKING_LINK
 
 export default function SetOffCarryForwardLossesBlog() {
   return (
@@ -80,7 +79,7 @@ export default function SetOffCarryForwardLossesBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Set-Off and Carry Forward of Losses Under Income Tax</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>October 5, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>August 11, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -142,14 +141,13 @@ export default function SetOffCarryForwardLossesBlog() {
               <p>Loss set-off and carry-forward rules reward careful year-by-year tracking, correct sequencing, and above all, timely filing. A single missed due date can convert an otherwise valuable carry-forward asset into a loss that simply disappears for tax purposes. If your business, investments, or rental property have generated a loss this year, get the set-off computation and carry-forward schedule reviewed before filing. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> cover full loss computation, set-off planning, and carry-forward tracking across years.</p>
             </div>
 
-            <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem' }}>Carrying a business, capital, or house property loss this year?</h3>
-              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>We compute set-off correctly, track carry-forward schedules across years, and make sure your return is filed on time to preserve your carry-forward rights.</p>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
-                <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20loss%20set-off%20and%20carry%20forward." target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ask on WhatsApp</a>
-              </div>
-            </div>
+            <PostCTA
+            heading="Carrying a business, capital, or house property loss this year?"
+            description="We compute set-off correctly, track carry-forward schedules across years, and make sure your return is filed on time to preserve your carry-forward rights."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20loss%20set-off%20and%20carry%20forward."
+            secondaryExternal
+          />
 
             <FaqSection faqs={faqs} />
 
