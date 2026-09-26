@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Navbar from './Navbar'
 import FloatingContact from './FloatingContact'
 import GoogleAnalytics from './GoogleAnalytics'
+import ContactClickTracker from './ContactClickTracker'
 import CookieConsent from './CookieConsent'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Montserrat, Open_Sans, Cormorant_Garamond } from 'next/font/google'
@@ -249,6 +250,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
+        <ContactClickTracker />
         <SpeedInsights />
         <Navbar />
         <main>{children}</main>

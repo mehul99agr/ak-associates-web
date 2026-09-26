@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import ResultCTA from '../ResultCTA'
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -164,6 +165,7 @@ export default function CapitalGainsCalculator() {
               )}
             </div>
           )}
+          {result && <ResultCTA heading="Want to reduce this tax legally?" description="Talk to a CA about exemptions, set-offs and the right way to report your gain." />}
         </div>
 
         <div style={{ maxWidth: '700px', margin: '3.5rem auto 0' }}>

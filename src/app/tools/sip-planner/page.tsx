@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import ResultCTA from '../ResultCTA'
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -129,6 +130,7 @@ export default function SIPPlanner() {
               </div>
             </div>
           )}
+          {result && <ResultCTA heading="Planning your taxes on these investments?" description="Speak to a CA about tax-efficient investing and how returns are taxed." />}
         </div>
 
         <div style={{ maxWidth: '700px', margin: '3.5rem auto 0' }}>

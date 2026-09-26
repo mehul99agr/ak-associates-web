@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
+import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -169,6 +171,13 @@ export default function UAEEntitySetupBlog() {
               <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
             </div>
           </div>
+                  <PostCTA
+            heading="Considering a UAE entity?"
+            description="We help you decide whether it makes sense and structure it correctly."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryExternal
+          />
         </article>
       </div>
     </div>

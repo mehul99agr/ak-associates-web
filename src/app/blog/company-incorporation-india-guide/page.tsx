@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
+import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -387,6 +389,13 @@ export default function CompanyIncorporationGuideBlog() {
               </Link>
             </div>
           </div>
+                  <PostCTA
+            heading="Planning to incorporate a company in India?"
+            description="We handle name approval, SPICe+ filing, DSC/DIN and post-incorporation compliance."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryExternal
+          />
         </article>
       </div>
     </div>

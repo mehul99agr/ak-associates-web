@@ -19,7 +19,7 @@ export default function TrackedLink({ children, method, location, onClick, ...re
     onClick?.(e)
   }
   return (
-    <a onClick={handleClick} {...rest}>
+    <a onClick={handleClick} data-tracked="1" {...rest}>
       {children}
     </a>
   )

@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
+import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -344,7 +346,14 @@ export default function DubaiCompanyRegistrationBlog() {
                 <Link href="/company-incorporation" className="btn btn-outline">Company Incorporation India</Link>
               </div>
             </div>
-          </article>
+                    <PostCTA
+            heading="Thinking of setting up in Dubai?"
+            description="We advise on whether a UAE entity makes sense and how it affects your Indian tax position."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryExternal
+          />
+        </article>
         </div>
       </div>
     </>

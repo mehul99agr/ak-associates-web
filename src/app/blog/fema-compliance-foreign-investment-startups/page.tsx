@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
+import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -287,7 +289,14 @@ export default function FemaComplianceBlog() {
                 </Link>
               </div>
             </div>
-          </article>
+                    <PostCTA
+            heading="Raising foreign investment for your startup?"
+            description="We help with FEMA compliance, FC-GPR reporting and valuation requirements."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryExternal
+          />
+        </article>
         </div>
       </div>
     </>

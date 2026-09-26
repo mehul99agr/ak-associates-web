@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
+import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -124,6 +126,13 @@ export default function NewTaxActBlog() {
               Book a Consultation
             </a>
           </div>
+                  <PostCTA
+            heading="Not sure how the new Income Tax Act affects you?"
+            description="Talk to a CA about what changes for your filings and tax planning."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryExternal
+          />
         </article>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PostCTA from '../_components/PostCTA'
+import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -130,6 +132,13 @@ export default function UAECorporateTaxBlog() {
               <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing</Link>
             </div>
           </div>
+                  <PostCTA
+            heading="Have UAE business interests?"
+            description="We advise on UAE corporate tax and its impact on your Indian tax obligations."
+            secondaryLabel="Ask on WhatsApp"
+            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryExternal
+          />
         </article>
       </div>
     </div>

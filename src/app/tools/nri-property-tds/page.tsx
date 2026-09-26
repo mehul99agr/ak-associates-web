@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import ResultCTA from '../ResultCTA'
 import Link from 'next/link'
 
 const faqLd = {
@@ -144,6 +145,7 @@ export default function NRIPropertyTDSCalculator() {
                 </p>
               </div>
             )}
+            {result && <ResultCTA heading="Want this TDS handled correctly?" description="We help NRI sellers and buyers with TDS, lower deduction certificates and repatriation." />}
           </div>
 
           <div style={{ maxWidth: '700px', margin: '3.5rem auto 0' }}>
