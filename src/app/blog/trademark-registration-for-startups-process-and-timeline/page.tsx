@@ -142,7 +142,7 @@ export default function TrademarkRegistrationStartupsBlog() {
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/dpiit-registration-startups-india-80iac" style={{ color: 'var(--primary)', fontWeight: 600 }}>DPIIT Registration for Startups: Eligibility, Process &amp; 80-IAC Tax Benefit</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/startup-india-registration-vs-dpiit-recognition-what-is-the-difference" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup India Registration vs DPIIT Recognition: What Is the Difference</Link></li>
-                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/post-incorporation-checklist-new-companies" style={{ color: 'var(--primary)', fontWeight: 600 }}>Post-Incorporation Checklist for New Companies</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>Post-Incorporation Checklist for New Companies</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>Our Startup Advisory Services</Link></li>
                 </ul>
               </div>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Icon from './Icon'
 import TrackedLink from './TrackedLink'
+import { BOOKING_LINK, WHATSAPP_LINK } from '@/lib/constants'
 import GoogleReviews from './GoogleReviews'
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com' },
 }
 
-const bookingLink = "https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7"
+const bookingLink = BOOKING_LINK
 const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
 
 const services = [
@@ -184,17 +185,31 @@ export default function Home() {
             <span>⭐</span>
             <span>Trusted by 100+ Businesses Across India</span>
           </div>
-          <h1>Simplify your finances,<br />Empower your decisions.</h1>
+          <h1>Chartered Accountants for NRIs,<br />Founders and Growing Businesses</h1>
           <p>
-            <strong>Agrawal Khandelwal &amp; Associates LLP</strong> serves a diverse portfolio of clients, from startups and SMEs to multinational corporations. Our expertise spans Finance, Taxation, Auditing, and Management Consulting.
+            <strong>Agrawal Khandelwal &amp; Associates LLP</strong> handles taxation, audit, compliance and cross-border advisory from our Nashik and Sillod offices. Choose the option that fits you.
           </p>
+          <div className="hero-paths">
+            <Link href="/nri-tax-advisory" className="hero-path">
+              <strong>I am an NRI</strong>
+              <span>Property sale TDS, NRE/NRO accounts, FEMA and tax filing in India</span>
+            </Link>
+            <Link href="/startups" className="hero-path">
+              <strong>I am a Founder</strong>
+              <span>Incorporation, compliance, ESOPs, fundraising and Virtual CFO</span>
+            </Link>
+            <Link href="/ca-in-nashik" className="hero-path">
+              <strong>I run a Business</strong>
+              <span>GST, income tax, audit and books, in Nashik and Sillod</span>
+            </Link>
+          </div>
           <div className="hero-cta">
             <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="homepage_hero">
               Book Free Consultation
             </TrackedLink>
-            <Link href="/services" className="btn btn-secondary">
-              Explore Services
-            </Link>
+            <TrackedLink href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" method="whatsapp" location="homepage_hero">
+              Chat on WhatsApp
+            </TrackedLink>
           </div>
         </div>
       </section>

@@ -121,7 +121,7 @@ export default function TDSNRIPropertyBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 1, 2026</span>
                 <span aria-hidden>•</span>
-                <span>Updated July 11, 2026</span>
+                <span>Updated September 25, 2026</span>
                 <span aria-hidden>•</span>
                 <span>CA Mehul Agrawal</span>
                 <span aria-hidden>•</span>

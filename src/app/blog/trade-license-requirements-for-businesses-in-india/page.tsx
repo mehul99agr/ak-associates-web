@@ -110,8 +110,8 @@ export default function TradeLicenseBlog() {
                 <h2>Trade License vs Shop and Establishment License</h2>
                 <p>These are commonly bundled together in conversation but are legally distinct registrations from different authorities:</p>
                 <ul>
-                  <li><strong>Trade License</strong> — issued by the municipal corporation; regulates the commercial activity itself (what you are doing at the premises and whether it is safe/compliant to do it there).</li>
-                  <li><strong>Shop and Establishment License</strong> — issued by the state Labour Department under the applicable Shops and Establishments Act; regulates employment conditions at the establishment, working hours, wages, leave, and workplace welfare for staff.</li>
+                  <li><strong>Trade License</strong> - issued by the municipal corporation; regulates the commercial activity itself (what you are doing at the premises and whether it is safe/compliant to do it there).</li>
+                  <li><strong>Shop and Establishment License</strong> - issued by the state Labour Department under the applicable Shops and Establishments Act; regulates employment conditions at the establishment, working hours, wages, leave, and workplace welfare for staff.</li>
                 </ul>
                 <p>Most commercial premises with employees need both. A business that skips the Shop and Establishment registration while holding a valid trade license, or vice versa, is still non-compliant on the one it skipped; neither substitutes for the other.</p>
 

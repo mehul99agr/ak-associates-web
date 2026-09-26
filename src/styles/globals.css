@@ -16,6 +16,7 @@
   --serif: var(--font-cormorant, 'Cormorant Garamond', Georgia, 'Times New Roman', serif);
 
   /* Text */
+  --text-heading: var(--primary);
   --text-main: #1f2937;
   --text-light: #6b7280;
   --text-muted: #9ca3af;
@@ -728,3 +729,27 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 640px) {
   .blog-content table { display: block; overflow-x: auto; white-space: nowrap; }
 }
+
+/* Homepage hero audience paths */
+.hero-paths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: left;
+}
+.hero-path {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: background 0.2s, transform 0.2s;
+}
+.hero-path:hover { background: rgba(255, 255, 255, 0.16); transform: translateY(-2px); }
+.hero-path strong { font-size: 1.05rem; }
+.hero-path span { font-size: 0.85rem; opacity: 0.85; line-height: 1.5; }

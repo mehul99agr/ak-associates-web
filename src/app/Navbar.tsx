@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import TrackedLink from './TrackedLink'
+import { BOOKING_LINK } from '@/lib/constants'
 
 const serviceGroups = [
   {
@@ -44,7 +45,7 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
-  const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+  const bookingLink = BOOKING_LINK
 
   const toggleMenu = () => setIsOpen(prev => !prev)
   const closeMenu = () => {

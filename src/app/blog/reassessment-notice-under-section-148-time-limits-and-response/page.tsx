@@ -150,7 +150,7 @@ export default function ReassessmentNoticeSection148Blog() {
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/income-tax-notices-explained-143-1-143-2-148" style={{ color: 'var(--primary)', fontWeight: 600 }}>Income Tax Notices Explained: Section 143(1), 143(2) &amp; 148</Link></li>
-                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/best-judgment-assessment-under-section-144-what-it-means" style={{ color: 'var(--primary)', fontWeight: 600 }}>Best Judgment Assessment Under Section 144: What It Means</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/best-judgment-assessment-section-144" style={{ color: 'var(--primary)', fontWeight: 600 }}>Best Judgment Assessment Under Section 144: What It Means</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/faceless-assessment-scheme-how-it-works" style={{ color: 'var(--primary)', fontWeight: 600 }}>Faceless Assessment Scheme: How It Works</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>Our Tax Advisory Services</Link></li>
                 </ul>

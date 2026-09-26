@@ -80,7 +80,7 @@ export default function EsiRegistrationBlog() {
                     <li style={{ marginBottom: '0.4rem' }}>ESI generally applies to establishments with <strong>10 or more employees</strong>, though some states still use a 20-employee threshold for certain establishment categories, confirm the state-specific rule.</li>
                     <li style={{ marginBottom: '0.4rem' }}>The headcount test counts <strong>everyone</strong> on the rolls, including staff earning above the wage ceiling and agency/contract workers; only after that does the wage ceiling decide who actually contributes.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Employees earning up to <strong>Rs 21,000/month</strong> gross (Rs 25,000 for employees with disabilities) are covered.</li>
-                    <li style={{ marginBottom: 0 }}>Contribution is <strong>4% of gross wages total</strong> — 3.25% employer, 0.75% employee — deposited monthly by the 15th, with a half-yearly return.</li>
+                    <li style={{ marginBottom: 0 }}>Contribution is <strong>4% of gross wages total</strong> - 3.25% employer, 0.75% employee - deposited monthly by the 15th, with a half-yearly return.</li>
                   </ul>
                 </div>
 

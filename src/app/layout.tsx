@@ -309,7 +309,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               <div>
                 <h3>Quick Links</h3>
-                <Link href="/#about">About Us</Link>
+                <Link href="/about">About Us</Link>
                 <Link href="/services">Our Services</Link>
                 <Link href="/ca-in-nashik">CA in Nashik</Link>
                 <Link href="/ca-in-sillod">CA in Sillod</Link>
