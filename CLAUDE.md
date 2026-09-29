@@ -929,3 +929,14 @@ code review. The Sep 25 Opus review's leads were verified and fixed. What change
    rewrite — more on-page content isn't moving it; treat as an authority/backlink
    problem, not a content-depth problem.
 5. (Removed) aggregateRating/reviewCount schema no longer exists; nothing to keep in sync.
+6. **Open items from the Sep 29, 2026 session (resume here):**
+   - Meta descriptions: DONE (commit fe3b891) - all 173 over-length descriptions rewritten to
+     <=160 chars. Keep new ones <=160 (audit script flags >165).
+   - Titles: PENDING user decision - ~176 titles >65 chars and 67 using `title.absolute`
+     without the firm name (deliberate from the Aug audit, but conflicts with the Brand Name
+     Rule). Recommendation given: leave top earners (TAN / TDS-on-NRI-property) alone; only
+     restore the brand on specific pages if the user asks.
+   - BuiltWith AI Index: recheck the score after BuiltWith rescans (agent-readiness files
+     shipped Sep 29, commit fd92ca2). Expect Agent Readiness/Maturity > 0, Visibility ~35.
+   - Optional: full fact-check of all 222 posts was NOT done - only the posts flagged by the
+     Sep 29 audit plus a site-wide grep for the same stale facts.
