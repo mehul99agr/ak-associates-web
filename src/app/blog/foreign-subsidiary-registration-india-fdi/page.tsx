@@ -32,12 +32,13 @@ const articleLd = buildArticleLd({
   headline: 'Foreign Subsidiary Registration (India)',
   description: 'How a foreign parent company registers a wholly owned Indian subsidiary, including FDI route, director requirements, and post-investment reporting.',
   datePublished: '2026-06-23',
+  dateModified: '2026-09-29',
   slug: 'foreign-subsidiary-registration-india-fdi',
 })
 
 const faqs: [string, string][] = [
   ['Can a foreign company own 100% of an Indian private limited company?', 'Yes, in most sectors that fall under the Automatic Route, a foreign company can hold up to 100% of an Indian private limited company without prior government approval, subject to sectoral conditions and reporting requirements.'],
-  ['Does an Indian subsidiary of a foreign company need a resident director?', 'Yes. Every Indian company, including a wholly owned subsidiary of a foreign parent, must have at least one director who is a resident of India, meaning they stayed in India for the minimum period prescribed under the Companies Act in the previous calendar year.'],
+  ['Does an Indian subsidiary of a foreign company need a resident director?', 'Yes. Every Indian company, including a wholly owned subsidiary of a foreign parent, must have at least one director who is a resident of India, meaning they stayed in India for at least 182 days during the financial year, as required by Section 149(3) of the Companies Act.'],
   ['What is FC-GPR and when is it filed?', 'Form FC-GPR is filed with the RBI through the FIRMS portal to report the issue of shares by an Indian company to a foreign investor against FDI, generally within the timeline prescribed under FEMA regulations after allotment.'],
   ['Which FDI route applies to a new Indian subsidiary?', 'Most sectors fall under the Automatic Route, requiring no prior government approval. Certain sectors are restricted, conditional, or require Government Route approval. Always confirm which route applies to the specific business activity before incorporating.'],
   ['What is the Annual FLA return?', 'The Foreign Liabilities and Assets (FLA) return is an annual RBI filing required from any Indian entity that has received FDI or made overseas investment, reporting the outstanding foreign liabilities and assets as of March 31 each year.'],
@@ -58,7 +59,7 @@ export default function ForeignSubsidiaryBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Foreign Subsidiary Registration in India: FDI Route and Compliance Guide</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 23, 2026</span><span aria-hidden>&bull;</span><span>Updated September 29, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -77,7 +78,7 @@ export default function ForeignSubsidiaryBlog() {
               <p>Foreign investment into an Indian company falls under one of two routes. Under the <strong>Automatic Route</strong>, the foreign investor can invest without seeking prior approval from the Indian government, which covers most sectors including IT services, consulting, trading, and manufacturing. Under the <strong>Government Route</strong>, certain sectors require prior approval before the investment can be made, and a few sectors remain fully restricted or conditional. Before incorporating, confirm which route applies to the specific business activity the subsidiary will carry out, since the correct classification determines the entire compliance path.</p>
 
               <h2>The Resident Director Requirement</h2>
-              <p>A foreign parent cannot staff an Indian subsidiary\'s Board with only non-resident directors. The Companies Act requires every Indian company to have at least one director who has stayed in India for the minimum period prescribed under the Act in the previous calendar year. Many first-time foreign investors miss this and need to appoint a local resident director, sometimes a professional nominee, purely to satisfy this requirement while the substantive management sits with the foreign parent\'s team.</p>
+              <p>A foreign parent cannot staff an Indian subsidiary\'s Board with only non-resident directors. The Companies Act requires every Indian company to have at least one director who has stayed in India for at least 182 days during the financial year (Section 149(3) of the Companies Act). Many first-time foreign investors miss this and need to appoint a local resident director, sometimes a professional nominee, purely to satisfy this requirement while the substantive management sits with the foreign parent\'s team.</p>
 
               <h2>Incorporation Steps for a Wholly Owned Subsidiary</h2>
               <ul>

@@ -8751,9 +8751,9 @@ Startup Compliance
 
 # FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)
 
-Published on June 08, 2026 • By CA Mehul Agrawal
+Published on June 08, 2026 • Updated September 29, 2026 • By CA Mehul Agrawal
 
-Foreign investment is the moment most funded startups first encounter FEMA; the Foreign Exchange Management Act. Before the wire, it is an abstract regulatory framework. After the wire, it becomes a hard compliance clock: 30 days to report receipt of funds, 30 days from allotment to file FC-GPR with RBI, and an annual return due every July 15.
+Foreign investment is the moment most funded startups first encounter FEMA; the Foreign Exchange Management Act. Before the wire, it is an abstract regulatory framework. After the wire, it becomes a hard compliance clock: 60 days from receipt to allot shares, 30 days from allotment to file FC-GPR with RBI, and an annual return due every July 15.
 
 Most startup founders are focused on the term sheet and cap table when the investment closes. FEMA filings are an afterthought; and that is exactly where penalties accumulate. This guide covers every step of the FEMA compliance process so your CA and legal team have a clear checklist, and you know what to expect.
 
@@ -8771,11 +8771,11 @@ Requires prior approval from the relevant Ministry or FIPB successor body. Appli
 
 Before accepting investment from a foreign entity, verify two things: (1) whether your sector is on the Automatic or Government route, and (2) the applicable sectoral FDI cap. A startup in a sector with a 49% FDI cap, for instance, cannot issue more than 49% of its equity to foreign investors without government approval, regardless of the investor or valuation.
 
-## Step 2: When the Money Lands; The 30-Day Reporting Window
+## Step 2: When the Money Lands; The 60-Day Allotment Window
 
-The moment the foreign funds hit your Indian bank account, a 30-day clock starts. Within 30 days, your company must report the receipt of funds to your AD (Authorised Dealer) Bank; the Indian bank where the account is held. Your bank will then report it to RBI.
+The moment the foreign funds hit your Indian bank account, a 60-day clock starts: shares must be allotted to the investor within 60 days of receipt. If they are not, the money must be refunded within 15 days after that. The old separate receipt report (Form ARF, due within 30 days of receipt) was discontinued on September 1, 2018 and merged into FC-GPR, so there is no longer a standalone RBI filing at this stage.
 
-What you need to provide to your AD Bank:
+What your AD (Authorised Dealer) Bank will ask for, and what you should collect now for the FC-GPR:
 
 - FIRC (Foreign Inward Remittance Certificate); issued by the bank on request
 - KYC documents of the foreign investor (identity proof, address proof, entity documents if a fund)
@@ -8800,7 +8800,7 @@ The most common delay is the valuation certificate. If your CA is preparing the 
 
 ### What happens if FC-GPR is filed late?
 
-Late FC-GPR attracts compounding penalty under FEMA. Penalties range from a flat minimum of **₹5,000** up to **300% of the investment amount** depending on delay period and RBI discretion. Most short delays (under 3 months) with a clean filing history attract modest penalties in the ₹10,000-50,000 range after compounding. However, the application process itself takes 3-6 months and involves legal costs. File on time.
+A late FC-GPR can be regularised by paying a **Late Submission Fee (LSF)** instead of going through compounding, if the delay is within 3 years. For FC-GPR the fee is **₹7,500 + 0.025% of the amount involved for each year of delay**, capped at 100% of the amount involved (RBI A.P. (DIR Series) Circular No. 16, September 30, 2022). Delays beyond that window need compounding, which is slower and costlier. File on time.
 
 ## Step 4: Annual FEMA Compliance; The FLA Return
 
@@ -8816,7 +8816,7 @@ Important: even if no new foreign investment happened in the year, you must stil
 - **Using a wrong valuation method.** FDI pricing guidelines require valuation by a specific set of methods (DCF is most common for startups). A valuation from a pitch deck or last round price is not acceptable.
 - **Treating a Convertible Note as a loan.** Convertible Notes from foreign investors are a specific FEMA instrument with their own reporting form and rules. They are not Simple Loans under ECB regulations.
 - **Forgetting the FLA return when no new investment happened.** The FLA is an annual obligation, not a round-specific one. Once you have foreign investors, it is on your compliance calendar every July 15.
-- **Not tracking nationality of incoming investors.** Investment from Pakistan and Bangladesh requires government route approval even for sectors on the Automatic Route. Always know where your investor's entity is incorporated.
+- **Not tracking nationality of incoming investors.** Investment from any country that shares a land border with India (including China, Pakistan and Bangladesh), or where the beneficial owner is from such a country, requires Government Route approval even for sectors on the Automatic Route (Press Note 3 of 2020). Always know where your investor's entity is incorporated.
 
 ## What Your CA Does in a Foreign Funding Round
 
@@ -8862,19 +8862,27 @@ For follow-on rounds, repeat the valuation + FC-GPR process. If existing foreign
 
 ### Does a startup need RBI approval to receive foreign investment?
 
-In most cases, no. Most sectors are covered under the Automatic Route; no prior RBI or government approval is needed. The investment needs to be reported to your AD Bank within 30 days of receipt, and FC-GPR filed within 30 days of allotment. Government Route approval is only required for sectors like defence and print media.
+In most cases, no. Most sectors are covered under the Automatic Route, meaning no prior RBI or government approval is needed. Shares must be allotted within 60 days of receiving the funds, and FC-GPR filed within 30 days of allotment. Government Route approval is required for sectors like defence (above 74%) and print media, and for any investor from a country sharing a land border with India; most software and services startups fall under the Automatic Route.
 
-### What is the FLA return and when is it due?
+### What is FC-GPR and when does a startup need to file it?
 
-The FLA (Foreign Liabilities and Assets) Annual Return is an RBI filing due every July 15. Any company with foreign investment on its books (even if no new investment happened that year) must file it. It captures outstanding foreign liabilities and assets as of March 31.
+FC-GPR (Foreign Currency; Gross Provisional Return) is the RBI filing a company must submit after it issues shares to a foreign investor. It must be filed on the RBI's FIRMS portal within 30 days of the date of share allotment. The filing requires a CA-certified valuation certificate, proof of receipt of funds (FIRC), and KYC documents for the foreign investor.
 
-### Can a foreign investor hold Convertible Notes in an Indian startup?
+### What is the penalty for late FC-GPR filing?
 
-Yes, DPIIT-recognised startups can issue Convertible Notes to foreign investors. The minimum investment is USD 2,00,000 per investor. A separate RBI reporting form must be filed within 30 days of receipt; not FC-GPR (which only applies after conversion to equity).
+A late FC-GPR can be regularised by paying a Late Submission Fee (LSF) to RBI instead of going through compounding, as long as the delay is within 3 years. Under RBI's uniform LSF formula (A.P. (DIR Series) Circular No. 16 of September 30, 2022), the fee for FC-GPR is ₹7,500 plus 0.025% of the amount involved for each year of delay, capped at 100% of the amount involved. Delays beyond the LSF window have to be compounded, which is slower and costlier.
+
+### What is the FLA return and who needs to file it?
+
+The FLA (Foreign Liabilities and Assets) Annual Return is an RBI survey that every company with outstanding foreign investment must file by July 15 each year. It captures your company's foreign liabilities (equity from foreign investors, ECBs) and foreign assets (overseas subsidiaries, loans given abroad). If your startup has received even one round of foreign funding, you must file FLA every year, even if no new investment happened that year.
+
+### Can a foreign investor hold convertible notes in an Indian startup?
+
+Yes, under the Startup India framework, DPIIT-recognised startups can issue Convertible Notes to foreign investors. A Convertible Note converts into equity or is repaid within 10 years of issue. Under the FEMA Non-Debt Instruments Rules, each foreign investor must invest at least ₹25 lakh in a single tranche. A separate CN-specific reporting form must be filed with RBI within 30 days of receipt of funds; different from FC-GPR (which is filed only after conversion to equity).
 
 ### Do startup founders need a valuation certificate for foreign investment?
 
-Only a FEMA valuation is mandatory; certifying the issue price meets FDI pricing guidelines, prepared by a CA or SEBI-registered Merchant Banker and filed with the FC-GPR. A separate Income Tax FMV certificate under Section 56(2)(viib) used to be required alongside it, but that provision was abolished for all investors effective FY 2024-25, so it is no longer a mandatory filing.
+Only one valuation is mandatory now: a FEMA valuation by a SEBI-registered Merchant Banker or CA, to determine the minimum price at which shares can be issued to a foreign investor under FDI pricing guidelines, filed with the FC-GPR. The separate angel-tax FMV certificate under the old Section 56(2)(viib) is no longer required for this; that provision was abolished for all investors, resident and non-resident, effective FY 2024-25 (Finance (No. 2) Act, 2024). Founders should still keep a defensible valuation on file for investor negotiations, ESOP pricing, and diligence, but it is not a mandatory Income Tax filing requirement anymore.
 
 ### Raising a foreign round? Get the FEMA compliance right the first time.
 
@@ -9080,7 +9088,7 @@ Corporate Law
 
 # How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)
 
-Published on May 08, 2026 • By Mehul Agrawal, CA
+Published on May 08, 2026 • Updated September 29, 2026 • By Mehul Agrawal, CA
 
 Every week, founders and small business owners ask us the same question: “How do I register my company in India, and which structure should I choose?” It sounds simple. It isn't. The structure you pick on day one affects your ability to raise funding, your tax liability, your annual compliance burden, and how easy it is to bring in co-founders or exit years later.
 
@@ -9097,9 +9105,9 @@ In India, most businesses incorporate as one of three structures:
 | Raise VC/Angel funding | Yes | Very difficult | No |
 | Issue ESOPs | Yes | No | No |
 | Annual compliance | Moderate–High | Low | Moderate |
-| Tax rate (base) | 22% (existing) / 15% (new mfg) | 30% on profits | 22% |
-| Audit required | Yes (always) | Only above ₹40L turnover | Yes (always) |
-| Incorporation cost | ₹8,000–₹15,000 (govt fees) | ₹5,000–₹10,000 | ₹5,000–₹8,000 |
+| Tax rate (base) | 22% (concessional regime) | 30% on profits | 22% |
+| Audit required | Yes (always) | Above ₹40L turnover or ₹25L contribution | Yes (always) |
+| Govt. incorporation cost | Nil MCA fee up to ₹15L capital + stamp duty | Filing fee + stamp duty (varies by state) | Nil MCA fee up to ₹15L capital + stamp duty |
 
 ## Which Structure Should You Choose?
 
@@ -9186,11 +9194,11 @@ For the registered office address:
 
 ## What Does It Cost?
 
-Govt. filing fees
+MCA filing fee
 
-₹8,000–₹15,000
+Nil
 
-Depends on authorised capital
+Up to ₹15 lakh authorised capital; state stamp duty extra
 
 CA / professional fees
 
@@ -9203,12 +9211,6 @@ DSC (per director)
 ₹1,000–₹2,000
 
 2-year validity
-
-Total typical range
-
-₹15,000–₹40,000
-
-Pvt Ltd all-in
 
 Be wary of extremely low-cost offers online. The ₹999 incorporation packages typically exclude government fees, DSC costs, and any advisory on MOA objects or shareholder agreements, all of which matter significantly as your business grows.
 
@@ -9232,6 +9234,40 @@ Once incorporated, your annual compliance calendar includes:
 - Board meetings (minimum 4 per year for Pvt Ltd)
 
 The typical annual compliance cost for a Pvt Ltd with a CA firm ranges from **₹30,000–₹80,000** depending on turnover and transaction volume.
+
+## Frequently Asked Questions
+
+### How long does it take to incorporate a company in India?
+
+Typically 15–20 working days end-to-end: 1–2 days for DSC, 2–5 days for name reservation, and 7–15 days for MCA to process the SPICe+ filing and issue the Certificate of Incorporation.
+
+### What is the minimum capital required to incorporate a company in India?
+
+There is no minimum paid-up capital requirement for a Private Limited Company or LLP in India since the Companies (Amendment) Act, 2015. MCA filing fees are nil for authorised capital up to ₹15 lakh; state stamp duty on the MoA and AoA still applies and depends on the state and the authorised capital.
+
+### What is the difference between a Private Limited Company and an LLP?
+
+A Private Limited Company can raise VC/angel funding, issue ESOPs, and has higher compliance requirements. An LLP is simpler with lower compliance costs, suited for professional services and consulting firms, but cannot raise equity funding easily. Tax rate for Pvt Ltd is 22%, while LLP profits are taxed at 30%.
+
+### How much does it cost to incorporate a company in India?
+
+For a Private Limited Company with authorised capital up to ₹15 lakh, the MCA filing fee is nil. You still pay state stamp duty on the MoA and AoA (varies by state and capital), a DSC for each director (₹1,000–₹2,000 each), and CA/professional fees (₹5,000–₹25,000).
+
+### What documents are required for company incorporation in India?
+
+Each director/shareholder needs: PAN Card, Aadhaar Card, passport-size photograph, address proof (bank statement or utility bill not older than 2 months), and email/mobile. For the registered office: a utility bill of the premises and an NOC from the property owner if rented.
+
+### Which is better for a startup: Private Limited Company or LLP?
+
+For startups planning to raise external funding or issue ESOPs, a Private Limited Company is the only viable option: investors require it. For bootstrapped professional services businesses (consulting, design, law), an LLP is better due to lower compliance burden and flexible profit-sharing.
+
+### Can an NRI or foreign national incorporate a company in India?
+
+Yes. An NRI or foreign national can be a director or shareholder in an Indian company. However, at least one director must be a resident Indian (stayed in India for at least 182 days during the financial year, under Section 149(3) of the Companies Act, 2013). Foreign investment is subject to FDI policy and FEMA regulations.
+
+### What is the SPICe+ form?
+
+SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is the MCA's integrated incorporation form. It combines company registration, DIN allotment, PAN, TAN, GSTIN, EPFO, ESIC registration, and bank account opening into a single application.
 
 ### Related Guides
 
@@ -10732,7 +10768,7 @@ Company Incorporation
 
 # Foreign Subsidiary Registration in India: FDI Route and Compliance Guide
 
-Published June 23, 2026CA Mehul AgrawalAgrawal Khandelwal & Associates LLP
+Published June 23, 2026Updated September 29, 2026CA Mehul AgrawalAgrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -10749,7 +10785,7 @@ Foreign investment into an Indian company falls under one of two routes. Under t
 
 ## The Resident Director Requirement
 
-A foreign parent cannot staff an Indian subsidiary\'s Board with only non-resident directors. The Companies Act requires every Indian company to have at least one director who has stayed in India for the minimum period prescribed under the Act in the previous calendar year. Many first-time foreign investors miss this and need to appoint a local resident director, sometimes a professional nominee, purely to satisfy this requirement while the substantive management sits with the foreign parent\'s team.
+A foreign parent cannot staff an Indian subsidiary\'s Board with only non-resident directors. The Companies Act requires every Indian company to have at least one director who has stayed in India for at least 182 days during the financial year (Section 149(3) of the Companies Act). Many first-time foreign investors miss this and need to appoint a local resident director, sometimes a professional nominee, purely to satisfy this requirement while the substantive management sits with the foreign parent\'s team.
 
 ## Incorporation Steps for a Wholly Owned Subsidiary
 
@@ -10791,7 +10827,7 @@ Yes, in most sectors that fall under the Automatic Route, a foreign company can 
 
 ### Does an Indian subsidiary of a foreign company need a resident director?
 
-Yes. Every Indian company, including a wholly owned subsidiary of a foreign parent, must have at least one director who is a resident of India, meaning they stayed in India for the minimum period prescribed under the Companies Act in the previous calendar year.
+Yes. Every Indian company, including a wholly owned subsidiary of a foreign parent, must have at least one director who is a resident of India, meaning they stayed in India for at least 182 days during the financial year, as required by Section 149(3) of the Companies Act.
 
 ### What is FC-GPR and when is it filed?
 
@@ -20314,12 +20350,12 @@ Corporate Tax
 
 # Corporate Tax Rates in India: Domestic Company vs New Manufacturing Regime
 
-Published August 26, 2026CA Mehul AgrawalAgrawal Khandelwal & Associates LLP
+Published August 26, 2026Updated September 29, 2026CA Mehul AgrawalAgrawal Khandelwal & Associates LLP
 
 TL;DR
 
 - **Section 115BAA:** 22% base rate for any domestic company (effective ~25.17% with surcharge and cess), in exchange for giving up most exemptions and deductions.
-- **Section 115BAB:** 15% base rate, but only for new manufacturing companies incorporated on or after October 1, 2019, meeting stricter conditions on plant and machinery and business formation.
+- **Section 115BAB:** 15% base rate for manufacturing companies incorporated on or after October 1, 2019 that commenced manufacturing on or before March 31, 2024. The deadline was not extended, so new companies can no longer opt in.
 - Both options are exempt from MAT under Section 115JB, and once exercised, the choice is generally irrevocable.
 - The right regime depends on how much value a company's existing deductions are worth versus the flat lower rate; this needs an actual computation, not a default choice.
 
@@ -20333,14 +20369,14 @@ The condition attached is that the company must forgo most exemptions and incent
 
 ## Section 115BAB: The Manufacturing-Specific Regime
 
-**Section 115BAB** is narrower and stricter, but the rate is lower still: a **15%** base rate for new domestic manufacturing companies. Eligibility requires the company to be incorporated on or after **October 1, 2019**, and to commence manufacturing or production by the statutory deadline prescribed in the section. The company also cannot be formed by splitting up or reconstructing an existing business (other than in specified reorganisation scenarios), and cannot use previously-used plant and machinery beyond a limited threshold, along with a few other conditions around business type exclusions.
+**Section 115BAB** is narrower and stricter, but the rate is lower still: a **15%** base rate for new domestic manufacturing companies. Eligibility requires the company to be incorporated on or after **October 1, 2019**, and to have commenced manufacturing or production on or before **March 31, 2024**. That deadline (already extended once, from March 31, 2023) was not extended again, so 115BAB is now only relevant to companies that met it; a manufacturing company set up today cannot use it. The company also cannot be formed by splitting up or reconstructing an existing business (other than in specified reorganisation scenarios), and cannot use previously-used plant and machinery beyond a limited threshold, along with a few other conditions around business type exclusions.
 
 Companies opting for 115BAB file **Form 10-ID**, and like 115BAA, the option is irrevocable once exercised and MAT exemption applies. Because the eligibility bar is higher, this regime is really aimed at genuinely new manufacturing capacity, not an existing company simply rebranding an activity as manufacturing to access the lower rate.
 
 ## Side-by-Side: 115BAA vs 115BAB
 
 - **Base rate:** 115BAA is 22%; 115BAB is 15%, a meaningful gap for a company that qualifies for both.
-- **Eligibility:** 115BAA is open to any domestic company; 115BAB is restricted to new manufacturing companies meeting incorporation-date and plant-and-machinery conditions.
+- **Eligibility:** 115BAA is open to any domestic company; 115BAB is restricted to manufacturing companies that met its incorporation-date and March 31, 2024 commencement deadline, plus plant-and-machinery conditions.
 - **Deductions forgone:** both require giving up most Chapter VI-A deductions and additional depreciation; the trade-off structure is similar even though the rates differ.
 - **MAT:** neither regime attracts MAT under Section 115JB.
 - **Reversibility:** both options are effectively a one-way door once exercised, so the decision should be modelled over several years of expected profitability, not just the year of election.
@@ -20349,7 +20385,7 @@ Companies opting for 115BAB file **Form 10-ID**, and like 115BAA, the option is 
 
 The regular regime, with its higher headline rates but full access to exemptions and deductions, can still work out cheaper for a company that has substantial brought-forward tax holiday benefits, significant additional depreciation on recent capex, or other deduction-heavy positions still in play. For a company with few such deductions, 115BAA's flat 22% (or 115BAB's 15%, if genuinely eligible as a new manufacturer) is usually the better outcome, both for the lower rate and for the simplicity of not tracking a deduction-heavy computation every year.
 
-Because the election is irrevocable, this isn't a decision to make purely off the current year's numbers. A multi-year projection, factoring in planned capex, expected profitability, and any deductions currently in the pipeline, should sit behind the choice of Form 10-IC, Form 10-ID, or staying on the regular regime. Companies planning a foreign subsidiary or FDI-route manufacturing entity in India should factor the 115BAB rate into their entity structuring from day one; see our [foreign subsidiary registration guide](https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi) for the incorporation side of that decision.
+Because the election is irrevocable, this isn't a decision to make purely off the current year's numbers. A multi-year projection, factoring in planned capex, expected profitability, and any deductions currently in the pipeline, should sit behind the choice of Form 10-IC, Form 10-ID, or staying on the regular regime. Companies planning a new foreign subsidiary or FDI-route manufacturing entity in India today should model 115BAA against the regular regime, since the 115BAB window has closed; see our [foreign subsidiary registration guide](https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi) for the incorporation side of that decision.
 
 ### Deciding between the regular regime, 115BAA, or 115BAB?
 
@@ -20365,7 +20401,7 @@ Section 115BAA gives any domestic company the option of a concessional 22% base 
 
 ### What is the tax rate under Section 115BAB and who can use it?
 
-Section 115BAB offers a lower 15% base rate (effective roughly in the mid-to-high teens after surcharge and cess) but only to new domestic manufacturing companies incorporated on or after October 1, 2019, that commence manufacturing by the deadline prescribed in the section, don't use previously used plant and machinery beyond specified limits, and aren't formed by splitting up or reconstructing an existing business. It is narrower and stricter than Section 115BAA, but the rate is meaningfully lower.
+Section 115BAB offers a lower 15% base rate (effective roughly in the mid-to-high teens after surcharge and cess) but only to new domestic manufacturing companies incorporated on or after October 1, 2019, that commenced manufacturing on or before March 31, 2024, don't use previously used plant and machinery beyond specified limits, and aren't formed by splitting up or reconstructing an existing business. That March 31, 2024 deadline was not extended, so the regime is closed to new entrants: a company that had not started manufacturing by then cannot opt into 115BAB, while companies that already qualified continue under it.
 
 ### Can a company switch back to the old regime after opting for 115BAA or 115BAB?
 

@@ -29,7 +29,7 @@ const articleLd = buildArticleLd({
   headline: 'Incorporate a Company in India (2026)',
   description: 'Complete guide to company incorporation in India: structure comparison, step-by-step process, costs, timeline, and documents.',
   datePublished: '2026-05-08',
-  dateModified: '2026-05-13',
+  dateModified: '2026-09-29',
   slug: 'company-incorporation-india-guide',
 })
 
@@ -97,7 +97,7 @@ const faqLd = {
       name: 'What is the minimum capital required to incorporate a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'There is no minimum paid-up capital requirement for a Private Limited Company or LLP in India since the Companies (Amendment) Act, 2015. You can incorporate with as little as ₹1 in authorised capital, though government fees are calculated on authorised capital.',
+        text: 'There is no minimum paid-up capital requirement for a Private Limited Company or LLP in India since the Companies (Amendment) Act, 2015. MCA filing fees are nil for authorised capital up to ₹15 lakh; state stamp duty on the MoA and AoA still applies and depends on the state and the authorised capital.',
       },
     },
     {
@@ -113,7 +113,7 @@ const faqLd = {
       name: 'How much does it cost to incorporate a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'All-in cost for a Private Limited Company typically ranges from ₹15,000 to ₹40,000: covering government filing fees (₹8,000–₹15,000 depending on authorised capital), DSC for each director (₹1,000–₹2,000 each), and CA/professional fees (₹5,000–₹25,000).',
+        text: 'For a Private Limited Company with authorised capital up to ₹15 lakh, the MCA filing fee is nil. You still pay state stamp duty on the MoA and AoA (varies by state and capital), a DSC for each director (₹1,000–₹2,000 each), and CA/professional fees (₹5,000–₹25,000).',
       },
     },
     {
@@ -137,7 +137,7 @@ const faqLd = {
       name: 'Can an NRI or foreign national incorporate a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. An NRI or foreign national can be a director or shareholder in an Indian company. However, at least one director must be a resident Indian (stayed in India for at least 182 days in the previous calendar year). Foreign investment is subject to FDI policy and FEMA regulations.',
+        text: 'Yes. An NRI or foreign national can be a director or shareholder in an Indian company. However, at least one director must be a resident Indian (stayed in India for at least 182 days during the financial year, under Section 149(3) of the Companies Act, 2013). Foreign investment is subject to FDI policy and FEMA regulations.',
       },
     },
     {
@@ -145,7 +145,7 @@ const faqLd = {
       name: 'What is the SPICe+ form?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is the MCA\'s integrated incorporation form. It combines company registration, DIN allotment, PAN, TAN, GSTIN, EPFO, ESIC registration, and bank account opening into a single application, replacing what used to be 5 separate filings.',
+        text: 'SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is the MCA\'s integrated incorporation form. It combines company registration, DIN allotment, PAN, TAN, GSTIN, EPFO, ESIC registration, and bank account opening into a single application.',
       },
     },
   ],
@@ -170,7 +170,7 @@ export default function CompanyIncorporationGuideBlog() {
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
               How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)
             </h1>
-            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 08, 2026 • By Mehul Agrawal, CA</p>
+            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 08, 2026 • Updated September 29, 2026 • By Mehul Agrawal, CA</p>
           </div>
 
           <div style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
@@ -201,9 +201,9 @@ export default function CompanyIncorporationGuideBlog() {
                     ['Raise VC/Angel funding', 'Yes', 'Very difficult', 'No'],
                     ['Issue ESOPs', 'Yes', 'No', 'No'],
                     ['Annual compliance', 'Moderate–High', 'Low', 'Moderate'],
-                    ['Tax rate (base)', '22% (existing) / 15% (new mfg)', '30% on profits', '22%'],
-                    ['Audit required', 'Yes (always)', 'Only above ₹40L turnover', 'Yes (always)'],
-                    ['Incorporation cost', '₹8,000–₹15,000 (govt fees)', '₹5,000–₹10,000', '₹5,000–₹8,000'],
+                    ['Tax rate (base)', '22% (concessional regime)', '30% on profits', '22%'],
+                    ['Audit required', 'Yes (always)', 'Above ₹40L turnover or ₹25L contribution', 'Yes (always)'],
+                    ['Govt. incorporation cost', 'Nil MCA fee up to ₹15L capital + stamp duty', 'Filing fee + stamp duty (varies by state)', 'Nil MCA fee up to ₹15L capital + stamp duty'],
                   ].map(([factor, pvt, llp, opc], i) => (
                     <tr key={i} style={{ background: i % 2 === 0 ? 'var(--bg-surface)' : 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
                       <td style={{ padding: '10px 16px', fontWeight: 700 }}>{factor}</td>
@@ -313,10 +313,9 @@ export default function CompanyIncorporationGuideBlog() {
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>What Does It Cost?</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
               {[
-                { label: 'Govt. filing fees', value: '₹8,000–₹15,000', note: 'Depends on authorised capital' },
+                { label: 'MCA filing fee', value: 'Nil', note: 'Up to ₹15 lakh authorised capital; state stamp duty extra' },
                 { label: 'CA / professional fees', value: '₹5,000–₹25,000', note: 'Varies by firm and complexity' },
                 { label: 'DSC (per director)', value: '₹1,000–₹2,000', note: '2-year validity' },
-                { label: 'Total typical range', value: '₹15,000–₹40,000', note: 'Pvt Ltd all-in' },
               ].map((item, i) => (
                 <div key={i} style={{ background: 'var(--bg-surface)', padding: '1.25rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
                   <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', marginBottom: '4px' }}>{item.label}</div>
@@ -361,6 +360,16 @@ export default function CompanyIncorporationGuideBlog() {
             <p style={{ marginBottom: '1.5rem' }}>
               The typical annual compliance cost for a Pvt Ltd with a CA firm ranges from <strong>₹30,000–₹80,000</strong> depending on turnover and transaction volume.
             </p>
+          </div>
+
+          <div className="blog-content">
+            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>Frequently Asked Questions</h2>
+            {faqLd.mainEntity.map((item, i) => (
+              <div key={i} style={{ marginBottom: '1.75rem', borderLeft: '3px solid var(--border)', paddingLeft: '1.25rem' }}>
+                <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem', fontSize: '1.05rem' }}>{item.name}</h3>
+                <p style={{ color: 'var(--text-main)', margin: 0, fontSize: '0.97rem' }}>{item.acceptedAnswer.text}</p>
+              </div>
+            ))}
           </div>
 
           <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

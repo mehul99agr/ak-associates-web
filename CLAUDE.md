@@ -846,6 +846,26 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   one pass kept this tractable — a full 250+ post sweep would need to be its own
   multi-session effort if ever requested.
 
+- **Sep 29, 2026 - Whole-site recheck.** Live: all 245 sitemap URLs 200, www/http 308 to
+  canonical, no broken internal links, canonicals/H1s/JSON-LD valid, blog dates in sync.
+  Fixed: (1) FAQPage schema out of sync with visible FAQ on `fema-compliance-foreign-
+  investment-startups` and `company-incorporation-india-guide` (the latter had no visible FAQ
+  at all) - both now render the visible FAQ from the schema array; (2) stale facts in those
+  posts: Form ARF (receipt reporting) was discontinued Sep 1, 2018 - now 60-day allotment
+  window + FC-GPR; late FC-GPR is regularised via the RBI Late Submission Fee (Rs 7,500 +
+  0.025% x amount x years, A.P. (DIR) Circular 16 of Sep 30, 2022), not "Rs 5,000-300%
+  compounding"; FEMA convertible notes need Rs 25 lakh per single tranche (not USD 2 lakh),
+  10-year conversion; Press Note 3 covers all land-border countries; resident director is
+  182 days in the *financial year* (s.149(3)), not "previous calendar year" (also fixed in
+  `foreign-subsidiary-registration-india-fdi`); MCA SPICe+ fee is nil up to Rs 15 lakh
+  authorised capital (removed the invented "Rs 8,000-15,000 govt fees" / "Rs 15,000-40,000
+  all-in" figures); (3) **Section 115BAB (15% new manufacturing) closed to new entrants** -
+  manufacturing had to commence by Mar 31, 2024 and was not extended; corrected
+  `corporate-tax-rates-in-india-domestic-company-vs-new-manufacturing-reg`; (4) em dashes on
+  privacy-policy / terms-of-use. Not changed (flagged to user): ~176 titles >65 chars and 67
+  titles using `absolute` without the brand (deliberate from the Aug audit), ~173 meta
+  descriptions >165 chars.
+
 ## Key Decisions Made
 - No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
 - Consultations stay FREE. Do not add paid booking or payment flows (user decision, Sep 26, 2026)

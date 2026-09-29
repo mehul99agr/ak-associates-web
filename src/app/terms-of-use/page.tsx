@@ -38,8 +38,8 @@ export default function TermsOfUse() {
 
               <h2>No Professional Advice</h2>
               <p>
-                Content on this Website &mdash; including blog articles, calculators, and service descriptions
-                &mdash; is provided for general informational purposes only and does not constitute professional
+                Content on this Website - including blog articles, calculators, and service descriptions
+                - is provided for general informational purposes only and does not constitute professional
                 tax, legal, financial, or accounting advice. Tax laws and regulations referenced on this Website are
                 subject to change, and their application depends on your specific facts and circumstances. You
                 should not act, or refrain from acting, on the basis of any content on this Website without seeking

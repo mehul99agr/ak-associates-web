@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
               <p>
                 Agrawal Khandelwal &amp; Associates LLP (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates
                 agrawalkhandelwal.com. This Privacy Policy explains what information this website collects, how it is
-                used, and the choices available to you. This website is informational only &mdash; it does not host
+                used, and the choices available to you. This website is informational only - it does not host
                 any client login, document upload, or payment functionality, and it does not contain a contact form
                 that collects data directly.
               </p>
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
               </p>
               <ul>
                 <li><strong>Analytics data</strong> via Google Analytics (GA4), collected only after you accept
-                  cookies through the consent banner on this site &mdash; page views, approximate location (city/
+                  cookies through the consent banner on this site - page views, approximate location (city/
                   country level, derived from IP address), device and browser type, and which buttons you click
                   (for example, Call, WhatsApp, or Book Consultation).</li>
                 <li><strong>Information you volunteer directly</strong>, such as your name, phone number, or email
@@ -59,11 +59,11 @@ export default function PrivacyPolicy() {
               <h2>Third-Party Services</h2>
               <p>We use the following third-party services, each governed by its own privacy policy:</p>
               <ul>
-                <li><strong>Google Analytics</strong> &mdash; website usage analytics.</li>
-                <li><strong>Google Maps</strong> &mdash; embedded office location maps on our Contact page.</li>
-                <li><strong>Google Calendar</strong> &mdash; our consultation booking link.</li>
-                <li><strong>WhatsApp</strong> &mdash; when you message us via the WhatsApp buttons on this site.</li>
-                <li><strong>Vercel</strong> &mdash; our website hosting provider, which may log standard server
+                <li><strong>Google Analytics</strong> - website usage analytics.</li>
+                <li><strong>Google Maps</strong> - embedded office location maps on our Contact page.</li>
+                <li><strong>Google Calendar</strong> - our consultation booking link.</li>
+                <li><strong>WhatsApp</strong> - when you message us via the WhatsApp buttons on this site.</li>
+                <li><strong>Vercel</strong> - our website hosting provider, which may log standard server
                   request data (IP address, timestamp) for performance and security purposes.</li>
               </ul>
 
