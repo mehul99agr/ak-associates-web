@@ -65,6 +65,8 @@
 
 ## Optional
 
+- [Full site content](https://agrawalkhandelwal.com/llms-full.txt): Plain-text content of every service page, tool, and guide, in one file.
+- [Agent skills](https://agrawalkhandelwal.com/.well-known/agent-skills/index.json): How AI agents can book a free consultation, estimate NRI property TDS, and find the right guide.
 - [Full sitemap](https://agrawalkhandelwal.com/sitemap.xml): Complete, current list of all pages including additional NRI, transfer pricing, and startup guides not listed above.
 - [Blog index](https://agrawalkhandelwal.com/blog)
 - [Privacy Policy](https://agrawalkhandelwal.com/privacy-policy)

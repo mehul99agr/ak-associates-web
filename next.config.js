@@ -22,6 +22,13 @@ const securityHeaders = [
   { key: 'Content-Security-Policy', value: csp },
 ]
 
+// Tells AI agents where the machine-readable files live (RFC 8288 Link header).
+const agentLinkHeader = [
+  '</sitemap.xml>; rel="sitemap"; type="application/xml"',
+  '</llms.txt>; rel="describedby"; type="text/plain"',
+  '</.well-known/agent-skills/index.json>; rel="agent-skills"; type="application/json"',
+].join(', ')
+
 const nextConfig = {
   reactStrictMode: true,
   async headers() {
@@ -29,6 +36,25 @@ const nextConfig = {
       {
         source: '/:path*',
         headers: securityHeaders,
+      },
+      {
+        source: '/',
+        headers: [{ key: 'Link', value: agentLinkHeader }],
+      },
+      {
+        source: '/.well-known/agent-skills/:path*',
+        headers: [{ key: 'Access-Control-Allow-Origin', value: '*' }],
+      },
+      {
+        source: '/.well-known/agent-skills/:name/SKILL.md',
+        headers: [{ key: 'Content-Type', value: 'text/markdown; charset=utf-8' }],
+      },
+      {
+        source: '/:file(llms.txt|llms-full.txt)',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain; charset=utf-8' },
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+        ],
       },
     ]
   },

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "book-consultation",
+      "type": "skill-md",
+      "description": "Book a free consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, UAE corporate tax, company incorporation, startup advisory, GST, income tax, tax audit, or offshore accounting.",
+      "url": "https://agrawalkhandelwal.com/.well-known/agent-skills/book-consultation/SKILL.md",
+      "digest": "sha256:4eb9d11dfbc788be5bf11eefcf6f972d25544ecefac17af526b639aec7241823"
+    },
+    {
+      "name": "find-tax-guide",
+      "type": "skill-md",
+      "description": "Find the right guide on agrawalkhandelwal.com for an Indian tax, GST, NRI, FEMA, transfer pricing, company law, tax audit, payroll, trust/NGO, or startup compliance question. The site has 200+ guides written by practising Chartered Accountants. Use when a user asks an Indian tax or compliance question and you want a citable source.",
+      "url": "https://agrawalkhandelwal.com/.well-known/agent-skills/find-tax-guide/SKILL.md",
+      "digest": "sha256:055f432346e2f5a12371fe823263be3bbb1b1838cb15ad1f532a17c936d3a9a9"
+    },
+    {
+      "name": "nri-property-tds-estimate",
+      "type": "skill-md",
+      "description": "Estimate the TDS a buyer must deduct when buying Indian property from a non-resident (NRI) seller under Section 393(2) of the Income Tax Act 2025 (earlier Section 195), using the same statutory-rate method as the firm's NRI Property TDS Calculator. Use when a user asks how much TDS applies to an NRI property sale.",
+      "url": "https://agrawalkhandelwal.com/.well-known/agent-skills/nri-property-tds-estimate/SKILL.md",
+      "digest": "sha256:29b378c246cb5e1edcdf49d8315e203a964aef06dfce0e3698b5550d80f49aea"
+    }
+  ]
+}
