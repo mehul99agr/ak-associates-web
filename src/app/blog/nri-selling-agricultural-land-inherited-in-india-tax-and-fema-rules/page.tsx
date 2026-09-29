@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'NRI Selling Agricultural Land Inherited in India: Tax & FEMA Rules',
-  description: 'How an NRI sells inherited agricultural land in India: who can be the buyer, rural vs urban land capital gains treatment, TDS obligations, and repatriating the sale proceeds.',
+  description: 'NRI selling inherited agricultural land in India: who can buy it, rural vs urban land capital gains, TDS, and repatriating the sale proceeds.',
   keywords: [
     'NRI selling inherited agricultural land', 'NRI agricultural land sale tax', 'rural agricultural land capital gains NRI',
     'TDS on NRI agricultural land sale', 'NRI agricultural land buyer resident only', 'NRI agricultural land repatriation',

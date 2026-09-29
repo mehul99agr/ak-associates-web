@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: { absolute: 'Form 24Q vs Form 26Q: TDS Return Filing for Employers' },
-  description: 'The difference between Form 24Q (salary TDS) and Form 26Q (non-salary TDS), quarterly due dates, and how both are renumbered as Form 138 and Form 140 under the Income Tax Act 2025 for FY 2026-27.',
+  description: 'Form 24Q (salary TDS) vs Form 26Q (non-salary TDS): quarterly due dates, and their renumbering as Form 138 and Form 140 under the Income Tax Act 2025.',
   keywords: [
     'Form 24Q vs Form 26Q', 'TDS return filing employer', 'Form 24Q salary TDS',
     'Form 26Q non-salary TDS', 'TDS return due date FY 2026-27', 'Form 138 Form 140 TDS',

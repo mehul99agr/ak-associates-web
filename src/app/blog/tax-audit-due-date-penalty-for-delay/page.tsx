@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Due Date for Tax Audit Report Filing & Penalty for Delay',
-  description: 'The current tax audit report due date, how Form 3CA/3CB and Form 3CD are filed online, and the Section 271B penalty for missing the deadline or failing to get accounts audited.',
+  description: 'The current tax audit report due date, how the audit report is filed online (Form 26, earlier 3CA/3CB/3CD), and the Section 271B penalty for delay.',
   keywords: [
     'tax audit due date', 'tax audit report due date AY 2026-27', 'Form 3CD due date',
     'section 271B penalty', 'penalty for late tax audit', 'form 3CA 3CB filing process',

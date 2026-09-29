@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'LRS Guide: USD 250K Limit & TCS (2026)',
-  description: 'Everything about India\'s Liberalised Remittance Scheme: USD 250,000 annual limit, permitted purposes, TCS rates (0-20%, revised Budget 2026), Form A2, and how LRS interacts with NRI accounts and FEMA.',
+  description: 'India\'s Liberalised Remittance Scheme: USD 250,000 annual limit, permitted purposes, TCS rates after Budget 2026, Form A2, and how LRS fits with FEMA.',
   keywords: ['LRS India', 'liberalised remittance scheme', 'USD 250000 limit India', 'LRS TCS rate', 'LRS permitted purposes', 'send money abroad India', 'LRS FEMA', 'outward remittance India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' },
   openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article' },

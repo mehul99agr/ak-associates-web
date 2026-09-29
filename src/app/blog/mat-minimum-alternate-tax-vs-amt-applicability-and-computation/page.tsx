@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'MAT (Minimum Alternate Tax) vs AMT: Applicability & Computation',
-  description: 'How Minimum Alternate Tax under Section 115JB applies to companies at 15% of book profit, how Alternate Minimum Tax under Section 115JC applies to non-corporate taxpayers, and how MAT/AMT credit works.',
+  description: 'MAT under Section 115JB (15% of book profit) for companies, AMT under Section 115JC for non-corporate taxpayers, and how MAT/AMT credit works.',
   keywords: [
     'minimum alternate tax MAT', 'section 115JB MAT rate', 'alternate minimum tax AMT section 115JC',
     'MAT credit carry forward', 'MAT vs AMT difference', 'book profit MAT computation', 'AMT non-corporate taxpayers',

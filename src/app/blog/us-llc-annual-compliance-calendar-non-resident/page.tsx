@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'US LLC Annual Compliance Calendar for Non-Resident Founders',
-  description: 'The annual compliance calendar for a US LLC owned by a non-resident: annual reports, franchise tax, registered agent renewal, estimated taxes, and the BOI reporting exemption for domestic entities.',
+  description: 'Annual compliance calendar for a non-resident-owned US LLC: annual reports, franchise tax, registered agent, estimated taxes and the BOI exemption.',
   keywords: [
     'US LLC annual compliance non-resident', 'LLC franchise tax deadline',
     'registered agent renewal', 'BOI reporting exemption domestic LLC',

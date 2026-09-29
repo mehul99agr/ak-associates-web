@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'DPIIT Registration for Startups (2026)',
-  description: 'How to get DPIIT recognition for your Indian startup, eligibility criteria, the 80-IAC three-year tax holiday, and what most founders miss about the IMB certification process.',
+  description: 'How to get DPIIT recognition for your startup: eligibility, the 80-IAC three-year tax holiday, and what founders miss about IMB certification.',
   keywords: [
     'DPIIT registration India', 'startup India recognition', '80-IAC tax benefit',
     'DPIIT certificate', 'IMB certification India', 'startup tax holiday India',

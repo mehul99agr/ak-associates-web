@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'NRI Capital Gains on Inherited Property',
-  description: 'How NRIs compute capital gains tax when selling inherited or gifted property in India; cost and holding period carryover from the original owner, TDS implications, and Form 13 relevance for FY 2026-27.',
+  description: 'Capital gains for NRIs selling inherited or gifted property in India: cost and holding period carryover, TDS, and Form 13 for FY 2026-27.',
   keywords: [
     'NRI capital gains inherited property', 'NRI sell gifted property India', 'inherited property tax NRI',
     'cost of acquisition inherited property', 'holding period inherited property capital gains',

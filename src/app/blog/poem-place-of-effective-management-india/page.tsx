@@ -5,7 +5,7 @@ import { BOOKING_LINK } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'POEM & Indian Tax Residency',
-  description: 'Place of Effective Management (POEM) explained: when a UAE or foreign subsidiary is treated as an Indian tax resident, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
+  description: 'POEM explained: when a UAE or foreign subsidiary becomes an Indian tax resident, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
   keywords: [
     'POEM India', 'place of effective management', 'POEM foreign company India',
     'POEM UAE subsidiary', 'active business outside India test', 'POEM Section 6(3)',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Post-Incorporation Checklist: First 30 Days',
-  description: 'What to do after getting your Certificate of Incorporation: PAN/TAN, bank account, GST, first Board meeting, auditor appointment, and share certificates; all with statutory deadlines.',
+  description: 'After your Certificate of Incorporation: PAN/TAN, bank account, GST, first Board meeting, auditor appointment and share certificates, with deadlines.',
   keywords: [
     'post incorporation compliance India', 'after company registration checklist',
     'first board meeting 30 days', 'first auditor appointment company', 'share certificate 60 days',

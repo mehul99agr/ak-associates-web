@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Startup Compliance Calendar (Year 1-3)',
-  description: 'Month-by-month and year-by-year compliance roadmap for an Indian startup: GST returns, TDS, MCA annual filings, advance tax, FEMA reporting, ESOP, and DPIIT self-certification.',
+  description: 'Year 1-3 compliance roadmap for an Indian startup: GST, TDS, MCA annual filings, advance tax, FEMA reporting, ESOP and DPIIT self-certification.',
   keywords: [
     'startup compliance calendar India', 'startup compliance checklist year 1',
     'MCA annual filing startup', 'AOC-4 MGT-7 due date', 'FC-GPR 30 days',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Minimum Wages Act Compliance for Employers' },
-  description: 'How minimum wage compliance works in India after the Code on Wages 2019 replaced the Minimum Wages Act 1948, including the floor wage concept, state-wise rates, and employer penalties.',
+  description: 'Minimum wage compliance after the Code on Wages 2019 replaced the Minimum Wages Act 1948: the floor wage, state-wise rates and employer penalties.',
   keywords: [
     'Minimum Wages Act compliance', 'Code on Wages 2019', 'minimum wage employer India',
     'floor wage India', 'Code on Wages Rules 2026', 'minimum wages penalty employer',

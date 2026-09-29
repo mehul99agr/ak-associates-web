@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Can an NRI Buy Agricultural Land in India? FEMA Rules',
-  description: 'FEMA rules on NRIs, OCIs, and foreign nationals holding agricultural land, plantation property, or a farmhouse in India: the purchase restriction, inheritance and gift exceptions, resale rules, and penalties for non-compliance.',
+  description: 'FEMA rules on NRIs and OCIs holding agricultural land or farmhouses in India: the purchase ban, inheritance and gift exceptions, resale and penalties.',
   keywords: [
     'NRI agricultural land India', 'NRI buy farmland India', 'FEMA agricultural land rules',
     'OCI agricultural land India', 'NRI inherited agricultural land', 'foreign national buy land India',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'NRI Residential Status Rules (FY 2026-27)',
-  description: 'How to determine if you are NRI, RNOR, or Resident under Indian tax law: the 182-day rule, the 120-day deemed resident rule (Budget 2020), day counting for split years, and what each status means for your taxes.',
+  description: 'NRI, RNOR or Resident? The 182-day rule, the 120-day deemed resident rule, day counting for split years, and what each status means for your tax.',
   keywords: [
     'NRI residential status', '182 day rule NRI', 'NRI status India',
     'residential status income tax', '120 day rule NRI', 'deemed resident India',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'NRI Life Insurance & ULIP Taxation Rules',
-  description: 'Can NRIs buy Indian life insurance and ULIPs, which premium payment channels apply, when maturity proceeds are exempt under Section 10(10D), and TDS on payouts to NRIs.',
+  description: 'Can NRIs buy Indian life insurance and ULIPs? Premium payment channels, when maturity is exempt under Section 10(10D), and TDS on payouts to NRIs.',
   keywords: [
     'NRI life insurance India', 'NRI ULIP taxation', 'section 10(10D) NRI', 'NRI ULIP premium NRE NRO',
     'life insurance maturity NRI TDS', 'section 194DA section 195 NRI insurance', 'ULIP premium threshold exemption',

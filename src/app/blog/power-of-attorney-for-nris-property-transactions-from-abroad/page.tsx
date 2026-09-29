@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Power of Attorney for NRIs: Property Transactions from Abroad',
-  description: 'How NRIs execute a Power of Attorney for Indian property from abroad: general vs special POA, apostille and consular attestation, the 3-month stamping deadline, and key risks.',
+  description: 'NRI Power of Attorney for Indian property: general vs special POA, apostille and consular attestation, the 3-month stamping deadline, and key risks.',
   keywords: [
     'power of attorney for NRI', 'NRI POA property', 'NRI apostille power of attorney',
     'general power of attorney vs special power of attorney', 'POA stamp duty India',

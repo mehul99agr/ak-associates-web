@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Buyback of Shares: Tax Implications for Companies & Shareholders (FY 2026-27)' },
-  description: 'How share buybacks are taxed from April 1, 2026: back to a capital-gains framework under Section 69 (not deemed dividend), plus a new Special Additional Tax on promoters.',
+  description: 'Share buyback tax from April 1, 2026: back to capital gains under Section 69 (not deemed dividend), plus a new Special Additional Tax on promoters.',
   keywords: [
     'buyback of shares tax', 'share buyback taxation India', 'section 115QA buyback tax',
     'buyback capital gains 2026', 'buyback tax rules FY 2026-27', 'capital loss on buyback shares',

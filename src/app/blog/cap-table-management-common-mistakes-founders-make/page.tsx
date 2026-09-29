@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Cap Table Management: Common Mistakes Founders Make',
-  description: 'Why cap tables go wrong for Indian startups: stale updates after funding rounds, fully-diluted vs issued-basis confusion, dilution modeling mistakes, and reconciling against ROC filings.',
+  description: 'Why startup cap tables go wrong: stale updates after rounds, fully-diluted vs issued confusion, dilution modelling errors, and ROC reconciliation.',
   keywords: [
     'cap table management startup', 'cap table mistakes founders', 'fully diluted cap table',
     'startup equity dilution', 'cap table ESOP pool', 'cap table India startup',

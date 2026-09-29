@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Founder Agreement Essentials (Startups)',
-  description: 'What a co-founder agreement should cover: equity split rationale, founder reverse vesting, IP assignment, non-compete enforceability under Indian law, and exit/deadlock mechanisms.',
+  description: 'What a co-founder agreement should cover: equity split, reverse vesting, IP assignment, non-compete enforceability in India, and exit/deadlock terms.',
   keywords: [
     'founder agreement India', 'co-founder agreement India', 'founder vesting India',
     'reverse vesting startup', 'IP assignment founder agreement', 'non-compete enforceability India',

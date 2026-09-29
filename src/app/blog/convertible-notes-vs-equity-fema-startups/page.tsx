@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Convertible Notes vs Equity: FEMA Rules',
-  description: 'When a convertible note makes sense vs CCPS or straight equity for an Indian startup: FEMA conditions for foreign convertible notes, why optional conversion means debt treatment, and a decision framework.',
+  description: 'Convertible note vs CCPS vs equity for an Indian startup: FEMA conditions for foreign notes, when conversion means debt treatment, and how to decide.',
   keywords: [
     'convertible notes India startup', 'convertible note FEMA', 'CCPS vs convertible note',
     'FEMA convertible instrument startup', 'compulsorily convertible preference shares India',

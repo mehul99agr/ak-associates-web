@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Section 195 TDS Guide (FY 2026-27)',
-  description: 'When and how to deduct TDS under Section 195 on payments to NRIs: property sale, rent, professional fees, interest. Rate table, TAN requirement, Form 27Q filing, and penalties for non-compliance.',
+  description: 'TDS under Section 195 on payments to NRIs: property sale, rent, fees and interest. Rate table, TAN requirement, Form 27Q filing and penalties.',
   keywords: [
     'section 195 TDS', 'TDS on payment to NRI', 'section 195 income tax',
     'TDS NRI India', 'section 195 TDS rate', 'when to deduct TDS section 195',

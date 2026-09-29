@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TDS on Salary: Section 192 & Form 24Q Explained',
-  description: 'How employers deduct TDS on salary under Section 192, average-rate computation, old vs new regime declarations, Form 24Q filing, and the Income Tax Act 2025 renumbering to Section 392/402 and Form 138.',
+  description: 'TDS on salary under Section 192: average-rate computation, regime declarations, Form 24Q filing, and the new Act\'s Section 392/402 and Form 138.',
   keywords: [
     'section 192 TDS on salary', 'form 24Q', 'TDS on salary india', 'form 24Q due date',
     'employer TDS deduction salary', 'section 192 income tax act', 'form 24Q quarterly return',

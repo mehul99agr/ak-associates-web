@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'HRA Exemption: Calculation & Documents Needed',
-  description: 'How House Rent Allowance exemption is calculated under the least-of-three rule, metro vs non-metro rates, landlord PAN requirements, and why it only applies under the old tax regime.',
+  description: 'HRA exemption: the least-of-three calculation, metro vs non-metro rates, landlord PAN rules, and why it applies only under the old regime.',
   keywords: [
     'HRA exemption calculation', 'house rent allowance exemption', 'HRA documents needed',
     'landlord PAN rent receipt', 'HRA old regime vs new regime', 'HRA exemption formula',

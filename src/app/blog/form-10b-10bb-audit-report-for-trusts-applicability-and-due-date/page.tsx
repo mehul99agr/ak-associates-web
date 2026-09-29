@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Form 10B/10BB Audit Report for Trusts: Applicability & Due Date',
-  description: 'Which trusts and NGOs must file Form 10B vs Form 10BB, the Rs 5 crore income threshold and foreign-contribution trigger that decide between them, and the current filing due date.',
+  description: 'Form 10B vs Form 10BB for trusts and NGOs: the Rs 5 crore income threshold, the foreign contribution trigger, and the current filing due date.',
   keywords: [
     'form 10B trust audit report', 'form 10BB applicability', 'form 10B vs 10BB',
     'trust audit report due date', 'section 12AB audit report', 'charitable trust audit form',

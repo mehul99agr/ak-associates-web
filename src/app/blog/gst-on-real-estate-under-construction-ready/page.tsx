@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'GST on Real Estate: Under-Construction vs Ready-to-Move Properties',
-  description: 'Why ready-to-move properties are GST-free but under-construction flats attract 1% or 5% GST without ITC, how affordable housing is defined, and what buyers and builders should check before signing.',
+  description: 'Why ready-to-move property is GST-free but under-construction flats attract 1% or 5% GST without ITC, how affordable housing is defined, and checks.',
   keywords: [
     'GST on real estate', 'GST on under construction property', 'GST on ready to move property',
     'GST affordable housing rate', 'GST on flat purchase', 'GST works contract construction',

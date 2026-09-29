@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Statutory Audit Requirements for Private Limited Companies' },
-  description: 'Why every private limited company needs a statutory audit under the Companies Act 2013 regardless of turnover, how auditor appointment and rotation work, and where CARO 2020 applies.',
+  description: 'Why every private limited company needs a statutory audit regardless of turnover, how auditor appointment and rotation work, and where CARO 2020 applies.',
   keywords: [
     'statutory audit private limited company', 'companies act 2013 audit requirement', 'section 139 auditor appointment',
     'auditor rotation rules India', 'CARO 2020 applicability', 'statutory audit vs tax audit',

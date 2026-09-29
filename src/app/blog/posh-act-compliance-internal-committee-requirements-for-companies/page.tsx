@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'POSH Act Compliance: Internal Committee Requirements for Companies' },
-  description: 'When a company must form an Internal Committee under the POSH Act 2013, who must sit on it, the annual report requirement, and penalties for non-compliance including licence cancellation.',
+  description: 'When a company must form a POSH Internal Committee, who sits on it, the annual report requirement, and penalties including licence cancellation.',
   keywords: [
     'POSH Act compliance', 'Internal Committee POSH', 'POSH Act Internal Committee requirements',
     'Sexual Harassment Workplace Act', 'POSH annual report', 'POSH Act penalty section 26',

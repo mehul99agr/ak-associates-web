@@ -3,7 +3,7 @@ import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Disclaimer',
-  description: 'Disclaimer regarding the informational nature of this website, in accordance with the ICAI Advertisement Guidelines applicable to Chartered Accountant firms in India.',
+  description: 'Disclaimer on the informational nature of this website, in line with ICAI Advertisement Guidelines for Chartered Accountant firms in India.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/disclaimer' },
 }
 

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Which ITR Form Should You File: ITR-1 vs 2 vs 3 vs 4',
-  description: 'A practical guide to choosing between ITR-1, ITR-2, ITR-3, and ITR-4: eligibility limits, income types covered, and the mistakes that get returns flagged as defective.',
+  description: 'Choosing between ITR-1, ITR-2, ITR-3 and ITR-4: eligibility limits, income types covered, and mistakes that get returns flagged as defective.',
   keywords: [
     'which ITR form to file', 'ITR-1 vs ITR-2', 'ITR-2 vs ITR-3', 'ITR-4 presumptive taxation',
     'ITR form eligibility', 'ITR-1 Sahaj eligibility', 'ITR-3 business income', 'defective ITR notice',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Corporate Tax Rates in India: Domestic Company vs New Manufacturing Regime',
-  description: 'Comparing Section 115BAA (22% concessional rate for domestic companies) with Section 115BAB (15% rate for new manufacturing companies), the conditions, exemption trade-offs, and effective tax rates for FY 2026-27.',
+  description: 'Section 115BAA (22%) vs 115BAB (15%, closed to companies that did not start manufacturing by March 31, 2024): conditions, trade-offs and effective rates.',
   keywords: [
     'section 115BAA domestic company tax rate', 'section 115BAB new manufacturing company',
     'corporate tax rate India FY 2026-27', '22% concessional tax rate company', '15% manufacturing company tax rate',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Annual ROC Filing Guide (India)',
-  description: 'Every mandatory annual MCA filing for an Indian company: AOC-4 financial statements, MGT-7/7A annual return, DIR-3 KYC, ADT-1, deadlines relative to your AGM, and the penalty for late filing.',
+  description: 'Every annual MCA filing for an Indian company: AOC-4, MGT-7/7A, DIR-3 KYC, ADT-1, deadlines relative to your AGM, and late filing penalties.',
   keywords: [
     'AOC-4 due date', 'MGT-7 due date', 'DIR-3 KYC deadline', 'annual ROC filing India',
     'ADT-1 auditor appointment', 'MGT-7A small company', 'ROC late filing penalty',

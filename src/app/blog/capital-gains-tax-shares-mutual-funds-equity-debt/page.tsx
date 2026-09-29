@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: { absolute: 'Capital Gains Tax on Shares & Mutual Funds: Equity vs Debt' },
-  description: 'How resident Indians are taxed on shares and mutual fund gains: equity LTCG/STCG rates, the Rs 1.25 lakh exemption, and how debt fund taxation differs after the April 2023 rule change.',
+  description: 'Tax on shares and mutual funds for residents: equity LTCG/STCG rates, the Rs 1.25 lakh exemption, and how debt funds changed after April 2023.',
   keywords: [
     'capital gains tax on shares India', 'equity mutual fund taxation India', 'debt mutual fund taxation India',
     'LTCG STCG on shares 2026', 'capital gains tax mutual funds resident', 'Section 112A capital gains',

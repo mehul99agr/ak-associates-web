@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI ITR Filing from Abroad (FY 2026-27)',
-  description: 'How NRIs file Indian income tax returns from abroad: which ITR form (ITR-2 vs ITR-3), documents needed, e-verification without Aadhaar, filing deadline, and common mistakes that trigger notices.',
+  description: 'How NRIs file Indian ITR from abroad: ITR-2 vs ITR-3, documents, e-verification without Aadhaar, the deadline, and mistakes that trigger notices.',
   keywords: [
     'NRI ITR filing India', 'NRI income tax return', 'how to file ITR as NRI',
     'NRI ITR-2', 'NRI ITR from abroad', 'NRI e-verification ITR',

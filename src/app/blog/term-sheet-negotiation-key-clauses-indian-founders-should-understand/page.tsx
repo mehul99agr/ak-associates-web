@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Term Sheet Negotiation: Key Clauses Indian Founders Should Understand',
-  description: 'Liquidation preference, anti-dilution, board control, vesting, and exit rights in an Indian VC term sheet: which clauses are market standard, which are founder-unfriendly, and what is actually binding.',
+  description: 'Liquidation preference, anti-dilution, board control, vesting and exit rights in Indian VC term sheets: what is standard, what is not, what binds.',
   keywords: [
     'term sheet negotiation India', 'liquidation preference India', 'anti-dilution protection startup',
     'founder vesting term sheet', 'ROFR tag along drag along', 'term sheet clauses India',

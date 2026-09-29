@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Startup India Registration vs DPIIT Recognition: What Is the Difference' },
-  description: 'Startup India registration and DPIIT recognition are often treated as two separate steps, but they are one and the same process. Here is what actually happens and where the confusion comes from.',
+  description: 'Startup India registration and DPIIT recognition are often treated as two steps, but they are one process. What actually happens, and why the confusion.',
   keywords: [
     'startup India registration vs DPIIT recognition', 'DPIIT recognition process', 'startup India portal',
     'is startup India registration same as DPIIT', 'DPIIT certificate', 'startup recognition India',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: { absolute: 'Set-Off and Carry Forward of Losses Under Income Tax' },
-  description: 'Intra-head and inter-head set-off rules, the house property loss cap, carry-forward periods for business, speculation, capital, and house property losses, and why filing on time matters for carry-forward.',
+  description: 'Loss set-off and carry-forward rules: intra and inter-head set-off, the house property cap, carry-forward periods by loss type, and why filing on time matters.',
   keywords: [
     'set off and carry forward of losses', 'carry forward of business loss India',
     'capital loss carry forward income tax', 'house property loss set off cap',

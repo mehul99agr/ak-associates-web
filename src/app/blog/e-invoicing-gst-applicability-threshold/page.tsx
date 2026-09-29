@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'E-Invoicing Under GST: Applicability Threshold & Process',
-  description: 'Who must generate e-invoices under GST, the Rs 5 crore turnover threshold, the IRN/QR code process, the 30-day reporting rule for larger taxpayers, and penalties for non-compliance.',
+  description: 'Who must e-invoice under GST: the Rs 5 crore threshold, IRN/QR code process, the 30-day reporting rule for larger taxpayers, and penalties.',
   keywords: [
     'e-invoicing under GST', 'e-invoice applicability threshold', 'e-invoice Rs 5 crore limit',
     'e-invoice IRN QR code', 'e-invoicing process GST', 'who needs e-invoice GST',

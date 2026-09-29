@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Vivad Se Vishwas Scheme: Settling Pending Tax Disputes' },
-  description: 'How the Direct Tax Vivad Se Vishwas (VSV 2.0) scheme worked, why it closed to new declarations on April 30, 2025, and what options remain for settling a pending income tax dispute today.',
+  description: 'How Vivad Se Vishwas 2.0 worked, why it closed to new declarations on April 30, 2025, and the options left for settling a pending tax dispute today.',
   keywords: [
     'vivad se vishwas scheme', 'vivad se vishwas 2.0', 'dtvsv 2024', 'direct tax vivad se vishwas',
     'settling income tax disputes India', 'tax dispute resolution scheme', 'form 4 vivad se vishwas',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'US LLC vs C-Corp for Indian Founders',
-  description: 'Delaware LLC or C-Corp for an Indian founder: pass-through taxation and phantom income vs corporate-level tax, and why most VC-track startups pick a C-Corp while bootstrapped ones pick an LLC.',
+  description: 'Delaware LLC or C-Corp for Indian founders: pass-through and phantom income vs corporate tax, and why VC-track startups usually pick a C-Corp.',
   keywords: [
     'US LLC vs C-Corp Indian founders', 'Delaware C-Corp for Indian startup',
     'LLC pass-through taxation NRI', 'phantom income US LLC India',

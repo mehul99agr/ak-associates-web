@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Income Tax on Cryptocurrency & Virtual Digital Assets (VDA)',
-  description: 'How crypto and NFT gains are taxed in India: flat 30% tax under Section 115BBH, 1% TDS under Section 194S, no loss set-off, and what counts as a Virtual Digital Asset.',
+  description: 'How crypto and NFT gains are taxed in India: flat 30% under Section 115BBH, 1% TDS under Section 194S, no loss set-off, and what counts as a VDA.',
   keywords: [
     'income tax on cryptocurrency india', 'virtual digital asset tax', 'VDA tax section 115BBH',
     'crypto tax india 2026', 'TDS on crypto section 194S', 'NFT tax india',

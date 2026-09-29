@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'OPC to Private Limited Conversion (India)',
-  description: 'How and when a One Person Company converts to a Private Limited Company in India, why the old mandatory-conversion thresholds no longer apply, and the step-by-step MCA process founders need to know.',
+  description: 'How a One Person Company converts to a Private Limited Company, why the old mandatory-conversion thresholds no longer apply, and the MCA steps.',
   keywords: [
     'OPC to private limited conversion', 'One Person Company conversion India',
     'OPC voluntary conversion', 'convert OPC to Pvt Ltd process',

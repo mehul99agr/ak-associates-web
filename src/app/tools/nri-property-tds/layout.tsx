@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'NRI Property TDS Calculator',
-  description: 'Free calculator for TDS on NRI property sale in India: enter sale value and holding period to get the TDS amount, surcharge, cess, and net proceeds under Section 393(2) (earlier Section 195) for FY 2026-27.',
+  description: 'Free NRI property sale TDS calculator: enter sale value and holding period to get TDS, surcharge, cess and net proceeds under Section 393(2) for FY 2026-27.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/tools/nri-property-tds' },
   openGraph: {
     title: 'NRI Property TDS Calculator',

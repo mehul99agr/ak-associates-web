@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Trade License Requirements for Businesses in India' },
-  description: 'What a municipal trade license is, which businesses need one, how it differs from a Shop and Establishment license, and the general application process, with Nashik/Maharashtra context.',
+  description: 'What a municipal trade license is, who needs one, how it differs from a Shop and Establishment license, and how to apply, with Nashik/Maharashtra context.',
   keywords: [
     'trade license India', 'trade license requirements', 'municipal trade license',
     'shop and establishment license vs trade license', 'trade license Nashik',

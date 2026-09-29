@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Retirement Fund Tax for NRIs (2026)',
-  description: 'How India taxes US 401(k), UK pension, and Australian superannuation withdrawals for returning NRIs: RNOR window strategy, DTAA relief, and the timing decisions that save you lakhs.',
+  description: 'How India taxes 401(k), UK pension and Australian super withdrawals for returning NRIs: RNOR window strategy, DTAA relief and timing decisions.',
   keywords: [
     'NRI 401k taxation India', 'foreign retirement fund tax India', 'UK pension India tax',
     'superannuation India NRI', 'NRI pension taxability', 'foreign retirement account India',

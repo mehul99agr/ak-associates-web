@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Who Needs a Tax Audit: Business vs Professional Thresholds',
-  description: 'A practical, checklist-style guide to deciding whether your business or profession needs a tax audit this year, including the presumptive taxation escape valve under Section 44AD, 44ADA, and 44AE.',
+  description: 'Checklist to decide if your business or profession needs a tax audit this year, including the presumptive taxation route under 44AD, 44ADA and 44AE.',
   keywords: [
     'who needs tax audit', 'do I need a tax audit', 'tax audit checklist India',
     'presumptive taxation vs tax audit', 'section 44AD audit exemption', 'section 44ADA professionals audit',

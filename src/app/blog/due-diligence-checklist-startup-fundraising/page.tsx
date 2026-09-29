@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Due Diligence Checklist for Fundraising',
-  description: 'What investors check during startup due diligence: corporate records, cap table reconciliation, IP ownership, material contracts, tax and FEMA history, and a data room preparation timeline.',
+  description: 'What investors check in startup due diligence: corporate records, cap table, IP, contracts, tax and FEMA history, plus a data room timeline.',
   keywords: [
     'startup due diligence checklist India', 'fundraising data room checklist',
     'cap table reconciliation due diligence', 'FEMA due diligence startup',

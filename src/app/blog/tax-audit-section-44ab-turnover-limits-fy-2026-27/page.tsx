@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Tax Audit Under Section 44AB: Turnover Limits FY 2026-27',
-  description: 'Current Section 44AB tax audit turnover limits for businesses and professionals in FY 2026-27, the higher digital-transaction threshold, and how presumptive taxation opt-outs trigger an audit.',
+  description: 'Section 44AB tax audit limits for FY 2026-27 for businesses and professionals, the higher digital-transaction threshold, and presumptive opt-out triggers.',
   keywords: [
     'section 44AB turnover limit', 'tax audit limit FY 2026-27', 'tax audit applicability India',
     'section 44AB tax audit', '10 crore turnover tax audit', 'professionals tax audit limit',

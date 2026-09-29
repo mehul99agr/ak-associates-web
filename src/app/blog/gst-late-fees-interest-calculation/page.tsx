@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'GST Late Fees & Interest: How They Are Calculated',
-  description: 'How GST late fees under Section 47 and interest under Section 50 are calculated: per-day nil and non-nil rates, turnover-based caps, and why interest applies only to the cash-ledger portion of tax.',
+  description: 'How GST late fees (Section 47) and interest (Section 50) are calculated: per-day rates, turnover-based caps, and why interest hits only cash-paid tax.',
   keywords: [
     'GST late fee calculation', 'GST interest section 50', 'nil return GST late fee',
     'GST late fee cap turnover', 'GST interest on late payment', 'section 47 CGST act late fee',

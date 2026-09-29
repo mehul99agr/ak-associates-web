@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Contract Labour vs Employment: Compliance Risks for Startups',
-  description: 'How the Contract Labour (Regulation & Abolition) Act 1970 registration and licensing thresholds work, and the misclassification risks startups face treating employees as contract labour.',
+  description: 'Contract Labour Act 1970 registration and licensing thresholds, and the misclassification risks startups face treating employees as contract labour.',
   keywords: [
     'contract labour vs employment', 'Contract Labour Regulation Abolition Act', 'CLRA registration license',
     'gig worker misclassification India', 'principal employer contractor compliance', 'CLRA 20 workmen threshold',

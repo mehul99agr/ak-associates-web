@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Repatriating NRI Property Sale Proceeds',
-  description: 'How NRIs repatriate property sale proceeds from India under the new Income Tax Act 2025; NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB), and the USD 1 million scheme.',
+  description: 'How NRIs repatriate property sale proceeds from India: NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB) and the USD 1 million scheme.',
   keywords: [
     'NRI repatriation property sale proceeds', 'form 145 146 NRI', 'form 15CA 15CB NRI property',
     'USD 1 million scheme NRI', 'NRO account repatriation limit', 'send money abroad after property sale NRI',

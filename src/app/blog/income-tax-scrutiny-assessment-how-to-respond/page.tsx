@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax Scrutiny Assessment: What Triggers It & How to Respond' },
-  description: 'What triggers CASS selection for income tax scrutiny, how to prepare documents for a strong response, and the common mistakes that make scrutiny assessments go badly.',
+  description: 'What triggers CASS selection for income tax scrutiny, how to prepare a strong response, and the common mistakes that make scrutiny go badly.',
   keywords: [
     'income tax scrutiny assessment', 'what triggers income tax scrutiny', 'CASS selection income tax',
     'how to respond to scrutiny notice', 'income tax scrutiny documents', 'scrutiny assessment mistakes',

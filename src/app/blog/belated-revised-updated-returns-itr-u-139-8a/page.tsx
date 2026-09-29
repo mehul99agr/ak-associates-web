@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Belated, Revised & Updated Returns: ITR-U Under Section 139(8A)',
-  description: 'Missed the ITR deadline or found an error after filing? Understand belated returns, revised returns, and the updated return (ITR-U) under Section 139(8A), the additional tax, and the filing window.',
+  description: 'Missed the ITR deadline or found an error? Belated, revised and updated returns (ITR-U) under Section 139(8A), the additional tax, and filing windows.',
   keywords: [
     'ITR-U', 'updated return income tax', 'Section 139(8A)', 'belated return',
     'revised return income tax', 'ITR-U additional tax', 'updated return time limit',

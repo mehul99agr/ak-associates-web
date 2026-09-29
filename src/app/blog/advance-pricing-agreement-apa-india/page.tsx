@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Advance Pricing Agreement (APA) India',
-  description: 'Unilateral, bilateral, and multilateral APAs with the CBDT: which companies should consider one, the application process, realistic timelines, annual compliance, and a cost-benefit framework.',
+  description: 'Unilateral, bilateral and multilateral APAs with the CBDT: who should consider one, the application process, timelines, compliance and cost-benefit.',
   keywords: [
     'advance pricing agreement India', 'APA India process', 'bilateral APA India',
     'unilateral APA India', 'APA rollback India', 'CBDT APA timeline',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Corporate Social Responsibility (CSR) Compliance & Applicability' },
-  description: 'Section 135 CSR applicability thresholds for net worth, turnover, and net profit, the 2% spend rule, when a CSR committee is required, and the penalty for non-compliance.',
+  description: 'Section 135 CSR: net worth, turnover and net profit thresholds, the 2% spend rule, when a CSR committee is required, and the penalty for non-compliance.',
   keywords: [
     'section 135 csr applicability', 'csr compliance companies act', 'csr 2% net profit rule',
     'csr committee requirement', 'corporate social responsibility india', 'csr threshold net worth turnover',

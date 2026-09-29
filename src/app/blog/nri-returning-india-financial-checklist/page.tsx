@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Returning to India Checklist (2026)',
-  description: 'Everything NRIs must do before and after returning to India: bank account conversion, RNOR tax planning, investment restructuring, insurance, FEMA steps, and the timeline that saves you money.',
+  description: 'What NRIs must do before and after returning to India: bank account conversion, RNOR tax planning, investments, insurance, FEMA steps and timeline.',
   keywords: [
     'NRI returning to India checklist', 'NRI relocation India', 'NRI moving back to India',
     'NRI return India tax planning', 'NRI bank account conversion', 'NRI RNOR planning',

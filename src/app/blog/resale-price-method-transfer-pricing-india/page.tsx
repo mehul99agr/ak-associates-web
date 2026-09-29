@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Resale Price Method (RPM) in Transfer Pricing: India Guide',
-  description: 'How the Resale Price Method works under Rule 10B, when it fits a routine distributor, the gross margin calculation, common accounting-classification pitfalls, and a worked example.',
+  description: 'The Resale Price Method under Rule 10B: when it fits a routine distributor, the gross margin calculation, classification pitfalls and an example.',
   keywords: [
     'resale price method India', 'RPM transfer pricing', 'resale price method transfer pricing',
     'RPM method example', 'gross margin transfer pricing distributor',

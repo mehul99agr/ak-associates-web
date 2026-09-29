@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: { absolute: 'Books of Accounts Required Under Section 44AA' },
-  description: 'Which businesses and professionals must maintain books of accounts under Section 44AA (now Section 62), the income and turnover thresholds, what counts as valid books, and the Section 271A penalty for failure to maintain them.',
+  description: 'Who must keep books under Section 44AA (now Section 62): income and turnover thresholds, what counts as valid books, and the Section 271A penalty.',
   keywords: [
     'section 44AA books of accounts', 'books of accounts income tax', 'section 44AA threshold',
     'who must maintain books of accounts', 'specified profession books of accounts',

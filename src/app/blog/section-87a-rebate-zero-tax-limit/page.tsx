@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: { absolute: 'Section 87A Rebate: Zero Tax Up to This Income Limit' },
-  description: 'How the Section 87A tax rebate works under the old and new regimes, the marginal relief provision near the threshold, and which income (like certain capital gains) is excluded from the rebate.',
+  description: 'How the Section 87A rebate works under the old and new regimes, marginal relief near the threshold, and which income (like some capital gains) is excluded.',
   keywords: [
     'section 87a rebate', 'income tax rebate 87a', 'zero tax income limit India',
     'section 87a new regime old regime', 'marginal relief 87a', 'section 87a capital gains',

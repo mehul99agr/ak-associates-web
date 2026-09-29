@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Employee Stock Option Pool (ESOP Pool) Sizing for Startups',
-  description: 'How to size an ESOP option pool at seed, Series A, and Series B: pre-money vs post-money pool creation, founder dilution impact, pool refreshes, and board/shareholder approval mechanics.',
+  description: 'Sizing an ESOP pool at seed, Series A and B: pre vs post-money pool creation, founder dilution, pool refreshes, and approval mechanics.',
   keywords: [
     'ESOP pool sizing', 'option pool size startup India', 'pre-money option pool', 'post-money option pool',
     'ESOP pool refresh', 'option pool dilution founders', 'series A option pool', 'esop pool expansion approval',

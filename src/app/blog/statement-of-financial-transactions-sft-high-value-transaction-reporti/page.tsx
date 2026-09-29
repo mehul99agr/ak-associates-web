@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Statement of Financial Transactions (SFT): High-Value Transaction Reporting' },
-  description: 'What Form 61A / the Statement of Financial Transaction reports, who must file it, the high-value transaction thresholds banks and registrars track, and why it shows up in your AIS.',
+  description: 'What Form 61A (SFT) reports, who files it, the high-value transaction thresholds banks and registrars track, and why these show up in your AIS.',
   keywords: [
     'statement of financial transaction', 'SFT reporting', 'form 61A', 'high value transaction income tax',
     'SFT thresholds', 'section 285BA', 'reporting entities SFT', 'high value transactions bank AIS',

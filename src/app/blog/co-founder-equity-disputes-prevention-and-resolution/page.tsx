@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Co-Founder Equity Disputes: Prevention & Resolution',
-  description: 'Why co-founder equity disputes happen (unequal contribution, no vesting, unclear roles), how founder vesting and a shareholders\' agreement prevent them, and resolution paths once a dispute arises.',
+  description: 'Why co-founder equity disputes happen, how founder vesting and a shareholders\' agreement prevent them, and resolution paths once a dispute arises.',
   keywords: [
     'co-founder equity dispute', 'founder vesting schedule India', 'founder cliff vesting', 'co-founder agreement India',
     'shotgun clause founders', 'founder exit equity dispute', 'shareholders agreement dispute resolution startup',

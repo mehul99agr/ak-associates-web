@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Tax Implications for NRIs Working Remotely for Foreign Employers From India',
-  description: 'What happens when an NRI works remotely from India for a foreign employer: residential status impact, taxability of foreign salary once resident, DTAA relief, and employer withholding.',
+  description: 'NRI working remotely from India for a foreign employer: residential status impact, tax on foreign salary once resident, DTAA relief and withholding.',
   keywords: [
     'NRI remote work from India tax', 'foreign employer salary taxed in India', 'NRI working remotely India tax rules',
     'residential status remote work', 'DTAA relief foreign salary India', 'NRI relocating to India tax impact',

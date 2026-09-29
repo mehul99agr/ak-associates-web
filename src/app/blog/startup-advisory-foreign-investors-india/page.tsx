@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Startup Advisory for Foreign Investors Investing in India',
-  description: 'What foreign investors need before backing an Indian startup: entry route and FDI pricing checks, due diligence on cap table and compliance history, valuation certification, and ongoing FC-GPR/FC-TRS reporting oversight.',
+  description: 'What foreign investors need before backing an Indian startup: entry route, FDI pricing, due diligence, valuation, and FC-GPR/FC-TRS reporting.',
   keywords: [
     'startup advisory for foreign investors', 'foreign investor India startup',
     'due diligence Indian startup investment', 'FDI pricing guidelines startup',

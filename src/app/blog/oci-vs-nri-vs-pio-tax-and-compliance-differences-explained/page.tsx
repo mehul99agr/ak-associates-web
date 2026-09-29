@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'OCI vs NRI vs PIO: Tax & Compliance Differences Explained',
-  description: 'OCI is an immigration status, NRI is a tax-residency status, and PIO no longer exists as a separate card. What each status means for property rights, FEMA investment eligibility, and Indian tax filing.',
+  description: 'OCI is an immigration status, NRI a tax status, and PIO no longer exists. What each means for property rights, FEMA investment and Indian tax filing.',
   keywords: [
     'OCI vs NRI', 'OCI vs PIO', 'PIO card merged with OCI', 'overseas citizen of India tax status',
     'NRI tax residency status', 'OCI FEMA rules', 'OCI property rights India', 'PIO card no longer valid',

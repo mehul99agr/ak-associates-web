@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TCS on Sale of Goods: What Happened to Section 206C(1H)',
-  description: 'Section 206C(1H), the seller-side TCS on sale of goods above Rs 50 lakh, was omitted from April 1, 2025. Here is what it used to require, why it was removed, and why Section 194Q is now the operative provision.',
+  description: 'Section 206C(1H) TCS on sale of goods was omitted from April 1, 2025. What it required, why it was removed, and why Section 194Q now applies instead.',
   keywords: [
     'section 206C(1H) repealed', 'TCS on sale of goods removed', 'section 206C(1H) omitted',
     'section 194Q vs 206C(1H)', 'TCS on sale of goods above 50 lakh', 'TDS on purchase of goods',

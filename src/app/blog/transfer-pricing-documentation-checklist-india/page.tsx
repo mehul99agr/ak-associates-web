@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'TP Documentation Checklist India (2026)',
-  description: 'Complete TP documentation checklist for Indian companies: Form 3CEB vs Local File vs Master File thresholds, due dates, benchmarking requirements, and the gaps most audits exploit.',
+  description: 'TP documentation checklist for Indian companies: Form 3CEB, Local File and Master File thresholds, due dates, benchmarking, and gaps audits exploit.',
   keywords: [
     'transfer pricing documentation India', 'transfer pricing checklist India',
     'form 3CEB India', 'TP documentation requirements India', 'master file local file India',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Perquisites & Fringe Benefits Taxation for Employees',
-  description: 'How rent-free accommodation, company cars, and other perquisites are valued and taxed for employees in India, including the revised Rule 3/Rule 15 valuation figures effective April 2026.',
+  description: 'How rent-free housing, company cars and other perquisites are valued and taxed for employees, including revised Rule 3/Rule 15 values from April 2026.',
   keywords: [
     'perquisites taxation India', 'fringe benefits tax employees', 'rent free accommodation perquisite value',
     'motor car perquisite valuation', 'section 17(2) perquisites', 'perquisite valuation rules 2026',

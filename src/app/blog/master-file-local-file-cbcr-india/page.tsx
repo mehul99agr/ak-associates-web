@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Master File vs Local File vs CbCR (India)',
-  description: 'The three-tier transfer pricing documentation structure in India: Master File (Form 3CEAA) thresholds, Local File content, and CbCR (Form 3CEAC/3CEAD) for large MNC groups.',
+  description: 'India\'s three-tier TP documentation: Master File (Form 3CEAA) thresholds, Local File content, and CbCR (Form 3CEAC/3CEAD) for large MNC groups.',
   keywords: [
     'master file India transfer pricing', 'local file transfer pricing India', 'CbCR India',
     'form 3CEAA', 'form 3CEAC', 'form 3CEAD', 'master file threshold Rs 500 crore',

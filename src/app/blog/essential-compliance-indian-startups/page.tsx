@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Essential Compliance for Indian Startups',
-  description: 'Complete compliance checklist for Indian startups: MCA filings (AOC-4, MGT-7, DIR-3 KYC), GST returns, TDS, advance tax, FEMA reporting, and ESOP compliance. Avoid penalties and stay DPIIT-eligible.',
+  description: 'Compliance checklist for Indian startups: AOC-4, MGT-7, DIR-3 KYC, GST, TDS, advance tax, FEMA and ESOP compliance. Avoid penalties, stay DPIIT-eligible.',
   keywords: ['startup compliance India', 'MCA filing startup', 'GST compliance startup India', 'FEMA FC-GPR reporting', 'DPIIT compliance India', 'startup regulatory checklist'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' },
   openGraph: { title: 'Essential Compliance for Indian Startups', description: 'MCA, GST, TDS, advance tax, and FEMA reporting checklist for Indian startups.', url: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups', type: 'article' },

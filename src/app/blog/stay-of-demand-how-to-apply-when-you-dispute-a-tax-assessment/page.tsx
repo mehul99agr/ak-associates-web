@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Stay of Demand: How to Apply When You Dispute a Tax Assessment' },
-  description: 'How to apply for stay of demand under Section 220(6) while your income tax appeal is pending, the 20% deposit benchmark, and what the Budget 2026 proposal to reduce it to 10% actually changes.',
+  description: 'Applying for stay of demand under Section 220(6) during an appeal, the 20% deposit benchmark, and what the Budget 2026 proposal to cut it to 10% changes.',
   keywords: [
     'stay of demand income tax', 'section 220(6) income tax', 'stay of demand application',
     'income tax appeal stay recovery', '20 percent pre-deposit income tax', 'how to stop tax recovery proceedings',

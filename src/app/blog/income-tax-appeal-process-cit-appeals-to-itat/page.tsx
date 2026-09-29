@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax Appeal Process: CIT(Appeals) to ITAT' },
-  description: 'How the income tax appeal ladder works from CIT(Appeals) / Joint Commissioner (Appeals) to the ITAT, High Court and Supreme Court, the forms, fees, and filing timelines.',
+  description: 'The income tax appeal ladder from CIT(Appeals) or JCIT(Appeals) to ITAT, High Court and Supreme Court: forms, fees and filing timelines.',
   keywords: [
     'income tax appeal process India', 'CIT appeals to ITAT', 'appeal against income tax order',
     'Form 35 income tax appeal', 'Form 36 ITAT appeal', 'income tax appellate tribunal appeal',

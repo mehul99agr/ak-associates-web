@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'EPF Registration & Compliance for Startups and SMEs',
-  description: 'When EPF registration becomes mandatory at 20 employees, the 12% employer/employee contribution split across EPF, EPS and EDLI, and the ongoing compliance a startup or SME must handle.',
+  description: 'When EPF registration becomes mandatory at 20 employees, the 12% contribution split across EPF, EPS and EDLI, and ongoing compliance for startups and SMEs.',
   keywords: [
     'EPF registration startups', 'EPF applicability 20 employees', 'PF compliance SME',
     'EPF contribution rate 12%', 'EPS EDLI contribution', 'provident fund registration India',

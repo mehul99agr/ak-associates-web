@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Letter of Undertaking (LUT) for GST-Free Exports: How to File',
-  description: 'Form GST RFD-11 eligibility, the step-by-step LUT filing process on the GST portal, its one-year validity, and what happens if you export without a valid LUT in place.',
+  description: 'Form GST RFD-11: LUT eligibility, step-by-step filing on the GST portal, one-year validity, and what happens if you export without a valid LUT.',
   keywords: [
     'LUT GST filing process', 'Form RFD-11 GST', 'letter of undertaking GST exports',
     'LUT eligibility GST', 'LUT validity GST', 'export without LUT GST',

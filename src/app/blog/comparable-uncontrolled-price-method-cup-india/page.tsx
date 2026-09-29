@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Comparable Uncontrolled Price (CUP) Method: India Transfer Pricing Guide',
-  description: 'How the CUP method works under Rule 10B, internal vs external CUP, when it fits loans, royalties, and commodity transactions, comparability adjustments, and a worked example.',
+  description: 'The CUP method under Rule 10B: internal vs external CUP, use for loans, royalties and commodities, comparability adjustments and a worked example.',
   keywords: [
     'comparable uncontrolled price method', 'CUP method transfer pricing',
     'CUP method India', 'internal CUP external CUP', 'CUP transfer pricing example',

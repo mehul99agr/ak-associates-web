@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing for IT Services (India)',
-  description: 'Why TNMM is the default method for Indian IT/ITES captive service providers, limited-risk vs entrepreneur profiles, common TPO disputes over comparables and working capital, and safe harbour fit.',
+  description: 'Why TNMM is the default for Indian IT/ITES captives, limited-risk vs entrepreneur profiles, common TPO disputes, and safe harbour fit.',
   keywords: [
     'transfer pricing IT services India', 'transfer pricing software development company',
     'ITES BPO transfer pricing', 'captive service provider transfer pricing',

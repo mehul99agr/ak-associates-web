@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Tax Audit Report Forms: 3CA/3CB/3CD Explained (Now Form 26)',
-  description: 'What Forms 3CA, 3CB and 3CD covered, and how they have been consolidated into a single Form 26 under the Income Tax Act 2025, effective for tax years from April 1, 2026.',
+  description: 'What Forms 3CA, 3CB and 3CD covered, and how they are now consolidated into a single Form 26 under the Income Tax Act 2025 from April 1, 2026.',
   keywords: [
     'form 3CA vs 3CB', 'form 3CD explained', 'tax audit report forms',
     'form 3CA 3CB 3CD difference', 'income tax audit report format',

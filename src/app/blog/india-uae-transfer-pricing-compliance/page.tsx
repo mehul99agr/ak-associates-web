@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'India-UAE Transfer Pricing Compliance',
-  description: 'TP obligations for Indian companies transacting with UAE group entities since UAE Corporate Tax: dual compliance, DTAA Article 9 relief, Free Zone considerations, and common transaction scenarios.',
+  description: 'TP obligations for Indian companies dealing with UAE group entities: dual compliance, DTAA Article 9 relief, Free Zone issues and common scenarios.',
   keywords: [
     'India UAE transfer pricing', 'UAE corporate tax transfer pricing', 'India UAE DTAA transfer pricing',
     'UAE free zone related party transactions', 'India UAE management fee transfer pricing',

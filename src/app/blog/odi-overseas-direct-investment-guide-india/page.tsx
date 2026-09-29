@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Overseas Direct Investment (ODI): Rules & Compliance Guide',
-  description: 'How Overseas Direct Investment (ODI) works under the FEMA Overseas Investment framework: who can invest, ODI vs OPI, automatic vs approval route, FIRMS reporting, APR, and the one-year holding rule.',
+  description: 'How ODI works under FEMA\'s overseas investment rules: who can invest, ODI vs OPI, automatic vs approval route, FIRMS reporting, APR and holding rules.',
   keywords: [
     'Overseas Direct Investment India', 'ODI rules FEMA', 'Overseas Investment Rules 2022',
     'ODI vs OPI', 'FIRMS portal ODI reporting', 'Annual Performance Report ODI',

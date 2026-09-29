@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'FDI in India: Routes, Sectoral Rules & Compliance Guide',
-  description: 'How Foreign Direct Investment into India works: automatic route vs government route, sectoral caps, the Press Note 3 land-border rule, pricing guidelines, and FC-GPR/FC-TRS reporting.',
+  description: 'FDI into India: automatic vs government route, sectoral caps, the Press Note 3 land-border rule, pricing guidelines, and FC-GPR/FC-TRS reporting.',
   keywords: [
     'FDI in India', 'FDI automatic route', 'FDI government route India',
     'FDI sectoral caps', 'FC-GPR filing', 'FEMA Non-Debt Instruments Rules',

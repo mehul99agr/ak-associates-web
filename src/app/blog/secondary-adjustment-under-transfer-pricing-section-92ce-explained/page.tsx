@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Secondary Adjustment Under Transfer Pricing: Section 92CE Explained',
-  description: 'When Section 92CE secondary adjustment applies, the Rs 1 crore primary adjustment threshold, the 90-day repatriation window, the deemed-advance interest treatment, and the one-time additional tax alternative on unrepatriated excess money.',
+  description: 'Section 92CE secondary adjustment: the Rs 1 crore threshold, the 90-day repatriation window, deemed-advance interest, and the one-time additional tax option.',
   keywords: [
     'section 92CE secondary adjustment', 'secondary adjustment transfer pricing India',
     'excess money repatriation transfer pricing', '90 day repatriation section 92CE',

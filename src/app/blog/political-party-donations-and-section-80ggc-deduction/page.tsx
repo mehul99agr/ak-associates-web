@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Political Party Donations & Section 80GGC Deduction' },
-  description: 'How the Section 80GGC deduction for donations to political parties works, the cash-donation restriction, and why the Income Tax Department is scrutinising these claims closely.',
+  description: 'How the Section 80GGC deduction for political party donations works, the cash donation restriction, and why the tax department scrutinises these claims.',
   keywords: [
     'section 80GGC deduction', 'political party donation tax deduction', '80GGC cash donation disallowed',
     'political donation income tax notice', '80GGC scrutiny', 'electoral trust donation deduction',

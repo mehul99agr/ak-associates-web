@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Gift & Inheritance Tax Rules (2026)',
-  description: 'Gift and inheritance tax rules for NRIs: taxability based on residential status, exempt gifts from relatives, FEMA implications of cross-border gifts, and LRS limits for gifts to NRIs.',
+  description: 'Gift and inheritance tax rules for NRIs: taxability by residential status, exempt gifts from relatives, FEMA rules on cross-border gifts and LRS limits.',
   keywords: ['NRI gift tax India', 'NRI inheritance tax', 'gift to NRI from India', 'inheritance NRI India', 'gift tax exemption NRI', 'NRI gift FEMA', 'cross border gift tax India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules' },
   openGraph: { title: 'NRI Gift & Inheritance Tax Rules (2026)', description: 'Taxability, exemptions, FEMA rules, and LRS limits for NRI gifts and inheritance.', url: 'https://agrawalkhandelwal.com/blog/nri-gift-inheritance-tax-rules', type: 'article' },

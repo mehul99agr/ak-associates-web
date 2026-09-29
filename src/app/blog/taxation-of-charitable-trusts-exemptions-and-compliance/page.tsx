@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Taxation of Charitable Trusts: Exemptions & Compliance' },
-  description: 'How Section 11 and Section 12 exemption works for charitable trusts: the 85% application requirement, accumulation rules, anonymous donation taxation under Section 115BBC, and 12A/12AB registration.',
+  description: 'Section 11/12 exemption for charitable trusts: the 85% application rule, accumulation, anonymous donation tax under Section 115BBC, and 12A/12AB.',
   keywords: [
     'section 11 income tax act', 'section 12 charitable trust', '85% application charitable trust',
     'accumulation of income section 11(2)', 'anonymous donation section 115BBC', '12A 12AB registration',

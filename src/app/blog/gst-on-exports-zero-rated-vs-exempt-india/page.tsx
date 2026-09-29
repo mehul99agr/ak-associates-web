@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'GST on Exports: Zero-Rated vs Exempt',
-  description: 'The difference between zero-rated and exempt supplies under GST, why it matters for ITC claims, how to file a Letter of Undertaking (LUT), and the five conditions for export of services.',
+  description: 'Zero-rated vs exempt supplies under GST: why it matters for ITC, how to file a Letter of Undertaking (LUT), and the five conditions for export of services.',
   keywords: [
     'GST on exports India', 'zero rated supply GST India', 'exempt supply GST India',
     'LUT GST exports', 'letter of undertaking GST', 'GST export of services India',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TDS on Rent Under Section 194-IB: When Tenants Must Deduct',
-  description: 'Section 194-IB requires individuals and HUFs not liable for tax audit to deduct 2% TDS on monthly rent above Rs 50,000, filed once a year via Form 26QC with no TAN needed.',
+  description: 'Section 194-IB: individuals and HUFs not under tax audit deduct 2% TDS on rent above Rs 50,000 a month, filed once a year via Form 26QC with no TAN.',
   keywords: [
     'section 194-IB', 'TDS on rent tenant', 'form 26QC', 'TDS on rent above 50000',
     '194IB TDS rate', 'tenant TDS on rent india', 'rent TDS individual HUF', 'section 194IB threshold',

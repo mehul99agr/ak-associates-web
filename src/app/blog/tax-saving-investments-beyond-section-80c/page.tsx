@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Tax Saving Investment Options Beyond Section 80C',
-  description: 'Once your Rs 1.5 lakh Section 80C limit is used up, NPS under 80CCD(1B), health insurance under 80D, home loan interest under Section 24, education loan interest under 80E, and donations under 80G can lower your old-regime tax further.',
+  description: 'Used up your Rs 1.5 lakh 80C limit? NPS under 80CCD(1B), 80D health cover, home loan interest, 80E education loans and 80G donations cut old-regime tax.',
   keywords: [
     'tax saving beyond 80C', 'section 80CCD(1B) NPS deduction', 'section 24 home loan interest deduction',
     'section 80E education loan interest', 'section 80G donation deduction', 'tax saving options old regime',

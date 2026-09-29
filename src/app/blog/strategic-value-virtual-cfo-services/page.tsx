@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'When Your Business Needs a Virtual CFO',
-  description: 'Why SMEs at Rs 3-15 crore revenue need a Virtual CFO: MIS, budgeting, cash flow, fundraising support, and tax planning at a fraction of a full-time hire. Cost comparison and ROI.',
+  description: 'Why SMEs at Rs 3-15 crore revenue need a Virtual CFO: MIS, budgeting, cash flow, fundraising and tax planning for less than a full-time hire.',
   keywords: ['virtual CFO India', 'CFO services for SMEs', 'outsourced CFO India', 'fractional CFO India', 'fractional CFO services for startups in India', 'Virtual CFO Mumbai', 'Virtual CFO Nashik', 'startup CFO services', 'virtual CFO cost India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' },
   openGraph: { title: 'Virtual CFO Services: When You Need One & What They Do', description: 'MIS, budgeting, cash flow, fundraising support at a fraction of a full-time CFO.', url: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services', type: 'article' },

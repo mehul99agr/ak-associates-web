@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'ESOP Taxation for NRIs (2026 Guide)',
-  description: 'How ESOPs are taxed for NRIs: perquisite tax at exercise, capital gains at sale, TDS obligations, the startup ESOP deferral, and how to avoid double taxation under DTAA.',
+  description: 'How ESOPs are taxed for NRIs: perquisite tax at exercise, capital gains at sale, TDS, the startup ESOP deferral, and avoiding double tax under DTAA.',
   keywords: [
     'ESOP taxation NRI', 'ESOP tax India NRI', 'NRI ESOP exercise tax',
     'ESOP capital gains NRI', 'ESOP double taxation DTAA', 'startup ESOP deferral NRI',

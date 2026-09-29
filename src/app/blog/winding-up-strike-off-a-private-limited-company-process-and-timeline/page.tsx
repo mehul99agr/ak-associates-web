@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Winding Up / Strike Off a Private Limited Company: Process & Timeline' },
-  description: 'How to close a private limited company through the Fast Track Exit (Form STK-2) route: eligibility conditions, documents required, filing steps, and realistic timelines.',
+  description: 'Closing a private limited company by strike off (Form STK-2): eligibility, documents, filing steps and realistic timelines.',
   keywords: [
     'strike off private limited company', 'form stk-2', 'fast track exit company closure',
     'winding up private limited company india', 'close a company section 248', 'stk-2 eligibility',

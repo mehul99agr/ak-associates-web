@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TCS on Foreign Remittance Under LRS: Rates FY 2026-27',
-  description: 'TCS on LRS remittances after the Budget 2026 revision: the Rs 10 lakh threshold, 0% for loan-funded education, 2% for self-funded education/medical/tour packages, 20% for other purposes, and how to claim the credit.',
+  description: 'TCS on LRS after Budget 2026: Rs 10 lakh threshold, 0% for loan-funded education, 2% for education/medical/tours, 20% otherwise, and claiming credit.',
   keywords: [
     'TCS foreign remittance FY 2026-27', 'TCS LRS rate 2026', 'Section 394(1) TCS',
     'TCS Rs 10 lakh threshold', 'TCS education remittance', 'TCS overseas tour package',

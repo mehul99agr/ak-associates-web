@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Tax Audit for E-Commerce Sellers & Digital Businesses',
-  description: 'How Section 44AB tax audit turnover thresholds apply to online sellers, how presumptive taxation under Section 44AD interacts with e-commerce, and how Section 194-O TDS and GST TCS fit together.',
+  description: 'Tax audit for online sellers: Section 44AB thresholds, how 44AD presumptive taxation applies to e-commerce, and how 194-O TDS and GST TCS fit together.',
   keywords: [
     'tax audit e-commerce sellers', '44AB threshold online business', 'section 194-O TDS e-commerce',
     'presumptive taxation online sellers', 'digital business tax audit India', 'amazon flipkart seller tax audit',

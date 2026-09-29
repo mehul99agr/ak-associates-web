@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'GST for E-Commerce Sellers: TCS Under Section 52',
-  description: 'GST rules for sellers on Amazon, Flipkart, and other marketplaces: mandatory registration regardless of turnover, the Section 52 TCS rate, GSTR-8 credit reconciliation, and GSTR-1/3B implications.',
+  description: 'GST for Amazon and Flipkart sellers: mandatory registration regardless of turnover, Section 52 TCS, GSTR-8 reconciliation and GSTR-1/3B impact.',
   keywords: [
     'GST for e-commerce sellers', 'TCS section 52 GST', 'GST registration e-commerce operator',
     'GSTR-8 TCS credit', 'e-commerce operator GST compliance', 'TCS on online marketplace sales',

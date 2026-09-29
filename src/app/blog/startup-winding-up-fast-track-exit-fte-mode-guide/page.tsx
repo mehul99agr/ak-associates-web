@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Startup Winding Up: Fast Track Exit (FTE) Mode Guide',
-  description: 'What "Fast Track Exit" means for a startup shutting down today: why FTE is the old scheme name, how the current STK-2 process applies to a DPIIT-recognised startup, and a realistic timeline.',
+  description: 'What "Fast Track Exit" means for a startup closing today: why FTE is the old scheme name, how STK-2 applies to DPIIT startups, and a realistic timeline.',
   keywords: [
     'fast track exit startup', 'FTE mode company closure', 'startup winding up india',
     'stk-2 startup closure', 'close startup company india', 'DPIIT startup shut down',

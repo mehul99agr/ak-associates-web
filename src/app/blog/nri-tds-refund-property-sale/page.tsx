@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'NRI TDS Refund on Property Sale',
-  description: 'Step-by-step guide for NRIs claiming a TDS refund after selling Indian property; which ITR to file, documents needed, e-verification, refund timelines, and Section 244A interest for FY 2026-27.',
+  description: 'How NRIs claim a TDS refund after selling Indian property: which ITR to file, documents, e-verification, refund timelines and Section 244A interest.',
   keywords: [
     'NRI TDS refund property sale', 'TDS refund for NRI', 'how to claim TDS refund NRI',
     'NRI ITR filing property sale', 'NRI refund income tax India', 'form 16A NRI refund',

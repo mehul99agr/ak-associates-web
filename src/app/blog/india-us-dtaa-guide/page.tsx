@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'India-US DTAA Guide: Permanent Establishment and Business Profits',
-  description: 'How the India-US tax treaty defines a permanent establishment, how Article 7 attributes business profits to it, and what this means for a founder running a US entity alongside Indian operations.',
+  description: 'India-US tax treaty: how a permanent establishment is defined, how Article 7 attributes profits to it, and what it means for founders with a US entity.',
   keywords: [
     'India US DTAA permanent establishment', 'Article 7 business profits DTAA',
     'India US tax treaty founder', 'PE risk US entity India operations',

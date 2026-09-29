@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TDS on NRO Interest & FD (FY 2026-27)',
-  description: 'TDS on NRO savings and FD interest for NRIs: 30% domestic rate, how to claim lower DTAA treaty rates (10-15%), TRC and Form 10F process, and ITR refund for excess TDS.',
+  description: 'TDS on NRO savings and FD interest: the 30% domestic rate, claiming lower DTAA rates (10-15%) with TRC and Form 10F, and ITR refunds for excess TDS.',
   keywords: ['TDS NRO interest', 'NRO FD TDS rate', 'NRO interest tax NRI', 'DTAA NRO interest', 'NRO TDS refund', 'NRO FD tax rate NRI', 'TDS on NRO savings account'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief' },
   openGraph: { title: 'TDS on NRO Interest & FD: DTAA Relief for NRIs', description: '30% TDS on NRO interest, how to cut it to 10-15% with DTAA, TRC process.', url: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief', type: 'article' },

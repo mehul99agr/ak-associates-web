@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Profit Split Method (PSM) in Transfer Pricing: A Practical Guide',
-  description: 'How the Profit Split Method under Rule 10B(1)(d) allocates combined profit between associated enterprises, when it is the most appropriate method, and how contribution and residual profit split analyses differ.',
+  description: 'The Profit Split Method under Rule 10B(1)(d): how combined profit is allocated, when it is most appropriate, and contribution vs residual profit split.',
   keywords: [
     'profit split method transfer pricing', 'PSM transfer pricing India', 'Rule 10B(1)(d)',
     'residual profit split method', 'contribution profit split method',

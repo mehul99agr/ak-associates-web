@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Input Tax Credit (ITC) Under GST: Eligibility, Reversal & Blocked Credits',
-  description: 'How Input Tax Credit works under GST: conditions to claim it, the Section 16(4) time limit, the 180-day payment reversal rule, and the full list of blocked credits under Section 17(5).',
+  description: 'How GST Input Tax Credit works: conditions to claim, the Section 16(4) time limit, the 180-day payment rule, and blocked credits under Section 17(5).',
   keywords: [
     'input tax credit GST', 'ITC eligibility GST', 'blocked credit section 17(5)', 'ITC reversal 180 days',
     'section 16(4) time limit ITC', 'ineligible ITC GST', 'ITC on motor vehicles GST', 'ITC claim conditions',

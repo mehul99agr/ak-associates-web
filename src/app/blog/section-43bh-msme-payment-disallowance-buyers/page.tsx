@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Section 43B(h): MSME Payment Disallowance Rules for Buyers',
-  description: 'The 45-day and 15-day MSME payment rules under Section 43B(h), which suppliers count as micro or small, and how a buyer\'s year-end unpaid dues get disallowed as a deduction.',
+  description: 'Section 43B(h): the 45-day and 15-day MSME payment rules, which suppliers count as micro or small, and how unpaid year-end dues get disallowed.',
   keywords: [
     'section 43B(h) MSME', 'MSME 45 day payment rule', 'section 43B(h) disallowance',
     'MSME payment income tax act', '15 day payment MSME', 'micro small enterprise payment rule',

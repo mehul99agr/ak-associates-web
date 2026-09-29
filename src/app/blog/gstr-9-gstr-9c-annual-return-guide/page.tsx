@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide',
-  description: 'GSTR-9 annual return and GSTR-9C reconciliation statement explained: who must file, turnover thresholds, the December 31 due date, penalties, and how the two forms fit together.',
+  description: 'GSTR-9 annual return and GSTR-9C reconciliation: who must file, turnover thresholds, the December 31 due date, penalties, and how they fit together.',
   keywords: [
     'GSTR-9 annual return', 'GSTR-9C reconciliation statement', 'GSTR-9 due date', 'GSTR-9C applicability',
     'GSTR-9 turnover limit', 'GST annual return filing', 'GSTR-9 vs GSTR-9C', 'GSTR-9 late fee',

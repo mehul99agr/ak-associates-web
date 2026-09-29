@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'FCRA Registration: Foreign Contribution Compliance for NGOs' },
-  description: 'FCRA registration eligibility, the prior permission route for younger NGOs, the FC-4 annual return, and why FCRA compliance has become higher-stakes for Indian nonprofits.',
+  description: 'FCRA registration eligibility, the prior permission route for younger NGOs, the FC-4 annual return, and why FCRA compliance is now higher-stakes.',
   keywords: [
     'FCRA registration', 'foreign contribution regulation act', 'FC-4 annual return', 'FCRA prior permission',
     'FCRA compliance NGO', 'FCRA registration eligibility', 'foreign contribution NGO India', 'FCRA cancellation',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Cost Plus Method (CPM) in Transfer Pricing: When It Applies',
-  description: 'How the Cost Plus Method under Rule 10B(1)(c) works, which cost base it uses, when it is the most appropriate method for contract manufacturers and low-risk service providers, and why TNMM often replaces it in practice.',
+  description: 'The Cost Plus Method under Rule 10B(1)(c): the cost base, when it fits contract manufacturers and low-risk service providers, and why TNMM often replaces it.',
   keywords: [
     'cost plus method transfer pricing', 'CPM transfer pricing India', 'Rule 10B(1)(c)',
     'cost plus method contract manufacturing', 'gross mark up transfer pricing',

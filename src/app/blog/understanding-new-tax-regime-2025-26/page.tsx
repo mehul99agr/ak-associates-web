@@ -10,7 +10,7 @@ const TITLE = 'Understanding the New Tax Regime'
 const DATE = 'March 18, 2026'
 const ISO_DATE = '2026-03-18'
 const CATEGORY = 'Tax Planning'
-const META_DESCRIPTION = 'The FY 2025-26 new tax regime explained: zero tax up to Rs 12 lakh under the Section 87A rebate, the revised slabs, the Rs 75,000 standard deduction, and who should still pick the old regime.'
+const META_DESCRIPTION = 'The FY 2025-26 new tax regime: zero tax up to Rs 12 lakh with the 87A rebate, revised slabs, Rs 75,000 standard deduction, and who should stay old.'
 
 export const metadata: Metadata = {
   title: TITLE,

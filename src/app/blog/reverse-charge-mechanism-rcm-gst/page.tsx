@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Reverse Charge Mechanism (RCM) Under GST: When It Applies',
-  description: 'When GST reverse charge shifts the tax liability to the recipient: goods transport agency freight, legal services from advocates, director services, security services, and how to self-invoice and claim ITC.',
+  description: 'When GST reverse charge applies: GTA freight, advocates, director and security services, plus how to self-invoice and claim ITC.',
   keywords: [
     'reverse charge mechanism GST', 'RCM under GST', 'RCM list of services', 'GTA reverse charge',
     'legal services RCM advocate', 'director services RCM', 'self invoice RCM GST', 'RCM ITC claim',

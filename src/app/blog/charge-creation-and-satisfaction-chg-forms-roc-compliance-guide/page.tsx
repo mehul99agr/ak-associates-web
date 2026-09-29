@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Charge Creation & Satisfaction (CHG Forms): ROC Compliance Guide' },
-  description: 'How to register and satisfy a charge on company assets with the Registrar: Form CHG-1, CHG-4, and CHG-9, filing timelines, condonation windows, and what happens if a charge is missed.',
+  description: 'Registering and satisfying a charge with the ROC: Forms CHG-1, CHG-4 and CHG-9, filing timelines, condonation windows, and what if a charge is missed.',
   keywords: [
     'chg-1 form', 'chg-4 form', 'chg-9 form', 'charge registration companies act', 'satisfaction of charge roc',
     'section 77 companies act charge', 'register charge roc', 'charge creation timeline',

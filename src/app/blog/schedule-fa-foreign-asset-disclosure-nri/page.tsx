@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Schedule FA: Foreign Asset Disclosure (2026)',
-  description: 'When Schedule FA kicks in, what to declare, penalties for non-disclosure, and the Foreign Assets Disclosure Scheme 2026. Applies to Residents and RNOR only, not NRIs.',
+  description: 'When Schedule FA applies, what to declare, penalties for non-disclosure and the 2026 disclosure scheme. Applies to Residents and RNORs only, not NRIs.',
   keywords: ['Schedule FA NRI', 'foreign asset disclosure India', 'Schedule FA ITR', 'foreign assets NRI India', 'NRI foreign bank account disclosure', 'Schedule FA penalty', 'black money act NRI'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' },
   openGraph: { title: 'Schedule FA: Foreign Asset Disclosure for Returning NRIs', description: 'When Schedule FA applies, what to disclose, and penalties for non-compliance.', url: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri', type: 'article' },

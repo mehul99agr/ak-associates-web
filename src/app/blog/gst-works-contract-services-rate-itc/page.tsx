@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'GST on Works Contract Services: Rate & ITC Rules',
-  description: 'GST on works contract services in India: the current 18% rate, why Section 17(5)(c)/(d) blocks input tax credit for the recipient, and when a contractor can still claim it.',
+  description: 'GST on works contracts: the current 18% rate, why Section 17(5)(c)/(d) blocks ITC for the recipient, and when a contractor can still claim it.',
   keywords: [
     'GST on works contract', 'works contract GST rate', 'ITC on works contract services',
     'section 17(5) works contract', 'blocked credit works contract GST', 'GST works contract construction',

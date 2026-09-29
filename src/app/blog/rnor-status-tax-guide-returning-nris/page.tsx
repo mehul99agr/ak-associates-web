@@ -6,7 +6,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'RNOR Status for Returning NRIs (FY 2026-27)',
-  description: 'RNOR status explained for returning NRIs: the two RNOR tests, how many tax-free years you actually get, what foreign income stays exempt, and the planning checklist before it ends.',
+  description: 'RNOR status for returning NRIs: the two RNOR tests, how many tax-free years you get, which foreign income stays exempt, and a checklist before it ends.',
   keywords: [
     'RNOR status India', 'resident but not ordinarily resident', 'returning NRI tax India',
     'RNOR tax exemption', 'RNOR years calculation', 'NRI returning to India tax planning',

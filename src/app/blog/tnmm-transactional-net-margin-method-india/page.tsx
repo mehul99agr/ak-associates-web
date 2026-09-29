@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TNMM: Transactional Net Margin Method Explained (India)',
-  description: 'How TNMM works under Rule 10B, why it is the default method for Indian captive service providers and IT/ITES companies, profit level indicators, comparable selection, and a worked example.',
+  description: 'How TNMM works under Rule 10B, why it is the default for Indian IT/ITES captives, profit level indicators, comparables and a worked example.',
   keywords: [
     'TNMM India', 'transactional net margin method', 'TNMM transfer pricing',
     'TNMM method example', 'profit level indicator transfer pricing',

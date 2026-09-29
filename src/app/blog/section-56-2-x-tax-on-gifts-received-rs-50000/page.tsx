@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Section 56(2)(x): Tax on Gifts Received Above Rs 50,000',
-  description: 'Section 56(2)(x) (now Section 92) explained for resident taxpayers: the Rs 50,000 threshold, the full relative-exemption list, marriage and other specific-occasion exemptions, and how gifted property is taxed.',
+  description: 'Section 56(2)(x) (now Section 92): the Rs 50,000 gift threshold, the relatives exemption list, marriage and occasion exemptions, and gifted property tax.',
   keywords: [
     'section 56(2)(x) income tax act', 'tax on gifts received india', 'gift tax exemption relatives',
     'gift tax rs 50000 threshold', 'section 92 income tax act 2025 gift', 'gift tax marriage exemption',

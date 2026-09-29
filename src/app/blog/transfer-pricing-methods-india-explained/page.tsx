@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Transfer Pricing Methods in India',
-  description: 'The 5 methods prescribed under Rule 10B for testing arm\'s length pricing in India: what each tests, when it is the most appropriate method, and a worked TNMM example for a captive service provider.',
+  description: 'The 5 Rule 10B methods for testing arm\'s length pricing in India: what each tests, when it is most appropriate, and a worked TNMM example.',
   keywords: [
     'transfer pricing methods India', 'TNMM India', 'CUP method transfer pricing',
     'resale price method India', 'cost plus method transfer pricing', 'profit split method India',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Safe Harbour Rules India (2026)',
-  description: 'Which categories qualify for TP safe harbour (software development, ITES, KPO, contract R&D, loans, guarantees), how to opt in via Form 3CEFA, the lock-in period, and the certainty-versus-cost trade-off.',
+  description: 'TP safe harbour in India: eligible categories (software, ITES, KPO, contract R&D, loans), opting in via Form 3CEFA, lock-in, and the cost trade-off.',
   keywords: [
     'safe harbour rules transfer pricing India', 'form 3CEFA', 'safe harbour software development',
     'safe harbour ITES BPO', 'transfer pricing safe harbour margin', 'Rule 10TA 10TG',

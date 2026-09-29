@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRO Account Repatriation Rules (2026)',
-  description: 'How to repatriate money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents required, TDS clearance, and common bank rejections. Updated for Income Tax Act 2025.',
+  description: 'Repatriating money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents, TDS clearance and common bank rejections.',
   keywords: [
     'NRO repatriation', 'NRO account repatriation', 'repatriation from NRO account',
     'NRO repatriation limit', 'USD 1 million NRO', 'NRO account repatriation rules',

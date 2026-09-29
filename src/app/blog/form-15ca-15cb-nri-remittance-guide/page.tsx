@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Form 15CA/15CB NRI Remittance Guide',
-  description: 'When Form 15CA/15CB is required, the 4 parts of Form 15CA, when a CA certificate (15CB) is needed, step-by-step filing on the Income Tax portal, and what happens if you skip it.',
+  description: 'When Form 15CA/15CB is required, the 4 parts of Form 15CA, when a CA certificate is needed, step-by-step portal filing, and what happens if you skip it.',
   keywords: [
     'form 15CA', 'form 15CB', 'form 145', 'form 146', '15CA 15CB NRI',
     'form 15CA online filing', 'form 15CB CA certificate', 'NRI remittance form',

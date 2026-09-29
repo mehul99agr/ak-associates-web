@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Startup Exit Strategies: Acquisition vs IPO vs Buyback',
-  description: 'A founder-level comparison of the three main startup exit routes in India: acquisition (share sale vs slump sale), IPO (including the SME exchange), and share buyback under the Companies Act.',
+  description: 'Startup exits in India compared: acquisition (share sale vs slump sale), IPO including SME exchanges, and share buyback under the Companies Act.',
   keywords: [
     'startup exit strategy India', 'startup acquisition vs IPO', 'SME IPO India', 'buyback of shares startup',
     'slump sale vs share sale startup', 'startup exit options India', 'IPO eligibility India startup',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: '26QB vs 27Q: NRI Property TDS Form',
-  description: 'Form 26QB is for resident sellers, Form 27Q is for NRI sellers. Side-by-side comparison: when each applies, TDS rates, TAN requirement, filing process, and the penalty for using the wrong form.',
+  description: 'Form 26QB is for resident sellers, Form 27Q for NRI sellers. When each applies, TDS rates, TAN requirement, filing steps and the wrong-form penalty.',
   keywords: [
     '26QB vs 27Q', 'form 26QB NRI', 'form 27Q property', '26QB for NRI seller',
     'TDS form NRI property', 'which form TDS NRI', '26QB NRI applicable',

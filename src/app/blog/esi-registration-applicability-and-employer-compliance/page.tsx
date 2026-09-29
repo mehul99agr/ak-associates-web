@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'ESI Registration: Applicability & Employer Compliance',
-  description: 'When ESI registration applies at 10 or 20 employees, the Rs 21,000 wage ceiling, the 4% employer/employee contribution split, and the ongoing filing employers must handle.',
+  description: 'When ESI applies at 10 or 20 employees, the Rs 21,000 wage ceiling, the 4% contribution split, and the ongoing filings employers must handle.',
   keywords: [
     'ESI registration applicability', 'ESI wage ceiling 21000', 'ESI contribution rate',
     'ESIC compliance employer', 'ESI 10 employees threshold', 'employee state insurance registration',

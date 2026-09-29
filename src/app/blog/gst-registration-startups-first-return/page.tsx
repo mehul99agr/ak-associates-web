@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'GST Registration for Startups',
-  description: 'When GST registration becomes mandatory for an Indian startup (turnover thresholds and compulsory triggers), the registration process, and a first-return walkthrough for GSTR-1 and GSTR-3B.',
+  description: 'When GST registration becomes mandatory for a startup, the registration process, and a walkthrough of your first GSTR-1 and GSTR-3B returns.',
   keywords: [
     'GST registration startup India', 'GST threshold startup', 'first GST return startup',
     'GSTR-1 GSTR-3B first filing', 'voluntary GST registration India', 'GST registration process startup',

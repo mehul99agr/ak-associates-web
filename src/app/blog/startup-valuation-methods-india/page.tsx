@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Startup Valuation Methods in India',
-  description: 'DCF vs NAV vs comparables for Indian startups: when a formal valuation is legally required (ESOP, FEMA, buyback), who can issue a valid report, and how to build a DCF without revenue history.',
+  description: 'DCF vs NAV vs comparables for Indian startups: when a valuation is legally required (ESOP, FEMA, buyback), who can issue it, and DCF without revenue.',
   keywords: [
     'startup valuation India', 'DCF valuation startup', 'NAV valuation startup India',
     'registered valuer India', 'FEMA valuation startup', 'valuation for ESOP India',

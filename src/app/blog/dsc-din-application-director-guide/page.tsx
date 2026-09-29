@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'DSC & DIN Application Guide (India)',
-  description: 'How to apply for a Digital Signature Certificate and Director Identification Number in India: process for new companies via SPICe+, process for existing companies via DIR-3, and common rejection reasons.',
+  description: 'How to get a DSC and DIN in India: via SPICe+ for new companies, via DIR-3 for existing ones, and the most common rejection reasons.',
   keywords: [
     'DSC application India', 'DIN application process', 'Director Identification Number India',
     'Class 3 digital signature certificate', 'DIR-3 form', 'SPICe+ DIN allotment',

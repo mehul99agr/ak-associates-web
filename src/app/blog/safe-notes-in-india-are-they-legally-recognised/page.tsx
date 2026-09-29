@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'SAFE Notes in India: Are They Legally Recognised?',
-  description: 'Why a US-style SAFE (Simple Agreement for Future Equity) is not a recognised instrument under Indian company law or FEMA, and how founders adapt it into a compliant convertible note or CCPS instead.',
+  description: 'Why a US-style SAFE is not recognised under Indian company law or FEMA, and how founders adapt it into a compliant convertible note or CCPS.',
   keywords: [
     'SAFE note India legal', 'are SAFE notes valid in India', 'iSAFE India', 'SAFE vs convertible note India',
     'simple agreement for future equity India', 'SAFE note FEMA', 'SAFE note Companies Act',

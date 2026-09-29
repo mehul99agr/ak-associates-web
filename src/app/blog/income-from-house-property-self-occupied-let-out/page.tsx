@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Income From House Property: Self-Occupied vs Let-Out Taxation',
-  description: 'How self-occupied and let-out property are taxed differently in India: nil annual value vs net annual value, the 30% standard deduction, home loan interest limits, and the Rs 2 lakh loss set-off cap for FY 2026-27.',
+  description: 'Self-occupied vs let-out property tax: nil vs net annual value, 30% standard deduction, home loan interest limits and the Rs 2 lakh loss set-off cap.',
   keywords: [
     'income from house property', 'self occupied vs let out property tax', 'section 24 standard deduction',
     'home loan interest deduction limit', 'house property loss set off Rs 2 lakh', 'net annual value calculation',

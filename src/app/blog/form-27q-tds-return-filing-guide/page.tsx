@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Form 27Q: TDS Return Filing Guide (FY 2026-27)',
-  description: 'Form 27Q filing guide for payers deducting TDS on payments to NRIs: who must file, due dates, return structure, correction statements, penalties, and how it differs from Form 27QB for property purchases.',
+  description: 'Form 27Q guide for TDS on payments to NRIs: who files, due dates, return structure, corrections, penalties, and how it differs from 27QB.',
   keywords: [
     'form 27Q', 'form 27Q filing', 'form 27Q due date', 'TDS return for NRI payments',
     'form 27Q vs 27QB', 'form 27Q correction statement', 'quarterly TDS return NRI',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI GAAR Exposure: Anti-Avoidance Rules & Cross-Border Structures',
-  description: 'When India\'s General Anti-Avoidance Rule (GAAR) can apply to an NRI\'s cross-border structure: the Impermissible Avoidance Arrangement test, the Rs 3 crore tax benefit threshold, and common NRI scenarios that attract scrutiny.',
+  description: 'When GAAR can apply to an NRI\'s cross-border structure: the impermissible avoidance test, the Rs 3 crore threshold, and scenarios that attract scrutiny.',
   keywords: [
     'NRI GAAR', 'GAAR impermissible avoidance arrangement', 'GAAR Rs 3 crore threshold',
     'GAAR NRI treaty shopping', 'GAAR Part T Income Tax Act 2025', 'GAAR cross border structure India',

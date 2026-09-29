@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Double Taxation Relief for NRIs: Foreign Tax Credit Under Section 91',
-  description: 'How Section 91 unilateral relief works for NRIs and residents with foreign income when India has no DTAA with the source country, how it differs from Section 90 DTAA relief, and how to claim it.',
+  description: 'Section 91 relief when India has no DTAA with the source country: how it works for NRIs and residents, how it differs from Section 90, and how to claim.',
   keywords: [
     'section 91 income tax act', 'foreign tax credit no DTAA', 'unilateral relief double taxation',
     'section 90 vs section 91', 'foreign tax credit India', 'double taxation relief NRI',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Form 5471 vs 5472 vs 8858: Which Applies to You',
-  description: 'Form 5471, Form 5472, and Form 8858 explained: which one applies depending on whether you are a US person owning a foreign entity or a foreign person owning a US entity, and the penalties for missing them.',
+  description: 'Forms 5471, 5472 and 8858 explained: which applies to US persons owning foreign entities vs foreign owners of US entities, and the penalties.',
   keywords: [
     'Form 5471 vs 5472', 'Form 8858 foreign disregarded entity',
     'foreign-owned US LLC reporting', '25 percent foreign ownership Form 5472',

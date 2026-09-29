@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Rental Income Tax in India (FY 2026-27)',
-  description: 'How rental income from Indian property is taxed for NRIs: 30% TDS by tenant under Section 195, standard deduction, municipal tax deduction, ITR filing for refund, and Form 13 for lower TDS.',
+  description: 'NRI rental income tax in India: 30% TDS by the tenant, standard deduction, municipal tax deduction, ITR filing for refunds and Form 13 for lower TDS.',
   keywords: [
     'NRI rental income tax India', 'TDS on rent to NRI', 'NRI property rent tax',
     'rental income NRI India', 'section 195 rent NRI', 'NRI TDS rental income',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Tax Audit vs Statutory Audit vs GST Audit: Key Differences',
-  description: 'Statutory audit, tax audit under Section 44AB, and GST audit/reconciliation are three separate requirements under three separate laws. Who needs which, whether they overlap, and why one business often needs all three.',
+  description: 'Statutory audit, tax audit (Section 44AB) and GST audit are three requirements under three laws. Who needs which, where they overlap, and why many need all.',
   keywords: [
     'tax audit vs statutory audit', 'tax audit vs GST audit', 'statutory audit vs tax audit India',
     'section 44AB audit', 'GSTR-9C reconciliation', 'Companies Act statutory audit',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Presumptive Taxation Scheme Section 44AD: Eligibility & Benefits',
-  description: 'Section 44AD presumptive taxation for small businesses and traders: eligibility, turnover limits (Rs 2 crore / Rs 3 crore for digital receipts), 6% and 8% deemed profit rates, and when it helps vs hurts.',
+  description: 'Section 44AD for small businesses: eligibility, Rs 2 crore / Rs 3 crore (digital) turnover limits, 6% and 8% deemed profit, and when it helps or hurts.',
   keywords: [
     'Section 44AD', 'presumptive taxation scheme', '44AD turnover limit',
     'presumptive income business', '44AD eligibility', '44AD 6% 8% profit',

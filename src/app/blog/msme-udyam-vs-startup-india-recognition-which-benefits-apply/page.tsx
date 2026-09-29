@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'MSME Udyam vs Startup India Recognition: Which Benefits Apply' },
-  description: 'Udyam (MSME) registration and DPIIT Startup India recognition are two distinct schemes with different eligibility and different benefits. Here is which benefit comes from which, and whether a business needs both.',
+  description: 'Udyam (MSME) and DPIIT Startup India recognition are separate schemes with different eligibility and benefits. Which benefit is which, and do you need both?',
   keywords: [
     'Udyam registration vs startup India', 'MSME vs DPIIT recognition', 'Udyam registration benefits',
     'startup India benefits vs MSME benefits', 'CGTMSE loan MSME', '45 day payment MSME', '80-IAC tax holiday',

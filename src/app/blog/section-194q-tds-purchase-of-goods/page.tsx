@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Section 194Q: TDS on Purchase of Goods Above Rs 50 Lakh' },
-  description: 'Section 194Q TDS at 0.1% on goods purchases above Rs 50 lakh from a resident seller, the Rs 10 crore buyer turnover condition, and why Section 206C(1H) TCS no longer overlaps.',
+  description: 'Section 194Q: 0.1% TDS on goods purchases above Rs 50 lakh from a resident seller, the Rs 10 crore buyer turnover test, and why 206C(1H) no longer overlaps.',
   keywords: [
     'Section 194Q TDS', 'TDS on purchase of goods', 'Section 194Q threshold', 'Section 194Q rate',
     'Section 194Q vs 206C(1H)', 'TDS purchase goods Rs 50 lakh', 'buyer TDS goods India',

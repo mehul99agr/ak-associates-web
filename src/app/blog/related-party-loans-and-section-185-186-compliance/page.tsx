@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Related Party Loans & Section 185/186 Compliance' },
-  description: 'How Section 185 restricts loans to directors and Section 186 governs inter-corporate loans and investments under the Companies Act 2013, including limits, approvals, and penalties.',
+  description: 'How Section 185 restricts loans to directors and Section 186 governs inter-corporate loans and investments: limits, approvals and penalties.',
   keywords: [
     'section 185 companies act', 'section 186 companies act', 'loans to directors companies act',
     'inter-corporate loans limits', 'related party loans compliance', 'section 186 60% 100% limit',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Aadhaar-PAN Linking for NRIs Without an Aadhaar Number',
-  description: 'Do NRIs need to link PAN with Aadhaar? Section 262 (earlier Section 139AA): who is exempt, what happens to an inoperative PAN, and the correct process for NRIs and OCIs who have never held an Aadhaar number.',
+  description: 'Do NRIs need to link PAN with Aadhaar? Section 262 (earlier 139AA): who is exempt, inoperative PAN, and the process for NRIs and OCIs without Aadhaar.',
   keywords: [
     'NRI Aadhaar PAN linking', 'PAN inoperative NRI', 'Section 139AA NRI exemption',
     'NRI without Aadhaar PAN', 'PAN Aadhaar link exemption NRI', 'OCI PAN Aadhaar',

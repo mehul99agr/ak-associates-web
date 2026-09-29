@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'CSR Fund Utilisation: Compliance for Receiving Trusts' },
-  description: 'What a trust or NGO must do to legally receive and account for corporate CSR funding: CSR-1 registration, utilisation certificates, and reporting obligations to the funding company.',
+  description: 'What a trust or NGO must do to receive and account for CSR funds: CSR-1 registration, utilisation certificates, and reporting to the funding company.',
   keywords: [
     'CSR-1 registration NGO', 'CSR fund utilisation certificate', 'trust receiving CSR funds', 'CSR implementing agency compliance',
     'CSR-1 form MCA', 'NGO CSR compliance India', 'CSR reporting to company', 'CSR utilisation report format',

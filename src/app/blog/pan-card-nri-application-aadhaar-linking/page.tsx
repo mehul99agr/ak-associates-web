@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'PAN Card for NRIs (2026)',
-  description: 'How NRIs apply for a PAN card from abroad (Form 49A vs 49AA), Aadhaar-PAN linking exemption, when PAN is required for property and investments, and what happens if PAN becomes inoperative.',
+  description: 'How NRIs apply for PAN from abroad (Form 49A vs 49AA), the Aadhaar linking exemption, when PAN is needed, and what happens if it becomes inoperative.',
   keywords: ['PAN card NRI', 'NRI PAN application', 'PAN card for NRI from abroad', 'Aadhaar PAN linking NRI', 'NRI PAN inoperative', 'Form 49A NRI', 'PAN required NRI property'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' },
   openGraph: { title: 'PAN Card for NRIs: Application & Aadhaar Linking', description: 'How to apply from abroad, Aadhaar exemption, and when PAN is required.', url: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking', type: 'article' },

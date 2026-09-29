@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Judgment Assessment Under Section 144: What It Means' },
-  description: 'When the assessing officer can proceed to a best judgment assessment under Section 144, how it differs from a normal assessment, and the appeal remedies available against it.',
+  description: 'When an assessing officer can make a best judgment assessment under Section 144, how it differs from a normal assessment, and your appeal remedies.',
   keywords: [
     'best judgment assessment section 144', 'section 144 income tax act', 'ex parte assessment income tax',
     'assessing officer best judgment', 'appeal against best judgment assessment', 'section 144 notice non compliance',

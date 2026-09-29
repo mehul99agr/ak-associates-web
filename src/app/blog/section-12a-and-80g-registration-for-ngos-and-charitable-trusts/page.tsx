@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Section 12A & 80G Registration for NGOs & Charitable Trusts' },
-  description: 'How Section 12A and Section 80G registration work for NGOs and charitable trusts: provisional vs regular registration, the Form 10AB renewal process, and validity periods.',
+  description: 'Section 12A and 80G registration for NGOs and trusts: provisional vs regular registration, the Form 10AB renewal process, and validity periods.',
   keywords: [
     'section 12A registration', 'section 80G registration', '12AB registration NGO',
     'provisional registration trust', 'form 10AB renewal', '12A 80G renewal',

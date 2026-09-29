@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Section 80D: Health Insurance Premium Deduction Explained',
-  description: 'Section 80D deduction limits for FY 2026-27: Rs 25,000 for self and family, Rs 50,000 for senior citizens, up to Rs 1 lakh combined, preventive check-up sub-limit, and why it only applies under the old tax regime.',
+  description: 'Section 80D limits for FY 2026-27: Rs 25,000 for self and family, Rs 50,000 for seniors, up to Rs 1 lakh combined, check-up sub-limit, old regime only.',
   keywords: [
     'section 80D deduction limit', 'health insurance premium deduction', '80D senior citizen limit',
     'section 80D old vs new regime', 'preventive health checkup deduction', 'medical insurance tax benefit India',

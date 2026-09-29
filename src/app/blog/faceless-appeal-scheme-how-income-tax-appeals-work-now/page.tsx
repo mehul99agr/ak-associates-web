@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Faceless Appeal Scheme: How Income Tax Appeals Work Now' },
-  description: 'How the Faceless Appeal Scheme routes income tax appeals through the National Faceless Appeal Centre, which cases are excluded, and how to respond to a notice under this scheme.',
+  description: 'How the Faceless Appeal Scheme routes appeals through the National Faceless Appeal Centre, which cases are excluded, and how to respond to notices.',
   keywords: [
     'faceless appeal scheme income tax', 'NFAC faceless appeal', 'CIT appeals faceless',
     'faceless appeal scheme 2020', 'how faceless appeals work income tax', 'faceless CIT appeals process',

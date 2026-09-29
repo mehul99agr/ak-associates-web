@@ -5,7 +5,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'TDS on NRI Property Sale (FY 2026-27)',
-  description: 'Complete TDS guide for NRI property sales in FY 2026-27: rate table with surcharge slabs, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation under the new Income Tax Act 2025.',
+  description: 'TDS on NRI property sale for FY 2026-27: rates with surcharge, buyer TAN, Form 27Q, Form 13 lower deduction, refunds and repatriation under the new Act.',
   keywords: [
     'TDS on NRI property sale India', 'TDS when buying property from NRI', 'section 195 NRI property',
     'form 27Q NRI', 'lower TDS certificate NRI property', 'NRI property sale tax India',

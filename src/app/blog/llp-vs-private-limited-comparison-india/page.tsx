@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'LLP vs Private Limited Company (2026)',
-  description: 'Tax treatment, compliance burden, fundraising limitations, and the LLP-to-Pvt-Ltd conversion path. Real scenarios for which structure wins; professional practices vs venture-funded startups.',
+  description: 'LLP vs Private Limited: tax, compliance, fundraising limits and the LLP-to-Pvt-Ltd conversion path, with scenarios for which structure wins.',
   keywords: [
     'LLP vs Private Limited India', 'LLP vs Pvt Ltd comparison', 'LLP tax vs company tax India',
     'LLP conversion to private limited', 'LLP fundraising limitations', 'which structure for startup India',

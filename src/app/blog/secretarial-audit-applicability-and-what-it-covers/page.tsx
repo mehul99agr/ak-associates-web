@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Secretarial Audit: Applicability & What It Covers' },
-  description: 'Who must get a secretarial audit under Section 204 of the Companies Act, the Rule 9 turnover and paid-up capital thresholds, and what a Form MR-3 report actually examines.',
+  description: 'Who needs a secretarial audit under Section 204, the Rule 9 turnover and paid-up capital thresholds, and what a Form MR-3 report examines.',
   keywords: [
     'secretarial audit applicability', 'section 204 companies act', 'form mr-3', 'secretarial audit report',
     'secretarial audit threshold', 'company secretary in practice audit', 'rule 9 secretarial audit',

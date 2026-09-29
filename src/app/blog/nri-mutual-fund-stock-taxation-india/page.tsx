@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
-  description: 'How mutual funds, stocks, and capital gains are taxed for NRIs in India: LTCG/STCG rates post-Budget 2025, TDS on redemption, PIS account for direct equity, and FATCA restrictions for US/Canada NRIs.',
+  description: 'How NRIs are taxed on mutual funds and stocks in India: LTCG/STCG rates, TDS on redemption, PIS for direct equity, and FATCA limits for US/Canada NRIs.',
   keywords: [
     'NRI mutual fund tax India', 'NRI stock trading India', 'NRI capital gains tax India',
     'NRI LTCG STCG India', 'NRI TDS mutual fund', 'NRI PIS account',

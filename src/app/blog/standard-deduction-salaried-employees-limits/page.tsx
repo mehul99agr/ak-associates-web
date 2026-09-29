@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Standard Deduction for Salaried Employees: Current Limits',
-  description: 'The standard deduction available to salaried employees and pensioners is Rs 75,000 under the new tax regime and Rs 50,000 under the old regime for FY 2026-27. How it works, who gets it automatically, and how the two regimes compare.',
+  description: 'Standard deduction for FY 2026-27: Rs 75,000 under the new regime, Rs 50,000 under the old. How it works, who gets it automatically, and regime comparison.',
   keywords: [
     'standard deduction salaried employees', 'standard deduction new tax regime', 'standard deduction old tax regime',
     'standard deduction FY 2026-27', 'standard deduction pensioners', 'standard deduction limit India',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Foreign Subsidiary Registration (India)',
-  description: 'How a foreign parent company registers an Indian subsidiary: Automatic vs Government FDI route, resident director requirement, SPICe+ for foreign shareholders, and FC-GPR/FLA compliance.',
+  description: 'How a foreign parent registers an Indian subsidiary: Automatic vs Government FDI route, resident director rule, SPICe+, and FC-GPR/FLA compliance.',
   keywords: [
     'foreign subsidiary registration India', 'FDI automatic route India',
     'wholly owned subsidiary India foreign company', 'FC-GPR filing',

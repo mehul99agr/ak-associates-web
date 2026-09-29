@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'FAST-DS 2026: Foreign Assets Disclosure Scheme Explained',
-  description: 'FAST-DS 2026 (Foreign Assets of Small Taxpayers; Disclosure Scheme): eligibility, the Rs 1 crore asset limit, the 30%+30% tax structure, the December 31, 2026 window, and what protection it actually gives.',
+  description: 'FAST-DS 2026 explained: eligibility, the Rs 1 crore asset limit, the 30%+30% tax structure, the December 31, 2026 window, and the protection it gives.',
   keywords: [
     'FAST-DS 2026', 'Foreign Assets of Small Taxpayers Disclosure Scheme',
     'foreign asset disclosure scheme India', 'Black Money Act voluntary disclosure',

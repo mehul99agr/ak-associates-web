@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Angel Tax Abolished for All Investors',
-  description: 'Angel tax under Section 56(2)(viib) was abolished for all investors, resident and non-resident, effective FY 2024-25. What this means for new fundraising, and why historic rounds still need review.',
+  description: 'Angel tax under Section 56(2)(viib) was abolished for all investors from FY 2024-25. What it means for new rounds, and why past rounds still need review.',
   keywords: [
     'angel tax India abolished', 'section 56(2)(viib)', 'angel tax removed startups',
     'angel tax resident investors', 'DPIIT angel tax exemption', 'share premium taxation India',

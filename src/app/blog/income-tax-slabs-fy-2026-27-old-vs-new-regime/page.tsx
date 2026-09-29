@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Income Tax Slabs FY 2026-27: Old vs New Regime',
-  description: 'Income tax slab rates for FY 2026-27 (AY 2027-28) under the old and new tax regimes, the Section 87A rebate, standard deduction, and a practical framework for choosing between them.',
+  description: 'Income tax slabs for FY 2026-27 (AY 2027-28) under old and new regimes, the 87A rebate, standard deduction, and how to choose between them.',
   keywords: [
     'income tax slabs FY 2026-27', 'old regime vs new regime FY 2026-27', 'new tax regime slabs 2026',
     'income tax rebate 87A FY 2026-27', 'income tax calculator FY 2026-27', 'which tax regime is better',

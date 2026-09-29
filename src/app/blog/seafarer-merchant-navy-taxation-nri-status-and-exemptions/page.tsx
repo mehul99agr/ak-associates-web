@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Seafarer (Merchant Navy) Taxation: NRI Status & Exemptions',
-  description: 'How residential status is determined for seafarers using the CDC day-counting rule, taxability of NRE salary for voyages outside Indian waters, and common compliance mistakes.',
+  description: 'Seafarer tax in India: residential status via CDC day counting, taxability of NRE salary for voyages outside Indian waters, and common mistakes.',
   keywords: [
     'seafarer taxation India', 'merchant navy tax NRI', 'CDC continuous discharge certificate tax',
     'seafarer NRI status', 'seafarer NRE account salary tax', 'merchant navy 182 day rule',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Trademark Registration for Startups: Process & Timeline' },
-  description: 'How startups register a trademark in India: choosing the right class, the Form TM-A filing process, realistic timelines, and the reduced fee available to DPIIT-recognised startups.',
+  description: 'Trademark registration for startups in India: choosing the right class, Form TM-A filing, realistic timelines, and the reduced fee for DPIIT startups.',
   keywords: [
     'trademark registration for startups', 'trademark registration process India', 'trademark class selection',
     'trademark registration timeline India', 'DPIIT startup trademark fee', 'TM-A filing', 'trademark opposition India',

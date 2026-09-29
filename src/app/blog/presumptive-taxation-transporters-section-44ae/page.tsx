@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Presumptive Taxation for Transporters: Section 44AE',
-  description: 'Section 44AE lets goods-vehicle owners with up to 10 vehicles declare deemed income per vehicle per month instead of maintaining books. Rates, eligibility, and Section 58 renumbering explained.',
+  description: 'Section 44AE lets owners of up to 10 goods vehicles declare deemed income per vehicle instead of keeping books. Rates, eligibility and Section 58.',
   keywords: [
     'section 44AE', 'presumptive taxation transporters', '44AE income tax',
     'goods vehicle presumptive taxation', 'section 44AE rate per vehicle',

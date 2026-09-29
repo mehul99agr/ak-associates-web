@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'GST Audit: Applicability & What Auditors Check',
-  description: 'GSTR-9C reconciliation applicability above Rs 5 crore turnover, the current self-certification position, and what a departmental audit under Section 65 or a special audit under Section 66 actually examines.',
+  description: 'GSTR-9C applicability above Rs 5 crore, the self-certification position, and what departmental (Section 65) and special (Section 66) audits examine.',
   keywords: [
     'GST audit applicability', 'GSTR-9C turnover limit', 'GST departmental audit Section 65',
     'GST special audit Section 66', 'GSTR-9C self certification', 'what does GST auditor check',

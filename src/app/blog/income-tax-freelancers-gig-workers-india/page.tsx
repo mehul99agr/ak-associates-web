@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax on Freelancers & Gig Workers in India' },
-  description: 'How freelance and gig income is classified, presumptive taxation under Section 44ADA, advance tax obligations, TDS deducted by clients under Section 194J, GST registration, and deductible expenses.',
+  description: 'Tax for freelancers and gig workers: how income is classified, Section 44ADA, advance tax, Section 194J TDS by clients, GST registration and expenses.',
   keywords: [
     'income tax for freelancers India', 'freelancer tax India', 'gig worker income tax',
     'section 44ADA freelancers', 'advance tax freelancers', 'TDS on freelance income section 194J',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Tax on Lottery, Game Shows & Online Gaming Winnings',
-  description: 'How lottery, game show, and online gaming winnings are taxed in India: flat 30% rate, Section 194BA TDS on net online gaming winnings, and why no basic exemption or deductions apply.',
+  description: 'Tax on lottery, game show and online gaming winnings: flat 30% rate, Section 194BA TDS on net gaming winnings, and why no exemption or deduction applies.',
   keywords: [
     'tax on lottery winnings india', 'game show winnings tax', 'online gaming tax section 194BA',
     'TDS on lottery winnings 194B', 'flat 30 percent tax winnings', 'net winnings online games tax',

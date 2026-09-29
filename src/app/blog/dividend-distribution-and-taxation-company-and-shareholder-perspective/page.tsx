@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Dividend Distribution & Taxation: Company and Shareholder Perspective' },
-  description: 'How dividends are taxed in India after the abolition of Dividend Distribution Tax: shareholder-level taxability, TDS under Section 194, and what companies must do at the time of payout.',
+  description: 'How dividends are taxed in India after DDT was abolished: shareholder taxability, TDS under Section 194, and what companies must do at payout.',
   keywords: [
     'dividend distribution tax abolished', 'dividend taxation in shareholders hands', 'section 194 TDS on dividend',
     'DDT abolition India', 'dividend income tax India', 'TDS on dividend for resident shareholders',

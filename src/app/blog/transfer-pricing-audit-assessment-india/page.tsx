@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'TP Audit & Assessment in India',
-  description: 'What triggers TPO selection, the assessment sequence, how to respond to a show-cause notice, DRP vs CIT(Appeals), MAP for double taxation, and conduct that improves outcomes.',
+  description: 'What triggers TPO selection, the assessment sequence, responding to a show-cause notice, DRP vs CIT(Appeals), and MAP for double taxation.',
   keywords: [
     'transfer pricing audit India', 'TPO assessment process', 'DRP transfer pricing',
     'show cause notice transfer pricing', 'MAP double taxation India', 'transfer pricing dispute resolution',

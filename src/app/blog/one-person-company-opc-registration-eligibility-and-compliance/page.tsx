@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'One Person Company (OPC) Registration: Eligibility & Compliance',
-  description: 'Who can incorporate a One Person Company in India, the nominee requirement, why the old paid-up capital and turnover conversion thresholds no longer apply, and the ongoing compliance an OPC must maintain.',
+  description: 'Who can form a One Person Company in India, the nominee rule, why the old capital and turnover conversion thresholds no longer apply, and OPC compliance.',
   keywords: [
     'one person company registration', 'OPC eligibility India', 'OPC nominee requirement',
     'OPC incorporation process', 'OPC compliance India', 'OPC vs private limited company',

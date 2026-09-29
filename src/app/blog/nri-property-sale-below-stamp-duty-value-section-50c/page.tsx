@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Selling Property Below Stamp Duty Value: Section 50C',
-  description: 'What happens when an NRI sells property below the stamp duty (circle rate) value: Section 78 of the Income Tax Act 2025 (earlier Section 50C), the safe harbour tolerance, TDS impact, and the buyer\'s deemed-gift exposure.',
+  description: 'NRI selling property below stamp duty value: Section 78 (earlier 50C), the safe harbour tolerance, TDS impact, and the buyer\'s deemed-gift exposure.',
   keywords: [
     'Section 50C NRI property', 'stamp duty value capital gains NRI', 'circle rate below market value NRI sale',
     'Section 78 Income Tax Act 2025', 'safe harbour Section 50C', 'NRI property sale stamp duty valuation',

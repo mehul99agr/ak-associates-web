@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'How to File ITR Online: Step-by-Step Guide (Salaried)',
-  description: 'A step-by-step guide for salaried individuals to file their income tax return online: documents needed, Form 16 reconciliation, choosing a regime, common mistakes, and e-verification.',
+  description: 'Filing your ITR online as a salaried employee: documents, Form 16 reconciliation, choosing a regime, common mistakes and e-verification.',
   keywords: [
     'how to file ITR online', 'ITR filing guide salaried', 'e-filing income tax return',
     'ITR e-verification process', 'Form 16 ITR filing', 'AIS 26AS reconciliation',

@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Capital Gains Tax on Property Sale for Residents: LTCG & STCG Rates',
-  description: 'How resident Indian sellers are taxed on property sale: the 24-month LTCG threshold, 12.5% LTCG rate, the pre-July 2024 indexation safeguard, Section 54/54EC exemptions, and 1% Section 194-IA TDS. For resident sellers, not NRIs.',
+  description: 'Property sale tax for resident sellers: the 24-month LTCG test, 12.5% rate, pre-July 2024 indexation safeguard, Section 54/54EC exemptions and 1% TDS.',
   keywords: [
     'capital gains tax property sale India resident', 'LTCG on property sale', 'STCG on property sale',
     'section 194-IA TDS 1 percent', 'section 54 exemption capital gains', 'indexation benefit property sale 2024',

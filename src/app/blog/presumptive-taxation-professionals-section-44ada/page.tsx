@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: 'Presumptive Taxation for Professionals: Section 44ADA Explained',
-  description: 'Section 44ADA presumptive taxation for specified professionals: eligibility, gross receipts limits (Rs 50 lakh / Rs 75 lakh for digital receipts), the 50% deemed profit rate, and how it differs from 44AD.',
+  description: 'Section 44ADA for professionals: eligibility, Rs 50 lakh / Rs 75 lakh (digital) receipts limits, the 50% deemed profit rate, and how it differs from 44AD.',
   keywords: [
     'Section 44ADA', 'presumptive taxation professionals', '44ADA limit',
     '44ADA eligible professions', 'presumptive income professionals',

@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: { absolute: 'Prosecution Under Income Tax Act: When Non-Compliance Becomes Criminal' },
-  description: 'When income tax non-compliance stops being a civil penalty matter and becomes criminal prosecution: willful evasion, failure to file, imprisonment ranges, and how compounding works.',
+  description: 'When tax non-compliance becomes criminal prosecution: wilful evasion, failure to file, imprisonment ranges, and how compounding works.',
   keywords: [
     'prosecution income tax act', 'section 276C willful evasion', 'section 276CC failure to file',
     'income tax criminal prosecution India', 'imprisonment income tax act', 'compounding of offences income tax',

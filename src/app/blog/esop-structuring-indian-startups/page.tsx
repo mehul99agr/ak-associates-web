@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'ESOP Structuring for Indian Startups',
-  description: 'How to design an ESOP for an Indian Private Limited startup: pool sizing, vesting schedules, exercise price, Companies Act mechanics, valuation, and the two-stage employee tax.',
+  description: 'Designing an ESOP for an Indian startup: pool sizing, vesting, exercise price, Companies Act mechanics, valuation and the two-stage employee tax.',
   keywords: [
     'ESOP structuring India', 'ESOP scheme design startup', 'ESOP vesting schedule India',
     'ESOP tax India', 'DPIIT ESOP deferral', 'SH-12 PAS-3 ESOP',

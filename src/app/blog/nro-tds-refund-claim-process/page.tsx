@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRO Account TDS Refund: Claim Process (FY 2026-27)',
-  description: 'Step-by-step process for NRIs to claim a refund of excess TDS deducted on NRO account interest and other NRO credits: which ITR to file, documents needed, Form 26AS reconciliation, and how repatriation limits apply once the refund lands.',
+  description: 'How NRIs claim a refund of excess TDS on NRO interest: which ITR to file, documents, Form 26AS reconciliation, and repatriating the refund.',
   keywords: [
     'NRO account TDS refund', 'how to claim TDS refund on NRO account', 'NRO TDS refund process',
     'excess TDS NRO interest refund', 'NRO account tax refund NRI', 'TDS refund NRO India',

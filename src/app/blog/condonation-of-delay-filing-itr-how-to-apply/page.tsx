@@ -7,7 +7,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 
 export const metadata: Metadata = {
   title: { absolute: 'Condonation of Delay in Filing ITR: When & How to Apply' },
-  description: 'How to apply for condonation of delay under Section 119(2)(b) to file a belated return or claim a refund, loss carry-forward, or deduction after missing the deadline.',
+  description: 'How to apply for condonation of delay under Section 119(2)(b) to file a late return or claim a refund, loss carry-forward or deduction after the deadline.',
   keywords: [
     'condonation of delay ITR', 'section 119(2)(b) income tax', 'condonation of delay income tax return',
     'CBDT circular condonation of delay', 'file ITR after deadline missed', 'refund claim after due date',

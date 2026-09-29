@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Startup Bank Account Opening: Documents & Common Rejections',
-  description: 'The documents a newly incorporated Indian startup needs to open a current account, and the most common reasons banks reject or delay account opening, from address mismatches to shell-company flags.',
+  description: 'Documents a new Indian startup needs to open a current account, and the common reasons banks reject or delay it, from address mismatches to shell flags.',
   keywords: [
     'startup current account opening india', 'company bank account documents',
     'current account rejection reasons', 'bank account for private limited company',

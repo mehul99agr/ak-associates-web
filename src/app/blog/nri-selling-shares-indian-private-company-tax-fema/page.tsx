@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Selling Shares in an Indian Private Company: Tax & FEMA',
-  description: 'What an NRI needs to handle when selling shares in an Indian private limited company: valuation under FEMA pricing guidelines, TDS under Section 393(2), capital gains tax, and FC-TRS reporting.',
+  description: 'NRI selling shares in an Indian private company: FEMA pricing and valuation, TDS under Section 393(2), capital gains tax and FC-TRS reporting.',
   keywords: [
     'NRI selling shares Indian company', 'NRI unlisted shares capital gains', 'FC-TRS NRI share transfer',
     'FEMA pricing guidelines share sale', 'NRI selling business India', 'TDS on NRI share sale',

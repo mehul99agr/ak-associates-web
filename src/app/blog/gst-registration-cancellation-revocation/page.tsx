@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'GST Registration Cancellation & Revocation: Process & Grounds',
-  description: 'When GST registration gets cancelled (by you or by the officer), the grounds under Rule 21, and how to file a revocation application under Rule 23 before the window closes.',
+  description: 'When GST registration is cancelled (by you or the officer), the Rule 21 grounds, and how to apply for revocation under Rule 23 in time.',
   keywords: [
     'GST registration cancellation', 'GST revocation process', 'GST registration cancellation grounds',
     'Rule 21 GST cancellation', 'revocation of cancelled GST registration', 'GST REG-21 form',

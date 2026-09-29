@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST',
-  description: 'How growing India-linked startups organise RBI ODI reporting, annual APR filing, transfer pricing documentation, and GST return workflows; and where a virtual CFO or offshore accounting team fits in.',
+  description: 'How India-linked startups organise RBI ODI reporting, APR filing, TP documentation and GST workflows, and where a virtual CFO or offshore team fits.',
   keywords: [
     'RBI ODI reporting automation', 'APR filing India startup', 'automate transfer pricing documentation',
     'GST filing workflow startups', 'fractional CFO services India', 'dedicated offshore accountant',

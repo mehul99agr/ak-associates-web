@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'NRI Investing in Indian Real Estate: A Complete Compliance Guide',
-  description: 'FEMA rules for NRIs buying residential and commercial property in India: what can and cannot be purchased, funding channels via NRE/NRO/FCNR, and repatriation of rental income.',
+  description: 'FEMA rules for NRIs buying property in India: what can and cannot be bought, funding via NRE/NRO/FCNR, and repatriating rental income.',
   keywords: [
     'NRI real estate investment India', 'NRI buying property India FEMA', 'NRI property purchase rules',
     'can NRI buy agricultural land', 'NRE NRO funds property purchase', 'repatriation rental income NRI',

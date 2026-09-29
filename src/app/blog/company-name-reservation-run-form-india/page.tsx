@@ -6,7 +6,7 @@ import FaqSection from '../_components/FaqSection'
 
 export const metadata: Metadata = {
   title: 'Company Name Reservation Guide (India)',
-  description: 'How to reserve a company name with the MCA: SPICe+ Part A vs the RUN service, MCA naming guidelines, common rejection reasons, and why a trademark search matters before you file.',
+  description: 'Reserving a company name with MCA: SPICe+ Part A vs RUN, naming guidelines, common rejection reasons, and why to run a trademark search first.',
   keywords: [
     'company name reservation India', 'SPICe+ Part A', 'RUN form MCA',
     'MCA name approval guidelines', 'company name rejection reasons',
