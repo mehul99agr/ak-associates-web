@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax Audit Under Section 44AB: Turnover Limits FY 2026-27',
+  title: { absolute: 'Tax Audit Under Section 44AB: Turnover Limits FY 2026-27' },
   description: 'Section 44AB tax audit limits for FY 2026-27 for businesses and professionals, the higher digital-transaction threshold, and presumptive opt-out triggers.',
   keywords: [
     'section 44AB turnover limit', 'tax audit limit FY 2026-27', 'tax audit applicability India',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Current turnover thresholds for businesses and professionals, the digital-transaction relaxation, and how opting out of presumptive taxation triggers an audit.',
     url: 'https://agrawalkhandelwal.com/blog/tax-audit-section-44ab-turnover-limits-fy-2026-27',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 44AB Tax Audit: Turnover Limits FY 2026-27',
     description: 'Rs 1 crore, Rs 10 crore, or Rs 50 lakh: which limit applies to you, and when presumptive opt-out forces an audit.',
+    images: OG_IMAGES,
   },
 }
 
@@ -68,7 +72,7 @@ export default function Section44ABBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 12, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -125,6 +129,8 @@ export default function Section44ABBlog() {
                 <h2>Section 44AB Under the Income Tax Act 2025</h2>
                 <p>The tax audit requirement itself continues unchanged in substance under the Income Tax Act 2025, where it is renumbered as <strong>Section 63</strong>. The reporting mechanics have also changed alongside the renumbering: Forms 3CA, 3CB, and 3CD are now consolidated into a single Form 26 under Rule 47 of the Income-tax Rules 2026, applicable for tax years from April 1, 2026 (FY 2026-27 audits) and confirmed live on the income tax department&apos;s own portal; this is covered in more detail in the linked forms guide above.</p>
               </div>
+
+              <PostFooterLinks slug="tax-audit-section-44ab-turnover-limits-fy-2026-27" />
 
               <PostCTA
             heading="Not sure if your business needs a tax audit this year?"

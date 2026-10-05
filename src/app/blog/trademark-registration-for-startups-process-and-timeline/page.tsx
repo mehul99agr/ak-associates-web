@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Trademark Registration for Startups: Process & Timeline' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Class selection, the TM-A filing process, realistic 2026 timelines, and the reduced government fee for DPIIT-recognised startups.',
     url: 'https://agrawalkhandelwal.com/blog/trademark-registration-for-startups-process-and-timeline',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Trademark Registration for Startups: Process & Timeline',
     description: 'What it actually takes to register a trademark in India, from class selection to certificate.',
+    images: OG_IMAGES,
   },
 }
 
@@ -80,7 +84,7 @@ export default function TrademarkRegistrationStartupsBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 6, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -124,6 +128,8 @@ export default function TrademarkRegistrationStartupsBlog() {
 
                 <p>Trademark filing is usually one part of a broader IP and compliance sequence for a new venture, alongside incorporation, DPIIT recognition, and GST registration. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>company incorporation and startup advisory services</Link> cover this sequencing so filings happen in the right order rather than reactively.</p>
               </div>
+
+              <PostFooterLinks slug="trademark-registration-for-startups-process-and-timeline" />
 
               <PostCTA
             heading="Filing a trademark for your startup?"

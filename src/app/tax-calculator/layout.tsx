@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Income Tax Calculator India',
@@ -9,11 +10,13 @@ export const metadata: Metadata = {
     description: 'Free income tax calculator for FY 2025-26. Compare old vs new tax regime, calculate tax liability, cess, and rebate under the latest Income Tax Act.',
     url: 'https://agrawalkhandelwal.com/tax-calculator',
     type: 'website',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax Calculator India',
     description: 'Free income tax calculator for FY 2025-26. Compare old vs new tax regime, calculate tax liability, cess, and rebate under the latest Income Tax Act.',
+    images: OG_IMAGES,
   },
 }
 

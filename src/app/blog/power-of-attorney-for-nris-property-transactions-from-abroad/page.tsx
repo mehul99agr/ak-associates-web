@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Power of Attorney for NRIs: Property Transactions from Abroad',
+  title: { absolute: 'Power of Attorney for NRIs: Property Transactions from Abroad' },
   description: 'NRI Power of Attorney for Indian property: general vs special POA, apostille and consular attestation, the 3-month stamping deadline, and key risks.',
   keywords: [
     'power of attorney for NRI', 'NRI POA property', 'NRI apostille power of attorney',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'General vs special POA, apostille/consular attestation, the 3-month stamping deadline, and precautions before signing a POA for Indian property.',
     url: 'https://agrawalkhandelwal.com/blog/power-of-attorney-for-nris-property-transactions-from-abroad',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Power of Attorney for NRIs: Property Transactions from Abroad',
     description: 'How to execute a valid POA from abroad for an Indian property transaction, and the risks to watch for.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function PowerOfAttorneyNRIBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 12, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -142,6 +146,8 @@ export default function PowerOfAttorneyNRIBlog() {
                 </ul>
                 <p>A POA is ultimately a tool for convenience, not a substitute for staying informed about the transaction. NRIs handling any Indian property sale should also be aware of the related tax and compliance obligations, including how their <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>residential status</Link> affects taxation of the sale proceeds, and the TDS mechanics covered in our guide to <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI property sales</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="power-of-attorney-for-nris-property-transactions-from-abroad" />
 
               <PostCTA
             heading="Planning a property transaction in India from abroad?"

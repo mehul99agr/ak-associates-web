@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Double Taxation Relief for NRIs: Foreign Tax Credit Under Section 91',
+  title: { absolute: 'Double Taxation Relief for NRIs: Section 91 Foreign Tax Credit' },
   description: 'Section 91 relief when India has no DTAA with the source country: how it works for NRIs and residents, how it differs from Section 90, and how to claim.',
   keywords: [
     'section 91 income tax act', 'foreign tax credit no DTAA', 'unilateral relief double taxation',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Section 91 unilateral relief for foreign income when there is no DTAA with the source country, how it differs from Section 90, and how to claim it.',
     url: 'https://agrawalkhandelwal.com/blog/double-taxation-relief-for-nris-foreign-tax-credit-under-section-91',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Double Taxation Relief for NRIs: Section 91 Foreign Tax Credit',
     description: 'What happens when there is no DTAA with the country where you paid foreign tax, and how Section 91 relief works instead.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function Section91DoubleTaxationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 18, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -147,6 +151,8 @@ export default function Section91DoubleTaxationBlog() {
                 <h2>A Worked Illustration</h2>
                 <p>Suppose an NRI has consulting income of ₹20 lakh sourced from a country with no DTAA with India, and that country has taxed it at an effective rate of 25% (₹5 lakh). The same income is includible in the NRI&apos;s Indian tax computation (to the extent it is taxable in India based on residential status and source rules), and works out to an effective Indian rate of 20% (₹4 lakh) on that income. Because the Indian rate (20%) is lower than the foreign rate (25%), the Section 91 credit is capped at ₹4 lakh, the Indian-rate equivalent; the additional ₹1 lakh paid abroad above the Indian rate is not creditable and is an absorbed cost. Had the rates been reversed, i.e. the Indian rate higher than the foreign rate, the full ₹5 lakh foreign tax would have been creditable, with the remaining Indian liability payable on top.</p>
               </div>
+
+              <PostFooterLinks slug="double-taxation-relief-for-nris-foreign-tax-credit-under-section-91" />
 
               <PostCTA
             heading="Paying tax in a country with no DTAA with India?"

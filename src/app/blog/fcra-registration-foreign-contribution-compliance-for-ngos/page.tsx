@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'FCRA Registration: Foreign Contribution Compliance for NGOs' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Eligibility for FCRA registration and prior permission, the FC-4 annual return, and the current compliance climate for NGOs receiving foreign funds.',
     url: 'https://agrawalkhandelwal.com/blog/fcra-registration-foreign-contribution-compliance-for-ngos',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FCRA Registration: Foreign Contribution Compliance for NGOs',
     description: 'What it takes to register under FCRA, the prior permission alternative, and why compliance discipline matters more than ever.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function FcraRegistrationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 10, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -124,6 +128,8 @@ export default function FcraRegistrationBlog() {
 
                 <p>FCRA registration is not a box to check once and forget; it is an ongoing compliance relationship with the government that needs the same annual discipline as tax filing. For NGOs planning to solicit or already receiving foreign contributions, getting the eligibility route right at the outset, the designated account set up correctly, and FC-4 filed on time every year is the difference between a stable foreign funding channel and a registration that quietly lapses.</p>
               </div>
+
+              <PostFooterLinks slug="fcra-registration-foreign-contribution-compliance-for-ngos" />
 
               <PostCTA
             heading="Need help with FCRA registration or an overdue FC-4?"

@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI TDS Refund on Property Sale',
+  title: { absolute: 'NRI TDS Refund on Property Sale' },
   description: 'How NRIs claim a TDS refund after selling Indian property: which ITR to file, documents, e-verification, refund timelines and Section 244A interest.',
   keywords: [
     'NRI TDS refund property sale', 'TDS refund for NRI', 'how to claim TDS refund NRI',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Which ITR to file, documents needed, e-verification options, and refund timelines for NRIs recovering excess TDS on a property sale.',
     url: 'https://agrawalkhandelwal.com/blog/nri-tds-refund-property-sale',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI TDS Refund on Property Sale',
     description: 'Which ITR to file, documents needed, e-verification, and refund timelines for NRIs recovering excess TDS on a property sale.',
+    images: OG_IMAGES,
   },
 }
 
@@ -94,7 +98,7 @@ export default function NRITDSRefundBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 11, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -136,6 +140,8 @@ export default function NRITDSRefundBlog() {
 
                 <p>If the sale proceeds also need to leave India after the refund is settled, see our guide on <Link href="/blog/nri-repatriation-property-sale-proceeds" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriating NRI property sale proceeds</Link> under Form 145/146.</p>
               </div>
+
+              <PostFooterLinks slug="nri-tds-refund-property-sale" />
 
               <PostCTA
             heading="Need help claiming your NRI TDS refund?"

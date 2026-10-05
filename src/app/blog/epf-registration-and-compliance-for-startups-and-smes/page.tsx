@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'EPF Registration & Compliance for Startups and SMEs',
+  title: { absolute: 'EPF Registration & Compliance for Startups and SMEs' },
   description: 'When EPF registration becomes mandatory at 20 employees, the 12% contribution split across EPF, EPS and EDLI, and ongoing compliance for startups and SMEs.',
   keywords: [
     'EPF registration startups', 'EPF applicability 20 employees', 'PF compliance SME',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The 20-employee threshold, the 12% contribution split across EPF, EPS and EDLI, and ongoing PF compliance for growing businesses.',
     url: 'https://agrawalkhandelwal.com/blog/epf-registration-and-compliance-for-startups-and-smes',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'EPF Registration & Compliance for Startups and SMEs',
     description: 'When PF registration kicks in, how the 12% contribution splits, and what ongoing EPFO compliance looks like.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function EpfRegistrationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 28, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -124,6 +128,8 @@ export default function EpfRegistrationBlog() {
                 <h2>Getting EPF Compliance Right From Day One</h2>
                 <p>For a startup or SME approaching 20 employees, the practical approach is to start the registration process before the threshold is actually crossed, build the 12%/12% contribution (or the applicable 10% rate) into cost-to-company calculations from the offer-letter stage rather than discovering it later, and set a standing monthly reminder well ahead of the 15th-of-the-month payment deadline. Treating PF as a recurring payroll discipline rather than a one-time registration event is what keeps it from becoming an audit finding later, alongside the related <Link href="/blog/esi-registration-applicability-and-employer-compliance" style={{ color: 'var(--primary)', fontWeight: 600 }}>ESI registration</Link> obligation that often applies to the same workforce.</p>
               </div>
+
+              <PostFooterLinks slug="epf-registration-and-compliance-for-startups-and-smes" />
 
               <PostCTA
             heading="Approaching 20 employees or already covered?"

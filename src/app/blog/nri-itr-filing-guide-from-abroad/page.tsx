@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI ITR Filing from Abroad (FY 2026-27)',
+  title: { absolute: 'NRI ITR Filing from Abroad (FY 2026-27)' },
   description: 'How NRIs file Indian ITR from abroad: ITR-2 vs ITR-3, documents, e-verification without Aadhaar, the deadline, and mistakes that trigger notices.',
   keywords: [
     'NRI ITR filing India', 'NRI income tax return', 'how to file ITR as NRI',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'ITR form selection, documents, e-verification, deadline, and common mistakes for NRI filers.',
     url: 'https://agrawalkhandelwal.com/blog/nri-itr-filing-guide-from-abroad',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI ITR Filing from Abroad (FY 2026-27)',
     description: 'Which form, how to e-verify without Aadhaar, and the documents you need.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function NRIITRFilingBlog() {
               <span className="section-badge">NRI Taxation</span>
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>NRI ITR Filing: Which Form, How to File from Abroad, and What Most People Get Wrong</h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published July 22, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+                <span>Published July 22, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -137,6 +141,8 @@ export default function NRIITRFilingBlog() {
                 <h2>New Tax Regime vs Old Regime for NRIs</h2>
                 <p>NRIs can choose between the old and new tax regimes. The new regime (default from FY 2024-25 onwards) has lower slab rates but fewer deductions. For NRIs whose primary Indian income is capital gains (which are taxed at special rates regardless of regime) or rental income (where the 30% standard deduction is available under both regimes), the choice often makes little difference. However, if you have significant Indian salary income or claim deductions under Section 80C, 80D, etc., compare both before filing.</p>
               </div>
+
+              <PostFooterLinks slug="nri-itr-filing-guide-from-abroad" />
 
               <PostCTA
             heading="Need help filing your Indian ITR from abroad?"

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Trust vs Society vs Section 8 Company: Choosing the Right NGO Structure' },
-  description: 'Comparing Trusts, Societies, and Section 8 Companies for an NGO in India: governing law, governance requirements, cost, and which structure suits which use case.',
+  title: { absolute: 'Trust vs Society vs Section 8 Company: Choosing an NGO Structure' },
+  description: 'Comparing Trusts, Societies, and Section 8 Companies for an NGO in India: governing law, governance requirements, cost, and which suits which use case.',
   keywords: [
     'trust vs society vs section 8 company', 'ngo registration structure India', 'section 8 company registration',
     'society registration act 1860', 'indian trusts act 1882', 'best structure for ngo in india',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Governing law, governance requirements, cost, and use-case fit for the three main NGO structures in India.',
     url: 'https://agrawalkhandelwal.com/blog/trust-vs-society-vs-section-8-company-choosing-the-right-structure-for',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Trust vs Society vs Section 8 Company: Choosing the Right NGO Structure',
     description: 'A practical comparison of the three ways to register an NGO in India, and which one fits which use case.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function TrustVsSocietyVsSection8Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 9, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -131,6 +135,8 @@ export default function TrustVsSocietyVsSection8Blog() {
 
                 <p>There is no structure that is objectively superior; the right call depends on scale ambitions, funder expectations, and how much administrative overhead the founding team can realistically sustain year after year. Getting this decision right at the outset avoids the more complicated path of converting structures later, once assets, registrations, and donor relationships are already in place.</p>
               </div>
+
+              <PostFooterLinks slug="trust-vs-society-vs-section-8-company-choosing-the-right-structure-for" />
 
               <PostCTA
             heading="Setting up a nonprofit and unsure which structure fits?"

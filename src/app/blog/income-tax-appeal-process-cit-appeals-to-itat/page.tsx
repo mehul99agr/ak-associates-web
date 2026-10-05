@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax Appeal Process: CIT(Appeals) to ITAT' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The full appellate ladder for an income tax dispute in India: CIT(Appeals), ITAT, High Court, and Supreme Court, with forms, fees, and deadlines.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-appeal-process-cit-appeals-to-itat',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax Appeal Process: CIT(Appeals) to ITAT',
     description: 'The full appellate ladder for an income tax dispute in India, with forms, fees, and filing deadlines at each stage.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function IncomeTaxAppealProcessBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 20, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -134,6 +138,8 @@ export default function IncomeTaxAppealProcessBlog() {
 
                 <p>Every stage of this ladder runs on a hard deadline with no automatic extension, so the moment an adverse order arrives is the moment to start preparing the next appeal, not weeks later. If you are weighing whether an order is worth appealing, or need help drafting grounds of appeal that actually address the assessing officer's or CIT(Appeals)' specific findings, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include representation at every stage from the first appeal through the ITAT.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-appeal-process-cit-appeals-to-itat" />
 
               <PostCTA
             heading="Considering an appeal against an income tax order?"

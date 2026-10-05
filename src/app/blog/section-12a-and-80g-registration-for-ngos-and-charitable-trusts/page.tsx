@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Section 12A & 80G Registration for NGOs & Charitable Trusts' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Provisional vs regular 12A/12AB registration, Section 80G approval, the Form 10AB renewal process, and validity periods for NGOs and charitable trusts.',
     url: 'https://agrawalkhandelwal.com/blog/section-12a-and-80g-registration-for-ngos-and-charitable-trusts',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 12A & 80G Registration for NGOs & Charitable Trusts',
     description: 'Provisional vs regular 12A/12AB registration, Section 80G approval, the Form 10AB renewal process, and validity periods for NGOs and charitable trusts.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function Section12A80GBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 9, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function Section12A80GBlog() {
                   <p style={{ margin: 0, fontSize: '0.95rem' }}>Section 80G maps cleanly to Section 133 of the Income Tax Act 2025. Section 12A/12AB does not have one confirmed equivalent; compliance for charitable trusts and institutions is spread across Chapter XVII-B (broadly Sections 332-355) of the new Act rather than a single renumbered section, so this guide uses the familiar old-Act name throughout for 12A and describes its new-Act location only in general terms. Confirm the precise citation with your CA before relying on it for a filing.</p>
                 </div>
               </div>
+
+              <PostFooterLinks slug="section-12a-and-80g-registration-for-ngos-and-charitable-trusts" />
 
               <PostCTA
             heading="Managing 12A/80G registration or renewal for your NGO?"

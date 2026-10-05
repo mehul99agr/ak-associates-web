@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Set-Off and Carry Forward of Losses Under Income Tax' },
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     description: 'Intra-head/inter-head set-off rules, carry-forward periods by loss type, and the on-time filing requirement.',
     url: 'https://agrawalkhandelwal.com/blog/set-off-carry-forward-losses-income-tax',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Set-Off and Carry Forward of Losses Under Income Tax',
     description: 'How losses can be set off and carried forward, by loss type, in India.',
+    images: OG_IMAGES,
   },
 }
 
@@ -79,7 +83,7 @@ export default function SetOffCarryForwardLossesBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Set-Off and Carry Forward of Losses Under Income Tax</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>August 11, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>August 11, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -140,6 +144,8 @@ export default function SetOffCarryForwardLossesBlog() {
 
               <p>Loss set-off and carry-forward rules reward careful year-by-year tracking, correct sequencing, and above all, timely filing. A single missed due date can convert an otherwise valuable carry-forward asset into a loss that simply disappears for tax purposes. If your business, investments, or rental property have generated a loss this year, get the set-off computation and carry-forward schedule reviewed before filing. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> cover full loss computation, set-off planning, and carry-forward tracking across years.</p>
             </div>
+
+            <PostFooterLinks slug="set-off-carry-forward-losses-income-tax" />
 
             <PostCTA
             heading="Carrying a business, capital, or house property loss this year?"

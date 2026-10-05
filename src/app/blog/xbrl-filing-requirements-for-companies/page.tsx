@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'XBRL Filing Requirements for Companies' },
-  description: 'Which companies must file financial statements in XBRL format with the MCA, the applicability thresholds, the AOC-4 XBRL deadline, and the penalty for missing it.',
+  description: 'Which companies must file financial statements in XBRL format with the MCA, the applicability thresholds, the AOC-4 XBRL deadline, and the penalty for delay.',
   keywords: [
     'xbrl filing requirements india', 'xbrl applicability companies', 'aoc-4 xbrl due date',
     'xbrl filing mca', 'who needs to file xbrl', 'xbrl taxonomy india', 'xbrl paid up capital turnover threshold',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Applicability thresholds for XBRL financial statement filing with the MCA, the filing deadline, and what happens if you miss it.',
     url: 'https://agrawalkhandelwal.com/blog/xbrl-filing-requirements-for-companies',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'XBRL Filing Requirements for Companies',
     description: 'Which companies must file financial statements in XBRL format, the applicability thresholds, and the AOC-4 XBRL deadline.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function XbrlFilingRequirementsBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 2, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -131,6 +135,8 @@ export default function XbrlFilingRequirementsBlog() {
                 <h2>Why This Trips Up Growing Companies</h2>
                 <p>The most common way a company gets caught out is a funding round or a strong revenue year that pushes it past the paid-up capital or turnover threshold for the first time, without anyone flagging that the XBRL requirement now applies alongside the standard filings. Because XBRL tagging takes materially longer to prepare correctly than a plain PDF filing, especially the first time a company does it, leaving it to the last few days before the 30-day AOC-4 deadline is a common and avoidable source of late-filing penalties.</p>
               </div>
+
+              <PostFooterLinks slug="xbrl-filing-requirements-for-companies" />
 
               <PostCTA
             heading="Not sure if your company needs to file in XBRL this year?"

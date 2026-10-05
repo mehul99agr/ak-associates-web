@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import IncorporationWizard from './IncorporationWizard'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Company Type Finder Tool (India)',
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     title: 'Company Type Finder Tool (India)',
     description: 'Answer 4 quick questions and find out whether you should register a Private Limited Company, LLP, or OPC in India.',
     url: 'https://agrawalkhandelwal.com/tools/incorporation-wizard',
+    images: OG_IMAGES,
   },
 }
 

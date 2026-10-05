@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Import Export Code (IEC): Registration Process & Benefits' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'The DGFT IEC registration process, who needs one, and the annual update rule that keeps it active.',
     url: 'https://agrawalkhandelwal.com/blog/import-export-code-iec-registration-process-and-benefits',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Import Export Code (IEC): Registration Process & Benefits',
     description: 'The DGFT IEC registration process, who needs one, and the annual update rule that keeps it active.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function ImportExportCodeIECBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 5, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -125,6 +129,8 @@ export default function ImportExportCodeIECBlog() {
                 <h2>Practical Takeaway</h2>
                 <p>Apply for the IEC once, correctly, against the right PAN; it will then last the life of the business. The recurring task to actually track is the annual April-June update, since that is the step most businesses forget, precisely because the code itself no longer needs periodic renewal. Set a calendar reminder each year rather than waiting to discover a deactivated code when a shipment or payment is already pending.</p>
               </div>
+
+              <PostFooterLinks slug="import-export-code-iec-registration-process-and-benefits" />
 
               <PostCTA
             heading="Setting up import or export operations?"

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Startup Exit Strategies: Acquisition vs IPO vs Buyback',
+  title: { absolute: 'Startup Exit Strategies: Acquisition vs IPO vs Buyback' },
   description: 'Startup exits in India compared: acquisition (share sale vs slump sale), IPO including SME exchanges, and share buyback under the Companies Act.',
   keywords: [
     'startup exit strategy India', 'startup acquisition vs IPO', 'SME IPO India', 'buyback of shares startup',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Acquisition, IPO, and buyback compared for Indian startup founders and investors planning an exit.',
     url: 'https://agrawalkhandelwal.com/blog/startup-exit-strategies-acquisition-vs-ipo-vs-buyback',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Exit Strategies: Acquisition vs IPO vs Buyback',
     description: 'The three main exit paths for Indian startups, compared side by side.',
+    images: OG_IMAGES,
   },
 }
 
@@ -73,7 +77,7 @@ export default function StartupExitStrategiesBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Startup Exit Strategies: Acquisition vs IPO vs Buyback</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 31, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 31, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
 
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
@@ -122,6 +126,8 @@ export default function StartupExitStrategiesBlog() {
               <h2>Choosing Between the Three</h2>
               <p>As a rough framework: acquisition suits founders and investors looking for a complete, relatively fast exit and a company that fits strategically into a larger buyer\'s plans. IPO suits companies with the scale and governance readiness to operate as a public entity and where the goal is public-market liquidity plus continued independent growth. Buyback suits a narrower, partial-liquidity need, typically one investor or founder cashing out some or all of their stake while the company continues privately held. None of these is mutually exclusive over a company\'s life; a company might do an SME IPO years after an early investor already exited through a buyback, or complete a strategic acquisition of one business line via slump sale while continuing to build toward its own eventual IPO on the remainder.</p>
             </div>
+
+            <PostFooterLinks slug="startup-exit-strategies-acquisition-vs-ipo-vs-buyback" />
 
             <PostCTA
             heading="Planning an exit or a buyback for your company?"

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Rental Income Tax in India (FY 2026-27)',
+  title: { absolute: 'NRI Rental Income Tax in India (FY 2026-27)' },
   description: 'NRI rental income tax in India: 30% TDS by the tenant, standard deduction, municipal tax deduction, ITR filing for refunds and Form 13 for lower TDS.',
   keywords: [
     'NRI rental income tax India', 'TDS on rent to NRI', 'NRI property rent tax',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: '30% TDS on rent, deductions, ITR refund process, and Form 13 for NRI landlords.',
     url: 'https://agrawalkhandelwal.com/blog/nri-rental-income-tax-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Rental Income Tax India (FY 2026-27)',
     description: '30% TDS by tenant, deductions available, and how to claim refund.',
+    images: OG_IMAGES,
   },
 }
 
@@ -59,7 +63,7 @@ export default function NRIRentalIncomeBlog() {
               <span className="section-badge">NRI Taxation</span>
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>NRI Rental Income Tax: What the Tenant and Landlord Both Need to Know</h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published July 14, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+                <span>Published July 14, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -122,6 +126,8 @@ export default function NRIRentalIncomeBlog() {
                 <h2>Repatriating Rental Income</h2>
                 <p>Rental income credited to the NRI&apos;s <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO account</Link> can be repatriated abroad within the <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>USD 1 million annual limit</Link>, subject to <Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 145/146</Link> compliance. Rental income is classified as &quot;current income&quot; for repatriation purposes and is generally straightforward once TDS certificates are in order.</p>
               </div>
+
+              <PostFooterLinks slug="nri-rental-income-tax-india" />
 
               <PostCTA
             heading="NRI landlord or tenant of an NRI?"

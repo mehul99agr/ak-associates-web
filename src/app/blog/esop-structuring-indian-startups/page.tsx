@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'ESOP Structuring for Indian Startups',
+  title: { absolute: 'ESOP Structuring for Indian Startups' },
   description: 'Designing an ESOP for an Indian startup: pool sizing, vesting, exercise price, Companies Act mechanics, valuation and the two-stage employee tax.',
   keywords: [
     'ESOP structuring India', 'ESOP scheme design startup', 'ESOP vesting schedule India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Pool sizing, vesting, exercise price, Companies Act mechanics, and the two-stage employee tax.',
     url: 'https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ESOP Structuring for Indian Startups',
     description: 'Pool sizing, vesting schedules, exercise price, and the two-stage employee tax explained.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function ESOPStructuringBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>ESOP Structuring for Indian Startups: Scheme Design, Vesting and Tax</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 17, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 17, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -101,6 +105,8 @@ export default function ESOPStructuringBlog() {
               <p>Run the ESOP as a controlled equity process, not an HR spreadsheet. Maintain grant registers, vesting schedules, Board approvals, option-holder communications, and cap table reconciliations. Every grant should be traceable from approval to grant letter to vesting calculation to exercise to allotment; particularly important in a funding round, acquisition, statutory audit, or employee dispute.</p>
               <p>This article concerns domestic scheme design and structuring. Cross-border ownership, overseas employees, and NRI holders need separate analysis; see our guide on <Link href="/blog/esop-taxation-for-nris-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>ESOP taxation for NRIs</Link> for the tax treatment when an option holder becomes non-resident.</p>
             </div>
+
+            <PostFooterLinks slug="esop-structuring-indian-startups" />
 
             <PostCTA
             heading="Designing an ESOP for your startup?"

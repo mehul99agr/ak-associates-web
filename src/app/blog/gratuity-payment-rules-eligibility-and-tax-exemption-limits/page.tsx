@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Gratuity Payment Rules: Eligibility & Tax Exemption Limits' },
@@ -21,11 +23,13 @@ export const metadata: Metadata = {
     description: 'Learn about the Payment of Gratuity Act 1972 in India. Understand the 5-year eligibility rule, the calculation formula, and the Rs 20 lakh tax ceiling.',
     url: 'https://agrawalkhandelwal.com/blog/gratuity-payment-rules-eligibility-and-tax-exemption-limits',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Gratuity Payment Rules: Eligibility & Tax Exemption Limits',
     description: 'Learn about the Payment of Gratuity Act 1972 in India. Understand the 5-year eligibility rule, the calculation formula, and the Rs 20 lakh tax ceiling.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function GratuityPaymentRulesEligibilityAndTaxExemptionLimitsBlog
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 14, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -180,6 +184,8 @@ Gratuity = Rs 6,75,000 / 26 = Rs 2,59,615 (approximately).</p>
 
                 <p>Need help applying this to your specific situation? Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>advisory services</Link> cover compliance planning for growing businesses.</p>
               </div>
+
+              <PostFooterLinks slug="gratuity-payment-rules-eligibility-and-tax-exemption-limits" />
 
               <PostCTA
             heading="Have a Question on This?"

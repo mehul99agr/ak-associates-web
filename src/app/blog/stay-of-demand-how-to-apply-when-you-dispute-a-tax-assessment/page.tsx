@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Stay of Demand: How to Apply When You Dispute a Tax Assessment' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The process for applying for stay of demand pending appeal, the 20% deposit benchmark, and the Budget 2026 proposal to reduce it to 10%.',
     url: 'https://agrawalkhandelwal.com/blog/stay-of-demand-how-to-apply-when-you-dispute-a-tax-assessment',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Stay of Demand: How to Apply When You Dispute a Tax Assessment',
     description: 'How to apply for stay of demand under Section 220(6) while your appeal against a tax assessment is pending.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function StayOfDemandBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 22, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function StayOfDemandBlog() {
 
                 <p>Getting the stay application right, with the correct grounds, a realistic deposit offer, and prompt follow-up, is often what determines whether a genuine dispute stays a manageable process or turns into a recovery crisis. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include appeal drafting and stay of demand representation.</p>
               </div>
+
+              <PostFooterLinks slug="stay-of-demand-how-to-apply-when-you-dispute-a-tax-assessment" />
 
               <PostCTA
             heading="Disputing a tax demand and need a stay?"

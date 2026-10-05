@@ -2,17 +2,18 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import TrackedLink from '../TrackedLink'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'About Our Partners',
-  description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm serving Nashik and Sillod, Maharashtra.',
+  description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm in Nashik and Sillod, Maharashtra.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/about' },
   openGraph: {
     title: 'About Our Partners | Agrawal Khandelwal & Associates LLP',
     description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm serving Nashik and Sillod, Maharashtra.',
     url: 'https://agrawalkhandelwal.com/about',
+    images: OG_IMAGES,
   },
 }
 
@@ -182,6 +183,66 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FIRM */}
+      <section className="section">
+        <div className="container" style={{ maxWidth: '960px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-badge">The Firm</span>
+            <h2 className="section-title">About Agrawal Khandelwal & Associates LLP</h2>
+          </div>
+          <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, marginBottom: '1.25rem' }}>
+            Agrawal Khandelwal & Associates LLP is a firm of Chartered Accountants founded in 2023 and registered with the
+            Institute of Chartered Accountants of India (Firm Registration No. W101119). We work from two offices in
+            Maharashtra and advise 100+ clients, from local businesses in Nashik and Sillod to founders, companies, and
+            NRIs who work with us remotely.
+          </p>
+          <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, marginBottom: '2.5rem' }}>
+            Both partners are involved in client work directly. Advice is given in English, Hindi, or Marathi, the first
+            consultation is free, and we reply within one business day.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '2rem', marginBottom: '2.5rem' }}>
+            <div className="card">
+              <h3 style={{ marginBottom: '0.5rem' }}>{OFFICES.nashik.name}</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: 1.75, marginBottom: '0.75rem' }}>
+                Led by CA Mehul Agrawal. Handles international tax, transfer pricing, UAE corporate tax, NRI taxation, and
+                FEMA matters, alongside income tax, GST, and audit work for businesses in Nashik.
+              </p>
+              <p style={{ color: 'var(--text-main)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '0.75rem' }}>
+                {OFFICES.nashik.addressLine}<br />{OFFICES.nashik.phoneDisplay}
+              </p>
+              <Link href="/ca-in-nashik" style={{ color: 'var(--primary)', fontWeight: 600 }}>Chartered accountants in Nashik &rarr;</Link>
+            </div>
+            <div className="card">
+              <h3 style={{ marginBottom: '0.5rem' }}>{OFFICES.sillod.name}</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: 1.75, marginBottom: '0.75rem' }}>
+                Led by CA Rupesh Khandelwal. Handles income tax, GST, statutory and internal audit, and business consulting
+                for clients in Sillod and the surrounding Chhatrapati Sambhajinagar (Aurangabad) district.
+              </p>
+              <p style={{ color: 'var(--text-main)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '0.75rem' }}>
+                {OFFICES.sillod.addressLine}<br />{OFFICES.sillod.phoneDisplay}
+              </p>
+              <Link href="/ca-in-sillod" style={{ color: 'var(--primary)', fontWeight: 600 }}>CA office in Sillod &rarr;</Link>
+            </div>
+          </div>
+
+          <h3 style={{ marginBottom: '0.75rem' }}>What We Work On</h3>
+          <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, marginBottom: '1.25rem' }}>
+            Our work covers <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI tax advisory</Link>,{' '}
+            <Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing</Link>,{' '}
+            <Link href="/uae-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>UAE corporate tax</Link>,{' '}
+            <Link href="/company-incorporation" style={{ color: 'var(--primary)', fontWeight: 600 }}>company incorporation</Link>,{' '}
+            <Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup advisory</Link>, and{' '}
+            <Link href="/offshore-accounting" style={{ color: 'var(--primary)', fontWeight: 600 }}>offshore accounting</Link>, along with
+            GST, income tax, and audit. The full list is on our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>services page</Link>.
+          </p>
+          <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, margin: 0 }}>
+            We also publish practical guides on tax and compliance in our <Link href="/blog" style={{ color: 'var(--primary)', fontWeight: 600 }}>blog</Link>,
+            written by CA Mehul Agrawal and updated when the rules change.
+          </p>
         </div>
       </section>
 

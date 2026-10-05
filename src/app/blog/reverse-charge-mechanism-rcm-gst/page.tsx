@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Reverse Charge Mechanism (RCM) Under GST: When It Applies',
+  title: { absolute: 'Reverse Charge Mechanism (RCM) Under GST: When It Applies' },
   description: 'When GST reverse charge applies: GTA freight, advocates, director and security services, plus how to self-invoice and claim ITC.',
   keywords: [
     'reverse charge mechanism GST', 'RCM under GST', 'RCM list of services', 'GTA reverse charge',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'The full picture of RCM under GST: notified categories, self-invoicing, payment in cash, and claiming ITC on RCM tax paid.',
     url: 'https://agrawalkhandelwal.com/blog/reverse-charge-mechanism-rcm-gst',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Reverse Charge Mechanism (RCM) Under GST: When It Applies',
     description: 'When the recipient, not the supplier, must pay GST directly to the government under RCM.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function RCMBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 16, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function RCMBlog() {
                 <p>Two patterns account for most RCM misses we encounter. First, businesses onboard a new advocate, security agency, or freight vendor and treat the invoice like any other business expense without checking whether reverse charge applies to that vendor category. Second, businesses assume RCM under Section 9(4) applies broadly to any unregistered-vendor purchase, when in practice the unregistered-supplier trigger is now narrow and limited to specifically notified goods, not a general catch-all.</p>
                 <p>Because ITC on RCM tax paid is generally available once correctly reported, the real cost of missing RCM is rarely the tax itself; it is the interest and penalty exposure from having failed to self-invoice and pay tax in cash in the correct period, discovered later during a GSTR-9/9C reconciliation or a departmental audit. If you are preparing your <Link href="/blog/gstr-9-gstr-9c-annual-return-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual GST return</Link>, reviewing the year&apos;s RCM-eligible expense categories is a good checkpoint before filing.</p>
               </div>
+
+              <PostFooterLinks slug="reverse-charge-mechanism-rcm-gst" />
 
               <PostCTA
             heading="Not sure which of your vendor payments fall under RCM?"

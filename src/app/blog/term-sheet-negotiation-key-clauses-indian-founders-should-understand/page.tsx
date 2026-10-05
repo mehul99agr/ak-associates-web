@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Term Sheet Negotiation: Key Clauses Indian Founders Should Understand',
+  title: { absolute: 'Term Sheet Negotiation: Key Clauses for Indian Founders' },
   description: 'Liquidation preference, anti-dilution, board control, vesting and exit rights in Indian VC term sheets: what is standard, what is not, what binds.',
   keywords: [
     'term sheet negotiation India', 'liquidation preference India', 'anti-dilution protection startup',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The economic and control clauses that matter most in an Indian VC term sheet, and how to tell market-standard terms from founder-unfriendly red flags.',
     url: 'https://agrawalkhandelwal.com/blog/term-sheet-negotiation-key-clauses-indian-founders-should-understand',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Term Sheet Negotiation for Indian Founders',
     description: 'A term sheet is usually non-binding except for confidentiality and exclusivity. Here is what to scrutinise before signing.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function TermSheetNegotiationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 24, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -140,6 +144,8 @@ export default function TermSheetNegotiationBlog() {
                 <h2>Getting Term Sheet Review Right</h2>
                 <p>The clauses above interact with each other; a founder-friendly liquidation preference paired with an aggressive drag-along threshold, for instance, can still leave founders exposed. The practical approach is to have the full term sheet reviewed as a package, comparing each clause against current Indian market norms, before signing even a non-binding document, since the exclusivity period that follows limits the company&apos;s ability to negotiate a better deal elsewhere while the definitive documents are drafted.</p>
               </div>
+
+              <PostFooterLinks slug="term-sheet-negotiation-key-clauses-indian-founders-should-understand" />
 
               <PostCTA
             heading="Reviewing a term sheet before you sign?"

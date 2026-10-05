@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TDS on NRO Interest & FD (FY 2026-27)',
+  title: { absolute: 'TDS on NRO Interest & FD (FY 2026-27)' },
   description: 'TDS on NRO savings and FD interest: the 30% domestic rate, claiming lower DTAA rates (10-15%) with TRC and Form 10F, and ITR refunds for excess TDS.',
   keywords: ['TDS NRO interest', 'NRO FD TDS rate', 'NRO interest tax NRI', 'DTAA NRO interest', 'NRO TDS refund', 'NRO FD tax rate NRI', 'TDS on NRO savings account'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief' },
-  openGraph: { title: 'TDS on NRO Interest & FD: DTAA Relief for NRIs', description: '30% TDS on NRO interest, how to cut it to 10-15% with DTAA, TRC process.', url: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief', type: 'article' },
+  openGraph: { title: 'TDS on NRO Interest & FD: DTAA Relief for NRIs', description: '30% TDS on NRO interest, how to cut it to 10-15% with DTAA, TRC process.', url: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('TDS on NRO Interest & FD (FY 2026-27)', 'tds-nro-interest-fd-dtaa-relief')
@@ -44,7 +46,7 @@ export default function TDSNROInterestBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>TDS on NRO Interest and FD: Why You Are Probably Overpaying (and How to Fix It)</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 8, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 8, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -119,6 +121,8 @@ export default function TDSNROInterestBlog() {
               <h2>NRO Interest and Repatriation</h2>
               <p>After-tax NRO interest can be <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriated abroad</Link> within the USD 1 million annual limit. The interest is classified as &quot;current income&quot; for repatriation purposes, requiring <Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 145/146</Link> compliance but generally straightforward once TDS certificates are in order.</p>
             </div>
+
+            <PostFooterLinks slug="tds-nro-interest-fd-dtaa-relief" />
 
             <PostCTA
             heading="Want to reduce TDS on your NRO deposits?"

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Selling Agricultural Land Inherited in India: Tax & FEMA Rules',
+  title: { absolute: 'NRI Selling Inherited Agricultural Land in India: Tax & FEMA' },
   description: 'NRI selling inherited agricultural land in India: who can buy it, rural vs urban land capital gains, TDS, and repatriating the sale proceeds.',
   keywords: [
     'NRI selling inherited agricultural land', 'NRI agricultural land sale tax', 'rural agricultural land capital gains NRI',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Who can buy, rural vs urban land capital gains treatment, TDS obligations, and repatriation for an NRI selling inherited agricultural land.',
     url: 'https://agrawalkhandelwal.com/blog/nri-selling-agricultural-land-inherited-in-india-tax-and-fema-rules',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Selling Inherited Agricultural Land: Tax & FEMA Rules',
     description: 'The sale side: eligible buyers, capital gains computation, TDS, and repatriation for an NRI selling inherited agricultural land.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function NriSellingInheritedAgriLandBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 24, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -135,6 +139,8 @@ export default function NriSellingInheritedAgriLandBlog() {
                 <h2>Putting It Together</h2>
                 <p>Selling inherited agricultural land as an NRI is, in effect, three separate compliance questions stacked on top of each other: confirming the buyer is a resident Indian citizen (a FEMA question), determining whether the land is rural or urban and computing the capital gain accordingly if urban (an Income Tax Act question), and then routing TDS, tax settlement, and repatriation through the standard NRI property-sale machinery (a compliance-process question). Getting any one of the three wrong, selling to an ineligible buyer, misclassifying rural land as urban or vice versa, or skipping TDS documentation, creates problems that are considerably harder to unwind after the sale deed is registered than to resolve before it.</p>
               </div>
+
+              <PostFooterLinks slug="nri-selling-agricultural-land-inherited-in-india-tax-and-fema-rules" />
 
               <PostCTA
             heading="Selling agricultural land you inherited as an NRI?"

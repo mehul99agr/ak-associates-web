@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Condonation of Delay in Filing ITR: When & How to Apply' },
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Who can apply for condonation of delay under Section 119(2)(b), the CBDT monetary limits by authority, the 5-year window, and how to file.',
     url: 'https://agrawalkhandelwal.com/blog/condonation-of-delay-filing-itr-how-to-apply',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Condonation of Delay in Filing ITR: When & How to Apply',
     description: 'Who can apply for condonation of delay under Section 119(2)(b), the CBDT monetary limits by authority, the 5-year window, and how to file.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function CondonationOfDelayBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 1, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -161,6 +165,8 @@ export default function CondonationOfDelayBlog() {
                 </ol>
                 <p>Because the outcome hinges on how well the hardship is documented and framed, it is worth having a CA review the application before submission, especially for claims above the Rs 10 lakh threshold where the file goes to a more senior authority. If your situation instead involves a scrutiny or reassessment notice rather than a missed deadline, see our guide on <Link href="/blog/income-tax-notices-explained-143-1-143-2-148" style={{ color: 'var(--primary)', fontWeight: 600 }}>income tax notices under Sections 143(1), 143(2), and 148</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="condonation-of-delay-filing-itr-how-to-apply" />
 
               <PostCTA
             heading="Missed your ITR deadline and need to claim a refund or loss?"

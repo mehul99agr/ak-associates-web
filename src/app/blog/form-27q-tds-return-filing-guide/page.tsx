@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Form 27Q: TDS Return Filing Guide (FY 2026-27)',
+  title: { absolute: 'Form 27Q: TDS Return Filing Guide (FY 2026-27)' },
   description: 'Form 27Q guide for TDS on payments to NRIs: who files, due dates, return structure, corrections, penalties, and how it differs from 27QB.',
   keywords: [
     'form 27Q', 'form 27Q filing', 'form 27Q due date', 'TDS return for NRI payments',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Who must file Form 27Q, due dates, return structure, correction statements, penalties, and how it differs from Form 27QB.',
     url: 'https://agrawalkhandelwal.com/blog/form-27q-tds-return-filing-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 27Q: TDS Return Filing Guide (FY 2026-27)',
     description: 'Due dates, structure, correction statements, and common mistakes for Form 27Q, the quarterly TDS return for payments to NRIs.',
+    images: OG_IMAGES,
   },
 }
 
@@ -77,7 +81,7 @@ export default function Form27QBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Form 27Q: Complete TDS Return Filing Guide for Payments to NRIs</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 8, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 8, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
 
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
@@ -168,6 +172,8 @@ export default function Form27QBlog() {
                 <li>Forgetting to issue Form 16A after filing, leaving the non-resident payee unable to claim credit even though the return was filed correctly</li>
               </ul>
             </div>
+
+            <PostFooterLinks slug="form-27q-tds-return-filing-guide" />
 
             <PostCTA
             heading="Need help filing Form 27Q or fixing a TRACES mismatch?"

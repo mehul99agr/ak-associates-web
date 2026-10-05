@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Standard Deduction for Salaried Employees: Current Limits',
+  title: { absolute: 'Standard Deduction for Salaried Employees: Current Limits' },
   description: 'Standard deduction for FY 2026-27: Rs 75,000 under the new regime, Rs 50,000 under the old. How it works, who gets it automatically, and regime comparison.',
   keywords: [
     'standard deduction salaried employees', 'standard deduction new tax regime', 'standard deduction old tax regime',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Rs 75,000 under the new regime, Rs 50,000 under the old regime. How the standard deduction works and who gets it automatically.',
     url: 'https://agrawalkhandelwal.com/blog/standard-deduction-salaried-employees-limits',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Standard Deduction for Salaried Employees: Current Limits',
     description: 'Rs 75,000 under the new regime, Rs 50,000 under the old regime for FY 2026-27. No investment or paperwork required.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function StandardDeductionBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 9, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -116,6 +120,8 @@ export default function StandardDeductionBlog() {
                   <p style={{ margin: 0, fontSize: '0.95rem' }}>The standard deduction provision (Section 16 under the old Act) and the Section 87A rebate (now Section 156) have both been renumbered under the Income Tax Act 2025. The Section 156 mapping for the rebate is confirmed; the exact new-Act reference for the standard deduction clause itself was not confidently confirmed at the time of writing, so this guide refers to it by its familiar old-Act name. Confirm the current citation with your CA before quoting it formally.</p>
                 </div>
               </div>
+
+              <PostFooterLinks slug="standard-deduction-salaried-employees-limits" />
 
               <PostCTA
             heading="Not sure which regime saves you more tax?"

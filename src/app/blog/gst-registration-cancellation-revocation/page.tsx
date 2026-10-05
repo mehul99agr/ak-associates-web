@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GST Registration Cancellation & Revocation: Process & Grounds',
+  title: { absolute: 'GST Registration Cancellation & Revocation: Process & Grounds' },
   description: 'When GST registration is cancelled (by you or the officer), the Rule 21 grounds, and how to apply for revocation under Rule 23 in time.',
   keywords: [
     'GST registration cancellation', 'GST revocation process', 'GST registration cancellation grounds',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The grounds for GST cancellation under Rule 21, the difference between voluntary and officer-initiated cancellation, and the Rule 23 revocation process and timeline.',
     url: 'https://agrawalkhandelwal.com/blog/gst-registration-cancellation-revocation',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST Registration Cancellation & Revocation: Process & Grounds',
     description: 'Grounds for cancellation, the revocation process under Rule 23, and what happens if you miss the window.',
+    images: OG_IMAGES,
   },
 }
 
@@ -81,7 +85,7 @@ export default function GSTRegistrationCancellationRevocationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 19, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -138,6 +142,8 @@ export default function GSTRegistrationCancellationRevocationBlog() {
 
                 <p>If your GST registration has been cancelled, or you have received a show-cause notice proposing cancellation, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> can review the notice, clear pending compliance, and file the revocation application within the window.</p>
               </div>
+
+              <PostFooterLinks slug="gst-registration-cancellation-revocation" />
 
               <PostCTA
             heading="GST registration cancelled or under show-cause notice?"

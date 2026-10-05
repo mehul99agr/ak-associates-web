@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Trade License Requirements for Businesses in India' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Which businesses need a municipal trade license, how it differs from a Shop and Establishment license, and the general application process.',
     url: 'https://agrawalkhandelwal.com/blog/trade-license-requirements-for-businesses-in-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Trade License Requirements for Businesses in India',
     description: 'Which businesses need a municipal trade license, how it differs from a Shop and Establishment license, and the general application process.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function TradeLicenseBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -140,6 +144,8 @@ export default function TradeLicenseBlog() {
                 </ol>
                 <p>For food businesses specifically, a trade license typically runs alongside, not instead of, FSSAI registration; see our guide on <Link href="/blog/fssai-registration-for-food-businesses-when-required" style={{ color: 'var(--primary)', fontWeight: 600 }}>FSSAI registration for food businesses</Link> for that separate central requirement. New companies and LLPs setting up their full compliance stack, GST, shop establishment, trade license, and statutory registrations together, may also find our <Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>post-incorporation checklist</Link> useful for sequencing these in the right order.</p>
               </div>
+
+              <PostFooterLinks slug="trade-license-requirements-for-businesses-in-india" />
 
               <PostCTA
             heading="Need help with municipal or state registrations?"

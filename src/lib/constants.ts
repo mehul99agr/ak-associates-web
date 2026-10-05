@@ -46,3 +46,10 @@ export const OFFICES = {
     longitude: '75.6496',
   },
 } as const
+
+// Share image for pages that define their own `openGraph` / `twitter` metadata.
+// A page-level block replaces the root one wholesale, so the root
+// opengraph-image is not inherited and has to be named explicitly.
+export const OG_IMAGES = [
+  { url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: `${FIRM_NAME}: Chartered Accountants` },
+]

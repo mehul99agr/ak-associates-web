@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Fixed Deposit Options: NRE vs NRO vs FCNR Comparison',
+  title: { absolute: 'NRI Fixed Deposit Options: NRE vs NRO vs FCNR Comparison' },
   description: 'NRE FD, NRO FD, and FCNR FD compared for NRIs: interest rates, taxability, TDS, repatriability, tenure, and currency risk for each fixed deposit type.',
   keywords: [
     'NRI fixed deposit', 'NRE FD vs NRO FD vs FCNR FD', 'FCNR fixed deposit NRI', 'NRE FD interest rate',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Interest rates, taxability, TDS, repatriability, and tenure compared across NRE FD, NRO FD, and FCNR FD.',
     url: 'https://agrawalkhandelwal.com/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Fixed Deposit Options: NRE vs NRO vs FCNR',
     description: 'Which fixed deposit type suits which NRI, and how tax and repatriation rules differ across the three.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function NriFdComparisonBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 17, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -158,6 +162,8 @@ export default function NriFdComparisonBlog() {
                 </ul>
                 <p>For the full mechanics of the USD 1 million repatriation cap, Form 145/146 documentation, and the broader distinction between which income belongs in which account type, see our detailed guide on <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO accounts and FEMA repatriation limits</Link>. For NRIs selling Indian property and deciding what to do with the proceeds before parking them in an FD, our <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI property sale guide</Link> covers how much reaches the NRO account in the first place after tax deduction.</p>
               </div>
+
+              <PostFooterLinks slug="nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison" />
 
               <PostCTA
             heading="Deciding between NRE, NRO, and FCNR fixed deposits?"

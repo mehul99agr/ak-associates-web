@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Search & Seizure Under Income Tax: What Happens During a Raid' },
-  description: 'How an income tax search (Section 132) is authorised, what happens during the raid, your rights as a taxpayer, and how seized cash, documents and assets are handled.',
+  description: 'How an income tax search (Section 132) is authorised, what happens in a raid, your rights as a taxpayer, and how seized cash, documents and assets are handled.',
   keywords: [
     'income tax search and seizure', 'section 132 income tax', 'income tax raid procedure',
     'panchnama income tax', 'statement under 132(4)', 'income tax department raid rights',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Search warrant authority, taxpayer rights, panchnama, statement recording, and how seized assets are handled during an income tax raid.',
     url: 'https://agrawalkhandelwal.com/blog/search-and-seizure-under-income-tax-what-happens-during-a-raid',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Search & Seizure Under Income Tax: What Happens During a Raid',
     description: 'A plain-English walkthrough of what happens during an income tax search, and the rights every taxpayer has during it.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function SearchAndSeizureBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 22, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -141,6 +145,8 @@ export default function SearchAndSeizureBlog() {
 
                 <p>A search is a legal process with defined steps, not an open-ended event, and the taxpayer's position at every later stage is shaped heavily by how carefully those steps were documented and objected to in real time. If you are facing a search, or have already been through one and are now dealing with the assessment that follows, involve a CA immediately rather than after the fact; the panchnama, the statements recorded, and the seized documents are the foundation the entire case is built on. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> cover search assessment support end to end.</p>
               </div>
+
+              <PostFooterLinks slug="search-and-seizure-under-income-tax-what-happens-during-a-raid" />
 
               <PostCTA
             heading="Facing an income tax search or a post-search assessment?"

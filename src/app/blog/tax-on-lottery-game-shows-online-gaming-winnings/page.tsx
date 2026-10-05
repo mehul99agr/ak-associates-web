@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax on Lottery, Game Shows & Online Gaming Winnings',
+  title: { absolute: 'Tax on Lottery, Game Shows & Online Gaming Winnings' },
   description: 'Tax on lottery, game show and online gaming winnings: flat 30% rate, Section 194BA TDS on net gaming winnings, and why no exemption or deduction applies.',
   keywords: [
     'tax on lottery winnings india', 'game show winnings tax', 'online gaming tax section 194BA',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Flat 30% tax, Section 194BA TDS on net online gaming winnings, and why no basic exemption or deductions apply to this income.',
     url: 'https://agrawalkhandelwal.com/blog/tax-on-lottery-game-shows-online-gaming-winnings',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tax on Lottery, Game Shows & Online Gaming Winnings',
     description: 'How winnings from lotteries, game shows, and online games are taxed in India, and how TDS is deducted.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function LotteryGamingTaxBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 28, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -166,6 +170,8 @@ export default function LotteryGamingTaxBlog() {
                 <p>Winnings must be reported under "income from other sources" in your ITR even though TDS has already been deducted at source. The TDS reflected in Form 26AS/AIS is claimed as a credit against your computed tax liability at the time of filing. Because these winnings often show up automatically in your AIS from the payer's or platform's TDS filing, mismatches between what you report and what the department already has on record are a common and easily avoidable source of scrutiny notices.</p>
                 <p>If you have received a sizeable lottery, game show, or online gaming payout this year and want to make sure it is reported correctly alongside your other income, or if you are structuring participation in a game show and want to understand the TDS mechanics upfront, get in touch with our team. For questions on how gifts (as opposed to winnings) are taxed, see our companion guide on <Link href="/blog/section-56-2-x-tax-on-gifts-received-rs-50000" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 56(2)(x) gift taxation</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="tax-on-lottery-game-shows-online-gaming-winnings" />
 
               <PostCTA
             heading="Received lottery, game show, or online gaming winnings?"

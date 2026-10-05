@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Statutory Audit Requirements for Private Limited Companies' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Every private limited company needs a statutory audit regardless of turnover. Auditor appointment, rotation rules, and CARO 2020 applicability explained.',
     url: 'https://agrawalkhandelwal.com/blog/statutory-audit-requirements-for-private-limited-companies',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Statutory Audit Requirements for Private Limited Companies',
     description: 'Statutory audit is mandatory for every company under the Companies Act 2013, regardless of turnover. Here is what that involves.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function StatutoryAuditPrivateLimitedBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 28, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function StatutoryAuditPrivateLimitedBlog() {
                 <h2>Getting Statutory Audit Right From Year One</h2>
                 <p>The most common mistake is treating statutory audit as something to think about only once the company is generating meaningful revenue. Because the requirement attaches from incorporation, the practical discipline is to appoint the first auditor within the 30-day window, maintain proper books from day one so the first audit isn&apos;t a scramble, and build the audit timeline into the same annual compliance calendar as ROC filings like AOC-4 and MGT-7. Our guide to <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual ROC filing</Link> covers how the audited financial statements feed directly into those filings.</p>
               </div>
+
+              <PostFooterLinks slug="statutory-audit-requirements-for-private-limited-companies" />
 
               <PostCTA
             heading="Need a statutory auditor or unsure if CARO applies to you?"

@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Do You Need a TAN to Buy Property From an NRI? (Updated for Oct 2026)' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Form 49B process, documents, fees, and timeline for buyers who need a TAN to purchase property from an NRI seller.',
     url: 'https://agrawalkhandelwal.com/blog/tan-application-guide-buyer-nri-property',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TAN Application Guide (NRI Property)',
     description: 'Form 49B process, documents, fees, and timeline for buyers who need a TAN to purchase property from an NRI seller.',
+    images: OG_IMAGES,
   },
 }
 
@@ -119,7 +123,7 @@ export default function TANApplicationGuideBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 11, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -184,6 +188,8 @@ export default function TANApplicationGuideBlog() {
 
                 <p>Once the TAN is in hand, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to work out exactly how much to deduct and deposit. If the NRI seller expects their actual tax liability to be much lower than the statutory TDS, point them to our guide on the <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link>; it&apos;s the seller&apos;s responsibility to apply, but buyers benefit from a smoother transaction when it&apos;s in place before closing.</p>
               </div>
+
+              <PostFooterLinks slug="tan-application-guide-buyer-nri-property" />
 
               <PostCTA
             heading="Buying property from an NRI seller?"

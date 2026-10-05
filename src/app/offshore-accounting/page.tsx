@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     title: 'Offshore Accounting Services India | Outsourced Bookkeeping | Agrawal Khandelwal & Associates LLP',
     description: 'ICAI-registered CA firm offering offshore accounting for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, GST, payroll, and MIS from India.',
     url: 'https://agrawalkhandelwal.com/offshore-accounting',
+    images: OG_IMAGES,
   },
 }
 

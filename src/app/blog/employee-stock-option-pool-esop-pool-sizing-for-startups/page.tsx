@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Employee Stock Option Pool (ESOP Pool) Sizing for Startups',
+  title: { absolute: 'Employee Stock Option Pool (ESOP Pool) Sizing for Startups' },
   description: 'Sizing an ESOP pool at seed, Series A and B: pre vs post-money pool creation, founder dilution, pool refreshes, and approval mechanics.',
   keywords: [
     'ESOP pool sizing', 'option pool size startup India', 'pre-money option pool', 'post-money option pool',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Typical pool sizes at seed/Series A/B, pre-money vs post-money pool creation, dilution impact, refreshes, and approval mechanics.',
     url: 'https://agrawalkhandelwal.com/blog/employee-stock-option-pool-esop-pool-sizing-for-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ESOP Pool Sizing for Startups',
     description: 'Why the option pool is usually created pre-money, and what that actually costs founders in dilution.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function EsopPoolSizingBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 20, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -137,6 +141,8 @@ export default function EsopPoolSizingBlog() {
                 <h2>Practical Takeaways for Founders</h2>
                 <p>Size the pool against an actual hiring plan rather than accepting a round number an investor proposes without scrutiny. Always check whether a proposed pool is structured pre-money or post-money, since that single mechanical choice determines who pays for it. Expect and plan for refreshes at future rounds rather than being caught off guard. And treat pool expansion as a governed corporate action requiring Board and shareholder approval, sequenced with the rest of a financing round&apos;s closing documents, not an afterthought.</p>
               </div>
+
+              <PostFooterLinks slug="employee-stock-option-pool-esop-pool-sizing-for-startups" />
 
               <PostCTA
             heading="Structuring or negotiating your ESOP pool for an upcoming round?"

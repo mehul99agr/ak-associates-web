@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax Scrutiny Assessment: What Triggers It & How to Respond' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What gets a return picked for scrutiny under CASS, how to prepare a strong response, and the mistakes that turn a routine scrutiny into a prolonged dispute.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-scrutiny-assessment-how-to-respond',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax Scrutiny Assessment: What Triggers It & How to Respond',
     description: 'What triggers CASS selection and how to prepare a strong scrutiny response.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function ScrutinyAssessmentBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 16, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -140,6 +144,8 @@ export default function ScrutinyAssessmentBlog() {
 
                 <p>Scrutiny assessment is manageable when treated as a documentation exercise rather than an emergency. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> include end-to-end scrutiny response drafting and representation before the assessing officer.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-scrutiny-assessment-how-to-respond" />
 
               <PostCTA
             heading="Under scrutiny or worried about being selected?"

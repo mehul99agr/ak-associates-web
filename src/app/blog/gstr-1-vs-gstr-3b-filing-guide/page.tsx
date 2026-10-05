@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'GSTR-1 vs GSTR-3B: Filing Guide & Common Mistakes' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What each return covers, due dates and the QRMP option, late fees, and the reconciliation mistakes that lead to GST notices.',
     url: 'https://agrawalkhandelwal.com/blog/gstr-1-vs-gstr-3b-filing-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GSTR-1 vs GSTR-3B: Filing Guide & Common Mistakes',
     description: 'What each return covers, due dates and the QRMP option, late fees, and the reconciliation mistakes that lead to GST notices.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function GstrFilingGuideBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 15, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -154,6 +158,8 @@ export default function GstrFilingGuideBlog() {
                 </ul>
                 <p>If your business is newly registered, see our guide on the <Link href="/blog/gst-registration-process-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration process</Link> for what happens before your first return is due, or the <Link href="/blog/gst-composition-scheme-eligibility-rates" style={{ color: 'var(--primary)', fontWeight: 600 }}>composition scheme guide</Link> if you are evaluating whether the lighter CMP-08/GSTR-4 filing cycle suits your business better than the regular GSTR-1/3B route.</p>
               </div>
+
+              <PostFooterLinks slug="gstr-1-vs-gstr-3b-filing-guide" />
 
               <PostCTA
             heading="Behind on GST filings or getting mismatch notices?"

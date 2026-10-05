@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildFaqLd, buildServiceLd, buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | Agrawal Khandelwal & Associates LLP',
     description: 'Transfer pricing documentation, benchmarking, APA advisory, and tax authority representation for MNCs and Indian multinationals. CA with Big 4 (Deloitte) pedigree.',
     url: 'https://agrawalkhandelwal.com/transfer-pricing',
+    images: OG_IMAGES,
   },
 }
 

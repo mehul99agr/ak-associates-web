@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Corporate Tax Rates in India: Domestic Company vs New Manufacturing Regime',
+  title: { absolute: 'Corporate Tax Rates in India: Domestic vs New Manufacturing' },
   description: 'Section 115BAA (22%) vs 115BAB (15%, closed to companies that did not start manufacturing by March 31, 2024): conditions, trade-offs and effective rates.',
   keywords: [
     'section 115BAA domestic company tax rate', 'section 115BAB new manufacturing company',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Section 115BAA (22%) vs Section 115BAB (15%): conditions, exemption trade-offs, and effective tax rates compared.',
     url: 'https://agrawalkhandelwal.com/blog/corporate-tax-rates-in-india-domestic-company-vs-new-manufacturing-reg',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Corporate Tax Rates in India: Domestic Company vs New Manufacturing Regime',
     description: 'Section 115BAA (22%) vs Section 115BAB (15%): which concessional corporate tax regime fits your company.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function CorporateTaxRatesBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 26, 2026</span><span aria-hidden>&bull;</span><span>Updated September 29, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -125,6 +129,8 @@ export default function CorporateTaxRatesBlog() {
                 <p>The regular regime, with its higher headline rates but full access to exemptions and deductions, can still work out cheaper for a company that has substantial brought-forward tax holiday benefits, significant additional depreciation on recent capex, or other deduction-heavy positions still in play. For a company with few such deductions, 115BAA&apos;s flat 22% (or 115BAB&apos;s 15%, if genuinely eligible as a new manufacturer) is usually the better outcome, both for the lower rate and for the simplicity of not tracking a deduction-heavy computation every year.</p>
                 <p>Because the election is irrevocable, this isn&apos;t a decision to make purely off the current year&apos;s numbers. A multi-year projection, factoring in planned capex, expected profitability, and any deductions currently in the pipeline, should sit behind the choice of Form 10-IC, Form 10-ID, or staying on the regular regime. Companies planning a new foreign subsidiary or FDI-route manufacturing entity in India today should model 115BAA against the regular regime, since the 115BAB window has closed; see our <Link href="/blog/foreign-subsidiary-registration-india-fdi" style={{ color: 'var(--primary)', fontWeight: 600 }}>foreign subsidiary registration guide</Link> for the incorporation side of that decision.</p>
               </div>
+
+              <PostFooterLinks slug="corporate-tax-rates-in-india-domestic-company-vs-new-manufacturing-reg" />
 
               <PostCTA
             heading="Deciding between the regular regime, 115BAA, or 115BAB?"

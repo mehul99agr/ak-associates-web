@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Repatriating NRI Property Sale Proceeds',
+  title: { absolute: 'Repatriating NRI Property Sale Proceeds' },
   description: 'How NRIs repatriate property sale proceeds from India: NRO account rules, Form 145 (ex-15CA), Form 146 (ex-15CB) and the USD 1 million scheme.',
   keywords: [
     'NRI repatriation property sale proceeds', 'form 145 146 NRI', 'form 15CA 15CB NRI property',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'NRO account rules, Form 145/146 CA certification, and the USD 1 million scheme for NRIs repatriating Indian property sale proceeds.',
     url: 'https://agrawalkhandelwal.com/blog/nri-repatriation-property-sale-proceeds',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Repatriating NRI Property Sale Proceeds',
     description: 'NRO account rules, Form 145/146 CA certification, and the USD 1 million scheme for repatriating Indian property sale proceeds.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function NRIRepatriationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 11, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function NRIRepatriationBlog() {
                   <li>Underestimating how long the CA certification (Form 146) and AD Bank review take when documentation is incomplete</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="nri-repatriation-property-sale-proceeds" />
 
               <PostCTA
             heading="Need help repatriating property sale proceeds?"

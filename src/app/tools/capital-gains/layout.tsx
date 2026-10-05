@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Capital Gains Tax Calculator (India)',
@@ -9,11 +10,13 @@ export const metadata: Metadata = {
     description: 'Calculate long-term and short-term capital gains tax on equity, mutual funds, and property. Updated for FY 2025-26 with latest LTCG and STCG rates.',
     url: 'https://agrawalkhandelwal.com/tools/capital-gains',
     type: 'website',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Capital Gains Tax Calculator (India)',
     description: 'Calculate long-term and short-term capital gains tax on equity, mutual funds, and property. Updated for FY 2025-26 with latest LTCG and STCG rates.',
+    images: OG_IMAGES,
   },
 }
 

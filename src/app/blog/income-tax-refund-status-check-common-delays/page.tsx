@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Income Tax Refund Status: How to Check & Common Delays',
+  title: { absolute: 'Income Tax Refund Status: How to Check & Common Delays' },
   description: 'How to check your income tax refund status online, typical processing timelines after e-verification, and the most common reasons refunds get delayed or fail.',
   keywords: [
     'income tax refund status', 'check ITR refund status', 'refund not credited',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'How refund status tracking works, typical processing timelines, and the most common reasons refunds are delayed.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-refund-status-check-common-delays',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax Refund Status: How to Check & Common Delays',
     description: 'Timelines, tracking steps, and the most common reasons refunds get stuck.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function IncomeTaxRefundStatusBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 30, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -131,6 +135,8 @@ export default function IncomeTaxRefundStatusBlog() {
                 <p>The department pays simple interest on refunds that take time to process, calculated from the relevant starting point in the assessment year until the refund is granted, and this interest is added automatically as part of the refund computation shown in the processing intimation. Note that this interest itself is taxable income in the year it is received, so it should be reported in the following year's return if material.</p>
                 <p>If your refund has been stuck well past the typical window, or you are dealing with a Section 245 adjustment you don't agree with, we help clients track down the specific hold-up on the portal and respond to notices correctly rather than letting a refund sit indefinitely.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-refund-status-check-common-delays" />
 
               <PostCTA
             heading="Refund stuck or delayed longer than expected?"

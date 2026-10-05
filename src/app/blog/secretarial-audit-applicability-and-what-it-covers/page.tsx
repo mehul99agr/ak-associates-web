@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Secretarial Audit: Applicability & What It Covers' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Section 204 applicability thresholds, who must file Form MR-3, and what a secretarial audit report actually examines.',
     url: 'https://agrawalkhandelwal.com/blog/secretarial-audit-applicability-and-what-it-covers',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Secretarial Audit: Applicability & What It Covers',
     description: 'Which companies need a secretarial audit, the turnover/capital thresholds, and what Form MR-3 covers.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function SecretarialAuditBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 31, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -135,6 +139,8 @@ export default function SecretarialAuditBlog() {
                 <h2>Why It Matters Even If You Are Just Under the Threshold</h2>
                 <p>Companies approaching Rs 100 crore in borrowings, or a public company nearing the Rs 50 crore capital or Rs 250 crore turnover marks, are often better served getting their governance processes in order before the audit becomes mandatory, rather than scrambling in the year it first applies. Lenders and investors evaluating a company for the next round of debt or equity frequently ask for a secretarial audit report even when it is not yet legally required, simply as a governance signal, so building the underlying discipline early tends to pay off beyond the compliance trigger itself.</p>
               </div>
+
+              <PostFooterLinks slug="secretarial-audit-applicability-and-what-it-covers" />
 
               <PostCTA
             heading="Not sure if secretarial audit applies to you?"

@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Professional Tax Registration & Compliance in Maharashtra' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'PTEC vs PTRC, current Maharashtra Professional Tax slabs, and the due dates employers and self-employed professionals need to track.',
     url: 'https://agrawalkhandelwal.com/blog/professional-tax-registration-and-compliance-in-maharashtra',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Professional Tax Registration & Compliance in Maharashtra',
     description: 'PTEC vs PTRC, current Maharashtra Professional Tax slabs, and the due dates employers and self-employed professionals need to track.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function ProfessionalTaxMaharashtraBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 5, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -129,6 +133,8 @@ export default function ProfessionalTaxMaharashtraBlog() {
                 <h2>How Professional Tax Fits Into Broader Compliance</h2>
                 <p>Professional tax registration typically sits alongside <Link href="/blog/shop-and-establishment-registration-state-wise-requirements" style={{ color: 'var(--primary)', fontWeight: 600 }}>Shop and Establishment registration</Link> and GST registration as one of the foundational compliance items for a Maharashtra business with employees. It is also worth tracking alongside payroll-related TDS obligations; see our guide on <Link href="/blog/tds-on-salary-section-192-form-24q" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on salary under Section 192</Link> for how professional tax deduction interacts with salary TDS computation, since professional tax paid is a deduction from salary income for the employee.</p>
               </div>
+
+              <PostFooterLinks slug="professional-tax-registration-and-compliance-in-maharashtra" />
 
               <PostCTA
             heading="Need PTEC or PTRC registration in Maharashtra?"

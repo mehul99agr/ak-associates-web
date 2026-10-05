@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax Audit for E-Commerce Sellers & Digital Businesses',
+  title: { absolute: 'Tax Audit for E-Commerce Sellers & Digital Businesses' },
   description: 'Tax audit for online sellers: Section 44AB thresholds, how 44AD presumptive taxation applies to e-commerce, and how 194-O TDS and GST TCS fit together.',
   keywords: [
     'tax audit e-commerce sellers', '44AB threshold online business', 'section 194-O TDS e-commerce',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'How 44AB turnover thresholds apply to online sellers, presumptive taxation, and the Section 194-O / GST TCS interaction.',
     url: 'https://agrawalkhandelwal.com/blog/tax-audit-for-e-commerce-sellers-and-digital-businesses',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tax Audit for E-Commerce Sellers & Digital Businesses',
     description: 'How 44AB turnover thresholds, presumptive taxation, and Section 194-O TDS apply to online sellers.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function TaxAuditEcommerceBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 25, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -128,6 +132,8 @@ export default function TaxAuditEcommerceBlog() {
                 </ul>
                 <p>Digital businesses tend to generate more data points, more platforms, and more overlapping compliance tracks than an equivalent offline business of the same size. Getting the turnover, TDS, and TCS numbers to agree across all three is less about any single rule and more about disciplined monthly reconciliation.</p>
               </div>
+
+              <PostFooterLinks slug="tax-audit-for-e-commerce-sellers-and-digital-businesses" />
 
               <PostCTA
             heading="Not sure if your online business needs a tax audit?"

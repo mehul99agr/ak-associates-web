@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Retirement Fund Tax for NRIs (2026)',
+  title: { absolute: 'Retirement Fund Tax for NRIs (2026)' },
   description: 'How India taxes 401(k), UK pension and Australian super withdrawals for returning NRIs: RNOR window strategy, DTAA relief and timing decisions.',
   keywords: [
     'NRI 401k taxation India', 'foreign retirement fund tax India', 'UK pension India tax',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'How India taxes foreign retirement withdrawals, RNOR window strategy, and DTAA relief for returning NRIs.',
     url: 'https://agrawalkhandelwal.com/blog/foreign-retirement-fund-taxation-nri',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: '401(k) & Foreign Pension Tax for Returning NRIs',
     description: 'RNOR window, DTAA relief, and timing strategies for foreign retirement fund withdrawals.',
+    images: OG_IMAGES,
   },
 }
 
@@ -163,6 +167,8 @@ export default function ForeignRetirementFundBlog() {
                   <li><strong>Rollover/transfer protection:</strong> Moving funds between retirement accounts (401k to IRA, UK pension to QROPS) may be non-taxable in the origin country but India&apos;s treatment is uncertain and should be verified before execution.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="foreign-retirement-fund-taxation-nri" />
 
               <PostCTA
             heading="Returning to India with a foreign retirement fund?"

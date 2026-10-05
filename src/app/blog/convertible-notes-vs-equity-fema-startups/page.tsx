@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Convertible Notes vs Equity: FEMA Rules',
+  title: { absolute: 'Convertible Notes vs Equity: FEMA Rules' },
   description: 'Convertible note vs CCPS vs equity for an Indian startup: FEMA conditions for foreign notes, when conversion means debt treatment, and how to decide.',
   keywords: [
     'convertible notes India startup', 'convertible note FEMA', 'CCPS vs convertible note',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'FEMA conditions for convertible notes, CCPS vs equity, and a decision framework for founders.',
     url: 'https://agrawalkhandelwal.com/blog/convertible-notes-vs-equity-fema-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Convertible Notes vs Equity: FEMA Rules for Startups',
     description: 'When a convertible note, CCPS, or straight equity is the right instrument.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function ConvertibleNotesBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Convertible Notes vs Equity for Indian Startups: FEMA Rules and Funding Choices</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 27, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 27, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -112,6 +116,8 @@ export default function ConvertibleNotesBlog() {
               <h2>Closing Checklist Before Taking Foreign Capital</h2>
               <p>Before accepting foreign investment, confirm sectoral eligibility, entry route, beneficial ownership considerations, valuation, banking documents, Board approvals, shareholder approvals, authorised capital, instrument terms, and reporting responsibilities. Also review historic FEMA compliance; investors will ask whether prior FC-GPR filings were completed and whether annual FLA returns were filed. Historic non-compliance should be identified and addressed before the new round closes, not discovered during the next round&apos;s <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>due diligence</Link>.</p>
             </div>
+
+            <PostFooterLinks slug="convertible-notes-vs-equity-fema-startups" />
 
             <PostCTA
             heading="Structuring a funding round with foreign investors?"

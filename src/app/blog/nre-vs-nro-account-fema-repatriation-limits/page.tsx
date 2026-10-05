@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRE vs NRO: FEMA Repatriation Limits',
-  description: 'NRE vs NRO vs FCNR accounts compared: which income goes where, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
+  title: { absolute: 'NRE vs NRO: FEMA Repatriation Limits' },
+  description: 'NRE vs NRO vs FCNR accounts compared: which income goes where, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze remittances.',
   keywords: [
     'NRE vs NRO account', 'NRI repatriation limit', 'USD 1 million scheme NRI',
     'FEMA repatriation rules', 'NRE account tax India', 'NRO account TDS',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Which income goes into which account, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
     url: 'https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRE vs NRO Account: FEMA Repatriation Limits Explained',
     description: 'Which income goes where, tax treatment, and the USD 1 million repatriation cap.',
+    images: OG_IMAGES,
   },
 }
 
@@ -89,7 +93,7 @@ export default function NREvsNROBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -177,6 +181,8 @@ export default function NREvsNROBlog() {
                 <h2>Practical Takeaway</h2>
                 <p>The account structure question is simple once the rule is clear: foreign income into NRE or FCNR, India-sourced income into NRO. The complexity is entirely in the repatriation paperwork, and that paperwork is not optional. If you're planning a large NRO repatriation this year, whether from accumulated rental income, a maturing deposit, or an asset sale, start the Form 145/146 process well before you need the funds abroad, banks typically need 5 to 10 working days once documentation is complete.</p>
               </div>
+
+              <PostFooterLinks slug="nre-vs-nro-account-fema-repatriation-limits" />
 
               <PostCTA
             heading="Need help repatriating funds or structuring your NRI accounts correctly?"

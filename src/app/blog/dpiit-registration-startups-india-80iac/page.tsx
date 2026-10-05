@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'DPIIT Registration for Startups (2026)',
+  title: { absolute: 'DPIIT Registration for Startups (2026)' },
   description: 'How to get DPIIT recognition for your startup: eligibility, the 80-IAC three-year tax holiday, and what founders miss about IMB certification.',
   keywords: [
     'DPIIT registration India', 'startup India recognition', '80-IAC tax benefit',
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
     description: 'DPIIT recognition is not the same as 80-IAC certification. Here is what each requires, what each gives you, and what most founders get wrong about startup tax benefits.',
     url: 'https://agrawalkhandelwal.com/blog/dpiit-registration-startups-india-80iac',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -90,7 +93,7 @@ export default function DPIITRegistrationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 25, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -144,6 +147,8 @@ export default function DPIITRegistrationBlog() {
                 <p>File DPIIT recognition first; it is fast, free, and the prerequisite for everything else. Once recognition is in hand, evaluate whether 80-IAC is worth pursuing: only relevant if the company expects to be profitable within the first 10 years and has a clearly demonstrable innovation element. File the IMB application as early as possible since processing is slow and you want the certificate in hand before the profitability years begin. Retroactive 80-IAC claims for years already filed are complex and less reliable than prospective ones.</p>
                 <p>Our <Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Advisory team</Link> handles DPIIT recognition applications, IMB documentation, and the complete tax compliance calendar for DPIIT-recognized startups.</p>
               </div>
+
+              <PostFooterLinks slug="dpiit-registration-startups-india-80iac" />
 
               <PostCTA
             heading="Need DPIIT recognition or 80-IAC certification for your startup?"

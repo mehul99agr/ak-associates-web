@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'E-Invoicing Under GST: Applicability Threshold & Process',
+  title: { absolute: 'E-Invoicing Under GST: Applicability Threshold & Process' },
   description: 'Who must e-invoice under GST: the Rs 5 crore threshold, IRN/QR code process, the 30-day reporting rule for larger taxpayers, and penalties.',
   keywords: [
     'e-invoicing under GST', 'e-invoice applicability threshold', 'e-invoice Rs 5 crore limit',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The Rs 5 crore turnover threshold, IRN/QR code process, 30-day reporting rule, and penalties for e-invoicing non-compliance.',
     url: 'https://agrawalkhandelwal.com/blog/e-invoicing-gst-applicability-threshold',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'E-Invoicing Under GST: Applicability Threshold & Process',
     description: 'The Rs 5 crore turnover threshold, IRN/QR code process, and 30-day reporting rule for e-invoicing under GST.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function EInvoicingApplicabilityBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 15, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function EInvoicingApplicabilityBlog() {
                 <h2>Voluntary E-Invoicing Below the Threshold</h2>
                 <p>Businesses below Rs 5 crore turnover are not required to generate e-invoices, but voluntary enrolment has been permitted for certain notified taxpayer categories. Businesses growing quickly toward the threshold, or those transacting heavily with large enterprise customers who prefer IRN-backed invoices for their own reconciliation, sometimes build the e-invoicing workflow into their systems ahead of the mandatory cutover, so the transition does not disrupt billing when the threshold is eventually crossed.</p>
               </div>
+
+              <PostFooterLinks slug="e-invoicing-gst-applicability-threshold" />
 
               <PostCTA
             heading="Not sure if e-invoicing applies to your business yet?"

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Form 5471 vs 5472 vs 8858: Which Applies to You',
+  title: { absolute: 'Form 5471 vs 5472 vs 8858: Which Applies to You' },
   description: 'Forms 5471, 5472 and 8858 explained: which applies to US persons owning foreign entities vs foreign owners of US entities, and the penalties.',
   keywords: [
     'Form 5471 vs 5472', 'Form 8858 foreign disregarded entity',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Which IRS information return applies depending on entity type and ownership direction.',
     url: 'https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 5471 vs 5472 vs 8858',
     description: 'Which IRS foreign-ownership information return applies to your entity.',
+    images: OG_IMAGES,
   },
 }
 
@@ -57,7 +61,7 @@ export default function Form5471Form5472Form8858Blog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Form 5471 vs 5472 vs 8858: Which One Applies to Your Foreign-Owned US Entity</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published October 15, 2025</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published October 15, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -87,6 +91,8 @@ export default function Form5471Form5472Form8858Blog() {
               <h2>Penalties Make This Worth Getting Right</h2>
               <p>Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Given the increasing data-sharing between the IRS and FinCEN on beneficial ownership information, a founder should confirm which of these filings applies at the time the entity is set up, not discover it during an eventual audit.</p>
             </div>
+
+            <PostFooterLinks slug="form-5471-5472-8858-foreign-owned-us-entity" />
 
             <PostCTA
             heading="Not sure which IRS information return applies to your entity?"

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'SAFE Notes in India: Are They Legally Recognised?',
+  title: { absolute: 'SAFE Notes in India: Are They Legally Recognised?' },
   description: 'Why a US-style SAFE is not recognised under Indian company law or FEMA, and how founders adapt it into a compliant convertible note or CCPS.',
   keywords: [
     'SAFE note India legal', 'are SAFE notes valid in India', 'iSAFE India', 'SAFE vs convertible note India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Why a US-style SAFE is not a recognised instrument under Indian company law or FEMA, and how to structure a compliant alternative.',
     url: 'https://agrawalkhandelwal.com/blog/safe-notes-in-india-are-they-legally-recognised',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SAFE Notes in India: Are They Legally Recognised?',
     description: 'A US SAFE has no status under the Companies Act or FEMA. Here is what actually works for Indian startups.',
+    images: OG_IMAGES,
   },
 }
 
@@ -77,7 +81,7 @@ export default function SafeNotesIndiaBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>SAFE Notes in India: Are They Legally Recognised?</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 27, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 27, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
 
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
@@ -124,6 +128,8 @@ export default function SafeNotesIndiaBlog() {
                 </table>
               </div>
             </div>
+
+            <PostFooterLinks slug="safe-notes-in-india-are-they-legally-recognised" />
 
             <PostCTA
             heading="Been handed a SAFE template by a foreign investor?"

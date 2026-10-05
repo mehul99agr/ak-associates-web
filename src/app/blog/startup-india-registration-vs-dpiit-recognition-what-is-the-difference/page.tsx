@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Startup India Registration vs DPIIT Recognition: What Is the Difference' },
+  title: { absolute: 'Startup India Registration vs DPIIT Recognition: The Difference' },
   description: 'Startup India registration and DPIIT recognition are often treated as two steps, but they are one process. What actually happens, and why the confusion.',
   keywords: [
     'startup India registration vs DPIIT recognition', 'DPIIT recognition process', 'startup India portal',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Clearing up a common source of confusion: these are not two separate registrations, they are one process with two names.',
     url: 'https://agrawalkhandelwal.com/blog/startup-india-registration-vs-dpiit-recognition-what-is-the-difference',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup India Registration vs DPIIT Recognition: What Is the Difference',
     description: 'Why founders keep asking this question, and what is actually different (or not) between the two terms.',
+    images: OG_IMAGES,
   },
 }
 
@@ -80,7 +84,7 @@ export default function StartupIndiaVsDpiitBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 6, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -118,6 +122,8 @@ export default function StartupIndiaVsDpiitBlog() {
 
                 <p>For most founders, the practical takeaway is simple: stop treating "Startup India registration" and "DPIIT recognition" as two separate to-do items on a checklist. There is one process to complete, and the only outcome that matters is whether you hold an approved recognition certificate. If you are unsure where your application stands or want help preparing one correctly the first time, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup advisory services</Link> handle DPIIT applications end to end.</p>
               </div>
+
+              <PostFooterLinks slug="startup-india-registration-vs-dpiit-recognition-what-is-the-difference" />
 
               <PostCTA
             heading="Not sure where your DPIIT application stands?"

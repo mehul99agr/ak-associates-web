@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
-import { BOOKING_LINK, OFFICES } from '@/lib/constants'
+import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',
     description: 'Chartered Accountants in Sillod. GST, income tax, audit, company incorporation, and tax advisory. Located at Tilak Nagar, Sillod – 431112. Call now.',
     url: 'https://agrawalkhandelwal.com/ca-in-sillod',
+    images: OG_IMAGES,
   },
   other: {
     'geo.region': 'IN-MH',

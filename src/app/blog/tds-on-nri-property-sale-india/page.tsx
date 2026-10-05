@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'TDS on NRI Property Sale (FY 2026-27)',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Rate table, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation rules for NRI property sales in FY 2026-27.',
     url: 'https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TDS on NRI Property Sale (FY 2026-27)',
     description: 'Rate table, buyer TAN process, Form 27Q filing, Form 13 certificate, TDS refund claims, and repatriation rules for NRI property sales.',
+    images: OG_IMAGES,
   },
 }
 
@@ -122,7 +126,7 @@ export default function TDSNRIPropertyBlog() {
                 <span aria-hidden>•</span>
                 <span>Updated September 25, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -273,6 +277,8 @@ export default function TDSNRIPropertyBlog() {
                   <li>Forgetting to issue Form 16A; without it, the NRI cannot claim TDS credit in their ITR</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="tds-on-nri-property-sale-india" />
 
               <PostCTA
             heading="Need help with NRI property TDS or sale proceeds repatriation?"

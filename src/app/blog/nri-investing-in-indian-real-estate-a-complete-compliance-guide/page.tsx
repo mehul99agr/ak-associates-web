@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Investing in Indian Real Estate: A Complete Compliance Guide',
+  title: { absolute: 'NRI Investing in Indian Real Estate: A Complete Compliance Guide' },
   description: 'FEMA rules for NRIs buying property in India: what can and cannot be bought, funding via NRE/NRO/FCNR, and repatriating rental income.',
   keywords: [
     'NRI real estate investment India', 'NRI buying property India FEMA', 'NRI property purchase rules',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What NRIs can and cannot buy under FEMA, how to fund the purchase, and how to repatriate rental income.',
     url: 'https://agrawalkhandelwal.com/blog/nri-investing-in-indian-real-estate-a-complete-compliance-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Investing in Indian Real Estate: A Complete Compliance Guide',
     description: 'FEMA rules, funding channels, and rental repatriation for NRIs buying property in India.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function NriRealEstateComplianceBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 30, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -139,6 +143,8 @@ export default function NriRealEstateComplianceBlog() {
                 <h2>Getting the Compliance Right From the Start</h2>
                 <p>The purchase-side compliance for NRI real estate is largely front-loaded: get the funding channel and documentation right at the time of purchase, and the ongoing rental-income and eventual-sale compliance flows naturally from clean records. The two most common issues we see are payments routed outside proper banking channels (often at the seller's insistence) and rental income never being formally reported because it was assumed to be "small" or informal, both of which create real exposure when the property is eventually sold or the funds need to be repatriated in bulk.</p>
               </div>
+
+              <PostFooterLinks slug="nri-investing-in-indian-real-estate-a-complete-compliance-guide" />
 
               <PostCTA
             heading="Planning to buy or already own property in India as an NRI?"

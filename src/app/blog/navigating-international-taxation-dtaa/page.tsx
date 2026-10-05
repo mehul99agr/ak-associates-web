@@ -1,19 +1,20 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { BASE_URL, BOOKING_LINK, WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import { BASE_URL, BOOKING_LINK, WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 
 const SLUG = 'navigating-international-taxation-dtaa'
 const TITLE = 'International Taxation & DTAA Guide'
 const DATE = 'March 05, 2026'
 const ISO_DATE = '2026-03-05'
 const CATEGORY = 'International Tax'
-const META_DESCRIPTION = 'How to use India\'s DTAA treaties to reduce withholding tax, avoid permanent establishment risk, and repatriate profits without double taxation. Expert CA advisory.'
+const META_DESCRIPTION = 'How to use India\'s DTAA treaties to reduce withholding tax, avoid permanent establishment risk, and repatriate profits without double taxation.'
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: META_DESCRIPTION,
   keywords: ['DTAA India guide', 'double taxation avoidance India', 'withholding tax DTAA', 'tax residency certificate India', 'PE risk India', 'international tax CA India'],
   alternates: { canonical: `${BASE_URL}/blog/${SLUG}` },
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     description: META_DESCRIPTION,
     url: `${BASE_URL}/blog/${SLUG}`,
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -136,6 +138,8 @@ export default function NavigatingInternationalTaxationDtaaBlog() {
                 <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India; <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
               </ul>
             </div>
+
+            <PostFooterLinks slug="navigating-international-taxation-dtaa" />
 
             <PostCTA
               heading="Need help with this?"

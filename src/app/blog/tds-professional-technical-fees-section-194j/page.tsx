@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'TDS on Professional & Technical Fees: Section 194J Explained' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Rates, threshold, and compliance steps for Section 194J TDS on professional and technical fees, now consolidated under Section 393.',
     url: 'https://agrawalkhandelwal.com/blog/tds-professional-technical-fees-section-194j',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TDS on Professional & Technical Fees: Section 194J Explained',
     description: 'Rates, threshold, and compliance steps for Section 194J TDS on professional and technical fees, now consolidated under Section 393.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function Section194JBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 6, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -137,6 +141,8 @@ export default function Section194JBlog() {
 
                 <p>If your business regularly engages consultants, professionals, or technical service providers, a periodic TDS health check catches classification errors before they surface in a Section 143(1) intimation. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax compliance services</Link> cover TDS deduction reviews, return filing, and correction of past defaults.</p>
               </div>
+
+              <PostFooterLinks slug="tds-professional-technical-fees-section-194j" />
 
               <PostCTA
             heading="Need help with TDS compliance on professional or technical payments?"

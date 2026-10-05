@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Free Tax & Finance Calculators',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     title: 'Free Tax & Finance Tools | Agrawal Khandelwal & Associates LLP',
     description: 'Calculate income tax, capital gains, and SIP returns, all free tools from our expert CA team.',
     url: 'https://agrawalkhandelwal.com/tools',
+    images: OG_IMAGES,
   },
 }
 

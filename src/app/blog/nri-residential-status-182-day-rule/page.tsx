@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Residential Status Rules (FY 2026-27)',
+  title: { absolute: 'NRI Residential Status Rules (FY 2026-27)' },
   description: 'NRI, RNOR or Resident? The 182-day rule, the 120-day deemed resident rule, day counting for split years, and what each status means for your tax.',
   keywords: [
     'NRI residential status', '182 day rule NRI', 'NRI status India',
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     description: 'NRI, RNOR, or Resident? How to determine your status under Section 6, the day-counting rules, and what each means for taxation.',
     url: 'https://agrawalkhandelwal.com/blog/nri-residential-status-182-day-rule',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Residential Status: 182-Day Rule Explained',
     description: 'How to count days, determine NRI/RNOR/Resident status, and what each means for your Indian taxes.',
+    images: OG_IMAGES,
   },
 }
 
@@ -185,6 +189,8 @@ export default function NRIResidentialStatusBlog() {
                   <li><strong>Which ITR form to file:</strong> NRIs use ITR-2 or ITR-3. Residents with foreign assets need ITR-2 at minimum.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="nri-residential-status-182-day-rule" />
 
               <PostCTA
             heading="Not sure about your residential status?"

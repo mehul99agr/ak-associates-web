@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Annual Compliance Calendar for NGOs and Trusts in India' },
-  description: 'A deadline-by-deadline compliance calendar for Indian NGOs and trusts: Form 10B/10BB audit report, ITR-7 filing, FCRA FC-4 return, and the 12A/80G renewal cycle.',
+  description: 'A deadline-by-deadline calendar for Indian NGOs and trusts: Form 10B/10BB audit report, ITR-7 filing, FCRA FC-4 return, and the 12A/80G renewal cycle.',
   keywords: [
     'NGO compliance calendar India', 'trust annual compliance', 'Form 10B due date', 'Form 10BB due date',
     'ITR-7 due date trust', 'FCRA FC-4 due date', '12A 80G renewal', 'charitable trust compliance FY 2026-27',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Every recurring deadline an Indian NGO or trust needs to track: audit report, ITR-7, FCRA return, and registration renewals.',
     url: 'https://agrawalkhandelwal.com/blog/annual-compliance-calendar-for-ngos-and-trusts-in-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Annual Compliance Calendar for NGOs and Trusts in India',
     description: 'Every recurring deadline an Indian NGO or trust needs to track: audit report, ITR-7, FCRA return, and registration renewals.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function NgoTrustComplianceCalendarBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 11, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -134,6 +138,8 @@ export default function NgoTrustComplianceCalendarBlog() {
                 </ul>
                 <p>Trusts that also receive corporate CSR funding carry a further, separate set of obligations around CSR-1 registration and fund utilisation reporting, covered in our companion guide on <Link href="/blog/csr-fund-utilisation-compliance-for-receiving-trusts" style={{ color: 'var(--primary)', fontWeight: 600 }}>CSR fund utilisation compliance for receiving trusts</Link>. Between income tax exemption compliance, FCRA, and registration renewal, a trust's compliance calendar is genuinely denser than most private companies' - the cost of getting it wrong is not a fine but the exemption itself.</p>
               </div>
+
+              <PostFooterLinks slug="annual-compliance-calendar-for-ngos-and-trusts-in-india" />
 
               <PostCTA
             heading="Managing compliance for a trust or NGO?"

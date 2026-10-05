@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
-import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
+import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'Incorporate a Company in India (2026)',
+  title: { absolute: 'Incorporate a Company in India (2026)' },
   description: 'Company incorporation in India: Private Limited, LLP, or OPC. Step-by-step guide covering structure choice, process, costs, timeline, and documents required.',
   keywords: [
     'company incorporation India', 'how to incorporate company India',
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     description: 'Step-by-step guide to company registration in India, which structure to choose, what the process looks like, what it costs, and what mistakes to avoid.',
     url: 'https://agrawalkhandelwal.com/blog/company-incorporation-india-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -170,7 +172,7 @@ export default function CompanyIncorporationGuideBlog() {
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
               How to Incorporate a Company in India: Private Limited vs LLP vs OPC (2026 Guide)
             </h1>
-            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 08, 2026 • Updated September 29, 2026 • By Mehul Agrawal, CA</p>
+            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 08, 2026 • Updated September 29, 2026 • By <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link></p>
           </div>
 
           <div style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
@@ -398,6 +400,8 @@ export default function CompanyIncorporationGuideBlog() {
               </Link>
             </div>
           </div>
+                  <PostFooterLinks slug="company-incorporation-india-guide" />
+
                   <PostCTA
             heading="Planning to incorporate a company in India?"
             description="We handle name approval, SPICe+ filing, DSC/DIN and post-incorporation compliance."

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Startup Valuation Methods in India',
+  title: { absolute: 'Startup Valuation Methods in India' },
   description: 'DCF vs NAV vs comparables for Indian startups: when a valuation is legally required (ESOP, FEMA, buyback), who can issue it, and DCF without revenue.',
   keywords: [
     'startup valuation India', 'DCF valuation startup', 'NAV valuation startup India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'DCF, NAV, and comparables explained, when valuation is legally required, and who can issue a valid report.',
     url: 'https://agrawalkhandelwal.com/blog/startup-valuation-methods-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Valuation Methods in India',
     description: 'DCF, NAV, and comparables; when each is required and who can sign the report.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function StartupValuationBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Startup Valuation in India: Methods, Legal Triggers, and Eligible Valuers</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 24, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 24, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -115,6 +119,8 @@ export default function StartupValuationBlog() {
               <h2>A Practical Valuation File</h2>
               <p>Maintain a valuation file for each material transaction: the financial model, management assumptions, Board materials, cap table, historical financials, major contracts, customer metrics, valuation report, and final transaction documents. This prevents a recurring startup problem; a new funding round is negotiated at speed, but the company cannot later explain why the earlier round was priced as it was.</p>
             </div>
+
+            <PostFooterLinks slug="startup-valuation-methods-india" />
 
             <PostCTA
             heading="Need a valuation for ESOP, FEMA, or a funding round?"

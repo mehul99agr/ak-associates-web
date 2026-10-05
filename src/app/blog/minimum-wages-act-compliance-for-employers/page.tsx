@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Minimum Wages Act Compliance for Employers' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The Minimum Wages Act 1948 has been folded into the Code on Wages 2019. What employers need to track now, including the floor wage and state rates.',
     url: 'https://agrawalkhandelwal.com/blog/minimum-wages-act-compliance-for-employers',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Minimum Wages Act Compliance for Employers',
     description: 'What changed when the Minimum Wages Act 1948 was subsumed into the Code on Wages 2019, and how employers stay compliant.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function MinimumWagesActBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 15, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -129,6 +133,8 @@ export default function MinimumWagesActBlog() {
                 <h2>Practical Compliance Steps</h2>
                 <p>For most employers, the shift to the Code on Wages is an occasion to formalise what may have been an informal or state-specific process: map every work location and job category to its current applicable minimum wage notification, build a calendar for DA revision cycles, standardise wage registers and payslip formats to match the Rules, and assign clear ownership (HR or payroll, working with a compliance advisor) for tracking new state and central notifications as they are issued. This sits alongside the other components of a broader <Link href="/blog/payroll-compliance-checklist-for-growing-startups-in-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>payroll compliance checklist</Link>, and alongside statutory obligations like <Link href="/blog/gratuity-payment-rules-eligibility-and-tax-exemption-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>gratuity</Link> that also depend on accurate, well-documented wage records.</p>
               </div>
+
+              <PostFooterLinks slug="minimum-wages-act-compliance-for-employers" />
 
               <PostCTA
             heading="Not sure your payroll is current on wage compliance?"

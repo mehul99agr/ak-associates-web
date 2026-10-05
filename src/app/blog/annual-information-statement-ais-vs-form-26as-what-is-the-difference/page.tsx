@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Annual Information Statement (AIS) vs Form 26AS: What Is the Difference' },
+  title: { absolute: 'Annual Information Statement (AIS) vs Form 26AS: Key Differences' },
   description: 'AIS, TIS, and Form 26AS explained: what each one shows, how they relate, and how to reconcile all three before filing your ITR.',
   keywords: [
     'AIS vs Form 26AS', 'annual information statement', 'Form 26AS', 'TIS taxpayer information summary',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'How AIS, TIS, and Form 26AS differ, which one is legally authoritative, and how to reconcile them before filing your ITR.',
     url: 'https://agrawalkhandelwal.com/blog/annual-information-statement-ais-vs-form-26as-what-is-the-difference',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Annual Information Statement (AIS) vs Form 26AS: What Is the Difference',
     description: 'AIS, TIS, and Form 26AS explained, and how to reconcile them before filing your ITR.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function AisVsForm26asBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 24, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -126,6 +130,8 @@ export default function AisVsForm26asBlog() {
                 </ol>
                 <p>Treating AIS and Form 26AS reconciliation as a routine step before filing, not a reactive step after a notice, is one of the simplest ways to keep your return clean. It takes a fraction of the time a scrutiny response does, and it catches most mismatches while they are still easy to fix.</p>
               </div>
+
+              <PostFooterLinks slug="annual-information-statement-ais-vs-form-26as-what-is-the-difference" />
 
               <PostCTA
             heading="Want your AIS and 26AS reconciled before you file?"

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Perquisites & Fringe Benefits Taxation for Employees',
+  title: { absolute: 'Perquisites & Fringe Benefits Taxation for Employees' },
   description: 'How rent-free housing, company cars and other perquisites are valued and taxed for employees, including revised Rule 3/Rule 15 values from April 2026.',
   keywords: [
     'perquisites taxation India', 'fringe benefits tax employees', 'rent free accommodation perquisite value',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'How rent-free accommodation, company cars, and other perquisites are valued and taxed, including the revised April 2026 valuation figures.',
     url: 'https://agrawalkhandelwal.com/blog/perquisites-and-fringe-benefits-taxation-for-employees',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Perquisites & Fringe Benefits Taxation for Employees',
     description: 'Rent-free accommodation, company car and other perquisite valuation rules employees and employers should know.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function PerquisitesBlog() {
             <span className="section-badge">Payroll &amp; Labour Compliance</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Perquisites &amp; Fringe Benefits Taxation for Employees</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 16, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -125,6 +129,8 @@ export default function PerquisitesBlog() {
               <h2>Employer Compliance: Getting Valuation Into Form 16 and TDS</h2>
               <p>The employer carries the primary compliance burden here. Perquisite values must be computed correctly and folded into monthly TDS under Section 192, then reflected accurately in Form 16 at year-end. Getting this wrong in either direction creates real exposure: under-valuing perquisites understates TDS and creates a shortfall the employee (and potentially the employer, for TDS default) has to make good with interest; over-valuing unnecessarily inflates an employee&apos;s tax outgo. With the April 2026 valuation changes moving accommodation and car figures in opposite directions, payroll teams should not simply carry forward last year&apos;s perquisite computation templates without updating the underlying rates.</p>
             </div>
+
+            <PostFooterLinks slug="perquisites-and-fringe-benefits-taxation-for-employees" />
 
             <PostCTA
             heading="Getting perquisite valuation and TDS right for FY 2026-27?"

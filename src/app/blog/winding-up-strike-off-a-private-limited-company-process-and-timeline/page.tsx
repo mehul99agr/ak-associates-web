@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Winding Up / Strike Off a Private Limited Company: Process & Timeline' },
+  title: { absolute: 'Winding Up / Strike Off a Private Limited Company: Process' },
   description: 'Closing a private limited company by strike off (Form STK-2): eligibility, documents, filing steps and realistic timelines.',
   keywords: [
     'strike off private limited company', 'form stk-2', 'fast track exit company closure',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Eligibility, documents, and timeline for closing a private limited company via Fast Track Exit under Form STK-2.',
     url: 'https://agrawalkhandelwal.com/blog/winding-up-strike-off-a-private-limited-company-process-and-timeline',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Winding Up / Strike Off a Private Limited Company: Process & Timeline',
     description: 'How Fast Track Exit under Form STK-2 works, who is eligible, and how long company closure actually takes.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function WindingUpStrikeOffBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 30, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -148,6 +152,8 @@ export default function WindingUpStrikeOffBlog() {
 
                 <p>Strike off is the right exit for a company that is genuinely inactive with nothing left to wind down; a company with assets to distribute, ongoing disputes, or creditors to settle needs a formal winding-up or liquidation process instead, which is a materially different (and longer) procedure under the Companies Act and the Insolvency and Bankruptcy Code. Before filing STK-2, it is worth confirming which route actually fits the company&apos;s situation rather than assuming the faster route applies.</p>
               </div>
+
+              <PostFooterLinks slug="winding-up-strike-off-a-private-limited-company-process-and-timeline" />
 
               <PostCTA
             heading="Ready to close a dormant company?"

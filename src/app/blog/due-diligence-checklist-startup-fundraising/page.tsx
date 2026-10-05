@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Due Diligence Checklist for Fundraising',
+  title: { absolute: 'Due Diligence Checklist for Fundraising' },
   description: 'What investors check in startup due diligence: corporate records, cap table, IP, contracts, tax and FEMA history, plus a data room timeline.',
   keywords: [
     'startup due diligence checklist India', 'fundraising data room checklist',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Corporate records, cap table reconciliation, IP ownership, and a data room timeline before investors ask.',
     url: 'https://agrawalkhandelwal.com/blog/due-diligence-checklist-startup-fundraising',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Fundraising Due Diligence Checklist',
     description: 'What investors actually check, and how to prepare your data room in advance.',
+    images: OG_IMAGES,
   },
 }
 
@@ -63,7 +67,7 @@ export default function DueDiligenceChecklistBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Startup Fundraising Due Diligence Checklist: Build a Data Room Before Investors Ask</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 4, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 4, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -123,6 +127,8 @@ export default function DueDiligenceChecklistBlog() {
               </ul>
               <p>The data room should have a single owner; usually the finance lead, founder, or transaction coordinator. Multiple people can upload documents, but one person must control versioning and answer tracking.</p>
             </div>
+
+            <PostFooterLinks slug="due-diligence-checklist-startup-fundraising" />
 
             <PostCTA
             heading="Preparing for a funding round?"

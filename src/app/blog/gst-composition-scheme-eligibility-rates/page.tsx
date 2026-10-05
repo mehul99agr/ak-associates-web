@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'GST Composition Scheme: Eligibility, Rates & When to Opt In' },
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Turnover limits, flat tax rates, filing requirements, and a practical framework for deciding whether the composition scheme suits your business.',
     url: 'https://agrawalkhandelwal.com/blog/gst-composition-scheme-eligibility-rates',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST Composition Scheme: Eligibility, Rates & When to Opt In',
     description: 'Turnover limits, flat tax rates, filing requirements, and a practical framework for deciding whether the composition scheme suits your business.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function GstCompositionSchemeBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 17, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -161,6 +165,8 @@ export default function GstCompositionSchemeBlog() {
                 <h2>Switching In or Out</h2>
                 <p>A business can opt into the composition scheme at the start of a financial year by filing Form CMP-02 before the year begins, or immediately on new registration. If turnover crosses the eligible limit during the year, or the business starts making an inter-state supply, it must exit the scheme and switch to regular registration from that point, filing Form CMP-04 to intimate the withdrawal. Switching schemes mid-year has GST implications on stock in hand (input tax credit on closing stock becomes available on exit), so plan the transition with your CA rather than reacting after the threshold is crossed.</p>
               </div>
+
+              <PostFooterLinks slug="gst-composition-scheme-eligibility-rates" />
 
               <PostCTA
             heading="Not sure if composition suits your business?"

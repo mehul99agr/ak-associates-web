@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Corporate Social Responsibility (CSR) Compliance & Applicability' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Which companies must comply with CSR under Section 135, the 2% spend rule, and when a CSR committee is required.',
     url: 'https://agrawalkhandelwal.com/blog/corporate-social-responsibility-csr-compliance-and-applicability',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Corporate Social Responsibility (CSR) Compliance & Applicability',
     description: 'Section 135 CSR thresholds, the 2% spend rule, CSR committee requirements, and penalties for non-compliance.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function CsrComplianceApplicabilityBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 2, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -138,6 +142,8 @@ export default function CsrComplianceApplicabilityBlog() {
 
                 <p>CSR compliance sits alongside the company&apos;s other annual obligations, and the spend, committee, and reporting requirements need to be tracked on the same calendar as the statutory audit and <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual ROC filing</Link>, since the CSR report forms part of the Board&apos;s Report filed with those returns.</p>
               </div>
+
+              <PostFooterLinks slug="corporate-social-responsibility-csr-compliance-and-applicability" />
 
               <PostCTA
             heading="Not sure if your company is within CSR applicability this year?"

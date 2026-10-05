@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Faceless Appeal Scheme: How Income Tax Appeals Work Now' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'How the National Faceless Appeal Centre allocates and decides income tax appeals, which cases are excluded, and how to respond effectively.',
     url: 'https://agrawalkhandelwal.com/blog/faceless-appeal-scheme-how-income-tax-appeals-work-now',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Faceless Appeal Scheme: How Income Tax Appeals Work Now',
     description: 'How the National Faceless Appeal Centre allocates and decides income tax appeals, and which cases are excluded from the scheme.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function FacelessAppealSchemeBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 21, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function FacelessAppealSchemeBlog() {
 
                 <p>Whether you are still deciding whether an order is worth appealing or you already have a faceless appeal notice in hand and are unsure how to respond, involving a CA who has handled faceless proceedings before materially improves how the written record reads to the Appeal Unit. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include drafting and managing faceless appeal submissions end to end.</p>
               </div>
+
+              <PostFooterLinks slug="faceless-appeal-scheme-how-income-tax-appeals-work-now" />
 
               <PostCTA
             heading="Handling a faceless appeal notice?"

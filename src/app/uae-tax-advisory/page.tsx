@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'UAE Corporate Tax Consultant India | India-UAE DTAA | Agrawal Khandelwal & Associates LLP',
     description: 'Certified UAE CT advisory for Indian businesses. 9% CT compliance, India-UAE DTAA claims, Free Zone structuring, and repatriation planning by a UAE CT-certified CA.',
     url: 'https://agrawalkhandelwal.com/uae-tax-advisory',
+    images: OG_IMAGES,
   },
 }
 

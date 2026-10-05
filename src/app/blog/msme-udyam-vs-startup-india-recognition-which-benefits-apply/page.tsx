@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'MSME Udyam vs Startup India Recognition: Which Benefits Apply' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Two different registration schemes, two different benefit sets, and how to tell which one your business actually needs.',
     url: 'https://agrawalkhandelwal.com/blog/msme-udyam-vs-startup-india-recognition-which-benefits-apply',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MSME Udyam vs Startup India Recognition: Which Benefits Apply',
     description: 'Udyam and DPIIT recognition solve different problems. Here is what each one actually unlocks.',
+    images: OG_IMAGES,
   },
 }
 
@@ -80,7 +84,7 @@ export default function MsmeUdyamVsStartupIndiaBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 7, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -129,6 +133,8 @@ export default function MsmeUdyamVsStartupIndiaBlog() {
 
                 <p>Sequencing these registrations correctly, alongside incorporation and GST registration, is a common source of avoidable delay for new businesses. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup advisory services</Link> help map out which registrations actually apply to a given business before filing anything.</p>
               </div>
+
+              <PostFooterLinks slug="msme-udyam-vs-startup-india-recognition-which-benefits-apply" />
 
               <PostCTA
             heading="Not sure whether you need Udyam, DPIIT, or both?"

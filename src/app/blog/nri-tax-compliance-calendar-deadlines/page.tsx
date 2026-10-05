@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Tax Compliance Calendar (FY 2026-27)',
+  title: { absolute: 'NRI Tax Compliance Calendar (FY 2026-27)' },
   description: 'Every tax deadline NRIs need to know for FY 2026-27: advance tax dates, ITR deadline, TDS return filing (Form 27Q), FLA return, and Form 15CA/15CB timelines.',
   keywords: ['NRI tax deadline', 'NRI ITR deadline', 'NRI compliance calendar', 'advance tax NRI', 'Form 27Q deadline', 'NRI tax dates India', 'NRI FLA return deadline'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines' },
-  openGraph: { title: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Every deadline: advance tax, ITR, TDS returns, FLA, Form 15CA/15CB.', url: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines', type: 'article' },
+  openGraph: { title: 'NRI Tax Compliance Calendar (FY 2026-27)', description: 'Every deadline: advance tax, ITR, TDS returns, FLA, Form 15CA/15CB.', url: 'https://agrawalkhandelwal.com/blog/nri-tax-compliance-calendar-deadlines', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('NRI Tax Compliance Calendar (FY 2026-27)', 'nri-tax-compliance-calendar-deadlines')
@@ -38,7 +40,7 @@ export default function NRIComplianceCalendarBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>NRI Tax Compliance Calendar: Every Deadline You Need (FY 2026-27)</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 14, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 14, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <p>Missing a tax deadline as an NRI does not just mean a late fee. It can mean losing the right to carry forward losses, paying interest on tax you did not know you owed, or having your <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriation held up</Link> because Form 145/146 was not filed in time. Here is every deadline that matters for NRIs in FY 2026-27.</p>
@@ -86,6 +88,8 @@ export default function NRIComplianceCalendarBlog() {
                 <li><strong><Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>Residential status</Link></strong> is determined at year-end (March 31) based on total days in India during the year. Track your days throughout the year, not just at filing time.</li>
               </ul>
             </div>
+
+            <PostFooterLinks slug="nri-tax-compliance-calendar-deadlines" />
 
             <PostCTA
             heading="Want us to manage your NRI tax compliance?"

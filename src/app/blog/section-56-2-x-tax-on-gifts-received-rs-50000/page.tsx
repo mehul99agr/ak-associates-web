@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Section 56(2)(x): Tax on Gifts Received Above Rs 50,000',
+  title: { absolute: 'Section 56(2)(x): Tax on Gifts Received Above Rs 50,000' },
   description: 'Section 56(2)(x) (now Section 92): the Rs 50,000 gift threshold, the relatives exemption list, marriage and occasion exemptions, and gifted property tax.',
   keywords: [
     'section 56(2)(x) income tax act', 'tax on gifts received india', 'gift tax exemption relatives',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The Rs 50,000 threshold, the full relative-exemption list, marriage and other specific-occasion exemptions, and how gifted property is valued and taxed for resident taxpayers.',
     url: 'https://agrawalkhandelwal.com/blog/section-56-2-x-tax-on-gifts-received-rs-50000',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 56(2)(x): Tax on Gifts Received Above Rs 50,000',
     description: 'The relative-exemption list, occasion-based exemptions, and property valuation rules for gift taxation in India.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function GiftTaxSection56Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 29, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -176,6 +180,8 @@ export default function GiftTaxSection56Blog() {
 
                 <p>If you have received a significant gift this year, are planning to gift property or shares to a family member, or are unsure whether a specific transaction falls within an exemption, our team can review the facts and confirm the tax position before you file. For broader estate and succession planning questions, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>advisory services</Link> page has more on how we can help.</p>
               </div>
+
+              <PostFooterLinks slug="section-56-2-x-tax-on-gifts-received-rs-50000" />
 
               <PostCTA
             heading="Received or planning to give a large gift?"

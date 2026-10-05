@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Section 80D: Health Insurance Premium Deduction Explained',
+  title: { absolute: 'Section 80D: Health Insurance Premium Deduction Explained' },
   description: 'Section 80D limits for FY 2026-27: Rs 25,000 for self and family, Rs 50,000 for seniors, up to Rs 1 lakh combined, check-up sub-limit, old regime only.',
   keywords: [
     'section 80D deduction limit', 'health insurance premium deduction', '80D senior citizen limit',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Deduction limits for self, family, and parents, the preventive check-up sub-limit, and why 80D only works under the old tax regime.',
     url: 'https://agrawalkhandelwal.com/blog/section-80d-health-insurance-deduction-explained',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 80D Deduction Explained',
     description: 'Rs 25,000/Rs 50,000 limits, parents vs self and family, preventive check-ups, and old vs new regime.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function Section80DBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Section 80D: Health Insurance Premium Deduction Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 23, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 23, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -120,6 +124,8 @@ export default function Section80DBlog() {
               </ul>
               <p>If you are weighing the old versus new regime for the year, it helps to lay out all your eligible deductions, including 80D, together before deciding; our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> can help you run that comparison and make sure premium payment records are structured to survive scrutiny.</p>
             </div>
+
+            <PostFooterLinks slug="section-80d-health-insurance-deduction-explained" />
 
             <PostCTA
             heading="Not sure which tax regime saves you more?"

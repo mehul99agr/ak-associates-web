@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Form 13 for NRIs: Lower TDS Certificate on Property Sale' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Apply for Form 13 (now Form 128) to cut TDS from 30% to your actual tax rate before selling property as an NRI. Step-by-step TRACES process, documents, and timeline.',
     url: 'https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 13 Lower TDS Certificate (FY 2026-27)',
     description: 'Cut TDS from 30% to actual tax rate before selling property as an NRI. TRACES process, documents, and timeline.',
+    images: OG_IMAGES,
   },
 }
 
@@ -143,7 +147,7 @@ export default function Form13NRIBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 11, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -195,6 +199,8 @@ export default function Form13NRIBlog() {
 
                 <p>If the certificate isn&apos;t obtained in time and TDS is deducted at the full statutory rate, the NRI can still recover the excess; see our guide on <Link href="/blog/nri-tds-refund-property-sale" style={{ color: 'var(--primary)', fontWeight: 600 }}>claiming a TDS refund on property sale</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="form-13-lower-deduction-certificate-nri" />
 
               <PostCTA
             heading="Need help applying for a Form 13 certificate?"

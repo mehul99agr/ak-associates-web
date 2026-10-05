@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
-import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
+import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'New Income Tax Act 2025: Simplified Guide',
+  title: { absolute: 'New Income Tax Act 2025: Simplified Guide' },
   description: 'New Income Tax Act 2025: tax regime convergence, simplified computational rules, AI-driven assessments, and impact on startups, MNCs, and individual taxpayers.',
   keywords: [
     'new income tax act 2025 India', 'income tax act 2025 changes',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'How the New Income Tax Act 2025 changes computation rules, introduces AI-driven assessments, and affects startups, MNCs, and individuals.',
     url: 'https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -126,6 +128,8 @@ export default function NewTaxActBlog() {
               Book a Consultation
             </a>
           </div>
+                  <PostFooterLinks slug="new-income-tax-act-rules-2025" />
+
                   <PostCTA
             heading="Not sure how the new Income Tax Act affects you?"
             description="Talk to a CA about what changes for your filings and tax planning."

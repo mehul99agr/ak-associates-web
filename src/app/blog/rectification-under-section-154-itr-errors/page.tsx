@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Rectification Under Section 154: Fixing Errors in Your ITR',
-  description: 'How to file a rectification request for a mistake in your processed ITR: what qualifies, the online process, timelines, and how it differs from a revised return.',
+  title: { absolute: 'Rectification Under Section 154: Fixing Errors in Your ITR' },
+  description: 'How to file a rectification request for an error in your processed ITR: what qualifies, the online process, timelines, and how it differs from a revised return.',
   keywords: [
     'rectification under section 154', 'section 154 rectification', 'how to file rectification request',
     'ITR rectification process', 'mistake apparent from record', 'rectification vs revised return',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What qualifies for rectification, the online filing process, timelines, and how it differs from a revised return.',
     url: 'https://agrawalkhandelwal.com/blog/rectification-under-section-154-itr-errors',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Rectification Under Section 154: Fixing ITR Errors',
     description: 'What qualifies, how to file, and timelines for correcting a mistake in a processed income tax return.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function RectificationSection154Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 31, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -138,6 +142,8 @@ export default function RectificationSection154Blog() {
                 <p>There is a statutory window for filing a rectification request, generally measured in years from the end of the financial year in which the order was passed, so this is not an urgent same-week deadline the way some notices are. That said, the practical advice is the opposite of relying on the long window: file as soon as the error is spotted. Supporting records like TDS certificates and Form 26AS extracts are easiest to pull together while the transaction is still fresh, and an unresolved credit mismatch can otherwise trigger follow-up notices or affect a pending refund in the meantime. Processing time for the rectification itself varies by case complexity and departmental workload; there is no single guaranteed turnaround, so checking status periodically on the portal is the practical approach rather than assuming a fixed number of weeks.</p>
                 <p>If a rectification request is rejected or you disagree with the outcome, the next step is typically an appeal or a fresh representation with more detailed supporting evidence, at which point professional help in framing the argument correctly becomes valuable.</p>
               </div>
+
+              <PostFooterLinks slug="rectification-under-section-154-itr-errors" />
 
               <PostCTA
             heading="Spotted an error in your intimation?"

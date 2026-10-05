@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Taxation of Charitable Trusts: Exemptions & Compliance' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The Section 11/12 exemption framework, the 85% application requirement, accumulation rules, and anonymous donation taxation for charitable trusts.',
     url: 'https://agrawalkhandelwal.com/blog/taxation-of-charitable-trusts-exemptions-and-compliance',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Taxation of Charitable Trusts: Exemptions & Compliance',
     description: 'How the 85% application rule, accumulation, and anonymous donation taxation work for a registered charitable trust.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function TaxationOfCharitableTrustsBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 11, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function TaxationOfCharitableTrustsBlog() {
 
                 <p>The exemption framework for charitable trusts rewards discipline more than intent: applying 85% (or properly accumulating the rest with Form 10 filed on time), keeping donor records so genuine donations don't get swept into the anonymous-donation tax, and renewing 12AB registration before it lapses are the three areas where otherwise well-run trusts most often trip up. None of them require complex tax planning, just a compliance calendar that treats these deadlines as seriously as any other statutory filing.</p>
               </div>
+
+              <PostFooterLinks slug="taxation-of-charitable-trusts-exemptions-and-compliance" />
 
               <PostCTA
             heading="Need help with trust taxation or 12AB renewal?"

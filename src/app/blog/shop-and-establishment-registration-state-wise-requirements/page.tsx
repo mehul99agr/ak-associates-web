@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Shop and Establishment Registration: State-Wise Requirements' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Who needs it, the Maharashtra Gumasta process in detail, and how registration rules differ across states.',
     url: 'https://agrawalkhandelwal.com/blog/shop-and-establishment-registration-state-wise-requirements',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Shop and Establishment Registration: State-Wise Requirements',
     description: 'Who needs it, the Maharashtra Gumasta process in detail, and how registration rules differ across states.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function ShopAndEstablishmentRegistrationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 4, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function ShopAndEstablishmentRegistrationBlog() {
                 <h2>Shop Act Registration Alongside Other Compliance</h2>
                 <p>Shop and Establishment registration is one item on a longer checklist most new businesses need to work through. It sits alongside, not instead of, <Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration</Link> where turnover or nature of supply requires it, and <Link href="/blog/professional-tax-registration-and-compliance-in-maharashtra" style={{ color: 'var(--primary)', fontWeight: 600 }}>Professional Tax registration (PTEC/PTRC)</Link> for businesses and employers in Maharashtra. Newly incorporated companies should also check our <Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>post-incorporation checklist for the first 30 days</Link>, which places Shop Act registration in the broader sequence of early compliance steps.</p>
               </div>
+
+              <PostFooterLinks slug="shop-and-establishment-registration-state-wise-requirements" />
 
               <PostCTA
             heading="Setting up a new shop or office in Nashik or Sillod?"

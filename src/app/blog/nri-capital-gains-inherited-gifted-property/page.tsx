@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Capital Gains on Inherited Property',
+  title: { absolute: 'NRI Capital Gains on Inherited Property' },
   description: 'Capital gains for NRIs selling inherited or gifted property in India: cost and holding period carryover, TDS, and Form 13 for FY 2026-27.',
   keywords: [
     'NRI capital gains inherited property', 'NRI sell gifted property India', 'inherited property tax NRI',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Cost and holding period carryover rules, TDS implications, and Form 13 relevance for NRIs selling inherited or gifted property in India.',
     url: 'https://agrawalkhandelwal.com/blog/nri-capital-gains-inherited-gifted-property',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Capital Gains on Inherited Property',
     description: 'Cost and holding period carryover rules, TDS implications, and Form 13 relevance for inherited or gifted property.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function NRIInheritedGiftedPropertyBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 11, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -122,6 +126,8 @@ export default function NRIInheritedGiftedPropertyBlog() {
 
                 <p>Once the computation is ready, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to see the statutory TDS at the current sale value, and compare it against the actual expected liability.</p>
               </div>
+
+              <PostFooterLinks slug="nri-capital-gains-inherited-gifted-property" />
 
               <PostCTA
             heading="Selling inherited or gifted property in India?"

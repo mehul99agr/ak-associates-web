@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Cap Table Management: Common Mistakes Founders Make',
+  title: { absolute: 'Cap Table Management: Common Mistakes Founders Make' },
   description: 'Why startup cap tables go wrong: stale updates after rounds, fully-diluted vs issued confusion, dilution modelling errors, and ROC reconciliation.',
   keywords: [
     'cap table management startup', 'cap table mistakes founders', 'fully diluted cap table',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The recurring cap table errors that cost founders equity, delay fundraising, and create ROC mismatches.',
     url: 'https://agrawalkhandelwal.com/blog/cap-table-management-common-mistakes-founders-make',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Cap Table Management: Common Mistakes Founders Make',
     description: 'A practical look at where Indian startup cap tables go wrong, and how to keep yours clean.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function CapTableManagementBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 7, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -124,6 +128,8 @@ export default function CapTableManagementBlog() {
                 <h2>Getting Cap Table Hygiene Right</h2>
                 <p>None of this requires sophisticated tooling or legal complexity; it requires treating the cap table as a live legal record rather than a static reference spreadsheet. Update it the same day any ownership-affecting event is approved, always distinguish fully-diluted from issued-basis figures when discussing ownership percentages, model dilution against the real cap table before agreeing to term sheet numbers, and periodically reconcile the spreadsheet against actual ROC filings and share certificates rather than waiting for an investor&apos;s diligence team to find the gap first. This discipline pairs naturally with the broader compliance rhythm covered in our <Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup compliance calendar</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="cap-table-management-common-mistakes-founders-make" />
 
               <PostCTA
             heading="Need help cleaning up or maintaining your cap table?"

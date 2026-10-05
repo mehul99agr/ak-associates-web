@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Payroll Compliance Checklist for Growing Startups in India' },
@@ -21,11 +23,13 @@ export const metadata: Metadata = {
     description: 'A practical payroll compliance checklist for growing Indian startups. Learn about EPF and ESI triggers, TDS on salary, professional tax, and labour laws.',
     url: 'https://agrawalkhandelwal.com/blog/payroll-compliance-checklist-for-growing-startups-in-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Payroll Compliance Checklist for Growing Startups in India',
     description: 'A practical payroll compliance checklist for growing Indian startups. Learn about EPF and ESI triggers, TDS on salary, professional tax, and labour laws.',
+    images: OG_IMAGES,
   },
 }
 
@@ -88,7 +92,7 @@ export default function PayrollComplianceChecklistForGrowingStartupsInIndiaBlog(
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 13, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -201,6 +205,8 @@ export default function PayrollComplianceChecklistForGrowingStartupsInIndiaBlog(
 
                 <p>Need help applying this to your specific situation? Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>advisory services</Link> cover compliance planning for growing businesses.</p>
               </div>
+
+              <PostFooterLinks slug="payroll-compliance-checklist-for-growing-startups-in-india" />
 
               <PostCTA
             heading="Have a Question on This?"

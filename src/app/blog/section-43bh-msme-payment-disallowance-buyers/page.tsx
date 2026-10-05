@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Section 43B(h): MSME Payment Disallowance Rules for Buyers',
+  title: { absolute: 'Section 43B(h): MSME Payment Disallowance Rules for Buyers' },
   description: 'Section 43B(h): the 45-day and 15-day MSME payment rules, which suppliers count as micro or small, and how unpaid year-end dues get disallowed.',
   keywords: [
     'section 43B(h) MSME', 'MSME 45 day payment rule', 'section 43B(h) disallowance',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The 45-day/15-day MSME payment deadline, which suppliers it covers, and how unpaid dues get disallowed for the buyer at year-end.',
     url: 'https://agrawalkhandelwal.com/blog/section-43bh-msme-payment-disallowance-buyers',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 43B(h): MSME Payment Disallowance Rules',
     description: 'Pay registered micro/small suppliers within 45 (or 15) days, or lose the deduction this year. A buyer\'s guide.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function Section43BhBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 11, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -129,6 +133,8 @@ export default function Section43BhBlog() {
                   <li><strong>Remember the separate MSME Act interest exposure:</strong> Beyond the tax disallowance, delayed payment can also trigger compound interest liability to the supplier under the MSMED Act itself, an independent consequence worth tracking alongside the tax position.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="section-43bh-msme-payment-disallowance-buyers" />
 
               <PostCTA
             heading="Need help reviewing your MSME payment exposure?"

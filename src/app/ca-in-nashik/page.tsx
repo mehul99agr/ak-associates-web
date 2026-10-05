@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
-import { BOOKING_LINK, OFFICES } from '@/lib/constants'
+import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: 'Best CA in Nashik | Chartered Accountant Nashik | Agrawal Khandelwal & Associates LLP',
     description: 'Top-rated Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Mumbai Naka, Nashik. Call now.',
     url: 'https://agrawalkhandelwal.com/ca-in-nashik',
+    images: OG_IMAGES,
   },
   other: {
     'geo.region': 'IN-MH',

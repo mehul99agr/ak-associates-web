@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'FSSAI Registration for Food Businesses: When Required' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Basic Registration vs State License vs Central License, current turnover thresholds, and which tier applies to your food business.',
     url: 'https://agrawalkhandelwal.com/blog/fssai-registration-for-food-businesses-when-required',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FSSAI Registration for Food Businesses: When Required',
     description: 'Basic Registration vs State License vs Central License, current turnover thresholds, and which tier applies to your food business.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function FssaiRegistrationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function FssaiRegistrationBlog() {
                 <h2>Upgrading Between Tiers</h2>
                 <p>FSSAI registration and licensing are not one-time events tied to when the business started; they track current turnover. A food business that begins on Basic Registration and later crosses the applicable ceiling must apply for a State License before continuing to operate at the higher turnover level, not retroactively after the fact. Businesses scaling fast, particularly cloud kitchens and packaged-food brands going from a single outlet to multi-city distribution, should build an FSSAI tier review into their annual compliance check rather than treating it as a set-and-forget registration, alongside other annual filings covered in our <Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration guide for startups</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="fssai-registration-for-food-businesses-when-required" />
 
               <PostCTA
             heading="Setting up or scaling a food business?"

@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Essential Compliance for Indian Startups',
+  title: { absolute: 'Essential Compliance for Indian Startups' },
   description: 'Compliance checklist for Indian startups: AOC-4, MGT-7, DIR-3 KYC, GST, TDS, advance tax, FEMA and ESOP compliance. Avoid penalties, stay DPIIT-eligible.',
   keywords: ['startup compliance India', 'MCA filing startup', 'GST compliance startup India', 'FEMA FC-GPR reporting', 'DPIIT compliance India', 'startup regulatory checklist'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups' },
-  openGraph: { title: 'Essential Compliance for Indian Startups', description: 'MCA, GST, TDS, advance tax, and FEMA reporting checklist for Indian startups.', url: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups', type: 'article' },
+  openGraph: { title: 'Essential Compliance for Indian Startups', description: 'MCA, GST, TDS, advance tax, and FEMA reporting checklist for Indian startups.', url: 'https://agrawalkhandelwal.com/blog/essential-compliance-indian-startups', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('Essential Compliance for Indian Startups', 'essential-compliance-indian-startups')
@@ -38,7 +40,7 @@ export default function EssentialComplianceBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Essential Compliance for Indian Startups: The Checklist That Prevents Expensive Surprises</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published March 12, 2026</span><span aria-hidden>&bull;</span><span>Updated August 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span>
+              <span>Published March 12, 2026</span><span aria-hidden>&bull;</span><span>Updated August 16, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -107,6 +109,8 @@ export default function EssentialComplianceBlog() {
               </ul>
               <p>Building a compliance calendar from day one (and assigning ownership of each deadline) costs far less than the penalties and advisory fees of cleaning up a backlog before fundraising.</p>
             </div>
+
+            <PostFooterLinks slug="essential-compliance-indian-startups" />
 
             <PostCTA
             heading="Need help staying compliant?"

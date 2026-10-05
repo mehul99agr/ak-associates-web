@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Who Needs a Tax Audit: Business vs Professional Thresholds',
+  title: { absolute: 'Who Needs a Tax Audit: Business vs Professional Thresholds' },
   description: 'Checklist to decide if your business or profession needs a tax audit this year, including the presumptive taxation route under 44AD, 44ADA and 44AE.',
   keywords: [
     'who needs tax audit', 'do I need a tax audit', 'tax audit checklist India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'A practical checklist for deciding whether you need a tax audit this year, and how presumptive taxation can help you avoid one.',
     url: 'https://agrawalkhandelwal.com/blog/who-needs-tax-audit-business-professional-thresholds',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Who Needs a Tax Audit: A Practical Checklist',
     description: 'Business vs professional thresholds, the presumptive taxation escape valve, and a plain checklist to decide if you need a tax audit.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function WhoNeedsTaxAuditBlog() {
             <span className="section-badge">Tax Audit</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Who Needs a Tax Audit: Business vs Professional Turnover Thresholds</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 15, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 15, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -103,6 +107,8 @@ export default function WhoNeedsTaxAuditBlog() {
               </ul>
               <p>For the detailed technical breakdown of the current turnover figures behind Step 2, and how the cash-transaction-linked higher threshold is calculated, see our <Link href="/blog/tax-audit-section-44ab-turnover-limits-fy-2026-27" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 44AB turnover limits guide</Link>. Once you know an audit applies, our <Link href="/blog/tax-audit-due-date-penalty-for-delay" style={{ color: 'var(--primary)', fontWeight: 600 }}>due date and penalty guide</Link> covers the filing deadline and what happens if it is missed, and our <Link href="/blog/tax-audit-vs-statutory-audit-vs-gst-audit" style={{ color: 'var(--primary)', fontWeight: 600 }}>audit types comparison</Link> explains how a tax audit differs from a statutory or GST audit your business might separately need.</p>
             </div>
+
+            <PostFooterLinks slug="who-needs-tax-audit-business-professional-thresholds" />
 
             <PostCTA
             heading="Not sure if your business needs a tax audit this year?"

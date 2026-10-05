@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Master File vs Local File vs CbCR (India)',
+  title: { absolute: 'Master File vs Local File vs CbCR (India)' },
   description: 'India\'s three-tier TP documentation: Master File (Form 3CEAA) thresholds, Local File content, and CbCR (Form 3CEAC/3CEAD) for large MNC groups.',
   keywords: [
     'master file India transfer pricing', 'local file transfer pricing India', 'CbCR India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Thresholds, content, and deadlines for the three-tier TP documentation structure in India.',
     url: 'https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Master File vs Local File vs CbCR in India',
     description: 'Thresholds and content for each tier of TP documentation; and which companies actually need each one.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function MasterFileLocalFileCbCRBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Master File, Local File and CbCR: What an Indian Subsidiary Must Actually Prepare</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 10, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -139,6 +143,8 @@ export default function MasterFileLocalFileCbCRBlog() {
               <h2>A Practical Annual Workflow</h2>
               <p>Build a group compliance calendar. In the first quarter after year-end, obtain the final intercompany trial balance, agreements, and foreign-entity confirmations. By mid-year, complete benchmarking and Local File work. Get the Master File and CbCR status from group headquarters early enough to identify Indian filing requirements, then finalise Form 3CEB, Form 3CEAA, and any Form 3CEAC/3CEAD filings before their deadlines. Maintain one transaction register showing each associated enterprise, transaction type, amount, agreement, withholding tax position, GST treatment, TP method, and supporting document location; this reduces both filing risk and assessment risk.</p>
             </div>
+
+            <PostFooterLinks slug="master-file-local-file-cbcr-india" />
 
             <PostCTA
             heading="Not sure which documentation tier applies to you?"

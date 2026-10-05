@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI DTAA Guide by Country (2026)',
+  title: { absolute: 'NRI DTAA Guide by Country (2026)' },
   description: 'DTAA rates for NRIs by country: dividend, interest, royalty and capital gains rates for US, UK, UAE, Canada, Australia, Singapore. Claiming via TRC and 10F.',
   keywords: [
     'DTAA India NRI', 'India US DTAA', 'India UK DTAA', 'India UAE DTAA',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Treaty rates for 6 key NRI corridors, how to claim benefits, and Form 10F process.',
     url: 'https://agrawalkhandelwal.com/blog/dtaa-guide-nri-country-wise',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'India DTAA Rates for NRIs: US, UK, UAE, Canada, Australia, Singapore',
     description: 'Treaty withholding rates, TRC process, and Form 10F for claiming DTAA benefits.',
+    images: OG_IMAGES,
   },
 }
 
@@ -196,6 +200,8 @@ export default function DTAAGuideBlog() {
                   <li>Country-by-country and income-by-income matching is required.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="dtaa-guide-nri-country-wise" />
 
               <PostCTA
             heading="Need help claiming DTAA benefits or foreign tax credits?"

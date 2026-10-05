@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Section 194Q: TDS on Purchase of Goods Above Rs 50 Lakh' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Rate, threshold, buyer turnover condition, and the resolved precedence between Section 194Q and Section 206C(1H) TCS on goods purchases.',
     url: 'https://agrawalkhandelwal.com/blog/section-194q-tds-purchase-of-goods',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 194Q: TDS on Purchase of Goods Above Rs 50 Lakh',
     description: 'Rate, threshold, buyer turnover condition, and the resolved precedence between Section 194Q and Section 206C(1H) TCS on goods purchases.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function Section194QBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 7, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -128,6 +132,8 @@ export default function Section194QBlog() {
 
                 <p>Need help setting up Section 194Q tracking across your vendor base, or reviewing whether past purchases were correctly captured? Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax compliance services</Link> cover TDS system setup and periodic health checks.</p>
               </div>
+
+              <PostFooterLinks slug="section-194q-tds-purchase-of-goods" />
 
               <PostCTA
             heading="Crossing the Rs 10 crore turnover mark, or buying goods at scale?"

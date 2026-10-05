@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TP Documentation Checklist India (2026)',
+  title: { absolute: 'TP Documentation Checklist India (2026)' },
   description: 'TP documentation checklist for Indian companies: Form 3CEB, Local File and Master File thresholds, due dates, benchmarking, and gaps audits exploit.',
   keywords: [
     'transfer pricing documentation India', 'transfer pricing checklist India',
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Who needs TP documentation in India, what to prepare at each threshold tier, when it is due, and the most common gaps that trigger transfer pricing audits.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -90,7 +93,7 @@ export default function TPDocumentationChecklist() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 11, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -149,6 +152,8 @@ export default function TPDocumentationChecklist() {
                   <li style={{ marginBottom: 0 }}><Link href="/blog/new-income-tax-act-rules-2025" style={{ color: 'var(--primary)', fontWeight: 600 }}>New Income Tax Act 2025: Simplified Guide</Link></li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="transfer-pricing-documentation-checklist-india" />
 
               <PostCTA
             heading="Need transfer pricing documentation for your Indian subsidiary?"

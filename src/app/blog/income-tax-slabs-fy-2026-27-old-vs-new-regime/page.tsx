@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Income Tax Slabs FY 2026-27: Old vs New Regime',
+  title: { absolute: 'Income Tax Slabs FY 2026-27: Old vs New Regime' },
   description: 'Income tax slabs for FY 2026-27 (AY 2027-28) under old and new regimes, the 87A rebate, standard deduction, and how to choose between them.',
   keywords: [
     'income tax slabs FY 2026-27', 'old regime vs new regime FY 2026-27', 'new tax regime slabs 2026',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Slab-by-slab comparison of the old and new tax regimes for FY 2026-27, plus a framework for deciding which one saves you more.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-slabs-fy-2026-27-old-vs-new-regime',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax Slabs FY 2026-27: Old vs New Regime',
     description: 'Old regime vs new regime slab rates for FY 2026-27, and how to pick the one that suits you.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function IncomeTaxSlabsFY202627Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 21, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -156,6 +160,8 @@ export default function IncomeTaxSlabsFY202627Blog() {
                 <h2>What Hasn&apos;t Changed</h2>
                 <p>It is worth being explicit that Budget 2026 left both slab structures untouched from the prior year. If you were filing under a particular regime for FY 2025-26 and your income situation is largely similar this year, the same regime is likely to remain optimal, though it is still worth re-checking if your deduction profile has changed; for example, a new home loan, a marriage, or a jump in salary that changes which slab you land in.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-slabs-fy-2026-27-old-vs-new-regime" />
 
               <PostCTA
             heading="Not sure which regime saves you more?"

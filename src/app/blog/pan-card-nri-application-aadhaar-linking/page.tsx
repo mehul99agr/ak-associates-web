@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'PAN Card for NRIs (2026)',
   description: 'How NRIs apply for PAN from abroad (Form 49A vs 49AA), the Aadhaar linking exemption, when PAN is needed, and what happens if it becomes inoperative.',
   keywords: ['PAN card NRI', 'NRI PAN application', 'PAN card for NRI from abroad', 'Aadhaar PAN linking NRI', 'NRI PAN inoperative', 'Form 49A NRI', 'PAN required NRI property'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' },
-  openGraph: { title: 'PAN Card for NRIs: Application & Aadhaar Linking', description: 'How to apply from abroad, Aadhaar exemption, and when PAN is required.', url: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking', type: 'article' },
+  openGraph: { title: 'PAN Card for NRIs: Application & Aadhaar Linking', description: 'How to apply from abroad, Aadhaar exemption, and when PAN is required.', url: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('PAN Card for NRIs (2026)', 'pan-card-nri-application-aadhaar-linking')
@@ -39,7 +41,7 @@ export default function PANCardNRIBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>PAN Card for NRIs: How to Apply, Aadhaar Linking, and When You Need It</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published April 18, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published April 18, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -96,6 +98,8 @@ export default function PANCardNRIBlog() {
               </ul>
               <p>For NRO interest where the domestic rate is already 30%, this does not make a difference. But for income where DTAA rates (10-15%) could apply, not having PAN means you lose the treaty benefit entirely and pay 20% minimum. Get PAN before entering any Indian financial transaction.</p>
             </div>
+
+            <PostFooterLinks slug="pan-card-nri-application-aadhaar-linking" />
 
             <PostCTA
             heading="Need help with PAN application or Aadhaar issues?"

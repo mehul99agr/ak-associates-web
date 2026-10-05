@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dividend Distribution & Taxation: Company and Shareholder Perspective' },
+  title: { absolute: 'Dividend Distribution & Taxation: Company vs Shareholder View' },
   description: 'How dividends are taxed in India after DDT was abolished: shareholder taxability, TDS under Section 194, and what companies must do at payout.',
   keywords: [
     'dividend distribution tax abolished', 'dividend taxation in shareholders hands', 'section 194 TDS on dividend',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Dividend taxability in the shareholder\'s hands, TDS under Section 194, and what companies must do at payout, post-DDT abolition.',
     url: 'https://agrawalkhandelwal.com/blog/dividend-distribution-and-taxation-company-and-shareholder-perspective',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Dividend Distribution & Taxation: Company and Shareholder Perspective',
     description: 'How dividends are taxed in India today, from both the company\'s and the shareholder\'s side.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function DividendDistributionTaxationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 27, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -129,6 +133,8 @@ export default function DividendDistributionTaxationBlog() {
                 <h2>Planning Implications</h2>
                 <p>For promoters and closely held companies, the shift to shareholder-level taxation changes the calculus around dividend versus other forms of extraction such as remuneration, rent, or buyback (which carries its own distinct tax treatment; see our related guide on <Link href="/blog/buyback-of-shares-tax-implications-for-companies-and-shareholders" style={{ color: 'var(--primary)', fontWeight: 600 }}>buyback of shares taxation</Link>). A shareholder already in the highest slab bracket bears a materially different effective tax cost on dividend income today than they would have under the old DDT-plus-exempt-dividend regime, and this is worth modelling before finalising a payout policy, particularly for family-owned companies with multiple shareholder tax profiles across generations.</p>
               </div>
+
+              <PostFooterLinks slug="dividend-distribution-and-taxation-company-and-shareholder-perspective" />
 
               <PostCTA
             heading="Planning a dividend payout or reviewing shareholder tax exposure?"

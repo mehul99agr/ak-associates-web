@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Judgment Assessment Under Section 144: What It Means' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'When a best judgment assessment applies, how it differs from a normal assessment, and the remedies available to challenge one.',
     url: 'https://agrawalkhandelwal.com/blog/best-judgment-assessment-section-144',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Best Judgment Assessment Under Section 144: What It Means',
     description: 'When it applies, how it differs from a normal assessment, and how to challenge one.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function BestJudgmentAssessmentBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 16, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -133,6 +137,8 @@ export default function BestJudgmentAssessmentBlog() {
                 <p>Because a best judgment assessment is triggered by a default rather than a substantive tax dispute, the most reliable remedy is almost always available earlier in the process than the appeal stage. Filing the return even after the due date, responding to a notice even after the stated deadline (with a reasonable explanation for the delay), or producing the requested accounts before the assessment is actually finalised can persuade the officer to proceed on the ordinary track instead of invoking Section 144. Once the order is passed, options narrow considerably to appeal, or in limited circumstances rectification, both of which take longer and carry the narrower success grounds described above.</p>
                 <p>If you have missed a filing deadline, an assessment notice, or a scrutiny appearance, the priority is to act before the assessment is closed, not after. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> include urgent response drafting to prevent a best judgment assessment, and appeal representation where one has already been passed.</p>
               </div>
+
+              <PostFooterLinks slug="best-judgment-assessment-section-144" />
 
               <PostCTA
             heading="Facing or worried about a best judgment assessment?"

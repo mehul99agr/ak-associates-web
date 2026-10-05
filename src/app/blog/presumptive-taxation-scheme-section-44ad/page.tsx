@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Presumptive Taxation Scheme Section 44AD: Eligibility & Benefits',
+  title: { absolute: 'Presumptive Taxation Scheme Section 44AD: Eligibility & Benefits' },
   description: 'Section 44AD for small businesses: eligibility, Rs 2 crore / Rs 3 crore (digital) turnover limits, 6% and 8% deemed profit, and when it helps or hurts.',
   keywords: [
     'Section 44AD', 'presumptive taxation scheme', '44AD turnover limit',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Turnover limits, deemed profit rates, eligibility conditions, and the lock-in rule for Section 44AD presumptive taxation.',
     url: 'https://agrawalkhandelwal.com/blog/presumptive-taxation-scheme-section-44ad',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 44AD Presumptive Taxation: Eligibility & Benefits',
     description: 'Turnover limits, deemed profit rates, and eligibility for Section 44AD presumptive taxation.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function Section44ADBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 2, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -162,6 +166,8 @@ export default function Section44ADBlog() {
                 <h2>Is 44AD Right for Your Business?</h2>
                 <p>Presumptive taxation under 44AD works well when your actual profit margin is close to or above 6-8% of turnover, since you pay tax on the deemed amount regardless of your real profit, and it saves significant compliance effort. If your genuine margins are thin, well below these rates, opting for actual computation with proper books (and the tax audit it entails) may result in a lower tax outgo, though at a higher compliance cost. This is a judgment call best made with your CA reviewing your specific numbers, especially given the five-year lock-in consequence of getting it wrong.</p>
               </div>
+
+              <PostFooterLinks slug="presumptive-taxation-scheme-section-44ad" />
 
               <PostCTA
             heading="Not sure if presumptive taxation suits your business?"

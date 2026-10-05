@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import TrackedLink from '../TrackedLink'
-import { BOOKING_LINK, OFFICES } from '@/lib/constants'
+import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: 'Contact Agrawal Khandelwal & Associates LLP | CA in Nashik & Sillod',
     description: 'Reach our Chartered Accountancy offices in Nashik and Sillod. Call, WhatsApp, email, or book a free consultation.',
     url: 'https://agrawalkhandelwal.com/contact',
+    images: OG_IMAGES,
   },
 }
 

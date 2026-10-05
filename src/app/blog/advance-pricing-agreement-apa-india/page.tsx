@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Advance Pricing Agreement (APA) India',
+  title: { absolute: 'Advance Pricing Agreement (APA) India' },
   description: 'Unilateral, bilateral and multilateral APAs with the CBDT: who should consider one, the application process, timelines, compliance and cost-benefit.',
   keywords: [
     'advance pricing agreement India', 'APA India process', 'bilateral APA India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Which companies should consider an APA, the application process, realistic timelines, and a cost-benefit framework.',
     url: 'https://agrawalkhandelwal.com/blog/advance-pricing-agreement-apa-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'APA in India: Process, Timeline & Benefits',
     description: 'Unilateral vs bilateral, realistic timelines, and when an APA is worth the cost.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function APABlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Advance Pricing Agreements in India: Process, Timeline and Benefits</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 5, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 5, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -120,6 +124,8 @@ export default function APABlog() {
               <h2>Prepare Before Approaching the APA Team</h2>
               <p>Before pre-filing, ensure the group can articulate: who controls economically significant risks, which entity owns or develops intangibles, how each entity is compensated today, why the proposed method reflects value creation, historical profitability and prior transfer pricing positions, forecast transaction values and business changes, and whether the foreign jurisdiction is likely to accept the proposed result. A coherent factual story is more valuable than an aggressive opening position; the agreement needs to be implementable year after year by the finance team.</p>
             </div>
+
+            <PostFooterLinks slug="advance-pricing-agreement-apa-india" />
 
             <PostCTA
             heading="Considering an APA for a high-value related-party arrangement?"

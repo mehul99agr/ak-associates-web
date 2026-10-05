@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Life Insurance & ULIP Taxation Rules',
+  title: { absolute: 'NRI Life Insurance & ULIP Taxation Rules' },
   description: 'Can NRIs buy Indian life insurance and ULIPs? Premium payment channels, when maturity is exempt under Section 10(10D), and TDS on payouts to NRIs.',
   keywords: [
     'NRI life insurance India', 'NRI ULIP taxation', 'section 10(10D) NRI', 'NRI ULIP premium NRE NRO',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Buying Indian life insurance and ULIPs as an NRI, premium payment channels, Section 10(10D) exemption thresholds, and TDS on maturity payouts.',
     url: 'https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Life Insurance & ULIP Taxation Rules',
     description: 'Section 10(10D) exemption thresholds and TDS on life insurance/ULIP maturity payouts to NRIs.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function NriLifeInsuranceUlipBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -140,6 +144,8 @@ export default function NriLifeInsuranceUlipBlog() {
                   <li>Budget for Section 195 withholding on any non-exempt payout, and plan to recover excess TDS through DTAA relief or the annual tax return rather than expecting a reduced rate at source by default.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="nri-life-insurance-and-ulip-taxation-rules" />
 
               <PostCTA
             heading="Holding an Indian life insurance policy or ULIP as an NRI?"

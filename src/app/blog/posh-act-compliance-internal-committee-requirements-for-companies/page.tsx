@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'POSH Act Compliance: Internal Committee Requirements for Companies' },
+  title: { absolute: 'POSH Act Compliance: Internal Committee Rules for Companies' },
   description: 'When a company must form a POSH Internal Committee, who sits on it, the annual report requirement, and penalties including licence cancellation.',
   keywords: [
     'POSH Act compliance', 'Internal Committee POSH', 'POSH Act Internal Committee requirements',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The 10-employee threshold, Internal Committee composition, and penalties under the POSH Act, 2013.',
     url: 'https://agrawalkhandelwal.com/blog/posh-act-compliance-internal-committee-requirements-for-companies',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'POSH Act Compliance: Internal Committee Requirements',
     description: 'Who must set up an Internal Committee under the POSH Act, how it must be composed, and what happens if you don\'t.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function PoshActBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 15, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function PoshActBlog() {
                 <h2>Practical Steps to Get Compliant</h2>
                 <p>For a company crossing or already past the 10-employee mark: formally constitute the IC with the required composition (including the external member), adopt and circulate a written POSH policy, display the policy and IC details at each workplace location, run at least an annual awareness session, and build the annual reporting requirement (both the IC's own annual report and the Board's Report disclosure) into the same compliance calendar used for other statutory obligations like <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual ROC filings</Link>, so it doesn't get missed as a one-off item nobody owns.</p>
               </div>
+
+              <PostFooterLinks slug="posh-act-compliance-internal-committee-requirements-for-companies" />
 
               <PostCTA
             heading="Setting up or reviewing your POSH compliance?"

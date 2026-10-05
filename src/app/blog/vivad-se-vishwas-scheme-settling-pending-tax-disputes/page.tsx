@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Vivad Se Vishwas Scheme: Settling Pending Tax Disputes' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'How the Direct Tax Vivad Se Vishwas (VSV 2.0) scheme worked, its April 30, 2025 closure to new filings, and what options remain today.',
     url: 'https://agrawalkhandelwal.com/blog/vivad-se-vishwas-scheme-settling-pending-tax-disputes',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vivad Se Vishwas Scheme: Settling Pending Tax Disputes',
     description: 'What the Vivad Se Vishwas scheme was, why it is no longer open for new declarations, and what to do with a pending tax dispute now.',
+    images: OG_IMAGES,
   },
 }
 
@@ -81,7 +85,7 @@ export default function VivadSeVishwasBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 23, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -120,6 +124,8 @@ export default function VivadSeVishwasBlog() {
 
                 <p>Disputes involving disputed tax, interest, and penalty computations are easy to get wrong on your own, both in deciding whether a route like rectification genuinely applies and in calculating what a stay of demand deposit or an eventual settlement would actually cost. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include dispute strategy, appeal drafting, and representation before the relevant authority.</p>
               </div>
+
+              <PostFooterLinks slug="vivad-se-vishwas-scheme-settling-pending-tax-disputes" />
 
               <PostCTA
             heading="Have a pending tax dispute?"

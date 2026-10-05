@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Seafarer (Merchant Navy) Taxation: NRI Status & Exemptions',
+  title: { absolute: 'Seafarer (Merchant Navy) Taxation: NRI Status & Exemptions' },
   description: 'Seafarer tax in India: residential status via CDC day counting, taxability of NRE salary for voyages outside Indian waters, and common mistakes.',
   keywords: [
     'seafarer taxation India', 'merchant navy tax NRI', 'CDC continuous discharge certificate tax',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The CDC day-counting rule for seafarer residential status, NRE salary exemption, and common compliance mistakes merchant navy officers make.',
     url: 'https://agrawalkhandelwal.com/blog/seafarer-merchant-navy-taxation-nri-status-and-exemptions',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Seafarer (Merchant Navy) Taxation: NRI Status & Exemptions',
     description: 'How the CDC rule determines seafarer residential status, and when salary credited to an NRE account is exempt.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function SeafarerTaxationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 17, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function SeafarerTaxationBlog() {
                 </ul>
                 <p>Because a seafarer&apos;s residential status can genuinely shift from year to year depending on voyage schedules, sign-off dates, and shore time, this is not a &quot;determine once and forget&quot; exercise; it needs to be checked afresh each financial year against that year&apos;s actual CDC record.</p>
               </div>
+
+              <PostFooterLinks slug="seafarer-merchant-navy-taxation-nri-status-and-exemptions" />
 
               <PostCTA
             heading="Need help with your residential status or voyage salary tax position?"

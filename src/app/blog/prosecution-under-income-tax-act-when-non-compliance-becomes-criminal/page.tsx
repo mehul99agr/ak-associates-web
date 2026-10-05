@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Prosecution Under Income Tax Act: When Non-Compliance Becomes Criminal' },
+  title: { absolute: 'Income Tax Prosecution: When Non-Compliance Becomes Criminal' },
   description: 'When tax non-compliance becomes criminal prosecution: wilful evasion, failure to file, imprisonment ranges, and how compounding works.',
   keywords: [
     'prosecution income tax act', 'section 276C willful evasion', 'section 276CC failure to file',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'What separates a civil penalty from criminal prosecution under the Income Tax Act, and the imprisonment ranges involved.',
     url: 'https://agrawalkhandelwal.com/blog/prosecution-under-income-tax-act-when-non-compliance-becomes-criminal',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Prosecution Under Income Tax Act: When Non-Compliance Becomes Criminal',
     description: 'When income tax non-compliance becomes criminal prosecution, and how compounding can resolve it.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function ProsecutionIncomeTaxActBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 25, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -140,6 +144,8 @@ export default function ProsecutionIncomeTaxActBlog() {
                 </ul>
                 <p>Prosecution under the Income Tax Act is real, but it is also narrower and more deliberate a remedy than most taxpayers assume, reserved for willful, deliberate conduct rather than honest mistakes or cash-flow-driven delays. The practical protection is straightforward: file on time, keep clean records, respond to notices, and correct errors voluntarily the moment they are found. Where a genuine prosecution risk exists, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> include evaluating compounding options and coordinating with legal counsel.</p>
               </div>
+
+              <PostFooterLinks slug="prosecution-under-income-tax-act-when-non-compliance-becomes-criminal" />
 
               <PostCTA
             heading="Facing a prosecution notice or a serious scrutiny escalation?"

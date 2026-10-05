@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Section 195 TDS Guide (FY 2026-27)',
+  title: { absolute: 'Section 195 TDS Guide (FY 2026-27)' },
   description: 'TDS under Section 195 on payments to NRIs: property sale, rent, fees and interest. Rate table, TAN requirement, Form 27Q filing and penalties.',
   keywords: [
     'section 195 TDS', 'TDS on payment to NRI', 'section 195 income tax',
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     description: 'Rate table, TAN process, Form 27Q filing, and penalties for TDS on all payment types to NRIs under Section 195.',
     url: 'https://agrawalkhandelwal.com/blog/section-195-tds-nri-payments-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 195 TDS Guide (FY 2026-27)',
     description: 'When and how to deduct TDS under Section 195 on payments to NRIs: property, rent, fees, interest.',
+    images: OG_IMAGES,
   },
 }
 
@@ -87,7 +91,7 @@ export default function Section195Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published June 12, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -252,6 +256,8 @@ export default function Section195Blog() {
                   <li><strong>Disallowed expense:</strong> Under Section 40(a)(i), any payment on which TDS was required but not deducted is disallowed as a business expense for the payer in that year.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="section-195-tds-nri-payments-guide" />
 
               <PostCTA
             heading="Need help with Section 195 compliance?"

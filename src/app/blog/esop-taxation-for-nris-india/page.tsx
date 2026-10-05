@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'ESOP Taxation for NRIs (2026 Guide)',
+  title: { absolute: 'ESOP Taxation for NRIs (2026 Guide)' },
   description: 'How ESOPs are taxed for NRIs: perquisite tax at exercise, capital gains at sale, TDS, the startup ESOP deferral, and avoiding double tax under DTAA.',
   keywords: [
     'ESOP taxation NRI', 'ESOP tax India NRI', 'NRI ESOP exercise tax',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Perquisite tax at exercise, capital gains at sale, TDS obligations, the startup ESOP deferral, and how to avoid double taxation under DTAA.',
     url: 'https://agrawalkhandelwal.com/blog/esop-taxation-for-nris-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ESOP Taxation for NRIs: Exercise, Sale & DTAA Relief',
     description: 'Perquisite tax at exercise, capital gains at sale, and how to avoid double taxation under DTAA.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function ESOPNRIBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -145,6 +149,8 @@ export default function ESOPNRIBlog() {
                   <li><strong>Keep documentation</strong>, grant letters, exercise notices, FMV valuation reports, and TDS certificates, since reconstructing this years later across two countries is far harder than keeping it as you go.</li>
                 </ol>
               </div>
+
+              <PostFooterLinks slug="esop-taxation-for-nris-india" />
 
               <PostCTA
             heading="Exercising or selling ESOPs as an NRI?"

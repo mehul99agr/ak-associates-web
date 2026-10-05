@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Returning to India Checklist (2026)',
+  title: { absolute: 'NRI Returning to India Checklist (2026)' },
   description: 'What NRIs must do before and after returning to India: bank account conversion, RNOR tax planning, investments, insurance, FEMA steps and timeline.',
   keywords: [
     'NRI returning to India checklist', 'NRI relocation India', 'NRI moving back to India',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Bank accounts, RNOR window, investments, insurance, FEMA steps; the financial checklist for NRIs moving back.',
     url: 'https://agrawalkhandelwal.com/blog/nri-returning-india-financial-checklist',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Returning to India: Financial Checklist (2026)',
     description: 'Bank account conversion, RNOR planning, investment restructuring, and FEMA compliance for returning NRIs.',
+    images: OG_IMAGES,
   },
 }
 
@@ -82,7 +86,7 @@ export default function NRIReturningIndiaChecklist() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 1, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -194,6 +198,8 @@ export default function NRIReturningIndiaChecklist() {
                   </table>
                 </div>
               </div>
+
+              <PostFooterLinks slug="nri-returning-india-financial-checklist" />
 
               <PostCTA
             heading="Planning your return to India?"

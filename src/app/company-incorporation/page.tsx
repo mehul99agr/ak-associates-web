@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buildBreadcrumbLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Company Incorporation in India',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Expert CA-led company registration in India. Private Limited, LLP, or OPC: we handle everything from name reservation to Certificate of Incorporation.',
     url: 'https://agrawalkhandelwal.com/company-incorporation',
     type: 'website',
+    images: OG_IMAGES,
   },
 }
 

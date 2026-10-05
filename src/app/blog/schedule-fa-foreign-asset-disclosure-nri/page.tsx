@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Schedule FA: Foreign Asset Disclosure (2026)',
+  title: { absolute: 'Schedule FA: Foreign Asset Disclosure (2026)' },
   description: 'When Schedule FA applies, what to declare, penalties for non-disclosure and the 2026 disclosure scheme. Applies to Residents and RNORs only, not NRIs.',
   keywords: ['Schedule FA NRI', 'foreign asset disclosure India', 'Schedule FA ITR', 'foreign assets NRI India', 'NRI foreign bank account disclosure', 'Schedule FA penalty', 'black money act NRI'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri' },
-  openGraph: { title: 'Schedule FA: Foreign Asset Disclosure for Returning NRIs', description: 'When Schedule FA applies, what to disclose, and penalties for non-compliance.', url: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri', type: 'article' },
+  openGraph: { title: 'Schedule FA: Foreign Asset Disclosure for Returning NRIs', description: 'When Schedule FA applies, what to disclose, and penalties for non-compliance.', url: 'https://agrawalkhandelwal.com/blog/schedule-fa-foreign-asset-disclosure-nri', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('Schedule FA: Foreign Asset Disclosure (2026)', 'schedule-fa-foreign-asset-disclosure-nri')
@@ -38,7 +40,7 @@ export default function ScheduleFABlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Schedule FA: When Foreign Asset Disclosure Kicks In (and When It Does Not)</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 28, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 28, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -91,6 +93,8 @@ export default function ScheduleFABlog() {
               <h2>Foreign Assets Disclosure Scheme 2026</h2>
               <p>The government introduced a one-time disclosure scheme in 2026 for residents who failed to report foreign assets in prior years. This scheme allows voluntary disclosure with reduced penalties compared to the Black Money Act provisions. If you have unreported foreign assets from prior resident years, consult a CA about whether this scheme is still open and whether it applies to your situation.</p>
             </div>
+
+            <PostFooterLinks slug="schedule-fa-foreign-asset-disclosure-nri" />
 
             <PostCTA
             heading="Need help with Schedule FA or foreign asset disclosure?"

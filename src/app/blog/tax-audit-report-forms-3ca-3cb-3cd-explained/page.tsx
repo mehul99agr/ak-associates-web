@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax Audit Report Forms: 3CA/3CB/3CD Explained (Now Form 26)',
+  title: { absolute: 'Tax Audit Report Forms: 3CA/3CB/3CD Explained (Now Form 26)' },
   description: 'What Forms 3CA, 3CB and 3CD covered, and how they are now consolidated into a single Form 26 under the Income Tax Act 2025 from April 1, 2026.',
   keywords: [
     'form 3CA vs 3CB', 'form 3CD explained', 'tax audit report forms',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'When Form 3CA applies vs Form 3CB, what the Form 3CD statement of particulars covers, and the move toward a consolidated form under the Income Tax Act 2025.',
     url: 'https://agrawalkhandelwal.com/blog/tax-audit-report-forms-3ca-3cb-3cd-explained',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 3CA vs 3CB vs 3CD Explained',
     description: 'Which tax audit report form applies to you, and what the numbered clauses in Form 3CD actually ask for.',
+    images: OG_IMAGES,
   },
 }
 
@@ -68,7 +72,7 @@ export default function FormsExplainedBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 13, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -121,6 +125,8 @@ export default function FormsExplainedBlog() {
                 <p>Form 26 does not throw out the old structure so much as merge it: <strong>Parts A and B</strong> of Form 26 carry the statement-of-particulars content that used to be Form 3CD (the numbered clauses on accounting method, depreciation, Section 43B disallowances, loans/deposits, TDS/TCS, and GST reconciliation described above), while <strong>Part C</strong> carries the audit report and opinion that used to be Form 3CA or Form 3CB, with the same underlying distinction (whether the accounts are already audited under another law, like the Companies Act, or not) still determining what that part states. The ₹1 crore business / ₹10 crore with ≤5% cash transactions / ₹50 lakh profession audit-applicability thresholds are unchanged; only the form and its internal numbering changed. Where this article still refers to &quot;Form 3CA,&quot; &quot;Form 3CB,&quot; or &quot;Form 3CD&quot; individually, treat that as shorthand for the corresponding part of Form 26.</p>
                 <p>The underlying discipline does not change either way: accurate books, correctly computed depreciation, timely MSME and TDS compliance, and clean reconciliation with GST filings are what make the audit process fast rather than a last-minute scramble.</p>
               </div>
+
+              <PostFooterLinks slug="tax-audit-report-forms-3ca-3cb-3cd-explained" />
 
               <PostCTA
             heading="Need help with your tax audit filing?"

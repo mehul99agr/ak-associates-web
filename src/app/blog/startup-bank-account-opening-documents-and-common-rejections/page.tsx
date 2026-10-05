@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Startup Bank Account Opening: Documents & Common Rejections',
+  title: { absolute: 'Startup Bank Account Opening: Documents & Common Rejections' },
   description: 'Documents a new Indian startup needs to open a current account, and the common reasons banks reject or delay it, from address mismatches to shell flags.',
   keywords: [
     'startup current account opening india', 'company bank account documents',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The KYC and incorporation documents banks need, plus the most common reasons a startup\'s current account gets rejected or delayed.',
     url: 'https://agrawalkhandelwal.com/blog/startup-bank-account-opening-documents-and-common-rejections',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Bank Account Opening: Documents & Common Rejections',
     description: 'What to have ready before you walk into the bank, and why current account applications actually get rejected.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function StartupBankAccountBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 13, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -138,6 +142,8 @@ export default function StartupBankAccountBlog() {
                   <li><strong>Keep a digital folder of every document</strong> (COI, MOA/AOA, PAN, KYC, address proof) ready in one place, since most banks now run largely digital onboarding and a missing scan is a common cause of avoidable back-and-forth.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="startup-bank-account-opening-documents-and-common-rejections" />
 
               <PostCTA
             heading="Setting up a new company and need the account opened smoothly?"

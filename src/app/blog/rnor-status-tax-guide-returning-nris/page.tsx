@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'RNOR Status for Returning NRIs (FY 2026-27)',
+  title: { absolute: 'RNOR Status for Returning NRIs (FY 2026-27)' },
   description: 'RNOR status for returning NRIs: the two RNOR tests, how many tax-free years you get, which foreign income stays exempt, and a checklist before it ends.',
   keywords: [
     'RNOR status India', 'resident but not ordinarily resident', 'returning NRI tax India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The two RNOR tests, how many tax-free years returning NRIs actually get, what stays exempt, and what to do before RNOR status ends.',
     url: 'https://agrawalkhandelwal.com/blog/rnor-status-tax-guide-returning-nris',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'RNOR Status for Returning NRIs: How Long Is the Tax Holiday?',
     description: 'The two RNOR tests, how many tax-free years you get, and the planning checklist before RNOR ends.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function RNORStatusBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -176,6 +180,8 @@ export default function RNORStatusBlog() {
                   <li><strong>Get your specific RNOR years confirmed by a CA</strong> before making irreversible decisions based on an assumed timeline.</li>
                 </ol>
               </div>
+
+              <PostFooterLinks slug="rnor-status-tax-guide-returning-nris" />
 
               <PostCTA
             heading="Not sure how many RNOR years you have left?"

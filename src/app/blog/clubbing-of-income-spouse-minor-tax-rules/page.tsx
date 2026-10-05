@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Clubbing of Income: Spouse & Minor Tax Rules' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'When income from assets transferred to a spouse or minor child gets taxed to you instead, under Section 64, and how to plan around it legally.',
     url: 'https://agrawalkhandelwal.com/blog/clubbing-of-income-spouse-minor-tax-rules',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Clubbing of Income: Spouse & Minor Tax Rules',
     description: 'When income from assets transferred to a spouse or minor child gets taxed to you instead, under Section 64, and how to plan around it legally.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function ClubbingOfIncomeBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 27, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -137,6 +141,8 @@ export default function ClubbingOfIncomeBlog() {
 
                 <p>If you are structuring family investments, an HUF is often the more tax-efficient vehicle than direct transfers to a spouse or minor, since income earned by HUF assets is taxed to the HUF as its own separate entity rather than clubbed back to an individual; see our companion guide on <Link href="/blog/huf-taxation-india-formation-benefits-filing" style={{ color: 'var(--primary)', fontWeight: 600 }}>HUF taxation, formation, and benefits</Link> for how that works.</p>
               </div>
+
+              <PostFooterLinks slug="clubbing-of-income-spouse-minor-tax-rules" />
 
               <PostCTA
             heading="Planning investments across family members?"

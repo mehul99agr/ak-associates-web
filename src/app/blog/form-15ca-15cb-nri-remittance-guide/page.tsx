@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Form 15CA/15CB NRI Remittance Guide',
+  title: { absolute: 'Form 15CA/15CB NRI Remittance Guide' },
   description: 'When Form 15CA/15CB is required, the 4 parts of Form 15CA, when a CA certificate is needed, step-by-step portal filing, and what happens if you skip it.',
   keywords: [
     'form 15CA', 'form 15CB', 'form 145', 'form 146', '15CA 15CB NRI',
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     description: 'When required, which part to file, CA certificate process, and penalties for skipping Form 15CA/15CB.',
     url: 'https://agrawalkhandelwal.com/blog/form-15ca-15cb-nri-remittance-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 15CA & 15CB for NRI Remittances: Complete Guide (2026)',
     description: 'Which part of Form 15CA to file, when 15CB CA certificate is needed, and step-by-step process.',
+    images: OG_IMAGES,
   },
 }
 
@@ -195,6 +199,8 @@ export default function Form15CA15CBBlog() {
                 </ul>
                 <p>Both old and new form numbers are currently in use during the transition period. Your bank and CA should accept either reference.</p>
               </div>
+
+              <PostFooterLinks slug="form-15ca-15cb-nri-remittance-guide" />
 
               <PostCTA
             heading="Need Form 15CB (146) certification for your remittance?"

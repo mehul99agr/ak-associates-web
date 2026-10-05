@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { BASE_URL, BOOKING_LINK, WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import { BASE_URL, BOOKING_LINK, WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 
 const SLUG = 'understanding-new-tax-regime-2025-26'
 const TITLE = 'Understanding the New Tax Regime'
@@ -13,7 +14,7 @@ const CATEGORY = 'Tax Planning'
 const META_DESCRIPTION = 'The FY 2025-26 new tax regime: zero tax up to Rs 12 lakh with the 87A rebate, revised slabs, Rs 75,000 standard deduction, and who should stay old.'
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: META_DESCRIPTION,
   keywords: ['new tax regime 2025-26', 'income tax slabs FY 2025-26', 'section 87A rebate 12 lakh', 'old vs new tax regime', 'standard deduction 75000', 'income tax India 2025', 'tax planning India'],
   alternates: { canonical: `${BASE_URL}/blog/${SLUG}` },
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     description: META_DESCRIPTION,
     url: `${BASE_URL}/blog/${SLUG}`,
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -127,6 +129,8 @@ export default function UnderstandingNewTaxRegimeBlog() {
                 <li style={{ marginBottom: 0 }}>Income Tax Department, Government of India; <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>incometax.gov.in</a></li>
               </ul>
             </div>
+
+            <PostFooterLinks slug="understanding-new-tax-regime-2025-26" />
 
             <PostCTA
               heading="Need help with this?"

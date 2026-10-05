@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: '26QB vs 27Q: NRI Property TDS Form',
+  title: { absolute: '26QB vs 27Q: NRI Property TDS Form' },
   description: 'Form 26QB is for resident sellers, Form 27Q for NRI sellers. When each applies, TDS rates, TAN requirement, filing steps and the wrong-form penalty.',
   keywords: [
     '26QB vs 27Q', 'form 26QB NRI', 'form 27Q property', '26QB for NRI seller',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Form 26QB is for resident sellers, Form 27Q is for NRI sellers. Side-by-side comparison with filing steps.',
     url: 'https://agrawalkhandelwal.com/blog/26qb-vs-27q-nri-property-tds',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: '26QB vs 27Q: Which TDS Form for NRI Property Purchase?',
     description: '26QB = resident seller. 27Q = NRI seller. Get it wrong and you owe the difference plus interest.',
+    images: OG_IMAGES,
   },
 }
 
@@ -78,7 +82,7 @@ export default function Form26QBvs27QBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published June 5, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -186,6 +190,8 @@ export default function Form26QBvs27QBlog() {
                 <h2>Budget 2026 Changes: TAN Going Away for Resident Sellers Only</h2>
                 <p>Budget 2026 introduces a PAN-based mechanism (Form 141) that removes the TAN requirement for property purchases from resident sellers, effective October 1, 2026. This change does <strong>not</strong> extend to NRI sellers. Where the seller is an NRI, the buyer still needs a TAN and must comply with <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 195</Link> in full. Do not read &quot;TAN scrapped&quot; headlines as applying to NRI property transactions.</p>
               </div>
+
+              <PostFooterLinks slug="26qb-vs-27q-nri-property-tds" />
 
               <PostCTA
             heading="Buying property from an NRI? Get it right the first time."

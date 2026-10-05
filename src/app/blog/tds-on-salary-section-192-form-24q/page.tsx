@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TDS on Salary: Section 192 & Form 24Q Explained',
+  title: { absolute: 'TDS on Salary: Section 192 & Form 24Q Explained' },
   description: 'TDS on salary under Section 192: average-rate computation, regime declarations, Form 24Q filing, and the new Act\'s Section 392/402 and Form 138.',
   keywords: [
     'section 192 TDS on salary', 'form 24Q', 'TDS on salary india', 'form 24Q due date',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Average-rate TDS computation on salary, old vs new regime declarations, Form 24Q quarterly filing, and the new Act renumbering.',
     url: 'https://agrawalkhandelwal.com/blog/tds-on-salary-section-192-form-24q',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TDS on Salary: Section 192 & Form 24Q Explained',
     description: 'How employers compute and deposit TDS on salary, and file Form 24Q quarterly. Now Section 392/402 and Form 138.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function TDSSalarySection192Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 5, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -104,6 +108,8 @@ export default function TDSSalarySection192Blog() {
                 <h2>Section 192 Under the Income Tax Act 2025</h2>
                 <p>The obligation to deduct tax on salary, previously Section 192, is now housed in <strong>Section 392</strong> of the Income Tax Act 2025, with the detailed computation mechanics (including the average rate method and regime-based adjustments) set out under <strong>Section 402</strong>. The substance of the provision, deduct at the average rate on estimated annual salary income, recompute as estimates change, has not been altered; only the section numbering and the corresponding return form (24Q to Form 138) have changed for filings from FY 2026-27 onward.</p>
               </div>
+
+              <PostFooterLinks slug="tds-on-salary-section-192-form-24q" />
 
               <PostCTA
             heading="Need help with payroll TDS compliance?"

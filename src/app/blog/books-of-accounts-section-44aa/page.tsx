@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Books of Accounts Required Under Section 44AA' },
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Who must maintain books of accounts, the income/turnover thresholds for businesses vs specified professions, and the penalty for non-compliance.',
     url: 'https://agrawalkhandelwal.com/blog/books-of-accounts-section-44aa',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Books of Accounts Required Under Section 44AA',
     description: 'Who must maintain books of accounts, the thresholds, and the penalty for failing to under Section 271A.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function BooksOfAccountsSection44AABlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 15, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -158,6 +162,8 @@ export default function BooksOfAccountsSection44AABlog() {
 
                 <p>Getting the Section 44AA classification right at the start of a financial year avoids both the penalty exposure and the far more disruptive experience of trying to reconstruct a full year of books under time pressure once a notice or audit requirement lands. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>accounting and compliance services</Link> include setting up and maintaining compliant books for businesses and professionals across both thresholds.</p>
               </div>
+
+              <PostFooterLinks slug="books-of-accounts-section-44aa" />
 
               <PostCTA
             heading="Not sure if you need to maintain formal books?"

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'CA for Startups in Bangalore, Mumbai & Nashik | Agrawal Khandelwal & Associates LLP',
     description: 'End-to-end CA services for startups: incorporation, DPIIT, ESOP, Virtual CFO, fundraising compliance. Serving early and growth stage startups across India.',
     url: 'https://agrawalkhandelwal.com/startups',
+    images: OG_IMAGES,
   },
 }
 

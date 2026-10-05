@@ -366,6 +366,43 @@ Chrome logged into search.google.com):**
 - Did not pull the full query-list breakdown beyond the top rows, or countries/devices,
   this session - just totals + top pages/queries for a plateau check.
 
+**Search Console findings (Oct 5, 2026 - 28-day window, Sep 6-Oct 3, pulled live via
+Claude in Chrome; "28 days" chip confirmed in a screenshot):**
+- User asked why clicks/impressions dropped. Totals: 607 clicks, 56.9k impressions, 1.1%
+  CTR, avg. position 7 - vs 137 clicks / 9.09k impressions / 1.5% / 11.6 in the previous
+  28 days. The 28-day picture is a large gain, not a decline; the "drop" is the tail of a
+  spike.
+- **Daily pattern:** Sep 6-19 baseline 280-1,170 impr/day and 1-18 clicks/day. Sep 20-30
+  spike of 3,000-4,560 impr/day and 19-59 clicks/day (peak Sep 21: 59 clicks / 4,560
+  impr). Oct 1-3 fell to 1,700-2,730 impr/day and 21-25 clicks/day - still roughly 4x the
+  pre-spike baseline.
+- **Main cause: the Sep 30 tax-audit / trust-audit deadline passing.** Last 7 days vs
+  previous 7 (208 vs 298 clicks, 21.2k vs 27.8k impr), biggest losers:
+  `form-10b-10bb-audit-report-for-trusts-applicability-and-due-date` (2,223 -> 925 impr,
+  23 -> 6 clicks) and `tax-audit-due-date-penalty-for-delay` (1,584 -> 1,074 impr,
+  21 -> 5 clicks). Falling queries: "trust audit due date", "form 10b and 10bb
+  applicability", "penalty for late filing of tax audit report". Seasonal demand - expect
+  it back before the next deadline.
+- **Several newer posts lost almost all impressions week-on-week:**
+  `related-party-loans-and-section-185-186-compliance` (252 -> 1), `faceless-assessment-
+  scheme-how-it-works` (122 -> 1), `stay-of-demand-...` (131 -> 10), `board-meeting-and-
+  agm-compliance-calendar-...` (132 -> 11). The related-party loans post is live, 200,
+  `index, follow`, correct canonical. Likely Google still settling rankings for recently
+  published posts - an inference, not confirmed. Recheck these four specifically.
+- Smaller 20-40% declines spread across many other posts (secretarial audit, 44AA books
+  of accounts, FSSAI, POSH, statutory audit, 194C).
+- **Ruled out:** site up (homepage, sitemap, robots.txt, top posts all 200; www 308 to
+  non-www); the three losing posts checked are indexable with correct canonicals; the
+  Sep 26-29 deploys do not line up with the drop (Sep 28-29 were among the strongest days
+  at 43 and 49 clicks). NOT rechecked this session: Manual Actions and Page Indexing.
+- **Next check: around Oct 12-15.** If daily impressions hold at ~1,500-2,500, that is
+  the new baseline. Supersedes the Sep 14-21 "10-13k impressions / 28 days" plateau as
+  the reference level.
+- Tooling note: in compare mode the GSC results table reports as not visible to a
+  `offsetParent` check and the Days tab does not render a table - load the report with
+  `breakdown=date` and no `compare_date` for daily rows, and read compare tables by
+  picking the largest `<table>` via `javascript_tool` rather than filtering on visibility.
+
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
 dates rather than batch-publish same-day:
@@ -909,6 +946,36 @@ code review. The Sep 25 Opus review's leads were verified and fixed. What change
   unused. CSP (`next.config.js`) blocks external form endpoints and payment scripts, so update
   it before adding any form/embed. Real-phone rendering has not been tested.
 
+## SEO Audit Fixes (Oct 5, 2026 - not yet committed/deployed at time of writing)
+Audit run with the `claude-seo` plugin's method (its own scripts need `/seo setup`, which only
+the user can trigger, so the crawl was done with a custom script; no Lighthouse/CWV data).
+All 245 pages were technically clean. Fixed:
+- **Share image:** a page-level `openGraph`/`twitter` block replaces the root one wholesale, so
+  240 of 245 pages had no `og:image`. Every page with its own block now sets
+  `images: OG_IMAGES` (from `@/lib/constants`). **New pages must do the same.**
+- **Blog titles (resolves the pending title decision):** blog posts now use
+  `title: { absolute: '...' }` with no firm-name suffix and stay <=65 chars (the 38-char brand
+  suffix was pushing them to 90-100 and truncating in Google). 21 were also reworded to fit.
+  The Brand Name Rule still applies to every non-blog page. `tds-on-nri-property-sale-india`
+  and `tan-application-guide-buyer-nri-property` were deliberately left untouched (top earners).
+  Non-blog pages at 66-74 chars were left as is (only the brand tail truncates).
+- **Posts list moved** from `blog/page.tsx` to `src/app/blog/posts.ts`. Wire new posts there
+  (older notes in this file that say "wire into blog/page.tsx" mean this file now).
+- **`blog/_components/PostFooterLinks.tsx`** (`<PostFooterLinks slug="..." />` before the CTA
+  in all 222 posts): 3 related guides from the same topic group (ring order, so every post
+  gets the same number of inbound links), a link to the matching service page plus
+  `/ca-in-nashik` and `/ca-in-sillod`, and the official portal(s) for the topic. Before this,
+  33 posts were linked only from the blog index and the two local pages had 4 and 2 in-content
+  links. New posts need this line and a category that exists in the component's `GROUPS`.
+  The official-source links are topic-level portals, not per-post citations of the specific
+  notification - that would be a separate content pass.
+- **Author signals:** bylines link to `/about#mehul-agrawal`; Article schema has `image`;
+  `/about` gained a firm section (offices, focus areas, service links) using only facts already
+  on the site. Two old posts still carry team bylines ("Advisory Team", "International Tax
+  Desk") - left for the user to decide.
+- **Small items:** 16 descriptions trimmed to <=160; `src/app/manifest.ts` added.
+- After content changes: build, `python scripts/generate-agent-files.py`, build again.
+
 ## What Needs to Happen Next
 1. Build backlinks — 1 on record as of Jun 22 export, now 2 after the Jul 8 TaxGuru guest
    post. Keep submitting guest posts to other tax/finance publications, ask ICAI Nashik
@@ -932,10 +999,7 @@ code review. The Sep 25 Opus review's leads were verified and fixed. What change
 6. **Open items from the Sep 29, 2026 session (resume here):**
    - Meta descriptions: DONE (commit fe3b891) - all 173 over-length descriptions rewritten to
      <=160 chars. Keep new ones <=160 (audit script flags >165).
-   - Titles: PENDING user decision - ~176 titles >65 chars and 67 using `title.absolute`
-     without the firm name (deliberate from the Aug audit, but conflicts with the Brand Name
-     Rule). Recommendation given: leave top earners (TAN / TDS-on-NRI-property) alone; only
-     restore the brand on specific pages if the user asks.
+   - Titles: DONE Oct 5, 2026 for blog posts (see SEO Audit Fixes section above).
    - BuiltWith AI Index: recheck the score after BuiltWith rescans (agent-readiness files
      shipped Sep 29, commit fd92ca2). Expect Agent Readiness/Maturity > 0, Visibility ~35.
    - Optional: full fact-check of all 222 posts was NOT done - only the posts flagged by the

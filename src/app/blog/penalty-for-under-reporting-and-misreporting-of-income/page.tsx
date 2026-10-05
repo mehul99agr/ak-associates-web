@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Penalty for Under-Reporting & Misreporting of Income' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'The difference between under-reporting and misreporting of income under Section 270A, the 50% and 200% penalty rates, and how to avoid triggering either.',
     url: 'https://agrawalkhandelwal.com/blog/penalty-for-under-reporting-and-misreporting-of-income',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Penalty for Under-Reporting & Misreporting of Income',
     description: 'What separates under-reporting from misreporting of income, and why the penalty gap between the two is so large.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function PenaltyUnderReportingMisreportingBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 21, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -138,6 +142,8 @@ export default function PenaltyUnderReportingMisreportingBlog() {
 
                 <p>Whether you are responding to a scrutiny notice where a penalty is a live risk, or you have already received a penalty order and want to know if it is worth contesting, getting the under-reporting versus misreporting classification right early changes the exposure by a factor of four. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include penalty response and representation before the assessing officer and appellate authorities.</p>
               </div>
+
+              <PostFooterLinks slug="penalty-for-under-reporting-and-misreporting-of-income" />
 
               <PostCTA
             heading="Facing a penalty notice?"

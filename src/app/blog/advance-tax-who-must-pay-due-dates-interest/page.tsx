@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Advance Tax: Who Must Pay, Due Dates & Interest for Default',
+  title: { absolute: 'Advance Tax: Who Must Pay, Due Dates & Interest for Default' },
   description: 'Who must pay advance tax, the four quarterly due dates and cumulative percentages, and how Section 234B and 234C interest applies if you fall short.',
   keywords: [
     'advance tax due dates', 'who must pay advance tax', 'advance tax installments',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The four quarterly advance tax due dates, cumulative payment percentages, and how 234B/234C interest is calculated on a shortfall.',
     url: 'https://agrawalkhandelwal.com/blog/advance-tax-who-must-pay-due-dates-interest',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Advance Tax: Who Must Pay, Due Dates & Interest',
     description: 'Quarterly due dates, cumulative percentages, and 234B/234C interest explained in plain English.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function AdvanceTaxBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 29, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -145,6 +149,8 @@ export default function AdvanceTaxBlog() {
                 <p>Advance tax is paid online through Challan No. ITNS 280 on the Income Tax e-filing portal or via authorised bank net-banking, selecting "Advance Tax" as the payment type for the relevant assessment year. Keep the challan receipt; it is needed to claim credit for the payment when filing the return and to reconcile the instalment-wise payment history if a 234B/234C interest calculation is ever questioned.</p>
                 <p>Estimating the right amount at each instalment is where most errors creep in, particularly for anyone with variable or lumpy income through the year. Our <Link href="/tax-calculator" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax calculator</Link> can help build a working estimate, and we regularly help clients set up a quarterly advance tax review so instalments are calculated against actual year-to-date income rather than a guess made once in June.</p>
               </div>
+
+              <PostFooterLinks slug="advance-tax-who-must-pay-due-dates-interest" />
 
               <PostCTA
             heading="Need help estimating your advance tax instalments?"

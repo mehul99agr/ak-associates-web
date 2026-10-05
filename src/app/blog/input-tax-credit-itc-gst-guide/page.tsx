@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Input Tax Credit (ITC) Under GST: Eligibility, Reversal & Blocked Credits',
+  title: { absolute: 'Input Tax Credit (ITC) Under GST: Eligibility & Blocked Credits' },
   description: 'How GST Input Tax Credit works: conditions to claim, the Section 16(4) time limit, the 180-day payment rule, and blocked credits under Section 17(5).',
   keywords: [
     'input tax credit GST', 'ITC eligibility GST', 'blocked credit section 17(5)', 'ITC reversal 180 days',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Conditions to claim ITC, the Section 16(4) time limit, the 180-day reversal rule, and blocked credits under Section 17(5).',
     url: 'https://agrawalkhandelwal.com/blog/input-tax-credit-itc-gst-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Input Tax Credit (ITC) Under GST: Eligibility, Reversal & Blocked Credits',
     description: 'Everything a business needs to know before claiming ITC under GST, and where credit gets blocked or reversed.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function InputTaxCreditITCBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 14, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -137,6 +141,8 @@ export default function InputTaxCreditITCBlog() {
                 <h2>Getting ITC Compliance Right</h2>
                 <p>The practical workflow that avoids most disputes: reconcile GSTR-2B against your purchase register every month rather than at year-end, track supplier payment dates against the 180-day clock, and flag any expense category against the Section 17(5) list before claiming credit on it, not after. Businesses managing GST alongside a broader compliance calendar may also find our <Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup compliance calendar</Link> useful for keeping these deadlines in view alongside ROC and income tax obligations.</p>
               </div>
+
+              <PostFooterLinks slug="input-tax-credit-itc-gst-guide" />
 
               <PostCTA
             heading="Not sure if an expense qualifies for ITC?"

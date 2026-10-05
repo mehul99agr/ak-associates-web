@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Reassessment Notice Under Section 148: Time Limits & Response' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The Section 148A show-cause step, current time limits for reopening an assessment, and how to respond to a Section 148 notice.',
     url: 'https://agrawalkhandelwal.com/blog/reassessment-notice-under-section-148-time-limits-and-response',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Reassessment Notice Under Section 148: Time Limits & Response',
     description: 'Time limits, the 148A show-cause step, and how to respond to a Section 148 reassessment notice.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function ReassessmentNoticeSection148Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 19, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -133,6 +137,8 @@ export default function ReassessmentNoticeSection148Blog() {
                 <h2>Why Early Involvement Matters</h2>
                 <p>The single biggest determinant of how a reassessment case plays out is usually how early and how completely the taxpayer engages, ideally at the 148A show-cause stage rather than waiting for the formal notice. The information the department is acting on is disclosed upfront specifically so the taxpayer can address it; a response that engages with that material directly, backed by reconciled records, carries far more weight than a general denial. If you receive either a 148A show-cause notice or a Section 148 notice, involve a CA promptly to review the time limit, the disclosed material, and the strongest response strategy before the deadline runs out. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include reassessment response and representation before the assessing authority.</p>
               </div>
+
+              <PostFooterLinks slug="reassessment-notice-under-section-148-time-limits-and-response" />
 
               <PostCTA
             heading="Received a Section 148 or 148A notice?"

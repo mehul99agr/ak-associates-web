@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'MAT (Minimum Alternate Tax) vs AMT: Applicability & Computation',
+  title: { absolute: 'MAT (Minimum Alternate Tax) vs AMT: Applicability & Computation' },
   description: 'MAT under Section 115JB (15% of book profit) for companies, AMT under Section 115JC for non-corporate taxpayers, and how MAT/AMT credit works.',
   keywords: [
     'minimum alternate tax MAT', 'section 115JB MAT rate', 'alternate minimum tax AMT section 115JC',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'MAT under Section 115JB for companies vs AMT under Section 115JC for non-corporates: rates, computation, and credit carry-forward.',
     url: 'https://agrawalkhandelwal.com/blog/mat-minimum-alternate-tax-vs-amt-applicability-and-computation',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MAT (Minimum Alternate Tax) vs AMT: Applicability & Computation',
     description: 'MAT for companies vs AMT for non-corporate taxpayers: who it applies to and how it is computed.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function MatVsAmtBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 26, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -123,6 +127,8 @@ export default function MatVsAmtBlog() {
                 <p>Neither MAT nor AMT is a permanent extra cost by design; both build in a credit mechanism so the additional tax paid in a low-book-profit or high-deduction year isn&apos;t simply lost. The excess of MAT (or AMT) paid over what would have been payable under normal provisions is carried forward as credit, available for set-off in a future year once the taxpayer&apos;s normal tax liability exceeds the MAT/AMT figure for that year, subject to the carry-forward period prescribed under the Act. Tracking this credit accurately year over year, and factoring it into cash flow and tax planning rather than treating each year&apos;s MAT/AMT payment as a sunk cost, is a routine but easily overlooked part of corporate tax compliance, particularly for companies with volatile book profit due to depreciation timing, provisions, or one-off accounting entries.</p>
                 <p>For companies weighing whether staying on the regular regime (with MAT exposure) or shifting to a concessional, MAT-exempt regime makes more sense, this needs to be modelled alongside the broader rate comparison covered in our <Link href="/blog/corporate-tax-rates-in-india-domestic-company-vs-new-manufacturing-reg" style={{ color: 'var(--primary)', fontWeight: 600 }}>domestic company tax rate guide</Link>, since the MAT credit balance already accumulated can itself be a reason to delay switching regimes in a given year.</p>
               </div>
+
+              <PostFooterLinks slug="mat-minimum-alternate-tax-vs-amt-applicability-and-computation" />
 
               <PostCTA
             heading="Not sure if MAT or AMT applies to you?"

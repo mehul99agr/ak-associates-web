@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'E-Way Bill Rules: When Required, Validity & Penalties',
-  description: 'When an e-way bill is mandatory, the Rs 50,000 consignment value threshold, validity period by distance, extension rules, and penalties for non-compliance under GST.',
+  title: { absolute: 'E-Way Bill Rules: When Required, Validity & Penalties' },
+  description: 'When an e-way bill is mandatory, the Rs 50,000 consignment value threshold, validity period by distance, extension rules, and penalties under GST.',
   keywords: [
     'e-way bill rules', 'e-way bill validity', 'e-way bill threshold', 'e-way bill Rs 50000 limit',
     'e-way bill penalty', 'when is e-way bill required', 'e-way bill validity period distance',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The Rs 50,000 threshold, validity period by distance, extension rules, and penalties for e-way bill non-compliance under GST.',
     url: 'https://agrawalkhandelwal.com/blog/e-way-bill-rules-validity-penalties',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'E-Way Bill Rules: When Required, Validity & Penalties',
     description: 'The Rs 50,000 threshold, validity period by distance, and penalties for e-way bill non-compliance under GST.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function EWayBillRulesBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 16, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -133,6 +137,8 @@ export default function EWayBillRulesBlog() {
                   <li><strong>Letting validity lapse mid-transit without extending:</strong> Once the 8-hour extension window closes, there is no way to extend that specific e-way bill; a fresh one is needed, which can delay the shipment further.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="e-way-bill-rules-validity-penalties" />
 
               <PostCTA
             heading="Need help setting up GST-compliant e-way bill workflows?"

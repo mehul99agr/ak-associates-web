@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Capital Gains Tax on Shares & Mutual Funds: Equity vs Debt' },
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Equity LTCG/STCG rates, the Rs 1.25 lakh exemption, and how debt fund taxation differs, for resident Indian investors.',
     url: 'https://agrawalkhandelwal.com/blog/capital-gains-tax-shares-mutual-funds-equity-debt',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Capital Gains Tax on Shares & Mutual Funds: Equity vs Debt',
     description: 'Equity LTCG/STCG rates, the Rs 1.25 lakh exemption, and how debt fund taxation differs, for resident Indian investors.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function CapitalGainsSharesEquityDebtBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 26, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -137,6 +141,8 @@ export default function CapitalGainsSharesEquityDebtBlog() {
 
                 <p>Use our <Link href="/tools/capital-gains" style={{ color: 'var(--primary)', fontWeight: 600 }}>Capital Gains Calculator</Link> to work out the exact tax on a specific sale, and if you are planning a larger portfolio rebalancing or exit, talk to us before you sell; the Rs 1.25 lakh exemption resets every financial year, and timing a sale across two financial years instead of one can materially change the tax outcome.</p>
               </div>
+
+              <PostFooterLinks slug="capital-gains-tax-shares-mutual-funds-equity-debt" />
 
               <PostCTA
             heading="Planning a share or mutual fund sale?"

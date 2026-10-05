@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GST on Real Estate: Under-Construction vs Ready-to-Move Properties',
+  title: { absolute: 'GST on Real Estate: Under-Construction vs Ready-to-Move' },
   description: 'Why ready-to-move property is GST-free but under-construction flats attract 1% or 5% GST without ITC, how affordable housing is defined, and checks.',
   keywords: [
     'GST on real estate', 'GST on under construction property', 'GST on ready to move property',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Why ready-to-move properties are GST-free but under-construction flats attract 1% or 5% GST without ITC, and what buyers should check before signing.',
     url: 'https://agrawalkhandelwal.com/blog/gst-on-real-estate-under-construction-ready',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST on Real Estate: Under-Construction vs Ready-to-Move Properties',
     description: 'Why ready-to-move properties are GST-free but under-construction flats attract 1% or 5% GST without ITC.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function GstRealEstateBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 18, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -162,6 +166,8 @@ export default function GstRealEstateBlog() {
                   <li><strong>Both parties:</strong> Keep the CC date, occupation certificate, and payment schedule clearly documented, since this evidence is what settles any later dispute over whether GST was correctly charged.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="gst-on-real-estate-under-construction-ready" />
 
               <PostCTA
             heading="Buying, selling, or building? Get the GST position confirmed before you sign."

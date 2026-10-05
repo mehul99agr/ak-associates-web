@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Startup Compliance Calendar (Year 1-3)',
+  title: { absolute: 'Startup Compliance Calendar (Year 1-3)' },
   description: 'Year 1-3 compliance roadmap for an Indian startup: GST, TDS, MCA annual filings, advance tax, FEMA reporting, ESOP and DPIIT self-certification.',
   keywords: [
     'startup compliance calendar India', 'startup compliance checklist year 1',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The recurring, quarterly, and annual compliance rhythm for an Indian Private Limited startup.',
     url: 'https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Compliance Calendar: Year 1 to Year 3',
     description: 'GST, TDS, MCA filings, advance tax, FEMA, ESOP, and DPIIT; the full operating rhythm.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function StartupComplianceCalendarBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Startup Compliance Calendar: Year 1 to Year 3 for Indian Private Limited Companies</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 13, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 13, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -159,6 +163,8 @@ export default function StartupComplianceCalendarBlog() {
               </div>
               <p>Review the calendar at every Board meeting. If a deadline has passed, identify the corrective filing path immediately rather than leaving it to the next financial year.</p>
             </div>
+
+            <PostFooterLinks slug="startup-compliance-calendar-year-1-3" />
 
             <PostCTA
             heading="Want us to run this calendar for you?"

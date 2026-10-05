@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Delaware/Wyoming Incorporation, EIN and ITIN Guide',
+  title: { absolute: 'Delaware/Wyoming Incorporation, EIN and ITIN Guide' },
   description: 'How an Indian founder incorporates in Delaware or Wyoming, applies for an EIN without an SSN, and when a personal ITIN is actually needed versus optional.',
   keywords: [
     'Delaware incorporation Indian founder', 'Wyoming LLC for non-resident',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'The correct order of steps: incorporate, get an EIN without an SSN, then apply for an ITIN only when you actually need to file a return.',
     url: 'https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Delaware/Wyoming Incorporation, EIN and ITIN Guide',
     description: 'Incorporation, EIN, and ITIN steps for non-resident founders.',
+    images: OG_IMAGES,
   },
 }
 
@@ -57,7 +61,7 @@ export default function DelawareWyomingEinItinBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 27, 2025</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 27, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -87,6 +91,8 @@ export default function DelawareWyomingEinItinBlog() {
               <h2>Timing It Around Tax Season</h2>
               <p>Because ITIN processing during peak filing months can run considerably longer than at other times of year, and because international mailing adds further delay, a founder who knows they will need to file a US return should build in extra lead time rather than assuming the process moves quickly close to a deadline.</p>
             </div>
+
+            <PostFooterLinks slug="delaware-wyoming-incorporation-ein-itin-guide" />
 
             <PostCTA
             heading="Setting up a US entity from India?"

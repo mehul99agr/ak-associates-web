@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'CSR Fund Utilisation: Compliance for Receiving Trusts' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'CSR-1 registration, utilisation certificates, and the reporting obligations a trust takes on the moment it accepts corporate CSR money.',
     url: 'https://agrawalkhandelwal.com/blog/csr-fund-utilisation-compliance-for-receiving-trusts',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'CSR Fund Utilisation: Compliance for Receiving Trusts',
     description: 'CSR-1 registration, utilisation certificates, and the reporting obligations a trust takes on the moment it accepts corporate CSR money.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function CsrFundUtilisationComplianceBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 12, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -127,6 +131,8 @@ export default function CsrFundUtilisationComplianceBlog() {
                 </ul>
                 <p>Handled well, CSR funding is one of the more durable and repeatable sources of grant income available to an Indian trust. Handled loosely, a single missed utilisation certificate or a lapsed 12A registration can end a relationship a trust spent years building.</p>
               </div>
+
+              <PostFooterLinks slug="csr-fund-utilisation-compliance-for-receiving-trusts" />
 
               <PostCTA
             heading="Setting up your trust to receive CSR funding?"

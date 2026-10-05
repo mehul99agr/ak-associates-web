@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
-import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
+import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     description: 'Complete FEMA checklist for Indian startups raising foreign capital: FDI route, FC-GPR filing, FLA return, and the 5 mistakes that trigger RBI notices.',
     url: 'https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -111,7 +113,7 @@ export default function FemaComplianceBlog() {
               <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
                 FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)
               </h1>
-              <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on June 08, 2026 &bull; Updated September 29, 2026 &bull; By CA Mehul Agrawal</p>
+              <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on June 08, 2026 &bull; Updated September 29, 2026 &bull; By <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link></p>
             </div>
 
             <div className="blog-content" style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
@@ -273,6 +275,8 @@ export default function FemaComplianceBlog() {
                 </Link>
               </div>
             </div>
+                    <PostFooterLinks slug="fema-compliance-foreign-investment-startups" />
+
                     <PostCTA
             heading="Raising foreign investment for your startup?"
             description="We help with FEMA compliance, FC-GPR reporting and valuation requirements."

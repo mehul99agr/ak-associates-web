@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Related Party Transactions Under Companies Act: Disclosure & Approval' },
+  title: { absolute: 'Related Party Transactions: Companies Act Disclosure & Approval' },
   description: 'Section 188 of the Companies Act 2013: which transactions need board approval, when shareholder approval kicks in, and how Form AOC-2 disclosure works.',
   keywords: [
     'related party transactions companies act', 'section 188 companies act', 'form AOC-2', 'RPT board approval',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Board and shareholder approval requirements for related party transactions under Section 188, and how Form AOC-2 disclosure works.',
     url: 'https://agrawalkhandelwal.com/blog/related-party-transactions-under-companies-act-disclosure-and-approval',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Related Party Transactions Under Companies Act: Disclosure & Approval',
     description: 'Section 188 approval thresholds, board vs shareholder approval, and Form AOC-2 disclosure for related party transactions.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function RelatedPartyTransactionsBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 29, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -128,6 +132,8 @@ export default function RelatedPartyTransactionsBlog() {
                 <p>A related party transaction entered into without the required board or shareholder approval is voidable at the option of the board or, in appropriate cases, the shareholders. If the transaction is not ratified within three months of being entered into, the director or authorised person who arranged it becomes personally liable to indemnify the company for any loss it suffers, and to account for any gain made. Separately, non-compliance with Section 188 attracts monetary penalties on the company and on every officer in default, and where the transaction was undertaken fraudulently, the exposure extends further to the fraud provisions of the Act. This links directly to the personal liability exposure directors carry more generally; see our companion piece on <Link href="/blog/director-responsibility-and-liability-under-the-companies-act" style={{ color: 'var(--primary)', fontWeight: 600 }}>director responsibility and liability under the Companies Act</Link>.</p>
                 <p>The practical discipline that avoids most disputes: flag any transaction with a director, KMP, their relatives, or a related entity before it is signed, not after, route it through a board resolution with the interested director recused, check it against the Rule 15(3) thresholds for shareholder approval, and make sure it lands correctly in that year's AOC-2. Getting related party approvals right is also one of the first things reviewed in <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>fundraising due diligence</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="related-party-transactions-under-companies-act-disclosure-and-approval" />
 
               <PostCTA
             heading="Structuring a related party transaction?"

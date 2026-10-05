@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Related Party Loans & Section 185/186 Compliance' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What Section 185 restricts on director loans, how Section 186 caps inter-corporate loans and investments, and the approvals both require.',
     url: 'https://agrawalkhandelwal.com/blog/related-party-loans-and-section-185-186-compliance',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Related Party Loans & Section 185/186 Compliance',
     description: 'Loans to directors under Section 185 and inter-corporate loans/investments under Section 186, explained with limits and approval requirements.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function RelatedPartyLoansSection185186Blog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 1, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -134,6 +138,8 @@ export default function RelatedPartyLoansSection185186Blog() {
                   </ul>
                 </div>
               </div>
+
+              <PostFooterLinks slug="related-party-loans-and-section-185-186-compliance" />
 
               <PostCTA
             heading="Structuring a related party loan or inter-corporate investment?"

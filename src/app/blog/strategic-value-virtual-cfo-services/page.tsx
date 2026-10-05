@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'When Your Business Needs a Virtual CFO',
+  title: { absolute: 'When Your Business Needs a Virtual CFO' },
   description: 'Why SMEs at Rs 3-15 crore revenue need a Virtual CFO: MIS, budgeting, cash flow, fundraising and tax planning for less than a full-time hire.',
   keywords: ['virtual CFO India', 'CFO services for SMEs', 'outsourced CFO India', 'fractional CFO India', 'fractional CFO services for startups in India', 'Virtual CFO Mumbai', 'Virtual CFO Nashik', 'startup CFO services', 'virtual CFO cost India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services' },
-  openGraph: { title: 'Virtual CFO Services: When You Need One & What They Do', description: 'MIS, budgeting, cash flow, fundraising support at a fraction of a full-time CFO.', url: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services', type: 'article' },
+  openGraph: { title: 'Virtual CFO Services: When You Need One & What They Do', description: 'MIS, budgeting, cash flow, fundraising support at a fraction of a full-time CFO.', url: 'https://agrawalkhandelwal.com/blog/strategic-value-virtual-cfo-services', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('When Your Business Needs a Virtual CFO', 'strategic-value-virtual-cfo-services')
@@ -45,7 +47,7 @@ export default function VirtualCFOBlog() {
             <span className="section-badge">Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Virtual CFO Services: When You Need One, What They Actually Do, and What It Costs</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published February 25, 2026</span><span aria-hidden>&bull;</span><span>Updated August 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span>
+              <span>Published February 25, 2026</span><span aria-hidden>&bull;</span><span>Updated August 16, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -98,6 +100,8 @@ export default function VirtualCFOBlog() {
               <p>The return on a Virtual CFO engagement rarely comes from a single dramatic intervention. It compounds quietly: a working capital loan arranged at 10.5% instead of 13% saves Rs 2.5 lakh per year on a Rs 1 crore facility. A tax planning exercise defers Rs 8 lakh in advance tax. A cash flow model prevents an avoidable overdraft. A well-prepared CMA gets a Rs 2 crore term loan sanctioned in 3 weeks instead of 4 months.</p>
               <p>Over three years, these incremental improvements typically deliver 5-15x the cost of the engagement.</p>
             </div>
+
+            <PostFooterLinks slug="strategic-value-virtual-cfo-services" />
 
             <PostCTA
             heading="Need a Virtual CFO for your business?"

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Buyback of Shares: Tax Implications for Companies & Shareholders (FY 2026-27)' },
+  title: { absolute: 'Buyback of Shares: Tax for Companies & Shareholders (FY 2026-27)' },
   description: 'Share buyback tax from April 1, 2026: back to capital gains under Section 69 (not deemed dividend), plus a new Special Additional Tax on promoters.',
   keywords: [
     'buyback of shares tax', 'share buyback taxation India', 'section 115QA buyback tax',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Buyback taxation reverted to a capital-gains framework from April 1, 2026, with a new Special Additional Tax on promoters. What changed, again.',
     url: 'https://agrawalkhandelwal.com/blog/buyback-of-shares-tax-implications-for-companies-and-shareholders',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Buyback of Shares: Tax Implications for Companies & Shareholders',
     description: 'From April 1, 2026: capital gains treatment replaces the deemed-dividend regime, plus a new Special Additional Tax on promoters.',
+    images: OG_IMAGES,
   },
 }
 
@@ -90,7 +94,7 @@ export default function BuybackOfSharesTaxBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 28, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -134,6 +138,8 @@ export default function BuybackOfSharesTaxBlog() {
                 <h2>What This Means for Companies Planning a Buyback Now</h2>
                 <p>With the shift back to capital-gains treatment from April 1, 2026, a buyback is closer to being a genuinely tax-efficient route for ordinary shareholders again, since only the gain is taxed rather than the full proceeds. But this no longer applies uniformly: promoters face the new Special Additional Tax on top of the capital-gains number, and the exact trigger for that tax needs confirming case by case. Companies should model the after-tax outcome separately for promoter and non-promoter shareholders, factoring in each shareholder&apos;s holding period and whether the promoter-specific tax applies to their participation, rather than assuming either the old deemed-dividend numbers or a blanket capital-gains rate for everyone. For closely held companies weighing a buyback as part of a broader promoter exit or capital restructuring, this is worth modelling alongside our guidance on <Link href="/blog/startup-valuation-methods-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup valuation</Link> and cap table planning.</p>
               </div>
+
+              <PostFooterLinks slug="buyback-of-shares-tax-implications-for-companies-and-shareholders" />
 
               <PostCTA
             heading="Planning a share buyback or a shareholder exit?"

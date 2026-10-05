@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Board Meeting & AGM Compliance Calendar for Private Limited Companies' },
+  title: { absolute: 'Board Meeting & AGM Compliance Calendar for Private Companies' },
   description: 'Minimum board meeting frequency under Section 173, AGM deadlines under Section 96, and quorum rules every private limited company in India needs to track.',
   keywords: [
     'board meeting compliance companies act', 'minimum board meetings per year', 'AGM due date private limited company',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'How many board meetings a private limited company must hold, when the AGM is due, and the quorum rules that make a meeting valid.',
     url: 'https://agrawalkhandelwal.com/blog/board-meeting-and-agm-compliance-calendar-for-private-limited-companie',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Board Meeting & AGM Compliance Calendar for Private Limited Companies',
     description: 'Board meeting frequency, AGM deadlines, and quorum rules for private limited companies under the Companies Act 2013.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function BoardMeetingAgmComplianceCalendarBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 29, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -121,6 +125,8 @@ export default function BoardMeetingAgmComplianceCalendarBlog() {
                 <p>Board meeting and AGM compliance feed directly into other filings that depend on them. The AGM is where the financial statements are adopted, auditors are (re)appointed, and dividends (if any) are declared, all of which then need to be reflected in the <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>annual ROC filings (AOC-4 and MGT-7)</Link> within their own separate deadlines measured from the AGM date. A late or unheld AGM has a knock-on effect on every filing downstream of it. It is also one of the first governance checks an investor's legal team runs during a funding round, alongside the <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>fundraising due diligence checklist</Link>.</p>
                 <p>A simple annual calendar, anchored to the financial year close, with board meeting dates spaced roughly quarterly and the AGM date fixed early, removes most of the risk. Companies that treat this as a running checklist rather than a year-end scramble rarely run into default notices.</p>
               </div>
+
+              <PostFooterLinks slug="board-meeting-and-agm-compliance-calendar-for-private-limited-companie" />
 
               <PostCTA
             heading="Need help setting up your compliance calendar?"

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Profit Split Method (PSM) in Transfer Pricing: A Practical Guide',
+  title: { absolute: 'Profit Split Method (PSM) in Transfer Pricing: A Practical Guide' },
   description: 'The Profit Split Method under Rule 10B(1)(d): how combined profit is allocated, when it is most appropriate, and contribution vs residual profit split.',
   keywords: [
     'profit split method transfer pricing', 'PSM transfer pricing India', 'Rule 10B(1)(d)',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'How PSM allocates combined profit under Rule 10B(1)(d), when it applies, and how residual vs contribution profit split differ.',
     url: 'https://agrawalkhandelwal.com/blog/profit-split-method-psm-in-transfer-pricing-a-practical-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Profit Split Method (PSM) in Transfer Pricing',
     description: 'When PSM is the most appropriate method and how residual vs contribution profit split analyses work.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function PSMBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 17, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -125,6 +129,8 @@ export default function PSMBlog() {
                 <h2>Documentation Expectations</h2>
                 <p>A PSM study should document the transactions and parties covered, how the combined profit pool was computed and reconciled to financial statements, the functional analysis supporting each party&apos;s relative contribution, why a contribution or residual approach was chosen, the allocation key and the reasoning for it, and why PSM was selected over a one-sided method. This reasoning is typically the first thing examined in a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link>, and where applicable the transaction still needs to be reported in <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB</Link> alongside the supporting documentation.</p>
               </div>
+
+              <PostFooterLinks slug="profit-split-method-psm-in-transfer-pricing-a-practical-guide" />
 
               <PostCTA
             heading="Working with unique intangibles or integrated operations across borders?"

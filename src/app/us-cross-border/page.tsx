@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'US Incorporation & Compliance for Indian Founders',
+  title: 'US Incorporation for Indian Founders',
   description: 'US entity structuring for Indian founders: LLC vs C-Corp, EIN/ITIN, FBAR/FATCA, Form 5471/5472/8858, US sales tax nexus, and India-US DTAA advisory.',
   keywords: [
     'US incorporation for Indian founders', 'US LLC compliance India',
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: 'US Incorporation & Compliance for Indian Founders | Agrawal Khandelwal & Associates LLP',
     description: 'LLC vs C-Corp structuring, EIN/ITIN, FBAR/FATCA, IRS foreign-ownership filings, US sales tax nexus, and India-US DTAA advisory for Indian founders running a US entity.',
     url: 'https://agrawalkhandelwal.com/us-cross-border',
+    images: OG_IMAGES,
   },
 }
 

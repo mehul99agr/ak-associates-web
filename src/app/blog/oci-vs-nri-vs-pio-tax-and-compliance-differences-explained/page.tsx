@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'OCI vs NRI vs PIO: Tax & Compliance Differences Explained',
+  title: { absolute: 'OCI vs NRI vs PIO: Tax & Compliance Differences Explained' },
   description: 'OCI is an immigration status, NRI a tax status, and PIO no longer exists. What each means for property rights, FEMA investment and Indian tax filing.',
   keywords: [
     'OCI vs NRI', 'OCI vs PIO', 'PIO card merged with OCI', 'overseas citizen of India tax status',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'OCI is an immigration status, NRI is a tax-residency status, and they are not the same axis. What each means for property, FEMA, and tax filing.',
     url: 'https://agrawalkhandelwal.com/blog/oci-vs-nri-vs-pio-tax-and-compliance-differences-explained',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'OCI vs NRI vs PIO: Tax & Compliance Differences Explained',
     description: 'An OCI card holder can still be a resident Indian for tax purposes. Here is why OCI and NRI are not interchangeable.',
+    images: OG_IMAGES,
   },
 }
 
@@ -83,7 +87,7 @@ export default function OciNriPioBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 18, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -122,6 +126,8 @@ export default function OciNriPioBlog() {
                 <h2>Getting the Right Status Assessment</h2>
                 <p>Because OCI, NRI, and the retired PIO label sit on different legal frameworks, the practical approach is to assess each relevant question separately rather than assuming one label answers all three: check FEMA residential status for account and property questions, check Income Tax Act residency for filing and tax rate questions, and treat OCI purely as the immigration/entry status it is. Anyone still holding an unconverted PIO card should prioritise converting to OCI, since PIO cards no longer function at the border. For NRIs and OCI holders navigating year-to-year residency changes, our <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR status guide for returning NRIs</Link> covers the transition period in detail.</p>
               </div>
+
+              <PostFooterLinks slug="oci-vs-nri-vs-pio-tax-and-compliance-differences-explained" />
 
               <PostCTA
             heading="Not sure whether you are a resident or non-resident this year?"

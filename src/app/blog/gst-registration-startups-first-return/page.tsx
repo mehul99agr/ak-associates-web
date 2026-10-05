@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GST Registration for Startups',
+  title: { absolute: 'GST Registration for Startups' },
   description: 'When GST registration becomes mandatory for a startup, the registration process, and a walkthrough of your first GSTR-1 and GSTR-3B returns.',
   keywords: [
     'GST registration startup India', 'GST threshold startup', 'first GST return startup',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Turnover thresholds, compulsory registration triggers, the registration process, and your first GSTR-1/GSTR-3B.',
     url: 'https://agrawalkhandelwal.com/blog/gst-registration-startups-first-return',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST Registration for Startups',
     description: 'When it is mandatory, the process, and your first-return workflow.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function GSTRegistrationStartupsBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>GST Registration for Startups: When It Is Required and How to File Your First Return</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 2, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 2, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -105,6 +109,8 @@ export default function GSTRegistrationStartupsBlog() {
               <h2>Build a Monthly GST Control</h2>
               <p>GST is easier when treated as a monthly financial control rather than a filing deadline. Maintain a tax calendar, invoice checklist, vendor onboarding process, reconciliation tracker, and issue log. This matters for more than compliance; see our <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>fundraising due diligence checklist</Link>, since investors often compare GST returns against revenue in management accounts, bank collections, and audited financial statements. Also see our related guide on <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST for exporters</Link> if the startup sells internationally.</p>
             </div>
+
+            <PostFooterLinks slug="gst-registration-startups-first-return" />
 
             <PostCTA
             heading="Need help registering for GST or filing your first return?"

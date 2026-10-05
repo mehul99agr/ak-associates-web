@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Income Tax on Cryptocurrency & Virtual Digital Assets (VDA)',
+  title: { absolute: 'Income Tax on Cryptocurrency & Virtual Digital Assets (VDA)' },
   description: 'How crypto and NFT gains are taxed in India: flat 30% under Section 115BBH, 1% TDS under Section 194S, no loss set-off, and what counts as a VDA.',
   keywords: [
     'income tax on cryptocurrency india', 'virtual digital asset tax', 'VDA tax section 115BBH',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Flat 30% tax under Section 115BBH, 1% TDS under Section 194S, no loss set-off, and what qualifies as a VDA under Indian tax law.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-cryptocurrency-virtual-digital-assets-vda',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax on Cryptocurrency & Virtual Digital Assets (VDA)',
     description: 'How crypto and NFT gains are taxed in India: rate, TDS, and the no-loss-set-off rule explained.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function CryptoVDATaxBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 27, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -155,6 +159,8 @@ export default function CryptoVDATaxBlog() {
 
                 <p>If you have crypto or NFT transactions to report this year, or are unsure how staking, mining, or an international exchange account fits into this framework, our team can review your transaction history and prepare an accurate Schedule VDA computation before you file. For broader NRI-specific questions on foreign asset disclosure alongside crypto holdings, see our <Link href="/blog/schedule-fa-foreign-asset-disclosure-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Schedule FA guide</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-cryptocurrency-virtual-digital-assets-vda" />
 
               <PostCTA
             heading="Need help reporting crypto or VDA income correctly?"

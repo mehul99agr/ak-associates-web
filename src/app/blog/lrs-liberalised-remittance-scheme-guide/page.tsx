@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'LRS Guide: USD 250K Limit & TCS (2026)',
+  title: { absolute: 'LRS Guide: USD 250K Limit & TCS (2026)' },
   description: 'India\'s Liberalised Remittance Scheme: USD 250,000 annual limit, permitted purposes, TCS rates after Budget 2026, Form A2, and how LRS fits with FEMA.',
   keywords: ['LRS India', 'liberalised remittance scheme', 'USD 250000 limit India', 'LRS TCS rate', 'LRS permitted purposes', 'send money abroad India', 'LRS FEMA', 'outward remittance India'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide' },
-  openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article' },
+  openGraph: { title: 'LRS: USD 250K Limit, TCS & Compliance (2026)', description: 'Permitted purposes, TCS rates, Form A2, and FEMA interaction.', url: 'https://agrawalkhandelwal.com/blog/lrs-liberalised-remittance-scheme-guide', type: 'article', images: OG_IMAGES },
 }
 
 const breadcrumbLd = buildBlogBreadcrumbLd('LRS Guide: USD 250K Limit & TCS (2026)', 'lrs-liberalised-remittance-scheme-guide')
@@ -44,7 +46,7 @@ export default function LRSGuideBlog() {
             <span className="section-badge">FEMA &amp; Compliance</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>LRS (Liberalised Remittance Scheme): The USD 250K Route for Sending Money Abroad</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 20, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 20, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -123,6 +125,8 @@ export default function LRSGuideBlog() {
               <h3>Returning NRI Who Has Become Resident</h3>
               <p>A <Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>returning NRI</Link> who has become an Indian resident can use LRS to send money abroad from their resident accounts. This is relevant for maintaining overseas investments, sending money to family abroad, or funding foreign property after becoming resident. The NRO repatriation route is no longer available once you are resident; LRS is the correct mechanism.</p>
             </div>
+
+            <PostFooterLinks slug="lrs-liberalised-remittance-scheme-guide" />
 
             <PostCTA
             heading="Need help with outward remittances or FEMA compliance?"

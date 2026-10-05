@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
-import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
+import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'UAE Entity Setup: When It Makes Sense',
+  title: { absolute: 'UAE Entity Setup: When It Makes Sense' },
   description: 'UAE entity formation for Indian founders: FEMA exposure, substance requirements, DTAA limits, and when a Dubai company becomes a compliance liability.',
   keywords: [
     'UAE entity setup India', 'Dubai company formation Indian founders',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Honest breakdown of UAE entity formation for Indian businesses, when the structure works, when it\'s expensive FOMO, and what FEMA and DTAA actually say.',
     url: 'https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +60,7 @@ export default function UAEEntitySetupBlog() {
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
               UAE Entity Setup: When It Makes Sense (And When It Doesn&apos;t)
             </h1>
-            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 08, 2026 • By Mehul Agrawal, International Tax Advisor</p>
+            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 08, 2026 • By <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>, International Tax Advisor</p>
           </div>
 
           <div style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
@@ -171,6 +173,8 @@ export default function UAEEntitySetupBlog() {
               <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
             </div>
           </div>
+                  <PostFooterLinks slug="uae-entity-setup-when-it-makes-sense" />
+
                   <PostCTA
             heading="Considering a UAE entity?"
             description="We help you decide whether it makes sense and structure it correctly."

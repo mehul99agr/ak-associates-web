@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'ESI Registration: Applicability & Employer Compliance',
+  title: { absolute: 'ESI Registration: Applicability & Employer Compliance' },
   description: 'When ESI applies at 10 or 20 employees, the Rs 21,000 wage ceiling, the 4% contribution split, and the ongoing filings employers must handle.',
   keywords: [
     'ESI registration applicability', 'ESI wage ceiling 21000', 'ESI contribution rate',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The 10/20-employee ESI threshold, the Rs 21,000 wage ceiling, the 4% contribution split, and ongoing employer compliance.',
     url: 'https://agrawalkhandelwal.com/blog/esi-registration-applicability-and-employer-compliance',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ESI Registration: Applicability & Employer Compliance',
     description: 'Who is covered under ESI, the wage ceiling, the contribution rates, and what ongoing compliance looks like.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function EsiRegistrationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 4, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -122,6 +126,8 @@ export default function EsiRegistrationBlog() {
                 <h2>ESI Alongside EPF and Contractor Compliance</h2>
                 <p>Businesses that cross the ESI threshold are frequently close to, or already past, the <Link href="/blog/epf-registration-and-compliance-for-startups-and-smes" style={{ color: 'var(--primary)', fontWeight: 600 }}>EPF registration threshold</Link> as well, since both are driven by growing headcount. It is worth reviewing both obligations together rather than addressing them in isolation, since the underlying employee and wage data largely overlaps. Businesses that rely heavily on contract or agency staff should also examine that workforce&apos;s classification carefully, since misclassified staff can retroactively affect both ESI and EPF applicability; see our related guide on <Link href="/blog/contract-labour-vs-employment-compliance-risks-for-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>contract labour versus employment compliance risk</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="esi-registration-applicability-and-employer-compliance" />
 
               <PostCTA
             heading="Not sure if your establishment is covered under ESI?"

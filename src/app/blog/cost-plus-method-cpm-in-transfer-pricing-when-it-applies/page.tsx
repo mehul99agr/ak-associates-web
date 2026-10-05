@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Cost Plus Method (CPM) in Transfer Pricing: When It Applies',
+  title: { absolute: 'Cost Plus Method (CPM) in Transfer Pricing: When It Applies' },
   description: 'The Cost Plus Method under Rule 10B(1)(c): the cost base, when it fits contract manufacturers and low-risk service providers, and why TNMM often replaces it.',
   keywords: [
     'cost plus method transfer pricing', 'CPM transfer pricing India', 'Rule 10B(1)(c)',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'How CPM works under Rule 10B(1)(c), the cost base it uses, and when it beats TNMM for contract manufacturers and low-risk service providers.',
     url: 'https://agrawalkhandelwal.com/blog/cost-plus-method-cpm-in-transfer-pricing-when-it-applies',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Cost Plus Method (CPM) in Transfer Pricing',
     description: 'When CPM is the most appropriate method, the cost base it uses, and a worked mark-up example.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function CPMBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 14, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -135,6 +139,8 @@ export default function CPMBlog() {
                 <h2>Documentation Expectations</h2>
                 <p>Where CPM is applied, the transfer pricing study should clearly set out the cost base and how it was arrived at, the comparable companies or transactions used for the mark-up and why they were selected, any comparability adjustments made, and a reasoned explanation of why CPM was chosen over TNMM or another method for this particular transaction. This method-selection reasoning matters as much as the final mark-up figure if the file is picked up for a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link>, and where the transaction value crosses the applicable threshold, the analysis feeds directly into <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="cost-plus-method-cpm-in-transfer-pricing-when-it-applies" />
 
               <PostCTA
             heading="Need help applying CPM to a manufacturing or services arrangement?"

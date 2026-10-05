@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'LLP vs Private Limited Company (2026)',
+  title: { absolute: 'LLP vs Private Limited Company (2026)' },
   description: 'LLP vs Private Limited: tax, compliance, fundraising limits and the LLP-to-Pvt-Ltd conversion path, with scenarios for which structure wins.',
   keywords: [
     'LLP vs Private Limited India', 'LLP vs Pvt Ltd comparison', 'LLP tax vs company tax India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Tax treatment, compliance burden, fundraising limitations, and real scenarios for which structure wins.',
     url: 'https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'LLP vs Private Limited Company (2026)',
     description: 'Tax, compliance, and fundraising differences; and which structure fits your business.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function LLPvsPvtLtdBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>LLP vs Private Limited Company in India: A Founder&apos;s Detailed Comparison</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 15, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 15, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -115,6 +119,8 @@ export default function LLPvsPvtLtdBlog() {
               <h2>Our Practical Recommendation</h2>
               <p>Choose the structure based on ownership and funding, not incorporation cost alone. If you are two or more professionals building a profitable, partner-owned practice, an LLP is often clean and proportionate. If you are building a company that will need outside capital, equity incentives, or a scalable ownership model, incorporate as a Private Limited Company from the beginning; see our <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>full incorporation guide</Link> for the step-by-step process.</p>
             </div>
+
+            <PostFooterLinks slug="llp-vs-private-limited-comparison-india" />
 
             <PostCTA
             heading="Not sure whether to incorporate as an LLP or Private Limited Company?"

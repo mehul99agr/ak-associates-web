@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax Implications for NRIs Working Remotely for Foreign Employers From India',
+  title: { absolute: 'NRIs Working Remotely From India for Foreign Employers: Tax Rules' },
   description: 'NRI working remotely from India for a foreign employer: residential status impact, tax on foreign salary once resident, DTAA relief and withholding.',
   keywords: [
     'NRI remote work from India tax', 'foreign employer salary taxed in India', 'NRI working remotely India tax rules',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Residential status impact, taxability of foreign salary once resident, and DTAA relief for NRIs working from India.',
     url: 'https://agrawalkhandelwal.com/blog/tax-implications-for-nris-working-remotely-for-foreign-employers-from',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tax Implications for NRIs Working Remotely From India',
     description: 'What happens to an NRI\'s foreign salary once they start working from India for a foreign employer.',
+    images: OG_IMAGES,
   },
 }
 
@@ -83,7 +87,7 @@ export default function NriRemoteWorkTaxBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 4, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function NriRemoteWorkTaxBlog() {
                 <h2>A Practical Approach</h2>
                 <p>Anyone in this situation, or anticipating moving into it, should track two things carefully through the year: total days physically present in India (for residential status) and, separately, which specific days involved actually performing work while in India (for source-of-income purposes). Combine that with early engagement on DTAA documentation and a realistic advance tax estimate rather than waiting for year-end, and the compliance burden becomes manageable rather than a surprise at filing time.</p>
               </div>
+
+              <PostFooterLinks slug="tax-implications-for-nris-working-remotely-for-foreign-employers-from" />
 
               <PostCTA
             heading="Working remotely from India for a foreign employer?"

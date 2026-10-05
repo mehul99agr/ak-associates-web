@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
-import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
+import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
 export const metadata: Metadata = {
-  title: 'Dubai Company Registration Guide (2026)',
+  title: { absolute: 'Dubai Company Registration Guide (2026)' },
   description: 'Dubai company registration guide for Indian entrepreneurs: Mainland vs Free Zone vs Offshore, costs, FEMA compliance, UAE Corporate Tax, and required documents.',
   keywords: [
     'Dubai company registration India',
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     description: 'Mainland vs Free Zone vs Offshore, real costs, FEMA obligations, and UAE Corporate Tax; everything an Indian entrepreneur needs before registering a Dubai company.',
     url: 'https://agrawalkhandelwal.com/blog/dubai-company-registration-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -65,7 +67,7 @@ export default function DubaiCompanyRegistrationBlog() {
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)', lineHeight: 1.25 }}>
                 Dubai Company Registration: Complete Guide for Indian Entrepreneurs (2026)
               </h1>
-              <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 19, 2026 &bull; By Mehul Agrawal, UAE Corporate Tax Advisor</p>
+              <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on May 19, 2026 &bull; By <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>, UAE Corporate Tax Advisor</p>
             </div>
 
             <div style={{ color: 'var(--text-main)', lineHeight: '1.85', fontSize: '1.05rem' }}>
@@ -346,6 +348,8 @@ export default function DubaiCompanyRegistrationBlog() {
                 <Link href="/company-incorporation" className="btn btn-outline">Company Incorporation India</Link>
               </div>
             </div>
+                    <PostFooterLinks slug="dubai-company-registration-guide" />
+
                     <PostCTA
             heading="Thinking of setting up in Dubai?"
             description="We advise on whether a UAE entity makes sense and how it affects your Indian tax position."

@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Form 3CEB Filing Guide (FY 2026-27)',
-  description: 'Who must file Form 3CEB, what the CA certifies, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty under Section 271BA for late or non-filing.',
+  title: { absolute: 'Form 3CEB Filing Guide (FY 2026-27)' },
+  description: 'Who must file Form 3CEB, what the CA certifies, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty under Section 271BA for late filing.',
   keywords: [
     'form 3CEB', 'form 3CEB due date', 'form 3CEB filing process', 'form 3CEB penalty',
     'section 92E India', 'section 271BA penalty', 'transfer pricing audit report',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Who must file, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty for missing it.',
     url: 'https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 3CEB: Due Date, Process & Penalties (FY 2026-27)',
     description: 'Who must file, when it is due, and what happens if you miss it.',
+    images: OG_IMAGES,
   },
 }
 
@@ -59,7 +63,7 @@ export default function Form3CEBBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Form 3CEB: Due Date, Filing Process and Penalties for FY 2026-27</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 9, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -183,6 +187,8 @@ export default function Form3CEBBlog() {
                 <li>Master File and CbCR applicability have been separately checked</li>
               </ul>
             </div>
+
+            <PostFooterLinks slug="form-3ceb-transfer-pricing-audit-report" />
 
             <PostCTA
             heading="Need Form 3CEB filed correctly and on time?"

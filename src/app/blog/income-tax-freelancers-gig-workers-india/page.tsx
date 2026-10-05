@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax on Freelancers & Gig Workers in India' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Income head classification, presumptive taxation, advance tax, TDS, GST, and expense deductions for freelancers and gig workers.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-freelancers-gig-workers-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax on Freelancers & Gig Workers in India',
     description: 'How freelance and gig income is taxed: classification, 44ADA, advance tax, TDS, GST and deductions.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function FreelancerGigTaxBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 10, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -130,6 +134,8 @@ export default function FreelancerGigTaxBlog() {
 
                 <p>Freelance and gig income sits at the intersection of several compliance obligations that a salaried taxpayer never has to think about together: business income classification, presumptive taxation choices, advance tax instalments, TDS reconciliation, and GST registration thresholds. Getting the classification and regime choice right in the first year saves considerable rework later. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> help freelancers and independent consultants set up the right structure from day one.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-freelancers-gig-workers-india" />
 
               <PostCTA
             heading="Freelancing or gig working and unsure how to structure your taxes?"

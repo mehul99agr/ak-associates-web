@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Belated, Revised & Updated Returns: ITR-U Under Section 139(8A)',
+  title: { absolute: 'Belated, Revised & Updated Returns: ITR-U Under Section 139(8A)' },
   description: 'Missed the ITR deadline or found an error? Belated, revised and updated returns (ITR-U) under Section 139(8A), the additional tax, and filing windows.',
   keywords: [
     'ITR-U', 'updated return income tax', 'Section 139(8A)', 'belated return',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Belated returns, revised returns, and ITR-U (updated return) explained: deadlines, additional tax slabs, and who can and cannot file.',
     url: 'https://agrawalkhandelwal.com/blog/belated-revised-updated-returns-itr-u-139-8a',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Belated, Revised & Updated Returns: ITR-U Explained',
     description: 'Belated returns, revised returns, and ITR-U (updated return): deadlines, additional tax, and eligibility.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function ItrUBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 2, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -165,6 +169,8 @@ export default function ItrUBlog() {
                 </ul>
                 <p>Sorting out which correction route applies, and doing the additional tax calculation correctly, is exactly the kind of filing question our team handles routinely. If you are unsure which window you are still inside, or need help computing ITR-U additional tax before filing, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax filing services</Link> can walk you through it.</p>
               </div>
+
+              <PostFooterLinks slug="belated-revised-updated-returns-itr-u-139-8a" />
 
               <PostCTA
             heading="Need to file a belated, revised, or updated return?"

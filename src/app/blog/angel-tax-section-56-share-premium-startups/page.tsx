@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Angel Tax Abolished for All Investors',
+  title: { absolute: 'Angel Tax Abolished for All Investors' },
   description: 'Angel tax under Section 56(2)(viib) was abolished for all investors from FY 2024-25. What it means for new rounds, and why past rounds still need review.',
   keywords: [
     'angel tax India abolished', 'section 56(2)(viib)', 'angel tax removed startups',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What the abolition of Section 56(2)(viib) means for new fundraising, and why historic rounds still need review.',
     url: 'https://agrawalkhandelwal.com/blog/angel-tax-section-56-share-premium-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Angel Tax: Abolished for All Investors (FY 2024-25)',
     description: 'Section 56(2)(viib) no longer applies to any investor class. What that means for founders.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function AngelTaxBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Angel Tax and Share Premium: What Changed Under Section 56(2)(viib)</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 21, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 21, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -96,6 +100,8 @@ export default function AngelTaxBlog() {
               <h2>Preserve a Defensible Valuation File</h2>
               <p>For each funding round, keep a file containing the term sheet, Board and shareholder approvals, valuation report, financial model, key assumptions, investor subscription documents, bank receipts, share allotment records, and ROC filings. If the company uses DCF, document the business drivers behind revenue growth, gross margin, hiring, customer acquisition, working capital, and terminal value. A spreadsheet without a written assumptions note is difficult to defend after the founding team has changed; or after a tax officer asks about a round raised years ago under the old provision.</p>
             </div>
+
+            <PostFooterLinks slug="angel-tax-section-56-share-premium-startups" />
 
             <PostCTA
             heading="Need to review a historic funding round or plan a new one?"

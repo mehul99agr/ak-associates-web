@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Income Tax Notices Explained: Section 143(1), 143(2) & 148' },
-  description: 'What a Section 143(1) intimation, a Section 143(2) scrutiny notice, and a Section 148 reassessment notice each mean, how to respond, and the deadlines that matter.',
+  description: 'What a Section 143(1) intimation, a Section 143(2) scrutiny notice, and a Section 148 reassessment notice each mean, how to respond, and key deadlines.',
   keywords: [
     'section 143(1) intimation', 'section 143(2) scrutiny notice', 'section 148 income tax notice',
     'income tax notice explained', 'how to reply to income tax notice', 'reassessment notice India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'A plain-English breakdown of the three most common income tax notices, what triggers each one, and how to respond within the deadline.',
     url: 'https://agrawalkhandelwal.com/blog/income-tax-notices-explained-143-1-143-2-148',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Income Tax Notices Explained: 143(1), 143(2) & 148',
     description: 'A plain-English breakdown of the three most common income tax notices, what triggers each one, and how to respond within the deadline.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function IncomeTaxNoticesExplainedBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 31, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -135,6 +139,8 @@ export default function IncomeTaxNoticesExplainedBlog() {
                 </ul>
                 <p>Whichever notice you have received, the deadline printed on it is not negotiable by default, but extensions can be requested through the portal in genuine cases. The earlier you involve a CA who can read the notice, identify exactly what is being asked, and prepare a complete first response, the less likely the matter is to escalate into a longer-running dispute. For businesses and NRIs alike, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include notice response and representation before the assessing officer.</p>
               </div>
+
+              <PostFooterLinks slug="income-tax-notices-explained-143-1-143-2-148" />
 
               <PostCTA
             heading="Received an income tax notice?"

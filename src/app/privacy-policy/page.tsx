@@ -3,7 +3,7 @@ import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for Agrawal Khandelwal & Associates LLP, describing how we handle cookies, analytics data, and personal information collected through this website.',
+  description: 'Privacy Policy for Agrawal Khandelwal & Associates LLP, describing how we handle cookies, analytics data, and personal information collected on this website.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/privacy-policy' },
 }
 

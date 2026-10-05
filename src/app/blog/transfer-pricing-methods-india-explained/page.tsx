@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing Methods in India',
+  title: { absolute: 'Transfer Pricing Methods in India' },
   description: 'The 5 Rule 10B methods for testing arm\'s length pricing in India: what each tests, when it is most appropriate, and a worked TNMM example.',
   keywords: [
     'transfer pricing methods India', 'TNMM India', 'CUP method transfer pricing',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What each of the 5 prescribed methods tests, when to use which, and a worked TNMM example.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-methods-india-explained',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Transfer Pricing Methods Explained (India)',
     description: 'CUP, RPM, CPM, PSM, TNMM; what each tests and when to use it, with a worked example.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function TPMethodsBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Transfer Pricing Methods in India: CUP, RPM, CPM, PSM and TNMM Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 30, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 30, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -131,6 +135,8 @@ export default function TPMethodsBlog() {
               <h2>Document the Method Selection Before Filing</h2>
               <p>For each material transaction, maintain a concise method-selection memorandum covering the transaction and contractual terms, functions/assets/risks of each party, why the selected method is the most appropriate, why alternatives are less reliable, the search strategy and accept/reject rationale for comparables, and the final arm&apos;s length conclusion; this memorandum is often the first document requested if a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link> is opened. Where international transactions exceed <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Rs 1 crore, Form 3CEB is required</Link> and due October 31; the underlying analysis should not be prepared only after a notice arrives.</p>
             </div>
+
+            <PostFooterLinks slug="transfer-pricing-methods-india-explained" />
 
             <PostCTA
             heading="Need help selecting and defending your TP method?"

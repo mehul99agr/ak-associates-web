@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Which ITR Form Should You File: ITR-1 vs 2 vs 3 vs 4',
+  title: { absolute: 'Which ITR Form Should You File: ITR-1 vs 2 vs 3 vs 4' },
   description: 'Choosing between ITR-1, ITR-2, ITR-3 and ITR-4: eligibility limits, income types covered, and mistakes that get returns flagged as defective.',
   keywords: [
     'which ITR form to file', 'ITR-1 vs ITR-2', 'ITR-2 vs ITR-3', 'ITR-4 presumptive taxation',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Eligibility limits and income types for ITR-1, ITR-2, ITR-3, and ITR-4, and how to avoid a defective return notice.',
     url: 'https://agrawalkhandelwal.com/blog/which-itr-form-to-file-itr1-itr2-itr3-itr4',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Which ITR Form Should You File: ITR-1 vs 2 vs 3 vs 4',
     description: 'A side-by-side guide to picking the right ITR form for your income situation.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function WhichITRFormBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 22, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -141,6 +145,8 @@ export default function WhichITRFormBlog() {
                 </ul>
                 <p>If you are unsure which form applies, it is worth a quick review before filing rather than after a defective-return notice forces a correction under time pressure. Once you have settled on the form, our <Link href="/blog/how-to-file-itr-online-salaried-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>step-by-step e-filing guide</Link> walks through the rest of the process.</p>
               </div>
+
+              <PostFooterLinks slug="which-itr-form-to-file-itr1-itr2-itr3-itr4" />
 
               <PostCTA
             heading="Not sure which ITR form applies to you?"

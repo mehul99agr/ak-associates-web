@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Co-Founder Equity Disputes: Prevention & Resolution',
+  title: { absolute: 'Co-Founder Equity Disputes: Prevention & Resolution' },
   description: 'Why co-founder equity disputes happen, how founder vesting and a shareholders\' agreement prevent them, and resolution paths once a dispute arises.',
   keywords: [
     'co-founder equity dispute', 'founder vesting schedule India', 'founder cliff vesting', 'co-founder agreement India',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Founder vesting, agreements, and dispute-resolution mechanisms that prevent and resolve co-founder equity disputes.',
     url: 'https://agrawalkhandelwal.com/blog/co-founder-equity-disputes-prevention-and-resolution',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Co-Founder Equity Disputes: Prevention & Resolution',
     description: 'What causes co-founder equity fights, how vesting and agreements prevent them, and what to do once one starts.',
+    images: OG_IMAGES,
   },
 }
 
@@ -72,7 +76,7 @@ export default function CoFounderEquityDisputesBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Co-Founder Equity Disputes: Prevention &amp; Resolution</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 3, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 3, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
 
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
@@ -119,6 +123,8 @@ export default function CoFounderEquityDisputesBlog() {
               </ol>
               <p>The practical takeaway is that the cost and speed of resolving a co-founder dispute is set almost entirely by decisions made before the dispute existed, not during it. A company with proper vesting and a well-drafted shareholders&apos; agreement can usually resolve a founder exit in weeks through a defined buyout mechanism; a company without either is often looking at months of negotiation with no agreed starting point for price or process.</p>
             </div>
+
+            <PostFooterLinks slug="co-founder-equity-disputes-prevention-and-resolution" />
 
             <PostCTA
             heading="Setting up founder equity, or already in a dispute?"

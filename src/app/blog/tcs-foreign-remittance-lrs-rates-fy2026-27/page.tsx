@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TCS on Foreign Remittance Under LRS: Rates FY 2026-27',
+  title: { absolute: 'TCS on Foreign Remittance Under LRS: Rates FY 2026-27' },
   description: 'TCS on LRS after Budget 2026: Rs 10 lakh threshold, 0% for loan-funded education, 2% for education/medical/tours, 20% otherwise, and claiming credit.',
   keywords: [
     'TCS foreign remittance FY 2026-27', 'TCS LRS rate 2026', 'Section 394(1) TCS',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The revised Rs 10 lakh threshold and 0-20% TCS rate structure on LRS remittances after Budget 2026, with worked examples.',
     url: 'https://agrawalkhandelwal.com/blog/tcs-foreign-remittance-lrs-rates-fy2026-27',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TCS on LRS Remittances: FY 2026-27 Rates',
     description: 'The revised Rs 10 lakh threshold and 0-20% TCS rate structure on LRS remittances after Budget 2026.',
+    images: OG_IMAGES,
   },
 }
 
@@ -59,7 +63,7 @@ export default function TcsLrsFy2627Blog() {
             <span className="section-badge">FEMA &amp; Compliance</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>TCS on Foreign Remittance Under LRS: Rates &amp; Exemptions FY 2026-27</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published April 25, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published April 25, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -114,6 +118,8 @@ export default function TcsLrsFy2627Blog() {
               <h2>How This Affects NRI Families</h2>
               <p>LRS itself is only available to resident Indians, not NRIs directly; but it is central to how resident family members in India fund an NRI relative&apos;s education, medical expenses, or receive gifts sent the other way. Where the NRI is the sender back into India, a different framework applies entirely; see our <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO repatriation guide</Link> and <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO repatriation limits</Link> for that side. For the fuller LRS picture; permitted purposes, Form A2, and returning-NRI scenarios; see our <Link href="/blog/lrs-liberalised-remittance-scheme-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>complete LRS guide</Link>, now updated with these FY 2026-27 rates.</p>
             </div>
+
+            <PostFooterLinks slug="tcs-foreign-remittance-lrs-rates-fy2026-27" />
 
             <PostCTA
             heading="Planning a large foreign remittance?"

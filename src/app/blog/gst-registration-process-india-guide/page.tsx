@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'GST Registration Process in India: Complete Guide' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Thresholds, documents, process, and timelines for GST registration, explained for any new business.',
     url: 'https://agrawalkhandelwal.com/blog/gst-registration-process-india-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST Registration Process in India: Complete Guide',
     description: 'Thresholds, documents, process, and timelines for GST registration, explained for any new business.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function GstRegistrationProcessGuideBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 17, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -155,6 +159,8 @@ export default function GstRegistrationProcessGuideBlog() {
 
                 <p>If you are registering GST specifically as part of setting up a new startup and want the sequence tied into your broader post-incorporation compliance, see our dedicated guide on <Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration and first return for startups</Link>. This post covers the general registration rules that apply to any business, goods or services, any structure; that one walks through the startup-specific sequence and first GSTR-3B filing.</p>
               </div>
+
+              <PostFooterLinks slug="gst-registration-process-india-guide" />
 
               <PostCTA
             heading="Need help with GST registration?"

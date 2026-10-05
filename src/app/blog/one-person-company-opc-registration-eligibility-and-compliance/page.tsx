@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'One Person Company (OPC) Registration: Eligibility & Compliance',
+  title: { absolute: 'One Person Company (OPC) Registration: Eligibility & Compliance' },
   description: 'Who can form a One Person Company in India, the nominee rule, why the old capital and turnover conversion thresholds no longer apply, and OPC compliance.',
   keywords: [
     'one person company registration', 'OPC eligibility India', 'OPC nominee requirement',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Who can incorporate an OPC, the nominee requirement, and the ongoing annual compliance an OPC must maintain.',
     url: 'https://agrawalkhandelwal.com/blog/one-person-company-opc-registration-eligibility-and-compliance',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'One Person Company (OPC) Registration Guide',
     description: 'Eligibility, the nominee requirement, and ongoing compliance for a One Person Company in India.',
+    images: OG_IMAGES,
   },
 }
 
@@ -59,7 +63,7 @@ export default function OPCRegistrationBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>One Person Company (OPC) Registration: Eligibility &amp; Compliance</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 17, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 17, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -113,6 +117,8 @@ export default function OPCRegistrationBlog() {
               <h2>Choosing Between an OPC and a Private Limited Company</h2>
               <p>An OPC makes the most sense for a genuinely solo founder who wants limited liability and a formal corporate structure without the overhead of a multi-member Board, and who does not expect to raise outside equity funding in the near term. The moment a co-founder, investor, or ESOP pool enters the picture, a private limited company becomes the more practical starting point, since converting later, while now unrestricted by the old thresholds, still involves its own MOA/AOA changes, ROC filings, and share issuance process. See our comparison of <Link href="/blog/llp-vs-private-limited-comparison-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>LLP vs Private Limited</Link> structures for the broader decision framework if you are still choosing an entity type from scratch.</p>
             </div>
+
+            <PostFooterLinks slug="one-person-company-opc-registration-eligibility-and-compliance" />
 
             <PostCTA
             heading="Planning to incorporate an OPC, or unsure if it is the right structure?"

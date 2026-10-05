@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Survey Under Section 133A: Rights & Obligations of Taxpayers' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'What an income tax authority can and cannot do during a Section 133A survey, and what a taxpayer is and is not required to do.',
     url: 'https://agrawalkhandelwal.com/blog/survey-under-section-133a-rights-and-obligations-of-taxpayers',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Survey Under Section 133A: Rights & Obligations of Taxpayers',
     description: 'The business-hours rule, impounding limits, and taxpayer rights during an income tax survey.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function SurveySection133ABlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 19, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -146,6 +150,8 @@ export default function SurveySection133ABlog() {
                 <h2>After the Survey</h2>
                 <p>A survey itself does not conclude a case; it generates material that the department can use in subsequent assessment or reassessment proceedings. Reviewing what was impounded, reconstructing any records that were taken, and preparing a considered response to whatever discrepancies were flagged are the priorities in the days that follow, rather than treating the survey as a closed chapter. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory and representation services</Link> cover both survey support and the assessment proceedings that can follow one.</p>
               </div>
+
+              <PostFooterLinks slug="survey-under-section-133a-rights-and-obligations-of-taxpayers" />
 
               <PostCTA
             heading="Facing or anticipating an income tax survey?"

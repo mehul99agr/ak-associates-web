@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TCS on Sale of Goods: What Happened to Section 206C(1H)',
+  title: { absolute: 'TCS on Sale of Goods: What Happened to Section 206C(1H)' },
   description: 'Section 206C(1H) TCS on sale of goods was omitted from April 1, 2025. What it required, why it was removed, and why Section 194Q now applies instead.',
   keywords: [
     'section 206C(1H) repealed', 'TCS on sale of goods removed', 'section 206C(1H) omitted',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Section 206C(1H) was omitted from April 1, 2025. What it used to require, why it was removed, and why Section 194Q now governs these transactions.',
     url: 'https://agrawalkhandelwal.com/blog/tcs-sale-of-goods-section-206c1h-repealed',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TCS on Sale of Goods: What Happened to Section 206C(1H)',
     description: 'Section 206C(1H) was repealed from April 1, 2025. Section 194Q now governs TDS/TCS on high-value goods sales.',
+    images: OG_IMAGES,
   },
 }
 
@@ -66,7 +70,7 @@ export default function Tcs206c1hRepealedBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -109,6 +113,8 @@ export default function Tcs206c1hRepealedBlog() {
                   <p style={{ margin: 0, fontSize: '0.95rem' }}>Because Section 206C(1H) has been omitted rather than renumbered, it has no corresponding provision under the Income Tax Act 2025; there is nothing to map it to. Section 194Q itself has also been renumbered under the new Act's TDS chapter alongside the other 194-series provisions; the exact new-Act section reference was not confidently confirmed at the time of writing, so confirm the current citation with your CA before quoting it in a formal document.</p>
                 </div>
               </div>
+
+              <PostFooterLinks slug="tcs-sale-of-goods-section-206c1h-repealed" />
 
               <PostCTA
             heading="Not sure whether your TDS/TCS setup is current?"

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'FAST-DS 2026: Foreign Assets Disclosure Scheme Explained',
+  title: { absolute: 'FAST-DS 2026: Foreign Assets Disclosure Scheme Explained' },
   description: 'FAST-DS 2026 explained: eligibility, the Rs 1 crore asset limit, the 30%+30% tax structure, the December 31, 2026 window, and the protection it gives.',
   keywords: [
     'FAST-DS 2026', 'Foreign Assets of Small Taxpayers Disclosure Scheme',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Eligibility, tax structure, and the December 31, 2026 declaration window for the Foreign Assets of Small Taxpayers; Disclosure Scheme.',
     url: 'https://agrawalkhandelwal.com/blog/fast-ds-2026-foreign-assets-disclosure-scheme',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FAST-DS 2026 Explained',
     description: 'Eligibility, tax structure, and the declaration window for the Foreign Assets of Small Taxpayers; Disclosure Scheme, 2026.',
+    images: OG_IMAGES,
   },
 }
 
@@ -59,7 +63,7 @@ export default function FastDs2026Blog() {
             <span className="section-badge">Tax Compliance</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>FAST-DS 2026: Foreign Assets of Small Taxpayers; Disclosure Scheme Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 1, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 1, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -94,6 +98,8 @@ export default function FastDs2026Blog() {
               <p>If you have a genuine, modest foreign holding that was never reported; whether from before becoming aware of the Schedule FA requirement, an inherited foreign account, or a small legacy ESOP or investment abroad; FAST-DS 2026 is worth evaluating before the December 31, 2026 window closes. The right first step is a private review of exactly what needs to be declared, its value, and how it fits the scheme&apos;s Rs 1 crore threshold, rather than assuming eligibility or filing without that assessment.</p>
               <p>This is closely connected to the residency and disclosure questions returning NRIs and resident Indians with overseas ties routinely face; see our guides on <Link href="/blog/schedule-fa-foreign-asset-disclosure-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Schedule FA foreign asset disclosure</Link> and <Link href="/blog/rnor-status-tax-guide-returning-nris" style={{ color: 'var(--primary)', fontWeight: 600 }}>RNOR status for returning NRIs</Link> for the broader compliance picture around foreign holdings once you become a resident Indian taxpayer.</p>
             </div>
+
+            <PostFooterLinks slug="fast-ds-2026-foreign-assets-disclosure-scheme" />
 
             <PostCTA
             heading="Have an unreported foreign asset and want to know if FAST-DS 2026 applies?"

@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Form 24Q vs Form 26Q: TDS Return Filing for Employers' },
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Which TDS return an employer files for salary vs non-salary payments, quarterly due dates, and the new Form 138/140 numbering for FY 2026-27.',
     url: 'https://agrawalkhandelwal.com/blog/form-24q-vs-form-26q-tds-return-filing-for-employers',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Form 24Q vs Form 26Q: TDS Return Filing for Employers',
     description: 'Form 24Q (salary TDS) vs Form 26Q (non-salary TDS): due dates, contents, and the new Form 138/140 numbering.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function Form24Q26QBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 16, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -154,6 +158,8 @@ export default function Form24Q26QBlog() {
                 <h2>Getting the Process Right</h2>
                 <p>For most businesses, the practical fix is to treat Form 24Q/138 and Form 26Q/140 as two separate, parallel quarterly workflows rather than a single "TDS return" task: maintain distinct deductee-wise trackers for salary versus non-salary payments, reconcile TDS deposited each month against what will be reported in the quarter's return before the due date, and build in a buffer before July 31/October 31/January 31/May 31 rather than filing at the deadline. This fits into the same broader payroll and vendor-payment discipline covered in our <Link href="/blog/payroll-compliance-checklist-for-growing-startups-in-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>payroll compliance checklist</Link>.</p>
               </div>
+
+              <PostFooterLinks slug="form-24q-vs-form-26q-tds-return-filing-for-employers" />
 
               <PostCTA
             heading="Need help staying current on TDS return filing?"

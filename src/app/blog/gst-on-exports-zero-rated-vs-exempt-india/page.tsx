@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GST on Exports: Zero-Rated vs Exempt',
+  title: { absolute: 'GST on Exports: Zero-Rated vs Exempt' },
   description: 'Zero-rated vs exempt supplies under GST: why it matters for ITC, how to file a Letter of Undertaking (LUT), and the five conditions for export of services.',
   keywords: [
     'GST on exports India', 'zero rated supply GST India', 'exempt supply GST India',
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Exports are zero-rated under GST, not exempt; and the distinction has major consequences for input tax credit claims and refunds.',
     url: 'https://agrawalkhandelwal.com/blog/gst-on-exports-zero-rated-vs-exempt-india',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -90,7 +93,7 @@ export default function GSTExportsZeroRatedBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 18, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -154,6 +157,8 @@ export default function GSTExportsZeroRatedBlog() {
 
                 <p>If your business exports goods or services and has not claimed a GST refund in the past year, you likely have accumulated ITC sitting unclaimed. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> can review your returns and file a retroactive refund claim for up to 2 years.</p>
               </div>
+
+              <PostFooterLinks slug="gst-on-exports-zero-rated-vs-exempt-india" />
 
               <PostCTA
             heading="Unclaimed GST refunds on exports? We can file retroactively."

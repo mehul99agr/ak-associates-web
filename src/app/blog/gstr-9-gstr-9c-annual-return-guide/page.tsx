@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide',
+  title: { absolute: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide' },
   description: 'GSTR-9 annual return and GSTR-9C reconciliation: who must file, turnover thresholds, the December 31 due date, penalties, and how they fit together.',
   keywords: [
     'GSTR-9 annual return', 'GSTR-9C reconciliation statement', 'GSTR-9 due date', 'GSTR-9C applicability',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Who must file GSTR-9 and GSTR-9C, the turnover thresholds, due date, and how the two returns reconcile with your books.',
     url: 'https://agrawalkhandelwal.com/blog/gstr-9-gstr-9c-annual-return-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide',
     description: 'Turnover thresholds, due date, and penalties for GST annual return and reconciliation statement filing.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function GSTR9GSTR9CBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 14, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -134,6 +138,8 @@ export default function GSTR9GSTR9CBlog() {
 
                 <p>If you are also carrying forward input tax credit that needs a closer look before you file, our guide on <Link href="/blog/input-tax-credit-itc-gst-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITC eligibility, reversal, and blocked credits</Link> covers the rules that most often create annual-return mismatches.</p>
               </div>
+
+              <PostFooterLinks slug="gstr-9-gstr-9c-annual-return-guide" />
 
               <PostCTA
             heading="Need help with your GST annual return and reconciliation?"

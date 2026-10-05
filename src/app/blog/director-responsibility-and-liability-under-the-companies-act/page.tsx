@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Director Responsibility & Liability Under the Companies Act' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'What directors owe the company under Section 166, when personal liability kicks in, and the Section 164 disqualification grounds.',
     url: 'https://agrawalkhandelwal.com/blog/director-responsibility-and-liability-under-the-companies-act',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Director Responsibility & Liability Under the Companies Act',
     description: 'Fiduciary duties, personal liability scenarios, and disqualification grounds for directors under the Companies Act 2013.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function DirectorResponsibilityLiabilityBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 30, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -136,6 +140,8 @@ export default function DirectorResponsibilityLiabilityBlog() {
 
                 <p>None of this is a reason to avoid directorships; it is a reason to treat the role with the seriousness the statute assigns it. Understand what the company you are a director of is actually filing, question transactions that look self-dealing before they happen, and make sure every entity you sit on the board of, however small or dormant, stays current on its statutory filings.</p>
               </div>
+
+              <PostFooterLinks slug="director-responsibility-and-liability-under-the-companies-act" />
 
               <PostCTA
             heading="Concerned about a director liability or disqualification issue?"

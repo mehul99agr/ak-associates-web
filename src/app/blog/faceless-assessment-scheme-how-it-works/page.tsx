@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Faceless Assessment Scheme: How It Works & What to Expect' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'A practical walkthrough of the Faceless Assessment Scheme: how cases get assigned, how to respond, and what to expect at each stage.',
     url: 'https://agrawalkhandelwal.com/blog/faceless-assessment-scheme-how-it-works',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Faceless Assessment Scheme: How It Works',
     description: 'A practical walkthrough of the Faceless Assessment Scheme: how cases get assigned, how to respond, and what to expect at each stage.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function FacelessAssessmentSchemeBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 1, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -139,6 +143,8 @@ export default function FacelessAssessmentSchemeBlog() {
                 <p>It is worth distinguishing this from the separate <strong>Faceless Appeal Scheme</strong>, which applies at the next stage, if you choose to appeal an assessment order before the Commissioner (Appeals). That framework follows the same design principles (randomised allocation, electronic-only communication) but is a distinct process from the assessment covered here. If your assessment concludes with a demand you disagree with, the appeal route is the next step, not a continuation of the same faceless assessment file.</p>
                 <p>Faceless assessment has made the process more standardised, but it has also raised the bar on how a response needs to be prepared: complete, evidence-backed, and submitted on time, since there is no local officer relationship to fall back on. If you have an ongoing faceless assessment or have just received a notice, our team can help draft the response and represent your case through the portal and any video-conference hearing. See our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> for details.</p>
               </div>
+
+              <PostFooterLinks slug="faceless-assessment-scheme-how-it-works" />
 
               <PostCTA
             heading="Facing a faceless assessment notice?"

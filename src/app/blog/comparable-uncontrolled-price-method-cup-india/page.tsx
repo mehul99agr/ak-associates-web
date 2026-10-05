@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Comparable Uncontrolled Price (CUP) Method: India Transfer Pricing Guide',
+  title: { absolute: 'Comparable Uncontrolled Price (CUP) Method: India TP Guide' },
   description: 'The CUP method under Rule 10B: internal vs external CUP, use for loans, royalties and commodities, comparability adjustments and a worked example.',
   keywords: [
     'comparable uncontrolled price method', 'CUP method transfer pricing',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Internal vs external CUP, when it fits loans/royalties/commodities, and a worked example.',
     url: 'https://agrawalkhandelwal.com/blog/comparable-uncontrolled-price-method-cup-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'CUP Method Explained (India)',
     description: 'Internal vs external CUP, comparability adjustments, and a worked loan-pricing example.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function CUPBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Comparable Uncontrolled Price (CUP) Method: India Guide</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 16, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -115,6 +119,8 @@ export default function CUPBlog() {
               <h2>CUP in the Context of the Other Methods</h2>
               <p>CUP is one part of a broader toolkit; a company may use CUP for its intra-group loans and royalty payments while using TNMM for its services transactions in the same financial year. See the full <Link href="/blog/transfer-pricing-methods-india-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>comparison of all 5 transfer pricing methods</Link> for how CUP sits alongside RPM, CPM, PSM, and TNMM, and how to document why a given method, and not the others, was the most appropriate choice for each transaction class.</p>
             </div>
+
+            <PostFooterLinks slug="comparable-uncontrolled-price-method-cup-india" />
 
             <PostCTA
             heading="Pricing an intra-group loan, royalty, or commodity transaction?"

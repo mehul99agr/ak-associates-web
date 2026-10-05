@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GST Audit: Applicability & What Auditors Check',
+  title: { absolute: 'GST Audit: Applicability & What Auditors Check' },
   description: 'GSTR-9C applicability above Rs 5 crore, the self-certification position, and what departmental (Section 65) and special (Section 66) audits examine.',
   keywords: [
     'GST audit applicability', 'GSTR-9C turnover limit', 'GST departmental audit Section 65',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'When GSTR-9C reconciliation applies, the current self-certification rule, and what a Section 65 departmental audit or Section 66 special audit examines.',
     url: 'https://agrawalkhandelwal.com/blog/gst-audit-applicability-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST Audit: Applicability & What Auditors Check',
     description: 'GSTR-9C applicability, self-certification status, and what departmental and special GST audits examine.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function GSTAuditApplicabilityBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 21, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -144,6 +148,8 @@ export default function GSTAuditApplicabilityBlog() {
 
                 <p>If you are approaching the Rs 5 crore threshold, have received an ADT-01 notice, or simply want your monthly filings reconciled before year-end so GSTR-9C is a formality rather than a scramble, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> can take this off your plate.</p>
               </div>
+
+              <PostFooterLinks slug="gst-audit-applicability-guide" />
 
               <PostCTA
             heading="Received a GST audit notice, or approaching the Rs 5 crore threshold?"

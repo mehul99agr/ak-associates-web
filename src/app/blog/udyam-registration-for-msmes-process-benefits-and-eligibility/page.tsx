@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Udyam Registration for MSMEs: Process, Benefits & Eligibility' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Current MSME classification limits, the Udyam registration process, and the benefits MSME status unlocks.',
     url: 'https://agrawalkhandelwal.com/blog/udyam-registration-for-msmes-process-benefits-and-eligibility',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Udyam Registration for MSMEs: Process, Benefits & Eligibility',
     description: 'Who qualifies as micro, small or medium, how to register on the Udyam portal, and what MSME status actually gets you.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function UdyamRegistrationMSMEBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 4, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -139,6 +143,8 @@ export default function UdyamRegistrationMSMEBlog() {
                 <h2>Keeping Registration Current</h2>
                 <p>Udyam registration is not a one-time filing. Turnover and investment figures on the portal are expected to be updated periodically (linked to ITR and GST filings), and a business that crosses a classification threshold should reflect the change rather than continue operating under an outdated category. An inactive or outdated registration can jeopardise eligibility for schemes at the exact point a business needs them, such as when applying for a credit facility or bidding on a government tender.</p>
               </div>
+
+              <PostFooterLinks slug="udyam-registration-for-msmes-process-benefits-and-eligibility" />
 
               <PostCTA
             heading="Need help with Udyam registration or MSME compliance?"

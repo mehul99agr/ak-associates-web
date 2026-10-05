@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'TDS on Contractor Payments: Section 194C Compliance Guide' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Rates, thresholds, and filing steps for Section 194C TDS on contractor and sub-contractor payments, now under Section 393.',
     url: 'https://agrawalkhandelwal.com/blog/tds-contractor-payments-section-194c-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TDS on Contractor Payments: Section 194C Compliance Guide',
     description: 'Rates, thresholds, and filing steps for Section 194C TDS on contractor and sub-contractor payments, now under Section 393.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function Section194CBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 6, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -138,6 +142,8 @@ export default function Section194CBlog() {
 
                 <p>Need help setting up a TDS deduction and filing process for contractor payments, or reviewing past compliance for gaps? Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax compliance services</Link> cover both.</p>
               </div>
+
+              <PostFooterLinks slug="tds-contractor-payments-section-194c-guide" />
 
               <PostCTA
             heading="Running contractor or vendor payments through your business?"

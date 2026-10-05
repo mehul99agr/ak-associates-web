@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Presumptive Taxation for Transporters: Section 44AE',
+  title: { absolute: 'Presumptive Taxation for Transporters: Section 44AE' },
   description: 'Section 44AE lets owners of up to 10 goods vehicles declare deemed income per vehicle instead of keeping books. Rates, eligibility and Section 58.',
   keywords: [
     'section 44AE', 'presumptive taxation transporters', '44AE income tax',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Deemed income per vehicle per month for goods-vehicle owners with up to 10 vehicles; rates, eligibility, and the new Income Tax Act 2025 section number.',
     url: 'https://agrawalkhandelwal.com/blog/presumptive-taxation-transporters-section-44ae',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 44AE: Presumptive Taxation for Transporters',
     description: 'Rs 7,500/month or Rs 1,000/tonne deemed income for goods vehicle owners; eligibility, computation, and Section 58 renumbering.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function PresumptiveTransportersBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 3, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -119,6 +123,8 @@ export default function PresumptiveTransportersBlog() {
                 <h2>A Worked Example</h2>
                 <p>A firm owns 6 goods vehicles through the full financial year: 2 heavy goods vehicles at 14 tonnes gross weight each, and 4 other goods vehicles. The heavy vehicles generate 2 x (14 x Rs 1,000 x 12) = Rs 3,36,000. The other vehicles generate 4 x (Rs 7,500 x 12) = Rs 3,60,000. Total presumptive income for the year is Rs 6,96,000, declared without maintaining detailed transport-wise books, subject to the firm separately claiming partner remuneration and interest within the limits the Act allows on a firm&apos;s presumptive income.</p>
               </div>
+
+              <PostFooterLinks slug="presumptive-taxation-transporters-section-44ae" />
 
               <PostCTA
             heading="Running a transport or logistics fleet?"

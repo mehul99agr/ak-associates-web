@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Letter of Undertaking (LUT) for GST-Free Exports: How to File',
+  title: { absolute: 'Letter of Undertaking (LUT) for GST-Free Exports: How to File' },
   description: 'Form GST RFD-11: LUT eligibility, step-by-step filing on the GST portal, one-year validity, and what happens if you export without a valid LUT.',
   keywords: [
     'LUT GST filing process', 'Form RFD-11 GST', 'letter of undertaking GST exports',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Who is eligible to file a LUT, the exact GST portal steps for Form RFD-11, its financial-year validity, and the cost of exporting without one.',
     url: 'https://agrawalkhandelwal.com/blog/lut-letter-undertaking-gst-exports',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Letter of Undertaking (LUT) for GST-Free Exports: How to File',
     description: 'Form RFD-11 eligibility, filing steps, validity, and what happens if you export without a LUT.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function LUTGSTExportsBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 19, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -135,6 +139,8 @@ export default function LUTGSTExportsBlog() {
 
                 <p>Once your LUT is filed and the export is invoiced correctly, the next step is claiming the refund of accumulated input tax credit; our guide on <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>zero-rated exports and the RFD-01 refund process</Link> walks through that in detail. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Advisory team</Link> also handles LUT filing and renewal as part of ongoing export compliance, so it never lapses unnoticed.</p>
               </div>
+
+              <PostFooterLinks slug="lut-letter-undertaking-gst-exports" />
 
               <PostCTA
             heading="Need your LUT filed or renewed before the deadline?"

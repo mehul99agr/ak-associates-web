@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Statement of Financial Transactions (SFT): High-Value Transaction Reporting' },
+  title: { absolute: 'Statement of Financial Transactions (SFT): High-Value Reporting' },
   description: 'What Form 61A (SFT) reports, who files it, the high-value transaction thresholds banks and registrars track, and why these show up in your AIS.',
   keywords: [
     'statement of financial transaction', 'SFT reporting', 'form 61A', 'high value transaction income tax',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Who files Form 61A / SFT, the high-value transaction thresholds, and how it feeds your AIS and Income Tax Department risk profile.',
     url: 'https://agrawalkhandelwal.com/blog/statement-of-financial-transactions-sft-high-value-transaction-reporti',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Statement of Financial Transactions (SFT): High-Value Transaction Reporting',
     description: 'Who files Form 61A / SFT, the high-value transaction thresholds, and how it feeds your AIS.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function SftHighValueTransactionBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 23, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -135,6 +139,8 @@ export default function SftHighValueTransactionBlog() {
                 </ul>
                 <p>SFT reporting is not something to be alarmed by, it is simply the data layer that increasingly underpins how the Income Tax Department cross-checks returns. Treating your AIS as a pre-filing checklist rather than a post-notice surprise is the single most effective way to stay ahead of it. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> include AIS reconciliation and return preparation that accounts for exactly this kind of third-party reporting.</p>
               </div>
+
+              <PostFooterLinks slug="statement-of-financial-transactions-sft-high-value-transaction-reporti" />
 
               <PostCTA
             heading="Not sure what your AIS actually reports?"

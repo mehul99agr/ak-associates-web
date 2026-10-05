@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Section 80C Deductions: Complete List of Eligible Investments',
-  description: 'The full Rs 1.5 lakh Section 80C basket: PPF, ELSS, life insurance, NSC, tax-saver FDs, home loan principal, EPF, tuition fees and more, plus what it does not cover.',
+  title: { absolute: 'Section 80C Deductions: Complete List of Eligible Investments' },
+  description: 'The full Rs 1.5 lakh Section 80C basket: PPF, ELSS, life insurance, NSC, tax-saver FDs, home loan principal, EPF, tuition fees and more, and what is excluded.',
   keywords: [
     'Section 80C deductions list', 'Section 80C eligible investments', '80C limit Rs 1.5 lakh',
     'ELSS vs PPF 80C', 'tax saving investments 80C', '80C deduction old tax regime',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The full Rs 1.5 lakh basket of eligible investments and expenses, and the common mistakes taxpayers make claiming it.',
     url: 'https://agrawalkhandelwal.com/blog/section-80c-deductions-eligible-investments-list',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 80C Deductions: Complete List of Eligible Investments',
     description: 'The full Rs 1.5 lakh basket and common mistakes to avoid while claiming it.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function Section80CBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Section 80C Deductions: Complete List of Eligible Investments</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 24, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 24, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -127,6 +131,8 @@ export default function Section80CBlog() {
                 <li>Only then decide how much fresh investment (PPF, ELSS, NSC, Sukanya Samriddhi) is actually needed to use up the remaining room, rather than investing blindly up to Rs 1.5 lakh from scratch</li>
               </ol>
             </div>
+
+            <PostFooterLinks slug="section-80c-deductions-eligible-investments-list" />
 
             <PostCTA
             heading="Planning your tax-saving investments for the year?"

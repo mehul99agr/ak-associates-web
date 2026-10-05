@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Founder Agreement Essentials (Startups)',
+  title: { absolute: 'Founder Agreement Essentials (Startups)' },
   description: 'What a co-founder agreement should cover: equity split, reverse vesting, IP assignment, non-compete enforceability in India, and exit/deadlock terms.',
   keywords: [
     'founder agreement India', 'co-founder agreement India', 'founder vesting India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Equity split, founder reverse vesting, IP assignment, non-compete enforceability, and exit mechanisms.',
     url: 'https://agrawalkhandelwal.com/blog/founder-agreement-essentials-indian-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Founder Agreement Essentials for Startups',
     description: 'Equity split, reverse vesting, IP assignment, and non-compete enforceability under Indian law.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function FounderAgreementBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Founder Agreement Essentials for Indian Startups: Equity, IP, and Exit Rules</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 31, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 31, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -103,6 +107,8 @@ export default function FounderAgreementBlog() {
               <h2>Sign It Early</h2>
               <p>The best time to sign is before incorporation or immediately afterward, before material IP, employee grants, and outside capital complicate the position. If the startup already exists, do not wait for the next dispute; reconcile the cap table, document IP ownership, and put founder vesting in place before beginning a serious fundraise. Investors will look for exactly these documents during <Link href="/blog/due-diligence-checklist-startup-fundraising" style={{ color: 'var(--primary)', fontWeight: 600 }}>due diligence</Link>.</p>
             </div>
+
+            <PostFooterLinks slug="founder-agreement-essentials-indian-startups" />
 
             <PostCTA
             heading="Need a founder agreement drafted or reviewed?"

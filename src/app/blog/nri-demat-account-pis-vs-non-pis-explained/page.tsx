@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Demat Account: PIS vs Non-PIS Explained',
-  description: 'What a PIS account is, when it is needed for NRI equity investment, how non-PIS (NRO-linked) accounts work, and the 2025 RBI change merging NRE and NRO PIS accounts.',
+  title: { absolute: 'NRI Demat Account: PIS vs Non-PIS Explained' },
+  description: 'What a PIS account is, when NRI equity investment needs it, how non-PIS (NRO-linked) accounts work, and the 2025 RBI change merging NRE and NRO PIS accounts.',
   keywords: [
     'NRI PIS account', 'NRI non-PIS demat account', 'portfolio investment scheme NRI',
     'PIS vs non-PIS NRI', 'NRI demat account rules', 'NRE PIS account', 'NRO demat account NRI',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'When NRIs need a PIS account, how non-PIS (NRO-linked) accounts differ, and the 2025 RBI simplification merging NRE and NRO PIS accounts.',
     url: 'https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Demat Account: PIS vs Non-PIS Explained',
     description: 'PIS is for repatriable secondary-market equity; non-PIS covers NRO-linked and specific non-PIS instruments. Here is how they differ.',
+    images: OG_IMAGES,
   },
 }
 
@@ -90,7 +94,7 @@ export default function NRIDematPISBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 16, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -153,6 +157,8 @@ export default function NRIDematPISBlog() {
 
                 <p>Investment income and repatriation planning for NRIs also intersects closely with residential status and account structuring more broadly; see our guides on <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO accounts and repatriation limits</Link> and <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI residential status</Link> for the related compliance picture.</p>
               </div>
+
+              <PostFooterLinks slug="nri-demat-account-pis-vs-non-pis-explained" />
 
               <PostCTA
             heading="Setting up your NRI investment accounts correctly?"

@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Charge Creation & Satisfaction (CHG Forms): ROC Compliance Guide' },
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'CHG-1, CHG-4, and CHG-9 filing requirements, timelines, and condonation windows for registering and satisfying charges on company assets.',
     url: 'https://agrawalkhandelwal.com/blog/charge-creation-and-satisfaction-chg-forms-roc-compliance-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Charge Creation & Satisfaction (CHG Forms): ROC Compliance Guide',
     description: 'How and when to file CHG-1, CHG-4, and CHG-9 with the Registrar of Companies.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function ChargeCreationSatisfactionBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 1, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function ChargeCreationSatisfactionBlog() {
                   <li>If a charge was missed at creation or satisfaction, file it now under the applicable extended-timeline fee rather than leaving it open indefinitely; the cost only increases with time.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="charge-creation-and-satisfaction-chg-forms-roc-compliance-guide" />
 
               <PostCTA
             heading="Need to register or clear up a charge?"

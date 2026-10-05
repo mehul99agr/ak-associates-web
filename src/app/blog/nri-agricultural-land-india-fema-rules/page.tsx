@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Can an NRI Buy Agricultural Land in India? FEMA Rules',
+  title: { absolute: 'Can an NRI Buy Agricultural Land in India? FEMA Rules' },
   description: 'FEMA rules on NRIs and OCIs holding agricultural land or farmhouses in India: the purchase ban, inheritance and gift exceptions, resale and penalties.',
   keywords: [
     'NRI agricultural land India', 'NRI buy farmland India', 'FEMA agricultural land rules',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'The FEMA restriction on NRIs and OCIs acquiring agricultural land, the inheritance and gift exceptions, and what happens if the rule is breached.',
     url: 'https://agrawalkhandelwal.com/blog/nri-agricultural-land-india-fema-rules',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Can an NRI Buy Agricultural Land in India?',
     description: 'The FEMA restriction on NRIs and OCIs acquiring agricultural land, and the inheritance and gift exceptions that apply instead.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function NriAgriLandBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Can an NRI Buy Agricultural Land in India? FEMA Rules, Exceptions &amp; the FDI/ODI Angle</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published September 10, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published September 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -103,6 +107,8 @@ export default function NriAgriLandBlog() {
               <h2>What Changes If the NRI Becomes a Resident Again</h2>
               <p>Once an individual&apos;s residential status under FEMA reverts to resident Indian (typically by returning to India and meeting the residency threshold) the agricultural land purchase restriction no longer applies to them, since it is specifically tied to NRI/OCI/foreign-national status. See our <Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI returning to India financial checklist</Link> for the broader set of things that change on return, and our <Link href="/blog/nri-capital-gains-inherited-gifted-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>capital gains guide for inherited or gifted property</Link> if you are an NRI who already holds inherited agricultural land and are evaluating a sale.</p>
             </div>
+
+            <PostFooterLinks slug="nri-agricultural-land-india-fema-rules" />
 
             <PostCTA
             heading="Holding or inheriting agricultural land as an NRI?"

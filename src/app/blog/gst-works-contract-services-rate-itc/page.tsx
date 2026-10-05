@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'GST on Works Contract Services: Rate & ITC Rules',
+  title: { absolute: 'GST on Works Contract Services: Rate & ITC Rules' },
   description: 'GST on works contracts: the current 18% rate, why Section 17(5)(c)/(d) blocks ITC for the recipient, and when a contractor can still claim it.',
   keywords: [
     'GST on works contract', 'works contract GST rate', 'ITC on works contract services',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The current works contract GST rate, and why Section 17(5) blocks input tax credit for most recipients even though the contractor can claim it.',
     url: 'https://agrawalkhandelwal.com/blog/gst-works-contract-services-rate-itc',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GST on Works Contract Services: Rate & ITC Rules',
     description: 'GST rate on works contract services and the Section 17(5) rules that block ITC for most recipients.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function GSTWorksContractBlog() {
             <span className="section-badge">GST</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>GST on Works Contract Services: Rate and ITC Rules Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 17, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 17, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -108,6 +112,8 @@ export default function GSTWorksContractBlog() {
               <h2>Practical Steps Before Signing a Works Contract</h2>
               <p>Before finalising pricing on a construction or works contract, work out whether the ITC on that contract will actually be available to you as the recipient. If it is blocked, the 18% GST is a real cost that should be factored into your project budget rather than assumed as a pass-through credit. If you are the contractor, keep your procurement clearly linked to the specific works contract being executed, and maintain a clean paper trail distinguishing self-construction from further-supply situations, since this is the first thing a GST officer will test on scrutiny.</p>
             </div>
+
+            <PostFooterLinks slug="gst-works-contract-services-rate-itc" />
 
             <PostCTA
             heading="Structuring a works contract or unsure about your ITC position?"

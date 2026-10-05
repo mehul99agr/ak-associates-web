@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI GAAR Exposure: Anti-Avoidance Rules & Cross-Border Structures',
+  title: { absolute: 'NRI GAAR Exposure: Anti-Avoidance Rules & Cross-Border Structures' },
   description: 'When GAAR can apply to an NRI\'s cross-border structure: the impermissible avoidance test, the Rs 3 crore threshold, and scenarios that attract scrutiny.',
   keywords: [
     'NRI GAAR', 'GAAR impermissible avoidance arrangement', 'GAAR Rs 3 crore threshold',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'When GAAR can apply to an NRI\'s cross-border structure: the Impermissible Avoidance Arrangement test, the Rs 3 crore threshold, and common scenarios.',
     url: 'https://agrawalkhandelwal.com/blog/nri-gaar-cross-border-structures',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI GAAR Exposure Explained',
     description: 'When India\'s General Anti-Avoidance Rule can apply to an NRI\'s cross-border structure, and what it does not cover.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function NriGaarBlog() {
             <span className="section-badge">International Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>NRI GAAR Exposure: When Anti-Avoidance Rules Apply to Cross-Border Structures</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 22, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 22, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -103,6 +107,8 @@ export default function NriGaarBlog() {
               <p>The single most important factor in withstanding GAAR scrutiny is demonstrable <strong>commercial substance</strong>: real economic activity, decision-making authority, and business risk genuinely located where the structure claims it to be, supported by contemporaneous documentation of the non-tax reasons for the arrangement. Structures assembled reactively, with documentation created only after a query is raised, are far harder to defend than ones where the commercial rationale was recorded and the structure operated consistently with that rationale from the outset.</p>
               <p>This connects directly to broader NRI cross-border structuring questions; see our guides on <Link href="/blog/dtaa-guide-nri-country-wise" style={{ color: 'var(--primary)', fontWeight: 600 }}>DTAA relief by country</Link> and <Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>POEM (Place of Effective Management)</Link>, since both treaty residence claims and POEM determinations turn on the same underlying question GAAR asks: is there real substance behind the structure, or only a filing?</p>
             </div>
+
+            <PostFooterLinks slug="nri-gaar-cross-border-structures" />
 
             <PostCTA
             heading="Reviewing a cross-border holding or exit structure?"

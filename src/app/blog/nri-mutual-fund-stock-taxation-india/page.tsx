@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Mutual Fund & Stock Tax (FY 2026-27)',
+  title: { absolute: 'NRI Mutual Fund & Stock Tax (FY 2026-27)' },
   description: 'How NRIs are taxed on mutual funds and stocks in India: LTCG/STCG rates, TDS on redemption, PIS for direct equity, and FATCA limits for US/Canada NRIs.',
   keywords: [
     'NRI mutual fund tax India', 'NRI stock trading India', 'NRI capital gains tax India',
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     description: 'LTCG/STCG rates, TDS on redemption, PIS account, and FATCA restrictions for NRI investors.',
     url: 'https://agrawalkhandelwal.com/blog/nri-mutual-fund-stock-taxation-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Mutual Fund & Stock Tax India (FY 2026-27)',
     description: 'Capital gains rates, TDS, PIS account, and US/Canada FATCA restrictions for NRI investors.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function NRIMutualFundStockTaxBlog() {
               <span className="section-badge">NRI Taxation</span>
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>NRI Mutual Fund &amp; Stock Taxation in India: What You Actually Owe</h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published July 16, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+                <span>Published July 16, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -132,6 +136,8 @@ export default function NRIMutualFundStockTaxBlog() {
                   <li><strong>STT:</strong> Securities Transaction Tax is levied on equity transactions regardless of NRI status and is not adjustable against income tax.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="nri-mutual-fund-stock-taxation-india" />
 
               <PostCTA
             heading="Need help with NRI investment taxation?"

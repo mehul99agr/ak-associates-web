@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Secondary Adjustment Under Transfer Pricing: Section 92CE Explained',
+  title: { absolute: 'Secondary Adjustment in Transfer Pricing: Section 92CE Explained' },
   description: 'Section 92CE secondary adjustment: the Rs 1 crore threshold, the 90-day repatriation window, deemed-advance interest, and the one-time additional tax option.',
   keywords: [
     'section 92CE secondary adjustment', 'secondary adjustment transfer pricing India',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The Rs 1 crore threshold, 90-day repatriation window, deemed-advance interest, and the one-time additional tax alternative under Section 92CE.',
     url: 'https://agrawalkhandelwal.com/blog/secondary-adjustment-under-transfer-pricing-section-92ce-explained',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Secondary Adjustment: Section 92CE Explained',
     description: 'When it applies, the repatriation deadline, and the deemed-advance vs one-time additional tax choice.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function Section92CEBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 18, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -119,6 +123,8 @@ export default function Section92CEBlog() {
                 <h2>Why This Matters Beyond the Primary Adjustment</h2>
                 <p>A common planning mistake is treating a primary transfer pricing adjustment, whether accepted in assessment, resolved via APA, or self-reported, as the end of the exposure. Section 92CE means the real financial cost can continue accruing well after the primary adjustment is finalised, if the underlying cash does not actually move. This makes it important to track repatriation status as a distinct compliance item, separate from and after the primary transfer pricing analysis covered under the <Link href="/blog/transfer-pricing-methods-india-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>five prescribed transfer pricing methods</Link>, and to build the 90-day repatriation deadline into the compliance calendar as soon as a primary adjustment of this scale is on the horizon, rather than after the return due date has already passed. Where the underlying transaction also required <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB</Link> reporting, the secondary adjustment position should be reviewed alongside it, and any resulting deemed-advance or one-time tax exposure factored into the same year&apos;s tax provisioning.</p>
               </div>
+
+              <PostFooterLinks slug="secondary-adjustment-under-transfer-pricing-section-92ce-explained" />
 
               <PostCTA
             heading="Facing a primary adjustment and need to work out the repatriation position?"

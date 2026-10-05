@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST',
+  title: { absolute: 'Startup Compliance Automation: RBI ODI, APR, TP & GST' },
   description: 'How India-linked startups organise RBI ODI reporting, APR filing, TP documentation and GST workflows, and where a virtual CFO or offshore team fits.',
   keywords: [
     'RBI ODI reporting automation', 'APR filing India startup', 'automate transfer pricing documentation',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Organising RBI ODI reporting, APR filing, transfer pricing documentation, and GST workflows for growing startups with an overseas structure.',
     url: 'https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST',
     description: 'RBI ODI reporting, APR filing, transfer pricing documentation, and GST workflow, organised for growing startups.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function StartupComplianceAutomationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -136,6 +140,8 @@ export default function StartupComplianceAutomationBlog() {
                 <h2>What Happens When a Filing Slips</h2>
                 <p>ODI/APR non-compliance under FEMA is handled through RBI&apos;s compounding process rather than a fixed late fee; the delay exposes the entity to a compounding application, with the eventual amount assessed case by case based on the delay period and transaction value. In practice, the more immediate consequence is operational: AD banks routinely check FEMA reporting status before processing further remittances to or from an overseas subsidiary, so a pending APR can hold up an otherwise unrelated transaction until it is filed. Transfer pricing non-compliance carries its own defined penalties under Section 271BA (Form 3CEB) and related provisions, and GST late filing carries fixed late fees and interest on unpaid tax. None of these consequences are catastrophic in isolation, but they compound in exactly the way a scattered, memory-dependent compliance process makes likely; which is the core argument for building the tracking discipline described above before it becomes necessary.</p>
               </div>
+
+              <PostFooterLinks slug="startup-compliance-automation-odi-apr-gst" />
 
               <PostCTA
             heading="Need help organising ODI/APR, transfer pricing, or GST compliance?"

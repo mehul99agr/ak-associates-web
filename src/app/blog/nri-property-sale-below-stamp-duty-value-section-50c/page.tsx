@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRI Selling Property Below Stamp Duty Value: Section 50C',
+  title: { absolute: 'NRI Selling Property Below Stamp Duty Value: Section 50C' },
   description: 'NRI selling property below stamp duty value: Section 78 (earlier 50C), the safe harbour tolerance, TDS impact, and the buyer\'s deemed-gift exposure.',
   keywords: [
     'Section 50C NRI property', 'stamp duty value capital gains NRI', 'circle rate below market value NRI sale',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'The deemed full-value-of-consideration rule for property sold below circle rate, the safe harbour tolerance, and its impact on both the NRI seller and the resident buyer.',
     url: 'https://agrawalkhandelwal.com/blog/nri-property-sale-below-stamp-duty-value-section-50c',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRI Property Sale Below Stamp Duty Value',
     description: 'Section 78 (earlier Section 50C): what happens when an NRI sells property below the stamp duty value, for both seller and buyer.',
+    images: OG_IMAGES,
   },
 }
 
@@ -58,7 +62,7 @@ export default function Section50CNriBlog() {
             <span className="section-badge">NRI Taxation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>NRI Selling Property Below Stamp Duty Value: Section 78 (Earlier Section 50C) Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 10, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -90,6 +94,8 @@ export default function Section50CNriBlog() {
               <h2>Interaction With TDS on the Sale</h2>
               <p>A subtlety that catches people out: TDS under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2) (earlier Section 195)</Link> on an NRI property sale is generally computed on the <strong>actual sale consideration</strong> stated in the agreement; not the higher stamp duty value used for the Section 78 capital gains computation. This means the TDS deducted at the point of sale can understate the eventual tax liability once the stamp duty value substitution is applied at return-filing time, leaving a balance payable rather than a refund position; the opposite of the usual NRI property sale pattern, where TDS on gross consideration typically over-deducts relative to the actual gain. Getting an accurate estimate of both numbers before the sale closes, rather than after, is what lets an NRI plan for this rather than be surprised by it when filing the ITR.</p>
             </div>
+
+            <PostFooterLinks slug="nri-property-sale-below-stamp-duty-value-section-50c" />
 
             <PostCTA
             heading="Selling property below the stamp duty value?"

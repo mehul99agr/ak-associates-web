@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'US Sales Tax Nexus for Indian SaaS Companies',
+  title: { absolute: 'US Sales Tax Nexus for Indian SaaS Companies' },
   description: 'How US economic nexus rules for sales tax apply to an Indian SaaS or services company selling into the US, without any physical presence or US office.',
   keywords: [
     'US economic nexus SaaS', 'sales tax nexus foreign company',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Why physical presence in the US is no longer required to trigger a sales tax obligation.',
     url: 'https://agrawalkhandelwal.com/blog/us-sales-tax-nexus-indian-saas-companies',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'US Sales Tax Nexus for Indian SaaS Companies',
     description: 'How economic nexus rules apply to Indian SaaS and services companies.',
+    images: OG_IMAGES,
   },
 }
 
@@ -57,7 +61,7 @@ export default function UsSalesTaxNexusBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>US Sales Tax Economic Nexus for Indian SaaS and Services Companies</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published November 22, 2025</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published November 22, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -87,6 +91,8 @@ export default function UsSalesTaxNexusBlog() {
               <h2>This Is Separate from Income Tax</h2>
               <p>Sales tax nexus and income tax nexus, including permanent establishment questions under a tax treaty, are governed by different rules and should not be conflated. A company can owe sales tax in a state without having an income tax presence there, and the reverse is also possible. Each needs its own assessment as the business scales into new states.</p>
             </div>
+
+            <PostFooterLinks slug="us-sales-tax-nexus-indian-saas-companies" />
 
             <PostCTA
             heading="Selling SaaS into the US and unsure of your sales tax exposure?"

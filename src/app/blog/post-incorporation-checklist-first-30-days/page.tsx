@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Post-Incorporation Checklist: First 30 Days',
+  title: { absolute: 'Post-Incorporation Checklist: First 30 Days' },
   description: 'After your Certificate of Incorporation: PAN/TAN, bank account, GST, first Board meeting, auditor appointment and share certificates, with deadlines.',
   keywords: [
     'post incorporation compliance India', 'after company registration checklist',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'PAN/TAN, bank account, GST, first Board meeting, auditor appointment, and share certificates; with statutory deadlines.',
     url: 'https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Post-Incorporation Checklist: First 30 Days',
     description: 'Everything a founder must do after getting the Certificate of Incorporation, with statutory deadlines.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function PostIncorporationChecklistBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Post-Incorporation Checklist: Your First 30 Days After Registering a Private Limited Company</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 12, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 12, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -135,6 +139,8 @@ export default function PostIncorporationChecklistBlog() {
               </div>
               <p>The strongest early compliance habit is simple: document each action when it happens. A properly signed Board resolution, acknowledgment, certificate, and register entry is far easier to maintain than to recreate two years later. If you are hiring or raising funds soon after incorporation, see our guide on <Link href="/blog/essential-compliance-indian-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>essential ongoing compliance for startups</Link>.</p>
             </div>
+
+            <PostFooterLinks slug="post-incorporation-checklist-first-30-days" />
 
             <PostCTA
             heading="Just incorporated? Get the first 30 days right."

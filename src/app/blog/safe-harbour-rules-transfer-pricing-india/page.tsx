@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Safe Harbour Rules India (2026)',
+  title: { absolute: 'Safe Harbour Rules India (2026)' },
   description: 'TP safe harbour in India: eligible categories (software, ITES, KPO, contract R&D, loans), opting in via Form 3CEFA, lock-in, and the cost trade-off.',
   keywords: [
     'safe harbour rules transfer pricing India', 'form 3CEFA', 'safe harbour software development',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Eligible categories, how to opt in via Form 3CEFA, the lock-in period, and the certainty-vs-cost trade-off.',
     url: 'https://agrawalkhandelwal.com/blog/safe-harbour-rules-transfer-pricing-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TP Safe Harbour Rules in India (2026)',
     description: 'Which transactions qualify, how to opt in, and when certainty is worth the cost.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function SafeHarbourBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Safe Harbour Rules for Transfer Pricing in India: Certainty at a Price</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 3, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 3, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -142,6 +146,8 @@ export default function SafeHarbourBlog() {
                 <li>Consider whether an APA may be more suitable for a large or complex arrangement</li>
               </ul>
             </div>
+
+            <PostFooterLinks slug="safe-harbour-rules-transfer-pricing-india" />
 
             <PostCTA
             heading="Wondering if safe harbour is right for your business?"

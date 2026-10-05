@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax Audit vs Statutory Audit vs GST Audit: Key Differences',
+  title: { absolute: 'Tax Audit vs Statutory Audit vs GST Audit: Key Differences' },
   description: 'Statutory audit, tax audit (Section 44AB) and GST audit are three requirements under three laws. Who needs which, where they overlap, and why many need all.',
   keywords: [
     'tax audit vs statutory audit', 'tax audit vs GST audit', 'statutory audit vs tax audit India',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Three different audits under three different laws; who needs which, and why a business commonly needs more than one at the same time.',
     url: 'https://agrawalkhandelwal.com/blog/tax-audit-vs-statutory-audit-vs-gst-audit',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tax Audit vs Statutory Audit vs GST Audit',
     description: 'Statutory audit, tax audit, and GST audit are separate requirements under separate laws. Here is how they differ and when they overlap.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function TaxAuditVsStatutoryVsGstAuditBlog() {
             <span className="section-badge">Tax Audit</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Tax Audit vs Statutory Audit vs GST Audit: Key Differences</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 13, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 13, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -114,6 +118,8 @@ export default function TaxAuditVsStatutoryVsGstAuditBlog() {
               </ul>
               <p>If you are unsure which of these applies to your business this year, the safest approach is to check all three thresholds independently rather than assuming one triggers the others. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>audit and assurance services</Link> cover statutory audit, tax audit, and GST reconciliation together so nothing falls through the gap between the three laws.</p>
             </div>
+
+            <PostFooterLinks slug="tax-audit-vs-statutory-audit-vs-gst-audit" />
 
             <PostCTA
             heading="Not sure which audits apply to your business?"

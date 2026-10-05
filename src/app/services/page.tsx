@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -50,6 +50,7 @@ export const metadata: Metadata = {
     title: 'Our CA Services | India & UAE',
     description: 'Expert CA services: International Taxation, Transfer Pricing, DTAA, FEMA, UAE Corporate Tax, NRI Taxation, Audit, and Business Incorporation.',
     url: 'https://agrawalkhandelwal.com/services',
+    images: OG_IMAGES,
   },
 }
 

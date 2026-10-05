@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Presumptive Taxation for Professionals: Section 44ADA Explained',
+  title: { absolute: 'Presumptive Taxation for Professionals: Section 44ADA Explained' },
   description: 'Section 44ADA for professionals: eligibility, Rs 50 lakh / Rs 75 lakh (digital) receipts limits, the 50% deemed profit rate, and how it differs from 44AD.',
   keywords: [
     'Section 44ADA', 'presumptive taxation professionals', '44ADA limit',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'Gross receipts limits, the 50% deemed profit rate, eligible professions, and how 44ADA differs from 44AD.',
     url: 'https://agrawalkhandelwal.com/blog/presumptive-taxation-professionals-section-44ada',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Section 44ADA Presumptive Taxation for Professionals',
     description: 'Gross receipts limits, the 50% deemed profit rate, and eligible professions under Section 44ADA.',
+    images: OG_IMAGES,
   },
 }
 
@@ -86,7 +90,7 @@ export default function Section44ADABlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 3, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -193,6 +197,8 @@ export default function Section44ADABlog() {
                 </table>
                 <p>A professional cannot elect 44AD, and a trader cannot elect 44ADA; they are mutually exclusive based on the nature of the income. Get this classification right before choosing a scheme, since filing under the wrong one can invite scrutiny during processing.</p>
               </div>
+
+              <PostFooterLinks slug="presumptive-taxation-professionals-section-44ada" />
 
               <PostCTA
             heading="Practicing a specified profession and want to check 44ADA eligibility?"

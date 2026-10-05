@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'How to File ITR Online: Step-by-Step Guide (Salaried)',
+  title: { absolute: 'How to File ITR Online: Step-by-Step Guide (Salaried)' },
   description: 'Filing your ITR online as a salaried employee: documents, Form 16 reconciliation, choosing a regime, common mistakes and e-verification.',
   keywords: [
     'how to file ITR online', 'ITR filing guide salaried', 'e-filing income tax return',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Documents, portal steps, regime selection, and e-verification for salaried individuals filing their ITR online.',
     url: 'https://agrawalkhandelwal.com/blog/how-to-file-itr-online-salaried-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to File ITR Online: Step-by-Step Guide (Salaried)',
     description: 'A practical, step-by-step ITR e-filing walkthrough for salaried taxpayers.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function HowToFileITROnlineBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 20, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -145,6 +149,8 @@ export default function HowToFileITROnlineBlog() {
                   <li><strong>Skipping e-verification</strong>, which is the single most common reason a return that was genuinely filed on time still ends up treated as not filed.</li>
                 </ul>
               </div>
+
+              <PostFooterLinks slug="how-to-file-itr-online-salaried-guide" />
 
               <PostCTA
             heading="Want your return reviewed before you submit?"

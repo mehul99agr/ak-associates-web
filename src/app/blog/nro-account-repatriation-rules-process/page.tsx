@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'NRO Account Repatriation Rules (2026)',
+  title: { absolute: 'NRO Account Repatriation Rules (2026)' },
   description: 'Repatriating money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents, TDS clearance and common bank rejections.',
   keywords: [
     'NRO repatriation', 'NRO account repatriation', 'repatriation from NRO account',
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     description: 'USD 1 million limit, Form 145/146, documents, TDS clearance, and common bank rejections for NRO repatriation.',
     url: 'https://agrawalkhandelwal.com/blog/nro-account-repatriation-rules-process',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'NRO Repatriation: USD 1M Limit, Process & Documents (2026)',
     description: 'Complete guide to sending money from your NRO account abroad. Rules, limits, forms, and bank requirements.',
+    images: OG_IMAGES,
   },
 }
 
@@ -91,7 +95,7 @@ export default function NRORepatriationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 4, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -178,6 +182,8 @@ export default function NRORepatriationBlog() {
                 <h2>Beyond USD 1 Million: RBI Approval</h2>
                 <p>If you need to repatriate more than USD 1 million in a single financial year, you need prior approval from the Reserve Bank of India. This is uncommon in practice but does arise with high-value property sales or large inherited estates. The application is made through your AD Bank and RBI considers it on a case-by-case basis. Processing can take several weeks.</p>
               </div>
+
+              <PostFooterLinks slug="nro-account-repatriation-rules-process" />
 
               <PostCTA
             heading="Need help repatriating funds from your NRO account?"

@@ -49,6 +49,7 @@ export function buildArticleLd(opts: {
     description: opts.description,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
+    image: `${BASE_URL}/opengraph-image`,
     author: {
       '@type': 'Person',
       '@id': opts.authorId ?? MEHUL_PERSON_ID,

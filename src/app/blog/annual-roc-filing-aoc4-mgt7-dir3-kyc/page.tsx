@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Annual ROC Filing Guide (India)',
+  title: { absolute: 'Annual ROC Filing Guide (India)' },
   description: 'Every annual MCA filing for an Indian company: AOC-4, MGT-7/7A, DIR-3 KYC, ADT-1, deadlines relative to your AGM, and late filing penalties.',
   keywords: [
     'AOC-4 due date', 'MGT-7 due date', 'DIR-3 KYC deadline', 'annual ROC filing India',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Deadlines, penalties, and a compliance calendar for every mandatory annual MCA filing.',
     url: 'https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Annual ROC Filing Guide: AOC-4, MGT-7 & DIR-3 KYC',
     description: 'Every mandatory annual MCA filing, deadlines, and penalties for late filing.',
+    images: OG_IMAGES,
   },
 }
 
@@ -62,7 +66,7 @@ export default function AnnualROCFilingBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Annual ROC Filing for Private Limited Companies: AOC-4, MGT-7 and DIR-3 KYC</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 18, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 18, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -114,6 +118,8 @@ export default function AnnualROCFilingBlog() {
               <h2>A Founder&apos;s Annual Compliance Checklist</h2>
               <p>Start the process well before the AGM deadline. Confirm whether the company is eligible to use MGT-7A, whether the auditor appointment requires ADT-1, whether all directors have completed <Link href="/blog/dsc-din-application-director-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>DIR-3 KYC</Link>, whether there were changes in shareholding or registered office, and whether all financial statements reconcile with GST, TDS, income tax, and bank records. A clean annual compliance file is one of the cheapest ways to make a business fundable.</p>
             </div>
+
+            <PostFooterLinks slug="annual-roc-filing-aoc4-mgt7-dir3-kyc" />
 
             <PostCTA
             heading="Need your annual ROC filings handled end-to-end?"

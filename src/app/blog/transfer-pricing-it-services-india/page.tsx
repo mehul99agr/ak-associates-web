@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Transfer Pricing for IT Services (India)',
+  title: { absolute: 'Transfer Pricing for IT Services (India)' },
   description: 'Why TNMM is the default for Indian IT/ITES captives, limited-risk vs entrepreneur profiles, common TPO disputes, and safe harbour fit.',
   keywords: [
     'transfer pricing IT services India', 'transfer pricing software development company',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'TNMM as the default method, limited-risk profiles, common TPO disputes, and safe harbour fit for IT/ITES captives.',
     url: 'https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Transfer Pricing for IT Services (India)',
     description: 'TNMM, comparable selection disputes, and safe harbour fit for captive IT/ITES providers.',
+    images: OG_IMAGES,
   },
 }
 
@@ -63,7 +67,7 @@ export default function TPITServicesBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Transfer Pricing for IT Services and ITES Companies in India</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 7, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published August 7, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -123,6 +127,8 @@ export default function TPITServicesBlog() {
               <h2>Documentation That Withstands Review</h2>
               <p>A robust file for an IT or ITES captive should include the intercompany agreement, service descriptions, organisation chart, employee data, project-delivery flow, invoices, cost-base workings, and the transfer pricing study. The strongest documentation links the legal agreement to operational evidence; if the agreement says the overseas parent controls product risk, the records should show that it controls product roadmap, customer commitments, and commercial decisions.</p>
             </div>
+
+            <PostFooterLinks slug="transfer-pricing-it-services-india" />
 
             <PostCTA
             heading="Run a captive IT or ITES service provider?"

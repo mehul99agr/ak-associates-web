@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'HUF Taxation in India: Formation, Benefits & Filing' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Forming a Hindu Undivided Family, the separate tax slab and deductions it unlocks, and how HUF filing works.',
     url: 'https://agrawalkhandelwal.com/blog/huf-taxation-india-formation-benefits-filing',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'HUF Taxation in India: Formation, Benefits & Filing',
     description: 'Forming a Hindu Undivided Family, the separate tax slab and deductions it unlocks, and how HUF filing works.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function HUFTaxationBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>July 26, 2026</span>
                 <span aria-hidden>•</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -139,6 +143,8 @@ export default function HUFTaxationBlog() {
 
                 <p>Whether an HUF makes sense for your family depends on the size and nature of the income involved, and it is worth modelling the actual tax saving before incurring the cost of forming one. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax advisory services</Link> cover HUF formation, corpus structuring, and ongoing HUF return filing.</p>
               </div>
+
+              <PostFooterLinks slug="huf-taxation-india-formation-benefits-filing" />
 
               <PostCTA
             heading="Considering an HUF for your family?"

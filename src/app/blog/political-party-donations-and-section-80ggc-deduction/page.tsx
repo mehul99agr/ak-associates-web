@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Political Party Donations & Section 80GGC Deduction' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Eligibility, the cash-donation restriction, and the recent scrutiny wave targeting inflated or fabricated Section 80GGC claims.',
     url: 'https://agrawalkhandelwal.com/blog/political-party-donations-and-section-80ggc-deduction',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Political Party Donations & Section 80GGC Deduction',
     description: 'Eligibility, the cash-donation restriction, and the recent scrutiny wave targeting inflated or fabricated Section 80GGC claims.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function PoliticalDonations80GGCBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 12, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -125,6 +129,8 @@ export default function PoliticalDonations80GGCBlog() {
                 <p>Beyond the straightforward disallowance and resulting tax demand with interest, a claim found to be false or unsubstantiated on scrutiny can attract penalty for misreporting of income, which can run up to <strong>200% of the tax sought to be evaded</strong>, on top of the tax and interest itself. Where the department's search or survey action against a party or intermediary has already established a pattern of cash-back arrangements, individual donors linked to those transactions have seen their claims disallowed even where they characterised the donation as genuine, because the documentary trail (or the lack of a credible one) has not supported that position.</p>
                 <p>The deduction remains a legitimate and valuable one for taxpayers who actually donate through proper channels to properly registered recipients. The current environment simply means that "I have a receipt" is no longer, by itself, sufficient; the banking trail and the recipient's registration status both need to hold up.</p>
               </div>
+
+              <PostFooterLinks slug="political-party-donations-and-section-80ggc-deduction" />
 
               <PostCTA
             heading="Received a notice on a political donation claim?"

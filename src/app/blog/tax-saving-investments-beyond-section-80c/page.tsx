@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Tax Saving Investment Options Beyond Section 80C',
+  title: { absolute: 'Tax Saving Investment Options Beyond Section 80C' },
   description: 'Used up your Rs 1.5 lakh 80C limit? NPS under 80CCD(1B), 80D health cover, home loan interest, 80E education loans and 80G donations cut old-regime tax.',
   keywords: [
     'tax saving beyond 80C', 'section 80CCD(1B) NPS deduction', 'section 24 home loan interest deduction',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'NPS, health insurance, home loan interest, education loan interest, and donations: five deductions that keep working after your Section 80C limit is exhausted.',
     url: 'https://agrawalkhandelwal.com/blog/tax-saving-investments-beyond-section-80c',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tax Saving Investment Options Beyond Section 80C',
     description: 'NPS (80CCD(1B)), health insurance (80D), home loan interest (Section 24), education loan interest (80E), and donations (80G) explained.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function BeyondSection80cBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>August 9, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -123,6 +127,8 @@ export default function BeyondSection80cBlog() {
                   <p style={{ margin: 0, fontSize: '0.95rem' }}>Section 80G has been renumbered as Section 133 under the Income Tax Act 2025. Sections 80CCD(1B), Section 24 (home loan interest), and 80E have also been renumbered under the new Act; the exact new-Act references for these three were not confidently confirmed at the time of writing, so this guide uses the familiar old-Act names throughout. Confirm the current citation with your CA before quoting any of them formally.</p>
                 </div>
               </div>
+
+              <PostFooterLinks slug="tax-saving-investments-beyond-section-80c" />
 
               <PostCTA
             heading="Want a full picture of your available deductions?"

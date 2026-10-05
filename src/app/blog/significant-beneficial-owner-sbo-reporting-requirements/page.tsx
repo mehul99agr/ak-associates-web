@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Significant Beneficial Owner (SBO) Reporting Requirements' },
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Who counts as an SBO under Section 90, the 10% threshold, and the BEN-1/BEN-2 filing process and deadlines.',
     url: 'https://agrawalkhandelwal.com/blog/significant-beneficial-owner-sbo-reporting-requirements',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Significant Beneficial Owner (SBO) Reporting Requirements',
     description: 'A practical guide to Section 90 SBO identification, the 10% threshold, and Form BEN-1/BEN-2 filing.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +89,7 @@ export default function SignificantBeneficialOwnerSBOBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>September 3, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -132,6 +136,8 @@ export default function SignificantBeneficialOwnerSBOBlog() {
                 </ul>
                 <p>SBO reporting sits alongside the company&apos;s other corporate law obligations, and it is worth reviewing as part of a company&apos;s broader <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>compliance and company secretarial support</Link>, particularly whenever new shareholders, holding entities, or investors are introduced into the structure.</p>
               </div>
+
+              <PostFooterLinks slug="significant-beneficial-owner-sbo-reporting-requirements" />
 
               <PostCTA
             heading="Not sure if your company has an SBO to report?"

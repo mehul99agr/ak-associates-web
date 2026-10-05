@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Capital Gains Tax on Property Sale for Residents: LTCG & STCG Rates',
+  title: { absolute: 'Capital Gains Tax on Property Sale for Residents: LTCG & STCG' },
   description: 'Property sale tax for resident sellers: the 24-month LTCG test, 12.5% rate, pre-July 2024 indexation safeguard, Section 54/54EC exemptions and 1% TDS.',
   keywords: [
     'capital gains tax property sale India resident', 'LTCG on property sale', 'STCG on property sale',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'The 24-month LTCG threshold, 12.5% rate, the pre-July 2024 indexation safeguard, exemptions, and 1% Section 194-IA TDS for resident sellers.',
     url: 'https://agrawalkhandelwal.com/blog/capital-gains-tax-property-sale-residents-ltcg-stcg',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Capital Gains Tax on Property Sale (Residents)',
     description: 'LTCG/STCG rates, indexation safeguard, exemptions, and TDS for resident property sellers.',
+    images: OG_IMAGES,
   },
 }
 
@@ -60,7 +64,7 @@ export default function CapitalGainsResidentsBlog() {
             <span className="section-badge">Income Tax</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Capital Gains Tax on Property Sale for Residents: LTCG &amp; STCG Rates</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published July 25, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published July 25, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.25rem 1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--primary)', marginBottom: '1.5rem' }}>
@@ -117,6 +121,8 @@ export default function CapitalGainsResidentsBlog() {
               <p>A resident individual bought a flat in June 2020 for Rs 60 lakh and sells it in September 2026 for Rs 1.2 crore. The holding period exceeds 24 months, so it is long-term. Since the property was acquired before July 23, 2024, the safeguard comparison applies: the tax office computes the gain both ways (12.5% on Rs 60 lakh flat gain, and 20% on the indexed gain using the applicable cost inflation index), and the seller pays whichever amount is lower. Separately, since the sale value exceeds Rs 50 lakh, the buyer deducts 1% TDS (Rs 1.2 lakh) under Section 194-IA and deposits it via Form 26QB; this is credited against the seller&apos;s final tax liability when the return is filed.</p>
               <p>If this sale were instead by an NRI seller, none of the Section 194-IA mechanics above would apply; the buyer would need a TAN and would deduct tax under a different provision, with no Rs 50 lakh threshold. Always confirm the seller&apos;s residential status before assuming which regime governs a transaction.</p>
             </div>
+
+            <PostFooterLinks slug="capital-gains-tax-property-sale-residents-ltcg-stcg" />
 
             <PostCTA
             heading="Selling property and want to plan the capital gains tax correctly?"

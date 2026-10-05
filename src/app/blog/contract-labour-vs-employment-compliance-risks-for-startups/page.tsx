@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Contract Labour vs Employment: Compliance Risks for Startups',
+  title: { absolute: 'Contract Labour vs Employment: Compliance Risks for Startups' },
   description: 'Contract Labour Act 1970 registration and licensing thresholds, and the misclassification risks startups face treating employees as contract labour.',
   keywords: [
     'contract labour vs employment', 'Contract Labour Regulation Abolition Act', 'CLRA registration license',
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
     description: 'CLRA registration and licensing thresholds, principal employer obligations, and the real risks of treating employees as contract labour.',
     url: 'https://agrawalkhandelwal.com/blog/contract-labour-vs-employment-compliance-risks-for-startups',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contract Labour vs Employment: Compliance Risks for Startups',
     description: 'The CLRA framework, the 20-workmen threshold, and why calling someone a contractor doesn\'t make them one.',
+    images: OG_IMAGES,
   },
 }
 
@@ -67,7 +71,7 @@ export default function ContractLabourVsEmploymentBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 7, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -127,6 +131,8 @@ export default function ContractLabourVsEmploymentBlog() {
                 <h2>Getting the Classification Right From the Start</h2>
                 <p>The practical safeguard for a startup is to make the engagement structure match the label used. Genuine consultants and freelancers should have real project-based deliverables, control over their own working hours and methods, freedom to take other clients, and their own tools and equipment. Where a business genuinely needs supervised, ongoing labour at scale, contract labour through a licensed contractor, with the principal employer registration and contractor licensing properly in place, is the compliant route; treating the same workforce as informal "freelancers" to sidestep both routes is where the real exposure sits.</p>
               </div>
+
+              <PostFooterLinks slug="contract-labour-vs-employment-compliance-risks-for-startups" />
 
               <PostCTA
             heading="Using contract, gig, or consultant workers at scale?"

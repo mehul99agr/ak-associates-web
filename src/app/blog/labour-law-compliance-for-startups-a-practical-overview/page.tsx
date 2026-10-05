@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Labour Law Compliance for Startups: A Practical Overview' },
-  description: 'A practical overview of labour law compliance for Indian startups. Learn about Shops & Establishments, EPF, ESI, POSH, maternity benefits, and self-certification.',
+  description: 'A practical overview of labour law compliance for Indian startups. Covers Shops & Establishments, EPF, ESI, POSH, maternity benefits, and self-certification.',
   keywords: [
     'labour law compliance startups',
     'startup labor laws India',
@@ -21,11 +23,13 @@ export const metadata: Metadata = {
     description: 'A practical overview of labour law compliance for Indian startups. Learn about Shops & Establishments, EPF, ESI, POSH, maternity benefits, and self-certification.',
     url: 'https://agrawalkhandelwal.com/blog/labour-law-compliance-for-startups-a-practical-overview',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Labour Law Compliance for Startups: A Practical Overview',
     description: 'A practical overview of labour law compliance for Indian startups. Learn about Shops & Establishments, EPF, ESI, POSH, maternity benefits, and self-certification.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function LabourLawComplianceForStartupsAPracticalOverviewBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 14, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -148,6 +152,8 @@ export default function LabourLawComplianceForStartupsAPracticalOverviewBlog() {
 
                 <p>Need help applying this to your specific situation? Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>advisory services</Link> cover compliance planning for growing businesses.</p>
               </div>
+
+              <PostFooterLinks slug="labour-law-compliance-for-startups-a-practical-overview" />
 
               <PostCTA
             heading="Have a Question on This?"

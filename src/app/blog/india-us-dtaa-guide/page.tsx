@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'India-US DTAA Guide: Permanent Establishment and Business Profits',
+  title: { absolute: 'India-US DTAA Guide: Permanent Establishment and Business Profits' },
   description: 'India-US tax treaty: how a permanent establishment is defined, how Article 7 attributes profits to it, and what it means for founders with a US entity.',
   keywords: [
     'India US DTAA permanent establishment', 'Article 7 business profits DTAA',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: 'Permanent establishment thresholds and Article 7 profit attribution under the India-US tax treaty.',
     url: 'https://agrawalkhandelwal.com/blog/india-us-dtaa-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'India-US DTAA Guide',
     description: 'Permanent establishment and business profits under the India-US tax treaty.',
+    images: OG_IMAGES,
   },
 }
 
@@ -57,7 +61,7 @@ export default function IndiaUsDtaaGuideBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>India-US DTAA Guide: Permanent Establishment, Business Profits, and Double Tax Relief</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published February 3, 2026</span><span aria-hidden>&bull;</span><span>CA Mehul Agrawal</span><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published February 3, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -87,6 +91,8 @@ export default function IndiaUsDtaaGuideBlog() {
               <h2>Why This Matters for a Founder's Own Structure</h2>
               <p>A founder who incorporates a US entity but continues to run day-to-day operations, close deals, or exercise real decision-making authority from India needs to consider whether that pattern of activity itself risks creating an unintended permanent establishment, or otherwise creating Indian tax exposure for the US entity's profits, independent of how the corporate structure is set up on paper. This is a genuinely fact-specific question, since it depends on what the founder actually does day to day, not just on where the company is incorporated, and it should be assessed as part of the overall US entity plan rather than left until profits are already flowing and the pattern of activity is already established.</p>
             </div>
+
+            <PostFooterLinks slug="india-us-dtaa-guide" />
 
             <PostCTA
             heading="Running a US entity while based in India?"

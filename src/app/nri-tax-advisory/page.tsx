@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'NRI Tax Advisory India | ITR, Property Sale, FEMA & DTAA',
     description: 'End-to-end tax advisory for Non-Resident Indians: ITR filing, repatriation, DTAA claims, and FEMA compliance under the new Income Tax Act 2025.',
     url: 'https://agrawalkhandelwal.com/nri-tax-advisory',
+    images: OG_IMAGES,
   },
 }
 

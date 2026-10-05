@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TDS on Rent Under Section 194-IB: When Tenants Must Deduct',
+  title: { absolute: 'TDS on Rent Under Section 194-IB: When Tenants Must Deduct' },
   description: 'Section 194-IB: individuals and HUFs not under tax audit deduct 2% TDS on rent above Rs 50,000 a month, filed once a year via Form 26QC with no TAN.',
   keywords: [
     'section 194-IB', 'TDS on rent tenant', 'form 26QC', 'TDS on rent above 50000',
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
     description: '2% TDS on monthly rent above Rs 50,000 for individual and HUF tenants; Form 26QC process, timing, and penalties for missing it.',
     url: 'https://agrawalkhandelwal.com/blog/tds-on-rent-section-194ib-tenants-deduct',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TDS on Rent: Section 194-IB Explained',
     description: '2% TDS on rent above Rs 50,000/month for individual and HUF tenants; Form 26QC, no TAN required.',
+    images: OG_IMAGES,
   },
 }
 
@@ -65,7 +69,7 @@ export default function TDSRentSection194IBBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 5, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -109,6 +113,8 @@ export default function TDSRentSection194IBBlog() {
                 <h2>Section 194-IB Under the Income Tax Act 2025</h2>
                 <p>The Income Tax Act 2025 broadly consolidated the various TDS provisions scattered across Sections 192 to 206 of the earlier Act into a smaller set of sections, with most payment-based TDS obligations (including rent, contract payments, and professional fees) now grouped under <strong>Section 393</strong> and its associated table of payment categories. The specific table item corresponding to the earlier Section 194-IB rent-by-individual/HUF provision was not confirmed with confidence across available sources as of this writing, so this guide does not state a specific new sub-item number. The substance described above, the Rs 50,000 monthly threshold, the 2% rate, the PAN-only mechanism, and Form 26QC, applies regardless of the exact new-Act citation, and this article will be updated once the mapping is confirmed.</p>
               </div>
+
+              <PostFooterLinks slug="tds-on-rent-section-194ib-tenants-deduct" />
 
               <PostCTA
             heading="Paying high rent as an individual or HUF?"

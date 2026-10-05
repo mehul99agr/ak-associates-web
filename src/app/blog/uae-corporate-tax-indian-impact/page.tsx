@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
-import { WHATSAPP_ARTICLE_LINK } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
+import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'UAE Corporate Tax: Impact on India',
+  title: { absolute: 'UAE Corporate Tax: Impact on India' },
   description: 'Guide for Indian businesses on UAE 9% Corporate Tax: India-UAE DTAA benefits, Transfer Pricing compliance, Free Zone entity rules, and restructuring strategies.',
   keywords: [
     'UAE corporate tax Indian businesses', 'India UAE DTAA', 'UAE CT 9 percent',
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing rules, and restructuring strategies.',
     url: 'https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact',
     type: 'article',
+    images: OG_IMAGES,
   },
 }
 
@@ -132,6 +134,8 @@ export default function UAECorporateTaxBlog() {
               <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing</Link>
             </div>
           </div>
+                  <PostFooterLinks slug="uae-corporate-tax-indian-impact" />
+
                   <PostCTA
             heading="Have UAE business interests?"
             description="We advise on UAE corporate tax and its impact on your Indian tax obligations."

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
+import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Startup Winding Up: Fast Track Exit (FTE) Mode Guide',
+  title: { absolute: 'Startup Winding Up: Fast Track Exit (FTE) Mode Guide' },
   description: 'What "Fast Track Exit" means for a startup closing today: why FTE is the old scheme name, how STK-2 applies to DPIIT startups, and a realistic timeline.',
   keywords: [
     'fast track exit startup', 'FTE mode company closure', 'startup winding up india',
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
     description: 'Why "FTE" is the old scheme name, how startups actually close down today via Form STK-2, and a realistic timeline.',
     url: 'https://agrawalkhandelwal.com/blog/startup-winding-up-fast-track-exit-fte-mode-guide',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Startup Winding Up: Fast Track Exit (FTE) Mode Guide',
     description: '"Fast Track Exit" is the old scheme name. Here is how a startup actually winds down today, and how long it takes.',
+    images: OG_IMAGES,
   },
 }
 
@@ -84,7 +88,7 @@ export default function StartupWindingUpFTEBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 10, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal</span>
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -131,6 +135,8 @@ export default function StartupWindingUpFTEBlog() {
 
                 <p>Closing a startup is rarely the outcome founders plan for, but doing it cleanly through a proper strike-off, rather than simply abandoning the entity and letting penalties accumulate, protects both the founders&apos; compliance record and their ability to start a new venture without an unresolved legal tail from the previous one.</p>
               </div>
+
+              <PostFooterLinks slug="startup-winding-up-fast-track-exit-fte-mode-guide" />
 
               <PostCTA
             heading="Winding down your startup?"

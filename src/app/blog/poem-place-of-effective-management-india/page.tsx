@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
-import { BOOKING_LINK } from '@/lib/constants'
+import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
+import PostFooterLinks from '../_components/PostFooterLinks'
 
 export const metadata: Metadata = {
   title: 'POEM & Indian Tax Residency',
@@ -17,11 +18,13 @@ export const metadata: Metadata = {
     description: 'When a UAE or foreign subsidiary is treated as an Indian tax resident under POEM, the ABOI test, the Rs 50 crore exemption, and how to avoid triggering it.',
     url: 'https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india',
     type: 'article',
+    images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'POEM & Indian Tax Residency',
     description: 'The ABOI test, the Rs 50 crore exemption, and how to keep a foreign subsidiary from being taxed as Indian.',
+    images: OG_IMAGES,
   },
 }
 
@@ -85,7 +88,7 @@ export default function POEMBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 8, 2026</span>
                 <span aria-hidden>&bull;</span>
-                <span>CA Mehul Agrawal, UAE Corporate Tax Advisor</span>
+                <span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>, UAE Corporate Tax Advisor</span>
                 <span aria-hidden>&bull;</span>
                 <span>Agrawal Khandelwal &amp; Associates LLP</span>
               </div>
@@ -146,6 +149,8 @@ export default function POEMBlog() {
                 <h2>Consequences If POEM Is Found</h2>
                 <p>If a foreign company is determined to have Indian POEM, Section 115JH provides transitional computation rules for the first year of Indian residency, covering how income is computed, how depreciation and unabsorbed losses carry forward, and MAT applicability. But the underlying consequence remains significant: worldwide income taxed in India, full Indian transfer pricing compliance on related-party transactions, and loss of the UAE tax treatment for that income from an Indian tax perspective. It also invites scrutiny of past years' filings and can complicate DTAA benefit claims, since a dual-resident company faces its own tie-breaker analysis under the applicable treaty.</p>
               </div>
+
+              <PostFooterLinks slug="poem-place-of-effective-management-india" />
 
               <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ marginBottom: '0.75rem' }}>Worried your UAE entity could have Indian POEM exposure?</h3>
