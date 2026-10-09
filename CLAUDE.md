@@ -437,6 +437,23 @@ confirmed in a screenshot):**
   the "leave top earners untouched" rule no longer applies to this post); WhatsApp
   enquiry button replaced the generic /services button on the XBRL, CSR fund utilisation,
   Form 10B/10BB and 43B(h) posts. Recheck these in GSC around Oct 23-30.
+- **User's stated target (Oct 9, 2026): ~100 clicks/day and ~5,000 impressions/day**
+  (28-day average then: 25 clicks, 2,290 impressions). For that goal, deadline-driven and
+  rule-change posts ARE wanted (this narrows the "stop generic explainers" note above:
+  no more definitional explainers, yes to deadline and notification coverage, published
+  2-3 weeks before a due date or within days of a notification). New topics still need
+  the user's approval first.
+- Later the same day (all pushed): `tds-on-nri-property-sale-india` got a full section on
+  the Oct 1, 2026 Form 141 Schedule E route and re-indexing was requested in GSC; titles
+  on 20 more high-impression posts were matched to their GSC queries (commit 0e74335);
+  `tax-audit-due-date-penalty-for-delay` now covers the CBDT press release of Sep 28, 2026
+  extending the AY 2026-27 tax audit report to Oct 21, 2026 and the audit-case return to
+  Nov 21, 2026 (Form 3CEB cases excluded; trust Form 10B/10BB coverage NOT confirmed).
+- GSC Links report (Oct 9): 8 external links from 5 sites (crunchbase 3, nashik100 2,
+  bebee 1, caclubindia 1, magicpin 1). Google does count one caclubindia.com link, despite
+  the Sep 21 browser check finding no live `<a>` there.
+- User has a CAclubindia Pro membership and an X account they want used for traffic. X
+  posts must be shown to the user for approval before posting.
 - Tooling note: the GSC results table holds up to 1,000 rows in the DOM regardless of the
   rows-per-page setting, and `javascript_tool` output is cut at ~1,000 characters - do the
   aggregation in page JS and return short summaries. `start_date`/`end_date` (YYYYMMDD),
