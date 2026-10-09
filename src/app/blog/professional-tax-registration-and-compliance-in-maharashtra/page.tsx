@@ -7,8 +7,8 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Professional Tax Registration & Compliance in Maharashtra' },
-  description: 'Maharashtra Professional Tax slabs, PTEC vs PTRC registration, due dates, and who is liable, for employers, professionals, and businesses in Nashik and Sillod.',
+  title: { absolute: 'Professional Tax Maharashtra: PT Slabs, PTEC vs PTRC' },
+  description: 'Maharashtra PT slab: men nil up to Rs 7,500, Rs 175 to Rs 10,000, Rs 200 above; women nil up to Rs 25,000. PTEC is for the entity, PTRC for employers.',
   keywords: [
     'professional tax maharashtra', 'ptec ptrc registration', 'professional tax slab maharashtra',
     'professional tax due date maharashtra', 'professional tax registration nashik', 'ptrc ptec difference',

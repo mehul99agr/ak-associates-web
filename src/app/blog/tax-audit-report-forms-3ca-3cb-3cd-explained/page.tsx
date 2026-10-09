@@ -8,8 +8,8 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Tax Audit Report Forms: 3CA/3CB/3CD Explained (Now Form 26)' },
-  description: 'What Forms 3CA, 3CB and 3CD covered, and how they are now consolidated into a single Form 26 under the Income Tax Act 2025 from April 1, 2026.',
+  title: { absolute: 'Form 3CA vs 3CB vs 3CD: Which Applies to an LLP or Firm?' },
+  description: 'Form 3CA if another law already requires an audit (companies), Form 3CB if not (most firms and LLPs), Form 3CD with either. All three are now Form 26.',
   keywords: [
     'form 3CA vs 3CB', 'form 3CD explained', 'tax audit report forms',
     'form 3CA 3CB 3CD difference', 'income tax audit report format',

@@ -6,7 +6,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'TDS on NRI Property Sale (FY 2026-27)',
+  title: { absolute: 'TDS Rate on Sale of Property by NRI (FY 2026-27): Buyer Guide' },
   description: 'TDS on NRI property sale for FY 2026-27: rates with surcharge, buyer TAN, Form 27Q, Form 13 lower deduction, refunds and repatriation under the new Act.',
   keywords: [
     'TDS on NRI property sale India', 'TDS when buying property from NRI', 'section 195 NRI property',

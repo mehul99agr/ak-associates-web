@@ -403,6 +403,45 @@ Claude in Chrome; "28 days" chip confirmed in a screenshot):**
   `breakdown=date` and no `compare_date` for daily rows, and read compare tables by
   picking the largest `<table>` via `javascript_tool` rather than filtering on visibility.
 
+**Search Console findings (Oct 9, 2026 - 28-day window, Sep 9-Oct 6, "28 days" chip
+confirmed in a screenshot):**
+- Totals: 690 clicks, 64.1k impressions, 1.1% CTR, avg. position 7.1. Daily run rate
+  recovered to ~3,200 impr / 37-41 clicks on Oct 5-6 after the Oct 2-4 post-deadline dip.
+- **Blog takes 643 of 690 clicks; all 21 non-blog pages together got 47 clicks / 2,432
+  impr.** Service pages are near-invisible (/transfer-pricing 1 click, /offshore-accounting
+  3, /startups 0 at pos 30, /nri-tax-advisory 0, /company-incorporation 0).
+- Only 47 of 690 clicks trace to a visible query; no query brings more than 3 clicks.
+  Top-3 rankings convert badly (196 queries, 1,748 impr, 13 clicks) - definitional queries
+  answered on the results page.
+- Local: "ca in nashik" 107 impr / pos 11.6 / 0 clicks; all Nashik queries ~360 impr, 3
+  clicks. Aurangabad queries pos 27-29.
+- **`tds-on-nri-property-sale-india` lost its head query.** Queries containing "sale of
+  property by nri" ranked pos 1-5 with 5-27 impr/day until Sep 18, then fell to pos 50-60
+  with 0-4 impr/day from Sep 19-20 - before the Sep 25 content correction, so that edit
+  did not cause it. Page is 200, indexable, canonical correct; no other page of ours took
+  the query. Live SERP (Oct 9) is taxguru, incometaxindia.gov.in, ICICI, tdsman, caclubindia
+  etc. Reads as an authority/freshness loss, not an on-page fault (inference).
+- **GA4 is effectively blind:** 7 users / 17 page_views / 0 `contact_click` in 28 days vs
+  690 GSC clicks, because GA loads only after an explicit cookie "granted". The user says
+  the site has produced 10+ client calls, so enquiries exist - GA4 just cannot see them.
+  Do not use GA4 numbers to judge the funnel until this is changed (Consent Mode v2 with
+  denied-by-default is the option; user decision pending).
+- **Content direction (Oct 9):** stop adding generic compliance explainers - 145 of 286
+  URLs with impressions got zero clicks and the audience is largely accountants/students.
+  The bottleneck for service and local pages is backlinks + Google Business Profile
+  reviews, not more posts.
+- Changes made (uncommitted at time of writing): query-matched titles/descriptions on
+  `tax-audit-report-forms-3ca-3cb-3cd-explained`, `form-24q-vs-form-26q-...`,
+  `professional-tax-registration-...-maharashtra`, and `tds-on-nri-property-sale-india`
+  (now `absolute` title "TDS Rate on Sale of Property by NRI (FY 2026-27): Buyer Guide" -
+  the "leave top earners untouched" rule no longer applies to this post); WhatsApp
+  enquiry button replaced the generic /services button on the XBRL, CSR fund utilisation,
+  Form 10B/10BB and 43B(h) posts. Recheck these in GSC around Oct 23-30.
+- Tooling note: the GSC results table holds up to 1,000 rows in the DOM regardless of the
+  rows-per-page setting, and `javascript_tool` output is cut at ~1,000 characters - do the
+  aggregation in page JS and return short summaries. `start_date`/`end_date` (YYYYMMDD),
+  `page=*text` and `query=*text` URL params work for custom ranges and filters.
+
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
 dates rather than batch-publish same-day:
