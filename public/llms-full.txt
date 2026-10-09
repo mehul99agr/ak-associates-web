@@ -20172,6 +20172,7 @@ Published August 14, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#
 
 TL;DR
 
+- **AY 2026-27 extension:** the tax audit report is now due by **October 21, 2026** (was September 30), and the return in audit cases by **November 21, 2026** (was October 31).
 - The tax audit report is normally due by **30 September** following the financial year; taxpayers also filing Form 3CEB for transfer pricing get until **31 October**.
 - Your CA files the audit report online, and you (the taxpayer) must accept it on the e-filing portal before it counts as furnished. For tax years from April 1, 2026, this report is the consolidated **Form 26** (replacing the earlier Form 3CA/3CB plus Form 3CD structure described below).
 - Missing the deadline or failing to get accounts audited at all triggers a **Section 271B** penalty: 0.5% of turnover/gross receipts, capped at a fixed ceiling.
@@ -20179,7 +20180,22 @@ TL;DR
 
 Getting your accounts audited under Section 44AB is only half the job; the report has to reach the income tax department by a specific date, in a specific format, through a specific online process, and be formally accepted by you as the taxpayer. Miss any part of that chain and you are exposed to a penalty even if the audit itself was completed on time. This guide covers the current due date, how the filing actually happens, and exactly what Section 271B costs if you are late.
 
+## AY 2026-27: Due Date Extended to October 21, 2026
+
+By a press release dated September 28, 2026, the CBDT extended two dates for Assessment Year 2026-27 (Financial Year 2025-26):
+
+| Filing | Original Due Date | Extended Due Date |
+| --- | --- | --- |
+| Tax audit report | September 30, 2026 | **October 21, 2026** |
+| Return of income in audit cases | October 31, 2026 | **November 21, 2026** |
+
+**Who is covered:** companies, other taxpayers whose accounts must be audited under the Income Tax Act or any other law, and partners of firms whose accounts must be audited. **Who is not:** taxpayers required to furnish a transfer pricing report in Form 3CEB. Their dates are unchanged, so the audit report remains due by October 31, 2026.
+
+An audit report uploaded and accepted by October 21, 2026 is on time for Section 271B purposes. The press release does not mention trust audit reports in Form 10B or Form 10BB, so do not assume the extension applies to them without checking the circular. If you are filing close to the date, remember that the report counts as furnished only after you accept it on the e-filing portal, not when your CA uploads it.
+
 ## The Current Due Date
+
+The table below shows the standard dates that apply in a year with no extension.
 
 | Category | Tax Audit Report Due Date |
 | --- | --- |
@@ -20241,6 +20257,10 @@ We prepare and file Form 3CA/3CB and Form 3CD, and track the portal acceptance s
 [Book Free Consultation](https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7)[Ask on WhatsApp](https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20my%20tax%20audit%20filing.)
 
 ## Frequently Asked Questions
+
+### Has the tax audit due date been extended for AY 2026-27?
+
+Yes. By a press release dated September 28, 2026, the CBDT extended the due date for the tax audit report for Assessment Year 2026-27 (Financial Year 2025-26) from September 30, 2026 to October 21, 2026, and the due date for the return of income in audit cases from October 31, 2026 to November 21, 2026. The extension covers companies, other taxpayers whose accounts must be audited, and partners of audited firms. It does not cover taxpayers who must file a transfer pricing report in Form 3CEB; their dates are unchanged.
 
 ### What is the due date for filing the tax audit report?
 

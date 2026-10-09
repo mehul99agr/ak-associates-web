@@ -9,7 +9,7 @@ import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: { absolute: 'Tax Audit Due Date AY 2026-27 & Late Filing Penalty (271B)' },
-  description: 'The current tax audit report due date, how the audit report is filed online (Form 26, earlier 3CA/3CB/3CD), and the Section 271B penalty for delay.',
+  description: 'Tax audit report due date for AY 2026-27 is extended to October 21, 2026, and the return to November 21. How it is filed and the Section 271B penalty.',
   keywords: [
     'tax audit due date', 'tax audit report due date AY 2026-27', 'Form 3CD due date',
     'section 271B penalty', 'penalty for late tax audit', 'form 3CA 3CB filing process',
@@ -37,11 +37,12 @@ const articleLd = buildArticleLd({
   headline: 'Due Date for Tax Audit Report Filing & Penalty for Delay',
   description: 'The current tax audit report due date, the Form 3CA/3CB and 3CD online filing mechanics, and the Section 271B penalty for missing the deadline or failing to get accounts audited.',
   datePublished: '2026-08-14',
-  dateModified: '2026-09-25',
+  dateModified: '2026-10-09',
   slug: 'tax-audit-due-date-penalty-for-delay',
 })
 
 const faqs: [string, string][] = [
+  ['Has the tax audit due date been extended for AY 2026-27?', 'Yes. By a press release dated September 28, 2026, the CBDT extended the due date for the tax audit report for Assessment Year 2026-27 (Financial Year 2025-26) from September 30, 2026 to October 21, 2026, and the due date for the return of income in audit cases from October 31, 2026 to November 21, 2026. The extension covers companies, other taxpayers whose accounts must be audited, and partners of audited firms. It does not cover taxpayers who must file a transfer pricing report in Form 3CEB; their dates are unchanged.'],
   ['What is the due date for filing the tax audit report?', 'For most taxpayers covered by Section 44AB, the tax audit report is due by 30 September following the end of the financial year. Taxpayers who also have international or specified domestic transactions requiring a transfer pricing report get an extended deadline of 31 October, because Form 3CEB must be filed alongside the tax audit report. The government can extend these dates in a given year; always confirm the current-year date rather than assuming it repeats automatically.'],
   ['What happens if my CA uploads Form 3CD after the due date?', 'A delay in filing exposes you to a penalty under Section 271B: 0.5% of turnover or gross receipts, subject to a ceiling. The ITR itself also cannot usually be filed correctly without the audit report where a tax audit is mandatory, so a delayed 3CD can cascade into a delayed or defective return as well.'],
   ['Can the Section 271B penalty be waived?', 'Yes, if the taxpayer demonstrates "reasonable cause" for the delay under Section 273B, such as a genuine unforeseen event, the assessing officer has discretion not to levy the penalty. Reasonable cause is assessed case by case; a routine cash-flow or scheduling issue is unlikely to qualify, while things like the auditor\'s serious illness or a natural disaster affecting records have historically been accepted in some cases.'],
@@ -64,12 +65,13 @@ export default function TaxAuditDueDatePenaltyBlog() {
             <span className="section-badge">Tax Audit</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Due Date for Tax Audit Report Filing &amp; Penalty for Delay</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 14, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Updated October 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.4rem' }}><strong>AY 2026-27 extension:</strong> the tax audit report is now due by <strong>October 21, 2026</strong> (was September 30), and the return in audit cases by <strong>November 21, 2026</strong> (was October 31).</li>
                   <li style={{ marginBottom: '0.4rem' }}>The tax audit report is normally due by <strong>30 September</strong> following the financial year; taxpayers also filing Form 3CEB for transfer pricing get until <strong>31 October</strong>.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Your CA files the audit report online, and you (the taxpayer) must accept it on the e-filing portal before it counts as furnished. For tax years from April 1, 2026, this report is the consolidated <strong>Form 26</strong> (replacing the earlier Form 3CA/3CB plus Form 3CD structure described below).</li>
                   <li style={{ marginBottom: '0.4rem' }}>Missing the deadline or failing to get accounts audited at all triggers a <strong>Section 271B</strong> penalty: 0.5% of turnover/gross receipts, capped at a fixed ceiling.</li>
@@ -79,7 +81,22 @@ export default function TaxAuditDueDatePenaltyBlog() {
 
               <p>Getting your accounts audited under Section 44AB is only half the job; the report has to reach the income tax department by a specific date, in a specific format, through a specific online process, and be formally accepted by you as the taxpayer. Miss any part of that chain and you are exposed to a penalty even if the audit itself was completed on time. This guide covers the current due date, how the filing actually happens, and exactly what Section 271B costs if you are late.</p>
 
+              <h2>AY 2026-27: Due Date Extended to October 21, 2026</h2>
+              <p>By a press release dated September 28, 2026, the CBDT extended two dates for Assessment Year 2026-27 (Financial Year 2025-26):</p>
+              <div style={{ overflowX: 'auto' }}>
+                <table style={tableStyle}>
+                  <thead><tr><th style={thStyle}>Filing</th><th style={thStyle}>Original Due Date</th><th style={thStyle}>Extended Due Date</th></tr></thead>
+                  <tbody>
+                    <tr><td style={tdStyle}>Tax audit report</td><td style={tdStyle}>September 30, 2026</td><td style={tdStyle}><strong>October 21, 2026</strong></td></tr>
+                    <tr><td style={tdAltStyle}>Return of income in audit cases</td><td style={tdAltStyle}>October 31, 2026</td><td style={tdAltStyle}><strong>November 21, 2026</strong></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p><strong>Who is covered:</strong> companies, other taxpayers whose accounts must be audited under the Income Tax Act or any other law, and partners of firms whose accounts must be audited. <strong>Who is not:</strong> taxpayers required to furnish a transfer pricing report in Form 3CEB. Their dates are unchanged, so the audit report remains due by October 31, 2026.</p>
+              <p>An audit report uploaded and accepted by October 21, 2026 is on time for Section 271B purposes. The press release does not mention trust audit reports in Form 10B or Form 10BB, so do not assume the extension applies to them without checking the circular. If you are filing close to the date, remember that the report counts as furnished only after you accept it on the e-filing portal, not when your CA uploads it.</p>
+
               <h2>The Current Due Date</h2>
+              <p>The table below shows the standard dates that apply in a year with no extension.</p>
               <div style={{ overflowX: 'auto' }}>
                 <table style={tableStyle}>
                   <thead><tr><th style={thStyle}>Category</th><th style={thStyle}>Tax Audit Report Due Date</th></tr></thead>
