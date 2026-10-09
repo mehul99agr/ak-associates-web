@@ -454,6 +454,26 @@ confirmed in a screenshot):**
   the Sep 21 browser check finding no live `<a>` there.
 - User has a CAclubindia Pro membership and an X account they want used for traffic. X
   posts must be shown to the user for approval before posting.
+- **Deadline/rule-change batch (Oct 9, 2026, user-approved list of 8):** 3 new posts live
+  (225 posts total): `57th-gst-council-meeting-key-recommendations` (recommendations of
+  Oct 8, 2026, NOT yet law - revisit when notified; single-source items such as Section
+  17(5) relaxations and the EV/delivery 5% options were left out),
+  `itr-due-date-audit-cases-ay-2026-27-extended`, `last-date-to-claim-itc-fy-2025-26`.
+  Refreshed with FY 2025-26 dates: `form-3ceb-transfer-pricing-audit-report` (Oct 31 / Nov
+  30, 2026, not extended) and `annual-roc-filing-aoc4-mgt7-dir3-kyc` (Oct 30 / Nov 29, 2026
+  for a Sep 30 AGM; no MCA extension found as of Oct 9). **Still owed from the approved
+  list:** refresh `gstr-9-gstr-9c-annual-return-guide` (mid-Nov), the advance tax post for
+  the Dec 15 instalment (late Nov), and `belated-revised-updated-returns-itr-u-139-8a` for
+  the Dec 31 deadline (early Dec) - verify each date against the official source first.
+  Generator used: a Python template script (title/desc/TL;DR/body/FAQ fields -> page.tsx,
+  then prepends to `posts.ts` and appends to `sitemap.ts`); new posts go at the TOP of the
+  `posts` array, which the blog index renders in array order.
+- X: one post published from @CAMehulAg on Oct 9 (NRI property TAN change). The account
+  has 4 followers, an outdated bio with no website link, and X showed a "graduated access"
+  notice (limited discoverability until the account shows normal human activity). Only
+  NRI-related posts are approved for X.
+- Tooling note: in GSC, clicking the inspect box by coordinate is unreliable; focus it
+  with JS (`input[role=combobox]`), then type the URL and press Return.
 - Tooling note: the GSC results table holds up to 1,000 rows in the DOM regardless of the
   rows-per-page setting, and `javascript_tool` output is cut at ~1,000 characters - do the
   aggregation in page JS and return short summaries. `start_date`/`end_date` (YYYYMMDD),

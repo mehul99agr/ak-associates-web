@@ -37,6 +37,7 @@ const articleLd = buildArticleLd({
   headline: 'Form 3CEB Filing Guide (FY 2026-27)',
   description: 'Who must file Form 3CEB, what the CA certifies, the October 31 due date, the e-filing process, and the Rs 1 lakh penalty under Section 271BA.',
   datePublished: '2026-08-09',
+  dateModified: '2026-10-09',
   slug: 'form-3ceb-transfer-pricing-audit-report',
 })
 
@@ -63,7 +64,7 @@ export default function Form3CEBBlog() {
             <span className="section-badge">Transfer Pricing</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Form 3CEB: Due Date, Filing Process and Penalties for FY 2026-27</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published August 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Updated October 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -96,6 +97,7 @@ export default function Form3CEBBlog() {
                 </table>
               </div>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Sections 271BA, 271AA and 271G are separate, cumulative penalties; a single default can attract more than one.</p>
+              <p><strong>For FY 2025-26 (Assessment Year 2026-27):</strong> Form 3CEB is due by <strong>October 31, 2026</strong> and the linked return by November 30, 2026. These dates were not extended. The CBDT press release of September 28, 2026, which moved the tax audit report to October 21, 2026 and the audit-case return to November 21, 2026, covers only taxpayers to whom Section 92E does not apply, so transfer pricing cases keep their original dates. See <Link href="/blog/itr-due-date-audit-cases-ay-2026-27-extended" style={{ color: 'var(--primary)', fontWeight: 600 }}>the AY 2026-27 due date extension</Link> for who is and is not covered.</p>
 
               <p>Form 3CEB is the accountant&apos;s report for transfer pricing compliance under Section 92E. It confirms that a taxpayer with specified related-party transactions has obtained a report from a Chartered Accountant and has furnished the prescribed particulars of those transactions. It is not an income tax return, and it is not a substitute for <Link href="/blog/transfer-pricing-documentation-checklist-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing documentation</Link>; it is a separate CA-certified report that lists the transactions and the method used to test whether the pricing is at arm&apos;s length.</p>
 

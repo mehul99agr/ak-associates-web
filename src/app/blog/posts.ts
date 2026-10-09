@@ -2,6 +2,27 @@
 // page and the per-post related-guides block.
 export const posts = [
   {
+    title: '57th GST Council Meeting (Oct 2026): Key Recommendations',
+    slug: '57th-gst-council-meeting-key-recommendations',
+    date: 'October 9, 2026',
+    category: 'GST',
+    summary: 'What the 57th GST Council recommended on October 8, 2026: omitting the arrest power, a Rs 5 crore prosecution threshold, lower penalties, wider ITC refunds and a return correction mechanism, and what is not yet law.',
+  },
+  {
+    title: 'ITR Due Date for Audit Cases AY 2026-27: Now November 21',
+    slug: 'itr-due-date-audit-cases-ay-2026-27-extended',
+    date: 'October 9, 2026',
+    category: 'Income Tax',
+    summary: 'CBDT extended the AY 2026-27 return due date for audit cases from October 31 to November 21, 2026, and the tax audit report to October 21. Who is covered, why transfer pricing cases are not, and what late filing costs.',
+  },
+  {
+    title: 'Last Date to Claim ITC for FY 2025-26: November 30, 2026',
+    slug: 'last-date-to-claim-itc-fy-2025-26',
+    date: 'October 9, 2026',
+    category: 'GST',
+    summary: 'Input tax credit on FY 2025-26 invoices and debit notes lapses after November 30, 2026 under Section 16(4), or earlier if GSTR-9 is filed first. The practical last return for monthly and QRMP filers, and what else shares the cut-off.',
+  },
+  {
     title: 'TCS on Sale of Goods: What Happened to Section 206C(1H)',
     slug: 'tcs-sale-of-goods-section-206c1h-repealed',
     date: 'August 8, 2026',

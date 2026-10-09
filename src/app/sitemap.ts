@@ -249,5 +249,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/cap-table-management-common-mistakes-founders-make`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/startup-winding-up-fast-track-exit-fte-mode-guide`, lastModified: new Date('2026-09-10'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/startup-bank-account-opening-documents-and-common-rejections`, lastModified: new Date('2026-09-13'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/57th-gst-council-meeting-key-recommendations`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/itr-due-date-audit-cases-ay-2026-27-extended`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/last-date-to-claim-itc-fy-2025-26`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }

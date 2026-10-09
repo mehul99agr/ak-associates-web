@@ -36,6 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'Annual ROC Filing Guide (India)',
   description: 'Every mandatory annual MCA filing for an Indian company, deadlines relative to the AGM, and the penalty structure for late filing.',
   datePublished: '2026-06-18',
+  dateModified: '2026-10-09',
   slug: 'annual-roc-filing-aoc4-mgt7-dir3-kyc',
 })
 
@@ -66,12 +67,13 @@ export default function AnnualROCFilingBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Annual ROC Filing for Private Limited Companies: AOC-4, MGT-7 and DIR-3 KYC</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 18, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Updated October 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.4rem' }}><strong>FY 2025-26 dates:</strong> for an AGM held on September 30, 2026, AOC-4 is due by <strong>October 30, 2026</strong> and MGT-7 or MGT-7A by <strong>November 29, 2026</strong>. No MCA extension had been announced as of October 9, 2026.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>AOC-4</strong> files audited financial statements <strong>within 30 days</strong> of the AGM.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>MGT-7</strong> or MGT-7A files the annual return <strong>within 60 days</strong> of the AGM.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Every DIN holder must complete <strong>DIR-3 KYC by September 30</strong> each year.</li>

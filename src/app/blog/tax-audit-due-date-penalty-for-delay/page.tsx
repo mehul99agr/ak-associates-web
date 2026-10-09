@@ -93,7 +93,7 @@ export default function TaxAuditDueDatePenaltyBlog() {
                 </table>
               </div>
               <p><strong>Who is covered:</strong> companies, other taxpayers whose accounts must be audited under the Income Tax Act or any other law, and partners of firms whose accounts must be audited. <strong>Who is not:</strong> taxpayers required to furnish a transfer pricing report in Form 3CEB. Their dates are unchanged, so the audit report remains due by October 31, 2026.</p>
-              <p>An audit report uploaded and accepted by October 21, 2026 is on time for Section 271B purposes. The press release does not mention trust audit reports in Form 10B or Form 10BB, so do not assume the extension applies to them without checking the circular. If you are filing close to the date, remember that the report counts as furnished only after you accept it on the e-filing portal, not when your CA uploads it.</p>
+              <p>An audit report uploaded and accepted by October 21, 2026 is on time for Section 271B purposes. The press release does not mention trust audit reports in Form 10B or Form 10BB, so do not assume the extension applies to them without checking the circular. If you are filing close to the date, remember that the report counts as furnished only after you accept it on the e-filing portal, not when your CA uploads it. The return side of the extension is covered in <Link href="/blog/itr-due-date-audit-cases-ay-2026-27-extended" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITR due date for audit cases AY 2026-27</Link>.</p>
 
               <h2>The Current Due Date</h2>
               <p>The table below shows the standard dates that apply in a year with no extension.</p>
