@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'POSH Act Compliance: Internal Committee Rules for Companies' },
+  title: { absolute: 'POSH Internal Committee: Members, Rules & When Mandatory' },
   description: 'When a company must form a POSH Internal Committee, who sits on it, the annual report requirement, and penalties including licence cancellation.',
   keywords: [
     'POSH Act compliance', 'Internal Committee POSH', 'POSH Act Internal Committee requirements',

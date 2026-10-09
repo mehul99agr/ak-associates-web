@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Shop and Establishment Registration: State-Wise Requirements' },
+  title: { absolute: 'Shop Act (Gumasta) Registration Maharashtra: Is It Mandatory?' },
   description: 'Who needs Shop and Establishment registration, how the Maharashtra Shops and Establishments Act works (Gumasta), and how requirements vary state to state.',
   keywords: [
     'shop and establishment registration', 'gumasta license maharashtra', 'shop act registration maharashtra',

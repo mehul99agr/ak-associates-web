@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Secretarial Audit: Applicability & What It Covers' },
+  title: { absolute: 'Secretarial Audit Applicability & Limits (Section 204)' },
   description: 'Who needs a secretarial audit under Section 204, the Rule 9 turnover and paid-up capital thresholds, and what a Form MR-3 report examines.',
   keywords: [
     'secretarial audit applicability', 'section 204 companies act', 'form mr-3', 'secretarial audit report',

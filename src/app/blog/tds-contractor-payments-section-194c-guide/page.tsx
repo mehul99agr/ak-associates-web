@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TDS on Contractor Payments: Section 194C Compliance Guide' },
+  title: { absolute: 'TDS on Contractor (Section 194C, Now 393): Rates & Limits' },
   description: 'Section 194C TDS rates (1% individual/HUF, 2% others), the Rs 30,000/Rs 1 lakh thresholds, and compliance now under Section 393 of the Income Tax Act 2025.',
   keywords: [
     'Section 194C TDS', 'TDS on contractor payments', 'Section 194C rate', 'Section 194C threshold',

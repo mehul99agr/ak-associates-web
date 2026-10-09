@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'DSC & DIN Application Guide (India)' },
+  title: { absolute: 'DSC and DIN: What They Are & How to Apply (India)' },
   description: 'How to get a DSC and DIN in India: via SPICe+ for new companies, via DIR-3 for existing ones, and the most common rejection reasons.',
   keywords: [
     'DSC application India', 'DIN application process', 'Director Identification Number India',

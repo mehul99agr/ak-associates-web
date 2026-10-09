@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Statutory Audit Requirements for Private Limited Companies' },
+  title: { absolute: 'Statutory Audit Applicability for Private Limited Companies' },
   description: 'Why every private limited company needs a statutory audit regardless of turnover, how auditor appointment and rotation work, and where CARO 2020 applies.',
   keywords: [
     'statutory audit private limited company', 'companies act 2013 audit requirement', 'section 139 auditor appointment',

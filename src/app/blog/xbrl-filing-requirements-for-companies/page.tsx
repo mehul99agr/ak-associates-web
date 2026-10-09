@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'XBRL Filing Requirements for Companies' },
+  title: { absolute: 'XBRL Filing Applicability: Threshold Limits for Companies' },
   description: 'Which companies must file financial statements in XBRL format with the MCA, the applicability thresholds, the AOC-4 XBRL deadline, and the penalty for delay.',
   keywords: [
     'xbrl filing requirements india', 'xbrl applicability companies', 'aoc-4 xbrl due date',

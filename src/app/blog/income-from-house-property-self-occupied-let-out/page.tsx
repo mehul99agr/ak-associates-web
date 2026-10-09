@@ -8,7 +8,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Income From House Property: Self-Occupied vs Let-Out Taxation' },
+  title: { absolute: 'Self-Occupied vs Let-Out Property: House Property Income Tax' },
   description: 'Self-occupied vs let-out property tax: nil vs net annual value, 30% standard deduction, home loan interest limits and the Rs 2 lakh loss set-off cap.',
   keywords: [
     'income from house property', 'self occupied vs let out property tax', 'section 24 standard deduction',

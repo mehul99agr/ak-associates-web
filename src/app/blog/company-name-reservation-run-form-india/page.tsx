@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Company Name Reservation Guide (India)' },
+  title: { absolute: 'Company Name Reservation: How to Reserve a Name on MCA' },
   description: 'Reserving a company name with MCA: SPICe+ Part A vs RUN, naming guidelines, common rejection reasons, and why to run a trademark search first.',
   keywords: [
     'company name reservation India', 'SPICe+ Part A', 'RUN form MCA',

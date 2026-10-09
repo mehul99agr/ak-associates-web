@@ -8,7 +8,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Books of Accounts Required Under Section 44AA' },
+  title: { absolute: 'Section 44AA: Books of Accounts Prescribed & Who Must Keep' },
   description: 'Who must keep books under Section 44AA (now Section 62): income and turnover thresholds, what counts as valid books, and the Section 271A penalty.',
   keywords: [
     'section 44AA books of accounts', 'books of accounts income tax', 'section 44AA threshold',

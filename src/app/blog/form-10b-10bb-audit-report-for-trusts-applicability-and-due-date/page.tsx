@@ -8,7 +8,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Form 10B/10BB Audit Report for Trusts: Applicability & Due Date' },
+  title: { absolute: 'Trust Audit Due Date & Form 10B vs 10BB Applicability' },
   description: 'Form 10B vs Form 10BB for trusts and NGOs: the Rs 5 crore income threshold, the foreign contribution trigger, and the current filing due date.',
   keywords: [
     'form 10B trust audit report', 'form 10BB applicability', 'form 10B vs 10BB',

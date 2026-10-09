@@ -8,7 +8,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Section 43B(h): MSME Payment Disallowance Rules for Buyers' },
+  title: { absolute: 'MSME Payment Disallowance: Section 43B(h) 45-Day Rule' },
   description: 'Section 43B(h): the 45-day and 15-day MSME payment rules, which suppliers count as micro or small, and how unpaid year-end dues get disallowed.',
   keywords: [
     'section 43B(h) MSME', 'MSME 45 day payment rule', 'section 43B(h) disallowance',

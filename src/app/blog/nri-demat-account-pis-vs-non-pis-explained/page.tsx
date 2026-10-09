@@ -8,7 +8,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'NRI Demat Account: PIS vs Non-PIS Explained' },
+  title: { absolute: 'PIS Account for NRIs: What It Is & PIS vs Non-PIS Demat' },
   description: 'What a PIS account is, when NRI equity investment needs it, how non-PIS (NRO-linked) accounts work, and the 2025 RBI change merging NRE and NRO PIS accounts.',
   keywords: [
     'NRI PIS account', 'NRI non-PIS demat account', 'portfolio investment scheme NRI',

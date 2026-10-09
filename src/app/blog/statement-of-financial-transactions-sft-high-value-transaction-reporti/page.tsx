@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Statement of Financial Transactions (SFT): High-Value Reporting' },
+  title: { absolute: 'SFT Meaning in Income Tax: Form 61A Reporting & Limits' },
   description: 'What Form 61A (SFT) reports, who files it, the high-value transaction thresholds banks and registrars track, and why these show up in your AIS.',
   keywords: [
     'statement of financial transaction', 'SFT reporting', 'form 61A', 'high value transaction income tax',

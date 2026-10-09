@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TCS on Sale of Goods: What Happened to Section 206C(1H)' },
+  title: { absolute: 'Is Section 206C(1H) Removed? TCS on Sale of Goods Update' },
   description: 'Section 206C(1H) TCS on sale of goods was omitted from April 1, 2025. What it required, why it was removed, and why Section 194Q now applies instead.',
   keywords: [
     'section 206C(1H) repealed', 'TCS on sale of goods removed', 'section 206C(1H) omitted',

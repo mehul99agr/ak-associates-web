@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Annual Compliance Calendar for NGOs and Trusts in India' },
+  title: { absolute: 'NGO & Trust Compliance Calendar: Audit and Filing Due Dates' },
   description: 'A deadline-by-deadline calendar for Indian NGOs and trusts: Form 10B/10BB audit report, ITR-7 filing, FCRA FC-4 return, and the 12A/80G renewal cycle.',
   keywords: [
     'NGO compliance calendar India', 'trust annual compliance', 'Form 10B due date', 'Form 10BB due date',

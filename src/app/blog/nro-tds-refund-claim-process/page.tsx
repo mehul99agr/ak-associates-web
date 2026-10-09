@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'NRO Account TDS Refund: Claim Process (FY 2026-27)' },
+  title: { absolute: 'TDS on NRO Account: How to Claim a Refund (FY 2026-27)' },
   description: 'How NRIs claim a refund of excess TDS on NRO interest: which ITR to file, documents, Form 26AS reconciliation, and repatriating the refund.',
   keywords: [
     'NRO account TDS refund', 'how to claim TDS refund on NRO account', 'NRO TDS refund process',

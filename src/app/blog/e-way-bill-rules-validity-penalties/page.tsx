@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'E-Way Bill Rules: When Required, Validity & Penalties' },
+  title: { absolute: 'E-Way Bill Validity: Distance Rule, Limit & Penalties' },
   description: 'When an e-way bill is mandatory, the Rs 50,000 consignment value threshold, validity period by distance, extension rules, and penalties under GST.',
   keywords: [
     'e-way bill rules', 'e-way bill validity', 'e-way bill threshold', 'e-way bill Rs 50000 limit',

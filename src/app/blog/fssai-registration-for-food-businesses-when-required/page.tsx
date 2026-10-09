@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'FSSAI Registration for Food Businesses: When Required' },
+  title: { absolute: 'FSSAI Registration vs Licence: Turnover Limits by Category' },
   description: 'FSSAI Basic Registration, State License, and Central License explained: current turnover thresholds, which food businesses need which tier, and how to apply.',
   keywords: [
     'FSSAI registration', 'FSSAI basic registration', 'FSSAI state license', 'FSSAI central license',

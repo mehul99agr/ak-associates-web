@@ -8,7 +8,7 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Due Date for Tax Audit Report Filing & Penalty for Delay' },
+  title: { absolute: 'Tax Audit Due Date AY 2026-27 & Late Filing Penalty (271B)' },
   description: 'The current tax audit report due date, how the audit report is filed online (Form 26, earlier 3CA/3CB/3CD), and the Section 271B penalty for delay.',
   keywords: [
     'tax audit due date', 'tax audit report due date AY 2026-27', 'Form 3CD due date',
