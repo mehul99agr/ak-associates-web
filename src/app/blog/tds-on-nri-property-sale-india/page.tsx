@@ -36,7 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'TDS on NRI Property Sale (FY 2026-27)',
   description: 'Rate table with surcharge slabs, buyer TAN process, Form 27Q filing, Form 13 lower deduction certificate, TDS refund claims, and repatriation under the new Income Tax Act 2025 for NRI property sales in FY 2026-27.',
   datePublished: '2026-07-01',
-  dateModified: '2026-09-25',
+  dateModified: '2026-10-09',
   slug: 'tds-on-nri-property-sale-india',
 })
 
@@ -66,6 +66,14 @@ const faqLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yes, for one category of buyer. CBDT Notification No. 121/2026 (G.S.R. 830(E), dated September 22, 2026) inserted a new Schedule E into Form 141 titled "TDS on any consideration on transfer of any immovable property covered under section 393(2)," giving resident individual and HUF buyers a PAN-based route effective October 1, 2026, with no TAN needed. This does not extend to buyers who are companies, firms, or LLPs, and it does not apply retroactively to payments made before October 1, 2026; both of those cases still need a TAN and Form 27Q (now Form 144) as described above.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the due date for Form 141 Schedule E when buying property from an NRI?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Form 141 is a challan-cum-statement, so the tax is paid and reported together. It has to be furnished within 30 days from the end of the month in which the TDS is deducted. For example, tax deducted on a payment made in October 2026 is reported by November 30, 2026. Where the price is paid in instalments, a Form 141 is filed for each instalment on which tax is deducted, and Schedule E asks for the details of earlier instalments. This route is open only to resident individual and HUF buyers, for deductions from October 1, 2026.',
       },
     },
     {
@@ -124,7 +132,7 @@ export default function TDSNRIPropertyBlog() {
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published July 1, 2026</span>
                 <span aria-hidden>•</span>
-                <span>Updated September 25, 2026</span>
+                <span>Updated October 9, 2026</span>
                 <span aria-hidden>•</span>
                 <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
@@ -138,7 +146,7 @@ export default function TDSNRIPropertyBlog() {
                     <li style={{ marginBottom: '0.4rem' }}>The <strong>buyer</strong>, not the NRI seller, is legally responsible for deducting TDS under Section 195, with no minimum threshold, on the full sale consideration.</li>
                     <li style={{ marginBottom: '0.4rem' }}>TDS is 12.5% (LTCG, held over 2 years) or 30% (STCG) plus surcharge and 4% cess, computed on the entire sale value, not just the gain.</li>
                     <li style={{ marginBottom: '0.4rem' }}>A DTAA does not reduce this TDS. The only legitimate way to lower it is a <strong>Form 13 lower deduction certificate</strong> obtained before the sale.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Buyers before Oct 1, 2026, and company/firm/LLP buyers at any time, need a TAN and must file Form 27Q. From Oct 1, 2026, resident individual/HUF buyers instead use a PAN-based Schedule E in Form 141; no TAN needed.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Buyers before Oct 1, 2026, and company/firm/LLP buyers at any time, need a TAN and must file Form 27Q. From Oct 1, 2026, resident individual/HUF buyers instead use a PAN-based Schedule E in Form 141, filed within 30 days from the end of the month of deduction; no TAN needed.</li>
                     <li style={{ marginBottom: 0 }}>NRI sellers who are over-deducted can claim the excess back through their ITR.</li>
                   </ul>
                 </div>
@@ -147,8 +155,37 @@ export default function TDSNRIPropertyBlog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update</p>
                   <p style={{ margin: 0, fontSize: '0.95rem' }}>The Income Tax Act 2025 (effective April 1, 2026) renumbers the provisions in this guide: Section 195 is now <strong>Section 393(2)</strong>, Form 13 is now <strong>Form 128</strong>, Form 27Q is now <strong>Form 144</strong>, Form 16A is now <strong>Form 131</strong>, and Section 197 is now <strong>Section 395</strong>. We use both names below since search volume is still on the old terms.</p>
-                  <p style={{ margin: '0.75rem 0 0' }}><strong>Update, September 25, 2026:</strong> CBDT Notification No. 121/2026 (G.S.R. 830(E), dated September 22, 2026) inserted a new Schedule E into Form 141, specifically for &quot;TDS on any consideration on transfer of any immovable property covered under section 393(2)&quot; (the NRI-seller provision). From <strong>October 1, 2026</strong>, a resident individual or HUF buying from an NRI can report and deposit TDS using this PAN-based schedule instead of applying for a TAN. This does not extend to buyers who are companies, firms, or LLPs, and it does not apply retroactively to payments made before October 1, 2026; both of those cases still need a TAN and must file under Section 393(2)/Form 144, as covered below.</p>
+                  <p style={{ margin: '0.75rem 0 0' }}><strong>In force since October 1, 2026:</strong> resident individual and HUF buyers no longer need a TAN to buy from an NRI. They report and pay the TDS on their PAN through Schedule E of Form 141. The rates in this guide are unchanged. The next section explains who qualifies and how the two routes differ.</p>
                 </div>
+
+                <h2>From October 1, 2026: No TAN for Individual and HUF Buyers (Form 141 Schedule E)</h2>
+                <p>CBDT Notification No. 121/2026 (G.S.R. 830(E), dated September 22, 2026), the Income-tax (Fifth Amendment) Rules, 2026, came into force on October 1, 2026. It added a new <strong>Schedule E</strong> to Form 141 for &quot;TDS on any consideration on transfer of any immovable property covered under section 393(2)&quot;, which is the NRI-seller provision (earlier Section 195). It gives effect to the Finance Act 2026 amendment to Section 397(1)(c) of the Income Tax Act 2025, which exempts a resident individual or HUF from the TAN requirement for this one type of deduction.</p>
+                <p><strong>What has not changed:</strong> the buyer still deducts TDS, at the same rates, on the full sale consideration, and a lower deduction certificate is still the only way to bring the rate down. The notification changes how the tax is reported and paid, not how much is deducted.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Point</th>
+                      <th>Resident individual or HUF buyer (from Oct 1, 2026)</th>
+                      <th>Company, firm or LLP buyer, and payments before Oct 1, 2026</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Number used</td><td>Buyer&apos;s PAN</td><td>TAN (Form 49B application)</td></tr>
+                    <tr><td>How TDS is reported</td><td>Form 141 with Schedule E, a challan-cum-statement</td><td>Challan ITNS-281, then quarterly Form 144 (earlier Form 27Q)</td></tr>
+                    <tr><td>Due date</td><td>Within 30 days from the end of the month of deduction</td><td>Deposit by the 7th of the following month; return by the quarterly due date</td></tr>
+                    <tr><td>Certificate to the NRI seller</td><td>Form 132</td><td>Form 131 (earlier Form 16A)</td></tr>
+                    <tr><td>TDS rate</td><td>Unchanged</td><td>Unchanged</td></tr>
+                  </tbody>
+                </table>
+                <p>Schedule E asks for more than the old resident-seller form did. Keep these ready before you file:</p>
+                <ul>
+                  <li><strong>Property:</strong> address, type, agreement and registration dates, stamp duty value, and total consideration.</li>
+                  <li><strong>Buyer and seller:</strong> PAN, names, the seller&apos;s residential status, and each party&apos;s share of the consideration.</li>
+                  <li><strong>Non-resident seller:</strong> overseas address, and the Tax Residency Certificate and foreign tax identification number where applicable.</li>
+                  <li><strong>Transaction:</strong> lump sum or instalments, amounts paid in earlier instalments, and whether the gain is long-term or short-term.</li>
+                  <li><strong>TDS:</strong> amount paid, rate applied, tax deducted, and the details of any lower or nil deduction certificate.</li>
+                </ul>
+                <p>Two cautions. First, the PAN route is only for resident individuals and HUFs; a company, firm, or LLP buying from an NRI still needs a TAN. Second, if you began paying instalments before October 1, 2026 on the TAN route, those earlier deductions stay reported on Form 144; check how the earlier payments should be shown in Schedule E before filing the first Form 141, because the published guidance on mixed cases is thin. The time limit for issuing Form 132 should also be confirmed on the e-filing portal at the time of filing.</p>
 
                 <h2>Why the Buyer Bears the TDS Obligation</h2>
                 <p>Section 195 (now Section 393(2) under the Income Tax Act 2025) of the Income Tax Act requires any person making a payment to a non-resident that constitutes income in the non-resident&apos;s hands to deduct tax at source before remitting the amount. Property sale proceeds are capital gains income for the NRI seller. The buyer is the payer; so the TDS obligation is entirely theirs, with no minimum threshold. This contrasts with Section 194-IA (resident seller), which applies only above ₹50 lakh. With an NRI seller, every rupee of consideration is subject to TDS deduction, regardless of the sale value.</p>
@@ -190,7 +227,7 @@ export default function TDSNRIPropertyBlog() {
                 <p>When a property is jointly owned by two or more buyers, each buyer is independently liable to deduct TDS on their proportionate share of the consideration paid to the NRI seller, and each typically needs their own TAN and files their own Form 27Q for their share. Similarly, if the NRI seller co-owns the property with a resident seller, the Section 195 obligation applies only to the NRI co-owner&apos;s share of the consideration; the resident co-owner&apos;s share follows Section 194-IA instead, meaning a single sale transaction can require both a Form 27Q and a Form 26QB, filed separately for the two sellers&apos; shares.</p>
 
                 <h2>How Buyers Apply for a TAN</h2>
-                <p>This section covers buyers still on the TAN route: payments made before October 1, 2026, and any buyer that is a company, firm, or LLP. Resident individual and HUF buyers paying on or after October 1, 2026 can skip TAN entirely and use the PAN-based Schedule E in Form 141 instead (see the update box above). For everyone else, Section 195 requires full TDS compliance rather than the simplified PAN-based Form 26QB process used for resident sellers, so the buyer must hold a Tax Deduction Account Number before deducting any tax. Skipping this step is one of the most common (and most costly) buyer mistakes.</p>
+                <p>This section covers buyers still on the TAN route: payments made before October 1, 2026, and any buyer that is a company, firm, or LLP. Resident individual and HUF buyers paying on or after October 1, 2026 can skip TAN entirely and use the PAN-based Schedule E in Form 141 instead (see the October 1, 2026 section above). For everyone else, Section 195 requires full TDS compliance rather than the simplified PAN-based Form 26QB process used for resident sellers, so the buyer must hold a Tax Deduction Account Number before deducting any tax. Skipping this step is one of the most common (and most costly) buyer mistakes.</p>
                 <ol>
                   <li><strong>Apply on the Protean (NSDL) portal:</strong> Submit Form 49B online, along with the buyer&apos;s PAN, address proof, and a nominal fee of about ₹65.</li>
                   <li><strong>Processing time:</strong> TAN is typically allotted within 7 to 10 working days and delivered electronically.</li>
@@ -200,6 +237,7 @@ export default function TDSNRIPropertyBlog() {
                 <p>See our full <Link href="/blog/tan-application-guide-buyer-nri-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>TAN application guide for buyers purchasing from an NRI</Link> for the complete Form 49B walkthrough.</p>
 
                 <h2>Step-by-Step: Deducting, Depositing and Filing TDS</h2>
+                <p>The steps below are the TAN route. A resident individual or HUF buyer deducting on or after October 1, 2026 follows a shorter path: calculate the TDS the same way (step 2), then pay and report it together on Form 141 with Schedule E within 30 days from the end of the month of deduction, and give the NRI seller Form 132.</p>
                 <ol>
                   <li><strong>Obtain a TAN:</strong> As above; required before any payment to the NRI seller.</li>
                   <li><strong>Calculate the TDS amount:</strong> Apply the correct rate from the table above to the full sale consideration. If the transaction involves multiple instalments, TDS must be deducted on each instalment at the time of payment.</li>
