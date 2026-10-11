@@ -472,6 +472,21 @@ confirmed in a screenshot):**
   has 4 followers, an outdated bio with no website link, and X showed a "graduated access"
   notice (limited discoverability until the account shows normal human activity). Only
   NRI-related posts are approved for X.
+- **Where the Oct 9 session stopped (resume here):**
+  - X: six link-free NRI posts ending "Questions? DM me." are scheduled via X's own
+    scheduler for Oct 10-15, 2026 at 7:30 PM IST. The user still needs to update the X bio
+    (three drafts were given), set location to Nashik, add the website, and open DMs.
+  - Backlinks: the user asked for "5 backlinks a day for a month" in the style of a
+    YouTube video on automated link building. Declined as bulk directory spam; also blocked
+    in practice because Claude does not create accounts or solve CAPTCHAs. Agreed
+    alternative, NOT started: (1) add the website link to existing profiles the user is
+    logged into (Sulekha, CAclubindia Pro profile, Justdial, IndiaMart), with approval per
+    profile; (2) research 30-40 vetted listings and verify each gives a real `<a href>`;
+    (3) a paste-ready firm profile pack; (4) fill in each listing after the user registers.
+    Waiting on the user to say which profiles they are logged into.
+  - Offered, not yet answered: re-indexing requests for the three new Oct 9 posts.
+  - Recheck in GSC around Oct 23-30: the 24 retitled posts, the NRI TDS head query, and
+    progress toward 100 clicks / 5,000 impressions a day.
 - Tooling note: in GSC, clicking the inspect box by coordinate is unreliable; focus it
   with JS (`input[role=combobox]`), then type the URL and press Return.
 - Tooling note: the GSC results table holds up to 1,000 rows in the DOM regardless of the
@@ -1080,3 +1095,28 @@ All 245 pages were technically clean. Fixed:
      shipped Sep 29, commit fd92ca2). Expect Agent Readiness/Maturity > 0, Visibility ~35.
    - Optional: full fact-check of all 222 posts was NOT done - only the posts flagged by the
      Sep 29 audit plus a site-wide grep for the same stale facts.
+
+## 100 Clicks/Day Plan (approved Oct 11, 2026)
+Plan file: `C:\Users\MEHUL\.claude\plans\wise-baking-widget.md`. Levers, in order: deadline
+content, a permanent due-date hub, CTR on existing impressions, internal links to service pages.
+- **Shipped Oct 11:** `/tools/compliance-calendar` (Oct 2026-Mar 2027; extend `RANGE_END` in
+  the page when the next half-year is verified). All dates live in **`src/lib/dueDates.ts`**
+  (`MONTHLY`, `ANNUAL`, and year-specific `SPECIFIC` entries; a `SPECIFIC` entry with the same
+  `id` replaces the annual date it was extended from). The blog index strip and the homepage
+  "Upcoming Compliance Deadlines" strip read the same file, so **an extension is one edit
+  there** plus the post itself. The old blog-index generator was showing unextended dates.
+  `PostFooterLinks` now links the calendar from every post and sends Income Tax / GST / Tax
+  Audit posts to `/services#taxation` / `#audit`. ca-in-nashik Open Graph text no longer says
+  "Best CA" / "Top-rated".
+- **Correction to the plan:** `ca-in-sillod` already covers Aurangabad / Chhatrapati
+  Sambhajinagar (FAQs, body, schema `areaServed`); the plan's claim that it did not came from
+  a failed grep. Nothing to add there; pos 27-29 for those queries is an authority problem.
+- **Not changed, user to decide:** ca-in-nashik visible H2 "Why ... is the Best CA Firm in
+  Nashik" (unsupported superlative; ICAI advertising guidelines are a consideration).
+- **Check before the Dec refresh of `belated-revised-updated-returns-itr-u-139-8a`:** several
+  secondary sources say Budget 2026 moved the *revised* return deadline for AY 2026-27 to
+  March 31, 2027 (with a fee after Dec 31), while the belated return stays Dec 31, 2026. Not
+  verified against the Act; the calendar lists only the belated-return date for that reason.
+- **Still to do:** Oct 19-20 and Nov 18-19 extension rechecks; GSC pull + second title round
+  (Oct 19-25); GSTR-9, advance tax, FAST-DS refreshes (Nov); belated return refresh (early
+  Dec); "upcoming deadline" callouts on the top 10 posts; Consent Mode v2 (awaiting user yes).
