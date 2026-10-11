@@ -37,6 +37,7 @@ const articleLd = buildArticleLd({
   headline: 'Form 24Q vs Form 26Q: TDS Return Filing for Employers',
   description: 'The difference between Form 24Q (salary TDS) and Form 26Q (non-salary TDS), quarterly due dates, and their renumbering as Form 138 and Form 140 under the Income Tax Act 2025 for FY 2026-27.',
   datePublished: '2026-09-16',
+  dateModified: '2026-10-11',
   slug: 'form-24q-vs-form-26q-tds-return-filing-for-employers',
 })
 
@@ -88,6 +89,8 @@ export default function Form24Q26QBlog() {
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published September 16, 2026</span>
+                <span aria-hidden>&bull;</span>
+                <span>Updated October 11, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
@@ -145,6 +148,7 @@ export default function Form24Q26QBlog() {
                     </tbody>
                   </table>
                 </div>
+                <p>For FY 2026-27, that puts the Q2 return (July to September 2026) at <strong>October 31, 2026</strong> and the Q3 return (October to December 2026) at <strong>January 31, 2027</strong>. Our <Link href="/tools/compliance-calendar" style={{ color: 'var(--primary)', fontWeight: 600 }}>compliance due date calendar</Link> lists these alongside the other income tax, GST and ROC dates for the rest of the year.</p>
                 <p>These are the return-filing due dates, separate from the monthly TDS deposit due date (generally the 7th of the following month, with a relaxed deadline for March deposits). A business can be fully current on depositing TDS every month and still be non-compliant if the quarterly return itself is filed late.</p>
 
                 <h2>Penalties for Late or Incorrect Filing</h2>

@@ -309,6 +309,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/ca-in-nashik">CA in Nashik</Link>
                 <Link href="/ca-in-sillod">CA in Sillod</Link>
                 <Link href="/tools">Tax & Finance Tools</Link>
+                <Link href="/tools/compliance-calendar">Due Date Calendar</Link>
                 <Link href="/blog">Client Insights</Link>
                 <Link href="/contact">Contact Us</Link>
                 <a href={bookingLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>

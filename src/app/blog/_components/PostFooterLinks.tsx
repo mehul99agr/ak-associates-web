@@ -19,17 +19,17 @@ const ESIC: Source = { href: 'https://www.esic.gov.in', label: 'ESIC' }
 const GROUPS: { categories: string[]; service: Service; sources: Source[] }[] = [
   {
     categories: ['Income Tax', 'Tax Planning', 'Tax Reform', 'Tax Compliance'],
-    service: { href: '/services', label: 'income tax and compliance services' },
+    service: { href: '/services#taxation', label: 'income tax and compliance services' },
     sources: [INCOME_TAX],
   },
   {
     categories: ['Tax Audit'],
-    service: { href: '/services', label: 'audit and tax advisory services' },
+    service: { href: '/services#audit', label: 'audit and tax advisory services' },
     sources: [INCOME_TAX],
   },
   {
     categories: ['GST'],
-    service: { href: '/services', label: 'GST registration and filing services' },
+    service: { href: '/services#taxation', label: 'GST registration and filing services' },
     sources: [GST_PORTAL, CBIC],
   },
   {
@@ -114,7 +114,8 @@ export default function PostFooterLinks({ slug }: { slug: string }) {
         our <Link href="/ca-in-sillod" style={linkStyle}>CA office in Sillod</Link>.
       </p>
       <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', margin: 0 }}>
-        Rules and due dates change. Confirm the current position on the official source:{' '}
+        Rules and due dates change. Check our <Link href="/tools/compliance-calendar" style={linkStyle}>compliance due date calendar</Link> and
+        confirm the current position on the official source:{' '}
         {group.sources.map((s, i) => (
           <span key={s.href}>
             {i > 0 && ', '}

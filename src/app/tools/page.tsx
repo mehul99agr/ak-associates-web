@@ -46,6 +46,12 @@ const tools = [
     icon: 'globe',
     link: '/tools/nri-property-tds',
   },
+  {
+    title: 'Compliance Due Date Calendar',
+    desc: 'Income tax, GST, TDS and ROC due dates for FY 2026-27, month by month, with extended dates marked.',
+    icon: 'document',
+    link: '/tools/compliance-calendar',
+  },
 ]
 
 export default function ToolsHubPage() {

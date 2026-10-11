@@ -4,12 +4,16 @@ import Image from 'next/image'
 import Icon from './Icon'
 import TrackedLink from './TrackedLink'
 import { BOOKING_LINK, WHATSAPP_LINK } from '@/lib/constants'
+import { formatDueDate, getUpcomingKeyDates } from '@/lib/dueDates'
 
 export const metadata: Metadata = {
   title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
   description: 'Chartered Accountants for startups, MNCs, and NRI/UAE clients. International Tax, Transfer Pricing, and Virtual CFO services.',
   alternates: { canonical: 'https://agrawalkhandelwal.com' },
 }
+
+// Regenerate hourly so the upcoming-deadlines strip drops dates as they pass
+export const revalidate = 3600
 
 const bookingLink = BOOKING_LINK
 const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
@@ -398,6 +402,20 @@ export default function Home() {
             <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
               Practical guides on the questions we get asked most, across NRI taxation, US entity compliance, incorporation, and cross-border structuring.
             </p>
+          </div>
+          <div className="card" style={{ marginBottom: '2rem', padding: '1.5rem', borderLeft: '4px solid var(--accent)' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', justifyContent: 'space-between', gap: '0.5rem 1rem', marginBottom: '1rem' }}>
+              <h3 style={{ fontSize: '1.1rem', margin: 0 }}>Upcoming Compliance Deadlines</h3>
+              <Link href="/tools/compliance-calendar" style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '0.9rem' }}>Full due date calendar →</Link>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1rem' }}>
+              {getUpcomingKeyDates(3).map((d) => (
+                <Link key={d.date + d.title} href={`/blog/${d.post}`} style={{ display: 'block' }}>
+                  <div style={{ color: 'var(--accent)', fontWeight: 800, fontSize: '0.98rem' }}>{formatDueDate(d.date)}</div>
+                  <div style={{ fontWeight: 600, color: 'var(--text-main)', fontSize: '0.92rem' }}>{d.title}</div>
+                </Link>
+              ))}
+            </div>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.5rem' }}>
             {[

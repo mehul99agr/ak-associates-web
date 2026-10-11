@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: 'CA firm in Nashik at Mumbai Naka. GST, ITR, tax audit, company incorporation and international tax for 100+ businesses. Call +91 95275 33506.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
-    title: 'Best CA in Nashik | Chartered Accountant Nashik | Agrawal Khandelwal & Associates LLP',
-    description: 'Top-rated Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Mumbai Naka, Nashik. Call now.',
+    title: 'CA Firm in Nashik | Chartered Accountants at Mumbai Naka | Agrawal Khandelwal & Associates LLP',
+    description: 'Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Ram Plaza, Mumbai Naka, Nashik. Call +91 95275 33506.',
     url: 'https://agrawalkhandelwal.com/ca-in-nashik',
     images: OG_IMAGES,
   },
