@@ -550,7 +550,7 @@ Oct 12-18, pulled live):**
 - New `blog/_components/DeadlineNotice.tsx`: "Next deadline" box under the TL;DR of the 10 posts
   that `dueDates.ts` points to, shown only when the date is within 120 days. Those posts set
   `export const revalidate = 3600`. A new deadline post needs the component + revalidate.
-- **Live check after deploy: `/api/consult/order` returns 503 "Payments are not configured yet" - the Razorpay keys are NOT set in Vercel.** Until the user adds the 6 env vars, `/consult` shows the error plus the partner email.
+- (Superseded the same day) The Razorpay env vars were never set; the site's Razorpay flow was then replaced by Zoho Bookings, so no Vercel env vars are needed for `/consult`.
 
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
@@ -1054,20 +1054,18 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 
 ## Key Decisions Made
 - No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
-- **Paid contact (user decision Oct 15, 2026, replaces the Sep 26 "consultations stay free" rule):**
-  calls and WhatsApp are paid via Razorpay on `/consult`; only email is free. Reason: random callers
-  and calendar no-shows. **Nov 10, 2026 change:** one product only, a 30-minute call at Rs 999 (adjusted against fees); payment
-  unlocks BOTH the partner's calendar link and WhatsApp number. The old Rs 199 WhatsApp-only option was removed
-  so the number is never available cheaper than a call (user decision). Price in `src/lib/consult.ts` (`CONSULT_OFFER`);
-  `/api/consult/verify` only unlocks orders whose notes carry `CONSULT_PRODUCT_ID` and whose amount matches. The visitor first picks a partner (Mehul or Rupesh), then pays; each partner has their
-  own calendar link and WhatsApp number, living ONLY in Vercel env vars (`CONSULT_BOOKING_URL_MEHUL`,
-  `CONSULT_WHATSAPP_NUMBER_MEHUL`, `CONSULT_BOOKING_URL_RUPESH`, `CONSULT_WHATSAPP_NUMBER_RUPESH`,
-  plus `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET`). `/api/consult/verify` returns them after the
-  Razorpay signature checks out, using the partner stored on the Razorpay order. Links can preselect
-  a partner with `/consult?partner=rupesh` (Sillod pages, Rupesh's buttons) or `?partner=mehul`
-  (Nashik + international service pages). Never put a phone number, `tel:`
-  link, `wa.me` link or calendar URL back into the code, schema, meta descriptions or `public/`
-  files; `BOOKING_LINK` / `WHATSAPP_LINK` in constants point to `/consult`. Phone numbers were also
+- **Paid contact (user decision Oct 15, 2026; revised Nov 10, 2026):** calls are paid, only email is
+  free. Reason: random callers and calendar no-shows. **Current setup (Nov 10):** one product, a 30-minute
+  call at Rs 999 (adjusted against fees), booked AND paid on Zoho Bookings (event "30-minute consultation
+  call", Full Payment, payment mode Online, 15-min post-buffer, 4-hour minimum notice, 30-day window).
+  **All calls go to CA Mehul Agrawal**, including visitors who chose Rupesh / Sillod (user: "I'll be the one
+  supporting"). `/consult` links straight to the Zoho page (`CONSULT_BOOKING_URL` in `src/lib/consult.ts`);
+  publishing that URL is fine because Zoho takes payment before confirming the slot. The site's own Razorpay
+  checkout and `/api/consult/*` routes were removed (they would have charged twice), and Razorpay was taken
+  out of the CSP. The WhatsApp number is never on the site: it belongs only in Zoho's "Booked" confirmation
+  email, so it is never cheaper than a call. Still never put a phone number, `tel:` or `wa.me` link in the
+  code, schema, meta descriptions or `public/` files. `BOOKING_LINK` / `WHATSAPP_LINK` point to `/consult`;
+  the `?partner=` / `?for=whatsapp` query strings on old links are now ignored. Phone numbers were also
   removed from JSON-LD (`telephone`) on purpose; GBP keeps its own number.
 - Homepage "Global Reach" pins (Mumbai/Bangalore/Delhi) and the Bangalore/Mumbai startup copy are KEPT on purpose: the user confirmed most clients are in those cities (Sep 26, 2026). Do not remove them as unverified
 - No em dashes anywhere on the site — use hyphens

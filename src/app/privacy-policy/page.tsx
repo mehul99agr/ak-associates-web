@@ -43,9 +43,9 @@ export default function PrivacyPolicy() {
                   (for example, Email, WhatsApp, or Book Consultation).</li>
                 <li><strong>Information you volunteer directly</strong>, such as your name, phone number, or email
                   address, if you choose to email us, pay for a consultation call, message us on WhatsApp, or
-                  book a consultation through our Google Calendar booking link. Payments are processed by Razorpay;
-                  we receive the payment ID, amount and the contact details you give Razorpay, but never your card,
-                  UPI or bank details. That information is handled per Razorpay&rsquo;s, Google&rsquo;s and WhatsApp&rsquo;s
+                  book a consultation through our Zoho Bookings page. Bookings and payments are handled by Zoho;
+                  we receive your booking details, the payment status and amount, but never your card, UPI or bank
+                  details. That information is handled per Zoho&rsquo;s and WhatsApp&rsquo;s
                   respective privacy policies once you leave this website, and by us directly as part of providing
                   professional services to you.</li>
               </ul>
@@ -63,8 +63,7 @@ export default function PrivacyPolicy() {
               <ul>
                 <li><strong>Google Analytics</strong> - website usage analytics.</li>
                 <li><strong>Google Maps</strong> - embedded office location maps on our Contact page.</li>
-                <li><strong>Razorpay</strong> - payment processing for paid consultation calls.</li>
-                <li><strong>Google Calendar</strong> - our consultation booking link, shared after payment.</li>
+                <li><strong>Zoho Bookings</strong> - booking and payment for paid consultation calls.</li>
                 <li><strong>WhatsApp</strong> - when you message us via the WhatsApp buttons on this site.</li>
                 <li><strong>Vercel</strong> - our website hosting provider, which may log standard server
                   request data (IP address, timestamp) for performance and security purposes.</li>

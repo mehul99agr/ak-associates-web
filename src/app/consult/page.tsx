@@ -7,11 +7,11 @@ import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Book a Consultation',
-  description: `Book a ${CONSULT_OFFER.minutes}-minute call with a partner for ₹${CONSULT_OFFER.price} (adjusted against fees); you also get their WhatsApp number. Email is always free.`,
+  description: `Book a ${CONSULT_OFFER.minutes}-minute call with a Chartered Accountant for ₹${CONSULT_OFFER.price} (adjusted against fees); you also get our WhatsApp number. Email is always free.`,
   alternates: { canonical: 'https://agrawalkhandelwal.com/consult' },
   openGraph: {
     title: 'Book a Consultation | Agrawal Khandelwal & Associates LLP',
-    description: 'Book a 30-minute consultation call with a partner. Email is always free.',
+    description: 'Book a 30-minute consultation call with a Chartered Accountant. Email is always free.',
     url: 'https://agrawalkhandelwal.com/consult',
     images: OG_IMAGES,
   },
@@ -51,9 +51,9 @@ export default function Consult() {
 
             <div style={{ maxWidth: '760px', margin: '3rem auto 0', color: 'var(--text-light)', fontSize: '0.9rem', lineHeight: 1.8 }}>
               <h2 style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }} id="refunds">Payments, refunds and cancellations</h2>
-              <p>Payments are processed by Razorpay. We do not see or store your card or UPI details.</p>
-              <p>If we cancel or cannot honour a booked call, the call fee is refunded in full to the original payment method. If you need to move your slot, reply to the calendar invite at least 24 hours before the call. Calls missed without notice are not refunded.</p>
-              <p>If a payment is deducted but the calendar link and WhatsApp number do not appear, email {OFFICES.nashik.email} with your payment ID and we will send them or refund you.</p>
+              <p>Bookings and payments are handled by Zoho Bookings. We do not see or store your card or UPI details.</p>
+              <p>If we cancel or cannot honour a booked call, the call fee is refunded in full to the original payment method. If you need to move your slot, use the reschedule link in your booking confirmation at least 24 hours before the call. Calls missed without notice are not refunded.</p>
+              <p>If a payment is deducted but you do not receive a booking confirmation, email {OFFICES.nashik.email} with your payment details and we will confirm your slot or refund you.</p>
             </div>
           </div>
         </div>
