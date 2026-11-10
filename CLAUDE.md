@@ -580,6 +580,30 @@ Oct 12-18, pulled live):**
   Privacy policy updated to match. GA4 numbers from Nov 10 onward include modelled/cookieless data, so
   they are NOT comparable with the pre-Nov 10 consent-gated figures (7 users / 28 days).
 
+**GEO audit + fixes (Nov 10, 2026, commits b765eec, 6149c02, e6de6cb):**
+- On-site GEO is strong (AI bots allowed, llms files current, Person/Org/Article/FAQ schema, TL;DR + FAQ on
+  all 225 posts). Off-site is the gap: a web search for the exact firm name or "CA Mehul Agrawal Nashik"
+  returned other Agrawal/Khandelwal firms, not us; "best CA in Nashik for NRI tax" answers cite
+  threebestrated.in, busy.in, kmgcollp.com and a Jurishour listicle; no Wikidata item. Bing/Perplexity/
+  ChatGPT were not tested live (Chrome disconnected). User-side: get listed on those directories, GBP
+  reviews, identical "CA Mehul Agrawal, Partner, Agrawal Khandelwal & Associates LLP, Nashik" bio everywhere,
+  Wikidata item (Claude can draft the fields).
+- **All "WhatsApp" CTAs removed** (they led to the paid /consult page): secondary buttons are now "Email us"
+  (`EMAIL_LINK` in constants.ts; `WHATSAPP_LINK`/`WHATSAPP_ARTICLE_LINK` no longer exist), the desktop floating
+  button is a booking button (`.book-fab`), the mobile bar is Email + Book. Do not reintroduce WhatsApp CTAs.
+- UAE CT post refreshed and re-bylined to Mehul. **Small Business Relief was extended (Aug 2026) to tax periods
+  ending on or before Dec 31, 2029.** Post also says UAE CT paid by a UAE subsidiary is NOT automatically
+  creditable to the Indian parent (India-UAE DTAA underlying credit unconfirmed).
+- 7 US posts refreshed: FBAR/8938 apply to US persons only (a founder living in India files neither for
+  personal accounts; the US LLC can owe FBAR); Form 5472 + pro forma 1120 due Apr 15 / Oct 15 with 7004;
+  BOI exemption for US-formed entities (Mar 2025); foreign R&E still 15-year amortisation under s.174 after
+  OBBBA (domestic expensing via s.174A); India-US DTAA services PE related-enterprise limb; FTC Form 67 ->
+  reported Form 44 from tax year 2026-27 (single-source, flagged as "confirm at filing"). Delaware LLC tax
+  stated as USD 300 "in recent years" because some sources report an increase for 2026.
+- 21 top posts got an "Official sources:" line naming the notification/circular/section/rule with links to
+  official sites. incometaxindia.gov.in and mca.gov.in deep pages return 403 to scripts and failed in Chrome,
+  so those link to the site home pages; deep links were used only where they returned 200.
+
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
 dates rather than batch-publish same-day:
