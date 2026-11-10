@@ -8,10 +8,7 @@ export default function ConsultCheckout() {
       <h2 style={{ fontSize: '1.4rem', marginBottom: '0.35rem' }}>{CONSULT_OFFER.title}</h2>
       <p style={{ color: 'var(--text-light)', margin: 0 }}>With {CONSULT_HOST}</p>
       <p style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--primary)', margin: '0.5rem 0', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)' }}>
-        ₹{CONSULT_OFFER.total.toLocaleString('en-IN')}
-      </p>
-      <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: 0 }}>
-        ₹{CONSULT_OFFER.price} consultation fee + ₹{CONSULT_OFFER.gatewayFee} payment gateway charges
+        ₹{CONSULT_OFFER.price}
       </p>
       <ul style={{ color: 'var(--text-light)', lineHeight: 1.8, paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
         {CONSULT_OFFER.points.map((pt) => <li key={pt}>{pt}</li>)}
@@ -25,7 +22,7 @@ export default function ConsultCheckout() {
         method="booking"
         location="consult_page"
       >
-        Book and pay ₹{CONSULT_OFFER.total.toLocaleString('en-IN')}
+        Book and pay ₹{CONSULT_OFFER.price}
       </TrackedLink>
     </div>
   )

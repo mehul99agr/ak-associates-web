@@ -1057,9 +1057,7 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - **Paid contact (user decision Oct 15, 2026; revised Nov 10, 2026):** calls are paid, only email is
   free. Reason: random callers and calendar no-shows. **Current setup (Nov 10):** one product, a 30-minute
   call at Rs 999 (adjusted against fees), booked AND paid on Zoho Bookings (event "30-minute consultation
-  call", Full Payment, payment mode Online, Google Meet, 15-min post-buffer, 4-hour minimum notice, 30-day
-  window). **Gateway charges are passed to the client:** Zoho price is Rs 1,024 = Rs 999 fee + Rs 25 (Razorpay
-  2% + 18% GST grossed up). `CONSULT_OFFER.total` in `consult.ts` must match the Zoho price.
+  call", Full Payment, payment mode Online, 15-min post-buffer, 4-hour minimum notice, 30-day window).
   **All calls go to CA Mehul Agrawal**, including visitors who chose Rupesh / Sillod (user: "I'll be the one
   supporting"). `/consult` links straight to the Zoho page (`CONSULT_BOOKING_URL` in `src/lib/consult.ts`);
   publishing that URL is fine because Zoho takes payment before confirming the slot. The site's own Razorpay
