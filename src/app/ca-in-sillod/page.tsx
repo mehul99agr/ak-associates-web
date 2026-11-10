@@ -7,11 +7,11 @@ import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'CA in Sillod',
-  description: 'Trusted CA in Sillod, Aurangabad. GST filing, income tax, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Email or book a consultation online.',
+  description: 'CA in Sillod near Chhatrapati Sambhajinagar (Aurangabad): GST filing, income tax, audit, company incorporation and tax planning. Email us or book online.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-sillod' },
   openGraph: {
     title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Sillod. GST, income tax, audit, company incorporation, and tax advisory. Located at Tilak Nagar, Sillod – 431112. Call now.',
+    description: 'Chartered Accountants in Sillod. GST, income tax, audit, company incorporation, and tax advisory. Located at Tilak Nagar, Sillod - 431112. Book a consultation online.',
     url: 'https://agrawalkhandelwal.com/ca-in-sillod',
     images: OG_IMAGES,
   },

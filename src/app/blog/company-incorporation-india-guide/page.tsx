@@ -183,6 +183,16 @@ export default function CompanyIncorporationGuideBlog() {
               This guide covers everything you need to know: the three main options, how to choose between them, the step-by-step registration process, what it costs, and what mistakes to avoid.
             </p>
 
+            <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+              <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                <li style={{ marginBottom: '0.4rem' }}>A private limited company is registered through the MCA SPICe+ form and typically takes 15-20 working days.</li>
+                <li style={{ marginBottom: '0.4rem' }}>There is no minimum capital. MCA fees are nil up to Rs 15 lakh authorised capital; state stamp duty still applies.</li>
+                <li style={{ marginBottom: '0.4rem' }}>You need at least 2 directors with digital signatures, and one director must have stayed in India for 182 days in the financial year.</li>
+                <li style={{ marginBottom: 0 }}>Choose a private limited company if you plan to raise funding or issue ESOPs; an LLP suits bootstrapped professional firms.</li>
+              </ul>
+            </div>
+
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>The Three Main Options</h2>
             <p style={{ marginBottom: '1.5rem' }}>In India, most businesses incorporate as one of three structures:</p>
 

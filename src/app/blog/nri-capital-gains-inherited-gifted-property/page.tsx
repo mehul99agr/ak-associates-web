@@ -97,6 +97,16 @@ export default function NRIInheritedGiftedPropertyBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>Inheriting property, or receiving it as a gift from a specified relative, is not taxed. Tax arises only when the NRI sells.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>The cost of acquisition and holding period carry over from the previous owner, however far back the chain goes.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Because the original cost is often very low, the capital gain on sale can be large.</li>
+                    <li style={{ marginBottom: 0 }}>The buyer deducts TDS on the full sale price under Section 393(2) (earlier 195); the NRI settles the actual tax through an ITR.</li>
+                  </ul>
+                </div>
+
                 <p>A large share of the property NRIs sell in India wasn&apos;t purchased by them directly; it was inherited from parents or grandparents, or received as a gift from a relative. The tax treatment on eventual sale follows a specific carryover rule that surprises many NRIs, and it directly affects how much TDS gets deducted and whether a Form 128 (earlier Form 13) certificate is worth pursuing.</p>
 
                 <ServiceOffer variant="nri-seller" />

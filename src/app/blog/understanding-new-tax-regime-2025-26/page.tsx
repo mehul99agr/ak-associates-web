@@ -7,16 +7,18 @@ import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
 
 const SLUG = 'understanding-new-tax-regime-2025-26'
-const TITLE = 'Understanding the New Tax Regime'
+const TITLE = 'New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New'
 const DATE = 'March 18, 2026'
 const ISO_DATE = '2026-03-18'
+const MODIFIED = 'November 10, 2026'
+const ISO_MODIFIED = '2026-11-10'
 const CATEGORY = 'Tax Planning'
-const META_DESCRIPTION = 'The FY 2025-26 new tax regime: zero tax up to Rs 12 lakh with the 87A rebate, revised slabs, Rs 75,000 standard deduction, and who should stay old.'
+const META_DESCRIPTION = 'New tax regime for FY 2026-27 and FY 2025-26: slabs unchanged by Budget 2026, zero tax up to Rs 12 lakh, Rs 75,000 standard deduction, old vs new.'
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: META_DESCRIPTION,
-  keywords: ['new tax regime 2025-26', 'income tax slabs FY 2025-26', 'section 87A rebate 12 lakh', 'old vs new tax regime', 'standard deduction 75000', 'income tax India 2025', 'tax planning India'],
+  keywords: ['new tax regime FY 2026-27', 'income tax slabs FY 2026-27', 'new tax regime 2025-26', 'income tax slabs FY 2025-26', 'section 87A rebate 12 lakh', 'old vs new tax regime', 'standard deduction 75000', 'income tax India 2025', 'tax planning India'],
   alternates: { canonical: `${BASE_URL}/blog/${SLUG}` },
   openGraph: {
     title: TITLE,
@@ -27,13 +29,23 @@ export const metadata: Metadata = {
   },
 }
 
-const content = `<p>These slabs sit within the broader structural overhaul brought in by the <a href="/blog/new-income-tax-act-rules-2025">new Income Tax Act 2025</a>, which renumbers and simplifies the underlying law even where the FY 2025-26 rates below stay the same.</p>
+const content = `<div style="padding:1.5rem 1.75rem;background:var(--bg-main);border-radius:var(--radius-md);border:1px solid var(--border);border-left:4px solid var(--accent);margin-bottom:2rem"><p style="font-weight:800;color:var(--accent);margin-bottom:0.6rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.5px">TL;DR</p><ul style="margin:0;padding-left:1.25rem">
+<li>Budget 2026 did <strong>not</strong> change the new regime: FY 2026-27 uses the same slabs and rebate as FY 2025-26.</li>
+<li>Zero tax on taxable income up to Rs 12 lakh because of the rebate (Section 87A, now Section 156 of the Income Tax Act 2025); up to Rs 12.75 lakh of salary after the Rs 75,000 standard deduction.</li>
+<li>Slabs: nil to Rs 4 lakh, then 5%, 10%, 15%, 20% and 25% in Rs 4 lakh steps, and 30% above Rs 24 lakh, plus 4% cess.</li>
+<li>The rebate does not cover special-rate income such as equity LTCG at 12.5%.</li>
+<li>The old regime still wins only with large deductions, roughly Rs 3.75-4 lakh or more (home loan interest, 80C, 80D, HRA).</li>
+</ul></div>
+
+<p><strong>Update for FY 2026-27 (November 2026):</strong> Budget 2026 kept the new regime slabs, the Rs 12 lakh rebate and the Rs 75,000 standard deduction unchanged, so everything below applies to both FY 2025-26 (the return you file in 2026) and FY 2026-27 (the current year, filed in 2027). From April 1, 2026 the provisions sit in the Income Tax Act 2025; the 87A rebate is now Section 156. The rates did not change with the new Act.</p>
+
+<p>These slabs sit within the broader structural overhaul brought in by the <a href="/blog/new-income-tax-act-rules-2025">new Income Tax Act 2025</a>, which renumbers and simplifies the underlying law even where the FY 2025-26 rates below stay the same.</p>
 
 <p>From FY 2025-26 (assessment year 2026-27), the new tax regime is not just the default option, it is genuinely the better choice for most salaried taxpayers. The headline change is significant: with the enhanced Section 87A rebate, anyone with a taxable income up to Rs 12 lakh now pays zero income tax. For a salaried person, after the Rs 75,000 standard deduction, that effectively means no tax on a salary of up to Rs 12.75 lakh.</p>
 
 <p>Here is a clear breakdown of how the new regime works this year, and how to decide whether it is right for you.</p>
 
-<h2>The FY 2025-26 New Regime Slabs</h2>
+<h2>New Regime Slabs for FY 2025-26 and FY 2026-27</h2>
 
 <p>The new regime applies the following slabs to your taxable income (after the standard deduction):</p>
 
@@ -75,19 +87,20 @@ const content = `<p>These slabs sit within the broader structural overhaul broug
 
 <h2>Practical Takeaway</h2>
 
-<p>For the majority of salaried Indians, the FY 2025-26 new regime is now the simpler and cheaper option, the Rs 12 lakh rebate threshold is a genuine relief for the middle class. The taxpayers who should pause and run the comparison are those with substantial home loan interest and fully utilised 80C, 80D, and HRA, where the old regime may still edge ahead.</p>
+<p>For the majority of salaried Indians, the new regime (FY 2025-26 and FY 2026-27) is now the simpler and cheaper option, the Rs 12 lakh rebate threshold is a genuine relief for the middle class. The taxpayers who should pause and run the comparison are those with substantial home loan interest and fully utilised 80C, 80D, and HRA, where the old regime may still edge ahead.</p>
 
 <p>If your situation is borderline, or if you have capital gains, multiple income sources, or business income, the regime choice interacts with how you structure your finances. That is exactly the kind of planning where a short conversation with a CA pays for itself, getting the regime choice and the timing right can save more than any single deduction.</p>`
 
 const faqs: FaqPair[] = [
-  ['What are the FY 2025-26 New Tax Regime slabs?', 'Nil up to Rs 4,00,000; 5% from Rs 4,00,001-8,00,000; 10% from Rs 8,00,001-12,00,000; 15% from Rs 12,00,001-16,00,000; 20% from Rs 16,00,001-20,00,000; 25% from Rs 20,00,001-24,00,000; and 30% above Rs 24,00,000, plus 4% Health and Education Cess.'],
+  ['Did Budget 2026 change the new tax regime slabs for FY 2026-27?', 'No. Budget 2026 kept the new regime slabs, the Rs 12 lakh rebate and the Rs 75,000 standard deduction unchanged, so FY 2026-27 uses the same structure as FY 2025-26. From April 1, 2026 these provisions sit in the Income Tax Act 2025, where the 87A rebate is Section 156.'],
+  ['What are the New Tax Regime slabs for FY 2025-26 and FY 2026-27?', 'Nil up to Rs 4,00,000; 5% from Rs 4,00,001-8,00,000; 10% from Rs 8,00,001-12,00,000; 15% from Rs 12,00,001-16,00,000; 20% from Rs 16,00,001-20,00,000; 25% from Rs 20,00,001-24,00,000; and 30% above Rs 24,00,000, plus 4% Health and Education Cess.'],
   ['Who pays zero tax under the new regime?', 'Anyone with taxable income up to Rs 12 lakh pays zero tax due to the Section 87A rebate. For salaried individuals, the Rs 75,000 standard deduction effectively pushes this to Rs 12.75 lakh in gross salary before any tax is owed.'],
   ['Does the Section 87A rebate cover capital gains?', 'No. The rebate applies only to income taxed at slab rates. It does not extend to special-rate income such as long-term capital gains on equity, which is taxed separately at 12.5% regardless of your total taxable income.'],
   ['When should I still choose the old tax regime?', 'The old regime can still win if your combined deductions (Section 80C, 80D, home loan interest, HRA) exceed roughly Rs 3.75-4 lakh, typically someone with significant home loan interest plus fully utilised 80C, HRA, and health insurance.'],
 ]
 
 const breadcrumbLd = buildBlogBreadcrumbLd(TITLE, SLUG)
-const articleLd = buildArticleLd({ headline: TITLE, description: META_DESCRIPTION, datePublished: ISO_DATE, slug: SLUG })
+const articleLd = buildArticleLd({ headline: TITLE, description: META_DESCRIPTION, datePublished: ISO_DATE, dateModified: ISO_MODIFIED, slug: SLUG })
 const faqLd = buildFaqLd(faqs)
 
 export default function UnderstandingNewTaxRegimeBlog() {
@@ -105,7 +118,7 @@ export default function UnderstandingNewTaxRegimeBlog() {
             <span className="section-badge">{CATEGORY}</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>{TITLE}</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>{DATE}</span>
+              <span>Updated {MODIFIED}</span>
               <span aria-hidden>•</span>
               <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
               <span aria-hidden>•</span>
@@ -122,7 +135,7 @@ export default function UnderstandingNewTaxRegimeBlog() {
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>Reviewed By</h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', margin: 0 }}>
-                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>, Chartered Accountant (ICAI), UAE Corporate Taxation certified. Last reviewed {DATE}.
+                <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>, Chartered Accountant (ICAI), UAE Corporate Taxation certified. Last reviewed {MODIFIED}.
               </p>
               <h3 style={{ fontSize: '1rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>Sources & References</h3>
               <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem' }}>

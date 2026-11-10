@@ -176,6 +176,10 @@ const organizationLd = {
     'https://www.justdial.com/Nashik/Agrawal-Khandelwal-Associates-LLP-Opposite-Radiant-Hospital-Mumbai-Naka-Bhagwant-Nagar-Bhabha-Nagar/0253PX253-X253-240221190351-A8F7_BZDET',
     'https://www.sulekha.com/agrawal-khandelwal-and-associates-llp-mumbai-naka-nashik-contact-address',
     'https://maps.google.com/?cid=17018233718758486792',
+    // Public profiles verified to link back to the site (Sep 14, 2026 audit).
+    'https://www.crunchbase.com/organization/agrawal-khandelwal-associates',
+    'https://theorg.com/org/agrawal-khandelwal-associates-llp',
+    'https://www.nashik100.com/business/Agrawal-Khandelwal---Associates-LLP/47207',
   ],
   hasMap: 'https://maps.google.com/?cid=17018233718758486792',
   hasOfferCatalog: {
@@ -227,6 +231,16 @@ const organizationLd = {
   ],
 }
 
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  name: FIRM_NAME,
+  url: BASE_URL,
+  inLanguage: 'en-IN',
+  publisher: { '@id': ORGANIZATION_ID },
+}
+
 const bookingLink = SHARED_BOOKING_LINK
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -236,6 +250,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
         />
       </head>
       <body>

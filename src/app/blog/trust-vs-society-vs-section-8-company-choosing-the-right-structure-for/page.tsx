@@ -150,6 +150,7 @@ export default function TrustVsSocietyVsSection8Blog() {
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/corporate-social-responsibility-csr-compliance-and-applicability" style={{ color: 'var(--primary)', fontWeight: 600 }}>CSR Under Section 135: Which Companies Must Spend and How</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/taxation-of-charitable-trusts-exemptions-and-compliance" style={{ color: 'var(--primary)', fontWeight: 600 }}>Taxation of Charitable Trusts: Exemptions &amp; Compliance</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/fcra-registration-foreign-contribution-compliance-for-ngos" style={{ color: 'var(--primary)', fontWeight: 600 }}>FCRA Registration: Foreign Contribution Compliance for NGOs</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual ROC Filing: AOC-4, MGT-7 &amp; DIR-3 KYC</Link></li>

@@ -99,6 +99,17 @@ export default function GSTExportsZeroRatedBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>Exports and supplies to SEZs are zero-rated under Section 16 of the IGST Act, not exempt: 0% GST, and you keep your input tax credit.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Treating exports as exempt means reversing ITC you were entitled to keep and missing refunds.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Two routes: export under a Letter of Undertaking (LUT) without IGST and claim a refund of accumulated ITC, or pay IGST and claim that IGST back.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Export of services must meet all five conditions in Section 2(6) of the IGST Act, including payment in convertible foreign exchange or INR where RBI permits.</li>
+                    <li style={{ marginBottom: 0 }}>File the LUT at the start of each financial year and the refund in Form RFD-01 within 2 years of the relevant date.</li>
+                  </ul>
+                </div>
+
                 <p>Ask an Indian exporter whether their exports are taxable under GST and most will say no. That is correct; but for the wrong reason. Exports are not exempt from GST; they are <strong>zero-rated</strong>. The difference between these two categories is not semantic. It determines whether you can claim input tax credit on every rupee of GST you pay on raw materials, services, and overhead; and whether you can get a refund of that credit from the government. Getting this wrong costs exporters lakhs in unclaimed ITC every year.</p>
 
                 <h2>Zero-Rated vs Exempt: Why the Distinction Matters</h2>

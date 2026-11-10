@@ -7,7 +7,7 @@ import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Do You Need a TAN to Buy Property From an NRI? (Updated for Oct 2026)' },
+  title: { absolute: 'Do You Need a TAN to Buy Property From an NRI? (Oct 2026 Rules)' },
   description: 'From Oct 1, 2026, individual/HUF buyers need no TAN to buy from an NRI; PAN-based Form 141 applies. Rules for earlier purchases and company buyers.',
   keywords: [
     'TAN application for buying property from NRI', 'TAN registration India', 'form 49B TAN',

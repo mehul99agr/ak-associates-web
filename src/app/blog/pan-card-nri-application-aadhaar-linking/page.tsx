@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'PAN Card for NRIs (2026)',
+  title: { absolute: 'PAN Card for NRIs (2026): Apply From Abroad & Aadhaar Linking' },
   description: 'How NRIs apply for PAN from abroad (Form 49A vs 49AA), the Aadhaar linking exemption, when PAN is needed, and what happens if it becomes inoperative.',
   keywords: ['PAN card NRI', 'NRI PAN application', 'PAN card for NRI from abroad', 'Aadhaar PAN linking NRI', 'NRI PAN inoperative', 'Form 49A NRI', 'PAN required NRI property'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/pan-card-nri-application-aadhaar-linking' },

@@ -153,6 +153,7 @@ export default function NgoTrustComplianceCalendarBlog() {
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/corporate-social-responsibility-csr-compliance-and-applicability" style={{ color: 'var(--primary)', fontWeight: 600 }}>CSR Under Section 135: Which Companies Must Spend and How</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/csr-fund-utilisation-compliance-for-receiving-trusts" style={{ color: 'var(--primary)', fontWeight: 600 }}>CSR Fund Utilisation: Compliance for Receiving Trusts</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/political-party-donations-and-section-80ggc-deduction" style={{ color: 'var(--primary)', fontWeight: 600 }}>Political Party Donations &amp; Section 80GGC Deduction</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/income-tax-notices-explained-143-1-143-2-148" style={{ color: 'var(--primary)', fontWeight: 600 }}>Income Tax Notices Explained: Section 143(1), 143(2) &amp; 148</Link></li>

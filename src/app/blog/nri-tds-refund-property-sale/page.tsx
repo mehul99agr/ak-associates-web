@@ -105,6 +105,16 @@ export default function NRITDSRefundBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>Without a Form 128 (earlier Form 13) certificate, an NRI recovers excess TDS on a property sale only by filing an ITR for the year of sale.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Most NRIs file ITR-2; ITR-3 applies if there is also business or professional income in India.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Report the actual capital gain and claim the TDS that appears in Form 26AS / AIS. If the buyer has not filed the TDS return, the credit will not show.</li>
+                    <li style={{ marginBottom: 0 }}>The refund is paid only to a pre-validated Indian bank account.</li>
+                  </ul>
+                </div>
+
                 <p>Because <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on an NRI&apos;s property sale</Link> is deducted on the full sale consideration rather than the actual capital gain, most NRI sellers end up with far more tax withheld than they actually owe. If a Form 128 (earlier Form 13) lower deduction certificate wasn&apos;t obtained before the sale, the only way to recover the difference is by filing an Indian income tax return and claiming a refund. Here is exactly how that process works.</p>
 
                 <ServiceOffer variant="nri-seller" />

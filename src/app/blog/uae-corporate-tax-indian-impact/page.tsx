@@ -64,8 +64,17 @@ export default function UAECorporateTaxBlog() {
 
           <div style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
             <p style={{ marginBottom: '1.5rem' }}>
-              For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of **9%** marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change:it’s a global structural challenge.
+              For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of <strong>9%</strong> marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change:it’s a global structural challenge.
             </p>
+
+            <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+              <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                <li style={{ marginBottom: '0.4rem' }}>UAE corporate tax is 9% on taxable income above AED 375,000, so a UAE subsidiary is no longer automatically tax-free.</li>
+                <li style={{ marginBottom: '0.4rem' }}>UAE entities must keep proper accounts and follow transfer pricing rules for dealings with the Indian parent.</li>
+                <li style={{ marginBottom: 0 }}>The India-UAE DTAA can avoid double tax, but needs a Tax Residency Certificate and a clear place of effective management.</li>
+              </ul>
+            </div>
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>1. The End of the "Tax-Free" Subsidiary</h2>
             <p style={{ marginBottom: '1.5rem' }}>
@@ -74,7 +83,7 @@ export default function UAECorporateTaxBlog() {
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>2. Leverage the India-UAE DTAA</h2>
             <p style={{ marginBottom: '1.5rem' }}>
-              The silver lining for Indian firms is the robust **Double Taxation Avoidance Agreement (DTAA)** between India and the UAE. Indian businesses can potentially claim "Tax Credits" in India for the corporate tax paid in the UAE, preventing the same income from being taxed twice. However, this requires:
+              The silver lining for Indian firms is the robust <strong>Double Taxation Avoidance Agreement (DTAA)</strong> between India and the UAE. Indian businesses can potentially claim "Tax Credits" in India for the corporate tax paid in the UAE, preventing the same income from being taxed twice. However, this requires:
             </p>
             <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
               <li style={{ marginBottom: '0.5rem' }}>Correct determination of "Place of Effective Management" (POEM).</li>
@@ -84,7 +93,7 @@ export default function UAECorporateTaxBlog() {
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>3. Transfer Pricing: The New Compliance Pillar</h2>
             <p style={{ marginBottom: '1.5rem' }}>
-              Perhaps the most critical impact is the mandatory application of **Transfer Pricing (TP)** rules. Any transaction between an Indian parent and its UAE subsidiary (management fees, royalties, or goods trade) must now be justified at "Market Value." Failure to do so could lead to heavy penalties both from the UAE’s Federal Tax Authority (FTA) and the Indian Income Tax Department.
+              Perhaps the most critical impact is the mandatory application of <strong>Transfer Pricing (TP)</strong> rules. Any transaction between an Indian parent and its UAE subsidiary (management fees, royalties, or goods trade) must now be justified at "Market Value." Failure to do so could lead to heavy penalties both from the UAE’s Federal Tax Authority (FTA) and the Indian Income Tax Department.
             </p>
 
             <div style={{ background: 'var(--bg-surface)', padding: '2rem', borderRadius: 'var(--radius-md)', borderLeft: '5px solid var(--accent)', margin: '3rem 0' }}>

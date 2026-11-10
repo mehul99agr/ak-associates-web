@@ -954,18 +954,18 @@ export const posts = [
     summary: 'Formation costs ₹3–6L, ongoing compliance, and FEMA exposure: here\'s the honest breakdown of when a Dubai company actually works for Indian businesses, and when it\'s expensive FOMO.',
   },
   {
-    title: 'Deciphering the New Income Tax Act & Rules 2025',
+    title: 'Income Tax Act 2025: What Changed From April 1, 2026',
     slug: 'new-income-tax-act-rules-2025',
     date: 'March 20, 2026',
     category: 'Tax Reform',
-    summary: 'An in-depth look at the proposed structural changes in the Income Tax Act, focusing on simplification and the new computational rules.',
+    summary: 'The new Act in force from April 1, 2026: tax year, Income-tax Rules 2026, transition for FY 2025-26, and old-to-new section and form numbers.',
   },
   {
-    title: 'Understanding the New Tax Regime (FY 2025-26)',
+    title: 'New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New',
     slug: 'understanding-new-tax-regime-2025-26',
     date: 'March 18, 2026',
     category: 'Tax Planning',
-    summary: 'A detailed breakdown of the recent changes in the Finance Act and how it affects middle-income earners in India.',
+    summary: 'New regime slabs for FY 2025-26 and FY 2026-27 (unchanged by Budget 2026), the Rs 12 lakh rebate, and when the old regime still wins.',
   },
   {
     title: 'Essential Compliance for Indian Startups',

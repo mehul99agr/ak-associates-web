@@ -79,6 +79,16 @@ export default function DubaiCompanyRegistrationBlog() {
                 But the process has several moving parts; choosing between Mainland, Free Zone, and Offshore structures; satisfying India&apos;s FEMA requirements; understanding the new UAE Corporate Tax; and setting up banking. This guide covers the full picture, with real costs in both AED and INR.
               </p>
 
+              <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.4rem' }}>Three structures: mainland (can trade anywhere in the UAE), free zone (100% ownership, mainly outside-UAE business) and offshore (holding only, no UAE trading).</li>
+                  <li style={{ marginBottom: '0.4rem' }}>UAE corporate tax is 9% on taxable income above AED 375,000; qualifying free zone income can be taxed at 0%.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>An Indian resident investing in a Dubai company must follow India&apos;s Overseas Direct Investment rules under FEMA.</li>
+                  <li style={{ marginBottom: 0 }}>If the company is effectively run from India, it can be taxed in India as an Indian resident under the POEM test.</li>
+                </ul>
+              </div>
+
               <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.6rem' }}>Types of Dubai Company Structures</h2>
               <p style={{ marginBottom: '1.25rem' }}>There are three main structures available to Indian entrepreneurs. The right choice depends on your business activity, whether you need local UAE market access, and your tax planning goals.</p>
 

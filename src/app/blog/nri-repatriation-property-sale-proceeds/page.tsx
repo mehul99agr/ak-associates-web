@@ -97,6 +97,16 @@ export default function NRIRepatriationBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>Sale proceeds must first be credited to the NRI&apos;s NRO account in India.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Settle the tax position first: correct TDS (ideally under a Form 128 certificate) or an ITR and refund.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>File Form 145 (earlier 15CA) on the e-filing portal before the remittance; a CA certificate in Form 146 (earlier 15CB) is needed above Rs 5 lakh.</li>
+                    <li style={{ marginBottom: 0 }}>Remittances from the NRO account are capped at USD 1 million per financial year under FEMA.</li>
+                  </ul>
+                </div>
+
                 <p>Selling the property is only half the process for an NRI. Getting the sale proceeds out of India legally requires clearing tax on the gain; through <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS and, where applicable, an ITR refund</Link>; and then following a specific FEMA-governed remittance process. Under the new Income Tax Act 2025, effective April 1, 2026, the forms involved changed. Here is the full sequence.</p>
 
                 <ServiceOffer variant="nri-seller" />

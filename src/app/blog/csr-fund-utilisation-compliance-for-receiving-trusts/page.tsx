@@ -146,6 +146,7 @@ export default function CsrFundUtilisationComplianceBlog() {
               <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/corporate-social-responsibility-csr-compliance-and-applicability" style={{ color: 'var(--primary)', fontWeight: 600 }}>CSR Under Section 135: Which Companies Must Spend and How</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/annual-compliance-calendar-for-ngos-and-trusts-in-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual Compliance Calendar for NGOs and Trusts in India</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/political-party-donations-and-section-80ggc-deduction" style={{ color: 'var(--primary)', fontWeight: 600 }}>Political Party Donations &amp; Section 80GGC Deduction</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Compliance Calendar: Year 1-3</Link></li>

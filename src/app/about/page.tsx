@@ -37,7 +37,7 @@ const peopleLd = {
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
       email: 'mehul@agrawalkhandelwal.com',
-      sameAs: ['https://www.linkedin.com/in/mehulagrawal99/'],
+      sameAs: ['https://www.linkedin.com/in/mehulagrawal99/', 'https://x.com/CAMehulAg'],
       knowsAbout: [
         'International Taxation', 'Transfer Pricing', 'UAE Corporate Tax',
         'DTAA', 'FEMA Compliance', 'Cross-border Structuring', 'M&A Advisory',

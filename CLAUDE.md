@@ -552,6 +552,29 @@ Oct 12-18, pulled live):**
   `export const revalidate = 3600`. A new deadline post needs the component + revalidate.
 - (Superseded the same day) The Razorpay env vars were never set; the site's Razorpay flow was then replaced by Zoho Bookings, so no Vercel env vars are needed for `/consult`.
 
+**SEO/AEO/GEO audit (Nov 10, 2026) and fixes shipped the same day:**
+- Live crawl of all 250 sitemap URLs: all 200, canonicals correct, one H1 each, og:image everywhere, no
+  duplicate titles/descriptions, no tel:/wa.me. GSC: 246 indexed, 10 not indexed (mostly non-pages); Core
+  Web Vitals 97/97 good on mobile and desktop. Agent-skill digests valid. Bing indexes the key pages.
+- Audit tooling note: titles must be measured after `html.unescape` - `&amp;` inflated 30 "long titles"
+  to an actual 13 (12 non-blog brand-tail cases, accepted, plus 1 blog post).
+- Fixed: org `sameAs` + Crunchbase/TheOrg/Nashik100; Mehul Person `sameAs` + x.com/CAMehulAg; `WebSite`
+  JSON-LD in layout; IndexNow key `public/4bb375fd3e44d4e404a86a200473c38f.txt` + `scripts/indexnow.py`
+  (run after each deploy, optionally with changed paths); TL;DR added to 16 posts that lacked one;
+  `understanding-new-tax-regime-2025-26` refreshed for FY 2026-27 (slabs unchanged by Budget 2026);
+  `new-income-tax-act-rules-2025` rewritten (it contained unverified claims: "regime convergence",
+  AI assessments, valuation rules) around the Act in force Apr 1, 2026, Rules 2026 notified Mar 20, 2026,
+  tax year, and verified section/form mappings; DPIIT post had a wrong Rs 100 crore cap (Rs 200 crore since
+  G.S.R. 108(E), Feb 4, 2026) and wrong angel-tax law (Finance (No. 2) Act 2024, w.e.f. Apr 1, 2024);
+  `**` markdown leaking into the UAE CT post; tax calculator gained FY 2026-27; FAQs + FAQPage on
+  /tax-calculator and /tools/incorporation-wizard; CSR post linked from 3 trust/NGO posts (was "crawled -
+  not indexed"); 3 titles + /ca-in-sillod description.
+- Not changed: `tds-on-nri-property-sale-india` content is already complete (rate table, worked example,
+  Schedule E, Form 128, refunds); its loss reads as authority, so it needs outside links, not rewrites.
+  The 7 US-founder posts (last updated May 2025-Feb 2026) are due a refresh around January 2027.
+- User-side: GBP reviews, real `<a href>` links from CAclubindia/TaxGuru and directory profiles, WhatsApp
+  number in Zoho's Booked email, Zoho plan before trial ends, Consent Mode v2 decision.
+
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
 dates rather than batch-publish same-day:

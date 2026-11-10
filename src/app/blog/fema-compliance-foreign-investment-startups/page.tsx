@@ -117,6 +117,17 @@ export default function FemaComplianceBlog() {
             </div>
 
             <div className="blog-content" style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
+              <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.4rem' }}>Before accepting foreign money, confirm your sector is on the automatic route and within its FDI cap.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Allot shares within 60 days of receiving the funds, or refund the money.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>File Form FC-GPR on the RBI FIRMS portal within 30 days of allotment.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>File the annual FLA return by July 15 every year.</li>
+                  <li style={{ marginBottom: 0 }}>Missed filings are regularised by paying the RBI Late Submission Fee.</li>
+                </ul>
+              </div>
+
 
               <p style={{ marginBottom: '1.5rem' }}>
                 Foreign investment is the moment most funded startups first encounter FEMA; the Foreign Exchange Management Act. Before the wire, it is an abstract regulatory framework. After the wire, it becomes a hard compliance clock: 60 days from receipt to allot shares, 30 days from allotment to file FC-GPR with RBI, and an annual return due every July 15.

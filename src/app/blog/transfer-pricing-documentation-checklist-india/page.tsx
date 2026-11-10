@@ -99,6 +99,17 @@ export default function TPDocumentationChecklist() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>International transactions with associated enterprises above Rs 1 crore in a year need a CA-certified Form 3CEB and supporting Local File documentation.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Master File (Form 3CEAA) Part A applies above Rs 50 crore of international transactions; Part B adds a Rs 500 crore consolidated group revenue test.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Country-by-Country Reporting applies to groups with consolidated revenue of Rs 6,400 crore or more.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>For FY 2025-26, Form 3CEB was due October 31, 2026 and the return for transfer pricing cases is due November 30, 2026.</li>
+                    <li style={{ marginBottom: 0 }}>TNMM is the method most Indian IT, BPO and captive service companies use.</li>
+                  </ul>
+                </div>
+
                 <p>Every Indian company that transacts with an overseas parent, subsidiary, or group entity above ₹1 crore in a financial year has a transfer pricing documentation obligation under the Income Tax Act. Most companies know they need Form 3CEB. Far fewer maintain the underlying documentation that makes Form 3CEB defensible in an audit. This checklist covers every tier; from the base 3CEB requirement to Country-by-Country Reporting; with due dates and the specific items that tend to be missing when auditors look.</p>
 
                 <h2>The Four Tiers of Indian TP Compliance</h2>

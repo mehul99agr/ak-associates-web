@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   },
 }
 
-const content = `<p>For a country-by-country breakdown of treaty rates for NRIs, see our <a href="/blog/dtaa-guide-nri-country-wise">India DTAA Guide by Country</a> (US, UK, UAE, Canada, Australia, Singapore).</p>
+const content = `<div style="padding:1.5rem 1.75rem;background:var(--bg-main);border-radius:var(--radius-md);border:1px solid var(--border);border-left:4px solid var(--accent);margin-bottom:2rem"><p style="font-weight:800;color:var(--accent);margin-bottom:0.6rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.5px">TL;DR</p><ul style="margin:0;padding-left:1.25rem"><li>A DTAA decides which country can tax each type of income and often caps withholding tax on dividends, interest, royalties and fees.</li><li>To use treaty rates, a non-resident needs a Tax Residency Certificate and Form 10F.</li><li>Residents claiming credit for foreign tax file Form 67 with their return.</li><li>An office, dependent agent or long project abroad can create a permanent establishment and make business profits taxable there.</li></ul></div>
+
+<p>For a country-by-country breakdown of treaty rates for NRIs, see our <a href="/blog/dtaa-guide-nri-country-wise">India DTAA Guide by Country</a> (US, UK, UAE, Canada, Australia, Singapore).</p>
 
 <p>Double Taxation Avoidance Agreements (DTAAs) are the foundation of international business planning. India has signed DTAAs with over 90 countries, including the US, UK, UAE, Singapore, Germany, and Australia. For Indian businesses with cross-border operations (and for foreign companies operating in India) understanding these treaties is the difference between paying tax once and paying it twice.</p>
 

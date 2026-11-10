@@ -3370,19 +3370,19 @@ Formation costs ₹3–6L, ongoing compliance, and FEMA exposure: here's the hon
 
 Tax ReformMarch 20, 2026
 
-## Deciphering the New Income Tax Act & Rules 2025
+## Income Tax Act 2025: What Changed From April 1, 2026
 
-An in-depth look at the proposed structural changes in the Income Tax Act, focusing on simplification and the new computational rules.
+The new Act in force from April 1, 2026: tax year, Income-tax Rules 2026, transition for FY 2025-26, and old-to-new section and form numbers.
 
-[Read guide: Deciphering the New Income Tax Act & Rules 2025](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
+[Read guide: Income Tax Act 2025: What Changed From April 1, 2026](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
 
 Tax PlanningMarch 18, 2026
 
-## Understanding the New Tax Regime (FY 2025-26)
+## New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New
 
-A detailed breakdown of the recent changes in the Finance Act and how it affects middle-income earners in India.
+New regime slabs for FY 2025-26 and FY 2026-27 (unchanged by Budget 2026), the Rs 12 lakh rebate, and when the old regime still wins.
 
-[Read guide: Understanding the New Tax Regime (FY 2025-26)](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
+[Read guide: New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
 
 Corporate LawMarch 12, 2026
 
@@ -4168,11 +4168,11 @@ Source: https://agrawalkhandelwal.com/tax-calculator
 
 # Income Tax Estimator
 
-Compare the Old and New regimes side by side and see which one saves you more, based on the latest Union Budget 2025 slabs.
+Compare the Old and New regimes side by side and see which one saves you more, based on the Budget 2026 slabs (unchanged from 2025).
 
 Gross Annual Income (₹)
 
-Financial YearFY 2025-26 (AY 2026-27)FY 2024-25 (AY 2025-26)
+Financial YearFY 2026-27 (tax year 2026-27)FY 2025-26 (AY 2026-27)FY 2024-25 (AY 2025-26)
 
 Old-Regime Deductions (₹)
 
@@ -4182,6 +4182,24 @@ Old-Regime Deductions (₹)
 
 - [Understanding the New Tax Regime (FY 2025-26)](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
 - [New Income Tax Act 2025: Simplified Guide](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
+
+## Frequently Asked Questions
+
+### Which tax regime is better for FY 2026-27?
+
+For most salaried people the new regime is cheaper: taxable income up to Rs 12 lakh is tax-free after the rebate, and salary up to Rs 12.75 lakh after the Rs 75,000 standard deduction. The old regime usually wins only if your deductions (80C, 80D, home loan interest, HRA) exceed roughly Rs 3.75-4 lakh.
+
+### Did Budget 2026 change the income tax slabs?
+
+No. FY 2026-27 uses the same new regime slabs, Rs 12 lakh rebate and Rs 75,000 standard deduction as FY 2025-26, so the calculator applies the same rates to both years.
+
+### What does this estimator not cover?
+
+It estimates tax on salary-type income at slab rates. It does not compute surcharge, marginal relief just above Rs 12 lakh, or special-rate income such as capital gains, which the rebate does not cover. For those, ask a CA to compute your exact liability.
+
+### Can I switch between the old and new regime every year?
+
+Salaried individuals with no business income can choose each year when filing the return. Taxpayers with business or professional income have more limited switching options.
 
 ---
 
@@ -4266,6 +4284,24 @@ Answer 4 simple questions to find out the best legal structure for your new busi
 QUESTION 1 OF 4
 
 ## Do you plan to raise funding from Angel Investors or Venture Capitalists in the future?
+
+## Frequently Asked Questions
+
+### Should I register a private limited company or an LLP?
+
+Choose a private limited company if you plan to raise investment or issue ESOPs, since investors need shares. An LLP suits bootstrapped professional or consulting businesses because it has lighter compliance.
+
+### Is there a minimum capital to start a company in India?
+
+No. There is no minimum paid-up capital for a private limited company or LLP. MCA filing fees are nil up to Rs 15 lakh authorised capital; state stamp duty still applies.
+
+### Can I start as a sole proprietor and convert later?
+
+Yes. Many businesses start as a proprietorship and incorporate when they need funding, limited liability or larger contracts. Converting later involves transferring assets, contracts and registrations to the new entity.
+
+### Can an NRI or foreign national own an Indian company?
+
+Yes. NRIs and foreign nationals can be shareholders and directors, subject to FDI rules, but at least one director must have stayed in India for 182 days or more in the financial year.
 
 ---
 
@@ -6563,6 +6599,13 @@ NRI Taxation
 
 Published August 14, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
+TL;DR
+
+- Advance tax for FY 2026-27 falls on June 15, September 15 and December 15, 2026 and March 15, 2027, but only matters for income not already covered by TDS.
+- The ITR for FY 2026-27 is due July 31, 2027 for non-audit cases; the belated return deadline is December 31, 2027.
+- Buyers and tenants who deduct TDS on payments to NRIs file Form 144 (earlier 27Q) every quarter and issue Form 131 (earlier 16A).
+- File Form 145 (earlier 15CA) before any taxable remittance abroad, with a CA certificate in Form 146 (earlier 15CB) above Rs 5 lakh.
+
 Missing a tax deadline as an NRI does not just mean a late fee. It can mean losing the right to carry forward losses, paying interest on tax you did not know you owed, or having your [repatriation held up](https://agrawalkhandelwal.com/blog/nro-account-repatriation-rules-process) because Form 145/146 was not filed in time. Here is every deadline that matters for NRIs in FY 2026-27.
 
 Need your Indian tax return filed from abroad?
@@ -7253,7 +7296,15 @@ Startup Compliance
 
 # DPIIT Registration for Startups: Eligibility, Process & 80-IAC Tax Benefit (2026)
 
-July 25, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- DPIIT recognition and the Section 80-IAC tax holiday are two separate approvals. Recognition alone gives no tax holiday.
+- Eligibility: private limited company, LLP or registered partnership (cooperatives added in February 2026), not older than 10 years, with turnover never above Rs 200 crore.
+- The turnover cap was doubled from Rs 100 crore by Notification G.S.R. 108(E) of February 4, 2026, which also created a deep tech category (20 years, Rs 300 crore).
+- Section 80-IAC gives a 100% deduction of profits for any 3 consecutive years out of the first 10, but needs a separate Inter-Ministerial Board certificate.
+- Angel tax under Section 56(2)(viib) was abolished for all companies with effect from April 1, 2024.
 
 DPIIT recognition is one of the most misunderstood government registrations for Indian startups. Founders pursue it believing it automatically delivers a three-year tax holiday. It does not. The tax holiday; Section 80-IAC; is a separate application to a different body with stricter criteria, and most DPIIT-recognized startups never file for it. This article clarifies what DPIIT recognition actually gives you, what 80-IAC requires, and how to structure the applications in the right order.
 
@@ -7267,7 +7318,7 @@ All four conditions must be met at the time of application:
 
 - **Entity type:** Incorporated as a Private Limited Company (under the Companies Act 2013), Limited Liability Partnership, or Registered Partnership Firm in India. One-Person Companies are not eligible.
 - **Age limit:** Not more than **10 years** from the date of incorporation or registration. This is the most commonly missed disqualifier; founders who have been running a business for 10+ years before formalizing it under a new entity often miscount from the wrong date.
-- **Revenue cap:** Annual turnover must not have exceeded ₹100 crore in any previous financial year. Once crossed, the company ceases to be a startup and loses recognition benefits going forward.
+- **Revenue cap:** Annual turnover must not have exceeded ₹200 crore in any financial year since incorporation (raised from ₹100 crore by DPIIT Notification G.S.R. 108(E) dated February 4, 2026; deep tech startups get a ₹300 crore cap and up to 20 years). Once crossed, the company ceases to be a startup and loses recognition benefits going forward.
 - **Innovation criterion:** The business must be working towards innovation, improvement, or development of a product, process, or service; or have a scalable business model with high potential for employment generation or wealth creation. This is self-declared in the application; DPIIT does not independently verify it at recognition stage.
 
 ## The Application Process
@@ -7300,7 +7351,7 @@ The IMB application requires detailed documentation of the innovation; pitch dec
 - **Patent fee rebate:** 80% rebate on patent filing fees. For technology startups filing multiple patents, this saves lakhs.
 - **Public procurement preference:** Exemption from the prior experience and turnover requirements that typically disqualify startups from government tenders. Startups can bid on central government contracts on equal footing with established vendors.
 - **Faster insolvency resolution:** 90-day winding-up process under the Insolvency and Bankruptcy Code, compared to 180+ days for regular companies. Provides a faster exit for startups that do not work out.
-- **Angel tax abolished (Finance Act 2025):** Section 56(2)(viib) (which previously taxed investments received at a premium over fair market value as income) was entirely removed by Finance Act 2025. DPIIT-recognized startups previously needed a specific exemption under this provision; that provision and its exemptions no longer exist.
+- **Angel tax abolished (Finance (No. 2) Act, 2024):** Section 56(2)(viib) (which previously taxed investments received at a premium over fair market value as income) was removed for all companies with effect from April 1, 2024 by the Finance (No. 2) Act, 2024. DPIIT-recognized startups previously needed a specific exemption under this provision; that provision and its exemptions no longer exist.
 
 ## The Right Sequencing
 
@@ -7332,7 +7383,7 @@ DPIIT recognition is issued by the Department for Promotion of Industry and Inte
 
 ### What are the eligibility criteria for DPIIT recognition in India in 2026?
 
-To qualify for DPIIT recognition, the entity must be incorporated as a Private Limited Company, Limited Liability Partnership, or Registered Partnership Firm in India; incorporated not more than 10 years ago from the date of incorporation; have an annual turnover not exceeding ₹100 crore in any preceding financial year; and be working towards innovation, improvement, or development of a product, process, or service, or have a scalable business model with high potential for employment generation or wealth creation. Service companies, technology platforms, manufacturing startups, and D2C brands can all qualify; the definition is broad.
+To qualify for DPIIT recognition, the entity must be incorporated as a Private Limited Company, Limited Liability Partnership, or Registered Partnership Firm in India; incorporated not more than 10 years ago from the date of incorporation; have an annual turnover not exceeding ₹200 crore in any financial year since incorporation (the limit was raised from ₹100 crore on February 4, 2026; deep tech startups get ₹300 crore and up to 20 years); and be working towards innovation, improvement, or development of a product, process, or service, or have a scalable business model with high potential for employment generation or wealth creation. Service companies, technology platforms, manufacturing startups, and D2C brands can all qualify; the definition is broad.
 
 ### How does the Section 80-IAC tax holiday work for startups?
 
@@ -7340,7 +7391,7 @@ Section 80-IAC provides a 100% deduction on profits and gains from an eligible b
 
 ### Is angel tax still applicable to Indian startups receiving investment in 2026?
 
-No. The Finance Act 2025 abolished Section 56(2)(viib) of the Income Tax Act entirely, which means the angel tax provision no longer exists for any company, whether DPIIT-recognized or not. Previously, investments received at a premium over fair market value by unlisted companies were treated as income under Section 56(2)(viib). DPIIT-recognized startups had a specific exemption process, but that exemption and the underlying provision are both now removed. Investments received at any valuation by Indian startups from resident or non-resident investors are no longer subject to angel tax under the Income Tax Act.
+No. The Finance (No. 2) Act, 2024 abolished Section 56(2)(viib), with effect from April 1, 2024, of the Income Tax Act entirely, which means the angel tax provision no longer exists for any company, whether DPIIT-recognized or not. Previously, investments received at a premium over fair market value by unlisted companies were treated as income under Section 56(2)(viib). DPIIT-recognized startups had a specific exemption process, but that exemption and the underlying provision are both now removed. Investments received at any valuation by Indian startups from resident or non-resident investors are no longer subject to angel tax under the Income Tax Act.
 
 ### Related Guides
 
@@ -7359,6 +7410,14 @@ GST
 # GST on Exports: Zero-Rated vs Exempt; What Indian Exporters Get Wrong
 
 July 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- Exports and supplies to SEZs are zero-rated under Section 16 of the IGST Act, not exempt: 0% GST, and you keep your input tax credit.
+- Treating exports as exempt means reversing ITC you were entitled to keep and missing refunds.
+- Two routes: export under a Letter of Undertaking (LUT) without IGST and claim a refund of accumulated ITC, or pay IGST and claim that IGST back.
+- Export of services must meet all five conditions in Section 2(6) of the IGST Act, including payment in convertible foreign exchange or INR where RBI permits.
+- File the LUT at the start of each financial year and the refund in Form RFD-01 within 2 years of the relevant date.
 
 Ask an Indian exporter whether their exports are taxable under GST and most will say no. That is correct; but for the wrong reason. Exports are not exempt from GST; they are **zero-rated**. The difference between these two categories is not semantic. It determines whether you can claim input tax credit on every rupee of GST you pay on raw materials, services, and overhead; and whether you can get a refund of that credit from the government. Getting this wrong costs exporters lakhs in unclaimed ITC every year.
 
@@ -7469,6 +7528,14 @@ International Tax
 # Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)
 
 July 11, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- International transactions with associated enterprises above Rs 1 crore in a year need a CA-certified Form 3CEB and supporting Local File documentation.
+- Master File (Form 3CEAA) Part A applies above Rs 50 crore of international transactions; Part B adds a Rs 500 crore consolidated group revenue test.
+- Country-by-Country Reporting applies to groups with consolidated revenue of Rs 6,400 crore or more.
+- For FY 2025-26, Form 3CEB was due October 31, 2026 and the return for transfer pricing cases is due November 30, 2026.
+- TNMM is the method most Indian IT, BPO and captive service companies use.
 
 Every Indian company that transacts with an overseas parent, subsidiary, or group entity above ₹1 crore in a financial year has a transfer pricing documentation obligation under the Income Tax Act. Most companies know they need Form 3CEB. Far fewer maintain the underlying documentation that makes Form 3CEB defensible in an audit. This checklist covers every tier; from the base 3CEB requirement to Country-by-Country Reporting; with due dates and the specific items that tend to be missing when auditors look.
 
@@ -9294,6 +9361,13 @@ NRI Taxation
 
 July 11, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
+TL;DR
+
+- TDS on an NRI property sale is charged on the full sale price, not the gain, so it is often several times the real tax.
+- Form 13, now Form 128 under Section 395 (earlier Section 197), asks the Assessing Officer to certify a lower or nil TDS rate based on the actual gain.
+- Apply well before the sale. The buyer then deducts at the certified rate and is protected.
+- Without a certificate, the excess TDS comes back only through an ITR refund after the year ends.
+
 When an NRI sells property in India, [TDS under Section 195](https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india) is deducted on the entire sale consideration, not the actual profit. For most NRI sellers, this means the buyer withholds far more than the real tax bill; often 5 to 10 times more. Form 13 is the mechanism that fixes this before the sale closes, instead of forcing the NRI to wait months for a refund.
 
 Selling property in India as an NRI?
@@ -9386,6 +9460,13 @@ NRI Taxation
 # How NRIs Can Claim a TDS Refund on Property Sale in India
 
 July 11, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- Without a Form 128 (earlier Form 13) certificate, an NRI recovers excess TDS on a property sale only by filing an ITR for the year of sale.
+- Most NRIs file ITR-2; ITR-3 applies if there is also business or professional income in India.
+- Report the actual capital gain and claim the TDS that appears in Form 26AS / AIS. If the buyer has not filed the TDS return, the credit will not show.
+- The refund is paid only to a pre-validated Indian bank account.
 
 Because [TDS on an NRI's property sale](https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india) is deducted on the full sale consideration rather than the actual capital gain, most NRI sellers end up with far more tax withheld than they actually owe. If a Form 128 (earlier Form 13) lower deduction certificate wasn't obtained before the sale, the only way to recover the difference is by filing an Indian income tax return and claiming a refund. Here is exactly how that process works.
 
@@ -9611,6 +9692,13 @@ NRI Taxation
 
 July 11, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
+TL;DR
+
+- Sale proceeds must first be credited to the NRI's NRO account in India.
+- Settle the tax position first: correct TDS (ideally under a Form 128 certificate) or an ITR and refund.
+- File Form 145 (earlier 15CA) on the e-filing portal before the remittance; a CA certificate in Form 146 (earlier 15CB) is needed above Rs 5 lakh.
+- Remittances from the NRO account are capped at USD 1 million per financial year under FEMA.
+
 Selling the property is only half the process for an NRI. Getting the sale proceeds out of India legally requires clearing tax on the gain; through [TDS and, where applicable, an ITR refund](https://agrawalkhandelwal.com/blog/tds-on-nri-property-sale-india); and then following a specific FEMA-governed remittance process. Under the new Income Tax Act 2025, effective April 1, 2026, the forms involved changed. Here is the full sequence.
 
 Selling property in India as an NRI?
@@ -9703,6 +9791,13 @@ NRI Taxation
 
 July 11, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
+TL;DR
+
+- Inheriting property, or receiving it as a gift from a specified relative, is not taxed. Tax arises only when the NRI sells.
+- The cost of acquisition and holding period carry over from the previous owner, however far back the chain goes.
+- Because the original cost is often very low, the capital gain on sale can be large.
+- The buyer deducts TDS on the full sale price under Section 393(2) (earlier 195); the NRI settles the actual tax through an ITR.
+
 A large share of the property NRIs sell in India wasn't purchased by them directly; it was inherited from parents or grandparents, or received as a gift from a relative. The tax treatment on eventual sale follows a specific carryover rule that surprises many NRIs, and it directly affects how much TDS gets deducted and whether a Form 128 (earlier Form 13) certificate is worth pursuing.
 
 Selling property in India as an NRI?
@@ -9785,6 +9880,14 @@ Startup Compliance
 # FEMA Compliance for Indian Startups Raising Foreign Investment (2026 Guide)
 
 Published on June 08, 2026 • Updated September 29, 2026 • By [CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)
+
+TL;DR
+
+- Before accepting foreign money, confirm your sector is on the automatic route and within its FDI cap.
+- Allot shares within 60 days of receiving the funds, or refund the money.
+- File Form FC-GPR on the RBI FIRMS portal within 30 days of allotment.
+- File the annual FLA return by July 15 every year.
+- Missed filings are regularised by paying the RBI Late Submission Fee.
 
 Foreign investment is the moment most funded startups first encounter FEMA; the Foreign Exchange Management Act. Before the wire, it is an abstract regulatory framework. After the wire, it becomes a hard compliance clock: 60 days from receipt to allot shares, 30 days from allotment to file FC-GPR with RBI, and an annual return due every July 15.
 
@@ -9954,6 +10057,13 @@ Published on May 19, 2026 • By [CA Mehul Agrawal](https://agrawalkhandelwal.co
 Dubai consistently ranks among the top five destinations where Indian entrepreneurs register companies. The reasons are real: a 9% corporate tax rate (compared to 25-30% in India), no personal income tax, a central time zone that spans both India and Europe, and one of the world's most efficient company registration systems.
 
 But the process has several moving parts; choosing between Mainland, Free Zone, and Offshore structures; satisfying India's FEMA requirements; understanding the new UAE Corporate Tax; and setting up banking. This guide covers the full picture, with real costs in both AED and INR.
+
+TL;DR
+
+- Three structures: mainland (can trade anywhere in the UAE), free zone (100% ownership, mainly outside-UAE business) and offshore (holding only, no UAE trading).
+- UAE corporate tax is 9% on taxable income above AED 375,000; qualifying free zone income can be taxed at 0%.
+- An Indian resident investing in a Dubai company must follow India's Overseas Direct Investment rules under FEMA.
+- If the company is effectively run from India, it can be taxed in India as an Indian resident under the POEM test.
 
 ## Types of Dubai Company Structures
 
@@ -10146,6 +10256,13 @@ Published on May 08, 2026 • Updated September 29, 2026 • By [CA Mehul Agrawa
 Every week, founders and small business owners ask us the same question: “How do I register my company in India, and which structure should I choose?” It sounds simple. It isn't. The structure you pick on day one affects your ability to raise funding, your tax liability, your annual compliance burden, and how easy it is to bring in co-founders or exit years later.
 
 This guide covers everything you need to know: the three main options, how to choose between them, the step-by-step registration process, what it costs, and what mistakes to avoid.
+
+TL;DR
+
+- A private limited company is registered through the MCA SPICe+ form and typically takes 15-20 working days.
+- There is no minimum capital. MCA fees are nil up to Rs 15 lakh authorised capital; state stamp duty still applies.
+- You need at least 2 directors with digital signatures, and one director must have stayed in India for 182 days in the financial year.
+- Choose a private limited company if you plan to raise funding or issue ESOPs; an LLP suits bootstrapped professional firms.
 
 ## The Three Main Options
 
@@ -10368,6 +10485,13 @@ It's a fair question. The UAE's business-friendly reputation is well-earned, for
 
 Here's an honest breakdown.
 
+TL;DR
+
+- A UAE entity makes sense when there is real substance: non-India revenue, Gulf customers, sector regulation, or a genuine move to the UAE.
+- A UAE company that is managed from India can be treated as an Indian resident under the POEM test and taxed in India.
+- Transactions between your Indian and UAE entities must be at arm's length under transfer pricing rules.
+- Decide on commercial grounds first; the tax saving only holds when the substance is real.
+
 ## When a UAE Entity Actually Makes Sense
 
 There are genuine, legitimate use cases, but they require real substance, not just a registered address.
@@ -10461,57 +10585,95 @@ Source: https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025
 
 Tax Reform
 
-# Deciphering the New Income Tax Act & Rules 2025
+# Income Tax Act 2025: What Changed From April 1, 2026
 
-Published on March 20, 2026 • By Advisory Team
+Updated November 10, 2026 • By [CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)
 
-The Indian taxation landscape is witnessing one of its most significant shifts since 1961. The proposed \*\*New Income Tax Act 2025\*\* is not just a routine amendment but a comprehensive structural overhaul designed to simplify language, reduce litigation, and modernize compliance for a digital-first economy.
+TL;DR
 
-## 1. Convergence of Tax Regimes
+- The Income Tax Act 2025 replaced the 1961 Act on **April 1, 2026**. The Income-tax Rules, 2026 and new forms were notified on March 20, 2026.
+- Income of FY 2025-26 is still assessed under the 1961 Act. The new Act applies from **tax year 2026-27**.
+- The separate previous year and assessment year are replaced by a single **tax year**.
+- Tax rates did not change. Both the new and old regimes remain.
+- Most section and form numbers changed, so notices, TDS returns and audit reports now carry new numbers (tables below).
 
-One of the primary goals of the 2025 Act is to eliminate the complexity of maintaining dual tax regimes. The new Act moves closer to making the "New Tax Regime" the sole framework for individual taxpayers, gradually phasing out complex exemptions in favor of lower overall tax rates and higher standard deductions.
+In March 2026 we wrote about the new Act before it took effect. It is now in force, so this guide has been rewritten around what actually applies: the effective date, the transition rule for FY 2025-26, the new tax year, and the old-to-new numbers you will meet on notices and forms.
 
-## 2. Simplified Computational Rules
+## 1. Effective Date and Transition
 
-The new rules introduce a \*\*"Clean Slate"\*\* approach to business deductions. By standardizing depreciation rates and simplifying the definition of "allowable expenses," the government aims to reduce the friction between taxpayers and the department during assessments. Key changes include:
+The Income Tax Act 2025 came into force on April 1, 2026 and replaced the Income-tax Act, 1961. CBDT notified the Income-tax Rules, 2026, which replace the 1962 Rules, and the corresponding forms on March 20, 2026.
 
-- Standardized 15% depreciation for general plant and machinery.
-- Simplified carry-forward rules for startup losses during M&As.
-- Digitally-verified valuation rules for unlisted shares.
+The switch is not retrospective. Income earned from April 1, 2025 to March 31, 2026 is governed by the 1961 Act, and that return is filed under the old rules. Assessments, notices and appeals for earlier years continue to refer to the old sections. The new Act governs income from April 1, 2026 onwards.
 
-## 3. Real-Time Assessment & AI Integration
+## 2. Tax Year Replaces Previous Year and Assessment Year
 
-Under the new Rules, the "Faceless Assessment" system is being upgraded with AI-driven risk parameters. This means that tax scrutiny will now be highly targeted, focusing on high-value discrepancies identified through automated cross-referencing of GST, Banking, and ROC data.
+Under the 1961 Act, income of one previous year was taxed in the following assessment year, which confused many first-time filers and NRIs. The 2025 Act uses a single **tax year**, the financial year in which the income is earned. The first tax year is 2026-27 (April 1, 2026 to March 31, 2027).
 
-### Strategic Takeaway for Businesses
+## 3. What Did Not Change
 
-With the simplification of rules comes an increased responsibility for "Data Integrity." Companies must ensure their accounting systems are seamlessly integrated with tax portals, as the margin for manual error in filings has significantly narrowed.
+- **Rates and slabs.** Budget 2026 kept the new regime slabs, the Rs 12 lakh rebate and the Rs 75,000 standard deduction. See our [new tax regime guide for FY 2026-27](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26).
+- **Choice of regime.** The old regime with deductions is still available.
+- **Audit thresholds.** Tax audit applicability is unchanged; the section and the report form changed.
 
-## Conclusion
+## 4. Old vs New Section Numbers
 
-The 2025 Act represents a "Trust-based" taxation model. While it offers lower rates and fewer hurdles, it demands transparency. At \*\*Agrawal Khandelwal & Associates LLP\*\*, we are already assisting our clients in transitioning their financial planning to align with these new computational standards.
+The provisions you are most likely to meet, with numbers we have confirmed against more than one source:
+
+| 1961 Act | Income Tax Act 2025 |
+| --- | --- |
+| 44AB (tax audit) | Section 63 |
+| 44AA (books of account) | Section 62 |
+| 44AD / 44ADA / 44AE (presumptive tax) | Section 58 |
+| 80C | Section 123 |
+| 80D | Section 126 |
+| 87A (rebate) | Section 156 |
+| 147 / 148 (reassessment) | Sections 279 / 280 |
+| 192 (TDS on salary) | Section 392 |
+| 194C, 194J and other TDS | Section 393 |
+| 195 (TDS on payments to non-residents) | Section 393(2) |
+| 197 (lower deduction certificate) | Section 395 |
+
+## 5. Old vs New Form Numbers
+
+| Old form | New form |
+| --- | --- |
+| Form 13 (lower TDS certificate) | Form 128 |
+| Form 15CA / 15CB | Form 145 / 146 |
+| Form 16A | Form 131 |
+| Form 24Q / 26Q / 27Q | Form 138 / 140 / 144 |
+| Forms 3CA, 3CB, 3CD (tax audit) | Form 26 |
+
+The three tax audit forms are now one Form 26: Parts A and B carry the old Form 3CD particulars, and Part C carries the audit opinion. More detail is in our [tax audit report forms guide](https://agrawalkhandelwal.com/blog/tax-audit-report-forms-3ca-3cb-3cd-explained).
+
+### What to do now
+
+Check that your payroll, TDS and accounting software use the new section codes for payments made from April 1, 2026, and keep the old numbers for anything relating to FY 2025-26 or earlier. When a notice arrives, first check which Act it was issued under, since that decides the response timelines and forms.
 
 ## Frequently Asked Questions
 
-### What is the New Income Tax Act 2025?
+### When did the Income Tax Act 2025 come into force?
 
-A structural overhaul of India's income tax law aimed at simplifying language, reducing litigation, and modernizing compliance for a digital-first economy, while moving the New Tax Regime closer to becoming the primary framework for individual taxpayers.
+On April 1, 2026, replacing the Income-tax Act, 1961. The Income-tax Rules, 2026 and the new forms were notified by CBDT on March 20, 2026 and apply from the same date.
 
-### Does the new Act eliminate the old tax regime?
+### Which law applies to income earned in FY 2025-26?
 
-The Act moves toward making the New Tax Regime the sole framework for individual taxpayers, gradually phasing out complex exemptions in favour of lower overall tax rates and higher standard deductions, rather than abolishing the old regime immediately.
+The 1961 Act. Income earned from April 1, 2025 to March 31, 2026 is assessed under the old Act, and that return (assessment year 2026-27) is filed under the old rules. The 2025 Act applies from tax year 2026-27 onwards.
 
-### What changed in business computation rules?
+### What is a tax year under the new Act?
 
-Key changes include a standardized 15% depreciation rate for general plant and machinery, simplified carry-forward rules for startup losses during mergers and acquisitions, and digitally-verified valuation rules for unlisted shares.
+The 2025 Act replaces the separate previous year and assessment year with a single tax year. The first tax year is 2026-27, running from April 1, 2026 to March 31, 2027.
 
-### How does AI-driven assessment work under the new rules?
+### Did the new Act change the tax rates or abolish the old regime?
 
-The Faceless Assessment system is upgraded with AI-driven risk parameters, so tax scrutiny is now highly targeted, focusing on high-value discrepancies identified through automated cross-referencing of GST, banking, and ROC data.
+No. Budget 2026 kept the new regime slabs, the Rs 12 lakh rebate and the Rs 75,000 standard deduction unchanged, and the old regime is still available. The change is mainly in structure, language and numbering.
+
+### Why do section and form numbers look different on notices now?
+
+The provisions were renumbered. For example, 44AB (tax audit) is now Section 63, 87A (rebate) is Section 156, 80C is Section 123, 192 (TDS on salary) is Section 392, 195 is Section 393(2), Form 13 is Form 128, Form 27Q is Form 144, and Forms 3CA/3CB/3CD are now a single Form 26.
 
 ### Related Guides
 
-- [Understanding the New Tax Regime (FY 2025-26)](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
+- [New Tax Regime FY 2026-27: Slabs and Rebate](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
 - [Transfer Pricing Documentation Checklist (2026)](https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india)
 - [Income Tax Estimator Tool](https://agrawalkhandelwal.com/tax-calculator)
 
@@ -10521,7 +10683,7 @@ The Faceless Assessment system is upgraded with AI-driven risk parameters, so ta
 
 ### More Guides on This Topic
 
-- [Understanding the New Tax Regime (FY 2025-26)](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
+- [New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
 - [ITR Due Date for Audit Cases AY 2026-27: Now November 21](https://agrawalkhandelwal.com/blog/itr-due-date-audit-cases-ay-2026-27-extended)
 - [TCS on Sale of Goods: What Happened to Section 206C(1H)](https://agrawalkhandelwal.com/blog/tcs-sale-of-goods-section-206c1h-repealed)
 
@@ -10547,7 +10709,13 @@ International Tax
 
 Published on March 08, 2026 • By International Tax Desk
 
-For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of \*\*9%\*\* marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change:it’s a global structural challenge.
+For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of **9%** marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change:it’s a global structural challenge.
+
+TL;DR
+
+- UAE corporate tax is 9% on taxable income above AED 375,000, so a UAE subsidiary is no longer automatically tax-free.
+- UAE entities must keep proper accounts and follow transfer pricing rules for dealings with the Indian parent.
+- The India-UAE DTAA can avoid double tax, but needs a Tax Residency Certificate and a clear place of effective management.
 
 ## 1. The End of the "Tax-Free" Subsidiary
 
@@ -10555,7 +10723,7 @@ Indian parent companies often routed global trade through UAE-based Special Purp
 
 ## 2. Leverage the India-UAE DTAA
 
-The silver lining for Indian firms is the robust \*\*Double Taxation Avoidance Agreement (DTAA)\*\* between India and the UAE. Indian businesses can potentially claim "Tax Credits" in India for the corporate tax paid in the UAE, preventing the same income from being taxed twice. However, this requires:
+The silver lining for Indian firms is the robust **Double Taxation Avoidance Agreement (DTAA)** between India and the UAE. Indian businesses can potentially claim "Tax Credits" in India for the corporate tax paid in the UAE, preventing the same income from being taxed twice. However, this requires:
 
 - Correct determination of "Place of Effective Management" (POEM).
 - Obtaining a valid Tax Residency Certificate (TRC).
@@ -10563,7 +10731,7 @@ The silver lining for Indian firms is the robust \*\*Double Taxation Avoidance A
 
 ## 3. Transfer Pricing: The New Compliance Pillar
 
-Perhaps the most critical impact is the mandatory application of \*\*Transfer Pricing (TP)\*\* rules. Any transaction between an Indian parent and its UAE subsidiary (management fees, royalties, or goods trade) must now be justified at "Market Value." Failure to do so could lead to heavy penalties both from the UAE’s Federal Tax Authority (FTA) and the Indian Income Tax Department.
+Perhaps the most critical impact is the mandatory application of **Transfer Pricing (TP)** rules. Any transaction between an Indian parent and its UAE subsidiary (management fees, royalties, or goods trade) must now be justified at "Market Value." Failure to do so could lead to heavy penalties both from the UAE’s Federal Tax Authority (FTA) and the Indian Income Tax Department.
 
 ### Key Consideration: Free Zone Entities
 
@@ -10753,6 +10921,13 @@ International Tax
 
 March 05, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
+TL;DR
+
+- A DTAA decides which country can tax each type of income and often caps withholding tax on dividends, interest, royalties and fees.
+- To use treaty rates, a non-resident needs a Tax Residency Certificate and Form 10F.
+- Residents claiming credit for foreign tax file Form 67 with their return.
+- An office, dependent agent or long project abroad can create a permanent establishment and make business profits taxable there.
+
 For a country-by-country breakdown of treaty rates for NRIs, see our [India DTAA Guide by Country](https://agrawalkhandelwal.com/blog/dtaa-guide-nri-country-wise) (US, UK, UAE, Canada, Australia, Singapore).
 
 Double Taxation Avoidance Agreements (DTAAs) are the foundation of international business planning. India has signed DTAAs with over 90 countries, including the US, UK, UAE, Singapore, Germany, and Australia. For Indian businesses with cross-border operations (and for foreign companies operating in India) understanding these treaties is the difference between paying tax once and paying it twice.
@@ -10856,9 +11031,19 @@ Source: https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26
 
 Tax Planning
 
-# Understanding the New Tax Regime
+# New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New
 
-March 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- Budget 2026 did **not** change the new regime: FY 2026-27 uses the same slabs and rebate as FY 2025-26.
+- Zero tax on taxable income up to Rs 12 lakh because of the rebate (Section 87A, now Section 156 of the Income Tax Act 2025); up to Rs 12.75 lakh of salary after the Rs 75,000 standard deduction.
+- Slabs: nil to Rs 4 lakh, then 5%, 10%, 15%, 20% and 25% in Rs 4 lakh steps, and 30% above Rs 24 lakh, plus 4% cess.
+- The rebate does not cover special-rate income such as equity LTCG at 12.5%.
+- The old regime still wins only with large deductions, roughly Rs 3.75-4 lakh or more (home loan interest, 80C, 80D, HRA).
+
+**Update for FY 2026-27 (November 2026):** Budget 2026 kept the new regime slabs, the Rs 12 lakh rebate and the Rs 75,000 standard deduction unchanged, so everything below applies to both FY 2025-26 (the return you file in 2026) and FY 2026-27 (the current year, filed in 2027). From April 1, 2026 the provisions sit in the Income Tax Act 2025; the 87A rebate is now Section 156. The rates did not change with the new Act.
 
 These slabs sit within the broader structural overhaul brought in by the [new Income Tax Act 2025](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025), which renumbers and simplifies the underlying law even where the FY 2025-26 rates below stay the same.
 
@@ -10866,7 +11051,7 @@ From FY 2025-26 (assessment year 2026-27), the new tax regime is not just the de
 
 Here is a clear breakdown of how the new regime works this year, and how to decide whether it is right for you.
 
-## The FY 2025-26 New Regime Slabs
+## New Regime Slabs for FY 2025-26 and FY 2026-27
 
 The new regime applies the following slabs to your taxable income (after the standard deduction):
 
@@ -10904,13 +11089,17 @@ The old regime can still win if you have large, genuine deductions. As a rough g
 
 ## Practical Takeaway
 
-For the majority of salaried Indians, the FY 2025-26 new regime is now the simpler and cheaper option, the Rs 12 lakh rebate threshold is a genuine relief for the middle class. The taxpayers who should pause and run the comparison are those with substantial home loan interest and fully utilised 80C, 80D, and HRA, where the old regime may still edge ahead.
+For the majority of salaried Indians, the new regime (FY 2025-26 and FY 2026-27) is now the simpler and cheaper option, the Rs 12 lakh rebate threshold is a genuine relief for the middle class. The taxpayers who should pause and run the comparison are those with substantial home loan interest and fully utilised 80C, 80D, and HRA, where the old regime may still edge ahead.
 
 If your situation is borderline, or if you have capital gains, multiple income sources, or business income, the regime choice interacts with how you structure your finances. That is exactly the kind of planning where a short conversation with a CA pays for itself, getting the regime choice and the timing right can save more than any single deduction.
 
 ## Frequently Asked Questions
 
-### What are the FY 2025-26 New Tax Regime slabs?
+### Did Budget 2026 change the new tax regime slabs for FY 2026-27?
+
+No. Budget 2026 kept the new regime slabs, the Rs 12 lakh rebate and the Rs 75,000 standard deduction unchanged, so FY 2026-27 uses the same structure as FY 2025-26. From April 1, 2026 these provisions sit in the Income Tax Act 2025, where the 87A rebate is Section 156.
+
+### What are the New Tax Regime slabs for FY 2025-26 and FY 2026-27?
 
 Nil up to Rs 4,00,000; 5% from Rs 4,00,001-8,00,000; 10% from Rs 8,00,001-12,00,000; 15% from Rs 12,00,001-16,00,000; 20% from Rs 16,00,001-20,00,000; 25% from Rs 20,00,001-24,00,000; and 30% above Rs 24,00,000, plus 4% Health and Education Cess.
 
@@ -10928,7 +11117,7 @@ The old regime can still win if your combined deductions (Section 80C, 80D, home
 
 ### Reviewed By
 
-[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal), Chartered Accountant (ICAI), UAE Corporate Taxation certified. Last reviewed March 18, 2026.
+[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal), Chartered Accountant (ICAI), UAE Corporate Taxation certified. Last reviewed November 10, 2026.
 
 ### Sources & References
 
@@ -12705,8 +12894,8 @@ This is closely connected to the residency and disclosure questions returning NR
 
 ### More Guides on This Topic
 
-- [Deciphering the New Income Tax Act & Rules 2025](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
-- [Understanding the New Tax Regime (FY 2025-26)](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
+- [Income Tax Act 2025: What Changed From April 1, 2026](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
+- [New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
 - [ITR Due Date for Audit Cases AY 2026-27: Now November 21](https://agrawalkhandelwal.com/blog/itr-due-date-audit-cases-ay-2026-27-extended)
 
 Need this handled for you? See our [income tax and compliance services](https://agrawalkhandelwal.com/services#taxation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
@@ -19563,7 +19752,7 @@ Need help setting up a TDS deduction and filing process for contractor payments,
 
 - [Section 194Q: TDS on Purchase of Goods Above Rs 50 Lakh](https://agrawalkhandelwal.com/blog/section-194q-tds-purchase-of-goods)
 - [FAST-DS 2026: Foreign Assets Disclosure Scheme Explained](https://agrawalkhandelwal.com/blog/fast-ds-2026-foreign-assets-disclosure-scheme)
-- [Deciphering the New Income Tax Act & Rules 2025](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
+- [Income Tax Act 2025: What Changed From April 1, 2026](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
 
 Need this handled for you? See our [income tax and compliance services](https://agrawalkhandelwal.com/services#taxation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -19666,8 +19855,8 @@ Need help setting up Section 194Q tracking across your vendor base, or reviewing
 ### More Guides on This Topic
 
 - [FAST-DS 2026: Foreign Assets Disclosure Scheme Explained](https://agrawalkhandelwal.com/blog/fast-ds-2026-foreign-assets-disclosure-scheme)
-- [Deciphering the New Income Tax Act & Rules 2025](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
-- [Understanding the New Tax Regime (FY 2025-26)](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
+- [Income Tax Act 2025: What Changed From April 1, 2026](https://agrawalkhandelwal.com/blog/new-income-tax-act-rules-2025)
+- [New Tax Regime FY 2026-27: Slabs, Rs 12 Lakh Rebate & Old vs New](https://agrawalkhandelwal.com/blog/understanding-new-tax-regime-2025-26)
 
 Need this handled for you? See our [income tax and compliance services](https://agrawalkhandelwal.com/services#taxation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -25343,6 +25532,7 @@ Not materially, once 12A/12AB registration is in place. The Section 11/12 exempt
 
 ### Related Guides
 
+- [CSR Under Section 135: Which Companies Must Spend and How](https://agrawalkhandelwal.com/blog/corporate-social-responsibility-csr-compliance-and-applicability)
 - [Taxation of Charitable Trusts: Exemptions & Compliance](https://agrawalkhandelwal.com/blog/taxation-of-charitable-trusts-exemptions-and-compliance)
 - [FCRA Registration: Foreign Contribution Compliance for NGOs](https://agrawalkhandelwal.com/blog/fcra-registration-foreign-contribution-compliance-for-ngos)
 - [Annual ROC Filing: AOC-4, MGT-7 & DIR-3 KYC](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc)
@@ -25648,6 +25838,7 @@ Several of the provisions referenced here have been renumbered under the Income 
 
 ### Related Guides
 
+- [CSR Under Section 135: Which Companies Must Spend and How](https://agrawalkhandelwal.com/blog/corporate-social-responsibility-csr-compliance-and-applicability)
 - [CSR Fund Utilisation: Compliance for Receiving Trusts](https://agrawalkhandelwal.com/blog/csr-fund-utilisation-compliance-for-receiving-trusts)
 - [Political Party Donations & Section 80GGC Deduction](https://agrawalkhandelwal.com/blog/political-party-donations-and-section-80ggc-deduction)
 - [Income Tax Notices Explained: Section 143(1), 143(2) & 148](https://agrawalkhandelwal.com/blog/income-tax-notices-explained-143-1-143-2-148)
@@ -25749,6 +25940,7 @@ There is no single government-prescribed format binding on every trust; the form
 
 ### Related Guides
 
+- [CSR Under Section 135: Which Companies Must Spend and How](https://agrawalkhandelwal.com/blog/corporate-social-responsibility-csr-compliance-and-applicability)
 - [Annual Compliance Calendar for NGOs and Trusts in India](https://agrawalkhandelwal.com/blog/annual-compliance-calendar-for-ngos-and-trusts-in-india)
 - [Political Party Donations & Section 80GGC Deduction](https://agrawalkhandelwal.com/blog/political-party-donations-and-section-80ggc-deduction)
 - [Startup Compliance Calendar: Year 1-3](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)

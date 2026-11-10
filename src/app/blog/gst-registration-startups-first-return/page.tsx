@@ -7,7 +7,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'GST Registration for Startups' },
+  title: { absolute: 'GST Registration for Startups: Threshold, Process & First Return' },
   description: 'When GST registration becomes mandatory for a startup, the registration process, and a walkthrough of your first GSTR-1 and GSTR-3B returns.',
   keywords: [
     'GST registration startup India', 'GST threshold startup', 'first GST return startup',

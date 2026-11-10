@@ -154,6 +154,16 @@ export default function Form13NRIBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>TDS on an NRI property sale is charged on the full sale price, not the gain, so it is often several times the real tax.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Form 13, now Form 128 under Section 395 (earlier Section 197), asks the Assessing Officer to certify a lower or nil TDS rate based on the actual gain.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Apply well before the sale. The buyer then deducts at the certified rate and is protected.</li>
+                    <li style={{ marginBottom: 0 }}>Without a certificate, the excess TDS comes back only through an ITR refund after the year ends.</li>
+                  </ul>
+                </div>
+
                 <p>When an NRI sells property in India, <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS under Section 195</Link> is deducted on the entire sale consideration, not the actual profit. For most NRI sellers, this means the buyer withholds far more than the real tax bill; often 5 to 10 times more. Form 13 is the mechanism that fixes this before the sale closes, instead of forcing the NRI to wait months for a refund.</p>
 
                 <ServiceOffer variant="nri-seller" />

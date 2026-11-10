@@ -30,6 +30,7 @@ const articleLd = buildArticleLd({
   headline: 'DPIIT Registration for Startups (2026)',
   description: 'DPIIT recognition process, eligibility, 80-IAC tax holiday requirements, and IMB certification; a complete guide for Indian startup founders.',
   datePublished: '2026-07-25',
+  dateModified: '2026-11-10',
   slug: 'dpiit-registration-startups-india-80iac',
 })
 
@@ -50,7 +51,7 @@ const faqLd = {
       name: 'What are the eligibility criteria for DPIIT recognition in India in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'To qualify for DPIIT recognition, the entity must be incorporated as a Private Limited Company, Limited Liability Partnership, or Registered Partnership Firm in India; incorporated not more than 10 years ago from the date of incorporation; have an annual turnover not exceeding ₹100 crore in any preceding financial year; and be working towards innovation, improvement, or development of a product, process, or service, or have a scalable business model with high potential for employment generation or wealth creation. Service companies, technology platforms, manufacturing startups, and D2C brands can all qualify; the definition is broad.',
+        text: 'To qualify for DPIIT recognition, the entity must be incorporated as a Private Limited Company, Limited Liability Partnership, or Registered Partnership Firm in India; incorporated not more than 10 years ago from the date of incorporation; have an annual turnover not exceeding ₹200 crore in any financial year since incorporation (the limit was raised from ₹100 crore on February 4, 2026; deep tech startups get ₹300 crore and up to 20 years); and be working towards innovation, improvement, or development of a product, process, or service, or have a scalable business model with high potential for employment generation or wealth creation. Service companies, technology platforms, manufacturing startups, and D2C brands can all qualify; the definition is broad.',
       },
     },
     {
@@ -66,7 +67,7 @@ const faqLd = {
       name: 'Is angel tax still applicable to Indian startups receiving investment in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. The Finance Act 2025 abolished Section 56(2)(viib) of the Income Tax Act entirely, which means the angel tax provision no longer exists for any company, whether DPIIT-recognized or not. Previously, investments received at a premium over fair market value by unlisted companies were treated as income under Section 56(2)(viib). DPIIT-recognized startups had a specific exemption process, but that exemption and the underlying provision are both now removed. Investments received at any valuation by Indian startups from resident or non-resident investors are no longer subject to angel tax under the Income Tax Act.',
+        text: 'No. The Finance (No. 2) Act, 2024 abolished Section 56(2)(viib), with effect from April 1, 2024, of the Income Tax Act entirely, which means the angel tax provision no longer exists for any company, whether DPIIT-recognized or not. Previously, investments received at a premium over fair market value by unlisted companies were treated as income under Section 56(2)(viib). DPIIT-recognized startups had a specific exemption process, but that exemption and the underlying provision are both now removed. Investments received at any valuation by Indian startups from resident or non-resident investors are no longer subject to angel tax under the Income Tax Act.',
       },
     },
   ],
@@ -91,7 +92,7 @@ export default function DPIITRegistrationBlog() {
                 DPIIT Registration for Startups: Eligibility, Process &amp; 80-IAC Tax Benefit (2026)
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>July 25, 2026</span>
+                <span>Updated November 10, 2026</span>
                 <span aria-hidden>•</span>
                 <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>•</span>
@@ -99,6 +100,17 @@ export default function DPIITRegistrationBlog() {
               </div>
 
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+                <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                  <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                    <li style={{ marginBottom: '0.4rem' }}>DPIIT recognition and the Section 80-IAC tax holiday are two separate approvals. Recognition alone gives no tax holiday.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Eligibility: private limited company, LLP or registered partnership (cooperatives added in February 2026), not older than 10 years, with turnover never above Rs 200 crore.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>The turnover cap was doubled from Rs 100 crore by Notification G.S.R. 108(E) of February 4, 2026, which also created a deep tech category (20 years, Rs 300 crore).</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Section 80-IAC gives a 100% deduction of profits for any 3 consecutive years out of the first 10, but needs a separate Inter-Ministerial Board certificate.</li>
+                    <li style={{ marginBottom: 0 }}>Angel tax under Section 56(2)(viib) was abolished for all companies with effect from April 1, 2024.</li>
+                  </ul>
+                </div>
+
                 <p>DPIIT recognition is one of the most misunderstood government registrations for Indian startups. Founders pursue it believing it automatically delivers a three-year tax holiday. It does not. The tax holiday; Section 80-IAC; is a separate application to a different body with stricter criteria, and most DPIIT-recognized startups never file for it. This article clarifies what DPIIT recognition actually gives you, what 80-IAC requires, and how to structure the applications in the right order.</p>
 
                 <h2>What is DPIIT Recognition?</h2>
@@ -109,7 +121,7 @@ export default function DPIITRegistrationBlog() {
                 <ul>
                   <li><strong>Entity type:</strong> Incorporated as a Private Limited Company (under the Companies Act 2013), Limited Liability Partnership, or Registered Partnership Firm in India. One-Person Companies are not eligible.</li>
                   <li><strong>Age limit:</strong> Not more than <strong>10 years</strong> from the date of incorporation or registration. This is the most commonly missed disqualifier; founders who have been running a business for 10+ years before formalizing it under a new entity often miscount from the wrong date.</li>
-                  <li><strong>Revenue cap:</strong> Annual turnover must not have exceeded ₹100 crore in any previous financial year. Once crossed, the company ceases to be a startup and loses recognition benefits going forward.</li>
+                  <li><strong>Revenue cap:</strong> Annual turnover must not have exceeded ₹200 crore in any financial year since incorporation (raised from ₹100 crore by DPIIT Notification G.S.R. 108(E) dated February 4, 2026; deep tech startups get a ₹300 crore cap and up to 20 years). Once crossed, the company ceases to be a startup and loses recognition benefits going forward.</li>
                   <li><strong>Innovation criterion:</strong> The business must be working towards innovation, improvement, or development of a product, process, or service; or have a scalable business model with high potential for employment generation or wealth creation. This is self-declared in the application; DPIIT does not independently verify it at recognition stage.</li>
                 </ul>
 
@@ -140,7 +152,7 @@ export default function DPIITRegistrationBlog() {
                   <li><strong>Patent fee rebate:</strong> 80% rebate on patent filing fees. For technology startups filing multiple patents, this saves lakhs.</li>
                   <li><strong>Public procurement preference:</strong> Exemption from the prior experience and turnover requirements that typically disqualify startups from government tenders. Startups can bid on central government contracts on equal footing with established vendors.</li>
                   <li><strong>Faster insolvency resolution:</strong> 90-day winding-up process under the Insolvency and Bankruptcy Code, compared to 180+ days for regular companies. Provides a faster exit for startups that do not work out.</li>
-                  <li><strong>Angel tax abolished (Finance Act 2025):</strong> Section 56(2)(viib) (which previously taxed investments received at a premium over fair market value as income) was entirely removed by Finance Act 2025. DPIIT-recognized startups previously needed a specific exemption under this provision; that provision and its exemptions no longer exist.</li>
+                  <li><strong>Angel tax abolished (Finance (No. 2) Act, 2024):</strong> Section 56(2)(viib) (which previously taxed investments received at a premium over fair market value as income) was removed for all companies with effect from April 1, 2024 by the Finance (No. 2) Act, 2024. DPIIT-recognized startups previously needed a specific exemption under this provision; that provision and its exemptions no longer exist.</li>
                 </ul>
 
                 <h2>The Right Sequencing</h2>

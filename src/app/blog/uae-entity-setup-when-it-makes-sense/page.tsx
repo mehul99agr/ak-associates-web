@@ -74,6 +74,16 @@ export default function UAEEntitySetupBlog() {
               Here&apos;s an honest breakdown.
             </p>
 
+            <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+              <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                <li style={{ marginBottom: '0.4rem' }}>A UAE entity makes sense when there is real substance: non-India revenue, Gulf customers, sector regulation, or a genuine move to the UAE.</li>
+                <li style={{ marginBottom: '0.4rem' }}>A UAE company that is managed from India can be treated as an Indian resident under the POEM test and taxed in India.</li>
+                <li style={{ marginBottom: '0.4rem' }}>Transactions between your Indian and UAE entities must be at arm&apos;s length under transfer pricing rules.</li>
+                <li style={{ marginBottom: 0 }}>Decide on commercial grounds first; the tax saving only holds when the substance is real.</li>
+              </ul>
+            </div>
+
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>When a UAE Entity Actually Makes Sense</h2>
 
             <p style={{ marginBottom: '1rem' }}>There are genuine, legitimate use cases, but they require real substance, not just a registered address.</p>

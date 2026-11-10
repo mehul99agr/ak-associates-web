@@ -9,10 +9,13 @@ const bookingLink = '/consult'
 const formatINR = (n: number) => n.toLocaleString('en-IN')
 const parseNum = (s: string) => Number(s.replace(/[^0-9]/g, '')) || 0
 
-function calcNew(gross: number, fy: '24-25' | '25-26'): RegimeResult {
+// FY 2026-27 uses the same new-regime slabs and Rs 12 lakh rebate as FY 2025-26 (Budget 2026 made no change).
+type FY = '24-25' | '25-26' | '26-27'
+
+function calcNew(gross: number, fy: FY): RegimeResult {
   const taxable = Math.max(0, gross - 75000)
   let tax = 0
-  if (fy === '25-26') {
+  if (fy !== '24-25') {
     if (taxable <= 400000) tax = 0
     else if (taxable <= 800000) tax = (taxable - 400000) * 0.05
     else if (taxable <= 1200000) tax = 20000 + (taxable - 800000) * 0.10
@@ -29,7 +32,7 @@ function calcNew(gross: number, fy: '24-25' | '25-26'): RegimeResult {
     else tax = 140000 + (taxable - 1500000) * 0.30
   }
   let rebate = 0
-  const rebateCap = fy === '25-26' ? 1200000 : 700000
+  const rebateCap = fy !== '24-25' ? 1200000 : 700000
   if (taxable <= rebateCap) { rebate = tax; tax = 0 }
   const cess = tax * 0.04
   return { taxable, tax, rebate, cess, total: Math.round(tax + cess) }
@@ -51,7 +54,7 @@ function calcOld(gross: number, deductions: number): RegimeResult {
 export default function TaxCalculator() {
   const [income, setIncome] = useState<number>(0)
   const [deductions, setDeductions] = useState<number>(0)
-  const [fy, setFy] = useState<'24-25' | '25-26'>('25-26')
+  const [fy, setFy] = useState<FY>('26-27')
   const [result, setResult] = useState<{ newR: RegimeResult; oldR: RegimeResult } | null>(null)
 
   const calculate = () => {
@@ -68,7 +71,7 @@ export default function TaxCalculator() {
           <h4 className="section-badge">Tax Tools</h4>
           <h1 className="section-title">Income Tax Estimator</h1>
           <p style={{ color: 'var(--text-light)', fontSize: '1.1rem' }}>
-            Compare the Old and New regimes side by side and see which one saves you more, based on the latest Union Budget {fy === '25-26' ? '2025' : '2024'} slabs.
+            Compare the Old and New regimes side by side and see which one saves you more, based on the {fy === '26-27' ? 'Budget 2026 slabs (unchanged from 2025)' : `Union Budget ${fy === '25-26' ? '2025' : '2024'} slabs`}.
           </p>
         </div>
 
@@ -92,10 +95,11 @@ export default function TaxCalculator() {
               <select
                 id="fy"
                 value={fy}
-                onChange={(e) => setFy(e.target.value as '24-25' | '25-26')}
+                onChange={(e) => setFy(e.target.value as FY)}
                 aria-label="Select Financial Year"
                 style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '1rem', background: 'var(--bg-card)', color: 'var(--text-main)', fontWeight: 600 }}
               >
+                <option value="26-27">FY 2026-27 (tax year 2026-27)</option>
                 <option value="25-26">FY 2025-26 (AY 2026-27)</option>
                 <option value="24-25">FY 2024-25 (AY 2025-26)</option>
               </select>

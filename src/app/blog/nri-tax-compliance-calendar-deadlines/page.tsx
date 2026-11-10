@@ -44,6 +44,16 @@ export default function NRIComplianceCalendarBlog() {
               <span>Published August 14, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
+              <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
+                <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.4rem' }}>Advance tax for FY 2026-27 falls on June 15, September 15 and December 15, 2026 and March 15, 2027, but only matters for income not already covered by TDS.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>The ITR for FY 2026-27 is due July 31, 2027 for non-audit cases; the belated return deadline is December 31, 2027.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Buyers and tenants who deduct TDS on payments to NRIs file Form 144 (earlier 27Q) every quarter and issue Form 131 (earlier 16A).</li>
+                  <li style={{ marginBottom: 0 }}>File Form 145 (earlier 15CA) before any taxable remittance abroad, with a CA certificate in Form 146 (earlier 15CB) above Rs 5 lakh.</li>
+                </ul>
+              </div>
+
               <p>Missing a tax deadline as an NRI does not just mean a late fee. It can mean losing the right to carry forward losses, paying interest on tax you did not know you owed, or having your <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriation held up</Link> because Form 145/146 was not filed in time. Here is every deadline that matters for NRIs in FY 2026-27.</p>
 
               <ServiceOffer variant="nri-itr" />
