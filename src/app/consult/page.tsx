@@ -1,17 +1,17 @@
 import type { Metadata } from 'next'
 import TrackedLink from '../TrackedLink'
 import ConsultCheckout from './ConsultCheckout'
-import { CONSULT_PRODUCTS } from '@/lib/consult'
+import { CONSULT_OFFER } from '@/lib/consult'
 import { OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Book a Consultation',
-  description: `Book a paid consultation call (₹${CONSULT_PRODUCTS.call.price}, adjusted against fees) or get our WhatsApp number (₹${CONSULT_PRODUCTS.whatsapp.price}). Email is always free.`,
+  description: `Book a ${CONSULT_OFFER.minutes}-minute call with a partner for ₹${CONSULT_OFFER.price} (adjusted against fees); you also get their WhatsApp number. Email is always free.`,
   alternates: { canonical: 'https://agrawalkhandelwal.com/consult' },
   openGraph: {
     title: 'Book a Consultation | Agrawal Khandelwal & Associates LLP',
-    description: 'Book a consultation call with a partner or message us on WhatsApp. Email is always free.',
+    description: 'Book a 30-minute consultation call with a partner. Email is always free.',
     url: 'https://agrawalkhandelwal.com/consult',
     images: OG_IMAGES,
   },
@@ -53,7 +53,7 @@ export default function Consult() {
               <h2 style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }} id="refunds">Payments, refunds and cancellations</h2>
               <p>Payments are processed by Razorpay. We do not see or store your card or UPI details.</p>
               <p>If we cancel or cannot honour a booked call, the call fee is refunded in full to the original payment method. If you need to move your slot, reply to the calendar invite at least 24 hours before the call. Calls missed without notice are not refunded.</p>
-              <p>The WhatsApp access fee is not refundable once the number has been shown. If a payment is deducted but the details do not appear, email {OFFICES.nashik.email} with your payment ID and we will send them or refund you.</p>
+              <p>If a payment is deducted but the calendar link and WhatsApp number do not appear, email {OFFICES.nashik.email} with your payment ID and we will send them or refund you.</p>
             </div>
           </div>
         </div>

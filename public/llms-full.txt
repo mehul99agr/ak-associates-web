@@ -4136,29 +4136,17 @@ A small fee keeps our calendar for people who are ready to work on their matter.
 
 ## 1. Who would you like to talk to?
 
-## 2. Choose how to reach them
+## 2. Book your call
 
 Pick a partner above to continue.
 
-### Book a consultation call
+### 30-minute consultation call
 
-₹499
+₹999
 
-Pick a slot on the partner's calendar for a call.
-
-- Choose your own time slot right after payment
+- Pick your slot on the partner's calendar right after payment
+- You also get the partner's WhatsApp number to send documents
 - Fee is adjusted against our professional fee if you engage us
-- Bring your documents and questions to the call
-
-### Get the WhatsApp number
-
-₹199
-
-Message the partner directly on WhatsApp.
-
-- Number shown right after payment
-- Good for short questions and sharing documents
-- Replies within one business day
 
 ## Prefer email? It's free.
 
@@ -4172,7 +4160,7 @@ Payments are processed by Razorpay. We do not see or store your card or UPI deta
 
 If we cancel or cannot honour a booked call, the call fee is refunded in full to the original payment method. If you need to move your slot, reply to the calendar invite at least 24 hours before the call. Calls missed without notice are not refunded.
 
-The WhatsApp access fee is not refundable once the number has been shown. If a payment is deducted but the details do not appear, email mehul@agrawalkhandelwal.com with your payment ID and we will send them or refund you.
+If a payment is deducted but the calendar link and WhatsApp number do not appear, email mehul@agrawalkhandelwal.com with your payment ID and we will send them or refund you.
 
 ---
 

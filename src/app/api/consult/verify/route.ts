@@ -1,13 +1,13 @@
 import { createHmac, timingSafeEqual } from 'crypto'
 import { NextResponse } from 'next/server'
-import { CONSULT_PARTNERS, isConsultPartner, isConsultProduct } from '@/lib/consult'
+import { CONSULT_OFFER, CONSULT_PARTNERS, CONSULT_PRODUCT_ID, isConsultPartner } from '@/lib/consult'
 
 export const runtime = 'nodejs'
 
 // Checks the Razorpay signature for a completed payment and, only if it is
-// valid, returns the calendar link or WhatsApp number for the partner and product
-// the order was created for. Both are read from the order on Razorpay's side, so
-// a cheaper order cannot be used to unlock a dearer option or another partner.
+// valid, returns BOTH the calendar link and the WhatsApp number for the partner the
+// order was created for. Partner, product and amount are read from the order on
+// Razorpay's side, so an older or cheaper order cannot unlock them.
 export async function POST(req: Request) {
   const keyId = process.env.RAZORPAY_KEY_ID
   const keySecret = process.env.RAZORPAY_KEY_SECRET
@@ -41,26 +41,25 @@ export async function POST(req: Request) {
   const order = await res.json()
   const product = order?.notes?.product
   const partner = order?.notes?.partner
-  if (!isConsultProduct(product) || !isConsultPartner(partner)) {
+  if (product !== CONSULT_PRODUCT_ID || order?.amount !== CONSULT_OFFER.price * 100 || !isConsultPartner(partner)) {
     return NextResponse.json({ error: 'Payment could not be verified.' }, { status: 400 })
   }
 
   const suffix = CONSULT_PARTNERS[partner].envSuffix
-  if (product === 'call') {
-    const bookingUrl = process.env[`CONSULT_BOOKING_URL_${suffix}`]
-    if (!bookingUrl) return NextResponse.json({ error: 'Booking link is not configured. Please email us.' }, { status: 503 })
-    return NextResponse.json({ partner, product, bookingUrl })
-  }
-
+  const bookingUrl = process.env[`CONSULT_BOOKING_URL_${suffix}`] || null
   const number = (process.env[`CONSULT_WHATSAPP_NUMBER_${suffix}`] || '').replace(/\D/g, '')
-  if (!number) return NextResponse.json({ error: 'WhatsApp number is not configured. Please email us.' }, { status: 503 })
+  if (!bookingUrl && !number) {
+    return NextResponse.json({ error: 'Contact details are not configured. Please email us.' }, { status: 503 })
+  }
   const display = number.length === 12 && number.startsWith('91')
     ? `+91 ${number.slice(2, 7)} ${number.slice(7)}`
     : `+${number}`
   return NextResponse.json({
     partner,
-    product,
-    whatsappNumber: display,
-    whatsappUrl: `https://wa.me/${number}?text=${encodeURIComponent(`Hi, I paid for WhatsApp access on your website (payment ${paymentId}).`)}`,
+    bookingUrl,
+    whatsappNumber: number ? display : null,
+    whatsappUrl: number
+      ? `https://wa.me/${number}?text=${encodeURIComponent(`Hi, I booked a consultation call on your website (payment ${paymentId}).`)}`
+      : null,
   })
 }

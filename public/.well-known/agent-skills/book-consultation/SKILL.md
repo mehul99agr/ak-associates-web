@@ -5,7 +5,7 @@ description: Book a consultation with Agrawal Khandelwal & Associates LLP, a Cha
 
 # Book a consultation with Agrawal Khandelwal & Associates LLP
 
-Email is free. Calls and WhatsApp are paid and unlocked on the website.
+Email is free. A paid 30-minute call unlocks both the partner's calendar and WhatsApp number.
 
 ## Ways to reach the firm
 
@@ -14,12 +14,12 @@ Email is free. Calls and WhatsApp are paid and unlocked on the website.
      Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011.
    - Sillod office (CA Rupesh Khandelwal): rupesh@agrawalkhandelwal.com.
      Near Datta Mandir, Tilak Nagar, Sillod - 431112.
-2. **Consultation call (paid):** https://agrawalkhandelwal.com/consult - the user first chooses a
-   partner (CA Mehul Agrawal or CA Rupesh Khandelwal), pays online via Razorpay, and then picks a
-   slot on that partner's calendar. Add `?partner=mehul` or `?partner=rupesh` to preselect one. The fee is adjusted against the firm's professional fee
-   if the user engages the firm. The page shows the current price.
-3. **WhatsApp (paid):** https://agrawalkhandelwal.com/consult?for=whatsapp - the chosen partner's number
-   is shown after payment.
+2. **30-minute consultation call (paid):** https://agrawalkhandelwal.com/consult - the user first
+   chooses a partner (CA Mehul Agrawal or CA Rupesh Khandelwal) and pays online via Razorpay. After
+   payment the page shows a link to pick a slot on that partner's calendar and the partner's WhatsApp
+   number. Add `?partner=mehul` or `?partner=rupesh` to preselect one. The fee is adjusted against the
+   firm's professional fee if the user engages the firm. The page shows the current price. There is no
+   separate or cheaper WhatsApp-only option.
 
 The firm does not publish phone numbers. Payment must be completed by the user in their own browser.
 

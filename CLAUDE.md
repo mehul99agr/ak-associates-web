@@ -1056,8 +1056,10 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
 - **Paid contact (user decision Oct 15, 2026, replaces the Sep 26 "consultations stay free" rule):**
   calls and WhatsApp are paid via Razorpay on `/consult`; only email is free. Reason: random callers
-  and calendar no-shows. Prices in `src/lib/consult.ts` (call Rs 499, adjusted against fees; WhatsApp
-  Rs 199). The visitor first picks a partner (Mehul or Rupesh), then pays; each partner has their
+  and calendar no-shows. **Nov 10, 2026 change:** one product only, a 30-minute call at Rs 999 (adjusted against fees); payment
+  unlocks BOTH the partner's calendar link and WhatsApp number. The old Rs 199 WhatsApp-only option was removed
+  so the number is never available cheaper than a call (user decision). Price in `src/lib/consult.ts` (`CONSULT_OFFER`);
+  `/api/consult/verify` only unlocks orders whose notes carry `CONSULT_PRODUCT_ID` and whose amount matches. The visitor first picks a partner (Mehul or Rupesh), then pays; each partner has their
   own calendar link and WhatsApp number, living ONLY in Vercel env vars (`CONSULT_BOOKING_URL_MEHUL`,
   `CONSULT_WHATSAPP_NUMBER_MEHUL`, `CONSULT_BOOKING_URL_RUPESH`, `CONSULT_WHATSAPP_NUMBER_RUPESH`,
   plus `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET`). `/api/consult/verify` returns them after the

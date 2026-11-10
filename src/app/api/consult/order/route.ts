@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server'
-import { CONSULT_PRODUCTS, isConsultPartner, isConsultProduct } from '@/lib/consult'
+import { CONSULT_OFFER, CONSULT_PRODUCT_ID, isConsultPartner } from '@/lib/consult'
 
 export const runtime = 'nodejs'
 
-// Creates a Razorpay order for one of the /consult products with one partner. The amount comes
-// from CONSULT_PRODUCTS, never from the request.
+// Creates a Razorpay order for the /consult call with one partner. The amount comes
+// from CONSULT_OFFER, never from the request.
 export async function POST(req: Request) {
   const keyId = process.env.RAZORPAY_KEY_ID
   const keySecret = process.env.RAZORPAY_KEY_SECRET
@@ -13,13 +13,12 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json().catch(() => null)
-  const product = body?.product
   const partner = body?.partner
-  if (!isConsultProduct(product) || !isConsultPartner(partner)) {
+  if (!isConsultPartner(partner)) {
     return NextResponse.json({ error: 'Unknown option.' }, { status: 400 })
   }
 
-  const amount = CONSULT_PRODUCTS[product].price * 100
+  const amount = CONSULT_OFFER.price * 100
   const res = await fetch('https://api.razorpay.com/v1/orders', {
     method: 'POST',
     headers: {
@@ -29,8 +28,8 @@ export async function POST(req: Request) {
     body: JSON.stringify({
       amount,
       currency: 'INR',
-      receipt: `consult_${partner}_${product}_${Date.now()}`,
-      notes: { product, partner },
+      receipt: `consult_${partner}_${Date.now()}`,
+      notes: { product: CONSULT_PRODUCT_ID, partner },
     }),
   })
 
