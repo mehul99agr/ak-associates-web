@@ -1058,6 +1058,8 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   free. Reason: random callers and calendar no-shows. **Current setup (Nov 10):** one product, a 30-minute
   call at Rs 999 (adjusted against fees), booked AND paid on Zoho Bookings (event "30-minute consultation
   call", Full Payment, payment mode Online, 15-min post-buffer, 4-hour minimum notice, 30-day window).
+  Gateway fees are borne by the firm (user decision Nov 10, 2026): a flat Rs 25 surcharge was tried and
+  reverted, and Razorpay's per-method Customer Fee Bearer needs support activation - user chose not to pursue it.
   **All calls go to CA Mehul Agrawal**, including visitors who chose Rupesh / Sillod (user: "I'll be the one
   supporting"). `/consult` links straight to the Zoho page (`CONSULT_BOOKING_URL` in `src/lib/consult.ts`);
   publishing that URL is fine because Zoho takes payment before confirming the slot. The site's own Razorpay
