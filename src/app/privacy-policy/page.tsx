@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
         <div className="section">
           <div className="container" style={{ maxWidth: '820px' }}>
             <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 2.75rem)', marginBottom: '0.5rem' }}>Privacy Policy</h1>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2.5rem' }}>Last updated: July 9, 2026</p>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2.5rem' }}>Last updated: November 10, 2026</p>
 
             <div className="blog-content">
               <p>
@@ -37,10 +37,12 @@ export default function PrivacyPolicy() {
                 information we receive is:
               </p>
               <ul>
-                <li><strong>Analytics data</strong> via Google Analytics (GA4), collected only after you accept
-                  cookies through the consent banner on this site - page views, approximate location (city/
-                  country level, derived from IP address), device and browser type, and which buttons you click
-                  (for example, Email, WhatsApp, or Book Consultation).</li>
+                <li><strong>Analytics data</strong> via Google Analytics (GA4) - page views, approximate location
+                  (city/country level, derived from IP address), device and browser type, and which buttons you
+                  click (for example, Email or Book Consultation). We use Google Consent Mode: until you accept
+                  cookies through the consent banner, Google Analytics sets no cookies and sends only cookieless
+                  signals that carry no identifier for you or your device. Full analytics, with cookies, start only
+                  after you click Accept.</li>
                 <li><strong>Information you volunteer directly</strong>, such as your name, phone number, or email
                   address, if you choose to email us, pay for a consultation call, message us on WhatsApp, or
                   book a consultation through our Zoho Bookings page. Bookings and payments are handled by Zoho;
@@ -52,10 +54,11 @@ export default function PrivacyPolicy() {
 
               <h2>Cookies</h2>
               <p>
-                We use a single analytics cookie set (Google Analytics) to understand how visitors use this site. We
-                do not use advertising or retargeting cookies. You can decline analytics cookies at any time using
-                the cookie banner, or by clearing your browser&rsquo;s local storage for this site, which resets your
-                choice.
+                We use a single analytics cookie set (Google Analytics) to understand how visitors use this site, and
+                only after you accept it on the cookie banner. If you decline, no analytics cookies are set and Google
+                Analytics receives only cookieless, non-identifying signals. We do not use advertising or retargeting
+                cookies, and advertising signals are always switched off. You can change your choice by clearing your
+                browser&rsquo;s local storage for this site, which shows the banner again.
               </p>
 
               <h2>Third-Party Services</h2>

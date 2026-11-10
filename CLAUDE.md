@@ -573,7 +573,12 @@ Oct 12-18, pulled live):**
   Schedule E, Form 128, refunds); its loss reads as authority, so it needs outside links, not rewrites.
   The 7 US-founder posts (last updated May 2025-Feb 2026) are due a refresh around January 2027.
 - User-side: GBP reviews, real `<a href>` links from CAclubindia/TaxGuru and directory profiles, WhatsApp
-  number in Zoho's Booked email, Zoho plan before trial ends, Consent Mode v2 decision.
+  number in Zoho's Booked email, Zoho plan before trial ends.
+- **Consent Mode v2 ON (user approved Nov 10, 2026):** `GoogleAnalytics.tsx` now loads gtag for every
+  visitor with `analytics_storage` denied by default (granted on load if localStorage says 'granted'), all
+  ad signals always denied, `ads_data_redaction` on; Accept/Decline sends `gtag('consent','update')`.
+  Privacy policy updated to match. GA4 numbers from Nov 10 onward include modelled/cookieless data, so
+  they are NOT comparable with the pre-Nov 10 consent-gated figures (7 users / 28 days).
 
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
@@ -1214,4 +1219,4 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
   verified against the Act; the calendar lists only the belated-return date for that reason.
 - **Still to do:** Oct 19-20 and Nov 18-19 extension rechecks; GSC pull + second title round
   (Oct 19-25); GSTR-9, advance tax, FAST-DS refreshes (Nov); belated return refresh (early
-  Dec); "upcoming deadline" callouts on the top 10 posts; Consent Mode v2 (awaiting user yes).
+  Dec); "upcoming deadline" callouts on the top 10 posts; Consent Mode v2 (done Nov 10, 2026).
