@@ -550,7 +550,7 @@ Oct 12-18, pulled live):**
 - New `blog/_components/DeadlineNotice.tsx`: "Next deadline" box under the TL;DR of the 10 posts
   that `dueDates.ts` points to, shown only when the date is within 120 days. Those posts set
   `export const revalidate = 3600`. A new deadline post needs the component + revalidate.
-- Not checked live: whether the Razorpay / partner env vars are set in Vercel (not logged in).
+- **Live check after deploy: `/api/consult/order` returns 503 "Payments are not configured yet" - the Razorpay keys are NOT set in Vercel.** Until the user adds the 6 env vars, `/consult` shows the error plus the partner email.
 
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
