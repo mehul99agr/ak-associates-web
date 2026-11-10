@@ -14,10 +14,16 @@ export const CONSULT_HOST = 'CA Mehul Agrawal'
 export const CONSULT_OFFER = {
   title: '30-minute consultation call',
   price: 999,
+  // Payment gateway charges passed to the client (user decision, Nov 10, 2026):
+  // Razorpay standard rate 2% + 18% GST = 2.36% of the amount charged.
+  // 999 / (1 - 0.0236) = 1,023.15, rounded up, so the firm nets the full 999.
+  // Zoho Bookings price must equal `total`.
+  gatewayFee: 25,
+  total: 1024,
   minutes: 30,
   points: [
-    'Pick a slot and pay securely on our booking page',
+    'Pick a slot and pay securely on our booking page (Google Meet call)',
     'Your booking confirmation includes our WhatsApp number to send documents',
-    'Fee is adjusted against our professional fee if you engage us',
+    'The ₹999 fee is adjusted against our professional fee if you engage us',
   ],
 }
