@@ -136,6 +136,9 @@ export default function TPMethodsBlog() {
               <p>For each material transaction, maintain a concise method-selection memorandum covering the transaction and contractual terms, functions/assets/risks of each party, why the selected method is the most appropriate, why alternatives are less reliable, the search strategy and accept/reject rationale for comparables, and the final arm&apos;s length conclusion; this memorandum is often the first document requested if a <Link href="/blog/transfer-pricing-audit-assessment-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing audit</Link> is opened. Where international transactions exceed <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Rs 1 crore, Form 3CEB is required</Link> and due October 31; the underlying analysis should not be prepared only after a notice arrives.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Section 92C of the Income-tax Act, 1961 and Rules 10B and 10C of the Income-tax Rules, 1962 (methods and most appropriate method). See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>.
+            </p>
             <PostFooterLinks slug="transfer-pricing-methods-india-explained" />
 
             <PostCTA

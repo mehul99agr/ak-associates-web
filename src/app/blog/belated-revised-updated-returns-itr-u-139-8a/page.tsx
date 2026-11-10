@@ -176,6 +176,9 @@ export default function ItrUBlog() {
                 <p>Sorting out which correction route applies, and doing the additional tax calculation correctly, is exactly the kind of filing question our team handles routinely. If you are unsure which window you are still inside, or need help computing ITR-U additional tax before filing, our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax filing services</Link> can walk you through it.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Sections 139(4), 139(5) and 139(8A) of the Income-tax Act, 1961; for tax year 2026-27 onwards, the return provisions of the Income Tax Act 2025 (Section 263(5) for revised returns). See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+              </p>
               <PostFooterLinks slug="belated-revised-updated-returns-itr-u-139-8a" />
 
               <PostCTA

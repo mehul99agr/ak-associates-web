@@ -151,6 +151,9 @@ export default function TaxAuditDueDatePenaltyBlog() {
               <p>Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>audit and tax advisory services</Link> track the Section 44AB threshold, the statutory-audit-to-tax-audit handoff, and the portal acceptance step together, so the due date is never a surprise.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Section 63 of the Income Tax Act 2025 (earlier Section 44AB); Rule 47 and Form 26 of the Income-tax Rules, 2026; CBDT press release of September 28, 2026 extending the AY 2026-27 dates. See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+            </p>
             <PostFooterLinks slug="tax-audit-due-date-penalty-for-delay" />
 
             <PostCTA

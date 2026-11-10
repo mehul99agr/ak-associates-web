@@ -195,6 +195,9 @@ export default function Form3CEBBlog() {
               </ul>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Section 92E of the Income-tax Act, 1961 and Rules 10D and 10E of the Income-tax Rules, 1962 (reports for FY 2025-26); CBDT press release of September 28, 2026 on due dates. See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+            </p>
             <PostFooterLinks slug="form-3ceb-transfer-pricing-audit-report" />
 
             <PostCTA

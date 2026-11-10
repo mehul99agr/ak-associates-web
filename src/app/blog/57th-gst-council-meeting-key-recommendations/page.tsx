@@ -158,6 +158,9 @@ export default function GstCouncil57Blog() {
                 </ol>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Recommendations of the 57th GST Council meeting, October 8, 2026 (recommendations only until notified by CBIC). See <a href="https://gstcouncil.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>GST Council</a>, <a href="https://pib.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Press Information Bureau</a>, <a href="https://cbic-gst.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>CBIC GST</a>.
+              </p>
               <PostFooterLinks slug="57th-gst-council-meeting-key-recommendations" />
 
               <PostCTA

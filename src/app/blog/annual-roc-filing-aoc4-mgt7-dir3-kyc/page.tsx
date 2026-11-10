@@ -128,6 +128,9 @@ export default function AnnualROCFilingBlog() {
               <p>Start the process well before the AGM deadline. Confirm whether the company is eligible to use MGT-7A, whether the auditor appointment requires ADT-1, whether all directors have completed <Link href="/blog/dsc-din-application-director-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>DIR-3 KYC</Link>, whether there were changes in shareholding or registered office, and whether all financial statements reconcile with GST, TDS, income tax, and bank records. A clean annual compliance file is one of the cheapest ways to make a business fundable.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Sections 92 and 137 of the Companies Act, 2013; MCA General Circular No. 05/2026 of October 24, 2026 on additional fees for FY 2025-26 filings. See <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Ministry of Corporate Affairs</a>.
+            </p>
             <PostFooterLinks slug="annual-roc-filing-aoc4-mgt7-dir3-kyc" />
 
             <PostCTA

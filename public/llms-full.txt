@@ -6224,6 +6224,8 @@ See our dedicated [NRO account TDS refund guide](https://agrawalkhandelwal.com/b
 
 After-tax NRO interest can be [repatriated abroad](https://agrawalkhandelwal.com/blog/nro-account-repatriation-rules-process) within the USD 1 million annual limit. The interest is classified as "current income" for repatriation purposes, requiring [Form 145/146](https://agrawalkhandelwal.com/blog/form-15ca-15cb-nri-remittance-guide) compliance but generally straightforward once TDS certificates are in order.
 
+**Official sources:** Section 393(2) of the Income Tax Act 2025 (earlier Section 195) on TDS for non-residents; the interest article of the relevant tax treaty, claimed with a Tax Residency Certificate and Form 10F. See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [NRO Account Repatriation: Rules, USD 1 Million Limit & Step-by-Step Process](https://agrawalkhandelwal.com/blog/nro-account-repatriation-rules-process)
@@ -7007,6 +7009,8 @@ This is the same substance gap we cover in our broader piece on [when a UAE enti
 
 If a foreign company is determined to have Indian POEM, Section 115JH provides transitional computation rules for the first year of Indian residency, covering how income is computed, how depreciation and unabsorbed losses carry forward, and MAT applicability. But the underlying consequence remains significant: worldwide income taxed in India, full Indian transfer pricing compliance on related-party transactions, and loss of the UAE tax treatment for that income from an Indian tax perspective. It also invites scrutiny of past years' filings and can complicate DTAA benefit claims, since a dual-resident company faces its own tie-breaker analysis under the applicable treaty.
 
+**Official sources:** Section 6(3) of the Income-tax Act, 1961; CBDT Circular No. 6/2017 (POEM guidelines) and Circular No. 8/2017. See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/).
+
 ### More Guides on This Topic
 
 - [Transfer Pricing Documentation Checklist for Indian Subsidiaries (2026)](https://agrawalkhandelwal.com/blog/transfer-pricing-documentation-checklist-india)
@@ -7703,6 +7707,8 @@ If the same company had invoiced only Rs 10.70 crore, its margin would have been
 ## Document the Method Selection Before Filing
 
 For each material transaction, maintain a concise method-selection memorandum covering the transaction and contractual terms, functions/assets/risks of each party, why the selected method is the most appropriate, why alternatives are less reliable, the search strategy and accept/reject rationale for comparables, and the final arm's length conclusion; this memorandum is often the first document requested if a [transfer pricing audit](https://agrawalkhandelwal.com/blog/transfer-pricing-audit-assessment-india) is opened. Where international transactions exceed [Rs 1 crore, Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) and due October 31; the underlying analysis should not be prepared only after a notice arrives.
+
+**Official sources:** Section 92C of the Income-tax Act, 1961 and Rules 10B and 10C of the Income-tax Rules, 1962 (methods and most appropriate method). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/).
 
 ### More Guides on This Topic
 
@@ -9293,6 +9299,8 @@ Buyers who get this wrong don't just risk a notice; the liability is personal an
 - Not obtaining a TAN before the transaction date
 - Forgetting to issue Form 16A; without it, the NRI cannot claim TDS credit in their ITR
 
+**Official sources:** Section 393(2) of the Income Tax Act 2025 (earlier Section 195); CBDT Notification No. 121/2026 (G.S.R. 830(E), September 22, 2026) on Form 141 Schedule E; Section 395 and Form 128 (earlier Section 197 and Form 13) for lower deduction certificates. See [e-Gazette of India](https://egazette.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [Form 13 Lower Deduction Certificate for NRIs: Process, Documents & Timeline](https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri)
@@ -9628,6 +9636,8 @@ If a buyer pays an NRI seller without deducting TDS because they didn't realize 
 
 Once the TAN is in hand, use our [NRI Property TDS Calculator](https://agrawalkhandelwal.com/tools/nri-property-tds) to work out exactly how much to deduct and deposit. If the NRI seller expects their actual tax liability to be much lower than the statutory TDS, point them to our guide on the [Form 13 lower deduction certificate](https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri); it's the seller's responsibility to apply, but buyers benefit from a smoother transaction when it's in place before closing.
 
+**Official sources:** CBDT Notification No. 121/2026 (G.S.R. 830(E), September 22, 2026) inserting Schedule E in Form 141; Section 393(2) of the Income Tax Act 2025 (earlier Section 195). See [e-Gazette of India](https://egazette.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/), [Protean TIN (TAN applications)](https://www.protean-tinpan.com/).
+
 ### More Guides on This Topic
 
 - [Repatriating NRI Property Sale Proceeds: Form 145/146 & USD 1 Million Scheme](https://agrawalkhandelwal.com/blog/nri-repatriation-property-sale-proceeds)
@@ -9838,6 +9848,8 @@ The practical difficulty with inherited property isn't the tax rule itself; it's
 - Get the capital gains computation done before the sale, so a Form 128 (earlier Form 13) application can be filed with enough lead time
 
 Once the computation is ready, use our [NRI Property TDS Calculator](https://agrawalkhandelwal.com/tools/nri-property-tds) to see the statutory TDS at the current sale value, and compare it against the actual expected liability.
+
+**Official sources:** Section 49(1) (cost of the previous owner) and Section 2(42A) (holding period) of the Income-tax Act, 1961; TDS under Section 393(2) of the Income Tax Act 2025 (earlier Section 195). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
 
 ### More Guides on This Topic
 
@@ -11500,6 +11512,8 @@ Start the review before March close. By the time the statutory deadline arrives,
 - The portal assignment and authorised signatory details are active
 - Master File and CbCR applicability have been separately checked
 
+**Official sources:** Section 92E of the Income-tax Act, 1961 and Rules 10D and 10E of the Income-tax Rules, 1962 (reports for FY 2025-26); CBDT press release of September 28, 2026 on due dates. See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [Transfer Pricing for IT Services Companies in India](https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india)
@@ -12133,6 +12147,8 @@ Maintain statutory registers and shareholding records, Board and shareholder res
 
 Start the process well before the AGM deadline. Confirm whether the company is eligible to use MGT-7A, whether the auditor appointment requires ADT-1, whether all directors have completed [DIR-3 KYC](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide), whether there were changes in shareholding or registered office, and whether all financial statements reconcile with GST, TDS, income tax, and bank records. A clean annual compliance file is one of the cheapest ways to make a business fundable.
 
+**Official sources:** Sections 92 and 137 of the Companies Act, 2013; MCA General Circular No. 05/2026 of October 24, 2026 on additional fees for FY 2025-26 filings. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
 ### More Guides on This Topic
 
 - [LLP vs Private Limited Company: Which Structure Fits Your Business?](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india)
@@ -12442,6 +12458,8 @@ Most of these are avoidable with a short document checklist prepared before the 
 
 Holding a DIN comes with an ongoing obligation: every DIN holder must complete **annual DIR-3 KYC**, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our [Annual ROC Filing guide](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc) for the full annual compliance picture.
 
+**Official sources:** Sections 153 and 154 of the Companies Act, 2013 and the Companies (Appointment and Qualification of Directors) Rules, 2014; Class 3 DSCs issued by certifying authorities licensed under the Information Technology Act, 2000. See [Ministry of Corporate Affairs](https://www.mca.gov.in/), [Controller of Certifying Authorities](https://www.cca.gov.in/).
+
 ### More Guides on This Topic
 
 - [OPC to Private Limited Company Conversion: A Founder's Guide](https://agrawalkhandelwal.com/blog/opc-to-private-limited-conversion-india)
@@ -12546,6 +12564,8 @@ This is the mistake with the highest downstream cost. MCA approving a name for c
 ## Timing the Reservation Against Your Incorporation Plan
 
 A reserved name is valid only for a limited window, so reserve the name only once you are genuinely ready to move through the rest of incorporation, DSC and DIN for directors, MOA/AOA drafting, and document collection, rather than reserving early and letting the window lapse while other pieces are still being arranged.
+
+**Official sources:** Section 4 of the Companies Act, 2013 and Rule 8 of the Companies (Incorporation) Rules, 2014 on name availability; SPICe+ Part A on the MCA V3 portal. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
 
 ### More Guides on This Topic
 
@@ -13227,6 +13247,8 @@ A question that comes up often: can an NRI or foreign investor route around the 
 ## What Changes If the NRI Becomes a Resident Again
 
 Once an individual's residential status under FEMA reverts to resident Indian (typically by returning to India and meeting the residency threshold) the agricultural land purchase restriction no longer applies to them, since it is specifically tied to NRI/OCI/foreign-national status. See our [NRI returning to India financial checklist](https://agrawalkhandelwal.com/blog/nri-returning-india-financial-checklist) for the broader set of things that change on return, and our [capital gains guide for inherited or gifted property](https://agrawalkhandelwal.com/blog/nri-capital-gains-inherited-gifted-property) if you are an NRI who already holds inherited agricultural land and are evaluating a sale.
+
+**Official sources:** Foreign Exchange Management (Non-debt Instruments) Rules, 2019 notified by the Ministry of Finance, administered by the Reserve Bank of India. See [e-Gazette of India](https://egazette.gov.in/), [RBI FEMA notifications](https://www.rbi.org.in/Scripts/BS_FemaNotifications.aspx).
 
 ### More Guides on This Topic
 
@@ -15339,6 +15361,8 @@ Missing the deadline attracts a late fee per day of delay, capped based on the t
 - **Not reconciling turnover reported to other regulators.** If your books, GST returns, and income tax return show three different turnover figures for the same year, expect questions from at least one authority.
 
 If you are also carrying forward input tax credit that needs a closer look before you file, our guide on [ITC eligibility, reversal, and blocked credits](https://agrawalkhandelwal.com/blog/input-tax-credit-itc-gst-guide) covers the rules that most often create annual-return mismatches.
+
+**Official sources:** Section 44 of the CGST Act, 2017 and Rule 80 of the CGST Rules, 2017 (annual return and reconciliation statement). See [CBIC GST](https://cbic-gst.gov.in/), [GST portal](https://www.gst.gov.in/).
 
 ### More Guides on This Topic
 
@@ -18359,6 +18383,8 @@ Advance tax is paid online through Challan No. ITNS 280 on the Income Tax e-fili
 
 Estimating the right amount at each instalment is where most errors creep in, particularly for anyone with variable or lumpy income through the year. Our [tax calculator](https://agrawalkhandelwal.com/tax-calculator) can help build a working estimate, and we regularly help clients set up a quarterly advance tax review so instalments are calculated against actual year-to-date income rather than a guess made once in June.
 
+**Official sources:** Advance tax and interest provisions of the Income Tax Act 2025 (earlier Sections 207-211, 234B and 234C of the 1961 Act). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [Income Tax Refund Status: How to Check & Common Delays](https://agrawalkhandelwal.com/blog/income-tax-refund-status-check-common-delays)
@@ -19037,6 +19063,8 @@ These restrictions exist because ITR-U is designed as a voluntary, pre-emptive d
 - **Would result in a refund or lower tax after the assessment year has closed:** ITR-U will not help; discuss rectification or appeal options with your CA instead.
 
 Sorting out which correction route applies, and doing the additional tax calculation correctly, is exactly the kind of filing question our team handles routinely. If you are unsure which window you are still inside, or need help computing ITR-U additional tax before filing, our [tax filing services](https://agrawalkhandelwal.com/services) can walk you through it.
+
+**Official sources:** Sections 139(4), 139(5) and 139(8A) of the Income-tax Act, 1961; for tax year 2026-27 onwards, the return provisions of the Income Tax Act 2025 (Section 263(5) for revised returns). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
 
 ### More Guides on This Topic
 
@@ -20910,6 +20938,8 @@ Form 26 does not throw out the old structure so much as merge it: **Parts A and 
 
 The underlying discipline does not change either way: accurate books, correctly computed depreciation, timely MSME and TDS compliance, and clean reconciliation with GST filings are what make the audit process fast rather than a last-minute scramble.
 
+**Official sources:** Section 63 of the Income Tax Act 2025 (earlier Section 44AB); Rule 47 and Form 26 of the Income-tax Rules, 2026; Forms 3CA, 3CB and 3CD under Rule 6G of the 1962 Rules for earlier years. See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [Tax Audit vs Statutory Audit vs GST Audit: Key Differences](https://agrawalkhandelwal.com/blog/tax-audit-vs-statutory-audit-vs-gst-audit)
@@ -21153,6 +21183,8 @@ Section 273B allows the assessing officer to not levy the Section 271B penalty i
 
 Our [audit and tax advisory services](https://agrawalkhandelwal.com/services) track the Section 44AB threshold, the statutory-audit-to-tax-audit handoff, and the portal acceptance step together, so the due date is never a surprise.
 
+**Official sources:** Section 63 of the Income Tax Act 2025 (earlier Section 44AB); Rule 47 and Form 26 of the Income-tax Rules, 2026; CBDT press release of September 28, 2026 extending the AY 2026-27 dates. See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [Who Needs a Tax Audit: Business vs Professional Turnover Thresholds](https://agrawalkhandelwal.com/blog/who-needs-tax-audit-business-professional-thresholds)
@@ -21365,6 +21397,8 @@ The Rs 25,000 Section 271A penalty is real, but it is rarely the biggest cost of
 - If you are on a presumptive scheme, still keep basic transaction records; the exemption from formal books does not mean no records at all, and you will need them if you ever declare below the presumptive rate.
 
 Getting the Section 44AA classification right at the start of a financial year avoids both the penalty exposure and the far more disruptive experience of trying to reconstruct a full year of books under time pressure once a notice or audit requirement lands. Our [accounting and compliance services](https://agrawalkhandelwal.com/services) include setting up and maintaining compliant books for businesses and professionals across both thresholds.
+
+**Official sources:** Section 62 of the Income Tax Act 2025 (earlier Section 44AA); Rule 6F of the Income-tax Rules, 1962 (prescribed books for professionals). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/).
 
 ### More Guides on This Topic
 
@@ -27725,6 +27759,8 @@ Since a valid audit report is a precondition for claiming Section 11/12 or Secti
 - **Coordinate the audit timeline with the CA** well ahead of the deadline, since the return cannot be filed without the audit report's acknowledgment already generated.
 - **Keep an eye on the annual compliance calendar** for trusts alongside 12A/80G renewal and FCRA obligations, since these deadlines often cluster in the same filing season.
 
+**Official sources:** Section 12A(1)(b) and Section 10(23C) of the Income-tax Act, 1961; Rules 16CC and 17B of the Income-tax Rules, 1962 (Forms 10BB and 10B). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [Section 12A & 80G Registration for NGOs & Charitable Trusts](https://agrawalkhandelwal.com/blog/section-12a-and-80g-registration-for-ngos-and-charitable-trusts)
@@ -29952,6 +29988,8 @@ There was no broad rate revision. The specific items reported are:
 4. **If you deal in the listed scrap categories,** review your purchase and sale flows for the reverse charge and TDS proposals.
 5. **If you have a pending notice or penalty,** ask your adviser whether the lower penalty and the notice floor are likely to reach it once the amendments are worded. That depends on the final text.
 
+**Official sources:** Recommendations of the 57th GST Council meeting, October 8, 2026 (recommendations only until notified by CBIC). See [GST Council](https://gstcouncil.gov.in/), [Press Information Bureau](https://pib.gov.in/), [CBIC GST](https://cbic-gst.gov.in/).
+
 ### More Guides on This Topic
 
 - [Last Date to Claim ITC for FY 2025-26: November 30, 2026](https://agrawalkhandelwal.com/blog/last-date-to-claim-itc-fy-2025-26)
@@ -30069,6 +30107,8 @@ If the date is missed, a belated return is still possible. The options are expla
 
 Partners should note the dependency: a partner cannot finalise a return until the firm has closed its accounts and computed the share of profit, interest and remuneration, so the firm audit should not be left to the last week.
 
+**Official sources:** Section 139(1) of the Income-tax Act, 1961; CBDT press release of September 28, 2026 extending the AY 2026-27 due dates. See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/), [Income Tax e-filing portal](https://www.incometax.gov.in/iec/foportal/).
+
 ### More Guides on This Topic
 
 - [TCS on Sale of Goods: What Happened to Section 206C(1H)](https://agrawalkhandelwal.com/blog/tcs-sale-of-goods-section-206c1h-repealed)
@@ -30183,6 +30223,8 @@ Two points often cause confusion:
 6. File GSTR-9 only after the steps above are complete.
 
 The 57th GST Council, which met on October 8, 2026, recommended aligning certain return deadlines with the ITC time limits and introducing a return correction mechanism from April 2027. Neither changes the November 30, 2026 date. See our summary of [the 57th GST Council recommendations](https://agrawalkhandelwal.com/blog/57th-gst-council-meeting-key-recommendations).
+
+**Official sources:** Section 16(4) of the CGST Act, 2017 (time limit to claim input tax credit). See [CBIC GST](https://cbic-gst.gov.in/), [GST portal](https://www.gst.gov.in/).
 
 ### More Guides on This Topic
 

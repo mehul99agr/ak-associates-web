@@ -109,6 +109,9 @@ export default function CompanyNameReservationBlog() {
               <p>A reserved name is valid only for a limited window, so reserve the name only once you are genuinely ready to move through the rest of incorporation, DSC and DIN for directors, MOA/AOA drafting, and document collection, rather than reserving early and letting the window lapse while other pieces are still being arranged.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Section 4 of the Companies Act, 2013 and Rule 8 of the Companies (Incorporation) Rules, 2014 on name availability; SPICe+ Part A on the MCA V3 portal. See <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Ministry of Corporate Affairs</a>.
+            </p>
             <PostFooterLinks slug="company-name-reservation-run-form-india" />
 
             <PostCTA

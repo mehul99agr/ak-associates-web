@@ -140,6 +140,9 @@ export default function NRIInheritedGiftedPropertyBlog() {
                 <p>Once the computation is ready, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to see the statutory TDS at the current sale value, and compare it against the actual expected liability.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 49(1) (cost of the previous owner) and Section 2(42A) (holding period) of the Income-tax Act, 1961; TDS under Section 393(2) of the Income Tax Act 2025 (earlier Section 195). See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+              </p>
               <PostFooterLinks slug="nri-capital-gains-inherited-gifted-property" />
 
               <PostCTA

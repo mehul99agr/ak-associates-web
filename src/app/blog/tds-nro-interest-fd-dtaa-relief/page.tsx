@@ -124,6 +124,9 @@ export default function TDSNROInterestBlog() {
               <p>After-tax NRO interest can be <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriated abroad</Link> within the USD 1 million annual limit. The interest is classified as &quot;current income&quot; for repatriation purposes, requiring <Link href="/blog/form-15ca-15cb-nri-remittance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 145/146</Link> compliance but generally straightforward once TDS certificates are in order.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Section 393(2) of the Income Tax Act 2025 (earlier Section 195) on TDS for non-residents; the interest article of the relevant tax treaty, claimed with a Tax Residency Certificate and Form 10F. See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+            </p>
             <PostFooterLinks slug="tds-nro-interest-fd-dtaa-relief" />
 
             <PostCTA

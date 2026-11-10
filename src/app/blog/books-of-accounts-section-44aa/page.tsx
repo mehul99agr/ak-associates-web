@@ -163,6 +163,9 @@ export default function BooksOfAccountsSection44AABlog() {
                 <p>Getting the Section 44AA classification right at the start of a financial year avoids both the penalty exposure and the far more disruptive experience of trying to reconstruct a full year of books under time pressure once a notice or audit requirement lands. Our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>accounting and compliance services</Link> include setting up and maintaining compliant books for businesses and professionals across both thresholds.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 62 of the Income Tax Act 2025 (earlier Section 44AA); Rule 6F of the Income-tax Rules, 1962 (prescribed books for professionals). See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>.
+              </p>
               <PostFooterLinks slug="books-of-accounts-section-44aa" />
 
               <PostCTA

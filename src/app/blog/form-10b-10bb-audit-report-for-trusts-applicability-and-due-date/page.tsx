@@ -110,6 +110,9 @@ export default function Form10B10BBBlog() {
               </ul>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Section 12A(1)(b) and Section 10(23C) of the Income-tax Act, 1961; Rules 16CC and 17B of the Income-tax Rules, 1962 (Forms 10BB and 10B). See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+            </p>
             <PostFooterLinks slug="form-10b-10bb-audit-report-for-trusts-applicability-and-due-date" />
 
             <PostCTA

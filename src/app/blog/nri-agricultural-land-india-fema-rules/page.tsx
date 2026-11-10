@@ -110,6 +110,9 @@ export default function NriAgriLandBlog() {
               <p>Once an individual&apos;s residential status under FEMA reverts to resident Indian (typically by returning to India and meeting the residency threshold) the agricultural land purchase restriction no longer applies to them, since it is specifically tied to NRI/OCI/foreign-national status. See our <Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI returning to India financial checklist</Link> for the broader set of things that change on return, and our <Link href="/blog/nri-capital-gains-inherited-gifted-property" style={{ color: 'var(--primary)', fontWeight: 600 }}>capital gains guide for inherited or gifted property</Link> if you are an NRI who already holds inherited agricultural land and are evaluating a sale.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Foreign Exchange Management (Non-debt Instruments) Rules, 2019 notified by the Ministry of Finance, administered by the Reserve Bank of India. See <a href="https://egazette.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>e-Gazette of India</a>, <a href="https://www.rbi.org.in/Scripts/BS_FemaNotifications.aspx" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>RBI FEMA notifications</a>.
+            </p>
             <PostFooterLinks slug="nri-agricultural-land-india-fema-rules" />
 
             <PostCTA

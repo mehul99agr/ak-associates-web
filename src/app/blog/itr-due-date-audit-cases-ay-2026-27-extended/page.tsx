@@ -146,6 +146,9 @@ export default function ItrDueDateAuditCasesBlog() {
                 <p>Partners should note the dependency: a partner cannot finalise a return until the firm has closed its accounts and computed the share of profit, interest and remuneration, so the firm audit should not be left to the last week.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 139(1) of the Income-tax Act, 1961; CBDT press release of September 28, 2026 extending the AY 2026-27 due dates. See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+              </p>
               <PostFooterLinks slug="itr-due-date-audit-cases-ay-2026-27-extended" />
 
               <PostCTA

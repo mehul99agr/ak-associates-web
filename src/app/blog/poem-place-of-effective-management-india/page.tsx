@@ -150,6 +150,9 @@ export default function POEMBlog() {
                 <p>If a foreign company is determined to have Indian POEM, Section 115JH provides transitional computation rules for the first year of Indian residency, covering how income is computed, how depreciation and unabsorbed losses carry forward, and MAT applicability. But the underlying consequence remains significant: worldwide income taxed in India, full Indian transfer pricing compliance on related-party transactions, and loss of the UAE tax treatment for that income from an Indian tax perspective. It also invites scrutiny of past years' filings and can complicate DTAA benefit claims, since a dual-resident company faces its own tie-breaker analysis under the applicable treaty.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 6(3) of the Income-tax Act, 1961; CBDT Circular No. 6/2017 (POEM guidelines) and Circular No. 8/2017. See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>.
+              </p>
               <PostFooterLinks slug="poem-place-of-effective-management-india" />
 
               <div style={{ marginTop: '3.5rem', padding: '2.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>

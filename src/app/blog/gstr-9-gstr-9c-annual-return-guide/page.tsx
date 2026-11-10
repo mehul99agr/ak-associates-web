@@ -146,6 +146,9 @@ export default function GSTR9GSTR9CBlog() {
                 <p>If you are also carrying forward input tax credit that needs a closer look before you file, our guide on <Link href="/blog/input-tax-credit-itc-gst-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITC eligibility, reversal, and blocked credits</Link> covers the rules that most often create annual-return mismatches.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 44 of the CGST Act, 2017 and Rule 80 of the CGST Rules, 2017 (annual return and reconciliation statement). See <a href="https://cbic-gst.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>CBIC GST</a>, <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>GST portal</a>.
+              </p>
               <PostFooterLinks slug="gstr-9-gstr-9c-annual-return-guide" />
 
               <PostCTA

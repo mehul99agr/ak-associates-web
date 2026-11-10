@@ -126,6 +126,9 @@ export default function FormsExplainedBlog() {
                 <p>The underlying discipline does not change either way: accurate books, correctly computed depreciation, timely MSME and TDS compliance, and clean reconciliation with GST filings are what make the audit process fast rather than a last-minute scramble.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 63 of the Income Tax Act 2025 (earlier Section 44AB); Rule 47 and Form 26 of the Income-tax Rules, 2026; Forms 3CA, 3CB and 3CD under Rule 6G of the 1962 Rules for earlier years. See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+              </p>
               <PostFooterLinks slug="tax-audit-report-forms-3ca-3cb-3cd-explained" />
 
               <PostCTA

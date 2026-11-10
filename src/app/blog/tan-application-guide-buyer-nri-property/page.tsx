@@ -191,6 +191,9 @@ export default function TANApplicationGuideBlog() {
                 <p>Once the TAN is in hand, use our <Link href="/tools/nri-property-tds" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI Property TDS Calculator</Link> to work out exactly how much to deduct and deposit. If the NRI seller expects their actual tax liability to be much lower than the statutory TDS, point them to our guide on the <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link>; it&apos;s the seller&apos;s responsibility to apply, but buyers benefit from a smoother transaction when it&apos;s in place before closing.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> CBDT Notification No. 121/2026 (G.S.R. 830(E), September 22, 2026) inserting Schedule E in Form 141; Section 393(2) of the Income Tax Act 2025 (earlier Section 195). See <a href="https://egazette.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>e-Gazette of India</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>, <a href="https://www.protean-tinpan.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Protean TIN (TAN applications)</a>.
+              </p>
               <PostFooterLinks slug="tan-application-guide-buyer-nri-property" />
 
               <PostCTA

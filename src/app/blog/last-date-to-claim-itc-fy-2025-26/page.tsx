@@ -143,6 +143,9 @@ export default function LastDateItcFy2526Blog() {
                 <p>The 57th GST Council, which met on October 8, 2026, recommended aligning certain return deadlines with the ITC time limits and introducing a return correction mechanism from April 2027. Neither changes the November 30, 2026 date. See our summary of <Link href="/blog/57th-gst-council-meeting-key-recommendations" style={{ color: 'var(--primary)', fontWeight: 600 }}>the 57th GST Council recommendations</Link>.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 16(4) of the CGST Act, 2017 (time limit to claim input tax credit). See <a href="https://cbic-gst.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>CBIC GST</a>, <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>GST portal</a>.
+              </p>
               <PostFooterLinks slug="last-date-to-claim-itc-fy-2025-26" />
 
               <PostCTA

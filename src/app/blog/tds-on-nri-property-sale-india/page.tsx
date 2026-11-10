@@ -318,6 +318,9 @@ export default function TDSNRIPropertyBlog() {
                 </ul>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Section 393(2) of the Income Tax Act 2025 (earlier Section 195); CBDT Notification No. 121/2026 (G.S.R. 830(E), September 22, 2026) on Form 141 Schedule E; Section 395 and Form 128 (earlier Section 197 and Form 13) for lower deduction certificates. See <a href="https://egazette.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>e-Gazette of India</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+              </p>
               <PostFooterLinks slug="tds-on-nri-property-sale-india" />
 
               <PostCTA

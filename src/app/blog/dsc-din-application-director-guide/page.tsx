@@ -108,6 +108,9 @@ export default function DSCDINBlog() {
               <p>Holding a DIN comes with an ongoing obligation: every DIN holder must complete <strong>annual DIR-3 KYC</strong>, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual ROC Filing guide</Link> for the full annual compliance picture.</p>
             </div>
 
+            <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+              <strong>Official sources:</strong> Sections 153 and 154 of the Companies Act, 2013 and the Companies (Appointment and Qualification of Directors) Rules, 2014; Class 3 DSCs issued by certifying authorities licensed under the Information Technology Act, 2000. See <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Ministry of Corporate Affairs</a>, <a href="https://www.cca.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Controller of Certifying Authorities</a>.
+            </p>
             <PostFooterLinks slug="dsc-din-application-director-guide" />
 
             <PostCTA

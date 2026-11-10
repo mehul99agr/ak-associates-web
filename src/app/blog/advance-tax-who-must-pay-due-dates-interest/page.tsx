@@ -157,6 +157,9 @@ export default function AdvanceTaxBlog() {
                 <p>Estimating the right amount at each instalment is where most errors creep in, particularly for anyone with variable or lumpy income through the year. Our <Link href="/tax-calculator" style={{ color: 'var(--primary)', fontWeight: 600 }}>tax calculator</Link> can help build a working estimate, and we regularly help clients set up a quarterly advance tax review so instalments are calculated against actual year-to-date income rather than a guess made once in June.</p>
               </div>
 
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
+                <strong>Official sources:</strong> Advance tax and interest provisions of the Income Tax Act 2025 (earlier Sections 207-211, 234B and 234C of the 1961 Act). See <a href="https://incometaxindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax Department (CBDT)</a>, <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Income Tax e-filing portal</a>.
+              </p>
               <PostFooterLinks slug="advance-tax-who-must-pay-due-dates-interest" />
 
               <PostCTA
