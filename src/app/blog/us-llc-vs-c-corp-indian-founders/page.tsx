@@ -37,12 +37,13 @@ const articleLd = buildArticleLd({
   headline: 'US LLC vs C-Corp for Indian Founders',
   description: 'How LLC pass-through taxation and phantom income compare to Delaware C-Corp taxation for an Indian founder, and which structure fits bootstrapped vs VC-track startups.',
   datePublished: '2025-05-14',
+  dateModified: '2026-11-10',
   slug: 'us-llc-vs-c-corp-indian-founders',
 })
 
 const faqs: [string, string][] = [
   ['Can an Indian citizen own a US LLC or C-Corp without living in the US?', 'Yes. Neither US citizenship nor US residency is required to own a Delaware LLC or C-Corp. An Indian founder can be the sole member or shareholder, though certain filings such as an EIN and, in some cases, an ITIN are still required to operate and file taxes correctly.'],
-  ['What is "phantom income" and why does it matter for an LLC?', 'An LLC is a pass-through entity, so its profit is attributed to the owner\'s personal return in the year it is earned, whether or not any cash was actually distributed. For an Indian founder this can also translate into taxable income in India in the same year, even if the money stays in the US business account.'],
+  ['What is "phantom income" and why does it matter for an LLC?', 'An LLC is a pass-through entity, so its profit is attributed to the owner\'s personal return in the year it is earned, whether or not any cash was actually distributed. India does not necessarily follow the US pass-through treatment, so the timing of Indian tax and the credit for US tax can fall out of step. Plan this before forming the LLC.'],
   ['Why do venture capital investors prefer a Delaware C-Corp over an LLC?', 'Institutional investors, including VC funds and most accelerators, are structured to invest in stock, not LLC membership interests. A C-Corp\'s capital structure supports preferred share classes, liquidation preferences, and standard protective provisions that an LLC\'s operating agreement is not designed around, which is why most VC-track startups incorporate as a C-Corp from the outset.'],
   ['Is it expensive to convert an LLC into a C-Corp later?', 'Converting later is possible but adds legal, accounting, and sometimes tax cost compared to starting with the right structure. If a fundraise from institutional investors is a realistic near-term plan, incorporating directly as a Delaware C-Corp usually avoids this cost.'],
   ['Do Indian founders need an Indian entity as well as a US one?', 'Many founders running a US-facing product keep a US parent (commonly a Delaware C-Corp) for fundraising and customer contracts, alongside an Indian subsidiary or LLP for local operations, R&D, and hiring. The right structure depends on where revenue is generated, where the team sits, and the funding plan, so this should be assessed case by case.'],
@@ -63,7 +64,7 @@ export default function UsLlcVsCCorpBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published May 14, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published May 14, 2025</span><span aria-hidden>&bull;</span><span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -72,7 +73,8 @@ export default function UsLlcVsCCorpBlog() {
                   <li style={{ marginBottom: '0.4rem' }}>An LLC is pass-through: profit is taxed on your personal return as it is earned, even if not withdrawn ("phantom income").</li>
                   <li style={{ marginBottom: '0.4rem' }}>A C-Corp pays its own corporate tax and keeps that filing off your personal return.</li>
                   <li style={{ marginBottom: '0.4rem' }}>VC funds and accelerators almost exclusively invest in Delaware C-Corps, not LLCs.</li>
-                  <li style={{ marginBottom: 0 }}>Bootstrapped, revenue-funded businesses often find an LLC simpler and cheaper to run.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Bootstrapped, revenue-funded businesses often find an LLC simpler and cheaper to run.</li>
+                  <li style={{ marginBottom: 0 }}>Research done outside the US, such as by an Indian dev team, is still amortised over 15 years for US tax, even after the 2025 change that restored expensing for US research.</li>
                 </ul>
               </div>
               <ServiceOffer variant="us-entity" />
@@ -80,7 +82,8 @@ export default function UsLlcVsCCorpBlog() {
               <p>One of the first decisions an Indian founder setting up a US entity has to make is LLC or C-Corp, and it is not a formality. The two structures are taxed differently, are treated differently by investors, and cost different amounts to maintain, and the wrong choice made early can be expensive to reverse once revenue or funding is already flowing through the entity.</p>
 
               <h2>How an LLC Is Taxed</h2>
-              <p>A US LLC is, by default, a pass-through entity for tax purposes. It does not pay federal income tax at the entity level; instead, its profit passes through to the owner, who reports it personally, typically on Form 1040-NR for a non-resident alien owner. This creates what is often called phantom income: the profit is taxable in the year it is earned, whether or not the founder actually withdrew any cash from the business. For an Indian founder, that income can also become taxable in India in the same year under India's tax rules, which makes cash-flow planning around tax payments important even when the business is reinvesting its profit rather than distributing it.</p>
+              <p>A US LLC is, by default, a pass-through entity for tax purposes. It does not pay federal income tax at the entity level; instead, its profit passes through to the owner. Where that profit is effectively connected with a US trade or business, a non-resident alien owner reports it on Form 1040-NR. This creates what is often called phantom income: the profit is taxable in the year it is earned, whether or not the founder actually withdrew any cash from the business. If the LLC has no US trade or business, for example all the work is done from India, there may be no US income tax at all, but the LLC still files Form 5472 with a pro forma Form 1120 every year.</p>
+              <p>India does not necessarily follow the US pass-through treatment. It may treat the LLC as a separate foreign entity, or, if the LLC is effectively managed from India, as an Indian resident under the place of effective management test. That mismatch can leave US tax paid by the founder without a matching credit in India, so the Indian side should be planned before the LLC is formed, not at the first return.</p>
 
               <h2>How a C-Corp Is Taxed</h2>
               <p>A Delaware C-Corp pays federal corporate income tax at the entity level on its own profits, and that tax obligation is separate from the founder's personal return. Dividends paid out to shareholders are taxed again at the shareholder level, which is the "double taxation" a C-Corp is known for, but for a startup that is reinvesting profit rather than distributing it, this is often less of a practical concern than the LLC's phantom income issue.</p>
@@ -96,6 +99,9 @@ export default function UsLlcVsCCorpBlog() {
 
               <h2>Making the Call</h2>
               <p>There is no universally right answer, only a right answer for a given founder's plan. If institutional fundraising is realistically on the table in the next year or two, incorporate as a C-Corp. If the business is being built on its own revenue with no near-term fundraising plan, an LLC is usually the simpler and cheaper structure to run, provided the phantom income tax exposure is planned for from the start.</p>
+              <h2>US Tax Changes Since 2025 That Affect the Choice</h2>
+              <p>The federal corporate rate remains a flat 21%. The bigger change for Indian founders is research and development costs. From tax years beginning after December 31, 2024, research carried out in the US can again be deducted immediately (new Section 174A). Research carried out outside the US, which includes product development done by a team in India, must still be capitalised and amortised over 15 years under Section 174. A US C-Corp that pays an Indian team or subsidiary to build its product should check how that cost is classified and how the development agreement is written, because the 15-year rule can create taxable profit in the US entity while it is still spending cash.</p>
+              <p>A US C-Corp that owns an Indian private limited subsidiary also files Form 5471 for that subsidiary every year, and the payments between the two must be priced at arm&apos;s length in both countries.</p>
             </div>
 
             <PostFooterLinks slug="us-llc-vs-c-corp-indian-founders" />

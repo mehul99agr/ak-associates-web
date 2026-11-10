@@ -36,11 +36,12 @@ const articleLd = buildArticleLd({
   headline: 'Form 5471 vs 5472 vs 8858: Which Applies to You',
   description: 'How to determine whether Form 5471, Form 5472, or Form 8858 applies to your foreign-owned US entity or US-owned foreign entity, and the penalties for missing the filing.',
   datePublished: '2025-10-15',
+  dateModified: '2026-11-10',
   slug: 'form-5471-5472-8858-foreign-owned-us-entity',
 })
 
 const faqs: [string, string][] = [
-  ['Which form applies to a US LLC that is wholly owned by an Indian founder?', 'A US LLC that is a disregarded entity and wholly owned by a foreign person is generally treated as a separate corporation for the limited purposes of Section 6038A, and it files Form 5472 to report reportable transactions with its foreign owner, such as capital contributions and distributions.'],
+  ['Which form applies to a US LLC that is wholly owned by an Indian founder?', 'A US LLC that is a disregarded entity and wholly owned by a foreign person is generally treated as a separate corporation for the limited purposes of Section 6038A, and it files Form 5472, attached to a pro forma Form 1120, to report reportable transactions with its foreign owner, such as capital contributions and distributions. For a calendar-year LLC this is due April 15, or October 15 with Form 7004.'],
   ['What is the difference between Form 5471 and Form 5472?', 'Form 5471 is filed by a US person who owns or controls a foreign corporation, reporting the US person\'s interest in that foreign entity. Form 5472 runs in the opposite direction: it is filed by, or on behalf of, a US entity that is at least 25 percent foreign-owned, reporting transactions between the US entity and its foreign owner or related parties.'],
   ['When does Form 8858 apply instead?', 'Form 8858 applies to a foreign disregarded entity or a foreign branch owned by a US person, essentially the reverse structure of the foreign-owned US LLC scenario. It is filed by US persons with an interest in these foreign entities, not by foreign owners of a US entity.'],
   ['What counts as a "reportable transaction" that triggers Form 5472?', 'Reportable transactions between a foreign-owned US entity and its foreign owner or related parties include capital contributions, distributions, loans, and payments for services or the use of property, among others. Even a single-member LLC with no employees and modest activity can still have reportable transactions simply through owner contributions and withdrawals.'],
@@ -62,7 +63,7 @@ export default function Form5471Form5472Form8858Blog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Form 5471 vs 5472 vs 8858: Which One Applies to Your Foreign-Owned US Entity</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published October 15, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published October 15, 2025</span><span aria-hidden>&bull;</span><span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -71,7 +72,8 @@ export default function Form5471Form5472Form8858Blog() {
                   <li style={{ marginBottom: '0.4rem' }}>Form 5471: a US person reporting ownership of a foreign corporation.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Form 5472: a US entity at least 25% foreign-owned, reporting transactions with the foreign owner.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Form 8858: a US person reporting a foreign disregarded entity or branch they own.</li>
-                  <li style={{ marginBottom: 0 }}>A single-member US LLC owned by an Indian founder almost always needs Form 5472, not 5471.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>A single-member US LLC owned by an Indian founder almost always needs Form 5472, not 5471.</li>
+                  <li style={{ marginBottom: 0 }}>A US C-Corp with an Indian subsidiary files Form 5471 for that subsidiary every year.</li>
                 </ul>
               </div>
               <ServiceOffer variant="us-entity" />
@@ -82,7 +84,7 @@ export default function Form5471Form5472Form8858Blog() {
               <p>The fastest way to tell these forms apart is to ask which direction the ownership runs. Form 5471 and Form 8858 apply when a <strong>US person</strong> owns a <strong>foreign</strong> entity, a foreign corporation for 5471, a foreign disregarded entity or branch for 8858. Form 5472 applies in the opposite direction, when a <strong>foreign person</strong> owns at least 25 percent of a <strong>US</strong> entity. For an Indian founder who has set up a US LLC or corporation, the relevant form is almost always Form 5472, not 5471, since the founder is the foreign owner of a US entity, not a US person owning something abroad.</p>
 
               <h2>Form 5472 and the Foreign-Owned Single-Member LLC</h2>
-              <p>This is the scenario most Indian founders actually fall into: a single-member US LLC, wholly owned by a foreign individual, that would normally be a disregarded entity for tax purposes. Under rules effective for tax years beginning on or after 2017, such an entity is treated as a separate corporation for the limited purpose of the reporting requirements under Section 6038A, which means it must file Form 5472 to report reportable transactions with its foreign owner. This catches many founders off guard, since the LLC may have no employees, minimal revenue, and still be required to file, simply because owner contributions and distributions themselves count as reportable transactions.</p>
+              <p>This is the scenario most Indian founders actually fall into: a single-member US LLC, wholly owned by a foreign individual, that would normally be a disregarded entity for tax purposes. Under rules effective for tax years beginning on or after January 1, 2017, such an entity is treated as a separate corporation for the limited purpose of the reporting requirements under Section 6038A, which means it must file Form 5472 to report reportable transactions with its foreign owner. This catches many founders off guard, since the LLC may have no employees, minimal revenue, and still be required to file, simply because owner contributions and distributions themselves count as reportable transactions. The Form 5472 is attached to a pro forma Form 1120 (only the identifying details are completed) and is due April 15 for a calendar-year LLC, or October 15 if Form 7004 is filed by April 15.</p>
 
               <h2>What Counts as a Reportable Transaction</h2>
               <p>Reportable transactions are broader than most founders assume. They include capital the founder puts into the LLC, distributions taken out, loans between the founder and the entity, and payments for services or the use of property between the two. A founder who simply funds the LLC's bank account and later withdraws profit has already created reportable transactions requiring disclosure.</p>
@@ -91,7 +93,9 @@ export default function Form5471Form5472Form8858Blog() {
               <p>Form 8858 becomes relevant in the less common scenario for an Indian founder: where a US person or US entity owns a foreign disregarded entity or a foreign branch, for example a US company operating a wholly foreign-owned Indian subsidiary structured to be treated as disregarded. This is the mirror image of the 5472 situation and applies to the US side of a cross-border structure rather than to an Indian founder's US LLC.</p>
 
               <h2>Penalties Make This Worth Getting Right</h2>
-              <p>Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Given the increasing data-sharing between the IRS and FinCEN on beneficial ownership information, a founder should confirm which of these filings applies at the time the entity is set up, not discover it during an eventual audit.</p>
+              <p>Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Note that the beneficial ownership (BOI) reports under the Corporate Transparency Act no longer apply to US-formed companies after FinCEN&apos;s interim final rule of March 2025; that change does not affect Form 5472, 5471 or 8858 at all. Confirm which of these filings applies when the entity is set up, not during an eventual audit.</p>
+              <h2>When an Indian Founder Does Need Form 5471</h2>
+              <p>Form 5471 becomes very relevant once the structure grows. A common setup is a Delaware C-Corp as the parent with an Indian private limited company as its subsidiary. The C-Corp is a US person that owns a foreign corporation, so it files Form 5471 for the Indian subsidiary every year, and the payments between the two must be priced at arm&apos;s length in both countries. A founder who later becomes a US tax resident and owns shares in an Indian company directly can also become a Form 5471 filer.</p>
             </div>
 
             <PostFooterLinks slug="form-5471-5472-8858-foreign-owned-us-entity" />

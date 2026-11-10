@@ -1028,7 +1028,7 @@ export const posts = [
     slug: 'fbar-fatca-us-llc-indian-founders',
     date: 'August 9, 2025',
     category: 'US Cross-Border',
-    summary: 'The 10,000 dollar FBAR threshold, the separate FATCA Form 8938 thresholds, and how signature authority over a foreign account can trigger a filing on its own.',
+    summary: 'Who is a US person for FBAR and FATCA, why a founder living in India usually files neither, when the LLC must, and what changes after a move to the US.',
   },
   {
     title: 'Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained',

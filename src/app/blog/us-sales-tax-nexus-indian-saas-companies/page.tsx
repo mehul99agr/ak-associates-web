@@ -36,6 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'US Sales Tax Nexus for Indian SaaS Companies',
   description: 'How US state economic nexus rules apply to an Indian SaaS or services company selling into the US without a physical presence, and how to track exposure across states.',
   datePublished: '2025-11-22',
+  dateModified: '2026-11-10',
   slug: 'us-sales-tax-nexus-indian-saas-companies',
 })
 
@@ -62,7 +63,7 @@ export default function UsSalesTaxNexusBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>US Sales Tax Economic Nexus for Indian SaaS and Services Companies</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published November 22, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published November 22, 2025</span><span aria-hidden>&bull;</span><span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -82,7 +83,7 @@ export default function UsSalesTaxNexusBlog() {
               <p>Sales tax nexus, the legal connection to a state that creates a registration and collection obligation, used to depend on physical presence: an office, a warehouse, an employee. Economic nexus rules changed that by allowing a state to require sales tax registration purely based on the volume of sales made into that state, with no physical presence at all. This applies to any seller crossing that state's threshold, US-based or not, and it is the reason a foreign SaaS company can end up with US state tax obligations despite having no employees or offices anywhere in the country.</p>
 
               <h2>How Thresholds Generally Work</h2>
-              <p>Most states set an economic nexus threshold based on annual sales revenue into that state, commonly in the region of 100,000 US dollars, sometimes alongside or in place of a separate transaction-count threshold. These figures are not uniform: some states set materially higher revenue thresholds, and threshold structures have been adjusted over time in various states, including some tightening rules by removing transaction-count alternatives. Because of this variation, a company should check the current threshold structure for each state where it has meaningful revenue rather than relying on a single number as a universal rule.</p>
+              <p>Most states set an economic nexus threshold based on annual sales revenue into that state, commonly in the region of 100,000 US dollars, sometimes alongside or in place of a separate transaction-count threshold. These figures are not uniform: some states set materially higher revenue thresholds, and threshold structures keep changing: several states have dropped their transaction-count test and now look only at sales value, which helps sellers with many small transactions. Because of this variation, a company should check the current threshold structure for each state where it has meaningful revenue rather than relying on a single number as a universal rule.</p>
 
               <h2>Is SaaS Even Taxable? It Depends on the State</h2>
               <p>This is the step founders most often skip. Even once a threshold is crossed, whether SaaS or a digital subscription is a taxable transaction at all depends entirely on that state's specific tax code. Some states treat SaaS and digital services as taxable, others exclude software delivered as a service from sales tax entirely, and the categorization can differ for adjacent products like downloaded software versus cloud-hosted software. A blanket assumption in either direction, that SaaS is always taxable or never taxable, will be wrong in some states.</p>

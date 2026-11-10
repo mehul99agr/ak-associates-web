@@ -3452,7 +3452,7 @@ US Cross-BorderAugust 9, 2025
 
 ## FBAR and FATCA for Indian Founders with a US LLC: What Must Be Disclosed
 
-The 10,000 dollar FBAR threshold, the separate FATCA Form 8938 thresholds, and how signature authority over a foreign account can trigger a filing on its own.
+Who is a US person for FBAR and FATCA, why a founder living in India usually files neither, when the LLC must, and what changes after a move to the US.
 
 [Read guide: FBAR and FATCA for Indian Founders with a US LLC: What Must Be Disclosed](https://agrawalkhandelwal.com/blog/fbar-fatca-us-llc-indian-founders)
 
@@ -13802,7 +13802,7 @@ US Cross-Border
 
 # US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup
 
-Published May 14, 2025[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published May 14, 2025Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -13810,6 +13810,7 @@ TL;DR
 - A C-Corp pays its own corporate tax and keeps that filing off your personal return.
 - VC funds and accelerators almost exclusively invest in Delaware C-Corps, not LLCs.
 - Bootstrapped, revenue-funded businesses often find an LLC simpler and cheaper to run.
+- Research done outside the US, such as by an Indian dev team, is still amortised over 15 years for US tax, even after the 2025 change that restored expensing for US research.
 
 Running a US LLC or C-Corp from India?
 
@@ -13821,7 +13822,9 @@ One of the first decisions an Indian founder setting up a US entity has to make 
 
 ## How an LLC Is Taxed
 
-A US LLC is, by default, a pass-through entity for tax purposes. It does not pay federal income tax at the entity level; instead, its profit passes through to the owner, who reports it personally, typically on Form 1040-NR for a non-resident alien owner. This creates what is often called phantom income: the profit is taxable in the year it is earned, whether or not the founder actually withdrew any cash from the business. For an Indian founder, that income can also become taxable in India in the same year under India's tax rules, which makes cash-flow planning around tax payments important even when the business is reinvesting its profit rather than distributing it.
+A US LLC is, by default, a pass-through entity for tax purposes. It does not pay federal income tax at the entity level; instead, its profit passes through to the owner. Where that profit is effectively connected with a US trade or business, a non-resident alien owner reports it on Form 1040-NR. This creates what is often called phantom income: the profit is taxable in the year it is earned, whether or not the founder actually withdrew any cash from the business. If the LLC has no US trade or business, for example all the work is done from India, there may be no US income tax at all, but the LLC still files Form 5472 with a pro forma Form 1120 every year.
+
+India does not necessarily follow the US pass-through treatment. It may treat the LLC as a separate foreign entity, or, if the LLC is effectively managed from India, as an Indian resident under the place of effective management test. That mismatch can leave US tax paid by the founder without a matching credit in India, so the Indian side should be planned before the LLC is formed, not at the first return.
 
 ## How a C-Corp Is Taxed
 
@@ -13842,6 +13845,12 @@ A pattern seen often among Indian founders building for a US market is a Delawar
 ## Making the Call
 
 There is no universally right answer, only a right answer for a given founder's plan. If institutional fundraising is realistically on the table in the next year or two, incorporate as a C-Corp. If the business is being built on its own revenue with no near-term fundraising plan, an LLC is usually the simpler and cheaper structure to run, provided the phantom income tax exposure is planned for from the start.
+
+## US Tax Changes Since 2025 That Affect the Choice
+
+The federal corporate rate remains a flat 21%. The bigger change for Indian founders is research and development costs. From tax years beginning after December 31, 2024, research carried out in the US can again be deducted immediately (new Section 174A). Research carried out outside the US, which includes product development done by a team in India, must still be capitalised and amortised over 15 years under Section 174. A US C-Corp that pays an Indian team or subsidiary to build its product should check how that cost is classified and how the development agreement is written, because the 15-year rule can create taxable profit in the US entity while it is still spending cash.
+
+A US C-Corp that owns an Indian private limited subsidiary also files Form 5471 for that subsidiary every year, and the payments between the two must be priced at arm's length in both countries.
 
 ### More Guides on This Topic
 
@@ -13867,7 +13876,7 @@ Yes. Neither US citizenship nor US residency is required to own a Delaware LLC o
 
 ### What is "phantom income" and why does it matter for an LLC?
 
-An LLC is a pass-through entity, so its profit is attributed to the owner's personal return in the year it is earned, whether or not any cash was actually distributed. For an Indian founder this can also translate into taxable income in India in the same year, even if the money stays in the US business account.
+An LLC is a pass-through entity, so its profit is attributed to the owner's personal return in the year it is earned, whether or not any cash was actually distributed. India does not necessarily follow the US pass-through treatment, so the timing of Indian tax and the credit for US tax can fall out of step. Plan this before forming the LLC.
 
 ### Why do venture capital investors prefer a Delaware C-Corp over an LLC?
 
@@ -13898,7 +13907,7 @@ US Cross-Border
 
 # Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained
 
-Published June 27, 2025[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published June 27, 2025Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -13906,6 +13915,7 @@ TL;DR
 - An EIN can be obtained without an SSN or ITIN, through Form SS-4 filed by fax or mail.
 - Correct order: incorporate, then EIN, then bank account, then ITIN only when a personal return is due.
 - An ITIN application is generally filed together with the actual tax return, not as a standalone step.
+- Budget for the annual state tax (Delaware LLC by June 1) and the federal Form 5472 with pro forma Form 1120 by April 15.
 
 Running a US LLC or C-Corp from India?
 
@@ -13934,6 +13944,16 @@ This is where the EIN and ITIN get confused most often. The EIN belongs to the e
 ## Timing It Around Tax Season
 
 Because ITIN processing during peak filing months can run considerably longer than at other times of year, and because international mailing adds further delay, a founder who knows they will need to file a US return should build in extra lead time rather than assuming the process moves quickly close to a deadline.
+
+## Annual Costs and Filings to Budget For
+
+- **Delaware LLC:** a flat annual LLC tax due by June 1 each year (USD 300 in recent years; check the current amount with the Delaware Division of Corporations). There is no annual report. Late payment attracts a penalty and interest.
+- **Delaware C-Corp:** franchise tax and an annual report due by March 1. The tax depends on the calculation method used, and the default authorised-shares method can produce a far higher bill than the assumed par value capital method.
+- **Wyoming LLC:** an annual report and license tax due on the first day of the anniversary month of formation, the greater of USD 60 or a small charge on assets located in Wyoming.
+- **Registered agent:** an annual fee in either state.
+- **Federal:** a single-member LLC owned by a non-resident files Form 5472 with a pro forma Form 1120 by April 15 (October 15 with Form 7004), even with no income. The penalty for missing it starts at USD 25,000.
+
+One simplification: since FinCEN's interim final rule of March 2025, companies formed in the US no longer file beneficial ownership (BOI) reports.
 
 ### More Guides on This Topic
 
@@ -13990,7 +14010,7 @@ US Cross-Border
 
 # FBAR and FATCA for Indian Founders with a US LLC: What Must Be Disclosed
 
-Published August 9, 2025[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published August 9, 2025Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -13998,12 +14018,15 @@ TL;DR
 - FATCA (Form 8938) has its own, separate thresholds, generally 50,000 or 75,000 US dollars.
 - A US LLC's own US bank account is not a "foreign" account for this purpose.
 - Signature authority over a foreign account can trigger FBAR even without formal ownership.
+- FBAR and FATCA apply to US persons. A founder living in India as a non-resident alien does not file them for personal Indian accounts; the LLC may, and the founder will after moving to the US.
 
 Running a US LLC or C-Corp from India?
 
 Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC from $850 a year, C-Corp from $1,250 a year.
 
 [Book a US compliance call](https://agrawalkhandelwal.com/consult?partner=mehul)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+Start with one question: who is a US person? FBAR and FATCA apply to US persons, meaning US citizens, green card holders, people who meet the substantial presence test, and entities formed under US law. A founder who lives in India and is a non-resident alien for US tax does not file either for their own Indian accounts. The obligations sit with the LLC and with any US-resident co-founder or officer, and they reach the founder personally once the founder moves to the US.
 
 FBAR and FATCA are two different US disclosure regimes that founders with a US LLC and Indian financial ties frequently confuse, often assuming they are the same filing or that meeting one requirement covers the other. They don't, and the confusion tends to surface only when a founder is already mid-way through a bank account opening or a tax filing and realizes they may have missed a disclosure.
 
@@ -14013,19 +14036,23 @@ The Report of Foreign Bank and Financial Accounts, commonly called FBAR and file
 
 ## What Counts as a "Foreign" Account Here
 
-This is the point of most confusion for a founder running a US LLC: the LLC's own bank account, held at a US bank, is a domestic account and does not itself create an FBAR obligation. FBAR becomes relevant when the founder, or the LLC, holds financial accounts outside the US, most commonly an Indian bank account, an Indian brokerage or mutual fund account, or a foreign account the LLC uses for a specific business purpose.
+This is the point of most confusion for a founder running a US LLC: the LLC's own bank account, held at a US bank, is a domestic account and does not itself create an FBAR obligation. FBAR becomes relevant when the LLC holds financial accounts outside the US, for example an account in India in the LLC's name, or when a founder who has become a US tax resident holds Indian bank, NRE/NRO, brokerage or mutual fund accounts. Disregarded status for income tax does not remove the LLC's own FBAR obligation.
 
 ## FATCA and Form 8938: A Separate Requirement
 
-FATCA reporting, done through Form 8938 filed with the individual's federal tax return, is governed by a different law with different thresholds than FBAR. Broadly, a filing is required where total specified foreign financial assets exceed 50,000 US dollars at year-end or 75,000 US dollars at any point during the year, with higher thresholds for joint filers and for those living abroad. Crucially, satisfying the FBAR requirement does not satisfy the FATCA requirement or vice versa. A founder who meets both sets of conditions has to file both.
+FATCA reporting, done through Form 8938 filed with the individual's federal tax return, is governed by a different law with different thresholds than FBAR. It applies to specified individuals, broadly US citizens and residents, and to certain specified domestic entities, so a non-resident alien founder filing Form 1040-NR is generally outside it. For those it covers, a filing is required where total specified foreign financial assets exceed 50,000 US dollars at year-end or 75,000 US dollars at any point during the year, with higher thresholds for joint filers and for those living abroad. Crucially, satisfying the FBAR requirement does not satisfy the FATCA requirement or vice versa. A founder who meets both sets of conditions has to file both.
 
 ## Signature Authority Can Be Enough
 
-A founder does not need to personally own an account to have an FBAR obligation. Signature authority or other authority to control the disposition of funds in a foreign account, even one held in the LLC's name rather than personally, can itself create a filing requirement. Founders who set up a foreign account for the business and forget this rule are a common source of missed filings.
+A US person does not need to personally own an account to have an FBAR obligation. Signature authority or other authority to control the disposition of funds in a foreign account, even one held in the LLC's name rather than personally, can itself create a filing requirement. This catches US-resident co-founders and officers who can operate an account the business holds outside the US. It does not apply to a non-resident alien.
 
 ## Getting This Right From the Start
 
 Because both regimes carry meaningful penalties for non-compliance, including for late or incomplete filings, the more practical approach is to map out every account, personal and business, Indian and US, at the point the LLC is set up, and review annually whether new accounts have changed the picture, rather than reconstructing the history retroactively once a question comes up during tax filing.
+
+## When the Founder Moves to the US
+
+The position flips the year a founder becomes a US tax resident, through a green card or by meeting the substantial presence test. From then on, Indian savings, NRE/NRO, fixed deposit, PPF, demat and mutual fund accounts can count towards FBAR, and specified foreign assets towards Form 8938. Indian mutual funds can also raise separate US reporting issues. Map every Indian account before the move rather than after the first US return.
 
 ### More Guides on This Topic
 
@@ -14045,21 +14072,25 @@ We help founders map their US and Indian accounts and file both correctly.
 
 ## Frequently Asked Questions
 
+### Does an Indian founder living in India have to file FBAR for Indian bank accounts?
+
+Generally no. FBAR and Form 8938 apply to US persons: US citizens, green card holders, people who meet the substantial presence test, and entities formed in the US. A founder who is a non-resident alien does not file FBAR for their personal Indian accounts just because they own a US LLC. That changes if the founder moves to the US and becomes a US tax resident.
+
 ### What is the FBAR threshold?
 
-An FBAR (FinCEN Form 114) filing is required if the aggregate value of all reportable foreign financial accounts exceeded 10,000 US dollars at any single point during the calendar year, not just at year-end. This applies to individuals and to certain US entities, including LLCs and corporations, with foreign financial accounts.
+An FBAR (FinCEN Form 114) filing is required if the aggregate value of all reportable foreign financial accounts exceeded 10,000 US dollars at any single point during the calendar year, not just at year-end. It applies to US persons, which includes US-formed LLCs and corporations that hold foreign financial accounts, not to a non-resident alien founder personally.
 
 ### Is a US LLC bank account a "foreign" account for FBAR purposes?
 
-No, an account held in the US by a US LLC is a domestic account and does not itself trigger FBAR. FBAR concerns foreign financial accounts, so it becomes relevant when the LLC, or an individual with signature authority, holds accounts outside the US, such as an Indian bank account connected to the business.
+No, an account held in the US by a US LLC is a domestic account and does not itself trigger FBAR. FBAR concerns foreign financial accounts, so it becomes relevant when the LLC, or an individual with signature authority, holds accounts outside the US, such as an Indian bank account opened in the LLC's name. A US-formed LLC is treated as a US person for FBAR even if it is disregarded for income tax.
 
 ### What is Form 8938 and how is it different from FBAR?
 
-Form 8938 is the FATCA reporting form, filed with the individual's tax return, and it is a separate filing requirement from the FBAR with its own thresholds, generally 50,000 US dollars in specified foreign financial assets at year-end or 75,000 US dollars at any point during the year, with different thresholds for joint filers and for those living abroad. Meeting one filing requirement does not exempt you from the other if both are triggered.
+Form 8938 is the FATCA reporting form filed by specified individuals, broadly US citizens and residents, and certain specified domestic entities, with their tax return. A non-resident alien founder filing Form 1040-NR is generally not a specified individual. It is a separate filing requirement from the FBAR with its own thresholds, generally 50,000 US dollars in specified foreign financial assets at year-end or 75,000 US dollars at any point during the year, with different thresholds for joint filers and for those living abroad. Meeting one filing requirement does not exempt you from the other if both are triggered.
 
 ### Does having signature authority without ownership still trigger FBAR?
 
-Yes. FBAR filing can be required based on signature authority or other authority over a foreign financial account, even if the account is not legally owned by the individual, such as an employee or officer with authority to direct fund movement.
+Yes, for a US person. A US citizen or resident co-founder, officer or employee with signature authority over a foreign account, including one in the LLC's name, can have an FBAR obligation even though they do not own the account. A non-resident alien with signature authority does not.
 
 ### What happens if FBAR or FATCA filings are missed?
 
@@ -14082,7 +14113,7 @@ US Cross-Border
 
 # Form 5471 vs 5472 vs 8858: Which One Applies to Your Foreign-Owned US Entity
 
-Published October 15, 2025[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published October 15, 2025Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -14090,6 +14121,7 @@ TL;DR
 - Form 5472: a US entity at least 25% foreign-owned, reporting transactions with the foreign owner.
 - Form 8858: a US person reporting a foreign disregarded entity or branch they own.
 - A single-member US LLC owned by an Indian founder almost always needs Form 5472, not 5471.
+- A US C-Corp with an Indian subsidiary files Form 5471 for that subsidiary every year.
 
 Running a US LLC or C-Corp from India?
 
@@ -14105,7 +14137,7 @@ The fastest way to tell these forms apart is to ask which direction the ownershi
 
 ## Form 5472 and the Foreign-Owned Single-Member LLC
 
-This is the scenario most Indian founders actually fall into: a single-member US LLC, wholly owned by a foreign individual, that would normally be a disregarded entity for tax purposes. Under rules effective for tax years beginning on or after 2017, such an entity is treated as a separate corporation for the limited purpose of the reporting requirements under Section 6038A, which means it must file Form 5472 to report reportable transactions with its foreign owner. This catches many founders off guard, since the LLC may have no employees, minimal revenue, and still be required to file, simply because owner contributions and distributions themselves count as reportable transactions.
+This is the scenario most Indian founders actually fall into: a single-member US LLC, wholly owned by a foreign individual, that would normally be a disregarded entity for tax purposes. Under rules effective for tax years beginning on or after January 1, 2017, such an entity is treated as a separate corporation for the limited purpose of the reporting requirements under Section 6038A, which means it must file Form 5472 to report reportable transactions with its foreign owner. This catches many founders off guard, since the LLC may have no employees, minimal revenue, and still be required to file, simply because owner contributions and distributions themselves count as reportable transactions. The Form 5472 is attached to a pro forma Form 1120 (only the identifying details are completed) and is due April 15 for a calendar-year LLC, or October 15 if Form 7004 is filed by April 15.
 
 ## What Counts as a Reportable Transaction
 
@@ -14117,7 +14149,11 @@ Form 8858 becomes relevant in the less common scenario for an Indian founder: wh
 
 ## Penalties Make This Worth Getting Right
 
-Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Given the increasing data-sharing between the IRS and FinCEN on beneficial ownership information, a founder should confirm which of these filings applies at the time the entity is set up, not discover it during an eventual audit.
+Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Note that the beneficial ownership (BOI) reports under the Corporate Transparency Act no longer apply to US-formed companies after FinCEN's interim final rule of March 2025; that change does not affect Form 5472, 5471 or 8858 at all. Confirm which of these filings applies when the entity is set up, not during an eventual audit.
+
+## When an Indian Founder Does Need Form 5471
+
+Form 5471 becomes very relevant once the structure grows. A common setup is a Delaware C-Corp as the parent with an Indian private limited company as its subsidiary. The C-Corp is a US person that owns a foreign corporation, so it files Form 5471 for the Indian subsidiary every year, and the payments between the two must be priced at arm's length in both countries. A founder who later becomes a US tax resident and owns shares in an Indian company directly can also become a Form 5471 filer.
 
 ### More Guides on This Topic
 
@@ -14139,7 +14175,7 @@ We help founders identify and file the correct foreign-ownership disclosures on 
 
 ### Which form applies to a US LLC that is wholly owned by an Indian founder?
 
-A US LLC that is a disregarded entity and wholly owned by a foreign person is generally treated as a separate corporation for the limited purposes of Section 6038A, and it files Form 5472 to report reportable transactions with its foreign owner, such as capital contributions and distributions.
+A US LLC that is a disregarded entity and wholly owned by a foreign person is generally treated as a separate corporation for the limited purposes of Section 6038A, and it files Form 5472, attached to a pro forma Form 1120, to report reportable transactions with its foreign owner, such as capital contributions and distributions. For a calendar-year LLC this is due April 15, or October 15 with Form 7004.
 
 ### What is the difference between Form 5471 and Form 5472?
 
@@ -14174,7 +14210,7 @@ US Cross-Border
 
 # US Sales Tax Economic Nexus for Indian SaaS and Services Companies
 
-Published November 22, 2025[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published November 22, 2025Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -14197,7 +14233,7 @@ Sales tax nexus, the legal connection to a state that creates a registration and
 
 ## How Thresholds Generally Work
 
-Most states set an economic nexus threshold based on annual sales revenue into that state, commonly in the region of 100,000 US dollars, sometimes alongside or in place of a separate transaction-count threshold. These figures are not uniform: some states set materially higher revenue thresholds, and threshold structures have been adjusted over time in various states, including some tightening rules by removing transaction-count alternatives. Because of this variation, a company should check the current threshold structure for each state where it has meaningful revenue rather than relying on a single number as a universal rule.
+Most states set an economic nexus threshold based on annual sales revenue into that state, commonly in the region of 100,000 US dollars, sometimes alongside or in place of a separate transaction-count threshold. These figures are not uniform: some states set materially higher revenue thresholds, and threshold structures keep changing: several states have dropped their transaction-count test and now look only at sales value, which helps sellers with many small transactions. Because of this variation, a company should check the current threshold structure for each state where it has meaningful revenue rather than relying on a single number as a universal rule.
 
 ## Is SaaS Even Taxable? It Depends on the State
 
@@ -14266,7 +14302,7 @@ US Cross-Border
 
 # US LLC Annual Compliance Calendar for Non-Resident Founders
 
-Published January 9, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published January 9, 2026Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -14274,6 +14310,7 @@ TL;DR
 - Deadlines are either fixed by calendar date or tied to the LLC's formation anniversary, depending on state.
 - A domestic US LLC, even if wholly foreign-owned, is exempt from BOI reporting since March 2025.
 - A missed registered agent notice is one of the most common causes of an administratively dissolved LLC.
+- The key federal filing is Form 5472 with a pro forma Form 1120 by April 15, due even with no income; the penalty starts at USD 25,000.
 
 Running a US LLC or C-Corp from India?
 
@@ -14295,6 +14332,10 @@ Roughly half of US states set annual report and franchise tax deadlines on a fix
 
 Every LLC must maintain a registered agent, the official point of contact the state uses to deliver notices. If the registered agent service lapses, or a forwarded notice from the agent is missed because the founder is in a different time zone and not checking consistently, deadlines can be missed silently. Left unaddressed, this can eventually lead to administrative dissolution of the LLC by the state, which is far more disruptive to unwind than simply renewing the agent on time would have been.
 
+## The Federal Filing Most Founders Miss: Form 5472
+
+A single-member LLC owned by a non-resident files Form 5472, attached to a pro forma Form 1120, every year to report transactions with its owner, including the money the owner put in and took out. For a calendar-year LLC it is due April 15, or October 15 if Form 7004 is filed by April 15. It is due even when the LLC had no income and owes no tax, and the penalty for missing it starts at USD 25,000. If the LLC holds a bank account outside the US with more than USD 10,000 in aggregate at any point in the year, it may also need to file an FBAR.
+
 ## Federal Estimated Tax Payments
 
 Where the LLC's income passes through to an owner with a US filing obligation, quarterly estimated tax payments generally still apply on the standard federal schedule. Missing these can trigger underpayment penalties even if the full tax is eventually paid with the annual return, which is a detail non-resident owners unfamiliar with the US quarterly system often overlook.
@@ -14304,6 +14345,13 @@ Where the LLC's income passes through to an owner with a US filing obligation, q
 For a period, the Corporate Transparency Act's beneficial ownership information reporting requirement was a major new compliance item for foreign-owned US LLCs. That changed with FinCEN's interim final rule published in March 2025, which redefined "reporting company" to cover only entities formed under a foreign country's law and registered to do business in the US, exempting all entities formed domestically in the US, including a US LLC wholly owned by a foreign person, from BOI reporting. This is a meaningful compliance simplification, but founders relying on older guidance, including some outdated online sources, may still believe this filing is required when it currently is not for a domestically formed LLC.
 
 ## Building the Calendar
+
+A typical year for a calendar-year Delaware LLC owned by an Indian founder looks like this:
+
+- **April 15:** Form 5472 with pro forma Form 1120 (or Form 7004 to extend to October 15); Form 1040-NR if the owner has US-taxable income; FBAR if the LLC has a reportable foreign account (automatic extension to October 15).
+- **June 1:** Delaware annual LLC tax.
+- **Formation anniversary:** registered agent renewal.
+- **Quarterly:** estimated tax, only where the owner has US-taxable income.
 
 The practical approach is to build a single calendar at formation covering the LLC's specific annual report/franchise tax deadline, registered agent renewal date, and quarterly estimated tax dates, and to revisit it whenever the entity's structure or ownership changes, since some triggers, such as an ownership change, can create new filing obligations outside the standard annual cycle.
 
@@ -14341,6 +14389,10 @@ This varies by state. Roughly half of states use a fixed calendar date that appl
 
 The registered agent is the state's official point of contact with the LLC. If agent renewal lapses or a forwarded notice is missed, deadlines such as annual report or franchise tax filings can be missed silently, which can eventually lead to administrative dissolution of the LLC in that state.
 
+### What is the main federal filing for a single-member LLC owned by a non-resident?
+
+Form 5472 attached to a pro forma Form 1120, due April 15 for a calendar-year LLC, or October 15 if Form 7004 is filed by April 15. It is required even if the LLC had no income, and the penalty for missing it starts at USD 25,000.
+
 ### Do federal estimated tax payments still apply to a non-resident-owned LLC?
 
 If the LLC's income passes through to an owner with a US tax liability, quarterly estimated tax payments generally still apply on the same federal schedule as for any other taxpayer with pass-through income, and missing these can result in underpayment penalties even if the full amount is eventually paid with the annual return.
@@ -14362,7 +14414,7 @@ US Cross-Border
 
 # India-US DTAA Guide: Permanent Establishment, Business Profits, and Double Tax Relief
 
-Published February 3, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Published February 3, 2026Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -14370,6 +14422,8 @@ TL;DR
 - Construction/installation PE threshold: generally more than 120 days in a 12-month period.
 - Services PE can arise even without a fixed location once activity crosses a duration threshold.
 - Article 7 taxes only the profit attributable to the PE, not the enterprise's entire worldwide income.
+- Services for a related enterprise can create a PE with no 90-day minimum in the treaty wording.
+- Foreign tax credit in India: Form 67 up to FY 2025-26; a new form under the Income-tax Rules 2026 from tax year 2026-27.
 
 Running a US LLC or C-Corp from India?
 
@@ -14389,7 +14443,11 @@ The treaty includes a specific duration test for construction, assembly, or inst
 
 ## Services Can Create a PE Without Any Fixed Location
 
-This is the part founders most often miss. A services PE can arise purely from furnishing services through employees or other personnel for a sufficiently long duration, referenced around 90 days within a twelve-month period for the relevant activities under the treaty's specific conditions, without any office or fixed physical location at all. For a founder whose US entity's work is substantially delivered through people operating out of India, this duration-based test, not just the existence of an office, is the one to watch.
+This is the part founders most often miss. A services PE can arise purely from furnishing services through employees or other personnel for a sufficiently long duration, referenced around 90 days within a twelve-month period for the relevant activities under the treaty's specific conditions, without any office or fixed physical location at all. The clause has a second limb that is easy to miss: services performed for a related enterprise can create a PE, and that limb has no day count in its wording. For a founder whose US entity's work is delivered through people in India, particularly through its own Indian subsidiary, both limbs need to be checked, not just the existence of an office. How the 90 days are counted has also been litigated in India, so the facts matter.
+
+## Dependent Agent PE
+
+A person in India who habitually concludes contracts on behalf of the US entity, or habitually secures its orders, can also create a PE. A founder living in India who negotiates and signs US customer contracts for the US company is the obvious risk case.
 
 ## Article 7: What Actually Gets Taxed
 
@@ -14398,6 +14456,12 @@ Once a PE exists, Article 7 governs what the host country can tax: not the enter
 ## Why This Matters for a Founder's Own Structure
 
 A founder who incorporates a US entity but continues to run day-to-day operations, close deals, or exercise real decision-making authority from India needs to consider whether that pattern of activity itself risks creating an unintended permanent establishment, or otherwise creating Indian tax exposure for the US entity's profits, independent of how the corporate structure is set up on paper. This is a genuinely fact-specific question, since it depends on what the founder actually does day to day, not just on where the company is incorporated, and it should be assessed as part of the overall US entity plan rather than left until profits are already flowing and the pattern of activity is already established.
+
+## Double Tax Relief
+
+An Indian resident who pays US tax on income that is also taxed in India, such as salary for work done in the US, US-source dividends or LLC income taxed in the US, claims credit for the US tax in India under the treaty. The credit is limited to the Indian tax on that income. For FY 2025-26 and earlier years the claim is made in Form 67, filed by the due date of the return. From tax year 2026-27 the Income-tax Rules 2026 replace Form 67 with a new form, reported as Form 44; confirm the form number and its requirements when you file. A non-resident claiming treaty rates on Indian income needs a Tax Residency Certificate and Form 10F.
+
+Residence is a separate risk. A US company that is in substance run from India can be treated as resident in India under the place of effective management test. See our [POEM guide](https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india).
 
 ### More Guides on This Topic
 
@@ -14427,7 +14491,7 @@ Under the India-US treaty, a construction or installation project generally beco
 
 ### Can providing services alone create a permanent establishment?
 
-Yes, under the treaty's services PE provisions, furnishing services through employees or other personnel for a sufficiently long duration, commonly referenced around 90 days within a twelve-month period for the relevant activities, can create a PE even without a fixed physical location, subject to the treaty's specific conditions.
+Yes, under the treaty's services PE provisions, furnishing services through employees or other personnel can create a PE without a fixed location if the activities continue for more than 90 days in any twelve-month period, or if the services are performed for a related enterprise. The related-enterprise limb has no day count in its wording, which matters for a US company served by its own Indian subsidiary or founder.
 
 ### What does Article 7 actually tax if a PE exists?
 

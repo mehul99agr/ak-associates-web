@@ -36,6 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'Delaware/Wyoming Incorporation, EIN and ITIN Guide',
   description: 'The incorporation process in Delaware or Wyoming for a non-resident founder, how to get an EIN without an SSN, and when an ITIN is actually required.',
   datePublished: '2025-06-27',
+  dateModified: '2026-11-10',
   slug: 'delaware-wyoming-incorporation-ein-itin-guide',
 })
 
@@ -62,7 +63,7 @@ export default function DelawareWyomingEinItinBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published June 27, 2025</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published June 27, 2025</span><span aria-hidden>&bull;</span><span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -71,7 +72,8 @@ export default function DelawareWyomingEinItinBlog() {
                   <li style={{ marginBottom: '0.4rem' }}>Both Delaware and Wyoming let a non-resident incorporate fully remotely via a registered agent.</li>
                   <li style={{ marginBottom: '0.4rem' }}>An EIN can be obtained without an SSN or ITIN, through Form SS-4 filed by fax or mail.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Correct order: incorporate, then EIN, then bank account, then ITIN only when a personal return is due.</li>
-                  <li style={{ marginBottom: 0 }}>An ITIN application is generally filed together with the actual tax return, not as a standalone step.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>An ITIN application is generally filed together with the actual tax return, not as a standalone step.</li>
+                  <li style={{ marginBottom: 0 }}>Budget for the annual state tax (Delaware LLC by June 1) and the federal Form 5472 with pro forma Form 1120 by April 15.</li>
                 </ul>
               </div>
               <ServiceOffer variant="us-entity" />
@@ -92,6 +94,15 @@ export default function DelawareWyomingEinItinBlog() {
 
               <h2>Timing It Around Tax Season</h2>
               <p>Because ITIN processing during peak filing months can run considerably longer than at other times of year, and because international mailing adds further delay, a founder who knows they will need to file a US return should build in extra lead time rather than assuming the process moves quickly close to a deadline.</p>
+              <h2>Annual Costs and Filings to Budget For</h2>
+              <ul>
+                <li><strong>Delaware LLC:</strong> a flat annual LLC tax due by June 1 each year (USD 300 in recent years; check the current amount with the Delaware Division of Corporations). There is no annual report. Late payment attracts a penalty and interest.</li>
+                <li><strong>Delaware C-Corp:</strong> franchise tax and an annual report due by March 1. The tax depends on the calculation method used, and the default authorised-shares method can produce a far higher bill than the assumed par value capital method.</li>
+                <li><strong>Wyoming LLC:</strong> an annual report and license tax due on the first day of the anniversary month of formation, the greater of USD 60 or a small charge on assets located in Wyoming.</li>
+                <li><strong>Registered agent:</strong> an annual fee in either state.</li>
+                <li><strong>Federal:</strong> a single-member LLC owned by a non-resident files Form 5472 with a pro forma Form 1120 by April 15 (October 15 with Form 7004), even with no income. The penalty for missing it starts at USD 25,000.</li>
+              </ul>
+              <p>One simplification: since FinCEN&apos;s interim final rule of March 2025, companies formed in the US no longer file beneficial ownership (BOI) reports.</p>
             </div>
 
             <PostFooterLinks slug="delaware-wyoming-incorporation-ein-itin-guide" />

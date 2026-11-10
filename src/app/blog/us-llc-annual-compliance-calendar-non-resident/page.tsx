@@ -36,6 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'US LLC Annual Compliance Calendar for Non-Resident Founders',
   description: 'The recurring state and federal filings a non-resident-owned US LLC needs to track every year, and the 2025 BOI reporting exemption for domestic entities.',
   datePublished: '2026-01-09',
+  dateModified: '2026-11-10',
   slug: 'us-llc-annual-compliance-calendar-non-resident',
 })
 
@@ -44,6 +45,7 @@ const faqs: [string, string][] = [
   ['What is the difference between an annual report and franchise tax?', 'An annual report is a state filing that updates or confirms the LLC\'s basic information, such as its registered agent and address, and is generally a compliance filing rather than a tax. Franchise tax is a separate state-level fee some states charge simply for the privilege of being organized or registered there, and it applies regardless of profitability in states that impose it.'],
   ['How is the annual report or franchise tax deadline determined?', 'This varies by state. Roughly half of states use a fixed calendar date that applies to all entities, while the other half tie the deadline to the LLC\'s own formation anniversary date, so the applicable deadline needs to be confirmed against the specific state of formation rather than assumed.'],
   ['What happens if a registered agent notice is missed?', 'The registered agent is the state\'s official point of contact with the LLC. If agent renewal lapses or a forwarded notice is missed, deadlines such as annual report or franchise tax filings can be missed silently, which can eventually lead to administrative dissolution of the LLC in that state.'],
+  ['What is the main federal filing for a single-member LLC owned by a non-resident?', 'Form 5472 attached to a pro forma Form 1120, due April 15 for a calendar-year LLC, or October 15 if Form 7004 is filed by April 15. It is required even if the LLC had no income, and the penalty for missing it starts at USD 25,000.'],
   ['Do federal estimated tax payments still apply to a non-resident-owned LLC?', 'If the LLC\'s income passes through to an owner with a US tax liability, quarterly estimated tax payments generally still apply on the same federal schedule as for any other taxpayer with pass-through income, and missing these can result in underpayment penalties even if the full amount is eventually paid with the annual return.'],
 ]
 
@@ -62,7 +64,7 @@ export default function UsLlcComplianceCalendarBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>US LLC Annual Compliance Calendar for Non-Resident Founders</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published January 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published January 9, 2026</span><span aria-hidden>&bull;</span><span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -71,7 +73,8 @@ export default function UsLlcComplianceCalendarBlog() {
                   <li style={{ marginBottom: '0.4rem' }}>Track annual report, franchise tax, registered agent renewal, and estimated tax dates every year.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Deadlines are either fixed by calendar date or tied to the LLC's formation anniversary, depending on state.</li>
                   <li style={{ marginBottom: '0.4rem' }}>A domestic US LLC, even if wholly foreign-owned, is exempt from BOI reporting since March 2025.</li>
-                  <li style={{ marginBottom: 0 }}>A missed registered agent notice is one of the most common causes of an administratively dissolved LLC.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>A missed registered agent notice is one of the most common causes of an administratively dissolved LLC.</li>
+                  <li style={{ marginBottom: 0 }}>The key federal filing is Form 5472 with a pro forma Form 1120 by April 15, due even with no income; the penalty starts at USD 25,000.</li>
                 </ul>
               </div>
               <ServiceOffer variant="us-entity" />
@@ -87,6 +90,9 @@ export default function UsLlcComplianceCalendarBlog() {
               <h2>The Registered Agent Is the Weak Link</h2>
               <p>Every LLC must maintain a registered agent, the official point of contact the state uses to deliver notices. If the registered agent service lapses, or a forwarded notice from the agent is missed because the founder is in a different time zone and not checking consistently, deadlines can be missed silently. Left unaddressed, this can eventually lead to administrative dissolution of the LLC by the state, which is far more disruptive to unwind than simply renewing the agent on time would have been.</p>
 
+              <h2>The Federal Filing Most Founders Miss: Form 5472</h2>
+              <p>A single-member LLC owned by a non-resident files Form 5472, attached to a pro forma Form 1120, every year to report transactions with its owner, including the money the owner put in and took out. For a calendar-year LLC it is due April 15, or October 15 if Form 7004 is filed by April 15. It is due even when the LLC had no income and owes no tax, and the penalty for missing it starts at USD 25,000. If the LLC holds a bank account outside the US with more than USD 10,000 in aggregate at any point in the year, it may also need to file an FBAR.</p>
+
               <h2>Federal Estimated Tax Payments</h2>
               <p>Where the LLC's income passes through to an owner with a US filing obligation, quarterly estimated tax payments generally still apply on the standard federal schedule. Missing these can trigger underpayment penalties even if the full tax is eventually paid with the annual return, which is a detail non-resident owners unfamiliar with the US quarterly system often overlook.</p>
 
@@ -94,6 +100,13 @@ export default function UsLlcComplianceCalendarBlog() {
               <p>For a period, the Corporate Transparency Act's beneficial ownership information reporting requirement was a major new compliance item for foreign-owned US LLCs. That changed with FinCEN's interim final rule published in March 2025, which redefined "reporting company" to cover only entities formed under a foreign country's law and registered to do business in the US, exempting all entities formed domestically in the US, including a US LLC wholly owned by a foreign person, from BOI reporting. This is a meaningful compliance simplification, but founders relying on older guidance, including some outdated online sources, may still believe this filing is required when it currently is not for a domestically formed LLC.</p>
 
               <h2>Building the Calendar</h2>
+              <p>A typical year for a calendar-year Delaware LLC owned by an Indian founder looks like this:</p>
+              <ul>
+                <li><strong>April 15:</strong> Form 5472 with pro forma Form 1120 (or Form 7004 to extend to October 15); Form 1040-NR if the owner has US-taxable income; FBAR if the LLC has a reportable foreign account (automatic extension to October 15).</li>
+                <li><strong>June 1:</strong> Delaware annual LLC tax.</li>
+                <li><strong>Formation anniversary:</strong> registered agent renewal.</li>
+                <li><strong>Quarterly:</strong> estimated tax, only where the owner has US-taxable income.</li>
+              </ul>
               <p>The practical approach is to build a single calendar at formation covering the LLC's specific annual report/franchise tax deadline, registered agent renewal date, and quarterly estimated tax dates, and to revisit it whenever the entity's structure or ownership changes, since some triggers, such as an ownership change, can create new filing obligations outside the standard annual cycle.</p>
             </div>
 

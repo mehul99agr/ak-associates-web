@@ -36,13 +36,14 @@ const articleLd = buildArticleLd({
   headline: 'India-US DTAA Guide: Permanent Establishment and Business Profits',
   description: 'How the India-US double taxation avoidance agreement defines a permanent establishment under Article 5 and attributes business profits under Article 7, and its relevance to a founder running a US entity from India.',
   datePublished: '2026-02-03',
+  dateModified: '2026-11-10',
   slug: 'india-us-dtaa-guide',
 })
 
 const faqs: [string, string][] = [
   ['What is a permanent establishment under the India-US treaty?', 'Article 5 of the India-US DTAA defines a permanent establishment, generally, as a fixed place of business through which an enterprise\'s business is wholly or partly carried on, such as a branch, office, or factory, along with specific rules for construction projects and service activities carried on for a certain duration.'],
   ['How long can a construction project run before it creates a PE?', 'Under the India-US treaty, a construction or installation project generally becomes a permanent establishment once it continues for more than 120 days within a twelve-month period, so shorter projects can avoid PE status while longer ones cross into it.'],
-  ['Can providing services alone create a permanent establishment?', 'Yes, under the treaty\'s services PE provisions, furnishing services through employees or other personnel for a sufficiently long duration, commonly referenced around 90 days within a twelve-month period for the relevant activities, can create a PE even without a fixed physical location, subject to the treaty\'s specific conditions.'],
+  ['Can providing services alone create a permanent establishment?', 'Yes, under the treaty\'s services PE provisions, furnishing services through employees or other personnel can create a PE without a fixed location if the activities continue for more than 90 days in any twelve-month period, or if the services are performed for a related enterprise. The related-enterprise limb has no day count in its wording, which matters for a US company served by its own Indian subsidiary or founder.'],
   ['What does Article 7 actually tax if a PE exists?', 'Once a PE exists, Article 7 provides that the other country can tax the business profits attributable to that PE, calculated broadly as the profits the PE would have earned if it were an independent enterprise dealing at arm\'s length with the rest of the business, rather than the enterprise\'s entire worldwide profit.'],
   ['Why does this matter for a founder running a US entity while based in India?', 'If a founder\'s activities in India, such as directing operations, closing deals, or exercising authority for the US entity, are extensive enough, they can risk creating an unintended permanent establishment or otherwise triggering tax exposure in India for the US entity\'s profits, so this should be assessed alongside the corporate structure itself, not treated as a separate afterthought.'],
 ]
@@ -62,7 +63,7 @@ export default function IndiaUsDtaaGuideBlog() {
             <span className="section-badge">US Cross-Border</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>India-US DTAA Guide: Permanent Establishment, Business Profits, and Double Tax Relief</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published February 3, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Published February 3, 2026</span><span aria-hidden>&bull;</span><span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -71,7 +72,9 @@ export default function IndiaUsDtaaGuideBlog() {
                   <li style={{ marginBottom: '0.4rem' }}>Article 5 defines when a fixed place of business, or long enough activity, becomes a permanent establishment (PE).</li>
                   <li style={{ marginBottom: '0.4rem' }}>Construction/installation PE threshold: generally more than 120 days in a 12-month period.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Services PE can arise even without a fixed location once activity crosses a duration threshold.</li>
-                  <li style={{ marginBottom: 0 }}>Article 7 taxes only the profit attributable to the PE, not the enterprise's entire worldwide income.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Article 7 taxes only the profit attributable to the PE, not the enterprise's entire worldwide income.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Services for a related enterprise can create a PE with no 90-day minimum in the treaty wording.</li>
+                  <li style={{ marginBottom: 0 }}>Foreign tax credit in India: Form 67 up to FY 2025-26; a new form under the Income-tax Rules 2026 from tax year 2026-27.</li>
                 </ul>
               </div>
               <ServiceOffer variant="us-entity" />
@@ -85,13 +88,18 @@ export default function IndiaUsDtaaGuideBlog() {
               <p>The treaty includes a specific duration test for construction, assembly, or installation projects: such a project generally becomes a permanent establishment once it continues for more than 120 days within a twelve-month period. A shorter project can be completed without crossing into PE status, while one that runs past this threshold brings the profits connected to it into the host country's taxing right.</p>
 
               <h2>Services Can Create a PE Without Any Fixed Location</h2>
-              <p>This is the part founders most often miss. A services PE can arise purely from furnishing services through employees or other personnel for a sufficiently long duration, referenced around 90 days within a twelve-month period for the relevant activities under the treaty's specific conditions, without any office or fixed physical location at all. For a founder whose US entity's work is substantially delivered through people operating out of India, this duration-based test, not just the existence of an office, is the one to watch.</p>
+              <p>This is the part founders most often miss. A services PE can arise purely from furnishing services through employees or other personnel for a sufficiently long duration, referenced around 90 days within a twelve-month period for the relevant activities under the treaty's specific conditions, without any office or fixed physical location at all. The clause has a second limb that is easy to miss: services performed for a related enterprise can create a PE, and that limb has no day count in its wording. For a founder whose US entity&apos;s work is delivered through people in India, particularly through its own Indian subsidiary, both limbs need to be checked, not just the existence of an office. How the 90 days are counted has also been litigated in India, so the facts matter.</p>
+              <h2>Dependent Agent PE</h2>
+              <p>A person in India who habitually concludes contracts on behalf of the US entity, or habitually secures its orders, can also create a PE. A founder living in India who negotiates and signs US customer contracts for the US company is the obvious risk case.</p>
 
               <h2>Article 7: What Actually Gets Taxed</h2>
               <p>Once a PE exists, Article 7 governs what the host country can tax: not the enterprise's entire worldwide profit, but specifically the profit attributable to that PE. This attribution is done broadly as if the PE were a distinct, independent enterprise dealing at arm's length with the rest of the business it is part of. This arm's-length attribution principle is the same underlying idea used in transfer pricing more broadly, and it means the profit taxed at the PE level should reflect what that establishment would have earned on its own, not an arbitrary share of total company profit.</p>
 
               <h2>Why This Matters for a Founder's Own Structure</h2>
               <p>A founder who incorporates a US entity but continues to run day-to-day operations, close deals, or exercise real decision-making authority from India needs to consider whether that pattern of activity itself risks creating an unintended permanent establishment, or otherwise creating Indian tax exposure for the US entity's profits, independent of how the corporate structure is set up on paper. This is a genuinely fact-specific question, since it depends on what the founder actually does day to day, not just on where the company is incorporated, and it should be assessed as part of the overall US entity plan rather than left until profits are already flowing and the pattern of activity is already established.</p>
+              <h2>Double Tax Relief</h2>
+              <p>An Indian resident who pays US tax on income that is also taxed in India, such as salary for work done in the US, US-source dividends or LLC income taxed in the US, claims credit for the US tax in India under the treaty. The credit is limited to the Indian tax on that income. For FY 2025-26 and earlier years the claim is made in Form 67, filed by the due date of the return. From tax year 2026-27 the Income-tax Rules 2026 replace Form 67 with a new form, reported as Form 44; confirm the form number and its requirements when you file. A non-resident claiming treaty rates on Indian income needs a Tax Residency Certificate and Form 10F.</p>
+              <p>Residence is a separate risk. A US company that is in substance run from India can be treated as resident in India under the place of effective management test. See our <Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'var(--primary)' }}>POEM guide</Link>.</p>
             </div>
 
             <PostFooterLinks slug="india-us-dtaa-guide" />
