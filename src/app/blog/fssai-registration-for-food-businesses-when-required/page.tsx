@@ -140,8 +140,8 @@ export default function FssaiRegistrationBlog() {
               <PostCTA
             heading="Setting up or scaling a food business?"
             description="We help food businesses identify the right FSSAI tier, prepare the application, and keep registrations current as turnover grows."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

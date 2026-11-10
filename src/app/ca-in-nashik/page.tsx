@@ -280,7 +280,7 @@ export default function CAInNashik() {
               { icon: 'users', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file; not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
               { icon: 'scroll', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
               { icon: 'globe', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax; capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
-              { icon: 'phone', title: 'Responsive Communication', desc: 'WhatsApp for quick questions, phone for urgent matters, email for documentation. We respond within hours, not days.' },
+              { icon: 'phone', title: 'Responsive Communication', desc: 'Email for questions and documents, booked calls for anything that needs a discussion. We reply to email within one working day.' },
               { icon: 'rupee', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges, no surprise invoices, no per-call billing.' },
             ].map((item, i) => (
               <div key={i} className="card">
@@ -305,7 +305,7 @@ export default function CAInNashik() {
               { icon: 'award', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation; rare expertise available in Nashik.' },
               { icon: 'globe', title: 'International Tax Capability', desc: 'One of the very few CA firms in Nashik with hands-on experience in transfer pricing, DTAA, FEMA, and UAE corporate tax.' },
               { icon: 'zap', title: 'Fast Turnaround', desc: 'Dedicated team ensuring timely GST returns, ITR filing, and compliance so you never miss a deadline.' },
-              { icon: 'phone', title: 'Responsive Support', desc: 'Direct access to partners; no juniors handling your queries. We pick up the phone and respond to WhatsApp.' },
+              { icon: 'phone', title: 'Responsive Support', desc: 'Direct access to partners; no juniors handling your queries. Engaged clients get a direct line for day-to-day work.' },
               { icon: 'briefcase', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO; all under one roof in Nashik.' },
               { icon: 'lock', title: 'Trusted & Confidential', desc: 'Your financial data is handled with strict confidentiality. We are registered with ICAI and operate with complete professional ethics.' },
             ].map((item, i) => (
@@ -407,8 +407,8 @@ export default function CAInNashik() {
               <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
                 Book a Call
               </a>
-              <a href="/consult?partner=mehul&for=whatsapp" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
-                WhatsApp Us
+              <a href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
+                Email Us
               </a>
             </div>
           </div>

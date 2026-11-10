@@ -137,8 +137,8 @@ export default function CsrFundUtilisationComplianceBlog() {
               <PostCTA
             heading="Setting up your trust to receive CSR funding?"
             description="We handle CSR-1 registration, 12A/80G compliance, and project-wise accounting for trusts working with corporate CSR partners."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

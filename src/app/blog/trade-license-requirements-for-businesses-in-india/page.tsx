@@ -150,8 +150,8 @@ export default function TradeLicenseBlog() {
               <PostCTA
             heading="Need help with municipal or state registrations?"
             description="We help businesses in Nashik, Sillod, and beyond identify which local registrations apply and get them filed correctly the first time."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

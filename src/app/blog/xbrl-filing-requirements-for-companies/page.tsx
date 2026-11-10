@@ -141,8 +141,8 @@ export default function XbrlFilingRequirementsBlog() {
               <PostCTA
             heading="Not sure if your company needs to file in XBRL this year?"
             description="We check your applicability against the current thresholds, prepare the XBRL tagging, and manage the AOC-4 deadline end to end."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

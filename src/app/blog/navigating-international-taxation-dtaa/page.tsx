@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { BASE_URL, BOOKING_LINK, WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
+import { BASE_URL, BOOKING_LINK, EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import PostCTA from '../_components/PostCTA'
@@ -145,11 +145,11 @@ export default function NavigatingInternationalTaxationDtaaBlog() {
 
             <PostCTA
               heading="Need help with this?"
-              description="Book a consultation with our partners, or message us on WhatsApp for a quick answer."
+              description="Book a consultation with our partners, or email us your question."
               primaryLabel="Book Consultation"
               primaryHref={BOOKING_LINK}
-              secondaryLabel="Ask on WhatsApp"
-              secondaryHref={WHATSAPP_ARTICLE_LINK}
+              secondaryLabel="Email us"
+              secondaryHref={EMAIL_LINK}
               marginTop="1.5rem"
               background="var(--bg-surface)"
             />

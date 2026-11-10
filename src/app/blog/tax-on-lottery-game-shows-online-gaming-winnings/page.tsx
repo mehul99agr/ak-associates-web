@@ -176,8 +176,8 @@ export default function LotteryGamingTaxBlog() {
               <PostCTA
             heading="Received lottery, game show, or online gaming winnings?"
             description="We help you report winnings correctly, reconcile TDS credits, and avoid mismatches with your AIS/Form 26AS."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

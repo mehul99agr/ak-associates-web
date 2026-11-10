@@ -156,8 +156,8 @@ export default function SurveySection133ABlog() {
               <PostCTA
             heading="Facing or anticipating an income tax survey?"
             description="We help businesses understand what a survey can and cannot involve, and manage the assessment proceedings that follow."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

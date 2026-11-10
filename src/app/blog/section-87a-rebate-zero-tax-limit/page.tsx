@@ -133,8 +133,8 @@ export default function Section87ARebateBlog() {
             <PostCTA
             heading="Not sure if you qualify for zero tax this year?"
             description="We compute your actual liability under both regimes, apply marginal relief correctly, and flag any capital gains that fall outside the rebate."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

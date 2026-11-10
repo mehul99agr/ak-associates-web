@@ -135,8 +135,8 @@ export default function PoliticalDonations80GGCBlog() {
               <PostCTA
             heading="Received a notice on a political donation claim?"
             description="We help individuals document genuine 80GGC claims correctly and respond to scrutiny notices with the right evidence."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

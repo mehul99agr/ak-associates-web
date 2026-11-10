@@ -148,8 +148,8 @@ export default function RectificationSection154Blog() {
               <PostCTA
             heading="Spotted an error in your intimation?"
             description="We help clients identify whether rectification or a revised return is the right fix, and file it correctly the first time."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

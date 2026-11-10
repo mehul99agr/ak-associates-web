@@ -979,7 +979,7 @@ export const posts = [
     slug: 'uae-corporate-tax-indian-impact',
     date: 'March 08, 2026',
     category: 'International Tax',
-    summary: 'With the implementation of Corporate Tax in UAE, how should Indian businesses with Gulf operations restructure their holdings?',
+    summary: 'UAE 9% corporate tax for Indian groups: Small Business Relief extended to 2029, free zone 0% conditions, transfer pricing files and what the DTAA does not cover.',
   },
   {
     title: 'Navigating International Taxation & DTAA',

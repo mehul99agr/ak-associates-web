@@ -147,8 +147,8 @@ export default function ClubbingOfIncomeBlog() {
               <PostCTA
             heading="Planning investments across family members?"
             description="We help families structure gifts, HUF assets, and spouse/minor investments so income lands where you expect it to, without a clubbing surprise at assessment."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

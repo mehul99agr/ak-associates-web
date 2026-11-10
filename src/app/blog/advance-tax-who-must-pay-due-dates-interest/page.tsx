@@ -162,8 +162,8 @@ export default function AdvanceTaxBlog() {
               <PostCTA
             heading="Need help estimating your advance tax instalments?"
             description="We help individuals, freelancers, and businesses calculate quarterly advance tax accurately and avoid unnecessary 234B/234C interest."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

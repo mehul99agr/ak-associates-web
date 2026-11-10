@@ -84,7 +84,6 @@ const offices = [
     key: 'mehul',
     address: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011, Maharashtra',
     email: 'mehul@agrawalkhandelwal.com',
-    wa: '/consult?partner=mehul&for=whatsapp',
   },
   {
     label: 'Sillod Office',
@@ -92,7 +91,6 @@ const offices = [
     key: 'rupesh',
     address: 'Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra',
     email: 'rupesh@agrawalkhandelwal.com',
-    wa: '/consult?partner=rupesh&for=whatsapp',
   },
 ]
 
@@ -129,7 +127,6 @@ export default function Contact() {
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.5rem' }}>
                     <TrackedLink href={`/consult?partner=${o.key}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Book a Call</TrackedLink>
-                    <TrackedLink href={o.wa} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>WhatsApp</TrackedLink>
                     <TrackedLink href={`mailto:${o.email}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Email</TrackedLink>
                   </div>
                   <p style={{ marginTop: '1.25rem', fontSize: '0.85rem' }}>

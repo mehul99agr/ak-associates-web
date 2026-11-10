@@ -125,8 +125,8 @@ export default function HousePropertyBlog() {
             <PostCTA
             heading="Own more than one house or a rented-out property?"
             description="We compute house property income correctly across self-occupied and let-out properties and model old vs new regime before you file."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

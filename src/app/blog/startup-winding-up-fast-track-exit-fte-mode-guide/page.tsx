@@ -141,8 +141,8 @@ export default function StartupWindingUpFTEBlog() {
               <PostCTA
             heading="Winding down your startup?"
             description="We check eligibility, clear any pending ROC filings, coordinate investor consents if needed, and handle the STK-2 filing end to end."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

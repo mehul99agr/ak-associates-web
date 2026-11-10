@@ -146,8 +146,8 @@ export default function StartupComplianceAutomationBlog() {
               <PostCTA
             heading="Need help organising ODI/APR, transfer pricing, or GST compliance?"
             description="We support growing startups with cross-border structures through Virtual CFO oversight and dedicated offshore accounting teams, alongside direct RBI, transfer pricing, and GST filings."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

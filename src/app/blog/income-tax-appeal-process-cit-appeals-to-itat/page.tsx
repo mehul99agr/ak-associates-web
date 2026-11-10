@@ -144,8 +144,8 @@ export default function IncomeTaxAppealProcessBlog() {
               <PostCTA
             heading="Considering an appeal against an income tax order?"
             description="We assess whether an appeal is worth pursuing, draft grounds of appeal, and represent you before CIT(Appeals) and the ITAT."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

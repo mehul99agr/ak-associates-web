@@ -142,8 +142,8 @@ export default function StayOfDemandBlog() {
               <PostCTA
             heading="Disputing a tax demand and need a stay?"
             description="We prepare and file appeals and stay of demand applications, and represent clients before the Assessing Officer, Commissioner (Appeals), and Tribunal."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

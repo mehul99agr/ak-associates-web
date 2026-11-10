@@ -151,8 +151,8 @@ export default function SearchAndSeizureBlog() {
               <PostCTA
             heading="Facing an income tax search or a post-search assessment?"
             description="We help individuals and businesses navigate search proceedings, statement review, and the assessment that follows."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

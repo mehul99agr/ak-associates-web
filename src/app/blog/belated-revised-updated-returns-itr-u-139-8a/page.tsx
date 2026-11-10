@@ -181,8 +181,8 @@ export default function ItrUBlog() {
               <PostCTA
             heading="Need to file a belated, revised, or updated return?"
             description="We help individuals and businesses work out which filing route applies, compute the exact tax and interest due, and file correctly the first time."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

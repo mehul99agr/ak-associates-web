@@ -142,8 +142,8 @@ export default function Section12A80GBlog() {
               <PostCTA
             heading="Managing 12A/80G registration or renewal for your NGO?"
             description="We help trusts, societies, and Section 8 companies with provisional and regular registration, Form 10AB renewals, and staying ahead of the deadlines that matter."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

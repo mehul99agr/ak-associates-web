@@ -130,8 +130,8 @@ export default function Section80DBlog() {
             <PostCTA
             heading="Not sure which tax regime saves you more?"
             description="We compare your old-regime deductions, including Section 80D and 80C, against the new regime slabs before you file."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

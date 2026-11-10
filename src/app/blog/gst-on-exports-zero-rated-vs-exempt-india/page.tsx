@@ -174,8 +174,8 @@ export default function GSTExportsZeroRatedBlog() {
               <PostCTA
             heading="Unclaimed GST refunds on exports? We can file retroactively."
             description="We review export transactions, check LUT compliance, and file RFD-01 refund claims for Indian exporters with accumulated ITC."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

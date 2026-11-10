@@ -147,8 +147,8 @@ export default function CapitalGainsSharesEquityDebtBlog() {
               <PostCTA
             heading="Planning a share or mutual fund sale?"
             description="We help investors work out the exact capital gains impact before a sale, not after, so the exemption and timing decisions are made with full information."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

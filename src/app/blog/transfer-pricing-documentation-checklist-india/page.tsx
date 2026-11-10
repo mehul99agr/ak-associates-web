@@ -170,8 +170,8 @@ export default function TPDocumentationChecklist() {
             heading="Need transfer pricing documentation for your Indian subsidiary?"
             description="We prepare Form 3CEB, Local File, and Master File documentation for Indian entities with international related-party transactions."
             marginTop="1.5rem"
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

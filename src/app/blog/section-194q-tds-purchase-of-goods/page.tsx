@@ -138,8 +138,8 @@ export default function Section194QBlog() {
               <PostCTA
             heading="Crossing the Rs 10 crore turnover mark, or buying goods at scale?"
             description="We help buyers set up seller-wise TDS tracking under Section 194Q and stay compliant on quarterly filings."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

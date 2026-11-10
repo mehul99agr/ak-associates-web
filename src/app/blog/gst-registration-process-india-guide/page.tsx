@@ -165,8 +165,8 @@ export default function GstRegistrationProcessGuideBlog() {
               <PostCTA
             heading="Need help with GST registration?"
             description="We handle GST registration, multi-state GSTIN setup, and ongoing return filing for businesses across structures and industries."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

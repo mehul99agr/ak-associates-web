@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Icon from './Icon'
 import TrackedLink from './TrackedLink'
-import { BOOKING_LINK, WHATSAPP_LINK } from '@/lib/constants'
+import { BOOKING_LINK, EMAIL_LINK } from '@/lib/constants'
 import { formatDueDate, getUpcomingKeyDates } from '@/lib/dueDates'
 
 export const metadata: Metadata = {
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 export const revalidate = 3600
 
 const bookingLink = BOOKING_LINK
-const whatsappLink = '/consult?for=whatsapp'
 
 const services = [
   {
@@ -206,8 +205,8 @@ export default function Home() {
             <TrackedLink href={bookingLink} className="btn btn-primary" method="booking" location="homepage_hero">
               Book a Consultation
             </TrackedLink>
-            <TrackedLink href={WHATSAPP_LINK} className="btn btn-secondary" method="whatsapp" location="homepage_hero">
-              Chat on WhatsApp
+            <TrackedLink href={EMAIL_LINK} className="btn btn-secondary" method="email" location="homepage_hero">
+              Email Us
             </TrackedLink>
           </div>
         </div>
@@ -507,7 +506,7 @@ export default function Home() {
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>rupesh@agrawalkhandelwal.com</a>
             </div>
 
-            {/* WhatsApp CTA: uses explicit dark blue to work in both modes */}
+            {/* Booking CTA */}
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', borderColor: 'var(--primary)' }}>
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>

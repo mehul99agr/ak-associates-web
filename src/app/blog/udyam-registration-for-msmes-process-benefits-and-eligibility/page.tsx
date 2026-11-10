@@ -149,8 +149,8 @@ export default function UdyamRegistrationMSMEBlog() {
               <PostCTA
             heading="Need help with Udyam registration or MSME compliance?"
             description="We handle Udyam registration, classification checks, and ongoing MSME/statutory compliance for growing businesses."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

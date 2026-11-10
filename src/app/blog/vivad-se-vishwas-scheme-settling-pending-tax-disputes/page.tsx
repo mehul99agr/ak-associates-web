@@ -130,8 +130,8 @@ export default function VivadSeVishwasBlog() {
               <PostCTA
             heading="Have a pending tax dispute?"
             description="We help you evaluate the right route, appeal, rectification, stay of demand, or settlement mechanism, based on your specific facts."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

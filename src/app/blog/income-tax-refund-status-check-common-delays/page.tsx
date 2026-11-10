@@ -141,8 +141,8 @@ export default function IncomeTaxRefundStatusBlog() {
               <PostCTA
             heading="Refund stuck or delayed longer than expected?"
             description="We help clients diagnose refund delays, respond to Section 245 notices, and get bank account issues sorted so refunds actually get credited."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

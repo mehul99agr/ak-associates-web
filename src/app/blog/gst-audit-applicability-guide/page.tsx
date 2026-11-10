@@ -154,8 +154,8 @@ export default function GSTAuditApplicabilityBlog() {
               <PostCTA
             heading="Received a GST audit notice, or approaching the Rs 5 crore threshold?"
             description="We handle GSTR-9C reconciliation, respond to Section 65 audit notices, and reconcile ITC and turnover ahead of year-end."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

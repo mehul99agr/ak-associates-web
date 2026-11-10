@@ -145,8 +145,8 @@ export default function SftHighValueTransactionBlog() {
               <PostCTA
             heading="Not sure what your AIS actually reports?"
             description="We reconcile AIS and Form 26AS against your books before filing, so nothing surprises you after the fact."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

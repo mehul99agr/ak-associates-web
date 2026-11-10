@@ -147,8 +147,8 @@ export default function Section194JBlog() {
               <PostCTA
             heading="Need help with TDS compliance on professional or technical payments?"
             description="We help businesses classify payments correctly, deduct TDS at the right rate, and file accurate quarterly returns."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

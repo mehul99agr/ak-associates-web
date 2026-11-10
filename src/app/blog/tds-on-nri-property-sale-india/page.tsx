@@ -323,8 +323,8 @@ export default function TDSNRIPropertyBlog() {
               <PostCTA
             heading="Need help with NRI property TDS or sale proceeds repatriation?"
             description="We handle Form 13 applications, Form 27Q filing, and Form 145/146 compliance for NRI property transactions across India."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

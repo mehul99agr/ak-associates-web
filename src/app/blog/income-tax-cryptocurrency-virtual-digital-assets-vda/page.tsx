@@ -165,8 +165,8 @@ export default function CryptoVDATaxBlog() {
               <PostCTA
             heading="Need help reporting crypto or VDA income correctly?"
             description="We reconcile exchange statements, compute Schedule VDA figures, and make sure your TDS credits are correctly claimed."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

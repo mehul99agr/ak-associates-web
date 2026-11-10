@@ -159,8 +159,8 @@ export default function NRITDSRefundBlog() {
               <PostCTA
             heading="Need help claiming your NRI TDS refund?"
             description="We file ITRs and track refunds for NRI clients across the UAE, US, UK, Singapore, and Australia."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

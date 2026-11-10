@@ -168,8 +168,8 @@ export default function BooksOfAccountsSection44AABlog() {
               <PostCTA
             heading="Not sure if you need to maintain formal books?"
             description="We assess your Section 44AA classification, set up compliant books, and keep them audit-ready year-round."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

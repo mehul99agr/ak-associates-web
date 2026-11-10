@@ -143,8 +143,8 @@ export default function BestJudgmentAssessmentBlog() {
               <PostCTA
             heading="Facing or worried about a best judgment assessment?"
             description="We help clients respond before an assessment is finalised, and represent them in appeal where one has already been passed."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

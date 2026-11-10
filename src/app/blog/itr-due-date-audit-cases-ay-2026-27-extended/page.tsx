@@ -151,8 +151,8 @@ export default function ItrDueDateAuditCasesBlog() {
               <PostCTA
                 heading="Audit report or return still pending for AY 2026-27?"
                 description="We handle tax audits and audit-case returns for companies, firms, LLPs and their partners, including the portal acceptance step."
-                secondaryLabel="Ask on WhatsApp"
-                secondaryHref="/consult?for=whatsapp"
+                secondaryLabel="Email us"
+                secondaryHref="mailto:mehul@agrawalkhandelwal.com"
               />
 
               <FaqSection faqs={faqs} />

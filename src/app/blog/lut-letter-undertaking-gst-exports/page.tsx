@@ -145,8 +145,8 @@ export default function LUTGSTExportsBlog() {
               <PostCTA
             heading="Need your LUT filed or renewed before the deadline?"
             description="We file Form RFD-11 for exporters each financial year and track renewal dates so your export invoices are never left uncovered."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

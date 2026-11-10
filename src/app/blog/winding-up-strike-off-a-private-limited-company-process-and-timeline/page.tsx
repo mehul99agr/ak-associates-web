@@ -158,8 +158,8 @@ export default function WindingUpStrikeOffBlog() {
               <PostCTA
             heading="Ready to close a dormant company?"
             description="We check eligibility, clear pending ROC filings if needed, and handle the full STK-2 filing end to end."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

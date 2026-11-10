@@ -218,8 +218,8 @@ export default function Form13NRIBlog() {
               <PostCTA
             heading="Need help applying for a Form 13 certificate?"
             description="We handle Form 13 applications end-to-end for NRI clients, from computation to certificate, well before the sale closes."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

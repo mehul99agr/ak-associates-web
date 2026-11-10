@@ -35,8 +35,8 @@ export default function PostCTA({
           <Link href={primaryHref} className="btn btn-primary">{primaryLabel}</Link>
         )}
         {secondaryLabel && secondaryHref && (
-          secondaryExternal && !secondaryHref.startsWith('/') ? (
-            <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className="btn btn-outline">{secondaryLabel}</a>
+          (secondaryExternal && !secondaryHref.startsWith('/')) || secondaryHref.startsWith('mailto:') ? (
+            <a href={secondaryHref} {...(secondaryHref.startsWith('mailto:') ? {} : { target: '_blank', rel: 'noopener noreferrer' })} className="btn btn-outline">{secondaryLabel}</a>
           ) : (
             <Link href={secondaryHref} className="btn btn-outline">{secondaryLabel}</Link>
           )

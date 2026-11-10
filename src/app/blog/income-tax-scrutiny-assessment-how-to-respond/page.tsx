@@ -150,8 +150,8 @@ export default function ScrutinyAssessmentBlog() {
               <PostCTA
             heading="Under scrutiny or worried about being selected?"
             description="We prepare complete, well-organised scrutiny responses and represent clients through the faceless assessment process."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

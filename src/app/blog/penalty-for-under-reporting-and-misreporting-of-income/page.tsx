@@ -148,8 +148,8 @@ export default function PenaltyUnderReportingMisreportingBlog() {
               <PostCTA
             heading="Facing a penalty notice?"
             description="We review whether a penalty is correctly classified, and represent you in penalty proceedings and appeals."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

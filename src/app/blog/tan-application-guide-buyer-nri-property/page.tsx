@@ -196,8 +196,8 @@ export default function TANApplicationGuideBlog() {
               <PostCTA
             heading="Buying property from an NRI seller?"
             description="We help buyers with TAN registration, TDS calculation, and Form 27Q filing so the transaction stays compliant from day one."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

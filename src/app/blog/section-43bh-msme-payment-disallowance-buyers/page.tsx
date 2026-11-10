@@ -139,8 +139,8 @@ export default function Section43BhBlog() {
               <PostCTA
             heading="Need help reviewing your MSME payment exposure?"
             description="We help businesses classify vendors, track the 15/45-day payment clock, and get the Section 43B(h) disclosure right in the tax audit report."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

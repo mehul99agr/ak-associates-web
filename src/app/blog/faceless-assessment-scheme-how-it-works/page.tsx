@@ -149,8 +149,8 @@ export default function FacelessAssessmentSchemeBlog() {
               <PostCTA
             heading="Facing a faceless assessment notice?"
             description="We help draft complete, evidence-backed responses and represent your case through the portal, right up to a video-conference hearing if needed."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

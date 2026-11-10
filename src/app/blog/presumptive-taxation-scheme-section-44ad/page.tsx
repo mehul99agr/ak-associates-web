@@ -172,8 +172,8 @@ export default function Section44ADBlog() {
               <PostCTA
             heading="Not sure if presumptive taxation suits your business?"
             description="We help small businesses and traders compare 44AD against regular computation and file whichever route is genuinely more tax-efficient."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

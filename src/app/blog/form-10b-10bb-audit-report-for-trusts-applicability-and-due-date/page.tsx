@@ -115,8 +115,8 @@ export default function Form10B10BBBlog() {
             <PostCTA
             heading="Not sure whether your trust needs Form 10B or Form 10BB?"
             description="We handle the applicability check, the audit itself, and timely filing so your trust&apos;s exemption claim stays protected."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

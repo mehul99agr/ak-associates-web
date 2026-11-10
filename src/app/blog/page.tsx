@@ -102,11 +102,11 @@ export default function Blog() {
           <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', color: 'var(--white)', textAlign: 'center', marginTop: '5rem', borderRadius: 'var(--radius-lg)', padding: '4rem 2rem' }}>
             <h2 style={{ color: 'var(--white)', marginBottom: '0.75rem' }}>Have a Question on Any of This?</h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '520px', margin: '0.75rem auto 2.5rem' }}>
-              Book a consultation with our partners, or message us on WhatsApp for a quick answer.
+              Book a consultation with our partners, or email us your question.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/consult" className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book a Consultation</a>
-              <a href="/consult?for=whatsapp" className="btn btn-secondary">Chat on WhatsApp</a>
+              <a href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-secondary">Email Us</a>
             </div>
           </div>
         </div>

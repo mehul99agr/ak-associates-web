@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
-import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
+import { EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 
@@ -363,8 +363,8 @@ export default function DubaiCompanyRegistrationBlog() {
                     <PostCTA
             heading="Thinking of setting up in Dubai?"
             description="We advise on whether a UAE entity makes sense and how it affects your Indian tax position."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryLabel="Email us"
+            secondaryHref={EMAIL_LINK}
             />
         </article>
         </div>

@@ -150,8 +150,8 @@ export default function SetOffCarryForwardLossesBlog() {
             <PostCTA
             heading="Carrying a business, capital, or house property loss this year?"
             description="We compute set-off correctly, track carry-forward schedules across years, and make sure your return is filed on time to preserve your carry-forward rights."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

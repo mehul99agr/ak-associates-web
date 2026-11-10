@@ -150,8 +150,8 @@ export default function ProsecutionIncomeTaxActBlog() {
               <PostCTA
             heading="Facing a prosecution notice or a serious scrutiny escalation?"
             description="We help evaluate exposure, prepare responses, and coordinate compounding applications where prosecution risk is live."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

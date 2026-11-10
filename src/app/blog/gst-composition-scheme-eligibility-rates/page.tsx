@@ -171,8 +171,8 @@ export default function GstCompositionSchemeBlog() {
               <PostCTA
             heading="Not sure if composition suits your business?"
             description="We run the numbers both ways, regular GST vs composition, based on your actual customer mix and input costs, before you commit."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

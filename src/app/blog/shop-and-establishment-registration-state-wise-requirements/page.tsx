@@ -140,8 +140,8 @@ export default function ShopAndEstablishmentRegistrationBlog() {
               <PostCTA
             heading="Setting up a new shop or office in Nashik or Sillod?"
             description="We handle Gumasta registration alongside GST, Professional Tax, and the rest of your early compliance checklist."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

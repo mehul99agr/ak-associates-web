@@ -188,8 +188,8 @@ export default function RNORStatusBlog() {
               <PostCTA
             heading="Not sure how many RNOR years you have left?"
             description="We calculate your exact residential status year by year and help returning NRIs plan foreign asset liquidity and repatriation around the RNOR window."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

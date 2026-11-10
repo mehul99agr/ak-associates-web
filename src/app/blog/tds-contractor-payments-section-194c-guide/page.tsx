@@ -148,8 +148,8 @@ export default function Section194CBlog() {
               <PostCTA
             heading="Running contractor or vendor payments through your business?"
             description="We help businesses classify contracts correctly, deduct TDS at the right rate, and stay current on quarterly filings."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

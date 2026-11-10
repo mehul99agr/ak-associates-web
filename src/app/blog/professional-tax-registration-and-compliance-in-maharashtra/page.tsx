@@ -139,8 +139,8 @@ export default function ProfessionalTaxMaharashtraBlog() {
               <PostCTA
             heading="Need PTEC or PTRC registration in Maharashtra?"
             description="We handle Professional Tax registration, payroll deductions, and deposit compliance for businesses in Nashik, Sillod, and across Maharashtra."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

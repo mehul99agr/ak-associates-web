@@ -148,8 +148,8 @@ export default function LastDateItcFy2526Blog() {
               <PostCTA
                 heading="Not sure how much FY 2025-26 credit you are about to lose?"
                 description="We reconcile your purchase register with GSTR-2B, follow up missing invoices and make sure eligible credit is claimed before the cut-off."
-                secondaryLabel="Ask on WhatsApp"
-                secondaryHref="/consult?for=whatsapp"
+                secondaryLabel="Email us"
+                secondaryHref="mailto:mehul@agrawalkhandelwal.com"
               />
 
               <FaqSection faqs={faqs} />

@@ -148,8 +148,8 @@ export default function GSTRegistrationCancellationRevocationBlog() {
               <PostCTA
             heading="GST registration cancelled or under show-cause notice?"
             description="We help clear pending returns, respond to cancellation notices, and file revocation applications before the window closes."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

@@ -61,7 +61,7 @@ const services = [
 const faqs = [
   {
     q: 'Where is your CA office in Sillod?',
-    a: 'Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra. We are open Monday to Saturday, 10 AM to 6 PM. You can also reach us on WhatsApp or phone for appointments.',
+    a: 'Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra. We are open Monday to Saturday, 10 AM to 6 PM. You can email us or book a call online for an appointment.',
   },
   {
     q: 'What CA services are available in Sillod?',
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     q: 'Do you serve clients in Chhatrapati Sambhajinagar (Aurangabad) from the Sillod office?',
-    a: 'Yes. While our office is based in Sillod, we regularly serve clients across Chhatrapati Sambhajinagar (Aurangabad) district (including Kannad, Phulambri, and Jalna) for GST filing, ITR filing, audits, and company registration. Consultations can be scheduled by phone, WhatsApp, or in person at the Sillod office.',
+    a: 'Yes. While our office is based in Sillod, we regularly serve clients across Chhatrapati Sambhajinagar (Aurangabad) district (including Kannad, Phulambri, and Jalna) for GST filing, ITR filing, audits, and company registration. Consultations can be booked online, arranged by email, or held in person at the Sillod office.',
   },
   {
     q: 'What documents are required for GST registration in Sillod?',
@@ -358,8 +358,8 @@ export default function CAInSillod() {
               <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
                 Book a Call
               </a>
-              <a href="/consult?partner=rupesh&for=whatsapp" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
-                WhatsApp Us
+              <a href="mailto:rupesh@agrawalkhandelwal.com" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
+                Email Us
               </a>
             </div>
           </div>

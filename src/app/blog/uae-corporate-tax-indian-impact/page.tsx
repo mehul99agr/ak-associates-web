@@ -2,12 +2,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
-import { WHATSAPP_ARTICLE_LINK, OG_IMAGES } from '@/lib/constants'
+import { EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: { absolute: 'UAE Corporate Tax: Impact on India' },
-  description: 'Guide for Indian businesses on UAE 9% Corporate Tax: India-UAE DTAA benefits, Transfer Pricing compliance, Free Zone entity rules, and restructuring strategies.',
+  description: 'UAE 9% corporate tax for Indian groups: Small Business Relief to 2029, free zone 0% rules, transfer pricing files, the 15% top-up tax and the India-UAE DTAA.',
   keywords: [
     'UAE corporate tax Indian businesses', 'India UAE DTAA', 'UAE CT 9 percent',
     'UAE corporate tax consultant India', 'transfer pricing UAE India',
@@ -29,14 +29,16 @@ const articleLd = buildArticleLd({
   headline: 'UAE Corporate Tax: Impact on India',
   description: 'How the UAE 9% Corporate Tax affects Indian companies with Gulf operations: DTAA benefits, Transfer Pricing, and restructuring.',
   datePublished: '2026-03-08',
+  dateModified: '2026-11-10',
   slug: 'uae-corporate-tax-indian-impact',
 })
 
 const faqs: [string, string][] = [
-  ['What is the UAE Corporate Tax rate and when does it apply?', 'The UAE Federal Corporate Tax applies at a standard rate of 9% on taxable income exceeding AED 375,000. Entities with taxable income below that threshold are not subject to the tax, but must still maintain IFRS-compliant accounting records.'],
-  ['Can Indian companies avoid double taxation on UAE income?', 'Yes. Under the India-UAE DTAA, Indian businesses can potentially claim tax credits in India for corporate tax paid in the UAE. This requires correctly determining Place of Effective Management (POEM), holding a valid Tax Residency Certificate (TRC), and documenting arm\'s-length pricing on cross-border transactions.'],
-  ['Do UAE Free Zone entities still get a 0% tax rate?', 'Qualifying Free Zone Persons may still enjoy a 0% rate on qualifying income, but the definition of "qualifying" is strict. Indian firms operating in JAFZA, DMCC, or DIFC must review their revenue streams to avoid inadvertently triggering the 9% rate on their entire global operations.'],
-  ['Does UAE Corporate Tax affect transactions with an Indian parent company?', 'Yes. Any transaction between an Indian parent and its UAE subsidiary, including management fees, royalties, or goods trade, must be justified at market value under Transfer Pricing rules, or risk penalties from both the UAE Federal Tax Authority and the Indian Income Tax Department.'],
+  ['What is the UAE Corporate Tax rate and when does it apply?', 'UAE corporate tax applies to financial years starting on or after June 1, 2023. Taxable income up to AED 375,000 is taxed at 0% and income above that at 9%. Large multinational groups (consolidated revenue of EUR 750 million or more) are also subject to a 15% Domestic Minimum Top-up Tax.'],
+  ['Is Small Business Relief still available in 2027?', 'Yes. In August 2026 the UAE Ministry of Finance extended Small Business Relief to tax periods ending on or before December 31, 2029. A resident person with revenue of AED 3 million or less can elect it in each year\'s return and is treated as having no taxable income. It must be elected; it is not automatic.'],
+  ['Can an Indian parent claim credit in India for UAE tax paid by its UAE subsidiary?', 'Not automatically. The UAE subsidiary is a separate taxpayer, and the India-UAE DTAA relief applies to tax on income that is taxed in both countries in the hands of the same person, such as a UAE branch of an Indian company. Whether any credit is available on dividends received from a UAE subsidiary should be checked against Article 25 of the treaty and current rulings before you rely on it. The UAE does not levy withholding tax on dividends paid abroad.'],
+  ['Do UAE Free Zone entities still get a 0% tax rate?', 'A Qualifying Free Zone Person can pay 0% on qualifying income if it keeps adequate substance in the free zone, earns qualifying income, prepares audited financial statements, follows transfer pricing rules and stays within the de minimis limit for non-qualifying income. Failing a condition means 9% on all taxable income for that year and the next four.'],
+  ['Does UAE Corporate Tax affect transactions with an Indian parent company?', 'Yes. Transactions between the UAE entity and its Indian parent must be at arm\'s length under UAE transfer pricing rules as well as Indian ones. UAE entities with revenue of AED 200 million or more, or belonging to a group with consolidated revenue of AED 3.15 billion or more, must keep a Master File and Local File and produce them within 30 days of an FTA request.'],
 ]
 
 const faqLd = buildFaqLd(faqs)
@@ -55,53 +57,63 @@ export default function UAECorporateTaxBlog() {
         
         <article className="card" style={{ maxWidth: '900px', margin: '0 auto', padding: '4rem' }}>
           <div style={{ marginBottom: '3rem' }}>
-            <span className="section-badge" style={{ background: 'var(--primary)', color: 'white' }}>International Tax</span>
+            <span className="section-badge" style={{ background: 'var(--primary)', color: 'var(--white)' }}>International Tax</span>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginTop: '1.5rem', marginBottom: '1rem', color: 'var(--primary)' }}>
               UAE Corporate Tax: Impact on Indian Businesses
             </h1>
-            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Published on March 08, 2026 • By International Tax Desk</p>
+            <p style={{ color: 'var(--text-light)', fontWeight: 600 }}>Updated November 10, 2026 • By <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)' }}>CA Mehul Agrawal</Link>, UAE Corporate Taxation certified</p>
           </div>
 
           <div style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.1rem' }}>
-            <p style={{ marginBottom: '1.5rem' }}>
-              For decades, the United Arab Emirates (UAE) was celebrated as a tax-free haven for Indian entrepreneurs and conglomerates. However, the introduction of a Federal Corporate Tax (CT) at a standard rate of <strong>9%</strong> marks a new era. For Indian businesses with subsidiaries or branches in the UAE, this is not just a local change:it’s a global structural challenge.
-            </p>
-
             <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
               <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
               <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                <li style={{ marginBottom: '0.4rem' }}>UAE corporate tax is 9% on taxable income above AED 375,000, so a UAE subsidiary is no longer automatically tax-free.</li>
-                <li style={{ marginBottom: '0.4rem' }}>UAE entities must keep proper accounts and follow transfer pricing rules for dealings with the Indian parent.</li>
-                <li style={{ marginBottom: 0 }}>The India-UAE DTAA can avoid double tax, but needs a Tax Residency Certificate and a clear place of effective management.</li>
+                <li style={{ marginBottom: '0.4rem' }}>UAE corporate tax is 0% on taxable income up to AED 375,000 and 9% above it, for financial years starting on or after June 1, 2023.</li>
+                <li style={{ marginBottom: '0.4rem' }}>Small Business Relief (revenue up to AED 3 million) was extended in August 2026 to tax periods ending on or before December 31, 2029. It must be elected each year.</li>
+                <li style={{ marginBottom: '0.4rem' }}>Free zone companies keep 0% only on qualifying income and only while they meet every condition. One failure means 9% for five years.</li>
+                <li style={{ marginBottom: '0.4rem' }}>Dealings with the Indian parent must be at arm&apos;s length under both countries&apos; transfer pricing rules.</li>
+                <li style={{ marginBottom: 0 }}>UAE tax paid by a UAE subsidiary is not automatically creditable in India against the parent&apos;s tax.</li>
               </ul>
             </div>
 
-            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>1. The End of the "Tax-Free" Subsidiary</h2>
             <p style={{ marginBottom: '1.5rem' }}>
-              Indian parent companies often routed global trade through UAE-based Special Purpose Vehicles (SPVs) to take advantage of zero taxation. With the 9% tax kicking in on taxable income exceeding AED 375,000, these entities must now maintain rigorous accounting records that comply with International Financial Reporting Standards (IFRS).
+              For decades the UAE was the default low-tax base for Indian groups. Federal corporate tax changed that. A UAE subsidiary of an Indian company now registers, keeps accounts, files a return within nine months of its year end and prices its dealings with India at arm&apos;s length. This guide covers what matters for Indian parents and promoters, as of November 2026.
             </p>
 
-            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>2. Leverage the India-UAE DTAA</h2>
-            <p style={{ marginBottom: '1.5rem' }}>
-              The silver lining for Indian firms is the robust <strong>Double Taxation Avoidance Agreement (DTAA)</strong> between India and the UAE. Indian businesses can potentially claim "Tax Credits" in India for the corporate tax paid in the UAE, preventing the same income from being taxed twice. However, this requires:
-            </p>
+            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>1. Rates and Who Pays</h2>
             <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
-              <li style={{ marginBottom: '0.5rem' }}>Correct determination of "Place of Effective Management" (POEM).</li>
-              <li style={{ marginBottom: '0.5rem' }}>Obtaining a valid Tax Residency Certificate (TRC).</li>
-              <li style={{ marginBottom: '0.5rem' }}>Documentation of arm’s length pricing for cross-border transactions.</li>
+              <li style={{ marginBottom: '0.5rem' }}><strong>0%</strong> on taxable income up to AED 375,000 and <strong>9%</strong> above it.</li>
+              <li style={{ marginBottom: '0.5rem' }}><strong>15% Domestic Minimum Top-up Tax</strong> for UAE entities of multinational groups with consolidated revenue of EUR 750 million or more, for financial years starting on or after January 1, 2025.</li>
+              <li style={{ marginBottom: '0.5rem' }}><strong>No withholding tax</strong> on dividends, interest or royalties paid from the UAE.</li>
+              <li style={{ marginBottom: '0.5rem' }}>Accounts follow IFRS (IFRS for SMEs is allowed for smaller businesses).</li>
             </ul>
 
-            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>3. Transfer Pricing: The New Compliance Pillar</h2>
+            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>2. Small Business Relief, Now to 2029</h2>
             <p style={{ marginBottom: '1.5rem' }}>
-              Perhaps the most critical impact is the mandatory application of <strong>Transfer Pricing (TP)</strong> rules. Any transaction between an Indian parent and its UAE subsidiary (management fees, royalties, or goods trade) must now be justified at "Market Value." Failure to do so could lead to heavy penalties both from the UAE’s Federal Tax Authority (FTA) and the Indian Income Tax Department.
+              A UAE resident person with revenue of AED 3 million or less in a tax period can elect Small Business Relief and is treated as having no taxable income for that period. The relief originally ended with tax periods ending on December 31, 2026. In August 2026 the Ministry of Finance extended it to tax periods ending on or before <strong>December 31, 2029</strong>. The election is made in each year&apos;s return. Qualifying free zone persons and members of large multinational groups cannot use it, and splitting a business to stay under the limit is treated as abuse.
             </p>
 
-            <div style={{ background: 'var(--bg-surface)', padding: '2rem', borderRadius: 'var(--radius-md)', borderLeft: '5px solid var(--accent)', margin: '3rem 0' }}>
-              <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Key Consideration: Free Zone Entities</h3>
-              <p style={{ fontStyle: 'italic', color: 'var(--text-main)' }}>
-                While "Qualifying Free Zone Persons" may still enjoy a 0% rate on qualifying income, the definition of "qualifying" is strict. Indian firms operating in JAFZA, DMCC, or DIFC must review their revenue streams to ensure they don't inadvertently trigger the 9% rate on their entire global operations.
-              </p>
-            </div>
+            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>3. Free Zone Companies</h2>
+            <p style={{ marginBottom: '1.5rem' }}>
+              A Qualifying Free Zone Person pays 0% on qualifying income and 9% on the rest. To qualify it must keep adequate substance in the free zone, earn qualifying income, prepare audited financial statements, follow transfer pricing rules, and keep non-qualifying revenue within the de minimis limit. Failing any condition means 9% on all taxable income for that tax period and the following four. Indian groups using a free zone entity to sell into mainland UAE or to India should review each revenue stream against these rules every year.
+            </p>
+
+            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>4. Transfer Pricing With the Indian Parent</h2>
+            <p style={{ marginBottom: '1.5rem' }}>
+              Management fees, royalties, cost recharges, loans and trade between the UAE entity and its Indian parent must be at arm&apos;s length under the UAE rules as well as India&apos;s. A UAE entity with revenue of AED 200 million or more, or belonging to a group with consolidated revenue of AED 3.15 billion or more, must keep a Master File and Local File and produce them within 30 days of a request from the Federal Tax Authority. Related-party transactions are also disclosed in a schedule filed with the return. On the Indian side, the same transactions go into Form 3CEB. See our <Link href="/blog/india-uae-transfer-pricing-compliance" style={{ color: 'var(--primary)' }}>India-UAE transfer pricing guide</Link>.
+            </p>
+
+            <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>5. What the India-UAE DTAA Does and Does Not Do</h2>
+            <p style={{ marginBottom: '1.5rem' }}>
+              The treaty decides which country may tax each kind of income and gives relief when the same income of the same person is taxed in both. That helps an Indian company with a UAE branch, or an Indian resident with UAE-source income. It does not automatically let an Indian parent credit the corporate tax its UAE subsidiary paid against the parent&apos;s Indian tax on dividends, because the subsidiary is a separate taxpayer. Check Article 25 of the treaty and current rulings before relying on any credit of that kind.
+            </p>
+            <p style={{ marginBottom: '1.5rem' }}>
+              The treaty also matters for residence. If the UAE company is in substance managed from India, it can be treated as resident in India under the place of effective management test and taxed in India on its global income. A UAE Tax Residency Certificate does not prevent this. Our <Link href="/blog/poem-place-of-effective-management-india" style={{ color: 'var(--primary)' }}>POEM guide</Link> explains the test.
+            </p>
+
+            <p style={{ marginBottom: '1.5rem' }} >
+              Official sources: <a href="https://tax.gov.ae/en/taxes/corporate.tax.aspx" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>UAE Federal Tax Authority, Corporate Tax</a> and <a href="https://mof.gov.ae/corporate-tax/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>UAE Ministry of Finance, Corporate Tax</a>.
+            </p>
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>How We Can Help</h2>
             <p style={{ marginBottom: '1.5rem' }}>
@@ -148,8 +160,8 @@ export default function UAECorporateTaxBlog() {
                   <PostCTA
             heading="Have UAE business interests?"
             description="We advise on UAE corporate tax and its impact on your Indian tax obligations."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref={WHATSAPP_ARTICLE_LINK}
+            secondaryLabel="Email us"
+            secondaryHref={EMAIL_LINK}
             />
         </article>
       </div>

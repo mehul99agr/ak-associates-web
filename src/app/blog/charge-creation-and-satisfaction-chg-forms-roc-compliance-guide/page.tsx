@@ -142,8 +142,8 @@ export default function ChargeCreationSatisfactionBlog() {
               <PostCTA
             heading="Need to register or clear up a charge?"
             description="We file CHG-1, CHG-9, and CHG-4 within deadline, and reconcile stale charge entries before your next funding round or audit."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

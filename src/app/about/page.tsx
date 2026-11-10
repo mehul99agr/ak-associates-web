@@ -143,7 +143,6 @@ export default function About() {
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.75rem', justifyContent: 'center' }}>
                 <TrackedLink href="/consult?partner=mehul" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location="about_page_mehul">Book a Call</TrackedLink>
-                <TrackedLink href="/consult?partner=mehul&for=whatsapp" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_mehul">WhatsApp</TrackedLink>
                 <TrackedLink href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location="about_page_mehul">Email</TrackedLink>
               </div>
             </div>
@@ -174,7 +173,6 @@ export default function About() {
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.75rem', justifyContent: 'center' }}>
                 <TrackedLink href="/consult?partner=rupesh" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location="about_page_rupesh">Book a Call</TrackedLink>
-                <TrackedLink href="/consult?partner=rupesh&for=whatsapp" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_rupesh">WhatsApp</TrackedLink>
                 <TrackedLink href="mailto:rupesh@agrawalkhandelwal.com" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location="about_page_rupesh">Email</TrackedLink>
               </div>
             </div>

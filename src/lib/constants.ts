@@ -5,13 +5,12 @@ export const BASE_URL = 'https://agrawalkhandelwal.com'
 
 export const FIRM_NAME = 'Agrawal Khandelwal & Associates LLP'
 
-// Booking and WhatsApp are paid and unlocked on /consult (see src/lib/consult.ts).
-// Phone numbers, the calendar link and the WhatsApp number are deliberately not
-// in the code; only email is public.
+// Calls are paid and booked on /consult (see src/lib/consult.ts). Email is the only
+// free channel. Phone numbers and the WhatsApp number are deliberately not in the
+// code: the WhatsApp number goes out only in Zoho's booking confirmation email.
 export const BOOKING_LINK = '/consult'
 
-export const WHATSAPP_LINK = '/consult?for=whatsapp'
-export const WHATSAPP_ARTICLE_LINK = '/consult?for=whatsapp'
+export const EMAIL_LINK = 'mailto:mehul@agrawalkhandelwal.com'
 
 export const MEHUL_PERSON_ID = `${BASE_URL}/#mehul-agrawal`
 export const RUPESH_PERSON_ID = `${BASE_URL}/#rupesh-khandelwal`

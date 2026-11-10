@@ -145,8 +145,8 @@ export default function NRIInheritedGiftedPropertyBlog() {
               <PostCTA
             heading="Selling inherited or gifted property in India?"
             description="We help NRIs trace acquisition cost documentation, compute capital gains, and apply for Form 13 certificates on ancestral property sales."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

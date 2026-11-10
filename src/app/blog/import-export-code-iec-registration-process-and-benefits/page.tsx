@@ -135,8 +135,8 @@ export default function ImportExportCodeIECBlog() {
               <PostCTA
             heading="Setting up import or export operations?"
             description="We handle IEC registration, the annual DGFT update, and the surrounding compliance for businesses trading across borders."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

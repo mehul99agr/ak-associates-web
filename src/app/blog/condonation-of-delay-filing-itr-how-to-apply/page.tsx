@@ -171,8 +171,8 @@ export default function CondonationOfDelayBlog() {
               <PostCTA
             heading="Missed your ITR deadline and need to claim a refund or loss?"
             description="We help prepare and file condonation of delay applications with the right documentation for the relevant authority."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

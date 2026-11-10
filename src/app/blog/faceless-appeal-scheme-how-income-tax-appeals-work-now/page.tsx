@@ -140,8 +140,8 @@ export default function FacelessAppealSchemeBlog() {
               <PostCTA
             heading="Handling a faceless appeal notice?"
             description="We prepare and manage faceless appeal submissions, including deciding when to request a hearing."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

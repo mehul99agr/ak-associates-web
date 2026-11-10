@@ -77,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/company-incorporation-india-guide`, lastModified: new Date('2026-09-29'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/blog/uae-entity-setup-when-it-makes-sense`, lastModified: new Date('2026-05-08'), changeFrequency: 'yearly', priority: 0.8 },
     { url: `${BASE_URL}/blog/new-income-tax-act-rules-2025`, lastModified: new Date('2026-11-10'), changeFrequency: 'yearly', priority: 0.7 },
-    { url: `${BASE_URL}/blog/uae-corporate-tax-indian-impact`, lastModified: new Date('2026-03-08'), changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/uae-corporate-tax-indian-impact`, lastModified: new Date('2026-11-10'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/essential-compliance-indian-startups`, lastModified: new Date('2026-08-16'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/navigating-international-taxation-dtaa`, lastModified: new Date('2026-03-05'), changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/blog/understanding-new-tax-regime-2025-26`, lastModified: new Date('2026-11-10'), changeFrequency: 'yearly', priority: 0.7 },

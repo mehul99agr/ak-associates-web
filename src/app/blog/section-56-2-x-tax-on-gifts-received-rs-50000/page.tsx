@@ -186,8 +186,8 @@ export default function GiftTaxSection56Blog() {
               <PostCTA
             heading="Received or planning to give a large gift?"
             description="We help you confirm whether a gift is exempt, correctly value gifted property, and report it accurately in your ITR."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

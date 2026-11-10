@@ -203,8 +203,8 @@ export default function Section44ADABlog() {
               <PostCTA
             heading="Practicing a specified profession and want to check 44ADA eligibility?"
             description="We help professionals confirm eligibility, compute presumptive income correctly, and file returns without unnecessary compliance overhead."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

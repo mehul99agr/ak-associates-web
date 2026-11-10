@@ -134,8 +134,8 @@ export default function FcraRegistrationBlog() {
               <PostCTA
             heading="Need help with FCRA registration or an overdue FC-4?"
             description="We assist NGOs with FCRA registration, prior permission applications, and annual FC-4 compliance."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

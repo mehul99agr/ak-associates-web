@@ -156,8 +156,8 @@ export default function TaxAuditDueDatePenaltyBlog() {
             <PostCTA
             heading="Running close to the tax audit deadline?"
             description="We prepare and file Form 3CA/3CB and Form 3CD, and track the portal acceptance step so nothing slips past the due date."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

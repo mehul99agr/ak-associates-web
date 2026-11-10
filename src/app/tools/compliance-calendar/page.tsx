@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FaqSection from '../../blog/_components/FaqSection'
-import { BOOKING_LINK, OG_IMAGES, WHATSAPP_LINK } from '@/lib/constants'
+import { BOOKING_LINK, EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import { formatDueDate, formatDueDateShort, getDueDates, monthLabel, todayIST } from '@/lib/dueDates'
 
@@ -169,7 +169,7 @@ export default function ComplianceCalendarPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={BOOKING_LINK} className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book a Consultation</a>
-                <a href={WHATSAPP_LINK} className="btn btn-secondary">Chat on WhatsApp</a>
+                <a href={EMAIL_LINK} className="btn btn-secondary">Email Us</a>
               </div>
             </div>
           </div>

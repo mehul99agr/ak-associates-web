@@ -127,8 +127,8 @@ export default function CapitalGainsResidentsBlog() {
             <PostCTA
             heading="Selling property and want to plan the capital gains tax correctly?"
             description="We work out the LTCG/STCG computation, check whether the indexation safeguard applies, and structure Section 54/54EC reinvestment before your sale closes."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
             <FaqSection faqs={faqs} />

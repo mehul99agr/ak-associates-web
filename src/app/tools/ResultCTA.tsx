@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BOOKING_LINK, WHATSAPP_LINK } from '@/lib/constants'
+import { BOOKING_LINK, EMAIL_LINK } from '@/lib/constants'
 
 export default function ResultCTA({ heading, description }: { heading: string; description: string }) {
   return (
@@ -8,7 +8,7 @@ export default function ResultCTA({ heading, description }: { heading: string; d
       <p style={{ margin: '0 0 16px', color: 'var(--white)', fontSize: '0.9rem', opacity: 0.9 }}>{description}</p>
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         <Link href={BOOKING_LINK} className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book a Consultation</Link>
-        <Link href={WHATSAPP_LINK} className="btn btn-outline" style={{ color: 'var(--white)', borderColor: 'var(--white)' }}>Ask on WhatsApp</Link>
+        <a href={EMAIL_LINK} className="btn btn-outline" style={{ color: 'var(--white)', borderColor: 'var(--white)' }}>Email Your Question</a>
       </div>
     </div>
   )

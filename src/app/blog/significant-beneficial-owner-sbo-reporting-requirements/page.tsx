@@ -142,8 +142,8 @@ export default function SignificantBeneficialOwnerSBOBlog() {
               <PostCTA
             heading="Not sure if your company has an SBO to report?"
             description="We map shareholding structures, identify SBOs, and handle Form BEN-1/BEN-2 filings end to end."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

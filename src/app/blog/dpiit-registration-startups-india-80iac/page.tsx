@@ -165,8 +165,8 @@ export default function DPIITRegistrationBlog() {
               <PostCTA
             heading="Need DPIIT recognition or 80-IAC certification for your startup?"
             description="We handle the DPIIT application, draft the IMB innovation narrative, and manage ongoing compliance for DPIIT-recognized startups."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

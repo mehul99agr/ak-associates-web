@@ -143,8 +143,8 @@ export default function ReassessmentNoticeSection148Blog() {
               <PostCTA
             heading="Received a Section 148 or 148A notice?"
             description="We review the time limit, the disclosed material, and prepare a complete response within the deadline."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

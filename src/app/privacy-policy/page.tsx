@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
                 <li><strong>Google Analytics</strong> - website usage analytics.</li>
                 <li><strong>Google Maps</strong> - embedded office location maps on our Contact page.</li>
                 <li><strong>Zoho Bookings</strong> - booking and payment for paid consultation calls.</li>
-                <li><strong>WhatsApp</strong> - when you message us via the WhatsApp buttons on this site.</li>
+                <li><strong>WhatsApp</strong> - when you message us on WhatsApp after booking a call (the number is shared in the booking confirmation).</li>
                 <li><strong>Vercel</strong> - our website hosting provider, which may log standard server
                   request data (IP address, timestamp) for performance and security purposes.</li>
               </ul>

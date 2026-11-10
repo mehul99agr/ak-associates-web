@@ -149,8 +149,8 @@ export default function HUFTaxationBlog() {
               <PostCTA
             heading="Considering an HUF for your family?"
             description="We help families evaluate whether an HUF actually saves tax in their specific situation, then handle deed drafting, PAN application, and annual filing if it does."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

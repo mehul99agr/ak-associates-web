@@ -145,8 +145,8 @@ export default function IncomeTaxNoticesExplainedBlog() {
               <PostCTA
             heading="Received an income tax notice?"
             description="We help individuals and businesses read the notice correctly, gather the right evidence, and respond within the deadline."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

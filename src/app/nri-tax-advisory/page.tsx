@@ -108,7 +108,7 @@ const faqLd = {
 }
 
 const bookingLink = `${BOOKING_LINK}?partner=mehul`
-const whatsappLink = '/consult?partner=mehul&for=whatsapp'
+const emailLink = 'mailto:mehul@agrawalkhandelwal.com'
 
 const services = [
   {
@@ -201,8 +201,8 @@ export default function NRITaxAdvisory() {
               <a href={bookingLink} className="btn btn-secondary">
                 Book an NRI Tax Call
               </a>
-              <a href={whatsappLink} className="btn btn-secondary">
-                Message Us on WhatsApp
+              <a href={emailLink} className="btn btn-secondary">
+                Email Your Question
               </a>
             </div>
           </div>
@@ -421,8 +421,8 @@ export default function NRITaxAdvisory() {
                 <a href={bookingLink} className="btn btn-accent">
                   Book an NRI Tax Call
                 </a>
-                <a href={whatsappLink} className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
-                  Message Us on WhatsApp
+                <a href={emailLink} className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
+                  Email Your Question
                 </a>
                 <Link href="/blog" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
                   Read Our Tax Insights

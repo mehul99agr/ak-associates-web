@@ -163,8 +163,8 @@ export default function GstCouncil57Blog() {
               <PostCTA
                 heading="Want to know what the GST Council changes mean for your business?"
                 description="We review your refund position, pending notices and return reconciliations against each change as it is notified."
-                secondaryLabel="Ask on WhatsApp"
-                secondaryHref="/consult?for=whatsapp"
+                secondaryLabel="Email us"
+                secondaryHref="mailto:mehul@agrawalkhandelwal.com"
               />
 
               <FaqSection faqs={faqs} />

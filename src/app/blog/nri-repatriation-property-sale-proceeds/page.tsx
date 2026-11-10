@@ -153,8 +153,8 @@ export default function NRIRepatriationBlog() {
               <PostCTA
             heading="Need help repatriating property sale proceeds?"
             description="We handle Form 145/146 compliance and coordinate directly with AD Banks for NRI clients repatriating funds from India."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <div style={{ marginTop: '3rem' }}>

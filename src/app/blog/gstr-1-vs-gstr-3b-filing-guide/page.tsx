@@ -164,8 +164,8 @@ export default function GstrFilingGuideBlog() {
               <PostCTA
             heading="Behind on GST filings or getting mismatch notices?"
             description="We handle monthly and QRMP GST return filing, GSTR-1/3B reconciliation, and notice responses."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

@@ -140,8 +140,8 @@ export default function FreelancerGigTaxBlog() {
               <PostCTA
             heading="Freelancing or gig working and unsure how to structure your taxes?"
             description="We help freelancers and independent consultants choose between presumptive and normal taxation, plan advance tax instalments, and handle GST registration when needed."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />

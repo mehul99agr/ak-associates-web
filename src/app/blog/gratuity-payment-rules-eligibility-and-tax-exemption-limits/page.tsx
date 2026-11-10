@@ -189,9 +189,9 @@ Gratuity = Rs 6,75,000 / 26 = Rs 2,59,615 (approximately).</p>
 
               <PostCTA
             heading="Have a Question on This?"
-            description="Book a consultation with our partners, or message us on WhatsApp for a quick answer."
-            secondaryLabel="Ask on WhatsApp"
-            secondaryHref="/consult?for=whatsapp"
+            description="Book a consultation with our partners, or email us your question."
+            secondaryLabel="Email us"
+            secondaryHref="mailto:mehul@agrawalkhandelwal.com"
           />
 
               <FaqSection faqs={faqs} />
