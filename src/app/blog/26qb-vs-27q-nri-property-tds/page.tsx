@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -97,6 +98,7 @@ export default function Form26QBvs27QBlog() {
                     <li style={{ marginBottom: 0 }}>The seller&apos;s residential status in the year of sale determines which form applies, not their citizenship or where they lived when they bought the property.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-buyer" />
 
                 <p>This is the most expensive compliance mistake in NRI property transactions: a buyer files Form 26QB and deducts 1% TDS because that is what they did when they last bought a flat from a resident seller. But the seller this time is an NRI. The correct form is 27Q, the correct rate is 12.5% or higher, and the buyer now owes the entire difference from their own pocket. We see this at least twice a month in our practice, and the fix is always more expensive than getting it right the first time.</p>
 

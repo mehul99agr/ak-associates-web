@@ -148,8 +148,7 @@ export default function ClubbingOfIncomeBlog() {
             heading="Planning investments across family members?"
             description="We help families structure gifts, HUF assets, and spouse/minor investments so income lands where you expect it to, without a clubbing surprise at assessment."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20question%20about%20clubbing%20of%20income%20rules."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

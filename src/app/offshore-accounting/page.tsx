@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const audiences = [
   {
@@ -157,7 +157,7 @@ export default function OffshoreAccounting() {
               ICAI-registered CA firm providing full-cycle outsourced accounting for foreign companies, overseas CA practices, and NRI-owned businesses; from India, at India costs.
             </p>
             <div className="hero-cta">
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a href={bookingLink} className="btn btn-secondary">
                 Discuss Your Requirements
               </a>
               <a href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
@@ -291,7 +291,7 @@ export default function OffshoreAccounting() {
               </h3>
               <p style={{ marginBottom: 0 }}>
                 Most engagements begin small; a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance; and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a short{' '}
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>discovery call</a>, a fixed-fee scope, and a clean handover.
+              <a href={bookingLink} style={{ color: 'var(--primary)', fontWeight: 600 }}>discovery call</a>, a fixed-fee scope, and a clean handover.
               </p>
             </div>
           </div>
@@ -353,7 +353,7 @@ export default function OffshoreAccounting() {
                 Send us your current accounting setup and transaction volume. We'll propose a scope, timeline, and fixed fee within 24 hours.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
+                <a href={bookingLink} className="btn btn-accent">
                   Book a Discovery Call
                 </a>
                 <Link href="/services" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>

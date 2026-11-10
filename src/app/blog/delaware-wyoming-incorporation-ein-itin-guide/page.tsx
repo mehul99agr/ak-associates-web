@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -73,6 +74,7 @@ export default function DelawareWyomingEinItinBlog() {
                   <li style={{ marginBottom: 0 }}>An ITIN application is generally filed together with the actual tax return, not as a standalone step.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>Incorporating in the US as an Indian founder is more procedural than most people expect, and the confusion usually isn't about the incorporation itself, it's about the EIN and ITIN that follow it. Getting the sequence wrong wastes weeks. Here is the process in the order it should actually happen.</p>
 

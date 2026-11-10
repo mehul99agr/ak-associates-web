@@ -146,8 +146,7 @@ export default function LUTGSTExportsBlog() {
             heading="Need your LUT filed or renewed before the deadline?"
             description="We file Form RFD-11 for exporters each financial year and track renewal dates so your export invoices are never left uncovered."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20filing%20my%20GST%20LUT%20for%20exports."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

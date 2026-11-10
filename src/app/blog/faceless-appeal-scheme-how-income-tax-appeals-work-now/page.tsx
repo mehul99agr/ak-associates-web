@@ -141,8 +141,7 @@ export default function FacelessAppealSchemeBlog() {
             heading="Handling a faceless appeal notice?"
             description="We prepare and manage faceless appeal submissions, including deciding when to request a hearing."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20faceless%20appeal%20notice%20and%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

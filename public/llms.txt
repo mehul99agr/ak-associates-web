@@ -6,7 +6,7 @@
 
 - [About](https://agrawalkhandelwal.com/about): Partner bios, credentials, and firm background.
 - [Services overview](https://agrawalkhandelwal.com/services): All three practice groups — Taxation & Regulatory, Audit & Assurance, Strategic Advisory.
-- [Contact](https://agrawalkhandelwal.com/contact): Office addresses, phone numbers, and consultation booking.
+- [Contact](https://agrawalkhandelwal.com/contact): Office addresses, email, and consultation booking.
 - [CA in Nashik](https://agrawalkhandelwal.com/ca-in-nashik): Nashik office details — Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011.
 - [CA in Sillod](https://agrawalkhandelwal.com/ca-in-sillod): Sillod office details — Near Datta Mandir, Tilak Nagar, Sillod – 431112.
 
@@ -66,7 +66,7 @@
 ## Optional
 
 - [Full site content](https://agrawalkhandelwal.com/llms-full.txt): Plain-text content of every service page, tool, and guide, in one file.
-- [Agent skills](https://agrawalkhandelwal.com/.well-known/agent-skills/index.json): How AI agents can book a free consultation, estimate NRI property TDS, and find the right guide.
+- [Agent skills](https://agrawalkhandelwal.com/.well-known/agent-skills/index.json): How AI agents can book a consultation, estimate NRI property TDS, and find the right guide.
 - [Full sitemap](https://agrawalkhandelwal.com/sitemap.xml): Complete, current list of all pages including additional NRI, transfer pricing, and startup guides not listed above.
 - [Blog index](https://agrawalkhandelwal.com/blog)
 - [Privacy Policy](https://agrawalkhandelwal.com/privacy-policy)

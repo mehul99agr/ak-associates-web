@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -80,6 +81,7 @@ export default function DTAAGuideBlog() {
                     <li style={{ marginBottom: 0 }}>Foreign tax credits (for returning NRIs now resident in India) are claimed via <strong>Form 67</strong> before the ITR due date.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>DTAAs are the most underused tool in NRI tax planning. Most NRIs know they exist, few know the specific rates that apply to their country, and even fewer actually claim the benefits. Here are the treaty rates for the 6 countries that cover the vast majority of Indian NRIs, along with the process for claiming them.</p>
 

@@ -143,8 +143,7 @@ export default function StayOfDemandBlog() {
             heading="Disputing a tax demand and need a stay?"
             description="We prepare and file appeals and stay of demand applications, and represent clients before the Assessing Officer, Commissioner (Appeals), and Tribunal."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20applying%20for%20a%20stay%20of%20demand."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

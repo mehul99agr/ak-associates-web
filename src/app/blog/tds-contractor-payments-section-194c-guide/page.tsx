@@ -149,8 +149,7 @@ export default function Section194CBlog() {
             heading="Running contractor or vendor payments through your business?"
             description="We help businesses classify contracts correctly, deduct TDS at the right rate, and stay current on quarterly filings."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20TDS%20under%20Section%20194C."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

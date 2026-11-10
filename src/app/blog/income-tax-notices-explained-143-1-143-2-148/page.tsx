@@ -146,8 +146,7 @@ export default function IncomeTaxNoticesExplainedBlog() {
             heading="Received an income tax notice?"
             description="We help individuals and businesses read the notice correctly, gather the right evidence, and respond within the deadline."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20received%20an%20income%20tax%20notice%20and%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

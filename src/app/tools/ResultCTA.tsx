@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BOOKING_LINK, WHATSAPP_LINK } from '@/lib/constants'
 
 export default function ResultCTA({ heading, description }: { heading: string; description: string }) {
@@ -6,8 +7,8 @@ export default function ResultCTA({ heading, description }: { heading: string; d
       <p style={{ margin: '0 0 6px', color: 'var(--white)', fontWeight: 800, fontSize: '1.05rem' }}>{heading}</p>
       <p style={{ margin: '0 0 16px', color: 'var(--white)', fontSize: '0.9rem', opacity: 0.9 }}>{description}</p>
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book Free Consultation</a>
-        <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--white)', borderColor: 'var(--white)' }}>Ask on WhatsApp</a>
+        <Link href={BOOKING_LINK} className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book a Consultation</Link>
+        <Link href={WHATSAPP_LINK} className="btn btn-outline" style={{ color: 'var(--white)', borderColor: 'var(--white)' }}>Ask on WhatsApp</Link>
       </div>
     </div>
   )

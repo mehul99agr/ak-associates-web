@@ -4,27 +4,48 @@ import Image from 'next/image'
 import Icon from '../Icon'
 import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
+import { US_PACKAGES } from '@/lib/servicePricing'
+import ServicePackages from '../ServicePackages'
 
 export const metadata: Metadata = {
-  title: 'US Incorporation for Indian Founders',
-  description: 'US entity structuring for Indian founders: LLC vs C-Corp, EIN/ITIN, FBAR/FATCA, Form 5471/5472/8858, US sales tax nexus, and India-US DTAA advisory.',
+  title: 'US C-Corp & LLC Compliance from India',
+  description: 'Form 1120 and 5472, Delaware franchise tax, FBAR and the Indian subsidiary for founders running a US C-Corp or LLC. LLC from $850/yr, C-Corp from $1,250/yr.',
   keywords: [
-    'US incorporation for Indian founders', 'US LLC compliance India',
-    'FBAR FATCA filing India', 'Form 5472 foreign owned LLC',
-    'US sales tax nexus India', 'India US DTAA advisory',
+    'US C-Corp compliance for Indian founders', 'US LLC compliance India',
+    'Form 1120 5472 foreign owned corporation', 'Delaware franchise tax Indian founders',
+    'Form 5472 foreign owned LLC', 'FBAR FATCA filing India',
+    'Indian subsidiary of US company compliance', 'India US DTAA advisory',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/us-cross-border' },
   openGraph: {
-    title: 'US Incorporation & Compliance for Indian Founders | Agrawal Khandelwal & Associates LLP',
-    description: 'LLC vs C-Corp structuring, EIN/ITIN, FBAR/FATCA, IRS foreign-ownership filings, US sales tax nexus, and India-US DTAA advisory for Indian founders running a US entity.',
+    title: 'US C-Corp & LLC Compliance from India | Agrawal Khandelwal & Associates LLP',
+    description: 'US filings prepared by our team and filed by our US partner, with your Indian subsidiary, ITR and FEMA handled alongside. LLC from $850/yr, C-Corp from $1,250/yr.',
     url: 'https://agrawalkhandelwal.com/us-cross-border',
     images: OG_IMAGES,
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const services = [
+  {
+    icon: 'document',
+    title: 'C-Corp Federal Return (Form 1120)',
+    desc: 'The annual corporate income tax return for your US C-Corp, with Form 5472 for each reportable transaction with you as the foreign owner, such as funding, loans and service fees.',
+    link: '/blog/form-5471-5472-8858-foreign-owned-us-entity',
+  },
+  {
+    icon: 'calendar',
+    title: 'Delaware Franchise Tax & Annual Report',
+    desc: 'Delaware corporations file an annual report and pay franchise tax by March 1. The default calculation can produce a large bill for a startup with many authorized shares; we recalculate it on the Assumed Par Value Capital method where that comes out lower.',
+    link: '/blog/us-llc-annual-compliance-calendar-non-resident',
+  },
+  {
+    icon: 'globe',
+    title: 'Your Indian Subsidiary',
+    desc: 'The India side of a US parent: FC-GPR when shares are issued, the annual FLA return to RBI, transfer pricing on cross-border charges with Form 3CEB, and the Indian company\'s books, GST and income tax.',
+    link: '/blog/foreign-subsidiary-registration-india-fdi',
+  },
   {
     icon: 'building',
     title: 'Entity Structuring: LLC vs C-Corp',
@@ -65,6 +86,14 @@ const services = [
 
 const faqs = [
   {
+    q: 'Who prepares and files my US returns?',
+    a: 'Our team in India prepares your US returns and workpapers. Our US partner then reviews them and files them with the IRS and the state. You deal with one team for both your US and Indian compliance.',
+  },
+  {
+    q: 'How much does US compliance cost?',
+    a: 'Our US LLC annual package starts at $850 a year and our C-Corp annual package at $1,250 a year. State fees, franchise tax and any tax payable are extra. The exact scope is confirmed in writing before we start.',
+  },
+  {
     q: 'I run a US LLC from India. What compliance actually applies to me?',
     a: 'At minimum: an annual state filing (annual report and/or franchise tax), a federal information return if your LLC is foreign-owned (usually Form 5472), and an FBAR/FATCA review of your Indian and US accounts. If you have US sales revenue, add state sales tax nexus monitoring. We map this out specific to your entity and state of formation.',
   },
@@ -96,7 +125,7 @@ const serviceLd = buildServiceLd({
     { '@type': 'Country', name: 'India' },
     { '@type': 'Country', name: 'United States' },
   ],
-  serviceType: ['US LLC & C-Corp Structuring', 'EIN & ITIN Filing', 'FBAR & FATCA Compliance', 'Form 5472 Filing', 'US Sales Tax Nexus Advisory', 'India-US DTAA Advisory'],
+  serviceType: ['US C-Corp Form 1120 Filing', 'Delaware Franchise Tax', 'Indian Subsidiary Compliance', 'US LLC & C-Corp Structuring', 'EIN & ITIN Filing', 'FBAR & FATCA Compliance', 'Form 5472 Filing', 'US Sales Tax Nexus Advisory', 'India-US DTAA Advisory'],
 })
 
 const breadcrumbLd = buildBreadcrumbLd([
@@ -114,15 +143,18 @@ export default function UsCrossBorder() {
       {/* Hero */}
       <section className="hero">
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <span className="hero-badge">US Incorporation · FBAR/FATCA · India-US DTAA</span>
+          <span className="hero-badge">Form 1120 · Form 5472 · Delaware · Indian Subsidiary</span>
           <h1>
-            US Incorporation & Compliance<br />for Indian Founders
+            US C-Corp & LLC Compliance<br />for Indian Founders
           </h1>
           <p>
-            Running a US LLC or C-Corp from India comes with its own compliance calendar; separate from, but connected to, your Indian filings. We handle both under one engagement.
+            Your US company and your Indian side, handled by one team. We prepare your US filings and our US partner files them, while we keep your Indian subsidiary, ITR and FEMA filings in step.
+          </p>
+          <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>
+            US LLC from $850 a year. C-Corp from $1,250 a year. <a href="#packages" style={{ color: 'var(--white)', textDecoration: 'underline' }}>See what is included</a>.
           </p>
           <div className="hero-cta">
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <a href={bookingLink} className="btn btn-secondary">
               Book a US Compliance Consultation
             </a>
           </div>
@@ -169,6 +201,20 @@ export default function UsCrossBorder() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* How it works + packages */}
+      <section id="packages" className="section">
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-badge">Fees</span>
+            <h2 className="section-title">US Annual Packages</h2>
+            <p style={{ color: 'var(--text-light)', maxWidth: '640px', margin: '0 auto' }}>
+              Our team prepares your returns and workpapers. Our US partner reviews them and files them with the IRS and the state. You deal with one team, on Indian time.
+            </p>
+          </div>
+          <ServicePackages packages={US_PACKAGES} ctaHref={bookingLink} />
         </div>
       </section>
 
@@ -221,7 +267,7 @@ export default function UsCrossBorder() {
               Whether you need entity structuring advice, an overdue Form 5472, or a full US-India compliance review; we bring both sides of the border into one engagement.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
+              <a href={bookingLink} className="btn btn-accent">
                 Book a US Compliance Call
               </a>
               <Link href="/uae-tax-advisory" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -155,6 +156,8 @@ export default function Form13NRIBlog() {
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <p>When an NRI sells property in India, <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS under Section 195</Link> is deducted on the entire sale consideration, not the actual profit. For most NRI sellers, this means the buyer withholds far more than the real tax bill; often 5 to 10 times more. Form 13 is the mechanism that fixes this before the sale closes, instead of forcing the NRI to wait months for a refund.</p>
 
+                <ServiceOffer variant="nri-seller" />
+
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Budget 2026 Update</p>
                   <p style={{ margin: 0, fontSize: '0.95rem' }}>Under the Income Tax Act 2025 (effective April 1, 2026), Form 13 is renumbered <strong>Form 128</strong>, and the underlying provision (Section 197) is renumbered <strong>Section 395</strong>. The application process, documents, and jurisdictional AO described below are unchanged; only the names differ. We use both terms since search volume is still concentrated on the old names.</p>
@@ -206,8 +209,7 @@ export default function Form13NRIBlog() {
             heading="Need help applying for a Form 13 certificate?"
             description="We handle Form 13 applications end-to-end for NRI clients, from computation to certificate, well before the sale closes."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20Form%2013%20application."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

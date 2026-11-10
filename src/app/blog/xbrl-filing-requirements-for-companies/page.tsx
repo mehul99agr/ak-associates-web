@@ -142,8 +142,7 @@ export default function XbrlFilingRequirementsBlog() {
             heading="Not sure if your company needs to file in XBRL this year?"
             description="We check your applicability against the current thresholds, prepare the XBRL tagging, and manage the AOC-4 deadline end to end."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20XBRL%20filing%20for%20my%20company."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

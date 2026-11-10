@@ -177,8 +177,7 @@ export default function LotteryGamingTaxBlog() {
             heading="Received lottery, game show, or online gaming winnings?"
             description="We help you report winnings correctly, reconcile TDS credits, and avoid mismatches with your AIS/Form 26AS."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20reporting%20lottery%2Fgaming%20winnings%20for%20tax."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

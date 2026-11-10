@@ -149,8 +149,7 @@ export default function RectificationSection154Blog() {
             heading="Spotted an error in your intimation?"
             description="We help clients identify whether rectification or a revised return is the right fix, and file it correctly the first time."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20found%20an%20error%20in%20my%20income%20tax%20intimation%20and%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

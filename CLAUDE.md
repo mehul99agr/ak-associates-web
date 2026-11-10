@@ -494,6 +494,64 @@ confirmed in a screenshot):**
   aggregation in page JS and return short summaries. `start_date`/`end_date` (YYYYMMDD),
   `page=*text` and `query=*text` URL params work for custom ranges and filters.
 
+**Search Console findings (Oct 26, 2026 - "why is it falling", last 7 days Oct 19-25 vs
+Oct 12-18, pulled live):**
+- Clicks 414 -> 274 (-34%) but impressions 27.4k -> 33.6k (+23%). Not a site-wide fall.
+- One post explains the whole click loss: `last-date-to-claim-itc-fy-2025-26` 205 -> 56
+  clicks (all other pages net +9). Daily: 24-40 clicks/day Oct 12-17 at pos ~1.9, then 5-8/day
+  from Oct 18 at pos ~3. Head queries ("last date to claim itc for fy 2025-26") slipped pos
+  1.2-1.8 -> 3.3-3.8. Search demand also peaked before the Oct 20 GSTR-3B date (inference).
+  The real deadline (Nov 30, 2026) is still ahead, so expect demand back in mid/late Nov.
+- Impressions rose from the Oct 21 tax audit report deadline (`tax-audit-due-date-penalty-
+  for-delay` 2.0k -> 4.7k impr, `books-of-accounts-section-44aa`, 3CA/3CB/3CD post). Those
+  convert at <1% CTR, which pulled site CTR down. Peak day Oct 21: 7,374 impr / 58 clicks.
+- Oct 24-25 low days = weekend + post-deadline + Oct 25 data still incomplete.
+- Recheck ~Oct 30 with complete data; check the live SERP for the ITC head query.
+
+**NRI + US enquiry push (Oct 26, 2026):** GSC 28 days: NRI posts ~109 clicks / 7.8k impr
+(mostly the two property-TDS posts); US pages ~11 clicks / 230 impr (near-invisible).
+- **US filing model (user-confirmed):** our team prepares US returns; a US partner reviews
+  and files them. Do not call the partner a CPA/EA unless the user confirms which.
+- **Published fees (user-given):** NRI property sale advisory ₹25,000-50,000 per property;
+  NRI ITR from ₹10,000; US LLC annual $850; US C-Corp annual $1,250. Single source:
+  `src/lib/servicePricing.ts` (the blog `ServiceOffer.tsx` text repeats them - keep in step).
+  Package inclusion bullets were drafted by Claude and need the user's confirmation.
+- Shipped locally: packages + fee FAQ on `/nri-tax-advisory` and `/us-cross-border` (US page
+  refocused on C-Corp: Form 1120, Delaware franchise tax, Indian subsidiary);
+  `<ServiceOffer variant=...>` under the TL;DR of 32 NRI/US posts.
+- Proposed, awaiting topic approval: Form 1120+5472 for Indian-owned C-Corp; Delaware
+  franchise tax (APV method); India-to-US flip; Indian subsidiary of a US C-Corp. Also
+  suggested US CPA / incorporation-platform referral partnerships.
+
+**Search Console findings (Nov 10, 2026 - 28 days Oct 12-Nov 8, "28 days" chip confirmed):**
+- Totals: 1,220 clicks, 119k impressions, 1% CTR, avg. position 7.4 (~44 clicks / ~4,250
+  impr per day vs the 100 / 5,000 target). Impressions near target; clicks are the gap.
+- Week Nov 2-8 vs Oct 26-Nov 1 (page table sums): 234 vs 321 clicks, 25.1k vs 32.8k impr.
+  Nov 7-8 fell to 10-12 clicks / ~2,000 impr at pos ~12. Losses are deadline posts after
+  their dates passed (ITC cut-off post 57->36 clicks, tax audit due date 21->6, 3CEB, 24Q/26Q,
+  ITR audit-case date); their positions held, so it reads as demand, not ranking.
+- `tds-on-nri-property-sale-india` has not recovered: 184 -> 60 impr/week, 0 clicks.
+  Non-blog pages together: 10 clicks / 640 impr in the week; /nri-tax-advisory 2 impr.
+- **Not deployed:** last commit is Oct 11. The Oct 15 paid-consult change and the Oct 26
+  NRI/US packages are only in the working tree (144 files); live /consult is 404 and live
+  pages still carry tel:/wa.me links.
+
+**Nov 10, 2026 work (committed + pushed):**
+- Deployed the Oct 15 paid-consult change and the Oct 26 NRI/US packages (had sat uncommitted
+  since Oct 11). `/consult` errors now point the visitor to the partner's email.
+- MCA General Circular 05/2026 (Oct 24, 2026): FY 2025-26 AOC-4 without additional fees to
+  Dec 31, 2026, MGT-7/7A to Jan 31, 2027 (fee relaxation, AGM date unchanged). Added to
+  `dueDates.ts` SPECIFIC and the ROC post (TL;DR, FAQ, title).
+- Revised return for AY 2026-27 runs to Mar 31, 2027 (Finance Act 2026, s.263(5) of the 2025
+  Act, fee after 9 months - fee amount NOT confirmed); belated return stays Dec 31, 2026.
+  Several secondary sources agree; resolves the Oct 11 open question. Belated post fixed (it
+  wrongly said "before the end of the assessment year").
+- GSTR-9/9C (Dec 31, 2026, no extension as of Nov 10) and advance tax (Dec 15) posts refreshed.
+- New `blog/_components/DeadlineNotice.tsx`: "Next deadline" box under the TL;DR of the 10 posts
+  that `dueDates.ts` points to, shown only when the date is within 120 days. Those posts set
+  `export const revalidate = 3600`. A new deadline post needs the component + revalidate.
+- Not checked live: whether the Razorpay / partner env vars are set in Vercel (not logged in).
+
 ## FEMA Mini-Cluster (Sep 1-10, 2026)
 Added 4 new posts at the user's request, dated across Sep 1-10, 2026 to spread publish
 dates rather than batch-publish same-day:
@@ -996,7 +1054,19 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 
 ## Key Decisions Made
 - No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
-- Consultations stay FREE. Do not add paid booking or payment flows (user decision, Sep 26, 2026)
+- **Paid contact (user decision Oct 15, 2026, replaces the Sep 26 "consultations stay free" rule):**
+  calls and WhatsApp are paid via Razorpay on `/consult`; only email is free. Reason: random callers
+  and calendar no-shows. Prices in `src/lib/consult.ts` (call Rs 499, adjusted against fees; WhatsApp
+  Rs 199). The visitor first picks a partner (Mehul or Rupesh), then pays; each partner has their
+  own calendar link and WhatsApp number, living ONLY in Vercel env vars (`CONSULT_BOOKING_URL_MEHUL`,
+  `CONSULT_WHATSAPP_NUMBER_MEHUL`, `CONSULT_BOOKING_URL_RUPESH`, `CONSULT_WHATSAPP_NUMBER_RUPESH`,
+  plus `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET`). `/api/consult/verify` returns them after the
+  Razorpay signature checks out, using the partner stored on the Razorpay order. Links can preselect
+  a partner with `/consult?partner=rupesh` (Sillod pages, Rupesh's buttons) or `?partner=mehul`
+  (Nashik + international service pages). Never put a phone number, `tel:`
+  link, `wa.me` link or calendar URL back into the code, schema, meta descriptions or `public/`
+  files; `BOOKING_LINK` / `WHATSAPP_LINK` in constants point to `/consult`. Phone numbers were also
+  removed from JSON-LD (`telephone`) on purpose; GBP keeps its own number.
 - Homepage "Global Reach" pins (Mumbai/Bangalore/Delhi) and the Bangalore/Mumbai startup copy are KEPT on purpose: the user confirmed most clients are in those cities (Sep 26, 2026). Do not remove them as unverified
 - No em dashes anywhere on the site — use hyphens
 - Services dropdown in navbar links to individual service pages
@@ -1113,7 +1183,7 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
   a failed grep. Nothing to add there; pos 27-29 for those queries is an authority problem.
 - **Not changed, user to decide:** ca-in-nashik visible H2 "Why ... is the Best CA Firm in
   Nashik" (unsupported superlative; ICAI advertising guidelines are a consideration).
-- **Check before the Dec refresh of `belated-revised-updated-returns-itr-u-139-8a`:** several
+- **(Resolved Nov 10, see above) Check before the Dec refresh of `belated-revised-updated-returns-itr-u-139-8a`:** several
   secondary sources say Budget 2026 moved the *revised* return deadline for AY 2026-27 to
   March 31, 2027 (with a fee after Dec 31), while the belated return stays Dec 31, 2026. Not
   verified against the Act; the calendar lists only the belated-return date for that reason.

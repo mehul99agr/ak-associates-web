@@ -169,8 +169,7 @@ export default function BooksOfAccountsSection44AABlog() {
             heading="Not sure if you need to maintain formal books?"
             description="We assess your Section 44AA classification, set up compliant books, and keep them audit-ready year-round."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20I%20need%20to%20maintain%20books%20of%20accounts."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

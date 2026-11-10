@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     default: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP',
     template: '%s | Agrawal Khandelwal & Associates LLP',
   },
-  description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international taxation, virtual CFO. Call +91 95275 33506.',
+  description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international taxation, virtual CFO. Book a consultation online.',
   icons: {
     icon: '/logo.png',
     shortcut: '/logo.png',
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CA in Nashik | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Nashik & Sillod. GST, income tax, audit, international tax, and startup advisory. Call +91 95275 33506.',
+    description: 'Chartered Accountants in Nashik & Sillod. GST, income tax, audit, international tax, and startup advisory.',
   },
 }
 
@@ -120,7 +120,6 @@ const organizationLd = {
   url: BASE_URL,
   logo: `${BASE_URL}/logo.png`,
   image: `${BASE_URL}/office.jpg`,
-  telephone: OFFICES.nashik.phoneE164,
   email: OFFICES.nashik.email,
   foundingDate: '2023',
   address: {
@@ -209,7 +208,6 @@ const organizationLd = {
         addressCountry: 'IN',
       },
       geo: { '@type': 'GeoCoordinates', latitude: OFFICES.nashik.latitude, longitude: OFFICES.nashik.longitude },
-      telephone: OFFICES.nashik.phoneE164,
     },
     {
       '@type': 'Place',
@@ -225,7 +223,6 @@ const organizationLd = {
         addressCountry: 'IN',
       },
       geo: { '@type': 'GeoCoordinates', latitude: OFFICES.sillod.latitude, longitude: OFFICES.sillod.longitude },
-      telephone: OFFICES.sillod.phoneE164,
     },
   ],
 }
@@ -312,7 +309,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/tools/compliance-calendar">Due Date Calendar</Link>
                 <Link href="/blog">Client Insights</Link>
                 <Link href="/contact">Contact Us</Link>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer">Book Consultation</a>
+                <a href={bookingLink}>Book Consultation</a>
               </div>
 
               <div>
@@ -320,13 +317,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div style={{ marginBottom: '1.25rem' }}>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>{OFFICES.nashik.name}</p>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>{OFFICES.nashik.addressLine}</p>
-                  <a href={OFFICES.nashik.phoneHref} style={{ display: 'inline', marginRight: '8px' }}>{OFFICES.nashik.phoneDisplay}</a>
                   <a href={`mailto:${OFFICES.nashik.email}`}>{OFFICES.nashik.email}</a>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>{OFFICES.sillod.name}</p>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>{OFFICES.sillod.addressLine}</p>
-                  <a href={OFFICES.sillod.phoneHref} style={{ display: 'inline', marginRight: '8px' }}>{OFFICES.sillod.phoneDisplay}</a>
                   <a href={`mailto:${OFFICES.sillod.email}`}>{OFFICES.sillod.email}</a>
                 </div>
               </div>

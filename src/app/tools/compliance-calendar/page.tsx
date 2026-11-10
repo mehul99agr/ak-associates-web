@@ -165,11 +165,11 @@ export default function ComplianceCalendarPage() {
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '520px', margin: '0.75rem auto 2rem' }}>
                 Our <Link href="/ca-in-nashik" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Nashik</Link> and{' '}
                 <Link href="/ca-in-sillod" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Sillod</Link> offices handle
-                GST, TDS, tax audit and ROC filings through the year. The first consultation is free.
+                GST, TDS, tax audit and ROC filings through the year. Email us any time, or book a call.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book Free Consultation</a>
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Chat on WhatsApp</a>
+                <a href={BOOKING_LINK} className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book a Consultation</a>
+                <a href={WHATSAPP_LINK} className="btn btn-secondary">Chat on WhatsApp</a>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -138,6 +139,7 @@ export default function TANApplicationGuideBlog() {
                     <li style={{ marginBottom: 0 }}>Missing a required TAN, or filing under the wrong mechanism, makes the buyer personally liable for the full TDS, plus 1% monthly interest and a Section 271C penalty.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-buyer" />
                 <p>If you are buying property from an NRI, one requirement catches most first-time buyers off guard: you need a <strong>TAN (Tax Deduction Account Number)</strong>, not just a PAN. This is different from buying from a resident seller, and skipping it (or discovering it too late) is the single most common mistake that creates personal TDS liability for buyers. Here is exactly how to get one.</p>
 
                 <h2>Is TAN Mandatory for Buying Property from an NRI?</h2>
@@ -195,8 +197,7 @@ export default function TANApplicationGuideBlog() {
             heading="Buying property from an NRI seller?"
             description="We help buyers with TAN registration, TDS calculation, and Form 27Q filing so the transaction stays compliant from day one."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20TAN%20and%20TDS%20for%20buying%20property%20from%20an%20NRI."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

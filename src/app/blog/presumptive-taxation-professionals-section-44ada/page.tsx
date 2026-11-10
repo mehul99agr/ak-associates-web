@@ -204,8 +204,7 @@ export default function Section44ADABlog() {
             heading="Practicing a specified profession and want to check 44ADA eligibility?"
             description="We help professionals confirm eligibility, compute presumptive income correctly, and file returns without unnecessary compliance overhead."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20Section%2044ADA%20presumptive%20taxation%20applies%20to%20my%20profession."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

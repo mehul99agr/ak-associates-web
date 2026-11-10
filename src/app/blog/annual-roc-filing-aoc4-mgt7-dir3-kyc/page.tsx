@@ -5,10 +5,14 @@ import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: { absolute: 'Annual ROC Filing Guide (India)' },
-  description: 'Every annual MCA filing for an Indian company: AOC-4, MGT-7/7A, DIR-3 KYC, ADT-1, deadlines relative to your AGM, and late filing penalties.',
+  title: { absolute: 'AOC-4 & MGT-7 Due Date FY 2025-26 (Extended)' },
+  description: 'AOC-4 can be filed till Dec 31, 2026 and MGT-7 till Jan 31, 2027 without additional fees (MCA GC 05/2026). Plus DIR-3 KYC, ADT-1 and late fees.',
   keywords: [
     'AOC-4 due date', 'MGT-7 due date', 'DIR-3 KYC deadline', 'annual ROC filing India',
     'ADT-1 auditor appointment', 'MGT-7A small company', 'ROC late filing penalty',
@@ -36,11 +40,12 @@ const articleLd = buildArticleLd({
   headline: 'Annual ROC Filing Guide (India)',
   description: 'Every mandatory annual MCA filing for an Indian company, deadlines relative to the AGM, and the penalty structure for late filing.',
   datePublished: '2026-06-18',
-  dateModified: '2026-10-09',
+  dateModified: '2026-11-10',
   slug: 'annual-roc-filing-aoc4-mgt7-dir3-kyc',
 })
 
 const faqs: [string, string][] = [
+  ['Has the AOC-4 and MGT-7 due date been extended for FY 2025-26?', 'Yes, as a fee relaxation. MCA General Circular 05/2026 dated October 24, 2026 allows AOC-4 (including CFS and XBRL versions) to be filed up to December 31, 2026 and MGT-7 or MGT-7A up to January 31, 2027 without additional fees. The normal filing fee still applies and the AGM deadline is not extended. Check the circular on the MCA portal before relying on it for your company.'],
   ['What is the due date for AOC-4 filing?', 'AOC-4 is due within 30 days of the AGM. If the AGM is not held, the due date is generally linked to the date by which the AGM should have been held, subject to the company\'s facts and applicable rules.'],
   ['When is MGT-7 or MGT-7A due?', 'MGT-7, or for eligible small companies MGT-7A, is due within 60 days of the AGM. The correct form depends on the company\'s current eligibility under the small company definition and exclusions for that year.'],
   ['Is DIR-3 KYC compulsory for inactive directors?', 'Yes, annual DIR-3 KYC applies to all DIN holders, including individuals who may not currently be an active director. It is due by September 30 each year regardless of whether the person currently holds an appointment.'],
@@ -67,19 +72,21 @@ export default function AnnualROCFilingBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Annual ROC Filing for Private Limited Companies: AOC-4, MGT-7 and DIR-3 KYC</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Updated October 9, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                  <li style={{ marginBottom: '0.4rem' }}><strong>FY 2025-26 dates:</strong> for an AGM held on September 30, 2026, AOC-4 is due by <strong>October 30, 2026</strong> and MGT-7 or MGT-7A by <strong>November 29, 2026</strong>. No MCA extension had been announced as of October 9, 2026.</li>
+                  <li style={{ marginBottom: '0.4rem' }}><strong>FY 2025-26 relaxation:</strong> MCA General Circular 05/2026 (October 24, 2026) lets companies file <strong>AOC-4 up to December 31, 2026</strong> and <strong>MGT-7 / MGT-7A up to January 31, 2027</strong> without additional fees. The normal filing fee still applies, and the AGM deadline itself is not extended.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Without the relaxation, a September 30, 2026 AGM would have meant AOC-4 by October 30 and MGT-7 by November 29, 2026. Filings made after the relaxed dates attract additional fees counted from the original due date.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>AOC-4</strong> files audited financial statements <strong>within 30 days</strong> of the AGM.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>MGT-7</strong> or MGT-7A files the annual return <strong>within 60 days</strong> of the AGM.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Every DIN holder must complete <strong>DIR-3 KYC by September 30</strong> each year.</li>
                   <li style={{ marginBottom: 0 }}>Late ROC filing fees can accrue <strong>daily</strong> and are often far more expensive than founders expect.</li>
                 </ul>
               </div>
+              <DeadlineNotice slug="annual-roc-filing-aoc4-mgt7-dir3-kyc" />
 
               <p>A Private Limited Company has an annual filing cycle even when it has no revenue, no employees, or no major transactions. Dormant operations do not automatically remove the company&apos;s legal filing responsibilities. A company that misses dates may face additional filing fees, director-related restrictions, delayed fundraising due diligence, and difficulty closing loans, investments, or exits.</p>
 

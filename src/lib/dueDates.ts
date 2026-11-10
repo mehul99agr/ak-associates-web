@@ -61,6 +61,12 @@ const SPECIFIC: Specific[] = [
   // CBDT press release of September 28, 2026 (AY 2026-27)
   { id: 'tax-audit', date: '2026-10-21', extendedFrom: '2026-09-30', title: 'Tax audit report (AY 2026-27)', category: 'Income Tax', appliesTo: 'Businesses and professionals liable to tax audit', post: 'tax-audit-due-date-penalty-for-delay' },
   { id: 'itr-audit', date: '2026-11-21', extendedFrom: '2026-10-31', title: 'Income tax return, audit cases (AY 2026-27)', category: 'Income Tax', appliesTo: 'Taxpayers whose accounts are audited, other than transfer pricing cases', post: 'itr-due-date-audit-cases-ay-2026-27-extended' },
+  // MCA General Circular 05/2026 of October 24, 2026 (FY 2025-26): additional fees
+  // waived up to these dates. The AGM deadline itself is not extended.
+  { id: 'aoc-4', date: '2026-12-31', extendedFrom: '2026-10-30', title: 'Form AOC-4 without additional fees (FY 2025-26)', category: 'ROC', appliesTo: 'Companies filing FY 2025-26 financial statements (MCA General Circular 05/2026)', post: 'annual-roc-filing-aoc4-mgt7-dir3-kyc' },
+  { id: 'mgt-7', date: '2027-01-31', extendedFrom: '2026-11-29', title: 'Form MGT-7 / MGT-7A without additional fees (FY 2025-26)', category: 'ROC', appliesTo: 'Companies filing the FY 2025-26 annual return (MCA General Circular 05/2026)', post: 'annual-roc-filing-aoc4-mgt7-dir3-kyc' },
+  // Finance Act 2026: revised return window extended to 12 months, fee after 9 months.
+  { date: '2027-03-31', title: 'Revised income tax return (AY 2026-27)', category: 'Income Tax', appliesTo: 'Taxpayers correcting a return already filed; a fee applies to revisions after December 31, 2026', post: 'belated-revised-updated-returns-itr-u-139-8a' },
   { date: '2026-12-31', title: 'FAST-DS 2026 declaration window closes', category: 'Income Tax', appliesTo: 'Resident small taxpayers with undisclosed foreign assets', post: 'fast-ds-2026-foreign-assets-disclosure-scheme' },
 ]
 

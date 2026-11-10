@@ -136,8 +136,7 @@ export default function PoliticalDonations80GGCBlog() {
             heading="Received a notice on a political donation claim?"
             description="We help individuals document genuine 80GGC claims correctly and respond to scrutiny notices with the right evidence."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20Section%2080GGC%20donation%20claim."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

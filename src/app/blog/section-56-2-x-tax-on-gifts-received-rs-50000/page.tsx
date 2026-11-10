@@ -187,8 +187,7 @@ export default function GiftTaxSection56Blog() {
             heading="Received or planning to give a large gift?"
             description="We help you confirm whether a gift is exempt, correctly value gifted property, and report it accurately in your ITR."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20understanding%20gift%20tax%20under%20Section%2056(2)(x)."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

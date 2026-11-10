@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 import { OG_IMAGES } from '@/lib/constants'
@@ -104,6 +105,7 @@ export default function RNORStatusBlog() {
                     <li style={{ marginBottom: 0 }}>The RNOR window is the right time to realise, restructure, or repatriate foreign investments, before worldwide income and Schedule FA disclosure kick in under full resident status.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Every year, we see returning NRIs make one of two mistakes: assuming they get a fixed number of tax-free years after landing back in India, or not realising their RNOR window has already closed while they were still treating foreign income as exempt. Both are expensive. Here is what RNOR status actually means, how long it genuinely lasts, and what to do with the window while you have it.</p>
 
@@ -187,8 +189,7 @@ export default function RNORStatusBlog() {
             heading="Not sure how many RNOR years you have left?"
             description="We calculate your exact residential status year by year and help returning NRIs plan foreign asset liquidity and repatriation around the RNOR window."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20my%20RNOR%20status."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

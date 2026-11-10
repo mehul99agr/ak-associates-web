@@ -149,8 +149,7 @@ export default function GSTRegistrationCancellationRevocationBlog() {
             heading="GST registration cancelled or under show-cause notice?"
             description="We help clear pending returns, respond to cancellation notices, and file revocation applications before the window closes."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20registration%20cancellation%20or%20revocation."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

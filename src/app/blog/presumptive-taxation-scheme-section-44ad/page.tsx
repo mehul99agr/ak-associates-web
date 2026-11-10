@@ -173,8 +173,7 @@ export default function Section44ADBlog() {
             heading="Not sure if presumptive taxation suits your business?"
             description="We help small businesses and traders compare 44AD against regular computation and file whichever route is genuinely more tax-efficient."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20Section%2044AD%20presumptive%20taxation%20suits%20my%20business."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

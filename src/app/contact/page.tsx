@@ -5,11 +5,11 @@ import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Contact Us | CA in Nashik & Sillod',
-  description: 'Contact Agrawal Khandelwal & Associates LLP, CAs in Nashik & Sillod. Call +91 95275 33506, WhatsApp, email, or visit us. Book a free consultation.',
+  description: 'Contact Agrawal Khandelwal & Associates LLP, CAs in Nashik & Sillod. Email us, book a consultation call, or visit either office.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/contact' },
   openGraph: {
     title: 'Contact Agrawal Khandelwal & Associates LLP | CA in Nashik & Sillod',
-    description: 'Reach our Chartered Accountancy offices in Nashik and Sillod. Call, WhatsApp, email, or book a free consultation.',
+    description: 'Reach our Chartered Accountancy offices in Nashik and Sillod. Email us, book a consultation call, or visit either office.',
     url: 'https://agrawalkhandelwal.com/contact',
     images: OG_IMAGES,
   },
@@ -25,7 +25,6 @@ const localBusinessLd = {
       '@id': 'https://agrawalkhandelwal.com/#nashik-office',
       name: 'Agrawal Khandelwal & Associates LLP',
       url: 'https://agrawalkhandelwal.com/ca-in-nashik',
-      telephone: OFFICES.nashik.phoneE164,
       email: OFFICES.nashik.email,
       address: {
         '@type': 'PostalAddress',
@@ -51,7 +50,6 @@ const localBusinessLd = {
       '@id': 'https://agrawalkhandelwal.com/#sillod-office',
       name: 'Agrawal Khandelwal & Associates LLP; Sillod',
       url: 'https://agrawalkhandelwal.com/ca-in-sillod',
-      telephone: OFFICES.sillod.phoneE164,
       email: OFFICES.sillod.email,
       address: {
         '@type': 'PostalAddress',
@@ -83,20 +81,18 @@ const offices = [
   {
     label: 'Nashik Office',
     partner: 'CA Mehul Agrawal',
+    key: 'mehul',
     address: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011, Maharashtra',
-    phone: '+91 95275 33506',
-    tel: '+919527533506',
     email: 'mehul@agrawalkhandelwal.com',
-    wa: 'https://wa.me/919527533506?text=Hi,%20I%27d%20like%20to%20book%20a%20consultation.',
+    wa: '/consult?partner=mehul&for=whatsapp',
   },
   {
     label: 'Sillod Office',
     partner: 'CA Rupesh Khandelwal',
+    key: 'rupesh',
     address: 'Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra',
-    phone: '+91 95955 85953',
-    tel: '+919595585953',
     email: 'rupesh@agrawalkhandelwal.com',
-    wa: 'https://wa.me/919595585953?text=Hi,%20I%27d%20like%20to%20book%20a%20consultation.',
+    wa: '/consult?partner=rupesh&for=whatsapp',
   },
 ]
 
@@ -113,11 +109,11 @@ export default function Contact() {
               <span className="section-badge">Get In Touch</span>
               <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>Talk to a Chartered Accountant</h1>
               <p style={{ color: 'var(--text-light)', fontSize: '1.05rem' }}>
-                Call, message us on WhatsApp, email, or visit either office. For a structured discussion, book a free 30-minute consultation, we respond within one business day.
+                Email us free of charge and we reply within one business day. For a call with a partner, book a slot online; the booking fee is adjusted against our fee if you engage us.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
-                <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="contact_page_hero">Book Free Consultation</TrackedLink>
-                <TrackedLink href="tel:+919527533506" className="btn btn-outline" method="call" location="contact_page_hero">Call +91 95275 33506</TrackedLink>
+                <TrackedLink href={bookingLink} className="btn btn-primary" method="booking" location="contact_page_hero">Book a Consultation</TrackedLink>
+                <TrackedLink href={`mailto:${OFFICES.nashik.email}`} className="btn btn-outline" method="email" location="contact_page_hero">Email Us</TrackedLink>
               </div>
             </div>
 
@@ -132,13 +128,11 @@ export default function Contact() {
                     <strong style={{ color: 'var(--text-main)' }}>Hours:</strong> Monday to Saturday, 10:00 AM to 6:00 PM
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.5rem' }}>
-                    <TrackedLink href={`tel:${o.tel}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Call</TrackedLink>
-                    <TrackedLink href={o.wa} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>WhatsApp</TrackedLink>
+                    <TrackedLink href={`/consult?partner=${o.key}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Book a Call</TrackedLink>
+                    <TrackedLink href={o.wa} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>WhatsApp</TrackedLink>
                     <TrackedLink href={`mailto:${o.email}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Email</TrackedLink>
                   </div>
                   <p style={{ marginTop: '1.25rem', fontSize: '0.85rem' }}>
-                    <TrackedLink href={`tel:${o.tel}`} style={{ color: 'var(--primary)', fontWeight: 700 }} method="call" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>{o.phone}</TrackedLink>
-                    <span style={{ color: 'var(--text-muted)' }}> · </span>
                     <TrackedLink href={`mailto:${o.email}`} style={{ color: 'var(--primary)', fontWeight: 600 }} method="email" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>{o.email}</TrackedLink>
                   </p>
                 </div>

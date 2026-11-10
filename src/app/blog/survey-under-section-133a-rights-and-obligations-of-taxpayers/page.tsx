@@ -157,8 +157,7 @@ export default function SurveySection133ABlog() {
             heading="Facing or anticipating an income tax survey?"
             description="We help businesses understand what a survey can and cannot involve, and manage the assessment proceedings that follow."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20question%20about%20an%20income%20tax%20survey."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

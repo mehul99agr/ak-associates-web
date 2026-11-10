@@ -341,7 +341,7 @@ export default function DubaiCompanyRegistrationBlog() {
                 CA Mehul Agrawal is UAE Corporate Tax certified. We advise Indian entrepreneurs on the full India-UAE cross-border structure; from FEMA compliance and ODI filing to UAE CT registration and DTAA planning.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="/consult" className="btn btn-primary">
                   Book a UAE Advisory Call
                 </a>
                 <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
@@ -355,8 +355,7 @@ export default function DubaiCompanyRegistrationBlog() {
             description="We advise on whether a UAE entity makes sense and how it affects your Indian tax position."
             secondaryLabel="Ask on WhatsApp"
             secondaryHref={WHATSAPP_ARTICLE_LINK}
-            secondaryExternal
-          />
+            />
         </article>
         </div>
       </div>

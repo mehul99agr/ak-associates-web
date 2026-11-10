@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -44,6 +45,8 @@ export default function NRIComplianceCalendarBlog() {
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <p>Missing a tax deadline as an NRI does not just mean a late fee. It can mean losing the right to carry forward losses, paying interest on tax you did not know you owed, or having your <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>repatriation held up</Link> because Form 145/146 was not filed in time. Here is every deadline that matters for NRIs in FY 2026-27.</p>
+
+              <ServiceOffer variant="nri-itr" />
 
               <h2>The Calendar</h2>
               <div style={{ overflowX: 'auto' }}>

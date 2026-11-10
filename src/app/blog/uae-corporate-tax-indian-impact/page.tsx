@@ -127,7 +127,7 @@ export default function UAECorporateTaxBlog() {
               CA Mehul Agrawal is UAE Corporate Tax certified. We advise Indian businesses on CT compliance, DTAA structuring, and transfer pricing for India-UAE transactions.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a href="/consult" className="btn btn-primary">
                 Schedule an International Tax Call
               </a>
               <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
@@ -141,8 +141,7 @@ export default function UAECorporateTaxBlog() {
             description="We advise on UAE corporate tax and its impact on your Indian tax obligations."
             secondaryLabel="Ask on WhatsApp"
             secondaryHref={WHATSAPP_ARTICLE_LINK}
-            secondaryExternal
-          />
+            />
         </article>
       </div>
     </div>

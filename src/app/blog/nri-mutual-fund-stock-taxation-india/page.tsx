@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -78,6 +79,7 @@ export default function NRIMutualFundStockTaxBlog() {
                     <li style={{ marginBottom: 0 }}>US and Canada NRIs face FATCA restrictions; many AMCs refuse their investments. A handful still accept.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>NRIs can invest in Indian mutual funds and stocks, and many do. The tax treatment is broadly the same as for residents, but the compliance wrapper is different: TDS is deducted at source on every redemption (no threshold exemption), a PIS account is needed for direct equity, and FATCA compliance blocks some NRIs entirely. Here is how it works.</p>
 

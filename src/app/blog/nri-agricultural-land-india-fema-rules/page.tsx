@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -77,6 +78,7 @@ export default function NriAgriLandBlog() {
                   <li style={{ marginBottom: 0 }}>Neither an FDI nor an ODI structure provides a workaround; agricultural land is restricted from foreign investment generally, with only narrow, specific carve-outs.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-seller" />
 
               <p>Agricultural land is the one category of Indian property where the general NRI real estate rules do not apply. NRIs and OCIs can freely buy residential and commercial property in India, but agricultural land, plantation property, and farmhouses sit under a separate, more restrictive FEMA regime; and the restriction catches people out because it is easy to assume that if you can buy an apartment, you can buy a small farm plot the same way. You cannot, and getting this wrong voids the transaction entirely rather than just triggering a penalty on an otherwise valid purchase.</p>
 

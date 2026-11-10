@@ -131,8 +131,7 @@ export default function Section80DBlog() {
             heading="Not sure which tax regime saves you more?"
             description="We compare your old-regime deductions, including Section 80D and 80C, against the new regime slabs before you file."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20deciding%20between%20old%20and%20new%20tax%20regime."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
             <FaqSection faqs={faqs} />

@@ -172,8 +172,7 @@ export default function GstCompositionSchemeBlog() {
             heading="Not sure if composition suits your business?"
             description="We run the numbers both ways, regular GST vs composition, based on your actual customer mix and input costs, before you commit."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20if%20the%20GST%20composition%20scheme%20suits%20my%20business."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

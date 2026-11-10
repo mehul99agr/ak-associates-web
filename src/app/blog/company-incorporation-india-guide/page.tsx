@@ -389,7 +389,7 @@ export default function CompanyIncorporationGuideBlog() {
               We handle the full incorporation process: structure advice, MOA drafting, MCA filings, and post-incorporation compliance setup.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a href="/consult" className="btn btn-primary">
                 Book an Incorporation Call
               </a>
               <Link href="/company-incorporation" className="btn btn-outline">
@@ -407,8 +407,7 @@ export default function CompanyIncorporationGuideBlog() {
             description="We handle name approval, SPICe+ filing, DSC/DIN and post-incorporation compliance."
             secondaryLabel="Ask on WhatsApp"
             secondaryHref={WHATSAPP_ARTICLE_LINK}
-            secondaryExternal
-          />
+            />
         </article>
       </div>
     </div>

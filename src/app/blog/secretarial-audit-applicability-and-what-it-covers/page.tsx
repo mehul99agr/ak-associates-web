@@ -146,8 +146,7 @@ export default function SecretarialAuditBlog() {
             heading="Not sure if secretarial audit applies to you?"
             description="We check your thresholds against the last audited financials and coordinate with a practising Company Secretary where the requirement applies."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20checking%20secretarial%20audit%20applicability."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

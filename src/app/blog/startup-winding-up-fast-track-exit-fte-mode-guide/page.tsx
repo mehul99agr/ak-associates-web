@@ -142,8 +142,7 @@ export default function StartupWindingUpFTEBlog() {
             heading="Winding down your startup?"
             description="We check eligibility, clear any pending ROC filings, coordinate investor consents if needed, and handle the STK-2 filing end to end."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20wind%20up%20my%20startup."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

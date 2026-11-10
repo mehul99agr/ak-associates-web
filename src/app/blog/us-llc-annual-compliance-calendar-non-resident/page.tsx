@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -73,6 +74,7 @@ export default function UsLlcComplianceCalendarBlog() {
                   <li style={{ marginBottom: 0 }}>A missed registered agent notice is one of the most common causes of an administratively dissolved LLC.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>A US LLC does not run on autopilot once it is formed. There is a recurring set of state and federal obligations every year, and because the founder is often based in India and not physically dealing with US mail, these obligations are easy to lose track of until a notice of dissolution or a penalty letter arrives.</p>
 

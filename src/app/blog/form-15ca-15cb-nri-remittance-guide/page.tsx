@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -102,6 +103,7 @@ export default function Form15CA15CBBlog() {
                     <li style={{ marginBottom: 0 }}>Penalty for non-filing is Rs 1 lakh under Section 359 (earlier Section 271-I under the 1961 Act).</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-seller" />
 
                 <p>Every NRI who has tried to repatriate money from India has encountered these two forms, usually at the worst possible moment: when the bank holds up a transfer they expected to go through smoothly. Form 145 and 146 (earlier Form 15CA and 15CB under the 1961 Act) are the Income Tax department&apos;s mechanism for tracking foreign remittances and ensuring tax compliance before money leaves the country. Here is how they work, when each is required, and how to file them correctly.</p>
 

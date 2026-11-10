@@ -166,8 +166,7 @@ export default function GstRegistrationProcessGuideBlog() {
             heading="Need help with GST registration?"
             description="We handle GST registration, multi-state GSTIN setup, and ongoing return filing for businesses across structures and industries."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20registration%20for%20my%20business."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

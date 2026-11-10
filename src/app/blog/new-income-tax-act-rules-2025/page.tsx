@@ -124,7 +124,7 @@ export default function NewTaxActBlog() {
 
           <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-main)' }}>Want a personalized impact analysis?</h3>
-            <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href="/consult" className="btn btn-primary">
               Book a Consultation
             </a>
           </div>
@@ -135,8 +135,7 @@ export default function NewTaxActBlog() {
             description="Talk to a CA about what changes for your filings and tax planning."
             secondaryLabel="Ask on WhatsApp"
             secondaryHref={WHATSAPP_ARTICLE_LINK}
-            secondaryExternal
-          />
+            />
         </article>
       </div>
     </div>

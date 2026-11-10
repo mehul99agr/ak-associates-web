@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -106,6 +107,8 @@ export default function NRITDSRefundBlog() {
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <p>Because <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on an NRI&apos;s property sale</Link> is deducted on the full sale consideration rather than the actual capital gain, most NRI sellers end up with far more tax withheld than they actually owe. If a Form 128 (earlier Form 13) lower deduction certificate wasn&apos;t obtained before the sale, the only way to recover the difference is by filing an Indian income tax return and claiming a refund. Here is exactly how that process works.</p>
 
+                <ServiceOffer variant="nri-seller" />
+
                 <h2>Why NRIs End Up Overpaying TDS</h2>
                 <p>Section 393(2) (earlier Section 195) requires the buyer to deduct TDS on the gross sale value at the applicable rate (12.5% for long-term gains, 30% for short-term, plus surcharge and cess). If an NRI sells a property for ₹1.5 crore with an actual capital gain of ₹15 lakh, the buyer still deducts TDS on the full ₹1.5 crore; often several times the NRI&apos;s real tax liability. Recovering that gap requires either advance planning through Form 128 (earlier Form 13), or a refund claimed after the fact through an ITR.</p>
 
@@ -147,8 +150,7 @@ export default function NRITDSRefundBlog() {
             heading="Need help claiming your NRI TDS refund?"
             description="We file ITRs and track refunds for NRI clients across the UAE, US, UK, Singapore, and Australia."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20claiming%20a%20TDS%20refund%20on%20property%20sale."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

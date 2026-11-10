@@ -139,8 +139,7 @@ export default function Section194QBlog() {
             heading="Crossing the Rs 10 crore turnover mark, or buying goods at scale?"
             description="We help buyers set up seller-wise TDS tracking under Section 194Q and stay compliant on quarterly filings."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Section%20194Q%20TDS%20on%20purchase%20of%20goods."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

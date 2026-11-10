@@ -146,8 +146,7 @@ export default function SftHighValueTransactionBlog() {
             heading="Not sure what your AIS actually reports?"
             description="We reconcile AIS and Form 26AS against your books before filing, so nothing surprises you after the fact."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20understand%20a%20transaction%20reported%20in%20my%20AIS."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

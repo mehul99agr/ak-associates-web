@@ -141,8 +141,7 @@ export default function FssaiRegistrationBlog() {
             heading="Setting up or scaling a food business?"
             description="We help food businesses identify the right FSSAI tier, prepare the application, and keep registrations current as turnover grows."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20FSSAI%20registration%20for%20my%20food%20business."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -166,8 +166,7 @@ export default function CryptoVDATaxBlog() {
             heading="Need help reporting crypto or VDA income correctly?"
             description="We reconcile exchange statements, compute Schedule VDA figures, and make sure your TDS credits are correctly claimed."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20crypto%20%2F%20VDA%20income%20tax%20filing."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -101,6 +102,7 @@ export default function ForeignRetirementFundBlog() {
                     <li style={{ marginBottom: 0 }}>DTAA relief prevents double taxation but does not eliminate it. The net tax depends on timing, amount, and which country taxes first.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>This is the question we hear from almost every NRI planning to return from the US, UK, or Australia: &quot;What happens to my 401(k)?&quot; or &quot;Will India tax my pension?&quot; The answer is almost never a simple yes or no. It depends on when you withdraw, where the money goes, what your residential status is at that point, and what the DTAA between India and your country of employment says. Here is how each major retirement system is treated, and the timing decisions that can save you significant money.</p>
 

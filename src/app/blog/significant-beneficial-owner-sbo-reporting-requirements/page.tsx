@@ -143,8 +143,7 @@ export default function SignificantBeneficialOwnerSBOBlog() {
             heading="Not sure if your company has an SBO to report?"
             description="We map shareholding structures, identify SBOs, and handle Form BEN-1/BEN-2 filings end to end."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20question%20about%20SBO%20reporting%20for%20my%20company."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

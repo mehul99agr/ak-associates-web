@@ -155,8 +155,7 @@ export default function GSTAuditApplicabilityBlog() {
             heading="Received a GST audit notice, or approaching the Rs 5 crore threshold?"
             description="We handle GSTR-9C reconciliation, respond to Section 65 audit notices, and reconcile ITC and turnover ahead of year-end."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20GST%20audit%20or%20GSTR-9C."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

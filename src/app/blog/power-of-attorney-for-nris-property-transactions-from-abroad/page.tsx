@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -104,6 +105,7 @@ export default function PowerOfAttorneyNRIBlog() {
                     <li style={{ marginBottom: 0 }}>Once it reaches India, it generally must be <strong>stamped within 3 months</strong>, and registered if it authorises presenting a document like a sale deed for registration.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-seller" />
 
                 <p>For an NRI, an Indian property transaction rarely fits into a single trip home. Registration appointments, society no-objection paperwork, tenant handovers, and bank formalities are all typically scheduled on Indian government or institutional timelines, not around a visiting NRI&apos;s travel dates. A Power of Attorney (POA) is the legal instrument that bridges this gap, letting a trusted representative act on the NRI&apos;s behalf in India, but it needs to be executed and authenticated correctly from abroad, or it risks being rejected at the exact moment it is needed: at the sub-registrar&apos;s counter.</p>
 

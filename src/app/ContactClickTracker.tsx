@@ -7,7 +7,8 @@ function methodFor(href: string): Method | null {
   if (href.startsWith('tel:')) return 'call'
   if (href.startsWith('mailto:')) return 'email'
   if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//.test(href)) return 'whatsapp'
-  if (href.startsWith('https://calendar.app.google/')) return 'booking'
+  if (href.startsWith('/consult?for=whatsapp')) return 'whatsapp'
+  if (href.startsWith('/consult')) return 'booking'
   return null
 }
 

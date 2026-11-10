@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -75,6 +76,7 @@ export default function Section50CNriBlog() {
                   <li style={{ marginBottom: 0 }}>TDS is generally computed on the actual sale price, not the stamp duty value; the two numbers can diverge meaningfully.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-seller" />
 
               <p>An NRI agreeing to sell a property below what the state stamp duty authority has assessed it at; not uncommon when a sale needs to close quickly, or when the assessed circle rate has drifted well above realistic market value in a particular locality; runs into a rule that most sellers only discover after the sale deed is registered: capital gains tax does not get computed on what was actually received, but on the higher, official stamp duty value.</p>
 

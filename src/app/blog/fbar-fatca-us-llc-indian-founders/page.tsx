@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -73,6 +74,7 @@ export default function FbarFatcaBlog() {
                   <li style={{ marginBottom: 0 }}>Signature authority over a foreign account can trigger FBAR even without formal ownership.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>FBAR and FATCA are two different US disclosure regimes that founders with a US LLC and Indian financial ties frequently confuse, often assuming they are the same filing or that meeting one requirement covers the other. They don't, and the confusion tends to surface only when a founder is already mid-way through a bank account opening or a tax filing and realizes they may have missed a disclosure.</p>
 

@@ -6,10 +6,14 @@ import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: { absolute: 'Advance Tax: Who Must Pay, Due Dates & Interest for Default' },
-  description: 'Who must pay advance tax, the four quarterly due dates and cumulative percentages, and how Section 234B and 234C interest applies if you fall short.',
+  title: { absolute: 'Advance Tax Due Date December 15, 2026: 75% Rule & Interest' },
+  description: 'The 3rd advance tax instalment for FY 2026-27 is due December 15, 2026 (75% cumulative). Who must pay, all four dates, and 234B/234C interest.',
   keywords: [
     'advance tax due dates', 'who must pay advance tax', 'advance tax installments',
     'section 234B interest', 'section 234C interest', 'advance tax calculator',
@@ -37,6 +41,7 @@ const articleLd = buildArticleLd({
   headline: 'Advance Tax: Who Must Pay, Due Dates & Interest for Default',
   description: 'Who is liable to pay advance tax, the four quarterly due dates and cumulative percentages, and how interest under Section 234B and 234C is computed on a shortfall.',
   datePublished: '2026-07-29',
+  dateModified: '2026-11-10',
   slug: 'advance-tax-who-must-pay-due-dates-interest',
 })
 
@@ -88,7 +93,7 @@ export default function AdvanceTaxBlog() {
                 Advance Tax: Who Must Pay, Due Dates & Interest for Default
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published July 29, 2026</span>
+                <span>Updated November 10, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
@@ -100,11 +105,13 @@ export default function AdvanceTaxBlog() {
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                     <li style={{ marginBottom: '0.4rem' }}>Advance tax applies if your net tax liability for the year (after TDS/TCS) exceeds <strong>Rs 10,000</strong>.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Next instalment for FY 2026-27: December 15, 2026.</strong> By then, at least 75% of the year&apos;s estimated tax should have been paid in total.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Pay <strong>15% by June 15, 45% by September 15, 75% by December 15, 100% by March 15</strong> (cumulative, not incremental).</li>
                     <li style={{ marginBottom: '0.4rem' }}>Shortfalls attract <strong>1% per month interest under Section 234C</strong> per quarter, plus a separate <strong>Section 234B</strong> charge if less than 90% of assessed tax is paid by March 31.</li>
                     <li style={{ marginBottom: 0 }}>Resident senior citizens without business income are exempt from the requirement entirely.</li>
                   </ul>
                 </div>
+                <DeadlineNotice slug="advance-tax-who-must-pay-due-dates-interest" />
 
                 <p>Advance tax is one of those compliance items that quietly catches freelancers, professionals, and anyone with capital gains or rental income off guard, precisely because it is not withheld by an employer the way salary TDS is. If you owe more than a small amount of tax beyond what has already been deducted at source, the law expects you to pay it in instalments through the year, not in one lump sum when you file your return. Missing this triggers interest that compounds the longer it is ignored.</p>
 
@@ -156,8 +163,7 @@ export default function AdvanceTaxBlog() {
             heading="Need help estimating your advance tax instalments?"
             description="We help individuals, freelancers, and businesses calculate quarterly advance tax accurately and avoid unnecessary 234B/234C interest."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20calculating%20my%20advance%20tax."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

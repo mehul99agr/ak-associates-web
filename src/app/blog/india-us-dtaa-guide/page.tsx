@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -73,6 +74,7 @@ export default function IndiaUsDtaaGuideBlog() {
                   <li style={{ marginBottom: 0 }}>Article 7 taxes only the profit attributable to the PE, not the enterprise's entire worldwide income.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>Most guidance on US structures for Indian founders focuses on incorporation, EIN, and IRS forms. The India-US DTAA is less discussed but just as important, particularly for a founder who continues to live and work in India while operating a US entity, since it directly affects whether that founder's Indian-based activity creates a taxable presence for the US business here.</p>
 

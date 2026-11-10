@@ -37,7 +37,6 @@ const peopleLd = {
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
       email: 'mehul@agrawalkhandelwal.com',
-      telephone: '+91-95275-33506',
       sameAs: ['https://www.linkedin.com/in/mehulagrawal99/'],
       knowsAbout: [
         'International Taxation', 'Transfer Pricing', 'UAE Corporate Tax',
@@ -50,7 +49,6 @@ const peopleLd = {
       ],
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+91-95275-33506',
         email: 'mehul@agrawalkhandelwal.com',
         contactType: 'customer service',
         availableLanguage: ['English', 'Hindi', 'Marathi'],
@@ -66,7 +64,6 @@ const peopleLd = {
       url: 'https://agrawalkhandelwal.com/about#rupesh-khandelwal',
       image: 'https://agrawalkhandelwal.com/rupesh.jpg',
       email: 'rupesh@agrawalkhandelwal.com',
-      telephone: '+91-95955-85953',
       sameAs: ['https://www.linkedin.com/in/rupeshkhandelwal/'],
       alumniOf: { '@type': 'Organization', name: 'Deloitte' },
       knowsAbout: [
@@ -78,7 +75,6 @@ const peopleLd = {
       ],
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+91-95955-85953',
         email: 'rupesh@agrawalkhandelwal.com',
         contactType: 'customer service',
         availableLanguage: ['English', 'Hindi', 'Marathi'],
@@ -146,8 +142,8 @@ export default function About() {
                 </ul>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.75rem', justifyContent: 'center' }}>
-                <TrackedLink href="tel:+919527533506" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location="about_page_mehul">Call</TrackedLink>
-                <TrackedLink href="https://wa.me/919527533506?text=Hi,%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_mehul">WhatsApp</TrackedLink>
+                <TrackedLink href="/consult?partner=mehul" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location="about_page_mehul">Book a Call</TrackedLink>
+                <TrackedLink href="/consult?partner=mehul&for=whatsapp" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_mehul">WhatsApp</TrackedLink>
                 <TrackedLink href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location="about_page_mehul">Email</TrackedLink>
               </div>
             </div>
@@ -177,8 +173,8 @@ export default function About() {
                 </ul>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.75rem', justifyContent: 'center' }}>
-                <TrackedLink href="tel:+919595585953" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location="about_page_rupesh">Call</TrackedLink>
-                <TrackedLink href="https://wa.me/919595585953?text=Hi,%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_rupesh">WhatsApp</TrackedLink>
+                <TrackedLink href="/consult?partner=rupesh" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location="about_page_rupesh">Book a Call</TrackedLink>
+                <TrackedLink href="/consult?partner=rupesh&for=whatsapp" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_rupesh">WhatsApp</TrackedLink>
                 <TrackedLink href="mailto:rupesh@agrawalkhandelwal.com" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location="about_page_rupesh">Email</TrackedLink>
               </div>
             </div>
@@ -200,8 +196,8 @@ export default function About() {
             NRIs who work with us remotely.
           </p>
           <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, marginBottom: '2.5rem' }}>
-            Both partners are involved in client work directly. Advice is given in English, Hindi, or Marathi, the first
-            consultation is free, and we reply within one business day.
+            Both partners are involved in client work directly. Advice is given in English, Hindi, or Marathi. Email
+            enquiries are free, and we reply within one business day.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '2rem', marginBottom: '2.5rem' }}>
@@ -212,7 +208,7 @@ export default function About() {
                 FEMA matters, alongside income tax, GST, and audit work for businesses in Nashik.
               </p>
               <p style={{ color: 'var(--text-main)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '0.75rem' }}>
-                {OFFICES.nashik.addressLine}<br />{OFFICES.nashik.phoneDisplay}
+                {OFFICES.nashik.addressLine}<br />{OFFICES.nashik.email}
               </p>
               <Link href="/ca-in-nashik" style={{ color: 'var(--primary)', fontWeight: 600 }}>Chartered accountants in Nashik &rarr;</Link>
             </div>
@@ -223,7 +219,7 @@ export default function About() {
                 for clients in Sillod and the surrounding Chhatrapati Sambhajinagar (Aurangabad) district.
               </p>
               <p style={{ color: 'var(--text-main)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '0.75rem' }}>
-                {OFFICES.sillod.addressLine}<br />{OFFICES.sillod.phoneDisplay}
+                {OFFICES.sillod.addressLine}<br />{OFFICES.sillod.email}
               </p>
               <Link href="/ca-in-sillod" style={{ color: 'var(--primary)', fontWeight: 600 }}>CA office in Sillod &rarr;</Link>
             </div>
@@ -251,10 +247,10 @@ export default function About() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Have a question for one of our partners?</h2>
           <p style={{ maxWidth: '700px', margin: '0 auto 2rem', color: 'var(--text-light)' }}>
-            Book a free 30-minute consultation or reach out directly, we respond within one business day.
+            Book a consultation or reach out directly, we respond within one business day.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="about_page_cta">Book Free Consultation</TrackedLink>
+            <TrackedLink href={bookingLink} className="btn btn-primary" method="booking" location="about_page_cta">Book a Consultation</TrackedLink>
           </div>
         </div>
       </section>

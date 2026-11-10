@@ -150,8 +150,7 @@ export default function HUFTaxationBlog() {
             heading="Considering an HUF for your family?"
             description="We help families evaluate whether an HUF actually saves tax in their specific situation, then handle deed drafting, PAN application, and annual filing if it does."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20know%20more%20about%20forming%20an%20HUF."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

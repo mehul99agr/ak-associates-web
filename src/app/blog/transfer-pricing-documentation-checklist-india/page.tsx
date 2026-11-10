@@ -160,8 +160,7 @@ export default function TPDocumentationChecklist() {
             description="We prepare Form 3CEB, Local File, and Master File documentation for Indian entities with international related-party transactions."
             marginTop="1.5rem"
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20transfer%20pricing%20documentation."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

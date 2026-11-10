@@ -141,8 +141,7 @@ export default function ShopAndEstablishmentRegistrationBlog() {
             heading="Setting up a new shop or office in Nashik or Sillod?"
             description="We handle Gumasta registration alongside GST, Professional Tax, and the rest of your early compliance checklist."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Shop%20Act%20registration."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

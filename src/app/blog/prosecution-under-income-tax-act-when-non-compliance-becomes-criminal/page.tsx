@@ -151,8 +151,7 @@ export default function ProsecutionIncomeTaxActBlog() {
             heading="Facing a prosecution notice or a serious scrutiny escalation?"
             description="We help evaluate exposure, prepare responses, and coordinate compounding applications where prosecution risk is live."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20an%20income%20tax%20prosecution%20or%20scrutiny%20matter."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -189,10 +189,9 @@ Gratuity = Rs 6,75,000 / 26 = Rs 2,59,615 (approximately).</p>
 
               <PostCTA
             heading="Have a Question on This?"
-            description="Book a free consultation with our partners, or message us on WhatsApp for a quick answer."
+            description="Book a consultation with our partners, or message us on WhatsApp for a quick answer."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20compliance%20question."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

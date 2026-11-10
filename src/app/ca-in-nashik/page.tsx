@@ -7,11 +7,11 @@ import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'CA Firm in Nashik',
-  description: 'CA firm in Nashik at Mumbai Naka. GST, ITR, tax audit, company incorporation and international tax for 100+ businesses. Call +91 95275 33506.',
+  description: 'CA firm in Nashik at Mumbai Naka. GST, ITR, tax audit, company incorporation and international tax for 100+ businesses. Email or book a consultation online.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
     title: 'CA Firm in Nashik | Chartered Accountants at Mumbai Naka | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Ram Plaza, Mumbai Naka, Nashik. Call +91 95275 33506.',
+    description: 'Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Ram Plaza, Mumbai Naka, Nashik.',
     url: 'https://agrawalkhandelwal.com/ca-in-nashik',
     images: OG_IMAGES,
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const services = [
   {
@@ -101,7 +101,6 @@ const nashikLocalBusiness = {
   alternateName: ['Agrawal Khandelwal & Associates LLP Nashik', 'Agrawal Khandelwal & Associates LLP CA Nashik'],
   description: 'Chartered Accountant firm in Nashik at Mumbai Naka offering GST registration and filing, income tax returns, tax audit under Section 44AB, company and LLP incorporation, and international taxation including transfer pricing, DTAA, FEMA, and UAE corporate tax.',
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
-  telephone: OFFICES.nashik.phoneE164,
   email: OFFICES.nashik.email,
   foundingDate: '2023',
   founder: [
@@ -193,11 +192,11 @@ export default function CAInNashik() {
             Agrawal Khandelwal & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik; open Monday to Saturday.
           </p>
           <div className="hero-cta">
-            <a href="tel:+919527533506" className="btn btn-primary">
-              Call +91 95275 33506
+            <a href={bookingLink} className="btn btn-primary">
+              Book a Consultation
             </a>
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              Book Free Consultation
+            <a href={`mailto:${OFFICES.nashik.email}`} className="btn btn-secondary">
+              Email Us
             </a>
           </div>
         </div>
@@ -395,23 +394,20 @@ export default function CAInNashik() {
                 <strong style={{ color: 'var(--text-main)' }}>Hours:</strong><br />
                 Monday – Saturday: 10:00 AM – 6:00 PM
               </p>
-              <a href="tel:+919527533506" style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem' }}>
-                +91 95275 33506
-              </a>
               <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
                 mehul@agrawalkhandelwal.com
               </a>
             </div>
             <div className="card" style={{ background: 'var(--primary)', borderColor: 'var(--primary)' }}>
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Free Consultation</h3>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. No obligation; first session is free.
+                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. The booking fee is adjusted against our professional fee if you engage us.
               </p>
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
-                Schedule on Google Calendar
+              <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
+                Book a Call
               </a>
-              <a href="https://wa.me/919527533506?text=Hi,%20I%20need%20CA%20services%20in%20Nashik." target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
+              <a href="/consult?partner=mehul&for=whatsapp" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
                 WhatsApp Us
               </a>
             </div>
@@ -457,7 +453,7 @@ export default function CAInNashik() {
             Contact Agrawal Khandelwal & Associates LLP; your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="tel:+919527533506" className="btn btn-primary">Call Now: +91 95275 33506</a>
+            <a href={bookingLink} className="btn btn-primary">Book a Consultation</a>
             <Link href="/services" className="btn btn-outline">View All Services</Link>
           </div>
         </div>

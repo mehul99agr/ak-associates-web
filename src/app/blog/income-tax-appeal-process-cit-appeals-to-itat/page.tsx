@@ -145,8 +145,7 @@ export default function IncomeTaxAppealProcessBlog() {
             heading="Considering an appeal against an income tax order?"
             description="We assess whether an appeal is worth pursuing, draft grounds of appeal, and represent you before CIT(Appeals) and the ITAT."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20appeal%20an%20income%20tax%20order."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

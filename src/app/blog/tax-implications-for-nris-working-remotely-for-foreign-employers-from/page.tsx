@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -102,6 +103,7 @@ export default function NriRemoteWorkTaxBlog() {
                     <li style={{ marginBottom: 0 }}><strong>DTAA relief</strong> (tax credit or treaty article) can offset tax already paid abroad, but needs a TRC and Form 10F.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Remote work has made a scenario common that the tax rules were not originally written with in mind: an individual who is, on paper, an NRI employee of a foreign company, physically working from India for months at a stretch, sometimes permanently. Whether that arrangement is tax-neutral or creates a full Indian tax liability on foreign salary comes down almost entirely to one number: how many days you actually spend in India during the financial year.</p>
 

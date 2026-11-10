@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -103,6 +104,7 @@ export default function SeafarerTaxationBlog() {
                     <li style={{ marginBottom: 0 }}>Crediting salary to an NRO account, losing CDC records, or miscounting days are the most common compliance mistakes.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Seafarers serving on foreign-going merchant vessels occupy an unusual position in Indian tax law: they spend most of the year physically outside conventional &quot;Indian soil&quot; while at sea, yet the ship itself may pass through or briefly dock in Indian territorial waters during a voyage. Ordinary day-counting rules would create absurd results if applied literally to this pattern, which is why the law carves out a specific mechanism, tied to the seafarer&apos;s Continuous Discharge Certificate (CDC), for determining residential status and the taxability of voyage salary.</p>
 

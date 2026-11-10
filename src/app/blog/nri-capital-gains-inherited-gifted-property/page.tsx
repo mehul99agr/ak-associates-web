@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -98,6 +99,8 @@ export default function NRIInheritedGiftedPropertyBlog() {
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <p>A large share of the property NRIs sell in India wasn&apos;t purchased by them directly; it was inherited from parents or grandparents, or received as a gift from a relative. The tax treatment on eventual sale follows a specific carryover rule that surprises many NRIs, and it directly affects how much TDS gets deducted and whether a Form 128 (earlier Form 13) certificate is worth pursuing.</p>
 
+                <ServiceOffer variant="nri-seller" />
+
                 <h2>No Tax at the Point of Inheritance or Gift</h2>
                 <p>Receiving property through inheritance, or as a gift from a specified relative (parent, sibling, spouse, lineal ascendant or descendant, among others defined under Section 92 of the Income Tax Act 2025, earlier Section 56 under the 1961 Act), does not itself trigger any income tax for the NRI. There is no tax event at the point of transfer. Tax only arises later, when the NRI sells the property, and it is computed as a capital gain at that point; not before.</p>
 
@@ -133,8 +136,7 @@ export default function NRIInheritedGiftedPropertyBlog() {
             heading="Selling inherited or gifted property in India?"
             description="We help NRIs trace acquisition cost documentation, compute capital gains, and apply for Form 13 certificates on ancestral property sales."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20capital%20gains%20on%20inherited%20property."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

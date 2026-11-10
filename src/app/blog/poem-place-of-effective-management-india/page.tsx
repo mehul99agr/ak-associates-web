@@ -156,7 +156,7 @@ export default function POEMBlog() {
                 <h3 style={{ marginBottom: '0.75rem' }}>Worried your UAE entity could have Indian POEM exposure?</h3>
                 <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>CA Mehul Agrawal is UAE Corporate Tax certified. We review board process, substance, and decision-making structure to assess and mitigate POEM risk.</p>
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                  <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Free Consultation</a>
+                  <a href={bookingLink} className="btn btn-primary">Book a Consultation</a>
                   <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
                   <Link href="/transfer-pricing" className="btn btn-outline">Transfer Pricing</Link>
                 </div>

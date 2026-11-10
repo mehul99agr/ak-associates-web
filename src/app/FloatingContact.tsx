@@ -2,7 +2,7 @@ import TrackedLink from './TrackedLink'
 import { BOOKING_LINK, WHATSAPP_LINK, OFFICES } from '@/lib/constants'
 
 const WHATSAPP = WHATSAPP_LINK
-const TEL = OFFICES.nashik.phoneHref
+const EMAIL = `mailto:${OFFICES.nashik.email}`
 const BOOKING = BOOKING_LINK
 
 function IconWhatsApp() {
@@ -12,10 +12,11 @@ function IconWhatsApp() {
     </svg>
   )
 }
-function IconPhone() {
+function IconMail() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/>
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m22 7-10 6L2 7"/>
     </svg>
   )
 }
@@ -34,15 +35,15 @@ export default function FloatingContact() {
   return (
     <>
       {/* Desktop: floating WhatsApp button */}
-      <TrackedLink className="whatsapp-fab" href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" method="whatsapp" location="floating_fab">
+      <TrackedLink className="whatsapp-fab" href={WHATSAPP} aria-label="Chat with us on WhatsApp" method="whatsapp" location="floating_fab">
         <IconWhatsApp />
       </TrackedLink>
 
       {/* Mobile: sticky bottom action bar */}
       <nav className="mobile-actionbar" aria-label="Quick contact">
-        <TrackedLink href={TEL} aria-label="Call us" method="call" location="mobile_actionbar"><IconPhone /><span>Call</span></TrackedLink>
-        <TrackedLink href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us" method="whatsapp" location="mobile_actionbar"><IconWhatsApp /><span>WhatsApp</span></TrackedLink>
-        <TrackedLink href={BOOKING} target="_blank" rel="noopener noreferrer" className="primary" aria-label="Book a consultation" method="booking" location="mobile_actionbar"><IconCalendar /><span>Book</span></TrackedLink>
+        <TrackedLink href={EMAIL} aria-label="Email us" method="email" location="mobile_actionbar"><IconMail /><span>Email</span></TrackedLink>
+        <TrackedLink href={WHATSAPP} aria-label="WhatsApp us" method="whatsapp" location="mobile_actionbar"><IconWhatsApp /><span>WhatsApp</span></TrackedLink>
+        <TrackedLink href={BOOKING} className="primary" aria-label="Book a consultation" method="booking" location="mobile_actionbar"><IconCalendar /><span>Book</span></TrackedLink>
       </nav>
     </>
   )

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -85,6 +86,7 @@ export default function Section91DoubleTaxationBlog() {
                     <li style={{ marginBottom: 0 }}>If the foreign tax rate is higher than India&apos;s, the excess is not creditable; that gap is a real cost, not a paperwork gap.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Most NRI tax planning around double taxation focuses on DTAA relief under Section 90, because most of the countries NRIs live in (UAE, US, UK, Singapore, Australia, Canada) have a treaty with India. But a meaningful number of NRIs and residents with foreign-sourced income earn it, or pay tax on it, in a jurisdiction India has no treaty with at all. Section 91 exists precisely for that gap, and it works differently enough from Section 90 that assuming the same process applies is a common, costly mistake.</p>
 

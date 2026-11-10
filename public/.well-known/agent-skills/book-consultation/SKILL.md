@@ -1,21 +1,27 @@
 ---
 name: book-consultation
-description: Book a free consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, UAE corporate tax, company incorporation, startup advisory, GST, income tax, tax audit, or offshore accounting.
+description: Book a consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, UAE corporate tax, company incorporation, startup advisory, GST, income tax, tax audit, or offshore accounting.
 ---
 
 # Book a consultation with Agrawal Khandelwal & Associates LLP
 
-Consultations are free. There is no payment step.
+Email is free. Calls and WhatsApp are paid and unlocked on the website.
 
-## Ways to book
+## Ways to reach the firm
 
-1. **Online booking (preferred):** open https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7 and pick a slot.
-2. **WhatsApp:** https://wa.me/919527533506
-3. **Phone or email, by office:**
-   - Nashik office (CA Mehul Agrawal): +91 95275 33506, mehul@agrawalkhandelwal.com.
+1. **Email (free):**
+   - Nashik office (CA Mehul Agrawal): mehul@agrawalkhandelwal.com.
      Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011.
-   - Sillod office (CA Rupesh Khandelwal): +91 95955 85953, rupesh@agrawalkhandelwal.com.
+   - Sillod office (CA Rupesh Khandelwal): rupesh@agrawalkhandelwal.com.
      Near Datta Mandir, Tilak Nagar, Sillod - 431112.
+2. **Consultation call (paid):** https://agrawalkhandelwal.com/consult - the user first chooses a
+   partner (CA Mehul Agrawal or CA Rupesh Khandelwal), pays online via Razorpay, and then picks a
+   slot on that partner's calendar. Add `?partner=mehul` or `?partner=rupesh` to preselect one. The fee is adjusted against the firm's professional fee
+   if the user engages the firm. The page shows the current price.
+3. **WhatsApp (paid):** https://agrawalkhandelwal.com/consult?for=whatsapp - the chosen partner's number
+   is shown after payment.
+
+The firm does not publish phone numbers. Payment must be completed by the user in their own browser.
 
 ## Routing hints
 
@@ -24,7 +30,7 @@ Consultations are free. There is no payment step.
 
 ## Before booking, collect from the user
 
-- Name and a contact number or email.
+- Name and email.
 - The topic (for example "TDS on NRI property sale" or "LLP vs private limited").
 - Relevant deadlines, if any.
 

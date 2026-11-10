@@ -150,8 +150,7 @@ export default function UdyamRegistrationMSMEBlog() {
             heading="Need help with Udyam registration or MSME compliance?"
             description="We handle Udyam registration, classification checks, and ongoing MSME/statutory compliance for growing businesses."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20Udyam%20MSME%20registration."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

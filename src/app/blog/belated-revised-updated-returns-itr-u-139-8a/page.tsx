@@ -6,10 +6,14 @@ import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: { absolute: 'Belated, Revised & Updated Returns: ITR-U Under Section 139(8A)' },
-  description: 'Missed the ITR deadline or found an error? Belated, revised and updated returns (ITR-U) under Section 139(8A), the additional tax, and filing windows.',
+  title: { absolute: 'Belated Return Last Date Dec 31, 2026; Revised ITR & ITR-U' },
+  description: 'Belated ITR for AY 2026-27 is due December 31, 2026; revised returns now run to March 31, 2027 (fee after Dec 31). Plus ITR-U under Section 139(8A).',
   keywords: [
     'ITR-U', 'updated return income tax', 'Section 139(8A)', 'belated return',
     'revised return income tax', 'ITR-U additional tax', 'updated return time limit',
@@ -37,13 +41,14 @@ const articleLd = buildArticleLd({
   headline: 'Belated, Revised & Updated Returns: ITR-U Under Section 139(8A)',
   description: 'How belated returns, revised returns, and the updated return (ITR-U) under Section 139(8A) differ, including deadlines, additional tax slabs, and who is eligible to file each.',
   datePublished: '2026-08-02',
+  dateModified: '2026-11-10',
   slug: 'belated-revised-updated-returns-itr-u-139-8a',
 })
 
 const faqs: [string, string][] = [
   [
     'What is the difference between a belated return and a revised return?',
-    'A belated return is filed after the original due date because you missed it altogether, under Section 139(4). A revised return is filed to correct an error or omission in a return you already filed on time (or as a belated return), under Section 139(5). Both must be filed within the same statutory window, generally before the end of the relevant assessment year or before assessment is completed, whichever is earlier.',
+    'A belated return is filed after the original due date because you missed it altogether, under Section 139(4). A revised return is filed to correct an error or omission in a return you already filed on time (or as a belated return), under Section 139(5). For AY 2026-27, a belated return must be filed by December 31, 2026 (or before assessment is completed, if earlier). After the Finance Act 2026 change, a revised return can be filed up to March 31, 2027; revisions filed after December 31, 2026 carry a fee.',
   ],
   [
     'What is ITR-U (updated return)?',
@@ -88,7 +93,7 @@ export default function ItrUBlog() {
                 Belated, Revised &amp; Updated Returns: ITR-U Under Section 139(8A)
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published August 2, 2026</span>
+                <span>Updated November 10, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
@@ -99,22 +104,23 @@ export default function ItrUBlog() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}>Missed the due date? File a <strong>belated return</strong> under Section 139(4).</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Found an error after filing? File a <strong>revised return</strong> under Section 139(5) within the same window.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Missed the due date? File a <strong>belated return</strong> under Section 139(4) (Section 263(4) of the Income Tax Act 2025). For AY 2026-27 the last date is <strong>December 31, 2026</strong>.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Found an error after filing? File a <strong>revised return</strong> under Section 139(5) (Section 263(5) of the 2025 Act). Finance Act 2026 extended this window to <strong>March 31, 2027</strong> for AY 2026-27, with a fee for revisions filed after December 31, 2026.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Missed both windows and have additional income to disclose? File an <strong>updated return (ITR-U)</strong> under Section 139(8A), within 48 months of the end of the relevant assessment year, along with additional tax.</li>
                     <li style={{ marginBottom: 0 }}>ITR-U cannot be used to claim a refund or reduce tax already reported; it is a one-way disclosure route, and the additional tax rises the longer you wait.</li>
                   </ul>
                 </div>
+                <DeadlineNotice slug="belated-revised-updated-returns-itr-u-139-8a" />
 
                 <p>Most taxpayers assume that missing the ITR filing deadline, or spotting an error after submission, is the end of the road for that assessment year. It is not. The Income Tax Act provides three distinct correction routes; belated returns, revised returns, and the updated return (ITR-U); each with its own deadline, purpose, and cost. Understanding which one applies to your situation can save you from a needless notice, or from paying more tax than necessary.</p>
 
                 <h2>Belated Return: When You Missed the Original Deadline</h2>
-                <p>A <strong>belated return</strong>, filed under Section 139(4), is simply your original return filed late. If you missed the usual July 31 due date (or the applicable due date for your category of taxpayer), you can still file, but two consequences follow: a late-filing fee under Section 234F, and restrictions on carrying forward certain losses (other than house property loss) to future years. The belated return must be filed before the end of the relevant assessment year or before assessment is completed, whichever comes first.</p>
+                <p>A <strong>belated return</strong>, filed under Section 139(4), is simply your original return filed late. If you missed the usual July 31 due date (or the applicable due date for your category of taxpayer), you can still file, but two consequences follow: a late-filing fee under Section 234F, and restrictions on carrying forward certain losses (other than house property loss) to future years. The belated return must be filed by December 31 of the assessment year (three months before it ends) or before assessment is completed, whichever comes first. For AY 2026-27 that is <strong>December 31, 2026</strong>; Finance Act 2026 did not extend this date.</p>
                 <p>Filing late is always better than not filing at all. Interest under Sections 234A/234B/234C continues to accrue on any unpaid tax, and prolonged non-filing invites scrutiny and, in serious cases, prosecution risk.</p>
 
                 <h2>Revised Return: Correcting a Return Already Filed</h2>
-                <p>A <strong>revised return</strong>, filed under Section 139(5), lets you correct a genuine error or omission in a return you already filed, whether that original return was filed on time or as a belated return. Common reasons include a missed deduction, an incorrect bank account for refund, an unreported small income source noticed later, or a wrong assessment year selected. There is no limit to the number of times you can revise a return within the permitted window (before the end of the assessment year or completion of assessment), though each revision replaces the previous return entirely.</p>
-                <p>A revised return does not attract the late fee that applies to a belated return, since you are correcting a filing that already exists, not filing late from scratch. It is the cheapest and fastest correction route available, provided you catch the error in time.</p>
+                <p>A <strong>revised return</strong>, filed under Section 139(5), lets you correct a genuine error or omission in a return you already filed, whether that original return was filed on time or as a belated return. Common reasons include a missed deduction, an incorrect bank account for refund, an unreported small income source noticed later, or a wrong assessment year selected. There is no limit to the number of times you can revise a return within the permitted window, though each revision replaces the previous return entirely. Finance Act 2026 extended that window from nine to twelve months after the end of the financial year, so for AY 2026-27 a revised return can be filed up to <strong>March 31, 2027</strong> (or before assessment is completed, if earlier).</p>
+                <p>A revised return filed by December 31 does not attract a fee. A revision filed between January 1 and March 31 under the extended window carries a fee; secondary sources differ on the amount, so confirm it on the e-filing portal before you file. It is the cheapest and fastest correction route available, provided you catch the error in time.</p>
 
                 <h2>Updated Return (ITR-U): The Extended Window Under Section 139(8A)</h2>
                 <p>The updated return, commonly called <strong>ITR-U</strong>, was introduced to give taxpayers a much longer window; up to 48 months (4 years) from the end of the relevant assessment year; to voluntarily disclose income that was missed, under-reported, or never filed at all. This is significantly beyond the belated and revised return deadlines, which typically close well within the assessment year itself.</p>
@@ -176,8 +182,7 @@ export default function ItrUBlog() {
             heading="Need to file a belated, revised, or updated return?"
             description="We help individuals and businesses work out which filing route applies, compute the exact tax and interest due, and file correctly the first time."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20filing%20a%20belated%2Frevised%2Fupdated%20return."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

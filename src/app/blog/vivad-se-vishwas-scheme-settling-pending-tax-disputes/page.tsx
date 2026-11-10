@@ -131,8 +131,7 @@ export default function VivadSeVishwasBlog() {
             heading="Have a pending tax dispute?"
             description="We help you evaluate the right route, appeal, rectification, stay of demand, or settlement mechanism, based on your specific facts."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20pending%20income%20tax%20dispute%20and%20need%20advice."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

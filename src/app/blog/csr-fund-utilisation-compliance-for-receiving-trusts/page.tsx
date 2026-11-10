@@ -138,8 +138,7 @@ export default function CsrFundUtilisationComplianceBlog() {
             heading="Setting up your trust to receive CSR funding?"
             description="We handle CSR-1 registration, 12A/80G compliance, and project-wise accounting for trusts working with corporate CSR partners."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20CSR-1%20registration%20and%20CSR%20fund%20compliance%20for%20a%20trust."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

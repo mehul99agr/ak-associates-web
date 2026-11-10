@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -150,6 +151,7 @@ export default function TDSNRIPropertyBlog() {
                     <li style={{ marginBottom: 0 }}>NRI sellers who are over-deducted can claim the excess back through their ITR.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-buyer" />
                 <p>When an Indian resident buys property from a Non-Resident Indian, the obligation to deduct tax at source falls on the <strong>buyer</strong>, not the seller. Most buyers discover this only after the transaction; at which point they are already personally liable for the TDS that should have been deducted, plus interest and penalty. For the NRI seller, the same transaction usually means paying far more TDS upfront than the actual tax works out to. This guide covers both sides for FY 2026-27: the buyer&apos;s rates, TAN and filing obligations, and the NRI seller&apos;s options for cutting the TDS burden or claiming it back.</p>
 
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -322,8 +324,7 @@ export default function TDSNRIPropertyBlog() {
             heading="Need help with NRI property TDS or sale proceeds repatriation?"
             description="We handle Form 13 applications, Form 27Q filing, and Form 145/146 compliance for NRI property transactions across India."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20NRI%20property%20TDS."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

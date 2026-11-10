@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -98,6 +99,8 @@ export default function NRIRepatriationBlog() {
               <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
                 <p>Selling the property is only half the process for an NRI. Getting the sale proceeds out of India legally requires clearing tax on the gain; through <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS and, where applicable, an ITR refund</Link>; and then following a specific FEMA-governed remittance process. Under the new Income Tax Act 2025, effective April 1, 2026, the forms involved changed. Here is the full sequence.</p>
 
+                <ServiceOffer variant="nri-seller" />
+
                 <h2>Step 1: Proceeds Land in the NRO Account</h2>
                 <p>Sale consideration from an NRI&apos;s Indian property must first be credited to their <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO (Non-Resident Ordinary) account</Link>. It cannot be remitted directly abroad or credited to an NRE or foreign account at the time of sale. This is a FEMA requirement, not just a banking convenience; all subsequent tax certification and repatriation steps assume the funds are sitting in an NRO account.</p>
 
@@ -141,8 +144,7 @@ export default function NRIRepatriationBlog() {
             heading="Need help repatriating property sale proceeds?"
             description="We handle Form 145/146 compliance and coordinate directly with AD Banks for NRI clients repatriating funds from India."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20repatriating%20property%20sale%20proceeds."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

@@ -147,8 +147,7 @@ export default function StartupComplianceAutomationBlog() {
             heading="Need help organising ODI/APR, transfer pricing, or GST compliance?"
             description="We support growing startups with cross-border structures through Virtual CFO oversight and dedicated offshore accounting teams, alongside direct RBI, transfer pricing, and GST filings."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20startup%20compliance."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

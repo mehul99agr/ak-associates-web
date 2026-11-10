@@ -159,8 +159,7 @@ export default function WindingUpStrikeOffBlog() {
             heading="Ready to close a dormant company?"
             description="We check eligibility, clear pending ROC filings if needed, and handle the full STK-2 filing end to end."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20close%20down%20my%20private%20limited%20company."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

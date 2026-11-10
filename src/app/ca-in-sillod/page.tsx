@@ -7,7 +7,7 @@ import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'CA in Sillod',
-  description: 'Trusted CA in Sillod, Aurangabad. GST filing, income tax, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Call +91 95955 85953.',
+  description: 'Trusted CA in Sillod, Aurangabad. GST filing, income tax, audit, company incorporation, and tax planning at Tilak Nagar, Sillod. Email or book a consultation online.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-sillod' },
   openGraph: {
     title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=rupesh`
 
 const services = [
   {
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: 'How do I register my business in Sillod?',
-    a: 'We handle complete business registration from Sillod; including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Contact us at +91 95955 85953 to get started.',
+    a: 'We handle complete business registration from Sillod; including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Email rupesh@agrawalkhandelwal.com or book a consultation on our website to get started.',
   },
   {
     q: 'Is Agrawal Khandelwal & Associates LLP available for clients in Aurangabad district from Sillod?',
@@ -81,7 +81,7 @@ const faqs = [
   },
   {
     q: 'What is the phone number of your CA office in Sillod?',
-    a: 'You can reach our Sillod office at +91 95955 85953 (CA Rupesh Khandelwal) or email rupesh@agrawalkhandelwal.com. For international tax queries, contact our Nashik office at +91 95275 33506.',
+    a: 'You can reach our Sillod office (CA Rupesh Khandelwal) at rupesh@agrawalkhandelwal.com, or book a consultation on our website. For international tax queries, email our Nashik office at mehul@agrawalkhandelwal.com.',
   },
   {
     q: 'Is there a CA firm near Sillod for tax filing and GST compliance?',
@@ -105,7 +105,6 @@ const sillodLocalBusiness = {
   alternateName: ['Agrawal Khandelwal & Associates LLP Sillod', 'CA in Sillod', 'Agrawal Khandelwal & Associates LLP CA Sillod'],
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
-  telephone: OFFICES.sillod.phoneE164,
   email: OFFICES.sillod.email,
   foundingDate: '2023',
   founder: [
@@ -196,11 +195,11 @@ export default function CAInSillod() {
             Agrawal Khandelwal & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory; handled by CA Rupesh Khandelwal from our Sillod office.
           </p>
           <div className="hero-cta">
-            <a href="tel:+919595585953" className="btn btn-primary">
-              Call +91 95955 85953
+            <a href={bookingLink} className="btn btn-primary">
+              Book a Consultation
             </a>
-            <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              Book Free Consultation
+            <a href={`mailto:${OFFICES.sillod.email}`} className="btn btn-secondary">
+              Email Us
             </a>
           </div>
         </div>
@@ -346,23 +345,20 @@ export default function CAInSillod() {
                 <strong style={{ color: 'var(--text-main)' }}>Hours:</strong><br />
                 Monday – Saturday: 10:00 AM – 6:00 PM
               </p>
-              <a href="tel:+919595585953" style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem' }}>
-                +91 95955 85953
-              </a>
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
                 rupesh@agrawalkhandelwal.com
               </a>
             </div>
             <div className="card" style={{ background: 'var(--primary)', borderColor: 'var(--primary)' }}>
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Free Consultation</h3>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Speak with CA Rupesh Khandelwal about your GST, tax, or audit needs in Sillod. First consultation is free.
+                Speak with CA Rupesh Khandelwal about your GST, tax, or audit needs in Sillod. The booking fee is adjusted against our professional fee if you engage us.
               </p>
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
-                Schedule on Google Calendar
+              <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
+                Book a Call
               </a>
-              <a href="https://wa.me/919595585953?text=Hi,%20I%20need%20CA%20services%20in%20Sillod." target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
+              <a href="/consult?partner=rupesh&for=whatsapp" className="btn btn-secondary" style={{ width: '100%', marginTop: '0.75rem' }}>
                 WhatsApp Us
               </a>
             </div>
@@ -385,7 +381,7 @@ export default function CAInSillod() {
               Need advanced services like international taxation or startup advisory?
             </p>
             <p style={{ color: 'var(--text-main)', fontWeight: 600 }}>
-              Our Nashik office handles those; <a href="tel:+919527533506" style={{ color: 'var(--primary)' }}>+91 95275 33506</a>
+              Our Nashik office handles those; <a href={`mailto:${OFFICES.nashik.email}`} style={{ color: 'var(--primary)' }}>{OFFICES.nashik.email}</a>
             </p>
           </div>
         </div>
@@ -417,7 +413,7 @@ export default function CAInSillod() {
             Agrawal Khandelwal & Associates LLP; your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="tel:+919595585953" className="btn btn-primary">Call Now: +91 95955 85953</a>
+            <a href={bookingLink} className="btn btn-primary">Book a Consultation</a>
             <Link href="/services" className="btn btn-outline">View All Services</Link>
           </div>
         </div>

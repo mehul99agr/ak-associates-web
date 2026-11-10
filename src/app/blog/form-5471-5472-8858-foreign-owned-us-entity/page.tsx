@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -73,6 +74,7 @@ export default function Form5471Form5472Form8858Blog() {
                   <li style={{ marginBottom: 0 }}>A single-member US LLC owned by an Indian founder almost always needs Form 5472, not 5471.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>These three IRS information returns get confused constantly because their names sound similar and they all deal with cross-border ownership, but the direction of ownership is what determines which one applies, and getting it wrong is a common and costly mistake for founders setting up US structures from India.</p>
 

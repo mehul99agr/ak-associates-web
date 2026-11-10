@@ -142,8 +142,7 @@ export default function IncomeTaxRefundStatusBlog() {
             heading="Refund stuck or delayed longer than expected?"
             description="We help clients diagnose refund delays, respond to Section 245 notices, and get bank account issues sorted so refunds actually get credited."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20my%20income%20tax%20refund%20is%20delayed%20and%20I%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -167,7 +167,7 @@ export default function UAEEntitySetupBlog() {
               We&apos;ll give you a straight answer on whether it works for your specific situation: before you spend on formation.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a href="/consult" className="btn btn-primary">
                 Book a Cross-Border Tax Call
               </a>
               <Link href="/uae-tax-advisory" className="btn btn-outline">UAE Tax Advisory</Link>
@@ -180,8 +180,7 @@ export default function UAEEntitySetupBlog() {
             description="We help you decide whether it makes sense and structure it correctly."
             secondaryLabel="Ask on WhatsApp"
             secondaryHref={WHATSAPP_ARTICLE_LINK}
-            secondaryExternal
-          />
+            />
         </article>
       </div>
     </div>

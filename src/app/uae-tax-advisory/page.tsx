@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const services = [
   {
@@ -126,7 +126,7 @@ export default function UAETaxAdvisory() {
               <span style={{ color: 'var(--warning-light)', fontSize: '0.88rem', fontWeight: 700 }}>CA Mehul Agrawal holds a UAE Corporate Taxation certification; one of very few CAs in India with this credential.</span>
             </div>
             <div className="hero-cta">
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a href={bookingLink} className="btn btn-secondary">
                 Book a UAE Tax Consultation
               </a>
             </div>
@@ -274,7 +274,7 @@ export default function UAETaxAdvisory() {
                 Whether you need UAE CT registration, DTAA planning, or a full India-UAE structure review; we bring the only UAE Corporate Taxation-certified CA practice to the conversation.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
+                <a href={bookingLink} className="btn btn-accent">
                   Book a UAE Tax Call
                 </a>
                 <Link href="/nri-tax-advisory" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>

@@ -165,8 +165,7 @@ export default function GstrFilingGuideBlog() {
             heading="Behind on GST filings or getting mismatch notices?"
             description="We handle monthly and QRMP GST return filing, GSTR-1/3B reconciliation, and notice responses."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20GST%20return%20filing."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

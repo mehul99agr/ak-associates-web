@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -106,6 +107,7 @@ export default function Section195Blog() {
                     <li style={{ marginBottom: 0 }}>Getting it wrong means the payer is personally liable for the TDS amount, interest, penalty, and potential prosecution.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-buyer" />
 
                 <p>Section 195 is the provision most people encounter only when they buy property from an NRI, and it surprises them. But Section 195 is far broader than property. It applies to every payment to a non-resident that carries an Indian tax liability: rent on Indian property, fees for professional services rendered in India, interest on Indian deposits, royalties, and more. Most people know the property angle because the numbers are large enough to attract attention. The smaller payments; a monthly rent to an NRI landlord, a consulting fee to a non-resident professional; slip through, and that is where compliance gaps turn into notices.</p>
 

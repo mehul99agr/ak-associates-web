@@ -144,8 +144,7 @@ export default function ReassessmentNoticeSection148Blog() {
             heading="Received a Section 148 or 148A notice?"
             description="We review the time limit, the disclosed material, and prepare a complete response within the deadline."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20received%20a%20Section%20148%20reassessment%20notice."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -58,6 +59,7 @@ export default function TDSNROInterestBlog() {
                   <li style={{ marginBottom: 0 }}>If you missed it, file an <Link href="/blog/nri-itr-filing-guide-from-abroad" style={{ color: 'var(--primary)', fontWeight: 600 }}>ITR</Link> to claim the excess TDS back as a refund.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-itr" />
 
               <p>This is probably the easiest tax saving available to NRIs, and most people do not claim it. Your bank deducts 30% TDS on every rupee of NRO interest because that is the default domestic rate. But if you live in a country with a DTAA with India (which covers over 90 countries), the treaty rate on interest is typically 10-15%. The difference on a Rs 50 lakh NRO FD earning 7% is roughly Rs 52,500 per year; recovered with one TRC and one Form 10F submission.</p>
 

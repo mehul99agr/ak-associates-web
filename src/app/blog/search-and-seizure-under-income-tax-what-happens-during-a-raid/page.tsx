@@ -152,8 +152,7 @@ export default function SearchAndSeizureBlog() {
             heading="Facing an income tax search or a post-search assessment?"
             description="We help individuals and businesses navigate search proceedings, statement review, and the assessment that follows."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20an%20income%20tax%20search%2Fseizure%20matter."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

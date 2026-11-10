@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -76,6 +77,7 @@ export default function NRIITRFilingBlog() {
                     <li style={{ marginBottom: 0 }}>Deadline: <strong>July 31</strong> of the assessment year. Late filing costs Rs 5,000.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Filing an Indian ITR from abroad sounds complicated, but the process is fully online and does not require visiting India. The real complexity is in getting the inputs right: determining your <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>residential status</Link>, choosing the correct form, computing income correctly (especially capital gains), and claiming TDS credits that often exceed your actual liability. Here is the step-by-step guide.</p>
 

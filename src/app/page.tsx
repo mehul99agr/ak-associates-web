@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export const revalidate = 3600
 
 const bookingLink = BOOKING_LINK
-const whatsappLink = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
+const whatsappLink = '/consult?for=whatsapp'
 
 const services = [
   {
@@ -88,11 +88,11 @@ const faqs = [
   },
   {
     q: 'Do you provide CA services in Nashik?',
-    a: 'Yes. Our Nashik office at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Contact us at +91 95275 33506.',
+    a: 'Yes. Our Nashik office at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Email mehul@agrawalkhandelwal.com or book a consultation online.',
   },
   {
     q: 'Do you have a CA office in Sillod?',
-    a: 'Yes. Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112. We serve businesses and individuals in Sillod and the surrounding Chhatrapati Sambhajinagar district with GST filing, income tax returns, audit, and tax planning services. Contact us at +91 95955 85953.',
+    a: 'Yes. Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112. We serve businesses and individuals in Sillod and the surrounding Chhatrapati Sambhajinagar district with GST filing, income tax returns, audit, and tax planning services. Email rupesh@agrawalkhandelwal.com or book a consultation online.',
   },
 ]
 
@@ -119,7 +119,6 @@ const peopleLd = {
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
       email: 'mehul@agrawalkhandelwal.com',
-      telephone: '+91-95275-33506',
       sameAs: ['https://www.linkedin.com/in/mehulagrawal99/'],
       knowsAbout: [
         'International Taxation', 'Transfer Pricing', 'UAE Corporate Tax',
@@ -132,7 +131,6 @@ const peopleLd = {
       ],
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+91-95275-33506',
         email: 'mehul@agrawalkhandelwal.com',
         contactType: 'customer service',
         availableLanguage: ['English', 'Hindi', 'Marathi'],
@@ -148,7 +146,6 @@ const peopleLd = {
       url: 'https://agrawalkhandelwal.com/about#rupesh-khandelwal',
       image: 'https://agrawalkhandelwal.com/rupesh.jpg',
       email: 'rupesh@agrawalkhandelwal.com',
-      telephone: '+91-95955-85953',
       sameAs: ['https://www.linkedin.com/in/rupeshkhandelwal/'],
       alumniOf: { '@type': 'Organization', name: 'Deloitte' },
       knowsAbout: [
@@ -160,7 +157,6 @@ const peopleLd = {
       ],
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+91-95955-85953',
         email: 'rupesh@agrawalkhandelwal.com',
         contactType: 'customer service',
         availableLanguage: ['English', 'Hindi', 'Marathi'],
@@ -207,10 +203,10 @@ export default function Home() {
             </Link>
           </div>
           <div className="hero-cta">
-            <TrackedLink href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" method="booking" location="homepage_hero">
-              Book Free Consultation
+            <TrackedLink href={bookingLink} className="btn btn-primary" method="booking" location="homepage_hero">
+              Book a Consultation
             </TrackedLink>
-            <TrackedLink href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" method="whatsapp" location="homepage_hero">
+            <TrackedLink href={WHATSAPP_LINK} className="btn btn-secondary" method="whatsapp" location="homepage_hero">
               Chat on WhatsApp
             </TrackedLink>
           </div>
@@ -491,7 +487,7 @@ export default function Home() {
             <span className="section-badge">Get In Touch</span>
             <h2 className="section-title">Ready to Optimize Your Finances?</h2>
             <p style={{ maxWidth: '680px', margin: '0 auto', color: 'var(--text-light)' }}>
-              Schedule a free consultation to discuss your financial goals. We serve clients across Nashik, Sillod, Mumbai, and Bangalore.
+              Book a consultation to discuss your financial goals. We serve clients across Nashik, Sillod, Mumbai, and Bangalore.
             </p>
           </div>
 
@@ -500,8 +496,7 @@ export default function Home() {
               <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name="mapPin" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem' }}>Nashik Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011</p>
-              <a href="tel:+919527533506" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95275 33506</a>
-              <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.4rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>mehul@agrawalkhandelwal.com</a>
+              <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>mehul@agrawalkhandelwal.com</a>
             </div>
 
             <div className="card" style={{ textAlign: 'center' }}>
@@ -509,17 +504,16 @@ export default function Home() {
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem' }}>Sillod Office</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Near Datta Mandir, Tilak Nagar, Sillod – 431112</p>
               <Link href="/ca-in-sillod" style={{ display: 'block', marginTop: '0.6rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem' }}>CA firm in Sillod &rarr;</Link>
-              <a href="tel:+919595585953" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 700 }}>+91 95955 85953</a>
-              <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '0.4rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>rupesh@agrawalkhandelwal.com</a>
+              <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>rupesh@agrawalkhandelwal.com</a>
             </div>
 
             {/* WhatsApp CTA: uses explicit dark blue to work in both modes */}
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', borderColor: 'var(--primary)' }}>
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
-              <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a free 30-minute session to explore how we can help your business thrive.</p>
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
-                Schedule on Google Calendar
+              <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a call with a partner to discuss how we can help your business. The booking fee is adjusted against our fee if you engage us.</p>
+              <a href={bookingLink} className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
+                Book a Call
               </a>
             </div>
           </div>

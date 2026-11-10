@@ -172,8 +172,7 @@ export default function CondonationOfDelayBlog() {
             heading="Missed your ITR deadline and need to claim a refund or loss?"
             description="We help prepare and file condonation of delay applications with the right documentation for the relevant authority."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20missed%20my%20ITR%20deadline%20and%20need%20help%20with%20condonation%20of%20delay."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

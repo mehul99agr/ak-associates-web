@@ -148,8 +148,7 @@ export default function CapitalGainsSharesEquityDebtBlog() {
             heading="Planning a share or mutual fund sale?"
             description="We help investors work out the exact capital gains impact before a sale, not after, so the exemption and timing decisions are made with full information."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20capital%20gains%20tax%20on%20shares%20or%20mutual%20funds."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

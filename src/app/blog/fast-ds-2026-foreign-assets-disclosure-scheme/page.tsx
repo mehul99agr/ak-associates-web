@@ -5,6 +5,10 @@ import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'FAST-DS 2026: Foreign Assets Disclosure Scheme Explained' },
@@ -76,6 +80,7 @@ export default function FastDs2026Blog() {
                   <li style={{ marginBottom: 0 }}>Aimed at protecting genuine small omissions from Black Money Act exposure, not a route for large or structured non-disclosure.</li>
                 </ul>
               </div>
+              <DeadlineNotice slug="fast-ds-2026-foreign-assets-disclosure-scheme" />
 
               <p>Every year, a number of taxpayers with a genuine but modest foreign holding; a small overseas bank account, a handful of foreign shares from an old ESOP grant, a inherited account never formally reported; realise only later that it should have gone into Schedule FA of their income tax return. Until now, fixing that meant confronting the Black Money Act&apos;s steep penalty and prosecution regime, even where the amount involved was small and the omission was not deliberate. <strong>FAST-DS 2026</strong> is a narrowly scoped, one-time scheme designed to give exactly this category of taxpayer a defined way to come clean.</p>
 

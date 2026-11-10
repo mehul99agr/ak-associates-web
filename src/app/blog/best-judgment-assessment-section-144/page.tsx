@@ -144,8 +144,7 @@ export default function BestJudgmentAssessmentBlog() {
             heading="Facing or worried about a best judgment assessment?"
             description="We help clients respond before an assessment is finalised, and represent them in appeal where one has already been passed."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20Section%20144%20assessment."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -151,8 +151,7 @@ export default function SetOffCarryForwardLossesBlog() {
             heading="Carrying a business, capital, or house property loss this year?"
             description="We compute set-off correctly, track carry-forward schedules across years, and make sure your return is filed on time to preserve your carry-forward rights."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20loss%20set-off%20and%20carry%20forward."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
             <FaqSection faqs={faqs} />

@@ -141,8 +141,7 @@ export default function FreelancerGigTaxBlog() {
             heading="Freelancing or gig working and unsure how to structure your taxes?"
             description="We help freelancers and independent consultants choose between presumptive and normal taxation, plan advance tax instalments, and handle GST registration when needed."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20am%20a%20freelancer%20and%20need%20help%20with%20my%20taxes."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

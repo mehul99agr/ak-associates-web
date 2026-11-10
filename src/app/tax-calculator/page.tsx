@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 type RegimeResult = { taxable: number; tax: number; rebate: number; cess: number; total: number }
 
-const bookingLink = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+const bookingLink = '/consult'
 
 const formatINR = (n: number) => n.toLocaleString('en-IN')
 const parseNum = (s: string) => Number(s.replace(/[^0-9]/g, '')) || 0
@@ -152,7 +152,7 @@ export default function TaxCalculator() {
                     The {better === 'new' ? 'New' : 'Old'} Regime saves you about <span style={{ color: 'var(--gold-light)' }}>₹{formatINR(saving)}</span> this year.
                   </p>
                 )}
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700, marginTop: '16px' }}>
+                <a href={bookingLink} className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700, marginTop: '16px' }}>
                   Get a personalised tax plan
                 </a>
               </div>

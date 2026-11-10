@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -75,6 +76,7 @@ export default function NRIRentalIncomeBlog() {
                     <li style={{ marginBottom: 0 }}>Actual tax is almost always lower than TDS deducted. <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13</Link> or ITR refund recovers the excess.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Rental income from Indian property is one of the most common income types for NRIs, and one of the most consistently mis-handled. Tenants assume the same 10% TDS that applies to resident landlords works here. It does not. NRI rental income falls under Section 393(2) (earlier Section 195 under the 1961 Act), not Section 194-I, and the compliance requirements are entirely different. Here is what both sides need to know.</p>
 

@@ -150,8 +150,7 @@ export default function FacelessAssessmentSchemeBlog() {
             heading="Facing a faceless assessment notice?"
             description="We help draft complete, evidence-backed responses and represent your case through the portal, right up to a video-conference hearing if needed."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20faceless%20assessment%20notice%20and%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -6,6 +6,10 @@ import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'Tax Audit Due Date AY 2026-27 & Late Filing Penalty (271B)' },
@@ -78,6 +82,7 @@ export default function TaxAuditDueDatePenaltyBlog() {
                   <li style={{ marginBottom: 0 }}>The penalty can be waived for genuine "reasonable cause," but routine delay or oversight is unlikely to qualify.</li>
                 </ul>
               </div>
+              <DeadlineNotice slug="tax-audit-due-date-penalty-for-delay" />
 
               <p>Getting your accounts audited under Section 44AB is only half the job; the report has to reach the income tax department by a specific date, in a specific format, through a specific online process, and be formally accepted by you as the taxpayer. Miss any part of that chain and you are exposed to a penalty even if the audit itself was completed on time. This guide covers the current due date, how the filing actually happens, and exactly what Section 271B costs if you are late.</p>
 
@@ -152,8 +157,7 @@ export default function TaxAuditDueDatePenaltyBlog() {
             heading="Running close to the tax audit deadline?"
             description="We prepare and file Form 3CA/3CB and Form 3CD, and track the portal acceptance step so nothing slips past the due date."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20my%20tax%20audit%20filing."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
             <FaqSection faqs={faqs} />

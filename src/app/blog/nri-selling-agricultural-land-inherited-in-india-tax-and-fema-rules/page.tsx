@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -85,6 +86,7 @@ export default function NriSellingInheritedAgriLandBlog() {
                     <li style={{ marginBottom: 0 }}>Where TDS applies, the same Section 195/Section 393(2) buyer-TDS mechanics apply as for any NRI property sale.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-seller" />
 
                 <p>Our <Link href="/blog/nri-agricultural-land-india-fema-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>earlier guide on NRIs and agricultural land</Link> covered the holding-restriction side of this: NRIs and OCIs cannot purchase agricultural land, but can legally come to hold it through inheritance, gift from a resident relative, or pre-existing ownership from before their NRI status began. This guide picks up from there and goes deeper on what happens next: once an NRI actually holds inherited agricultural land and wants to sell it, who can buy it, how the capital gain is computed, what TDS applies, and how the proceeds get repatriated.</p>
 

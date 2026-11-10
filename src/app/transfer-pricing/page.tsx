@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const services = [
   {
@@ -145,7 +145,7 @@ export default function TransferPricingPage() {
               Led by CA Rupesh Khandelwal (ex-Deloitte) and CA Mehul Agrawal; combining Big 4 methodology with CA firm responsiveness.
             </p>
             <div className="hero-cta">
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a href={bookingLink} className="btn btn-secondary">
                 Discuss Your TP Requirements
               </a>
             </div>
@@ -338,7 +338,7 @@ export default function TransferPricingPage() {
                 Don't wait for a notice. TP documentation must be in place before the due date; and should be updated every year. Contact us to get started.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
+                <a href={bookingLink} className="btn btn-accent">
                   Book a TP Consultation
                 </a>
                 <Link href="/services" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>

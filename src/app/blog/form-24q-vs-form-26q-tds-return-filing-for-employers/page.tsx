@@ -6,6 +6,10 @@ import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'Form 24Q and 26Q: Difference, Due Dates & New Form Numbers' },
@@ -107,6 +111,7 @@ export default function Form24Q26QBlog() {
                     <li style={{ marginBottom: 0 }}>Late filing costs Rs 200/day under Section 234E, plus a possible Section 271H penalty up to Rs 1,00,000.</li>
                   </ul>
                 </div>
+                <DeadlineNotice slug="form-24q-vs-form-26q-tds-return-filing-for-employers" />
 
                 <p>Almost every employer with staff on payroll files Form 24Q every quarter without a second thought. Where confusion tends to creep in is the moment a business also starts paying professional fees, rent, or contractor invoices, because that TDS goes on an entirely separate return, Form 26Q, filed against the same TAN but reporting a different category of deduction altogether. Getting the two mixed up, or missing one of them because "the TDS return" was treated as a single annual task rather than two distinct quarterly obligations, is one of the more common payroll compliance slips for growing businesses.</p>
 

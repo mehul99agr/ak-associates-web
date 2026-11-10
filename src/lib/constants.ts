@@ -5,10 +5,13 @@ export const BASE_URL = 'https://agrawalkhandelwal.com'
 
 export const FIRM_NAME = 'Agrawal Khandelwal & Associates LLP'
 
-export const BOOKING_LINK = 'https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7'
+// Booking and WhatsApp are paid and unlocked on /consult (see src/lib/consult.ts).
+// Phone numbers, the calendar link and the WhatsApp number are deliberately not
+// in the code; only email is public.
+export const BOOKING_LINK = '/consult'
 
-export const WHATSAPP_LINK = "https://wa.me/919527533506?text=Hi,%20I'd%20like%20to%20book%20a%20consultation."
-export const WHATSAPP_ARTICLE_LINK = 'https://wa.me/919527533506?text=Hi,%20I%20read%20your%20article%20and%20have%20a%20question.'
+export const WHATSAPP_LINK = '/consult?for=whatsapp'
+export const WHATSAPP_ARTICLE_LINK = '/consult?for=whatsapp'
 
 export const MEHUL_PERSON_ID = `${BASE_URL}/#mehul-agrawal`
 export const RUPESH_PERSON_ID = `${BASE_URL}/#rupesh-khandelwal`
@@ -23,9 +26,6 @@ export const OFFICES = {
     locality: 'Nashik',
     region: 'Maharashtra',
     postalCode: '422011',
-    phoneDisplay: '+91 95275 33506',
-    phoneHref: 'tel:+919527533506',
-    phoneE164: '+91-95275-33506',
     email: 'mehul@agrawalkhandelwal.com',
     latitude: '19.1947607',
     longitude: '73.7879464',
@@ -38,9 +38,6 @@ export const OFFICES = {
     locality: 'Sillod',
     region: 'Maharashtra',
     postalCode: '431112',
-    phoneDisplay: '+91 95955 85953',
-    phoneHref: 'tel:+919595585953',
-    phoneE164: '+91-95955-85953',
     email: 'rupesh@agrawalkhandelwal.com',
     latitude: '20.1040',
     longitude: '75.6496',

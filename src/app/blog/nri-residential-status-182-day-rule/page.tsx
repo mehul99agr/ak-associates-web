@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -102,6 +103,7 @@ export default function NRIResidentialStatusBlog() {
                     <li style={{ marginBottom: 0 }}>NRI pays tax only on Indian income. RNOR pays on Indian income + foreign income received in India. ROR pays on worldwide income.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Every NRI tax question starts here: what is your residential status? It determines which income India can tax, which forms you file, whether you need to disclose foreign assets, and whether your NRE account interest stays tax-free. Yet the rules are frequently misunderstood; the 182-day number gets quoted without the exceptions that can change it, and the newer 120-day rule catches people who thought they were safe. Here is how it actually works.</p>
 

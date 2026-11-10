@@ -5,6 +5,10 @@ import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'Last Date to Claim ITC for FY 2025-26: November 30, 2026' },
@@ -85,6 +89,7 @@ export default function LastDateItcFy2526Blog() {
                     <li style={{ marginBottom: '0.4rem' }}>Credit missed by the cut-off is lost permanently. There is no late fee route to recover it.</li>
                   </ul>
                 </div>
+                <DeadlineNotice slug="last-date-to-claim-itc-fy-2025-26" />
 
                 <p>Every year a block of input tax credit lapses for no better reason than that nobody claimed it in time. For purchases made in FY 2025-26, that deadline is close. This post gives the rule, the last return that works for each type of filer, and a short reconciliation routine to run before the date.</p>
 
@@ -144,8 +149,7 @@ export default function LastDateItcFy2526Blog() {
                 heading="Not sure how much FY 2025-26 credit you are about to lose?"
                 description="We reconcile your purchase register with GSTR-2B, follow up missing invoices and make sure eligible credit is claimed before the cut-off."
                 secondaryLabel="Ask on WhatsApp"
-                secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20reconciling%20ITC%20for%20FY%202025-26%20before%20the%20deadline."
-                secondaryExternal
+                secondaryHref="/consult?for=whatsapp"
               />
 
               <FaqSection faqs={faqs} />

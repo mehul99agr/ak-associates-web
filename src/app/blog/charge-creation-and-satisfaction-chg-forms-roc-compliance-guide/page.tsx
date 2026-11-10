@@ -143,8 +143,7 @@ export default function ChargeCreationSatisfactionBlog() {
             heading="Need to register or clear up a charge?"
             description="We file CHG-1, CHG-9, and CHG-4 within deadline, and reconcile stale charge entries before your next funding round or audit."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20charge%20registration%20or%20satisfaction%20filing."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -136,8 +136,7 @@ export default function ImportExportCodeIECBlog() {
             heading="Setting up import or export operations?"
             description="We handle IEC registration, the annual DGFT update, and the surrounding compliance for businesses trading across borders."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20IEC%20registration."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

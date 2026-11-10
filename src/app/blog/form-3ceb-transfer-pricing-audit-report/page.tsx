@@ -6,6 +6,10 @@ import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'Form 3CEB Filing Guide (FY 2026-27)' },
@@ -76,6 +80,7 @@ export default function Form3CEBBlog() {
                   <li style={{ marginBottom: 0 }}>Late or non-filing attracts a flat <strong>Rs 1 lakh penalty</strong> under Section 271BA, regardless of transaction value.</li>
                 </ul>
               </div>
+              <DeadlineNotice slug="form-3ceb-transfer-pricing-audit-report" />
 
               <h2>Form 3CEB at a Glance (FY 2026-27 / AY 2027-28)</h2>
               <div style={{ overflowX: 'auto' }}>

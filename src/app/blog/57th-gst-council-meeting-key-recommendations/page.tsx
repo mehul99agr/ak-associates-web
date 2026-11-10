@@ -164,8 +164,7 @@ export default function GstCouncil57Blog() {
                 heading="Want to know what the GST Council changes mean for your business?"
                 description="We review your refund position, pending notices and return reconciliations against each change as it is notified."
                 secondaryLabel="Ask on WhatsApp"
-                secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20have%20a%20question%20on%20the%2057th%20GST%20Council%20recommendations."
-                secondaryExternal
+                secondaryHref="/consult?for=whatsapp"
               />
 
               <FaqSection faqs={faqs} />

@@ -126,8 +126,7 @@ export default function HousePropertyBlog() {
             heading="Own more than one house or a rented-out property?"
             description="We compute house property income correctly across self-occupied and let-out properties and model old vs new regime before you file."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20house%20property%20income%20tax%20computation."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
             <FaqSection faqs={faqs} />

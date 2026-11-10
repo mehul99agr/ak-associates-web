@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = BOOKING_LINK
+const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const earlyStageServices = [
   {
@@ -158,7 +158,7 @@ export default function StartupsPage() {
               From incorporation and DPIIT registration to ESOP structuring and Series A compliance; we are the CA partner Indian startups trust to stay clean, investor-ready, and compliant at every stage.
             </p>
             <div className="hero-cta">
-              <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a href={bookingLink} className="btn btn-secondary">
                 Book a Startup Strategy Call
               </a>
               <Link href="/company-incorporation" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
@@ -280,23 +280,20 @@ export default function StartupsPage() {
                 {
                   city: 'Bangalore',
                   desc: 'India\'s startup capital. We serve early-stage, VC-backed, and bootstrapped startups in Bangalore with incorporation, DPIIT, ESOP, and Virtual CFO services. Our team understands the Bangalore startup ecosystem and its investor expectations.',
-                  phone: '+91 95275 33506',
                 },
                 {
                   city: 'Mumbai',
                   desc: 'For Mumbai-based startups raising institutional capital, scaling internationally, or dealing with MNC parent-subsidiary structures, we provide FEMA, transfer pricing, and cross-border CA advisory.',
-                  phone: '+91 95275 33506',
                 },
                 {
                   city: 'Nashik',
                   desc: 'Nashik\'s growing industrial and agri-tech ecosystem has a strong pipeline of first-generation founders. We handle everything from basic GST/compliance setup to DPIIT registration and startup structuring from our Nashik office.',
-                  phone: '+91 95275 33506',
                 },
               ].map((item, i) => (
                 <div key={i} className="card">
                   <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--primary)' }}>{item.city}</h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '1rem' }}>{item.desc}</p>
-                  <a href={`tel:${item.phone.replace(/\s/g, '')}`} style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.9rem' }}>{item.phone}</a>
+                  <a href={bookingLink} style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.9rem' }}>Book a consultation &rarr;</a>
                 </div>
               ))}
             </div>
@@ -398,7 +395,7 @@ export default function StartupsPage() {
                 Tell us your stage and goal. We'll map out exactly what compliance you need, what you can defer, and what will matter most to your next investor.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={bookingLink} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
+                <a href={bookingLink} className="btn btn-accent">
                   Book a Startup Strategy Call
                 </a>
                 <Link href="/company-incorporation" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>

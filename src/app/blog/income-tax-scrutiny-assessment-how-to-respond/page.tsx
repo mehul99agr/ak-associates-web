@@ -151,8 +151,7 @@ export default function ScrutinyAssessmentBlog() {
             heading="Under scrutiny or worried about being selected?"
             description="We prepare complete, well-organised scrutiny responses and represent clients through the faceless assessment process."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20received%20a%20scrutiny%20notice%20and%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

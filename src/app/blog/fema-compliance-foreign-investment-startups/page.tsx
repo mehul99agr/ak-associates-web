@@ -267,7 +267,7 @@ export default function FemaComplianceBlog() {
                 We handle valuations, FC-GPR filings, FLA returns, and ongoing FEMA compliance for funded startups across India.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="/consult" className="btn btn-primary">
                   Book a FEMA Consultation
                 </a>
                 <Link href="/startups" className="btn btn-outline">
@@ -282,8 +282,7 @@ export default function FemaComplianceBlog() {
             description="We help with FEMA compliance, FC-GPR reporting and valuation requirements."
             secondaryLabel="Ask on WhatsApp"
             secondaryHref={WHATSAPP_ARTICLE_LINK}
-            secondaryExternal
-          />
+            />
         </article>
         </div>
       </div>

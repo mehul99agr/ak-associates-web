@@ -154,8 +154,7 @@ export default function DPIITRegistrationBlog() {
             heading="Need DPIIT recognition or 80-IAC certification for your startup?"
             description="We handle the DPIIT application, draft the IMB innovation narrative, and manage ongoing compliance for DPIIT-recognized startups."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20DPIIT%20registration."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <div style={{ marginTop: '3rem' }}>

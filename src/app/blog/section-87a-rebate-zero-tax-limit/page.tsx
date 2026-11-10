@@ -134,8 +134,7 @@ export default function Section87ARebateBlog() {
             heading="Not sure if you qualify for zero tax this year?"
             description="We compute your actual liability under both regimes, apply marginal relief correctly, and flag any capital gains that fall outside the rebate."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20want%20to%20check%20my%20Section%2087A%20rebate%20eligibility."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
             <FaqSection faqs={faqs} />

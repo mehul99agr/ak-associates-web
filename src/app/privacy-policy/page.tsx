@@ -40,10 +40,12 @@ export default function PrivacyPolicy() {
                 <li><strong>Analytics data</strong> via Google Analytics (GA4), collected only after you accept
                   cookies through the consent banner on this site - page views, approximate location (city/
                   country level, derived from IP address), device and browser type, and which buttons you click
-                  (for example, Call, WhatsApp, or Book Consultation).</li>
+                  (for example, Email, WhatsApp, or Book Consultation).</li>
                 <li><strong>Information you volunteer directly</strong>, such as your name, phone number, or email
-                  address, if you choose to call, email, or message us on WhatsApp, or book a consultation through
-                  our Google Calendar booking link. That information is handled per Google&rsquo;s and WhatsApp&rsquo;s
+                  address, if you choose to email us, pay for a consultation or WhatsApp access, message us on WhatsApp, or
+                  book a consultation through our Google Calendar booking link. Payments are processed by Razorpay;
+                  we receive the payment ID, amount and the contact details you give Razorpay, but never your card,
+                  UPI or bank details. That information is handled per Razorpay&rsquo;s, Google&rsquo;s and WhatsApp&rsquo;s
                   respective privacy policies once you leave this website, and by us directly as part of providing
                   professional services to you.</li>
               </ul>
@@ -61,7 +63,8 @@ export default function PrivacyPolicy() {
               <ul>
                 <li><strong>Google Analytics</strong> - website usage analytics.</li>
                 <li><strong>Google Maps</strong> - embedded office location maps on our Contact page.</li>
-                <li><strong>Google Calendar</strong> - our consultation booking link.</li>
+                <li><strong>Razorpay</strong> - payment processing for paid consultations and WhatsApp access.</li>
+                <li><strong>Google Calendar</strong> - our consultation booking link, shared after payment.</li>
                 <li><strong>WhatsApp</strong> - when you message us via the WhatsApp buttons on this site.</li>
                 <li><strong>Vercel</strong> - our website hosting provider, which may log standard server
                   request data (IP address, timestamp) for performance and security purposes.</li>

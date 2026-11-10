@@ -5,10 +5,14 @@ import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: { absolute: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide' },
-  description: 'GSTR-9 annual return and GSTR-9C reconciliation: who must file, turnover thresholds, the December 31 due date, penalties, and how they fit together.',
+  title: { absolute: 'GSTR-9 & 9C Due Date FY 2025-26: December 31, 2026' },
+  description: 'GSTR-9 and GSTR-9C for FY 2025-26 are due December 31, 2026. Who must file, Rs 2 crore and Rs 5 crore limits, the Nov 30 ITC cut-off and late fees.',
   keywords: [
     'GSTR-9 annual return', 'GSTR-9C reconciliation statement', 'GSTR-9 due date', 'GSTR-9C applicability',
     'GSTR-9 turnover limit', 'GST annual return filing', 'GSTR-9 vs GSTR-9C', 'GSTR-9 late fee',
@@ -35,6 +39,7 @@ const articleLd = buildArticleLd({
   headline: 'GSTR-9 & GSTR-9C: Annual Return and Reconciliation Guide',
   description: 'GSTR-9 annual return and GSTR-9C reconciliation statement: applicability, turnover thresholds, due date, and penalties for late filing.',
   datePublished: '2026-07-14',
+  dateModified: '2026-11-10',
   slug: 'gstr-9-gstr-9c-annual-return-guide',
 })
 
@@ -86,7 +91,7 @@ export default function GSTR9GSTR9CBlog() {
                 GSTR-9 &amp; GSTR-9C: Annual Return and Reconciliation Guide
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-                <span>Published July 14, 2026</span>
+                <span>Updated November 10, 2026</span>
                 <span aria-hidden>&bull;</span>
                 <Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
                 <span aria-hidden>&bull;</span>
@@ -98,11 +103,13 @@ export default function GSTR9GSTR9CBlog() {
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                     <li style={{ marginBottom: '0.4rem' }}><strong>GSTR-9</strong> (annual return) is mandatory above Rs 2 crore turnover; <strong>GSTR-9C</strong> (reconciliation statement) kicks in above Rs 5 crore, filed in addition to GSTR-9.</li>
-                    <li style={{ marginBottom: '0.4rem' }}>Both are due <strong>December 31</strong> following the financial year end; CBIC has not extended this deadline in recent years.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>For <strong>FY 2025-26</strong>, both are due <strong>December 31, 2026</strong>. No extension had been notified as of November 10, 2026.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Missed FY 2025-26 input tax credit can only be claimed up to <strong>November 30, 2026</strong> (or the date you file GSTR-9, if earlier), so review the ITC position before filing the annual return early.</li>
                     <li style={{ marginBottom: '0.4rem' }}>GSTR-9C is now self-certified by the taxpayer; no mandatory CA/CMA certification since FY 2020-21.</li>
                     <li style={{ marginBottom: 0 }}>Start reconciliation early: GSTR-9 pulls together an entire year of GSTR-1/3B data, and mismatches take time to trace back to source.</li>
                   </ul>
                 </div>
+                <DeadlineNotice slug="gstr-9-gstr-9c-annual-return-guide" />
 
                 <p>For most businesses, monthly GST compliance runs on autopilot: file GSTR-1, file GSTR-3B, move on. The annual return changes that rhythm. GSTR-9 and GSTR-9C force a full-year reconciliation of everything reported across twelve months, and the two forms together are where small reporting inconsistencies from earlier in the year finally surface. Here is what applies to you and how to prepare.</p>
 

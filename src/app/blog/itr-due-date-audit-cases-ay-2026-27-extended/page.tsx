@@ -5,6 +5,10 @@ import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
+import DeadlineNotice from '../_components/DeadlineNotice'
+
+// Keeps the DeadlineNotice countdown current.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'ITR Due Date for Audit Cases AY 2026-27: Now November 21' },
@@ -85,6 +89,7 @@ export default function ItrDueDateAuditCasesBlog() {
                     <li style={{ marginBottom: '0.4rem' }}>Filing after November 21 means a late fee, interest on unpaid tax, and the loss of the right to carry forward most losses.</li>
                   </ul>
                 </div>
+                <DeadlineNotice slug="itr-due-date-audit-cases-ay-2026-27-extended" />
 
                 <p>By a press release dated September 28, 2026, the Central Board of Direct Taxes extended two due dates for Assessment Year 2026-27, which is Financial Year 2025-26. If your accounts are audited, your return is no longer due on October 31. This post sets out the new dates, exactly who gets the extra time, and what still applies if you file late.</p>
 
@@ -147,8 +152,7 @@ export default function ItrDueDateAuditCasesBlog() {
                 heading="Audit report or return still pending for AY 2026-27?"
                 description="We handle tax audits and audit-case returns for companies, firms, LLPs and their partners, including the portal acceptance step."
                 secondaryLabel="Ask on WhatsApp"
-                secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20my%20tax%20audit%20and%20ITR%20for%20AY%202026-27."
-                secondaryExternal
+                secondaryHref="/consult?for=whatsapp"
               />
 
               <FaqSection faqs={faqs} />

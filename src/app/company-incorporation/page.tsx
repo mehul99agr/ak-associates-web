@@ -33,7 +33,6 @@ const serviceLd = {
     '@type': 'AccountingService',
     name: 'Agrawal Khandelwal & Associates LLP',
     url: 'https://agrawalkhandelwal.com',
-    telephone: '+91-95275-33506',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
@@ -191,7 +190,7 @@ export default function CompanyIncorporationPage() {
               CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 15–20 working days end-to-end.
             </p>
             <div className="hero-cta">
-              <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
+              <a href="/consult"
                 className="btn" style={{ background: 'var(--white)', color: 'var(--primary)', fontWeight: 800 }}>
                 Book Free Advisory Call
               </a>
@@ -369,7 +368,7 @@ export default function CompanyIncorporationPage() {
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', marginBottom: '2.5rem', lineHeight: 1.7 }}>
               Book a free 20-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote: no surprises.
             </p>
-            <a href="https://calendar.app.google/Ln2Xg6PeDQ4dTrgT7" target="_blank" rel="noopener noreferrer"
+            <a href="/consult"
               className="btn" style={{ background: 'var(--white)', color: 'var(--primary)', fontWeight: 800 }}>
               Book Free Advisory Call
             </a>

@@ -143,8 +143,7 @@ export default function Section12A80GBlog() {
             heading="Managing 12A/80G registration or renewal for your NGO?"
             description="We help trusts, societies, and Section 8 companies with provisional and regular registration, Form 10AB renewals, and staying ahead of the deadlines that matter."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%2012A%2F80G%20registration%20for%20my%20NGO."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -73,6 +74,7 @@ export default function UsSalesTaxNexusBlog() {
                   <li style={{ marginBottom: 0 }}>Track revenue by state so a threshold isn't crossed without noticing.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>An Indian SaaS or services company selling to US customers through a US LLC often assumes sales tax is someone else's problem, since there is no US office, no US employees, and no physical footprint. That assumption used to be closer to correct. It no longer is.</p>
 

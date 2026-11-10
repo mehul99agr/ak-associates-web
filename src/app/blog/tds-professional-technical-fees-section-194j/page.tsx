@@ -148,8 +148,7 @@ export default function Section194JBlog() {
             heading="Need help with TDS compliance on professional or technical payments?"
             description="We help businesses classify payments correctly, deduct TDS at the right rate, and file accurate quarterly returns."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20TDS%20under%20Section%20194J."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

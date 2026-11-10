@@ -217,8 +217,6 @@ export default function Navbar() {
           <Link href="/contact" className="link">CONTACT</Link>
           <TrackedLink
             href={bookingLink}
-            target="_blank"
-            rel="noopener noreferrer"
             className="btn btn-primary"
             style={{ padding: '0.65rem 1.2rem', fontSize: '0.78rem' }}
             method="booking"
@@ -316,8 +314,6 @@ export default function Navbar() {
             <TrackedLink
               href={bookingLink}
               onClick={closeMenu}
-              target="_blank"
-              rel="noopener noreferrer"
               className="btn btn-primary"
               style={{ marginTop: '1rem' }}
               method="booking"

@@ -134,12 +134,11 @@ export default function UnderstandingNewTaxRegimeBlog() {
 
             <PostCTA
               heading="Need help with this?"
-              description="Book a free consultation with our partners, or message us on WhatsApp for a quick answer."
+              description="Book a consultation with our partners, or message us on WhatsApp for a quick answer."
               primaryLabel="Book Consultation"
               primaryHref={BOOKING_LINK}
               secondaryLabel="Ask on WhatsApp"
               secondaryHref={WHATSAPP_ARTICLE_LINK}
-              secondaryExternal
               marginTop="1.5rem"
               background="var(--bg-surface)"
             />

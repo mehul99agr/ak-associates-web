@@ -149,8 +149,7 @@ export default function PenaltyUnderReportingMisreportingBlog() {
             heading="Facing a penalty notice?"
             description="We review whether a penalty is correctly classified, and represent you in penalty proceedings and appeals."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20received%20a%20penalty%20notice%20and%20need%20help."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />

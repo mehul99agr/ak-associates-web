@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
 import PostFooterLinks from '../_components/PostFooterLinks'
+import ServiceOffer from '../_components/ServiceOffer'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
@@ -74,6 +75,7 @@ export default function UsLlcVsCCorpBlog() {
                   <li style={{ marginBottom: 0 }}>Bootstrapped, revenue-funded businesses often find an LLC simpler and cheaper to run.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>One of the first decisions an Indian founder setting up a US entity has to make is LLC or C-Corp, and it is not a formality. The two structures are taxed differently, are treated differently by investors, and cost different amounts to maintain, and the wrong choice made early can be expensive to reverse once revenue or funding is already flowing through the entity.</p>
 

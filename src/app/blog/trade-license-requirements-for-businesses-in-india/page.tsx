@@ -151,8 +151,7 @@ export default function TradeLicenseBlog() {
             heading="Need help with municipal or state registrations?"
             description="We help businesses in Nashik, Sillod, and beyond identify which local registrations apply and get them filed correctly the first time."
             secondaryLabel="Ask on WhatsApp"
-            secondaryHref="https://wa.me/919527533506?text=Hi,%20I%20need%20help%20with%20a%20trade%20license%20for%20my%20business."
-            secondaryExternal
+            secondaryHref="/consult?for=whatsapp"
           />
 
               <FaqSection faqs={faqs} />
