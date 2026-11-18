@@ -2278,7 +2278,87 @@ All registered taxpayers (or the date GSTR-9 is filed, if earlier)
 
 Search guides
 
-Showing 225 of 225 guides
+Showing 235 of 235 guides
+
+Company IncorporationNovember 18, 2026
+
+## Private Limited Company Registration Cost India 2026
+
+Line-by-line cost of registering a private limited company in 2026: SPICe+ fee nil up to Rs 15 lakh capital, stamp duty, DSC, name approval, and what Rs 999 offers leave out.
+
+[Read guide: Private Limited Company Registration Cost India 2026](https://agrawalkhandelwal.com/blog/private-limited-company-registration-cost-india-2026)
+
+Startup ComplianceNovember 18, 2026
+
+## INC-20A Commencement of Business: 180-Day Rule & Penalty
+
+INC-20A is a one-time Section 10A declaration due within 180 days of incorporation. Penalty, strike-off risk, proof of subscription money and the steps to file.
+
+[Read guide: INC-20A Commencement of Business: 180-Day Rule & Penalty](https://agrawalkhandelwal.com/blog/inc-20a-commencement-of-business-declaration)
+
+US Cross-BorderNovember 18, 2026
+
+## Delaware Franchise Tax: Assumed Par Value Method Explained
+
+Why the Delaware default franchise tax bill looks huge, and how the Assumed Par Value Capital method cuts it, with a worked example, the March 1 deadline and penalties.
+
+[Read guide: Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
+
+Company IncorporationNovember 18, 2026
+
+## LLP Registration Process and Cost in India (2026)
+
+How to register an LLP in 2026: RUN-LLP, FiLLiP, LLP agreement (Form 3) within 30 days, fees by contribution slab, stamp duty, timeline and when an LLP beats a private limited company.
+
+[Read guide: LLP Registration Process and Cost in India (2026)](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026)
+
+US Cross-BorderNovember 18, 2026
+
+## India to US Flip Structure: Guide for Indian Founders
+
+What a flip is, why US VCs ask for it, how the founder share swap works under FEMA, the Indian capital gains position, valuation, RBI reporting and reverse flips.
+
+[Read guide: India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+
+Startup ComplianceNovember 18, 2026
+
+## DPT-3 Due Date for Startups: Director Loans & Penalty
+
+Startups with director or unsecured loans must file DPT-3 by June 30 even with no deposits. Exempt receipts, the director declaration, auditor certificate and late fees.
+
+[Read guide: DPT-3 Due Date for Startups: Director Loans & Penalty](https://agrawalkhandelwal.com/blog/dpt-3-return-of-deposits-due-date-startups)
+
+US Cross-BorderNovember 18, 2026
+
+## Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs
+
+The USD 25,000 Form 5472 penalty for foreign-owned single-member US LLCs: what is reportable, April 15 and October 15 dates, catching up on missed years and possible relief.
+
+[Read guide: Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc)
+
+Company IncorporationNovember 18, 2026
+
+## LLP Form 8 and Form 11 Due Dates FY 2025-26
+
+LLP Form 11 is due May 30 and Form 8 October 30. Current late fee multiples (not Rs 100 a day), ITR and audit for LLPs, DIR-3 KYC, and strike-off risk.
+
+[Read guide: LLP Form 8 and Form 11 Due Dates FY 2025-26](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates)
+
+US Cross-BorderNovember 18, 2026
+
+## Indian Subsidiary of a US C-Corp: Setup and Compliance
+
+How a US C-Corp sets up an Indian private limited subsidiary: automatic route, nominee shareholder, resident director, FC-GPR in 30 days, transfer pricing, tax rate options and PE risk.
+
+[Read guide: Indian Subsidiary of a US C-Corp: Setup and Compliance](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
+
+Startup ComplianceNovember 18, 2026
+
+## MSME-1 Half-Yearly Return: Due Dates & Penalty (2026)
+
+MSME-1 is the half-yearly return for companies owing micro and small suppliers beyond 45 days. Due Oct 31 and Apr 30, the Section 405 penalty and the 43B(h) link.
+
+[Read guide: MSME-1 Half-Yearly Return: Due Dates & Penalty (2026)](https://agrawalkhandelwal.com/blog/msme-1-form-delayed-payment-return)
 
 GSTOctober 9, 2026
 
@@ -4138,13 +4218,16 @@ A small fee keeps our calendar for people who are ready to work on their matter.
 
 With CA Mehul Agrawal
 
-₹999
+₹1,000
 
-- Pick a slot and pay securely on our booking page
+Outside India? The fee is charged in INR (about US$11).
+
+- Pick a slot in your own time zone and pay securely on our booking page
+- Google Meet video call, so you can join from India, the US, the UK or the Gulf
 - Your booking confirmation includes our WhatsApp number to send documents
 - Fee is adjusted against our professional fee if you engage us
 
-[Book and pay ₹999](https://agrawalkhandelwalassociatesllp.zohobookings.in/489389000000033045)
+[Book and pay ₹1,000](https://agrawalkhandelwalassociatesllp.zohobookings.in/489389000000033045)
 
 ## Prefer email? It's free.
 
@@ -4398,12 +4481,12 @@ Last date to claim ITC of the previous financial year](https://agrawalkhandelwal
   Tax deducted or collected in October 2026
 - 11 Nov
 
-  GSTR-1GST
+  GSTR-1GSTPassed
 
   Monthly filers, outward supplies of October 2026
 - 15 Nov
 
-  PF and ESI contributionPayroll
+  PF and ESI contributionPayrollPassed
 
   Employers, wages of October 2026
 - 20 Nov
@@ -11402,7 +11485,7 @@ TL;DR
 - Due date is **October 31** following the financial year, one month before the transfer pricing ITR deadline.
 - Late or non-filing attracts a flat **Rs 1 lakh penalty** under Section 271BA, regardless of transaction value.
 
-Next deadline: November 30, 2026 (in 20 days)
+Next deadline: November 30, 2026 (in 12 days)
 
 Income tax return, transfer pricing cases. Taxpayers required to file Form 3CEB. We can prepare and file it for you before the date.
 
@@ -12098,7 +12181,7 @@ TL;DR
 - Every DIN holder must complete **DIR-3 KYC by September 30** each year.
 - Late ROC filing fees can accrue **daily** and are often far more expensive than founders expect.
 
-Next deadline: December 31, 2026 (in 51 days)
+Next deadline: December 31, 2026 (in 43 days)
 
 Form AOC-4 without additional fees (FY 2025-26). Companies filing FY 2025-26 financial statements (MCA General Circular 05/2026). Extended from October 30, 2026. We can prepare and file it for you before the date.
 
@@ -12891,7 +12974,7 @@ FAST-DS 2026 is a one-time window to declare small, previously unreported foreig
 - Effective tax cost: 30% plus an equal additional amount, i.e. 60% of the declared value.
 - Aimed at protecting genuine small omissions from Black Money Act exposure, not a route for large or structured non-disclosure.
 
-Next deadline: December 31, 2026 (in 51 days)
+Next deadline: December 31, 2026 (in 43 days)
 
 FAST-DS 2026 declaration window closes. Resident small taxpayers with undisclosed foreign assets. We can prepare and file it for you before the date.
 
@@ -13876,9 +13959,9 @@ A US C-Corp that owns an Indian private limited subsidiary also files Form 5471 
 
 ### More Guides on This Topic
 
-- [FDI in India: Routes, Sectoral Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide)
-- [Overseas Direct Investment (ODI): Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india)
-- [NRI GAAR Exposure: When Anti-Avoidance Rules Apply to Cross-Border Structures](https://agrawalkhandelwal.com/blog/nri-gaar-cross-border-structures)
+- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
+- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+- [Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -13980,8 +14063,8 @@ One simplification: since FinCEN's interim final rule of March 2025, companies f
 ### More Guides on This Topic
 
 - [US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
-- [FDI in India: Routes, Sectoral Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide)
-- [Overseas Direct Investment (ODI): Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india)
+- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
+- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -14080,7 +14163,7 @@ The position flips the year a founder becomes a US tax resident, through a green
 
 - [Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide)
 - [US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
-- [FDI in India: Routes, Sectoral Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide)
+- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -14171,7 +14254,7 @@ Form 8858 becomes relevant in the less common scenario for an Indian founder: wh
 
 ## Penalties Make This Worth Getting Right
 
-Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Note that the beneficial ownership (BOI) reports under the Corporate Transparency Act no longer apply to US-formed companies after FinCEN's interim final rule of March 2025; that change does not affect Form 5472, 5471 or 8858 at all. Confirm which of these filings applies when the entity is set up, not during an eventual audit.
+Penalties for Form 5471 and Form 8858 non-compliance generally start around 10,000 US dollars per form per tax year, while Form 5472 non-compliance penalties start around 25,000 US dollars, and continued failure after IRS notice can increase the exposure further. Note that the beneficial ownership (BOI) reports under the Corporate Transparency Act no longer apply to US-formed companies after FinCEN's interim final rule of March 2025; that change does not affect Form 5472, 5471 or 8858 at all. Confirm which of these filings applies when the entity is set up, not during an eventual audit. If you have already missed a Form 5472, read [how the Form 5472 penalty works and how to catch up](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc).
 
 ## When an Indian Founder Does Need Form 5471
 
@@ -15317,7 +15400,7 @@ TL;DR
 - GSTR-9C is now self-certified by the taxpayer; no mandatory CA/CMA certification since FY 2020-21.
 - Start reconciliation early: GSTR-9 pulls together an entire year of GSTR-1/3B data, and mismatches take time to trace back to source.
 
-Next deadline: December 31, 2026 (in 51 days)
+Next deadline: December 31, 2026 (in 43 days)
 
 GSTR-9 and GSTR-9C (annual return). GSTR-9 above Rs 2 crore turnover; GSTR-9C above Rs 5 crore. We can prepare and file it for you before the date.
 
@@ -18328,7 +18411,7 @@ TL;DR
 - Shortfalls attract **1% per month interest under Section 234C** per quarter, plus a separate **Section 234B** charge if less than 90% of assessed tax is paid by March 31.
 - Resident senior citizens without business income are exempt from the requirement entirely.
 
-Next deadline: December 15, 2026 (in 35 days)
+Next deadline: December 15, 2026 (in 27 days)
 
 Advance tax, 3rd instalment (75%). Taxpayers with tax payable of Rs 10,000 or more. We can prepare and file it for you before the date.
 
@@ -19005,7 +19088,7 @@ TL;DR
 - Missed both windows and have additional income to disclose? File an **updated return (ITR-U)** under Section 139(8A), within 48 months of the end of the relevant assessment year, along with additional tax.
 - ITR-U cannot be used to claim a refund or reduce tax already reported; it is a one-way disclosure route, and the additional tax rises the longer you wait.
 
-Next deadline: December 31, 2026 (in 51 days)
+Next deadline: December 31, 2026 (in 43 days)
 
 Belated income tax return. Taxpayers who missed the original due date. We can prepare and file it for you before the date.
 
@@ -24374,7 +24457,7 @@ CSR compliance sits alongside the company's other annual obligations, and the sp
 
 - [Significant Beneficial Owner (SBO) Reporting Requirements](https://agrawalkhandelwal.com/blog/significant-beneficial-owner-sbo-reporting-requirements)
 - [One Person Company (OPC) Registration: Eligibility & Compliance](https://agrawalkhandelwal.com/blog/one-person-company-opc-registration-eligibility-and-compliance)
-- [Post-Incorporation Checklist: First 30 Days After Company Registration](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+- [Private Limited Company Registration Cost India 2026](https://agrawalkhandelwal.com/blog/private-limited-company-registration-cost-india-2026)
 
 Need this handled for you? See our [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -24479,8 +24562,8 @@ SBO reporting sits alongside the company's other corporate law obligations, and 
 ### More Guides on This Topic
 
 - [One Person Company (OPC) Registration: Eligibility & Compliance](https://agrawalkhandelwal.com/blog/one-person-company-opc-registration-eligibility-and-compliance)
-- [Post-Incorporation Checklist: First 30 Days After Company Registration](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
-- [Company Name Reservation in India: SPICe+ Part A & RUN Explained](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india)
+- [Private Limited Company Registration Cost India 2026](https://agrawalkhandelwal.com/blog/private-limited-company-registration-cost-india-2026)
+- [LLP Registration Process and Cost in India (2026)](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026)
 
 Need this handled for you? See our [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -27473,7 +27556,7 @@ TL;DR
 - Both follow the same quarterly calendar: **July 31, October 31, January 31, and May 31**.
 - Late filing costs Rs 200/day under Section 234E, plus a possible Section 271H penalty up to Rs 1,00,000.
 
-Next deadline: January 31, 2027 (in 82 days)
+Next deadline: January 31, 2027 (in 74 days)
 
 TDS return, Q3 (Oct to Dec). All deductors: quarterly TDS statements. We can prepare and file it for you before the date.
 
@@ -27880,9 +27963,9 @@ An OPC makes the most sense for a genuinely solo founder who wants limited liabi
 
 ### More Guides on This Topic
 
-- [Post-Incorporation Checklist: First 30 Days After Company Registration](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
-- [Company Name Reservation in India: SPICe+ Part A & RUN Explained](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india)
-- [DSC and DIN Application: A Practical Guide for Directors](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)
+- [Private Limited Company Registration Cost India 2026](https://agrawalkhandelwal.com/blog/private-limited-company-registration-cost-india-2026)
+- [LLP Registration Process and Cost in India (2026)](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026)
+- [LLP Form 8 and Form 11 Due Dates FY 2025-26](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates)
 
 Need this handled for you? See our [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -29643,7 +29726,7 @@ None of this requires sophisticated tooling or legal complexity; it requires tre
 
 - [Startup Winding Up: Fast Track Exit (FTE) Mode Guide](https://agrawalkhandelwal.com/blog/startup-winding-up-fast-track-exit-fte-mode-guide)
 - [Startup Bank Account Opening: Documents & Common Rejections](https://agrawalkhandelwal.com/blog/startup-bank-account-opening-documents-and-common-rejections)
-- [Startup Advisory for Foreign Investors Investing in India](https://agrawalkhandelwal.com/blog/startup-advisory-foreign-investors-india)
+- [INC-20A Commencement of Business: 180-Day Rule & Penalty](https://agrawalkhandelwal.com/blog/inc-20a-commencement-of-business-declaration)
 
 Need this handled for you? See our [startup advisory](https://agrawalkhandelwal.com/startups), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -29746,8 +29829,8 @@ Closing a startup is rarely the outcome founders plan for, but doing it cleanly 
 ### More Guides on This Topic
 
 - [Startup Bank Account Opening: Documents & Common Rejections](https://agrawalkhandelwal.com/blog/startup-bank-account-opening-documents-and-common-rejections)
-- [Startup Advisory for Foreign Investors Investing in India](https://agrawalkhandelwal.com/blog/startup-advisory-foreign-investors-india)
-- [Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST](https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst)
+- [INC-20A Commencement of Business: 180-Day Rule & Penalty](https://agrawalkhandelwal.com/blog/inc-20a-commencement-of-business-declaration)
+- [DPT-3 Due Date for Startups: Director Loans & Penalty](https://agrawalkhandelwal.com/blog/dpt-3-return-of-deposits-due-date-startups)
 
 Need this handled for you? See our [startup advisory](https://agrawalkhandelwal.com/startups), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -29855,9 +29938,9 @@ Banks apply internal risk-scoring as part of their anti-money-laundering and KYC
 
 ### More Guides on This Topic
 
-- [Startup Advisory for Foreign Investors Investing in India](https://agrawalkhandelwal.com/blog/startup-advisory-foreign-investors-india)
-- [Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST](https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst)
-- [Startup Compliance Calendar: Year 1 to Year 3 Checklist](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)
+- [INC-20A Commencement of Business: 180-Day Rule & Penalty](https://agrawalkhandelwal.com/blog/inc-20a-commencement-of-business-declaration)
+- [DPT-3 Due Date for Startups: Director Loans & Penalty](https://agrawalkhandelwal.com/blog/dpt-3-return-of-deposits-due-date-startups)
+- [MSME-1 Half-Yearly Return: Due Dates & Penalty (2026)](https://agrawalkhandelwal.com/blog/msme-1-form-delayed-payment-return)
 
 Need this handled for you? See our [startup advisory](https://agrawalkhandelwal.com/startups), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -30048,7 +30131,7 @@ TL;DR
 - **Not covered:** taxpayers who must file a transfer pricing report in Form 3CEB. Their report stays due on October 31 and their return on November 30, 2026.
 - Filing after November 21 means a late fee, interest on unpaid tax, and the loss of the right to carry forward most losses.
 
-Next deadline: November 21, 2026 (in 11 days)
+Next deadline: November 21, 2026 (in 3 days)
 
 Income tax return, audit cases (AY 2026-27). Taxpayers whose accounts are audited, other than transfer pricing cases. Extended from October 31, 2026. We can prepare and file it for you before the date.
 
@@ -30149,6 +30232,1183 @@ Yes. The audit report is due by October 21, 2026, a month before the return. It 
 
 ---
 
+Source: https://agrawalkhandelwal.com/blog/private-limited-company-registration-cost-india-2026
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+Company Incorporation
+
+# Private Limited Company Registration Cost in India (2026)
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- **MCA fee:** SPICe+ filing carries **no government fee up to Rs 15 lakh authorised capital**; a slab-based fee applies above that.
+- The other statutory items are small and per-person or per-state: name reservation, **DSC for each director**, and **state stamp duty** on the Memorandum and Articles. PAN and TAN come through SPICe+ without a separate fee.
+- The professional fee pays for name and document accuracy and ROC follow-up, not for the government fee.
+- A "Rs 999" offer usually leaves out stamp duty, DSCs, a customised MoA and AoA, bank account support and everything after incorporation. Ask for the total in writing.
+- A typical end to end timeline in published guides is about **10 to 20 working days**, longer if the ROC raises queries.
+
+"Private limited company registration in 2026" is advertised at anything from Rs 999 to well over Rs 20,000. The gap is rarely the government. Most of the real cost is a handful of small statutory items, the DSCs, and the professional work of getting the documents right. This guide separates the two so you can read any quote line by line. For the full process, see our [private limited incorporation guide](https://agrawalkhandelwal.com/blog/company-incorporation-india-guide).
+
+## The government and statutory costs, line by line
+
+These are the items that exist regardless of who files for you. Amounts below are what published fee guides report. Confirm them against the current MCA fee schedule and your state's stamp duty rules before you budget, because several change with authorised capital and state.
+
+| Item | What it is | Typical cost |
+| --- | --- | --- |
+| SPICe+ filing fee (MCA) | Government fee for incorporation through SPICe+ Part B | Nil where authorised capital is up to Rs 15 lakh (Rule 38 of the Companies (Incorporation) Rules, 2014). A slab-based fee applies above Rs 15 lakh. |
+| Name reservation | Name approval through SPICe+ Part A or RUN | Published guides put it at about Rs 1,000 per application, and a rejected name means paying again. See our [name reservation guide](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india). |
+| Digital Signature Certificate (DSC) | Class 3 DSC for each subscriber and director who signs | Charged per person by the DSC provider, usually in the low thousands of rupees each, often with 1-year or 2-year validity. See the [DSC and DIN guide](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide). |
+| DIN | Director Identification Number for the first directors | No separate government fee when applied through SPICe+ |
+| PAN and TAN | Allotted through the SPICe+ integration | No separate government fee |
+| Stamp duty on MoA and AoA | State duty on the Memorandum and Articles | Depends on the state and on authorised capital. Small for a small capital, but sources quote very different formulas for Maharashtra, so get the exact figure for your capital from the state schedule or your CA. |
+
+## Stamp duty: why one number does not fit everyone
+
+Stamp duty on the Memorandum and Articles is levied by the state where the registered office sits, not by the MCA. In Maharashtra it is linked to the authorised capital and the articles, and it rises as authorised capital rises. The practical advice is to keep authorised capital realistic at the start (you can increase it later with an additional filing and stamp duty on the increase) and to ask for the exact stamp duty as a separate line in any quote. We have deliberately not quoted a single Maharashtra figure because published guides disagree and the state revises its schedule from time to time.
+
+## What the professional fee actually covers
+
+Government fees for a small company are modest. The professional fee pays for work that decides whether your incorporation is clean or comes back for rework: choosing a name that will clear (class of business, similarity checks, trademark conflicts); drafting a Memorandum and Articles that match your actual shareholding and director roles instead of a generic template; checking director eligibility and identity and address proofs; preparing and filing SPICe+ Part A and Part B and the linked forms; handling ROC queries if the application is sent back; and delivering the incorporation certificate, PAN and TAN in a usable form.
+
+You can do this yourself. The common failure is a ROC query on a mismatched name, address proof or capital structure that adds days. If your structure is anything other than two resident Indian directors with plain equity (for example a foreign shareholder, a corporate shareholder, or a startup with an investor in mind), professional help is cheaper than the delay.
+
+## What a "Rs 999 incorporation" usually leaves out
+
+A very low headline price is usually not false, it is partial. Before you pay, ask whether each of the following is included, in writing.
+
+- Government fee, stamp duty and DSC (often "at actuals", added later)
+- Name reservation attempts beyond the first
+- A customised Memorandum and Articles, or only a standard template
+- Directors' DIN and the second and later DSCs
+- Commencement of business declaration and the first auditor appointment
+- Opening the bank account and follow-up with the bank
+- GST registration, if you need one
+- Ongoing compliance after incorporation (annual ROC filing, income tax return, books)
+
+## Timeline
+
+Where documents are ready and the name clears first time, one published estimate puts a realistic end to end timeline at roughly 10 to 20 working days from DSC procurement to the incorporation certificate, and longer if the ROC raises queries. Treat that as a guide, not a promise: the ROC's processing time and any query cycle are outside anyone's control.
+
+## Costs that come after the certificate
+
+The incorporation fee is the smallest part of year one. Budget for accounting, the statutory auditor, annual ROC filings (AOC-4, MGT-7, DIR-3 KYC), the income tax return, and GST if applicable. Our [post-incorporation checklist](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days) covers the first 30 days, and the [annual ROC filing guide](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc) covers the recurring filings.
+
+## How to compare two quotes
+
+Ask each provider for one table that lists professional fee, government fee, stamp duty, DSC count and validity, name reservation attempts included, and what is excluded. Add them up. The cheapest headline is often not the cheapest total. For a structured start with the right entity type and documents, see our [company incorporation service](https://agrawalkhandelwal.com/company-incorporation).
+
+**Official sources:** Rule 38 of the Companies (Incorporation) Rules, 2014 (SPICe+ fee), the Companies Act, 2013, and the Maharashtra Stamp Act schedule for stamp duty on the Memorandum and Articles. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
+### More Guides on This Topic
+
+- [LLP Registration Process and Cost in India (2026)](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026)
+- [LLP Form 8 and Form 11 Due Dates FY 2025-26](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates)
+- [Post-Incorporation Checklist: First 30 Days After Company Registration](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+
+Need this handled for you? See our [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Ministry of Corporate Affairs](https://www.mca.gov.in), [Income Tax Department e-filing portal](https://www.incometax.gov.in).
+
+### Want one written quote with nothing left out?
+
+We handle name approval, documents, SPICe+ filing and the first-month compliance for Indian companies, with inclusions and exclusions stated up front.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[Incorporation Services](https://agrawalkhandelwal.com/company-incorporation)
+
+## Frequently Asked Questions
+
+### How much does it cost to register a private limited company in 2026?
+
+The MCA filing fee is nil where authorised capital is up to Rs 15 lakh. The remaining cost is name reservation, DSC for each director, state stamp duty on the Memorandum and Articles, and the professional fee for drafting and filing. The total depends mainly on the professional fee, the number of directors and the state.
+
+### Is there a government fee for SPICe+ incorporation?
+
+There is no MCA filing fee for SPICe+ where authorised capital is up to Rs 15 lakh. Above that, a slab-based fee applies. Check the current MCA fee table for your authorised capital.
+
+### How much is stamp duty on a private limited company in Maharashtra?
+
+It is a state levy on the Memorandum and Articles that depends on authorised capital, and published guides give different formulas. Ask your CA for the exact amount for your capital, or check the state stamp duty schedule, instead of relying on a blog figure.
+
+### Why do some firms advertise company registration for Rs 999?
+
+Such offers usually cover only the basic filing. Stamp duty, DSCs, name reservation attempts, a customised Memorandum and Articles, bank account support and post-incorporation compliance are often excluded or charged later. Ask for a written list of inclusions and exclusions.
+
+### How long does private limited company registration take?
+
+Published guides estimate roughly 10 to 20 working days when documents are ready and the name clears first time. ROC queries, name rejection or incomplete documents can add days.
+
+### Can I register a company myself without a professional?
+
+Yes. The risk is not the fee but rework from a rejected name, mismatched address or identity proofs, or a template Memorandum and Articles that does not fit your shareholding. A foreign shareholder or an investor-ready structure makes professional help more valuable.
+
+### Related Guides
+
+- [Private Limited Company Incorporation Guide](https://agrawalkhandelwal.com/blog/company-incorporation-india-guide)
+- [Company Name Reservation (SPICe+ Part A / RUN)](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india)
+- [DSC and DIN Application Guide](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)
+- [Post-Incorporation Checklist: First 30 Days](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+- [LLP vs Private Limited Company](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india)
+- [Company Incorporation Services](https://agrawalkhandelwal.com/company-incorporation)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/inc-20a-commencement-of-business-declaration
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+Startup Compliance
+
+# INC-20A Declaration of Commencement of Business: 180-Day Deadline, Penalty and Steps
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- **INC-20A** is the one-time declaration under Section 10A of the Companies Act that a company with share capital has received its subscription money. It applies to companies incorporated on or after November 2, 2018.
+- File it **within 180 days** of the date of incorporation. Until it is filed, the company should not commence business or exercise borrowing powers.
+- Penalty under Section 10A(2): **Rs 50,000 on the company** and **Rs 1,000 per day on each officer in default, capped at Rs 1 lakh**. Confirm current amounts at filing time.
+- If no declaration is filed and the Registrar believes the company is not carrying on business, the Registrar may start action to **remove the company name** from the register.
+- Proof needed: every subscriber has paid the value of shares agreed to be taken, shown by a **bank statement**, and the registered office is verified.
+
+Many founders assume that the Certificate of Incorporation means they can start trading. For a company with share capital, it does not fully do that. Section 10A of the Companies Act, 2013 bars the company from commencing business or exercising borrowing powers until a declaration is filed in Form INC-20A. If you registered your company recently and have not filed it, this is the first compliance to clear.
+
+## Who Must File INC-20A
+
+The requirement applies to companies having share capital that were incorporated on or after November 2, 2018. A typical private limited startup falls squarely within it. A company without share capital does not. The filing is one-time, not annual.
+
+## The 180-Day Window
+
+The declaration must be filed within **180 days from the date of incorporation** shown on your certificate. Count calendar days, not working days. A company incorporated on July 1, 2026 should plan to file well before the end of December 2026. Do not leave it for the last week, because the form needs a bank statement and a professional's certification.
+
+## What You Are Declaring
+
+The directors declare that every subscriber to the memorandum has paid the value of the shares agreed to be taken by them on the date of the declaration, and that the company has filed the verification of its registered office address. In plain terms: the money promised at incorporation has actually come into the company's bank account.
+
+## Proof of Subscription Money
+
+This is where most delays happen. Practically, you need:
+
+- A **current bank account in the company's name**, opened after incorporation.
+- Subscription money deposited by each subscriber, visible as a credit on the **bank statement** with the subscriber's name or a clear reference.
+- A match between the amounts paid and the subscribed capital in the MoA. A shortfall means the declaration cannot honestly be made until the balance is paid in.
+- Verification of the registered office, with the usual address proof such as a utility bill and a rent or ownership document.
+- A director DSC, and certification by a practising CA, CS or CMA.
+
+If the company is an NBFC or in a regulated sector, regulator approvals can also be required. For help sequencing the bank account and other early tasks, see our [post-incorporation checklist](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days).
+
+## Penalty for Missing the Deadline
+
+Section 10A(2) imposes a penalty of **Rs 50,000 on the company** and **Rs 1,000 for each day of continuing default on every officer in default, subject to a maximum of Rs 1 lakh**. MCA also charges additional fees for a late form filing. Section 446B gives relief to small companies, one person companies and startup companies by limiting penalties to one-half of the amount, so check whether your company qualifies. These figures are reported consistently by professional sources, but confirm the current MCA fee schedule on the day you file.
+
+## The Bigger Risk: Strike-Off and Blocked Filings
+
+The money penalty is not the real cost. Under Section 10A(3), if the declaration is not filed within 180 days and the Registrar has reasonable cause to believe the company is not carrying on business, the Registrar may initiate action to remove the company's name from the register. Banks and investors also flag a missing INC-20A during due diligence, and professionals report that other MCA filings can be held up until it is done. A struck-off company has to be revived through the NCLT, which is slow and costly. For the reverse process, see our guide to [strike-off and winding up](https://agrawalkhandelwal.com/blog/winding-up-strike-off-a-private-limited-company-process-and-timeline).
+
+## Practical Steps to File
+
+1. **Days 1 to 15:** open the company bank account and obtain a DSC for the signing director.
+2. **Days 15 to 45:** subscribers transfer the full subscription amount from their own accounts. Avoid cash deposits and third-party payments.
+3. **Before day 120:** collect the bank statement showing the credits, and the registered office address proof.
+4. **Before day 150:** file INC-20A on the MCA V3 portal with the professional's certification.
+5. Keep the SRN and acknowledgment with the statutory records, then diarise the next items in your [startup compliance calendar](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3), starting with the first auditor appointment under the [statutory audit rules](https://agrawalkhandelwal.com/blog/statutory-audit-requirements-for-private-limited-companies).
+
+## If You Have Already Missed 180 Days
+
+File as soon as possible rather than waiting. The form can generally still be filed after the window with the additional fee, and exposure is smaller if the default is cured quickly and the company has genuinely received the money. Do not backdate any transaction or deposit to fit the window. If your shareholders never paid the subscription money, the right course is to have them pay it in, or to reduce the capital through a proper process, not to file a declaration that is not true. Our [startup advisory](https://agrawalkhandelwal.com/startups) team can review the position and tell you which route applies.
+
+**Official sources:** Section 10A and Section 446B of the Companies Act, 2013; Form INC-20A on the MCA V3 portal. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
+### More Guides on This Topic
+
+- [DPT-3 Due Date for Startups: Director Loans & Penalty](https://agrawalkhandelwal.com/blog/dpt-3-return-of-deposits-due-date-startups)
+- [MSME-1 Half-Yearly Return: Due Dates & Penalty (2026)](https://agrawalkhandelwal.com/blog/msme-1-form-delayed-payment-return)
+- [Startup Advisory for Foreign Investors Investing in India](https://agrawalkhandelwal.com/blog/startup-advisory-foreign-investors-india)
+
+Need this handled for you? See our [startup advisory](https://agrawalkhandelwal.com/startups), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Startup India](https://www.startupindia.gov.in), [Ministry of Corporate Affairs](https://www.mca.gov.in).
+
+### Incorporated recently and unsure about INC-20A?
+
+We check your bank records, prepare the declaration and file INC-20A within the 180-day window.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[Startup Advisory](https://agrawalkhandelwal.com/startups)
+
+## Frequently Asked Questions
+
+### What is the due date for INC-20A?
+
+INC-20A must be filed within 180 days of the date of incorporation under Section 10A of the Companies Act, 2013. It applies to companies with share capital incorporated on or after November 2, 2018. It is a one-time filing, not annual.
+
+### What is the penalty for not filing INC-20A?
+
+Section 10A(2) provides a penalty of Rs 50,000 on the company and Rs 1,000 per day on each officer in default, up to Rs 1 lakh. Additional MCA fees apply to a late form. Small companies, one person companies and startup companies may get relief under Section 446B. Confirm current figures on the MCA portal at the time of filing.
+
+### Can my company start business without filing INC-20A?
+
+No. Until the declaration is filed, a company covered by Section 10A should not commence business or exercise borrowing powers. Receiving the Certificate of Incorporation alone is not enough.
+
+### Can the ROC strike off my company for not filing INC-20A?
+
+If the declaration is not filed within 180 days and the Registrar has reasonable cause to believe the company is not carrying on business, the Registrar may initiate action to remove its name from the register. This is a power, not an automatic result.
+
+### What proof is needed to file INC-20A?
+
+You need a bank statement of the company showing that each subscriber has paid the value of shares agreed to be taken, verification of the registered office address, a director DSC, and certification by a practising CA, CS or CMA.
+
+### Is INC-20A required if the company has no turnover yet?
+
+Yes. The requirement depends on the incorporation date and share capital, not on turnover. A company with no revenue still has to file the declaration within the 180-day window.
+
+### Related Guides
+
+- [Post-Incorporation Checklist](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+- [Startup Compliance Calendar, Year 1 to 3](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)
+- [Annual ROC Filing: AOC-4, MGT-7, DIR-3 KYC](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc)
+- [Startup Advisory Services](https://agrawalkhandelwal.com/startups)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+US Cross-Border
+
+# Delaware Franchise Tax: How to Cut a USD 85,000 Bill to USD 400 With the Assumed Par Value Method
+
+Published November 18, 2026Updated November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- Delaware's default Authorized Shares calculation charges by authorised shares and can produce a bill in the tens of thousands.
+- You may use the Assumed Par Value Capital method and pay the lower of the two; the tax is USD 400 per million of assumed par value capital, minimum USD 400.
+- Total tax is never below USD 175 or above USD 200,000 (USD 250,000 for Large Corporate Filers).
+- Annual report and tax are due March 1; late filing costs USD 200 plus 1.5% interest per month. Annual report fee is USD 50 for non-exempt corporations.
+- Delaware LLCs pay a flat annual tax on June 1 instead, with no share-based calculation.
+
+Running a US LLC or C-Corp from India?
+
+Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC from $850 a year, C-Corp from $1,250 a year.
+
+[Book a US compliance call](https://agrawalkhandelwal.com/consult?partner=mehul)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+The first Delaware franchise tax notice is where many Indian founders panic. A company with 10 million authorised shares and a few thousand dollars in the bank can see a bill running into five figures, and the notice shows it as the amount due. That figure is only the default calculation. Delaware lets you use a second method, and for almost every startup it is dramatically cheaper. The numbers below are illustrative and hypothetical, so run your own through the formula or ask us to.
+
+## Why the Default Bill Looks Terrifying
+
+Delaware's Authorized Shares Method charges by the number of shares your charter authorises, not by how much the company is worth. Per the Delaware Division of Corporations, the tax is USD 175 for 5,000 shares or fewer, USD 250 for 5,001 to 10,000 shares, plus USD 85 for each additional 10,000 shares or portion of it, capped at USD 200,000. Startups usually authorise millions of shares so there is room for founders, ESOPs and investors. The tax grows with that number even when the company has no revenue.
+
+## The Assumed Par Value Capital Method
+
+The alternative method looks at your balance sheet instead. Delaware states that you use whichever method gives the lesser tax, and the total is never below USD 175 or above USD 200,000 (USD 250,000 for corporations identified as Large Corporate Filers). The Assumed Par Value Capital (APV) method works like this:
+
+1. **Assumed par** = total gross assets divided by total issued shares, carried to six decimal places. Gross assets come from total assets on Form 1120, Schedule L.
+2. Each authorised share whose par value is **below** the assumed par is valued at the assumed par. Shares whose par is higher are valued at their own par.
+3. The sum of those values is the assumed par value capital.
+4. The tax is USD 400 per million (or portion of a million) of assumed par value capital. Capital above USD 1,000,000 is rounded up to the next million. Below USD 1,000,000 it is prorated, but the USD 400 minimum applies.
+
+## Worked Example (Hypothetical Numbers)
+
+Assume a Delaware C-Corp owned by an Indian founder with 10,000,000 authorised shares at a par value of USD 0.00001, 5,000,000 shares issued, and total gross assets of USD 500,000 on Schedule L.
+
+- **Authorized Shares Method:** USD 250 for the first 10,000 shares, plus USD 85 for each of the remaining 999 blocks of 10,000 shares = USD 250 + USD 84,915 = **USD 85,165**. This is the scary number on the notice.
+- **APV method:** assumed par = 500,000 / 5,000,000 = USD 0.100000. Par of USD 0.00001 is below that, so all 10,000,000 authorised shares are valued at USD 0.10, giving assumed par value capital of USD 1,000,000. Tax = 1 million x USD 400 = **USD 400**.
+
+Delaware's own rule is that you pay the lesser, so this company owes USD 400, plus the annual report fee (USD 50 for non-exempt domestic corporations per the Division). The difference is the whole reason the method exists. If the company raises money and gross assets jump, the assumed par rises and the APV tax rises with it, so the calculation has to be redone every year.
+
+## What You Have to Do
+
+- File the annual report and pay the tax online by **March 1** for the previous calendar year. Delaware's late charge is USD 200 plus 1.5% interest per month on the tax and the penalty.
+- Enter the issued share count and gross assets in the online filing and choose the APV method. Do not pay the Authorized Shares figure on a notice without checking the lower alternative.
+- Use total assets from the year-end balance sheet (the figure that goes on Schedule L) and keep that working paper on file. A mismatch with your US return invites questions.
+- Corporations expecting franchise tax of USD 5,000 or more pay in installments through the year, which does not usually apply to a startup on the APV method.
+
+## LLCs Are Different
+
+This calculation is for corporations. A Delaware LLC pays a flat annual tax instead, due **June 1**. The amount has been USD 300 in recent years and a late payment carries a USD 200 penalty plus interest; confirm the current figure with the Division of Corporations when you pay. Missing it also costs the LLC its good standing. For the full LLC calendar, see our [US LLC annual compliance calendar](https://agrawalkhandelwal.com/blog/us-llc-annual-compliance-calendar-non-resident).
+
+## Where It Fits With the Rest of Your US Compliance
+
+A Delaware C-Corp also files its own federal return and, if it has an Indian subsidiary, Form 5471. If you are still choosing between an LLC and a C-Corp, read [US LLC vs C-Corp for Indian founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders). The franchise tax is cheap to get right and expensive to ignore, so build it into your annual calendar from the first year. Our [US cross-border advisory](https://agrawalkhandelwal.com/us-cross-border) practice prepares the calculation and the filing details with a US partner who reviews and files.
+
+### More Guides on This Topic
+
+- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+- [Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc)
+- [Indian Subsidiary of a US C-Corp: Setup and Compliance](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
+
+Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Income Tax Department e-filing portal](https://www.incometax.gov.in), [Reserve Bank of India](https://www.rbi.org.in).
+
+### Got a Delaware franchise tax notice you do not understand?
+
+We run the Assumed Par Value calculation and help you file the annual report before March 1.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[US Cross-Border Advisory](https://agrawalkhandelwal.com/us-cross-border)
+
+## Frequently Asked Questions
+
+### Why is my Delaware franchise tax bill so high?
+
+The notice usually shows the Authorized Shares Method, which charges by the number of shares your charter authorises. A startup with millions of authorised shares can see a five-figure amount. Delaware lets you use the Assumed Par Value Capital method instead and pay whichever is lower.
+
+### What is the minimum and maximum Delaware franchise tax?
+
+Per the Delaware Division of Corporations, the total tax is never below USD 175 or above USD 200,000 (USD 250,000 for Large Corporate Filers). The Assumed Par Value Capital method has its own USD 400 minimum.
+
+### How is assumed par value capital calculated?
+
+Divide total gross assets by total issued shares to get the assumed par. Authorised shares with a lower par are valued at the assumed par; shares with a higher par are valued at their par. The tax is USD 400 per million, or part of a million, of the resulting capital.
+
+### When is the Delaware annual report and franchise tax due, and what is the late penalty?
+
+March 1 for the prior calendar year, filed online. A late filing attracts a USD 200 penalty plus 1.5% interest per month on the tax and the penalty. The annual report fee is USD 50 for non-exempt domestic corporations.
+
+### Does a Delaware LLC pay franchise tax the same way?
+
+No. A Delaware LLC pays a flat annual tax due June 1, USD 300 in recent years, with no share-based calculation. Confirm the current amount with the Division of Corporations before paying.
+
+### Related Guides
+
+- [US LLC vs C-Corp for Indian Founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
+- [US LLC Annual Compliance Calendar](https://agrawalkhandelwal.com/blog/us-llc-annual-compliance-calendar-non-resident)
+- [Delaware/Wyoming Incorporation, EIN and ITIN Guide](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide)
+- [US Cross-Border Advisory](https://agrawalkhandelwal.com/us-cross-border)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+Company Incorporation
+
+# LLP Registration in India (2026): Process, Cost and Timeline
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- **Process:** name approval (RUN-LLP), incorporation through **FiLLiP**, then the **LLP agreement filed in Form 3 within 30 days** of incorporation.
+- Government fees depend on the **total contribution**. Published guides list FiLLiP at Rs 500 up to Rs 1 lakh, rising by slab, and a small Form 3 fee. Confirm in the MCA fee calculator.
+- Stamp duty on the LLP agreement is a **state levy**, so get the exact amount for your state.
+- You need at least two designated partners, and at least one must be resident in India.
+- Choose an LLP for lighter compliance and a partner-run business; choose a private limited company if you plan ESOPs or equity funding.
+
+An LLP is quicker to run than a company: no AGM, no board meetings, and no mandatory audit below the thresholds. But it still has a two-stage registration and a deadline many people miss. This guide covers the process, the government fees as published, and when an LLP is the better choice. For a head to head view, read our [LLP vs Private Limited comparison](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india).
+
+## The process: RUN-LLP, FiLLiP, LLP agreement
+
+**1. Name approval (RUN-LLP).** You reserve a name that is not identical or too similar to an existing company, LLP or trademark. A published guide puts the RUN-LLP fee at a flat Rs 200.
+
+**2. Incorporation (FiLLiP).** The Form for Incorporation of LLP is filed with the details of at least two designated partners (at least one resident in India), the registered office, each partner's contribution and the business activity. Each designated partner needs a DSC and a DIN (or DPIN).
+
+**3. Incorporation certificate.** On approval the ROC issues the certificate with the LLPIN. Confirm in your engagement who applies for the LLP's PAN and TAN.
+
+**4. LLP agreement (Form 3).** The agreement between the partners must be filed within **30 days of incorporation**. The agreement is stamped as per your state and signed before filing. Missing the window means additional fees on Form 3, so do not treat the certificate as the finish line.
+
+## Government fees, as published
+
+Fees depend on the total contribution of the partners. These are the slabs published in current fee guides. Confirm them in the MCA fee calculator before you rely on them, because commercial guides disagree on some slab edges.
+
+| Total contribution | FiLLiP fee | Form 3 fee |
+| --- | --- | --- |
+| Up to Rs 1 lakh | Rs 500 | Rs 50 |
+| Rs 1 lakh to Rs 5 lakh | Rs 2,000 | Rs 100 |
+| Rs 5 lakh to Rs 10 lakh | Rs 4,000 | Rs 150 |
+| Above Rs 10 lakh | Rs 5,000 (per one guide) | Rs 200 up to Rs 25 lakh; higher slabs above that |
+
+## Stamp duty on the LLP agreement
+
+The LLP agreement is stamped under the state stamp law, so the amount depends on where the LLP is registered. In Maharashtra, guides describe duty linked to the capital contribution with a minimum, and they disagree on the upper cap, so we have not quoted a single figure. Ask for the exact stamp duty as a separate line item. Some states have an e-stamping route, which is usually faster than physical stamp paper.
+
+## Timeline
+
+Name approval and FiLLiP are usually the quickest part when documents are clean. Delays come from name rejections, DSC and DIN issues, and ROC queries. Plan the Form 3 filing inside the 30 day window, because it needs the signed and stamped agreement. We have not given a day count because ROC processing time varies and no official figure exists.
+
+## When an LLP beats a private limited company
+
+An LLP is often the better fit when the business is professional or service-led with a small group of partners, when you want lighter compliance and no mandatory audit below the thresholds, and when you do not plan to raise equity from venture investors. It also suits family and partnership businesses that want limited liability without company law formalities.
+
+A private limited company is usually better if you plan to issue ESOPs, take venture or angel funding, or sell shares to investors. Investors and ESOP structures work through shares, which an LLP does not have. The tax treatment also differs, so look at your numbers, not just the compliance burden.
+
+## After registration
+
+Plan for the first year: the LLP's annual Form 11 and Form 8, the income tax return, and DIR-3 KYC for designated partners. We have set out the dates in [LLP annual compliance: Form 8 and Form 11 due dates](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates). If you are still deciding the structure, our [company incorporation service](https://agrawalkhandelwal.com/company-incorporation) covers both routes.
+
+**Official sources:** Limited Liability Partnership Act, 2008 and the LLP Rules, 2009 (incorporation, Form 3 within 30 days of incorporation). Fee slabs are from published guides and should be confirmed in the MCA fee calculator. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
+### More Guides on This Topic
+
+- [LLP Form 8 and Form 11 Due Dates FY 2025-26](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates)
+- [Post-Incorporation Checklist: First 30 Days After Company Registration](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+- [Company Name Reservation in India: SPICe+ Part A & RUN Explained](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india)
+
+Need this handled for you? See our [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Ministry of Corporate Affairs](https://www.mca.gov.in), [Income Tax Department e-filing portal](https://www.incometax.gov.in).
+
+### Choosing between an LLP and a company?
+
+We help founders pick the right structure and handle the filings, including the LLP agreement and Form 3 inside the 30 day window.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[Incorporation Services](https://agrawalkhandelwal.com/company-incorporation)
+
+## Frequently Asked Questions
+
+### What is the process to register an LLP in India?
+
+Reserve the name through RUN-LLP, file FiLLiP with the partners, designated partner and registered office details, receive the incorporation certificate and LLPIN, then file the LLP agreement in Form 3 within 30 days of incorporation.
+
+### What is the deadline for filing the LLP agreement?
+
+Form 3 must be filed within 30 days of incorporation. A late filing attracts additional fees, so keep the signed and stamped agreement ready before you file FiLLiP.
+
+### How much does LLP registration cost?
+
+Government fees depend on total contribution. Published guides list FiLLiP at Rs 500 up to Rs 1 lakh contribution and higher by slab, plus a small Form 3 fee and state stamp duty on the agreement. Confirm the figures in the MCA fee calculator, and add your professional fee.
+
+### How many partners does an LLP need?
+
+At least two partners and at least two designated partners, and at least one designated partner must be a resident in India.
+
+### Is an LLP better than a private limited company?
+
+It depends on the plan. An LLP has lighter compliance and suits partner-run and professional businesses. A private limited company is better when you want ESOPs or equity funding, because shares exist only in a company.
+
+### Do I need an audit for a new LLP?
+
+Not automatically. A statutory audit is required if contribution exceeds Rs 25 lakh or turnover exceeds Rs 40 lakh. Tax audit rules under the Income Tax Act apply separately.
+
+### Related Guides
+
+- [LLP vs Private Limited Company](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india)
+- [LLP Annual Compliance: Form 8 and Form 11](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates)
+- [Private Limited Company Registration Cost (2026)](https://agrawalkhandelwal.com/blog/private-limited-company-registration-cost-india-2026)
+- [DSC and DIN Application Guide](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)
+- [Company Incorporation Services](https://agrawalkhandelwal.com/company-incorporation)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+US Cross-Border
+
+# India to US Flip Structure: What Indian Founders Need to Know
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- A flip makes your Indian company a subsidiary of a new Delaware C-Corp, with founders and investors holding the US shares.
+- Founders swap Indian shares for Delaware shares. FEMA covers it under the Overseas Investment Rules, 2022 and the Non-Debt Instruments Rules, 2019 (Rule 9A on swaps added in 2024).
+- The swap is a transfer for Indian capital gains tax. Exemptions are conditional, so get a written tax opinion before signing. Flipping early keeps the gain small.
+- Reporting follows: overseas investment reporting for founders, FC-GPR (30 days from allotment) or FC-TRS for the Indian company, and the annual FLA return.
+- Some points, such as how the round-tripping limits apply to resident individuals, are not settled. Take a legal opinion.
+
+Running a US LLC or C-Corp from India?
+
+Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC from $850 a year, C-Corp from $1,250 a year.
+
+[Book a US compliance call](https://agrawalkhandelwal.com/consult?partner=mehul)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+A flip means moving the top of your company from India to the US. The Indian company you built becomes a subsidiary of a new Delaware C-Corp, and you and your investors hold shares in the Delaware parent instead. It is one of the first things a US investor raises with an Indian founder, and the way it is done decides how much Indian tax and RBI paperwork you carry for years.
+
+## Why US VCs and Accelerators Ask for It
+
+US funds and accelerators such as Y Combinator are set up to invest in Delaware C-Corps with standard documents (SAFEs, preferred stock, a familiar cap table). Many US funds also cannot or prefer not to hold shares in an Indian company directly. A Delaware parent also gives a cleaner path to a US exit. The cost is that the flip is a taxable-looking event if done late, so the usual advice is to do it early, when the Indian company is worth little and the gain is small. Read [US LLC vs C-Corp for Indian Founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders) first if you have not yet chosen the entity type.
+
+## The Structure
+
+Before: founders and investors hold shares in the Indian private limited company. After: founders and investors hold shares in a Delaware C-Corp, and the Delaware C-Corp holds the Indian company (usually 100%, with a nominee holding one share to meet the two-member minimum). Operations, employees and often the engineering team stay in India. The US entity signs customer contracts, raises money and holds IP, and the Indian entity provides services to it. That services relationship is a related-party transaction, covered in [our guide to the Indian subsidiary of a US C-Corp](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance).
+
+## How the Share Swap Works Under FEMA
+
+In the common route, each Indian-resident founder transfers their Indian shares to the Delaware company and receives Delaware shares in return, at a swap ratio fixed on valuation. Two FEMA regimes sit on top of this:
+
+- **Founders acquiring Delaware shares (outbound):** for a resident individual this is overseas investment under the Foreign Exchange Management (Overseas Investment) Rules, 2022. The 2022 Rules recognise acquisition by swap of securities as a permitted mode. Practitioner commentary notes the rules do not spell out every detail of how a swap works, and a resident individual's overseas investment carries its own conditions.
+- **Delaware company acquiring Indian shares (inbound):** this falls under the Non-Debt Instruments Rules, 2019. A 2024 amendment added Rule 9A, which expressly deals with swaps of an Indian company's equity against a foreign company's equity.
+
+Because the Indian company ends up owned by a foreign company that is owned by Indian residents, the structure also touches the round-tripping restrictions in the overseas investment framework. This is the least settled part of the flip. Advisers differ on how the permissions fit together for resident individuals, so a written legal opinion on the exact route is part of a proper flip, not an optional extra. We have not found an official statement that settles it for every fact pattern.
+
+## Valuation
+
+The swap ratio needs a defensible valuation of the Indian company, normally by a SEBI-registered merchant banker or a registered valuer, using accepted methods such as discounted cash flow or net asset value. The same valuation feeds the FEMA pricing check, the Indian tax computation and the Delaware share issue. For a pre-revenue company the numbers are small, which is exactly why early flips are cheaper.
+
+## Indian Tax on the Swap
+
+Exchanging Indian shares for foreign shares is a transfer for capital gains purposes. The gain is generally the fair value of the Delaware shares received less the cost of the Indian shares, taxed as long-term or short-term depending on how long you held them. Exemptions for transfers in a merger or restructuring exist in the Act, but they are conditional and tied to Indian companies, so they do not automatically cover an outbound flip. Whether any exemption fits your facts is a question for a written tax opinion before you sign. If the cost of your shares is close to their value, the tax can be small or nil, which again favours flipping early.
+
+The Income Tax Act, 2025 applies from April 1, 2026 and has renumbered the capital gains and exemption sections. Confirm the exact current section references before relying on older numbering. The general anti-avoidance rules can also apply if the structure has no commercial reason beyond tax.
+
+## Typical Sequence
+
+- Pre-flip assessment: tax opinion, FEMA route, investor term sheet.
+- Incorporate the Delaware C-Corp and get an EIN (see [Delaware incorporation, EIN and ITIN](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide)).
+- Independent valuation and swap ratio.
+- Board and shareholder approvals in both companies; share swap agreement.
+- Overseas investment reporting for the founders and inbound reporting for the Indian company (below).
+- Assign or license IP and move customer contracts to the US entity.
+- Update ROC records and the Indian company's registers.
+
+Practitioners usually quote a few weeks to a few months end to end, mostly depending on valuation and approvals. We have not seen an official timeline.
+
+## RBI and FEMA Reporting After the Flip
+
+- **Overseas investment reporting:** founders who hold the Delaware shares report the overseas investment through their authorised dealer bank and then file annual performance reporting as the Overseas Investment Rules require.
+- **FC-GPR or FC-TRS:** the Indian company reports foreign ownership. A fresh issue to the Delaware parent is reported on FC-GPR within 30 days of allotment, and a transfer of existing shares to it is reported on FC-TRS. See [FEMA compliance for foreign investment](https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups) and [our ODI guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india).
+- **FLA return:** the Indian company files the annual return on foreign liabilities and assets once it has foreign investment.
+
+A late filing is regularised through the RBI late submission fee instead of the old compounding route.
+
+## Reverse Flip and Alternatives
+
+A reverse flip brings the holding company back to India. The 2024 Rule 9A amendment has made it more practical than it was, but it is a separate transaction with its own tax cost, so do not treat a flip as easily reversible. Founders who do not want to crystallise a swap sometimes build the US entity beside the Indian one and move new business there. Whether that works depends on your investors and your IP. See [our startup advisory](https://agrawalkhandelwal.com/startups) for the broader compliance picture and [our US cross-border services](https://agrawalkhandelwal.com/us-cross-border).
+
+### More Guides on This Topic
+
+- [Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc)
+- [Indian Subsidiary of a US C-Corp: Setup and Compliance](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
+- [FDI in India: Routes, Sectoral Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide)
+
+Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Income Tax Department e-filing portal](https://www.incometax.gov.in), [Reserve Bank of India](https://www.rbi.org.in).
+
+### Planning a flip to Delaware?
+
+We help founders sequence the tax opinion, FEMA route and filings before any shares move.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[US Cross-Border Services](https://agrawalkhandelwal.com/us-cross-border)
+
+## Frequently Asked Questions
+
+### What is a flip structure for an Indian startup?
+
+A flip makes your Indian company a subsidiary of a new Delaware C-Corp. Founders and investors swap their Indian shares for Delaware shares, so the cap table sits in the US while operations stay in India.
+
+### Why do US investors ask Indian founders to flip?
+
+US funds and accelerators are set up for Delaware C-Corps with standard documents and a familiar exit path, and many cannot hold Indian shares directly. The request is common but not universal, so ask the investor whether it is a condition before you flip.
+
+### Is a flip taxable in India?
+
+The share swap is a transfer, so capital gains tax can arise on the difference between the value of the Delaware shares received and the cost of your Indian shares. Exemptions are conditional and may not fit an outbound flip, so get a written tax opinion first. Doing it early, when value is low, keeps the gain small.
+
+### Which FEMA rules govern the swap?
+
+Founders acquiring Delaware shares fall under the Overseas Investment Rules, 2022, which recognise swap of securities as a permitted mode. The Indian company being acquired by a foreign parent falls under the Non-Debt Instruments Rules, 2019, including Rule 9A on share swaps added in 2024. How the two fit together for resident individuals is not fully settled, so take a legal opinion.
+
+### What RBI reporting follows a flip?
+
+Founders report their overseas investment through their bank and file annual performance reports. The Indian company reports foreign ownership on FC-GPR (new issue, within 30 days of allotment) or FC-TRS (transfer of shares) and files the annual FLA return.
+
+### Can a flip be reversed?
+
+Yes, through a reverse flip, but it is its own transaction with its own tax and FEMA steps. Recent amendments have eased the FEMA side, but the tax cost can still be significant, so treat the flip as hard to undo.
+
+### Related Guides
+
+- [US LLC vs C-Corp for Indian Founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
+- [Indian Subsidiary of a US C-Corp: Setup and Compliance](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
+- [FEMA Compliance for Foreign Investment](https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups)
+- [Startup Advisory](https://agrawalkhandelwal.com/startups)
+- [US Cross-Border Services](https://agrawalkhandelwal.com/us-cross-border)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/dpt-3-return-of-deposits-due-date-startups
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+Startup Compliance
+
+# DPT-3 for Startups: Why Director Loans Still Need a Return of Deposits
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- **DPT-3** is an annual return reporting deposits and also certain money received that is **not** a deposit, such as loans from directors. A startup with such loans outstanding on March 31 generally has to file it.
+- **Due date: June 30** each year, reporting the position as on March 31. The FY 2025-26 return was due June 30, 2026; the FY 2026-27 return is due June 30, 2027.
+- Money from a **director or relative of a director** is an exempted receipt only if the director gives a **written declaration** that it is not funded by borrowing or accepting loans or deposits from others.
+- An **auditor certificate** is needed where the return reports actual deposits. A return that only reports exempted receipts does not need one.
+- Late filing attracts additional MCA fees that grow with delay, plus a Rule 21 penalty. **Accepting a real deposit in breach of the rules** is far more serious (Section 76A).
+
+Founders are often surprised to hear from their CA that they must file a "return of deposits" when the company has never taken a deposit from the public. The reason is simple. The form is not only about deposits. It also asks the company to report money received that is exempt from the deposit definition, and a startup funded by director loans has exactly that.
+
+## Who Has to File DPT-3
+
+Every company other than a Government company that has an outstanding loan or receipt of money as on March 31, whether or not it is a deposit, is generally expected to file Form DPT-3. If nothing of this kind is outstanding on March 31, there is typically nothing to report. A startup that took an unsecured loan from a founder to cover its first year's costs is the standard example.
+
+## Due Date
+
+DPT-3 is annual and due by **June 30**, reporting the position as on the preceding March 31, unless MCA extends the date. If you missed the FY 2025-26 return, file now rather than waiting for the next cycle, because the additional fee keeps growing. Add the date to your [startup compliance calendar](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3).
+
+## Deposit Versus Exempted Receipt
+
+The Companies (Acceptance of Deposits) Rules, 2014 define a deposit broadly as any receipt of money by way of deposit or loan, and then list what is excluded. For a small private company, the exclusions that matter most are:
+
+- **Amount received from a director or a relative of a director**, provided the director furnishes a written declaration at the time of giving the money that it is not being given out of funds acquired by borrowing or accepting loans or deposits from others.
+- **Bank and financial institution loans**, which are not deposits.
+- **Share application money** received within the conditions of the Act, until it is allotted or refunded.
+- **Advances for supply of goods or services**, if adjusted within the prescribed period.
+- For a **private company**, money from members is allowed up to a limit linked to paid-up capital, free reserves and securities premium, subject to the conditions in the Rules. Check the current wording of the Rules before relying on this.
+
+The catch is the declaration. Without it, a loan from a director is not automatically exempt, and the company has to treat it as a deposit and meet the deposit rules. Get the declaration in writing every time money comes in, and keep it with the company records. Related reading: [related party loans and Sections 185 and 186](https://agrawalkhandelwal.com/blog/related-party-loans-and-section-185-186-compliance).
+
+## Auditor Certificate: When It Applies
+
+If the return reports **actual deposits**, an auditor certificate is required. If it reports only exempted receipts such as declared director loans, an auditor certificate is not required, though the figures must still tie to the audited books and notes. Directors should be able to produce the declarations for each exempted receipt.
+
+## Late Fee and Penalty
+
+A late DPT-3 attracts an additional fee that rises in steps with the days of delay, so a return a few weeks late costs a small multiple of the normal fee and one many months late costs several times more. Rule 21 of the Deposit Rules also provides a penalty for failing to file, with a daily amount for continuing default. Reported figures vary across professional sources, so confirm the current amounts against the MCA fee schedule before filing.
+
+Do not confuse a late filing with a deposit breach. Accepting a deposit that the Act does not permit, or failing to repay one on time, falls under Section 76A and carries heavy penalties for the company and officers. A company that has only filed late is in a far better position than one that took money it should not have.
+
+## Practical Steps for a Startup
+
+1. On March 31, list every loan or receipt outstanding: director loans, founder advances, shareholder loans, customer advances, bank loans.
+2. For each, record the lender, amount and whether the exempt condition (such as the director declaration) is met.
+3. Collect missing declarations before filing. Do not backdate them.
+4. Match the figures to the audited balance sheet and the related-party note.
+5. File DPT-3 by June 30 and keep the SRN with your records. See also our guide to [annual ROC filings](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc).
+
+If you are raising money from friends and family or from angels, take advice before the money arrives. The classification can change whether it is a deposit, equity, or a convertible instrument, as covered in our post on [convertible notes versus equity](https://agrawalkhandelwal.com/blog/convertible-notes-vs-equity-fema-startups). Our [startup advisory](https://agrawalkhandelwal.com/startups) team can structure it correctly.
+
+**Official sources:** Sections 73, 74 and 76A of the Companies Act, 2013; Companies (Acceptance of Deposits) Rules, 2014, including Rules 16 and 21. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
+### More Guides on This Topic
+
+- [MSME-1 Half-Yearly Return: Due Dates & Penalty (2026)](https://agrawalkhandelwal.com/blog/msme-1-form-delayed-payment-return)
+- [Startup Advisory for Foreign Investors Investing in India](https://agrawalkhandelwal.com/blog/startup-advisory-foreign-investors-india)
+- [Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST](https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst)
+
+Need this handled for you? See our [startup advisory](https://agrawalkhandelwal.com/startups), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Startup India](https://www.startupindia.gov.in), [Ministry of Corporate Affairs](https://www.mca.gov.in).
+
+### Not sure which of your loans must be reported in DPT-3?
+
+We classify your director and shareholder funding, check the declarations and file DPT-3 on time.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[Startup Advisory](https://agrawalkhandelwal.com/startups)
+
+## Frequently Asked Questions
+
+### Do I need to file DPT-3 if my startup has only director loans?
+
+Generally yes. DPT-3 also reports certain receipts that are not deposits, and a company with a director or unsecured loan outstanding on March 31 is expected to report it. If nothing is outstanding on March 31, there is typically nothing to report.
+
+### What is the due date for DPT-3?
+
+June 30 each year, reporting the position as on March 31, unless MCA extends it. The return for FY 2025-26 was due on June 30, 2026.
+
+### When is a loan from a director not treated as a deposit?
+
+When the director gives a written declaration, at the time of giving the money, that it is not out of funds acquired by borrowing or accepting loans or deposits from others. Without the declaration, the company may have to treat it as a deposit.
+
+### Is an auditor certificate required for DPT-3?
+
+It is required where the return reports actual deposits. A return reporting only exempted receipts, such as declared director loans, does not need the certificate.
+
+### What happens if DPT-3 is filed late?
+
+An additional MCA fee applies and increases with the delay, and Rule 21 of the Deposit Rules provides a penalty for failure to file. Confirm current amounts on the MCA fee schedule. This is separate from the much heavier Section 76A penalties for breaching the deposit rules.
+
+### Are bank loans and share application money reported in DPT-3?
+
+Bank loans and properly held share application money are not deposits. Whether they appear in the exempted receipts part of the form depends on the form instructions, so check them with your CA while preparing the return.
+
+### Related Guides
+
+- [Startup Compliance Calendar, Year 1 to 3](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)
+- [Related Party Loans and Sections 185, 186](https://agrawalkhandelwal.com/blog/related-party-loans-and-section-185-186-compliance)
+- [Annual ROC Filing: AOC-4, MGT-7, DIR-3 KYC](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc)
+- [Startup Advisory Services](https://agrawalkhandelwal.com/startups)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+US Cross-Border
+
+# Form 5472 Penalty: How to Fix Missed Filings for Your Foreign-Owned US LLC
+
+Published November 18, 2026Updated November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- The IRS instructions state a USD 25,000 penalty for failing to file Form 5472 on time, per form and per year.
+- Capital contributions and distributions between you and the LLC are reportable, so a no-income LLC can still owe the filing.
+- Due April 15, or October 15 with Form 7004. A foreign-owned US disregarded entity files by fax or mail with the pro forma Form 1120, not electronically.
+- If you missed years, reconstruct the transactions and file each year with a reasonable cause statement, ideally before the IRS writes to you.
+- Relief is not guaranteed. Reasonable cause needs real facts; first-time abatement for Form 5472 is disputed, so do not count on it.
+
+Running a US LLC or C-Corp from India?
+
+Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC from $850 a year, C-Corp from $1,250 a year.
+
+[Book a US compliance call](https://agrawalkhandelwal.com/consult?partner=mehul)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+The most expensive mistake we see in foreign-owned US LLCs is not wrong tax. It is a missing form. A single-member LLC with no income can owe nothing in tax and still face a USD 25,000 penalty for not filing Form 5472. If you are an Indian resident who owns a US LLC, this guide covers the penalty, how to catch up on missed years and what relief may be available. For the difference between Forms 5471, 5472 and 8858, see our [form comparison guide](https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity); this post stays on penalties and catch-up.
+
+## The Penalty in Plain Numbers
+
+The IRS instructions for Form 5472 state a penalty of **USD 25,000** for failing to file the form on time and in the required manner, or to keep the required records. Three points matter:
+
+- It is charged **per form, per year**. Three missed years means three penalties.
+- A substantially incomplete Form 5472 is treated as a failure to file.
+- If the failure continues more than 90 days after the IRS notifies you, an additional USD 25,000 applies for each related party, for each 30-day period (or part of one) after the 90 days. The instructions also mention criminal penalties in serious cases.
+
+## What Must Be Reported
+
+For a foreign-owned disregarded entity, the form reports transactions with the foreign owner and other related parties. Reportable items include money in and out, such as **capital contributions and distributions**, loans, payments for services, rent or royalties, and formation, dissolution or acquisition events. Monetary transactions go in Part IV, other owner transactions in Part V (a statement describing contributions, distributions and similar items), and non-monetary or below-market transactions in Part VI. A founder who simply funded the LLC bank account and later withdrew money has reportable transactions, even if the LLC earned nothing.
+
+## Due Dates and How to File
+
+Form 5472 is attached to a pro forma Form 1120 and is due with the entity's return. For a calendar-year LLC that is **April 15**, or **October 15** if Form 7004 is filed by April 15. Per the IRS instructions, a foreign-owned US disregarded entity cannot file electronically. Write "Foreign-owned U.S. DE" across the top of the pro forma Form 1120 and either fax it (300 DPI or higher) to the IRS number given in the Form 5472 instructions or mail it to the Ogden, Utah PIN Unit address given there. Do not use the general Form 1120 mailing address. Form 7004 goes to the same fax number or address, not the normal 7004 address. Check the current instructions for the exact details before sending.
+
+## Catching Up on Missed Years
+
+1. **List every year since formation** and every transaction with you as the owner: money put in, money taken out, loans, payments to you.
+2. **Check whether the IRS has already written to you.** The IRS delinquent international information return procedures apply only to taxpayers not under examination and not already contacted about the delinquent returns. The IRS page does not name Form 5472, so confirm with a professional that the route fits your facts.
+3. **Prepare each missing year's pro forma Form 1120 and Form 5472** with a reasonable cause statement attached, and file them through the fax or mail route above.
+4. **Respond promptly if a penalty notice arrives.** The 90-day clock for additional penalties starts from the IRS notification, so do not let a letter sit.
+
+Filing late does not by itself cancel the penalty. The IRS page notes that penalties may still be assessed without considering the attached reasonable cause statement, and you may need to respond to the IRS and resubmit your explanation.
+
+## Penalty Relief: What We Can and Cannot Promise
+
+The law allows relief where the failure was due to reasonable cause and not willful neglect, and practitioners argue it on documented facts. Not knowing about the rule, or relying on someone to file for you, is commonly reported to be a weak ground by itself, so a statement needs real facts. First-time abatement is different: practitioner sources disagree on whether it applies to Form 5472 penalties, and some say it reaches them only where the related Form 1120 is abated. We have not confirmed the position in the Internal Revenue Manual, so treat it as uncertain and not as a plan. No firm can guarantee a waiver.
+
+## Prevent It From Happening Again
+
+Put the filing in your calendar every year, keep a ledger of every owner contribution and withdrawal, and keep the US bookkeeping current so the Part IV and V figures are ready. Our team prepares the filing and a US partner reviews and files it. See our [US LLC compliance calendar](https://agrawalkhandelwal.com/blog/us-llc-annual-compliance-calendar-non-resident) for the full list, [US LLC vs C-Corp](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders) if you are reconsidering the structure, and our [US cross-border advisory](https://agrawalkhandelwal.com/us-cross-border) page for how we work.
+
+### More Guides on This Topic
+
+- [Indian Subsidiary of a US C-Corp: Setup and Compliance](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
+- [FDI in India: Routes, Sectoral Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide)
+- [Overseas Direct Investment (ODI): Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india)
+
+Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Income Tax Department e-filing portal](https://www.incometax.gov.in), [Reserve Bank of India](https://www.rbi.org.in).
+
+### Missed Form 5472 on your US LLC?
+
+We reconstruct the transactions, prepare the late filings and help you respond to IRS notices, with a US partner reviewing and filing.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[US Cross-Border Advisory](https://agrawalkhandelwal.com/us-cross-border)
+
+## Frequently Asked Questions
+
+### What is the penalty for not filing Form 5472?
+
+The IRS instructions state a USD 25,000 penalty for failing to file Form 5472 on time and in the required manner. It applies per form, per year, and a substantially incomplete form is treated as a failure to file.
+
+### Is there an additional penalty if I ignore an IRS notice?
+
+Yes. If the failure continues more than 90 days after the IRS notifies you, an additional USD 25,000 applies for each related party for each 30-day period, or part of one, after the 90 days.
+
+### I have missed Form 5472 for several years. What should I do?
+
+Reconstruct every owner transaction since formation, check whether the IRS has already contacted you, then prepare the pro forma Form 1120 and Form 5472 for each missing year with a reasonable cause statement. The IRS delinquent international return procedures apply only if you are not under examination and have not been contacted; have a professional confirm the route.
+
+### Can the penalty be waived?
+
+It may be abated for reasonable cause and not willful neglect, but the IRS can still assess it without considering the statement, and ignorance of the rule is commonly reported to be a weak ground. Whether first-time abatement applies to Form 5472 is disputed by practitioners, so we do not rely on it. No waiver is guaranteed.
+
+### Can a foreign-owned single-member LLC e-file Form 5472?
+
+No. The IRS instructions say a foreign-owned US disregarded entity cannot file Form 5472 electronically. The pro forma Form 1120 with Form 5472 attached is faxed or mailed to the IRS PIN Unit in Ogden, Utah, using the details in the current instructions.
+
+### Related Guides
+
+- [Form 5471 vs 5472 vs 8858](https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity)
+- [US LLC vs C-Corp for Indian Founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
+- [US LLC Annual Compliance Calendar](https://agrawalkhandelwal.com/blog/us-llc-annual-compliance-calendar-non-resident)
+- [US Cross-Border Advisory](https://agrawalkhandelwal.com/us-cross-border)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+Company Incorporation
+
+# LLP Annual Compliance: Form 8 and Form 11 Due Dates for FY 2025-26
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- **Form 11** was due **May 30, 2026** and **Form 8** was due **October 30, 2026** for FY 2025-26. We found no extension for LLPs as of November 18, 2026.
+- MCA General Circular 05/2026 relaxed additional fees only for company forms AOC-4 and MGT-7, not LLP forms.
+- The old **Rs 100 per day** late fee was replaced from April 1, 2022 by a table of multiples of the normal fee, with a daily component only beyond 360 days.
+- An LLP audit applies above Rs 25 lakh contribution or Rs 40 lakh turnover. The income tax return (ITR-5) and any tax audit are separate.
+- Designated partners must complete **DIR-3 KYC by September 30**. Backlog filings should be cleared before any strike off or closure.
+
+An LLP has two annual MCA filings and no AGM, which is why many partners forget them. Both carry per-form late fees that grow with delay, and a dormant LLP still has to file. This guide covers the FY 2025-26 dates, the current late fee structure, the income tax side, DIR-3 KYC and what happens if you stop filing. For registration, see our [LLP registration guide](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026).
+
+## The two MCA filings and their dates for FY 2025-26
+
+Form 11 is the annual return and Form 8 is the statement of account and solvency. Both are filed every year, even if the LLP had no business.
+
+| Form | What it is | Due date for FY 2025-26 | Extended? |
+| --- | --- | --- | --- |
+| Form 11 | Annual return of partners and activity | May 30, 2026 (60 days from year end) | No extension found |
+| Form 8 | Statement of account and solvency | October 30, 2026 (30 days after six months from year end) | No extension found |
+
+## Did MCA extend any LLP date for FY 2025-26?
+
+As of November 18, 2026, we found no extension for LLP Form 11 or Form 8. MCA General Circular 05/2026 (October 24, 2026) relaxed additional fees only for company forms AOC-4 and MGT-7. It does not cover LLPs. If you have not filed Form 8 yet, it is already late. Check the MCA LLP circulars page before relying on any extension someone mentions.
+
+## Late fees: the daily Rs 100 charge is gone
+
+Older guides still say Rs 100 per day. From April 1, 2022 the LLP (Amendment) Rules, 2022 replaced that with a table of additional fees based on a multiple of the normal fee. The multiple depends on how long you are late, and a small LLP pays a lower multiple. Two independent guides publish the same structure, reproduced below. Confirm it in the MCA fee calculator before relying on exact amounts.
+
+| Delay | Small LLP | Other LLP |
+| --- | --- | --- |
+| Up to 15 days | 1x | 1x |
+| 15 to 30 days | 2x | 4x |
+| 30 to 60 days | 4x | 8x |
+| 60 to 90 days | 6x | 12x |
+| 90 to 180 days | 10x | 20x |
+| 180 to 360 days | 15x | 30x |
+| Beyond 360 days | 15x plus Rs 10 per day | 30x plus Rs 20 per day |
+
+## What is the normal fee?
+
+The normal fee depends on contribution. Published guides list Rs 50 up to Rs 1 lakh, Rs 100 up to Rs 5 lakh, Rs 150 up to Rs 10 lakh, Rs 200 up to Rs 25 lakh, Rs 400 up to Rs 1 crore and Rs 600 above. A small LLP means contribution up to Rs 25 lakh and turnover up to Rs 40 lakh. Each form is charged separately, so a long-pending LLP pays for both forms and for every year.
+
+Separately, the LLP Act contains penalty provisions for default by the LLP and its designated partners. Those sit on top of the additional fees, and we have not quoted amounts because guides disagree on the cap.
+
+## Audit, income tax return and tax audit for LLPs
+
+A statutory audit of the LLP's accounts is required where contribution exceeds Rs 25 lakh or turnover exceeds Rs 40 lakh. Below that, accounts must still be maintained and a solvency statement signed in Form 8.
+
+For income tax, an LLP files ITR-5. If a tax audit applies (for example because turnover crosses the Section 44AB threshold, a separate test from the LLP Act audit), audit-case dates apply. For AY 2026-27, the CBDT press release of September 28, 2026 extended the audit report to October 21, 2026 and the audit-case return to November 21, 2026, with Form 3CEB cases excluded. Read our [audit case ITR due date post](https://agrawalkhandelwal.com/blog/itr-due-date-audit-cases-ay-2026-27-extended) and confirm for your facts. LLP, income tax and GST filings are separate, and one does not substitute for another.
+
+## DIR-3 KYC for designated partners
+
+Designated partners who hold a DIN must complete DIR-3 KYC by September 30 each year. Missing it deactivates the DIN, and published guides report a fee of Rs 5,000 to reactivate. A deactivated DIN blocks the partner from signing MCA forms, including Form 8 and Form 11. One source says a partner holding only a DPIN may be treated differently, so check each partner's status. See the [DSC and DIN guide](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide).
+
+## If you stop filing: consequences
+
+Additional fees keep growing, and past 360 days they carry a daily component. Pending defaults also get in the way of closing the LLP: the ROC expects backlog Form 8 and Form 11 to be filed before a voluntary strike off (Form 24). The ROC can also strike off an LLP that is not carrying on business or not filing, under Section 75 of the LLP Act, which makes bank accounts and property dealings difficult and can require a court route to restore. Whether you want to keep the LLP or close it, filing the backlog is usually cheaper than leaving it.
+
+## A simple yearly calendar for your LLP
+
+Keep books through the year, finalise accounts and the solvency statement, complete DIR-3 KYC by September 30, file Form 11 by May 30 and Form 8 by October 30, and file the ITR and any tax audit on the dates that apply. If you are unsure about the audit threshold or have an old default, see our [compliance calendar](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3) or [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation).
+
+**Official sources:** Limited Liability Partnership Act, 2008; LLP Rules, 2009 as amended by the LLP (Amendment) Rules, 2022 (additional fees); MCA General Circular 05/2026 dated October 24, 2026 (company forms only). See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
+### More Guides on This Topic
+
+- [Post-Incorporation Checklist: First 30 Days After Company Registration](https://agrawalkhandelwal.com/blog/post-incorporation-checklist-first-30-days)
+- [Company Name Reservation in India: SPICe+ Part A & RUN Explained](https://agrawalkhandelwal.com/blog/company-name-reservation-run-form-india)
+- [DSC and DIN Application: A Practical Guide for Directors](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)
+
+Need this handled for you? See our [company incorporation and compliance services](https://agrawalkhandelwal.com/company-incorporation), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Ministry of Corporate Affairs](https://www.mca.gov.in), [Income Tax Department e-filing portal](https://www.incometax.gov.in).
+
+### Behind on LLP filings?
+
+We clear backlog Form 8 and Form 11 filings, DIR-3 KYC and the ITR for LLPs, and set up a calendar so it does not happen again.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[Incorporation Services](https://agrawalkhandelwal.com/company-incorporation)
+
+## Frequently Asked Questions
+
+### What are the due dates for LLP Form 8 and Form 11 for FY 2025-26?
+
+Form 11 was due on May 30, 2026 and Form 8 on October 30, 2026. Both are filed every year, even if the LLP did no business.
+
+### Has MCA extended LLP Form 8 or Form 11 for FY 2025-26?
+
+We found no extension as of November 18, 2026. MCA General Circular 05/2026 relaxed additional fees only for company forms AOC-4 and MGT-7. Check the MCA portal for any later LLP circular.
+
+### What is the late fee for LLP Form 8 and Form 11?
+
+Since April 1, 2022 the additional fee is a multiple of the normal fee that rises with the delay, and a small LLP pays a lower multiple. Beyond 360 days a daily amount is added. The old flat Rs 100 per day no longer applies. Confirm exact amounts in the MCA fee calculator.
+
+### Is an audit compulsory for an LLP?
+
+A statutory audit is required if contribution exceeds Rs 25 lakh or turnover exceeds Rs 40 lakh. A tax audit under the Income Tax Act is a separate test based on turnover and other conditions.
+
+### Do designated partners need to file DIR-3 KYC?
+
+Designated partners holding a DIN must file DIR-3 KYC by September 30 each year. Missing it deactivates the DIN, and guides report a Rs 5,000 fee to reactivate. A partner with only a DPIN may be treated differently, so check the status.
+
+### What happens if an LLP does not file annual returns?
+
+Additional fees keep accruing, DINs may be deactivated, and the ROC can strike off the LLP under Section 75 of the LLP Act. Backlog filings are normally needed before a voluntary strike off.
+
+### Related Guides
+
+- [LLP Registration: Process, Cost and Timeline](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026)
+- [LLP vs Private Limited Company](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india)
+- [Annual ROC Filing for Companies](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc)
+- [DSC and DIN Application Guide](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)
+- [Company Incorporation Services](https://agrawalkhandelwal.com/company-incorporation)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+US Cross-Border
+
+# Setting Up an Indian Subsidiary for a US C-Corp: Steps and Compliance
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- Most service and software businesses can be 100% owned by a US parent under the automatic route. Restricted sectors and land-border investors need approval.
+- A private company needs two members, so a nominee holds one share for the parent.
+- One director must have stayed in India 182 days in the previous financial year (s.149(3)).
+- Report the foreign investment on FC-GPR within 30 days of allotment.
+- Services to the US parent need arm's-length pricing and, above the threshold, Form 3CEB.
+- Keep contracts and key decisions in the US to limit permanent establishment risk.
+
+Running a US LLC or C-Corp from India?
+
+Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC from $850 a year, C-Corp from $1,250 a year.
+
+[Book a US compliance call](https://agrawalkhandelwal.com/consult?partner=mehul)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+A US C-Corp that wants an engineering, support or sales team in India usually does it through a wholly owned Indian private limited company. The set-up is straightforward. The compliance that follows is where US parents get caught, especially on FEMA reporting and transfer pricing.
+
+## FDI Route and Eligibility
+
+Most service and software businesses fall under the automatic route, which needs no prior government or RBI approval. A few sectors are restricted or need approval, and investors from countries sharing a land border with India need government approval under Press Note 3. Check your sector against the current FDI policy before incorporating. Our [foreign subsidiary registration guide](https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi) and [FDI routes guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide) cover this in detail.
+
+## Two Shareholders and the Nominee
+
+A private limited company needs at least two members. A US parent therefore holds almost all the shares and a nominee, often a director or a related individual, holds one share on its behalf, with a declaration that the nominee holds for the parent. Record the nominee holding properly. Do not leave it informal, since the registers and filings need the right beneficial ownership details.
+
+## Resident Director
+
+Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for at least 182 days in the previous financial year. It is counted over the financial year, not a calendar year. In practice parents either appoint a trusted India-based manager or use a professional director. Pick someone who understands the duties, since a director carries statutory liability.
+
+## Incorporation Sequence
+
+- Digital signature certificates and director identification numbers for the proposed directors (see [DSC and DIN](https://agrawalkhandelwal.com/blog/dsc-din-application-director-guide)).
+- Name reservation and SPICe+ incorporation, with the parent's documents apostilled or notarised as required.
+- PAN and TAN, and GST registration if the Indian company will invoice.
+- Open the company bank account and remit the share capital from the US parent.
+- Allot shares to the parent and the nominee.
+
+Foreign documents from the US must be properly authenticated for Indian filings, so start that early.
+
+## FC-GPR Within 30 Days of Allotment
+
+Foreign investment received for shares must be reported to RBI on Form FC-GPR through the FIRMS portal within 30 days of allotment, with a valuation certificate and supporting documents. Funds should come in through normal banking channels, and shares generally need to be allotted within the permitted window after the money arrives. A late filing is regularised through the RBI late submission fee, so build the date into your closing checklist. The company also files the annual FLA return once it has foreign investment.
+
+## Transfer Pricing on Services to the US Parent
+
+When the Indian company provides services to its US parent, that is an international transaction with an associated enterprise, and it must be priced at arm's length. Where the value of such transactions crosses the prescribed threshold, the Indian company files an accountant's report on Form 3CEB and keeps transfer pricing documentation. Our [Form 3CEB guide](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) covers due dates and penalties. A cost-plus model is the usual starting point for captive service companies, and the mark-up must be supportable by a benchmarking study, not chosen casually.
+
+## Indian Corporate Tax Options
+
+An Indian private limited company owned by a foreign parent is still a domestic company for tax purposes. It can pay tax at the regular rate (25% or 30% depending on turnover, plus surcharge and cess) or opt for the lower concessional regime, which has a 22% base rate and gives up certain exemptions and incentives, bringing the effective rate to roughly 25% after surcharge and cess. The concessional regime is a one-way election, and section numbers have changed under the Income Tax Act, 2025, so confirm the current section and rate when you decide. Dividends paid to the US parent attract Indian withholding tax, which the India-US treaty can reduce. See [the India-US DTAA guide](https://agrawalkhandelwal.com/blog/india-us-dtaa-guide).
+
+## Permanent Establishment Risk
+
+A subsidiary is not automatically a permanent establishment of its parent. It becomes a risk when the Indian team habitually concludes contracts for the parent, the parent's executives run the business from India, or the subsidiary acts as a dependent agent. The India-US treaty also has a services permanent establishment test based on the presence of personnel. Keep contracts signed in the US, document who takes decisions and where, and avoid treating the Indian entity as a branch. Also watch where the US company is actually managed, since place of effective management can make a foreign company Indian-resident if control sits in India.
+
+## Annual Compliance Checklist
+
+- Statutory audit, AOC-4 and MGT-7 filings (see [annual ROC filing](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc)).
+- Income tax return, advance tax, and TDS compliance.
+- GST returns if registered.
+- FLA return and any FEMA reporting for fresh investment.
+- Form 3CEB and transfer pricing documentation.
+
+If you are still deciding whether the parent should be a Delaware company at all, read [our flip structure guide](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide). For the wider picture, see [our startup advisory](https://agrawalkhandelwal.com/startups) and [US cross-border services](https://agrawalkhandelwal.com/us-cross-border).
+
+### More Guides on This Topic
+
+- [FDI in India: Routes, Sectoral Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide)
+- [Overseas Direct Investment (ODI): Rules & Compliance Guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india)
+- [NRI GAAR Exposure: When Anti-Avoidance Rules Apply to Cross-Border Structures](https://agrawalkhandelwal.com/blog/nri-gaar-cross-border-structures)
+
+Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Income Tax Department e-filing portal](https://www.incometax.gov.in), [Reserve Bank of India](https://www.rbi.org.in).
+
+### Setting up an Indian subsidiary?
+
+We handle incorporation, FEMA reporting and transfer pricing for US-owned Indian subsidiaries.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[US Cross-Border Services](https://agrawalkhandelwal.com/us-cross-border)
+
+## Frequently Asked Questions
+
+### Can a US company own 100% of an Indian private limited company?
+
+Yes in most sectors under the automatic route. A private limited company needs two members, so a nominee holds one share on behalf of the parent. Some sectors are restricted or need approval, so check the sector first.
+
+### Does the Indian subsidiary need a resident director?
+
+Yes. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for at least 182 days in the previous financial year.
+
+### When is FC-GPR due?
+
+Within 30 days of allotment of shares to the foreign investor, filed on the RBI FIRMS portal. A late filing is regularised through the RBI late submission fee.
+
+### Is Form 3CEB required for services to the US parent?
+
+If the value of international transactions with the parent crosses the prescribed threshold, yes. The Indian company files the accountant's report on Form 3CEB and keeps documentation showing the price is at arm's length. Check the current threshold and due date at filing time.
+
+### What tax rate does the Indian subsidiary pay?
+
+It is taxed as a domestic company: the regular 25% or 30% depending on turnover, or the concessional regime at a 22% base rate that gives up certain deductions. Surcharge and cess apply on top. Confirm the current section and rate under the Income Tax Act, 2025 when you choose.
+
+### Does an Indian subsidiary create a permanent establishment for the US parent?
+
+Not automatically. Risk arises if the Indian team habitually concludes contracts for the parent, if the parent is managed from India, or if the subsidiary acts as a dependent agent. Contract signing and decision-making should be kept and documented in the US.
+
+### Related Guides
+
+- [Foreign Subsidiary Registration in India (FDI Route)](https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi)
+- [Form 3CEB: Transfer Pricing Audit Report](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report)
+- [India-US DTAA Guide](https://agrawalkhandelwal.com/blog/india-us-dtaa-guide)
+- [India to US Flip Structure](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+- [Startup Advisory](https://agrawalkhandelwal.com/startups)
+- [US Cross-Border Services](https://agrawalkhandelwal.com/us-cross-border)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/msme-1-form-delayed-payment-return
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+Startup Compliance
+
+# MSME-1 Half-Yearly Return: Who Files, Due Dates and Penalty
+
+Published November 18, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- **MSME-1** is a half-yearly return for companies that have **outstanding payments to micro or small enterprise suppliers for more than 45 days**.
+- Due dates: **October 31** for April to September, and **April 30** for October to March. The April to September 2026 return was due October 31, 2026.
+- If no dues to micro and small suppliers are pending beyond 45 days, there is **no return to file**. It is not a nil-return form.
+- The updated form on the MCA V3 portal asks for amounts paid within and after 45 days and the **reasons for delay**.
+- Section 405(4) penalty: **Rs 20,000** on the company plus Rs 1,000 a day of continuing failure, capped at **Rs 3 lakh**. Officers in default are also liable.
+- Delayed payment also has a **tax cost**: see Section 43B(h), covered in our separate post.
+
+A startup that buys from small vendors, such as a freelancer, a printer, a small manufacturer or a software agency registered as a micro or small enterprise, has a legal clock on every invoice. If payment drifts past 45 days, two things can happen: the company may owe interest to the supplier, and it may have to report the delay to the Registrar in Form MSME-1. Founders often meet both for the first time in an audit.
+
+## Who Must File MSME-1
+
+The requirement applies to a company that has obtained goods or services from **micro and small enterprises** and whose payment to any such supplier has been **outstanding for more than 45 days** from the date of acceptance of the goods or services. It rests on the payment rules in Section 15 of the MSMED Act, 2006, and the reporting rule in Section 405 of the Companies Act read with the MCA specified companies order. Medium enterprises are not covered.
+
+Two points are easy to miss. First, the 45 days apply even where the written agreement says 60 or 90 days, because the statute caps the credit period at 45 days where there is a written agreement, and at 15 days where there is none. Second, MSME-1 is filed only if such a delay actually exists. It is not an annual nil-return.
+
+## Due Dates
+
+| Half-year | Covers | Due date |
+| --- | --- | --- |
+| First half | April to September | October 31 |
+| Second half | October to March | April 30 |
+
+The return for April to September 2026 was due on October 31, 2026. We did not find a general MCA extension for it. If you missed it, file now. The next return, for October 2026 to March 2027, is due on April 30, 2027. Add both dates to your [startup compliance calendar](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3).
+
+## What the Return Contains
+
+The return asks for details of each micro or small supplier with dues pending beyond 45 days: the supplier name, PAN, the amount due, the date from which it has been due, and the reason for non-payment. The updated format on the MCA V3 portal also asks for amounts paid within 45 days and amounts paid after 45 days. The Ministry of MSME reiterated the requirement through a notification dated March 25, 2025. We found no sign of a further format change for 2025-26, but check the form on the portal before you file, since MCA revises forms without much notice.
+
+## Penalty for Non-Filing
+
+Section 405 of the Companies Act provides penalties for failing to file the return or for filing incorrect information. Under Section 405(4), the company is liable to a penalty of Rs 20,000, with a further Rs 1,000 for each day the failure continues, subject to a maximum of Rs 3 lakh, and officers in default are also liable. This is not theoretical: Registrars of Companies issued adjudication orders under Section 454 in January 2026 for MSME-1 returns filed years late. We found no filing fee for the form itself.
+
+The larger cost is usually interest. Under the MSMED Act, a buyer who delays payment owes compound interest at three times the bank rate notified by the RBI, and that interest is not deductible. A supplier can also complain through the MSME Samadhaan portal.
+
+## The Tax Link: Section 43B(h)
+
+For income tax, a payment to a micro or small enterprise that is outstanding beyond the permitted 15 or 45 days at year end is deductible only when actually paid. This can raise taxable income in the year of default. We explain it in full in [Section 43B(h) and MSME payment disallowance](https://agrawalkhandelwal.com/blog/section-43bh-msme-payment-disallowance-buyers). MSME-1 and Section 43B(h) rest on the same 45-day idea, so one supplier ledger can serve both.
+
+## A Simple Process for a Startup
+
+1. Ask every vendor for their Udyam registration and note whether they are micro, small or medium. See our [Udyam registration guide](https://agrawalkhandelwal.com/blog/udyam-registration-for-msmes-process-benefits-and-eligibility).
+2. Put the 45-day limit in your vendor agreements and the payables calendar.
+3. Two weeks before each half-year end, run an ageing of payables to micro and small suppliers.
+4. If any dues are past 45 days at the end of the half-year and not paid, file MSME-1 with the reasons.
+5. Clear the oldest dues before March 31 to protect the Section 43B(h) deduction.
+
+If you are unsure which of your vendors counts as micro or small, our [startup advisory](https://agrawalkhandelwal.com/startups) team can review your payables and set up the checks.
+
+**Official sources:** Section 405 of the Companies Act, 2013; Section 15 of the MSMED Act, 2006; Ministry of MSME notification of March 25, 2025. See [Ministry of Corporate Affairs](https://www.mca.gov.in/).
+
+### More Guides on This Topic
+
+- [Startup Advisory for Foreign Investors Investing in India](https://agrawalkhandelwal.com/blog/startup-advisory-foreign-investors-india)
+- [Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST](https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst)
+- [Startup Compliance Calendar: Year 1 to Year 3 Checklist](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)
+
+Need this handled for you? See our [startup advisory](https://agrawalkhandelwal.com/startups), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Startup India](https://www.startupindia.gov.in), [Ministry of Corporate Affairs](https://www.mca.gov.in).
+
+### Owe small vendors beyond 45 days?
+
+We age your payables, tell you whether MSME-1 is due and protect your Section 43B(h) deduction.
+
+[Book a Consultation](https://agrawalkhandelwal.com/consult)[Startup Advisory](https://agrawalkhandelwal.com/startups)
+
+## Frequently Asked Questions
+
+### Who has to file MSME-1?
+
+A company that has bought goods or services from micro or small enterprises and has payments outstanding for more than 45 days from acceptance. If there are no such dues at the end of a half-year, no return is needed.
+
+### What are the due dates for MSME-1?
+
+October 31 for the April to September half-year and April 30 for the October to March half-year. The April to September 2026 return was due October 31, 2026, and the next is due April 30, 2027.
+
+### Is MSME-1 required if there are no delayed payments?
+
+No. It is filed only where dues to micro or small suppliers are pending beyond 45 days. It is not a nil-return form.
+
+### What is the penalty for not filing MSME-1?
+
+Under Section 405(4) of the Companies Act, the company faces a penalty of Rs 20,000, plus Rs 1,000 for each day the failure continues, up to Rs 3 lakh. Officers in default are also liable. Registrars have issued adjudication orders under Section 454 for delayed MSME-1 filings.
+
+### Did the MSME-1 format change in 2025-26?
+
+The updated form on the MCA V3 portal asks for amounts paid within and after 45 days and reasons for delay, and the Ministry of MSME reiterated the requirement on March 25, 2025. We found no further change for 2025-26, but check the portal before filing.
+
+### How is MSME-1 linked to Section 43B(h)?
+
+Both use the 45-day rule. MSME-1 is a Companies Act reporting form, while Section 43B(h) of the Income-tax Act makes the expense deductible only on payment if the dues to a micro or small supplier remain unpaid at year end.
+
+### Related Guides
+
+- [Section 43B(h) MSME Payment Disallowance](https://agrawalkhandelwal.com/blog/section-43bh-msme-payment-disallowance-buyers)
+- [Startup Compliance Calendar, Year 1 to 3](https://agrawalkhandelwal.com/blog/startup-compliance-calendar-year-1-3)
+- [Udyam Registration Guide](https://agrawalkhandelwal.com/blog/udyam-registration-for-msmes-process-benefits-and-eligibility)
+- [Startup Advisory Services](https://agrawalkhandelwal.com/startups)
+
+---
+
 Source: https://agrawalkhandelwal.com/blog/last-date-to-claim-itc-fy-2025-26
 
 [← Back to Insights](https://agrawalkhandelwal.com/blog)
@@ -30167,7 +31427,7 @@ TL;DR
 - The same cut-off applies to credit notes and to corrections of FY 2025-26 errors in GSTR-1 and GSTR-3B.
 - Credit missed by the cut-off is lost permanently. There is no late fee route to recover it.
 
-Next deadline: November 30, 2026 (in 20 days)
+Next deadline: November 30, 2026 (in 12 days)
 
 Last date to claim ITC of the previous financial year. All registered taxpayers (or the date GSTR-9 is filed, if earlier). We can prepare and file it for you before the date.
 

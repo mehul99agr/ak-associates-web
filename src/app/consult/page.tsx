@@ -7,7 +7,7 @@ import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Book a Consultation',
-  description: `Book a ${CONSULT_OFFER.minutes}-minute call with a Chartered Accountant for ₹${CONSULT_OFFER.price} (adjusted against fees); you also get our WhatsApp number. Email is always free.`,
+  description: `Book a ${CONSULT_OFFER.minutes}-minute call with a Chartered Accountant for ${CONSULT_OFFER.priceLabel} (${CONSULT_OFFER.usdApprox}), adjusted against fees. Google Meet, any time zone. Email is always free.`,
   alternates: { canonical: 'https://agrawalkhandelwal.com/consult' },
   openGraph: {
     title: 'Book a Consultation | Agrawal Khandelwal & Associates LLP',

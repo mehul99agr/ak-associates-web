@@ -253,6 +253,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/startup-bank-account-opening-documents-and-common-rejections`, lastModified: new Date('2026-09-13'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/57th-gst-council-meeting-key-recommendations`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/itr-due-date-audit-cases-ay-2026-27-extended`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/private-limited-company-registration-cost-india-2026`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/inc-20a-commencement-of-business-declaration`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/delaware-franchise-tax-assumed-par-value-method`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/llp-registration-process-cost-india-2026`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/india-to-us-flip-structure-guide`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/dpt-3-return-of-deposits-due-date-startups`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/form-5472-penalty-foreign-owned-llc`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/llp-annual-compliance-form-8-form-11-due-dates`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/indian-subsidiary-of-us-c-corp-setup-compliance`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/msme-1-form-delayed-payment-return`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/blog/last-date-to-claim-itc-fy-2025-26`, lastModified: new Date('2026-10-09'), changeFrequency: 'monthly', priority: 0.85 },
   ]
 }

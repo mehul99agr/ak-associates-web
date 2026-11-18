@@ -1244,3 +1244,11 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
 - **Still to do:** Oct 19-20 and Nov 18-19 extension rechecks; GSC pull + second title round
   (Oct 19-25); GSTR-9, advance tax, FAST-DS refreshes (Nov); belated return refresh (early
   Dec); "upcoming deadline" callouts on the top 10 posts; Consent Mode v2 (done Nov 10, 2026).
+
+## International bookings push (Nov 18, 2026)
+- **User goal:** ~200 clicks/day and 2 paid calls/day, mainly from 4 segments: Indian incorporation (LLP + Pvt Ltd only), NRI, US compliance, startup compliance in India. Use X + LinkedIn + CAclubindia/TaxGuru for audience.
+- GSC 28 days (Oct 20-Nov 16): 1,070 clicks / 118k impr / 0.9% CTR / pos 8.2. Not falling (Nov 16 best day, 69 clicks). Non-India clicks ~3/day; US-segment pages 9 clicks. Judge progress by international bookings, not total clicks.
+- **Call price now Rs 1,000** (`src/lib/consult.ts`, was Rs 999). Zoho charges INR via Razorpay, so the site shows "about US$11". `CONSULT_BOOKING_URL_INTL` (null) shows a "Pay in US$" button once a USD event (e.g. Zoho + Stripe) exists.
+- Zoho findings: zero real bookings to date (only a "Payment Failure" test); trial ends ~Nov 25; slots 11:00-15:15 IST only (US visitors cannot book). User to: change Zoho price/description, add 7:30-10:30 PM IST slots, confirm Razorpay international cards, upgrade plan.
+- 10 buyer-intent posts published (dated Nov 18): pvt ltd registration cost, LLP registration, LLP Form 8/11, INC-20A, DPT-3, MSME-1, Delaware franchise tax APV, Form 5472 penalty, India-US flip, Indian subsidiary of US C-Corp. Drafted by Sonnet subagents; secondary-source figures are worded qualitatively in the posts.
+- Drafts awaiting user approval (scratchpad, not in repo): 2-week X/LinkedIn calendar, 2 CAclubindia + 1 TaxGuru guest articles.
