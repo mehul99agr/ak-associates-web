@@ -14,10 +14,11 @@ displayed on this site after moderation."
 Live URLs: to be added once published. Past CAclubindia articles had in-body links stripped to
 plain text (see the Sep 21, 2026 note in CLAUDE.md), so check for a real `<a href>` when they go live.
 
-## TaxGuru (saved as DRAFT Nov 18, 2026, not yet sent for publication)
+## TaxGuru (submitted Nov 18, 2026, awaiting editorial review)
 "TDS on Purchase of Property from an NRI After October 1, 2026: Schedule E of Form 141 vs TAN and
 Form 144". https://taxguru.in/submit-article/ now returns 404. Submissions go through
-https://taxguru.in/submit-post/ (logged in as Mehul Agrawal). Saved as a draft. Sending it
-needs the Terms and Conditions box ticked; left for the user. TaxGuru's form warns that purely
+https://taxguru.in/submit-post/ (logged in as Mehul Agrawal). Saved as a draft, then submitted
+after the user accepted TaxGuru's terms. Confirmation: "Your article has been submitted. It will be
+published after review by our editorial team." TaxGuru's form warns that purely
 AI-generated articles are not accepted.
 Form 141 due date updated per the incometax.gov.in Form 141 FAQ: one month from the end of the month of deduction.
