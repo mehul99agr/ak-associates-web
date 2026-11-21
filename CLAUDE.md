@@ -422,3 +422,7 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - **Privacy policy** covers Web3Forms, Google Calendar, WebMCP requests and maps on four pages. Update it when a new
   data flow is added.
 - **Open question:** GBP "Opening date" is January 2024, but the site says founded 2023.
+- **Titles (checked Nov 21, 2026):** the Sep "~176 long titles" note is stale. Live: 0 titles over 77 chars; the
+  only ones over 60 are pages with the " | Agrawal Khandelwal & Associates LLP" suffix, whose keyword part is under 60
+  chars, so Google truncates only the brand tail. Deliberately NOT shortened (brand rule; renaming ranking pages risks CTR).
+- **Breadcrumbs:** every sitemap page has BreadcrumbList. Use `src/app/_components/BreadcrumbLd.tsx` on new pages.
