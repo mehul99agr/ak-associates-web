@@ -44,7 +44,7 @@ const faqs: [string, string][] = [
   ['Which companies can use transfer pricing safe harbour rules in India?', 'Eligible categories include software development services, ITES/BPO services, KPO services, specified contract R&D in software and pharmaceuticals, intra-group loans, corporate guarantees, and low-value-adding intra-group services. Eligibility depends on the detailed notified definitions and conditions for each category.'],
   ['How do I opt in for safe harbour transfer pricing in India?', 'The taxpayer opts in through Form 3CEFA, filed within the applicable time limit alongside the return of income. The company should first confirm its transaction and operating model genuinely satisfy the eligibility requirements before filing.'],
   ['Are safe harbour margins always better than TNMM benchmarking?', 'No. Safe harbour may require a higher prescribed margin than an independent TNMM study would support for the same business. It is valuable where the certainty of a reduced audit and documentation burden outweighs the additional tax cost.'],
-  ['Does safe harbour remove the need to file Form 3CEB?', 'No. Where international transactions exceed Rs 1 crore, Form 3CEB is still required and is due October 31. Safe harbour changes the arm\'s length approach used for eligible transactions; it does not remove the basic reporting obligation.'],
+  ['Does safe harbour remove the need to file Form 3CEB?', 'No. Form 3CEB is still required for any international transaction and is due October 31. Safe harbour changes the arm\'s length approach used for eligible transactions; it does not remove the basic reporting obligation.'],
 ]
 
 const faqLd = buildFaqLd(faqs)

@@ -42,7 +42,7 @@ const articleLd = buildArticleLd({
 const faqs: [string, string][] = [
   ['Does every Indian subsidiary need a Master File in Form 3CEAA?', 'No. Test the Form 3CEAA thresholds first. Part A is triggered when aggregate international transactions exceed Rs 50 crore, while the detailed Part B generally requires consolidated group revenue above Rs 500 crore plus either Rs 50 crore in international transactions or Rs 10 crore in intangible-property transactions.'],
   ['What is the difference between Form 3CEB and the Local File?', 'Form 3CEB is the CA-certified transfer pricing report filed electronically with the tax department. The Local File is the detailed transaction-level documentation (agreements, benchmarking, and financial reconciliations) that supports the arm\'s length pricing reported in Form 3CEB.'],
-  ['When is CbCR required in India?', 'CbCR is relevant to multinational groups with consolidated revenue above Rs 5,500 crore in the preceding accounting year. It applies to an Indian parent entity, an alternate reporting entity, or in limited cases an Indian constituent entity of a foreign group where the parent jurisdiction does not exchange the report with India.'],
+  ['When is CbCR required in India?', 'CbCR is relevant to multinational groups with consolidated revenue above Rs 6,400 crore in the preceding accounting year. It applies to an Indian parent entity, an alternate reporting entity, or in limited cases an Indian constituent entity of a foreign group where the parent jurisdiction does not exchange the report with India.'],
   ['What is Form 3CEAC used for?', 'Form 3CEAC is the Country-by-Country Reporting notification form. An Indian constituent entity of a qualifying multinational group uses it to identify the reporting entity and the jurisdiction where that entity is tax resident, ahead of the actual CbCR filing in Form 3CEAD.'],
   ['Can a foreign parent company\'s Master File be used in India?', 'Yes, the group can prepare the underlying Master File centrally at headquarters, but the Indian constituent entity remains responsible for satisfying Form 3CEAA requirements locally. The group-level content must be complete, current, and mapped correctly to the Indian prescribed format.'],
 ]
@@ -75,7 +75,7 @@ export default function MasterFileLocalFileCbCRBlog() {
                   <li style={{ marginBottom: '0.4rem' }}><Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB</Link> applies where international transactions exceed Rs 1 crore, but it is only the accountant&apos;s report; not the full documentation.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Part A of Form 3CEAA (Master File) triggers where international transactions exceed <strong>Rs 50 crore</strong>.</li>
                   <li style={{ marginBottom: '0.4rem' }}>Full Master File reporting (Part B) generally applies when consolidated group revenue exceeds <strong>Rs 500 crore</strong> plus prescribed transaction thresholds.</li>
-                  <li style={{ marginBottom: 0 }}>CbCR is relevant only to MNC groups with consolidated revenue above <strong>Rs 5,500 crore</strong>: not ordinary Indian subsidiaries.</li>
+                  <li style={{ marginBottom: 0 }}>CbCR is relevant only to MNC groups with consolidated revenue above <strong>Rs 6,400 crore</strong>: not ordinary Indian subsidiaries.</li>
                 </ul>
               </div>
 
@@ -90,8 +90,8 @@ export default function MasterFileLocalFileCbCRBlog() {
                     <tr><td style={tdAltStyle}>Local File</td><td style={tdAltStyle}>Rule 10D documentation</td><td style={tdAltStyle}>Same trigger as Form 3CEB</td></tr>
                     <tr><td style={tdStyle}>Master File; basic</td><td style={tdStyle}>Form 3CEAA Part A</td><td style={tdStyle}>International transactions above Rs 50 crore</td></tr>
                     <tr><td style={tdAltStyle}>Master File; full</td><td style={tdAltStyle}>Form 3CEAA Part B</td><td style={tdAltStyle}>Group revenue &gt; Rs 500 crore + Rs 50cr transactions or Rs 10cr intangibles</td></tr>
-                    <tr><td style={tdStyle}>CbCR notification</td><td style={tdStyle}>Form 3CEAC</td><td style={tdStyle}>Group revenue above Rs 5,500 crore</td></tr>
-                    <tr><td style={tdAltStyle}>CbCR report</td><td style={tdAltStyle}>Form 3CEAD</td><td style={tdAltStyle}>Group revenue above Rs 5,500 crore</td></tr>
+                    <tr><td style={tdStyle}>CbCR notification</td><td style={tdStyle}>Form 3CEAC</td><td style={tdStyle}>Group revenue above Rs 6,400 crore</td></tr>
+                    <tr><td style={tdAltStyle}>CbCR report</td><td style={tdAltStyle}>Form 3CEAD</td><td style={tdAltStyle}>Group revenue above Rs 6,400 crore</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -118,7 +118,7 @@ export default function MasterFileLocalFileCbCRBlog() {
               <p>Form 3CEAA is generally due on or before the transfer pricing return deadline, typically November 30. Do not wait until November to request the file from headquarters; group-level data often needs sign-off across legal, tax, finance, and treasury teams in several countries.</p>
 
               <h2>CbCR: Who Actually Needs It</h2>
-              <p>Country-by-Country Reporting targets very large multinational groups; it is not a routine filing for every foreign-owned Indian company. The threshold is consolidated group revenue above <strong>Rs 5,500 crore</strong> in the preceding accounting year. CbCR becomes relevant where:</p>
+              <p>Country-by-Country Reporting targets very large multinational groups; it is not a routine filing for every foreign-owned Indian company. The threshold is consolidated group revenue above <strong>Rs 6,400 crore</strong> in the preceding accounting year. CbCR becomes relevant where:</p>
               <ul>
                 <li>The ultimate parent entity is resident in India</li>
                 <li>An Indian entity is designated as an alternate reporting entity</li>
@@ -134,7 +134,7 @@ export default function MasterFileLocalFileCbCRBlog() {
                   <tbody>
                     <tr><td style={tdStyle}>Rs 1.5cr service payment, small group</td><td style={tdStyle}>Yes</td><td style={tdStyle}>Yes</td><td style={tdStyle}>No</td><td style={tdStyle}>No</td></tr>
                     <tr><td style={tdAltStyle}>Rs 75cr transactions, group revenue Rs 300cr</td><td style={tdAltStyle}>Yes</td><td style={tdAltStyle}>Yes</td><td style={tdAltStyle}>Part A likely</td><td style={tdAltStyle}>No</td></tr>
-                    <tr><td style={tdStyle}>Rs 75cr transactions, group revenue Rs 1,000cr</td><td style={tdStyle}>Yes</td><td style={tdStyle}>Yes</td><td style={tdStyle}>Part A + B likely</td><td style={tdStyle}>Only if group &gt; Rs 5,500cr</td></tr>
+                    <tr><td style={tdStyle}>Rs 75cr transactions, group revenue Rs 1,000cr</td><td style={tdStyle}>Yes</td><td style={tdStyle}>Yes</td><td style={tdStyle}>Part A + B likely</td><td style={tdStyle}>Only if group &gt; Rs 6,400cr</td></tr>
                     <tr><td style={tdAltStyle}>Subsidiary of Rs 10,000cr global group</td><td style={tdAltStyle}>Depends on own transactions</td><td style={tdAltStyle}>Depends on own transactions</td><td style={tdAltStyle}>Depends on thresholds</td><td style={tdAltStyle}>Notification review required</td></tr>
                   </tbody>
                 </table>

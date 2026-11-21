@@ -868,7 +868,7 @@ Led by CA Mehul Agrawal, the partner who handles all of our international tax wo
 
 ## What is Transfer Pricing?
 
-Transfer pricing refers to the prices charged on transactions between related entities in a multinational group; royalties, management fees, inter-company loans, or service charges between a parent company and its subsidiary. Indian law under Section 92 of the Income Tax Act requires these prices to reflect the **arm's length standard**: what unrelated parties would charge for the same transaction under comparable conditions. These prices must be documented annually and certified by a Chartered Accountant in **Form 3CEB** before the due date; failure to do so triggers penalties of 2% of the transaction value.
+Transfer pricing refers to the prices charged on transactions between related entities in a multinational group; royalties, management fees, inter-company loans, or service charges between a parent company and its subsidiary. Indian law under Section 92 of the Income Tax Act requires these prices to reflect the **arm's length standard**: what unrelated parties would charge for the same transaction under comparable conditions. These prices must be documented annually and certified by a Chartered Accountant in **Form 3CEB** before the due date. Missing it attracts a ₹1 lakh penalty, and failing to keep the supporting documentation can cost 2% of the transaction value.
 
 Arm's Length Price (ALP)
 
@@ -884,7 +884,7 @@ High-value transactions between related Indian entities (₹20 crore+) also subj
 
 Form 3CEB
 
-Mandatory CA-certified report listing all international related-party transactions above ₹1 crore; the base threshold for Indian TP compliance.
+Mandatory CA-certified report on every international related-party transaction, whatever its value; the base obligation of Indian TP compliance.
 
 Compliance Thresholds
 
@@ -892,13 +892,13 @@ Compliance Thresholds
 
 India's TP compliance structure is tiered by transaction value. Most MNC subsidiaries and Indian companies with foreign group entities will trigger at least the basic Form 3CEB requirement.
 
-₹1 crore+
+Any amount
 
 International Transactions
 
-Form 3CEB (Section 92E) mandatory
+Form 3CEB (Section 92E) mandatory for every international transaction
 
-₹1 crore+ (same as Form 3CEB)
+₹1 crore+ in aggregate
 
 Detailed TP Documentation
 
@@ -970,11 +970,11 @@ TP Questions
 
 ### Who needs to comply with transfer pricing in India?
 
-Any Indian company that has related-party international transactions must comply with transfer pricing under Section 92 of the Income Tax Act. This includes: MNC subsidiaries in India transacting with their foreign parent or group entities, Indian companies with foreign subsidiaries, and joint ventures with foreign partners. Even a single transaction; a royalty payment, management fee, inter-company loan, or software service; above ₹1 crore triggers the Form 3CEB requirement.
+Any Indian company that has related-party international transactions must comply with transfer pricing under Section 92 of the Income Tax Act. This includes: MNC subsidiaries in India transacting with their foreign parent or group entities, Indian companies with foreign subsidiaries, and joint ventures with foreign partners. Even a single transaction (a royalty payment, management fee, inter-company loan, or software service) triggers the Form 3CEB requirement, whatever its value. Detailed Rule 10D documentation is also required once aggregate international transactions exceed ₹1 crore.
 
 ### What is the penalty for non-compliance with transfer pricing in India?
 
-The penalties are severe: (1) Failure to maintain TP documentation; penalty of 2% of the value of international transactions; (2) Concealment of income through TP manipulation; penalty of 100–300% of the tax sought to be evaded; (3) Late or incorrect filing of Form 3CEB; ₹1 lakh per default. Beyond penalties, a TP audit can result in a significant upward adjustment to your taxable income, with interest running from the original assessment date.
+The penalties are separate and can stack: (1) Failure to furnish Form 3CEB: a flat ₹1 lakh (Section 271BA); (2) Failure to keep or maintain TP documentation, or reporting incorrect information: 2% of the value of each international transaction (Section 271AA); (3) Failure to produce documents when the Transfer Pricing Officer asks: 2% of the transaction value (Section 271G); (4) Income under-reported because of a TP adjustment: 50% of the tax on it, rising to 200% where it is misreported (Section 270A). Beyond penalties, a TP audit can result in a significant upward adjustment to your taxable income, with interest running from the original assessment date.
 
 ### What transfer pricing method is best for an Indian subsidiary providing IT services to a US parent?
 
@@ -986,7 +986,7 @@ Yes. An APA (Advance Pricing Agreement) with the CBDT provides certainty on the 
 
 ### What is the difference between Form 3CEB, Rule 10D documentation, and the Master File?
 
-These are distinct compliance requirements under India's transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions; mandatory for any company with related-party transactions above ₹1 crore. Rule 10D requires detailed contemporaneous documentation of the Indian entity's transactions with its foreign related parties, triggered at the same ₹1 crore threshold as Form 3CEB. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group's business, structure, and TP policies; required when the group's consolidated revenue exceeds ₹500 crore (with additional international-transaction-value tests). Where multiple Indian group entities must file a Master File, Form 3CEAB is used to designate a single entity to file on the group's behalf; it is not a separate "Local File" requirement.
+These are distinct compliance requirements under India's transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions; mandatory for any company with an international transaction, whatever its value, or specified domestic transactions above ₹20 crore. Rule 10D requires detailed contemporaneous documentation of the Indian entity's transactions with its foreign related parties once aggregate international transactions exceed ₹1 crore. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group's business, structure, and TP policies; required when the group's consolidated revenue exceeds ₹500 crore (with additional international-transaction-value tests). Where multiple Indian group entities must file a Master File, Form 3CEAB is used to designate a single entity to file on the group's behalf; it is not a separate "Local File" requirement.
 
 Further Reading
 
@@ -3034,7 +3034,7 @@ Transfer PricingAugust 10, 2026
 
 ## Master File vs Local File vs CbCR: What Indian Subsidiaries Must Prepare
 
-Thresholds and content for the three-tier TP documentation structure: Master File (Rs 500cr), Local File, and CbCR (Rs 5,500cr).
+Thresholds and content for the three-tier TP documentation structure: Master File (Rs 500cr), Local File, and CbCR (Rs 6,400cr).
 
 [Read guide: Master File vs Local File vs CbCR: What Indian Subsidiaries Must Prepare](https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india)
 
@@ -7674,7 +7674,7 @@ July 11, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawa
 
 TL;DR
 
-- International transactions with associated enterprises above Rs 1 crore in a year need a CA-certified Form 3CEB and supporting Local File documentation.
+- Any international transaction with an associated enterprise needs a CA-certified Form 3CEB; above Rs 1 crore in aggregate, supporting Local File documentation is also required.
 - Master File (Form 3CEAA) Part A applies above Rs 50 crore of international transactions; Part B adds a Rs 500 crore consolidated group revenue test.
 - Country-by-Country Reporting applies to groups with consolidated revenue of Rs 6,400 crore or more.
 - For FY 2025-26, Form 3CEB was due October 31, 2026 and the return for transfer pricing cases is due November 30, 2026.
@@ -7686,10 +7686,10 @@ Every Indian company that transacts with an overseas parent, subsidiary, or grou
 
 Indian transfer pricing obligations scale with transaction volume and group size:
 
-- **Tier 1; Form 3CEB (₹1 crore+ in international related-party transactions):** A CA-certified report listing all international transactions with associated enterprises and specifying the transfer pricing method applied to each. This is the base obligation. No exemption for small companies, newly incorporated entities, or startups with foreign parents. See our [full Form 3CEB guide](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for the filing process and penalties.
-- **Tier 2; Local File (same ₹1 crore+ trigger as Form 3CEB):** Detailed documentation of each significant transaction category: economic analysis, benchmarking, functional analysis (functions performed, assets used, risks assumed), and financial data. The Local File is what makes the Form 3CEB filing defensible; it is not a separate higher-threshold filing.
+- **Tier 1; Form 3CEB (any international related-party transaction):** A CA-certified report listing all international transactions with associated enterprises and specifying the transfer pricing method applied to each. This is the base obligation. No exemption for small companies, newly incorporated entities, or startups with foreign parents. See our [full Form 3CEB guide](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for the filing process and penalties.
+- **Tier 2; Local File (₹1 crore+ in aggregate international transactions):** Detailed documentation of each significant transaction category: economic analysis, benchmarking, functional analysis (functions performed, assets used, risks assumed), and financial data. The Local File is what makes the Form 3CEB filing defensible; it is kept on record, not filed, and is required once international transactions exceed ₹1 crore in aggregate.
 - **Tier 3; Master File (Form 3CEAA):** Part A applies where international transactions exceed ₹50 crore. The detailed Part B applies where consolidated group revenue exceeds ₹500 crore, together with either ₹50 crore in international transactions or ₹10 crore in intangible-property transactions. Due alongside the TP income tax return, typically November 30. See our [Master File vs Local File vs CbCR guide](https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india) for the full threshold breakdown.
-- **Tier 4; CbCR (Group consolidated revenue ₹5,500 crore+):** Country-by-Country Report (Form 3CEAD) filed 12 months after the end of the reporting accounting year, disclosing revenue, profit/loss, taxes paid, and headcount for each jurisdiction in which the group operates.
+- **Tier 4; CbCR (Group consolidated revenue ₹6,400 crore+):** Country-by-Country Report (Form 3CEAD) filed 12 months after the end of the reporting accounting year, disclosing revenue, profit/loss, taxes paid, and headcount for each jurisdiction in which the group operates.
 
 ## Documentation Checklist; What to Prepare Before October
 
@@ -7706,11 +7706,11 @@ This checklist covers the items required for Form 3CEB and Local File. Start col
 
 ## Due Dates at a Glance
 
-- **October 31:** Form 3CEB filing due (for companies with non-TP tax audit; i.e., most Indian subsidiaries)
-- **November 30:** Form 3CEB due for TP audit cases; Master File (Form 3CEAA) due; Income Tax Return for TP companies
+- **October 31:** Form 3CEB filing due (one month before the November 30 return due date)
+- **November 30:** Master File (Form 3CEAA) due; Income Tax Return for companies with international transactions
 - **12 months after fiscal year end:** CbCR (Form 3CEAD) due
 
-Penalty for failing to furnish Form 3CEB itself (Section 271BA): a flat ₹1 lakh, regardless of transaction value; see our [Form 3CEB guide](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for the full filing process. A separate, larger penalty (Section 271AA) applies for failing to maintain proper documentation or furnishing incorrect particulars: up to 2% of the value of each such international transaction. Penalty for concealment or misreporting of income arising from TP adjustments runs 100-300% of tax on the adjusted amount.
+Penalty for failing to furnish Form 3CEB itself (Section 271BA): a flat ₹1 lakh, regardless of transaction value; see our [Form 3CEB guide](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for the full filing process. A separate, larger penalty (Section 271AA) applies for failing to maintain proper documentation or furnishing incorrect particulars: up to 2% of the value of each such international transaction. Income under-reported because of a TP adjustment attracts a penalty of 50% of the tax on it, rising to 200% where it is misreported (Section 270A).
 
 ## What Triggers a TP Audit
 
@@ -7752,7 +7752,7 @@ We prepare Form 3CEB, Local File, and Master File documentation for Indian entit
 
 ### What is the threshold for transfer pricing documentation in India?
 
-Any Indian entity with international related-party transactions exceeding ₹1 crore in aggregate in a financial year must get a Form 3CEB report certified by a Chartered Accountant and file it with the income tax return. This ₹1 crore threshold covers all international transactions with associated enterprises combined, not per transaction. Above ₹100 crore in related-party transactions, the entity must also maintain a Local File. Group revenue above ₹1,000 crore triggers a Master File obligation, and above ₹5,500 crore triggers Country-by-Country Reporting (CbCR).
+Any Indian entity with an international related-party transaction in a financial year, whatever its value, must get a Form 3CEB report certified by a Chartered Accountant and file it one month before the income tax return. Once international transactions with associated enterprises exceed ₹1 crore in aggregate, the entity must also keep detailed Rule 10D documentation (the Local File). Consolidated group revenue above ₹500 crore, with ₹50 crore of international transactions or ₹10 crore of intangible-property transactions, triggers the full Master File, and group revenue above ₹6,400 crore triggers Country-by-Country Reporting (CbCR).
 
 ### What is the most commonly used transfer pricing method for IT and BPO companies in India?
 
@@ -7760,7 +7760,7 @@ The Transactional Net Margin Method (TNMM) is the most widely used TP method for
 
 ### What is the due date for filing Form 3CEB in India?
 
-Form 3CEB must be filed on or before October 31 of the assessment year (i.e., by October 31, 2026 for FY 2025-26 transactions) for companies not subject to a transfer pricing audit. For companies referred to the Transfer Pricing Officer for audit, the extended due date is November 30. Missing the Form 3CEB deadline attracts a penalty of 2% of the value of each international transaction for which the report was not filed, in addition to interest on any tax shortfall.
+Form 3CEB must be filed on or before October 31 of the assessment year (i.e., by October 31, 2026 for FY 2025-26 transactions) for companies not subject to a transfer pricing audit. For companies referred to the Transfer Pricing Officer for audit, the extended due date is November 30. Failing to furnish Form 3CEB attracts a flat penalty of ₹1 lakh (Section 271BA). Failing to keep the required documentation can separately cost 2% of the value of each international transaction (Section 271AA), in addition to interest on any tax shortfall.
 
 ### What triggers a transfer pricing audit in India?
 
@@ -7845,7 +7845,7 @@ If the same company had invoiced only Rs 10.70 crore, its margin would have been
 
 ## Document the Method Selection Before Filing
 
-For each material transaction, maintain a concise method-selection memorandum covering the transaction and contractual terms, functions/assets/risks of each party, why the selected method is the most appropriate, why alternatives are less reliable, the search strategy and accept/reject rationale for comparables, and the final arm's length conclusion; this memorandum is often the first document requested if a [transfer pricing audit](https://agrawalkhandelwal.com/blog/transfer-pricing-audit-assessment-india) is opened. Where international transactions exceed [Rs 1 crore, Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) and due October 31; the underlying analysis should not be prepared only after a notice arrives.
+For each material transaction, maintain a concise method-selection memorandum covering the transaction and contractual terms, functions/assets/risks of each party, why the selected method is the most appropriate, why alternatives are less reliable, the search strategy and accept/reject rationale for comparables, and the final arm's length conclusion; this memorandum is often the first document requested if a [transfer pricing audit](https://agrawalkhandelwal.com/blog/transfer-pricing-audit-assessment-india) is opened. [Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for any international transaction, whatever its value, and is due October 31; detailed Rule 10D documentation applies once the aggregate exceeds Rs 1 crore; the underlying analysis should not be prepared only after a notice arrives.
 
 **Official sources:** Section 92C of the Income-tax Act, 1961 and Rules 10B and 10C of the Income-tax Rules, 1962 (methods and most appropriate method). See [Income Tax Department (CBDT)](https://incometaxindia.gov.in/).
 
@@ -8023,7 +8023,7 @@ No. Safe harbour may require a higher prescribed margin than an independent TNMM
 
 ### Does safe harbour remove the need to file Form 3CEB?
 
-No. Where international transactions exceed Rs 1 crore, Form 3CEB is still required and is due October 31. Safe harbour changes the arm's length approach used for eligible transactions; it does not remove the basic reporting obligation.
+No. Form 3CEB is still required for any international transaction and is due October 31. Safe harbour changes the arm's length approach used for eligible transactions; it does not remove the basic reporting obligation.
 
 ### Related Guides
 
@@ -8209,7 +8209,7 @@ Safe harbour may be considered by eligible software development and ITES compani
 
 ## Year-End Operating Controls
 
-A finance controller should not wait for Form 3CEB season to test the margin. Review the cost-plus outcome quarterly, focusing on the actual operating-cost base versus the contractual cost base, excluded pass-through or reimbursed costs, employee utilisation and bench costs, foreign exchange treatment, and related-party invoices raised and collected. Where international transactions exceed [Rs 1 crore, Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) and due October 31; a well-managed year-end true-up is usually easier to defend than a large adjustment booked after the accounts are closed.
+A finance controller should not wait for Form 3CEB season to test the margin. Review the cost-plus outcome quarterly, focusing on the actual operating-cost base versus the contractual cost base, excluded pass-through or reimbursed costs, employee utilisation and bench costs, foreign exchange treatment, and related-party invoices raised and collected. [Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for any international transaction, whatever its value, and is due October 31; detailed Rule 10D documentation applies once the aggregate exceeds Rs 1 crore; a well-managed year-end true-up is usually easier to defend than a large adjustment booked after the accounts are closed.
 
 ## Documentation That Withstands Review
 
@@ -8403,7 +8403,7 @@ The UAE introduced Corporate Tax at 9%, effective June 2023, with a framework th
 
 ## The Indian Compliance Position
 
-Indian companies must identify and benchmark international transactions with UAE associated enterprises; this can include services, royalties, loans, guarantees, purchases, sales, cost allocations, and management fees. Where international transactions exceed [Rs 1 crore, Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) and due October 31. The Indian entity should maintain contemporaneous documentation explaining the transaction, functional profile, selected method, and arm's length outcome. For large groups, [Master File and CbCR](https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india) obligations may also need review: Master File Part A triggers at Rs 50 crore international transactions, Part B at Rs 500 crore consolidated group revenue plus Rs 50 crore transactions or Rs 10 crore intangibles, and CbCR only above Rs 5,500 crore consolidated group revenue.
+Indian companies must identify and benchmark international transactions with UAE associated enterprises; this can include services, royalties, loans, guarantees, purchases, sales, cost allocations, and management fees. [Form 3CEB is required](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for any international transaction, whatever its value, and is due October 31; detailed Rule 10D documentation applies once the aggregate exceeds Rs 1 crore. The Indian entity should maintain contemporaneous documentation explaining the transaction, functional profile, selected method, and arm's length outcome. For large groups, [Master File and CbCR](https://agrawalkhandelwal.com/blog/master-file-local-file-cbcr-india) obligations may also need review: Master File Part A triggers at Rs 50 crore international transactions, Part B at Rs 500 crore consolidated group revenue plus Rs 50 crore transactions or Rs 10 crore intangibles, and CbCR only above Rs 6,400 crore consolidated group revenue.
 
 ## The UAE Compliance Position
 
@@ -8479,7 +8479,7 @@ Yes. Free Zone entities must still consider UAE transfer pricing and related-par
 
 ### Is Form 3CEB required for transactions with a UAE group company?
 
-Form 3CEB is required where international transactions exceed Rs 1 crore, including qualifying transactions with UAE associated enterprises. It is due October 31, following the same rules that apply to any other foreign group transaction.
+Yes. Form 3CEB is required for any international transaction with an associated enterprise, including a UAE group company, whatever its value. It is due October 31, following the same rules that apply to any other foreign group transaction.
 
 ### Can the India-UAE DTAA provide relief from transfer pricing double taxation?
 
@@ -11161,7 +11161,7 @@ A foreign company creates a PE, and becomes taxable on Indian-source business pr
 
 ### What documentation is needed for related-party cross-border transactions?
 
-Transactions between related entities in different countries must be priced at arm's length, with Transfer Pricing documentation (Master File, Local File, Form 3CEB) required for transactions exceeding Rs 1 crore under Sections 92-92F of the Income Tax Act.
+Transactions between related entities in different countries must be priced at arm's length, with a Form 3CEB report required for any such transaction and detailed documentation once they exceed Rs 1 crore in aggregate, under Sections 92-92F of the Income Tax Act.
 
 ### Reviewed By
 
@@ -11715,7 +11715,7 @@ TL;DR
 - [Form 3CEB](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) applies where international transactions exceed Rs 1 crore, but it is only the accountant's report; not the full documentation.
 - Part A of Form 3CEAA (Master File) triggers where international transactions exceed **Rs 50 crore**.
 - Full Master File reporting (Part B) generally applies when consolidated group revenue exceeds **Rs 500 crore** plus prescribed transaction thresholds.
-- CbCR is relevant only to MNC groups with consolidated revenue above **Rs 5,500 crore**: not ordinary Indian subsidiaries.
+- CbCR is relevant only to MNC groups with consolidated revenue above **Rs 6,400 crore**: not ordinary Indian subsidiaries.
 
 Indian transfer pricing compliance follows the OECD's three-tier documentation approach: a Local File with detailed evidence supporting the pricing of Indian related-party transactions, a Master File giving a high-level picture of the group's global business and TP policies, and a Country-by-Country Report showing revenue, profit, and tax by jurisdiction. These are different documents with different purposes; one filing does not satisfy the others. An Indian subsidiary might need only a simple Form 3CEB, or it might face the full package including Form 3CEAA and CbCR notifications, depending on transaction values, group revenue, and its role in the multinational group.
 
@@ -11727,8 +11727,8 @@ Indian transfer pricing compliance follows the OECD's three-tier documentation a
 | Local File | Rule 10D documentation | Same trigger as Form 3CEB |
 | Master File; basic | Form 3CEAA Part A | International transactions above Rs 50 crore |
 | Master File; full | Form 3CEAA Part B | Group revenue > Rs 500 crore + Rs 50cr transactions or Rs 10cr intangibles |
-| CbCR notification | Form 3CEAC | Group revenue above Rs 5,500 crore |
-| CbCR report | Form 3CEAD | Group revenue above Rs 5,500 crore |
+| CbCR notification | Form 3CEAC | Group revenue above Rs 6,400 crore |
+| CbCR report | Form 3CEAD | Group revenue above Rs 6,400 crore |
 
 Thresholds must be checked against the relevant year, group accounts, and notified exchange-rate rules; a group can be below the threshold one year and above it the next.
 
@@ -11757,7 +11757,7 @@ Form 3CEAA is generally due on or before the transfer pricing return deadline, t
 
 ## CbCR: Who Actually Needs It
 
-Country-by-Country Reporting targets very large multinational groups; it is not a routine filing for every foreign-owned Indian company. The threshold is consolidated group revenue above **Rs 5,500 crore** in the preceding accounting year. CbCR becomes relevant where:
+Country-by-Country Reporting targets very large multinational groups; it is not a routine filing for every foreign-owned Indian company. The threshold is consolidated group revenue above **Rs 6,400 crore** in the preceding accounting year. CbCR becomes relevant where:
 
 - The ultimate parent entity is resident in India
 - An Indian entity is designated as an alternate reporting entity
@@ -11772,7 +11772,7 @@ Form 3CEAC is the notification form identifying the reporting entity and its tax
 | --- | --- | --- | --- | --- |
 | Rs 1.5cr service payment, small group | Yes | Yes | No | No |
 | Rs 75cr transactions, group revenue Rs 300cr | Yes | Yes | Part A likely | No |
-| Rs 75cr transactions, group revenue Rs 1,000cr | Yes | Yes | Part A + B likely | Only if group > Rs 5,500cr |
+| Rs 75cr transactions, group revenue Rs 1,000cr | Yes | Yes | Part A + B likely | Only if group > Rs 6,400cr |
 | Subsidiary of Rs 10,000cr global group | Depends on own transactions | Depends on own transactions | Depends on thresholds | Notification review required |
 
 ## A Practical Annual Workflow
@@ -11807,7 +11807,7 @@ Form 3CEB is the CA-certified transfer pricing report filed electronically with 
 
 ### When is CbCR required in India?
 
-CbCR is relevant to multinational groups with consolidated revenue above Rs 5,500 crore in the preceding accounting year. It applies to an Indian parent entity, an alternate reporting entity, or in limited cases an Indian constituent entity of a foreign group where the parent jurisdiction does not exchange the report with India.
+CbCR is relevant to multinational groups with consolidated revenue above Rs 6,400 crore in the preceding accounting year. It applies to an Indian parent entity, an alternate reporting entity, or in limited cases an Indian constituent entity of a foreign group where the parent jurisdiction does not exchange the report with India.
 
 ### What is Form 3CEAC used for?
 

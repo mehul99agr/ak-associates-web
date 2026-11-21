@@ -643,7 +643,7 @@ export const posts = [
     slug: 'master-file-local-file-cbcr-india',
     date: 'August 10, 2026',
     category: 'Transfer Pricing',
-    summary: 'Thresholds and content for the three-tier TP documentation structure: Master File (Rs 500cr), Local File, and CbCR (Rs 5,500cr).',
+    summary: 'Thresholds and content for the three-tier TP documentation structure: Master File (Rs 500cr), Local File, and CbCR (Rs 6,400cr).',
   },
   {
     title: 'Form 3CEB: Due Date, Filing Process & Penalties (FY 2026-27)',

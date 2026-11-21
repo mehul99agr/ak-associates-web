@@ -66,13 +66,13 @@ const services = [
 const thresholds = [
   {
     type: 'International Transactions',
-    threshold: '₹1 crore+',
-    requirement: 'Form 3CEB (Section 92E) mandatory',
+    threshold: 'Any amount',
+    requirement: 'Form 3CEB (Section 92E) mandatory for every international transaction',
     color: 'var(--accent)',
   },
   {
     type: 'Detailed TP Documentation',
-    threshold: '₹1 crore+ (same as Form 3CEB)',
+    threshold: '₹1 crore+ in aggregate',
     requirement: 'Rule 10D contemporaneous documentation',
     color: 'var(--warning)',
   },
@@ -93,11 +93,11 @@ const thresholds = [
 const faqs = [
   {
     q: 'Who needs to comply with transfer pricing in India?',
-    a: 'Any Indian company that has related-party international transactions must comply with transfer pricing under Section 92 of the Income Tax Act. This includes: MNC subsidiaries in India transacting with their foreign parent or group entities, Indian companies with foreign subsidiaries, and joint ventures with foreign partners. Even a single transaction; a royalty payment, management fee, inter-company loan, or software service; above ₹1 crore triggers the Form 3CEB requirement.',
+    a: 'Any Indian company that has related-party international transactions must comply with transfer pricing under Section 92 of the Income Tax Act. This includes: MNC subsidiaries in India transacting with their foreign parent or group entities, Indian companies with foreign subsidiaries, and joint ventures with foreign partners. Even a single transaction (a royalty payment, management fee, inter-company loan, or software service) triggers the Form 3CEB requirement, whatever its value. Detailed Rule 10D documentation is also required once aggregate international transactions exceed ₹1 crore.',
   },
   {
     q: 'What is the penalty for non-compliance with transfer pricing in India?',
-    a: 'The penalties are severe: (1) Failure to maintain TP documentation; penalty of 2% of the value of international transactions; (2) Concealment of income through TP manipulation; penalty of 100–300% of the tax sought to be evaded; (3) Late or incorrect filing of Form 3CEB; ₹1 lakh per default. Beyond penalties, a TP audit can result in a significant upward adjustment to your taxable income, with interest running from the original assessment date.',
+    a: 'The penalties are separate and can stack: (1) Failure to furnish Form 3CEB: a flat ₹1 lakh (Section 271BA); (2) Failure to keep or maintain TP documentation, or reporting incorrect information: 2% of the value of each international transaction (Section 271AA); (3) Failure to produce documents when the Transfer Pricing Officer asks: 2% of the transaction value (Section 271G); (4) Income under-reported because of a TP adjustment: 50% of the tax on it, rising to 200% where it is misreported (Section 270A). Beyond penalties, a TP audit can result in a significant upward adjustment to your taxable income, with interest running from the original assessment date.',
   },
   {
     q: 'What transfer pricing method is best for an Indian subsidiary providing IT services to a US parent?',
@@ -109,7 +109,7 @@ const faqs = [
   },
   {
     q: 'What is the difference between Form 3CEB, Rule 10D documentation, and the Master File?',
-    a: 'These are distinct compliance requirements under India\'s transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions; mandatory for any company with related-party transactions above ₹1 crore. Rule 10D requires detailed contemporaneous documentation of the Indian entity\'s transactions with its foreign related parties, triggered at the same ₹1 crore threshold as Form 3CEB. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group\'s business, structure, and TP policies; required when the group\'s consolidated revenue exceeds ₹500 crore (with additional international-transaction-value tests). Where multiple Indian group entities must file a Master File, Form 3CEAB is used to designate a single entity to file on the group\'s behalf; it is not a separate "Local File" requirement.',
+    a: 'These are distinct compliance requirements under India\'s transfer pricing regulations: Form 3CEB is a CA-certified report listing all international and specified domestic transactions; mandatory for any company with an international transaction, whatever its value, or specified domestic transactions above ₹20 crore. Rule 10D requires detailed contemporaneous documentation of the Indian entity\'s transactions with its foreign related parties once aggregate international transactions exceed ₹1 crore. The Master File (Form 3CEAA) provides a high-level overview of the entire multinational group\'s business, structure, and TP policies; required when the group\'s consolidated revenue exceeds ₹500 crore (with additional international-transaction-value tests). Where multiple Indian group entities must file a Master File, Form 3CEAB is used to designate a single entity to file on the group\'s behalf; it is not a separate "Local File" requirement.',
   },
 ]
 
@@ -158,14 +158,14 @@ export default function TransferPricingPage() {
           <div className="container" style={{ maxWidth: '820px' }}>
             <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>What is Transfer Pricing?</h2>
             <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.9, marginBottom: '1.75rem' }}>
-              Transfer pricing refers to the prices charged on transactions between related entities in a multinational group; royalties, management fees, inter-company loans, or service charges between a parent company and its subsidiary. Indian law under Section 92 of the Income Tax Act requires these prices to reflect the <strong style={{ color: 'var(--text-main)' }}>arm&apos;s length standard</strong>: what unrelated parties would charge for the same transaction under comparable conditions. These prices must be documented annually and certified by a Chartered Accountant in <strong style={{ color: 'var(--text-main)' }}>Form 3CEB</strong> before the due date; failure to do so triggers penalties of 2% of the transaction value.
+              Transfer pricing refers to the prices charged on transactions between related entities in a multinational group; royalties, management fees, inter-company loans, or service charges between a parent company and its subsidiary. Indian law under Section 92 of the Income Tax Act requires these prices to reflect the <strong style={{ color: 'var(--text-main)' }}>arm&apos;s length standard</strong>: what unrelated parties would charge for the same transaction under comparable conditions. These prices must be documented annually and certified by a Chartered Accountant in <strong style={{ color: 'var(--text-main)' }}>Form 3CEB</strong> before the due date. Missing it attracts a ₹1 lakh penalty, and failing to keep the supporting documentation can cost 2% of the transaction value.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1rem' }}>
               {[
                 { term: 'Arm\'s Length Price (ALP)', def: 'The price that independent, unrelated parties would agree on for the same transaction under comparable conditions.' },
                 { term: 'Related Party', def: 'Two entities where one controls the other directly or indirectly, or both are controlled by a common parent company.' },
                 { term: 'Specified Domestic Transaction', def: 'High-value transactions between related Indian entities (₹20 crore+) also subject to Indian transfer pricing rules.' },
-                { term: 'Form 3CEB', def: 'Mandatory CA-certified report listing all international related-party transactions above ₹1 crore; the base threshold for Indian TP compliance.' },
+                { term: 'Form 3CEB', def: 'Mandatory CA-certified report on every international related-party transaction, whatever its value; the base obligation of Indian TP compliance.' },
               ].map((item, i) => (
                 <div key={i} style={{ background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
                   <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '0.88rem' }}>{item.term}</div>

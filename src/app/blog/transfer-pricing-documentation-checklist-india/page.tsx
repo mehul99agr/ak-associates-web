@@ -42,7 +42,7 @@ const faqLd = {
       name: 'What is the threshold for transfer pricing documentation in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Any Indian entity with international related-party transactions exceeding ₹1 crore in aggregate in a financial year must get a Form 3CEB report certified by a Chartered Accountant and file it with the income tax return. This ₹1 crore threshold covers all international transactions with associated enterprises combined, not per transaction. Above ₹100 crore in related-party transactions, the entity must also maintain a Local File. Group revenue above ₹1,000 crore triggers a Master File obligation, and above ₹5,500 crore triggers Country-by-Country Reporting (CbCR).',
+        text: 'Any Indian entity with an international related-party transaction in a financial year, whatever its value, must get a Form 3CEB report certified by a Chartered Accountant and file it one month before the income tax return. Once international transactions with associated enterprises exceed ₹1 crore in aggregate, the entity must also keep detailed Rule 10D documentation (the Local File). Consolidated group revenue above ₹500 crore, with ₹50 crore of international transactions or ₹10 crore of intangible-property transactions, triggers the full Master File, and group revenue above ₹6,400 crore triggers Country-by-Country Reporting (CbCR).',
       },
     },
     {
@@ -58,7 +58,7 @@ const faqLd = {
       name: 'What is the due date for filing Form 3CEB in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Form 3CEB must be filed on or before October 31 of the assessment year (i.e., by October 31, 2026 for FY 2025-26 transactions) for companies not subject to a transfer pricing audit. For companies referred to the Transfer Pricing Officer for audit, the extended due date is November 30. Missing the Form 3CEB deadline attracts a penalty of 2% of the value of each international transaction for which the report was not filed, in addition to interest on any tax shortfall.',
+        text: 'Form 3CEB must be filed on or before October 31 of the assessment year (i.e., by October 31, 2026 for FY 2025-26 transactions) for companies not subject to a transfer pricing audit. For companies referred to the Transfer Pricing Officer for audit, the extended due date is November 30. Failing to furnish Form 3CEB attracts a flat penalty of ₹1 lakh (Section 271BA). Failing to keep the required documentation can separately cost 2% of the value of each international transaction (Section 271AA), in addition to interest on any tax shortfall.',
       },
     },
     {
@@ -102,7 +102,7 @@ export default function TPDocumentationChecklist() {
                 <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                   <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                   <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                    <li style={{ marginBottom: '0.4rem' }}>International transactions with associated enterprises above Rs 1 crore in a year need a CA-certified Form 3CEB and supporting Local File documentation.</li>
+                    <li style={{ marginBottom: '0.4rem' }}>Any international transaction with an associated enterprise needs a CA-certified Form 3CEB; above Rs 1 crore in aggregate, supporting Local File documentation is also required.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Master File (Form 3CEAA) Part A applies above Rs 50 crore of international transactions; Part B adds a Rs 500 crore consolidated group revenue test.</li>
                     <li style={{ marginBottom: '0.4rem' }}>Country-by-Country Reporting applies to groups with consolidated revenue of Rs 6,400 crore or more.</li>
                     <li style={{ marginBottom: '0.4rem' }}>For FY 2025-26, Form 3CEB was due October 31, 2026 and the return for transfer pricing cases is due November 30, 2026.</li>
@@ -115,10 +115,10 @@ export default function TPDocumentationChecklist() {
                 <h2>The Four Tiers of Indian TP Compliance</h2>
                 <p>Indian transfer pricing obligations scale with transaction volume and group size:</p>
                 <ul>
-                  <li><strong>Tier 1; Form 3CEB (₹1 crore+ in international related-party transactions):</strong> A CA-certified report listing all international transactions with associated enterprises and specifying the transfer pricing method applied to each. This is the base obligation. No exemption for small companies, newly incorporated entities, or startups with foreign parents. See our <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>full Form 3CEB guide</Link> for the filing process and penalties.</li>
-                  <li><strong>Tier 2; Local File (same ₹1 crore+ trigger as Form 3CEB):</strong> Detailed documentation of each significant transaction category: economic analysis, benchmarking, functional analysis (functions performed, assets used, risks assumed), and financial data. The Local File is what makes the Form 3CEB filing defensible; it is not a separate higher-threshold filing.</li>
+                  <li><strong>Tier 1; Form 3CEB (any international related-party transaction):</strong> A CA-certified report listing all international transactions with associated enterprises and specifying the transfer pricing method applied to each. This is the base obligation. No exemption for small companies, newly incorporated entities, or startups with foreign parents. See our <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>full Form 3CEB guide</Link> for the filing process and penalties.</li>
+                  <li><strong>Tier 2; Local File (₹1 crore+ in aggregate international transactions):</strong> Detailed documentation of each significant transaction category: economic analysis, benchmarking, functional analysis (functions performed, assets used, risks assumed), and financial data. The Local File is what makes the Form 3CEB filing defensible; it is kept on record, not filed, and is required once international transactions exceed ₹1 crore in aggregate.</li>
                   <li><strong>Tier 3; Master File (Form 3CEAA):</strong> Part A applies where international transactions exceed ₹50 crore. The detailed Part B applies where consolidated group revenue exceeds ₹500 crore, together with either ₹50 crore in international transactions or ₹10 crore in intangible-property transactions. Due alongside the TP income tax return, typically November 30. See our <Link href="/blog/master-file-local-file-cbcr-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Master File vs Local File vs CbCR guide</Link> for the full threshold breakdown.</li>
-                  <li><strong>Tier 4; CbCR (Group consolidated revenue ₹5,500 crore+):</strong> Country-by-Country Report (Form 3CEAD) filed 12 months after the end of the reporting accounting year, disclosing revenue, profit/loss, taxes paid, and headcount for each jurisdiction in which the group operates.</li>
+                  <li><strong>Tier 4; CbCR (Group consolidated revenue ₹6,400 crore+):</strong> Country-by-Country Report (Form 3CEAD) filed 12 months after the end of the reporting accounting year, disclosing revenue, profit/loss, taxes paid, and headcount for each jurisdiction in which the group operates.</li>
                 </ul>
 
                 <h2>Documentation Checklist; What to Prepare Before October</h2>
@@ -136,11 +136,11 @@ export default function TPDocumentationChecklist() {
 
                 <h2>Due Dates at a Glance</h2>
                 <ul>
-                  <li><strong>October 31:</strong> Form 3CEB filing due (for companies with non-TP tax audit; i.e., most Indian subsidiaries)</li>
-                  <li><strong>November 30:</strong> Form 3CEB due for TP audit cases; Master File (Form 3CEAA) due; Income Tax Return for TP companies</li>
+                  <li><strong>October 31:</strong> Form 3CEB filing due (one month before the November 30 return due date)</li>
+                  <li><strong>November 30:</strong> Master File (Form 3CEAA) due; Income Tax Return for companies with international transactions</li>
                   <li><strong>12 months after fiscal year end:</strong> CbCR (Form 3CEAD) due</li>
                 </ul>
-                <p>Penalty for failing to furnish Form 3CEB itself (Section 271BA): a flat ₹1 lakh, regardless of transaction value; see our <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB guide</Link> for the full filing process. A separate, larger penalty (Section 271AA) applies for failing to maintain proper documentation or furnishing incorrect particulars: up to 2% of the value of each such international transaction. Penalty for concealment or misreporting of income arising from TP adjustments runs 100-300% of tax on the adjusted amount.</p>
+                <p>Penalty for failing to furnish Form 3CEB itself (Section 271BA): a flat ₹1 lakh, regardless of transaction value; see our <Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB guide</Link> for the full filing process. A separate, larger penalty (Section 271AA) applies for failing to maintain proper documentation or furnishing incorrect particulars: up to 2% of the value of each such international transaction. Income under-reported because of a TP adjustment attracts a penalty of 50% of the tax on it, rising to 200% where it is misreported (Section 270A).</p>
 
                 <h2>What Triggers a TP Audit</h2>
                 <p>CBDT&apos;s risk-based selection framework targets cases where:</p>
