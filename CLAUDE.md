@@ -1286,8 +1286,8 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
 - `book-consultation` SKILL.md and `llms.txt` describe the free call and the tools. Re-run
   `scripts/generate-agent-files.py` after editing a SKILL.md (digests).
 - **Google Business Profile (Nov 21):** booking links are now `https://agrawalkhandelwal.com/consult` (PREFERRED)
-  plus a pre-existing `wa.me/91...` link the user set up earlier; the old preferred link
+  only (the user's old `wa.me` booking link and WhatsApp chat entry were removed on Nov 21 at the user's request,
+  matching the site's no-WhatsApp rule); the old preferred link
   `calendar.app.google/DRd1KFnX9Lz2ChXs6` was replaced. Description's last line changed from "Book a FREE 30-minute
   consultation today." to "Book a free 15-minute intro call through the Book online button." (URLs are not
-  allowed in GBP descriptions). GBP also shows WhatsApp as the chat method and has no public phone number;
-  both left as the user had them.
+  allowed in GBP descriptions). GBP has no public phone number (left as the user had it).
