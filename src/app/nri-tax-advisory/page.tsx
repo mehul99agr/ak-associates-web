@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
 import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
@@ -107,7 +108,7 @@ const faqLd = {
   ],
 }
 
-const bookingLink = `${BOOKING_LINK}?partner=mehul`
+const bookingLink = `${BOOKING_LINK}?topic=nri-tax`
 const emailLink = 'mailto:mehul@agrawalkhandelwal.com'
 
 const services = [
@@ -408,6 +409,8 @@ export default function NRITaxAdvisory() {
             </div>
           </div>
         </section>
+
+        <ServiceEnquiry topic="nri-tax" />
 
         {/* CTA */}
         <section className="section bg-surface">

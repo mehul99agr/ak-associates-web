@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = `${BOOKING_LINK}?partner=mehul`
+const bookingLink = `${BOOKING_LINK}?topic=startups`
 
 const earlyStageServices = [
   {
@@ -385,6 +386,8 @@ export default function StartupsPage() {
             </div>
           </div>
         </section>
+
+        <ServiceEnquiry topic="startups" />
 
         {/* CTA */}
         <section className="section">

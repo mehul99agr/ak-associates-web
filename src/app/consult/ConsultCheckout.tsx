@@ -4,16 +4,18 @@ import { CONSULT_BOOKING_URL, CONSULT_BOOKING_URL_INTL, CONSULT_HOST, CONSULT_OF
 // Booking and payment both happen on Zoho Bookings (see src/lib/consult.ts).
 export default function ConsultCheckout() {
   return (
-    <div className="card" style={{ maxWidth: '560px', margin: '0 auto', display: 'flex', flexDirection: 'column', border: '2px solid var(--primary)' }}>
+    <div className="card" style={{ transform: 'none', display: 'flex', flexDirection: 'column', border: '2px solid var(--primary)', height: '100%' }}>
+      <span className="section-badge" style={{ alignSelf: 'flex-start' }}>Detailed advice</span>
       <h2 style={{ fontSize: '1.4rem', marginBottom: '0.35rem' }}>{CONSULT_OFFER.title}</h2>
       <p style={{ color: 'var(--text-light)', margin: 0 }}>With {CONSULT_HOST}</p>
-      <p style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--primary)', margin: '0.5rem 0', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)' }}>
+      <p style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--primary)', margin: '0.5rem 0 0.25rem', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)' }}>
         {CONSULT_OFFER.priceLabel}
       </p>
-      <p style={{ color: 'var(--text-light)', margin: '0 0 1rem', fontSize: '0.95rem' }}>
+      <p style={{ fontWeight: 700, color: 'var(--success)', margin: '0 0 0.5rem' }}>{CONSULT_OFFER.headline}</p>
+      <p style={{ color: 'var(--text-light)', margin: '0 0 1rem', fontSize: '0.9rem' }}>
         Outside India? The fee is charged in INR ({CONSULT_OFFER.usdApprox}).
       </p>
-      <ul style={{ color: 'var(--text-light)', lineHeight: 1.8, paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+      <ul style={{ color: 'var(--text-light)', lineHeight: 1.8, paddingLeft: '1.2rem', marginBottom: '1.5rem', flexGrow: 1 }}>
         {CONSULT_OFFER.points.map((pt) => <li key={pt}>{pt}</li>)}
       </ul>
       <TrackedLink

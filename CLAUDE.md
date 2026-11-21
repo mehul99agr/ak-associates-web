@@ -1106,7 +1106,8 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 
 ## Key Decisions Made
 - No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
-- **Paid contact (user decision Oct 15, 2026; revised Nov 10, 2026):** calls are paid, only email is
+- **Paid contact (user decision Oct 15, 2026; revised Nov 10, 2026; SUPERSEDED IN PART Nov 21, 2026 - see
+  "Booking conversion push" below: a free screened 15-min call and an enquiry form now exist):** calls are paid, only email is
   free. Reason: random callers and calendar no-shows. **Current setup (Nov 10):** one product, a 30-minute
   call at Rs 999 (adjusted against fees), booked AND paid on Zoho Bookings (event "30-minute consultation
   call", Full Payment, payment mode Online, 15-min post-buffer, 4-hour minimum notice, 30-day window).
@@ -1135,7 +1136,7 @@ code review. The Sep 25 Opus review's leads were verified and fixed. What change
   double counting); `tools/ResultCTA.tsx` under the NRI TDS, capital gains and SIP results;
   `PostCTA` now used by all blog posts (213 hand-copied CTA blocks converted, 6 posts that had
   none got one). Homepage hero rewritten with NRI / Founder / Business path cards.
-  Contact FORM intentionally not built (user skipped it). Mark `contact_click` as a GA4 key event.
+  Contact FORM intentionally not built (user skipped it) - superseded Nov 21, 2026: built (Web3Forms). Mark `contact_click` as a GA4 key event.
 - **Cookie banner** no longer covers the mobile action bar (`.cookie-banner` sits above it).
   GA only loads after consent, so declined visitors are not tracked.
 - **Google reviews removed completely** (user decision): deleted `GoogleReviews.tsx`, the
@@ -1253,3 +1254,24 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
 - 10 buyer-intent posts published (dated Nov 18): pvt ltd registration cost, LLP registration, LLP Form 8/11, INC-20A, DPT-3, MSME-1, Delaware franchise tax APV, Form 5472 penalty, India-US flip, Indian subsidiary of US C-Corp. Drafted by Sonnet subagents; secondary-source figures are worded qualitatively in the posts.
 - Drafts awaiting user approval (scratchpad, not in repo): 2-week X/LinkedIn calendar, 2 CAclubindia + 1 TaxGuru guest articles.
 - Nov 18 (later): X - 24 single posts scheduled via X's scheduler (Nov 19-Dec 2, 7:30 PM + 9:00 PM IST); 4 threads cannot be scheduled on X web and must be posted manually. X lifted "graduated access" on this account. LinkedIn - 9 posts rewritten in plain practitioner voice (user asked: no AI-sounding language), all 9 scheduled at 8:30 AM IST (Nov 19-Dec 2). LinkedIn scheduling quirk: the time field needs clear + type "8:30 AM" twice before Confirm enables; never press Escape in the dialog (opens "save as draft").
+
+## Booking conversion push (Nov 21, 2026 - user decisions)
+- Why: bookings fell from ~5-7/month (free Google Calendar link, Aug-Oct) to ~0-1 after the paid-only Rs 1,000 call.
+- **Free 15-min intro call + paid 30-min call side by side on `/consult`.** The free call is screened by the
+  enquiry form (topic, country, timeline, message); only non-"just exploring" visitors see the booking link
+  after submitting. `FREE_CALL_BOOKING_URL` in `src/lib/consult.ts` is a **Google Calendar appointment
+  schedule** (`calendar.app.google/bpXoaqzsoohX36Zf6`, "15 min call with CA Mehul Agrawal"). Zoho's free plan
+  allows only one event, so Zoho keeps the paid 30-min call and Google Calendar takes the free one (user, Nov 21).
+  The old 30-min Google link (`Ln2Xg6PeDQ4dTrgT7`) is NOT used.
+- **Enquiry form** `src/app/EnquiryForm.tsx` posts to Web3Forms (`api.web3forms.com`, added to CSP connect-src).
+  Access key is in `consult.ts` (public by design; form "Website Enquiries" on the user's Web3Forms account,
+  mehul@agrawalkhandelwal.com). `NEXT_PUBLIC_WEB3FORMS_KEY` overrides it. With no key the form falls back to a mailto. Fires GA4 `generate_lead`. Used on /consult, /contact and, via
+  `ServiceEnquiry.tsx`, above the closing CTA of the 7 service pages.
+- Service-page and blog `ServiceOffer` booking links now use `/consult?topic=<slug>` (slugs in `ENQUIRY_TOPICS`),
+  which preselects the form topic. `?partner=` is still ignored.
+- Paid card headline: "Fully adjusted against our fee if you engage us". Company-incorporation "Free Advisory
+  Call" buttons now say "Book a Free 15-min Call" (it is genuinely free now).
+- `/consult/booked` (noindex, not in sitemap): set as Zoho Bookings' redirect-after-booking URL; fires GA4
+  `booking_complete` (value 1000 INR). User to mark `booking_complete` and `generate_lead` as GA4 key events.
+- **Still unchanged on purpose (user, Nov 21):** no phone numbers, `tel:` or `wa.me` anywhere; no reviews or
+  testimonials block. "What happens on the call" + partner photos added to /consult instead.

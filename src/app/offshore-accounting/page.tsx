@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
 import Icon from '../Icon'
 import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = `${BOOKING_LINK}?partner=mehul`
+const bookingLink = `${BOOKING_LINK}?topic=offshore-accounting`
 
 const audiences = [
   {
@@ -343,6 +344,8 @@ export default function OffshoreAccounting() {
             </div>
           </div>
         </section>
+
+        <ServiceEnquiry topic="offshore-accounting" />
 
         {/* CTA */}
         <section className="section">

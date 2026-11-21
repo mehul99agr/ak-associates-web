@@ -27,7 +27,7 @@ export default function FloatingContact() {
   return (
     <>
       {/* Desktop: floating booking button */}
-      <TrackedLink className="book-fab" href={BOOKING} aria-label="Book a 30-minute call" title="Book a 30-minute call" method="booking" location="floating_fab">
+      <TrackedLink className="book-fab" href={BOOKING} aria-label="Book a call: free 15-minute intro or 30-minute advice" title="Book a call: free 15-minute intro or 30-minute advice" method="booking" location="floating_fab">
         <IconCalendar />
       </TrackedLink>
 

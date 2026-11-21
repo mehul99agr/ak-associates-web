@@ -510,7 +510,7 @@ export default function Home() {
             <div className="card" style={{ textAlign: 'center', background: 'var(--primary)', borderColor: 'var(--primary)' }}>
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
-              <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Book a call with a partner to discuss how we can help your business. The booking fee is adjusted against our fee if you engage us.</p>
+              <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem' }}>Start with a free 15-minute intro call, or book 30 minutes of detailed advice. The advice fee is adjusted against our fee if you engage us.</p>
               <a href={bookingLink} className="btn btn-secondary" style={{ marginTop: '1.5rem', width: '100%' }}>
                 Book a Call
               </a>

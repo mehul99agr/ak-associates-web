@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import TrackedLink from '../TrackedLink'
+import EnquiryForm from '../EnquiryForm'
 import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd } from '@/lib/schema'
 
@@ -107,12 +108,18 @@ export default function Contact() {
               <span className="section-badge">Get In Touch</span>
               <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>Talk to a Chartered Accountant</h1>
               <p style={{ color: 'var(--text-light)', fontSize: '1.05rem' }}>
-                Email us free of charge and we reply within one business day. For a call with a partner, book a slot online; the booking fee is adjusted against our fee if you engage us.
+                Send us a question below and we reply within one business day. Prefer to talk? Start with a free 15-minute intro call, or book 30 minutes of detailed advice.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
                 <TrackedLink href={bookingLink} className="btn btn-primary" method="booking" location="contact_page_hero">Book a Consultation</TrackedLink>
                 <TrackedLink href={`mailto:${OFFICES.nashik.email}`} className="btn btn-outline" method="email" location="contact_page_hero">Email Us</TrackedLink>
               </div>
+            </div>
+
+            <div className="card" style={{ maxWidth: '760px', margin: '0 auto 3.5rem', padding: '2rem', transform: 'none' }}>
+              <h2 style={{ fontSize: '1.35rem', marginBottom: '0.35rem' }}>Send us a question</h2>
+              <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem' }}>Free. We reply by email within one business day.</p>
+              <EnquiryForm mode="enquiry" location="contact_page" />
             </div>
 
             {/* Offices */}

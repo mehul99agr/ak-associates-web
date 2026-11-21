@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = `${BOOKING_LINK}?partner=mehul`
+const bookingLink = `${BOOKING_LINK}?topic=us-cross-border`
 
 const services = [
   {
@@ -257,6 +258,8 @@ export default function UsCrossBorder() {
           </div>
         </div>
       </section>
+
+      <ServiceEnquiry topic="us-cross-border" />
 
       {/* CTA */}
       <section className="section">

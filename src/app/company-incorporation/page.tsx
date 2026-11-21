@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
 import { buildBreadcrumbLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
@@ -190,9 +191,9 @@ export default function CompanyIncorporationPage() {
               CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 15–20 working days end-to-end.
             </p>
             <div className="hero-cta">
-              <a href="/consult"
+              <a href="/consult?topic=company-incorporation#free-call"
                 className="btn" style={{ background: 'var(--white)', color: 'var(--primary)', fontWeight: 800 }}>
-                Book Free Advisory Call
+                Book a Free 15-min Call
               </a>
               <Link href="/tools/incorporation-wizard" className="btn btn-secondary">
                 Find My Structure →
@@ -359,6 +360,8 @@ export default function CompanyIncorporationPage() {
           </div>
         </section>
 
+        <ServiceEnquiry topic="company-incorporation" />
+
         {/* CTA */}
         <section style={{ background: 'var(--primary)', padding: '5rem 0' }}>
           <div className="container" style={{ textAlign: 'center', maxWidth: '660px' }}>
@@ -366,11 +369,11 @@ export default function CompanyIncorporationPage() {
               Ready to Incorporate?
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.05rem', marginBottom: '2.5rem', lineHeight: 1.7 }}>
-              Book a free 20-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote: no surprises.
+              Book a free 15-minute call. We&apos;ll confirm the right structure, walk you through the documents, and give you a fixed-price quote: no surprises.
             </p>
-            <a href="/consult"
+            <a href="/consult?topic=company-incorporation#free-call"
               className="btn" style={{ background: 'var(--white)', color: 'var(--primary)', fontWeight: 800 }}>
-              Book Free Advisory Call
+              Book a Free 15-min Call
             </a>
           </div>
         </section>
