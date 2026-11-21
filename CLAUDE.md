@@ -1276,3 +1276,18 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
   `generate_lead` still needs starring as a GA4 key event once it appears under Admin > Events > Recent events.
 - **Still unchanged on purpose (user, Nov 21):** no phone numbers, `tel:` or `wa.me` anywhere; no reviews or
   testimonials block. "What happens on the call" + partner photos added to /consult instead.
+
+## AI-assistant booking (Nov 21, 2026 - user approved options 1 and 2; option 3, an own ChatGPT/Claude MCP app, NOT built)
+- **WebMCP** (`src/app/WebMcpTools.tsx`, mounted in layout.tsx): registers `get_consultation_options` (read-only)
+  and `request_free_call` on `navigator.modelContext` when the browser exposes it; no-op otherwise. The tool
+  submits via the shared `src/lib/enquiry.ts` (same as EnquiryForm, Web3Forms `source: webmcp`, GA4
+  `generate_lead` with `channel: webmcp`). Not testable end-to-end in the user's Chrome (no `modelContext`) as
+  of Nov 21. If the WebMCP spec renames `registerTool`/`provideContext`, update the component.
+- `book-consultation` SKILL.md and `llms.txt` describe the free call and the tools. Re-run
+  `scripts/generate-agent-files.py` after editing a SKILL.md (digests).
+- **Google Business Profile (Nov 21):** booking links are now `https://agrawalkhandelwal.com/consult` (PREFERRED)
+  plus a pre-existing `wa.me/91...` link the user set up earlier; the old preferred link
+  `calendar.app.google/DRd1KFnX9Lz2ChXs6` was replaced. Description's last line changed from "Book a FREE 30-minute
+  consultation today." to "Book a free 15-minute intro call through the Book online button." (URLs are not
+  allowed in GBP descriptions). GBP also shows WhatsApp as the chat method and has no public phone number;
+  both left as the user had them.
