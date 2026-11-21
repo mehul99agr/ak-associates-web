@@ -330,6 +330,13 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   titles using `absolute` without the brand (deliberate from the Aug audit), ~173 meta
   descriptions >165 chars.
 
+- **Transfer pricing (fixed Nov 21, 2026):** Form 3CEB (s.92E) is required for ANY international transaction, whatever
+  its value; Rs 1 crore is only the Rule 10D documentation (Local File) threshold. Penalties: s.271BA Rs 1 lakh for not
+  furnishing 3CEB; s.271AA 2% for missing documentation; s.271G 2% for not producing documents to the TPO; s.270A 50%
+  (under-reporting) / 200% (misreporting). Never cite "100-300% concealment" (old s.271(1)(c)). CbCR threshold is
+  Rs 6,400 crore (raised from 5,500 crore in 2021). Master File Part B: Rs 500 crore group revenue plus Rs 50 crore
+  international transactions or Rs 10 crore intangibles. Form 3CEB is due October 31.
+
 ## Key Decisions Made
 - No dark/light toggle. The site is a light theme with a dark navy hero and footer (not a dark theme; corrected Sep 26, 2026)
 - **Paid contact (user decision Oct 15, 2026; revised Nov 10, 2026; SUPERSEDED IN PART Nov 21, 2026 - see
