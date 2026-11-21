@@ -8,7 +8,7 @@ import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Startup Advisory & CA Services',
-  description: 'CA firm for startups: company incorporation, DPIIT registration, ESOP structuring, Virtual CFO, and FDI/FEMA compliance in Nashik, Sillod, Mumbai and Bangalore, and for founders in the UAE and US.',
+  description: 'Startup CA: incorporation, DPIIT, ESOPs, Virtual CFO and FDI/FEMA compliance for founders in Nashik, Sillod, Mumbai, Bangalore, the UAE and the US.',
   keywords: [
     'CA for startups India', 'startup CA India', 'CA for startups Bangalore',
     'startup advisory Bangalore', 'company incorporation Bangalore',
