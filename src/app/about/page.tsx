@@ -32,7 +32,7 @@ const peopleLd = {
       '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
       name: 'CA Mehul Agrawal',
       jobTitle: 'Partner',
-      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
+      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions, and advising on domestic tax and audit alongside CA Rupesh Khandelwal. UAE Corporate Taxation certified.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
@@ -128,7 +128,8 @@ export default function About() {
                 Structuring. He advises multinational companies on cross-border transactions and helps them optimize
                 tax strategies while maintaining strict regulatory compliance. He holds a UAE Corporate Taxation
                 certification and advises Indian businesses with UAE operations on 9% CT compliance, India-UAE DTAA
-                benefits, and Free Zone entity structuring.
+                benefits, and Free Zone entity structuring. He leads all of the firm&apos;s international tax work,
+                and advises on domestic tax and audit alongside CA Rupesh Khandelwal.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations & Certifications</strong>

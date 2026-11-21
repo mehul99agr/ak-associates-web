@@ -87,7 +87,7 @@ const faqs = [
   },
   {
     q: 'Do you provide CA services in Nashik?',
-    a: 'Yes. Our Nashik office at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Email mehul@agrawalkhandelwal.com or book a consultation online.',
+    a: 'Yes. Our Nashik office at Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Email mehul@agrawalkhandelwal.com or book a consultation online.',
   },
   {
     q: 'Do you have a CA office in Sillod?',
@@ -113,7 +113,7 @@ const peopleLd = {
       '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
       name: 'CA Mehul Agrawal',
       jobTitle: 'Partner',
-      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
+      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions, and advising on domestic tax and audit alongside CA Rupesh Khandelwal. UAE Corporate Taxation certified.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
@@ -254,7 +254,7 @@ export default function Home() {
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
               <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner & International Tax Expert</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
-                Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and enables them to optimize tax strategies while maintaining strict compliance.
+                Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and enables them to optimize tax strategies while maintaining strict compliance. He also advises on domestic tax and audit alongside CA Rupesh Khandelwal.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations & Certifications</strong>
@@ -486,7 +486,7 @@ export default function Home() {
             <span className="section-badge">Get In Touch</span>
             <h2 className="section-title">Ready to Optimize Your Finances?</h2>
             <p style={{ maxWidth: '680px', margin: '0 auto', color: 'var(--text-light)' }}>
-              Book a consultation to discuss your financial goals. We serve clients across Nashik, Sillod, Mumbai, and Bangalore.
+              Book a consultation to discuss your financial goals. We serve clients in Nashik, Sillod, Mumbai and Bangalore, and outside India in the UAE and the US.
             </p>
           </div>
 
@@ -494,7 +494,7 @@ export default function Home() {
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ marginBottom: '1.25rem', color: 'var(--primary)' }}><Icon name="mapPin" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem' }}>Nashik Office</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011</p>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011</p>
               <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', wordBreak: 'break-all' }}>mehul@agrawalkhandelwal.com</a>
             </div>
 
@@ -519,7 +519,7 @@ export default function Home() {
 
           <div style={{ marginTop: '4rem', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--primary)' }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7879464!3d19.1947607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb199f0a712f%3A0x2bb8a26b71bd9b72!2sRam%20Plaza%2C%20Mumbai%20Naka%2C%20Nashik%2C%20Maharashtra%20422011!5e0!3m2!1sen!2sin!4v1717777777777"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7898192!3d19.9877793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb72f06cdfe9%3A0xd08936960d1177d0!2sAgrawal%20Khandelwal%20%26%20Associates%20LLP!5e0!3m2!1sen!2sin!4v1717777777777"
               width="100%"
               height="450"
               style={{ border: 0, display: 'block' }}

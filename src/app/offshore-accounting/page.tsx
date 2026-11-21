@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const bookingLink = `${BOOKING_LINK}?topic=offshore-accounting`
+const bookingLink = `${BOOKING_LINK}?topic=offshore-accounting#free-call`
 
 const audiences = [
   {
@@ -246,7 +246,7 @@ export default function OffshoreAccounting() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1.5rem', maxWidth: '960px', margin: '0 auto' }}>
               {[
-                { step: '01', title: 'Discovery Call', desc: 'We understand your requirements, software, volume, and deadlines in a 30-minute call.' },
+                { step: '01', title: 'Free Intro Call', desc: 'A free 15-minute call to understand your requirements, software, volume, and deadlines.' },
                 { step: '02', title: 'Scope & Pricing', desc: 'Fixed-fee engagement letter signed. NDA executed. Data access set up.' },
                 { step: '03', title: 'Parallel Run', desc: 'First month runs alongside your current process so you can verify our work.' },
                 { step: '04', title: 'Full Handover', desc: 'We take over full responsibility from month 2 with a dedicated point of contact.' },
@@ -291,8 +291,8 @@ export default function OffshoreAccounting() {
                 Start with one seat, scale to a full team
               </h3>
               <p style={{ marginBottom: 0 }}>
-                Most engagements begin small; a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance; and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a short{' '}
-              <a href={bookingLink} style={{ color: 'var(--primary)', fontWeight: 600 }}>discovery call</a>, a fixed-fee scope, and a clean handover.
+                Most engagements begin small; a single dedicated bookkeeper, or a fixed-fee monthly retainer covering bookkeeping and compliance; and grow as trust builds. A first parallel-run month lets you verify our work against your existing process before we take full ownership from month two. From there, scaling to a three-to-five person offshore accounting team is a matter of adding seats, not restarting a hiring search. Whether you run a foreign company with an Indian subsidiary, an overseas accounting practice, or an NRI-owned business, the path in is the same: a free 15-minute{' '}
+              <a href={bookingLink} style={{ color: 'var(--primary)', fontWeight: 600 }}>intro call</a>, a fixed-fee scope, and a clean handover.
               </p>
             </div>
           </div>
@@ -353,11 +353,11 @@ export default function OffshoreAccounting() {
             <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', textAlign: 'center', padding: '4rem 2rem', borderRadius: 'var(--radius-lg)' }}>
               <h2 style={{ color: 'var(--white)', marginBottom: '1rem' }}>Ready to Outsource Your Accounting to India?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '580px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-                Send us your current accounting setup and transaction volume. We'll propose a scope, timeline, and fixed fee within 24 hours.
+                Send us your current accounting setup and transaction volume. We'll propose a scope, timeline, and fixed fee within one business day.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={bookingLink} className="btn btn-accent">
-                  Book a Discovery Call
+                  Book a Free 15-min Call
                 </a>
                 <Link href="/services" className="btn btn-secondary" style={{ background: 'rgba(255,255,255,0.1)' }}>
                   All Services

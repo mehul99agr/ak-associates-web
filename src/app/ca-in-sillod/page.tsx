@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'IN-MH',
     'geo.placename': 'Sillod, Maharashtra, India',
-    'geo.position': '20.1040;75.6496',
-    'ICBM': '20.1040, 75.6496',
+    'geo.position': '20.3055;75.6518',
+    'ICBM': '20.3055, 75.6518',
   },
 }
 
@@ -61,7 +61,7 @@ const services = [
 const faqs = [
   {
     q: 'Where is your CA office in Sillod?',
-    a: 'Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra. We are open Monday to Saturday, 10 AM to 6 PM. You can email us or book a call online for an appointment.',
+    a: 'Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra. We are open Monday to Saturday, 11 AM to 7:30 PM. You can email us or book a call online for an appointment.',
   },
   {
     q: 'What CA services are available in Sillod?',
@@ -131,8 +131,8 @@ const sillodLocalBusiness = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '10:00',
-      closes: '18:00',
+      opens: '11:00',
+      closes: '19:30',
     },
   ],
   areaServed: [
@@ -343,7 +343,7 @@ export default function CAInSillod() {
               </p>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '1rem' }}>
                 <strong style={{ color: 'var(--text-main)' }}>Hours:</strong><br />
-                Monday – Saturday: 10:00 AM – 6:00 PM
+                Monday – Saturday: 11:00 AM – 7:30 PM
               </p>
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
                 rupesh@agrawalkhandelwal.com
@@ -353,7 +353,7 @@ export default function CAInSillod() {
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Speak with CA Rupesh Khandelwal about your GST, tax, or audit needs in Sillod. The booking fee is adjusted against our professional fee if you engage us.
+                Discuss your GST, tax, or audit needs in Sillod. Start with a free 15-minute intro call, or book 30 minutes of detailed advice. Calls are taken by CA Mehul Agrawal, and CA Rupesh Khandelwal handles your work at the Sillod office. The advice fee is adjusted against our fee if you engage us.
               </p>
               <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
                 Book a Call
@@ -366,7 +366,7 @@ export default function CAInSillod() {
 
           <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--primary)', marginTop: '3rem' }}>
             <iframe
-              src="https://www.google.com/maps?q=Tilak+Nagar,+Sillod,+Maharashtra+431112&output=embed"
+              src="https://www.google.com/maps?q=20.3055,75.6518&z=16&output=embed"
               width="100%"
               height="400"
               style={{ border: 0, display: 'block' }}

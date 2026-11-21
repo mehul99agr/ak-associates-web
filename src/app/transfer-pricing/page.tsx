@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/transfer-pricing' },
   openGraph: {
     title: 'Transfer Pricing Consultant India | TP Documentation & Advisory | Agrawal Khandelwal & Associates LLP',
-    description: 'Transfer pricing documentation, benchmarking, APA advisory, and tax authority representation for MNCs and Indian multinationals. CA with Big 4 (Deloitte) pedigree.',
+    description: 'Transfer pricing documentation, benchmarking, APA advisory, and tax authority representation for MNCs and Indian multinationals. Led by CA Mehul Agrawal.',
     url: 'https://agrawalkhandelwal.com/transfer-pricing',
     images: OG_IMAGES,
   },
@@ -143,7 +143,7 @@ export default function TransferPricingPage() {
               OECD-aligned TP documentation, benchmarking studies, APA advisory, and audit representation for MNCs and Indian companies with cross-border related-party transactions.
             </p>
             <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', maxWidth: '560px', margin: '0 auto 2.5rem' }}>
-              Led by CA Rupesh Khandelwal (ex-Deloitte) and CA Mehul Agrawal; combining Big 4 methodology with CA firm responsiveness.
+              Led by CA Mehul Agrawal, the partner who handles all of our international tax work, so a partner does the work instead of a junior team.
             </p>
             <div className="hero-cta">
               <a href={bookingLink} className="btn btn-secondary">
@@ -222,22 +222,12 @@ export default function TransferPricingPage() {
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
               <span className="section-badge">Why We're Different</span>
-              <h2 className="section-title">Big 4 Methodology. CA Firm Accessibility.</h2>
+              <h2 className="section-title">Partner-Led TP Work Without Big 4 Fees</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '680px', margin: '0 auto' }}>
-                Most mid-size companies can't afford Big 4 TP fees. We bring the same OECD-standard methodology; honed by our Deloitte-trained partner; at a fraction of the cost.
+                Most mid-size companies can&apos;t afford Big 4 TP fees. We follow the same OECD-standard methodology, and the partner who advises you is the one who prepares your study.
               </p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '3rem', maxWidth: '900px', margin: '0 auto' }}>
-              <div className="card" style={{ textAlign: 'center' }}>
-                <div style={{ width: '120px', height: '120px', margin: '0 auto 1.5rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
-                  <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal; Transfer Pricing Expert India" width={120} height={120} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-                </div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h3>
-                <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem' }}>Partner; Ex-Deloitte</p>
-                <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>
-                  Rupesh brings deep Big 4 experience in domestic and international taxation. His background at Deloitte includes TP documentation, audit representation, and cross-industry advisory for pharma, IT, and auto clients.
-                </p>
-              </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '3rem', maxWidth: '480px', margin: '0 auto' }}>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ width: '120px', height: '120px', margin: '0 auto 1.5rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--primary)' }}>
                   <Image src="/mehul.jpg" alt="CA Mehul Agrawal; International Tax Specialist India" width={120} height={120} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
@@ -245,7 +235,7 @@ export default function TransferPricingPage() {
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
                 <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem' }}>Partner; International Tax</p>
                 <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>
-                  Mehul specialises in cross-border structuring, DTAA advisory, and FEMA compliance. He coordinates the TP work with broader international tax strategy; ensuring the transfer pricing policy aligns with India-UAE, India-US, and other treaty positions.
+                  Mehul leads all of the firm&apos;s international tax work: transfer pricing documentation and benchmarking, cross-border structuring, DTAA advisory and FEMA compliance. He keeps your transfer pricing policy consistent with your India-UAE, India-US and other treaty positions.
                 </p>
               </div>
             </div>

@@ -129,7 +129,7 @@ export default function Image() {
               letterSpacing: '1px',
             }}
           >
-            Bangalore · Mumbai · Nashik · UAE · Global
+            Nashik · Sillod · Mumbai · Bangalore · UAE · US
           </div>
         </div>
 

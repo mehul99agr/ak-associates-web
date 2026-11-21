@@ -1291,3 +1291,19 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
   `calendar.app.google/DRd1KFnX9Lz2ChXs6` was replaced. Description's last line changed from "Book a FREE 30-minute
   consultation today." to "Book a free 15-minute intro call through the Book online button." (URLs are not
   allowed in GBP descriptions). GBP has no public phone number (left as the user had it).
+
+## Site consistency pass (Nov 21, 2026, user-confirmed facts)
+- **Hours:** Monday to Saturday 11:00 to 19:30, Sunday closed (both offices; GBP set to match).
+- **Nashik address = GBP:** `Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik 422011` (in `OFFICES`).
+- **Coordinates:** Nashik 19.9877793, 73.7898192 (from the GBP listing, place `0x3bddeb72f06cdfe9:0xd08936960d1177d0`,
+  `cid=15026601649790613456`; the old cid 17018233718758486792 was dead). Sillod has no GBP listing: 20.3055, 75.6518 is
+  taken from a neighbouring business at Datta Mandir, Tilak Nagar (approximate).
+- **Partner roles:** all international tax (TP, UAE, US, DTAA, FEMA, NRI) is CA Mehul Agrawal; domestic tax and audit is both
+  partners. Only Rupesh is ex-Deloitte. Never credit Rupesh with TP or international work.
+- **Cities served:** Nashik, Sillod, Mumbai, Bangalore (India) and the UAE and US (outside India). No Pune.
+- **Incorporation costs:** the MCA SPICe+ fee is nil up to Rs 15 lakh authorised capital. Never quote a "government fee" range.
+  Pvt Ltd 15,000 to 40,000; LLP 12,000 to 30,000; OPC 10,000 to 25,000.
+- **Offshore accounting:** step 1 is the free 15-minute intro call (user decision); quotes "within one business day".
+- **Privacy policy** covers Web3Forms, Google Calendar, WebMCP requests and maps on four pages. Update it when a new
+  data flow is added.
+- **Open question:** GBP "Opening date" is January 2024, but the site says founded 2023.

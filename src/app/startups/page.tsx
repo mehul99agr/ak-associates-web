@@ -8,7 +8,7 @@ import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Startup Advisory & CA Services',
-  description: 'CA firm for startups: company incorporation, DPIIT registration, ESOP structuring, Virtual CFO, and FDI/FEMA compliance in Bangalore, Mumbai, and Nashik.',
+  description: 'CA firm for startups: company incorporation, DPIIT registration, ESOP structuring, Virtual CFO, and FDI/FEMA compliance in Nashik, Sillod, Mumbai and Bangalore, and for founders in the UAE and US.',
   keywords: [
     'CA for startups India', 'startup CA India', 'CA for startups Bangalore',
     'startup advisory Bangalore', 'company incorporation Bangalore',
@@ -120,14 +120,17 @@ const serviceLd = {
   '@type': 'ProfessionalService',
   '@id': 'https://agrawalkhandelwal.com/startups#service',
   name: 'Startup Advisory & CA Services; Agrawal Khandelwal & Associates LLP',
-  description: 'End-to-end CA and financial advisory for startups in Bangalore, Mumbai, and Nashik. Incorporation, DPIIT, ESOP, Virtual CFO, fundraising compliance, and FDI/FEMA.',
+  description: 'End-to-end CA and financial advisory for startups in Nashik, Sillod, Mumbai and Bangalore, and for founders in the UAE and US. Incorporation, DPIIT, ESOP, Virtual CFO, fundraising compliance, and FDI/FEMA.',
   url: 'https://agrawalkhandelwal.com/startups',
   provider: { '@id': 'https://agrawalkhandelwal.com/#organization' },
   areaServed: [
-    { '@type': 'City', name: 'Bangalore' },
-    { '@type': 'City', name: 'Mumbai' },
     { '@type': 'City', name: 'Nashik' },
+    { '@type': 'City', name: 'Sillod' },
+    { '@type': 'City', name: 'Mumbai' },
+    { '@type': 'City', name: 'Bangalore' },
     { '@type': 'Country', name: 'India' },
+    { '@type': 'Country', name: 'United Arab Emirates' },
+    { '@type': 'Country', name: 'United States' },
   ],
   serviceType: [
     'Company Incorporation', 'DPIIT Registration', 'ESOP Structuring',
@@ -151,7 +154,7 @@ export default function StartupsPage() {
         {/* Hero */}
         <section className="hero">
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <span className="hero-badge">Startup CA Desk; Bangalore · Mumbai · Nashik</span>
+            <span className="hero-badge">Startup CA Desk; Nashik · Sillod · Mumbai · Bangalore · UAE · US</span>
             <h1>
               CA for Startups in Bangalore,<br />Mumbai & Nashik
             </h1>

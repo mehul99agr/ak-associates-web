@@ -36,7 +36,7 @@ const serviceLd = {
     url: 'https://agrawalkhandelwal.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
+      streetAddress: 'Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka',
       addressLocality: 'Nashik',
       addressRegion: 'Maharashtra',
       postalCode: '422011',
@@ -49,7 +49,7 @@ const serviceLd = {
     '@type': 'Offer',
     price: '15000',
     priceCurrency: 'INR',
-    description: 'All-in company incorporation starting from ₹15,000 (government fees + professional fees)',
+    description: 'All-in Private Limited Company incorporation starting from ₹15,000 (statutory costs, DSCs and professional fees). OPC from ₹10,000, LLP from ₹12,000.',
   },
 }
 
@@ -70,7 +70,7 @@ const faqLd = {
       name: 'What is the cost of incorporating a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'All-in cost ranges from ₹15,000 to ₹40,000 for a Private Limited Company, covering government filing fees (₹8,000–₹15,000), DSC per director (₹1,000–₹2,000), and CA professional fees. LLP and OPC are slightly lower at ₹12,000–₹30,000.',
+        text: 'All-in cost is typically ₹15,000 to ₹40,000 for a Private Limited Company. The MCA filing fee for SPICe+ is nil where authorised capital is up to ₹15 lakh, so the cost is mainly name reservation (₹1,000 per application), state stamp duty on the MoA and AoA (depends on the state and the authorised capital), a DSC for each director (₹1,000–₹2,000), and CA professional fees. An LLP typically costs ₹12,000–₹30,000 and an OPC ₹10,000–₹25,000.',
       },
     },
     {
@@ -271,7 +271,7 @@ export default function CompanyIncorporationPage() {
                 'SPICe+ form preparation & filing',
                 'MOA & AOA drafting (CA-reviewed)',
                 'PAN, TAN & GSTIN application',
-                'Government fee payment tracking',
+                'Government fee and stamp duty payment tracking',
                 'Certificate of Incorporation handover',
                 'Post-incorporation compliance calendar',
                 'INC-20A (commencement declaration) guidance',

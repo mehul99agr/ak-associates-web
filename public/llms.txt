@@ -1,18 +1,19 @@
 # Agrawal Khandelwal & Associates LLP
 
-> Chartered Accountant (CA) firm headquartered in Nashik, Maharashtra, India, with a second office in Sillod, Maharashtra. Founded in 2023. Specializes in cross-border and growth-stage work: international taxation, transfer pricing, UAE corporate tax, NRI taxation, FEMA/RBI compliance, and startup/company incorporation advisory, alongside standard statutory audit, tax audit, and GST compliance. Partners: CA Mehul Agrawal (Nashik office; international taxation, transfer pricing, UAE Corporate Taxation certified) and CA Rupesh Khandelwal (Sillod office; domestic taxation, audits, business consulting; prior experience at Deloitte).
+> Chartered Accountant (CA) firm headquartered in Nashik, Maharashtra, India, with a second office in Sillod, Maharashtra. Founded in 2023. Specializes in cross-border and growth-stage work: US LLC and C-Corp compliance for Indian founders, international taxation, transfer pricing, UAE corporate tax, NRI taxation, FEMA/RBI compliance, and startup/company incorporation advisory, alongside standard statutory audit, tax audit, and GST compliance. Serves clients in Nashik, Sillod, Mumbai and Bangalore in India, and in the UAE and the US. Partners: CA Mehul Agrawal (Nashik office; international taxation, transfer pricing, UAE Corporate Taxation certified) and CA Rupesh Khandelwal (Sillod office; domestic taxation, audits, business consulting; prior experience at Deloitte).
 
 ## Firm
 
 - [About](https://agrawalkhandelwal.com/about): Partner bios, credentials, and firm background.
-- [Services overview](https://agrawalkhandelwal.com/services): All three practice groups — Taxation & Regulatory, Audit & Assurance, Strategic Advisory.
+- [Services overview](https://agrawalkhandelwal.com/services): All three practice groups: Taxation & Regulatory, Audit & Assurance, Strategic Advisory.
 - [Contact](https://agrawalkhandelwal.com/contact): Office addresses, email, and consultation booking.
 - [Book a consultation](https://agrawalkhandelwal.com/consult): Free 15-minute intro call (short form, then pick a slot) or a paid 30-minute advice call. Pages expose WebMCP tools `get_consultation_options` and `request_free_call` for in-browser agents.
-- [CA in Nashik](https://agrawalkhandelwal.com/ca-in-nashik): Nashik office details — Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011.
-- [CA in Sillod](https://agrawalkhandelwal.com/ca-in-sillod): Sillod office details — Near Datta Mandir, Tilak Nagar, Sillod – 431112.
+- [CA in Nashik](https://agrawalkhandelwal.com/ca-in-nashik): Nashik office details: Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011.
+- [CA in Sillod](https://agrawalkhandelwal.com/ca-in-sillod): Sillod office details: Near Datta Mandir, Tilak Nagar, Sillod – 431112.
 
 ## Core Services
 
+- [US Cross-Border Compliance](https://agrawalkhandelwal.com/us-cross-border): US LLC and C-Corp compliance for Indian founders (Form 1120, Form 5472, Delaware franchise tax, FBAR), ODI and FEMA for the Indian side.
 - [Transfer Pricing](https://agrawalkhandelwal.com/transfer-pricing): Documentation, methods, safe harbour, APA, audit support.
 - [UAE Tax Advisory](https://agrawalkhandelwal.com/uae-tax-advisory): UAE corporate tax structuring and India-UAE compliance.
 - [NRI Tax Advisory](https://agrawalkhandelwal.com/nri-tax-advisory): Property sale TDS, repatriation, DTAA, residential status.

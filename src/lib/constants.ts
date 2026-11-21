@@ -20,14 +20,14 @@ export const OFFICES = {
   nashik: {
     name: 'Nashik Office',
     id: `${BASE_URL}/#nashik-office`,
-    streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
-    addressLine: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011',
+    streetAddress: 'Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka',
+    addressLine: 'Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011',
     locality: 'Nashik',
     region: 'Maharashtra',
     postalCode: '422011',
     email: 'mehul@agrawalkhandelwal.com',
-    latitude: '19.1947607',
-    longitude: '73.7879464',
+    latitude: '19.9877793',
+    longitude: '73.7898192',
   },
   sillod: {
     name: 'Sillod Office',
@@ -38,8 +38,8 @@ export const OFFICES = {
     region: 'Maharashtra',
     postalCode: '431112',
     email: 'rupesh@agrawalkhandelwal.com',
-    latitude: '20.1040',
-    longitude: '75.6496',
+    latitude: '20.3055',
+    longitude: '75.6518',
   },
 } as const
 

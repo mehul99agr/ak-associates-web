@@ -39,11 +39,11 @@ const localBusinessLd = {
       openingHoursSpecification: [{
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '10:00',
-        closes: '18:00',
+        opens: '11:00',
+        closes: '19:30',
       }],
       priceRange: '₹₹',
-      hasMap: 'https://maps.google.com/?cid=17018233718758486792',
+      hasMap: 'https://maps.google.com/?cid=15026601649790613456',
       parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
     },
     {
@@ -64,8 +64,8 @@ const localBusinessLd = {
       openingHoursSpecification: [{
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '10:00',
-        closes: '18:00',
+        opens: '11:00',
+        closes: '19:30',
       }],
       priceRange: '₹₹',
       parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
@@ -83,7 +83,7 @@ const offices = [
     label: 'Nashik Office',
     partner: 'CA Mehul Agrawal',
     key: 'mehul',
-    address: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011, Maharashtra',
+    address: 'Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011, Maharashtra',
     email: 'mehul@agrawalkhandelwal.com',
   },
   {
@@ -130,7 +130,7 @@ export default function Contact() {
                   <p style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '1.25rem', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)' }}>{o.partner}</p>
                   <p style={{ color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '1.25rem' }}>{o.address}</p>
                   <p style={{ color: 'var(--text-light)', marginBottom: '0.5rem' }}>
-                    <strong style={{ color: 'var(--text-main)' }}>Hours:</strong> Monday to Saturday, 10:00 AM to 6:00 PM
+                    <strong style={{ color: 'var(--text-main)' }}>Hours:</strong> Monday to Saturday, 11:00 AM to 7:30 PM
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.5rem' }}>
                     <TrackedLink href={`/consult?partner=${o.key}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Book a Call</TrackedLink>
@@ -146,7 +146,7 @@ export default function Contact() {
             {/* Map */}
             <div style={{ marginTop: '3rem', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--primary)' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7879464!3d19.1947607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb199f0a712f%3A0x2bb8a26b71bd9b72!2sRam%20Plaza%2C%20Mumbai%20Naka%2C%20Nashik%2C%20Maharashtra%20422011!5e0!3m2!1sen!2sin!4v1717777777777"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7898192!3d19.9877793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb72f06cdfe9%3A0xd08936960d1177d0!2sAgrawal%20Khandelwal%20%26%20Associates%20LLP!5e0!3m2!1sen!2sin!4v1717777777777"
                 width="100%"
                 height="420"
                 style={{ border: 0, display: 'block' }}

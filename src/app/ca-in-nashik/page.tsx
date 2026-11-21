@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
     title: 'CA Firm in Nashik | Chartered Accountants at Mumbai Naka | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Ram Plaza, Mumbai Naka, Nashik.',
+    description: 'Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik.',
     url: 'https://agrawalkhandelwal.com/ca-in-nashik',
     images: OG_IMAGES,
   },
   other: {
     'geo.region': 'IN-MH',
     'geo.placename': 'Nashik, Maharashtra, India',
-    'geo.position': '19.1947607;73.7879464',
-    'ICBM': '19.1947607, 73.7879464',
+    'geo.position': '19.9877793;73.7898192',
+    'ICBM': '19.9877793, 73.7898192',
   },
 }
 
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: 'Where is your CA office in Nashik?',
-    a: 'Our Nashik office is at Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011, Maharashtra. We are open Monday to Saturday, 10 AM to 6 PM.',
+    a: 'Our Nashik office is at Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011, Maharashtra. We are open Monday to Saturday, 11 AM to 7:30 PM.',
   },
   {
     q: 'What are your CA fees for GST filing in Nashik?',
@@ -129,8 +129,8 @@ const nashikLocalBusiness = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '10:00',
-      closes: '18:00',
+      opens: '11:00',
+      closes: '19:30',
     },
   ],
   areaServed: [
@@ -161,7 +161,7 @@ const nashikLocalBusiness = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation and FEMA Advisory' } },
     ],
   },
-  hasMap: 'https://maps.google.com/?cid=17018233718758486792',
+  hasMap: 'https://maps.google.com/?cid=15026601649790613456',
   sameAs: ['https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/'],
   parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
 }
@@ -281,7 +281,7 @@ export default function CAInNashik() {
               { icon: 'scroll', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
               { icon: 'globe', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax; capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
               { icon: 'phone', title: 'Responsive Communication', desc: 'Email for questions and documents, booked calls for anything that needs a discussion. We reply to email within one working day.' },
-              { icon: 'rupee', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges, no surprise invoices, no per-call billing.' },
+              { icon: 'rupee', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges and no surprise invoices.' },
             ].map((item, i) => (
               <div key={i} className="card">
                 <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={item.icon} size={32} /></div>
@@ -386,13 +386,13 @@ export default function CAInNashik() {
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1.5rem' }}>Nashik Office Details</h3>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '1rem' }}>
                 <strong style={{ color: 'var(--text-main)' }}>Address:</strong><br />
-                Shop No. 12 & 13, Ram Plaza,<br />
+                Shop No. 12&13, Ram Plaza, Bhabha Nagar,<br />
                 Mumbai Naka, Nashik – 422011,<br />
                 Maharashtra, India
               </p>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '1rem' }}>
                 <strong style={{ color: 'var(--text-main)' }}>Hours:</strong><br />
-                Monday – Saturday: 10:00 AM – 6:00 PM
+                Monday – Saturday: 11:00 AM – 7:30 PM
               </p>
               <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
                 mehul@agrawalkhandelwal.com
@@ -402,7 +402,7 @@ export default function CAInNashik() {
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. The booking fee is adjusted against our professional fee if you engage us.
+                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. Start with a free 15-minute intro call, or book 30 minutes of detailed advice. The advice fee is adjusted against our fee if you engage us.
               </p>
               <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
                 Book a Call
@@ -415,7 +415,7 @@ export default function CAInNashik() {
 
           <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--primary)' }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7879464!3d19.1947607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb199f0a712f%3A0x2bb8a26b71bd9b72!2sRam%20Plaza%2C%20Mumbai%20Naka%2C%20Nashik%2C%20Maharashtra%20422011!5e0!3m2!1sen!2sin!4v1717777777777"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.034561772485!2d73.7898192!3d19.9877793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb72f06cdfe9%3A0xd08936960d1177d0!2sAgrawal%20Khandelwal%20%26%20Associates%20LLP!5e0!3m2!1sen!2sin!4v1717777777777"
               width="100%"
               height="400"
               style={{ border: 0, display: 'block' }}

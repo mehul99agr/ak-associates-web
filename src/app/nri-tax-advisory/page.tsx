@@ -37,7 +37,7 @@ const serviceLd = {
     url: 'https://agrawalkhandelwal.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Shop No. 12 & 13, Ram Plaza, Mumbai Naka',
+      streetAddress: 'Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka',
       addressLocality: 'Nashik',
       addressRegion: 'Maharashtra',
       postalCode: '422011',
