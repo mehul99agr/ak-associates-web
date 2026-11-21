@@ -426,3 +426,21 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   only ones over 60 are pages with the " | Agrawal Khandelwal & Associates LLP" suffix, whose keyword part is under 60
   chars, so Google truncates only the brand tail. Deliberately NOT shortened (brand rule; renaming ranking pages risks CTR).
 - **Breadcrumbs:** every sitemap page has BreadcrumbList. Use `src/app/_components/BreadcrumbLd.tsx` on new pages.
+
+## Status and backlog (updated Nov 21, 2026 - "we'll keep getting better later")
+**Where things stand:** whole-site live check passed (260 URLs, all 200). AI crawlers allowed, llms files and agent
+skills live, every blog post has Article (author + dateModified) + FAQPage schema, TL;DR, question headings, 2+ internal
+links in. Breadcrumbs on every page (live, verified after deploy). Transfer pricing 3CEB/penalty/CbCR facts corrected
+on the TP page + 7 posts (see Legal log). Titles left as is (see "Titles" above).
+
+**Open, for a later session:**
+- GBP opening date (Jan 2024) vs site "founded 2023" - ask the user which is right.
+- GBP edits still in Google review: hours, description, WhatsApp chat removal - confirm they went live.
+- GA4: star `generate_lead` as a key event once it shows under Admin > Events.
+- Zoho Bookings: trial ends ~Nov 25; add evening IST slots for US visitors; confirm Razorpay international cards.
+- Mobile layout test not done (window resize did not apply in Chrome) - test on a real phone or device emulation.
+- HRA metro-city wording: open question raised in the consistency audit, not yet answered.
+- Thin pages (/tools, /contact, two calculators under 300 words) - fine for now; add short explainers only if they rank.
+- IndiaMart public seller URL for `sameAs` (still only have the dashboard link).
+- Social drafts (X/LinkedIn calendar, CAclubindia/TaxGuru guest articles) awaiting user approval; 4 X threads need manual posting.
+- Measure: judge progress by bookings (free Google Calendar + paid Zoho) and international clicks in GSC, not total clicks.
