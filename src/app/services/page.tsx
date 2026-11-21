@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
 import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
+import BreadcrumbLd from '@/app/_components/BreadcrumbLd'
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -93,6 +94,7 @@ const categories = [
 export default function Services() {
   return (
     <>
+    <BreadcrumbLd items={[{ name: 'Services', path: '/services' }]} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
       <div className="section">

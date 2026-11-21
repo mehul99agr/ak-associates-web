@@ -4,6 +4,7 @@ import { OG_IMAGES } from '@/lib/constants'
 
 import { buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../../blog/_components/FaqSection'
+import BreadcrumbLd from '@/app/_components/BreadcrumbLd'
 
 export const metadata: Metadata = {
   title: 'Company Type Finder Tool (India)',
@@ -44,6 +45,7 @@ function ToolFaqs() {
 export default function IncorporationWizardPage() {
   return (
     <div className="section" style={{ background: 'var(--bg-surface)', minHeight: '100vh', paddingTop: '100px' }}>
+      <BreadcrumbLd items={[{ name: 'Tools', path: '/tools' }, { name: 'Company Type Finder', path: '/tools/incorporation-wizard' }]} />
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
           <h4 className="section-badge">Business Advisory</h4>

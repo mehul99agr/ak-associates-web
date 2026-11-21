@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { OG_IMAGES } from '@/lib/constants'
+import BreadcrumbLd from '@/app/_components/BreadcrumbLd'
 
 export const metadata: Metadata = {
   title: 'NRI Property TDS Calculator',
@@ -21,5 +22,10 @@ export const metadata: Metadata = {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <BreadcrumbLd items={[{ name: 'Tools', path: '/tools' }, { name: 'NRI Property TDS Calculator', path: '/tools/nri-property-tds' }]} />
+      {children}
+    </>
+  )
 }

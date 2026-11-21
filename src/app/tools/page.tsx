@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Icon from '../Icon'
 import { OG_IMAGES } from '@/lib/constants'
+import BreadcrumbLd from '@/app/_components/BreadcrumbLd'
 
 export const metadata: Metadata = {
   title: 'Free Tax & Finance Calculators',
@@ -57,6 +58,7 @@ const tools = [
 export default function ToolsHubPage() {
   return (
     <div style={{ background: 'var(--bg-surface)', minHeight: '100dvh', paddingTop: '100px' }}>
+      <BreadcrumbLd items={[{ name: 'Tools', path: '/tools' }]} />
       <div className="section">
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 4rem' }}>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { OG_IMAGES } from '@/lib/constants'
+import BreadcrumbLd from '@/app/_components/BreadcrumbLd'
 
 export const metadata: Metadata = {
   title: 'Free SIP & Retirement Planner',
@@ -21,5 +22,10 @@ export const metadata: Metadata = {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <BreadcrumbLd items={[{ name: 'Tools', path: '/tools' }, { name: 'SIP & Retirement Planner', path: '/tools/sip-planner' }]} />
+      {children}
+    </>
+  )
 }

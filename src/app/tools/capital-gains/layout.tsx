@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { OG_IMAGES } from '@/lib/constants'
+import BreadcrumbLd from '@/app/_components/BreadcrumbLd'
 
 export const metadata: Metadata = {
   title: 'Capital Gains Tax Calculator (India)',
@@ -21,5 +22,10 @@ export const metadata: Metadata = {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <BreadcrumbLd items={[{ name: 'Tools', path: '/tools' }, { name: 'Capital Gains Calculator', path: '/tools/capital-gains' }]} />
+      {children}
+    </>
+  )
 }
