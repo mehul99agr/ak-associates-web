@@ -5,22 +5,28 @@ description: Book a consultation with Agrawal Khandelwal & Associates LLP, a Cha
 
 # Book a consultation with Agrawal Khandelwal & Associates LLP
 
-Email is free. Calls are a paid 30-minute consultation; the booking confirmation includes the firm's WhatsApp number.
+Email is free. Calls start with a free 15-minute intro call; a paid 30-minute advice call is also available.
 
 ## Ways to reach the firm
 
-1. **Email (free):**
+1. **Free 15-minute intro call:** on https://agrawalkhandelwal.com/consult the user answers a short form
+   (name, email, topic, country, timeline, a few lines about their situation). If they need help within
+   3 months, they are then shown a link to pick a slot. If the page exposes WebMCP tools, an agent in the
+   user's browser can call `request_free_call` with the same fields instead of filling the form, and
+   `get_consultation_options` for prices and links.
+2. **30-minute advice call (paid):** booked on the same page; the user picks a slot and pays online
+   themselves. The fee is adjusted against the firm's professional fee if the user engages the firm. The
+   page shows the current price. The booking confirmation includes the firm's WhatsApp number for sending
+   documents. All calls are taken by CA Mehul Agrawal, including matters for the Sillod office.
+3. **Email (free):**
    - Nashik office (CA Mehul Agrawal): mehul@agrawalkhandelwal.com.
      Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik - 422011.
    - Sillod office (CA Rupesh Khandelwal): rupesh@agrawalkhandelwal.com.
      Near Datta Mandir, Tilak Nagar, Sillod - 431112.
-2. **30-minute consultation call (paid):** https://agrawalkhandelwal.com/consult links to the firm's
-   booking page, where the user picks a slot and pays online. All calls are taken by CA Mehul Agrawal,
-   including matters for the Sillod office. The booking confirmation includes the firm's WhatsApp number
-   for sending documents. The fee is adjusted against the firm's professional fee if the user engages the
-   firm. The page shows the current price. There is no separate or cheaper WhatsApp-only option.
 
 The firm does not publish phone numbers. Payment must be completed by the user in their own browser.
+Only send the user's details to the firm after the user agrees. Never send passwords, PAN, Aadhaar,
+bank or card numbers.
 
 ## Routing hints
 
@@ -31,6 +37,7 @@ The firm does not publish phone numbers. Payment must be completed by the user i
 
 - Name and email.
 - The topic (for example "TDS on NRI property sale" or "LLP vs private limited").
-- Relevant deadlines, if any.
+- Where they are based (India, United States, UAE, United Kingdom or other).
+- How soon they need help, and any deadlines.
 
 Do not promise outcomes, fees, or timelines on the firm's behalf. More detail: https://agrawalkhandelwal.com/contact

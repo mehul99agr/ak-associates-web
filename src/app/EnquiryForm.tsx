@@ -9,6 +9,7 @@ import {
   type EnquiryTopic,
 } from '@/lib/consult'
 import { OFFICES } from '@/lib/constants'
+import { ENQUIRY_COUNTRIES, enquiryLabels, enquirySubject, submitEnquiry, type EnquiryInput } from '@/lib/enquiry'
 
 // Free enquiry form, delivered by Web3Forms (see src/lib/consult.ts).
 // mode="free-call": the screening step for the free 15-minute call. After a
@@ -19,7 +20,7 @@ import { OFFICES } from '@/lib/constants'
 type Mode = 'free-call' | 'enquiry'
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
-const COUNTRIES = ['India', 'United States', 'UAE', 'United Kingdom', 'Other']
+const COUNTRIES = ENQUIRY_COUNTRIES
 
 const label = { display: 'block', fontWeight: 600, fontSize: '0.9rem', marginBottom: '0.35rem', color: 'var(--text-main)' } as const
 const field = { width: '100%', padding: '0.7rem 0.85rem', borderRadius: 'var(--radius-sm)', fontSize: '0.95rem', fontFamily: 'inherit' } as const
@@ -56,15 +57,16 @@ export default function EnquiryForm({
     const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>
     if (data.botcheck) return
 
-    const topicLabel = ENQUIRY_TOPICS.find((t) => t.slug === data.topic)?.label ?? data.topic
-    const timelineLabel = ENQUIRY_TIMELINES.find((t) => t.slug === data.timeline)?.label ?? data.timeline
-    const kind = mode === 'free-call' ? 'Free 15-min call request' : 'Website enquiry'
-    const subject = `${kind}: ${topicLabel} (${data.country})`
+    const input: EnquiryInput = {
+      name: data.name, email: data.email, topic: data.topic,
+      country: data.country, timeline: data.timeline, message: data.message,
+    }
 
-    // No key configured yet: hand the enquiry to the visitor's email app instead.
+    // No key configured: hand the enquiry to the visitor's email app instead.
     if (!WEB3FORMS_KEY) {
+      const { topicLabel, timelineLabel } = enquiryLabels(input)
       const body = `Name: ${data.name}\nCountry: ${data.country}\nTopic: ${topicLabel}\nTimeline: ${timelineLabel}\n\n${data.message}`
-      window.location.href = `mailto:${OFFICES.nashik.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      window.location.href = `mailto:${OFFICES.nashik.email}?subject=${encodeURIComponent(enquirySubject(mode, input))}&body=${encodeURIComponent(body)}`
       window.gtag?.('event', 'generate_lead', { form: mode, topic: data.topic, timeline: data.timeline, location, channel: 'mailto' })
       setStatus('sent')
       return
@@ -72,26 +74,7 @@ export default function EnquiryForm({
 
     setStatus('sending')
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject,
-          from_name: 'agrawalkhandelwal.com',
-          replyto: data.email,
-          name: data.name,
-          email: data.email,
-          country: data.country,
-          topic: topicLabel,
-          timeline: timelineLabel,
-          message: data.message,
-          request: kind,
-          page: window.location.pathname,
-        }),
-      })
-      const json = await res.json().catch(() => ({}))
-      if (!res.ok || !json.success) throw new Error(json.message || 'Submit failed')
+      await submitEnquiry(mode, input, `form:${location}`)
       window.gtag?.('event', 'generate_lead', { form: mode, topic: data.topic, timeline: data.timeline, location })
       setStatus('sent')
       form.reset()

@@ -7,6 +7,7 @@
 - [About](https://agrawalkhandelwal.com/about): Partner bios, credentials, and firm background.
 - [Services overview](https://agrawalkhandelwal.com/services): All three practice groups — Taxation & Regulatory, Audit & Assurance, Strategic Advisory.
 - [Contact](https://agrawalkhandelwal.com/contact): Office addresses, email, and consultation booking.
+- [Book a consultation](https://agrawalkhandelwal.com/consult): Free 15-minute intro call (short form, then pick a slot) or a paid 30-minute advice call. Pages expose WebMCP tools `get_consultation_options` and `request_free_call` for in-browser agents.
 - [CA in Nashik](https://agrawalkhandelwal.com/ca-in-nashik): Nashik office details — Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011.
 - [CA in Sillod](https://agrawalkhandelwal.com/ca-in-sillod): Sillod office details — Near Datta Mandir, Tilak Nagar, Sillod – 431112.
 
