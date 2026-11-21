@@ -1249,7 +1249,7 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
 ## International bookings push (Nov 18, 2026)
 - **User goal:** ~200 clicks/day and 2 paid calls/day, mainly from 4 segments: Indian incorporation (LLP + Pvt Ltd only), NRI, US compliance, startup compliance in India. Use X + LinkedIn + CAclubindia/TaxGuru for audience.
 - GSC 28 days (Oct 20-Nov 16): 1,070 clicks / 118k impr / 0.9% CTR / pos 8.2. Not falling (Nov 16 best day, 69 clicks). Non-India clicks ~3/day; US-segment pages 9 clicks. Judge progress by international bookings, not total clicks.
-- **Call price now Rs 1,000** (`src/lib/consult.ts`, was Rs 999). Zoho charges INR via Razorpay, so the site shows "about US$11". `CONSULT_BOOKING_URL_INTL` (null) shows a "Pay in US$" button once a USD event (e.g. Zoho + Stripe) exists.
+- **Call price Rs 999** (`src/lib/consult.ts`; briefly Rs 1,000 on Nov 18, back to Rs 999 on Nov 21 to match Zoho, user decision). Zoho charges INR via Razorpay, so the site shows "about US$11". `CONSULT_BOOKING_URL_INTL` (null) shows a "Pay in US$" button once a USD event (e.g. Zoho + Stripe) exists.
 - Zoho findings: zero real bookings to date (only a "Payment Failure" test); trial ends ~Nov 25; slots 11:00-15:15 IST only (US visitors cannot book). User to: change Zoho price/description, add 7:30-10:30 PM IST slots, confirm Razorpay international cards, upgrade plan.
 - 10 buyer-intent posts published (dated Nov 18): pvt ltd registration cost, LLP registration, LLP Form 8/11, INC-20A, DPT-3, MSME-1, Delaware franchise tax APV, Form 5472 penalty, India-US flip, Indian subsidiary of US C-Corp. Drafted by Sonnet subagents; secondary-source figures are worded qualitatively in the posts.
 - Drafts awaiting user approval (scratchpad, not in repo): 2-week X/LinkedIn calendar, 2 CAclubindia + 1 TaxGuru guest articles.
@@ -1271,7 +1271,8 @@ content, a permanent due-date hub, CTR on existing impressions, internal links t
   which preselects the form topic. `?partner=` is still ignored.
 - Paid card headline: "Fully adjusted against our fee if you engage us". Company-incorporation "Free Advisory
   Call" buttons now say "Book a Free 15-min Call" (it is genuinely free now).
-- `/consult/booked` (noindex, not in sitemap): set as Zoho Bookings' redirect-after-booking URL; fires GA4
-  `booking_complete` (value 1000 INR). User to mark `booking_complete` and `generate_lead` as GA4 key events.
+- `/consult/booked` (noindex, not in sitemap) fires GA4 `booking_complete`, but it is UNUSED: Zoho's free plan has no
+  redirect-after-booking setting and the user said to ignore it (Nov 21). Count paid bookings in Zoho's Appointments.
+  `generate_lead` still needs starring as a GA4 key event once it appears under Admin > Events > Recent events.
 - **Still unchanged on purpose (user, Nov 21):** no phone numbers, `tel:` or `wa.me` anywhere; no reviews or
   testimonials block. "What happens on the call" + partner photos added to /consult instead.
