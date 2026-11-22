@@ -434,11 +434,11 @@ links in. Breadcrumbs on every page (live, verified after deploy). Transfer pric
 on the TP page + 7 posts (see Legal log). Titles left as is (see "Titles" above).
 
 **Open, for a later session:**
-- GBP opening date (Jan 2024) vs site "founded 2023" - ask the user which is right.
+- GBP opening date (Jan 2024) vs site "founded 2023" - user said leave it as is (Nov 22, 2026). Do not raise again.
 - GBP edits still in Google review: hours, description, WhatsApp chat removal - confirm they went live.
 - GA4: star `generate_lead` as a key event once it shows under Admin > Events.
-- Zoho Bookings: trial ends ~Nov 25; add evening IST slots for US visitors; confirm Razorpay international cards.
-- Mobile layout test not done (window resize did not apply in Chrome) - test on a real phone or device emulation.
+- Zoho Bookings: keeps working on the free tier after the trial ends (~Nov 25). Razorpay accepts international payments (confirmed by user Nov 22, 2026). Evening IST slots for US visitors still optional.
+- Mobile layout tested Nov 22, 2026 (puppeteer-core device emulation, iPhone 390px + Android 360px, all 28 non-blog pages + 3 posts): fixed `.btn` nowrap overflow at <=480px (company-incorporation quiz button), 44px hamburger tap area, centred mobile SERVICES item. Cookie banner/sticky bar text is 11.5px (left as is).
 - HRA metro-city wording: open question raised in the consistency audit, not yet answered.
 - Thin pages (/tools, /contact, two calculators under 300 words) - fine for now; add short explainers only if they rank.
 - IndiaMart public seller URL for `sameAs` (still only have the dashboard link).

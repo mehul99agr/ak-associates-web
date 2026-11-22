@@ -256,13 +256,14 @@ export default function Navbar() {
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between',
+                justifyContent: 'center',
+                gap: '0.6rem',
                 width: '100%',
                 padding: 0,
                 font: 'inherit',
-                fontSize: '1.1rem',
+                fontFamily: "var(--font-montserrat, 'Montserrat', sans-serif)",
+                fontSize: '1.4rem',
                 fontWeight: 700,
-                letterSpacing: '0.5px',
                 color: 'var(--text-main)',
               }}
             >
