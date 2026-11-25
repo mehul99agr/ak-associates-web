@@ -38,6 +38,7 @@ const articleLd = buildArticleLd({
   headline: 'NRI Returning to India Checklist (2026)',
   description: 'Bank account conversion, RNOR tax planning, investment restructuring, insurance, and FEMA compliance steps for NRIs moving back to India.',
   datePublished: '2026-08-01',
+  dateModified: '2026-11-25',
   slug: 'nri-returning-india-financial-checklist',
 })
 
@@ -128,6 +129,7 @@ export default function NRIReturningIndiaChecklist() {
 
                 <h3>Notify Your Indian Banks</h3>
                 <p>Within a reasonable period of becoming resident under FEMA (which happens the moment you intend to stay in India for an indefinite period, not after 182 days), you must:</p>
+                <p>Update your demat and trading accounts to resident status along with your bank accounts. Our <Link href="/blog/nri-demat-account-pis-vs-non-pis-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>PIS vs non-PIS guide</Link> explains how NRI share holdings are set up.</p>
                 <ul>
                   <li><strong>Redesignate <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE accounts</Link></strong> to resident savings accounts or RFC (Resident Foreign Currency) accounts. NRE FDs can run to maturity at the existing rate, but new deposits cannot be made.</li>
                   <li><strong>Convert NRO accounts</strong> to regular resident savings accounts.</li>
@@ -160,6 +162,7 @@ export default function NRIReturningIndiaChecklist() {
 
                 <h3>Set Up Indian Health and Life Insurance</h3>
                 <p>Foreign health insurance typically does not cover you as an Indian resident. International policies may lapse or become prohibitively expensive. Get Indian health insurance (preferably with a pre-existing conditions waiting period starting as early as possible) and review your life insurance coverage. Some NRIs carry both during the transition year.</p>
+                <p>If you bought Indian ULIPs or life policies while you were an NRI, check how their maturity will be taxed: see <Link href="/blog/nri-life-insurance-and-ulip-taxation-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>ULIP for NRIs: tax benefits, taxation and TDS</Link>.</p>
 
                 <h3>Update Your Will and Nominations</h3>
                 <p>If you have assets in multiple countries, your estate planning needs to cover Indian succession law (which varies by religion for Hindus, Muslims, and Christians), any foreign will you have, and nominee registrations on Indian bank accounts, demat accounts, and mutual funds. Cross-border estate planning is one of the most overlooked aspects of NRI relocation.</p>

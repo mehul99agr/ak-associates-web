@@ -131,6 +131,7 @@ export default function NRIDematPISBlog() {
 
                 <h2>When Non-PIS Applies Instead</h2>
                 <p>Several common categories of investment fall outside PIS altogether and can be handled through an ordinary non-PIS demat account, generally linked to the investor&apos;s NRO account:</p>
+                <p>Dividends and interest credited to your NRO account are taxed at source. For the rates and how to reduce them, see <Link href="/blog/tds-nro-interest-fd-dtaa-relief" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRO account interest</Link>.</p>
                 <div style={{ overflowX: 'auto' }}>
                   <table style={tableStyle}>
                     <thead><tr><th style={thStyle}>Investment Type</th><th style={thStyle}>PIS or Non-PIS</th></tr></thead>

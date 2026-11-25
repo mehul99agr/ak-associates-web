@@ -9,15 +9,15 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'NRI Life Insurance & ULIP Taxation Rules' },
-  description: 'Can NRIs buy Indian life insurance and ULIPs? Premium payment channels, when maturity is exempt under Section 10(10D), and TDS on payouts to NRIs.',
+  title: { absolute: 'ULIP for NRIs: Tax Benefits, Taxation and TDS Rules' },
+  description: 'ULIP tax benefits for NRIs: when maturity is tax-free under Section 10(10D), the Rs 2.5 lakh premium cap, TDS on payouts and which account to pay premiums from.',
   keywords: [
     'NRI life insurance India', 'NRI ULIP taxation', 'section 10(10D) NRI', 'NRI ULIP premium NRE NRO',
     'life insurance maturity NRI TDS', 'section 194DA section 195 NRI insurance', 'ULIP premium threshold exemption',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules' },
   openGraph: {
-    title: 'NRI Life Insurance & ULIP Taxation Rules',
+    title: 'ULIP for NRIs: Tax Benefits, Taxation and TDS Rules',
     description: 'Buying Indian life insurance and ULIPs as an NRI, premium payment channels, Section 10(10D) exemption thresholds, and TDS on maturity payouts.',
     url: 'https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules',
     type: 'article',
@@ -25,18 +25,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NRI Life Insurance & ULIP Taxation Rules',
+    title: 'ULIP for NRIs: Tax Benefits, Taxation and TDS Rules',
     description: 'Section 10(10D) exemption thresholds and TDS on life insurance/ULIP maturity payouts to NRIs.',
     images: OG_IMAGES,
   },
 }
 
-const breadcrumbLd = buildBlogBreadcrumbLd('NRI Life Insurance & ULIP Taxation Rules', 'nri-life-insurance-and-ulip-taxation-rules')
+const breadcrumbLd = buildBlogBreadcrumbLd('ULIP for NRIs: Tax Benefits, Taxation and TDS Rules', 'nri-life-insurance-and-ulip-taxation-rules')
 
 const articleLd = buildArticleLd({
-  headline: 'NRI Life Insurance & ULIP Taxation Rules',
+  headline: 'ULIP for NRIs: Tax Benefits, Taxation and TDS Rules',
   description: 'Whether NRIs can buy Indian life insurance and ULIPs, premium payment channels, Section 10(10D) exemption thresholds for ULIPs and other policies, and TDS on maturity payouts to NRIs.',
   datePublished: '2026-08-08',
+  dateModified: '2026-11-25',
   slug: 'nri-life-insurance-and-ulip-taxation-rules',
 })
 
@@ -84,7 +85,7 @@ export default function NriLifeInsuranceUlipBlog() {
             <article className="card" style={{ maxWidth: '800px', margin: '0 auto' }}>
               <span className="section-badge">NRI Taxation</span>
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>
-                NRI Life Insurance &amp; ULIP Taxation Rules
+                ULIP and Life Insurance for NRIs: Tax Benefits, Taxation and TDS
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 8, 2026</span>
@@ -107,6 +108,13 @@ export default function NriLifeInsuranceUlipBlog() {
                 <ServiceOffer variant="nri-itr" />
 
                 <p>Life insurance and ULIPs remain popular with NRIs both as a protection product and, historically, as a tax-efficient savings vehicle. Two rounds of tightening; the ULIP premium cap introduced from February 2021 and the broader life insurance premium cap from April 2023; have narrowed how much of that maturity value actually comes out tax-free, and the rules apply slightly differently once an NRI's TDS treatment is layered on top. This guide walks through purchase eligibility, premium payment channels, when Section 10(10D) exemption actually applies, and TDS on payouts.</p>
+                <h2>ULIP Tax Benefits for NRIs: The Short Answer</h2>
+                <ul>
+                  <li><strong>Maturity:</strong> tax-free under Section 10(10D) if the total annual premium across your ULIPs issued on or after February 1, 2021 is Rs 2.5 lakh or less. Above that, the gain is taxed as capital gains.</li>
+                  <li><strong>Death benefit:</strong> exempt whatever the premium.</li>
+                  <li><strong>TDS:</strong> a taxable payout to an NRI faces TDS under Section 195, not Section 194DA, and DTAA relief may reduce it.</li>
+                  <li><strong>Premiums:</strong> can be paid from an NRE, NRO or FCNR(B) account. NRE-funded policies are usually easier to repatriate at maturity.</li>
+                </ul>
 
                 <h2>Can NRIs Buy Life Insurance and ULIPs in India?</h2>
                 <p>Yes, most major Indian insurers issue life insurance and ULIP policies to NRIs, though the underwriting and documentation process is somewhat heavier than for a resident applicant. Expect to provide passport copies, visa or OCI/PIO status, overseas address proof, and sometimes additional medical or financial documentation depending on the sum assured. Two practical points worth checking before applying: not every plan is available in every country (insurers restrict certain products by country of residence due to local regulatory considerations), and some insurers apply different premium rates or exclusions for NRI policyholders based on occupation or destination country risk factors.</p>

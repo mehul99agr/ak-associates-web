@@ -39,6 +39,7 @@ const articleLd = buildArticleLd({
   headline: 'NRO Account Repatriation Rules (2026)',
   description: 'How to repatriate money from an NRO account: the USD 1 million annual limit, Form 145/146 process, documents required, TDS clearance, and common bank rejections.',
   datePublished: '2026-07-04',
+  dateModified: '2026-11-25',
   slug: 'nro-account-repatriation-rules-process',
 })
 
@@ -127,6 +128,7 @@ export default function NRORepatriationBlog() {
                   <li><strong>Gift proceeds:</strong> Amounts received as gifts, subject to gift tax provisions</li>
                 </ul>
                 <p>All of the above are subject to the USD 1 million annual limit and require Form 145/146 compliance.</p>
+                <p>For new deposits, an NRE or FCNR deposit avoids most of this paperwork; see <Link href="/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI fixed deposit options: NRE vs NRO vs FCNR</Link>.</p>
 
                 <h2>Step-by-Step: How to Repatriate from an NRO Account</h2>
                 <ol>
@@ -162,6 +164,7 @@ export default function NRORepatriationBlog() {
 
                 <h2>NRO to NRE Transfer</h2>
                 <p>Instead of remitting directly abroad, some NRIs prefer to transfer funds from NRO to NRE first. Once in the NRE account, the funds are freely repatriable without further documentation. However, the NRO-to-NRE transfer itself counts toward the USD 1 million annual limit and requires the same Form 145/146 compliance. It is not a shortcut around the documentation requirements; it simply changes the destination.</p>
+                <p>If most of your NRO balance is interest, check first whether too much tax was deducted on it: see <Link href="/blog/tds-nro-interest-fd-dtaa-relief" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRO account interest: rate and how to reduce it</Link>.</p>
 
                 <h2>Current Income vs Capital Repatriation</h2>
                 <p>RBI regulations distinguish between current income (rent, interest, dividends, pension) and capital receipts (property sale proceeds, inheritance). Both fall within the USD 1 million annual limit. The documentation differs slightly:</p>

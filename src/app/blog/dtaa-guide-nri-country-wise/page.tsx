@@ -38,6 +38,7 @@ const articleLd = buildArticleLd({
   headline: 'India DTAA Guide for NRIs by Country: US, UK, UAE, Canada, Australia, Singapore',
   description: 'DTAA treaty rates for NRIs by country and how to claim benefits.',
   datePublished: '2026-08-11',
+  dateModified: '2026-11-25',
   slug: 'dtaa-guide-nri-country-wise',
 })
 
@@ -183,6 +184,7 @@ export default function DTAAGuideBlog() {
                 <h2>How to Claim DTAA Benefits</h2>
                 <h3>Step 1: Obtain a Tax Residency Certificate (TRC)</h3>
                 <p>Apply to the tax authority of your country of residence. The TRC confirms that you are a tax resident of that country for the relevant period. Processing time varies: the US IRS can take several weeks; the UK HMRC is faster; UAE requires a valid residency visa and typically issues through the FTA or local government.</p>
+                <p>Treaty relief can also matter for taxable ULIP or life insurance payouts, which face TDS under Section 195; see <Link href="/blog/nri-life-insurance-and-ulip-taxation-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>ULIP taxation for NRIs</Link>.</p>
 
                 <h3>Step 2: File Form 10F on the Indian Portal</h3>
                 <p>Log in to the Income Tax e-filing portal and file Form 10F electronically. Provide your foreign TIN, the DTAA country, the period of residency, and the treaty article you are invoking. This must be filed before claiming any treaty benefit.</p>

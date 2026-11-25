@@ -36,6 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'ESOP Taxation for NRIs (2026 Guide)',
   description: 'How ESOPs are taxed for NRIs: perquisite tax at exercise, capital gains at sale, TDS obligations, the startup ESOP deferral, and how to avoid double taxation under DTAA.',
   datePublished: '2026-08-08',
+  dateModified: '2026-11-25',
   slug: 'esop-taxation-for-nris-india',
 })
 
@@ -141,6 +142,7 @@ export default function ESOPNRIBlog() {
 
                 <h2>TDS When an NRI Sells ESOP Shares</h2>
                 <p>When an NRI sells shares, including unlisted ESOP shares in a private company, to a buyer, the buyer is generally required to deduct TDS under Section 195 (now Section 393(2) under the Income Tax Act 2025) on the capital gains element of the payment, the same regime that governs NRI property sale TDS. Because TDS is often computed conservatively on the full consideration rather than the actual gain, NRIs facing a large ESOP share sale (for example, in a company buyback or secondary sale ahead of an IPO) can apply for a <Link href="/blog/form-13-lower-deduction-certificate-nri" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 13 lower deduction certificate</Link> to bring the withholding closer to the actual tax owed, rather than waiting for a refund after filing an Indian return.</p>
+                <p>If the shares are listed and held in an Indian demat account, the account set-up matters too: see <Link href="/blog/nri-demat-account-pis-vs-non-pis-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>PIS account for NRIs</Link>.</p>
 
                 <h2>Practical Checklist for NRIs With ESOPs</h2>
                 <ol>

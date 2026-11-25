@@ -4152,11 +4152,11 @@ What happens when an NRI works remotely from India for a foreign employer: resid
 
 NRI TaxationAugust 8, 2026
 
-## NRI Life Insurance & ULIP Taxation Rules
+## ULIP for NRIs: Tax Benefits, Taxation and TDS Rules
 
 Can NRIs buy Indian life insurance and ULIPs, which premium payment channels apply, when maturity proceeds are exempt under Section 10(10D), and TDS on payouts to NRIs.
 
-[Read guide: NRI Life Insurance & ULIP Taxation Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
+[Read guide: ULIP for NRIs: Tax Benefits, Taxation and TDS Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
 
 NRI TaxationAugust 12, 2026
 
@@ -5127,6 +5127,8 @@ The USD 1 million limit is set by RBI under FEMA regulations and is cumulative p
 
 All of the above are subject to the USD 1 million annual limit and require Form 145/146 compliance.
 
+For new deposits, an NRE or FCNR deposit avoids most of this paperwork; see [NRI fixed deposit options: NRE vs NRO vs FCNR](https://agrawalkhandelwal.com/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison).
+
 ## Step-by-Step: How to Repatriate from an NRO Account
 
 1. **Settle the tax position.** This is the prerequisite that causes the most delays. Ensure that:
@@ -5147,6 +5149,8 @@ All of the above are subject to the USD 1 million annual limit and require Form 
 ## NRO to NRE Transfer
 
 Instead of remitting directly abroad, some NRIs prefer to transfer funds from NRO to NRE first. Once in the NRE account, the funds are freely repatriable without further documentation. However, the NRO-to-NRE transfer itself counts toward the USD 1 million annual limit and requires the same Form 145/146 compliance. It is not a shortcut around the documentation requirements; it simply changes the destination.
+
+If most of your NRO balance is interest, check first whether too much tax was deducted on it: see [TDS on NRO account interest: rate and how to reduce it](https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief).
 
 ## Current Income vs Capital Repatriation
 
@@ -5435,6 +5439,8 @@ India has DTAAs with over 90 countries. These treaties determine how income is t
 
 Within a reasonable period of becoming resident under FEMA (which happens the moment you intend to stay in India for an indefinite period, not after 182 days), you must:
 
+Update your demat and trading accounts to resident status along with your bank accounts. Our [PIS vs non-PIS guide](https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained) explains how NRI share holdings are set up.
+
 - **Redesignate [NRE accounts](https://agrawalkhandelwal.com/blog/nre-vs-nro-account-fema-repatriation-limits)** to resident savings accounts or RFC (Resident Foreign Currency) accounts. NRE FDs can run to maturity at the existing rate, but new deposits cannot be made.
 - **Convert NRO accounts** to regular resident savings accounts.
 - **FCNR deposits** can run to maturity and then convert to RFC or resident rupee accounts.
@@ -5468,6 +5474,8 @@ Your first Indian ITR as RNOR is different from a standard resident return:
 ### Set Up Indian Health and Life Insurance
 
 Foreign health insurance typically does not cover you as an Indian resident. International policies may lapse or become prohibitively expensive. Get Indian health insurance (preferably with a pre-existing conditions waiting period starting as early as possible) and review your life insurance coverage. Some NRIs carry both during the transition year.
+
+If you bought Indian ULIPs or life policies while you were an NRI, check how their maturity will be taxed: see [ULIP for NRIs: tax benefits, taxation and TDS](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules).
 
 ### Update Your Will and Nominations
 
@@ -6298,6 +6306,8 @@ All three have standard 15% rates on interest and dividends. Australia and Singa
 
 Apply to the tax authority of your country of residence. The TRC confirms that you are a tax resident of that country for the relevant period. Processing time varies: the US IRS can take several weeks; the UK HMRC is faster; UAE requires a valid residency visa and typically issues through the FTA or local government.
 
+Treaty relief can also matter for taxable ULIP or life insurance payouts, which face TDS under Section 195; see [ULIP taxation for NRIs](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules).
+
 ### Step 2: File Form 10F on the Indian Portal
 
 Log in to the Income Tax e-filing portal and file Form 10F electronically. Provide your foreign TIN, the DTAA country, the period of residency, and the treaty article you are invoking. This must be filed before claiming any treaty benefit.
@@ -6405,6 +6415,8 @@ This is probably the easiest tax saving available to NRIs, and most people do no
 ## NRO Interest: The Default 30% Problem
 
 Under [Section 393(2)](https://agrawalkhandelwal.com/blog/section-195-tds-nri-payments-guide) (earlier Section 195 under the 1961 Act), banks deduct TDS on NRO interest at 30% (plus surcharge and cess, effective ~31.2%). This applies to:
+
+If you are deciding where to keep the deposit in the first place, compare [NRE vs NRO vs FCNR fixed deposits for NRIs](https://agrawalkhandelwal.com/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison).
 
 - NRO savings account interest
 - NRO fixed deposit interest
@@ -7122,6 +7134,8 @@ The **Schedule FA** requirement in the Indian ITR, disclosing foreign bank accou
 
 Because the RNOR window is finite and self-terminating, the value is in using it proactively, not discovering it retrospectively at tax filing time:
 
+If you hold NRE, NRO or FCNR deposits, review each one before your status changes; see [NRE vs NRO vs FCNR fixed deposits](https://agrawalkhandelwal.com/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison).
+
 1. **Map your exact RNOR window** using your real day-count history against both tests, don't rely on a rule of thumb.
 2. **Review foreign investment holdings**, equity, mutual funds, retirement accounts, property, for any planned liquidity events, and consider timing them inside the RNOR window if a sale is coming anyway.
 3. **Time the exercise or sale of foreign equity compensation** (ESOPs or RSUs from a foreign employer) with residential status in mind, see our guide on [ESOP taxation for NRIs](https://agrawalkhandelwal.com/blog/esop-taxation-for-nris-india) for how exercise and sale are taxed differently.
@@ -7333,11 +7347,15 @@ Most of the FEMA problems we see in NRI accounts trace back to one thing: money 
 
 An NRE account exists to hold money you earn **outside India** that you choose to bring into an Indian rupee account, foreign salary, consulting income, business profits earned abroad, or funds transferred from your existing foreign bank account. Both the principal and the interest are fully and freely repatriable back abroad at any time, with no annual limit and minimal documentation for the outward transfer itself. Interest earned is exempt from Indian income tax under Section 10(4)(ii), as long as you continue to hold non-resident status under FEMA. NRE accounts can be held jointly with a resident close relative under the "former resident" joint holding provisions, though operational rights differ from a standard joint account.
 
+Premiums for Indian ULIPs and life insurance can also be paid from an NRE account, which affects how easily the payout can be sent abroad later; see [ULIP for NRIs: tax benefits and taxation](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules).
+
 The rule that trips people up: **only foreign-sourced funds should enter an NRE account.** If Indian rental income, dividends from Indian shares, or maturity proceeds from an Indian fixed deposit get credited into an NRE account, that is a FEMA violation, regardless of intent. Banks can, and do, flag such deposits on review and may require the account to be corrected.
 
 ## NRO Accounts: Where India-Sourced Income Belongs
 
 An NRO account is for income that **arises in India** while you are a non-resident, rent from Indian property, dividends on Indian shares, interest on Indian fixed deposits, pension credited in India, or proceeds from selling Indian assets. Unlike NRE, interest on an NRO account is **taxable in India**, and banks deduct TDS at source, generally at a high rate (30% plus applicable surcharge and cess) unless a lower rate applies under the relevant DTAA, which requires furnishing a Tax Residency Certificate and Form 10F to the bank.
+
+Buying or selling listed Indian shares also depends on which account is linked to your demat account. See [PIS account for NRIs: meaning, full form and PIS vs non-PIS](https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained).
 
 Repatriation out of an NRO account is capped at **USD 1 million per financial year**, and this cap is cumulative, it counts all remittances out of all your NRO balances during the year, not a fresh USD 1 million allowance per transfer or per bank. Before the Authorised Dealer bank will process the transfer, you need:
 
@@ -7492,6 +7510,8 @@ This is genuinely one of the more technical areas of NRI taxation, because it de
 ## TDS When an NRI Sells ESOP Shares
 
 When an NRI sells shares, including unlisted ESOP shares in a private company, to a buyer, the buyer is generally required to deduct TDS under Section 195 (now Section 393(2) under the Income Tax Act 2025) on the capital gains element of the payment, the same regime that governs NRI property sale TDS. Because TDS is often computed conservatively on the full consideration rather than the actual gain, NRIs facing a large ESOP share sale (for example, in a company buyback or secondary sale ahead of an IPO) can apply for a [Form 13 lower deduction certificate](https://agrawalkhandelwal.com/blog/form-13-lower-deduction-certificate-nri) to bring the withholding closer to the actual tax owed, rather than waiting for a refund after filing an Indian return.
+
+If the shares are listed and held in an Indian demat account, the account set-up matters too: see [PIS account for NRIs](https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained).
 
 ## Practical Checklist for NRIs With ESOPs
 
@@ -13156,6 +13176,8 @@ We check your residential status, claim DTAA relief and TDS refunds, and file th
 
 Most NRIs discover the gap between TDS deducted on their NRO account and their actual Indian tax liability only when a CA points it out at return-filing time. Banks deduct TDS on NRO interest and other credits at the domestic statutory rate by default, since they have no independent way to confirm treaty eligibility or your overall income position. When the real liability turns out to be lower, sometimes substantially lower, the only way to get that money back is a formal refund claim through your Indian income tax return. This guide walks through that claim process specifically for NRO account TDS, separate from the property-sale TDS refund process and separate from the mechanics of moving money out of India once you have it back.
 
+This guide is about getting excess TDS back after the bank has deducted it. To cut the TDS before it is deducted, see [TDS on NRO account interest: rate and how to reduce it](https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief).
+
 ## Why NRO TDS Refunds Happen
 
 NRO interest, along with other NRO credits such as rent or dividends, is subject to TDS under Section 195 (now Section 393(2) of the Income Tax Act 2025) at the applicable domestic rate, commonly cited at 30% plus surcharge and cess (worth confirming against the current notified rate, since rates and surcharge slabs are periodically revised). Two common situations create a refund opportunity:
@@ -13186,6 +13208,8 @@ NRIs claiming an NRO TDS refund typically file **ITR-2**, which covers capital g
 ## Avoiding the Refund Wait: Fix It at Source
 
 A refund claim recovers the money, but it ties up capital for months in the meantime. For NRO interest specifically, most NRIs are better served by submitting a Tax Residency Certificate and Form 10F to the bank each year so the DTAA rate is applied at source going forward, rather than repeatedly filing for refunds on the same recurring income. For a one-off large NRO credit where a treaty rate does not apply but your actual liability is still clearly lower than the standard rate, a Section 197 lower or nil deduction certificate (Form 13, now Form 128) obtained in advance achieves the same result.
+
+The steps for getting the bank to apply the treaty rate are set out in our [guide to TDS on NRO account interest](https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief).
 
 ## Repatriating the Refund
 
@@ -14064,6 +14088,8 @@ Once the transfer is executed, it needs to be separately reported to RBI via **F
 ## Repatriating the Sale Proceeds
 
 Once tax is settled and TDS reconciled, the NRI seller typically wants to repatriate the net proceeds. This follows the same repatriation framework used for other NRI transactions; proceeds routed through an NRO account are subject to the **USD 1 million annual repatriation limit** with Form 145/146 certification, similar to the process for property sale proceeds. See our [NRO repatriation guide](https://agrawalkhandelwal.com/blog/nro-account-repatriation-rules-process) for the full process.
+
+Listed shares bought on an Indian stock exchange follow a different route through your bank and demat account; see [PIS vs non-PIS accounts for NRIs](https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained).
 
 ### More Guides on This Topic
 
@@ -28650,7 +28676,7 @@ Selling inherited agricultural land as an NRI is, in effect, three separate comp
 
 - [NRI Investing in Indian Real Estate: A Complete Compliance Guide](https://agrawalkhandelwal.com/blog/nri-investing-in-indian-real-estate-a-complete-compliance-guide)
 - [Tax Implications for NRIs Working Remotely for Foreign Employers From India](https://agrawalkhandelwal.com/blog/tax-implications-for-nris-working-remotely-for-foreign-employers-from)
-- [NRI Life Insurance & ULIP Taxation Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
+- [ULIP for NRIs: Tax Benefits, Taxation and TDS Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
 
 Need this handled for you? See our [NRI tax advisory](https://agrawalkhandelwal.com/nri-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -28767,7 +28793,7 @@ The purchase-side compliance for NRI real estate is largely front-loaded: get th
 ### More Guides on This Topic
 
 - [Tax Implications for NRIs Working Remotely for Foreign Employers From India](https://agrawalkhandelwal.com/blog/tax-implications-for-nris-working-remotely-for-foreign-employers-from)
-- [NRI Life Insurance & ULIP Taxation Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
+- [ULIP for NRIs: Tax Benefits, Taxation and TDS Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
 - [Power of Attorney for NRIs: Property Transactions from Abroad](https://agrawalkhandelwal.com/blog/power-of-attorney-for-nris-property-transactions-from-abroad)
 
 Need this handled for you? See our [NRI tax advisory](https://agrawalkhandelwal.com/nri-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
@@ -28876,7 +28902,7 @@ Anyone in this situation, or anticipating moving into it, should track two thing
 
 ### More Guides on This Topic
 
-- [NRI Life Insurance & ULIP Taxation Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
+- [ULIP for NRIs: Tax Benefits, Taxation and TDS Rules](https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-rules)
 - [Power of Attorney for NRIs: Property Transactions from Abroad](https://agrawalkhandelwal.com/blog/power-of-attorney-for-nris-property-transactions-from-abroad)
 - [NRI Demat Account: PIS vs Non-PIS Explained](https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained)
 
@@ -28931,7 +28957,7 @@ Source: https://agrawalkhandelwal.com/blog/nri-life-insurance-and-ulip-taxation-
 
 NRI Taxation
 
-# NRI Life Insurance & ULIP Taxation Rules
+# ULIP and Life Insurance for NRIs: Tax Benefits, Taxation and TDS
 
 Published August 8, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
@@ -28949,6 +28975,13 @@ We check your residential status, claim DTAA relief and TDS refunds, and file th
 [Book an NRI tax call](https://agrawalkhandelwal.com/consult?topic=nri-tax)[See NRI packages](https://agrawalkhandelwal.com/nri-tax-advisory#nri-itr)
 
 Life insurance and ULIPs remain popular with NRIs both as a protection product and, historically, as a tax-efficient savings vehicle. Two rounds of tightening; the ULIP premium cap introduced from February 2021 and the broader life insurance premium cap from April 2023; have narrowed how much of that maturity value actually comes out tax-free, and the rules apply slightly differently once an NRI's TDS treatment is layered on top. This guide walks through purchase eligibility, premium payment channels, when Section 10(10D) exemption actually applies, and TDS on payouts.
+
+## ULIP Tax Benefits for NRIs: The Short Answer
+
+- **Maturity:** tax-free under Section 10(10D) if the total annual premium across your ULIPs issued on or after February 1, 2021 is Rs 2.5 lakh or less. Above that, the gain is taxed as capital gains.
+- **Death benefit:** exempt whatever the premium.
+- **TDS:** a taxable payout to an NRI faces TDS under Section 195, not Section 194DA, and DTAA relief may reduce it.
+- **Premiums:** can be paid from an NRE, NRO or FCNR(B) account. NRE-funded policies are usually easier to repatriate at maturity.
 
 ## Can NRIs Buy Life Insurance and ULIPs in India?
 
@@ -29209,6 +29242,8 @@ RBI has since simplified this structure. NRIs are no longer required to maintain
 ## When Non-PIS Applies Instead
 
 Several common categories of investment fall outside PIS altogether and can be handled through an ordinary non-PIS demat account, generally linked to the investor's NRO account:
+
+Dividends and interest credited to your NRO account are taxed at source. For the rates and how to reduce them, see [TDS on NRO account interest](https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief).
 
 | Investment Type | PIS or Non-PIS |
 | --- | --- |

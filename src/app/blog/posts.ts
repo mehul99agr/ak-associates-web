@@ -1570,7 +1570,7 @@ export const posts = [
     summary: 'What happens when an NRI works remotely from India for a foreign employer: residential status impact, taxability of foreign salary once resident, DTAA relief, and employer withholding.',
   },
   {
-    title: 'NRI Life Insurance & ULIP Taxation Rules',
+    title: 'ULIP for NRIs: Tax Benefits, Taxation and TDS Rules',
     slug: 'nri-life-insurance-and-ulip-taxation-rules',
     date: 'August 8, 2026',
     category: 'NRI Taxation',

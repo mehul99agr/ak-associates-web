@@ -36,6 +36,7 @@ const articleLd = buildArticleLd({
   headline: 'NRI Selling Shares in an Indian Private Company: Tax & FEMA Compliance',
   description: 'The valuation, TDS, capital gains tax, and FC-TRS reporting steps an NRI needs to handle when selling shares in an Indian private limited company, whether to a resident, another NRI, or a foreign investor.',
   datePublished: '2026-07-20',
+  dateModified: '2026-11-25',
   slug: 'nri-selling-shares-indian-private-company-tax-fema',
 })
 
@@ -97,6 +98,7 @@ export default function NriSellingSharesBlog() {
 
               <h2>Repatriating the Sale Proceeds</h2>
               <p>Once tax is settled and TDS reconciled, the NRI seller typically wants to repatriate the net proceeds. This follows the same repatriation framework used for other NRI transactions; proceeds routed through an NRO account are subject to the <strong>USD 1 million annual repatriation limit</strong> with Form 145/146 certification, similar to the process for property sale proceeds. See our <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRO repatriation guide</Link> for the full process.</p>
+              <p>Listed shares bought on an Indian stock exchange follow a different route through your bank and demat account; see <Link href="/blog/nri-demat-account-pis-vs-non-pis-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>PIS vs non-PIS accounts for NRIs</Link>.</p>
             </div>
 
             <PostFooterLinks slug="nri-selling-shares-indian-private-company-tax-fema" />

@@ -66,6 +66,7 @@ export default function TDSNROInterestBlog() {
 
               <h2>NRO Interest: The Default 30% Problem</h2>
               <p>Under <Link href="/blog/section-195-tds-nri-payments-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 393(2)</Link> (earlier Section 195 under the 1961 Act), banks deduct TDS on NRO interest at 30% (plus surcharge and cess, effective ~31.2%). This applies to:</p>
+              <p>If you are deciding where to keep the deposit in the first place, compare <Link href="/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO vs FCNR fixed deposits for NRIs</Link>.</p>
               <ul>
                 <li>NRO savings account interest</li>
                 <li>NRO fixed deposit interest</li>

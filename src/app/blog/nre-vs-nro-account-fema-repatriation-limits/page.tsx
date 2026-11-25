@@ -37,6 +37,7 @@ const articleLd = buildArticleLd({
   headline: 'NRE vs NRO: FEMA Repatriation Limits',
   description: 'NRE vs NRO vs FCNR accounts compared: which income goes where, tax treatment, the USD 1 million repatriation cap, and the FEMA mistakes that freeze NRI remittances.',
   datePublished: '2026-08-08',
+  dateModified: '2026-11-25',
   slug: 'nre-vs-nro-account-fema-repatriation-limits',
 })
 
@@ -153,10 +154,12 @@ export default function NREvsNROBlog() {
 
                 <h2>NRE Accounts: What Goes In, What Comes Out</h2>
                 <p>An NRE account exists to hold money you earn <strong>outside India</strong> that you choose to bring into an Indian rupee account, foreign salary, consulting income, business profits earned abroad, or funds transferred from your existing foreign bank account. Both the principal and the interest are fully and freely repatriable back abroad at any time, with no annual limit and minimal documentation for the outward transfer itself. Interest earned is exempt from Indian income tax under Section 10(4)(ii), as long as you continue to hold non-resident status under FEMA. NRE accounts can be held jointly with a resident close relative under the "former resident" joint holding provisions, though operational rights differ from a standard joint account.</p>
+                <p>Premiums for Indian ULIPs and life insurance can also be paid from an NRE account, which affects how easily the payout can be sent abroad later; see <Link href="/blog/nri-life-insurance-and-ulip-taxation-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>ULIP for NRIs: tax benefits and taxation</Link>.</p>
                 <p>The rule that trips people up: <strong>only foreign-sourced funds should enter an NRE account.</strong> If Indian rental income, dividends from Indian shares, or maturity proceeds from an Indian fixed deposit get credited into an NRE account, that is a FEMA violation, regardless of intent. Banks can, and do, flag such deposits on review and may require the account to be corrected.</p>
 
                 <h2>NRO Accounts: Where India-Sourced Income Belongs</h2>
                 <p>An NRO account is for income that <strong>arises in India</strong> while you are a non-resident, rent from Indian property, dividends on Indian shares, interest on Indian fixed deposits, pension credited in India, or proceeds from selling Indian assets. Unlike NRE, interest on an NRO account is <strong>taxable in India</strong>, and banks deduct TDS at source, generally at a high rate (30% plus applicable surcharge and cess) unless a lower rate applies under the relevant DTAA, which requires furnishing a Tax Residency Certificate and Form 10F to the bank.</p>
+                <p>Buying or selling listed Indian shares also depends on which account is linked to your demat account. See <Link href="/blog/nri-demat-account-pis-vs-non-pis-explained" style={{ color: 'var(--primary)', fontWeight: 600 }}>PIS account for NRIs: meaning, full form and PIS vs non-PIS</Link>.</p>
                 <p>Repatriation out of an NRO account is capped at <strong>USD 1 million per financial year</strong>, and this cap is cumulative, it counts all remittances out of all your NRO balances during the year, not a fresh USD 1 million allowance per transfer or per bank. Before the Authorised Dealer bank will process the transfer, you need:</p>
                 <ul>
                   <li><strong>Form 145</strong> (which replaced Form 15CA), filed by you on the income tax e-filing portal, declaring the nature and amount of the remittance.</li>

@@ -37,6 +37,7 @@ const articleLd = buildArticleLd({
   headline: 'RNOR Status for Returning NRIs (FY 2026-27)',
   description: 'The two RNOR tests, how many tax-free years returning NRIs actually get, what foreign income stays exempt, and the planning checklist before RNOR status ends.',
   datePublished: '2026-08-08',
+  dateModified: '2026-11-25',
   slug: 'rnor-status-tax-guide-returning-nris',
 })
 
@@ -173,6 +174,7 @@ export default function RNORStatusBlog() {
 
                 <h2>Planning Checklist Before RNOR Ends</h2>
                 <p>Because the RNOR window is finite and self-terminating, the value is in using it proactively, not discovering it retrospectively at tax filing time:</p>
+                <p>If you hold NRE, NRO or FCNR deposits, review each one before your status changes; see <Link href="/blog/nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO vs FCNR fixed deposits</Link>.</p>
                 <ol>
                   <li><strong>Map your exact RNOR window</strong> using your real day-count history against both tests, don't rely on a rule of thumb.</li>
                   <li><strong>Review foreign investment holdings</strong>, equity, mutual funds, retirement accounts, property, for any planned liquidity events, and consider timing them inside the RNOR window if a sale is coming anyway.</li>

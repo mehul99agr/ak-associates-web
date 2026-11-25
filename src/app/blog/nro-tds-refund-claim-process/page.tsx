@@ -8,7 +8,7 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TDS on NRO Account: How to Claim a Refund (FY 2026-27)' },
+  title: { absolute: 'NRO TDS Refund: How NRIs Claim Excess TDS Back (FY 2026-27)' },
   description: 'How NRIs claim a refund of excess TDS on NRO interest: which ITR to file, documents, Form 26AS reconciliation, and repatriating the refund.',
   keywords: [
     'NRO account TDS refund', 'how to claim TDS refund on NRO account', 'NRO TDS refund process',
@@ -37,6 +37,7 @@ const articleLd = buildArticleLd({
   headline: 'NRO Account TDS Refund: Claim Process (FY 2026-27)',
   description: 'How NRIs claim a refund of excess TDS deducted on NRO account interest: ITR selection, documents, Form 26AS reconciliation, and repatriation of the refunded amount.',
   datePublished: '2026-09-08',
+  dateModified: '2026-11-25',
   slug: 'nro-tds-refund-claim-process',
 })
 
@@ -98,6 +99,7 @@ export default function NROTDSRefundBlog() {
               <ServiceOffer variant="nri-itr" />
 
               <p>Most NRIs discover the gap between TDS deducted on their NRO account and their actual Indian tax liability only when a CA points it out at return-filing time. Banks deduct TDS on NRO interest and other credits at the domestic statutory rate by default, since they have no independent way to confirm treaty eligibility or your overall income position. When the real liability turns out to be lower, sometimes substantially lower, the only way to get that money back is a formal refund claim through your Indian income tax return. This guide walks through that claim process specifically for NRO account TDS, separate from the property-sale TDS refund process and separate from the mechanics of moving money out of India once you have it back.</p>
+              <p>This guide is about getting excess TDS back after the bank has deducted it. To cut the TDS before it is deducted, see <Link href="/blog/tds-nro-interest-fd-dtaa-relief" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRO account interest: rate and how to reduce it</Link>.</p>
 
               <h2>Why NRO TDS Refunds Happen</h2>
               <p>NRO interest, along with other NRO credits such as rent or dividends, is subject to TDS under Section 195 (now Section 393(2) of the Income Tax Act 2025) at the applicable domestic rate, commonly cited at 30% plus surcharge and cess (worth confirming against the current notified rate, since rates and surcharge slabs are periodically revised). Two common situations create a refund opportunity:</p>
@@ -129,6 +131,7 @@ export default function NROTDSRefundBlog() {
 
               <h2>Avoiding the Refund Wait: Fix It at Source</h2>
               <p>A refund claim recovers the money, but it ties up capital for months in the meantime. For NRO interest specifically, most NRIs are better served by submitting a Tax Residency Certificate and Form 10F to the bank each year so the DTAA rate is applied at source going forward, rather than repeatedly filing for refunds on the same recurring income. For a one-off large NRO credit where a treaty rate does not apply but your actual liability is still clearly lower than the standard rate, a Section 197 lower or nil deduction certificate (Form 13, now Form 128) obtained in advance achieves the same result.</p>
+              <p>The steps for getting the bank to apply the treaty rate are set out in our <Link href="/blog/tds-nro-interest-fd-dtaa-relief" style={{ color: 'var(--primary)', fontWeight: 600 }}>guide to TDS on NRO account interest</Link>.</p>
 
               <h2>Repatriating the Refund</h2>
               <p>Once the refund lands in your NRO account, it is repatriable like any other NRO balance. It is not exempt from the usual <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>USD 1 million per financial year cumulative limit</Link>, and remittances above the prescribed threshold still require Form 145/146 (formerly Form 15CA/15CB) compliance. If you are repatriating the refund alongside other NRO outflows in the same year, such as rental income or property sale proceeds, all of it counts toward the same annual cap.</p>
