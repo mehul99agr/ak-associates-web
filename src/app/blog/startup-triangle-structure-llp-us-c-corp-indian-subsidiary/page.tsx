@@ -169,6 +169,7 @@ export default function StartupTriangleStructureBlog() {
                 <li><strong>The team is tiny and early:</strong> three entities mean three sets of filings. If a US C-Corp is only a fundraising formality, compare the cost against a later flip.</li>
               </ul>
               <p>The structure is a tool, not a badge. If your investor needs a Delaware parent and your team is in India, it solves a real FEMA problem. If not, the simpler structure usually wins. See <Link href="/us-cross-border" style={{ color: 'var(--primary)', fontWeight: 600 }}>our US cross-border services</Link> and <Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup services</Link> for how we run all three entities together.</p>
+              <p>The most common alternative is to keep India at the top: see <Link href="/blog/indian-holding-company-us-uae-subsidiary-structure" style={{ color: 'var(--primary)', fontWeight: 600 }}>Indian Pvt Ltd holding with a US or UAE subsidiary</Link>.</p>
 
             </div>
 

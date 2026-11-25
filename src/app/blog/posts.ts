@@ -2,6 +2,13 @@
 // page and the per-post related-guides block.
 export const posts = [
   {
+    title: 'Indian Pvt Ltd Holding With US or UAE Subsidiary: Structure',
+    slug: 'indian-holding-company-us-uae-subsidiary-structure',
+    date: 'November 25, 2026',
+    category: 'US Cross-Border',
+    summary: 'Keep the head office in India and run international operations through a US C-Corp or UAE subsidiary: ODI by the Indian company, US and UAE tax, POEM, transfer pricing and yearly filings.',
+  },
+  {
     title: 'LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure',
     slug: 'startup-triangle-structure-llp-us-c-corp-indian-subsidiary',
     date: 'November 25, 2026',

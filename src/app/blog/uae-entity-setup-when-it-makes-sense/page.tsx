@@ -87,6 +87,7 @@ export default function UAEEntitySetupBlog() {
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>When a UAE Entity Actually Makes Sense</h2>
 
             <p style={{ marginBottom: '1rem' }}>There are genuine, legitimate use cases, but they require real substance, not just a registered address.</p>
+            <p style={{ marginBottom: '1rem' }}>If the UAE company will be a subsidiary of your Indian private limited company, see <Link href="/blog/indian-holding-company-us-uae-subsidiary-structure" style={{ color: 'var(--primary)', fontWeight: 600 }}>how the India holding structure works with a US or UAE subsidiary</Link>.</p>
 
             <ul style={{ paddingLeft: '2rem', marginBottom: '1.5rem' }}>
               <li style={{ marginBottom: '0.75rem' }}>

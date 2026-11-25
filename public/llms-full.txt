@@ -2356,7 +2356,15 @@ All registered taxpayers (or the date GSTR-9 is filed, if earlier)
 
 Search guides
 
-Showing 236 of 236 guides
+Showing 237 of 237 guides
+
+US Cross-BorderNovember 25, 2026
+
+## Indian Pvt Ltd Holding With US or UAE Subsidiary: Structure
+
+Keep the head office in India and run international operations through a US C-Corp or UAE subsidiary: ODI by the Indian company, US and UAE tax, POEM, transfer pricing and yearly filings.
+
+[Read guide: Indian Pvt Ltd Holding With US or UAE Subsidiary: Structure](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure)
 
 US Cross-BorderNovember 25, 2026
 
@@ -10813,6 +10821,8 @@ TL;DR
 
 There are genuine, legitimate use cases, but they require real substance, not just a registered address.
 
+If the UAE company will be a subsidiary of your Indian private limited company, see [how the India holding structure works with a US or UAE subsidiary](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure).
+
 - **You have real revenue from outside India** and want to invoice international clients directly without routing through an Indian entity. If your actual business is cross-border, a cross-border structure makes sense.
 - **Your customers or investors are in the Gulf** and a local presence materially builds trust or is required for contracting. This is a commercial reason, not just a tax reason.
 - **Your industry is genuinely more favorable in UAE**: fintech, crypto, certain licenses, or DIFC-regulated financial services. The regulatory environment, not just the tax environment, justifies the structure.
@@ -13391,6 +13401,8 @@ The two carry different compliance and reporting paths, so classifying the inves
 
 Most ODI transactions by eligible investors are permitted under the **automatic route**, meaning no prior RBI approval is needed, provided the investment stays within the prescribed structure, sector, and financial commitment limits tied to the investor's net worth. Certain categories fall outside this; investment in specific restricted sectors, structures with step-down subsidiaries beyond the permitted layering, or transactions that do not meet the automatic route's conditions; and these need **prior RBI approval** instead. Because financial commitment ceilings and permitted structures are revised periodically, the applicable limit should always be checked against the current OI Directions before finalising a transaction, rather than relied on from memory.
 
+For the most common startup use, an Indian company setting up a US C-Corp or UAE company for international operations, see [Indian Pvt Ltd holding with a US or UAE subsidiary](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure).
+
 ## Reporting: FIRMS Portal and the Annual Performance Report
 
 The initial ODI transaction is reported through the **Foreign Investment Reporting and Management System (FIRMS)** portal, routed via the investor's **Authorised Dealer (AD) bank**, broadly through Form FC for the relevant transaction type. After that, the recurring obligation is the **Annual Performance Report (APR)**, due each year the investment remains outstanding, covering the overseas entity's financial position. Missed or delayed APR filing is handled through RBI's compounding process rather than a fixed late fee; see our [guide on organising ODI and APR compliance](https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst) for how growing businesses track this in practice.
@@ -14271,9 +14283,9 @@ A US C-Corp that owns an Indian private limited subsidiary also files Form 5471 
 
 ### More Guides on This Topic
 
+- [Indian Pvt Ltd Holding With US or UAE Subsidiary: Structure](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure)
 - [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
 - [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
-- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -14375,8 +14387,8 @@ One simplification: since FinCEN's interim final rule of March 2025, companies f
 ### More Guides on This Topic
 
 - [US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
+- [Indian Pvt Ltd Holding With US or UAE Subsidiary: Structure](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure)
 - [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
-- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -14475,7 +14487,7 @@ The position flips the year a founder becomes a US tax resident, through a green
 
 - [Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide)
 - [US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
-- [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
+- [Indian Pvt Ltd Holding With US or UAE Subsidiary: Structure](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -31364,6 +31376,8 @@ Late FEMA reports are regularised through the RBI late submission fee, which is 
 
 The structure is a tool, not a badge. If your investor needs a Delaware parent and your team is in India, it solves a real FEMA problem. If not, the simpler structure usually wins. See [our US cross-border services](https://agrawalkhandelwal.com/us-cross-border) and [startup services](https://agrawalkhandelwal.com/startups) for how we run all three entities together.
 
+The most common alternative is to keep India at the top: see [Indian Pvt Ltd holding with a US or UAE subsidiary](https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure).
+
 **Official sources:** Foreign Exchange Management (Overseas Investment) Rules, 2022 and Regulations, 2022, and the RBI Master Direction on Overseas Investment; Foreign Exchange Management (Non-Debt Instruments) Rules, 2019; Companies (Compromises, Arrangements and Amalgamations) Amendment Rules, 2024. See [Reserve Bank of India](https://www.rbi.org.in/). This guide is general information, not advice on your facts.
 
 ### More Guides on This Topic
@@ -31419,6 +31433,203 @@ Three sets of compliance: the LLP (Form 8, Form 11, ITR and ODI annual performan
 - [Indian Subsidiary of a US C-Corp](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
 - [US LLC vs C-Corp for Indian Founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
 - [Forms 5471, 5472 and 8858](https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/indian-holding-company-us-uae-subsidiary-structure
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+US Cross-Border
+
+# Indian Pvt Ltd as Holding Company With a US C-Corp or UAE Subsidiary
+
+Published November 25, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- The structure: founders own an **Indian Pvt Ltd** (the head office), which owns a **US C-Corp**, a **UAE company** or both for international operations.
+- The Indian company makes the overseas direct investment, up to 400% of its net worth under the automatic route. Founders make no ODI themselves.
+- Subsidiary profits are taxed abroad and taxed in India only when paid up as dividends, with foreign tax credit, provided the subsidiary is really managed abroad.
+- Plan transfer pricing between India and each subsidiary, the POEM test, and the yearly ODI filings (including the Annual Performance Report by December 31).
+- Best when you will raise from Indian or global investors who are happy at the Indian level, or want an Indian IPO. If US VCs insist on a Delaware parent, look at a flip instead.
+
+Running a US LLC or C-Corp from India?
+
+Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC starting from $850 a year and C-Corp starting from $1,250 a year, depending on which filings apply.
+
+[Book a US compliance call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+Not every founder needs a Delaware parent. If you are building in Bangalore or Mumbai, raising from Indian funds, and selling to customers in the US or the Gulf, the simplest group often keeps India at the top: the Indian private limited company is the head office and owns the overseas companies. This guide covers how that works under FEMA, how the US and UAE subsidiaries are taxed, and what it takes to keep it compliant.
+
+## What Does the Structure Look Like?
+
+**Founders and investors**
+Hold shares in the Indian company only
+
+↓ equity
+
+**Indian Pvt Ltd (head office)**
+Owns the IP, employs the core team, raises capital
+
+↓ ODI (Overseas Investment Rules, 2022)
+
+**US C-Corp**
+US customers, contracts, bank account, US hires
+
+**UAE company**
+Gulf and Middle East sales, regional team
+
+Money flows one way at the start: out of India as investment in the subsidiaries. Later, profits come back as dividends or as fees for services the Indian company provides. Nothing comes back into India as foreign investment, which keeps round-tripping questions simple.
+
+## Why Keep the Head Office in India?
+
+- **No ODI for founders:** founders hold Indian shares only. The individual ODI conditions and the US$250,000 LRS limit do not apply to them, unlike a structure where founders hold a foreign parent.
+- **Indian listing stays open:** an Indian company can list in India directly. A number of well-known startups have spent time and tax moving their holding company back to India; starting here avoids that.
+- **Simpler ESOPs:** options are granted by the Indian company to Indian employees under Indian rules, with no foreign security involved.
+- **One cap table, in India:** Indian funds, angels and DPIIT-linked benefits sit naturally at the Indian company.
+
+The trade-off is US venture capital. Many US funds and accelerators prefer to invest in a Delaware C-Corp at the top of the group. If that is your plan, read our [India to US flip guide](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide) and the [LLP, US C-Corp and Pvt Ltd triangle](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary) before you choose.
+
+## Which Structure Fits Which Founder?
+
+| Structure | Top company | Usually suits |
+| --- | --- | --- |
+| India-first holding (this guide) | Indian Pvt Ltd | Indian investors, Indian IPO plans, India-built product selling abroad |
+| Flip | Delaware C-Corp | US VC or accelerator funding where a Delaware parent is a condition |
+| LLP triangle | Delaware C-Corp, held by founders through an Indian LLP | US funding with India-resident founders who need an Indian entity to make the ODI |
+
+## How Does the Indian Company Invest Abroad Under FEMA?
+
+An Indian company investing in a foreign company it controls is making overseas direct investment under the Foreign Exchange Management (Overseas Investment) Rules, 2022. In practice:
+
+- **Automatic route:** no RBI approval is needed if the total financial commitment (equity, loans and guarantees to the subsidiary) stays within **400% of the Indian company's net worth** as per its last audited balance sheet, and the subsidiary is in a bona fide business. Commitments of US$1 billion or more in a financial year need RBI approval.
+- **Through your bank:** the remittance and the ODI reporting go through your authorised dealer bank, which reports it to RBI. Do not wire money for the US or UAE company before the bank has your ODI paperwork; that is a common and avoidable FEMA breach.
+- **Annual Performance Report:** the Indian company files an APR for each subsidiary through the bank, generally by **December 31** each year, based on the subsidiary's accounts. It also files the annual FLA return.
+- **Late filings:** missed ODI reports are regularised through the RBI late submission fee, and banks can hold back further remittances until the backlog is cleared.
+
+One limit to keep in mind: if the US or UAE subsidiary later invests back into India, the round-tripping rules apply and the structure must not exceed two layers of subsidiaries. Keep the overseas companies as operating companies, not channels for money coming back in. Our [ODI guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india) covers the reporting in more detail.
+
+## The US C-Corp as a Subsidiary
+
+A US subsidiary is usually set up so US customers can contract with a US company, pay into a US bank account and deal with a US team. A Delaware C-Corp is the common choice; see [US LLC vs C-Corp](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders) for when an LLC can work instead.
+
+- **US tax:** the C-Corp pays US federal corporate tax and any state tax where it does business.
+- **Foreign-owned filings:** because an Indian company owns it, the C-Corp files Form 1120 with **Form 5472** reporting transactions with its Indian parent. See [Forms 5471, 5472 and 8858](https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity).
+- **Delaware:** annual franchise tax and annual report; use the [Assumed Par Value method](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method) to avoid an inflated bill.
+- **Dividends to India:** under the India-US DTAA, US withholding on dividends is limited to **15%** where the Indian company holds at least 10% of the voting stock. India taxes the dividend in the parent's hands and allows credit for the US tax.
+
+Our US annual compliance package for a C-Corp starts from $1,250 a year, depending on which filings apply.
+
+## The UAE Company as a Subsidiary
+
+A UAE subsidiary makes sense when you have real customers, partners or staff in the Gulf. Our [honest guide to when a UAE entity makes sense](https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense) covers the business case, and the [Dubai company registration guide](https://agrawalkhandelwal.com/blog/dubai-company-registration-guide) covers mainland versus free zone.
+
+- **UAE corporate tax:** 0% on taxable income up to AED 375,000 and 9% above that.
+- **Free zone 0%:** a qualifying free zone person can get 0% on qualifying income, but only with adequate substance in the free zone (people and core activities there), audited accounts, transfer pricing compliance and a cap on non-qualifying revenue. See [UAE corporate tax for Indian businesses](https://agrawalkhandelwal.com/blog/uae-corporate-tax-indian-impact).
+- **Transfer pricing on both sides:** the UAE now expects arm's length pricing too, so the India-UAE service or distribution arrangement needs one consistent policy. See [India-UAE transfer pricing](https://agrawalkhandelwal.com/blog/india-uae-transfer-pricing-compliance).
+
+A UAE company that has no staff or decision-making in the UAE and simply books profit earned by the Indian team is the version that goes wrong: it fails UAE substance, invites an Indian transfer pricing adjustment, and can be treated as Indian-resident under POEM.
+
+## How Is Money Taxed Between India and the Subsidiaries?
+
+| Flow | What to plan for |
+| --- | --- |
+| Indian company builds the product, subsidiary sells it | Arm's length fee or margin for the Indian company (development services, licence of IP or distribution margin), with transfer pricing documentation and Form 3CEB |
+| Subsidiary profits | Taxed in the US or UAE where earned; not taxed in India while retained, provided the subsidiary is managed abroad |
+| Dividend to the Indian parent | Taxed in India in the parent's hands with credit for foreign tax under the DTAA; claim the credit with the prescribed form in your Indian return |
+| Loans or guarantees from the Indian parent | Count towards the ODI financial commitment limit; interest and guarantee fees need arm's length pricing |
+| Exit by selling the subsidiary | Capital gains in the Indian company; ODI disinvestment reporting through the bank |
+
+See [transfer pricing for IT services](https://agrawalkhandelwal.com/blog/transfer-pricing-it-services-india) and [Form 3CEB](https://agrawalkhandelwal.com/blog/form-3ceb-transfer-pricing-audit-report) for the Indian side. The Income Tax Act, 2025 has renumbered the transfer pricing, foreign tax credit and residence sections, so confirm current references before relying on older numbering.
+
+## What Is the POEM Risk for a Foreign Subsidiary?
+
+A foreign company is treated as resident in India if its place of effective management, where key management and commercial decisions are in substance made, is in India. With the head office in India, this is the main tax risk of the structure: if the Indian founders take every decision for the US or UAE company from Bangalore or Mumbai, India can tax its global income.
+
+CBDT has said the POEM test does not apply to a foreign company with turnover or gross receipts of Rs 50 crore or less in a financial year, and there is separate guidance for companies engaged in active business outside India. Above that size, give each subsidiary real local management: a local director or senior manager, board meetings held and minuted outside India, and local authority to sign contracts and hire. Our [POEM guide](https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india) explains the tests.
+
+## What Filings Does the Group Have Each Year?
+
+- **Indian Pvt Ltd:** AOC-4 and MGT-7, statutory audit, ITR with Form 3CEB, the APR for each subsidiary, the FLA return, TDS, GST and payroll.
+- **US C-Corp:** Form 1120 with Form 5472, Delaware franchise tax and annual report, and state filings where it has nexus.
+- **UAE company:** corporate tax registration and return, audited financial statements where required (including for free zone 0% status), VAT if registered, transfer pricing disclosures, and the licence renewal for its zone.
+
+The APR depends on the subsidiaries' accounts, so close the US and UAE books early enough to meet the December 31 date in India.
+
+## How Do You Set It Up, Step by Step?
+
+1. Decide which markets need a local company, and whether a US, UAE or both subsidiaries make sense now.
+2. Check the Indian company's audited net worth against the planned investment, loans and guarantees.
+3. Pass the board resolution approving the overseas investment and fix the subsidiary's capital.
+4. Incorporate the subsidiary (see [Delaware incorporation and EIN](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide) or the [Dubai registration guide](https://agrawalkhandelwal.com/blog/dubai-company-registration-guide)).
+5. Submit the ODI paperwork to your bank and remit the capital through it.
+6. Sign the intercompany agreement (services, IP licence or distribution), set the transfer pricing policy, and appoint local management.
+7. Put the APR, FLA, Form 3CEB and foreign filing dates into one group compliance calendar.
+
+## When Is This the Wrong Structure?
+
+- **A US fund needs a Delaware parent:** converting later means a flip, with its own tax cost. Decide before the term sheet.
+- **The overseas company would have no real activity:** a subsidiary with no staff, customers or local decisions adds cost and tax risk without benefit. Selling from India with an export invoice may be enough for now.
+- **The Indian company has little net worth:** the 400% limit is measured against audited net worth, so a very early company may need to raise equity before it can fund a subsidiary.
+
+For most India-built startups and services businesses expanding to the US or the Gulf, India-first is the cleanest starting point. See [our US cross-border services](https://agrawalkhandelwal.com/us-cross-border), [UAE tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory) and [startup services](https://agrawalkhandelwal.com/startups) for how we run the group's compliance across all three countries.
+
+**Official sources:** Foreign Exchange Management (Overseas Investment) Rules, 2022, Regulations, 2022 and the RBI Master Direction on Overseas Investment; India-US DTAA, Article 10; CBDT Circulars 6 and 8 of 2017 on POEM; UAE Federal Decree-Law No. 47 of 2022 on corporate tax. See [Reserve Bank of India](https://www.rbi.org.in/) and [UAE Federal Tax Authority](https://tax.gov.ae/). This guide is general information, not advice on your facts.
+
+### More Guides on This Topic
+
+- [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
+- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
+- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+
+Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Income Tax Department e-filing portal](https://www.incometax.gov.in), [Reserve Bank of India](https://www.rbi.org.in).
+
+### Expanding to the US or UAE from India?
+
+We plan the ODI, the subsidiary set-up and transfer pricing before money moves, and run the yearly filings in India, the US and the UAE.
+
+[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+## Frequently Asked Questions
+
+### What is an India-first holding structure?
+
+The founders own an Indian private limited company, which is the head office and top of the group. The Indian company sets up a US C-Corp, a UAE company or both as wholly owned subsidiaries to sell, sign contracts and hire abroad. Investors come in at the Indian company.
+
+### Can an Indian private limited company own a US or UAE company?
+
+Yes. An Indian company can make overseas direct investment under the Overseas Investment Rules, 2022 through its authorised dealer bank. Under the automatic route its total financial commitment can go up to 400% of its net worth as per its last audited balance sheet, and the foreign company must be in a bona fide business.
+
+### Do founders need to make ODI themselves in this structure?
+
+No. The founders hold shares only in the Indian company. The overseas investment is made by the Indian company, so the individual ODI restrictions and the LRS limit do not come into it. That is one of the main reasons founders prefer this structure when they do not need a US parent.
+
+### Are profits of the US or UAE subsidiary taxed in India?
+
+Not while they stay in the subsidiary, as long as it is genuinely managed abroad. They are taxed in India when paid to the Indian parent as dividends, with credit for foreign tax under the tax treaty. If the subsidiary is really run from India, it can be treated as Indian-resident under the place of effective management test.
+
+### What tax applies on dividends from the US subsidiary?
+
+Under the India-US DTAA, US withholding tax on dividends is limited to 15% where the Indian company holds at least 10% of the voting stock. The dividend is then taxed in India in the parent's hands with credit for the US tax.
+
+### Is a UAE subsidiary a tax-free company?
+
+No. UAE corporate tax is 0% on taxable income up to AED 375,000 and 9% above that. A qualifying free zone person can get 0% on qualifying income only if it has real substance in the free zone and meets the other conditions. A UAE company that only books profits shifted from India also invites transfer pricing and POEM challenges in India.
+
+### When should a startup choose a Delaware parent instead?
+
+When US venture investors or accelerators make a Delaware parent a condition of investing. US funds usually want to invest at the top of the group, so an Indian holding company with a US subsidiary may not suit them. In that case look at a flip or the LLP triangle structure.
+
+### Related Guides
+
+- [The Startup Triangle Structure: LLP, US C-Corp and Pvt Ltd](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
+- [India to US Flip Structure](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+- [ODI: Overseas Direct Investment Guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india)
+- [UAE Entity Setup: When It Makes Sense](https://agrawalkhandelwal.com/blog/uae-entity-setup-when-it-makes-sense)
+- [POEM: Place of Effective Management](https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india)
 
 ---
 
