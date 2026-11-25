@@ -31139,11 +31139,11 @@ TL;DR
 - Reporting follows: overseas investment reporting for founders, FC-GPR (30 days from allotment) or FC-TRS for the Indian company, and the annual FLA return.
 - Some points, such as how the round-tripping limits apply to resident individuals, are not settled. Take a legal opinion.
 
-Running a US LLC or C-Corp from India?
+Choosing a structure across India, the US or the UAE?
 
-Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC starting from $850 a year and C-Corp starting from $1,250 a year, depending on which filings apply.
+We work out the FEMA route, the tax on each flow and the filings for every entity before any money or shares move, then run the yearly compliance in each country. Start with a free 15-minute call.
 
-[Book a US compliance call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+[Book a free structuring call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[US cross-border services](https://agrawalkhandelwal.com/us-cross-border)
 
 A flip means moving the top of your company from India to the US. The Indian company you built becomes a subsidiary of a new Delaware C-Corp, and you and your investors hold shares in the Delaware parent instead. It is one of the first things a US investor raises with an Indian founder, and the way it is done decides how much Indian tax and RBI paperwork you carry for years.
 
@@ -31214,7 +31214,7 @@ Rules and due dates change. Check our [compliance due date calendar](https://agr
 
 We help founders sequence the tax opinion, FEMA route and filings before any shares move.
 
-[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[US cross-border services](https://agrawalkhandelwal.com/us-cross-border)
 
 ## Frequently Asked Questions
 
@@ -31270,11 +31270,11 @@ TL;DR
 - The chain must stay within the round-tripping limit of two layers of subsidiaries. Do not add overseas subsidiaries without checking.
 - You run three entities in two countries: plan the transfer pricing, dividend tax, POEM risk and three sets of annual filings before the first wire.
 
-Running a US LLC or C-Corp from India?
+Choosing a structure across India, the US or the UAE?
 
-Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC starting from $850 a year and C-Corp starting from $1,250 a year, depending on which filings apply.
+We work out the FEMA route, the tax on each flow and the filings for every entity before any money or shares move, then run the yearly compliance in each country. Start with a free 15-minute call.
 
-[Book a US compliance call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+[Book a free structuring call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[US cross-border services](https://agrawalkhandelwal.com/us-cross-border)
 
 If you are building in Bangalore or Mumbai and a US fund or accelerator wants a Delaware C-Corp, you quickly hit a question most flip guides skip: who actually holds the US shares? The founders live in India, the team is in India, and FEMA limits how a resident individual can own a foreign company that in turn owns an Indian company. The triangle structure is the common answer. This guide explains what it is, why the LLP is there, and what it costs to run.
 
@@ -31394,7 +31394,7 @@ Rules and due dates change. Check our [compliance due date calendar](https://agr
 
 We sequence the FEMA route, tax view and filings for all three entities before any money moves, and run the yearly compliance in India and the US.
 
-[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[US cross-border services](https://agrawalkhandelwal.com/us-cross-border)
 
 ## Frequently Asked Questions
 
@@ -31424,7 +31424,7 @@ Many do, because it is a known answer to the Indian ODI rules, but some prefer f
 
 ### What does it cost to run the triangle every year?
 
-Three sets of compliance: the LLP (Form 8, Form 11, ITR and ODI annual performance report), the US C-Corp (Form 1120, Form 5472, Delaware franchise tax and annual report) and the Indian Pvt Ltd (ROC filings, audit, ITR, transfer pricing report and FLA return). Our US C-Corp annual package starts from $1,250 a year and our incorporation plus first-year compliance package for the Pvt Ltd is Rs 99,000, plus out-of-pocket expenses and GST, if applicable.
+Three sets of compliance: the LLP (Form 8, Form 11, ITR and ODI annual performance report), the US C-Corp (Form 1120, Form 5472, Delaware franchise tax and annual report) and the Indian Pvt Ltd (ROC filings, audit, ITR, transfer pricing report and FLA return). The cost depends on the size of each entity and which filings apply, so plan for all three from the start.
 
 ### Related Guides
 
@@ -31454,11 +31454,11 @@ TL;DR
 - Plan transfer pricing between India and each subsidiary, the POEM test, and the yearly ODI filings (including the Annual Performance Report by December 31).
 - Best when you will raise from Indian or global investors who are happy at the Indian level, or want an Indian IPO. If US VCs insist on a Delaware parent, look at a flip instead.
 
-Running a US LLC or C-Corp from India?
+Choosing a structure across India, the US or the UAE?
 
-Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC starting from $850 a year and C-Corp starting from $1,250 a year, depending on which filings apply.
+We work out the FEMA route, the tax on each flow and the filings for every entity before any money or shares move, then run the yearly compliance in each country. Start with a free 15-minute call.
 
-[Book a US compliance call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+[Book a free structuring call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[US cross-border services](https://agrawalkhandelwal.com/us-cross-border)
 
 Not every founder needs a Delaware parent. If you are building in Bangalore or Mumbai, raising from Indian funds, and selling to customers in the US or the Gulf, the simplest group often keeps India at the top: the Indian private limited company is the head office and owns the overseas companies. This guide covers how that works under FEMA, how the US and UAE subsidiaries are taxed, and what it takes to keep it compliant.
 
@@ -31518,8 +31518,6 @@ A US subsidiary is usually set up so US customers can contract with a US company
 - **Foreign-owned filings:** because an Indian company owns it, the C-Corp files Form 1120 with **Form 5472** reporting transactions with its Indian parent. See [Forms 5471, 5472 and 8858](https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity).
 - **Delaware:** annual franchise tax and annual report; use the [Assumed Par Value method](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method) to avoid an inflated bill.
 - **Dividends to India:** under the India-US DTAA, US withholding on dividends is limited to **15%** where the Indian company holds at least 10% of the voting stock. India taxes the dividend in the parent's hands and allows credit for the US tax.
-
-Our US annual compliance package for a C-Corp starts from $1,250 a year, depending on which filings apply.
 
 ## The UAE Company as a Subsidiary
 
@@ -31591,7 +31589,7 @@ Rules and due dates change. Check our [compliance due date calendar](https://agr
 
 We plan the ODI, the subsidiary set-up and transfer pricing before money moves, and run the yearly filings in India, the US and the UAE.
 
-[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[US cross-border services](https://agrawalkhandelwal.com/us-cross-border)
 
 ## Frequently Asked Questions
 

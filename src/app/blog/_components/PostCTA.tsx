@@ -4,10 +4,11 @@ import { BOOKING_LINK } from '@/lib/constants'
 // segment: the closing box on NRI, US and startup posts always books the free call
 // with the right form topic and links to that segment's packages, whatever the post
 // passed for its buttons (decided Nov 25, 2026; see CLAUDE.md "Growth goal").
-export type Segment = 'nri' | 'us' | 'startup'
+export type Segment = 'nri' | 'us' | 'us-structure' | 'startup'
 const SEGMENTS: Record<Segment, { topic: string; label: string; href: string }> = {
   nri: { topic: 'nri-tax', label: 'See NRI packages', href: '/nri-tax-advisory#packages' },
   us: { topic: 'us-cross-border', label: 'See US packages', href: '/us-cross-border#packages' },
+  'us-structure': { topic: 'us-cross-border', label: 'US cross-border services', href: '/us-cross-border' },
   startup: { topic: 'startups', label: 'See startup package', href: '/startups#packages' },
 }
 

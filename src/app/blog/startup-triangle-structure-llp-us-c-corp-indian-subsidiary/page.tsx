@@ -41,7 +41,7 @@ const faqs: [string, string][] = [
   ['Is the triangle structure round tripping?', 'It is an ODI-FDI structure, which the 2022 rules allow subject to a limit: a resident cannot invest in a foreign entity that invests into India if the result is more than two layers of subsidiaries. A plain LLP, US C-Corp and Indian Pvt Ltd chain is generally read as within the limit, but adding more overseas subsidiaries can break it. Get the layer count confirmed in writing.'],
   ['How is money taxed as it moves through the triangle?', 'The Indian Pvt Ltd usually earns a service fee from the US parent, priced at arm\'s length under transfer pricing. Dividends from the US C-Corp to the LLP face US withholding tax, reduced under the India-US DTAA, and are taxed in India in the LLP\'s hands with credit for the US tax. The LLP itself is taxed as a firm. Model these flows before you raise.'],
   ['Do US investors accept an LLP on the cap table?', 'Many do, because it is a known answer to the Indian ODI rules, but some prefer founders to hold shares personally for vesting and exit reasons. Raise it with the investor and their counsel at the term sheet stage, not at closing.'],
-  ['What does it cost to run the triangle every year?', 'Three sets of compliance: the LLP (Form 8, Form 11, ITR and ODI annual performance report), the US C-Corp (Form 1120, Form 5472, Delaware franchise tax and annual report) and the Indian Pvt Ltd (ROC filings, audit, ITR, transfer pricing report and FLA return). Our US C-Corp annual package starts from $1,250 a year and our incorporation plus first-year compliance package for the Pvt Ltd is Rs 99,000, plus out-of-pocket expenses and GST, if applicable.'],
+  ['What does it cost to run the triangle every year?', 'Three sets of compliance: the LLP (Form 8, Form 11, ITR and ODI annual performance report), the US C-Corp (Form 1120, Form 5472, Delaware franchise tax and annual report) and the Indian Pvt Ltd (ROC filings, audit, ITR, transfer pricing report and FLA return). The cost depends on the size of each entity and which filings apply, so plan for all three from the start.'],
 ]
 
 const faqLd = buildFaqLd(faqs)
@@ -75,7 +75,7 @@ export default function StartupTriangleStructureBlog() {
                   <li style={{ marginBottom: 0 }}>You run three entities in two countries: plan the transfer pricing, dividend tax, POEM risk and three sets of annual filings before the first wire.</li>
                 </ul>
               </div>
-              <ServiceOffer variant="us-entity" />
+              <ServiceOffer variant="us-structure" />
 
               <p>If you are building in Bangalore or Mumbai and a US fund or accelerator wants a Delaware C-Corp, you quickly hit a question most flip guides skip: who actually holds the US shares? The founders live in India, the team is in India, and FEMA limits how a resident individual can own a foreign company that in turn owns an Indian company. The triangle structure is the common answer. This guide explains what it is, why the LLP is there, and what it costs to run.</p>
 
@@ -179,7 +179,7 @@ export default function StartupTriangleStructureBlog() {
 
             <PostFooterLinks slug={SLUG} />
 
-            <PostCTA segment="us"
+            <PostCTA segment="us-structure"
               heading="Setting up an LLP, US C-Corp and Indian Pvt Ltd?"
               description="We sequence the FEMA route, tax view and filings for all three entities before any money moves, and run the yearly compliance in India and the US."
             />

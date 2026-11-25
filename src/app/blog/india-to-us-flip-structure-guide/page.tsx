@@ -74,7 +74,7 @@ export default function IndiaToUsFlipStructureBlog() {
                   <li style={{ marginBottom: 0 }}>Some points, such as how the round-tripping limits apply to resident individuals, are not settled. Take a legal opinion.</li>
                 </ul>
               </div>
-              <ServiceOffer variant="us-entity" />
+              <ServiceOffer variant="us-structure" />
 
               <p>A flip means moving the top of your company from India to the US. The Indian company you built becomes a subsidiary of a new Delaware C-Corp, and you and your investors hold shares in the Delaware parent instead. It is one of the first things a US investor raises with an Indian founder, and the way it is done decides how much Indian tax and RBI paperwork you carry for years.</p>
 
@@ -127,7 +127,7 @@ export default function IndiaToUsFlipStructureBlog() {
 
             <PostFooterLinks slug="india-to-us-flip-structure-guide" />
 
-            <PostCTA segment="us"
+            <PostCTA segment="us-structure"
             heading="Planning a flip to Delaware?"
             description="We help founders sequence the tax opinion, FEMA route and filings before any shares move."
             secondaryLabel="US Cross-Border Services"

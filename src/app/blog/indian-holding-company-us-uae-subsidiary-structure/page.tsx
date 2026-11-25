@@ -76,7 +76,7 @@ export default function IndianHoldingForeignSubsidiaryBlog() {
                   <li style={{ marginBottom: 0 }}>Best when you will raise from Indian or global investors who are happy at the Indian level, or want an Indian IPO. If US VCs insist on a Delaware parent, look at a flip instead.</li>
                 </ul>
               </div>
-              <ServiceOffer variant="us-entity" />
+              <ServiceOffer variant="us-structure" />
 
               <p>Not every founder needs a Delaware parent. If you are building in Bangalore or Mumbai, raising from Indian funds, and selling to customers in the US or the Gulf, the simplest group often keeps India at the top: the Indian private limited company is the head office and owns the overseas companies. This guide covers how that works under FEMA, how the US and UAE subsidiaries are taxed, and what it takes to keep it compliant.</p>
 
@@ -134,7 +134,6 @@ export default function IndianHoldingForeignSubsidiaryBlog() {
                 <li><strong>Delaware:</strong> annual franchise tax and annual report; use the <Link href="/blog/delaware-franchise-tax-assumed-par-value-method" style={link}>Assumed Par Value method</Link> to avoid an inflated bill.</li>
                 <li><strong>Dividends to India:</strong> under the India-US DTAA, US withholding on dividends is limited to <strong>15%</strong> where the Indian company holds at least 10% of the voting stock. India taxes the dividend in the parent&apos;s hands and allows credit for the US tax.</li>
               </ul>
-              <p>Our US annual compliance package for a C-Corp starts from $1,250 a year, depending on which filings apply.</p>
 
               <h2>The UAE Company as a Subsidiary</h2>
               <p>A UAE subsidiary makes sense when you have real customers, partners or staff in the Gulf. Our <Link href="/blog/uae-entity-setup-when-it-makes-sense" style={link}>honest guide to when a UAE entity makes sense</Link> covers the business case, and the <Link href="/blog/dubai-company-registration-guide" style={link}>Dubai company registration guide</Link> covers mainland versus free zone.</p>
@@ -201,7 +200,7 @@ export default function IndianHoldingForeignSubsidiaryBlog() {
 
             <PostFooterLinks slug={SLUG} />
 
-            <PostCTA segment="us"
+            <PostCTA segment="us-structure"
               heading="Expanding to the US or UAE from India?"
               description="We plan the ODI, the subsidiary set-up and transfer pricing before money moves, and run the yearly filings in India, the US and the UAE."
             />

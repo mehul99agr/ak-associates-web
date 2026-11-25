@@ -6,7 +6,7 @@ import { BOOKING_LINK } from '@/lib/constants'
 // without scrolling to the end. Fees come from the same numbers as
 // src/lib/servicePricing.ts; keep the two in step.
 
-type Variant = 'nri-seller' | 'nri-buyer' | 'nri-itr' | 'nri-ldc' | 'nri-banking' | 'us-entity' | 'startup' | 'startup-funding'
+type Variant = 'nri-seller' | 'nri-buyer' | 'nri-itr' | 'nri-ldc' | 'nri-banking' | 'us-entity' | 'us-structure' | 'startup' | 'startup-funding'
 
 const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic: string; more: { label: string; href: string } }> = {
   'nri-seller': {
@@ -57,6 +57,15 @@ const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic:
     cta: 'Book a free startup call',
     topic: 'startups',
     more: { label: 'See the startup package', href: '/startups#packages' },
+  },
+  // Group structuring posts (flip, LLP triangle, Indian holding company): no fee
+  // shown, quoted after the first call (user decision Nov 25, 2026).
+  'us-structure': {
+    label: 'Choosing a structure across India, the US or the UAE?',
+    text: 'We work out the FEMA route, the tax on each flow and the filings for every entity before any money or shares move, then run the yearly compliance in each country. Start with a free 15-minute call.',
+    cta: 'Book a free structuring call',
+    topic: 'us-cross-border',
+    more: { label: 'US cross-border services', href: '/us-cross-border' },
   },
   'us-entity': {
     label: 'Running a US LLC or C-Corp from India?',
