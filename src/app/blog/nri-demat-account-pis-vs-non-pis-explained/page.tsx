@@ -8,16 +8,16 @@ import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableSt
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'PIS Account for NRIs: What It Is & PIS vs Non-PIS Demat' },
-  description: 'What a PIS account is, when NRI equity investment needs it, how non-PIS (NRO-linked) accounts work, and the 2025 RBI change merging NRE and NRO PIS accounts.',
+  title: { absolute: 'PIS Account for NRI: Meaning, Full Form & PIS vs Non-PIS' },
+  description: 'PIS full form is Portfolio Investment Scheme. What a PIS account means for NRIs, when you need one, how a non-PIS NRO account differs, and how to open it.',
   keywords: [
-    'NRI PIS account', 'NRI non-PIS demat account', 'portfolio investment scheme NRI',
+    'PIS account', 'PIS account meaning', 'PIS account full form', 'what is PIS account', 'NRO non-PIS account', 'NRI PIS account', 'NRI non-PIS demat account', 'portfolio investment scheme NRI',
     'PIS vs non-PIS NRI', 'NRI demat account rules', 'NRE PIS account', 'NRO demat account NRI',
     'RBI PIS permission NRI', 'NRI equity investment India',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained' },
   openGraph: {
-    title: 'NRI Demat Account: PIS vs Non-PIS Explained',
+    title: 'PIS Account for NRI: Meaning, Full Form & PIS vs Non-PIS',
     description: 'When NRIs need a PIS account, how non-PIS (NRO-linked) accounts differ, and the 2025 RBI simplification merging NRE and NRO PIS accounts.',
     url: 'https://agrawalkhandelwal.com/blog/nri-demat-account-pis-vs-non-pis-explained',
     type: 'article',
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
   },
 }
 
-const breadcrumbLd = buildBlogBreadcrumbLd('NRI Demat Account: PIS vs Non-PIS Explained', 'nri-demat-account-pis-vs-non-pis-explained')
+const breadcrumbLd = buildBlogBreadcrumbLd('PIS Account for NRI: Meaning and PIS vs Non-PIS', 'nri-demat-account-pis-vs-non-pis-explained')
 
 const articleLd = buildArticleLd({
-  headline: 'NRI Demat Account: PIS vs Non-PIS Explained',
+  headline: 'PIS Account for NRI: Meaning, Full Form and PIS vs Non-PIS',
   description: 'What the Portfolio Investment Scheme (PIS) covers for NRIs, when a non-PIS account applies, the RBI reporting framework, the 2025 change merging NRE and NRO PIS accounts, and the practical steps to open an NRE PIS account.',
   datePublished: '2026-08-16',
-  dateModified: '2026-09-21',
+  dateModified: '2026-11-25',
   slug: 'nri-demat-account-pis-vs-non-pis-explained',
 })
 
@@ -89,7 +89,7 @@ export default function NRIDematPISBlog() {
             <article className="card" style={{ maxWidth: '800px', margin: '0 auto' }}>
               <span className="section-badge">NRI Taxation</span>
               <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>
-                NRI Demat Account: PIS vs Non-PIS Explained
+                PIS Account for NRI: Meaning, Full Form and PIS vs Non-PIS
               </h1>
               <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span>Published August 16, 2026</span>
@@ -111,6 +111,10 @@ export default function NRIDematPISBlog() {
                 </div>
 
                 <p>One of the more confusing parts of setting up an investment account as an NRI is figuring out whether you actually need a PIS account, or whether a simpler non-PIS demat account will do. The confusion is understandable: PIS was designed decades ago as an RBI reporting mechanism, and it still applies, but not to every kind of investment an NRI might want to make, and the framework itself was recently simplified in ways older guidance online has not caught up with.</p>
+
+                <h2>What Is a PIS Account? Meaning and Full Form</h2>
+                <p><strong>PIS stands for Portfolio Investment Scheme.</strong> A PIS account is an NRE (or, earlier, NRO) bank account that an RBI-authorised bank has designated for an NRI&apos;s stock-market trades. You need it to buy or sell listed Indian shares on the exchange, and the bank reports each of those trades to the RBI.</p>
+                <p>A <strong>non-PIS account</strong> is usually an NRO-linked demat and trading account used for investments that do not need PIS routing, such as mutual funds, IPO applications and shares you received through ESOPs, a gift or inheritance. In short: trading listed shares on the exchange needs PIS; most other NRI investments do not.</p>
 
                 <h2>What the Portfolio Investment Scheme (PIS) Actually Covers</h2>
                 <p>PIS is an RBI framework, operated through banks authorised to offer the scheme, that lets NRIs purchase and sell shares and convertible debentures of Indian listed companies on a recognised stock exchange, on either a repatriable or non-repatriable basis. Two things define when PIS applies:</p>

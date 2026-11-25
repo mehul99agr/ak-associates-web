@@ -9,6 +9,7 @@ import ContactClickTracker from './ContactClickTracker'
 import WebMcpTools from './WebMcpTools'
 import CookieConsent from './CookieConsent'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/next'
 import { Montserrat, Open_Sans, Cormorant_Garamond } from 'next/font/google'
 import { BASE_URL, FIRM_NAME, BOOKING_LINK as SHARED_BOOKING_LINK, OFFICES, MEHUL_PERSON_ID, RUPESH_PERSON_ID, ORGANIZATION_ID } from '@/lib/constants'
 
@@ -265,6 +266,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ContactClickTracker />
         <WebMcpTools />
         <SpeedInsights />
+        <Analytics />
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <Navbar />
         <main id="main-content" tabIndex={-1}>{children}</main>

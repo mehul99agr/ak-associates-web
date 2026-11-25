@@ -8,19 +8,20 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TDS on NRO Interest & FD (FY 2026-27)' },
-  description: 'TDS on NRO savings and FD interest: the 30% domestic rate, claiming lower DTAA rates (10-15%) with TRC and Form 10F, and ITR refunds for excess TDS.',
-  keywords: ['TDS NRO interest', 'NRO FD TDS rate', 'NRO interest tax NRI', 'DTAA NRO interest', 'NRO TDS refund', 'NRO FD tax rate NRI', 'TDS on NRO savings account'],
+  title: { absolute: 'TDS on NRO Account Interest: Rate & How to Reduce It (2026-27)' },
+  description: 'NRO account interest is taxed at 30% TDS plus cess. How to cut it to your DTAA rate (10-15%) with a TRC and Form 10F, and how to get excess TDS refunded.',
+  keywords: ['TDS on NRO account', 'NRO tax rate', 'how to avoid TDS on NRO account', 'tax on NRO account interest', 'NRO TDS rate', 'TDS NRO interest', 'NRO FD TDS rate', 'NRO interest tax NRI', 'DTAA NRO interest', 'NRO TDS refund', 'NRO FD tax rate NRI', 'TDS on NRO savings account'],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief' },
   openGraph: { title: 'TDS on NRO Interest & FD: DTAA Relief for NRIs', description: '30% TDS on NRO interest, how to cut it to 10-15% with DTAA, TRC process.', url: 'https://agrawalkhandelwal.com/blog/tds-nro-interest-fd-dtaa-relief', type: 'article', images: OG_IMAGES },
 }
 
-const breadcrumbLd = buildBlogBreadcrumbLd('TDS on NRO Interest & FD (FY 2026-27)', 'tds-nro-interest-fd-dtaa-relief')
+const breadcrumbLd = buildBlogBreadcrumbLd('TDS on NRO Account Interest: Rate and How to Reduce It', 'tds-nro-interest-fd-dtaa-relief')
 
 const articleLd = buildArticleLd({
-  headline: 'TDS on NRO Interest & FD (FY 2026-27)',
+  headline: 'TDS on NRO Account Interest: Rate and How to Reduce It (2026-27)',
   description: 'TDS on NRO interest, DTAA treaty rates, TRC process, and refund claims.',
   datePublished: '2026-07-08',
+  dateModified: '2026-11-25',
   slug: 'tds-nro-interest-fd-dtaa-relief',
 })
 

@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
         <div className="section">
           <div className="container" style={{ maxWidth: '820px' }}>
             <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 2.75rem)', marginBottom: '0.5rem' }}>Privacy Policy</h1>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2.5rem' }}>Last updated: November 21, 2026</p>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2.5rem' }}>Last updated: November 25, 2026</p>
 
             <div className="blog-content">
               <p>
@@ -44,8 +44,12 @@ export default function PrivacyPolicy() {
                   until you accept cookies through the consent banner, Google Analytics sets no cookies and sends
                   only cookieless signals that carry no identifier for you or your device. Full analytics, with
                   cookies, start only after you click Accept.</li>
+                <li><strong>Visit counts</strong> via Vercel Web Analytics - page views, referring site, country, device
+                  and browser type, counted without cookies and without any identifier that follows you across days or
+                  sites, so it needs no consent.</li>
                 <li><strong>Enquiry and free-call forms</strong>. If you fill in a form on this website, we receive your
-                  name, email address, the topic and timeline you choose, where you are based, and your message, along
+                  email address, the topic and timeline you choose and where you are based, plus your name and message on
+                  forms that ask for them, along
                   with the page you sent it from. The form is delivered to our inbox by Web3Forms, a form-to-email
                   service; we do not store it in a database on this website.</li>
                 <li><strong>Requests sent by an AI assistant</strong>. Pages on this website let an AI assistant
@@ -79,7 +83,8 @@ export default function PrivacyPolicy() {
                 <li><strong>Zoho Bookings</strong> - booking and payment for paid consultation calls.</li>
                 <li><strong>WhatsApp</strong> - when you message us on WhatsApp after booking a paid call (the number is shared in the booking confirmation).</li>
                 <li><strong>Vercel</strong> - our website hosting provider, which may log standard server
-                  request data (IP address, timestamp) for performance and security purposes.</li>
+                  request data (IP address, timestamp) for performance and security purposes, and which provides our
+                  cookieless visit counts (Vercel Web Analytics).</li>
               </ul>
 
               <h2>How We Use Information</h2>

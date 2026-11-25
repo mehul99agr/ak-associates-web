@@ -12,7 +12,9 @@ import { OFFICES } from '@/lib/constants'
 import { ENQUIRY_COUNTRIES, enquiryLabels, enquirySubject, submitEnquiry, type EnquiryInput } from '@/lib/enquiry'
 
 // Free enquiry form, delivered by Web3Forms (see src/lib/consult.ts).
-// mode="free-call": the screening step for the free 15-minute call. After a
+// mode="free-call": the screening step for the free 15-minute call. It asks only
+//   email, topic, country and timeline (name and situation are collected by the
+//   Google Calendar booking form, so asking twice only loses visitors). After a
 //   successful submit, visitors who are not "just exploring" get the free booking
 //   link (or, until that link exists, a promise that we email them a slot).
 // mode="enquiry": a plain written question, answered by email.
@@ -57,9 +59,11 @@ export default function EnquiryForm({
     const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>
     if (data.botcheck) return
 
+    const quick = mode === 'free-call'
     const input: EnquiryInput = {
-      name: data.name, email: data.email, topic: data.topic,
-      country: data.country, timeline: data.timeline, message: data.message,
+      name: data.name || (quick ? 'Not asked (free-call form)' : ''), email: data.email, topic: data.topic,
+      country: data.country, timeline: data.timeline,
+      message: data.message || (quick ? 'Free call request. Details will come with the calendar booking.' : ''),
     }
 
     // No key configured: hand the enquiry to the visitor's email app instead.
@@ -115,16 +119,23 @@ export default function EnquiryForm({
   return (
     <form onSubmit={onSubmit} style={{ display: 'grid', gap: '1rem' }}>
       <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1rem' }}>
-        <div>
-          <label htmlFor={`${idp}name`} style={label}>Your name</label>
-          <input id={`${idp}name`} name="name" required maxLength={100} autoComplete="name" style={field} />
-        </div>
+      {mode === 'free-call' ? (
         <div>
           <label htmlFor={`${idp}email`} style={label}>Email</label>
           <input id={`${idp}email`} name="email" type="email" required maxLength={150} autoComplete="email" style={field} />
         </div>
-      </div>
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1rem' }}>
+          <div>
+            <label htmlFor={`${idp}name`} style={label}>Your name</label>
+            <input id={`${idp}name`} name="name" required maxLength={100} autoComplete="name" style={field} />
+          </div>
+          <div>
+            <label htmlFor={`${idp}email`} style={label}>Email</label>
+            <input id={`${idp}email`} name="email" type="email" required maxLength={150} autoComplete="email" style={field} />
+          </div>
+        </div>
+      )}
       <div>
         <label htmlFor={`${idp}topic`} style={label}>What do you need help with?</label>
         <select id={`${idp}topic`} name="topic" required value={selectedTopic} onChange={(e) => setSelectedTopic(e.target.value)} style={field}>
@@ -148,17 +159,19 @@ export default function EnquiryForm({
           </select>
         </div>
       </div>
-      <div>
-        <label htmlFor={`${idp}message`} style={label}>{mode === 'free-call' ? 'Briefly, what is your situation?' : 'Your question'}</label>
-        <textarea id={`${idp}message`} name="message" required minLength={20} maxLength={2000} rows={4} style={{ ...field, resize: 'vertical' }} />
-      </div>
+      {mode !== 'free-call' && (
+        <div>
+          <label htmlFor={`${idp}message`} style={label}>Your question</label>
+          <textarea id={`${idp}message`} name="message" required minLength={20} maxLength={2000} rows={4} style={{ ...field, resize: 'vertical' }} />
+        </div>
+      )}
       {status === 'error' && (
         <p role="alert" style={{ color: 'var(--danger)', margin: 0, fontSize: '0.9rem' }}>
           Sorry, that did not go through. Please try again or email {OFFICES.nashik.email}.
         </p>
       )}
       <button type="submit" className="btn btn-primary" disabled={status === 'sending'} style={{ width: '100%' }}>
-        {status === 'sending' ? 'Sending…' : mode === 'free-call' ? 'Request my free call' : 'Send my question'}
+        {status === 'sending' ? 'Sending…' : mode === 'free-call' ? 'See free call times' : 'Send my question'}
       </button>
       <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', margin: 0, textAlign: 'center' }}>
         We use your details only to reply to you. See our <a href="/privacy-policy" style={{ color: 'var(--primary)' }}>privacy policy</a>.

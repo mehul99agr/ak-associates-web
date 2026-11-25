@@ -7,8 +7,8 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'One Person Company (OPC) Registration: Eligibility & Compliance' },
-  description: 'Who can form a One Person Company in India, the nominee rule, why the old capital and turnover conversion thresholds no longer apply, and OPC compliance.',
+  title: { absolute: 'OPC Turnover Limit Removed: One Person Company Rules 2026' },
+  description: 'The Rs 2 crore OPC turnover limit and Rs 50 lakh capital limit were removed in 2021. Who can form a One Person Company now, the nominee rule and yearly compliance.',
   keywords: [
     'one person company registration', 'OPC eligibility India', 'OPC nominee requirement',
     'OPC incorporation process', 'OPC compliance India', 'OPC vs private limited company',
@@ -35,7 +35,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('One Person Company (OPC) Registratio
 const articleLd = buildArticleLd({
   headline: 'One Person Company (OPC) Registration: Eligibility & Compliance',
   description: 'Eligibility rules for incorporating a One Person Company in India, the mandatory resident-citizen nominee requirement, why paid-up capital and turnover no longer force conversion, and ongoing annual compliance obligations.',
-  datePublished: '2026-09-17',
+  datePublished: '2026-09-17', dateModified: '2026-11-25',
   slug: 'one-person-company-opc-registration-eligibility-and-compliance',
 })
 
@@ -109,7 +109,7 @@ export default function OPCRegistrationBlog() {
                 <li><strong>Statutory audit</strong> by a chartered accountant, subject to the applicable audit exemption thresholds under the Companies Act.</li>
                 <li><strong>At least one Board meeting in each half of the calendar year</strong>, with a minimum gap of 90 days between the two meetings, a relaxed requirement compared to the quarterly minimum for a private limited company.</li>
                 <li><strong>Annual ROC filings</strong>, including the financial statements and annual return forms, each year without exception.</li>
-                <li><strong>DIR-3 KYC</strong> for the sole director, filed annually like any other company director.</li>
+                <li><strong>DIR-3 KYC</strong> for the sole director, now filed once every three financial years by June 30 (since March 31, 2026), plus within 30 days of any change in contact details.</li>
                 <li><strong>Income tax return filing</strong> and, where applicable, tax audit under the standard turnover-based thresholds that apply to any company.</li>
               </ul>
               <p>An OPC is exempt from a handful of private-limited-specific requirements, such as the general obligation to prepare a cash flow statement as part of its financial statements, but the exemptions are narrow and specific rather than a blanket compliance holiday. Founders who incorporate an OPC expecting near-zero ongoing filing obligations, on the assumption that a single-shareholder company means minimal paperwork, are often surprised by the actual ROC and audit calendar once the business is running.</p>

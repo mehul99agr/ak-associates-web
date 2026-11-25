@@ -7,8 +7,8 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Udyam Registration for MSMEs: Process, Benefits & Eligibility' },
-  description: 'Current MSME investment and turnover limits for micro, small and medium enterprises, how to complete Udyam registration, and the benefits it unlocks.',
+  title: { absolute: 'Udyam Registration Benefits, MSME Limits & Eligibility (2026)' },
+  description: 'Benefits of Udyam registration, the current MSME investment and turnover limits, who is eligible, and how to register free on the Udyam portal.',
   keywords: [
     'Udyam registration', 'MSME registration process', 'MSME classification limits',
     'micro small medium enterprise eligibility', 'Udyam registration benefits',
@@ -35,7 +35,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Udyam Registration for MSMEs: Proces
 const articleLd = buildArticleLd({
   headline: 'Udyam Registration for MSMEs: Process, Benefits & Eligibility',
   description: 'Current MSME investment and turnover limits for micro, small and medium enterprises, the Udyam registration process, and the benefits it unlocks.',
-  datePublished: '2026-09-04',
+  datePublished: '2026-09-04', dateModified: '2026-11-25',
   slug: 'udyam-registration-for-msmes-process-benefits-and-eligibility',
 })
 

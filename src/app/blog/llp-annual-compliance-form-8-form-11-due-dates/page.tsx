@@ -7,21 +7,21 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'LLP Form 8 and Form 11 Due Dates FY 2025-26' },
-  description: 'LLP Form 11 was due May 30 and Form 8 October 30, 2026, with no extension found. Late fee table, ITR, audit, DIR-3 KYC and strike off risks.',
-  keywords: ["LLP Form 8 due date", "LLP Form 11 due date", "LLP annual filing FY 2025-26", "LLP late fee Form 8", "LLP DIR-3 KYC", "LLP strike off"],
+  title: { absolute: 'LLP Form 8 and Form 11 Due Dates: FY 2025-26 and 2026-27' },
+  description: 'LLP Form 11 is due May 30 and Form 8 October 30 every year. FY 2025-26 and FY 2026-27 dates, the late fee table, audit, ITR, DIR-3 KYC and strike off risks.',
+  keywords: ["LLP Form 8 due date", "Form 11 due date FY 2026-27", "LLP Form 8 due date FY 2026-27", "LLP audit due date", "LLP Form 11 due date", "LLP annual filing FY 2025-26", "LLP late fee Form 8", "LLP DIR-3 KYC", "LLP strike off"],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates' },
   openGraph: {
-    title: 'LLP Form 8 and Form 11 Due Dates FY 2025-26',
-    description: 'LLP Form 11 was due May 30 and Form 8 October 30, 2026, with no extension found. Late fee table, ITR, audit, DIR-3 KYC and strike off risks.',
+    title: 'LLP Form 8 and Form 11 Due Dates: FY 2025-26 and 2026-27',
+    description: 'LLP Form 11 is due May 30 and Form 8 October 30 every year. FY 2025-26 and FY 2026-27 dates, the late fee table, audit, ITR, DIR-3 KYC and strike off risks.',
     url: 'https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates',
     type: 'article',
     images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LLP Form 8 and Form 11 Due Dates FY 2025-26',
-    description: 'LLP Form 11 was due May 30 and Form 8 October 30, 2026, with no extension found. Late fee table, ITR, audit, DIR-3 KYC and strike off risks.',
+    title: 'LLP Form 8 and Form 11 Due Dates: FY 2025-26 and 2026-27',
+    description: 'LLP Form 11 is due May 30 and Form 8 October 30 every year. FY 2025-26 and FY 2026-27 dates, the late fee table, audit, ITR, DIR-3 KYC and strike off risks.',
     images: OG_IMAGES,
   },
 }
@@ -30,9 +30,9 @@ const breadcrumbLd = buildBlogBreadcrumbLd('LLP Annual Compliance: Form 8 and Fo
 
 const articleLd = buildArticleLd({
   headline: 'LLP Annual Compliance: Form 8 and Form 11 Due Dates for FY 2025-26',
-  description: 'LLP Form 11 was due May 30 and Form 8 October 30, 2026, with no extension found. Late fee table, ITR, audit, DIR-3 KYC and strike off risks.',
+  description: 'LLP Form 11 is due May 30 and Form 8 October 30 every year. FY 2025-26 and FY 2026-27 dates, the late fee table, audit, ITR, DIR-3 KYC and strike off risks.',
   datePublished: '2026-11-18',
-  dateModified: '2026-11-18',
+  dateModified: '2026-11-25',
   slug: 'llp-annual-compliance-form-8-form-11-due-dates',
 })
 
@@ -41,7 +41,8 @@ const faqs: [string, string][] = [
   ['Has MCA extended LLP Form 8 or Form 11 for FY 2025-26?', 'We found no extension as of November 18, 2026. MCA General Circular 05/2026 relaxed additional fees only for company forms AOC-4 and MGT-7. Check the MCA portal for any later LLP circular.'],
   ['What is the late fee for LLP Form 8 and Form 11?', 'Since April 1, 2022 the additional fee is a multiple of the normal fee that rises with the delay, and a small LLP pays a lower multiple. Beyond 360 days a daily amount is added. The old flat Rs 100 per day no longer applies. Confirm exact amounts in the MCA fee calculator.'],
   ['Is an audit compulsory for an LLP?', 'A statutory audit is required if contribution exceeds Rs 25 lakh or turnover exceeds Rs 40 lakh. A tax audit under the Income Tax Act is a separate test based on turnover and other conditions.'],
-  ['Do designated partners need to file DIR-3 KYC?', 'Designated partners holding a DIN must file DIR-3 KYC by September 30 each year. Missing it deactivates the DIN, and guides report a Rs 5,000 fee to reactivate. A partner with only a DPIN may be treated differently, so check the status.'],
+  ['What are the LLP Form 8 and Form 11 due dates for FY 2026-27?', 'Form 11 is due by May 30, 2027 and Form 8 by October 30, 2027, following the same 60-day and six-months-plus-30-days rules that apply every year.'],
+  ['Do designated partners need to file DIR-3 KYC?', 'Yes, if they hold a DIN. From March 31, 2026 the annual filing was replaced by a filing once every three financial years, due by June 30, plus a filing within 30 days of any change in mobile number, email or address. A director who filed in FY 2025-26 is next due by June 30, 2028. Missing it deactivates the DIN. A partner with only a DPIN may be treated differently, so check the status.'],
   ['What happens if an LLP does not file annual returns?', 'Additional fees keep accruing, DINs may be deactivated, and the ROC can strike off the LLP under Section 75 of the LLP Act. Backlog filings are normally needed before a voluntary strike off.'],
 ]
 
@@ -62,7 +63,7 @@ export default function LLPAnnualComplianceBlog() {
           <Link href="/blog" style={{ color: 'var(--accent)', marginBottom: '2rem', display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 700 }}>&larr; Back to Insights</Link>
           <article className="card" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <span className="section-badge">Company Incorporation</span>
-            <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>LLP Annual Compliance: Form 8 and Form 11 Due Dates for FY 2025-26</h1>
+            <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>LLP Form 8 and Form 11 Due Dates: FY 2025-26 and FY 2026-27</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
               <span>Published November 18, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
@@ -70,11 +71,12 @@ export default function LLPAnnualComplianceBlog() {
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
                 <p style={{ fontWeight: 800, color: 'var(--accent)', marginBottom: '0.6rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>TL;DR</p>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+                  <li style={{ marginBottom: '0.4rem' }}><strong>Next due dates (FY 2026-27):</strong> Form 11 by <strong>May 30, 2027</strong> and Form 8 by <strong>October 30, 2027</strong>. The same dates apply every year.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>Form 11</strong> was due <strong>May 30, 2026</strong> and <strong>Form 8</strong> was due <strong>October 30, 2026</strong> for FY 2025-26. We found no extension for LLPs as of November 18, 2026.</li>
                   <li style={{ marginBottom: '0.4rem' }}>MCA General Circular 05/2026 relaxed additional fees only for company forms AOC-4 and MGT-7, not LLP forms.</li>
                   <li style={{ marginBottom: '0.4rem' }}>The old <strong>Rs 100 per day</strong> late fee was replaced from April 1, 2022 by a table of multiples of the normal fee, with a daily component only beyond 360 days.</li>
                   <li style={{ marginBottom: '0.4rem' }}>An LLP audit applies above Rs 25 lakh contribution or Rs 40 lakh turnover. The income tax return (ITR-5) and any tax audit are separate.</li>
-                  <li style={{ marginBottom: 0 }}>Designated partners must complete <strong>DIR-3 KYC by September 30</strong>. Backlog filings should be cleared before any strike off or closure.</li>
+                  <li style={{ marginBottom: 0 }}>From March 31, 2026, <strong>DIR-3 KYC is filed once every three years, by June 30</strong>, plus within 30 days of any change in contact details. Backlog filings should be cleared before any strike off or closure.</li>
                 </ul>
               </div>
               <p>An LLP has two annual MCA filings and no AGM, which is why many partners forget them. Both carry per-form late fees that grow with delay, and a dormant LLP still has to file. This guide covers the FY 2025-26 dates, the current late fee structure, the income tax side, DIR-3 KYC and what happens if you stop filing. For registration, see our <Link href="/blog/llp-registration-process-cost-india-2026" style={{ color: 'var(--primary)', fontWeight: 600 }}>LLP registration guide</Link>.</p>
@@ -89,6 +91,7 @@ export default function LLPAnnualComplianceBlog() {
 </tbody>
 </table>
 </div>
+              <p><strong>For FY 2026-27</strong> (the year ending March 31, 2027), the same rules give <strong>Form 11 by May 30, 2027</strong> and <strong>Form 8 by October 30, 2027</strong>. Check the MCA portal nearer the date for any extension.</p>
               <h2>Did MCA extend any LLP date for FY 2025-26?</h2>
               <p>As of November 18, 2026, we found no extension for LLP Form 11 or Form 8. MCA General Circular 05/2026 (October 24, 2026) relaxed additional fees only for company forms AOC-4 and MGT-7. It does not cover LLPs. If you have not filed Form 8 yet, it is already late. Check the MCA LLP circulars page before relying on any extension someone mentions.</p>
               <h2>Late fees: the daily Rs 100 charge is gone</h2>
@@ -114,11 +117,11 @@ export default function LLPAnnualComplianceBlog() {
               <p>A statutory audit of the LLP&apos;s accounts is required where contribution exceeds Rs 25 lakh or turnover exceeds Rs 40 lakh. Below that, accounts must still be maintained and a solvency statement signed in Form 8.</p>
               <p>For income tax, an LLP files ITR-5. If a tax audit applies (for example because turnover crosses the Section 44AB threshold, a separate test from the LLP Act audit), audit-case dates apply. For AY 2026-27, the CBDT press release of September 28, 2026 extended the audit report to October 21, 2026 and the audit-case return to November 21, 2026, with Form 3CEB cases excluded. Read our <Link href="/blog/itr-due-date-audit-cases-ay-2026-27-extended" style={{ color: 'var(--primary)', fontWeight: 600 }}>audit case ITR due date post</Link> and confirm for your facts. LLP, income tax and GST filings are separate, and one does not substitute for another.</p>
               <h2>DIR-3 KYC for designated partners</h2>
-              <p>Designated partners who hold a DIN must complete DIR-3 KYC by September 30 each year. Missing it deactivates the DIN, and published guides report a fee of Rs 5,000 to reactivate. A deactivated DIN blocks the partner from signing MCA forms, including Form 8 and Form 11. One source says a partner holding only a DPIN may be treated differently, so check each partner&apos;s status. See the <Link href="/blog/dsc-din-application-director-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>DSC and DIN guide</Link>.</p>
+              <p>Designated partners who hold a DIN must file DIR-3 KYC. Since March 31, 2026 this is once every three financial years, by June 30 (a director who filed in FY 2025-26 is next due by June 30, 2028), plus within 30 days of any change in mobile number, email or address. Missing it deactivates the DIN, and published guides report a fee of Rs 5,000 to reactivate. A deactivated DIN blocks the partner from signing MCA forms, including Form 8 and Form 11. One source says a partner holding only a DPIN may be treated differently, so check each partner&apos;s status. See the <Link href="/blog/dsc-din-application-director-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>DSC and DIN guide</Link>.</p>
               <h2>If you stop filing: consequences</h2>
               <p>Additional fees keep growing, and past 360 days they carry a daily component. Pending defaults also get in the way of closing the LLP: the ROC expects backlog Form 8 and Form 11 to be filed before a voluntary strike off (Form 24). The ROC can also strike off an LLP that is not carrying on business or not filing, under Section 75 of the LLP Act, which makes bank accounts and property dealings difficult and can require a court route to restore. Whether you want to keep the LLP or close it, filing the backlog is usually cheaper than leaving it.</p>
               <h2>A simple yearly calendar for your LLP</h2>
-              <p>Keep books through the year, finalise accounts and the solvency statement, complete DIR-3 KYC by September 30, file Form 11 by May 30 and Form 8 by October 30, and file the ITR and any tax audit on the dates that apply. If you are unsure about the audit threshold or have an old default, see our <Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>compliance calendar</Link> or <Link href="/company-incorporation" style={{ color: 'var(--primary)', fontWeight: 600 }}>company incorporation and compliance services</Link>.</p>
+              <p>Keep books through the year, finalise accounts and the solvency statement, file DIR-3 KYC by June 30 in its three-year cycle, file Form 11 by May 30 and Form 8 by October 30, and file the ITR and any tax audit on the dates that apply. If you are unsure about the audit threshold or have an old default, see our <Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>compliance calendar</Link> or <Link href="/company-incorporation" style={{ color: 'var(--primary)', fontWeight: 600 }}>company incorporation and compliance services</Link>.</p>
 
             </div>
 

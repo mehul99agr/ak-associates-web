@@ -3,7 +3,7 @@ import { ENQUIRY_TIMELINES, ENQUIRY_TOPICS, WEB3FORMS_KEY } from './consult'
 // Shared by the on-page EnquiryForm and the WebMCP `request_free_call` tool, so a
 // human and an AI agent submit exactly the same enquiry to the same inbox.
 
-export const ENQUIRY_COUNTRIES = ['India', 'United States', 'UAE', 'United Kingdom', 'Other'] as const
+export const ENQUIRY_COUNTRIES = ['India', 'United States', 'United Kingdom', 'UAE', 'Canada', 'Singapore', 'Australia', 'Other'] as const
 
 export type EnquiryKind = 'free-call' | 'enquiry'
 

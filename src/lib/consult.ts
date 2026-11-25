@@ -58,6 +58,7 @@ export const ENQUIRY_TOPICS = [
   { slug: 'company-incorporation', label: 'Company or LLP registration in India' },
   { slug: 'startups', label: 'Startup compliance or Virtual CFO' },
   { slug: 'nri-tax', label: 'NRI tax, property sale or DTAA' },
+  { slug: 'nri-banking', label: 'NRI bank accounts: NRO, NRE or PIS' },
   { slug: 'uae-tax', label: 'UAE corporate tax or entity setup' },
   { slug: 'transfer-pricing', label: 'Transfer pricing' },
   { slug: 'offshore-accounting', label: 'Offshore accounting for CPA / CA firms' },
