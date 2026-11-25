@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -78,6 +79,7 @@ export default function StartupValuationBlog() {
                   <li style={{ marginBottom: 0 }}>Use a valuer whose eligibility matches the specific law triggering the report; not whoever did the last one.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>A startup valuation is often discussed as if it is a single number agreed between founders and investors. In practice, there may be several values for the same company because each serves a different purpose. An investor may price a round based on market appetite and negotiated rights. An ESOP valuation focuses on employee tax consequences. A non-resident investment must meet FEMA pricing requirements. A buyback or capital reduction can trigger separate company-law valuation requirements. The right question is not &quot;What is our valuation?&quot; but &quot;What transaction are we undertaking, which law applies, and what valuation evidence does that law require?&quot;</p>
 
@@ -122,7 +124,7 @@ export default function StartupValuationBlog() {
 
             <PostFooterLinks slug="startup-valuation-methods-india" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Need a valuation for ESOP, FEMA, or a funding round?"
             description="We coordinate valuation reports for the specific legal purpose; ESOP, FEMA pricing, company law actions, or investor negotiations."
             secondaryLabel="Startup Advisory"

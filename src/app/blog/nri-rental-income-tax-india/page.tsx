@@ -131,7 +131,7 @@ export default function NRIRentalIncomeBlog() {
 
               <PostFooterLinks slug="nri-rental-income-tax-india" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="NRI landlord or tenant of an NRI?"
             description="We handle Form 13 applications for lower TDS, Form 27Q filing for tenants, and ITR filing with TDS refund claims for NRI rental income."
             secondaryLabel="NRI Tax Advisory"

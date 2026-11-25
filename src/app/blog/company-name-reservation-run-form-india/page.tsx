@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -74,6 +75,7 @@ export default function CompanyNameReservationBlog() {
                   <li style={{ marginBottom: 0 }}>MCA name approval does not equal trademark clearance, do both checks separately.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Before a company can be incorporated, its proposed name has to clear the MCA\'s naming rules and be reserved. This sounds like a formality, but a rejected or delayed name reservation is one of the most common reasons incorporation timelines slip. Understanding the process and the naming guidelines upfront avoids losing time to avoidable resubmissions.</p>
 
@@ -114,7 +116,7 @@ export default function CompanyNameReservationBlog() {
             </p>
             <PostFooterLinks slug="company-name-reservation-run-form-india" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Ready to reserve your company name and incorporate?"
             description="We handle name reservation, SPICe+ filing, and the full incorporation process end to end."
             secondaryLabel="Incorporation Services"

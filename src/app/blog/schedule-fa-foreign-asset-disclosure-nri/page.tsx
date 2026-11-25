@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -52,6 +53,7 @@ export default function ScheduleFABlog() {
                   <li style={{ marginBottom: 0 }}>The <Link href="/blog/nri-returning-india-financial-checklist" style={{ color: 'var(--primary)', fontWeight: 600 }}>returning NRI checklist</Link> should include a foreign asset inventory before the first ITR as Resident.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-itr" />
 
               <p>Schedule FA is the part of the Indian ITR that scares returning NRIs the most. After years abroad with foreign bank accounts, brokerage accounts, retirement funds, and possibly real estate, the prospect of disclosing everything to the Indian tax department feels daunting. The good news: while you are NRI, Schedule FA does not apply at all. The disclosure requirement kicks in only when your <Link href="/blog/nri-residential-status-182-day-rule" style={{ color: 'var(--primary)', fontWeight: 600 }}>residential status</Link> changes to Resident or RNOR.</p>
 
@@ -96,7 +98,7 @@ export default function ScheduleFABlog() {
 
             <PostFooterLinks slug="schedule-fa-foreign-asset-disclosure-nri" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Need help with Schedule FA or foreign asset disclosure?"
             description="We prepare Schedule FA disclosures, advise on the RNOR transition, and assist with voluntary disclosure schemes."
             secondaryLabel="NRI Tax Advisory"

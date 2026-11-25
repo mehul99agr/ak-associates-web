@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -74,6 +75,7 @@ export default function AngelTaxBlog() {
                   <li style={{ marginBottom: 0 }}>Valuation discipline remains important for investor negotiations, ESOPs, FEMA pricing, and company law; not just tax.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>The starting point needs to be stated clearly, because a lot of outdated commentary still circulates: Section 56(2)(viib), commonly called the angel tax provision, was <strong>abolished for all classes of investors</strong> by the Finance (No. 2) Act, 2024, effective from FY 2024-25 (April 1, 2024). For FY 2026-27, it does not tax a closely held company merely because it issues shares at a premium above Fair Market Value; to a resident investor or a non-resident investor.</p>
               <p>This corrects a common but wrong summary that says only the non-resident scope was removed while resident investors remain covered. The actual sequence was the opposite: Budget 2023 had <em>extended</em> angel tax to non-resident investors for the first time (it previously applied only to residents), which caused significant industry pushback. Budget 2024 then abolished the provision entirely, for every investor class, starting FY 2024-25.</p>
@@ -103,7 +105,7 @@ export default function AngelTaxBlog() {
 
             <PostFooterLinks slug="angel-tax-section-56-share-premium-startups" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Need to review a historic funding round or plan a new one?"
             description="We review historic angel tax exposure, coordinate valuation reports, and structure new funding rounds for Indian startups."
             secondaryLabel="Startup Advisory"

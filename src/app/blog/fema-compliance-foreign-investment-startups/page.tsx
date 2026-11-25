@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
@@ -127,6 +128,7 @@ export default function FemaComplianceBlog() {
                   <li style={{ marginBottom: 0 }}>Missed filings are regularised by paying the RBI Late Submission Fee.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
 
               <p style={{ marginBottom: '1.5rem' }}>
@@ -288,7 +290,7 @@ export default function FemaComplianceBlog() {
             </div>
                     <PostFooterLinks slug="fema-compliance-foreign-investment-startups" />
 
-                    <PostCTA
+                    <PostCTA segment="startup"
             heading="Raising foreign investment for your startup?"
             description="We help with FEMA compliance, FC-GPR reporting and valuation requirements."
             secondaryLabel="Email us"

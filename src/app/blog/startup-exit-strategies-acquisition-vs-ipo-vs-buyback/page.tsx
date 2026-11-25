@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -90,6 +91,7 @@ export default function StartupExitStrategiesBlog() {
                   <li style={{ marginBottom: 0 }}>The right route depends on company stage, buyer appetite, and whether the goal is a full exit or partial liquidity.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>Most founders and early investors think about an exit only once one is actually on the table, by which point the structural choices are already narrower than they need to be. Understanding the three broad exit paths, acquisition, IPO, and buyback, before a specific opportunity appears makes it easier to negotiate from a position of knowing what "good" looks like for each, rather than reacting to whatever term sheet lands first.</p>
 
@@ -129,7 +131,7 @@ export default function StartupExitStrategiesBlog() {
 
             <PostFooterLinks slug="startup-exit-strategies-acquisition-vs-ipo-vs-buyback" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Planning an exit or a buyback for your company?"
             description="We advise founders and investors on acquisition structuring, IPO readiness, and buyback compliance under the Companies Act."
             secondaryLabel="Startup Advisory"

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -94,6 +95,7 @@ export default function SafeNotesIndiaBlog() {
                   <li style={{ marginBottom: 0 }}>A properly conditioned <strong>convertible note</strong> is the other compliant route for eligible DPIIT-recognised startups.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>The SAFE, Simple Agreement for Future Equity, was created by Y Combinator in the US as a fast, lawyer-light way to raise a seed round without agreeing on a valuation upfront. It has become close to a default instrument in the US startup ecosystem, and it is common for founders raising from US-based accelerators, angels, or funds to be handed a SAFE template and asked to sign it for an Indian entity. The problem is that a SAFE is a creature of US contract and securities practice; it was never designed to slot into Indian company law, and it does not.</p>
 
@@ -131,7 +133,7 @@ export default function SafeNotesIndiaBlog() {
 
             <PostFooterLinks slug="safe-notes-in-india-are-they-legally-recognised" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Been handed a SAFE template by a foreign investor?"
             description="We help founders restructure SAFE-style terms into a compliant iSAFE (CCPS) or convertible note before money changes hands, and handle the FEMA reporting once it does."
             secondaryLabel="Startup Advisory"

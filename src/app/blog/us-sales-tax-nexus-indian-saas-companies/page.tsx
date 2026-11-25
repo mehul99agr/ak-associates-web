@@ -97,7 +97,7 @@ export default function UsSalesTaxNexusBlog() {
 
             <PostFooterLinks slug="us-sales-tax-nexus-indian-saas-companies" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Selling SaaS into the US and unsure of your sales tax exposure?"
             description="We help founders track state-by-state exposure and stay compliant as US revenue grows."
             secondaryLabel="Offshore Accounting Services"

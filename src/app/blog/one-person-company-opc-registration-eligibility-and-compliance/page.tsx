@@ -120,7 +120,7 @@ export default function OPCRegistrationBlog() {
 
             <PostFooterLinks slug="one-person-company-opc-registration-eligibility-and-compliance" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Planning to incorporate an OPC, or unsure if it is the right structure?"
             description="We handle OPC incorporation end-to-end, from name reservation to nominee documentation, and manage the ongoing ROC and audit compliance once it is running."
             secondaryLabel="Incorporation Services"

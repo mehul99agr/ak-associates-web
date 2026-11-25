@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -76,6 +77,7 @@ export default function FdiGuideBlog() {
                   <li style={{ marginBottom: 0 }}>Agriculture is largely FDI-restricted outside specific carved-out activities; always confirm the sector-specific position before assuming eligibility.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>Foreign Direct Investment into an Indian company is not a single, uniform process; which route applies, whether prior approval is needed, and what gets reported afterward all depend on the sector, the structure of the investment, and sometimes the investor&apos;s country of origin. Getting the route wrong at the outset, rather than a reporting slip after the fact, is the more expensive mistake, since it can affect whether the investment was validly made at all.</p>
 
@@ -113,7 +115,7 @@ export default function FdiGuideBlog() {
 
             <PostFooterLinks slug="fdi-in-india-routes-compliance-guide" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Bringing FDI into an Indian entity?"
             description="We confirm the correct route, handle FC-GPR/FC-TRS reporting, and structure the valuation and documentation correctly the first time."
             secondaryLabel="Company Incorporation Services"

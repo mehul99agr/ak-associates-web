@@ -146,7 +146,7 @@ export default function NRIITRFilingBlog() {
 
               <PostFooterLinks slug="nri-itr-filing-guide-from-abroad" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help filing your Indian ITR from abroad?"
             description="We prepare and file ITRs for NRIs worldwide, handle TDS refund claims, and manage e-verification via DSC."
             secondaryLabel="NRI Tax Advisory"

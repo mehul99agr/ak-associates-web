@@ -130,7 +130,7 @@ export default function TDSNROInterestBlog() {
             </p>
             <PostFooterLinks slug="tds-nro-interest-fd-dtaa-relief" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Want to reduce TDS on your NRO deposits?"
             description="We handle TRC coordination, Form 10F filing, bank submissions, and ITR refund claims for NRO interest overpayment."
             secondaryLabel="NRI Tax Advisory"

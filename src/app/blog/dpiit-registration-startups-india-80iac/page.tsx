@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
@@ -110,6 +111,7 @@ export default function DPIITRegistrationBlog() {
                     <li style={{ marginBottom: 0 }}>Angel tax under Section 56(2)(viib) was abolished for all companies with effect from April 1, 2024.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup-funding" />
 
                 <p>DPIIT recognition is one of the most misunderstood government registrations for Indian startups. Founders pursue it believing it automatically delivers a three-year tax holiday. It does not. The tax holiday; Section 80-IAC; is a separate application to a different body with stricter criteria, and most DPIIT-recognized startups never file for it. This article clarifies what DPIIT recognition actually gives you, what 80-IAC requires, and how to structure the applications in the right order.</p>
 
@@ -162,7 +164,7 @@ export default function DPIITRegistrationBlog() {
 
               <PostFooterLinks slug="dpiit-registration-startups-india-80iac" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Need DPIIT recognition or 80-IAC certification for your startup?"
             description="We handle the DPIIT application, draft the IMB innovation narrative, and manage ongoing compliance for DPIIT-recognized startups."
             secondaryLabel="Email us"

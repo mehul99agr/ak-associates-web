@@ -215,7 +215,7 @@ export default function Form13NRIBlog() {
 
               <PostFooterLinks slug="form-13-lower-deduction-certificate-nri" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help applying for a Form 13 certificate?"
             description="We handle Form 13 applications end-to-end for NRI clients, from computation to certificate, well before the sale closes."
             secondaryLabel="Email us"

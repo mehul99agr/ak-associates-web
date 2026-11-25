@@ -136,7 +136,7 @@ export default function AnnualROCFilingBlog() {
             </p>
             <PostFooterLinks slug="annual-roc-filing-aoc4-mgt7-dir3-kyc" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Need your annual ROC filings handled end-to-end?"
             description="We manage AOC-4, MGT-7, DIR-3 KYC, and ADT-1 filings for Indian companies, tracked against your actual AGM calendar."
             secondaryLabel="Incorporation Services"

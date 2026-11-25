@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { tableStyle, thStyle, tdStyle, tdAltStyle } from '../_components/tableStyles'
@@ -108,6 +109,7 @@ export default function NREvsNROBlog() {
                     <li style={{ marginBottom: 0 }}>The USD 1 million cap is cumulative across all NRO remittances in the year, not per transaction.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-banking" />
 
                 <p>Most of the FEMA problems we see in NRI accounts trace back to one thing: money going into the wrong account. NRE and NRO look similar on a bank's app, but they follow completely different rules on tax, repatriation, and what can legally go into each. Here is how to keep them straight, and how the USD 1 million repatriation cap actually works.</p>
 
@@ -184,7 +186,7 @@ export default function NREvsNROBlog() {
 
               <PostFooterLinks slug="nre-vs-nro-account-fema-repatriation-limits" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help repatriating funds or structuring your NRI accounts correctly?"
             description="We handle Form 145/146 certification, DTAA relief on NRO interest, and full FEMA compliance reviews for NRI account structures."
             secondaryLabel="NRI Tax Advisory"

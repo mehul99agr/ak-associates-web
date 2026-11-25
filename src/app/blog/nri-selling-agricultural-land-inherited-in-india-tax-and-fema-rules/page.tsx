@@ -144,7 +144,7 @@ export default function NriSellingInheritedAgriLandBlog() {
 
               <PostFooterLinks slug="nri-selling-agricultural-land-inherited-in-india-tax-and-fema-rules" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Selling agricultural land you inherited as an NRI?"
             description="We confirm rural/urban classification, compute capital gains on inherited property, handle Form 13 and TDS compliance, and manage NRO repatriation end to end."
             secondaryLabel="NRI Tax Advisory"

@@ -107,7 +107,7 @@ export default function DelawareWyomingEinItinBlog() {
 
             <PostFooterLinks slug="delaware-wyoming-incorporation-ein-itin-guide" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Setting up a US entity from India?"
             description="We help founders sequence incorporation, EIN, banking, and ITIN correctly the first time."
             secondaryLabel="Incorporation Services"

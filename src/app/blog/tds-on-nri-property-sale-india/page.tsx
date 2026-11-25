@@ -323,7 +323,7 @@ export default function TDSNRIPropertyBlog() {
               </p>
               <PostFooterLinks slug="tds-on-nri-property-sale-india" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help with NRI property TDS or sale proceeds repatriation?"
             description="We handle Form 13 applications, Form 27Q filing, and Form 145/146 compliance for NRI property transactions across India."
             secondaryLabel="Email us"

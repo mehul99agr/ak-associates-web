@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -75,6 +76,7 @@ export default function NriSellingSharesBlog() {
                   <li style={{ marginBottom: 0 }}>DTAA relief depends entirely on the specific treaty with the NRI's country of residence; not a blanket rule.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-ldc" />
 
               <p>An NRI exiting a family business, a startup they co-founded before moving abroad, or an angel investment in an Indian private company runs into a materially different process than selling listed shares on an exchange. There is no ready market price, the transaction needs a defensible valuation, and at least three separate compliance threads (FEMA pricing, tax deduction, and FEMA reporting) need to be handled correctly, on top of the actual tax computation.</p>
 
@@ -99,7 +101,7 @@ export default function NriSellingSharesBlog() {
 
             <PostFooterLinks slug="nri-selling-shares-indian-private-company-tax-fema" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Selling shares or an equity stake in an Indian company?"
             description="We handle the valuation coordination, TDS/lower deduction certificate, capital gains computation, and FC-TRS reporting end to end."
             secondaryLabel="NRI Tax Advisory"

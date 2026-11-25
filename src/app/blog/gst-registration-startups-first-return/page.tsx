@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -74,6 +75,7 @@ export default function GSTRegistrationStartupsBlog() {
                   <li style={{ marginBottom: 0 }}>Your first GSTR-1 and GSTR-3B should be prepared from <strong>reconciled books</strong>, not invoices collected at month-end.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>For many businesses, the general GST registration threshold is <strong>Rs 40 lakh for suppliers of goods</strong> and <strong>Rs 20 lakh for suppliers of services</strong>. Lower thresholds apply in special category states. But a startup should not rely on turnover alone; GST registration can be compulsory regardless of turnover in specified cases, including certain interstate supplies, sales through an e-commerce operator, reverse charge liability, and casual taxable person status. A SaaS company, marketplace seller, consultant, exporter, and goods trader should not assume the same answer applies to all of them.</p>
 
@@ -112,7 +114,7 @@ export default function GSTRegistrationStartupsBlog() {
 
             <PostFooterLinks slug="gst-registration-startups-first-return" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Need help registering for GST or filing your first return?"
             description="We handle GST registration, GSTR-1/GSTR-3B filing, and monthly compliance for Indian startups from day one."
             secondaryLabel="Startup Advisory"

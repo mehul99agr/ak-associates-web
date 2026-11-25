@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -52,6 +53,7 @@ export default function NRIGiftInheritanceBlog() {
                   <li style={{ marginBottom: 0 }}>Cross-border gifts involve <strong>FEMA/LRS compliance</strong> (USD 250K limit, TCS) on top of the tax rules.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-itr" />
 
               <p>Gift and inheritance questions come up in almost every NRI family: parents wanting to send money to children abroad, NRIs receiving inherited property in India, siblings transferring funds across borders. The tax rules are more straightforward than people assume, but the FEMA and foreign exchange rules add a compliance layer that catches people off guard.</p>
 
@@ -96,7 +98,7 @@ export default function NRIGiftInheritanceBlog() {
 
             <PostFooterLinks slug="nri-gift-inheritance-tax-rules" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Need clarity on NRI gift or inheritance taxation?"
             description="We advise NRI families on gift structuring, inheritance tax implications, FEMA compliance, and property sale after inheritance."
             secondaryLabel="NRI Tax Advisory"

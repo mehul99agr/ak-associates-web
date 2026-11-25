@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -103,6 +104,7 @@ export default function NriLifeInsuranceUlipBlog() {
                     <li style={{ marginBottom: 0 }}>Non-exempt payouts to NRIs face TDS under <strong>Section 195</strong>, not the resident-focused Section 194DA, with DTAA relief possible.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Life insurance and ULIPs remain popular with NRIs both as a protection product and, historically, as a tax-efficient savings vehicle. Two rounds of tightening; the ULIP premium cap introduced from February 2021 and the broader life insurance premium cap from April 2023; have narrowed how much of that maturity value actually comes out tax-free, and the rules apply slightly differently once an NRI's TDS treatment is layered on top. This guide walks through purchase eligibility, premium payment channels, when Section 10(10D) exemption actually applies, and TDS on payouts.</p>
 
@@ -147,7 +149,7 @@ export default function NriLifeInsuranceUlipBlog() {
 
               <PostFooterLinks slug="nri-life-insurance-and-ulip-taxation-rules" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Holding an Indian life insurance policy or ULIP as an NRI?"
             description="We help NRIs work out Section 10(10D) exemption eligibility, plan around premium thresholds, and claim DTAA relief on TDS from maturity payouts."
             secondaryLabel="NRI Tax Advisory"

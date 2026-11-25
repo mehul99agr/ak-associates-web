@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -103,6 +104,7 @@ export default function CapTableManagementBlog() {
                     <li style={{ marginBottom: 0 }}>Reconcile the cap table against actual <strong>ROC filings and share certificates</strong> periodically, not only when an investor asks during due diligence.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup-funding" />
 
                 <p>A cap table looks like a simple spreadsheet: names, share counts, percentages. In practice it is the single most consequential document a startup maintains after its incorporation papers, because every equity decision, a new investor&apos;s stake, an ESOP grant, a co-founder&apos;s exit terms, is priced directly off it. We see the same handful of cap table mistakes recur across founders at very different stages, from pre-seed to Series A, and they are almost always avoidable with a bit of discipline rather than legal complexity.</p>
 
@@ -131,7 +133,7 @@ export default function CapTableManagementBlog() {
 
               <PostFooterLinks slug="cap-table-management-common-mistakes-founders-make" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Need help cleaning up or maintaining your cap table?"
             description="We reconcile cap tables against ROC filings, model dilution before term sheets are signed, and set up processes to keep the cap table accurate round after round."
             secondaryLabel="View Our Services"

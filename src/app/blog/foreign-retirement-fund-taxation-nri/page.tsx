@@ -172,7 +172,7 @@ export default function ForeignRetirementFundBlog() {
 
               <PostFooterLinks slug="foreign-retirement-fund-taxation-nri" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Returning to India with a foreign retirement fund?"
             description="We advise returning NRIs on withdrawal timing, RNOR planning, DTAA relief, and Form 67 filing for 401(k), UK pension, and Australian superannuation."
             secondaryLabel="NRI Tax Advisory"

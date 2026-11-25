@@ -195,7 +195,7 @@ export default function Form26QBvs27QBlog() {
 
               <PostFooterLinks slug="26qb-vs-27q-nri-property-tds" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Buying property from an NRI? Get it right the first time."
             description="We handle TAN applications, correct TDS calculations, Form 27Q filing, and Form 13 certificates for NRI property transactions."
             secondaryLabel="NRI Tax Advisory"

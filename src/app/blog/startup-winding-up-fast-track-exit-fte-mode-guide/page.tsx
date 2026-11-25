@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -103,6 +104,7 @@ export default function StartupWindingUpFTEBlog() {
                     <li style={{ marginBottom: 0 }}>Realistic timeline: roughly <strong>three to six months</strong>, longer if compliance backlog needs clearing first.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup-funding" />
 
                 <p>Founders searching for how to close down a startup quickly almost always land on the term &quot;Fast Track Exit&quot; or &quot;FTE mode&quot;. It&apos;s worth being upfront about this before going further: <strong>FTE, as a named scheme, no longer exists.</strong> It was replaced years ago, and this guide uses the term because that&apos;s still how people search and talk about it, while explaining exactly what the current process actually is, and how it applies specifically to a startup rather than an established company.</p>
 
@@ -138,7 +140,7 @@ export default function StartupWindingUpFTEBlog() {
 
               <PostFooterLinks slug="startup-winding-up-fast-track-exit-fte-mode-guide" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Winding down your startup?"
             description="We check eligibility, clear any pending ROC filings, coordinate investor consents if needed, and handle the STK-2 filing end to end."
             secondaryLabel="Email us"

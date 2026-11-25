@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
@@ -103,6 +104,7 @@ export default function ESOPNRIBlog() {
                     <li style={{ marginBottom: 0 }}>DTAA can prevent double taxation, but only if the mismatch between India's exercise-based timing and your resident country's rules is handled correctly.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Equity compensation is one of the most common tax surprises for NRIs, not because the rules are secret, but because they involve two separate taxable events, on two different amounts, sometimes in two different countries. Here is exactly how ESOP taxation works for NRIs, and where the double-taxation risk actually comes from.</p>
 
@@ -152,7 +154,7 @@ export default function ESOPNRIBlog() {
 
               <PostFooterLinks slug="esop-taxation-for-nris-india" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Exercising or selling ESOPs as an NRI?"
             description="We compute perquisite and capital gains tax, structure exercise timing against DTAA relief, and handle Section 195 / Form 13 compliance for NRI equity compensation."
             secondaryLabel="NRI Tax Advisory"

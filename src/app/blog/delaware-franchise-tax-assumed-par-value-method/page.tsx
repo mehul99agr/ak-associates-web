@@ -114,7 +114,7 @@ export default function DelawareFranchiseTaxAssumedParValueBlog() {
 
             <PostFooterLinks slug="delaware-franchise-tax-assumed-par-value-method" />
 
-            <PostCTA
+            <PostCTA segment="us"
               heading="Got a Delaware franchise tax notice you do not understand?"
               description="We run the Assumed Par Value calculation and help you file the annual report before March 1."
               secondaryLabel="US Cross-Border Advisory"

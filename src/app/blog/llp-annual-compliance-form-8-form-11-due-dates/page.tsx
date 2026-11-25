@@ -130,7 +130,7 @@ export default function LLPAnnualComplianceBlog() {
             </p>
             <PostFooterLinks slug="llp-annual-compliance-form-8-form-11-due-dates" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Behind on LLP filings?"
             description="We clear backlog Form 8 and Form 11 filings, DIR-3 KYC and the ITR for LLPs, and set up a calendar so it does not happen again."
             secondaryLabel="Incorporation Services"

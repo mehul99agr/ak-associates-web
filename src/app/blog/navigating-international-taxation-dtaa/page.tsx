@@ -4,6 +4,7 @@ import { BASE_URL, BOOKING_LINK, EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 
 const SLUG = 'navigating-international-taxation-dtaa'
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
 }
 
 const content = `<div style="padding:1.5rem 1.75rem;background:var(--bg-main);border-radius:var(--radius-md);border:1px solid var(--border);border-left:4px solid var(--accent);margin-bottom:2rem"><p style="font-weight:800;color:var(--accent);margin-bottom:0.6rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.5px">TL;DR</p><ul style="margin:0;padding-left:1.25rem"><li>A DTAA decides which country can tax each type of income and often caps withholding tax on dividends, interest, royalties and fees.</li><li>To use treaty rates, a non-resident needs a Tax Residency Certificate and Form 10F.</li><li>Residents claiming credit for foreign tax file Form 67 with their return.</li><li>An office, dependent agent or long project abroad can create a permanent establishment and make business profits taxable there.</li></ul></div>
+<ServiceOffer variant="nri-itr" />
 
 <p>For a country-by-country breakdown of treaty rates for NRIs, see our <a href="/blog/dtaa-guide-nri-country-wise">India DTAA Guide by Country</a> (US, UK, UAE, Canada, Australia, Singapore).</p>
 
@@ -143,7 +145,7 @@ export default function NavigatingInternationalTaxationDtaaBlog() {
 
             <PostFooterLinks slug="navigating-international-taxation-dtaa" />
 
-            <PostCTA
+            <PostCTA segment="nri"
               heading="Need help with this?"
               description="Book a consultation with our partners, or email us your question."
               primaryLabel="Book Consultation"

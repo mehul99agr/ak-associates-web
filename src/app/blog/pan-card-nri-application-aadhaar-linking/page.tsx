@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -53,6 +54,7 @@ export default function PANCardNRIBlog() {
                   <li style={{ marginBottom: 0 }}>Without PAN, TDS jumps to <strong>20%</strong> instead of the applicable rate.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-itr" />
 
               <p>PAN is the gateway to every financial transaction an NRI has in India. Without it, you cannot buy or sell property, open bank accounts, invest in mutual funds, or file a tax return. Yet many NRIs either do not have one (common for those who left India early) or have a PAN that has become inoperative due to Aadhaar linking issues. Here is how to get it sorted.</p>
 
@@ -101,7 +103,7 @@ export default function PANCardNRIBlog() {
 
             <PostFooterLinks slug="pan-card-nri-application-aadhaar-linking" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Need help with PAN application or Aadhaar issues?"
             description="We assist NRIs with PAN applications from abroad, Aadhaar linking exemptions, and resolving inoperative PAN issues."
             secondaryLabel="NRI Tax Advisory"

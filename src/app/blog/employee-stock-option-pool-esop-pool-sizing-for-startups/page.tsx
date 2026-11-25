@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -103,6 +104,7 @@ export default function EsopPoolSizingBlog() {
                     <li style={{ marginBottom: 0 }}>Expanding the pool needs <strong>Board approval and a shareholder special resolution</strong>, plus a separate authorised-capital increase if the pool exceeds existing headroom.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup-funding" />
 
                 <p>Pool sizing is a negotiation, not a formality. It gets bundled into term sheet discussions as a single line item, &quot;a 12% option pool,&quot; but that single number quietly determines how much dilution founders absorb before an investor&apos;s money even lands. This article is scoped specifically to sizing strategy: how big the pool should be at different stages, who actually bears the dilution cost of creating or expanding it, when refreshes happen, and how expansion gets approved. For vesting schedules, exercise pricing, and how employees are taxed once options are granted out of the pool, see our companion guide on <Link href="/blog/esop-structuring-indian-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>ESOP structuring for Indian startups</Link>, which covers that ground in full.</p>
 
@@ -144,7 +146,7 @@ export default function EsopPoolSizingBlog() {
 
               <PostFooterLinks slug="employee-stock-option-pool-esop-pool-sizing-for-startups" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Structuring or negotiating your ESOP pool for an upcoming round?"
             description="We help founders model pool dilution, review term sheet pool-creation mechanics, and handle the Board and shareholder approvals for pool expansion."
             secondaryLabel="Startup Advisory"

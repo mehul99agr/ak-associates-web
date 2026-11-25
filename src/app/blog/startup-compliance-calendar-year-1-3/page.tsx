@@ -168,7 +168,7 @@ export default function StartupComplianceCalendarBlog() {
 
             <PostFooterLinks slug="startup-compliance-calendar-year-1-3" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Want us to run this calendar for you?"
             description="We handle GST, TDS, MCA annual filings, advance tax, and FEMA reporting year-round for startups across Nashik, Mumbai, and Bangalore."
             secondaryLabel="Startup Advisory"

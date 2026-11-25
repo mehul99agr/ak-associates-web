@@ -139,7 +139,7 @@ export default function SeafarerTaxationBlog() {
 
               <PostFooterLinks slug="seafarer-merchant-navy-taxation-nri-status-and-exemptions" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help with your residential status or voyage salary tax position?"
             description="We work with seafarers and merchant navy officers on CDC-based residential status determination, NRE account structuring, and Indian income tax filing."
             secondaryLabel="View Our Services"

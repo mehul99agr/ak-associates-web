@@ -150,7 +150,7 @@ export default function NRIRepatriationBlog() {
 
               <PostFooterLinks slug="nri-repatriation-property-sale-proceeds" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help repatriating property sale proceeds?"
             description="We handle Form 145/146 compliance and coordinate directly with AD Banks for NRI clients repatriating funds from India."
             secondaryLabel="Email us"

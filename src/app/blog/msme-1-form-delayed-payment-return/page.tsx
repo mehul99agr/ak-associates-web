@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -74,6 +75,7 @@ export default function Post() {
                   <li style={{ marginBottom: 0 }}>Delayed payment also has a <strong>tax cost</strong>: see Section 43B(h), covered in our separate post.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>A startup that buys from small vendors, such as a freelancer, a printer, a small manufacturer or a software agency registered as a micro or small enterprise, has a legal clock on every invoice. If payment drifts past 45 days, two things can happen: the company may owe interest to the supplier, and it may have to report the delay to the Registrar in Form MSME-1. Founders often meet both for the first time in an audit.</p>
 
@@ -123,7 +125,7 @@ export default function Post() {
             </p>
             <PostFooterLinks slug="msme-1-form-delayed-payment-return" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Owe small vendors beyond 45 days?"
             description="We age your payables, tell you whether MSME-1 is due and protect your Section 43B(h) deduction."
             secondaryLabel="Startup Advisory"

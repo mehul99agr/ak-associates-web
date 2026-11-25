@@ -6,7 +6,7 @@ import { BOOKING_LINK } from '@/lib/constants'
 // without scrolling to the end. Fees come from the same numbers as
 // src/lib/servicePricing.ts; keep the two in step.
 
-type Variant = 'nri-seller' | 'nri-buyer' | 'nri-itr' | 'nri-ldc' | 'us-entity' | 'startup'
+type Variant = 'nri-seller' | 'nri-buyer' | 'nri-itr' | 'nri-ldc' | 'nri-banking' | 'us-entity' | 'startup' | 'startup-funding'
 
 const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic: string; more: { label: string; href: string } }> = {
   'nri-seller': {
@@ -36,6 +36,20 @@ const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic:
     cta: 'Get a lower TDS certificate',
     topic: 'nri-tax',
     more: { label: 'See NRI packages', href: '/nri-tax-advisory#nri-lower-tds-certificate' },
+  },
+  'nri-banking': {
+    label: 'Sorting out your NRO, NRE or PIS accounts?',
+    text: 'We tell you which account each kind of money belongs in, cut the TDS on NRO interest with DTAA relief, and handle the Form 145/146 paperwork when you move money abroad. Start with a free 15-minute call.',
+    cta: 'Book a free NRI call',
+    topic: 'nri-banking',
+    more: { label: 'See NRI packages', href: '/nri-tax-advisory#packages' },
+  },
+  'startup-funding': {
+    label: 'Raising money, issuing ESOPs or taking foreign investment?',
+    text: 'We handle the valuation, the FEMA filings for foreign investors, ESOP set-up and the compliance clean-up that investors check in due diligence. Start with a free 15-minute call.',
+    cta: 'Book a free startup call',
+    topic: 'startups',
+    more: { label: 'Startup services', href: '/startups' },
   },
   startup: {
     label: 'Starting a company in India?',

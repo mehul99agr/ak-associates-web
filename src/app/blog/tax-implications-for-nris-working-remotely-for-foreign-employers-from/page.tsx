@@ -139,7 +139,7 @@ export default function NriRemoteWorkTaxBlog() {
 
               <PostFooterLinks slug="tax-implications-for-nris-working-remotely-for-foreign-employers-from" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Working remotely from India for a foreign employer?"
             description="We help NRIs and returning professionals work out residential status, plan advance tax, and claim DTAA relief on foreign salary."
             secondaryLabel="NRI Tax Advisory"

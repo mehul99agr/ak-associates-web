@@ -110,7 +110,7 @@ export default function NriGaarBlog() {
 
             <PostFooterLinks slug="nri-gaar-cross-border-structures" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Reviewing a cross-border holding or exit structure?"
             description="We assess GAAR and treaty-substance exposure before a structure is finalised, not after a notice arrives."
             secondaryLabel="NRI Tax Advisory"

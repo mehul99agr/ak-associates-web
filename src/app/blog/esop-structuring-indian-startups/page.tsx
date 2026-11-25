@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -74,6 +75,7 @@ export default function ESOPStructuringBlog() {
                   <li style={{ marginBottom: 0 }}>DPIIT-recognised startups may offer eligible employees a perquisite-tax deferral, subject to current conditions.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>For a seed or Series A startup, cash is usually the scarcest resource. An Employee Stock Option Plan, or ESOP, lets the company offer key employees a meaningful opportunity to participate in value creation without immediately increasing fixed salary costs. But a poorly designed ESOP that gives small, unclear grants or creates an impractical exercise process can frustrate employees rather than retain them. A useful scheme explains what the employee receives, when it vests, how it may be exercised, what happens on exit, and the likely tax cost.</p>
 
@@ -108,7 +110,7 @@ export default function ESOPStructuringBlog() {
 
             <PostFooterLinks slug="esop-structuring-indian-startups" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Designing an ESOP for your startup?"
             description="We draft ESOP schemes, handle shareholder and Board approvals, ROC filings, and valuation coordination for Indian startups."
             secondaryLabel="Startup Advisory"

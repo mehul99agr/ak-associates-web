@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -79,6 +80,7 @@ export default function DueDiligenceChecklistBlog() {
                   <li style={{ marginBottom: 0 }}>Begin data-room preparation at least <strong>6-8 weeks</strong> before the target closing date, and earlier for a complex round.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>Investor due diligence is not only a search for major fraud or litigation. It tests whether the startup is capable of scaling with reliable controls. A diligence team wants to know whether the company owns what it says it owns, has issued shares properly, can support its financial metrics, has complied with major laws, and has identified its risks honestly. A missing document is not always fatal; an unexplained inconsistency is more damaging. Founders should prepare a structured data room before the term sheet becomes a closing deadline.</p>
 
@@ -130,7 +132,7 @@ export default function DueDiligenceChecklistBlog() {
 
             <PostFooterLinks slug="due-diligence-checklist-startup-fundraising" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Preparing for a funding round?"
             description="We reconcile cap tables, review FEMA and tax compliance history, and build data rooms that survive investor scrutiny."
             secondaryLabel="Startup Advisory"

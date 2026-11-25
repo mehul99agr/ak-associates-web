@@ -145,7 +145,7 @@ export default function NRIInheritedGiftedPropertyBlog() {
               </p>
               <PostFooterLinks slug="nri-capital-gains-inherited-gifted-property" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Selling inherited or gifted property in India?"
             description="We help NRIs trace acquisition cost documentation, compute capital gains, and apply for Form 13 certificates on ancestral property sales."
             secondaryLabel="Email us"

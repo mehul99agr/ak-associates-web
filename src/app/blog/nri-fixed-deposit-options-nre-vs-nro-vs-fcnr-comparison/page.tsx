@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -85,6 +86,7 @@ export default function NriFdComparisonBlog() {
                     <li style={{ marginBottom: 0 }}>Which one you can even open depends on where the money came from, not just which gives the best rate.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-banking" />
 
                 <p>NRIs comparing fixed deposit options usually start with interest rates and stop there, but the more important question for an NRI FD is almost always tax treatment and repatriability, not the headline rate. This guide is deliberately scoped to fixed deposits specifically: for the broader question of which savings/current account type an NRI should use for everyday banking, see our companion guide on <Link href="/blog/nre-vs-nro-account-fema-repatriation-limits" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRE vs NRO accounts and FEMA repatriation limits</Link>. Here, the focus is narrower: how NRE FDs, NRO FDs, and FCNR FDs actually differ once you decide to lock money into a term deposit.</p>
 
@@ -165,7 +167,7 @@ export default function NriFdComparisonBlog() {
 
               <PostFooterLinks slug="nri-fixed-deposit-options-nre-vs-nro-vs-fcnr-comparison" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Deciding between NRE, NRO, and FCNR fixed deposits?"
             description="We help NRIs structure deposits for the right mix of tax efficiency, repatriability, and currency risk, and handle DTAA relief on NRO FD interest."
             secondaryLabel="NRI Tax Advisory"

@@ -104,7 +104,7 @@ export default function IndiaUsDtaaGuideBlog() {
 
             <PostFooterLinks slug="india-us-dtaa-guide" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Running a US entity while based in India?"
             description="We help founders assess permanent establishment risk alongside their US and Indian structuring."
             secondaryLabel="Transfer Pricing Services"

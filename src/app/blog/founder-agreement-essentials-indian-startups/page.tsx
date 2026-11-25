@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -74,6 +75,7 @@ export default function FounderAgreementBlog() {
                   <li style={{ marginBottom: 0 }}>Post-termination non-competes have limited enforceability in India; use practical protections beyond boilerplate.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>A founder agreement is often deferred because the founders trust each other and want to focus on product or fundraising. That is exactly when it should be completed. The agreement records the commercial bargain before resentment, unequal effort, or an investor deadline changes the conversation. It is also a governance and tax-planning document because it affects ownership, transfers, employment terms, intellectual property, and future diligence. It should work with the company&apos;s articles of association, shareholders&apos; agreement, and employment arrangements; if documents conflict, investors will ask which one governs.</p>
 
@@ -110,7 +112,7 @@ export default function FounderAgreementBlog() {
 
             <PostFooterLinks slug="founder-agreement-essentials-indian-startups" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Need a founder agreement drafted or reviewed?"
             description="We help founders structure equity splits, reverse vesting, and IP assignment before a dispute or fundraise makes it urgent."
             secondaryLabel="Startup Advisory"

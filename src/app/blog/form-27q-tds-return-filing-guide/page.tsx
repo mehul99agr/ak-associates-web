@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -94,6 +95,7 @@ export default function Form27QBlog() {
                   <li style={{ marginBottom: 0 }}>Late or incorrect filing attracts a Section 234E fee and a possible Section 271H penalty, and errors block the NRI&apos;s ability to claim TDS credit until corrected.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-buyer" />
 
               <p>Any business or individual that deducts tax at source on a payment to a non-resident, whether that is interest on a loan, royalty, professional fees, or rent, has a filing obligation that goes beyond simply depositing the TDS. That obligation is Form 27Q, the quarterly return that reports the deduction to the Income Tax Department and, critically, is what allows the non-resident payee to eventually claim credit for that TDS in their own return. This guide covers who must file, the filing calendar, what the return contains, and the mistakes that most often cause it to be filed late or incorrectly.</p>
 
@@ -175,7 +177,7 @@ export default function Form27QBlog() {
 
             <PostFooterLinks slug="form-27q-tds-return-filing-guide" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Need help filing Form 27Q or fixing a TRACES mismatch?"
             description="We handle TAN registration, quarterly Form 27Q filing, correction statements, and Form 16A issuance for businesses and individuals paying non-residents."
             secondaryLabel="NRI Tax Advisory"

@@ -122,7 +122,7 @@ export default function Post() {
             </p>
             <PostFooterLinks slug="inc-20a-commencement-of-business-declaration" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Incorporated recently and unsure about INC-20A?"
             description="We check your bank records, prepare the declaration and file INC-20A within the 180-day window."
             secondaryLabel="Startup Advisory"

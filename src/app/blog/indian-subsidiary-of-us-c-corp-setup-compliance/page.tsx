@@ -124,7 +124,7 @@ export default function IndianSubsidiaryUsCCorpBlog() {
 
             <PostFooterLinks slug="indian-subsidiary-of-us-c-corp-setup-compliance" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Setting up an Indian subsidiary?"
             description="We handle incorporation, FEMA reporting and transfer pricing for US-owned Indian subsidiaries."
             secondaryLabel="US Cross-Border Services"

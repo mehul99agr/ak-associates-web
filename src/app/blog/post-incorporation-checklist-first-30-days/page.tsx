@@ -144,7 +144,7 @@ export default function PostIncorporationChecklistBlog() {
 
             <PostFooterLinks slug="post-incorporation-checklist-first-30-days" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Just incorporated? Get the first 30 days right."
             description="We handle first Board meeting documentation, auditor appointment, share certificates, GST registration, and statutory register setup for newly incorporated companies."
             secondaryLabel="Incorporation Services"

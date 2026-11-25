@@ -100,7 +100,7 @@ export default function Form5471Form5472Form8858Blog() {
 
             <PostFooterLinks slug="form-5471-5472-8858-foreign-owned-us-entity" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Not sure which IRS information return applies to your entity?"
             description="We help founders identify and file the correct foreign-ownership disclosures on time."
             secondaryLabel="Offshore Accounting Services"

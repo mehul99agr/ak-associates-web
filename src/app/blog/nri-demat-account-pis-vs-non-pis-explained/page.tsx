@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -109,6 +110,7 @@ export default function NRIDematPISBlog() {
                     <li style={{ marginBottom: 0 }}>Many NRIs hold both a PIS account (for repatriable trading) and a non-PIS account (for NRO-linked and fund investments) side by side.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-banking" />
 
                 <p>One of the more confusing parts of setting up an investment account as an NRI is figuring out whether you actually need a PIS account, or whether a simpler non-PIS demat account will do. The confusion is understandable: PIS was designed decades ago as an RBI reporting mechanism, and it still applies, but not to every kind of investment an NRI might want to make, and the framework itself was recently simplified in ways older guidance online has not caught up with.</p>
 
@@ -164,7 +166,7 @@ export default function NRIDematPISBlog() {
 
               <PostFooterLinks slug="nri-demat-account-pis-vs-non-pis-explained" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Setting up your NRI investment accounts correctly?"
             description="We help NRIs choose the right account structure, PIS or non-PIS, and stay compliant with RBI reporting and repatriation rules."
             secondaryLabel="View Our Services"

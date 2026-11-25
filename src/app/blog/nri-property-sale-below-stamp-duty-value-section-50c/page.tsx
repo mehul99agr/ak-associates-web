@@ -99,7 +99,7 @@ export default function Section50CNriBlog() {
 
             <PostFooterLinks slug="nri-property-sale-below-stamp-duty-value-section-50c" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Selling property below the stamp duty value?"
             description="We estimate the Section 78 impact before you sign the sale deed, and help with a Valuation Officer reference where the circle rate looks overstated."
             secondaryLabel="NRI Tax Advisory"

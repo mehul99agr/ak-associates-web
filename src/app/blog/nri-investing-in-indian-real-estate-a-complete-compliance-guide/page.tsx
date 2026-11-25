@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -103,6 +104,7 @@ export default function NriRealEstateComplianceBlog() {
                     <li style={{ marginBottom: 0 }}>Rental income routes through the NRO account and can be repatriated up to <strong>USD 1 million per financial year</strong> after tax, with Form 15CA/15CB.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-seller" />
 
                 <p>Indian real estate remains one of the most common investment choices NRIs make, whether for eventual return, rental yield, or simply keeping a foothold in the home market. The purchase itself is straightforward for most property types, but it sits inside a compliance framework; FEMA on one side governing what can be bought and how it is paid for, and the Income Tax Act on the other governing what happens to the rental income and, eventually, the sale proceeds. This guide covers the buying and holding side end to end. For what happens when the same property is eventually sold, see our companion guide on <Link href="/blog/tds-on-nri-property-sale-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>TDS on NRI property sale in India</Link>.</p>
 
@@ -146,7 +148,7 @@ export default function NriRealEstateComplianceBlog() {
 
               <PostFooterLinks slug="nri-investing-in-indian-real-estate-a-complete-compliance-guide" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Planning to buy or already own property in India as an NRI?"
             description="We help NRIs structure FEMA-compliant property purchases, handle rental income tax filings, and manage NRO repatriation with Form 15CA/15CB."
             secondaryLabel="NRI Tax Advisory"

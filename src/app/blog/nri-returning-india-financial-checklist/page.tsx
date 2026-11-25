@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -101,6 +102,7 @@ export default function NRIReturningIndiaChecklist() {
                     <li style={{ marginBottom: 0 }}>Foreign retirement accounts (401k, pension, superannuation) need a withdrawal strategy aligned with your RNOR window.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>Returning to India after years abroad is not just a logistical move. It is a financial event that touches your bank accounts, investments, insurance, tax obligations in two countries, and your retirement savings. Most NRIs focus on shipping containers and school admissions, and then discover the financial implications after they have already lost the planning window. Here is the checklist, in the order things actually need to happen.</p>
 
@@ -201,7 +203,7 @@ export default function NRIReturningIndiaChecklist() {
 
               <PostFooterLinks slug="nri-returning-india-financial-checklist" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Planning your return to India?"
             description="We help returning NRIs with RNOR planning, bank account conversion, investment restructuring, and the first ITR filing as a resident. Start early to maximise your tax-free window."
             secondaryLabel="NRI Tax Advisory"

@@ -113,7 +113,7 @@ export default function LLPRegistrationProcessCostBlog() {
             </p>
             <PostFooterLinks slug="llp-registration-process-cost-india-2026" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Choosing between an LLP and a company?"
             description="We help founders pick the right structure and handle the filings, including the LLP agreement and Form 3 inside the 30 day window."
             secondaryLabel="Incorporation Services"

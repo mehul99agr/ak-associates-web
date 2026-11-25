@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -104,6 +105,7 @@ export default function StartupBankAccountBlog() {
                     <li style={{ marginBottom: 0 }}>Certain business categories face extra scrutiny; expect a longer timeline if that applies to you.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup" />
 
                 <p>A freshly incorporated company technically exists the moment the Certificate of Incorporation is issued, but it can&apos;t actually transact, pay a vendor, receive an investor&apos;s wire transfer, or run payroll, until it has a functioning current account. Founders are often surprised by how much friction shows up at this stage, given that incorporation itself is now largely a same-window online process. Most of that friction is avoidable with the right documents ready upfront and an understanding of what actually trips up an application.</p>
 
@@ -145,7 +147,7 @@ export default function StartupBankAccountBlog() {
 
               <PostFooterLinks slug="startup-bank-account-opening-documents-and-common-rejections" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Setting up a new company and need the account opened smoothly?"
             description="We prepare the full document set, review board resolutions against bank formats, and help resolve address or KYC mismatches before they turn into rejections."
             secondaryLabel="View Our Services"

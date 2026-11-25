@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -75,6 +76,7 @@ export default function DSCDINBlog() {
                   <li style={{ marginBottom: 0 }}>Name mismatches and expired address proof are the most common rejection reasons.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Before a director can sign a single MCA filing, two credentials need to be in place: a Digital Signature Certificate to sign electronically, and a Director Identification Number to be legally recognized as a director. The process differs depending on whether the person is becoming a director of a brand-new company or joining an existing one, and getting the paperwork right the first time avoids the back-and-forth that delays incorporation or appointment.</p>
 
@@ -113,7 +115,7 @@ export default function DSCDINBlog() {
             </p>
             <PostFooterLinks slug="dsc-din-application-director-guide" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Need a DSC or DIN sorted before an incorporation or appointment deadline?"
             description="We handle DSC issuance and DIN applications for founders, new directors, and foreign nationals joining Indian companies."
             secondaryLabel="Incorporation Services"

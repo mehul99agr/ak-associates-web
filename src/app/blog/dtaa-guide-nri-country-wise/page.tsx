@@ -205,7 +205,7 @@ export default function DTAAGuideBlog() {
 
               <PostFooterLinks slug="dtaa-guide-nri-country-wise" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help claiming DTAA benefits or foreign tax credits?"
             description="We advise NRIs on treaty rate optimisation, TRC procurement, Form 10F filing, and Form 67 foreign tax credit claims."
             secondaryLabel="NRI Tax Advisory"

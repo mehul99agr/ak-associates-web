@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -76,6 +77,7 @@ export default function OdiGuideBlog() {
                   <li style={{ marginBottom: 0 }}>Reported via the FIRMS portal through your AD bank, with an ongoing Annual Performance Report every year the investment stays outstanding, and a one-year minimum holding period before divestment.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="us-entity" />
 
               <p>When an Indian company, LLP, or eligible resident individual sets up or invests in a business abroad, that outward investment does not sit outside FEMA the way a purely foreign-to-foreign transaction would; it is a regulated activity with its own reporting framework, distinct from the inbound FDI rules that apply when foreign money comes into India. This is <strong>Overseas Direct Investment (ODI)</strong>, and understanding who can make it, which route applies, and what needs to be reported afterward is the difference between a smooth outward structure and a compounding notice down the line.</p>
 
@@ -105,7 +107,7 @@ export default function OdiGuideBlog() {
 
             <PostFooterLinks slug="odi-overseas-direct-investment-guide-india" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Setting up or reporting an overseas investment?"
             description="We help Indian companies, LLPs, and resident individuals structure, report, and stay current on ODI and FEMA compliance."
             secondaryLabel="Startup Advisory Services"

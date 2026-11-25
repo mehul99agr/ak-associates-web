@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -110,6 +111,7 @@ export default function NRORepatriationBlog() {
                     <li style={{ marginBottom: 0 }}>The process takes 5-10 working days at the bank stage, but allow weeks or months if you need Form 13 or an ITR refund first.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-banking" />
 
                 <p>The most common question we get from NRI clients is not about tax rates or filing deadlines. It is: &quot;How do I actually get my money out of India?&quot; Whether you have rental income accumulating in an NRO account, proceeds from a property sale, an inheritance, or matured fixed deposits, the repatriation process is the same, and it trips up NRIs who expect it to work like a simple bank transfer.</p>
 
@@ -185,7 +187,7 @@ export default function NRORepatriationBlog() {
 
               <PostFooterLinks slug="nro-account-repatriation-rules-process" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help repatriating funds from your NRO account?"
             description="We handle Form 145/146 certification, TDS compliance, and end-to-end repatriation documentation for NRI clients across India."
             secondaryLabel="NRI Tax Advisory"

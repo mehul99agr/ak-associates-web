@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -103,6 +104,7 @@ export default function TermSheetNegotiationBlog() {
                     <li style={{ marginBottom: 0 }}>ROFR, tag-along, and drag-along clauses each protect a different party; read the drag-along trigger threshold especially carefully.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup-funding" />
 
                 <p>A term sheet reads like a short, almost casual document, often just a handful of pages, but it sets the economic and control terms that the full definitive agreements (Share Subscription Agreement, Shareholders Agreement, amended Articles) will later formalise in far more detail. Founders who negotiate hard on valuation but skim the rest of the term sheet frequently discover, only at the definitive-documentation stage, that the real economics and control were determined by clauses they barely read. This guide walks through the clauses that matter most, flags which versions are market-standard versus founder-unfriendly, and clarifies what is actually binding when you sign.</p>
 
@@ -147,7 +149,7 @@ export default function TermSheetNegotiationBlog() {
 
               <PostFooterLinks slug="term-sheet-negotiation-key-clauses-indian-founders-should-understand" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Reviewing a term sheet before you sign?"
             description="We review term sheets against current market norms, flag founder-unfriendly clauses, and coordinate with your legal counsel through definitive documentation."
             secondaryLabel="Startup Advisory"

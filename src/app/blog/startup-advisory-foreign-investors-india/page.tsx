@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -75,6 +76,7 @@ export default function StartupAdvisoryForeignInvestorsBlog() {
                   <li style={{ marginBottom: 0 }}>Post-investment, the startup must file <strong>Form FC-GPR within 30 days</strong> of allotment; investors should confirm this actually happened.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>Foreign investors backing an Indian startup are usually well served on commercial due diligence, market sizing, team assessment, competitive positioning, but underserved on the regulatory and structuring layer that is specific to India: FEMA pricing rules, sectoral caps, entity-type trade-offs, and the compliance trail a target company needs to have in order before money can move cleanly.</p>
 
@@ -106,7 +108,7 @@ export default function StartupAdvisoryForeignInvestorsBlog() {
 
             <PostFooterLinks slug="startup-advisory-foreign-investors-india" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Structuring or diligencing an investment into an Indian startup?"
             description="We support foreign investors and Indian founders with FEMA pricing certification, due diligence reviews, FC-GPR filing, and ongoing compliance oversight for cross-border startup investments."
             secondaryLabel="Startup Advisory Services"

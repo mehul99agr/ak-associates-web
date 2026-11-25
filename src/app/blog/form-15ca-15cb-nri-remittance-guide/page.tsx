@@ -204,7 +204,7 @@ export default function Form15CA15CBBlog() {
 
               <PostFooterLinks slug="form-15ca-15cb-nri-remittance-guide" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need Form 15CB (146) certification for your remittance?"
             description="We issue Form 146 (15CB) CA certificates, file Form 145 (15CA), and handle end-to-end remittance documentation for NRI clients."
             secondaryLabel="NRI Tax Advisory"

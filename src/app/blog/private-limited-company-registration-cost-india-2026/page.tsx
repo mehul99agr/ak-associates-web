@@ -126,7 +126,7 @@ export default function PrivateLimitedRegistrationCostBlog() {
             </p>
             <PostFooterLinks slug="private-limited-company-registration-cost-india-2026" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Want one written quote with nothing left out?"
             description="We handle name approval, documents, SPICe+ filing and the first-month compliance for Indian companies, with inclusions and exclusions stated up front."
             secondaryLabel="Incorporation Services"

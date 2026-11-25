@@ -106,7 +106,7 @@ export default function UsLlcVsCCorpBlog() {
 
             <PostFooterLinks slug="us-llc-vs-c-corp-indian-founders" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Planning a US entity for your startup?"
             description="We help Indian founders choose and structure the right US entity alongside their Indian compliance and accounting."
             secondaryLabel="Offshore Accounting Services"

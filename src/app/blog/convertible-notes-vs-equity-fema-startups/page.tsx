@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -78,6 +79,7 @@ export default function ConvertibleNotesBlog() {
                   <li style={{ marginBottom: 0 }}>Optional conversion or redemption can trigger <strong>debt treatment</strong> and a materially different FEMA analysis.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>A convertible note is an instrument under which an investor initially provides money as debt-like funding, with the amount later converting into equity or being repaid according to agreed terms. For a startup, its commercial attraction is that it can defer the valuation discussion until a later priced funding round; useful when the company is very early, the product is still being validated, or founders and investors agree that a near-term institutional round should set the price. But for Indian startups, the commercial document cannot be separated from FEMA classification; before accepting foreign capital through a convertible note, confirm the company and instrument meet the applicable regulatory conditions.</p>
 
@@ -119,7 +121,7 @@ export default function ConvertibleNotesBlog() {
 
             <PostFooterLinks slug="convertible-notes-vs-equity-fema-startups" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Structuring a funding round with foreign investors?"
             description="We advise on convertible note eligibility, CCPS drafting, FEMA pricing, and FC-GPR/FLA compliance for Indian startups."
             secondaryLabel="Startup Advisory"

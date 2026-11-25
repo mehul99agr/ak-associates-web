@@ -104,7 +104,7 @@ export default function NRIComplianceCalendarBlog() {
 
             <PostFooterLinks slug="nri-tax-compliance-calendar-deadlines" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Want us to manage your NRI tax compliance?"
             description="We handle ITR filing, advance tax computation, Form 27Q verification, and Form 145/146 certification for NRI clients year-round."
             secondaryLabel="NRI Tax Advisory"

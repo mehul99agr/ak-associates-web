@@ -151,7 +151,7 @@ export default function PowerOfAttorneyNRIBlog() {
 
               <PostFooterLinks slug="power-of-attorney-for-nris-property-transactions-from-abroad" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Planning a property transaction in India from abroad?"
             description="We help NRIs structure the right POA, coordinate apostille/attestation, and handle the tax and TDS side of the transaction end to end."
             secondaryLabel="View Our Services"

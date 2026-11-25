@@ -141,7 +141,7 @@ export default function NRIMutualFundStockTaxBlog() {
 
               <PostFooterLinks slug="nri-mutual-fund-stock-taxation-india" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help with NRI investment taxation?"
             description="We advise NRIs on mutual fund and stock taxation, TDS refund claims, PIS compliance, and DTAA credit optimisation."
             secondaryLabel="NRI Tax Advisory"

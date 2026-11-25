@@ -115,7 +115,7 @@ export default function NriAgriLandBlog() {
             </p>
             <PostFooterLinks slug="nri-agricultural-land-india-fema-rules" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Holding or inheriting agricultural land as an NRI?"
             description="We help NRIs and OCIs confirm what they can legally hold, sell, or transfer, and handle the compliance around it."
             secondaryLabel="NRI Tax Advisory"

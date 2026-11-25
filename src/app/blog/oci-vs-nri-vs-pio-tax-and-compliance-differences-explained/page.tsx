@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -102,6 +103,7 @@ export default function OciNriPioBlog() {
                     <li style={{ marginBottom: 0 }}>Property rights, FEMA account eligibility, and tax filing obligations each depend on the <em>relevant</em> status for that specific rule, not on a single combined label.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="nri-itr" />
 
                 <p>OCI, NRI, and PIO get used almost interchangeably in everyday conversation, and that habit causes real compliance mistakes. Someone tells their bank they are &quot;OCI&quot; and assumes that settles their tax residency; someone else assumes their old PIO card still works because &quot;it&apos;s basically the same as OCI.&quot; Neither assumption is safe. These three labels come from three different legal frameworks, answer three different questions, and a person&apos;s status under one says nothing conclusive about their status under another.</p>
 
@@ -129,7 +131,7 @@ export default function OciNriPioBlog() {
 
               <PostFooterLinks slug="oci-vs-nri-vs-pio-tax-and-compliance-differences-explained" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Not sure whether you are a resident or non-resident this year?"
             description="We assess FEMA and Income Tax Act residential status separately, advise on property and investment eligibility, and handle NRI/OCI tax filings."
             secondaryLabel="NRI Tax Advisory"

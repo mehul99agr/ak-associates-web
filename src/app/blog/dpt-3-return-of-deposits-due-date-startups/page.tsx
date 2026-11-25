@@ -118,7 +118,7 @@ export default function Post() {
             </p>
             <PostFooterLinks slug="dpt-3-return-of-deposits-due-date-startups" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Not sure which of your loans must be reported in DPT-3?"
             description="We classify your director and shareholder funding, check the declarations and file DPT-3 on time."
             secondaryLabel="Startup Advisory"

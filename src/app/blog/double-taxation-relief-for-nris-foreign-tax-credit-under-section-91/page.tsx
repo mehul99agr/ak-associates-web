@@ -156,7 +156,7 @@ export default function Section91DoubleTaxationBlog() {
 
               <PostFooterLinks slug="double-taxation-relief-for-nris-foreign-tax-credit-under-section-91" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Paying tax in a country with no DTAA with India?"
             description="We compute Section 91 foreign tax credit exposure, prepare Form 67 filings, and structure income to minimise the uncredited gap where foreign rates exceed India&apos;s."
             secondaryLabel="NRI Tax Advisory"

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -89,6 +90,7 @@ export default function CoFounderEquityDisputesBlog() {
                   <li style={{ marginBottom: 0 }}>Once a dispute has started, negotiation and mediation are cheaper and faster than arbitration or litigation, but only work well if the agreement already defines the process.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup-funding" />
 
               <p>Co-founder equity disputes rarely start as legal disagreements. They start as unspoken resentment over who is actually building the company, and only turn into legal disputes months or years later, once one founder wants to leave, raise money, or simply stops being able to work with the others. By the time it reaches that stage, the options are narrower and more expensive than they would have been if the equity structure had been designed to anticipate the problem from day one.</p>
 
@@ -126,7 +128,7 @@ export default function CoFounderEquityDisputesBlog() {
 
             <PostFooterLinks slug="co-founder-equity-disputes-prevention-and-resolution" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Setting up founder equity, or already in a dispute?"
             description="We help founders structure vesting schedules and shareholders&apos; agreements upfront, and advise on resolution mechanisms if a dispute has already started."
             secondaryLabel="Startup Advisory"

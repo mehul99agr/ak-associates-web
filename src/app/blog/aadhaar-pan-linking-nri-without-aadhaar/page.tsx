@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -75,6 +76,7 @@ export default function AadhaarPanNriBlog() {
                   <li style={{ marginBottom: 0 }}>The right fix for a genuinely exempt NRI is updating PAN records to reflect NRI status, not applying for Aadhaar to force a link.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-itr" />
 
               <p>A recurring source of confusion for NRIs: every few months, a bank, a mutual fund registrar, or a broker sends a notice saying their PAN may become inoperative unless linked with Aadhaar; and the NRI does not have an Aadhaar number to link, having left India before Aadhaar became near-universal, or never having lived in India long enough to be Aadhaar-eligible in the first place. The good news is that this mandate was never meant to catch genuinely Aadhaar-ineligible NRIs; the problem is usually that PAN records don&apos;t correctly reflect NRI status, not that the NRI is somehow non-compliant.</p>
 
@@ -110,7 +112,7 @@ export default function AadhaarPanNriBlog() {
 
             <PostFooterLinks slug="aadhaar-pan-linking-nri-without-aadhaar" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Bank flagged your PAN over Aadhaar linking?"
             description="We help NRIs correct PAN records, confirm exemption status, and resolve inoperative-PAN issues with banks and the tax department."
             secondaryLabel="NRI Tax Advisory"

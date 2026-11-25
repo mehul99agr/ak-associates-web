@@ -261,7 +261,7 @@ export default function Section195Blog() {
 
               <PostFooterLinks slug="section-195-tds-nri-payments-guide" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help with Section 195 compliance?"
             description="We handle TAN applications, Form 27Q filing, Form 13 certificates, and DTAA rate determinations for all types of NRI payments."
             secondaryLabel="NRI Tax Advisory"

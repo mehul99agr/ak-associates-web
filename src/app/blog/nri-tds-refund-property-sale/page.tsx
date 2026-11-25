@@ -156,7 +156,7 @@ export default function NRITDSRefundBlog() {
 
               <PostFooterLinks slug="nri-tds-refund-property-sale" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Need help claiming your NRI TDS refund?"
             description="We file ITRs and track refunds for NRI clients across the UAE, US, UK, Singapore, and Australia."
             secondaryLabel="Email us"

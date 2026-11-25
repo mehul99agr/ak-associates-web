@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -94,6 +95,7 @@ export default function NROTDSRefundBlog() {
                   <li style={{ marginBottom: 0 }}>Once refunded to your NRO account, the amount is repatriable within the standard <Link href="/blog/nro-account-repatriation-rules-process" style={{ color: 'var(--primary)', fontWeight: 600 }}>USD 1 million annual limit</Link>.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="nri-itr" />
 
               <p>Most NRIs discover the gap between TDS deducted on their NRO account and their actual Indian tax liability only when a CA points it out at return-filing time. Banks deduct TDS on NRO interest and other credits at the domestic statutory rate by default, since they have no independent way to confirm treaty eligibility or your overall income position. When the real liability turns out to be lower, sometimes substantially lower, the only way to get that money back is a formal refund claim through your Indian income tax return. This guide walks through that claim process specifically for NRO account TDS, separate from the property-sale TDS refund process and separate from the mechanics of moving money out of India once you have it back.</p>
 
@@ -143,7 +145,7 @@ export default function NROTDSRefundBlog() {
 
             <PostFooterLinks slug="nro-tds-refund-claim-process" />
 
-            <PostCTA
+            <PostCTA segment="nri"
             heading="Overpaying TDS on your NRO account?"
             description="We handle DTAA rate applications at the bank, Form 13 lower deduction certificates, and end-to-end ITR filing for NRO TDS refunds."
             secondaryLabel="NRI Tax Advisory"

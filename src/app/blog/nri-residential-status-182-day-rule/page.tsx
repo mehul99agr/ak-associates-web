@@ -194,7 +194,7 @@ export default function NRIResidentialStatusBlog() {
 
               <PostFooterLinks slug="nri-residential-status-182-day-rule" />
 
-              <PostCTA
+              <PostCTA segment="nri"
             heading="Not sure about your residential status?"
             description="We calculate residential status for NRIs, determine RNOR eligibility, and advise on the tax implications of status changes. Get it right before you file."
             secondaryLabel="NRI Tax Advisory"

@@ -112,7 +112,7 @@ export default function OPCConversionBlog() {
 
             <PostFooterLinks slug="opc-to-private-limited-conversion-india" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Planning to convert your OPC?"
             description="We handle the full conversion process, from Board resolutions to the fresh Certificate of Incorporation and updated registrations."
             secondaryLabel="Incorporation Services"

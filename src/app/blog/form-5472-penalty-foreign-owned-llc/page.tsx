@@ -109,7 +109,7 @@ export default function Form5472PenaltyForeignOwnedLlcBlog() {
 
             <PostFooterLinks slug="form-5472-penalty-foreign-owned-llc" />
 
-            <PostCTA
+            <PostCTA segment="us"
               heading="Missed Form 5472 on your US LLC?"
               description="We reconstruct the transactions, prepare the late filings and help you respond to IRS notices, with a US partner reviewing and filing."
               secondaryLabel="US Cross-Border Advisory"

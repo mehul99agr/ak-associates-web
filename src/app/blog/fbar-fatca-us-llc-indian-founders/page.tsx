@@ -102,7 +102,7 @@ export default function FbarFatcaBlog() {
 
             <PostFooterLinks slug="fbar-fatca-us-llc-indian-founders" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Not sure if FBAR or FATCA applies to you?"
             description="We help founders map their US and Indian accounts and file both correctly."
             secondaryLabel="Offshore Accounting Services"

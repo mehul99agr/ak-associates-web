@@ -124,7 +124,7 @@ export default function LLPvsPvtLtdBlog() {
 
             <PostFooterLinks slug="llp-vs-private-limited-comparison-india" />
 
-            <PostCTA
+            <PostCTA segment="startup"
             heading="Not sure whether to incorporate as an LLP or Private Limited Company?"
             description="We help founders model tax, compliance, and fundraising implications before choosing a structure."
             secondaryLabel="Incorporation Services"

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd, type FaqPair } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -104,6 +105,7 @@ export default function StartupComplianceAutomationBlog() {
                     <li style={{ marginBottom: 0 }}>Missed ODI/APR reporting is a FEMA compounding matter, not a simple late fee; AD banks can hold up further remittances until it is current, which is why the tracking discipline matters more here than elsewhere.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup-funding" />
 
                 <p>Startups with an India entity linked to an overseas subsidiary or a US/UAE holding structure end up juggling compliance calendars that run on different clocks: RBI&apos;s FEMA reporting for outbound investment, an annual transfer pricing filing tied to intercompany transactions, and a monthly GST cycle that has nothing to do with either. None of these can be handed off to a single piece of software; each is a specialist filing with its own portal, format, and reviewing authority. What can genuinely be organised is the workflow around them: one clean data set, a standing tracker, and a review point before each deadline instead of a scramble after it. This guide walks through what that looks like for RBI ODI reporting, APR filing, transfer pricing documentation, and GST, and where outsourced financial support fits into making it work.</p>
 
@@ -143,7 +145,7 @@ export default function StartupComplianceAutomationBlog() {
 
               <PostFooterLinks slug="startup-compliance-automation-odi-apr-gst" />
 
-              <PostCTA
+              <PostCTA segment="startup"
             heading="Need help organising ODI/APR, transfer pricing, or GST compliance?"
             description="We support growing startups with cross-border structures through Virtual CFO oversight and dedicated offshore accounting teams, alongside direct RBI, transfer pricing, and GST filings."
             secondaryLabel="Email us"

@@ -1,6 +1,16 @@
 import Link from 'next/link'
 import { BOOKING_LINK } from '@/lib/constants'
 
+// segment: the closing box on NRI, US and startup posts always books the free call
+// with the right form topic and links to that segment's packages, whatever the post
+// passed for its buttons (decided Nov 25, 2026; see CLAUDE.md "Growth goal").
+export type Segment = 'nri' | 'us' | 'startup'
+const SEGMENTS: Record<Segment, { topic: string; label: string; href: string }> = {
+  nri: { topic: 'nri-tax', label: 'See NRI packages', href: '/nri-tax-advisory#packages' },
+  us: { topic: 'us-cross-border', label: 'See US packages', href: '/us-cross-border#packages' },
+  startup: { topic: 'startups', label: 'See startup package', href: '/startups#packages' },
+}
+
 export default function PostCTA({
   heading,
   description,
@@ -12,6 +22,7 @@ export default function PostCTA({
   secondaryExternal = false,
   marginTop = '3.5rem',
   background = 'var(--bg-main)',
+  segment,
 }: {
   heading: string
   description: string
@@ -23,7 +34,16 @@ export default function PostCTA({
   secondaryExternal?: boolean
   marginTop?: string
   background?: string
+  segment?: Segment
 }) {
+  if (segment) {
+    const s = SEGMENTS[segment]
+    primaryLabel = 'Book a Free 15-min Call'
+    primaryHref = `${BOOKING_LINK}?topic=${s.topic}`
+    secondaryLabel = s.label
+    secondaryHref = s.href
+    secondaryExternal = false
+  }
   return (
     <div style={{ marginTop, padding: '2.5rem', background, borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
       <h3 style={{ marginBottom: '0.75rem' }}>{heading}</h3>

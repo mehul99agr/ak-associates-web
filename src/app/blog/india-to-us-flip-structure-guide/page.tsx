@@ -126,7 +126,7 @@ export default function IndiaToUsFlipStructureBlog() {
 
             <PostFooterLinks slug="india-to-us-flip-structure-guide" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Planning a flip to Delaware?"
             description="We help founders sequence the tax opinion, FEMA route and filings before any shares move."
             secondaryLabel="US Cross-Border Services"

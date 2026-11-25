@@ -112,7 +112,7 @@ export default function ForeignSubsidiaryBlog() {
 
             <PostFooterLinks slug="foreign-subsidiary-registration-india-fdi" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Setting up an Indian subsidiary for your foreign company?"
             description="We handle incorporation, resident director arrangements, and FC-GPR/FLA compliance for foreign parents entering India."
             secondaryLabel="Incorporation Services"

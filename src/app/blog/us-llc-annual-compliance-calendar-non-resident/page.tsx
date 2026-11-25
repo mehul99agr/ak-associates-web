@@ -112,7 +112,7 @@ export default function UsLlcComplianceCalendarBlog() {
 
             <PostFooterLinks slug="us-llc-annual-compliance-calendar-non-resident" />
 
-            <PostCTA
+            <PostCTA segment="us"
             heading="Need help staying on top of your US LLC's compliance calendar?"
             description="We track annual filings, registered agent renewals, and tax deadlines for founders running US entities from India."
             secondaryLabel="Offshore Accounting Services"
