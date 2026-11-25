@@ -365,7 +365,7 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - **User goal:** ~200 clicks/day and 2 paid calls/day, mainly from 4 segments: Indian incorporation (LLP + Pvt Ltd only), NRI, US compliance, startup compliance in India. Use X + LinkedIn + CAclubindia/TaxGuru for audience.
 - GSC 28 days (Oct 20-Nov 16): 1,070 clicks / 118k impr / 0.9% CTR / pos 8.2. Not falling (Nov 16 best day, 69 clicks). Non-India clicks ~3/day; US-segment pages 9 clicks. Judge progress by international bookings, not total clicks.
 - **Call price Rs 999** (`src/lib/consult.ts`; briefly Rs 1,000 on Nov 18, back to Rs 999 on Nov 21 to match Zoho, user decision). Zoho charges INR via Razorpay, so the site shows "about US$11". `CONSULT_BOOKING_URL_INTL` (null) shows a "Pay in US$" button once a USD event (e.g. Zoho + Stripe) exists.
-- Zoho findings: zero real bookings to date (only a "Payment Failure" test); trial ends ~Nov 25; slots 11:00-15:15 IST only (US visitors cannot book). User to: change Zoho price/description, add 7:30-10:30 PM IST slots, confirm Razorpay international cards, upgrade plan.
+- Zoho findings (CORRECTED Nov 25: 3 paid bookings did occur Nov 17-20, see Growth goal section): zero real bookings to date (only a "Payment Failure" test); trial ends ~Nov 25; slots 11:00-15:15 IST only (US visitors cannot book). User to: change Zoho price/description, add 7:30-10:30 PM IST slots, confirm Razorpay international cards, upgrade plan.
 - 10 buyer-intent posts published (dated Nov 18): pvt ltd registration cost, LLP registration, LLP Form 8/11, INC-20A, DPT-3, MSME-1, Delaware franchise tax APV, Form 5472 penalty, India-US flip, Indian subsidiary of US C-Corp. Drafted by Sonnet subagents; secondary-source figures are worded qualitatively in the posts.
 - Drafts awaiting user approval (scratchpad, not in repo): 2-week X/LinkedIn calendar, 2 CAclubindia + 1 TaxGuru guest articles.
 - Nov 18 (later): X - 24 single posts scheduled via X's scheduler (Nov 19-Dec 2, 7:30 PM + 9:00 PM IST); 4 threads cannot be scheduled on X web and must be posted manually. X lifted "graduated access" on this account. LinkedIn - 9 posts rewritten in plain practitioner voice (user asked: no AI-sounding language), all 9 scheduled at 8:30 AM IST (Nov 19-Dec 2). LinkedIn scheduling quirk: the time field needs clear + type "8:30 AM" twice before Confirm enables; never press Escape in the dialog (opens "save as draft").
@@ -426,6 +426,32 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   only ones over 60 are pages with the " | Agrawal Khandelwal & Associates LLP" suffix, whose keyword part is under 60
   chars, so Google truncates only the brand tail. Deliberately NOT shortened (brand rule; renaming ranking pages risks CTR).
 - **Breadcrumbs:** every sitemap page has BreadcrumbList. Use `src/app/_components/BreadcrumbLd.tsx` on new pages.
+
+## Growth goal and funnel push (Nov 25, 2026 - user decisions)
+- **Goal (user, Nov 25):** 200 clicks/day, 5% of clicks book a call, 1% become clients. ONLY three segments: NRIs, US corps/LLCs
+  (Indian-owned), startups in India. Do not write new posts outside these segments; keep the existing off-target posts.
+- **Baseline (GSC Oct 27-Nov 23):** 1,240 clicks / 129k impr / 1.0% CTR / pos 7.9. Segment pages: NRI 107 clicks, startup 94,
+  US 21 = ~8/day of ~44/day; 82% of clicks are off-target (ITC, TDS, POSH...). The ITC FY 2025-26 post (208 clicks) is seasonal
+  and fades after Nov 30. Non-India ~5/day (US 28, UK 19, UAE 11, Canada 11, Singapore 8).
+- **Bookings baseline:** Zoho paid Rs 999 calls DID happen: booking IDs AG-00003/4/5 (Nov 17, 19, 20) - the Nov 18 "zero real
+  bookings" note was wrong (Zoho's Upcoming tab hid past calls). Free 15-min Google Calendar call: first booking Nov 23 (US NRI).
+  Count bookings from Google Calendar events ("30-minute consultation call with ..." = Zoho paid, "15 min call with ..." = free).
+- **GA4 is still blind** (126 views vs 1,240 clicks; consent default denied, too little traffic for modelling). Added
+  **Vercel Web Analytics** (`@vercel/analytics`, `<Analytics />` in layout.tsx, cookieless, privacy policy updated Nov 25).
+  Use Vercel Analytics + GSC for traffic; Web3Forms emails + calendar for leads.
+- **Free-call form** (`EnquiryForm` mode="free-call") now asks only email, topic, country, timeline; name and situation come
+  from the Google Calendar booking form. Button: "See free call times". New topic `nri-banking`; countries list adds
+  Canada, Singapore, Australia. WebMCP `request_free_call` unchanged (still takes name + message).
+- **Evening slots (Nov 25):** Google Calendar free call AND Zoho paid call now Mon-Fri 11:00-16:00 + 19:30-22:30 IST
+  (US East Coast mornings). Google booking description fixed from "free 30-minute" to "free 15-minute".
+- **Retitled for real queries (Nov 25):** PIS post (ranked ~40 for "pis account meaning/full form": new title + definition
+  section), NRO TDS (pos 17-30 for "tds on nro account"), LLP Form 8/11 (pos 3-8, title said "was due": added FY 2026-27 dates),
+  OPC ("opc turnover limit"), Udyam ("udyam registration benefits"). Re-check their GSC position/CTR around Dec 20, 2026.
+- **DIR-3 KYC is triennial** (verified Nov 25 via ICAI/TaxGuru/Business Standard: from Mar 31, 2026, once every three FYs by
+  June 30, plus within 30 days of a contact-detail change). Fixed on the LLP Form 8/11 and OPC posts only. ~27 other pages still
+  say annual / September 30 (grep "DIR-3 KYC") - pending user go-ahead for a site-wide fix.
+- **Next (plan agreed Nov 25):** package pages with "from Rs X" prices for NRI / US LLC / startup (NEED the user's fees - never
+  invent), segment-matched CTAs in posts, 3-4 segment buyer-intent posts a week, 2 CAclubindia posts a month, NRI communities.
 
 ## Status and backlog (updated Nov 21, 2026 - "we'll keep getting better later")
 **Where things stand:** whole-site live check passed (260 URLs, all 200). AI crawlers allowed, llms files and agent
