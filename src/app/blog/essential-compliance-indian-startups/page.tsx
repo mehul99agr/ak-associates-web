@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -52,6 +53,7 @@ export default function EssentialComplianceBlog() {
                   <li style={{ marginBottom: 0 }}>Build a compliance calendar from day one; the cost of prevention is a fraction of the cost of cleanup.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Navigating the regulatory landscape in India can be daunting for new founders. From the day of <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>incorporation</Link>, your startup enters a cycle of mandatory filings across multiple regulators; MCA, GST department, Income Tax, RBI, and EPFO. Missing deadlines does not just attract penalties; it can block DPIIT recognition, delay fundraising due diligence, and create liabilities that haunt you at Series A.</p>
 

@@ -19,6 +19,7 @@ export default function ServicePackages({
             <div style={{ marginBottom: '1rem' }}>
               <span style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--text-main)' }}>{p.price}</span>
               <span style={{ color: 'var(--text-light)', fontSize: '0.88rem', marginLeft: '0.4rem' }}>{p.unit}</span>
+              {p.note && <p style={{ color: 'var(--text-light)', fontSize: '0.82rem', margin: '0.35rem 0 0' }}>{p.note}</p>}
             </div>
             <ul style={{ margin: '0 0 1.5rem', paddingLeft: '1.1rem', color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7, flex: 1 }}>
               {p.points.map((pt, i) => <li key={i}>{pt}</li>)}

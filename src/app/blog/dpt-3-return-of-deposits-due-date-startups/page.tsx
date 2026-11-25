@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -73,6 +74,7 @@ export default function Post() {
                   <li style={{ marginBottom: 0 }}>Late filing attracts additional MCA fees that grow with delay, plus a Rule 21 penalty. <strong>Accepting a real deposit in breach of the rules</strong> is far more serious (Section 76A).</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Founders are often surprised to hear from their CA that they must file a &quot;return of deposits&quot; when the company has never taken a deposit from the public. The reason is simple. The form is not only about deposits. It also asks the company to report money received that is exempt from the deposit definition, and a startup funded by director loans has exactly that.</p>
 

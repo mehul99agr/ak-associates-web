@@ -102,7 +102,7 @@ const faqLd = {
       name: 'How much do you charge NRIs?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NRI income tax returns start at ₹10,000. Advisory on an NRI property sale (capital gains, the lower TDS certificate and the Form 145/146 repatriation paperwork) is ₹25,000 to ₹50,000 per property. Government fees are extra, and the scope is confirmed in writing before we start.',
+        text: 'A lower TDS certificate (Form 128, earlier Form 13) on its own is ₹14,999, plus out-of-pocket expenses and GST, if applicable. NRI income tax returns start at ₹10,000. Advisory on an NRI property sale (capital gains, the lower TDS certificate and the Form 145/146 repatriation paperwork) is ₹25,000 to ₹50,000 per property. Government fees are extra, and the scope is confirmed in writing before we start.',
       },
     },
   ],
@@ -196,7 +196,7 @@ export default function NRITaxAdvisory() {
               We offer evening and weekend call slots to match US, UK, and Gulf time zones; most of our NRI clients never need to take time off work to talk to us.
             </p>
             <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.75rem', marginBottom: '1.5rem' }}>
-              Fixed fees: NRI tax returns from ₹10,000. <a href="#packages" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Property sale advisory ₹25,000 - ₹50,000</a>.
+              Fixed fees: lower TDS certificate ₹14,999, NRI tax returns from ₹10,000. <a href="#packages" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Property sale advisory ₹25,000 - ₹50,000</a>.
             </p>
             <div className="hero-cta">
               <a href={bookingLink} className="btn btn-secondary">

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -99,6 +100,7 @@ export default function StartupIndiaVsDpiitBlog() {
                     <li style={{ marginBottom: 0 }}>If you only have a portal profile with no recognition certificate/number, you are not yet a recognised startup for benefit purposes.</li>
                   </ul>
                 </div>
+                <ServiceOffer variant="startup" />
 
                 <p>This is one of the most common questions founders ask, and the honest answer is that it is a confusion built on loose terminology rather than a real distinction in law or process. "Startup India registration" and "DPIIT recognition" are used almost interchangeably online, and for good reason: they refer to the same underlying application, submitted through the same portal, reviewed by the same department. This post explains exactly what the terms mean and clears up where founders most commonly get tripped up. For the full eligibility criteria and benefit details, see our dedicated guide to <Link href="/blog/dpiit-registration-startups-india-80iac" style={{ color: 'var(--primary)', fontWeight: 600 }}>DPIIT registration and the 80-IAC tax benefit</Link>; this post focuses specifically on the terminology confusion, not the full process.</p>
 

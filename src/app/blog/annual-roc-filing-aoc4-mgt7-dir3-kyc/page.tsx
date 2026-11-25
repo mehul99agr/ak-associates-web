@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -87,6 +88,7 @@ export default function AnnualROCFilingBlog() {
                   <li style={{ marginBottom: 0 }}>Late ROC filing fees can accrue <strong>daily</strong> and are often far more expensive than founders expect.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
               <DeadlineNotice slug="annual-roc-filing-aoc4-mgt7-dir3-kyc" />
 
               <p>A Private Limited Company has an annual filing cycle even when it has no revenue, no employees, or no major transactions. Dormant operations do not automatically remove the company&apos;s legal filing responsibilities. A company that misses dates may face additional filing fees, director-related restrictions, delayed fundraising due diligence, and difficulty closing loans, investments, or exits.</p>

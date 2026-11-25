@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -78,6 +79,7 @@ export default function StartupComplianceCalendarBlog() {
                   <li style={{ marginBottom: 0 }}>Report foreign investment via FC-GPR within <strong>30 days</strong> of allotment and file the annual FLA return by <strong>July 15</strong>.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Most startup compliance failures are not caused by one difficult form; they happen because a founder treats compliance as an annual task and discovers, too late, that the company had monthly, quarterly, event-based, and annual obligations running simultaneously. A Private Limited Company should run compliance through a calendar. The founder does not need to personally prepare every return, but one person must own the timetable and ensure the accountant, Company Secretary, payroll team, and bank records stay aligned. If you have just registered, start with our <Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>post-incorporation checklist</Link> before working through this calendar.</p>
 

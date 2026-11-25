@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -73,6 +74,7 @@ export default function Post() {
                   <li style={{ marginBottom: 0 }}>Proof needed: every subscriber has paid the value of shares agreed to be taken, shown by a <strong>bank statement</strong>, and the registered office is verified.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Many founders assume that the Certificate of Incorporation means they can start trading. For a company with share capital, it does not fully do that. Section 10A of the Companies Act, 2013 bars the company from commencing business or exercising borrowing powers until a declaration is filed in Form INC-20A. If you registered your company recently and have not filed it, this is the first compliance to clear.</p>
 

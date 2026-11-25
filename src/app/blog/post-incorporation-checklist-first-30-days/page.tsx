@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -78,6 +79,7 @@ export default function PostIncorporationChecklistBlog() {
                   <li style={{ marginBottom: 0 }}>Appoint the <strong>first auditor within 30 days</strong> under Section 139(6).</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>Receiving the Certificate of Incorporation means your Private Limited Company legally exists; it does not mean the compliance work is done. The first 30 days matter because several statutory actions are time-bound, and others are practically necessary before you can collect customer payments, hire employees, or raise investment. Missing these early steps creates avoidable complications later, especially during a funding round, statutory audit, GST registration, or due diligence. See our full <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>incorporation guide</Link> if you have not yet registered.</p>
 

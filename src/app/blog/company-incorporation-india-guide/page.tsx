@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { EMAIL_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBlogBreadcrumbLd, buildArticleLd } from '@/lib/schema'
@@ -192,6 +193,7 @@ export default function CompanyIncorporationGuideBlog() {
                 <li style={{ marginBottom: 0 }}>Choose a private limited company if you plan to raise funding or issue ESOPs; an LLP suits bootstrapped professional firms.</li>
               </ul>
             </div>
+            <ServiceOffer variant="startup" />
 
             <h2 style={{ color: 'var(--primary)', marginTop: '2.5rem', marginBottom: '1rem', fontSize: '1.8rem' }}>The Three Main Options</h2>
             <p style={{ marginBottom: '1.5rem' }}>In India, most businesses incorporate as one of three structures:</p>

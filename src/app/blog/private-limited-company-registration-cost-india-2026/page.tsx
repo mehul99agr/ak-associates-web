@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -77,6 +78,7 @@ export default function PrivateLimitedRegistrationCostBlog() {
                   <li style={{ marginBottom: 0 }}>A typical end to end timeline in published guides is about <strong>10 to 20 working days</strong>, longer if the ROC raises queries.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
               <p>&quot;Private limited company registration in 2026&quot; is advertised at anything from Rs 999 to well over Rs 20,000. The gap is rarely the government. Most of the real cost is a handful of small statutory items, the DSCs, and the professional work of getting the documents right. This guide separates the two so you can read any quote line by line. For the full process, see our <Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>private limited incorporation guide</Link>.</p>
               <h2>The government and statutory costs, line by line</h2>
               <p>These are the items that exist regardless of who files for you. Amounts below are what published fee guides report. Confirm them against the current MCA fee schedule and your state&apos;s stamp duty rules before you budget, because several change with authorised capital and state.</p>

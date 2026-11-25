@@ -450,6 +450,7 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - **DIR-3 KYC is triennial** (verified Nov 25 via ICAI/TaxGuru/Business Standard: from Mar 31, 2026, once every three FYs by
   June 30, plus within 30 days of a contact-detail change). Fixed site-wide Nov 25: LLP Form 8/11, OPC, annual ROC filing, DSC/DIN, essential startup compliance,
   startup compliance calendar. Other mentions are link titles only. No page says annual / September 30 now.
+- **Package fees (user, Nov 25, 2026)** - all in `src/lib/servicePricing.ts` (+ sentences in blog `ServiceOffer.tsx`): Lower TDS certificate (Form 128, earlier Form 13) Rs 14,999 + out-of-pocket + GST if applicable; US LLC around $850/yr and C-Corp around $1,250/yr "depending on what is applicable" (wording is "around", never "from"); Startup incorporation + first-year compliance Rs 99,000 + out-of-pocket + GST. Startup package shown on /startups#packages and /company-incorporation; `ServiceOffer` variants `nri-ldc` (form-13 post) and `startup` (10 startup/ROC posts, after the TL;DR). The listed inclusions were drafted by Claude from the user's one-line descriptions - confirm with the user before adding more scope.
 - **Next (plan agreed Nov 25):** package pages with "from Rs X" prices for NRI / US LLC / startup (NEED the user's fees - never
   invent), segment-matched CTAs in posts, 3-4 segment buyer-intent posts a week, 2 CAclubindia posts a month, NRI communities.
 

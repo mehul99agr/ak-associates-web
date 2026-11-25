@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
+import ServicePackages from '../ServicePackages'
+import { STARTUP_PACKAGES } from '@/lib/servicePricing'
 import { buildBreadcrumbLd } from '@/lib/schema'
 import { OG_IMAGES } from '@/lib/constants'
 
@@ -285,6 +287,20 @@ export default function CompanyIncorporationPage() {
             <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '1.5rem', textAlign: 'center' }}>
               Optional add-ons: Shareholders&apos; Agreement drafting · Trademark registration · Bank account assistance
             </p>
+          </div>
+        </section>
+
+        {/* Package */}
+        <section id="packages" className="section">
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              <span className="section-badge">Fees</span>
+              <h2 className="section-title">Startup Package</h2>
+              <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
+                One fixed fee to set up your company and keep it compliant through its first year. Start with a free 15-minute call.
+              </p>
+            </div>
+            <ServicePackages packages={STARTUP_PACKAGES} ctaHref={"/consult?topic=company-incorporation"} ctaLabel="Book a Free 15-min Call" />
           </div>
         </section>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PostCTA from '../_components/PostCTA'
+import ServiceOffer from '../_components/ServiceOffer'
 import PostFooterLinks from '../_components/PostFooterLinks'
 import { buildBlogBreadcrumbLd, buildArticleLd, buildFaqLd } from '@/lib/schema'
 import FaqSection from '../_components/FaqSection'
@@ -78,6 +79,7 @@ export default function LLPvsPvtLtdBlog() {
                   <li style={{ marginBottom: 0 }}>LLP profits are taxed at the LLP level; a partner is not taxed again merely for withdrawing their share.</li>
                 </ul>
               </div>
+              <ServiceOffer variant="startup" />
 
               <p>An LLP and a Private Limited Company both provide limited liability, separate legal identity, and continuity beyond an individual founder. The practical difference is how ownership is represented and how easily it can change. An LLP has partners, whose economic rights and profit shares are largely governed by the LLP agreement; flexible for a closely held practice, but not designed around a conventional equity cap table. A Private Limited Company has shareholders and shares that can be issued, transferred, structured into classes, and used to build an investor-ready ownership record.</p>
 

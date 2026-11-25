@@ -3,6 +3,8 @@ import ServiceEnquiry from '../ServiceEnquiry'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../Icon'
+import ServicePackages from '../ServicePackages'
+import { STARTUP_PACKAGES } from '@/lib/servicePricing'
 import { BOOKING_LINK, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
@@ -249,6 +251,20 @@ export default function StartupsPage() {
             </div>
           </div>
         </section>
+        {/* Package */}
+        <section id="packages" className="section bg-surface">
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              <span className="section-badge">Fees</span>
+              <h2 className="section-title">Startup Package</h2>
+              <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
+                One fixed fee to set up your company and keep it compliant through its first year. Start with a free 15-minute call.
+              </p>
+            </div>
+            <ServicePackages packages={STARTUP_PACKAGES} ctaHref={bookingLink} ctaLabel="Book a Free 15-min Call" />
+          </div>
+        </section>
+
 
         <section className="section bg-surface">
           <div className="container">

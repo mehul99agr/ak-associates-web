@@ -6,7 +6,7 @@ import { BOOKING_LINK } from '@/lib/constants'
 // without scrolling to the end. Fees come from the same numbers as
 // src/lib/servicePricing.ts; keep the two in step.
 
-type Variant = 'nri-seller' | 'nri-buyer' | 'nri-itr' | 'us-entity'
+type Variant = 'nri-seller' | 'nri-buyer' | 'nri-itr' | 'nri-ldc' | 'us-entity' | 'startup'
 
 const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic: string; more: { label: string; href: string } }> = {
   'nri-seller': {
@@ -30,9 +30,23 @@ const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic:
     topic: 'nri-tax',
     more: { label: 'See NRI packages', href: '/nri-tax-advisory#nri-itr' },
   },
+  'nri-ldc': {
+    label: 'Want less TDS deducted as an NRI?',
+    text: 'We work out the tax you actually owe and apply for a lower TDS certificate (Form 128, earlier Form 13), so the buyer or payer deducts only that. ₹14,999 per certificate, plus out-of-pocket expenses and GST, if applicable.',
+    cta: 'Get a lower TDS certificate',
+    topic: 'nri-tax',
+    more: { label: 'See NRI packages', href: '/nri-tax-advisory#nri-lower-tds-certificate' },
+  },
+  startup: {
+    label: 'Starting a company in India?',
+    text: 'We incorporate your private limited company and run its first year of ROC compliance (INC-20A, first board meeting, auditor appointment, AOC-4 and MGT-7) for ₹99,000, plus out-of-pocket expenses and GST, if applicable.',
+    cta: 'Book a free startup call',
+    topic: 'startups',
+    more: { label: 'See the startup package', href: '/startups#packages' },
+  },
   'us-entity': {
     label: 'Running a US LLC or C-Corp from India?',
-    text: 'Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC from $850 a year, C-Corp from $1,250 a year.',
+    text: 'Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC around $850 a year and C-Corp around $1,250 a year, depending on which filings apply.',
     cta: 'Book a US compliance call',
     topic: 'us-cross-border',
     more: { label: 'See US packages', href: '/us-cross-border#packages' },

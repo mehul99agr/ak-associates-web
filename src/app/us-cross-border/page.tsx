@@ -10,7 +10,7 @@ import ServicePackages from '../ServicePackages'
 
 export const metadata: Metadata = {
   title: 'US C-Corp & LLC Compliance from India',
-  description: 'Form 1120 and 5472, Delaware franchise tax, FBAR and the Indian subsidiary for founders running a US C-Corp or LLC. LLC from $850/yr, C-Corp from $1,250/yr.',
+  description: 'Form 1120 and 5472, Delaware franchise tax, FBAR and the Indian subsidiary for founders running a US C-Corp or LLC. LLC around $850/yr, C-Corp around $1,250/yr.',
   keywords: [
     'US C-Corp compliance for Indian founders', 'US LLC compliance India',
     'Form 1120 5472 foreign owned corporation', 'Delaware franchise tax Indian founders',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://agrawalkhandelwal.com/us-cross-border' },
   openGraph: {
     title: 'US C-Corp & LLC Compliance from India | Agrawal Khandelwal & Associates LLP',
-    description: 'US filings prepared by our team and filed by our US partner, with your Indian subsidiary, ITR and FEMA handled alongside. LLC from $850/yr, C-Corp from $1,250/yr.',
+    description: 'US filings prepared by our team and filed by our US partner, with your Indian subsidiary, ITR and FEMA handled alongside. LLC around $850/yr, C-Corp around $1,250/yr.',
     url: 'https://agrawalkhandelwal.com/us-cross-border',
     images: OG_IMAGES,
   },
@@ -92,7 +92,7 @@ const faqs = [
   },
   {
     q: 'How much does US compliance cost?',
-    a: 'Our US LLC annual package starts at $850 a year and our C-Corp annual package at $1,250 a year. State fees, franchise tax and any tax payable are extra. The exact scope is confirmed in writing before we start.',
+    a: 'Our US LLC annual package is around $850 a year and our C-Corp annual package around $1,250 a year, depending on which filings apply to your company. State fees, franchise tax and any tax payable are extra. The exact scope is confirmed in writing before we start.',
   },
   {
     q: 'I run a US LLC from India. What compliance actually applies to me?',
@@ -152,7 +152,7 @@ export default function UsCrossBorder() {
             Your US company and your Indian side, handled by one team. We prepare your US filings and our US partner files them, while we keep your Indian subsidiary, ITR and FEMA filings in step.
           </p>
           <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>
-            US LLC from $850 a year. C-Corp from $1,250 a year. <a href="#packages" style={{ color: 'var(--white)', textDecoration: 'underline' }}>See what is included</a>.
+            US LLC around $850 a year. C-Corp around $1,250 a year. <a href="#packages" style={{ color: 'var(--white)', textDecoration: 'underline' }}>See what is included</a>.
           </p>
           <div className="hero-cta">
             <a href={bookingLink} className="btn btn-secondary">
