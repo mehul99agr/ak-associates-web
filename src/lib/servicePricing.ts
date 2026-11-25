@@ -1,5 +1,5 @@
 // Published fees for the NRI, US cross-border and startup packages. Prices were
-// given by the partners (Oct 26, 2026; lower TDS certificate, US 'around' wording and
+// given by the partners (Oct 26, 2026; lower TDS certificate, US 'starting from' wording and
 // the startup package added Nov 25, 2026). Change them here and in
 // src/app/blog/_components/ServiceOffer.tsx, which repeats them in sentences.
 
@@ -55,7 +55,7 @@ export const US_PACKAGES: ServicePackage[] = [
   {
     id: 'us-llc',
     name: 'US LLC Annual Package',
-    price: 'Around $850',
+    price: 'From $850',
     unit: 'per year',
     note: 'Final fee depends on which filings apply to your LLC',
     points: [
@@ -67,7 +67,7 @@ export const US_PACKAGES: ServicePackage[] = [
   {
     id: 'us-c-corp',
     name: 'US C-Corp Annual Package',
-    price: 'Around $1,250',
+    price: 'From $1,250',
     unit: 'per year',
     note: 'Final fee depends on which filings apply to your company',
     points: [

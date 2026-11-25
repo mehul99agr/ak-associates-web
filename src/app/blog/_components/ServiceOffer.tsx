@@ -46,7 +46,7 @@ const OFFERS: Record<Variant, { label: string; text: string; cta: string; topic:
   },
   'us-entity': {
     label: 'Running a US LLC or C-Corp from India?',
-    text: 'Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC around $850 a year and C-Corp around $1,250 a year, depending on which filings apply.',
+    text: 'Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC starting from $850 a year and C-Corp starting from $1,250 a year, depending on which filings apply.',
     cta: 'Book a US compliance call',
     topic: 'us-cross-border',
     more: { label: 'See US packages', href: '/us-cross-border#packages' },
