@@ -83,6 +83,7 @@ export default function OdiGuideBlog() {
 
               <h2>What Is ODI, and Who Can Make It</h2>
               <p>ODI is governed by the <strong>Foreign Exchange Management (Overseas Investment) Rules, Regulations, and Directions, 2022</strong>: collectively the OI Framework; which replaced the earlier Master Directions on Direct Investment by Residents in JV/WOS abroad. Eligible investors are <strong>persons resident in India</strong>: Indian companies, LLPs, and resident individuals investing under the framework&apos;s permitted categories. An <strong>NRI is not the intended user of this route</strong>: since an NRI is not, by definition, a person resident in India, their investment abroad is governed by the rules of the destination jurisdiction, not India&apos;s outward ODI framework. Where an NRI holds a stake in an Indian entity that itself makes an ODI, the compliance obligation belongs to that Indian resident entity, not the NRI individually.</p>
+              <p>For founders whose US company will own an Indian subsidiary, this difference between individuals and Indian entities is why many invest through an LLP. See <Link href="/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary" style={{ color: 'var(--primary)', fontWeight: 600 }}>the startup triangle structure: LLP, US C-Corp and Indian Pvt Ltd</Link>.</p>
 
               <h2>ODI vs OPI: Two Different Categories</h2>
               <p>The OI Framework separates outward investment into two categories based on substance, not just structure:</p>

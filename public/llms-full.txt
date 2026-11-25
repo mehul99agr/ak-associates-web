@@ -2356,7 +2356,15 @@ All registered taxpayers (or the date GSTR-9 is filed, if earlier)
 
 Search guides
 
-Showing 235 of 235 guides
+Showing 236 of 236 guides
+
+US Cross-BorderNovember 25, 2026
+
+## LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure
+
+Why Indian founders hold a Delaware C-Corp through an Indian LLP, with an Indian Pvt Ltd to employ the team: the FEMA ODI rule behind it, the round-tripping limit, tax flows and yearly filings.
+
+[Read guide: LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
 
 Company IncorporationNovember 18, 2026
 
@@ -13368,6 +13376,8 @@ When an Indian company, LLP, or eligible resident individual sets up or invests 
 
 ODI is governed by the **Foreign Exchange Management (Overseas Investment) Rules, Regulations, and Directions, 2022**: collectively the OI Framework; which replaced the earlier Master Directions on Direct Investment by Residents in JV/WOS abroad. Eligible investors are **persons resident in India**: Indian companies, LLPs, and resident individuals investing under the framework's permitted categories. An **NRI is not the intended user of this route**: since an NRI is not, by definition, a person resident in India, their investment abroad is governed by the rules of the destination jurisdiction, not India's outward ODI framework. Where an NRI holds a stake in an Indian entity that itself makes an ODI, the compliance obligation belongs to that Indian resident entity, not the NRI individually.
 
+For founders whose US company will own an Indian subsidiary, this difference between individuals and Indian entities is why many invest through an LLP. See [the startup triangle structure: LLP, US C-Corp and Indian Pvt Ltd](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary).
+
 ## ODI vs OPI: Two Different Categories
 
 The OI Framework separates outward investment into two categories based on substance, not just structure:
@@ -14261,9 +14271,9 @@ A US C-Corp that owns an Indian private limited subsidiary also files Form 5471 
 
 ### More Guides on This Topic
 
+- [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
 - [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
 - [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
-- [Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -14365,8 +14375,8 @@ One simplification: since FinCEN's interim final rule of March 2025, companies f
 ### More Guides on This Topic
 
 - [US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
+- [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
 - [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
-- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -14465,7 +14475,7 @@ The position flips the year a founder becomes a US tax resident, through a green
 
 - [Delaware or Wyoming Incorporation for Indian Founders: EIN and ITIN Explained](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide)
 - [US LLC vs C-Corp for Indian Founders: Which Structure Fits Your Startup](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
-- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
+- [LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary)
 
 Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
 
@@ -31133,6 +31143,8 @@ US funds and accelerators such as Y Combinator are set up to invest in Delaware 
 
 Before: founders and investors hold shares in the Indian private limited company. After: founders and investors hold shares in a Delaware C-Corp, and the Delaware C-Corp holds the Indian company (usually 100%, with a nominee holding one share to meet the two-member minimum). Operations, employees and often the engineering team stay in India. The US entity signs customer contracts, raises money and holds IP, and the Indian entity provides services to it. That services relationship is a related-party transaction, covered in [our guide to the Indian subsidiary of a US C-Corp](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance).
 
+If the founders themselves will hold the Delaware shares while it owns the Indian company, FEMA's limits on resident individuals come into play. Many founders hold through an Indian LLP instead; see [the startup triangle structure: LLP, US C-Corp and Indian Pvt Ltd](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary).
+
 ## How the Share Swap Works Under FEMA
 
 In the common route, each Indian-resident founder transfers their Indian shares to the Delaware company and receives Delaware shares in return, at a swap ratio fixed on valuation. Two FEMA regimes sit on top of this:
@@ -31225,6 +31237,188 @@ Yes, through a reverse flip, but it is its own transaction with its own tax and 
 - [FEMA Compliance for Foreign Investment](https://agrawalkhandelwal.com/blog/fema-compliance-foreign-investment-startups)
 - [Startup Advisory](https://agrawalkhandelwal.com/startups)
 - [US Cross-Border Services](https://agrawalkhandelwal.com/us-cross-border)
+
+---
+
+Source: https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary
+
+[← Back to Insights](https://agrawalkhandelwal.com/blog)
+
+US Cross-Border
+
+# The Startup Triangle Structure: Indian LLP, US C-Corp and Indian Pvt Ltd
+
+Published November 25, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+
+TL;DR
+
+- The triangle: founders own an **Indian LLP**, the LLP owns a **Delaware C-Corp** that US investors fund, and the C-Corp owns an **Indian Pvt Ltd** that employs the team.
+- The LLP exists because of FEMA: a resident individual cannot make overseas direct investment in a foreign company that has a subsidiary under their control. A US parent of your Indian company is exactly that.
+- An LLP is an "Indian entity" under the Overseas Investment Rules, 2022 and can invest up to 400% of its net worth under the automatic route.
+- The chain must stay within the round-tripping limit of two layers of subsidiaries. Do not add overseas subsidiaries without checking.
+- You run three entities in two countries: plan the transfer pricing, dividend tax, POEM risk and three sets of annual filings before the first wire.
+
+Running a US LLC or C-Corp from India?
+
+Our team prepares your US filings and our US partner reviews and files them, while we keep your Indian side (ITR, FEMA, transfer pricing) in step. US LLC starting from $850 a year and C-Corp starting from $1,250 a year, depending on which filings apply.
+
+[Book a US compliance call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+If you are building in Bangalore or Mumbai and a US fund or accelerator wants a Delaware C-Corp, you quickly hit a question most flip guides skip: who actually holds the US shares? The founders live in India, the team is in India, and FEMA limits how a resident individual can own a foreign company that in turn owns an Indian company. The triangle structure is the common answer. This guide explains what it is, why the LLP is there, and what it costs to run.
+
+## What Does the Triangle Look Like?
+
+**Founders**
+Resident in India, partners in the LLP
+
+↓ capital contribution
+
+**Indian LLP**
+Founders' holding vehicle; makes the overseas direct investment
+
+↓ ODI (Overseas Investment Rules, 2022)
+
+**US C-Corp (Delaware)**
+Raises from US investors, holds IP and signs US customers
+
+↓ FDI (Non-Debt Instruments Rules, 2019)
+
+**Indian Pvt Ltd**
+Employs the team in India and bills the US parent for services
+
+The name comes from the loop: value goes out of India through the LLP and comes back into India through the Pvt Ltd. Each entity has one job, which is what makes the structure workable for investors and defensible to regulators.
+
+## Why Can't Founders Hold the US Shares Themselves?
+
+Under the Foreign Exchange Management (Overseas Investment) Rules, 2022, a resident individual can make overseas direct investment only in an **operating** foreign entity that is **not engaged in financial services** and that has **no subsidiary or step-down subsidiary where the individual has control**. Founders control their startup, and the Delaware C-Corp in this structure owns the Indian Pvt Ltd. That combination generally rules out founders holding the C-Corp directly.
+
+An Indian entity is not subject to that individual-only condition. The rules define Indian entity to include a company, a body corporate, a registered partnership firm and an LLP formed under the LLP Act, 2008. That is why the founders put an LLP between themselves and the US company. Individual overseas investment also sits within the US$250,000 a year LRS limit, which is small once a company starts raising.
+
+If your US company will never own an Indian subsidiary, for example because the India team works through a contractor, the individual route may still be open. Our [ODI guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india) covers the individual and entity routes side by side.
+
+## Why an LLP and Not a Second Private Limited Company?
+
+- **Lighter compliance:** an LLP has no board meetings or AGM and files Form 8 and Form 11 each year. See [LLP Form 8 and Form 11 due dates](https://agrawalkhandelwal.com/blog/llp-annual-compliance-form-8-form-11-due-dates).
+- **Tax on the way out:** an LLP is taxed as a firm, and a partner's share of profit that has already been taxed in the LLP is not taxed again in the partner's hands. A company paying dividends to founders adds a second layer of tax.
+- **Founder control:** the LLP agreement sets each founder's share and decision rights, mirroring the founders' agreed split in the US company.
+
+A private limited company can also hold the US shares, and some founders prefer it when they expect outside investors at the holding level. The choice is mainly about tax on distributions and how much compliance you want to carry. Our [LLP vs private limited comparison](https://agrawalkhandelwal.com/blog/llp-vs-private-limited-comparison-india) sets out the trade-offs.
+
+## How Much Can the LLP Invest?
+
+Under the automatic route, an Indian entity's total financial commitment in overseas direct investment can go up to **400% of its net worth** as on the date of its last audited balance sheet. For an LLP, net worth is the partners' capital contribution plus undistributed profits. Two practical points follow:
+
+- Founders need to put real capital into the LLP before it invests, because the limit is measured against the LLP's own net worth.
+- A newly formed LLP may not have an audited balance sheet yet. Ask your authorised dealer bank early how it will measure net worth for your first remittance, so the timing of your US round does not get stuck.
+
+## Is This Round Tripping?
+
+Money leaving India and coming back is the textbook concern behind round-tripping rules. The 2022 rules replaced the old near-ban with a limit: a person resident in India cannot make a financial commitment in a foreign entity that has invested, or later invests, into India if the result is a structure with **more than two layers of subsidiaries**. The test applies at the time of investment and at any time afterwards.
+
+Practitioner commentary generally reads a plain LLP, US C-Corp and Indian Pvt Ltd chain as within the limit. The risk comes later: adding a UK or Singapore subsidiary under the US company, or a second Indian subsidiary under the first, can push you over. Keep a written layer count with your FEMA file and check it before every new entity. The general anti-avoidance rules can also apply to any structure that exists mainly for tax, so document the commercial reason: the investor's requirement for a Delaware parent.
+
+## How Does the Indian Pvt Ltd Fit In?
+
+The Indian company receives foreign investment from the US parent under the Non-Debt Instruments Rules, 2019. Most technology and services sectors are under the automatic route, but check your sector and any land-border investor in the cap table. The Indian company then:
+
+- Reports the share allotment to the US parent on **FC-GPR within 30 days** and files the annual **FLA return**.
+- Employs the team and usually bills the US parent a service fee, often cost plus a markup. That is an international transaction, so **transfer pricing** applies and Form 3CEB is required whatever the amount. See our [guide to the Indian subsidiary of a US C-Corp](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance).
+- Runs normal Indian compliance: ROC filings, statutory audit, ITR, TDS, GST and payroll.
+
+Employee stock options are usually granted by the US parent. The 2022 rules allow employees of an Indian subsidiary to acquire such options, and the benefit is taxed in India as salary on exercise. Plan the ESOP pool with the US counsel and the Indian payroll together; see [ESOP structuring for Indian startups](https://agrawalkhandelwal.com/blog/esop-structuring-indian-startups).
+
+## What About Tax Across the Three Entities?
+
+| Flow | What to plan for |
+| --- | --- |
+| US parent pays the Indian Pvt Ltd for services | Arm's length markup, transfer pricing documentation, Indian corporate tax on the margin |
+| US C-Corp profits | US federal and state corporate tax; Form 1120 with Form 5472 because it is foreign-owned |
+| Dividend from the US C-Corp to the LLP | US withholding tax reduced under the India-US DTAA (the rate depends on the type of shareholder, so confirm how the LLP is treated); taxed in India in the LLP with credit for US tax |
+| LLP to founders | LLP taxed as a firm; profit share already taxed in the LLP is not taxed again for the partners |
+| Exit (sale of the US company) | Gain arises in the LLP, which sold the shares; plan how proceeds reach the founders before you sign |
+
+One more risk: if all the real decisions of the US C-Corp are taken by founders sitting in India, the US company can be treated as resident in India under the place of effective management test. Hold US board meetings properly and keep records of where decisions are taken. Our [POEM guide](https://agrawalkhandelwal.com/blog/poem-place-of-effective-management-india) explains the test. The Income Tax Act, 2025 has renumbered the relevant sections, so confirm current references before relying on older numbering.
+
+## What Filings Does the Triangle Create Each Year?
+
+- **Indian LLP:** Form 11 and Form 8, ITR, the ODI annual performance report through the bank, and the FLA return where it applies.
+- **US C-Corp:** Form 1120 with Form 5472, Delaware franchise tax and annual report (see [the Assumed Par Value method](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)), and state filings where you have nexus.
+- **Indian Pvt Ltd:** AOC-4 and MGT-7, statutory audit, ITR with Form 3CEB, FC-GPR on each allotment, FLA return, TDS, GST and payroll.
+
+Late FEMA reports are regularised through the RBI late submission fee, which is cheaper and simpler when caught early. Keep one compliance calendar across all three entities rather than three separate ones.
+
+## How Do You Set It Up, Step by Step?
+
+1. Agree the structure with your lead investor and get a written FEMA and tax view on your exact facts.
+2. Incorporate the Indian LLP and bring in the founders' capital. See [LLP registration process and cost](https://agrawalkhandelwal.com/blog/llp-registration-process-cost-india-2026).
+3. Incorporate the Delaware C-Corp and get its EIN (see [Delaware incorporation, EIN and ITIN](https://agrawalkhandelwal.com/blog/delaware-wyoming-incorporation-ein-itin-guide)).
+4. The LLP subscribes to the C-Corp shares through its authorised dealer bank, with the ODI reporting.
+5. Incorporate the Indian Pvt Ltd with the C-Corp as shareholder, or move an existing Indian company under it through a flip (see [India to US flip structure](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)).
+6. Sign the intercompany services agreement and IP assignment, set the transfer pricing policy, and file FC-GPR within 30 days of allotment.
+
+## When Is the Triangle the Wrong Choice?
+
+- **You are not raising from US investors:** an Indian Pvt Ltd on its own, with a US subsidiary for US sales if needed, is simpler and keeps an Indian IPO open.
+- **You may want to list in India:** a number of well-known Indian startups have moved their holding company back to India in recent years. The 2024 fast-track merger route for a foreign holding company merging into its Indian wholly owned subsidiary has made a reverse flip more practical, but it still has a tax cost.
+- **The team is tiny and early:** three entities mean three sets of filings. If a US C-Corp is only a fundraising formality, compare the cost against a later flip.
+
+The structure is a tool, not a badge. If your investor needs a Delaware parent and your team is in India, it solves a real FEMA problem. If not, the simpler structure usually wins. See [our US cross-border services](https://agrawalkhandelwal.com/us-cross-border) and [startup services](https://agrawalkhandelwal.com/startups) for how we run all three entities together.
+
+**Official sources:** Foreign Exchange Management (Overseas Investment) Rules, 2022 and Regulations, 2022, and the RBI Master Direction on Overseas Investment; Foreign Exchange Management (Non-Debt Instruments) Rules, 2019; Companies (Compromises, Arrangements and Amalgamations) Amendment Rules, 2024. See [Reserve Bank of India](https://www.rbi.org.in/). This guide is general information, not advice on your facts.
+
+### More Guides on This Topic
+
+- [Delaware Franchise Tax: Assumed Par Value Method Explained](https://agrawalkhandelwal.com/blog/delaware-franchise-tax-assumed-par-value-method)
+- [India to US Flip Structure: Guide for Indian Founders](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+- [Form 5472 Penalty: USD 25,000 for Foreign-Owned LLCs](https://agrawalkhandelwal.com/blog/form-5472-penalty-foreign-owned-llc)
+
+Need this handled for you? See our [UAE and cross-border tax advisory](https://agrawalkhandelwal.com/uae-tax-advisory), or meet our [chartered accountants in Nashik](https://agrawalkhandelwal.com/ca-in-nashik) and our [CA office in Sillod](https://agrawalkhandelwal.com/ca-in-sillod).
+
+Rules and due dates change. Check our [compliance due date calendar](https://agrawalkhandelwal.com/tools/compliance-calendar) and confirm the current position on the official source: [Income Tax Department e-filing portal](https://www.incometax.gov.in), [Reserve Bank of India](https://www.rbi.org.in).
+
+### Setting up an LLP, US C-Corp and Indian Pvt Ltd?
+
+We sequence the FEMA route, tax view and filings for all three entities before any money moves, and run the yearly compliance in India and the US.
+
+[Book a Free 15-min Call](https://agrawalkhandelwal.com/consult?topic=us-cross-border)[See US packages](https://agrawalkhandelwal.com/us-cross-border#packages)
+
+## Frequently Asked Questions
+
+### What is the triangle structure for Indian startups?
+
+The founders form an Indian LLP. The LLP invests in a Delaware C-Corp, which is the company US investors fund. The C-Corp then owns an Indian private limited company that employs the team in India. Money and shares move in a loop: India to the US through the LLP, and back to India as foreign investment in the Pvt Ltd.
+
+### Why not hold the US C-Corp shares personally?
+
+Under the Overseas Investment Rules, 2022, a resident individual can make overseas direct investment only in an operating foreign company that is not in financial services and that has no subsidiary or step-down subsidiary under the individual's control. A Delaware C-Corp that owns your Indian Pvt Ltd has exactly such a subsidiary, so founders who control it usually cannot hold it directly. An Indian entity such as an LLP is not subject to that restriction.
+
+### Can an LLP make overseas direct investment?
+
+Yes. The Overseas Investment Rules treat an LLP formed under the LLP Act, 2008 as an Indian entity. An Indian entity can commit up to 400% of its net worth, as per its last audited balance sheet, under the automatic route. For an LLP, net worth is the partners' capital contribution plus undistributed profits.
+
+### Is the triangle structure round tripping?
+
+It is an ODI-FDI structure, which the 2022 rules allow subject to a limit: a resident cannot invest in a foreign entity that invests into India if the result is more than two layers of subsidiaries. A plain LLP, US C-Corp and Indian Pvt Ltd chain is generally read as within the limit, but adding more overseas subsidiaries can break it. Get the layer count confirmed in writing.
+
+### How is money taxed as it moves through the triangle?
+
+The Indian Pvt Ltd usually earns a service fee from the US parent, priced at arm's length under transfer pricing. Dividends from the US C-Corp to the LLP face US withholding tax, reduced under the India-US DTAA, and are taxed in India in the LLP's hands with credit for the US tax. The LLP itself is taxed as a firm. Model these flows before you raise.
+
+### Do US investors accept an LLP on the cap table?
+
+Many do, because it is a known answer to the Indian ODI rules, but some prefer founders to hold shares personally for vesting and exit reasons. Raise it with the investor and their counsel at the term sheet stage, not at closing.
+
+### What does it cost to run the triangle every year?
+
+Three sets of compliance: the LLP (Form 8, Form 11, ITR and ODI annual performance report), the US C-Corp (Form 1120, Form 5472, Delaware franchise tax and annual report) and the Indian Pvt Ltd (ROC filings, audit, ITR, transfer pricing report and FLA return). Our US C-Corp annual package starts from $1,250 a year and our incorporation plus first-year compliance package for the Pvt Ltd is Rs 99,000, plus out-of-pocket expenses and GST, if applicable.
+
+### Related Guides
+
+- [India to US Flip Structure](https://agrawalkhandelwal.com/blog/india-to-us-flip-structure-guide)
+- [ODI: Overseas Direct Investment Guide](https://agrawalkhandelwal.com/blog/odi-overseas-direct-investment-guide-india)
+- [Indian Subsidiary of a US C-Corp](https://agrawalkhandelwal.com/blog/indian-subsidiary-of-us-c-corp-setup-compliance)
+- [US LLC vs C-Corp for Indian Founders](https://agrawalkhandelwal.com/blog/us-llc-vs-c-corp-indian-founders)
+- [Forms 5471, 5472 and 8858](https://agrawalkhandelwal.com/blog/form-5471-5472-8858-foreign-owned-us-entity)
 
 ---
 
@@ -31615,6 +31809,8 @@ A US C-Corp that wants an engineering, support or sales team in India usually do
 ## FDI Route and Eligibility
 
 Most service and software businesses fall under the automatic route, which needs no prior government or RBI approval. A few sectors are restricted or need approval, and investors from countries sharing a land border with India need government approval under Press Note 3. Check your sector against the current FDI policy before incorporating. Our [foreign subsidiary registration guide](https://agrawalkhandelwal.com/blog/foreign-subsidiary-registration-india-fdi) and [FDI routes guide](https://agrawalkhandelwal.com/blog/fdi-in-india-routes-compliance-guide) cover this in detail.
+
+Where the US parent is itself owned by Indian-resident founders, the overseas investment rules decide who can hold it. See [the startup triangle structure](https://agrawalkhandelwal.com/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary) for the common LLP-held set-up.
 
 ## Two Shareholders and the Nominee
 

@@ -2,6 +2,13 @@
 // page and the per-post related-guides block.
 export const posts = [
   {
+    title: 'LLP, US C-Corp and Pvt Ltd: The Startup Triangle Structure',
+    slug: 'startup-triangle-structure-llp-us-c-corp-indian-subsidiary',
+    date: 'November 25, 2026',
+    category: 'US Cross-Border',
+    summary: 'Why Indian founders hold a Delaware C-Corp through an Indian LLP, with an Indian Pvt Ltd to employ the team: the FEMA ODI rule behind it, the round-tripping limit, tax flows and yearly filings.',
+  },
+  {
     title: 'Private Limited Company Registration Cost India 2026',
     slug: 'private-limited-company-registration-cost-india-2026',
     date: 'November 18, 2026',

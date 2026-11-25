@@ -33,7 +33,7 @@ const articleLd = buildArticleLd({
   headline: 'Indian Subsidiary of a US C-Corp: Setup and Compliance',
   description: 'How a US C-Corp sets up an Indian private limited subsidiary: FDI route, nominee, resident director, FC-GPR, transfer pricing, tax and PE risk.',
   datePublished: '2026-11-18',
-  dateModified: '2026-11-18',
+  dateModified: '2026-11-25',
   slug: 'indian-subsidiary-of-us-c-corp-setup-compliance',
 })
 
@@ -81,6 +81,7 @@ export default function IndianSubsidiaryUsCCorpBlog() {
 
               <h2>FDI Route and Eligibility</h2>
               <p>Most service and software businesses fall under the automatic route, which needs no prior government or RBI approval. A few sectors are restricted or need approval, and investors from countries sharing a land border with India need government approval under Press Note 3. Check your sector against the current FDI policy before incorporating. Our <Link href="/blog/foreign-subsidiary-registration-india-fdi" style={{ color: 'var(--primary)', fontWeight: 600 }}>foreign subsidiary registration guide</Link> and <Link href="/blog/fdi-in-india-routes-compliance-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>FDI routes guide</Link> cover this in detail.</p>
+              <p>Where the US parent is itself owned by Indian-resident founders, the overseas investment rules decide who can hold it. See <Link href="/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary" style={{ color: 'var(--primary)', fontWeight: 600 }}>the startup triangle structure</Link> for the common LLP-held set-up.</p>
 
               <h2>Two Shareholders and the Nominee</h2>
               <p>A private limited company needs at least two members. A US parent therefore holds almost all the shares and a nominee, often a director or a related individual, holds one share on its behalf, with a declaration that the nominee holds for the parent. Record the nominee holding properly. Do not leave it informal, since the registers and filings need the right beneficial ownership details.</p>

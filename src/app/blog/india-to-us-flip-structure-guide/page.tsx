@@ -33,7 +33,7 @@ const articleLd = buildArticleLd({
   headline: 'India to US Flip Structure: Guide for Indian Founders',
   description: 'What a flip is, why US VCs ask for it, how the share swap works under FEMA, the Indian tax on the swap and the RBI reporting that follows.',
   datePublished: '2026-11-18',
-  dateModified: '2026-11-18',
+  dateModified: '2026-11-25',
   slug: 'india-to-us-flip-structure-guide',
 })
 
@@ -83,6 +83,7 @@ export default function IndiaToUsFlipStructureBlog() {
 
               <h2>The Structure</h2>
               <p>Before: founders and investors hold shares in the Indian private limited company. After: founders and investors hold shares in a Delaware C-Corp, and the Delaware C-Corp holds the Indian company (usually 100%, with a nominee holding one share to meet the two-member minimum). Operations, employees and often the engineering team stay in India. The US entity signs customer contracts, raises money and holds IP, and the Indian entity provides services to it. That services relationship is a related-party transaction, covered in <Link href="/blog/indian-subsidiary-of-us-c-corp-setup-compliance" style={{ color: 'var(--primary)', fontWeight: 600 }}>our guide to the Indian subsidiary of a US C-Corp</Link>.</p>
+              <p>If the founders themselves will hold the Delaware shares while it owns the Indian company, FEMA&apos;s limits on resident individuals come into play. Many founders hold through an Indian LLP instead; see <Link href="/blog/startup-triangle-structure-llp-us-c-corp-indian-subsidiary" style={{ color: 'var(--primary)', fontWeight: 600 }}>the startup triangle structure: LLP, US C-Corp and Indian Pvt Ltd</Link>.</p>
 
               <h2>How the Share Swap Works Under FEMA</h2>
               <p>In the common route, each Indian-resident founder transfers their Indian shares to the Delaware company and receives Delaware shares in return, at a swap ratio fixed on valuation. Two FEMA regimes sit on top of this:</p>
