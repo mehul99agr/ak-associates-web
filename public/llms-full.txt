@@ -10961,7 +10961,7 @@ Startup Advisory
 
 # Essential Compliance for Indian Startups: The Checklist That Prevents Expensive Surprises
 
-Published March 12, 2026Updated August 16, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)
+Published March 12, 2026Updated November 25, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)
 
 TL;DR
 
@@ -10978,7 +10978,7 @@ Every Private Limited Company and LLP must file annual forms with the Registrar 
 
 - **AOC-4**: Financial statements (within 30 days of AGM, typically by October 29)
 - **MGT-7**: Annual return (within 60 days of AGM, typically by November 29)
-- **DIR-3 KYC**: Annual KYC for all directors (by September 30 each year)
+- **DIR-3 KYC**: KYC for all DIN holders, once every three financial years, by June 30 (since March 31, 2026), and within 30 days of any change in mobile number, email or address
 - **ADT-1**: Appointment of statutory auditor (within 15 days of AGM)
 
 Missing AOC-4 or MGT-7 attracts a penalty of Rs 100 per day per form, with no cap. For startups that have not filed for 2-3 years, accumulated penalties can cross Rs 10-15 lakh before they realise it.
@@ -11987,7 +11987,7 @@ Most startup compliance failures are not caused by one difficult form; they happ
 | Quarterly | TDS statements + Board meeting | Prescribed due dates, max 120-day gap |
 | Quarterly | Advance tax instalment | Jun / Sep / Dec / Mar |
 | Annual | Audit, AGM, AOC-4, MGT-7, ITR | After year-end, staggered deadlines |
-| Annual | DIR-3 KYC for DIN holders | By September 30 |
+| Every three years | DIR-3 KYC for DIN holders (and within 30 days of a contact change) | By June 30 of the year it falls due |
 | Event-based | Share allotment, ESOP, foreign investment | Deadline depends on the event |
 
 ## Year 1: Set Up the Company Correctly
@@ -12015,7 +12015,7 @@ The year-end process should include full bank, debtor, creditor, and related-par
 - File Form AOC-4 within 30 days of the AGM
 - File Form MGT-7 within 60 days of the AGM
 - File the income tax return by the applicable due date
-- Complete DIR-3 KYC for DIN holders by September 30
+- Check each DIN holder's DIR-3 KYC cycle: it is now filed once every three years, by June 30, and within 30 days of any change in contact details
 
 ## Year 2: From Founder-Led Records to Controlled Processes
 
@@ -12052,9 +12052,9 @@ By Year 3, your company may be preparing for external funding, debt, acquisition
 | --- | --- |
 | Every month | Close books, reconcile bank and GST, deposit TDS, process payroll |
 | Every quarter | File TDS returns, hold Board meeting, review advance tax |
-| June | Pay first advance tax instalment (15%) |
+| June | Pay first advance tax instalment (15%); file DIR-3 KYC by June 30 if it is due this year (once every three years) |
 | **July** | **File FLA return by July 15** if foreign assets/liabilities exist |
-| September | Pay second advance tax instalment (45% cumulative), complete DIR-3 KYC |
+| September | Pay second advance tax instalment (45% cumulative) |
 | October; November | Complete audit, AGM, AOC-4, MGT-7, income tax filings |
 | December | Pay third advance tax instalment (75% cumulative) |
 | March | Pay final advance tax instalment (100%), close compliance evidence |
@@ -12226,7 +12226,7 @@ Company Incorporation
 
 # Annual ROC Filing for Private Limited Companies: AOC-4, MGT-7 and DIR-3 KYC
 
-Updated November 10, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
+Updated November 25, 2026[CA Mehul Agrawal](https://agrawalkhandelwal.com/about#mehul-agrawal)Agrawal Khandelwal & Associates LLP
 
 TL;DR
 
@@ -12234,7 +12234,7 @@ TL;DR
 - Without the relaxation, a September 30, 2026 AGM would have meant AOC-4 by October 30 and MGT-7 by November 29, 2026. Filings made after the relaxed dates attract additional fees counted from the original due date.
 - **AOC-4** files audited financial statements **within 30 days** of the AGM.
 - **MGT-7** or MGT-7A files the annual return **within 60 days** of the AGM.
-- Every DIN holder must complete **DIR-3 KYC by September 30** each year.
+- Since March 31, 2026, every DIN holder files **DIR-3 KYC once every three years, by June 30**, plus within 30 days of any change in contact details. The old September 30 annual deadline is gone.
 - Late ROC filing fees can accrue **daily** and are often far more expensive than founders expect.
 
 Next deadline: December 31, 2026 (in 36 days)
@@ -12255,7 +12255,7 @@ The annual return captures the company's ownership and governance picture: regis
 
 ## DIR-3 KYC: Every DIN Holder Must Act
 
-DIR-3 KYC is the annual KYC requirement for every individual holding a Director Identification Number, including persons who are not currently acting as a director of an active company. The due date is **September 30** each year. A director should not assume that leaving a Board, moving abroad, or having no current company filings removes this responsibility. Keep mobile number, email address, PAN, and address proof current; if the DIN is deactivated due to non-compliance, restoring it can disrupt urgent filings and director appointments.
+DIR-3 KYC is the KYC requirement for every individual holding a Director Identification Number, including persons who are not currently acting as a director of an active company. Until FY 2025-26 it was annual and due by September 30. Under the amendment notified on December 31, 2025 and effective from **March 31, 2026**, it is filed **once every three financial years, by June 30**, plus within 30 days of any change in mobile number, email or address. A DIN holder who filed in FY 2025-26 is next due by June 30, 2028. Confirm your own cycle on the MCA portal. A director should not assume that leaving a Board, moving abroad, or having no current company filings removes this responsibility. Keep mobile number, email address, PAN, and address proof current; if the DIN is deactivated due to non-compliance, restoring it can disrupt urgent filings and director appointments.
 
 ## ADT-1: Auditor Appointment and Reappointment
 
@@ -12270,7 +12270,7 @@ ADT-1 notifies the ROC of an auditor's appointment or reappointment where filing
 | AOC-4 | Financial statements | Within 30 days of AGM |
 | MGT-7 / MGT-7A | Annual return | Within 60 days of AGM |
 | ADT-1 | Auditor appointment/reappointment where applicable | Within 15 days of AGM |
-| DIR-3 KYC | Annual KYC for DIN holders | By September 30 each year |
+| DIR-3 KYC | KYC for DIN holders | Once every three financial years, by June 30 (next for most: June 30, 2028); within 30 days of a contact change |
 
 Use this as a planning calendar, not a substitute for checking the company's actual AGM date and facts. A company with a delayed AGM, a first financial year, a changed auditor, or a changed director may require a different sequence.
 
@@ -12320,7 +12320,11 @@ MGT-7, or for eligible small companies MGT-7A, is due within 60 days of the AGM.
 
 ### Is DIR-3 KYC compulsory for inactive directors?
 
-Yes, annual DIR-3 KYC applies to all DIN holders, including individuals who may not currently be an active director. It is due by September 30 each year regardless of whether the person currently holds an appointment.
+Yes. DIR-3 KYC applies to every DIN holder, including people who are not currently directors of an active company. Since March 31, 2026 it is no longer annual: it is filed once every three financial years, by June 30, plus within 30 days of any change in mobile number, email or address. A DIN holder who filed in FY 2025-26 is next due by June 30, 2028.
+
+### When is DIR-3 KYC due now?
+
+Under the rules notified on December 31, 2025, effective March 31, 2026, DIR-3 KYC is due once every three financial years, between April 1 and June 30 of the year it falls due. The old September 30 annual deadline no longer applies. Check your own cycle on the MCA portal before relying on a date.
 
 ### What happens if a company files ROC forms late?
 
@@ -12595,7 +12599,7 @@ Most of these are avoidable with a short document checklist prepared before the 
 
 ## Keeping DIN Compliant After Allotment
 
-Holding a DIN comes with an ongoing obligation: every DIN holder must complete **annual DIR-3 KYC**, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our [Annual ROC Filing guide](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc) for the full annual compliance picture.
+Holding a DIN comes with an ongoing obligation: every DIN holder must file **DIR-3 KYC** once every three financial years, by June 30 (since March 31, 2026), and within 30 days of any change in mobile number, email or address, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our [Annual ROC Filing guide](https://agrawalkhandelwal.com/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc) for the full annual compliance picture.
 
 **Official sources:** Sections 153 and 154 of the Companies Act, 2013 and the Companies (Appointment and Qualification of Directors) Rules, 2014; Class 3 DSCs issued by certifying authorities licensed under the Information Technology Act, 2000. See [Ministry of Corporate Affairs](https://www.mca.gov.in/), [Controller of Certifying Authorities](https://www.cca.gov.in/).
 

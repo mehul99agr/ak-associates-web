@@ -35,7 +35,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('Startup Compliance Calendar (Year 1-
 const articleLd = buildArticleLd({
   headline: 'Startup Compliance Calendar (Year 1-3)',
   description: 'A month-by-month and year-by-year compliance roadmap for an Indian startup from incorporation through year 3.',
-  datePublished: '2026-08-13',
+  datePublished: '2026-08-13', dateModified: '2026-11-25',
   slug: 'startup-compliance-calendar-year-1-3',
 })
 
@@ -92,7 +92,7 @@ export default function StartupComplianceCalendarBlog() {
                     <tr><td style={tdAltStyle}>Quarterly</td><td style={tdAltStyle}>TDS statements + Board meeting</td><td style={tdAltStyle}>Prescribed due dates, max 120-day gap</td></tr>
                     <tr><td style={tdStyle}>Quarterly</td><td style={tdStyle}>Advance tax instalment</td><td style={tdStyle}>Jun / Sep / Dec / Mar</td></tr>
                     <tr><td style={tdAltStyle}>Annual</td><td style={tdAltStyle}>Audit, AGM, AOC-4, MGT-7, ITR</td><td style={tdAltStyle}>After year-end, staggered deadlines</td></tr>
-                    <tr><td style={tdStyle}>Annual</td><td style={tdStyle}>DIR-3 KYC for DIN holders</td><td style={tdStyle}>By September 30</td></tr>
+                    <tr><td style={tdStyle}>Every three years</td><td style={tdStyle}>DIR-3 KYC for DIN holders (and within 30 days of a contact change)</td><td style={tdStyle}>By June 30 of the year it falls due</td></tr>
                     <tr><td style={tdAltStyle}>Event-based</td><td style={tdAltStyle}>Share allotment, ESOP, foreign investment</td><td style={tdAltStyle}>Deadline depends on the event</td></tr>
                   </tbody>
                 </table>
@@ -114,7 +114,7 @@ export default function StartupComplianceCalendarBlog() {
                 <li>File Form AOC-4 within 30 days of the AGM</li>
                 <li>File Form MGT-7 within 60 days of the AGM</li>
                 <li>File the income tax return by the applicable due date</li>
-                <li>Complete DIR-3 KYC for DIN holders by September 30</li>
+                <li>Check each DIN holder&apos;s DIR-3 KYC cycle: it is now filed once every three years, by June 30, and within 30 days of any change in contact details</li>
               </ul>
 
               <h2>Year 2: From Founder-Led Records to Controlled Processes</h2>
@@ -151,9 +151,9 @@ export default function StartupComplianceCalendarBlog() {
                   <tbody>
                     <tr><td style={tdStyle}>Every month</td><td style={tdStyle}>Close books, reconcile bank and GST, deposit TDS, process payroll</td></tr>
                     <tr><td style={tdAltStyle}>Every quarter</td><td style={tdAltStyle}>File TDS returns, hold Board meeting, review advance tax</td></tr>
-                    <tr><td style={tdStyle}>June</td><td style={tdStyle}>Pay first advance tax instalment (15%)</td></tr>
+                    <tr><td style={tdStyle}>June</td><td style={tdStyle}>Pay first advance tax instalment (15%); file DIR-3 KYC by June 30 if it is due this year (once every three years)</td></tr>
                     <tr><td style={tdAltStyle}><strong>July</strong></td><td style={tdAltStyle}><strong>File FLA return by July 15</strong> if foreign assets/liabilities exist</td></tr>
-                    <tr><td style={tdStyle}>September</td><td style={tdStyle}>Pay second advance tax instalment (45% cumulative), complete DIR-3 KYC</td></tr>
+                    <tr><td style={tdStyle}>September</td><td style={tdStyle}>Pay second advance tax instalment (45% cumulative)</td></tr>
                     <tr><td style={tdAltStyle}>October; November</td><td style={tdAltStyle}>Complete audit, AGM, AOC-4, MGT-7, income tax filings</td></tr>
                     <tr><td style={tdStyle}>December</td><td style={tdStyle}>Pay third advance tax instalment (75% cumulative)</td></tr>
                     <tr><td style={tdAltStyle}>March</td><td style={tdAltStyle}>Pay final advance tax instalment (100%), close compliance evidence</td></tr>

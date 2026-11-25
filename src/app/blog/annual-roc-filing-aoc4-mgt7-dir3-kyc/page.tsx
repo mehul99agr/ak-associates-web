@@ -40,7 +40,7 @@ const articleLd = buildArticleLd({
   headline: 'Annual ROC Filing Guide (India)',
   description: 'Every mandatory annual MCA filing for an Indian company, deadlines relative to the AGM, and the penalty structure for late filing.',
   datePublished: '2026-06-18',
-  dateModified: '2026-11-10',
+  dateModified: '2026-11-25',
   slug: 'annual-roc-filing-aoc4-mgt7-dir3-kyc',
 })
 
@@ -48,7 +48,8 @@ const faqs: [string, string][] = [
   ['Has the AOC-4 and MGT-7 due date been extended for FY 2025-26?', 'Yes, as a fee relaxation. MCA General Circular 05/2026 dated October 24, 2026 allows AOC-4 (including CFS and XBRL versions) to be filed up to December 31, 2026 and MGT-7 or MGT-7A up to January 31, 2027 without additional fees. The normal filing fee still applies and the AGM deadline is not extended. Check the circular on the MCA portal before relying on it for your company.'],
   ['What is the due date for AOC-4 filing?', 'AOC-4 is due within 30 days of the AGM. If the AGM is not held, the due date is generally linked to the date by which the AGM should have been held, subject to the company\'s facts and applicable rules.'],
   ['When is MGT-7 or MGT-7A due?', 'MGT-7, or for eligible small companies MGT-7A, is due within 60 days of the AGM. The correct form depends on the company\'s current eligibility under the small company definition and exclusions for that year.'],
-  ['Is DIR-3 KYC compulsory for inactive directors?', 'Yes, annual DIR-3 KYC applies to all DIN holders, including individuals who may not currently be an active director. It is due by September 30 each year regardless of whether the person currently holds an appointment.'],
+  ['Is DIR-3 KYC compulsory for inactive directors?', 'Yes. DIR-3 KYC applies to every DIN holder, including people who are not currently directors of an active company. Since March 31, 2026 it is no longer annual: it is filed once every three financial years, by June 30, plus within 30 days of any change in mobile number, email or address. A DIN holder who filed in FY 2025-26 is next due by June 30, 2028.'],
+  ['When is DIR-3 KYC due now?', 'Under the rules notified on December 31, 2025, effective March 31, 2026, DIR-3 KYC is due once every three financial years, between April 1 and June 30 of the year it falls due. The old September 30 annual deadline no longer applies. Check your own cycle on the MCA portal before relying on a date.'],
   ['What happens if a company files ROC forms late?', 'Late forms can attract daily additional fees that continue accruing until the filing is completed, and this can become substantial. Delays also create problems in funding, banking, and due diligence during a future transaction.'],
   ['Is ADT-1 filed every year?', 'ADT-1 is filed for auditor appointment or reappointment where applicable, generally within 15 days of the AGM. Confirm the requirement for your auditor\'s current appointment cycle with your compliance adviser rather than assuming from the prior year.'],
 ]
@@ -72,7 +73,7 @@ export default function AnnualROCFilingBlog() {
             <span className="section-badge">Company Incorporation</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Annual ROC Filing for Private Limited Companies: AOC-4, MGT-7 and DIR-3 KYC</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Updated November 10, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
+              <span>Updated November 25, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link><span aria-hidden>&bull;</span><span>Agrawal Khandelwal &amp; Associates LLP</span>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -82,7 +83,7 @@ export default function AnnualROCFilingBlog() {
                   <li style={{ marginBottom: '0.4rem' }}>Without the relaxation, a September 30, 2026 AGM would have meant AOC-4 by October 30 and MGT-7 by November 29, 2026. Filings made after the relaxed dates attract additional fees counted from the original due date.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>AOC-4</strong> files audited financial statements <strong>within 30 days</strong> of the AGM.</li>
                   <li style={{ marginBottom: '0.4rem' }}><strong>MGT-7</strong> or MGT-7A files the annual return <strong>within 60 days</strong> of the AGM.</li>
-                  <li style={{ marginBottom: '0.4rem' }}>Every DIN holder must complete <strong>DIR-3 KYC by September 30</strong> each year.</li>
+                  <li style={{ marginBottom: '0.4rem' }}>Since March 31, 2026, every DIN holder files <strong>DIR-3 KYC once every three years, by June 30</strong>, plus within 30 days of any change in contact details. The old September 30 annual deadline is gone.</li>
                   <li style={{ marginBottom: 0 }}>Late ROC filing fees can accrue <strong>daily</strong> and are often far more expensive than founders expect.</li>
                 </ul>
               </div>
@@ -97,7 +98,7 @@ export default function AnnualROCFilingBlog() {
               <p>The annual return captures the company&apos;s ownership and governance picture: registered office, principal business activities, shareholding, directors and key managerial personnel, meetings, remuneration, indebtedness, and other statutory disclosures. MGT-7 is the annual return form for companies generally; eligible small companies use MGT-7A. Whether a company qualifies as a small company must be checked against the current statutory definition for the relevant year. The filing is due within <strong>60 days of the AGM</strong>, and should match the company&apos;s statutory registers, share records, Board documents, and financial statements; a mismatch often surfaces later during investment due diligence.</p>
 
               <h2>DIR-3 KYC: Every DIN Holder Must Act</h2>
-              <p>DIR-3 KYC is the annual KYC requirement for every individual holding a Director Identification Number, including persons who are not currently acting as a director of an active company. The due date is <strong>September 30</strong> each year. A director should not assume that leaving a Board, moving abroad, or having no current company filings removes this responsibility. Keep mobile number, email address, PAN, and address proof current; if the DIN is deactivated due to non-compliance, restoring it can disrupt urgent filings and director appointments.</p>
+              <p>DIR-3 KYC is the KYC requirement for every individual holding a Director Identification Number, including persons who are not currently acting as a director of an active company. Until FY 2025-26 it was annual and due by September 30. Under the amendment notified on December 31, 2025 and effective from <strong>March 31, 2026</strong>, it is filed <strong>once every three financial years, by June 30</strong>, plus within 30 days of any change in mobile number, email or address. A DIN holder who filed in FY 2025-26 is next due by June 30, 2028. Confirm your own cycle on the MCA portal. A director should not assume that leaving a Board, moving abroad, or having no current company filings removes this responsibility. Keep mobile number, email address, PAN, and address proof current; if the DIN is deactivated due to non-compliance, restoring it can disrupt urgent filings and director appointments.</p>
 
               <h2>ADT-1: Auditor Appointment and Reappointment</h2>
               <p>ADT-1 notifies the ROC of an auditor&apos;s appointment or reappointment where filing is applicable, generally due within <strong>15 days of the AGM</strong>. The auditor&apos;s tenure and whether an ADT-1 filing is needed should be reviewed with the company&apos;s CA rather than assumed from the prior year; first auditor appointments and subsequent appointments operate under different Companies Act timelines. The first auditor is appointed within 30 days of incorporation by the Board or 90 days by members.</p>
@@ -112,7 +113,7 @@ export default function AnnualROCFilingBlog() {
                     <tr><td style={tdStyle}>AOC-4</td><td style={tdStyle}>Financial statements</td><td style={tdStyle}>Within 30 days of AGM</td></tr>
                     <tr><td style={tdAltStyle}>MGT-7 / MGT-7A</td><td style={tdAltStyle}>Annual return</td><td style={tdAltStyle}>Within 60 days of AGM</td></tr>
                     <tr><td style={tdStyle}>ADT-1</td><td style={tdStyle}>Auditor appointment/reappointment where applicable</td><td style={tdStyle}>Within 15 days of AGM</td></tr>
-                    <tr><td style={tdAltStyle}>DIR-3 KYC</td><td style={tdAltStyle}>Annual KYC for DIN holders</td><td style={tdAltStyle}>By September 30 each year</td></tr>
+                    <tr><td style={tdAltStyle}>DIR-3 KYC</td><td style={tdAltStyle}>KYC for DIN holders</td><td style={tdAltStyle}>Once every three financial years, by June 30 (next for most: June 30, 2028); within 30 days of a contact change</td></tr>
                   </tbody>
                 </table>
               </div>

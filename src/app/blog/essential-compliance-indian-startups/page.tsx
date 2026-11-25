@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const breadcrumbLd = buildBlogBreadcrumbLd('Essential Compliance for Indian Startups', 'essential-compliance-indian-startups')
 
-const articleLd = buildArticleLd({ headline: 'Essential Compliance for Indian Startups', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-08-16', slug: 'essential-compliance-indian-startups' })
+const articleLd = buildArticleLd({ headline: 'Essential Compliance for Indian Startups', description: 'Complete compliance checklist for Indian startups.', datePublished: '2026-03-12', dateModified: '2026-11-25', slug: 'essential-compliance-indian-startups' })
 
 const faqs: [string, string][] = [
   ['What happens if a startup misses MCA annual filings?', 'Missing AOC-4 or MGT-7 attracts a penalty of Rs 100 per day per form with no cap. For startups that have not filed for 2-3 years, accumulated penalties can cross Rs 10-15 lakh. Additionally, non-filing can lead to the company being struck off by the ROC and directors being disqualified under Section 164(2).'],
@@ -40,7 +40,7 @@ export default function EssentialComplianceBlog() {
             <span className="section-badge">Startup Advisory</span>
             <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem', lineHeight: 1.25 }}>Essential Compliance for Indian Startups: The Checklist That Prevents Expensive Surprises</h1>
             <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-light)', marginBottom: '2.5rem', fontSize: '0.9rem', fontWeight: 600, flexWrap: 'wrap', alignItems: 'center' }}>
-              <span>Published March 12, 2026</span><span aria-hidden>&bull;</span><span>Updated August 16, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
+              <span>Published March 12, 2026</span><span aria-hidden>&bull;</span><span>Updated November 25, 2026</span><span aria-hidden>&bull;</span><Link href="/about#mehul-agrawal" style={{ color: 'var(--primary)', fontWeight: 700 }}>CA Mehul Agrawal</Link>
             </div>
             <div className="blog-content" style={{ fontSize: '1.05rem', lineHeight: '1.85', color: 'var(--text-main)' }}>
               <div style={{ padding: '1.5rem 1.75rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
@@ -60,7 +60,7 @@ export default function EssentialComplianceBlog() {
               <ul>
                 <li><strong>AOC-4</strong>: Financial statements (within 30 days of AGM, typically by October 29)</li>
                 <li><strong>MGT-7</strong>: Annual return (within 60 days of AGM, typically by November 29)</li>
-                <li><strong>DIR-3 KYC</strong>: Annual KYC for all directors (by September 30 each year)</li>
+                <li><strong>DIR-3 KYC</strong>: KYC for all DIN holders, once every three financial years, by June 30 (since March 31, 2026), and within 30 days of any change in mobile number, email or address</li>
                 <li><strong>ADT-1</strong>: Appointment of statutory auditor (within 15 days of AGM)</li>
               </ul>
               <p>Missing AOC-4 or MGT-7 attracts a penalty of Rs 100 per day per form, with no cap. For startups that have not filed for 2-3 years, accumulated penalties can cross Rs 10-15 lakh before they realise it.</p>

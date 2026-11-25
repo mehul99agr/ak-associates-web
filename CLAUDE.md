@@ -448,8 +448,8 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   section), NRO TDS (pos 17-30 for "tds on nro account"), LLP Form 8/11 (pos 3-8, title said "was due": added FY 2026-27 dates),
   OPC ("opc turnover limit"), Udyam ("udyam registration benefits"). Re-check their GSC position/CTR around Dec 20, 2026.
 - **DIR-3 KYC is triennial** (verified Nov 25 via ICAI/TaxGuru/Business Standard: from Mar 31, 2026, once every three FYs by
-  June 30, plus within 30 days of a contact-detail change). Fixed on the LLP Form 8/11 and OPC posts only. ~27 other pages still
-  say annual / September 30 (grep "DIR-3 KYC") - pending user go-ahead for a site-wide fix.
+  June 30, plus within 30 days of a contact-detail change). Fixed site-wide Nov 25: LLP Form 8/11, OPC, annual ROC filing, DSC/DIN, essential startup compliance,
+  startup compliance calendar. Other mentions are link titles only. No page says annual / September 30 now.
 - **Next (plan agreed Nov 25):** package pages with "from Rs X" prices for NRI / US LLC / startup (NEED the user's fees - never
   invent), segment-matched CTAs in posts, 3-4 segment buyer-intent posts a week, 2 CAclubindia posts a month, NRI communities.
 

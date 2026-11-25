@@ -34,7 +34,7 @@ const breadcrumbLd = buildBlogBreadcrumbLd('DSC & DIN Application Guide (India)'
 const articleLd = buildArticleLd({
   headline: 'DSC & DIN Application Guide (India)',
   description: 'How to apply for a Digital Signature Certificate and Director Identification Number, for both new and existing companies.',
-  datePublished: '2026-07-02',
+  datePublished: '2026-07-02', dateModified: '2026-11-25',
   slug: 'dsc-din-application-director-guide',
 })
 
@@ -105,7 +105,7 @@ export default function DSCDINBlog() {
               <p>Most of these are avoidable with a short document checklist prepared before the application is started, rather than assembled reactively after a rejection notice.</p>
 
               <h2>Keeping DIN Compliant After Allotment</h2>
-              <p>Holding a DIN comes with an ongoing obligation: every DIN holder must complete <strong>annual DIR-3 KYC</strong>, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual ROC Filing guide</Link> for the full annual compliance picture.</p>
+              <p>Holding a DIN comes with an ongoing obligation: every DIN holder must file <strong>DIR-3 KYC</strong> once every three financial years, by June 30 (since March 31, 2026), and within 30 days of any change in mobile number, email or address, regardless of whether they currently hold an active directorship. Skipping this can lead to the DIN being deactivated, which then blocks the person from being appointed or continuing as a director until the KYC is completed and any applicable restoration steps are done. See our <Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual ROC Filing guide</Link> for the full annual compliance picture.</p>
             </div>
 
             <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginTop: '2rem' }}>
