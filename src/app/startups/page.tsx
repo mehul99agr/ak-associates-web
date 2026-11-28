@@ -255,10 +255,10 @@ export default function StartupsPage() {
         <section id="packages" className="section bg-surface">
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <span className="section-badge">Fees</span>
+              <span className="section-badge">Package</span>
               <h2 className="section-title">Startup Package</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
-                One fixed fee to set up your company and keep it compliant through its first year. Start with a free 15-minute call.
+                We set up your company and keep it compliant through its first year. Start with a free 15-minute call.
               </p>
             </div>
             <ServicePackages packages={STARTUP_PACKAGES} ctaHref={bookingLink} ctaLabel="Book a Free 15-min Call" />

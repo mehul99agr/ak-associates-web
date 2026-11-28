@@ -673,7 +673,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   .book-fab { display: none; }
   .mobile-actionbar {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     position: fixed;
     left: 0;
     right: 0;

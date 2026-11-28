@@ -143,6 +143,8 @@ export default function About() {
                 </ul>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.75rem', justifyContent: 'center' }}>
+                <TrackedLink href={`tel:${OFFICES.nashik.phone}`} className="btn btn-primary" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location="about_page_mehul">Call {OFFICES.nashik.phoneDisplay}</TrackedLink>
+                <TrackedLink href={OFFICES.nashik.whatsapp} target="_blank" rel="noopener" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_mehul">WhatsApp</TrackedLink>
                 <TrackedLink href="/consult?partner=mehul" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location="about_page_mehul">Book a Call</TrackedLink>
                 <TrackedLink href="mailto:mehul@agrawalkhandelwal.com" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location="about_page_mehul">Email</TrackedLink>
               </div>
@@ -173,6 +175,8 @@ export default function About() {
                 </ul>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.75rem', justifyContent: 'center' }}>
+                <TrackedLink href={`tel:${OFFICES.sillod.phone}`} className="btn btn-primary" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location="about_page_rupesh">Call {OFFICES.sillod.phoneDisplay}</TrackedLink>
+                <TrackedLink href={OFFICES.sillod.whatsapp} target="_blank" rel="noopener" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location="about_page_rupesh">WhatsApp</TrackedLink>
                 <TrackedLink href="/consult?partner=rupesh" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location="about_page_rupesh">Book a Call</TrackedLink>
                 <TrackedLink href="mailto:rupesh@agrawalkhandelwal.com" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location="about_page_rupesh">Email</TrackedLink>
               </div>

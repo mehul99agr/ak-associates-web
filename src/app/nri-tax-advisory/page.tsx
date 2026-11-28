@@ -102,7 +102,7 @@ const faqLd = {
       name: 'How much do you charge NRIs?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A lower TDS certificate (Form 128, earlier Form 13) on its own is ₹14,999, plus out-of-pocket expenses and GST, if applicable. NRI income tax returns start at ₹10,000. Advisory on an NRI property sale (capital gains, the lower TDS certificate and the Form 145/146 repatriation paperwork) is ₹25,000 to ₹50,000 per property. Government fees are extra, and the scope is confirmed in writing before we start.',
+        text: 'It depends on the work: a lower TDS certificate on its own, an NRI income tax return, or full advisory on a property sale (capital gains, the lower TDS certificate and the Form 145/146 repatriation paperwork). We quote the fee after a short call and confirm the scope and fee in writing before we start.',
       },
     },
   ],
@@ -194,9 +194,6 @@ export default function NRITaxAdvisory() {
             </p>
             <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>
               We offer evening and weekend call slots to match US, UK, and Gulf time zones; most of our NRI clients never need to take time off work to talk to us.
-            </p>
-            <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '-0.75rem', marginBottom: '1.5rem' }}>
-              Fixed fees: lower TDS certificate ₹14,999, NRI tax returns from ₹10,000. <a href="#packages" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Property sale advisory ₹25,000 - ₹50,000</a>.
             </p>
             <div className="hero-cta">
               <a href={bookingLink} className="btn btn-secondary">
@@ -340,10 +337,10 @@ export default function NRITaxAdvisory() {
         <section id="packages" className="section bg-surface">
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <span className="section-badge">Fees</span>
+              <span className="section-badge">Packages</span>
               <h2 className="section-title">NRI Packages</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
-                Fixed fees, agreed before we start. The consultation fee is adjusted against the package if you go ahead.
+                Fees are agreed in writing before we start. The consultation fee is adjusted against the package if you go ahead.
               </p>
             </div>
             <ServicePackages packages={NRI_PACKAGES} ctaHref={bookingLink} />

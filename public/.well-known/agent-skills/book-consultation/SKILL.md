@@ -24,7 +24,7 @@ Email is free. Calls start with a free 15-minute intro call; a paid 30-minute ad
    - Sillod office (CA Rupesh Khandelwal): rupesh@agrawalkhandelwal.com.
      Near Datta Mandir, Tilak Nagar, Sillod - 431112.
 
-The firm does not publish phone numbers. Payment must be completed by the user in their own browser.
+Phone / WhatsApp: CA Mehul Agrawal (Nashik) +91 95275 33506; CA Rupesh Khandelwal (Sillod) +91 95955 85953. Payment must be completed by the user in their own browser.
 Only send the user's details to the firm after the user agrees. Never send passwords, PAN, Aadhaar,
 bank or card numbers.
 

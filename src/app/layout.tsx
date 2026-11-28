@@ -123,6 +123,7 @@ const organizationLd = {
   logo: `${BASE_URL}/logo.png`,
   image: `${BASE_URL}/office.jpg`,
   email: OFFICES.nashik.email,
+  telephone: OFFICES.nashik.phone,
   foundingDate: '2023',
   address: {
     '@type': 'PostalAddress',
@@ -145,7 +146,6 @@ const organizationLd = {
       closes: '19:30',
     },
   ],
-  priceRange: '₹₹',
   areaServed: [
     { '@type': 'City', name: 'Nashik' },
     { '@type': 'City', name: 'Sillod' },
@@ -342,11 +342,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div style={{ marginBottom: '1.25rem' }}>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>{OFFICES.nashik.name}</p>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>{OFFICES.nashik.addressLine}</p>
+                  <a href={`tel:${OFFICES.nashik.phone}`} style={{ display: 'block', marginBottom: '4px' }}>{OFFICES.nashik.phoneDisplay}</a>
                   <a href={`mailto:${OFFICES.nashik.email}`}>{OFFICES.nashik.email}</a>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text-light)', fontWeight: 600, marginBottom: '6px' }}>{OFFICES.sillod.name}</p>
                   <p style={{ fontSize: '0.85rem', color: 'var(--footer-text)', marginBottom: '5px', lineHeight: 1.5 }}>{OFFICES.sillod.addressLine}</p>
+                  <a href={`tel:${OFFICES.sillod.phone}`} style={{ display: 'block', marginBottom: '4px' }}>{OFFICES.sillod.phoneDisplay}</a>
                   <a href={`mailto:${OFFICES.sillod.email}`}>{OFFICES.sillod.email}</a>
                 </div>
               </div>

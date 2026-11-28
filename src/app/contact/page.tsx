@@ -27,6 +27,7 @@ const localBusinessLd = {
       name: 'Agrawal Khandelwal & Associates LLP',
       url: 'https://agrawalkhandelwal.com/ca-in-nashik',
       email: OFFICES.nashik.email,
+      telephone: OFFICES.nashik.phone,
       address: {
         '@type': 'PostalAddress',
         streetAddress: OFFICES.nashik.streetAddress,
@@ -42,7 +43,6 @@ const localBusinessLd = {
         opens: '11:00',
         closes: '19:30',
       }],
-      priceRange: '₹₹',
       hasMap: 'https://maps.google.com/?cid=15026601649790613456',
       parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
     },
@@ -52,6 +52,7 @@ const localBusinessLd = {
       name: 'Agrawal Khandelwal & Associates LLP; Sillod',
       url: 'https://agrawalkhandelwal.com/ca-in-sillod',
       email: OFFICES.sillod.email,
+      telephone: OFFICES.sillod.phone,
       address: {
         '@type': 'PostalAddress',
         streetAddress: OFFICES.sillod.streetAddress,
@@ -67,7 +68,6 @@ const localBusinessLd = {
         opens: '11:00',
         closes: '19:30',
       }],
-      priceRange: '₹₹',
       parentOrganization: { '@id': 'https://agrawalkhandelwal.com/#organization' },
     },
   ],
@@ -83,6 +83,9 @@ const offices = [
     label: 'Nashik Office',
     partner: 'CA Mehul Agrawal',
     key: 'mehul',
+    phone: OFFICES.nashik.phone,
+    phoneDisplay: OFFICES.nashik.phoneDisplay,
+    whatsapp: OFFICES.nashik.whatsapp,
     address: 'Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011, Maharashtra',
     email: 'mehul@agrawalkhandelwal.com',
   },
@@ -90,6 +93,9 @@ const offices = [
     label: 'Sillod Office',
     partner: 'CA Rupesh Khandelwal',
     key: 'rupesh',
+    phone: OFFICES.sillod.phone,
+    phoneDisplay: OFFICES.sillod.phoneDisplay,
+    whatsapp: OFFICES.sillod.whatsapp,
     address: 'Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra',
     email: 'rupesh@agrawalkhandelwal.com',
   },
@@ -133,6 +139,8 @@ export default function Contact() {
                     <strong style={{ color: 'var(--text-main)' }}>Hours:</strong> Monday to Saturday, 11:00 AM to 7:30 PM
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.5rem' }}>
+                    <TrackedLink href={`tel:${o.phone}`} className="btn btn-primary" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="call" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Call {o.phoneDisplay}</TrackedLink>
+                    <TrackedLink href={o.whatsapp} target="_blank" rel="noopener" className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="whatsapp" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>WhatsApp</TrackedLink>
                     <TrackedLink href={`/consult?partner=${o.key}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="booking" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Book a Call</TrackedLink>
                     <TrackedLink href={`mailto:${o.email}`} className="btn btn-outline" style={{ fontSize: '0.82rem', padding: '0.7rem 1.1rem' }} method="email" location={`contact_page_${o.label.toLowerCase().replace(' ', '_')}`}>Email</TrackedLink>
                   </div>

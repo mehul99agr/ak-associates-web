@@ -5,9 +5,9 @@ export const BASE_URL = 'https://agrawalkhandelwal.com'
 
 export const FIRM_NAME = 'Agrawal Khandelwal & Associates LLP'
 
-// Calls are paid and booked on /consult (see src/lib/consult.ts). Email is the only
-// free channel. Phone numbers and the WhatsApp number are deliberately not in the
-// code: the WhatsApp number goes out only in Zoho's booking confirmation email.
+// Nov 28, 2026 (user decision): both partners' mobile numbers are back on the site
+// (call + WhatsApp) to bring in direct leads. This reverses the Nov 21 "no phone
+// numbers" rule. Change numbers only here.
 export const BOOKING_LINK = '/consult'
 
 export const EMAIL_LINK = 'mailto:mehul@agrawalkhandelwal.com'
@@ -26,6 +26,9 @@ export const OFFICES = {
     region: 'Maharashtra',
     postalCode: '422011',
     email: 'mehul@agrawalkhandelwal.com',
+    phone: '+919527533506',
+    phoneDisplay: '+91 95275 33506',
+    whatsapp: 'https://wa.me/919527533506',
     latitude: '19.9877793',
     longitude: '73.7898192',
   },
@@ -38,6 +41,9 @@ export const OFFICES = {
     region: 'Maharashtra',
     postalCode: '431112',
     email: 'rupesh@agrawalkhandelwal.com',
+    phone: '+919595585953',
+    phoneDisplay: '+91 95955 85953',
+    whatsapp: 'https://wa.me/919595585953',
     latitude: '20.3055',
     longitude: '75.6518',
   },

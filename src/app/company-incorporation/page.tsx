@@ -8,7 +8,7 @@ import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Company Incorporation in India',
-  description: 'Register a Private Limited Company, LLP, or OPC in India with expert CA guidance. SPICe+ filing, MOA drafting, and compliance setup. Transparent pricing.',
+  description: 'Register a Private Limited Company, LLP, or OPC in India with expert CA guidance. SPICe+ filing, MOA drafting, and compliance setup. Fully online.',
   keywords: [
     'company incorporation India', 'company registration India',
     'private limited company registration India', 'LLP registration India',
@@ -47,12 +47,6 @@ const serviceLd = {
   },
   areaServed: { '@type': 'Country', name: 'India' },
   serviceType: 'Company Registration',
-  offers: {
-    '@type': 'Offer',
-    price: '15000',
-    priceCurrency: 'INR',
-    description: 'All-in Private Limited Company incorporation starting from ₹15,000 (statutory costs, DSCs and professional fees). OPC from ₹10,000, LLP from ₹12,000.',
-  },
 }
 
 const faqLd = {
@@ -72,7 +66,7 @@ const faqLd = {
       name: 'What is the cost of incorporating a company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'All-in cost is typically ₹15,000 to ₹40,000 for a Private Limited Company. The MCA filing fee for SPICe+ is nil where authorised capital is up to ₹15 lakh, so the cost is mainly name reservation (₹1,000 per application), state stamp duty on the MoA and AoA (depends on the state and the authorised capital), a DSC for each director (₹1,000–₹2,000), and CA professional fees. An LLP typically costs ₹12,000–₹30,000 and an OPC ₹10,000–₹25,000.',
+        text: 'The MCA filing fee for SPICe+ is nil where authorised capital is up to ₹15 lakh, so the government cost is mainly name reservation (₹1,000 per application), state stamp duty on the MoA and AoA (depends on the state and the authorised capital) and a DSC for each director. Our professional fee depends on the structure and scope; we quote it after a free 15-minute call and confirm it in writing before we start.',
       },
     },
     {
@@ -155,7 +149,6 @@ const structures = [
     best: 'Startups seeking funding',
     pros: ['Raise Angel/VC funding', 'Issue ESOPs to team', 'Clear acquisition/IPO path', 'High investor credibility'],
     cons: ['Mandatory annual audit', 'Higher compliance cost'],
-    cost: '₹15,000–₹40,000',
     time: '15–20 working days',
   },
   {
@@ -163,7 +156,6 @@ const structures = [
     best: 'Professional services & agencies',
     pros: ['Lower compliance burden', 'No mandatory audit under ₹40L turnover and ₹25L capital contribution', 'Flexible profit-sharing', 'Lower registration cost'],
     cons: ['Cannot raise equity funding', 'No ESOPs'],
-    cost: '₹12,000–₹30,000',
     time: '15–20 working days',
   },
   {
@@ -171,7 +163,6 @@ const structures = [
     best: 'Solo founders',
     pros: ['Full control', 'Limited liability', 'Company credibility', 'Easy to convert to Pvt Ltd later'],
     cons: ['Cannot raise equity funding', 'Must have a nominee director'],
-    cost: '₹10,000–₹25,000',
     time: '15–20 working days',
   },
 ]
@@ -190,7 +181,7 @@ export default function CompanyIncorporationPage() {
             <span className="hero-badge">Company Registration India</span>
             <h1>Register Your Company in India</h1>
             <p>
-              CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. Fixed pricing. 15–20 working days end-to-end.
+              CA-led company registration: Private Limited, LLP, or OPC. We handle every step from name reservation to Certificate of Incorporation. 15–20 working days end-to-end.
             </p>
             <div className="hero-cta">
               <a href="/consult?topic=company-incorporation#free-call"
@@ -246,8 +237,7 @@ export default function CompanyIncorporationPage() {
                     ))}
                   </ul>
                   <div style={{ borderTop: '1px solid var(--border)', paddingTop: '1rem', marginTop: 'auto', display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem' }}>
-                    <div><span style={{ color: 'var(--text-light)', display: 'block', fontSize: '0.75rem' }}>All-in cost</span><strong style={{ color: 'var(--primary)' }}>{s.cost}</strong></div>
-                    <div style={{ textAlign: 'right' }}><span style={{ color: 'var(--text-light)', display: 'block', fontSize: '0.75rem' }}>Turnaround</span><strong style={{ color: 'var(--primary)' }}>{s.time}</strong></div>
+                    <div><span style={{ color: 'var(--text-light)', display: 'block', fontSize: '0.75rem' }}>Turnaround</span><strong style={{ color: 'var(--primary)' }}>{s.time}</strong></div>
                   </div>
                 </div>
               ))}
@@ -294,10 +284,10 @@ export default function CompanyIncorporationPage() {
         <section id="packages" className="section">
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <span className="section-badge">Fees</span>
+              <span className="section-badge">Package</span>
               <h2 className="section-title">Startup Package</h2>
               <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
-                One fixed fee to set up your company and keep it compliant through its first year. Start with a free 15-minute call.
+                We set up your company and keep it compliant through its first year. Start with a free 15-minute call.
               </p>
             </div>
             <ServicePackages packages={STARTUP_PACKAGES} ctaHref={"/consult?topic=company-incorporation"} ctaLabel="Book a Free 15-min Call" />

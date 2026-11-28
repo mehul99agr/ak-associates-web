@@ -226,6 +226,13 @@ the GEO-specific levers are entity consistency, machine-readable facts, authorit
 **Pending GEO:**
 - Add IndiaMart PUBLIC seller page to `sameAs` (need the public URL; only have dashboard).
 
+## No Prices on the Site (user decision, Nov 28, 2026)
+No professional fees, package prices, "from" amounts or fee ranges anywhere: page copy, FAQs,
+blog `ServiceOffer` boxes, `servicePricing.ts`, JSON-LD (`offers.price`, `priceRange`) or `public/`
+files. Fees are quoted after the first call. The one exception is the paid consult call price
+(`src/lib/consult.ts`, Rs 999), which stays visible. Government/statutory amounts (MCA fees,
+thresholds, late fees) are facts, not prices, and are fine.
+
 ## Domain Canonicalization
 - **Canonical host is non-www: `agrawalkhandelwal.com`** — all canonical tags, sitemap.ts,
   robots.ts, and JSON-LD use non-www. Never change these to www.
@@ -350,11 +357,10 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
   supporting"). `/consult` links straight to the Zoho page (`CONSULT_BOOKING_URL` in `src/lib/consult.ts`);
   publishing that URL is fine because Zoho takes payment before confirming the slot. The site's own Razorpay
   checkout and `/api/consult/*` routes were removed (they would have charged twice), and Razorpay was taken
-  out of the CSP. The WhatsApp number is never on the site: it belongs only in Zoho's "Booked" confirmation
-  email, so it is never cheaper than a call. Still never put a phone number, `tel:` or `wa.me` link in the
-  code, schema, meta descriptions or `public/` files. `BOOKING_LINK` / `WHATSAPP_LINK` point to `/consult`;
-  the `?partner=` / `?for=whatsapp` query strings on old links are now ignored. Phone numbers were also
-  removed from JSON-LD (`telephone`) on purpose; GBP keeps its own number.
+  out of the CSP. **SUPERSEDED Nov 28, 2026 (user decision, "we don't have any leads recently"):** both
+  partners' mobile numbers are back on the site as `tel:` and `wa.me` links (mobile action bar, footer,
+  /contact, /about, /ca-in-nashik, /ca-in-sillod) and as JSON-LD `telephone`. Numbers live only in
+  `OFFICES` in `src/lib/constants.ts`. Do not remove them again without asking.
 - Homepage "Global Reach" pins (Mumbai/Bangalore/Delhi) and the Bangalore/Mumbai startup copy are KEPT on purpose: the user confirmed most clients are in those cities (Sep 26, 2026). Do not remove them as unverified
 - No em dashes anywhere on the site — use hyphens
 - Services dropdown in navbar links to individual service pages
@@ -389,7 +395,7 @@ Always use the full name **Agrawal Khandelwal & Associates LLP** everywhere — 
 - `/consult/booked` (noindex, not in sitemap) fires GA4 `booking_complete`, but it is UNUSED: Zoho's free plan has no
   redirect-after-booking setting and the user said to ignore it (Nov 21). Count paid bookings in Zoho's Appointments.
   `generate_lead` still needs starring as a GA4 key event once it appears under Admin > Events > Recent events.
-- **Still unchanged on purpose (user, Nov 21):** no phone numbers, `tel:` or `wa.me` anywhere; no reviews or
+- **Still unchanged on purpose (user, Nov 21):** (phone numbers reversed Nov 28, see above); no reviews or
   testimonials block. "What happens on the call" + partner photos added to /consult instead.
 
 ## AI-assistant booking (Nov 21, 2026 - user approved options 1 and 2; option 3, an own ChatGPT/Claude MCP app, NOT built)

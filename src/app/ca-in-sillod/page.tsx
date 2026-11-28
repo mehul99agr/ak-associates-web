@@ -106,12 +106,12 @@ const sillodLocalBusiness = {
   description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
   email: OFFICES.sillod.email,
+  telephone: OFFICES.sillod.phone,
   foundingDate: '2023',
   founder: [
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
   ],
-  priceRange: '₹₹',
   image: 'https://agrawalkhandelwal.com/logo.png',
   logo: 'https://agrawalkhandelwal.com/logo.png',
   address: {
@@ -198,8 +198,11 @@ export default function CAInSillod() {
             <a href={bookingLink} className="btn btn-primary">
               Book a Consultation
             </a>
-            <a href={`mailto:${OFFICES.sillod.email}`} className="btn btn-secondary">
-              Email Us
+            <a href={`tel:${OFFICES.sillod.phone}`} className="btn btn-secondary">
+              Call {OFFICES.sillod.phoneDisplay}
+            </a>
+            <a href={OFFICES.sillod.whatsapp} target="_blank" rel="noopener" className="btn btn-secondary">
+              WhatsApp
             </a>
           </div>
         </div>
@@ -345,6 +348,9 @@ export default function CAInSillod() {
                 <strong style={{ color: 'var(--text-main)' }}>Hours:</strong><br />
                 Monday – Saturday: 11:00 AM – 7:30 PM
               </p>
+              <a href={`tel:${OFFICES.sillod.phone}`} style={{ display: 'block', color: 'var(--primary)', fontWeight: 700, fontSize: '1rem', marginBottom: '0.5rem' }}>
+                {OFFICES.sillod.phoneDisplay}
+              </a>
               <a href="mailto:rupesh@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
                 rupesh@agrawalkhandelwal.com
               </a>

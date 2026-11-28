@@ -102,12 +102,12 @@ const nashikLocalBusiness = {
   description: 'Chartered Accountant firm in Nashik at Mumbai Naka offering GST registration and filing, income tax returns, tax audit under Section 44AB, company and LLP incorporation, and international taxation including transfer pricing, DTAA, FEMA, and UAE corporate tax.',
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
   email: OFFICES.nashik.email,
+  telephone: OFFICES.nashik.phone,
   foundingDate: '2023',
   founder: [
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal', name: 'CA Mehul Agrawal' },
     { '@type': 'Person', '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal', name: 'CA Rupesh Khandelwal' },
   ],
-  priceRange: '₹₹',
   currenciesAccepted: 'INR',
   paymentAccepted: 'Cash, UPI, Bank Transfer, Cheque',
   image: 'https://agrawalkhandelwal.com/logo.png',
@@ -195,8 +195,11 @@ export default function CAInNashik() {
             <a href={bookingLink} className="btn btn-primary">
               Book a Consultation
             </a>
-            <a href={`mailto:${OFFICES.nashik.email}`} className="btn btn-secondary">
-              Email Us
+            <a href={`tel:${OFFICES.nashik.phone}`} className="btn btn-secondary">
+              Call {OFFICES.nashik.phoneDisplay}
+            </a>
+            <a href={OFFICES.nashik.whatsapp} target="_blank" rel="noopener" className="btn btn-secondary">
+              WhatsApp
             </a>
           </div>
         </div>
@@ -394,6 +397,9 @@ export default function CAInNashik() {
                 <strong style={{ color: 'var(--text-main)' }}>Hours:</strong><br />
                 Monday – Saturday: 11:00 AM – 7:30 PM
               </p>
+              <a href={`tel:${OFFICES.nashik.phone}`} style={{ display: 'block', color: 'var(--primary)', fontWeight: 700, fontSize: '1rem', marginBottom: '0.5rem' }}>
+                {OFFICES.nashik.phoneDisplay}
+              </a>
               <a href="mailto:mehul@agrawalkhandelwal.com" style={{ display: 'block', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>
                 mehul@agrawalkhandelwal.com
               </a>
