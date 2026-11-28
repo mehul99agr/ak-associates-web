@@ -1,6 +1,6 @@
 ---
 name: book-consultation
-description: Book a consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, UAE corporate tax, company incorporation, startup advisory, GST, income tax, tax audit, or offshore accounting.
+description: Book a consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, international tax, UAE corporate tax, US entity compliance, company incorporation, ROC compliance, startup advisory, or offshore accounting. The firm does not take on GST or routine domestic income tax work.
 ---
 
 # Book a consultation with Agrawal Khandelwal & Associates LLP

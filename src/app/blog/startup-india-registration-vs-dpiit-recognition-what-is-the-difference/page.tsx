@@ -140,7 +140,7 @@ export default function StartupIndiaVsDpiitBlog() {
                 <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/dpiit-registration-startups-india-80iac" style={{ color: 'var(--primary)', fontWeight: 600 }}>DPIIT Registration for Startups: Eligibility, Process &amp; 80-IAC Tax Benefit</Link></li>
-                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/msme-udyam-vs-startup-india-recognition-which-benefits-apply" style={{ color: 'var(--primary)', fontWeight: 600 }}>MSME Udyam vs Startup India Recognition: Which Benefits Apply</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/startup-india-registration-vs-dpiit-recognition-what-is-the-difference" style={{ color: 'var(--primary)', fontWeight: 600 }}>MSME Udyam vs Startup India Recognition: Which Benefits Apply</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/trademark-registration-for-startups-process-and-timeline" style={{ color: 'var(--primary)', fontWeight: 600 }}>Trademark Registration for Startups: Process &amp; Timeline</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>Our Startup Advisory Services</Link></li>
                 </ul>

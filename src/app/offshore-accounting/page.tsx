@@ -7,7 +7,7 @@ import { buildBreadcrumbLd, buildFaqLd, buildServiceLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Offshore Accounting Services India',
-  description: 'Offshore accounting from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS reporting, payroll, GST, and compliance.',
+  description: 'Offshore accounting from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS reporting, transfer pricing support and FEMA compliance.',
   keywords: [
     'offshore accounting India', 'outsourced accounting India',
     'bookkeeping outsourcing India', 'offshore bookkeeping India',
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     'accounting outsourcing India for UAE', 'outsourced CFO India',
     'virtual accounting India', 'remote bookkeeping India',
     'Indian CA firm outsourcing', 'CA firm white label accounting India',
-    'offshore accounting Nashik', 'outsourced payroll India',
+    'offshore accounting Nashik', 'Indian subsidiary accounting',
     'MIS reporting India', 'management accounts India',
     'outsourced accounting for NRI', 'Indian subsidiary accounting outsourcing',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/offshore-accounting' },
   openGraph: {
     title: 'Offshore Accounting Services India | Outsourced Bookkeeping | Agrawal Khandelwal & Associates LLP',
-    description: 'ICAI-registered CA firm offering offshore accounting for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, GST, payroll, and MIS from India.',
+    description: 'ICAI-registered CA firm offering offshore accounting for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, transfer pricing and FEMA from India.',
     url: 'https://agrawalkhandelwal.com/offshore-accounting',
     images: OG_IMAGES,
   },
@@ -34,7 +34,7 @@ const audiences = [
   {
     icon: 'globe',
     title: 'Foreign Companies with Indian Operations',
-    desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack; from Tally/QuickBooks bookkeeping to GST returns, TDS compliance, payroll, and statutory audit; so your Indian team stays compliant without distracting your HQ finance team.',
+    desc: 'US, UK, or UAE parent companies with an Indian subsidiary or branch. We manage the Indian entity\'s full accounting stack; from Tally/QuickBooks bookkeeping to transfer pricing records, FEMA reporting and statutory audit; so your Indian team stays compliant without distracting your HQ finance team.',
     tags: ['Indian Subsidiary Accounting', 'GAAP to Ind AS Conversion', 'Consolidated Reporting', 'Statutory Audit Readiness'],
   },
   {
@@ -46,8 +46,8 @@ const audiences = [
   {
     icon: 'building',
     title: 'NRI-Owned Indian Businesses',
-    desc: 'NRIs managing Indian businesses remotely; from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, GST, TDS, payroll, and monthly MIS so you always have visibility without being in India.',
-    tags: ['Remote Accounting', 'GST & TDS Compliance', 'Monthly MIS Reports', 'NRI FEMA Compliance'],
+    desc: 'NRIs managing Indian businesses remotely; from manufacturing, trading, or real estate to family-owned enterprises. We act as your on-ground financial eyes: handling day-to-day accounting, vendor payments, FEMA and repatriation paperwork, and monthly MIS so you always have visibility without being in India.',
+    tags: ['Remote Accounting', 'Monthly MIS Reports', 'NRI FEMA Compliance', 'Repatriation Planning'],
   },
 ]
 
@@ -64,13 +64,13 @@ const services = [
   },
   {
     icon: 'users',
-    title: 'Payroll Processing',
-    desc: 'Monthly payroll computation, salary slips, PF/ESI/PT compliance, Form 16 generation, TDS on salaries (Section 192), and payroll reconciliation for Indian employees.',
+    title: 'Transfer Pricing Support',
+    desc: 'Intercompany invoicing, cost-plus mark-ups and the year-end records your Form 3CEB and Local File rely on, kept in step with the parent group.',
   },
   {
     icon: 'document',
-    title: 'GST & TDS Compliance',
-    desc: 'Monthly GSTR-1 and GSTR-3B filing, input tax credit reconciliation, TDS deduction and quarterly TDS returns (26Q, 27Q), and advance tax computations.',
+    title: 'FEMA & Parent Reporting',
+    desc: 'FC-GPR and the annual FLA return to RBI, TDS on payments to the foreign parent (Form 27Q), and group reporting packs in the parent\'s format.',
   },
   {
     icon: 'landmark',
@@ -99,7 +99,7 @@ const faqs = [
   },
   {
     q: 'Can you manage accounting for a UK company\'s India subsidiary?',
-    a: 'Yes. This is one of our most common engagements. We handle the Indian subsidiary\'s complete accounting and compliance (Tally bookkeeping, GST, TDS, payroll, ROC annual returns) and also prepare a UK GAAP-aligned monthly report and intercompany recharge schedules for the UK parent\'s consolidation. We liaise directly with the UK parent\'s finance team or accountant.',
+    a: 'Yes. This is one of our most common engagements. We handle the Indian subsidiary\'s complete accounting and compliance (Tally bookkeeping, transfer pricing, FEMA, ROC annual returns) and also prepare a UK GAAP-aligned monthly report and intercompany recharge schedules for the UK parent\'s consolidation. We liaise directly with the UK parent\'s finance team or accountant.',
   },
   {
     q: 'Do you provide outsourced CFO services as part of offshore accounting?',
@@ -119,7 +119,7 @@ const faqLd = buildFaqLd(faqs)
 
 const serviceLd = buildServiceLd({
   name: 'Offshore Accounting & Outsourced Bookkeeping; Agrawal Khandelwal & Associates LLP',
-  description: 'Offshore accounting services from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, payroll, GST, and statutory compliance.',
+  description: 'Offshore accounting services from India for foreign companies, CA firms, and NRI businesses. Full-cycle bookkeeping, MIS, transfer pricing and statutory compliance.',
   url: 'https://agrawalkhandelwal.com/offshore-accounting',
   areaServed: [
     { '@type': 'Country', name: 'India' },
@@ -130,7 +130,7 @@ const serviceLd = buildServiceLd({
   ],
   serviceType: [
     'Offshore Accounting', 'Outsourced Bookkeeping', 'MIS Reporting',
-    'Payroll Processing', 'GST Compliance', 'Statutory Audit Readiness',
+    'Transfer Pricing Support', 'FEMA Compliance', 'Statutory Audit Readiness',
     'GAAP Conversion', 'Virtual CFO Services',
   ],
 })
@@ -277,7 +277,7 @@ export default function OffshoreAccounting() {
                 Offshore bookkeepers in India, supervised by qualified CAs
               </h3>
               <p style={{ marginBottom: '1.5rem' }}>
-                The common worry with offshore bookkeeping is quality control; that work goes out of sight and errors surface only at year end. We solve this the way a proper CA firm should: every offshore bookkeeper on your account works under partner-level review. Day-to-day recording, bank reconciliation, and ledger maintenance are handled by trained accountants, while an ICAI-qualified Chartered Accountant signs off on the monthly close, the GST and TDS positions, and the management accounts before they reach you. You get the cost of an offshore bookkeeper with the assurance of a qualified firm standing behind the numbers.
+                The common worry with offshore bookkeeping is quality control; that work goes out of sight and errors surface only at year end. We solve this the way a proper CA firm should: every offshore bookkeeper on your account works under partner-level review. Day-to-day recording, bank reconciliation, and ledger maintenance are handled by trained accountants, while an ICAI-qualified Chartered Accountant signs off on the monthly close, the transfer pricing and FEMA positions, and the management accounts before they reach you. You get the cost of an offshore bookkeeper with the assurance of a qualified firm standing behind the numbers.
               </p>
 
               <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)', margin: '2rem 0 0.75rem' }}>

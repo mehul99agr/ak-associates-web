@@ -160,7 +160,7 @@ export default function TPDocumentationChecklist() {
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB: Due Date, Process &amp; Penalties</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/master-file-local-file-cbcr-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Master File vs Local File vs CbCR</Link></li>
-                  <li style={{ marginBottom: 0 }}><Link href="/blog/new-income-tax-act-rules-2025" style={{ color: 'var(--primary)', fontWeight: 600 }}>New Income Tax Act 2025: Simplified Guide</Link></li>
+                  <li style={{ marginBottom: 0 }}><Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>New Income Tax Act 2025: Simplified Guide</Link></li>
                 </ul>
               </div>
 

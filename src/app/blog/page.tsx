@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'international tax insights India', 'transfer pricing India blog',
     'UAE corporate tax news', 'startup compliance India',
     'DTAA India guide', 'NRI taxation India',
-    'GST compliance updates', 'CA insights India',
+    'NRI tax guides', 'transfer pricing India',
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog' },
   openGraph: {
@@ -36,7 +36,7 @@ const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Tax Insights & Advisory; Blog Posts',
-  description: 'Expert analysis on International Tax, GST, Transfer Pricing, UAE Corporate Tax, startup compliance, and NRI taxation from Agrawal Khandelwal & Associates LLP.',
+  description: 'Guides on NRI taxation, transfer pricing, DTAA, FEMA, UAE Corporate Tax, US entities and company compliance from Agrawal Khandelwal & Associates LLP.',
   url: 'https://agrawalkhandelwal.com/blog',
   itemListElement: posts.map((post, i) => ({
     '@type': 'ListItem',

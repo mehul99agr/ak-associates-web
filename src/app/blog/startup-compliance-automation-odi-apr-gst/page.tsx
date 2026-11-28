@@ -8,8 +8,8 @@ import FaqSection from '../_components/FaqSection'
 import { OG_IMAGES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Startup Compliance Automation: RBI ODI, APR, TP & GST' },
-  description: 'How India-linked startups organise RBI ODI reporting, APR filing, TP documentation and GST workflows, and where a virtual CFO or offshore team fits.',
+  title: { absolute: 'Startup Compliance Automation: RBI ODI, APR & TP' },
+  description: 'How India-linked startups organise RBI ODI reporting, APR filing, and TP documentation, and where a virtual CFO or offshore team fits.',
   keywords: [
     'RBI ODI reporting automation', 'APR filing India startup', 'automate transfer pricing documentation',
     'GST filing workflow startups', 'fractional CFO services India', 'dedicated offshore accountant',
@@ -18,21 +18,21 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst' },
   openGraph: {
-    title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST',
-    description: 'Organising RBI ODI reporting, APR filing, transfer pricing documentation, and GST workflows for growing startups with an overseas structure.',
+    title: 'Startup Compliance Automation: RBI ODI, APR & TP',
+    description: 'Organising RBI ODI reporting, APR filing, and transfer pricing documentation for growing startups with an overseas structure.',
     url: 'https://agrawalkhandelwal.com/blog/startup-compliance-automation-odi-apr-gst',
     type: 'article',
     images: OG_IMAGES,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST',
-    description: 'RBI ODI reporting, APR filing, transfer pricing documentation, and GST workflow, organised for growing startups.',
+    title: 'Startup Compliance Automation: RBI ODI, APR & TP',
+    description: 'RBI ODI reporting, APR filing, and transfer pricing documentation, organised for growing startups.',
     images: OG_IMAGES,
   },
 }
 
-const breadcrumbLd = buildBlogBreadcrumbLd('Startup Compliance Automation: RBI ODI, APR, TP & GST', 'startup-compliance-automation-odi-apr-gst')
+const breadcrumbLd = buildBlogBreadcrumbLd('Startup Compliance Automation: RBI ODI, APR & TP', 'startup-compliance-automation-odi-apr-gst')
 
 const articleLd = buildArticleLd({
   headline: 'Startup Compliance Automation: RBI ODI, APR, Transfer Pricing & GST',
@@ -133,7 +133,7 @@ export default function StartupComplianceAutomationBlog() {
                   <li><strong>Match input tax credit against GSTR-2B</strong> before claiming it; this is the step most startups skip until the annual GSTR-9 review, by which point mismatches with vendors who filed late or incorrectly are much harder to trace back and fix.</li>
                   <li><strong>File GSTR-3B</strong> (summary return, tax payment) by the 20th.</li>
                 </ol>
-                <p>Building the ITC reconciliation into the monthly cycle, rather than treating it as an annual clean-up task, is the single change that most improves GST accuracy for a growing startup. See our guide on <Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration and first return filing for startups</Link> for the registration thresholds and initial filing process, and our guide on <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>zero-rated vs exempt exports</Link> if the startup bills overseas customers.</p>
+                <p>Building the ITC reconciliation into the monthly cycle, rather than treating it as an annual clean-up task, is the single change that most improves GST accuracy for a growing startup. See our guide on <Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST registration and first return filing for startups</Link> for the registration thresholds and initial filing process, and our guide on <Link href="/offshore-accounting" style={{ color: 'var(--primary)', fontWeight: 600 }}>zero-rated vs exempt exports</Link> if the startup bills overseas customers.</p>
 
                 <h2>Where a Virtual CFO or Offshore Accounting Team Fits In</h2>
                 <p>None of the above requires inventing a number or a client outcome to explain; the value is structural, not a claim about results. A <strong>virtual CFO</strong> engagement typically owns the compliance calendar across all of these filings at once: flagging an APR that is 60 days out with financials not yet received, checking that the transfer pricing intercompany log has actually been updated that quarter, and reviewing GST reconciliation exceptions before they compound. Because ODI/APR, transfer pricing, and GST run on different portals and different calendars, the risk is usually not that any single filing is hard, it is that attention on one lets another slip. See our guide on <Link href="/blog/strategic-value-virtual-cfo-services" style={{ color: 'var(--primary)', fontWeight: 600 }}>when a business needs a Virtual CFO</Link> for the fuller picture of what that role covers and costs.</p>
@@ -160,7 +160,7 @@ export default function StartupComplianceAutomationBlog() {
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/form-3ceb-transfer-pricing-audit-report" style={{ color: 'var(--primary)', fontWeight: 600 }}>Form 3CEB: Due Date, Filing Process & Penalties</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/master-file-local-file-cbcr-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>Master File vs Local File vs CbCR</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/fema-compliance-foreign-investment-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>FEMA Compliance for Startups Raising Foreign Investment</Link></li>
-                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/gst-registration-startups-first-return" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Registration for Startups</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST Registration for Startups</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/blog/strategic-value-virtual-cfo-services" style={{ color: 'var(--primary)', fontWeight: 600 }}>When Your Business Needs a Virtual CFO</Link></li>
                 </ul>
               </div>

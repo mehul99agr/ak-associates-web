@@ -262,7 +262,7 @@ export default function CompanyIncorporationPage() {
                 'Name availability check & RUN filing',
                 'SPICe+ form preparation & filing',
                 'MOA & AOA drafting (CA-reviewed)',
-                'PAN, TAN & GSTIN application',
+                'PAN & TAN application',
                 'Government fee and stamp duty payment tracking',
                 'Certificate of Incorporation handover',
                 'Post-incorporation compliance calendar',

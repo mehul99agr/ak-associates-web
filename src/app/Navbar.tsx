@@ -7,11 +7,11 @@ import { BOOKING_LINK } from '@/lib/constants'
 
 const serviceGroups = [
   {
-    heading: 'Taxation & Regulatory',
+    heading: 'NRI & International Tax',
     items: [
-      { href: '/transfer-pricing', label: 'International Tax & Transfer Pricing' },
-      { href: '/services#taxation', label: 'Tax Planning, GST & Litigation' },
       { href: '/nri-tax-advisory', label: 'NRI Tax Advisory', accent: true },
+      { href: '/transfer-pricing', label: 'Transfer Pricing', accent: true },
+      { href: '/services#international', label: 'International Tax & DTAA' },
     ],
   },
   {
@@ -23,11 +23,11 @@ const serviceGroups = [
     ],
   },
   {
-    heading: 'Strategic Advisory',
+    heading: 'Companies & Startups',
     items: [
       { href: '/company-incorporation', label: 'Company Incorporation' },
-      { href: '/startups', label: 'Startups & Virtual CFO', accent: true },
-      { href: '/services#audit', label: 'Audit & Assurance' },
+      { href: '/startups', label: 'Startups & Foreign Investment' },
+      { href: '/services#company', label: 'ROC Compliance & Audit' },
     ],
   },
   {

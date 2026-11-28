@@ -46,8 +46,8 @@ const earlyStageServices = [
   },
   {
     icon: 'document',
-    title: 'GST & Compliance Setup',
-    desc: 'GST registration, first returns setup, director KYC, ROC compliance calendar; everything you need to stay clean from day one so VCs see zero red flags in due diligence.',
+    title: 'Compliance Setup',
+    desc: 'Director KYC, statutory registers, auditor appointment, ROC compliance calendar; everything you need to stay clean from day one so VCs see zero red flags in due diligence.',
   },
 ]
 
@@ -79,7 +79,7 @@ const growthStageServices = [
   {
     icon: 'search',
     title: 'Pre-Fundraise Due Diligence Clean-up',
-    desc: 'Most startups have compliance gaps. Before your VC DD, we audit and fix: missing annual returns, pending director KYC, GST mismatches, and FEMA reporting gaps.',
+    desc: 'Most startups have compliance gaps. Before your VC DD, we audit and fix: missing annual returns, pending director KYC, ESOP paperwork, and FEMA reporting gaps.',
   },
   {
     icon: 'award',
@@ -209,7 +209,7 @@ export default function StartupsPage() {
               <div className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
                 <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>Seed-Round Readiness for AI Startup</h3>
                 <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
-                  Acted as Virtual CFO for Vitt AI from pre-seed: handled DPIIT registration, seed-round financial modeling, and complete ROC/GST compliance; allowing the founders to focus entirely on product development while staying investor-ready.
+                  Acted as Virtual CFO for Vitt AI from pre-seed: handled DPIIT registration, seed-round financial modeling, and complete ROC and FEMA compliance; allowing the founders to focus entirely on product development while staying investor-ready.
                 </p>
                 <div style={{ borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                   <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-main)' }}>Nilay Kulkarni</p>
@@ -307,7 +307,7 @@ export default function StartupsPage() {
                 },
                 {
                   city: 'Nashik',
-                  desc: 'Nashik\'s growing industrial and agri-tech ecosystem has a strong pipeline of first-generation founders. We handle everything from basic GST/compliance setup to DPIIT registration and startup structuring from our Nashik office.',
+                  desc: 'Nashik\'s growing industrial and agri-tech ecosystem has a strong pipeline of first-generation founders. We handle everything from incorporation and compliance setup to DPIIT registration and startup structuring from our Nashik office.',
                 },
               ].map((item, i) => (
                 <div key={i} className="card">
@@ -379,14 +379,13 @@ export default function StartupsPage() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
               {[
-                { title: 'Startup Compliance Automation: RBI ODI, APR, TP & GST', link: '/blog/startup-compliance-automation-odi-apr-gst' },
+                { title: 'Startup Compliance Automation: RBI ODI, APR & TP', link: '/blog/startup-compliance-automation-odi-apr-gst' },
                 { title: 'DPIIT Registration: Eligibility, Process & 80-IAC Tax Benefit', link: '/blog/dpiit-registration-startups-india-80iac' },
                 { title: 'FEMA Compliance When Raising Foreign Funding', link: '/blog/fema-compliance-foreign-investment-startups' },
                 { title: 'Foreign Subsidiary Registration: FDI Route & Compliance', link: '/blog/foreign-subsidiary-registration-india-fdi' },
                 { title: 'How to Incorporate a Company in India: Pvt Ltd vs LLP vs OPC', link: '/blog/company-incorporation-india-guide' },
                 { title: 'Post-Incorporation Checklist: First 30 Days', link: '/blog/post-incorporation-checklist-first-30-days' },
                 { title: 'Startup Compliance Calendar: Year 1 to Year 3', link: '/blog/startup-compliance-calendar-year-1-3' },
-                { title: 'GST on Exports: Zero-Rated vs Exempt', link: '/blog/gst-on-exports-zero-rated-vs-exempt-india' },
                 { title: 'Essential Compliance for Indian Startups', link: '/blog/essential-compliance-indian-startups' },
                 { title: 'The Strategic Value of Virtual CFO Services', link: '/blog/strategic-value-virtual-cfo-services' },
                 { title: 'ESOP Structuring for Indian Startups', link: '/blog/esop-structuring-indian-startups' },
@@ -394,7 +393,6 @@ export default function StartupsPage() {
                 { title: 'Startup Valuation Methods in India', link: '/blog/startup-valuation-methods-india' },
                 { title: 'Convertible Notes vs Equity (FEMA)', link: '/blog/convertible-notes-vs-equity-fema-startups' },
                 { title: 'Founder Agreement Essentials', link: '/blog/founder-agreement-essentials-indian-startups' },
-                { title: 'GST Registration for Startups', link: '/blog/gst-registration-startups-first-return' },
                 { title: 'Due Diligence Checklist for Fundraising', link: '/blog/due-diligence-checklist-startup-fundraising' },
               ].map((item, i) => (
                 <Link key={i} href={item.link} className="card" style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>

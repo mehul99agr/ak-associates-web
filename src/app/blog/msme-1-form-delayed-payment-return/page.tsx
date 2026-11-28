@@ -107,11 +107,11 @@ export default function Post() {
               <p>The larger cost is usually interest. Under the MSMED Act, a buyer who delays payment owes compound interest at three times the bank rate notified by the RBI, and that interest is not deductible. A supplier can also complain through the MSME Samadhaan portal.</p>
 
               <h2>The Tax Link: Section 43B(h)</h2>
-              <p>For income tax, a payment to a micro or small enterprise that is outstanding beyond the permitted 15 or 45 days at year end is deductible only when actually paid. This can raise taxable income in the year of default. We explain it in full in <Link href="/blog/section-43bh-msme-payment-disallowance-buyers" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 43B(h) and MSME payment disallowance</Link>. MSME-1 and Section 43B(h) rest on the same 45-day idea, so one supplier ledger can serve both.</p>
+              <p>For income tax, a payment to a micro or small enterprise that is outstanding beyond the permitted 15 or 45 days at year end is deductible only when actually paid. This can raise taxable income in the year of default. We explain it in full in <Link href="/blog" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 43B(h) and MSME payment disallowance</Link>. MSME-1 and Section 43B(h) rest on the same 45-day idea, so one supplier ledger can serve both.</p>
 
               <h2>A Simple Process for a Startup</h2>
               <ol>
-                <li>Ask every vendor for their Udyam registration and note whether they are micro, small or medium. See our <Link href="/blog/udyam-registration-for-msmes-process-benefits-and-eligibility" style={{ color: 'var(--primary)', fontWeight: 600 }}>Udyam registration guide</Link>.</li>
+                <li>Ask every vendor for their Udyam registration and note whether they are micro, small or medium. See our <Link href="/blog/startup-india-registration-vs-dpiit-recognition-what-is-the-difference" style={{ color: 'var(--primary)', fontWeight: 600 }}>Udyam registration guide</Link>.</li>
                 <li>Put the 45-day limit in your vendor agreements and the payables calendar.</li>
                 <li>Two weeks before each half-year end, run an ageing of payables to micro and small suppliers.</li>
                 <li>If any dues are past 45 days at the end of the half-year and not paid, file MSME-1 with the reasons.</li>
@@ -137,9 +137,9 @@ export default function Post() {
             <div style={{ marginTop: '3rem', padding: '1.5rem', background: 'var(--bg-main)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '1rem' }}>Related Guides</h3>
               <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/section-43bh-msme-payment-disallowance-buyers" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 43B(h) MSME Payment Disallowance</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog" style={{ color: 'var(--primary)', fontWeight: 600 }}>Section 43B(h) MSME Payment Disallowance</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/startup-compliance-calendar-year-1-3" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Compliance Calendar, Year 1 to 3</Link></li>
-                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/udyam-registration-for-msmes-process-benefits-and-eligibility" style={{ color: 'var(--primary)', fontWeight: 600 }}>Udyam Registration Guide</Link></li>
+                <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/startup-india-registration-vs-dpiit-recognition-what-is-the-difference" style={{ color: 'var(--primary)', fontWeight: 600 }}>Udyam Registration Guide</Link></li>
                 <li style={{ marginBottom: 0 }}><Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>Startup Advisory Services</Link></li>
               </ul>
             </div>

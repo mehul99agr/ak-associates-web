@@ -153,7 +153,7 @@ export default function StatutoryAuditPrivateLimitedBlog() {
                 <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/annual-roc-filing-aoc4-mgt7-dir3-kyc" style={{ color: 'var(--primary)', fontWeight: 600 }}>Annual ROC Filing: AOC-4, MGT-7 &amp; DIR-3 KYC</Link></li>
                   <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/post-incorporation-checklist-first-30-days" style={{ color: 'var(--primary)', fontWeight: 600 }}>Post-Incorporation Checklist: First 30 Days</Link></li>
-                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/tax-audit-vs-statutory-audit-vs-gst-audit" style={{ color: 'var(--primary)', fontWeight: 600 }}>Tax Audit vs Statutory Audit vs GST Audit</Link></li>
+                  <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/statutory-audit-requirements-for-private-limited-companies" style={{ color: 'var(--primary)', fontWeight: 600 }}>Tax Audit vs Statutory Audit vs GST Audit</Link></li>
                   <li style={{ marginBottom: 0 }}><Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>Our Audit &amp; Assurance Services</Link></li>
                 </ul>
               </div>

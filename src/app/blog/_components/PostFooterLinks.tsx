@@ -5,33 +5,16 @@ type Source = { href: string; label: string }
 type Service = { href: string; label: string }
 
 const INCOME_TAX: Source = { href: 'https://www.incometax.gov.in', label: 'Income Tax Department e-filing portal' }
-const GST_PORTAL: Source = { href: 'https://www.gst.gov.in', label: 'GST common portal' }
 const CBIC: Source = { href: 'https://cbic-gst.gov.in', label: 'CBIC GST notifications' }
 const MCA: Source = { href: 'https://www.mca.gov.in', label: 'Ministry of Corporate Affairs' }
 const RBI: Source = { href: 'https://www.rbi.org.in', label: 'Reserve Bank of India' }
 const STARTUP_INDIA: Source = { href: 'https://www.startupindia.gov.in', label: 'Startup India' }
-const UDYAM: Source = { href: 'https://udyamregistration.gov.in', label: 'Udyam Registration portal' }
 const EPFO: Source = { href: 'https://www.epfindia.gov.in', label: 'EPFO' }
 const ESIC: Source = { href: 'https://www.esic.gov.in', label: 'ESIC' }
 
 // Blog categories that are too small to fill a related list on their own are
 // folded into a wider topic group.
 const GROUPS: { categories: string[]; service: Service; sources: Source[] }[] = [
-  {
-    categories: ['Income Tax', 'Tax Planning', 'Tax Reform', 'Tax Compliance'],
-    service: { href: '/services#taxation', label: 'income tax and compliance services' },
-    sources: [INCOME_TAX],
-  },
-  {
-    categories: ['Tax Audit'],
-    service: { href: '/services#audit', label: 'audit and tax advisory services' },
-    sources: [INCOME_TAX],
-  },
-  {
-    categories: ['GST'],
-    service: { href: '/services#taxation', label: 'GST registration and filing services' },
-    sources: [GST_PORTAL, CBIC],
-  },
   {
     categories: ['NRI Taxation'],
     service: { href: '/nri-tax-advisory', label: 'NRI tax advisory' },
@@ -48,7 +31,7 @@ const GROUPS: { categories: string[]; service: Service; sources: Source[] }[] = 
     sources: [INCOME_TAX],
   },
   {
-    categories: ['Startup Advisory', 'Startup Compliance', 'Advisory'],
+    categories: ['Startup Advisory', 'Startup Compliance'],
     service: { href: '/startups', label: 'startup advisory' },
     sources: [STARTUP_INDIA, MCA],
   },
@@ -56,21 +39,6 @@ const GROUPS: { categories: string[]; service: Service; sources: Source[] }[] = 
     categories: ['Company Incorporation', 'Corporate Law', 'Corporate Tax & Compliance'],
     service: { href: '/company-incorporation', label: 'company incorporation and compliance services' },
     sources: [MCA, INCOME_TAX],
-  },
-  {
-    categories: ['MSME & Registrations'],
-    service: { href: '/services', label: 'registration and compliance services' },
-    sources: [UDYAM, MCA],
-  },
-  {
-    categories: ['Payroll & Labour Compliance'],
-    service: { href: '/services', label: 'payroll and compliance services' },
-    sources: [EPFO, ESIC],
-  },
-  {
-    categories: ['Trusts & NGOs'],
-    service: { href: '/services', label: 'trust and NGO compliance services' },
-    sources: [INCOME_TAX],
   },
 ]
 

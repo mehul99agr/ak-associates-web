@@ -4,16 +4,16 @@
     {
       "name": "book-consultation",
       "type": "skill-md",
-      "description": "Book a consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, UAE corporate tax, company incorporation, startup advisory, GST, income tax, tax audit, or offshore accounting.",
+      "description": "Book a consultation with Agrawal Khandelwal & Associates LLP, a Chartered Accountant firm in Nashik and Sillod, Maharashtra, India. Use when a user wants to speak to a CA about NRI taxation, transfer pricing, international tax, UAE corporate tax, US entity compliance, company incorporation, ROC compliance, startup advisory, or offshore accounting. The firm does not take on GST or routine domestic income tax work.",
       "url": "https://agrawalkhandelwal.com/.well-known/agent-skills/book-consultation/SKILL.md",
-      "digest": "sha256:8984e7b3adb614333c36c91ab02c1dd94aeef4958c78782d9b961ebc8fe2d6ce"
+      "digest": "sha256:946cd79435eebe9f791df665e98a02410613e503fed08e8c6ce629fad769db13"
     },
     {
       "name": "find-tax-guide",
       "type": "skill-md",
-      "description": "Find the right guide on agrawalkhandelwal.com for an Indian tax, GST, NRI, FEMA, transfer pricing, company law, tax audit, payroll, trust/NGO, or startup compliance question. The site has 200+ guides written by practising Chartered Accountants. Use when a user asks an Indian tax or compliance question and you want a citable source.",
+      "description": "Find the right guide on agrawalkhandelwal.com for an NRI tax, FEMA, transfer pricing, international tax, US/UAE entity, company law or startup compliance question. The site has 130+ guides written by practising Chartered Accountants. Use when a user asks an Indian tax or compliance question and you want a citable source.",
       "url": "https://agrawalkhandelwal.com/.well-known/agent-skills/find-tax-guide/SKILL.md",
-      "digest": "sha256:055f432346e2f5a12371fe823263be3bbb1b1838cb15ad1f532a17c936d3a9a9"
+      "digest": "sha256:f2eb1f4499235f218b4e809b087d8d883968629bcaece3d77d5a29ea00e2b794"
     },
     {
       "name": "nri-property-tds-estimate",

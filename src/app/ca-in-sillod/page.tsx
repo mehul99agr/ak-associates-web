@@ -6,12 +6,12 @@ import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'CA in Sillod',
-  description: 'CA in Sillod near Chhatrapati Sambhajinagar (Aurangabad): GST filing, income tax, audit, company incorporation and tax planning. Email us or book online.',
+  title: 'CA in Sillod for NRIs & Companies',
+  description: 'Chartered Accountants in Sillod near Chhatrapati Sambhajinagar (Aurangabad): NRI tax and property sales, company and LLP incorporation, ROC compliance and statutory audit.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-sillod' },
   openGraph: {
-    title: 'CA in Sillod | Chartered Accountant Sillod | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Sillod. GST, income tax, audit, company incorporation, and tax advisory. Located at Tilak Nagar, Sillod - 431112. Book a consultation online.',
+    title: 'CA in Sillod for NRIs & Companies | Agrawal Khandelwal & Associates LLP',
+    description: 'NRI tax and property sales, company incorporation, ROC compliance and statutory audit. Tilak Nagar, Sillod 431112.',
     url: 'https://agrawalkhandelwal.com/ca-in-sillod',
     images: OG_IMAGES,
   },
@@ -27,73 +27,47 @@ const bookingLink = `${BOOKING_LINK}?partner=rupesh`
 
 const services = [
   {
-    icon: 'document',
-    title: 'GST Registration & Filing',
-    desc: 'GST registration, GSTR-1, GSTR-3B, annual return filing, and GST audit for businesses and traders in Sillod and surrounding areas.',
-  },
-  {
-    icon: 'rupee',
-    title: 'Income Tax Return (ITR) Filing',
-    desc: 'ITR filing for individuals, salaried employees, business owners, and HUFs in Sillod. Accurate filing with maximum deductions.',
+    icon: 'globe',
+    title: 'NRI Tax & Property Sales',
+    desc: 'For NRIs with land, a house or income in Sillod and the Aurangabad district: ITR filing, capital gains, lower TDS certificates and Form 145/146 for repatriation.',
   },
   {
     icon: 'building',
     title: 'Company & LLP Incorporation',
-    desc: 'Company registration, LLP formation, and shop act registration for new businesses starting in Sillod, Maharashtra.',
+    desc: 'Private limited company, LLP and OPC registration for new ventures in Sillod and Chhatrapati Sambhajinagar.',
   },
   {
     icon: 'shield',
-    title: 'Audit & Assurance',
-    desc: 'Statutory audits, tax audits under Section 44AB, internal audits, and stock audits for businesses in Sillod.',
-  },
-  {
-    icon: 'analytics',
-    title: 'Tax Planning & Advisory',
-    desc: 'Strategic tax planning for individuals and businesses in Sillod to minimise tax liability within the framework of the Income Tax Act.',
+    title: 'Statutory & Internal Audit',
+    desc: 'Statutory audits under the Companies Act and internal audits, led by CA Rupesh Khandelwal (ex-Deloitte).',
   },
   {
     icon: 'scroll',
-    title: 'Accounting & Bookkeeping',
-    desc: 'Monthly accounting, tally bookkeeping, balance sheet preparation, and financial statement preparation for Sillod businesses.',
+    title: 'ROC Compliance',
+    desc: 'AOC-4, MGT-7, DIR-3 KYC, INC-20A and board compliance for private limited companies and LLPs.',
   },
 ]
 
 const faqs = [
   {
     q: 'Where is your CA office in Sillod?',
-    a: 'Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112, Maharashtra. We are open Monday to Saturday, 11 AM to 7:30 PM. You can email us or book a call online for an appointment.',
+    a: 'Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod 431112, Maharashtra. We are open Monday to Saturday, 11 AM to 7:30 PM. You can call, WhatsApp, email or book a call online.',
   },
   {
-    q: 'What CA services are available in Sillod?',
-    a: 'Our Sillod office provides GST registration and filing, income tax return filing, company/LLP incorporation, statutory and tax audits, accounting and bookkeeping, and general tax advisory services for businesses and individuals in Sillod.',
+    q: 'What services does the Sillod office provide?',
+    a: 'NRI taxation and property sales, company and LLP incorporation, ROC compliance and statutory and internal audit. We do not take on GST or routine domestic income tax filing.',
   },
   {
-    q: 'Can you file my ITR from Sillod?',
-    a: 'Yes. CA Rupesh Khandelwal handles income tax return filing for salaried individuals, business owners, professionals, and HUFs in Sillod and the surrounding Chhatrapati Sambhajinagar (Aurangabad) district.',
-  },
-  {
-    q: 'How do I register my business in Sillod?',
-    a: 'We handle complete business registration from Sillod; including shop act license, GST registration, company or LLP incorporation, and MSME (Udyam) registration. Email rupesh@agrawalkhandelwal.com or book a consultation on our website to get started.',
-  },
-  {
-    q: 'Is Agrawal Khandelwal & Associates LLP available for clients in Aurangabad district from Sillod?',
-    a: 'Yes. Our Sillod office serves clients across the Chhatrapati Sambhajinagar (Aurangabad) district including Sillod tehsil, Kannad, Phulambri, and surrounding areas. For complex matters like international tax, our Nashik partners can assist as well.',
-  },
-  {
-    q: 'What is the phone number of your CA office in Sillod?',
-    a: 'You can reach our Sillod office (CA Rupesh Khandelwal) at rupesh@agrawalkhandelwal.com, or book a consultation on our website. For international tax queries, email our Nashik office at mehul@agrawalkhandelwal.com.',
-  },
-  {
-    q: 'Is there a CA firm near Sillod for tax filing and GST compliance?',
-    a: 'Yes. Agrawal Khandelwal & Associates LLP operates a full-time office in Sillod (Near Datta Mandir, Tilak Nagar) handling GST registration and filing, income tax return filing, and ongoing compliance for individuals and businesses in and around Sillod; no need to travel to Chhatrapati Sambhajinagar (Aurangabad) for routine tax work.',
+    q: 'Can you help an NRI sell land or a house in Sillod?',
+    a: 'Yes. We work out the capital gains before the sale, apply for a lower TDS certificate (Form 128, earlier Form 13) so the buyer deducts TDS on the actual tax, file the NRI return and prepare Form 145/146 so the money can be sent abroad. The NRI side is handled by CA Mehul Agrawal, remotely if needed.',
   },
   {
     q: 'Do you serve clients in Chhatrapati Sambhajinagar (Aurangabad) from the Sillod office?',
-    a: 'Yes. While our office is based in Sillod, we regularly serve clients across Chhatrapati Sambhajinagar (Aurangabad) district (including Kannad, Phulambri, and Jalna) for GST filing, ITR filing, audits, and company registration. Consultations can be booked online, arranged by email, or held in person at the Sillod office.',
+    a: 'Yes. We serve clients across the Chhatrapati Sambhajinagar (Aurangabad) district, including Kannad, Phulambri and Jalna, for NRI matters, incorporation, ROC compliance and audit.',
   },
   {
-    q: 'What documents are required for GST registration in Sillod?',
-    a: 'For GST registration in Sillod you need: PAN card, Aadhaar card, a passport-size photo, proof of business address (electricity bill or rent agreement), bank account statement, and business registration documents where applicable. Our Sillod office guides you through the full process from document collection to certificate issuance.',
+    q: 'What is the phone number of your CA office in Sillod?',
+    a: 'Call or WhatsApp CA Rupesh Khandelwal at +91 95955 85953, or email rupesh@agrawalkhandelwal.com. For NRI and international tax queries, contact CA Mehul Agrawal at +91 95275 33506.',
   },
 ]
 
@@ -103,7 +77,7 @@ const sillodLocalBusiness = {
   '@id': 'https://agrawalkhandelwal.com/#sillod-office',
   name: 'Agrawal Khandelwal & Associates LLP; Sillod',
   alternateName: ['Agrawal Khandelwal & Associates LLP Sillod', 'CA in Sillod', 'Agrawal Khandelwal & Associates LLP CA Sillod'],
-  description: 'Chartered Accountant firm in Sillod providing GST filing, income tax returns, company incorporation, audit, and tax advisory services to businesses and individuals in Sillod, Aurangabad district.',
+  description: 'Chartered Accountant firm in Sillod providing NRI tax and property sale advisory, company and LLP incorporation, ROC compliance and statutory audit to clients in Sillod, Aurangabad district.',
   url: 'https://agrawalkhandelwal.com/ca-in-sillod',
   email: OFFICES.sillod.email,
   telephone: OFFICES.sillod.phone,
@@ -144,25 +118,21 @@ const sillodLocalBusiness = {
     { '@type': 'State', name: 'Maharashtra' },
   ],
   serviceType: [
-    'GST Registration', 'GST Return Filing', 'Income Tax Return Filing',
-    'Tax Planning', 'Statutory Audit', 'Tax Audit', 'Internal Audit',
-    'Company Incorporation', 'LLP Registration', 'Accounting',
-    'Bookkeeping', 'Financial Statement Preparation',
+    'NRI Taxation', 'Company Incorporation', 'LLP Registration',
+    'Statutory Audit', 'Internal Audit', 'ROC Compliance',
   ],
   knowsAbout: [
-    'Goods and Services Tax', 'Income Tax Return Filing', 'Tax Audit under Section 44AB',
-    'Company Incorporation', 'LLP Registration', 'Shop Act Registration',
-    'MSME (Udyam) Registration', 'Accounting and Bookkeeping',
+    'NRI Taxation', 'Lower TDS Certificate', 'Company Incorporation',
+    'LLP Registration', 'Statutory Audit', 'ROC Compliance',
   ],
   makesOffer: {
     '@type': 'OfferCatalog',
-    name: 'CA Services in Sillod',
+    name: 'Services in Sillod',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GST Registration and Return Filing' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing and Tax Planning' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tax Audit and Statutory Audit' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Tax and Property Sale Advisory' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company and LLP Incorporation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Accounting and Bookkeeping' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Statutory and Internal Audit' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ROC Compliance' } },
     ],
   },
   sameAs: ['https://www.linkedin.com/company/agrawal-khandelwal-associates-llp/'],
@@ -190,9 +160,9 @@ export default function CAInSillod() {
             <span>📍</span>
             <span>Sillod Office; Tilak Nagar, Sillod 431112</span>
           </div>
-          <h1>Chartered Accountant<br />in Sillod</h1>
+          <h1>Chartered Accountant <br />in Sillod</h1>
           <p>
-            Agrawal Khandelwal & Associates LLP brings professional CA services to Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district. We provide GST filing, income tax returns, company registration, audit, and tax advisory; handled by CA Rupesh Khandelwal from our Sillod office.
+            Agrawal Khandelwal & Associates LLP serves Sillod and the Chhatrapati Sambhajinagar (Aurangabad) district: NRI tax and property sales, company and LLP incorporation, ROC compliance and statutory audit.
           </p>
           <div className="hero-cta">
             <a href={bookingLink} className="btn btn-primary">
@@ -232,10 +202,10 @@ export default function CAInSillod() {
       <section className="section" id="services">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <span className="section-badge">CA Services in Sillod</span>
+            <span className="section-badge">Our Sillod Office</span>
             <h2 className="section-title">Services Available at Our Sillod Office</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
-              Professional CA services for businesses, traders, and individuals in Sillod and across Chhatrapati Sambhajinagar district.
+              For NRIs with roots in the district, and for companies and LLPs in Sillod and Chhatrapati Sambhajinagar.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
@@ -258,14 +228,14 @@ export default function CAInSillod() {
             <h2 className="section-title">Our Main Practice Areas in Sillod</h2>
           </div>
           <div className="blog-content" style={{ fontSize: '1.02rem', lineHeight: 1.85, color: 'var(--text-main)' }}>
-            <h3>GST Registration &amp; Compliance for Sillod Businesses</h3>
-            <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. Sillod is a market town for the surrounding agricultural and trading belt of Chhatrapati Sambhajinagar (Aurangabad) district, so many local traders, transporters, and small manufacturers cross these thresholds without realising it. Our Sillod office handles registration, monthly and quarterly GSTR-1 and GSTR-3B filing, annual GSTR-9 returns, input tax credit reconciliation, e-way bill setup, and replies to GST notices; all from the Tilak Nagar office, without needing to travel to Chhatrapati Sambhajinagar for routine compliance.</p>
+            <h3>NRI Property Sales in Sillod and the Aurangabad District</h3>
+            <p>Many families in Sillod and the district have members working abroad, with agricultural land, a plot or a house still in their name. When an NRI sells that property, the buyer has to deduct TDS on the sale, and the money can only go abroad after Form 145/146 and the bank&apos;s checks. We work out the capital gains before the sale, apply for a lower TDS certificate, file the NRI&apos;s return and handle the repatriation paperwork. Agricultural land has its own FEMA rules for NRIs; see our <Link href="/blog/nri-agricultural-land-india-fema-rules" style={{ color: 'var(--primary)', fontWeight: 600 }}>guide</Link>.</p>
 
-            <h3>Income Tax Filing &amp; Audit in Sillod</h3>
-            <p>CA Rupesh Khandelwal files income tax returns for salaried individuals, traders, shop owners, professionals, and HUFs based in Sillod and the wider tehsil. A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a year (or ₹10 crore where at least 95% of receipts and payments are digital), and once professional gross receipts cross ₹50 lakh; our office prepares and files Form 3CA/3CB with Form 3CD ahead of the deadline, alongside statutory and internal audits for local businesses.</p>
+            <h3>Company Incorporation and ROC Compliance</h3>
+            <p>We register private limited companies, LLPs and one person companies for new ventures in Sillod and Chhatrapati Sambhajinagar, from name reservation and DSC/DIN to the Certificate of Incorporation, and then keep them compliant: INC-20A, the first board meeting, auditor appointment and the annual AOC-4 and MGT-7 filings.</p>
 
-            <h3>Business Registration for New Ventures in Sillod</h3>
-            <p>New businesses starting in Sillod (whether a retail shop, a trading firm, or a small manufacturing unit) typically need shop act (Gumasta) registration, GST registration, MSME (Udyam) registration, and in some cases company or LLP incorporation. We handle this end to end from our Sillod office, so first-time business owners in the Sillod-Kannad-Phulambri belt do not need to make repeat trips to Chhatrapati Sambhajinagar for basic registrations.</p>
+            <h3>Statutory and Internal Audit</h3>
+            <p>CA Rupesh Khandelwal, who previously worked with Deloitte across the Automobiles, IT and Pharma sectors, leads statutory audits under the Companies Act and internal audits for companies in the district.</p>
           </div>
         </div>
       </section>
@@ -285,7 +255,7 @@ export default function CAInSillod() {
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h3>
               <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner; Sillod Office</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
-                CA Rupesh Khandelwal heads our Sillod office. With experience from leading firms including Deloitte, he brings expertise in domestic taxation, audits, and business consulting to Sillod-based businesses across industries including automobiles, IT, and pharma.
+                CA Rupesh Khandelwal heads our Sillod office. With experience from leading firms including Deloitte, he leads the firm&apos;s statutory and internal audits and company compliance for clients in Sillod and the Chhatrapati Sambhajinagar district.
               </p>
               <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
                 <Link href="/about#rupesh-khandelwal" style={{ color: 'var(--primary)', fontWeight: 600 }}>Full bio &amp; credentials for CA Rupesh Khandelwal &rarr;</Link>
@@ -293,10 +263,9 @@ export default function CAInSillod() {
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specialisations</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.75rem', fontSize: '0.87rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  <li style={{ color: 'var(--text-light)' }}>✓ Domestic Tax Planning</li>
-                  <li style={{ color: 'var(--text-light)' }}>✓ Statutory & Internal Audits</li>
+                                    <li style={{ color: 'var(--text-light)' }}>✓ Statutory & Internal Audits</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Business Consulting</li>
-                  <li style={{ color: 'var(--text-light)' }}>✓ GST Compliance</li>
+                  <li style={{ color: 'var(--text-light)' }}>✓ ROC & Company Law Compliance</li>
                 </ul>
               </div>
             </div>
@@ -320,9 +289,9 @@ export default function CAInSillod() {
               <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>DSC &amp; DIN Application Guide for Directors</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>The two prerequisites every director needs before incorporation.</p>
             </Link>
-            <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>GST on Exports: Zero-Rated vs Exempt</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>Which category your export supply falls under and why it matters.</p>
+            <Link href="/blog/nri-agricultural-land-india-fema-rules" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>NRIs and Agricultural Land</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>What FEMA allows an NRI to hold, inherit and sell.</p>
             </Link>
           </div>
         </div>
@@ -359,7 +328,7 @@ export default function CAInSillod() {
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Discuss your GST, tax, or audit needs in Sillod. Start with a free 15-minute intro call, or book 30 minutes of detailed advice. Calls are taken by CA Mehul Agrawal, and CA Rupesh Khandelwal handles your work at the Sillod office. The advice fee is adjusted against our fee if you engage us.
+                Discuss your NRI, incorporation or audit matter. Start with a free 15-minute intro call, or book 30 minutes of detailed advice. Calls are taken by CA Mehul Agrawal, and CA Rupesh Khandelwal handles your work at the Sillod office. The advice fee is adjusted against our fee if you engage us.
               </p>
               <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
                 Book a Call
@@ -398,7 +367,7 @@ export default function CAInSillod() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
-            <h2 className="section-title">Frequently Asked Questions; CA in Sillod</h2>
+            <h2 className="section-title">Frequently Asked Questions</h2>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {faqs.map(({ q, a }, i) => (
@@ -416,7 +385,7 @@ export default function CAInSillod() {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Looking for a CA in Sillod?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            Agrawal Khandelwal & Associates LLP; your trusted Chartered Accountant in Sillod. GST, income tax, audit, and business registration made simple.
+            Agrawal Khandelwal & Associates LLP in Sillod: NRI tax and property sales, company incorporation, ROC compliance and audit.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href={bookingLink} className="btn btn-primary">Book a Consultation</a>

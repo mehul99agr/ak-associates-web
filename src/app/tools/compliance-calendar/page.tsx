@@ -13,11 +13,11 @@ const RANGE_END = '2027-03-31'
 
 export const metadata: Metadata = {
   title: 'Compliance Due Date Calendar FY 2026-27',
-  description: 'Income tax, GST, TDS and ROC due dates from October 2026 to March 2027, with extended dates marked: tax audit, audit-case ITR, Form 3CEB, GSTR-9, advance tax.',
+  description: 'NRI, transfer pricing, TDS on payments to non-residents and ROC due dates from October 2026 to March 2027, with extended dates marked: Form 3CEB, transfer pricing ITR, advance tax, AOC-4 and MGT-7.',
   alternates: { canonical: URL },
   openGraph: {
     title: 'Compliance Due Date Calendar FY 2026-27',
-    description: 'Month-by-month income tax, GST, TDS and ROC due dates for October 2026 to March 2027, with extensions marked.',
+    description: 'Month-by-month NRI, transfer pricing, TDS and ROC due dates for October 2026 to March 2027, with extensions marked.',
     url: URL,
     type: 'website',
     images: OG_IMAGES,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Compliance Due Date Calendar FY 2026-27',
-    description: 'Month-by-month income tax, GST, TDS and ROC due dates for October 2026 to March 2027, with extensions marked.',
+    description: 'Month-by-month NRI, transfer pricing, TDS and ROC due dates for October 2026 to March 2027, with extensions marked.',
     images: OG_IMAGES,
   },
 }
@@ -35,16 +35,8 @@ export const revalidate = 3600
 
 const faqs: FaqPair[] = [
   [
-    'What is the tax audit report due date for AY 2026-27?',
-    'October 21, 2026. The CBDT, by a press release dated September 28, 2026, extended the due date for the tax audit report for Assessment Year 2026-27 (Financial Year 2025-26) from September 30, 2026 to October 21, 2026.',
-  ],
-  [
     'What is the ITR due date for audit cases for AY 2026-27?',
     'November 21, 2026, extended from October 31, 2026 by the same CBDT press release. Taxpayers who must file a transfer pricing report in Form 3CEB are not covered by the extension: their Form 3CEB is due on October 31, 2026 and their return on November 30, 2026.',
-  ],
-  [
-    'What is the due date for GSTR-9 and GSTR-9C for FY 2025-26?',
-    'December 31, 2026 for both, unless extended by notification. The last date to claim input tax credit for FY 2025-26 comes earlier: November 30, 2026, or the date the annual return is filed if that is sooner.',
   ],
   [
     'When are the remaining advance tax instalments for FY 2026-27 due?',
@@ -89,7 +81,7 @@ export default function ComplianceCalendarPage() {
               <span className="section-badge">Client Resources</span>
               <h1 className="section-title" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>Compliance Due Date Calendar: FY 2026-27</h1>
               <p style={{ color: 'var(--text-light)', fontSize: '1.05rem' }}>
-                Income tax, GST, TDS, ROC and payroll due dates from October 2026 to March 2027. Extended dates are marked
+                NRI, transfer pricing, TDS on payments to non-residents and ROC due dates from October 2026 to March 2027. Extended dates are marked
                 with the original date, and each deadline links to our guide on it.
               </p>
             </div>
@@ -146,13 +138,11 @@ export default function ComplianceCalendarPage() {
             <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', fontSize: '0.92rem', color: 'var(--text-light)', lineHeight: 1.7 }}>
               <h2 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>How to Read This Calendar</h2>
               <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                <li>Monthly GSTR-1 and GSTR-3B dates are for monthly filers. Taxpayers under the QRMP scheme file quarterly on different dates.</li>
                 <li>Form AOC-4 and Form MGT-7 run from the date of the AGM. The dates shown assume an AGM held on September 30, 2026.</li>
                 <li>When a due date falls on a public holiday, the next working day generally applies.</li>
                 <li>
                   Due dates are extended at short notice. Confirm the current position on the{' '}
-                  <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>Income Tax e-filing portal</a>, the{' '}
-                  <a href="https://www.gst.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST portal</a> and the{' '}
+                  <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>Income Tax e-filing portal</a> and the{' '}
                   <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>MCA portal</a> before filing.
                 </li>
               </ul>
@@ -163,9 +153,9 @@ export default function ComplianceCalendarPage() {
             <div style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)', color: 'var(--white)', textAlign: 'center', marginTop: '4rem', borderRadius: 'var(--radius-lg)', padding: '3.5rem 2rem' }}>
               <h2 style={{ color: 'var(--white)', marginBottom: '0.75rem' }}>Want These Filed on Time for You?</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '520px', margin: '0.75rem auto 2rem' }}>
-                Our <Link href="/ca-in-nashik" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Nashik</Link> and{' '}
-                <Link href="/ca-in-sillod" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Sillod</Link> offices handle
-                GST, TDS, tax audit and ROC filings through the year. Email us any time, or book a call.
+                We handle NRI returns, <Link href="/transfer-pricing" style={{ color: 'var(--white)', textDecoration: 'underline' }}>Form 3CEB</Link>,
+                TDS on payments to non-residents and{' '}
+                <Link href="/company-incorporation" style={{ color: 'var(--white)', textDecoration: 'underline' }}>ROC filings</Link> through the year. Email us any time, or book a call.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href={BOOKING_LINK} className="btn" style={{ background: 'var(--accent)', color: 'var(--white)', fontWeight: 700 }}>Book a Consultation</a>

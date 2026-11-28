@@ -86,7 +86,7 @@ const content = `<div style="padding:1.5rem 1.75rem;background:var(--bg-main);bo
 <li>Royalty or management fee payments; must be at arm's length and supported by agreements</li>
 </ul>
 
-<p>FEMA governs the mechanics of repatriation. Any outward remittance of taxable income requires Form 145 (replacing the old Form 15CA) and Form 146 (replacing Form 15CB), effective under the <a href="/blog/new-income-tax-act-rules-2025">new Income Tax Act 2025</a> from April 1, 2026; see our <a href="/blog/form-15ca-15cb-nri-remittance-guide">Form 15CA/15CB compliance guide</a> for the full filing process.</p>
+<p>FEMA governs the mechanics of repatriation. Any outward remittance of taxable income requires Form 145 (replacing the old Form 15CA) and Form 146 (replacing Form 15CB), effective under the <a href="/nri-tax-advisory">new Income Tax Act 2025</a> from April 1, 2026; see our <a href="/blog/form-15ca-15cb-nri-remittance-guide">Form 15CA/15CB compliance guide</a> for the full filing process.</p>
 
 <h2>Practical Takeaway</h2>
 

@@ -74,7 +74,7 @@ export default function EssentialComplianceBlog() {
                 <li><strong>GSTR-3B</strong>: Monthly summary return with tax payment (20th of next month)</li>
                 <li><strong>GSTR-9</strong>: Annual return (December 31 each year)</li>
               </ul>
-              <p>Startups on the QRMP scheme file GSTR-1 quarterly but must pay tax monthly via PMT-06. Input tax credit (ITC) mismatches between your GSTR-2B and books are a common audit trigger; reconcile monthly, not annually. If you export services, see our guide on <Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST zero-rated vs exempt supplies</Link>.</p>
+              <p>Startups on the QRMP scheme file GSTR-1 quarterly but must pay tax monthly via PMT-06. Input tax credit (ITC) mismatches between your GSTR-2B and books are a common audit trigger; reconcile monthly, not annually. If you export services, see our guide on <Link href="/offshore-accounting" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST zero-rated vs exempt supplies</Link>.</p>
 
               <h2>3. Income Tax & Advance Tax</h2>
               <p>Startups must pay advance tax if their estimated tax liability for the year exceeds Rs 10,000:</p>
@@ -129,7 +129,7 @@ export default function EssentialComplianceBlog() {
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/dpiit-registration-startups-india-80iac" style={{ color: 'var(--primary)', fontWeight: 600 }}>DPIIT Registration & 80-IAC Tax Benefit</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/fema-compliance-foreign-investment-startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>FEMA Compliance for Foreign-Funded Startups</Link></li>
                 <li style={{ marginBottom: '0.5rem' }}><Link href="/blog/company-incorporation-india-guide" style={{ color: 'var(--primary)', fontWeight: 600 }}>How to Incorporate a Company in India</Link></li>
-                <li style={{ marginBottom: 0 }}><Link href="/blog/gst-on-exports-zero-rated-vs-exempt-india" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST on Exports: Zero-Rated vs Exempt</Link></li>
+                <li style={{ marginBottom: 0 }}><Link href="/offshore-accounting" style={{ color: 'var(--primary)', fontWeight: 600 }}>GST on Exports: Zero-Rated vs Exempt</Link></li>
               </ul>
             </div>
           </article>

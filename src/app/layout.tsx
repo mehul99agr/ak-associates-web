@@ -40,43 +40,28 @@ const GA_MEASUREMENT_ID = 'G-41NNQG654M'
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrawalkhandelwal.com'),
   title: {
-    default: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP',
+    default: 'NRI Tax & Transfer Pricing CA | Agrawal Khandelwal & Associates LLP',
     template: '%s | Agrawal Khandelwal & Associates LLP',
   },
-  description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international taxation, virtual CFO. Book a consultation online.',
+  description: 'Chartered Accountants for NRIs and cross-border businesses: NRI tax and FEMA, transfer pricing, DTAA, UAE and US entity compliance, and company incorporation. Offices in Nashik and Sillod.',
   icons: {
     icon: '/logo.png',
     shortcut: '/logo.png',
     apple: '/logo.png',
   },
   keywords: [
-    // Nashik: primary office location
-    'CA in Nashik', 'chartered accountant in Nashik', 'best CA in Nashik',
-    'CA firm Nashik', 'chartered accountant Nashik', 'top CA Nashik',
-    'GST consultant Nashik', 'income tax consultant Nashik',
-    'tax consultant Nashik', 'audit firm Nashik',
-    'company registration Nashik', 'GST filing Nashik',
-    'ITR filing Nashik', 'tax planning Nashik',
-    'CA near Nashik', 'accountant Nashik',
-    // Sillod
-    'CA in Sillod', 'chartered accountant Sillod', 'CA Sillod',
-    'GST consultant Sillod', 'income tax consultant Sillod',
-    'CA near Sillod', 'accountant Sillod', 'CA Sillod Aurangabad',
-    'tax consultant Sillod', 'GST filing Sillod',
-    // Maharashtra broader
-    'CA in Maharashtra', 'chartered accountant Maharashtra',
-    // Pan-India remote services
-    'CA for startups India', 'startup advisory India',
-    'company incorporation India', 'DPIIT registration India',
-    'transfer pricing consultant India',
-    'DTAA consultant India', 'FEMA consultant India',
-    // NRI
-    'NRI tax consultant India', 'NRI taxation services India',
-    // UAE
+    // Core practice (Website 2.0, Nov 28, 2026)
+    'NRI tax consultant India', 'NRI taxation services India', 'CA for NRI',
+    'NRI property sale TDS', 'lower TDS certificate NRI', 'NRI ITR filing',
+    'transfer pricing consultant India', 'transfer pricing documentation India', 'Form 3CEB',
+    'international taxation India', 'DTAA consultant India', 'FEMA consultant India',
     'UAE corporate tax consultant India', 'India UAE DTAA',
-    // General
-    'virtual CFO India', 'outsourced accounting India',
-    'international taxation India', 'GST compliance India',
+    'US LLC compliance India', 'Form 5472 India founder',
+    'company incorporation India', 'foreign subsidiary registration India',
+    'CA for startups India', 'FDI compliance startups',
+    // Offices
+    'CA in Nashik', 'chartered accountant in Nashik', 'NRI CA Nashik',
+    'CA in Sillod', 'chartered accountant Sillod',
   ],
   other: {
     'geo.region': 'IN-MH',
@@ -103,13 +88,13 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://agrawalkhandelwal.com',
     siteName: 'Agrawal Khandelwal & Associates LLP',
-    title: 'CA in Nashik | International Tax, GST & Audit | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Nashik & Sillod, Maharashtra. GST, income tax, audit, company incorporation, international tax, and virtual CFO services. 100+ clients across India.',
+    title: 'NRI Tax, Transfer Pricing & International Tax | Agrawal Khandelwal & Associates LLP',
+    description: 'Chartered Accountants for NRIs and cross-border businesses: NRI tax and FEMA, transfer pricing, DTAA, UAE and US entity compliance, and company incorporation. Offices in Nashik and Sillod.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CA in Nashik | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Nashik & Sillod. GST, income tax, audit, international tax, and startup advisory.',
+    title: 'NRI Tax & Transfer Pricing CA | Agrawal Khandelwal & Associates LLP',
+    description: 'NRI tax, transfer pricing, international tax and incorporation for NRIs and cross-border businesses.',
   },
 }
 
@@ -118,7 +103,7 @@ const organizationLd = {
   '@type': 'AccountingService',
   '@id': ORGANIZATION_ID,
   name: FIRM_NAME,
-  description: 'Chartered Accountants in Nashik and Sillod, Maharashtra. Specializing in GST, income tax, company incorporation, audit, international taxation, transfer pricing, UAE corporate tax, startup advisory, and virtual CFO services.',
+  description: 'Chartered Accountants in Nashik and Sillod, Maharashtra, specialising in NRI taxation and FEMA, transfer pricing, international taxation and DTAA, UAE corporate tax, US entity compliance for Indian founders, and company incorporation.',
   url: BASE_URL,
   logo: `${BASE_URL}/logo.png`,
   image: `${BASE_URL}/office.jpg`,
@@ -157,19 +142,16 @@ const organizationLd = {
     { '@type': 'Country', name: 'United States' },
   ],
   serviceType: [
-    'GST Registration', 'GST Return Filing', 'Income Tax Return Filing',
-    'Tax Planning', 'Statutory Audit', 'Tax Audit', 'Internal Audit',
-    'Company Incorporation', 'LLP Registration', 'DPIIT Registration',
-    'International Taxation', 'Transfer Pricing', 'DTAA Advisory',
-    'FEMA Compliance', 'UAE Corporate Tax Advisory', 'NRI Taxation',
+    'NRI Taxation', 'Transfer Pricing', 'International Taxation',
+    'Statutory Audit', 'Company Incorporation', 'LLP Registration', 'DPIIT Registration',
+    'DTAA Advisory', 'FEMA Compliance', 'UAE Corporate Tax Advisory',
     'Startup Advisory', 'Virtual CFO Services', 'ESOP Structuring',
     'FDI Compliance', 'Offshore Accounting', 'US Incorporation & Compliance',
     'FBAR & FATCA Filing', 'US Sales Tax Nexus Advisory',
   ],
   knowsAbout: [
-    'GST Compliance', 'Income Tax', 'Statutory Audit', 'Company Incorporation',
-    'International Taxation', 'Transfer Pricing', 'DTAA', 'FEMA Compliance',
-    'UAE Corporate Tax', 'NRI Taxation', 'Startup Advisory', 'Virtual CFO Services',
+    'NRI Taxation', 'Transfer Pricing', 'International Taxation', 'DTAA', 'FEMA Compliance',
+    'UAE Corporate Tax', 'Company Incorporation', 'Statutory Audit', 'Startup Advisory', 'Virtual CFO Services',
     'Offshore Accounting', 'US Incorporation & Compliance', 'FBAR & FATCA Filing',
   ],
   founder: [
@@ -191,13 +173,12 @@ const organizationLd = {
     '@type': 'OfferCatalog',
     name: 'Chartered Accountant Services',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GST Registration & Filing', url: 'https://agrawalkhandelwal.com/services' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing', url: 'https://agrawalkhandelwal.com/services' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Tax Advisory', url: 'https://agrawalkhandelwal.com/nri-tax-advisory' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Transfer Pricing', url: 'https://agrawalkhandelwal.com/transfer-pricing' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company Incorporation in India', url: 'https://agrawalkhandelwal.com/company-incorporation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation & Transfer Pricing', url: 'https://agrawalkhandelwal.com/transfer-pricing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation & DTAA', url: 'https://agrawalkhandelwal.com/services' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'US Incorporation & Compliance', url: 'https://agrawalkhandelwal.com/us-cross-border' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'UAE Corporate Tax Advisory', url: 'https://agrawalkhandelwal.com/uae-tax-advisory' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Tax Advisory', url: 'https://agrawalkhandelwal.com/nri-tax-advisory' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Offshore Accounting & Outsourced Bookkeeping', url: 'https://agrawalkhandelwal.com/offshore-accounting' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Virtual CFO & Startup Advisory', url: 'https://agrawalkhandelwal.com/startups' } },
     ],
@@ -315,12 +296,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               <div>
                 <h3>Services</h3>
-                <Link href="/company-incorporation">Company Incorporation</Link>
+                <Link href="/nri-tax-advisory">NRI Tax Advisory</Link>
                 <Link href="/transfer-pricing">Transfer Pricing</Link>
                 <Link href="/us-cross-border">US Cross-Border</Link>
                 <Link href="/uae-tax-advisory">UAE Tax Advisory</Link>
+                <Link href="/company-incorporation">Company Incorporation</Link>
                 <Link href="/offshore-accounting">Offshore Accounting</Link>
-                <Link href="/nri-tax-advisory">NRI Tax Advisory</Link>
                 <Link href="/startups">Startup Advisory</Link>
               </div>
 
@@ -330,7 +311,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/services">Our Services</Link>
                 <Link href="/ca-in-nashik">CA in Nashik</Link>
                 <Link href="/ca-in-sillod">CA in Sillod</Link>
-                <Link href="/tools">Tax & Finance Tools</Link>
+                <Link href="/tools">NRI & Company Tools</Link>
                 <Link href="/tools/compliance-calendar">Due Date Calendar</Link>
                 <Link href="/blog">Client Insights</Link>
                 <Link href="/contact">Contact Us</Link>

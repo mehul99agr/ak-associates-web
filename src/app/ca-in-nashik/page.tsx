@@ -6,12 +6,12 @@ import { BOOKING_LINK, OFFICES, OG_IMAGES } from '@/lib/constants'
 import { buildBreadcrumbLd, buildFaqLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'CA Firm in Nashik',
-  description: 'CA firm in Nashik at Mumbai Naka. GST, ITR, tax audit, company incorporation and international tax for 100+ businesses. Email or book a consultation online.',
+  title: 'NRI & International Tax CA in Nashik',
+  description: 'Chartered Accountants in Nashik (Mumbai Naka) for NRIs and cross-border businesses: NRI tax and property sales, transfer pricing, DTAA, FEMA, UAE and US entities, and company incorporation.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/ca-in-nashik' },
   openGraph: {
-    title: 'CA Firm in Nashik | Chartered Accountants at Mumbai Naka | Agrawal Khandelwal & Associates LLP',
-    description: 'Chartered Accountants in Nashik. GST, ITR, audit, company incorporation, international tax. Located at Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik.',
+    title: 'NRI & International Tax CA in Nashik | Agrawal Khandelwal & Associates LLP',
+    description: 'NRI tax, transfer pricing, DTAA, FEMA and company incorporation from our office at Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik.',
     url: 'https://agrawalkhandelwal.com/ca-in-nashik',
     images: OG_IMAGES,
   },
@@ -27,69 +27,61 @@ const bookingLink = `${BOOKING_LINK}?partner=mehul`
 
 const services = [
   {
-    icon: 'document',
-    title: 'GST Registration & Filing',
-    desc: 'Complete GST registration, monthly/quarterly return filing (GSTR-1, GSTR-3B), annual returns, GST audit, and response to notices for Nashik businesses.',
+    icon: 'globe',
+    title: 'NRI Tax & Property Sales',
+    desc: 'For NRIs with property, family or income in Nashik: ITR filing, capital gains on a property sale, lower TDS certificates and Form 145/146 to move the money abroad.',
   },
   {
-    icon: 'rupee',
-    title: 'Income Tax Return (ITR) Filing',
-    desc: 'Accurate ITR filing for individuals, HUFs, firms, and companies in Nashik. Tax planning to minimise liability and maximise refunds.',
+    icon: 'analytics',
+    title: 'Transfer Pricing',
+    desc: 'Benchmarking, Local File and Form 3CEB for Nashik companies that buy from, sell to or borrow from related parties abroad.',
+  },
+  {
+    icon: 'scale',
+    title: 'International Tax & DTAA',
+    desc: 'Treaty positions, foreign tax credit, POEM and cross-border structuring for Nashik exporters, manufacturers and service companies with overseas customers or entities.',
+  },
+  {
+    icon: 'landmark',
+    title: 'FEMA, ODI & FDI',
+    desc: 'Overseas subsidiaries (ODI), foreign investment into Nashik companies (FDI, FC-GPR) and RBI reporting.',
   },
   {
     icon: 'building',
     title: 'Company & LLP Incorporation',
-    desc: 'End-to-end company registration, LLP formation, and startup compliance for new businesses in Nashik, Maharashtra.',
+    desc: 'Private limited company, LLP and OPC registration, including Indian subsidiaries of foreign companies, and the ROC filings that follow.',
   },
   {
-    icon: 'shield',
-    title: 'Statutory & Tax Audit',
-    desc: 'Statutory audits, tax audits under Section 44AB, internal audits, and concurrent bank audits for Nashik businesses of all sizes.',
-  },
-  {
-    icon: 'globe',
-    title: 'International Taxation',
-    desc: 'Transfer pricing, DTAA advisory, FEMA compliance, and UAE corporate tax for businesses in Nashik with cross-border operations.',
-  },
-  {
-    icon: 'chart',
-    title: 'Virtual CFO & Advisory',
-    desc: 'Outsourced CFO services, financial planning, budgeting, and MIS reporting for growing companies based in Nashik.',
+    icon: 'briefcase',
+    title: 'UAE & US Entities',
+    desc: 'UAE Corporate Tax and Free Zone structuring, and US LLC / C-Corp compliance for Nashik founders selling abroad.',
   },
 ]
 
 const faqs = [
   {
-    q: 'What should I look for when choosing a CA firm in Nashik?',
-    a: 'A reliable CA firm in Nashik should be ICAI-registered with verifiable partner credentials, offer direct partner access (not junior-only handling), cover the full compliance spectrum (GST, ITR, audit, ROC), and be transparent about fees. For businesses with cross-border operations, look for a Nashik CA firm with proven international taxation expertise (transfer pricing, DTAA, and FEMA) which is rare locally.',
+    q: 'Is there a CA in Nashik who specialises in NRI taxation?',
+    a: 'Yes. Our Nashik office, led by CA Mehul Agrawal, works mainly with NRIs and cross-border businesses: NRI income tax returns, property sales (capital gains, lower TDS certificate, Form 145/146 repatriation), DTAA relief and NRE/NRO questions. Most NRI clients work with us remotely, with evening slots for US, UK and Gulf time zones.',
   },
   {
-    q: 'How is your CA firm in Nashik different from other firms?',
-    a: 'Most CA firms in Nashik focus only on domestic compliance. Agrawal Khandelwal & Associates LLP is one of the few Nashik-based CA firms with hands-on expertise in international taxation, UAE corporate tax, transfer pricing, and offshore accounting; alongside complete domestic GST, ITR, audit, and incorporation services. You also work directly with the partner, not a junior team.',
+    q: 'Can you help an NRI sell property in Nashik?',
+    a: 'Yes. We work out the capital gains before you sign, apply for a lower TDS certificate (Form 128, earlier Form 13) so the buyer deducts TDS on the actual tax rather than the full rate, file your return, and prepare Form 145/146 (earlier 15CA/15CB) so the proceeds can be sent abroad.',
+  },
+  {
+    q: 'Do you handle transfer pricing for Nashik companies?',
+    a: 'Yes. If a Nashik company has transactions with an associated enterprise abroad (sales, purchases, loans, royalties or services), it needs a Form 3CEB report by October 31 and, above Rs 1 crore of international transactions, transfer pricing documentation. We prepare the benchmarking study, documentation and Form 3CEB.',
   },
   {
     q: 'Where is your CA office in Nashik?',
-    a: 'Our Nashik office is at Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011, Maharashtra. We are open Monday to Saturday, 11 AM to 7:30 PM.',
-  },
-  {
-    q: 'What are your CA fees for GST filing in Nashik?',
-    a: 'Our GST filing fees depend on the volume of transactions and frequency of returns. We offer transparent, fixed-fee packages for monthly GSTR-1 and GSTR-3B filing. Contact us for a free quote tailored to your business.',
+    a: 'Our Nashik office is at Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik 422011, Maharashtra. We are open Monday to Saturday, 11 AM to 7:30 PM.',
   },
   {
     q: 'Can you help with company registration in Nashik?',
-    a: 'Yes. We handle complete company and LLP incorporation in Nashik; from name reservation and DSC/DIN to MOA/AOA drafting, Certificate of Incorporation, GST registration, and bank account opening assistance.',
+    a: 'Yes. We handle company and LLP incorporation in Nashik end to end, from name reservation and DSC/DIN to MOA/AOA drafting and the Certificate of Incorporation, and set up the ROC compliance that follows. We also register Indian subsidiaries of foreign companies.',
   },
   {
-    q: 'Do you file income tax returns for salaried employees in Nashik?',
-    a: 'Yes. We file ITR for salaried individuals, business owners, professionals, and HUFs in Nashik. We also advise on tax-saving investments under Section 123 and Section 126 (Section 80C and 80D under the old Income Tax Act, 1961), and other deductions.',
-  },
-  {
-    q: 'Do you handle international taxation for Nashik-based businesses?',
-    a: 'Yes. We are specialists in international taxation including transfer pricing, DTAA (Double Taxation Avoidance Agreement), FEMA compliance, and UAE corporate tax for Nashik companies with global operations.',
-  },
-  {
-    q: 'What documents are required for GST registration in Nashik?',
-    a: 'For GST registration in Nashik you need: PAN card, Aadhaar card, passport-size photo, proof of business address (electricity bill/rent agreement), bank account statement, and business registration documents (if applicable). We guide you through the entire process.',
+    q: 'Do you handle GST or income tax filing for local businesses in Nashik?',
+    a: 'No. Our practice focuses on NRI taxation, transfer pricing, international tax and company incorporation and compliance. For GST and routine domestic income tax filing we suggest a local practitioner, and we work alongside them on the international side.',
   },
 ]
 
@@ -99,7 +91,7 @@ const nashikLocalBusiness = {
   '@id': 'https://agrawalkhandelwal.com/#nashik-office',
   name: 'Agrawal Khandelwal & Associates LLP',
   alternateName: ['Agrawal Khandelwal & Associates LLP Nashik', 'Agrawal Khandelwal & Associates LLP CA Nashik'],
-  description: 'Chartered Accountant firm in Nashik at Mumbai Naka offering GST registration and filing, income tax returns, tax audit under Section 44AB, company and LLP incorporation, and international taxation including transfer pricing, DTAA, FEMA, and UAE corporate tax.',
+  description: 'Chartered Accountant firm in Nashik at Mumbai Naka for NRIs and cross-border businesses: NRI taxation and property sales, transfer pricing and Form 3CEB, DTAA, FEMA, UAE corporate tax, and company and LLP incorporation.',
   url: 'https://agrawalkhandelwal.com/ca-in-nashik',
   email: OFFICES.nashik.email,
   telephone: OFFICES.nashik.phone,
@@ -139,26 +131,21 @@ const nashikLocalBusiness = {
     { '@type': 'State', name: 'Maharashtra' },
   ],
   serviceType: [
-    'GST Registration', 'GST Return Filing', 'Income Tax Return Filing',
-    'Tax Planning', 'Statutory Audit', 'Tax Audit', 'Internal Audit',
-    'Company Incorporation', 'LLP Registration', 'International Taxation',
-    'Transfer Pricing', 'DTAA Advisory', 'Virtual CFO Services',
+    'NRI Taxation', 'Transfer Pricing', 'International Taxation', 'DTAA Advisory',
+    'FEMA Compliance', 'UAE Corporate Tax Advisory', 'Company Incorporation', 'LLP Registration',
   ],
   knowsAbout: [
-    'Goods and Services Tax', 'Income Tax Return Filing', 'Tax Audit under Section 44AB',
-    'Company Incorporation', 'LLP Registration', 'Transfer Pricing', 'Form 3CEB',
-    'DTAA Advisory', 'FEMA Compliance', 'UAE Corporate Tax', 'NRI Taxation',
+    'NRI Taxation', 'Lower TDS Certificate', 'Transfer Pricing', 'Form 3CEB',
+    'DTAA Advisory', 'FEMA Compliance', 'UAE Corporate Tax', 'Company Incorporation',
   ],
   makesOffer: {
     '@type': 'OfferCatalog',
-    name: 'CA Services in Nashik',
+    name: 'NRI & International Tax Services in Nashik',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GST Registration and Return Filing' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Income Tax Return Filing and Tax Planning' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tax Audit and Statutory Audit' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company and LLP Incorporation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Tax and Property Sale Advisory' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Transfer Pricing and Form 3CEB' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Taxation and FEMA Advisory' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Company and LLP Incorporation' } },
     ],
   },
   hasMap: 'https://maps.google.com/?cid=15026601649790613456',
@@ -187,9 +174,9 @@ export default function CAInNashik() {
             <span>📍</span>
             <span>Nashik Office; Mumbai Naka, Nashik 422011</span>
           </div>
-          <h1>Trusted Chartered Accountant<br />in Nashik</h1>
+          <h1>NRI &amp; International Tax CA <br />in Nashik</h1>
           <p>
-            Agrawal Khandelwal & Associates LLP is a leading CA firm in Nashik serving 100+ businesses with GST filing, income tax returns, company incorporation, audit, and international taxation. Located at Mumbai Naka, Nashik; open Monday to Saturday.
+            Agrawal Khandelwal & Associates LLP advises NRIs and cross-border businesses from Nashik: NRI tax and property sales, transfer pricing, DTAA, FEMA, and company incorporation. Located at Mumbai Naka, Nashik; open Monday to Saturday.
           </p>
           <div className="hero-cta">
             <a href={bookingLink} className="btn btn-primary">
@@ -211,7 +198,7 @@ export default function CAInNashik() {
           <div className="stats-grid">
             <div className="stat-item">
               <span className="stat-number">100+</span>
-              <span className="stat-label">Nashik & Maharashtra Clients</span>
+              <span className="stat-label">Clients Served</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">3+</span>
@@ -229,10 +216,10 @@ export default function CAInNashik() {
       <section className="section" id="services">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <span className="section-badge">CA Services in Nashik</span>
+            <span className="section-badge">Our Practice in Nashik</span>
             <h2 className="section-title">What We Offer in Nashik</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
-              From GST and income tax compliance to company registration and international tax planning, we are your one-stop CA firm in Nashik.
+              A focused practice for NRIs and businesses with cross-border transactions, plus the incorporation and company compliance that goes with it.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
@@ -255,62 +242,31 @@ export default function CAInNashik() {
             <h2 className="section-title">Our Main Practice Areas in Nashik</h2>
           </div>
           <div className="blog-content" style={{ fontSize: '1.02rem', lineHeight: 1.85, color: 'var(--text-main)' }}>
-            <h3>Tax Audit &amp; Advisory Services in Nashik</h3>
-            <p>A tax audit under Section 44AB becomes mandatory once business turnover crosses ₹1 crore in a financial year (or ₹10 crore where at least 95% of receipts and payments are digital) and once professional gross receipts cross ₹50 lakh. Our Nashik team completes the audit and files Form 3CA/3CB with Form 3CD before the 30 September deadline, alongside statutory audits under the Companies Act 2013, internal audits, stock audits, and concurrent bank audits. Beyond compliance we advise on presumptive taxation under Sections 44AD and 44ADA, capital structure, TDS health checks, and year-round tax planning for Nashik businesses, professionals, and HUFs.</p>
+            <h3>NRI Tax Advisory in Nashik</h3>
+            <p>Many Nashik families have a son or daughter working in the US, the UK, the Gulf, Canada or Australia, with a flat or land still in Nashik. Selling that property, earning rent on it or receiving money from it brings Indian tax and FEMA rules into play. We file the NRI&apos;s Indian return, work out capital gains before the sale, apply for a lower TDS certificate so the buyer does not deduct tax on the full sale value, claim DTAA relief and TDS refunds, and prepare Form 145/146 so the money can be repatriated. See our <Link href="/nri-tax-advisory" style={{ color: 'var(--primary)', fontWeight: 600 }}>NRI tax advisory</Link> page.</p>
 
-            <h3>GST Compliance &amp; Filing in Nashik</h3>
-            <p>GST registration is compulsory once turnover exceeds ₹40 lakh for a goods supplier or ₹20 lakh for a service provider in Maharashtra, and immediately for inter-state supply, e-commerce sellers, and reverse-charge cases. We handle registration, monthly and quarterly GSTR-1 and GSTR-3B filing, the annual GSTR-9 return and GSTR-9C reconciliation, input tax credit matching against GSTR-2B, e-way bill and e-invoice setup, LUT filing for exporters, and replies to GST notices, ASMT-10 scrutiny, and departmental audits. Fixed-fee monthly packages keep recurring GST compliance predictable for Nashik traders, manufacturers, and service firms.</p>
+            <h3>Transfer Pricing for Nashik Companies</h3>
+            <p>Nashik&apos;s manufacturers, auto-component suppliers, wineries and IT companies increasingly deal with group companies abroad. Any international transaction with an associated enterprise needs a Form 3CEB report, due October 31, and transactions above Rs 1 crore need contemporaneous documentation. We prepare the benchmarking study, the Local File and Form 3CEB, and support the company through transfer pricing assessments. See our <Link href="/transfer-pricing" style={{ color: 'var(--primary)', fontWeight: 600 }}>transfer pricing</Link> page.</p>
 
-            <h3>Company Incorporation Services in Nashik</h3>
-            <p>We register private limited companies, LLPs, one person companies, and Section 8 companies end to end: name reservation through SPICe+ Part A, digital signature certificates and DIN for directors, MOA and AOA drafting, and the SPICe+ Part B filing that issues the Certificate of Incorporation together with PAN, TAN, EPFO, ESIC, and a bank account reference in a single application. Most incorporations complete in about 7 to 15 working days once documents are in order. We also handle post-incorporation compliance; INC-20A commencement filing, the first board meeting, share allotment, and annual ROC filings (AOC-4, MGT-7, DIR-3 KYC).</p>
-          </div>
-        </div>
-      </section>
-
-      {/* WHAT MAKES A TOP CA FIRM IN NASHIK */}
-      <section className="section bg-surface">
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <span className="section-badge">Choosing a CA Firm</span>
-            <h2 className="section-title">What Makes a Top CA Firm in Nashik?</h2>
-            <p style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--text-light)' }}>
-              Not every CA firm in Nashik is equipped to handle the full scope of compliance, audit, and advisory a growing business needs. Here are the six criteria that separate the leading CA firms in Nashik from the rest; and how we meet each one.
-            </p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
-            {[
-              { icon: 'check', title: 'ICAI-Registered with Verifiable Credentials', desc: 'Every partner is a qualified Chartered Accountant registered with the Institute of Chartered Accountants of India. CA Mehul Agrawal additionally holds certifications in Concurrent Bank Audit and UAE Corporate Taxation.' },
-              { icon: 'users', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file; not a rotating junior team. Decisions, advice, and follow-ups come from someone who actually knows your business.' },
-              { icon: 'scroll', title: 'Full-Spectrum Compliance', desc: 'GST, ITR, ROC filings, statutory audit, tax audit, and bookkeeping under one roof. No bouncing between specialists or losing context across firms.' },
-              { icon: 'globe', title: 'International Tax Expertise', desc: 'Transfer pricing, DTAA, FEMA, and UAE corporate tax; capabilities most Nashik CA firms outsource or do not offer. Critical for exporters, NRIs, and firms with offshore arms.' },
-              { icon: 'phone', title: 'Responsive Communication', desc: 'Email for questions and documents, booked calls for anything that needs a discussion. We reply to email within one working day.' },
-              { icon: 'rupee', title: 'Transparent Fee Structure', desc: 'Fixed-fee packages for recurring work like GST returns and ITR filing. No hidden charges and no surprise invoices.' },
-            ].map((item, i) => (
-              <div key={i} className="card">
-                <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={item.icon} size={32} /></div>
-                <h3 style={{ fontSize: '1.05rem', marginBottom: '0.75rem' }}>{item.title}</h3>
-                <p style={{ color: 'var(--text-light)', fontSize: '0.92rem', lineHeight: 1.7 }}>{item.desc}</p>
-              </div>
-            ))}
+            <h3>Company Incorporation in Nashik</h3>
+            <p>We register private limited companies, LLPs and one person companies end to end: name reservation through SPICe+ Part A, digital signature certificates and DIN for directors, MOA and AOA drafting, and the SPICe+ Part B filing that issues the Certificate of Incorporation with PAN and TAN. We also set up Indian subsidiaries of foreign companies, with the FDI reporting that goes with them, and handle post-incorporation compliance: INC-20A, the first board meeting and annual ROC filings (AOC-4, MGT-7).</p>
           </div>
         </div>
       </section>
 
       {/* WHY US */}
-      <section className="section">
+      <section className="section bg-surface">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <span className="section-badge">Why Choose Us</span>
-            <h2 className="section-title">Why Agrawal Khandelwal & Associates LLP is the Best CA Firm in Nashik</h2>
+            <span className="section-badge">How We Work</span>
+            <h2 className="section-title">Why NRIs and Cross-Border Businesses Work With Us</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
             {[
-              { icon: 'award', title: 'Certified Specialists', desc: 'CA Mehul Agrawal holds certifications in Concurrent Bank Audit and UAE Corporate Taxation; rare expertise available in Nashik.' },
-              { icon: 'globe', title: 'International Tax Capability', desc: 'One of the very few CA firms in Nashik with hands-on experience in transfer pricing, DTAA, FEMA, and UAE corporate tax.' },
-              { icon: 'zap', title: 'Fast Turnaround', desc: 'Dedicated team ensuring timely GST returns, ITR filing, and compliance so you never miss a deadline.' },
-              { icon: 'phone', title: 'Responsive Support', desc: 'Direct access to partners; no juniors handling your queries. Engaged clients get a direct line for day-to-day work.' },
-              { icon: 'briefcase', title: 'End-to-End Service', desc: 'From startup incorporation to ongoing GST/tax compliance, audit, and virtual CFO; all under one roof in Nashik.' },
-              { icon: 'lock', title: 'Trusted & Confidential', desc: 'Your financial data is handled with strict confidentiality. We are registered with ICAI and operate with complete professional ethics.' },
+              { icon: 'check', title: 'ICAI-Registered Partners', desc: 'Every partner is a qualified Chartered Accountant registered with the Institute of Chartered Accountants of India. CA Mehul Agrawal also holds a UAE Corporate Taxation certification.' },
+              { icon: 'users', title: 'Direct Partner Access', desc: 'You speak with the partner handling your file, not a rotating junior team.' },
+              { icon: 'globe', title: 'Built for Cross-Border Work', desc: 'Transfer pricing, DTAA, FEMA, NRI property sales, UAE and US entities are our core work, not an add-on.' },
+              { icon: 'phone', title: 'Works Across Time Zones', desc: 'Evening IST call slots for clients in the US, UK and Gulf. Documents by email or WhatsApp, calls over Google Meet.' },
             ].map((item, i) => (
               <div key={i} className="card">
                 <div style={{ marginBottom: '1rem', color: 'var(--primary)' }}><Icon name={item.icon} size={32} /></div>
@@ -337,7 +293,7 @@ export default function CAInNashik() {
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
               <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner; Nashik Office</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
-                Based in Nashik, CA Mehul Agrawal specialises in international taxation, transfer pricing, and corporate structuring. He advises Nashik-based businesses, startups, and NRI clients on tax optimisation and cross-border compliance.
+                Based in Nashik, CA Mehul Agrawal specialises in international taxation, transfer pricing, and corporate structuring. He advises NRIs, Nashik-based companies and founders on cross-border tax and FEMA compliance.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Certifications</strong>
@@ -365,13 +321,13 @@ export default function CAInNashik() {
               <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Form 3CEB &amp; Transfer Pricing Audit Report</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>Applicability, due dates, and what the audit covers.</p>
             </Link>
-            <Link href="/blog/company-name-reservation-run-form-india" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Company Name Reservation (SPICe+ / RUN)</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>How to reserve your company name before incorporation.</p>
+            <Link href="/blog/tds-on-nri-property-sale-india" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>TDS on NRI Property Sale</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>Rates, the lower TDS certificate and getting a refund.</p>
             </Link>
-            <Link href="/blog/dsc-din-application-director-guide" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>DSC &amp; DIN Application Guide for Directors</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>The two prerequisites every director needs before incorporation.</p>
+            <Link href="/blog/nri-repatriation-property-sale-proceeds" className="card" style={{ display: 'block', color: 'var(--text-main)', textDecoration: 'none' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Repatriating Property Sale Proceeds</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.88rem', margin: 0 }}>The USD 1 million limit, Form 145/146 and bank documents.</p>
             </Link>
           </div>
         </div>
@@ -408,7 +364,7 @@ export default function CAInNashik() {
               <div style={{ marginBottom: '1.25rem', color: 'var(--white)' }}><Icon name="calendar" size={32} /></div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.875rem', color: 'var(--white)' }}>Book a Consultation</h3>
               <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                Talk directly with CA Mehul Agrawal about your GST, tax, audit, or business advisory needs in Nashik. Start with a free 15-minute intro call, or book 30 minutes of detailed advice. The advice fee is adjusted against our fee if you engage us.
+                Talk directly with CA Mehul Agrawal about your NRI, transfer pricing or cross-border matter. Start with a free 15-minute intro call, or book 30 minutes of detailed advice. The advice fee is adjusted against our fee if you engage us.
               </p>
               <a href={bookingLink} className="btn btn-secondary" style={{ width: '100%' }}>
                 Book a Call
@@ -438,7 +394,7 @@ export default function CAInNashik() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-badge">Common Questions</span>
-            <h2 className="section-title">Frequently Asked Questions; CA in Nashik</h2>
+            <h2 className="section-title">Frequently Asked Questions</h2>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {faqs.map(({ q, a }, i) => (
@@ -454,9 +410,9 @@ export default function CAInNashik() {
       {/* BOTTOM CTA */}
       <section className="section">
         <div className="container" style={{ textAlign: 'center' }}>
-          <h2 className="section-title">Need a CA in Nashik?</h2>
+          <h2 className="section-title">NRI or Cross-Border Question in Nashik?</h2>
           <p style={{ maxWidth: '580px', margin: '0 auto 2.5rem', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-            Contact Agrawal Khandelwal & Associates LLP; your trusted Chartered Accountant in Nashik. We handle GST, income tax, audits, company registration, and more.
+            Contact Agrawal Khandelwal & Associates LLP for NRI tax, transfer pricing, international tax and company incorporation.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href={bookingLink} className="btn btn-primary">Book a Consultation</a>

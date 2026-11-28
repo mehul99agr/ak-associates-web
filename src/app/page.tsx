@@ -7,8 +7,8 @@ import { BOOKING_LINK, EMAIL_LINK } from '@/lib/constants'
 import { formatDueDate, getUpcomingKeyDates } from '@/lib/dueDates'
 
 export const metadata: Metadata = {
-  title: { absolute: 'CA in Nashik & Sillod | Agrawal Khandelwal & Associates LLP' },
-  description: 'Chartered Accountants for startups, MNCs, and NRI/UAE clients. International Tax, Transfer Pricing, and Virtual CFO services.',
+  title: { absolute: 'NRI Tax & Transfer Pricing CA | Agrawal Khandelwal & Associates LLP' },
+  description: 'Chartered Accountants for NRIs and cross-border businesses: NRI tax and FEMA, transfer pricing, DTAA, UAE and US entity compliance, and company incorporation.',
   alternates: { canonical: 'https://agrawalkhandelwal.com' },
 }
 
@@ -19,79 +19,73 @@ const bookingLink = BOOKING_LINK
 
 const services = [
   {
-    title: 'Business Incorporation & Structuring',
-    desc: 'Complete guidance on company and LLP formation, optimal corporate structure selection, and regulatory compliance setup.',
-    icon: 'building',
-    features: ['Company & LLP Formation', 'Optimal Structure Advisory', 'Regulatory Compliance Setup', 'Foreign Investment Approvals'],
-    link: '/company-incorporation',
-  },
-  {
-    title: 'Tax Planning & Compliance',
-    desc: 'Strategic income tax return (ITR) and GST return filing, tax planning, and comprehensive compliance management across India.',
-    icon: 'document',
-    features: ['ITR Filing & Planning', 'GST Return & Compliance', 'Tax Optimization Strategies', 'Tax Audit Representation'],
-  },
-  {
-    title: 'International Tax & Transfer Pricing',
-    desc: 'Expert guidance on cross-border taxation, transfer pricing compliance, and international regulatory requirements.',
+    title: 'NRI Tax & FEMA Advisory',
+    desc: 'India tax returns, property sales, DTAA relief and repatriation for Non-Resident Indians in the US, UK, Gulf, Canada, Singapore and Australia.',
     icon: 'globe',
-    features: ['Transfer Pricing Documentation', 'Treaty Benefits & DTAA', 'International Tax Planning', 'Cross-border Structuring'],
+    features: ['NRI Income Tax Returns', 'Property Sale TDS & Lower TDS Certificate', 'NRE / NRO & Repatriation (Form 145/146)', 'DTAA & Foreign Tax Credit'],
+    link: '/nri-tax-advisory',
+  },
+  {
+    title: 'Transfer Pricing',
+    desc: 'Benchmarking, documentation and Form 3CEB for Indian companies with foreign group entities, plus TP audit and APA support.',
+    icon: 'analytics',
+    features: ['Form 3CEB & Local File', 'Benchmarking Studies', 'Master File & CbCR', 'TP Assessments & APA'],
+    link: '/transfer-pricing',
+  },
+  {
+    title: 'International Tax & UAE',
+    desc: 'Cross-border structuring, DTAA positions, POEM and UAE Corporate Tax for Indian businesses with operations abroad.',
+    icon: 'landmark',
+    features: ['DTAA & Cross-border Structuring', 'UAE Corporate Tax (9%)', 'POEM & Residency', 'ODI / FDI under FEMA'],
+    link: '/uae-tax-advisory',
   },
   {
     title: 'US Incorporation & Compliance',
     desc: 'LLC vs C-Corp structuring, EIN/ITIN, FBAR/FATCA disclosure, and IRS foreign-ownership filings for founders running a US entity from India.',
-    icon: 'landmark',
+    icon: 'document',
     features: ['LLC vs C-Corp Structuring', 'FBAR & FATCA Filing', 'Form 5471/5472/8858', 'US Sales Tax Nexus'],
     link: '/us-cross-border',
   },
   {
-    title: 'Virtual CFO Services',
-    desc: 'Strategic financial leadership and advisory services without the overhead of a full-time CFO.',
+    title: 'Incorporation & Company Compliance',
+    desc: 'Private limited company, LLP and OPC registration, foreign subsidiaries in India, and the ROC filings that follow.',
+    icon: 'building',
+    features: ['Pvt Ltd, LLP & OPC Registration', 'Foreign Subsidiary (FDI) Set-up', 'Annual ROC Filings', 'Statutory Audit'],
+    link: '/company-incorporation',
+  },
+  {
+    title: 'Startups & Foreign Investment',
+    desc: 'Funding, ESOPs, valuation and FEMA filings for startups raising money from investors in India and abroad.',
     icon: 'chart',
-    features: ['Financial Strategy & Planning', 'Budgeting & Forecasting', 'Investment Advisory', 'Performance Analysis'],
-  },
-  {
-    title: 'Audit & Assurance',
-    desc: 'Comprehensive statutory audits, internal audits, tax audits, and thorough due diligence to ensure transparency.',
-    icon: 'shield',
-    features: ['Statutory & Tax Audits', 'Internal Audit Systems', 'Due Diligence Reports', 'Risk Assessment'],
-  },
-  {
-    title: 'Financial Advisory',
-    desc: 'Strategic financial consulting, modeling, and advisory services for business growth and optimization.',
-    icon: 'analytics',
-    features: ['Financial Modeling', 'Valuation Services', 'Business Restructuring', 'Funding Advisory'],
+    features: ['FDI Reporting (FC-GPR)', 'ESOP Structuring', 'Valuation Reports', 'Virtual CFO'],
+    link: '/startups',
   },
 ]
 
 const faqs = [
   {
-    q: 'Do you provide CA services for startups in Bangalore?',
-    a: 'Yes. We specialize in end-to-end startup advisory in Bangalore, from company incorporation and DPIIT registration to ESOP structuring, Virtual CFO services, and investor-ready financial reporting for fundraising rounds.',
+    q: 'What does Agrawal Khandelwal & Associates LLP specialise in?',
+    a: 'NRI taxation and FEMA, transfer pricing, and international tax: DTAA, UAE Corporate Tax and US entity compliance for Indian founders. We also incorporate companies and LLPs and handle their ROC compliance. We do not take on GST or routine domestic income tax work.',
   },
   {
-    q: 'Can you help with Transfer Pricing and International Taxation for MNCs?',
-    a: 'Absolutely. We provide Transfer Pricing documentation, DTAA advisory, FEMA compliance, and cross-border structuring for multinational corporations operating in India and abroad.',
+    q: 'Do you provide NRI taxation services?',
+    a: 'Yes. We file India tax returns for Non-Resident Indians, handle property sales (capital gains, lower TDS certificate, Form 145/146 for repatriation), claim DTAA relief and TDS refunds, and advise on NRE/NRO accounts and FEMA. Everything is done remotely, with evening slots for US, UK and Gulf time zones.',
+  },
+  {
+    q: 'Can you help with Transfer Pricing for Indian subsidiaries of foreign groups?',
+    a: 'Yes. We prepare benchmarking studies, the Local File and Form 3CEB, Master File and CbCR filings where they apply, and support the company through transfer pricing assessments.',
   },
   {
     q: 'Do you advise on UAE Corporate Tax for Indian businesses?',
     a: 'Yes. CA Mehul Agrawal holds a UAE Corporate Taxation certification. We advise Indian businesses with UAE operations on the 9% CT compliance, India-UAE DTAA benefits, Transfer Pricing, and Free Zone entity structuring.',
   },
   {
-    q: 'Do you provide NRI taxation services?',
-    a: 'Yes. We assist Non-Resident Indians with income tax filing, DTAA benefits, FEMA compliance for property and investments, and repatriation of funds from India.',
+    q: 'Do you help Indian founders with a US LLC or C-Corp?',
+    a: 'Yes. Our team prepares the US filings (Form 1120, Form 5472, Delaware franchise tax, FBAR) and our US partner reviews and files them, while we keep the Indian side (ODI under FEMA, transfer pricing, your ITR) in step.',
   },
   {
-    q: 'Do you offer offshore accounting and outsourced bookkeeping services?',
-    a: 'Yes. We provide offshore accounting and outsourced bookkeeping services for businesses in India, UAE, and international clients looking to manage their Indian entity finances remotely.',
-  },
-  {
-    q: 'Do you provide CA services in Nashik?',
-    a: 'Yes. Our Nashik office at Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik – 422011 provides GST registration and filing, income tax return filing, company incorporation, statutory and tax audits, tax planning, and international taxation services. Email mehul@agrawalkhandelwal.com or book a consultation online.',
-  },
-  {
-    q: 'Do you have a CA office in Sillod?',
-    a: 'Yes. Our Sillod office is located Near Datta Mandir, Tilak Nagar, Sillod – 431112. We serve businesses and individuals in Sillod and the surrounding Chhatrapati Sambhajinagar district with GST filing, income tax returns, audit, and tax planning services. Email rupesh@agrawalkhandelwal.com or book a consultation online.',
+    q: 'Where are your offices?',
+    a: 'Nashik (Shop No. 12&13, Ram Plaza, Bhabha Nagar, Mumbai Naka, Nashik 422011) and Sillod (Near Datta Mandir, Tilak Nagar, Sillod 431112), Maharashtra. Most of our NRI and international clients work with us remotely; we serve clients across India and in the UAE and the US.',
   },
 ]
 
@@ -113,7 +107,7 @@ const peopleLd = {
       '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
       name: 'CA Mehul Agrawal',
       jobTitle: 'Partner',
-      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions, and advising on domestic tax and audit alongside CA Rupesh Khandelwal. UAE Corporate Taxation certified.',
+      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising NRIs and multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
@@ -140,7 +134,7 @@ const peopleLd = {
       '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal',
       name: 'CA Rupesh Khandelwal',
       jobTitle: 'Partner',
-      description: 'Chartered Accountant specializing in domestic tax planning, statutory and internal audits, and business consulting, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
+      description: 'Chartered Accountant leading statutory and internal audits and company compliance, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
       url: 'https://agrawalkhandelwal.com/about#rupesh-khandelwal',
       image: 'https://agrawalkhandelwal.com/rupesh.jpg',
@@ -148,8 +142,8 @@ const peopleLd = {
       sameAs: ['https://www.linkedin.com/in/rupeshkhandelwal/'],
       alumniOf: { '@type': 'Organization', name: 'Deloitte' },
       knowsAbout: [
-        'Domestic Tax Planning', 'Statutory Audit', 'Internal Audit',
-        'Tax Compliance', 'Business Consulting',
+        'Statutory Audit', 'Internal Audit', 'Company Law Compliance',
+        'Business Consulting',
       ],
       hasCredential: [
         { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Chartered Accountant (ICAI)', identifier: '614213' },
@@ -183,9 +177,9 @@ export default function Home() {
             <span>⭐</span>
             <span>Trusted by 100+ Businesses Across India</span>
           </div>
-          <h1>Chartered Accountants for NRIs,<br />Founders and Growing Businesses</h1>
+          <h1>Chartered Accountants for NRIs and <br />Cross-Border Businesses</h1>
           <p>
-            <strong>Agrawal Khandelwal &amp; Associates LLP</strong> handles taxation, audit, compliance and cross-border advisory from our Nashik and Sillod offices. Choose the option that fits you.
+            <strong>Agrawal Khandelwal &amp; Associates LLP</strong> advises NRIs, Indian founders and international groups on India tax, FEMA, transfer pricing and cross-border structures. Choose the option that fits you.
           </p>
           <div className="hero-paths">
             <Link href="/nri-tax-advisory" className="hero-path">
@@ -196,9 +190,9 @@ export default function Home() {
               <strong>I am a Founder</strong>
               <span>Incorporation, compliance, ESOPs, fundraising and Virtual CFO</span>
             </Link>
-            <Link href="/ca-in-nashik" className="hero-path">
-              <strong>I run a Business</strong>
-              <span>GST, income tax, audit and books, in Nashik and Sillod</span>
+            <Link href="/transfer-pricing" className="hero-path">
+              <strong>I run a Cross-Border Business</strong>
+              <span>Transfer pricing, foreign subsidiaries, UAE and US entities</span>
             </Link>
           </div>
           <div className="hero-cta">
@@ -239,7 +233,7 @@ export default function Home() {
             <span className="section-badge">Meet Our Team</span>
             <h2 className="section-title">Leading Professionals</h2>
             <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', fontSize: '1.05rem' }}>
-              Our seasoned partners bring deep expertise in taxation, audit, and financial consulting, empowering businesses to achieve their objectives with confidence.
+              International tax and NRI advisory is led by CA Mehul Agrawal; audit and company compliance by CA Rupesh Khandelwal.
             </p>
             <Link href="/about" style={{ display: 'inline-block', marginTop: '1rem', fontWeight: 700, color: 'var(--accent)', fontSize: '0.9rem' }}>
               Full bios & credentials →
@@ -254,7 +248,7 @@ export default function Home() {
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Mehul Agrawal</h3>
               <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner & International Tax Expert</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
-                Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and enables them to optimize tax strategies while maintaining strict compliance. He also advises on domestic tax and audit alongside CA Rupesh Khandelwal.
+                Mehul is a distinguished Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring. He advises multinational companies on cross-border transactions and NRIs on India tax, FEMA and repatriation, keeping their positions consistent across countries.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations & Certifications</strong>
@@ -273,19 +267,18 @@ export default function Home() {
                 <Image src="/rupesh.jpg" alt="CA Rupesh Khandelwal" width={140} height={140} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>CA Rupesh Khandelwal</h3>
-              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner & Domestic Tax Specialist</p>
+              <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '1.25rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Partner, Audit & Company Compliance</p>
               <p style={{ fontSize: '0.93rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
-                Rupesh brings valuable insights from leading firms, including Deloitte. His expertise spans Automobiles, IT, and Pharma. He has a strong track record in tax planning, regulatory compliance, and representing clients before tax authorities.
+                Rupesh brings valuable insights from leading firms, including Deloitte. His expertise spans Automobiles, IT, and Pharma. He leads the firm's statutory and internal audits and the company law compliance that follows incorporation.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations & Experience</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.75rem', fontSize: '0.87rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  <li style={{ color: 'var(--text-light)' }}>✓ Domestic Tax Planning</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Statutory & Internal Audits</li>
+                  <li style={{ color: 'var(--text-light)' }}>✓ ROC & Company Law Compliance</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Business Consulting</li>
                   <li style={{ color: 'var(--accent)', fontWeight: 700 }}>🏆 Ex-Deloitte</li>
-                  <li style={{ color: 'var(--accent)', fontWeight: 700 }}>🏆 GST & Regulatory Compliance</li>
-                </ul>
+                                  </ul>
               </div>
             </div>
           </div>
@@ -297,9 +290,9 @@ export default function Home() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="section-badge">Our Expertise</span>
-            <h2 className="section-title">Comprehensive Services</h2>
+            <h2 className="section-title">What We Focus On</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
-              From business incorporation to complex international tax planning, we provide end-to-end financial solutions.
+              A focused practice: NRIs, transfer pricing and cross-border work, plus the incorporation and company compliance that goes with it.
             </p>
           </div>
 
@@ -351,7 +344,7 @@ export default function Home() {
             <div className="card" style={{ borderLeft: '4px solid var(--primary)' }}>
               <h3 style={{ fontSize: '1.15rem', marginBottom: '12px' }}>Startup Financial Strategy</h3>
               <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
-                Acted as Virtual CFO for a high-growth AI startup, managing their DPIIT registration, seed-round financial modeling, and ensuring complete ROC/GST compliance, allowing the founders to focus strictly on product development.
+                Acted as Virtual CFO for a high-growth AI startup, managing their DPIIT registration, seed-round financial modeling, and ensuring complete ROC and FEMA compliance, allowing the founders to focus strictly on product development.
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '15px' }}>
                 <div>
@@ -366,7 +359,7 @@ export default function Home() {
           <div style={{ marginTop: '5rem', textAlign: 'center' }}>
             <h2 className="section-title">Our Global Reach</h2>
             <p style={{ color: 'var(--text-light)', maxWidth: '580px', margin: '0.75rem auto 2.5rem' }}>
-              Headquartered in Maharashtra as a <Link href="/ca-in-nashik" style={{ color: 'var(--accent)', fontWeight: 700 }}>chartered accountant firm in Nashik</Link>, with a footprint that extends across India and key international jurisdictions.
+              Based in <Link href="/ca-in-nashik" style={{ color: 'var(--accent)', fontWeight: 700 }}>Nashik</Link> and Sillod, Maharashtra, advising NRIs and cross-border businesses across India and abroad.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px' }}>
               {['Nashik', 'Sillod', 'Mumbai', 'Bangalore', 'Delhi', 'UAE'].map((location, idx) => (
@@ -484,9 +477,9 @@ export default function Home() {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="section-badge">Get In Touch</span>
-            <h2 className="section-title">Ready to Optimize Your Finances?</h2>
+            <h2 className="section-title">Talk to Us About Your Cross-Border Matter</h2>
             <p style={{ maxWidth: '680px', margin: '0 auto', color: 'var(--text-light)' }}>
-              Book a consultation to discuss your financial goals. We serve clients in Nashik, Sillod, Mumbai and Bangalore, and outside India in the UAE and the US.
+              Book a consultation about your NRI, transfer pricing or international matter. We serve clients in Nashik, Sillod, Mumbai and Bangalore, and outside India in the UAE and the US.
             </p>
           </div>
 

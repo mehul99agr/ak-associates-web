@@ -35,9 +35,23 @@ Build: node ".\node_modules\next\dist\bin\next" build
 ```
 npm run build has a path/space issue — always use the node command directly.
 
+## WEBSITE 2.0 SCOPE (user decision, Nov 28, 2026) - OVERRIDES older notes below
+The site is now purely **NRI, transfer pricing and international tax**, plus incorporation and ROC / company compliance.
+- **No GST and no routine domestic income tax content or services.** Tax audit, payroll/MSME/trusts and the income-tax/SIP
+  calculators are gone too. Pages say plainly: "We do not take on GST or routine domestic income tax work."
+- 106 off-target posts were deleted and **308-redirected** in `next.config.js` (`async redirects()`) to the closest kept page.
+  If you delete another page, add a redirect there. This supersedes the Nov 25 "keep the existing off-target posts" note and
+  the Sep 2026 250-topic expansion plan (GST/Income Tax/Tax Audit categories are retired).
+- New posts only on: NRI tax/FEMA, transfer pricing, international tax/DTAA, UAE, US entities, incorporation/ROC, startups and FDI.
+- City pages are repositioned: Nashik = NRI and international tax office; Sillod = NRI property sales, incorporation, ROC and audit.
+- **Rupesh's role is now "Partner, Audit & Company Compliance"** (statutory/internal audit, company law). Still never credit him
+  with TP or international work.
+- Rollback: tag `website-1.0` / branch `archive/website-1.0` = original site; tag `website-1.0.1` = no prices + phones
+  (last 1.x on main). 2.0 lives on branch `website-2.0`, tag `website-2.0`.
+
 ## Key People
 - **CA Mehul Agrawal** — Partner, Nashik office, UAE Corporate Taxation certified
-- **CA Rupesh Khandelwal** — Partner, Sillod office
+- **CA Rupesh Khandelwal** — Partner, Sillod office; Audit & Company Compliance (Website 2.0)
 
 ## Offices
 - **Nashik:** Shop No. 12 & 13, Ram Plaza, Mumbai Naka, Nashik – 422011 | +91 95275 33506
@@ -56,7 +70,7 @@ every dated Search Console finding and work log, the FEMA/NRI/topic-cluster note
 audits, "What Needs to Happen Next" and the 100 Clicks/Day plan. Load it before any SEO, GSC or
 blog-planning work.
 
-## 250-Topic Content Expansion Plan (Sep 2026 — IN PROGRESS)
+## 250-Topic Content Expansion Plan (Sep 2026 — RETIRED by Website 2.0, Nov 28 2026)
 User asked (Sep 16-17, 2026) to expand into GST, Income Tax, Tax Audit, and other
 overlapping categories, targeting a total of 250 blog topics (86 existing + 164 new).
 Full approved list with categories, notes, and section-mapping status lives in

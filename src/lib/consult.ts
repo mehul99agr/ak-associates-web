@@ -62,7 +62,7 @@ export const ENQUIRY_TOPICS = [
   { slug: 'uae-tax', label: 'UAE corporate tax or entity setup' },
   { slug: 'transfer-pricing', label: 'Transfer pricing' },
   { slug: 'offshore-accounting', label: 'Offshore accounting for CPA / CA firms' },
-  { slug: 'tax-gst-audit', label: 'Income tax, GST, TDS or audit' },
+  { slug: 'company-compliance', label: 'ROC compliance or statutory audit' },
   { slug: 'other', label: 'Something else' },
 ] as const
 

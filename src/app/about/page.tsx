@@ -7,11 +7,11 @@ import { buildBreadcrumbLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'About Our Partners',
-  description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm in Nashik and Sillod, Maharashtra.',
+  description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm for NRIs, transfer pricing and international tax, based in Nashik and Sillod, Maharashtra.',
   alternates: { canonical: 'https://agrawalkhandelwal.com/about' },
   openGraph: {
     title: 'About Our Partners | Agrawal Khandelwal & Associates LLP',
-    description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm serving Nashik and Sillod, Maharashtra.',
+    description: 'Meet CA Mehul Agrawal and CA Rupesh Khandelwal, Partners at Agrawal Khandelwal & Associates LLP, an ICAI-registered CA firm for NRIs, transfer pricing and international tax.',
     url: 'https://agrawalkhandelwal.com/about',
     images: OG_IMAGES,
   },
@@ -32,7 +32,7 @@ const peopleLd = {
       '@id': 'https://agrawalkhandelwal.com/#mehul-agrawal',
       name: 'CA Mehul Agrawal',
       jobTitle: 'Partner',
-      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising multinational companies on cross-border transactions, and advising on domestic tax and audit alongside CA Rupesh Khandelwal. UAE Corporate Taxation certified.',
+      description: 'Chartered Accountant specializing in International Taxation, Transfer Pricing, and Corporate Structuring, advising NRIs and multinational companies on cross-border transactions. UAE Corporate Taxation certified.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
       url: 'https://agrawalkhandelwal.com/about#mehul-agrawal',
       image: 'https://agrawalkhandelwal.com/mehul.jpg',
@@ -59,7 +59,7 @@ const peopleLd = {
       '@id': 'https://agrawalkhandelwal.com/#rupesh-khandelwal',
       name: 'CA Rupesh Khandelwal',
       jobTitle: 'Partner',
-      description: 'Chartered Accountant specializing in domestic tax planning, statutory and internal audits, and business consulting, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
+      description: 'Chartered Accountant leading statutory and internal audits and company compliance, with prior experience at Deloitte across the Automobiles, IT, and Pharma sectors.',
       worksFor: { '@id': 'https://agrawalkhandelwal.com/#organization' },
       url: 'https://agrawalkhandelwal.com/about#rupesh-khandelwal',
       image: 'https://agrawalkhandelwal.com/rupesh.jpg',
@@ -67,7 +67,7 @@ const peopleLd = {
       sameAs: ['https://www.linkedin.com/in/rupeshkhandelwal/'],
       alumniOf: { '@type': 'Organization', name: 'Deloitte' },
       knowsAbout: [
-        'Domestic Tax Planning', 'Statutory Audit', 'Internal Audit',
+        'Statutory Audit', 'Internal Audit', 'Company Law Compliance',
         'Tax Compliance', 'Business Consulting',
       ],
       hasCredential: [
@@ -128,8 +128,8 @@ export default function About() {
                 Structuring. He advises multinational companies on cross-border transactions and helps them optimize
                 tax strategies while maintaining strict regulatory compliance. He holds a UAE Corporate Taxation
                 certification and advises Indian businesses with UAE operations on 9% CT compliance, India-UAE DTAA
-                benefits, and Free Zone entity structuring. He leads all of the firm&apos;s international tax work,
-                and advises on domestic tax and audit alongside CA Rupesh Khandelwal.
+                benefits, and Free Zone entity structuring. He leads all of the firm&apos;s NRI, transfer pricing
+                and international tax work.
               </p>
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations & Certifications</strong>
@@ -159,8 +159,8 @@ export default function About() {
               <p style={{ color: 'var(--text-muted)', fontWeight: 600, marginBottom: '1.25rem', fontSize: '0.8rem' }}>ICAI Membership No. 614213</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'justify', color: 'var(--text-light)', lineHeight: '1.8' }}>
                 Rupesh brings valuable insights from leading firms, including Deloitte, across the Automobiles, IT,
-                and Pharma sectors. His expertise spans domestic tax planning, statutory and internal audits, and
-                business consulting, with a strong track record representing clients before tax authorities.
+                and Pharma sectors. He leads the firm&apos;s statutory and internal audits and the company law
+                compliance that follows incorporation, and supports the firm&apos;s business consulting work.
               </p>
               <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
                 <Link href="/ca-in-sillod" style={{ color: 'var(--primary)', fontWeight: 600 }}>Visit our chartered accountant office in Sillod &rarr;</Link>
@@ -168,8 +168,8 @@ export default function About() {
               <div style={{ marginTop: '1.5rem', textAlign: 'left', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
                 <strong style={{ fontSize: '0.82rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Specializations</strong>
                 <ul style={{ listStyle: 'none', marginTop: '0.75rem', fontSize: '0.87rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  <li style={{ color: 'var(--text-light)' }}>✓ Domestic Tax Planning</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Statutory & Internal Audits</li>
+                  <li style={{ color: 'var(--text-light)' }}>✓ ROC & Company Law Compliance</li>
                   <li style={{ color: 'var(--text-light)' }}>✓ Business Consulting</li>
                   <li style={{ color: 'var(--accent)', fontWeight: 700 }}>🏆 Prior Experience at Deloitte</li>
                 </ul>
@@ -195,8 +195,8 @@ export default function About() {
           <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, marginBottom: '1.25rem' }}>
             Agrawal Khandelwal & Associates LLP is a firm of Chartered Accountants founded in 2023 and registered with the
             Institute of Chartered Accountants of India (Firm Registration No. W101119). We work from two offices in
-            Maharashtra and advise 100+ clients, from local businesses in Nashik and Sillod to founders, companies, and
-            NRIs who work with us remotely.
+            Maharashtra and advise 100+ clients, mostly NRIs, Indian founders and companies with cross-border
+            operations, who work with us remotely.
           </p>
           <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, marginBottom: '2.5rem' }}>
             Both partners are involved in client work directly. Advice is given in English, Hindi, or Marathi. Email
@@ -208,7 +208,7 @@ export default function About() {
               <h3 style={{ marginBottom: '0.5rem' }}>{OFFICES.nashik.name}</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: 1.75, marginBottom: '0.75rem' }}>
                 Led by CA Mehul Agrawal. Handles international tax, transfer pricing, UAE corporate tax, NRI taxation, and
-                FEMA matters, alongside income tax, GST, and audit work for businesses in Nashik.
+                FEMA matters for clients in India and abroad.
               </p>
               <p style={{ color: 'var(--text-main)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '0.75rem' }}>
                 {OFFICES.nashik.addressLine}<br />{OFFICES.nashik.email}
@@ -218,8 +218,8 @@ export default function About() {
             <div className="card">
               <h3 style={{ marginBottom: '0.5rem' }}>{OFFICES.sillod.name}</h3>
               <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: 1.75, marginBottom: '0.75rem' }}>
-                Led by CA Rupesh Khandelwal. Handles income tax, GST, statutory and internal audit, and business consulting
-                for clients in Sillod and the surrounding Chhatrapati Sambhajinagar (Aurangabad) district.
+                Led by CA Rupesh Khandelwal. Handles statutory and internal audit and company compliance, and is the
+                firm&apos;s base for clients in the Chhatrapati Sambhajinagar (Aurangabad) district.
               </p>
               <p style={{ color: 'var(--text-main)', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '0.75rem' }}>
                 {OFFICES.sillod.addressLine}<br />{OFFICES.sillod.email}
@@ -236,7 +236,7 @@ export default function About() {
             <Link href="/company-incorporation" style={{ color: 'var(--primary)', fontWeight: 600 }}>company incorporation</Link>,{' '}
             <Link href="/startups" style={{ color: 'var(--primary)', fontWeight: 600 }}>startup advisory</Link>, and{' '}
             <Link href="/offshore-accounting" style={{ color: 'var(--primary)', fontWeight: 600 }}>offshore accounting</Link>, along with
-            GST, income tax, and audit. The full list is on our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>services page</Link>.
+            ROC compliance and statutory audit for companies. We do not take on GST or routine domestic income tax work. The full list is on our <Link href="/services" style={{ color: 'var(--primary)', fontWeight: 600 }}>services page</Link>.
           </p>
           <p style={{ color: 'var(--text-light)', fontSize: '1.02rem', lineHeight: 1.85, margin: 0 }}>
             We also publish practical guides on tax and compliance in our <Link href="/blog" style={{ color: 'var(--primary)', fontWeight: 600 }}>blog</Link>,

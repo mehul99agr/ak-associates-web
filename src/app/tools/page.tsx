@@ -21,19 +21,19 @@ const tools = [
     title: 'Income Tax Estimator',
     desc: 'Calculate your tax liability under Old or New Regime based on the latest Union Budget updates.',
     icon: 'rupee',
-    link: '/tax-calculator',
+    link: '/tools',
   },
   {
     title: 'Capital Gains Calculator',
     desc: 'Estimate tax on short-term and long-term gains from property and equities.',
     icon: 'chart',
-    link: '/tools/capital-gains',
+    link: '/tools/nri-property-tds',
   },
   {
     title: 'SIP & Retirement Planner',
     desc: 'Plan your mutual fund investments and visualize long-term compounding growth.',
     icon: 'sprout',
-    link: '/tools/sip-planner',
+    link: '/tools',
   },
   {
     title: 'Incorporation Wizard',
@@ -49,7 +49,7 @@ const tools = [
   },
   {
     title: 'Compliance Due Date Calendar',
-    desc: 'Income tax, GST, TDS and ROC due dates for FY 2026-27, month by month, with extended dates marked.',
+    desc: 'NRI, transfer pricing, TDS and ROC due dates for FY 2026-27, month by month, with extended dates marked.',
     icon: 'document',
     link: '/tools/compliance-calendar',
   },

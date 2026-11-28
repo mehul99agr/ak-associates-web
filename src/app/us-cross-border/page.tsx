@@ -44,7 +44,7 @@ const services = [
   {
     icon: 'globe',
     title: 'Your Indian Subsidiary',
-    desc: 'The India side of a US parent: FC-GPR when shares are issued, the annual FLA return to RBI, transfer pricing on cross-border charges with Form 3CEB, and the Indian company\'s books, GST and income tax.',
+    desc: 'The India side of a US parent: FC-GPR when shares are issued, the annual FLA return to RBI, transfer pricing on cross-border charges with Form 3CEB, and the Indian company\'s books and ROC filings.',
     link: '/blog/foreign-subsidiary-registration-india-fdi',
   },
   {
@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     q: 'Can you handle both my US entity compliance and my Indian tax filings?',
-    a: 'Yes. Running both under one engagement means your US LLC/C-Corp compliance, your Indian ITR and GST filings, and your India-US DTAA position are handled with a single point of accountability, rather than coordinating between two separate advisors who don\'t see each other\'s work.',
+    a: 'Yes. Running both under one engagement means your US LLC/C-Corp compliance, your Indian ITR and FEMA filings, and your India-US DTAA position are handled with a single point of accountability, rather than coordinating between two separate advisors who don\'t see each other\'s work.',
   },
 ]
 
